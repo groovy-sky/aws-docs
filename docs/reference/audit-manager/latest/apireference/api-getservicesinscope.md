@@ -1,3 +1,7 @@
+---
+title: "GetServicesInScope"
+---
+
 # GetServicesInScope
 
 Gets a list of the AWS services from which Audit Manager can collect

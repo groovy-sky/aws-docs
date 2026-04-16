@@ -1,3 +1,7 @@
+---
+title: "Use the CloudTrail console to create an Athena table for CloudTrail logs"
+---
+
 # Use the CloudTrail console to create an Athena table for CloudTrail logs
 
 You can create a non-partitioned Athena table for querying CloudTrail logs directly from the

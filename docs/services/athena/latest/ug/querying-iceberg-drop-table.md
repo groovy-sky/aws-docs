@@ -1,3 +1,7 @@
+---
+title: "DROP TABLE"
+---
+
 # DROP TABLE
 
 Drops an Iceberg table.

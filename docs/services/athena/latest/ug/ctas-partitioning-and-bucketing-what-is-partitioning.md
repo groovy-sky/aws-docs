@@ -1,3 +1,7 @@
+---
+title: "What is partitioning?"
+---
+
 # What is partitioning?
 
 Partitioning means organizing data into directories (or "prefixes") on Amazon S3 based on a

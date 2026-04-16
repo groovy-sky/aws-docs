@@ -1,3 +1,7 @@
+---
+title: "Optimize queries with AWS Glue partition indexing and filtering"
+---
+
 # Optimize queries with AWS Glue partition indexing and filtering
 
 When Athena queries partitioned tables, it retrieves and filters the available table

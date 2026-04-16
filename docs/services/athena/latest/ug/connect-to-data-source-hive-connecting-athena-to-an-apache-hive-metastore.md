@@ -1,3 +1,7 @@
+---
+title: "Connect Athena to an Apache Hive metastore"
+---
+
 # Connect Athena to an Apache Hive metastore
 
 To connect Athena to an Apache Hive metastore, you must create and configure a Lambda

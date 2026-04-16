@@ -1,3 +1,7 @@
+---
+title: "Edit capacity reservations"
+---
+
 # Edit capacity reservations
 
 After you create a capacity reservation, you can adjust its number of DPUs and add

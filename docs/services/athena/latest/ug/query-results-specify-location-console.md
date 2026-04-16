@@ -1,3 +1,7 @@
+---
+title: "Specify a query result location using the Athena console"
+---
+
 # Specify a query result location using the Athena console
 
 Before you can run a query, a query result bucket location in Amazon S3 must be

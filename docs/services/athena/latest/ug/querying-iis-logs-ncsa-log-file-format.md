@@ -1,3 +1,7 @@
+---
+title: "Query NCSA log file format"
+---
+
 # Query NCSA log file format
 
 IIS also uses the [NCSA\

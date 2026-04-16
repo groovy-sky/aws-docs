@@ -1,3 +1,7 @@
+---
+title: "Tag"
+---
+
 # Tag
 
 A label that you assign to a resource. Athena resources include

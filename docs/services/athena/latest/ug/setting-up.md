@@ -1,3 +1,7 @@
+---
+title: "Set up, administrative, and programmatic access"
+---
+
 # Set up, administrative, and programmatic access
 
 If you've already signed up for Amazon Web Services, you can start using Amazon Athena immediately. If

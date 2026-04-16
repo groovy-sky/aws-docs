@@ -1,3 +1,7 @@
+---
+title: "Save a query with a name"
+---
+
 # Save a query with a name
 
 ###### To save a query and give it a name

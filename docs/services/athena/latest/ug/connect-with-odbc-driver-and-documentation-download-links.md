@@ -1,3 +1,7 @@
+---
+title: "Athena ODBC 1.x driver"
+---
+
 # Athena ODBC 1.x driver
 
 You can use an ODBC connection to connect to Athena from third-party SQL client tools and applications. Use the links on this page to download the Amazon Athena 1.x ODBC driver License Agreement,

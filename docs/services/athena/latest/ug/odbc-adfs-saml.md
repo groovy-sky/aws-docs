@@ -1,3 +1,7 @@
+---
+title: "Configure federated access to Amazon Athena for Microsoft AD FS users using an ODBC client"
+---
+
 # Configure federated access to Amazon Athena for Microsoft AD FS users using an ODBC client
 
 To set up federated access to Amazon Athena for Microsoft Active Directory Federation Services

@@ -1,3 +1,7 @@
+---
+title: "Scope"
+---
+
 # Scope
 
 The wrapper that contains the AWS accounts that are in

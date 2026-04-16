@@ -1,3 +1,7 @@
+---
+title: "Optimize your queries"
+---
+
 # Optimize your queries
 
 Use the suggestions in this section for optimizing your SQL queries in Athena.

@@ -1,3 +1,7 @@
+---
+title: "Add columns at the beginning or in the middle of the table"
+---
+
 # Add columns at the beginning or in the middle of the table
 
 Adding columns is one of the most frequent schema changes. For example, you may add a

@@ -1,3 +1,7 @@
+---
+title: "List of preinstalled Python libraries"
+---
+
 # List of preinstalled Python libraries
 
 Preinstalled Python libraries include the following.

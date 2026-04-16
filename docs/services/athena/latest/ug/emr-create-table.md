@@ -1,3 +1,7 @@
+---
+title: "Create and query a basic table based on Amazon EMR log files"
+---
+
 # Create and query a basic table based on Amazon EMR log files
 
 The following example creates a basic table, `myemrlogs`, based on log

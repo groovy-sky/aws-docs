@@ -1,3 +1,7 @@
+---
+title: "DeleteNotebook"
+---
+
 # DeleteNotebook
 
 Deletes the specified notebook.

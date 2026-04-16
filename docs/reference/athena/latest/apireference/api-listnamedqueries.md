@@ -1,3 +1,7 @@
+---
+title: "ListNamedQueries"
+---
+
 # ListNamedQueries
 
 Provides a list of available query IDs only for queries saved in the specified

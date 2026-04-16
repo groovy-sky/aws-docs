@@ -1,3 +1,7 @@
+---
+title: "Query arrays"
+---
+
 # Query arrays
 
 Amazon Athena lets you create arrays, concatenate them, convert them to different data types,

@@ -1,3 +1,7 @@
+---
+title: "Specify your own path extractors"
+---
+
 # Specify your own path extractors
 
 If your Amazon Ion fields do not map neatly to Hive columns, you can specify your own

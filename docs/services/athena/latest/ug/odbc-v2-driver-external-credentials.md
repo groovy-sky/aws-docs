@@ -1,3 +1,7 @@
+---
+title: "External credentials"
+---
+
 # External credentials
 
 External credentials is a generic authentication plugin that you can use to connect to any

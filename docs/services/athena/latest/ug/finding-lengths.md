@@ -1,3 +1,7 @@
+---
+title: "Find array lengths"
+---
+
 # Find array lengths
 
 The `cardinality` function returns the length of an array, as in this example:

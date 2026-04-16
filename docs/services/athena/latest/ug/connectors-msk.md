@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena MSK connector"
+---
+
 # Amazon Athena MSK connector
 
 The Amazon Athena connector for [Amazon MSK](https://aws.amazon.com/msk) enables

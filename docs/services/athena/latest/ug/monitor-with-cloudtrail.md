@@ -1,3 +1,7 @@
+---
+title: "Log Amazon Athena API calls with AWS CloudTrail"
+---
+
 # Log Amazon Athena API calls with AWS CloudTrail
 
 Athena is integrated with AWS CloudTrail, a service that provides a record of actions taken by a

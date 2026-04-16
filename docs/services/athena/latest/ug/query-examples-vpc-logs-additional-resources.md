@@ -1,3 +1,7 @@
+---
+title: "Additional resources"
+---
+
 # Additional resources
 
 For more information about using Athena to analyze VPC flow logs, see the following

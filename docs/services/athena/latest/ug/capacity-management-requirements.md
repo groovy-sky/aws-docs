@@ -1,3 +1,7 @@
+---
+title: "Determine capacity requirements"
+---
+
 # Determine capacity requirements
 
 Before you create a capacity reservation, you can estimate the capacity required so that

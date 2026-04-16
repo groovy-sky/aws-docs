@@ -1,3 +1,7 @@
+---
+title: "Examples of CTAS queries"
+---
+
 # Examples of CTAS queries
 
 Use the following examples to create CTAS queries. For information about the CTAS syntax,

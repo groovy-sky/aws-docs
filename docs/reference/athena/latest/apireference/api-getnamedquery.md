@@ -1,3 +1,7 @@
+---
+title: "GetNamedQuery"
+---
+
 # GetNamedQuery
 
 Returns information about a single query. Requires that you have access to the

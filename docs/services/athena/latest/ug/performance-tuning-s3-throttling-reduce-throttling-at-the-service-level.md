@@ -1,3 +1,7 @@
+---
+title: "Reduce throttling at the service level"
+---
+
 # Reduce throttling at the service level
 
 To avoid Amazon S3 throttling at the service level, you can monitor your usage and adjust

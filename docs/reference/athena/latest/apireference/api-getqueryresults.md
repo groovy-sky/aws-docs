@@ -1,3 +1,7 @@
+---
+title: "GetQueryResults"
+---
+
 # GetQueryResults
 
 Streams the results of a single query execution specified by

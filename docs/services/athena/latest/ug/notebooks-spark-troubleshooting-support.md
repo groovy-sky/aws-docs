@@ -1,3 +1,7 @@
+---
+title: "Get support"
+---
+
 # Get support
 
 For assistance from AWS, choose **Support**, **Support**

@@ -1,3 +1,7 @@
+---
+title: "Use Iceberg table compression"
+---
+
 # Use Iceberg table compression
 
 The compression options for Iceberg tables in Athena vary by engine version and file

@@ -1,3 +1,7 @@
+---
+title: "Configure and deploy resources using AWS CloudFormation"
+---
+
 # Configure and deploy resources using AWS CloudFormation
 
 You can configure and deploy resources using CloudFormation templates to start using Trusted

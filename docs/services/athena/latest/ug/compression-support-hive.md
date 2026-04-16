@@ -1,3 +1,7 @@
+---
+title: "Use Hive table compression"
+---
+
 # Use Hive table compression
 
 The compression options for Hive tables in Athena vary by engine version and file

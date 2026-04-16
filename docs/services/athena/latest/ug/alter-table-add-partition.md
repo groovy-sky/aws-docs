@@ -1,3 +1,7 @@
+---
+title: "ALTER TABLE ADD PARTITION"
+---
+
 # ALTER TABLE ADD PARTITION
 
 Creates one or more partition columns for the table. Each partition consists of one or

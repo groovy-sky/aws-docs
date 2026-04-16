@@ -1,3 +1,7 @@
+---
+title: "BatchGetPreparedStatement"
+---
+
 # BatchGetPreparedStatement
 
 Returns the details of a single prepared statement or a list of up to 256 prepared

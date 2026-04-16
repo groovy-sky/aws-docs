@@ -1,3 +1,7 @@
+---
+title: "SHOW COLUMNS"
+---
+
 # SHOW COLUMNS
 
 Shows the columns in a table.

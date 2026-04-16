@@ -1,3 +1,7 @@
+---
+title: "Get started with the ODBC 2.x driver"
+---
+
 # Get started with the ODBC 2.x driver
 
 Use the information in this section to get started with the Amazon Athena ODBC 2.x driver. The

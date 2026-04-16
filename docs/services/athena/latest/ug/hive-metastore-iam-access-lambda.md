@@ -1,3 +1,7 @@
+---
+title: "Allow Lambda function access to external Hive metastores"
+---
+
 # Allow Lambda function access to external Hive metastores
 
 To invoke a Lambda function in your account, you must create a role that has the following

@@ -1,3 +1,7 @@
+---
+title: "Override client-side settings"
+---
+
 # Override client-side settings
 
 When you create or edit a workgroup, you can choose the option **Override**

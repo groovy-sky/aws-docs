@@ -1,3 +1,7 @@
+---
+title: "ALTER TABLE DROP PARTITION"
+---
+
 # ALTER TABLE DROP PARTITION
 
 Drops one or more specified partitions for the named table.

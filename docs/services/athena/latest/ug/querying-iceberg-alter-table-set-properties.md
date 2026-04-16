@@ -1,3 +1,7 @@
+---
+title: "ALTER TABLE SET TBLPROPERTIES"
+---
+
 # ALTER TABLE SET TBLPROPERTIES
 
 Adds properties to an Iceberg table and sets their assigned values.

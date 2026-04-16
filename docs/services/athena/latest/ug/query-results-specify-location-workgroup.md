@@ -1,3 +1,7 @@
+---
+title: "Specify a query result location using a workgroup"
+---
+
 # Specify a query result location using a workgroup
 
 You specify the query result location in a workgroup configuration using the

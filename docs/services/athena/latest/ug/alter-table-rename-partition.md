@@ -1,3 +1,7 @@
+---
+title: "ALTER TABLE RENAME PARTITION"
+---
+
 # ALTER TABLE RENAME PARTITION
 
 Renames a partition value.

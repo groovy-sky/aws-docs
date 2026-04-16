@@ -1,3 +1,7 @@
+---
+title: "Create Amazon Ion tables"
+---
+
 # Create Amazon Ion tables
 
 To create a table in Athena from data stored in Amazon Ion format, you can use one of the

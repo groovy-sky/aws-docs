@@ -1,3 +1,7 @@
+---
+title: "CreateNamedQuery"
+---
+
 # CreateNamedQuery
 
 Creates a named query in the specified workgroup. Requires that you have access to the

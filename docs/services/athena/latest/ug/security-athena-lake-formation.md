@@ -1,3 +1,7 @@
+---
+title: "Use Athena to query data registered with AWS Lake Formation"
+---
+
 # Use Athena to query data registered with AWS Lake Formation
 
 [AWS Lake Formation](../../../lake-formation/latest/dg/what-is-lake-formation.md) allows you to define

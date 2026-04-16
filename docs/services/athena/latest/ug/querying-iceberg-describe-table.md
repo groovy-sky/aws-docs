@@ -1,3 +1,7 @@
+---
+title: "DESCRIBE"
+---
+
 # DESCRIBE
 
 Describes table information.

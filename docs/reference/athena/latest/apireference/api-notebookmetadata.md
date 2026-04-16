@@ -1,3 +1,7 @@
+---
+title: "NotebookMetadata"
+---
+
 # NotebookMetadata
 
 Contains metadata for notebook, including the notebook name, ID, workgroup, and time

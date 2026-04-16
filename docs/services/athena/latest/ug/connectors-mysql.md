@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena MySQL connector"
+---
+
 # Amazon Athena MySQL connector
 
 The Amazon Athena Lambda MySQL connector enables Amazon Athena to access MySQL databases.

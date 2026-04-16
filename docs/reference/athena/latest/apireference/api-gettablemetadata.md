@@ -1,3 +1,7 @@
+---
+title: "GetTableMetadata"
+---
+
 # GetTableMetadata
 
 Returns table metadata for the specified catalog, database, and table.

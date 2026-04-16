@@ -1,3 +1,7 @@
+---
+title: "GetChangeLogs"
+---
+
 # GetChangeLogs
 
 ###### Important

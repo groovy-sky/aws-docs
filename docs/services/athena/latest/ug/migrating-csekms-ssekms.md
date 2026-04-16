@@ -1,3 +1,7 @@
+---
+title: "Migrate from CSE-KMS to SSE-KMS"
+---
+
 # Migrate from CSE-KMS to SSE-KMS
 
 You can specify CSE-KMS encryption in two ways – during the workgroup query

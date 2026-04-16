@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Azure Synapse connector"
+---
+
 # Amazon Athena Azure Synapse connector
 
 The Amazon Athena connector for [Azure\

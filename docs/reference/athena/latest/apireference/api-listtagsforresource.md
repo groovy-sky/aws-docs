@@ -1,3 +1,7 @@
+---
+title: "ListTagsForResource"
+---
+
 # ListTagsForResource
 
 Lists the tags associated with an Athena resource.

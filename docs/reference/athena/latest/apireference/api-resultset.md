@@ -1,3 +1,7 @@
+---
+title: "ResultSet"
+---
+
 # ResultSet
 
 The metadata and rows that make up a query result set. The metadata describes the

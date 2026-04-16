@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena IBM Db2 AS/400 (Db2 iSeries) connector"
+---
+
 # Amazon Athena IBM Db2 AS/400 (Db2 iSeries) connector
 
 The Amazon Athena connector for Db2 AS/400 enables Amazon Athena to run SQL queries on your IBM

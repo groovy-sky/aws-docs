@@ -1,3 +1,7 @@
+---
+title: "Enable federated access to the Athena API"
+---
+
 # Enable federated access to the Athena API
 
 This section discusses federated access that allows a user or client application in your

@@ -1,3 +1,7 @@
+---
+title: "Rename columns"
+---
+
 # Rename columns
 
 You may want to rename columns in your tables to correct spelling, make column names

@@ -1,3 +1,7 @@
+---
+title: "ListAssessmentControlInsightsByControlDomain"
+---
+
 # ListAssessmentControlInsightsByControlDomain
 
 ###### Important

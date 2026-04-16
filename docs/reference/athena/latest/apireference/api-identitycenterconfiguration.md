@@ -1,3 +1,7 @@
+---
+title: "IdentityCenterConfiguration"
+---
+
 # IdentityCenterConfiguration
 
 Specifies whether the workgroup is IAM Identity Center supported.

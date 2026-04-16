@@ -1,3 +1,7 @@
+---
+title: "Convert arrays to strings"
+---
+
 # Convert arrays to strings
 
 To convert an array into a single string, use the `array_join` function. The

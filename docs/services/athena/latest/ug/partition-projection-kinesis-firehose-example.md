@@ -1,3 +1,7 @@
+---
+title: "Amazon Data Firehose example"
+---
+
 # Amazon Data Firehose example
 
 When you use Firehose to deliver data to Amazon S3, the default configuration writes objects with

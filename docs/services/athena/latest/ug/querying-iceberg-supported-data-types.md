@@ -1,3 +1,7 @@
+---
+title: "Supported data types for Iceberg tables in Athena"
+---
+
 # Supported data types for Iceberg tables in Athena
 
 Athena can query Iceberg tables that contain the following data types:

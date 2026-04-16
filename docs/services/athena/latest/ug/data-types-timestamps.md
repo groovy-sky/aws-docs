@@ -1,3 +1,7 @@
+---
+title: "Work with timestamp data"
+---
+
 # Work with timestamp data
 
 This section describes some considerations for working with timestamp data in

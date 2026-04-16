@@ -1,3 +1,7 @@
+---
+title: "Query Iceberg table data"
+---
+
 # Query Iceberg table data
 
 To query an Iceberg dataset, use a standard `SELECT` statement like the

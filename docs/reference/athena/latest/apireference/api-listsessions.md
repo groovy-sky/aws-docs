@@ -1,3 +1,7 @@
+---
+title: "ListSessions"
+---
+
 # ListSessions
 
 Lists the sessions in a workgroup that are in an active state like

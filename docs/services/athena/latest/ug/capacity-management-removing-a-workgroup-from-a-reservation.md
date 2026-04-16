@@ -1,3 +1,7 @@
+---
+title: "Remove a workgroup from a reservation"
+---
+
 # Remove a workgroup from a reservation
 
 If you no longer require dedicated capacity for a workgroup or want to move a workgroup to its own reservation,

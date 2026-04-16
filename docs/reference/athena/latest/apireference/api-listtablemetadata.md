@@ -1,3 +1,7 @@
+---
+title: "ListTableMetadata"
+---
+
 # ListTableMetadata
 
 Lists the metadata for the tables in the specified data catalog database.

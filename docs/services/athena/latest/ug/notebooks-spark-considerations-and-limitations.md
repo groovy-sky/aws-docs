@@ -1,3 +1,7 @@
+---
+title: "Considerations and limitations"
+---
+
 # Considerations and limitations
 
 ## Apache Spark version 3.5

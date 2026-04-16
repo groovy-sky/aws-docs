@@ -1,3 +1,7 @@
+---
+title: "Register your connection as a Glue Data Catalog"
+---
+
 # Register your connection as a Glue Data Catalog
 
 After you create your data source, you can use the Athena console to register your

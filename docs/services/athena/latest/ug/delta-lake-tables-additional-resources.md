@@ -1,3 +1,7 @@
+---
+title: "Additional resources"
+---
+
 # Additional resources
 
 For a discussion of using Delta Lake tables with AWS Glue and querying them with Athena,

@@ -1,3 +1,7 @@
+---
+title: "Flatten nested arrays"
+---
+
 # Flatten nested arrays
 
 When working with nested arrays, you often need to expand nested array elements into a

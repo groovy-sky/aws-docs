@@ -1,3 +1,7 @@
+---
+title: "Access array elements"
+---
+
 # Access array elements
 
 To access array elements, use the `[]` operator, with 1 specifying the first element, 2 specifying the second element, and so on, as in this example:

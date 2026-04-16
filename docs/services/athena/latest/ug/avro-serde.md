@@ -1,3 +1,7 @@
+---
+title: "Avro SerDe"
+---
+
 # Avro SerDe
 
 Use the Avro SerDe to create Athena tables from Avro data.

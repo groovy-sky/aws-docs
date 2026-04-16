@@ -1,3 +1,7 @@
+---
+title: "Work with views"
+---
+
 # Work with views
 
 A view in Amazon Athena is a logical table, not a physical table. The query that defines a

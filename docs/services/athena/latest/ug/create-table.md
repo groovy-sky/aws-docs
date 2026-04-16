@@ -1,3 +1,7 @@
+---
+title: "CREATE TABLE"
+---
+
 # CREATE TABLE
 
 Creates a table with the name and the parameters that you specify.

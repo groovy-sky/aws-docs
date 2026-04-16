@@ -1,3 +1,7 @@
+---
+title: "Query Amazon Route 53 resolver query logs"
+---
+
 # Query Amazon Route 53 resolver query logs
 
 You can create Athena tables for your Amazon Route 53 Resolver query logs and query them from

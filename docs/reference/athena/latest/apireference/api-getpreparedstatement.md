@@ -1,3 +1,7 @@
+---
+title: "GetPreparedStatement"
+---
+
 # GetPreparedStatement
 
 Retrieves the prepared statement with the specified name from the specified

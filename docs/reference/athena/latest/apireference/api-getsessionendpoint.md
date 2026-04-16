@@ -1,3 +1,7 @@
+---
+title: "GetSessionEndpoint"
+---
+
 # GetSessionEndpoint
 
 Gets a connection endpoint and authentication token for a given session Id.

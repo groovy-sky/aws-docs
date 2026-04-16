@@ -1,3 +1,7 @@
+---
+title: "QueryExecutionContext"
+---
+
 # QueryExecutionContext
 
 The database and data catalog context in which the query execution occurs.

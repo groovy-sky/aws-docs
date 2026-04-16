@@ -1,3 +1,7 @@
+---
+title: "Change a column data type"
+---
+
 # Change a column data type
 
 You might want to use a different column type when the existing type can no longer

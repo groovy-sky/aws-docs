@@ -1,3 +1,7 @@
+---
+title: "CreateAssessmentFrameworkControl"
+---
+
 # CreateAssessmentFrameworkControl
 
 The control entity attributes that uniquely identify an existing control to be added to

@@ -1,3 +1,7 @@
+---
+title: "IAM profile"
+---
+
 # IAM profile
 
 You can configure a named profile to connect to Amazon Athena using the ODBC driver. You

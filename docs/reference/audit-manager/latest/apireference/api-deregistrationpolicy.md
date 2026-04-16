@@ -1,3 +1,7 @@
+---
+title: "DeregistrationPolicy"
+---
+
 # DeregistrationPolicy
 
 The deregistration policy for the data that's stored in AWS Audit Manager. You can

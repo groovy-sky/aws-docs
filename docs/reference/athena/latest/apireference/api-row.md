@@ -1,3 +1,7 @@
+---
+title: "Row"
+---
+
 # Row
 
 The rows that make up a query result table.

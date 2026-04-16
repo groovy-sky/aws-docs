@@ -1,3 +1,7 @@
+---
+title: "ListNamedQueriesInput"
+---
+
 # ListNamedQueriesInput
 
 ## Contents

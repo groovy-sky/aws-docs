@@ -1,3 +1,7 @@
+---
+title: "Use aggregation functions with arrays"
+---
+
 # Use aggregation functions with arrays
 
 - To add values within an array, use `SUM`, as in the following

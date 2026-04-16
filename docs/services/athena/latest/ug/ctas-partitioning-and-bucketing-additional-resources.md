@@ -1,3 +1,7 @@
+---
+title: "Additional resources"
+---
+
 # Additional resources
 
 - For a `CREATE TABLE AS` example that creates both bucketed and

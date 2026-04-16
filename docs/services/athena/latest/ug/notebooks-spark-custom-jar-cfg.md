@@ -1,3 +1,7 @@
+---
+title: "Use Spark properties to specify custom configuration"
+---
+
 # Use Spark properties to specify custom configuration
 
 When you create or edit a session in Amazon Athena for Apache Spark, you can use [Spark\

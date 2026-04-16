@@ -1,3 +1,7 @@
+---
+title: "ALTER VIEW DIALECT"
+---
+
 # ALTER VIEW DIALECT
 
 Adds or drops an engine dialect from a AWS Glue Data Catalog view. Applies to AWS Glue Data Catalog views

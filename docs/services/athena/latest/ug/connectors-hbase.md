@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena HBase connector"
+---
+
 # Amazon Athena HBase connector
 
 The Amazon Athena HBase connector enables Amazon Athena to communicate with your Apache HBase

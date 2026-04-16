@@ -1,3 +1,7 @@
+---
+title: "Specify a query result location"
+---
+
 # Specify a query result location
 
 The query result location that Athena uses is determined by a combination of workgroup

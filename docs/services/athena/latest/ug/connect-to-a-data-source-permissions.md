@@ -1,3 +1,7 @@
+---
+title: "Permissions to create and use a data source in Athena"
+---
+
 # Permissions to create and use a data source in Athena
 
 To create and use a data source, you need the following sets of permissions.

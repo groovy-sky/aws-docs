@@ -1,3 +1,7 @@
+---
+title: "Rename an undisplayed saved query"
+---
+
 # Rename an undisplayed saved query
 
 ###### To rename a saved query not displayed in the query editor

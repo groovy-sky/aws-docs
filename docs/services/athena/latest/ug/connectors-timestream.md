@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Timestream connector"
+---
+
 # Amazon Athena Timestream connector
 
 The Amazon Athena Timestream connector enables Amazon Athena to communicate with [Amazon Timestream](https://aws.amazon.com/timestream), making your time series data

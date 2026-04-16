@@ -1,3 +1,7 @@
+---
+title: "Query Amazon CloudFront logs"
+---
+
 # Query Amazon CloudFront logs
 
 You can configure Amazon CloudFront CDN to export Web distribution access logs to Amazon Simple Storage Service. Use

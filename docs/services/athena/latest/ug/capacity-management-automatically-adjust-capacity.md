@@ -1,3 +1,7 @@
+---
+title: "Automatically adjust capacity"
+---
+
 # Automatically adjust capacity
 
 You can automatically adjust the capacity of your reservation in response to workload utilization using Athena's auto-scaling solution. It automatically adds capacity when utilization exceeds your configured threshold and removes capacity during periods of low utilization to reduce costs. You can customize its behavior by setting different utilization thresholds, minimum and maximum DPU quantities, scaling increments, and utilization evaluation frequency. This eliminates manual capacity adjustments while helping you balance performance requirements with cost optimization.

@@ -1,3 +1,7 @@
+---
+title: "Register federated catalogs in Athena"
+---
+
 # Register federated catalogs in Athena
 
 After you create connections to federated data sources, you can register them as

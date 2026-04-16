@@ -1,3 +1,7 @@
+---
+title: "VALUES"
+---
+
 # VALUES
 
 Creates a literal inline table. The table can be anonymous, or you can use the

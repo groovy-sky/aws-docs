@@ -1,3 +1,7 @@
+---
+title: "Use a SerDe to create a table"
+---
+
 # Use a SerDe to create a table
 
 To use a SerDe when creating a table in Athena, use one of the following

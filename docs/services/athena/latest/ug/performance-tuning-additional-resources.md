@@ -1,3 +1,7 @@
+---
+title: "Additional resources"
+---
+
 # Additional resources
 
 For additional information about performance tuning in Athena, consider the following

@@ -1,3 +1,7 @@
+---
+title: "List named queries"
+---
+
 # List named queries
 
 The `ListNamedQueryExample` shows how to obtain a list of named query

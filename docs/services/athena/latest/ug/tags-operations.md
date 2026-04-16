@@ -1,3 +1,7 @@
+---
+title: "Use API and AWS CLI tag operations"
+---
+
 # Use API and AWS CLI tag operations
 
 Use the following tag operations to add, remove, or list tags on a resource.

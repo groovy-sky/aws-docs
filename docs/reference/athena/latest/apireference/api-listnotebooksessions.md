@@ -1,3 +1,7 @@
+---
+title: "ListNotebookSessions"
+---
+
 # ListNotebookSessions
 
 Lists, in descending order, the sessions that have been created in a notebook that are

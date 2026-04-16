@@ -1,3 +1,7 @@
+---
+title: "Main ODBC 2.x connection parameters"
+---
+
 # Main ODBC 2.x connection parameters
 
 The following sections describe each of the main connection parameters.

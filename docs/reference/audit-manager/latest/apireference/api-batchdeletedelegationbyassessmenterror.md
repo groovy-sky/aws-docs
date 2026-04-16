@@ -1,3 +1,7 @@
+---
+title: "BatchDeleteDelegationByAssessmentError"
+---
+
 # BatchDeleteDelegationByAssessmentError
 
 An error entity for the `BatchDeleteDelegationByAssessment` API. This is

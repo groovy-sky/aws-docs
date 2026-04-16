@@ -1,3 +1,7 @@
+---
+title: "Authentication options"
+---
+
 # Authentication options
 
 You can connect to Amazon Athena using the following authentication types. For all types, the

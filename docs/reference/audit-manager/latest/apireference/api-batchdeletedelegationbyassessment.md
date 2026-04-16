@@ -1,3 +1,7 @@
+---
+title: "BatchDeleteDelegationByAssessment"
+---
+
 # BatchDeleteDelegationByAssessment
 
 ###### Important

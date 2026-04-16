@@ -1,3 +1,7 @@
+---
+title: "Configure minimum encryption for a workgroup"
+---
+
 # Configure minimum encryption for a workgroup
 
 As an administrator of an Athena SQL workgroup, you can enforce a minimal level of

@@ -1,3 +1,7 @@
+---
+title: "SHOW TABLES"
+---
+
 # SHOW TABLES
 
 Lists all the base tables and views in a database.

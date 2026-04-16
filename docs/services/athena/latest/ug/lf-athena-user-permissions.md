@@ -1,3 +1,7 @@
+---
+title: "Manage Lake Formation and Athena user permissions"
+---
+
 # Manage Lake Formation and Athena user permissions
 
 Lake Formation vends credentials to query Amazon S3 data stores or federated catalogs that are

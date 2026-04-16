@@ -1,3 +1,7 @@
+---
+title: "UpdateNotebookMetadata"
+---
+
 # UpdateNotebookMetadata
 
 Updates the metadata for a notebook.

@@ -1,3 +1,7 @@
+---
+title: "Browser SAML"
+---
+
 # Browser SAML
 
 Browser SAML is a generic authentication plugin that can work with SAML based identity

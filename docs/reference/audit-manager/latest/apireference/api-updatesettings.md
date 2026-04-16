@@ -1,3 +1,7 @@
+---
+title: "UpdateSettings"
+---
+
 # UpdateSettings
 
 ###### Important

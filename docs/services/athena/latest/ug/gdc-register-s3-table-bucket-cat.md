@@ -1,3 +1,7 @@
+---
+title: "Register S3 table bucket catalogs and query Tables from Athena"
+---
+
 # Register S3 table bucket catalogs and query Tables from Athena
 
 Amazon S3 table buckets are a bucket type in Amazon S3 that is purpose-built to store tabular

@@ -1,3 +1,7 @@
+---
+title: "Merge on read (MoR) create table examples"
+---
+
 # Merge on read (MoR) create table examples
 
 Hudi creates two tables in the metastore for MoR: a table for snapshot queries, and a

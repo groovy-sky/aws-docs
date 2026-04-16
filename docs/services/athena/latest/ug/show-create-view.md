@@ -1,3 +1,7 @@
+---
+title: "SHOW CREATE VIEW"
+---
+
 # SHOW CREATE VIEW
 
 Shows the SQL statement that created the specified Athena or Data Catalog view. The SQL returned

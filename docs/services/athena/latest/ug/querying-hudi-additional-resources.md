@@ -1,3 +1,7 @@
+---
+title: "Additional resources"
+---
+
 # Additional resources
 
 For additional resources on using Apache Hudi with Athena, see the following

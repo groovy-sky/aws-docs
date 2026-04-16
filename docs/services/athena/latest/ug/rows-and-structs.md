@@ -1,3 +1,7 @@
+---
+title: "Query arrays with complex types and nested structures"
+---
+
 # Query arrays with complex types and nested structures
 
 Your source data often contains arrays with complex data types and nested structures.

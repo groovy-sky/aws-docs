@@ -1,3 +1,7 @@
+---
+title: "UpdateNamedQuery"
+---
+
 # UpdateNamedQuery
 
 Updates a [NamedQuery](api-namedquery.md) object. The database or workgroup cannot be

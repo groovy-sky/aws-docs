@@ -1,3 +1,7 @@
+---
+title: "Connect to Amazon Athena with ODBC and JDBC drivers"
+---
+
 # Connect to Amazon Athena with ODBC and JDBC drivers
 
 To explore and visualize your data with business intelligence tools, download, install,

@@ -1,3 +1,7 @@
+---
+title: "ServiceMetadata"
+---
+
 # ServiceMetadata
 
 The metadata that's associated with the AWS service.

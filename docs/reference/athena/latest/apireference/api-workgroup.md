@@ -1,3 +1,7 @@
+---
+title: "WorkGroup"
+---
+
 # WorkGroup
 
 A workgroup, which contains a name, description, creation time, state, and other

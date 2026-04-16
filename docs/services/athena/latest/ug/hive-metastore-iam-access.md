@@ -1,3 +1,7 @@
+---
+title: "Allow access to the Athena Data Connector for External Hive Metastore"
+---
+
 # Allow access to the Athena Data Connector for External Hive Metastore
 
 The permission policy examples in this topic demonstrate required allowed actions and the

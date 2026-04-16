@@ -1,3 +1,7 @@
+---
+title: "CreateControlMappingSource"
+---
+
 # CreateControlMappingSource
 
 The mapping attributes that determine the evidence source for a given control, along

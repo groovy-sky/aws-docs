@@ -1,3 +1,7 @@
+---
+title: "Okta credentials"
+---
+
 # Okta credentials
 
 A SAML-based authentication mechanism that enables authentication to Athena using the

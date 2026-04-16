@@ -1,3 +1,7 @@
+---
+title: "Use CTAS and INSERT INTO to create Amazon Ion tables"
+---
+
 # Use CTAS and INSERT INTO to create Amazon Ion tables
 
 You can use the `CREATE TABLE AS SELECT` (CTAS) and `INSERT INTO`

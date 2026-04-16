@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot the ODBC 2.x driver"
+---
+
 # Troubleshoot the ODBC 2.x driver
 
 If you encounter issues with the Amazon Athena ODBC driver, you can contact Support (in the

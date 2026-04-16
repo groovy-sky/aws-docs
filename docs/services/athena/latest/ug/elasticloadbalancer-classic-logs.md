@@ -1,3 +1,7 @@
+---
+title: "Query Classic Load Balancer logs"
+---
+
 # Query Classic Load Balancer logs
 
 Use Classic Load Balancer logs to analyze and understand traffic patterns to and from

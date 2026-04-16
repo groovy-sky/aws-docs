@@ -1,3 +1,7 @@
+---
+title: "Release notes"
+---
+
 # Release notes
 
 Describes Amazon Athena features, improvements, and bug fixes by release date.

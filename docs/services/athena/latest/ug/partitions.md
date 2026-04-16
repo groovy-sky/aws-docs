@@ -1,3 +1,7 @@
+---
+title: "Partition your data"
+---
+
 # Partition your data
 
 By partitioning your data, you can restrict the amount of data scanned by each query, thus

@@ -1,3 +1,7 @@
+---
+title: "DeleteDataCatalog"
+---
+
 # DeleteDataCatalog
 
 Deletes a data catalog.

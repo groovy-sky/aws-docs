@@ -1,3 +1,7 @@
+---
+title: "Example queries"
+---
+
 # Example queries
 
 The following examples show some queries that you can perform from Athena on your

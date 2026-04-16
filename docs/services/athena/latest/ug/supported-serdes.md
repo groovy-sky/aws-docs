@@ -1,3 +1,7 @@
+---
+title: "Choose a SerDe for your data"
+---
+
 # Choose a SerDe for your data
 
 The following table lists the data formats supported in Athena and their corresponding

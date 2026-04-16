@@ -1,3 +1,7 @@
+---
+title: "Convert array data types"
+---
+
 # Convert array data types
 
 To convert data in arrays to supported data types, use the `CAST` operator, as `CAST(value AS type)`.

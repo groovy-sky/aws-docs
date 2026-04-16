@@ -1,3 +1,7 @@
+---
+title: "AclConfiguration"
+---
+
 # AclConfiguration
 
 Indicates that an Amazon S3 canned ACL should be set to control ownership of

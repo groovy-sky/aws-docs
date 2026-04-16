@@ -1,3 +1,7 @@
+---
+title: "Understand federated table name qualifiers"
+---
+
 # Understand federated table name qualifiers
 
 Athena uses the following terms to refer to hierarchies of data objects:

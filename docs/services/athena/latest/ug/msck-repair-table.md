@@ -1,3 +1,7 @@
+---
+title: "MSCK REPAIR TABLE"
+---
+
 # MSCK REPAIR TABLE
 
 Use the `MSCK REPAIR TABLE` command to update the metadata in the catalog after

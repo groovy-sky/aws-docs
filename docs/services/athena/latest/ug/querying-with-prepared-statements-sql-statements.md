@@ -1,3 +1,7 @@
+---
+title: "SQL syntax for prepared statements"
+---
+
 # SQL syntax for prepared statements
 
 You can use the `PREPARE`, `EXECUTE` and `DEALLOCATE

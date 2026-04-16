@@ -1,3 +1,7 @@
+---
+title: "MERGE INTO"
+---
+
 # MERGE INTO
 
 Conditionally updates, deletes, or inserts rows into an Apache Iceberg table. A single

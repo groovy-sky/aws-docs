@@ -1,3 +1,7 @@
+---
+title: "Allow access to Athena Federated Query: Example policies"
+---
+
 # Allow access to Athena Federated Query: Example policies
 
 The permission policy examples in this topic demonstrate required allowed actions and the

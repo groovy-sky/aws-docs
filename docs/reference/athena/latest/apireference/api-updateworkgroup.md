@@ -1,3 +1,7 @@
+---
+title: "UpdateWorkGroup"
+---
+
 # UpdateWorkGroup
 
 Updates the workgroup with the specified name. The workgroup's name cannot be changed.

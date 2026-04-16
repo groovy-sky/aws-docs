@@ -1,3 +1,7 @@
+---
+title: "URL"
+---
+
 # URL
 
 Short for uniform resource locator. A URL is used as a unique identifier to locate a

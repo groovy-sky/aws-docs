@@ -1,3 +1,7 @@
+---
+title: "Create a table for CloudFront logs in Athena using partition projection with JSON"
+---
+
 # Create a table for CloudFront logs in Athena using partition projection with JSON
 
 You can reduce query runtime and automate partition management with Athena partition

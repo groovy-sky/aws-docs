@@ -1,3 +1,7 @@
+---
+title: "ExportNotebook"
+---
+
 # ExportNotebook
 
 Exports the specified notebook and its metadata.

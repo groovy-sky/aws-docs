@@ -1,3 +1,7 @@
+---
+title: "Query S3 Express One Zone data"
+---
+
 # Query S3 Express One Zone data
 
 The Amazon S3 Express One Zone storage class is a highly performant Amazon S3 storage class that provides single-digit

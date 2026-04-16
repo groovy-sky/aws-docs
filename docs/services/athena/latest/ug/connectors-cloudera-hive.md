@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Cloudera Hive connector"
+---
+
 # Amazon Athena Cloudera Hive connector
 
 The Amazon Athena connector for Cloudera Hive enables Athena to run SQL queries on the [Cloudera Hive](https://www.cloudera.com/products/open-source/apache-hadoop/apache-hive.html) Hadoop distribution. The connector transforms your Athena SQL

@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Vertica connector"
+---
+
 # Amazon Athena Vertica connector
 
 Vertica is a columnar database platform that can be deployed in the cloud or on premises

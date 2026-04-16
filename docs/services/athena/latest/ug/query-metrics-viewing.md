@@ -1,3 +1,7 @@
+---
+title: "Monitor Athena query metrics with CloudWatch"
+---
+
 # Monitor Athena query metrics with CloudWatch
 
 Athena publishes query-related metrics to Amazon CloudWatch, when the [publish query metrics to CloudWatch](athena-cloudwatch-metrics-enable.md)

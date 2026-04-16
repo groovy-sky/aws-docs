@@ -1,3 +1,7 @@
+---
+title: "ColumnInfo"
+---
+
 # ColumnInfo
 
 Information about the columns in a query execution result.

@@ -1,3 +1,7 @@
+---
+title: "QueryExecution"
+---
+
 # QueryExecution
 
 Information about a single instance of a query execution.

@@ -1,3 +1,7 @@
+---
+title: "DataCatalogSummary"
+---
+
 # DataCatalogSummary
 
 The summary information for the data catalog, which includes its name and type.

@@ -1,3 +1,7 @@
+---
+title: "Step 1: Create a database"
+---
+
 # Step 1: Create a database
 
 You first need to create a database in Athena.

@@ -1,3 +1,7 @@
+---
+title: "Work with query results and recent queries"
+---
+
 # Work with query results and recent queries
 
 Amazon Athena automatically stores query results and query execution result metadata for each

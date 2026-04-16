@@ -1,3 +1,7 @@
+---
+title: "Query web server logs stored in Amazon S3"
+---
+
 # Query web server logs stored in Amazon S3
 
 You can use Athena to query Web server logs stored in Amazon S3. The topics in this section show

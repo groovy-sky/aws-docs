@@ -1,3 +1,7 @@
+---
+title: "ResultConfigurationUpdates"
+---
+
 # ResultConfigurationUpdates
 
 The information about the updates in the query results, such as output location and

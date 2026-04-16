@@ -1,3 +1,7 @@
+---
+title: "Run interactive prepared statements in the Athena console"
+---
+
 # Run interactive prepared statements in the Athena console
 
 If you run an existing prepared statement with the syntax `EXECUTE` `prepared_statement` in the query editor, Athena opens the

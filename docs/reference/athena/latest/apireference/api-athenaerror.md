@@ -1,3 +1,7 @@
+---
+title: "AthenaError"
+---
+
 # AthenaError
 
 Provides information about an Athena query error. The

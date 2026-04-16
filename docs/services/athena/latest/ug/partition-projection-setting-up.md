@@ -1,3 +1,7 @@
+---
+title: "Set up partition projection"
+---
+
 # Set up partition projection
 
 Setting up partition projection in a table's properties is a two-step process:

@@ -1,3 +1,7 @@
+---
+title: "Create and query a table for alert logs"
+---
+
 # Create and query a table for alert logs
 
 1. Modify the following sample DDL statement to conform to the structure of your

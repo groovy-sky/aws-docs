@@ -1,3 +1,7 @@
+---
+title: "Query the AWS Glue Data Catalog"
+---
+
 # Query the AWS Glue Data Catalog
 
 Because AWS Glue Data Catalog is used by many AWS services as their central metadata repository,

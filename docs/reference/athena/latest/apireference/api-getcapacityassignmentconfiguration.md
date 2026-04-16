@@ -1,3 +1,7 @@
+---
+title: "GetCapacityAssignmentConfiguration"
+---
+
 # GetCapacityAssignmentConfiguration
 
 Gets the capacity assignment configuration for a capacity reservation, if one

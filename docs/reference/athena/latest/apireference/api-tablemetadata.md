@@ -1,3 +1,7 @@
+---
+title: "TableMetadata"
+---
+
 # TableMetadata
 
 Contains metadata for a table.

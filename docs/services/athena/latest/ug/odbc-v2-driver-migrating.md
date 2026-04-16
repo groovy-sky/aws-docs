@@ -1,3 +1,7 @@
+---
+title: "Migrate to the ODBC 2.x driver"
+---
+
 # Migrate to the ODBC 2.x driver
 
 Because most Athena ODBC 2.x connection parameters are backwardly compatible with the ODBC

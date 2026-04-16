@@ -1,3 +1,7 @@
+---
+title: "Filter arrays using UNNEST"
+---
+
 # Filter arrays using `UNNEST`
 
 To filter an array that includes a nested structure by one of its child elements,

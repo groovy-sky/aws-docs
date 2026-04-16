@@ -1,3 +1,7 @@
+---
+title: "Common authentication parameters"
+---
+
 # Common authentication parameters
 
 The parameters in this section are common to the authentication types as noted.

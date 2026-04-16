@@ -1,3 +1,7 @@
+---
+title: "Azure AD credentials"
+---
+
 # Azure AD credentials
 
 A SAML-based authentication mechanism that enables authentication to Athena using the

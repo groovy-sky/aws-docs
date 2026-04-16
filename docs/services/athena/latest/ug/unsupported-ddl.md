@@ -1,3 +1,7 @@
+---
+title: "Unsupported DDL"
+---
+
 # Unsupported DDL
 
 The following DDL statements are not supported by Athena SQL. For DDL statements supported

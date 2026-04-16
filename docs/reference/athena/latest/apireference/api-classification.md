@@ -1,3 +1,7 @@
+---
+title: "Classification"
+---
+
 # Classification
 
 A classification refers to a set of specific configurations.

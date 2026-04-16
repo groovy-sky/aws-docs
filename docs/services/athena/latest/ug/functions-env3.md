@@ -1,3 +1,7 @@
+---
+title: "Athena engine version 3 functions"
+---
+
 # Athena engine version 3 functions
 
 Functions in Athena engine version 3 are based on Trino. For information about Trino functions, operators,

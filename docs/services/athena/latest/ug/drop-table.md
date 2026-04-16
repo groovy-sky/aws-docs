@@ -1,3 +1,7 @@
+---
+title: "DROP TABLE"
+---
+
 # DROP TABLE
 
 Removes the metadata table definition for the table named `table_name`. When

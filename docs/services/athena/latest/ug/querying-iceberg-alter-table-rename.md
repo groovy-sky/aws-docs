@@ -1,3 +1,7 @@
+---
+title: "ALTER TABLE RENAME"
+---
+
 # ALTER TABLE RENAME
 
 Renames a table.

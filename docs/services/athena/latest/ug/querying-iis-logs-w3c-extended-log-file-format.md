@@ -1,3 +1,7 @@
+---
+title: "Query W3C extended log file format"
+---
+
 # Query W3C extended log file format
 
 The [W3C\

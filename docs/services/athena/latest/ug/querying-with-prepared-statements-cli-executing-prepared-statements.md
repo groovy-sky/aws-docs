@@ -1,3 +1,7 @@
+---
+title: "Execute prepared statements using the AWS CLI"
+---
+
 # Execute prepared statements using the AWS CLI
 
 To execute a prepared statement with the AWS CLI, you can supply values for the

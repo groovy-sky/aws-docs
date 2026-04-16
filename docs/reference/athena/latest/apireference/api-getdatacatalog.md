@@ -1,3 +1,7 @@
+---
+title: "GetDataCatalog"
+---
+
 # GetDataCatalog
 
 Returns the specified data catalog.

@@ -1,3 +1,7 @@
+---
+title: "Specify a table location in Amazon S3"
+---
+
 # Specify a table location in Amazon S3
 
 When you run a `CREATE TABLE` query in Athena, Athena registers your table with

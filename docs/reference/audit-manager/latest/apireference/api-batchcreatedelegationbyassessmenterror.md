@@ -1,3 +1,7 @@
+---
+title: "BatchCreateDelegationByAssessmentError"
+---
+
 # BatchCreateDelegationByAssessmentError
 
 An error entity for the `BatchCreateDelegationByAssessment` API. This is

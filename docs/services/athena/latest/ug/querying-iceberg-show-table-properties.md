@@ -1,3 +1,7 @@
+---
+title: "SHOW TBLPROPERTIES"
+---
+
 # SHOW TBLPROPERTIES
 
 Shows one or more table properties of an Iceberg table. Only Athena-supported table

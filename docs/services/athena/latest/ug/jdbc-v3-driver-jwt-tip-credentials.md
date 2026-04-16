@@ -1,3 +1,7 @@
+---
+title: "JWT with identity center integration"
+---
+
 # JWT with identity center integration
 
 This authentication type allows you to use a JSON web token (JWT) obtained from an

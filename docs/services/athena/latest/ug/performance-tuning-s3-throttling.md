@@ -1,3 +1,7 @@
+---
+title: "Prevent Amazon S3 throttling"
+---
+
 # Prevent Amazon S3 throttling
 
 Throttling is the process of limiting the rate at which you use a service, an application,

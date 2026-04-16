@@ -1,3 +1,7 @@
+---
+title: "AD FS credentials"
+---
+
 # AD FS credentials
 
 A SAML-based authentication mechanism that enables authentication to Athena using

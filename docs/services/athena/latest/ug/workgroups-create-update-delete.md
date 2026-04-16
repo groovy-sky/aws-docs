@@ -1,3 +1,7 @@
+---
+title: "Manage workgroups"
+---
+
 # Manage workgroups
 
 In the Athena console at [https://console.aws.amazon.com/athena/](https://console.aws.amazon.com/athena/home), you can perform the following tasks:

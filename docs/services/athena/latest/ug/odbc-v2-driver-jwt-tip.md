@@ -1,3 +1,7 @@
+---
+title: "JWT Trusted identity propagation credentials provider"
+---
+
 # JWT Trusted identity propagation credentials provider
 
 This authentication type allows you to use a JSON web token (JWT) obtained from an

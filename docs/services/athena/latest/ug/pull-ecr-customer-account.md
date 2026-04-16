@@ -1,3 +1,7 @@
+---
+title: "Pull ECR images to your AWS account"
+---
+
 # Pull ECR images to your AWS account
 
 Athena federation connector Lambda functions use container images that are stored in Athena-managed Amazon ECR repositories. To perform security scans on these container images, you must first copy them to an Amazon ECR repository in your account. This section provides step-by-step instructions on how to copy an image to your repository and configure your Lambda function to use the image.

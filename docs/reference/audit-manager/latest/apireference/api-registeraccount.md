@@ -1,3 +1,7 @@
+---
+title: "RegisterAccount"
+---
+
 # RegisterAccount
 
 ###### Important

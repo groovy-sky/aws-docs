@@ -1,3 +1,7 @@
+---
+title: "CreatePreparedStatement"
+---
+
 # CreatePreparedStatement
 
 Creates a prepared statement for use with SQL queries in Athena.

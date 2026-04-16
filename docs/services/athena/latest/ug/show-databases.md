@@ -1,3 +1,7 @@
+---
+title: "SHOW DATABASES"
+---
+
 # SHOW DATABASES
 
 Lists all databases defined in the metastore. You can use `DATABASES` or

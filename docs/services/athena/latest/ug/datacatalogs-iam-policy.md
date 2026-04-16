@@ -1,3 +1,7 @@
+---
+title: "Control access to data catalogs with IAM policies"
+---
+
 # Control access to data catalogs with IAM policies
 
 To control access to data catalogs, use resource-level IAM permissions or identity-based

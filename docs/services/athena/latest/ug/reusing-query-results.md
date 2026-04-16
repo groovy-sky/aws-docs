@@ -1,3 +1,7 @@
+---
+title: "Reuse query results in Athena"
+---
+
 # Reuse query results in Athena
 
 When you re-run a query in Athena, you can optionally choose to reuse the last stored query

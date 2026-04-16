@@ -1,3 +1,7 @@
+---
+title: "Update tables with partitions"
+---
+
 # Update tables with partitions
 
 In Athena, a table and its partitions must use the same data formats but their schemas may

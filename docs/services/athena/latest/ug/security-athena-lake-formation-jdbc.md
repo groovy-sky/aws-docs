@@ -1,3 +1,7 @@
+---
+title: "Use Lake Formation and JDBC or ODBC drivers for federated access to Athena"
+---
+
 # Use Lake Formation and JDBC or ODBC drivers for federated access to Athena
 
 The Athena JDBC and ODBC drivers support SAML 2.0-based federation with Athena using Okta

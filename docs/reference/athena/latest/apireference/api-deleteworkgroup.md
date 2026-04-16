@@ -1,3 +1,7 @@
+---
+title: "DeleteWorkGroup"
+---
+
 # DeleteWorkGroup
 
 Deletes the workgroup with the specified name. The primary workgroup cannot be

@@ -1,3 +1,7 @@
+---
+title: "Use IAM policies to control workgroup access"
+---
+
 # Use IAM policies to control workgroup access
 
 To control access to workgroups, use resource-level IAM permissions or identity-based

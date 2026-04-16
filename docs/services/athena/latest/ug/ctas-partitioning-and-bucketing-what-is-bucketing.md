@@ -1,3 +1,7 @@
+---
+title: "What is bucketing?"
+---
+
 # What is bucketing?
 
 Bucketing is a way to organize the records of a dataset into categories called

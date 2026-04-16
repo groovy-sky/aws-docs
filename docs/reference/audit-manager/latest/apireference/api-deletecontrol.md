@@ -1,3 +1,7 @@
+---
+title: "DeleteControl"
+---
+
 # DeleteControl
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Use line magics"
+---
+
 # Use line magics
 
 Magics that are on a single line are preceded by a percent sign ( `%`) and

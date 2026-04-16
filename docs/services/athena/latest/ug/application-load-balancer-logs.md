@@ -1,3 +1,7 @@
+---
+title: "Query Application Load Balancer logs"
+---
+
 # Query Application Load Balancer logs
 
 An Application Load Balancer is a load balancing option for Elastic Load Balancing that enables traffic distribution in a

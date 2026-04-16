@@ -1,3 +1,7 @@
+---
+title: "GetSessionStatus"
+---
+
 # GetSessionStatus
 
 Gets the current status of a session.

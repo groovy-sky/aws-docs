@@ -1,3 +1,7 @@
+---
+title: "Step 2: Create a table"
+---
+
 # Step 2: Create a table
 
 Now that you have a database, you can create an Athena table for it. The table that you

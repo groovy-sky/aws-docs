@@ -1,3 +1,7 @@
+---
+title: "Delete a workgroup"
+---
+
 # Delete a workgroup
 
 You can delete a workgroup if you have permissions to do so. The primary workgroup

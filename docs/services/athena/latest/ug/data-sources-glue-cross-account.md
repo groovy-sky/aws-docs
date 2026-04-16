@@ -1,3 +1,7 @@
+---
+title: "Register a Data Catalog from another account"
+---
+
 # Register a Data Catalog from another account
 
 You can use Athena's cross-account AWS Glue catalog feature to register an AWS Glue catalog from

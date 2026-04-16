@@ -1,3 +1,7 @@
+---
+title: "Configure access to workgroups and tags"
+---
+
 # Configure access to workgroups and tags
 
 A workgroup is a resource managed by Athena. Therefore, if your workgroup policy uses

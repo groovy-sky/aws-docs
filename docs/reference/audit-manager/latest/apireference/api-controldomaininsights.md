@@ -1,3 +1,7 @@
+---
+title: "ControlDomainInsights"
+---
+
 # ControlDomainInsights
 
 A summary of the latest analytics data for a specific control domain.

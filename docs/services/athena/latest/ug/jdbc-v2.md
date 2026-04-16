@@ -1,3 +1,7 @@
+---
+title: "Athena JDBC 2.x driver"
+---
+
 # Athena JDBC 2.x driver
 
 You can use a JDBC connection to connect Athena to business intelligence tools and other

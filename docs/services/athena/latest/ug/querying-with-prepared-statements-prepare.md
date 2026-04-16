@@ -1,3 +1,7 @@
+---
+title: "PREPARE"
+---
+
 # PREPARE
 
 Prepares a statement to be run at a later time. Prepared statements are saved

@@ -1,3 +1,7 @@
+---
+title: "EXECUTE"
+---
+
 # EXECUTE
 
 Runs a prepared statement with the name `statement_name`. Parameter values for

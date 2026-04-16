@@ -1,3 +1,7 @@
+---
+title: "Query AWS CloudTrail logs"
+---
+
 # Query AWS CloudTrail logs
 
 AWS CloudTrail is a service that records AWS API calls and events for Amazon Web Services accounts.

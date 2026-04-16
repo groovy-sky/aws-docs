@@ -1,3 +1,7 @@
+---
+title: "GetResourceDashboard"
+---
+
 # GetResourceDashboard
 
 Gets the Live UI/Persistence UI for a session.

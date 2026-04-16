@@ -1,3 +1,7 @@
+---
+title: "WorkGroupConfigurationUpdates"
+---
+
 # WorkGroupConfigurationUpdates
 
 The configuration information that will be updated for this workgroup, which includes

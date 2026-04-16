@@ -1,3 +1,7 @@
+---
+title: "Create and query a table for Amazon VPC flow logs using partition projection"
+---
+
 # Create and query a table for Amazon VPC flow logs using partition projection
 
 Use a `CREATE TABLE` statement like the following to create a table,

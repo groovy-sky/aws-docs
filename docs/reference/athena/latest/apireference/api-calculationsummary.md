@@ -1,3 +1,7 @@
+---
+title: "CalculationSummary"
+---
+
 # CalculationSummary
 
 Summary information for a notebook calculation.

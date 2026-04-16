@@ -1,3 +1,7 @@
+---
+title: "Create a database"
+---
+
 # Create a database
 
 After you have set up a query results location, creating a database in the Athena

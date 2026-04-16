@@ -1,3 +1,7 @@
+---
+title: "Monitor Athena usage metrics with CloudWatch"
+---
+
 # Monitor Athena usage metrics with CloudWatch
 
 You can use CloudWatch usage metrics to provide visibility into your how your account uses

@@ -1,3 +1,7 @@
+---
+title: "JWT"
+---
+
 # JWT
 
 The JWT (JSON Web Token) plugin provides an interface that uses JSON Web Tokens to assume

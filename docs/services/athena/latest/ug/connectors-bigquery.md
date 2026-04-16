@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Google BigQuery connector"
+---
+
 # Amazon Athena Google BigQuery connector
 
 The Amazon Athena connector for Google [BigQuery](https://cloud.google.com/bigquery) enables Amazon Athena to run SQL queries on your Google BigQuery

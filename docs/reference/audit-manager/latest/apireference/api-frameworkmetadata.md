@@ -1,3 +1,7 @@
+---
+title: "FrameworkMetadata"
+---
+
 # FrameworkMetadata
 
 The metadata of a framework, such as the name, ID, or description.

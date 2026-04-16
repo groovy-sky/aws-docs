@@ -1,3 +1,7 @@
+---
+title: "Create prepared statements using the AWS CLI"
+---
+
 # Create prepared statements using the AWS CLI
 
 To use the AWS CLI to create a prepared statement, you can use one of the

@@ -1,3 +1,7 @@
+---
+title: "PutCapacityAssignmentConfiguration"
+---
+
 # PutCapacityAssignmentConfiguration
 
 Puts a new capacity assignment configuration for a specified capacity reservation. If

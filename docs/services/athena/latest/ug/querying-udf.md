@@ -1,3 +1,7 @@
+---
+title: "Query with user defined functions"
+---
+
 # Query with user defined functions
 
 User Defined Functions (UDF) in Amazon Athena allow you to create custom functions to process

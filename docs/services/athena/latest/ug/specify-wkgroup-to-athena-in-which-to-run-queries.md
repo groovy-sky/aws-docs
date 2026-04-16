@@ -1,3 +1,7 @@
+---
+title: "Specify a workgroup for queries"
+---
+
 # Specify a workgroup for queries
 
 To specify a workgroup to use, you must have permissions to the workgroup.

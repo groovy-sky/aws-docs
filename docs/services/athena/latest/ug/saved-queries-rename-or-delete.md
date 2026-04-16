@@ -1,3 +1,7 @@
+---
+title: "Rename or delete a saved query"
+---
+
 # Rename or delete a saved query
 
 ###### To rename or delete a saved query already displayed in the query editor

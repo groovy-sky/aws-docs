@@ -1,3 +1,7 @@
+---
+title: "Control capacity usage"
+---
+
 # Control capacity usage
 
 You can control the number of DPU that Athena allocates to your queries by setting maximum or minimum DPU controls. You can configure these at the workgroup level to establish baseline controls for all queries, or at the individual query level for fine-grained control. This gives you direct control over query performance, workload concurrency, and cost.

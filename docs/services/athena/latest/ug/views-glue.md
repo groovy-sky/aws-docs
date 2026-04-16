@@ -1,3 +1,7 @@
+---
+title: "Use Data Catalog views in Athena"
+---
+
 # Use Data Catalog views in Athena
 
 Creating Data Catalog views in Amazon Athena requires a special `CREATE VIEW` statement.

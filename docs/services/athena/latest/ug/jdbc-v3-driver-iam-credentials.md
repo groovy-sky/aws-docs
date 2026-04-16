@@ -1,3 +1,7 @@
+---
+title: "IAM credentials"
+---
+
 # IAM credentials
 
 You can use your IAM credentials with the JDBC driver to connect to Amazon Athena by

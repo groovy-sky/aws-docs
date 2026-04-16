@@ -1,3 +1,7 @@
+---
+title: "Use Amazon DataZone in Athena"
+---
+
 # Use Amazon DataZone in Athena
 
 You can use [Amazon DataZone](https://aws.amazon.com/datazone) to share, search, and

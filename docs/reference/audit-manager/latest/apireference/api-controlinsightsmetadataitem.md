@@ -1,3 +1,7 @@
+---
+title: "ControlInsightsMetadataItem"
+---
+
 # ControlInsightsMetadataItem
 
 A summary of the latest analytics data for a specific control.

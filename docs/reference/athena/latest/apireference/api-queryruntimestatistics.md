@@ -1,3 +1,7 @@
+---
+title: "QueryRuntimeStatistics"
+---
+
 # QueryRuntimeStatistics
 
 The query execution timeline, statistics on input and output rows and bytes, and the

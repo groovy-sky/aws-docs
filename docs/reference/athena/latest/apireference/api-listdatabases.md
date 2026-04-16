@@ -1,3 +1,7 @@
+---
+title: "ListDatabases"
+---
+
 # ListDatabases
 
 Lists the databases in the specified data catalog.

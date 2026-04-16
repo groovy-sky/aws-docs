@@ -1,3 +1,7 @@
+---
+title: "ListNotebookMetadata"
+---
+
 # ListNotebookMetadata
 
 Displays the notebook files for the specified workgroup in paginated format.

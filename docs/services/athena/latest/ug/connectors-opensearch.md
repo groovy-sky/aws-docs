@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena OpenSearch connector"
+---
+
 # Amazon Athena OpenSearch connector
 
 OpenSearch Service

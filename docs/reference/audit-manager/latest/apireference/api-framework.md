@@ -1,3 +1,7 @@
+---
+title: "Framework"
+---
+
 # Framework
 
 The file that's used to structure and automate AWS Audit Manager assessments for a

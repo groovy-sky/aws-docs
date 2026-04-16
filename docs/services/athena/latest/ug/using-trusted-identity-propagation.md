@@ -1,3 +1,7 @@
+---
+title: "Use Trusted identity propagation with Amazon Athena drivers"
+---
+
 # Use Trusted identity propagation with Amazon Athena drivers
 
 Trusted identity propagation provides a new authentication option for organizations that

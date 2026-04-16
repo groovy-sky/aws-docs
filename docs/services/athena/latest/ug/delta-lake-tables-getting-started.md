@@ -1,3 +1,7 @@
+---
+title: "Get started with Delta Lake tables"
+---
+
 # Get started with Delta Lake tables
 
 To be queryable, your Delta Lake table must exist in AWS Glue. If your table is in Amazon S3

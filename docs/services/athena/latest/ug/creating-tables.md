@@ -1,3 +1,7 @@
+---
+title: "Create tables in Athena"
+---
+
 # Create tables in Athena
 
 To create tables, you can run DDL statements in the Athena console, use the Athena [Create table\

@@ -1,3 +1,7 @@
+---
+title: "Datum"
+---
+
 # Datum
 
 A piece of data (a field in the table).

@@ -1,3 +1,7 @@
+---
+title: "Athena JDBC 3.x driver"
+---
+
 # Athena JDBC 3.x driver
 
 You can use the Athena JDBC driver to connect to Amazon Athena from many third-party SQL client

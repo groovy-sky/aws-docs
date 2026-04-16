@@ -1,3 +1,7 @@
+---
+title: "View the workgroup's details"
+---
+
 # View the workgroup's details
 
 For each workgroup, you can view its details. The details include the workgroup's

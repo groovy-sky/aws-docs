@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Microsoft SQL Server connector"
+---
+
 # Amazon Athena Microsoft SQL Server connector
 
 The Amazon Athena connector for [Microsoft SQL\

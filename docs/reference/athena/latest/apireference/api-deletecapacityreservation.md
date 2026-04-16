@@ -1,3 +1,7 @@
+---
+title: "DeleteCapacityReservation"
+---
+
 # DeleteCapacityReservation
 
 Deletes a cancelled capacity reservation. A reservation must be cancelled before it

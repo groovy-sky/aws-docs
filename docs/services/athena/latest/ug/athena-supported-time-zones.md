@@ -1,3 +1,7 @@
+---
+title: "Use supported time zones"
+---
+
 # Use supported time zones
 
 You can use the `AT TIME ZONE` operator in a `SELECT timestamp`

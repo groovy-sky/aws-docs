@@ -1,3 +1,7 @@
+---
+title: "DeleteNamedQuery"
+---
+
 # DeleteNamedQuery
 
 Deletes the named query if you have access to the workgroup in which the query was

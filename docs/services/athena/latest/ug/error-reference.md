@@ -1,3 +1,7 @@
+---
+title: "Athena error catalog"
+---
+
 # Athena error catalog
 
 Athena provides standardized error information to help you understand failed queries and

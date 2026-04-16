@@ -1,3 +1,7 @@
+---
+title: "CreatePresignedNotebookUrl"
+---
+
 # CreatePresignedNotebookUrl
 
 Gets an authentication token and the URL at which the notebook can be accessed. During

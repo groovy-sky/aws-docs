@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena DynamoDB connector"
+---
+
 # Amazon Athena DynamoDB connector
 
 The Amazon Athena DynamoDB connector enables Amazon Athena to communicate with DynamoDB so that you can

@@ -1,3 +1,7 @@
+---
+title: "View statistics and execution details for completed queries"
+---
+
 # View statistics and execution details for completed queries
 
 After you run a query, you can get statistics on the input and output data processed, see

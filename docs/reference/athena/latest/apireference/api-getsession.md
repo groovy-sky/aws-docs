@@ -1,3 +1,7 @@
+---
+title: "GetSession"
+---
+
 # GetSession
 
 Gets the full details of a previously created session, including the session status

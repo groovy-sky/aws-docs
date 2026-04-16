@@ -1,3 +1,7 @@
+---
+title: "Connect to Amazon Athena with JDBC"
+---
+
 # Connect to Amazon Athena with JDBC
 
 Amazon Athena offers two JDBC drivers, versions 2.x and 3.x. The Athena JDBC 3.x driver is the

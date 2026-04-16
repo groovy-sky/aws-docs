@@ -1,3 +1,7 @@
+---
+title: "Run federated queries"
+---
+
 # Run federated queries
 
 After you have configured one or more data connectors and deployed them to your account,

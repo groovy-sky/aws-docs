@@ -1,3 +1,7 @@
+---
+title: "How to use the date type"
+---
+
 # How to use the `date` type
 
 When you use the `date` type for a projected partition key, you must

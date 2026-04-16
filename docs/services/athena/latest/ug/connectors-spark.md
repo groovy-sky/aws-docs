@@ -1,3 +1,7 @@
+---
+title: "Work with data source connectors for Apache Spark"
+---
+
 # Work with data source connectors for Apache Spark
 
 Some Athena data source connectors are available as Spark DSV2 connectors. The Spark DSV2

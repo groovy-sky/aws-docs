@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena ODBC 2.x"
+---
+
 # Amazon Athena ODBC 2.x
 
 You can use an ODBC connection to connect to Amazon Athena from many third-party SQL client

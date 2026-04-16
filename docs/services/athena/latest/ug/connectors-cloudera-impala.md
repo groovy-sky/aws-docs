@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Cloudera Impala connector"
+---
+
 # Amazon Athena Cloudera Impala connector
 
 The Amazon Athena Cloudera Impala connector enables Athena to run SQL queries on the [Cloudera\

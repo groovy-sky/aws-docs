@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena ODBC 2.x release notes"
+---
+
 # Amazon Athena ODBC 2.x release notes
 
 These release notes provide details of enhancements, features, known issues, and workflow

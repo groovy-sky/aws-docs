@@ -1,3 +1,7 @@
+---
+title: "Authenticate with Snowflake"
+---
+
 # Authenticate with Snowflake
 
 You can configure the Amazon Athena Snowflake connector to use either the key-pair

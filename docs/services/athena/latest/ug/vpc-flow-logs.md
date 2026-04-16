@@ -1,3 +1,7 @@
+---
+title: "Query Amazon VPC flow logs"
+---
+
 # Query Amazon VPC flow logs
 
 Amazon Virtual Private Cloud flow logs capture information about the IP traffic going to and from network

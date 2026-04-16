@@ -1,3 +1,7 @@
+---
+title: "ListControlInsightsByControlDomain"
+---
+
 # ListControlInsightsByControlDomain
 
 ###### Important

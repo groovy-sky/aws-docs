@@ -1,3 +1,7 @@
+---
+title: "Use cell magics"
+---
+
 # Use cell magics
 
 Magics that are written on several lines are preceded by a double percent sign

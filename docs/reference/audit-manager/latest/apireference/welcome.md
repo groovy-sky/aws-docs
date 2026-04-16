@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Welcome to the AWS Audit Manager API reference. This guide is for developers who
@@ -30,7 +34,7 @@ Client and server errors that all operations can return.
 
 If you're new to AWS Audit Manager, we recommend that you review the [AWS Audit Manager User Guide](../../../../services/audit-manager/latest/userguide/what-is.md).
 
-This document was last published on April 9, 2026.
+This document was last published on April 14, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

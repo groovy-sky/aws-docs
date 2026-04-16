@@ -1,3 +1,7 @@
+---
+title: "Query Apache Iceberg tables"
+---
+
 # Query Apache Iceberg tables
 
 You can use Athena to perform read, time travel, write, and DDL queries on Apache Iceberg

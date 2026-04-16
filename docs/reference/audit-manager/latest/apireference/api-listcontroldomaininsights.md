@@ -1,3 +1,7 @@
+---
+title: "ListControlDomainInsights"
+---
+
 # ListControlDomainInsights
 
 ###### Important

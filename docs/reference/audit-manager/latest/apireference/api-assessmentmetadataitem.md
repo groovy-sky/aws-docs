@@ -1,3 +1,7 @@
+---
+title: "AssessmentMetadataItem"
+---
+
 # AssessmentMetadataItem
 
 A metadata object that's associated with an assessment in AWS Audit Manager.

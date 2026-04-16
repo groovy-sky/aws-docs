@@ -1,3 +1,7 @@
+---
+title: "Query Amazon EMR logs"
+---
+
 # Query Amazon EMR logs
 
 Amazon EMR and big data applications that run on Amazon EMR produce log files. Log files are written

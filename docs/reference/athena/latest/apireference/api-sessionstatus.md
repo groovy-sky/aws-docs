@@ -1,3 +1,7 @@
+---
+title: "SessionStatus"
+---
+
 # SessionStatus
 
 Contains information about the status of a session.

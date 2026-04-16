@@ -1,3 +1,7 @@
+---
+title: "CreateDelegationRequest"
+---
+
 # CreateDelegationRequest
 
 A collection of attributes that's used to create a delegation for an assessment in

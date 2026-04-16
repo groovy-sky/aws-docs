@@ -1,3 +1,7 @@
+---
+title: "StopQueryExecution"
+---
+
 # StopQueryExecution
 
 Stops a query execution. Requires you to have access to the workgroup in which the

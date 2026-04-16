@@ -1,3 +1,7 @@
+---
+title: "GetQueryRuntimeStatistics"
+---
+
 # GetQueryRuntimeStatistics
 
 Returns query execution runtime statistics related to a single execution of a query if

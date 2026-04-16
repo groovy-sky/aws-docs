@@ -1,3 +1,7 @@
+---
+title: "Parquet SerDe"
+---
+
 # Parquet SerDe
 
 Use the Parquet SerDe to create Athena tables from Parquet data.

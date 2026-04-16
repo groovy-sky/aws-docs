@@ -1,3 +1,7 @@
+---
+title: "Create the table for ALB connection logs in Athena using partition projection"
+---
+
 # Create the table for ALB connection logs in Athena using partition projection
 
 Because ALB connection logs have a known structure whose partition scheme you can

@@ -1,3 +1,7 @@
+---
+title: "DataZone IdC Credentials Provider"
+---
+
 # DataZone IdC Credentials Provider
 
 An authentication mechanism that enables connecting to DataZone-governed data in Athena

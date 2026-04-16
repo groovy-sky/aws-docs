@@ -1,3 +1,7 @@
+---
+title: "Work with Hive views"
+---
+
 # Work with Hive views
 
 You can use Athena to query existing views in your external Apache Hive metastores. Athena

@@ -1,3 +1,7 @@
+---
+title: "Add workgroups to a reservation"
+---
+
 # Add workgroups to a reservation
 
 After you create a capacity reservation, you can add up to 20 workgroups to the

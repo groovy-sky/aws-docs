@@ -1,3 +1,7 @@
+---
+title: "DESCRIBE"
+---
+
 # DESCRIBE
 
 Shows one or more columns, including partition columns, for the specified table. This

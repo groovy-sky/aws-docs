@@ -1,3 +1,7 @@
+---
+title: "Code samples"
+---
+
 # Code samples
 
 The examples in this topic use SDK for Java 2.x as a starting point for writing Athena

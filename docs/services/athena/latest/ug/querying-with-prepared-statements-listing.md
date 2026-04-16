@@ -1,3 +1,7 @@
+---
+title: "List prepared statements using the AWS CLI"
+---
+
 # List prepared statements using the AWS CLI
 
 To list the prepared statements for a specific workgroup, you can use the

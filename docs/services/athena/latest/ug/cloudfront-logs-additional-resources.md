@@ -1,3 +1,7 @@
+---
+title: "Additional resources"
+---
+
 # Additional resources
 
 For more information about using Athena to query CloudFront logs, see the following posts

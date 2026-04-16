@@ -1,3 +1,7 @@
+---
+title: "Create a table for an organization wide trail using manual partitioning"
+---
+
 # Create a table for an organization wide trail using manual partitioning
 
 To create a table for organization wide CloudTrail log files in Athena, follow the steps in

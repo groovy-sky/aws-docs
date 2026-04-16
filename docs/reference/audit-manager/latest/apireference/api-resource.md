@@ -1,3 +1,7 @@
+---
+title: "Resource"
+---
+
 # Resource
 
 A system asset that's evaluated in an Audit Manager assessment.

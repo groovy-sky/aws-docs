@@ -1,3 +1,7 @@
+---
+title: "ChangeLog"
+---
+
 # ChangeLog
 
 The record of a change within AWS Audit Manager. For example, this could be the

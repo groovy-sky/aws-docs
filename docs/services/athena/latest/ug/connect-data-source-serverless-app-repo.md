@@ -1,3 +1,7 @@
+---
+title: "Use the AWS Serverless Application Repository to deploy a data source connector"
+---
+
 # Use the AWS Serverless Application Repository to deploy a data source connector
 
 To deploy a data source connector, you can use the [AWS Serverless Application Repository](https://aws.amazon.com/serverless/serverlessrepo) instead of using a

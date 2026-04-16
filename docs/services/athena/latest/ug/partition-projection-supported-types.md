@@ -1,3 +1,7 @@
+---
+title: "Supported types for partition projection"
+---
+
 # Supported types for partition projection
 
 A table can have any combination of `enum`, `integer`,

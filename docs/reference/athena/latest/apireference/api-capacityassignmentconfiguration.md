@@ -1,3 +1,7 @@
+---
+title: "CapacityAssignmentConfiguration"
+---
+
 # CapacityAssignmentConfiguration
 
 Assigns Athena workgroups (and hence their queries) to capacity

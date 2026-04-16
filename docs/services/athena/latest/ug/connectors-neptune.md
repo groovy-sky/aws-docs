@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Neptune connector"
+---
+
 # Amazon Athena Neptune connector
 
 Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy

@@ -1,3 +1,7 @@
+---
+title: "Considerations and limitations for CTAS queries"
+---
+
 # Considerations and limitations for CTAS queries
 
 The following sections describe considerations and limitations to keep in mind when you

@@ -1,3 +1,7 @@
+---
+title: "INSERT INTO"
+---
+
 # INSERT INTO
 
 Inserts data into an Iceberg table. Athena Iceberg `INSERT INTO` is

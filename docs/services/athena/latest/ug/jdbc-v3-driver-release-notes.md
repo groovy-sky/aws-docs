@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena JDBC 3.x release notes"
+---
+
 # Amazon Athena JDBC 3.x release notes
 
 These release notes provide details of improvements and fixes in the Amazon Athena JDBC 3.x

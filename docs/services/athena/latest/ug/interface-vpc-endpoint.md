@@ -1,3 +1,7 @@
+---
+title: "Connect to Amazon Athena using an interface VPC endpoint"
+---
+
 # Connect to Amazon Athena using an interface VPC endpoint
 
 You can improve the security posture of your VPC by using an [interface VPC endpoint\

@@ -1,3 +1,7 @@
+---
+title: "Athena capacity reservation APIs"
+---
+
 # Athena capacity reservation APIs
 
 The following list contains reference links to Athena capacity reservation API actions. For

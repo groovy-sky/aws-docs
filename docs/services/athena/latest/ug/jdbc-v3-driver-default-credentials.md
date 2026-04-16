@@ -1,3 +1,7 @@
+---
+title: "Default credentials"
+---
+
 # Default credentials
 
 You can use the default credentials that you configure on your client system to

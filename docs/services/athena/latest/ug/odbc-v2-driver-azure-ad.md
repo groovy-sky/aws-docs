@@ -1,3 +1,7 @@
+---
+title: "Azure AD"
+---
+
 # Azure AD
 
 Azure AD is a SAML-based authentication plugin that works with Azure AD identity provider.

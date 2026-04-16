@@ -1,3 +1,7 @@
+---
+title: "Notification"
+---
+
 # Notification
 
 The notification that informs a user of an update in AWS Audit Manager. For

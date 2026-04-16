@@ -1,3 +1,7 @@
+---
+title: "UpdateDataCatalog"
+---
+
 # UpdateDataCatalog
 
 Updates the data catalog that has the specified name.

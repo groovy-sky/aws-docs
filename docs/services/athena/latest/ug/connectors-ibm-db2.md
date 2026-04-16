@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena IBM Db2 connector"
+---
+
 # Amazon Athena IBM Db2 connector
 
 The Amazon Athena connector for Db2 enables Amazon Athena to run SQL queries on your

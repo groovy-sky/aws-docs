@@ -1,3 +1,7 @@
+---
+title: "Data types in Amazon Athena"
+---
+
 # Data types in Amazon Athena
 
 When you run `CREATE TABLE`, you specify column names and the data type that

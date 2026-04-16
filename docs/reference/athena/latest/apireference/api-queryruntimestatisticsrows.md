@@ -1,3 +1,7 @@
+---
+title: "QueryRuntimeStatisticsRows"
+---
+
 # QueryRuntimeStatisticsRows
 
 Statistics such as input rows and bytes read by the query, rows and bytes output by

@@ -1,3 +1,7 @@
+---
+title: "UPDATE"
+---
+
 # UPDATE
 
 Athena Iceberg `UPDATE` writes Iceberg position delete files and newly

@@ -1,3 +1,7 @@
+---
+title: "ALTER TABLE CHANGE COLUMN"
+---
+
 # ALTER TABLE CHANGE COLUMN
 
 Changes the name, type, order or comment of a column in an Iceberg table.

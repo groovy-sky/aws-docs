@@ -1,3 +1,7 @@
+---
+title: "Make schema updates"
+---
+
 # Make schema updates
 
 This topic describes some of the changes that you can make to the schema in `CREATE

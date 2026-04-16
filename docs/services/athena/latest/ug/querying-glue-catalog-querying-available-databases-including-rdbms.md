@@ -1,3 +1,7 @@
+---
+title: "List databases and searching a specified database"
+---
+
 # List databases and searching a specified database
 
 The examples in this section show how to list the databases in metadata by schema

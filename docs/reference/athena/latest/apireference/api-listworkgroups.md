@@ -1,3 +1,7 @@
+---
+title: "ListWorkGroups"
+---
+
 # ListWorkGroups
 
 Lists available workgroups for the account.

@@ -1,3 +1,7 @@
+---
+title: "UntagResource"
+---
+
 # UntagResource
 
 Removes one or more tags from an Athena resource.

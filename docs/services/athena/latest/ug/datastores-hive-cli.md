@@ -1,3 +1,7 @@
+---
+title: "Use the AWS CLI with Hive metastores"
+---
+
 # Use the AWS CLI with Hive metastores
 
 You can use `aws athena` CLI commands to manage the Hive metastore data

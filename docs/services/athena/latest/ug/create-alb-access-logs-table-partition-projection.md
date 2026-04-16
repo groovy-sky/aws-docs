@@ -1,3 +1,7 @@
+---
+title: "Create the table for ALB access logs in Athena using partition projection"
+---
+
 # Create the table for ALB access logs in Athena using partition projection
 
 Because ALB access logs have a known structure whose partition scheme you can specify

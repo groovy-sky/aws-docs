@@ -1,3 +1,7 @@
+---
+title: "Instance profile credentials"
+---
+
 # Instance profile credentials
 
 This authentication type is used on Amazon EC2 instances. An _instance_

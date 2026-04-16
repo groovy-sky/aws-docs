@@ -1,3 +1,7 @@
+---
+title: "AssessmentControl"
+---
+
 # AssessmentControl
 
 The control entity that represents a standard control or a custom control in an Audit Manager assessment.

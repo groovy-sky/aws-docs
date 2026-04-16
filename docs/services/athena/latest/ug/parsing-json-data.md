@@ -1,3 +1,7 @@
+---
+title: "Best practices for reading JSON data"
+---
+
 # Best practices for reading JSON data
 
 JavaScript Object Notation (JSON) is a common method for encoding data structures as text.

@@ -1,3 +1,7 @@
+---
+title: "Create a data source connection"
+---
+
 # Create a data source connection
 
 To use an Athena data source connector, you create the AWS Glue connection that stores the

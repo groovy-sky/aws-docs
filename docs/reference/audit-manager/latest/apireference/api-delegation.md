@@ -1,3 +1,7 @@
+---
+title: "Delegation"
+---
+
 # Delegation
 
 The assignment of a control set to a delegate for review.

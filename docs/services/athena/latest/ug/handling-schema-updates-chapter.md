@@ -1,3 +1,7 @@
+---
+title: "Handle schema updates"
+---
+
 # Handle schema updates
 
 This section provides guidance on handling schema updates for various data formats. Athena

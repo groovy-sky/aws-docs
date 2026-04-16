@@ -1,3 +1,7 @@
+---
+title: "Synchronize Delta Lake metadata"
+---
+
 # Synchronize Delta Lake metadata
 
 Athena synchronizes table metadata, including schema, partition columns, and table

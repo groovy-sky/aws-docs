@@ -1,3 +1,7 @@
+---
+title: "Control access to Amazon S3 from Athena"
+---
+
 # Control access to Amazon S3 from Athena
 
 You can grant access to Amazon S3 locations using identity-based policies, bucket resource

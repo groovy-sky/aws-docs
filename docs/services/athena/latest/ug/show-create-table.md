@@ -1,3 +1,7 @@
+---
+title: "SHOW CREATE TABLE"
+---
+
 # SHOW CREATE TABLE
 
 Analyzes an existing table named `table_name` to generate the query that

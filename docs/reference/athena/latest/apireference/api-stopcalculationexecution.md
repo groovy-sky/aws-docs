@@ -1,3 +1,7 @@
+---
+title: "StopCalculationExecution"
+---
+
 # StopCalculationExecution
 
 Requests the cancellation of a calculation. A `StopCalculationExecution`

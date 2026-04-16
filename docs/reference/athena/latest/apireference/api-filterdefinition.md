@@ -1,3 +1,7 @@
+---
+title: "FilterDefinition"
+---
+
 # FilterDefinition
 
 A string for searching notebook names.

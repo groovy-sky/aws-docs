@@ -1,3 +1,7 @@
+---
+title: "Browser Azure AD"
+---
+
 # Browser Azure AD
 
 Browser Azure AD is a SAML based authentication plugin that works with Azure AD identity

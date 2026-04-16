@@ -1,3 +1,7 @@
+---
+title: "ControlMetadata"
+---
+
 # ControlMetadata
 
 The metadata that's associated with the standard control or custom control.

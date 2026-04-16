@@ -1,3 +1,7 @@
+---
+title: "Grok SerDe"
+---
+
 # Grok SerDe
 
 The Logstash Grok SerDe is a library with a set of specialized patterns for

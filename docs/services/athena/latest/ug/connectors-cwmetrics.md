@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena CloudWatch Metrics connector"
+---
+
 # Amazon Athena CloudWatch Metrics connector
 
 The Amazon Athena CloudWatch Metrics connector enables Amazon Athena to query CloudWatch Metrics data with

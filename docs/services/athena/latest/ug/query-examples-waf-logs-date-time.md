@@ -1,3 +1,7 @@
+---
+title: "Query using date and time"
+---
+
 # Query using date and time
 
 The examples in this section include queries that use date and time values.

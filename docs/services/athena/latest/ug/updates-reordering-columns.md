@@ -1,3 +1,7 @@
+---
+title: "Reorder columns"
+---
+
 # Reorder columns
 
 You can reorder columns only for tables with data in formats that read by name, such

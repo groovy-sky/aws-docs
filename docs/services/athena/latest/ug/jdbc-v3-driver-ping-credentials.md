@@ -1,3 +1,7 @@
+---
+title: "Ping credentials"
+---
+
 # Ping credentials
 
 A SAML-based authentication mechanism that enables authentication to Athena using the

@@ -1,3 +1,7 @@
+---
+title: "Proxy options"
+---
+
 # Proxy options
 
 ## Proxy host

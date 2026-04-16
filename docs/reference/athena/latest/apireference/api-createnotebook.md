@@ -1,3 +1,7 @@
+---
+title: "CreateNotebook"
+---
+
 # CreateNotebook
 
 Creates an empty `ipynb` file in the specified Apache Spark enabled

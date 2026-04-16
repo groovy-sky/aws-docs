@@ -1,3 +1,7 @@
+---
+title: "DelegationMetadata"
+---
+
 # DelegationMetadata
 
 The metadata that's associated with the delegation.

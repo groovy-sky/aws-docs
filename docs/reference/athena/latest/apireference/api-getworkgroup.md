@@ -1,3 +1,7 @@
+---
+title: "GetWorkGroup"
+---
+
 # GetWorkGroup
 
 Returns information about the workgroup with the specified name.

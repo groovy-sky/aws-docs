@@ -1,3 +1,7 @@
+---
+title: "Work with geospatial data in AWS Glue"
+---
+
 # Work with geospatial data in AWS Glue
 
 AWS Glue does not natively support Well-known Text (WKT), Well-Known Binary (WKB), or

@@ -1,3 +1,7 @@
+---
+title: "OPTIMIZE"
+---
+
 # OPTIMIZE
 
 Optimizes rows in an Apache Iceberg table by rewriting data files into a more optimized

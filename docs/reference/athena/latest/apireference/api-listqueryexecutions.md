@@ -1,3 +1,7 @@
+---
+title: "ListQueryExecutions"
+---
+
 # ListQueryExecutions
 
 Provides a list of available query execution IDs for the queries in the specified

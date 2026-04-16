@@ -1,3 +1,7 @@
+---
+title: "AssessmentReportMetadata"
+---
+
 # AssessmentReportMetadata
 
 The metadata objects that are associated with the specified assessment report.

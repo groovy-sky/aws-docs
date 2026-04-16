@@ -1,3 +1,7 @@
+---
+title: "AssessmentFrameworkMetadata"
+---
+
 # AssessmentFrameworkMetadata
 
 The metadata that's associated with a standard framework or a custom framework.

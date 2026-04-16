@@ -1,3 +1,7 @@
+---
+title: "How to choose partition keys"
+---
+
 # How to choose partition keys
 
 You can specify how partition projection maps the partition locations to partition

@@ -1,3 +1,7 @@
+---
+title: "CapacityAssignment"
+---
+
 # CapacityAssignment
 
 A mapping between one or more workgroups and a capacity reservation.

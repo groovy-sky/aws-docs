@@ -1,3 +1,7 @@
+---
+title: "Data Catalog example policies"
+---
+
 # Data Catalog example policies
 
 This section includes example policies you can use to enable various actions on data

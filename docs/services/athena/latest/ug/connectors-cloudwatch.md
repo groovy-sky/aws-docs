@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena CloudWatch connector"
+---
+
 # Amazon Athena CloudWatch connector
 
 The Amazon Athena CloudWatch connector enables Amazon Athena to communicate with CloudWatch so that you can

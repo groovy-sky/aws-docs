@@ -1,3 +1,7 @@
+---
+title: "ControlInsightsMetadataByAssessmentItem"
+---
+
 # ControlInsightsMetadataByAssessmentItem
 
 A summary of the latest analytics data for a specific control in a specific active

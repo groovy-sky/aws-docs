@@ -1,3 +1,7 @@
+---
+title: "Understanding tables, databases, and data catalogs in Athena"
+---
+
 # Understanding tables, databases, and data catalogs in Athena
 
 In Athena, catalogs, databases, and tables are containers for the metadata definitions that

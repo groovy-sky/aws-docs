@@ -1,3 +1,7 @@
+---
+title: "Stop query execution"
+---
+
 # Stop query execution
 
 The `StopQueryExecutionExample` runs an example query, immediately stops

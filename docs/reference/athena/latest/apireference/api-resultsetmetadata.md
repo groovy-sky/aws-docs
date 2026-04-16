@@ -1,3 +1,7 @@
+---
+title: "ResultSetMetadata"
+---
+
 # ResultSetMetadata
 
 The metadata that describes the column structure and data types of a table of query

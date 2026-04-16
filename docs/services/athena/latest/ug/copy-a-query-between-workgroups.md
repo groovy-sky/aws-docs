@@ -1,3 +1,7 @@
+---
+title: "Copy a saved query between workgroups"
+---
+
 # Copy a saved query between workgroups
 
 Currently, the Athena console does not have an option to to copy a saved query from one

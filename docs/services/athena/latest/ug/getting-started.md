@@ -1,3 +1,7 @@
+---
+title: "Get started"
+---
+
 # Get started
 
 This tutorial walks you through using Amazon Athena to query data. You'll create a table based

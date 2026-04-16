@@ -1,3 +1,7 @@
+---
+title: "Create arrays"
+---
+
 # Create arrays
 
 To build an array literal in Athena, use the `ARRAY` keyword, followed by brackets `[ ]`, and include the array elements separated by commas.

@@ -1,3 +1,7 @@
+---
+title: "Encryption at rest"
+---
+
 # Encryption at rest
 
 You can run queries in Amazon Athena on encrypted data in Amazon S3 in the same Region and

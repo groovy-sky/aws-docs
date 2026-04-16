@@ -1,3 +1,7 @@
+---
+title: "Manage notebook files"
+---
+
 # Manage notebook files
 
 ###### Note

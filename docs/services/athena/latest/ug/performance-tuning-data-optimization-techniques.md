@@ -1,3 +1,7 @@
+---
+title: "Optimize data"
+---
+
 # Optimize data
 
 Performance depends not only on queries, but also importantly on how your dataset is

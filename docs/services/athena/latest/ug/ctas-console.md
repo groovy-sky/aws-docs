@@ -1,3 +1,7 @@
+---
+title: "Create CTAS queries in the Athena console"
+---
+
 # Create CTAS queries in the Athena console
 
 In the Athena console, you can create a CTAS query from another query.

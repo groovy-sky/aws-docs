@@ -1,3 +1,7 @@
+---
+title: "ALTER TABLE REPLACE COLUMNS"
+---
+
 # ALTER TABLE REPLACE COLUMNS
 
 Removes all existing columns from a table created with the [LazySimpleSerDe](lazy-simple-serde.md) and

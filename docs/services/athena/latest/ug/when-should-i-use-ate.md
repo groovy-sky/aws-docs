@@ -1,3 +1,7 @@
+---
+title: "When should I use Athena?"
+---
+
 # When should I use Athena?
 
 Query services like Amazon Athena, data warehouses like Amazon Redshift, and sophisticated

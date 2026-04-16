@@ -1,3 +1,7 @@
+---
+title: "Example workgroup policies"
+---
+
 # Example workgroup policies
 
 This section includes example policies you can use to enable various actions on

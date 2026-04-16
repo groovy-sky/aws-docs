@@ -1,3 +1,7 @@
+---
+title: "BatchGetQueryExecution"
+---
+
 # BatchGetQueryExecution
 
 Returns the details of a single query execution or a list of up to 50 query

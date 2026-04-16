@@ -1,3 +1,7 @@
+---
+title: "ApplicationDPUSizes"
+---
+
 # ApplicationDPUSizes
 
 Contains the application runtime IDs and their supported DPU sizes.

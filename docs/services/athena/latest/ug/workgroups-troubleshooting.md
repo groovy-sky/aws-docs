@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot workgroup errors"
+---
+
 # Troubleshoot workgroup errors
 
 Use the following tips to troubleshoot workgroups.

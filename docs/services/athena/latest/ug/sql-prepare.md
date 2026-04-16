@@ -1,3 +1,7 @@
+---
+title: "PREPARE"
+---
+
 # PREPARE
 
 Creates a SQL statement with the name `statement_name` to be run at a later

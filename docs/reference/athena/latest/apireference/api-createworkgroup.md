@@ -1,3 +1,7 @@
+---
+title: "CreateWorkGroup"
+---
+
 # CreateWorkGroup
 
 Creates a workgroup with the specified name. A workgroup can be an Apache Spark

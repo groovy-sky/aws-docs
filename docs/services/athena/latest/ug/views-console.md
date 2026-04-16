@@ -1,3 +1,7 @@
+---
+title: "Work with Athena views"
+---
+
 # Work with Athena views
 
 Athena views can be easily created, updated, and managed in the Athena console.

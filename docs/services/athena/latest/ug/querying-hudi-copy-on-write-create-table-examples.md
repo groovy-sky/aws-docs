@@ -1,3 +1,7 @@
+---
+title: "Copy on write (CoW) create table examples"
+---
+
 # Copy on write (CoW) create table examples
 
 If you have Hudi tables already created in AWS Glue, you can query them directly in

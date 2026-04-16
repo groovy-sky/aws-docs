@@ -1,3 +1,7 @@
+---
+title: "Use the Athena console to connect to a data source"
+---
+
 # Use the Athena console to connect to a data source
 
 You can use the Athena console to create and configure a data source connection.

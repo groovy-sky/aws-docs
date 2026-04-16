@@ -1,3 +1,7 @@
+---
+title: "View recent queries in the Athena console"
+---
+
 # View recent queries in the Athena console
 
 You can use the Athena console to see which queries succeeded or failed, and view error

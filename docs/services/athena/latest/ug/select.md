@@ -1,3 +1,7 @@
+---
+title: "SELECT"
+---
+
 # SELECT
 
 Retrieves rows of data from zero or more tables.

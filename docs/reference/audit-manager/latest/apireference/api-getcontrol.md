@@ -1,3 +1,7 @@
+---
+title: "GetControl"
+---
+
 # GetControl
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Step 4: Use named queries"
+---
+
 # Step 4: Use named queries
 
 You can save the queries that you create or edit in the query editor with a name.

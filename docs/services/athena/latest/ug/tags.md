@@ -1,3 +1,7 @@
+---
+title: "Tag Athena resources"
+---
+
 # Tag Athena resources
 
 A tag consists of a key and a value, both of which you define. When you tag an Athena

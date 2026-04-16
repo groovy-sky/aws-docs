@@ -1,3 +1,7 @@
+---
+title: "ListCapacityReservations"
+---
+
 # ListCapacityReservations
 
 Lists the capacity reservations for the current account.

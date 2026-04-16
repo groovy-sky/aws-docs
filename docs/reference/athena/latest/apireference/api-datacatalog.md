@@ -1,3 +1,7 @@
+---
+title: "DataCatalog"
+---
+
 # DataCatalog
 
 Contains information about a data catalog in an AWS account.

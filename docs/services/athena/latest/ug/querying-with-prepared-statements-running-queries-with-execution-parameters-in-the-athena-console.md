@@ -1,3 +1,7 @@
+---
+title: "Run queries with execution parameters in the Athena console"
+---
+
 # Run queries with execution parameters in the Athena console
 
 When you run a parameterized query that has execution parameters (question marks)

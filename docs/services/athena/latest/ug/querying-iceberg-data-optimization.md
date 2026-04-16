@@ -1,3 +1,7 @@
+---
+title: "Optimize Iceberg tables"
+---
+
 # Optimize Iceberg tables
 
 Athena provides several optimization features to improve query performance on Apache Iceberg tables.

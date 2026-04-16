@@ -1,3 +1,7 @@
+---
+title: "Add columns at the end of the table"
+---
+
 # Add columns at the end of the table
 
 If you create tables in any of the formats that Athena supports, such as Parquet, ORC,

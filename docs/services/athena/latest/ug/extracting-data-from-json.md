@@ -1,3 +1,7 @@
+---
+title: "Extract JSON data from strings"
+---
+
 # Extract JSON data from strings
 
 You may have source data containing JSON-encoded strings that you do not necessarily want

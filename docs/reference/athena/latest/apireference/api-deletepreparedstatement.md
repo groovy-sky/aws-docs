@@ -1,3 +1,7 @@
+---
+title: "DeletePreparedStatement"
+---
+
 # DeletePreparedStatement
 
 Deletes the prepared statement with the specified name from the specified

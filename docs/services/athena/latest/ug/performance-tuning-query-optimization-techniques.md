@@ -1,3 +1,7 @@
+---
+title: "Optimize queries"
+---
+
 # Optimize queries
 
 Use the query optimization techniques described in this section to make queries run

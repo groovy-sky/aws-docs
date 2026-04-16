@@ -1,3 +1,7 @@
+---
+title: "Delete a named query"
+---
+
 # Delete a named query
 
 The `DeleteNamedQueryExample` shows how to delete a named query by using

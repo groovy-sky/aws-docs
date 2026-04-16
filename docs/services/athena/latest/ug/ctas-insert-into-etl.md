@@ -1,3 +1,7 @@
+---
+title: "Use CTAS and INSERT INTO for ETL and data analysis"
+---
+
 # Use CTAS and INSERT INTO for ETL and data analysis
 
 You can use Create Table as Select ( [CTAS](ctas.md))

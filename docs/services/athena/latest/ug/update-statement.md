@@ -1,3 +1,7 @@
+---
+title: "UPDATE"
+---
+
 # UPDATE
 
 Updates rows in an Apache Iceberg table. `UPDATE` is transactional and is

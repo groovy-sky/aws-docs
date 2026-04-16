@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Athena for Spark"
+---
+
 # Troubleshoot Athena for Spark
 
 Use the following information to troubleshoot issues you may have when using notebooks and

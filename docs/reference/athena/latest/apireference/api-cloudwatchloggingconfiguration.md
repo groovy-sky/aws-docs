@@ -1,3 +1,7 @@
+---
+title: "CloudWatchLoggingConfiguration"
+---
+
 # CloudWatchLoggingConfiguration
 
 Configuration settings for delivering logs to Amazon CloudWatch log groups.

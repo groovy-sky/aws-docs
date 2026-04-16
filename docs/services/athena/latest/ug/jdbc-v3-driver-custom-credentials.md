@@ -1,3 +1,7 @@
+---
+title: "Custom credentials"
+---
+
 # Custom credentials
 
 You can use this authentication type to provide your own credentials by using a Java

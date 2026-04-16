@@ -1,3 +1,7 @@
+---
+title: "Example queries for AWS WAF logs"
+---
+
 # Example queries for AWS WAF logs
 
 Many of the example queries in this section use the partition projection table created

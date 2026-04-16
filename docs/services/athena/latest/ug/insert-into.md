@@ -1,3 +1,7 @@
+---
+title: "INSERT INTO"
+---
+
 # INSERT INTO
 
 Inserts new rows into a destination table based on a `SELECT` query statement

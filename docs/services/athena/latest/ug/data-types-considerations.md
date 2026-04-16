@@ -1,3 +1,7 @@
+---
+title: "Considerations for data types"
+---
+
 # Considerations for data types
 
 ## Size limits

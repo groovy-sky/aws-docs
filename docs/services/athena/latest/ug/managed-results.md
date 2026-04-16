@@ -1,3 +1,7 @@
+---
+title: "Managed query results"
+---
+
 # Managed query results
 
 With managed query results, you can run SQL queries without providing an Amazon S3 bucket for

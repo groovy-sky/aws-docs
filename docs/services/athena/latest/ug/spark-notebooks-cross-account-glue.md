@@ -1,3 +1,7 @@
+---
+title: "Configure cross-account AWS Glue access in Athena for Spark"
+---
+
 # Configure cross-account AWS Glue access in Athena for Spark
 
 This topic shows how consumer account `666666666666` and owner

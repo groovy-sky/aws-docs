@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Redis OSS connector"
+---
+
 # Amazon Athena Redis OSS connector
 
 The Amazon Athena Redis OSS connector enables Amazon Athena to communicate with your Redis OSS

@@ -1,3 +1,7 @@
+---
+title: "ManagedQueryResultsConfigurationUpdates"
+---
+
 # ManagedQueryResultsConfigurationUpdates
 
 Updates the configuration for managed query results.

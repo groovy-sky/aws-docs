@@ -1,3 +1,7 @@
+---
+title: "Perform time travel and version travel queries"
+---
+
 # Perform time travel and version travel queries
 
 Each Apache Iceberg table maintains a versioned manifest of the Amazon S3 objects that it

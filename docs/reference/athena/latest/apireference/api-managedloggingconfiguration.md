@@ -1,3 +1,7 @@
+---
+title: "ManagedLoggingConfiguration"
+---
+
 # ManagedLoggingConfiguration
 
 Configuration settings for delivering logs to Amazon S3 buckets.

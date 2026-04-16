@@ -1,3 +1,7 @@
+---
+title: "Allow access for ML with Athena"
+---
+
 # Allow access for ML with Athena
 
 IAM principals who run Athena ML queries must be allowed to perform the

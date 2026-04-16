@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Redshift connector"
+---
+
 # Amazon Athena Redshift connector
 
 The Amazon Athena Redshift connector enables Amazon Athena to access your Amazon Redshift and Amazon Redshift Serverless

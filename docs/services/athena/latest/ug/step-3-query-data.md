@@ -1,3 +1,7 @@
+---
+title: "Step 3: Query data"
+---
+
 # Step 3: Query data
 
 Now that you have the `cloudfront_logs` table created in Athena based on the

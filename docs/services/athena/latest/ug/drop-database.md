@@ -1,3 +1,7 @@
+---
+title: "DROP DATABASE"
+---
+
 # DROP DATABASE
 
 Removes the named database from the catalog. If the database contains tables, you must

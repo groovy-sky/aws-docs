@@ -1,3 +1,7 @@
+---
+title: "Edit a workgroup"
+---
+
 # Edit a workgroup
 
 Editing a workgroup requires permissions to `UpdateWorkgroup` API

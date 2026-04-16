@@ -1,3 +1,7 @@
+---
+title: "Remove columns"
+---
+
 # Remove columns
 
 You may need to remove columns from tables if they no longer contain data, or to

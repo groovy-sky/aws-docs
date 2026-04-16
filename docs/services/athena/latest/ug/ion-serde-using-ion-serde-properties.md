@@ -1,3 +1,7 @@
+---
+title: "Amazon Ion SerDe property reference"
+---
+
 # Amazon Ion SerDe property reference
 
 This topic contains information about the SerDe properties for `CREATE TABLE`

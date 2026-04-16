@@ -1,3 +1,7 @@
+---
+title: "VACUUM"
+---
+
 # VACUUM
 
 The `VACUUM` statement performs table maintenance on Apache Iceberg tables by

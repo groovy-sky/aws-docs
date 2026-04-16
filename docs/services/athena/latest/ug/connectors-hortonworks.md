@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Hortonworks connector"
+---
+
 # Amazon Athena Hortonworks connector
 
 The Amazon Athena connector for Hortonworks enables Amazon Athena to run SQL queries on the

@@ -1,3 +1,7 @@
+---
+title: "Data perimeters"
+---
+
 # Data perimeters
 
 A [data perimeter](https://aws.amazon.com/identity/data-perimeters-on-aws) is a set of permissions guardrails in your AWS environment

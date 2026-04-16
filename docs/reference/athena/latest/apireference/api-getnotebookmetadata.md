@@ -1,3 +1,7 @@
+---
+title: "GetNotebookMetadata"
+---
+
 # GetNotebookMetadata
 
 Retrieves notebook metadata for the specified notebook ID.

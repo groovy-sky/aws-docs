@@ -1,3 +1,7 @@
+---
+title: "Enable Apache Spark encryption"
+---
+
 # Enable Apache Spark encryption
 
 You can enable Apache Spark encryption on Athena. Doing so encrypts data in transit

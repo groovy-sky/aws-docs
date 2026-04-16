@@ -1,3 +1,7 @@
+---
+title: "Learn about known issues in Athena for Spark"
+---
+
 # Learn about known issues in Athena for Spark
 
 This page documents some of the known issues in Athena for Apache Spark.

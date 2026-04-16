@@ -1,3 +1,7 @@
+---
+title: "Create a table for CloudFront standard logs (legacy)"
+---
+
 # Create a table for CloudFront standard logs (legacy)
 
 ###### Note

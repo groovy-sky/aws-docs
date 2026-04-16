@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena TPC benchmark DS (TPC-DS) connector"
+---
+
 # Amazon Athena TPC benchmark DS (TPC-DS) connector
 
 The Amazon Athena TPC-DS connector enables Amazon Athena to communicate with a source of randomly

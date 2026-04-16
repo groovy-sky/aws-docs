@@ -1,3 +1,7 @@
+---
+title: "MonitoringConfiguration"
+---
+
 # MonitoringConfiguration
 
 Contains the configuration settings for managed log persistence, delivering logs to Amazon S3 buckets,

@@ -1,3 +1,7 @@
+---
+title: "Database"
+---
+
 # Database
 
 Contains metadata information for a database in a data catalog.

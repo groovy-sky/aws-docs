@@ -1,3 +1,7 @@
+---
+title: "Query AWS service logs"
+---
+
 # Query AWS service logs
 
 This section includes several procedures for using Amazon Athena to query popular datasets,

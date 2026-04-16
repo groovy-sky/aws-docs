@@ -1,3 +1,7 @@
+---
+title: "Create capacity reservations"
+---
+
 # Create capacity reservations
 
 To get started, you create a capacity reservation that has the number of DPUs that you

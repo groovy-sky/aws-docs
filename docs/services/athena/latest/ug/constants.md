@@ -1,3 +1,7 @@
+---
+title: "Constants"
+---
+
 # Constants
 
 The `ExampleConstants.java` class demonstrates how to query a table created

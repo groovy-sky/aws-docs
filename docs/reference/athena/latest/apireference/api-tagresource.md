@@ -1,3 +1,7 @@
+---
+title: "TagResource"
+---
+
 # TagResource
 
 Adds one or more tags to an Athena resource. A tag is a label that you

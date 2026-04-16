@@ -1,3 +1,7 @@
+---
+title: "Identity and access management in Athena"
+---
+
 # Identity and access management in Athena
 
 Amazon Athena uses [AWS Identity and Access Management (IAM)](../../../iam/latest/userguide/introduction.md) policies to restrict access to Athena operations. For a full

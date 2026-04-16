@@ -1,3 +1,7 @@
+---
+title: "Query AWS Network Firewall logs"
+---
+
 # Query AWS Network Firewall logs
 
 AWS Network Firewall is a managed service that you can use to deploy essential network protections

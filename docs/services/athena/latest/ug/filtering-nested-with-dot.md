@@ -1,3 +1,7 @@
+---
+title: "Filter arrays with nested values"
+---
+
 # Filter arrays with nested values
 
 Large arrays often contain nested structures, and you need to be able to filter, or

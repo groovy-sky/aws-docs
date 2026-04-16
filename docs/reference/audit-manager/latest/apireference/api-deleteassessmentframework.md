@@ -1,3 +1,7 @@
+---
+title: "DeleteAssessmentFramework"
+---
+
 # DeleteAssessmentFramework
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Configure Athena to use a deployed Hive metastore connector"
+---
+
 # Configure Athena to use a deployed Hive metastore connector
 
 After you have deployed a Lambda data source connector like

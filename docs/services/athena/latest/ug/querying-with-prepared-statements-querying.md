@@ -1,3 +1,7 @@
+---
+title: "Use prepared statements"
+---
+
 # Use prepared statements
 
 You can use a prepared statement for repeated execution of the same query with

@@ -1,3 +1,7 @@
+---
+title: "Role"
+---
+
 # Role
 
 The wrapper that contains the Audit Manager role information of the current user.

@@ -1,3 +1,7 @@
+---
+title: "DeleteAssessment"
+---
+
 # DeleteAssessment
 
 ###### Important

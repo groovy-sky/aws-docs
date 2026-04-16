@@ -1,3 +1,7 @@
+---
+title: "Use parameterized queries"
+---
+
 # Use parameterized queries
 
 You can use Athena parameterized queries to re-run the same query with different parameter

@@ -1,3 +1,7 @@
+---
+title: "BatchGetNamedQuery"
+---
+
 # BatchGetNamedQuery
 
 Returns the details of a single named query or a list of up to 50 queries, which you

@@ -1,3 +1,7 @@
+---
+title: "Query AWS WAF logs"
+---
+
 # Query AWS WAF logs
 
 AWS WAF is a web application firewall that lets you monitor and control the HTTP and

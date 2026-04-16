@@ -1,3 +1,7 @@
+---
+title: "AssessmentFrameworkShareRequest"
+---
+
 # AssessmentFrameworkShareRequest
 
 Represents a share request for a custom framework in AWS Audit Manager.

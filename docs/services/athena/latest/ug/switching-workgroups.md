@@ -1,3 +1,7 @@
+---
+title: "Switch workgroups"
+---
+
 # Switch workgroups
 
 You can switch from one workgroup to another if you have permissions to both of

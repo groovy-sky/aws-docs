@@ -1,3 +1,7 @@
+---
+title: "Control"
+---
+
 # Control
 
 A control in AWS Audit Manager.

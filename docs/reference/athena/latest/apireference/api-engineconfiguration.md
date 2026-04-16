@@ -1,3 +1,7 @@
+---
+title: "EngineConfiguration"
+---
+
 # EngineConfiguration
 
 The engine configuration for the workgroup, which includes the minimum/maximum number of Data Processing Units (DPU) that queries should use when

@@ -1,3 +1,7 @@
+---
+title: "Create tables for flow logs in Apache Parquet format"
+---
+
 # Create tables for flow logs in Apache Parquet format
 
 The following procedure creates an Amazon VPC table for Amazon VPC flow logs in Apache Parquet

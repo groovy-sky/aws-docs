@@ -1,3 +1,7 @@
+---
+title: "Advanced connection parameters"
+---
+
 # Advanced connection parameters
 
 The following sections describe the advanced connection parameters for the JDBC 3.x

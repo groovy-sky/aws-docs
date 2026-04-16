@@ -1,3 +1,7 @@
+---
+title: "Configure per-query and per-workgroup data usage controls"
+---
+
 # Configure per-query and per-workgroup data usage controls
 
 Athena allows you to set two types of cost controls: per-query limit and per-workgroup

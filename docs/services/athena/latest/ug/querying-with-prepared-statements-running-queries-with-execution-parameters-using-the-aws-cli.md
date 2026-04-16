@@ -1,3 +1,7 @@
+---
+title: "Run queries with execution parameters using the AWS CLI"
+---
+
 # Run queries with execution parameters using the AWS CLI
 
 To use the AWS CLI to run queries with execution parameters, use the

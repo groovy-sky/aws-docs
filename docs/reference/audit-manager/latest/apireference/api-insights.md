@@ -1,3 +1,7 @@
+---
+title: "Insights"
+---
+
 # Insights
 
 A summary of the latest analytics data for all your active assessments.

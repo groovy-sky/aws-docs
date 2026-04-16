@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot issues in Athena"
+---
+
 # Troubleshoot issues in Athena
 
 The Athena team has gathered the following troubleshooting information from customer
@@ -93,11 +97,25 @@ AWS Knowledge Center.
 
 ### HIVE\_CANNOT\_OPEN\_SPLIT: Error opening Hive split s3://amzn-s3-demo-bucket
 
-This error can occur when you query an Amazon S3 bucket prefix that has a large number
-of objects. For more information, see [How do\
-I resolve the "HIVE\_CANNOT\_OPEN\_SPLIT: Error opening Hive split\
-s3://amzn-s3-demo-bucket/: Slow down" error in Athena?](https://aws.amazon.com/premiumsupport/knowledge-center/hive-cannot-open-split-503-athena) in the AWS
-Knowledge Center.
+This error can occur for any of the following reasons:
+
+- The query exceeded a rate limit in a downstream service such as Amazon S3 or
+Lake Formation. The error message might include additional
+information such as `AmazonS3Exception: Please reduce your request
+                          rate` or `AWSLakeFormationException: Rate exceeded`.
+For more information about troubleshooting, see [Reduce throttling at the service level](performance-tuning-s3-throttling-reduce-throttling-at-the-service-level.md).
+
+- The query encountered a malformed file. The error message
+typically includes the Amazon S3 URI of the malformed file, and additional
+information.
+
+- A file was deleted while the query was running. The
+error message typically includes the Amazon S3 URI of the file, and might include
+`AmazonS3Exception: The specified key does not exist` or
+`Error Code: NoSuchKey`.
+
+- A file was replaced while the query was running. The
+error message typically includes only the Amazon S3 URI of the file.
 
 ### HIVE\_CURSOR\_ERROR: com.amazonaws.services.s3.model.AmazonS3Exception: The specified key does not exist
 

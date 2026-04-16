@@ -1,3 +1,7 @@
+---
+title: "CustomerContentEncryptionConfiguration"
+---
+
 # CustomerContentEncryptionConfiguration
 
 Specifies the customer managed KMS key that is used to encrypt the user's data stores

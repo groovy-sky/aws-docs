@@ -1,3 +1,7 @@
+---
+title: "AssessmentReportsDestination"
+---
+
 # AssessmentReportsDestination
 
 The location where AWS Audit Manager saves assessment reports for the given

@@ -1,3 +1,7 @@
+---
+title: "ImportNotebook"
+---
+
 # ImportNotebook
 
 Imports a single `ipynb` file to a Spark enabled workgroup. To import the

@@ -1,3 +1,7 @@
+---
+title: "Use magics to create data graphs"
+---
+
 # Use magics to create data graphs
 
 The line magics in this section specialize in rendering data for particular types of data

@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena AWS CMDB connector"
+---
+
 # Amazon Athena AWS CMDB connector
 
 The Amazon Athena AWS CMDB connector enables Athena to communicate with various AWS

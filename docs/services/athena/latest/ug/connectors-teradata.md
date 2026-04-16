@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Teradata connector"
+---
+
 # Amazon Athena Teradata connector
 
 The Amazon Athena connector for Teradata enables Athena to run SQL queries on data stored in

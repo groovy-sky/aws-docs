@@ -1,3 +1,7 @@
+---
+title: "AWSAccount"
+---
+
 # AWSAccount
 
 The wrapper of AWS account details, such as account ID or email address.

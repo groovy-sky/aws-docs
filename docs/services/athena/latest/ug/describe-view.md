@@ -1,3 +1,7 @@
+---
+title: "DESCRIBE VIEW"
+---
+
 # DESCRIBE VIEW
 
 Shows the list of columns for the specified Athena or AWS Glue Data Catalog view. Useful for

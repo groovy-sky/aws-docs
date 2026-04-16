@@ -1,3 +1,7 @@
+---
+title: "Work with tags for workgroups"
+---
+
 # Work with tags for workgroups
 
 Using the Athena console, you can see which tags are in use by each workgroup in your

@@ -1,3 +1,7 @@
+---
+title: "Athena ODBC 2.x connection parameters"
+---
+
 # Athena ODBC 2.x connection parameters
 
 The **Amazon Athena ODBC Configuration** dialog box options include

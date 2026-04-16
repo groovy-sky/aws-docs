@@ -1,3 +1,7 @@
+---
+title: "Use Hudi metadata for improved performance"
+---
+
 # Use Hudi metadata for improved performance
 
 The Apache Hudi has a [metadata table](https://hudi.apache.org/docs/next/metadata) that contains indexing features for improved performance

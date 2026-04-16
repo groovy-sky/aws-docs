@@ -1,3 +1,7 @@
+---
+title: "Use ML with Athena syntax"
+---
+
 # Use ML with Athena syntax
 
 The `USING EXTERNAL FUNCTION` clause specifies an ML with Athena function or

@@ -1,3 +1,7 @@
+---
+title: "Use federated passthrough queries"
+---
+
 # Use federated passthrough queries
 
 In Athena, you can run queries on federated data sources using the query language of the

@@ -1,3 +1,7 @@
+---
+title: "Manage Iceberg tables"
+---
+
 # Manage Iceberg tables
 
 Athena supports the following table DDL operations for Iceberg tables.

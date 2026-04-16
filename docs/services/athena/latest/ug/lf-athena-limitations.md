@@ -1,3 +1,7 @@
+---
+title: "Considerations and limitations for querying data registered with Lake Formation"
+---
+
 # Considerations and limitations for querying data registered with Lake Formation
 
 Consider the following when using Athena to query data registered in Lake Formation. For

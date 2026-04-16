@@ -1,3 +1,7 @@
+---
+title: "Control access through JDBC and ODBC connections"
+---
+
 # Control access through JDBC and ODBC connections
 
 To gain access to AWS services and resources, such as Athena and the Amazon S3 buckets,

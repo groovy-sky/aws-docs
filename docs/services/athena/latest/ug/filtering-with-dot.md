@@ -1,3 +1,7 @@
+---
+title: "Filter arrays using the . notation"
+---
+
 # Filter arrays using the `.` notation
 
 In the following example, select the `accountId` field from the

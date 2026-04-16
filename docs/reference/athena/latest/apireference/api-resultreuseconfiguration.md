@@ -1,3 +1,7 @@
+---
+title: "ResultReuseConfiguration"
+---
+
 # ResultReuseConfiguration
 
 Specifies the query result reuse behavior for the query.

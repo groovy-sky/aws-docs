@@ -1,3 +1,7 @@
+---
+title: "Create and query a partitioned table based on Amazon EMR logs"
+---
+
 # Create and query a partitioned table based on Amazon EMR logs
 
 These examples use the same log location to create an Athena table, but the table is

@@ -1,3 +1,7 @@
+---
+title: "Use compression in Athena"
+---
+
 # Use compression in Athena
 
 Athena supports a variety of compression formats for reading and writing data, including

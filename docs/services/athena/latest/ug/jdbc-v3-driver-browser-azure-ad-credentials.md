@@ -1,3 +1,7 @@
+---
+title: "Browser Azure AD credentials"
+---
+
 # Browser Azure AD credentials
 
 Browser Azure AD is a SAML-based authentication mechanism that works with the Azure AD

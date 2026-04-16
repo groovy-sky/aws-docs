@@ -1,3 +1,7 @@
+---
+title: "Use a crawler to add a table"
+---
+
 # Use a crawler to add a table
 
 AWS Glue crawlers help discover the schema for datasets and register them as tables in the

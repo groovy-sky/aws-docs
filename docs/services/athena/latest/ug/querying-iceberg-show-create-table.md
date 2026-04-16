@@ -1,3 +1,7 @@
+---
+title: "SHOW CREATE TABLE"
+---
+
 # SHOW CREATE TABLE
 
 Displays a `CREATE TABLE` DDL statement that can be used to recreate

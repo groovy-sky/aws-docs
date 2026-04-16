@@ -1,3 +1,7 @@
+---
+title: "Configure access to databases and tables in the AWS Glue Data Catalog"
+---
+
 # Configure access to databases and tables in the AWS Glue Data Catalog
 
 If you use the AWS Glue Data Catalog with Amazon Athena, you can define resource-level policies for the

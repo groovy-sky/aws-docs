@@ -1,3 +1,7 @@
+---
+title: "Use path extractors"
+---
+
 # Use path extractors
 
 Amazon Ion is a document style file format, but Apache Hive is a flat columnar format. You

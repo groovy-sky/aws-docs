@@ -1,3 +1,7 @@
+---
+title: "Register Redshift data catalogs in Athena"
+---
+
 # Register Redshift data catalogs in Athena
 
 Athena can read and write data stored in Redshift clusters or serverless namespaces

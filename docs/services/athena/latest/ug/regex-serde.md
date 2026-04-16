@@ -1,3 +1,7 @@
+---
+title: "Regex SerDe"
+---
+
 # Regex SerDe
 
 The Regex SerDe uses a regular expression (regex) to deserialize data by extracting regex

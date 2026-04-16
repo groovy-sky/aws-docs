@@ -1,3 +1,7 @@
+---
+title: "ControlComment"
+---
+
 # ControlComment
 
 A comment that's posted by a user on a control. This includes the author's name, the

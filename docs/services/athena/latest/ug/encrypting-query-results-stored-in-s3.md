@@ -1,3 +1,7 @@
+---
+title: "Encrypt Athena query results stored in Amazon S3"
+---
+
 # Encrypt Athena query results stored in Amazon S3
 
 You set up query result encryption using the Athena console or when using JDBC or

@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Configure federated access for Okta users to Athena using Lake Formation and JDBC"
+---
+
 # Tutorial: Configure federated access for Okta users to Athena using Lake Formation and JDBC
 
 This tutorial shows you how to configure Okta, AWS Lake Formation, AWS Identity and Access Management permissions, and the

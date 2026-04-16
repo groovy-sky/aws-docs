@@ -1,3 +1,7 @@
+---
+title: "Optimize Athena performance"
+---
+
 # Optimize Athena performance
 
 This topic provides general information and specific suggestions for improving the

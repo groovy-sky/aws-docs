@@ -1,3 +1,7 @@
+---
+title: "QueryStage"
+---
+
 # QueryStage
 
 Stage statistics such as input and output rows and bytes, execution time and stage

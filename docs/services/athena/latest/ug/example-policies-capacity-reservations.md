@@ -1,3 +1,7 @@
+---
+title: "Example capacity reservation policies"
+---
+
 # Example capacity reservation policies
 
 This section includes example policies you can use to enable various actions on capacity

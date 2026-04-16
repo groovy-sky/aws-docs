@@ -1,3 +1,7 @@
+---
+title: "CalculationStatistics"
+---
+
 # CalculationStatistics
 
 Contains statistics for a notebook calculation.

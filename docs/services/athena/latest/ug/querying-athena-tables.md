@@ -1,3 +1,7 @@
+---
+title: "Run SQL queries in Amazon Athena"
+---
+
 # Run SQL queries in Amazon Athena
 
 You can run SQL queries using Amazon Athena on data sources that are registered with the

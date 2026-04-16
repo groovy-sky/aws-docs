@@ -1,3 +1,7 @@
+---
+title: "StartSession"
+---
+
 # StartSession
 
 Creates a session for running calculations within a workgroup. The session is ready

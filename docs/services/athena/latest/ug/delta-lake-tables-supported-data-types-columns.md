@@ -1,3 +1,7 @@
+---
+title: "Supported column data types"
+---
+
 # Supported column data types
 
 This section describes the supported data types for non-partition and partition

@@ -1,3 +1,7 @@
+---
+title: "CreateCapacityReservation"
+---
+
 # CreateCapacityReservation
 
 Creates a capacity reservation with the specified name and number of requested data

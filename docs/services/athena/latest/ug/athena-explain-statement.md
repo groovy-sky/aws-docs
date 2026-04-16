@@ -1,3 +1,7 @@
+---
+title: "Using EXPLAIN and EXPLAIN ANALYZE in Athena"
+---
+
 # Using EXPLAIN and EXPLAIN ANALYZE in Athena
 
 The `EXPLAIN` statement shows the logical or distributed execution plan of a

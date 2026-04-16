@@ -1,3 +1,7 @@
+---
+title: "SHOW VIEWS"
+---
+
 # SHOW VIEWS
 
 Lists the Athena or Data Catalog views in a list of `STRING` type values. Each value

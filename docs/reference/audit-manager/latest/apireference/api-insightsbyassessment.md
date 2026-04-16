@@ -1,3 +1,7 @@
+---
+title: "InsightsByAssessment"
+---
+
 # InsightsByAssessment
 
 A summary of the latest analytics data for a specific active assessment.

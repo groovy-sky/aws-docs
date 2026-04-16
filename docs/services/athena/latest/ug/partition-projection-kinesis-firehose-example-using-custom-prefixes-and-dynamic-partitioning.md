@@ -1,3 +1,7 @@
+---
+title: "How to use custom prefixes and dynamic partitioning"
+---
+
 # How to use custom prefixes and dynamic partitioning
 
 Firehose can be configured with [custom prefixes](../../../firehose/latest/dev/s3-prefixes.md) and [dynamic\

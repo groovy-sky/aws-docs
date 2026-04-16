@@ -1,3 +1,7 @@
+---
+title: "Use partition projection"
+---
+
 # Use partition projection
 
 The following example shows a `CREATE TABLE` statement for Resolver query

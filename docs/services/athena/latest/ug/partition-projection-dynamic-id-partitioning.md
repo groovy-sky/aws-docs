@@ -1,3 +1,7 @@
+---
+title: "Use dynamic ID partitioning"
+---
+
 # Use dynamic ID partitioning
 
 When your data is partitioned by a property with high cardinality or when the values

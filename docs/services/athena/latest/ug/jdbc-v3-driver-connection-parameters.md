@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena JDBC 3.x connection parameters"
+---
+
 # Amazon Athena JDBC 3.x connection parameters
 
 Supported connection parameters are divided here into three sections: [Basic connection parameters](jdbc-v3-driver-basic-connection-parameters.md), [Advanced connection parameters](jdbc-v3-driver-advanced-connection-parameters.md), and [Authentication connection parameters](jdbc-v3-driver-authentication-connection-parameters.md). The Advanced

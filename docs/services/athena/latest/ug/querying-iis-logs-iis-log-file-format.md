@@ -1,3 +1,7 @@
+---
+title: "Query IIS log file format"
+---
+
 # Query IIS log file format
 
 Unlike the W3C extended format, the [IIS log file format](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc728311(v%3dws.10)) has a fixed set of fields and includes a comma as a

@@ -1,3 +1,7 @@
+---
+title: "SHOW COLUMNS"
+---
+
 # SHOW COLUMNS
 
 Shows only the column names for a single specified table, Athena view, or Data Catalog view. To

@@ -1,3 +1,7 @@
+---
+title: "Use the Spark EXPLAIN statement to troubleshoot Spark SQL"
+---
+
 # Use the Spark EXPLAIN statement to troubleshoot Spark SQL
 
 You can use the Spark `EXPLAIN` statement with Spark SQL to troubleshoot your

@@ -1,3 +1,7 @@
+---
+title: "Use saved queries"
+---
+
 # Use saved queries
 
 You can use the Athena console to save, edit, run, rename, and delete the queries that you

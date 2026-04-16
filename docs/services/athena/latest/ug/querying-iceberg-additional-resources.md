@@ -1,3 +1,7 @@
+---
+title: "Additional resources"
+---
+
 # Additional resources
 
 The following article is in the AWS Prescriptive Guidance documentation.

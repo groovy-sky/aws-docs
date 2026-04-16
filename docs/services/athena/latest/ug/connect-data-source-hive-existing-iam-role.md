@@ -1,3 +1,7 @@
+---
+title: "Connect Athena to a Hive metastore using an existing IAM execution role"
+---
+
 # Connect Athena to a Hive metastore using an existing IAM execution role
 
 To connect your external Hive metastore to Athena with a Lambda function that uses an

@@ -1,3 +1,7 @@
+---
+title: "Available data source connectors"
+---
+
 # Available data source connectors
 
 This section lists prebuilt Athena data source connectors that you can use to query a

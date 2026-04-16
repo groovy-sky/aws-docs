@@ -1,3 +1,7 @@
+---
+title: "Use SerDes"
+---
+
 # Use SerDes
 
 Athena supports several SerDe (Serializer/Deserializer) libraries that parse data from a

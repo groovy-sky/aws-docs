@@ -1,3 +1,7 @@
+---
+title: "QueryStagePlanNode"
+---
+
 # QueryStagePlanNode
 
 Stage plan information such as name, identifier, sub plans, and remote sources.

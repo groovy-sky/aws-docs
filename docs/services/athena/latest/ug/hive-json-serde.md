@@ -1,3 +1,7 @@
+---
+title: "Hive JSON SerDe"
+---
+
 # Hive JSON SerDe
 
 The Hive JSON SerDe is commonly used to process JSON data like events. These events are

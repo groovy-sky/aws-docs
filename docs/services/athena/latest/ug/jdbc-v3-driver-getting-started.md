@@ -1,3 +1,7 @@
+---
+title: "Get started with the JDBC 3.x driver"
+---
+
 # Get started with the JDBC 3.x driver
 
 Use the information in this section to get started with the Amazon Athena JDBC 3.x

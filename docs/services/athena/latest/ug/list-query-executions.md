@@ -1,3 +1,7 @@
+---
+title: "List query executions"
+---
+
 # List query executions
 
 The `ListQueryExecutionsExample` shows how to obtain a list of query

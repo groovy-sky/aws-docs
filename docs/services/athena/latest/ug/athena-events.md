@@ -1,3 +1,7 @@
+---
+title: "Monitor Athena query events with EventBridge"
+---
+
 # Monitor Athena query events with EventBridge
 
 You can use Amazon Athena with Amazon EventBridge to receive real-time notifications regarding the state

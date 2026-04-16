@@ -1,3 +1,7 @@
+---
+title: "Linux"
+---
+
 # Linux
 
 If you want use a Linux client computer to access Amazon Athena, the Amazon Athena ODBC driver is

@@ -1,3 +1,7 @@
+---
+title: "Create a client to access Athena"
+---
+
 # Create a client to access Athena
 
 The `AthenaClientFactory.java` class shows how to create and configure an

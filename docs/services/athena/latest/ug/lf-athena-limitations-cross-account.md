@@ -1,3 +1,7 @@
+---
+title: "Configure cross-account Data Catalog access"
+---
+
 # Configure cross-account Data Catalog access
 
 To access a data catalog in another account, you can use Athena's cross-account

@@ -1,3 +1,7 @@
+---
+title: "Browser trusted identity propagation credentials"
+---
+
 # Browser trusted identity propagation credentials
 
 This authentication type allows you to fetch a new JSON web token (JWT) from an external identity

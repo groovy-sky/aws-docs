@@ -1,3 +1,7 @@
+---
+title: "DataZone IAM Credentials Provider"
+---
+
 # DataZone IAM Credentials Provider
 
 An authentication mechanism that uses IAM credentials to connect to

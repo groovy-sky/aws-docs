@@ -1,3 +1,7 @@
+---
+title: "CalculationStatus"
+---
+
 # CalculationStatus
 
 Contains information about the status of a notebook calculation.

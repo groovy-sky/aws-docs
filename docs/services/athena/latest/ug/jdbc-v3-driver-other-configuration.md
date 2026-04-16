@@ -1,3 +1,7 @@
+---
+title: "Other JDBC 3.x configuration"
+---
+
 # Other JDBC 3.x configuration
 
 The following sections describe some additional configuration settings for the JDBC

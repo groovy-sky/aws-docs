@@ -1,3 +1,7 @@
+---
+title: "Connect to data sources"
+---
+
 # Connect to data sources
 
 You can use Amazon Athena to query data stored in different locations and formats in a

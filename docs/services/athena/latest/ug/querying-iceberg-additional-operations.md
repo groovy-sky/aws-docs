@@ -1,3 +1,7 @@
+---
+title: "Perform other DDL operations on Iceberg tables"
+---
+
 # Perform other DDL operations on Iceberg tables
 
 In addition to the schema evolution operations described in [Evolve Iceberg table schema](querying-iceberg-evolving-table-schema.md), you can also perform the

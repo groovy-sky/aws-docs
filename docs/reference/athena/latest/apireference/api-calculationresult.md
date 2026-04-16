@@ -1,3 +1,7 @@
+---
+title: "CalculationResult"
+---
+
 # CalculationResult
 
 Contains information about an application-specific calculation result.

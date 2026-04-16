@@ -1,3 +1,7 @@
+---
+title: "Endpoint overrides"
+---
+
 # Endpoint overrides
 
 ## Athena endpoint override

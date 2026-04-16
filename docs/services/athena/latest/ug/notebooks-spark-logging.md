@@ -1,3 +1,7 @@
+---
+title: "Log Spark application events in Athena"
+---
+
 # Log Spark application events in Athena
 
 The Athena notebook editor allows for standard Jupyter, Spark, and Python logging. You can

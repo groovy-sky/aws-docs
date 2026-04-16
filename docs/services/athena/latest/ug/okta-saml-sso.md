@@ -1,3 +1,7 @@
+---
+title: "Configure single sign-on using ODBC, SAML 2.0, and the Okta Identity Provider"
+---
+
 # Configure single sign-on using ODBC, SAML 2.0, and the Okta Identity Provider
 
 To connect to data sources, you can use Amazon Athena with identity providers (IdPs) like

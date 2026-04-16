@@ -1,3 +1,7 @@
+---
+title: "NamedQuery"
+---
+
 # NamedQuery
 
 A query, where `QueryString` contains the SQL statements that make up the

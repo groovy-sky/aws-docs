@@ -1,3 +1,7 @@
+---
+title: "ALTER TABLE SET LOCATION"
+---
+
 # ALTER TABLE SET LOCATION
 
 Changes the location for the table named `table_name`, and optionally a partition with `partition_spec`.

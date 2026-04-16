@@ -1,3 +1,7 @@
+---
+title: "Examples of Athena views"
+---
+
 # Examples of Athena views
 
 To show the syntax of the view query, use [SHOW CREATE VIEW](show-create-view.md).

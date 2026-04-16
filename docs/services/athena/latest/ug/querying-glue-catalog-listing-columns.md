@@ -1,3 +1,7 @@
+---
+title: "List or search columns for a specified table or view"
+---
+
 # List or search columns for a specified table or view
 
 You can list all columns for a table, all columns for a view, or search for a column

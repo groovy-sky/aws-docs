@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot JSON queries"
+---
+
 # Troubleshoot JSON queries
 
 For help on troubleshooting issues with JSON-related queries, see [JSON related errors](troubleshooting-athena.md#troubleshooting-athena-json-related-errors) or consult the following

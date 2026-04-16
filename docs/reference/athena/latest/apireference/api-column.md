@@ -1,3 +1,7 @@
+---
+title: "Column"
+---
+
 # Column
 
 Contains metadata for a column in a table.

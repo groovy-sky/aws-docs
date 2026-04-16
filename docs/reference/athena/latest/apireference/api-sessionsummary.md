@@ -1,3 +1,7 @@
+---
+title: "SessionSummary"
+---
+
 # SessionSummary
 
 Contains summary information about a session.

@@ -1,3 +1,7 @@
+---
+title: "Create a VPC for a data source connector or AWS Glue connection"
+---
+
 # Create a VPC for a data source connector or AWS Glue connection
 
 Some Athena data source connectors and AWS Glue connections require a VPC and a security

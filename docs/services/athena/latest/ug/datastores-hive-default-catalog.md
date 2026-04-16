@@ -1,3 +1,7 @@
+---
+title: "Omit the catalog name in external Hive metastore queries"
+---
+
 # Omit the catalog name in external Hive metastore queries
 
 When you run DML and DDL queries on external Hive metastores, you can simplify your query

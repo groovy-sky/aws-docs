@@ -1,3 +1,7 @@
+---
+title: "Supported data and storage formats"
+---
+
 # Supported data and storage formats
 
 The following table shows formats that are supported natively in Athena for Apache

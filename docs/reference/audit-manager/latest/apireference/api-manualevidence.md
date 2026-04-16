@@ -1,3 +1,7 @@
+---
+title: "ManualEvidence"
+---
+
 # ManualEvidence
 
 Evidence that's manually added to a control in AWS Audit Manager.

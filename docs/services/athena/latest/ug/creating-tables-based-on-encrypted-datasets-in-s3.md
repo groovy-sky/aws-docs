@@ -1,3 +1,7 @@
+---
+title: "Create tables based on encrypted datasets in Amazon S3"
+---
+
 # Create tables based on encrypted datasets in Amazon S3
 
 Athena can read and write to tables whose underlying datasets are SSE-S3, SSE-KMS,

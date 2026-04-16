@@ -1,3 +1,7 @@
+---
+title: "Configure cross-account access to AWS Glue data catalogs"
+---
+
 # Configure cross-account access to AWS Glue data catalogs
 
 You can use Athena's cross-account AWS Glue catalog feature to register an AWS Glue catalog from

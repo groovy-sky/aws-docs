@@ -1,3 +1,7 @@
+---
+title: "Create a table for Amazon VPC flow logs and query it"
+---
+
 # Create a table for Amazon VPC flow logs and query it
 
 The following procedure creates an Amazon VPC table for Amazon VPC flow logs. When you create a

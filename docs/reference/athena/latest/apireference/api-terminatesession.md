@@ -1,3 +1,7 @@
+---
+title: "TerminateSession"
+---
+
 # TerminateSession
 
 Terminates an active session. A `TerminateSession` call on a session that

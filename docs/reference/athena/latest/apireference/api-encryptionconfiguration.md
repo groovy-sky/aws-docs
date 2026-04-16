@@ -1,3 +1,7 @@
+---
+title: "EncryptionConfiguration"
+---
+
 # EncryptionConfiguration
 
 If query and calculation results are encrypted in Amazon S3, indicates the

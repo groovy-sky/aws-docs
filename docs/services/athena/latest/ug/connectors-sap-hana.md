@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena SAP HANA connector"
+---
+
 # Amazon Athena SAP HANA connector
 
 This connector can be registered with Glue Data Catalog as a federated catalog.

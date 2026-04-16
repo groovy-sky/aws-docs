@@ -1,3 +1,7 @@
+---
+title: "ManagedQueryResultsConfiguration"
+---
+
 # ManagedQueryResultsConfiguration
 
 The configuration for storing results in Athena owned storage, which includes whether this feature is enabled; whether encryption configuration, if any, is used for encrypting query results.

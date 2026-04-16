@@ -1,3 +1,7 @@
+---
+title: "Query Delta Lake tables with SQL"
+---
+
 # Query Delta Lake tables with SQL
 
 To query a Delta Lake table, use standard SQL `SELECT` syntax:

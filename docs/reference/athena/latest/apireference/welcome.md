@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Amazon Athena is an interactive query service that lets you use standard SQL
@@ -13,7 +17,7 @@ driver or later with the Amazon Athena API. Earlier version drivers do not
 support the API. For more information and to download the driver, see [Accessing\
 Amazon Athena with JDBC](../../../../services/athena/latest/ug/connect-with-jdbc.md).
 
-This document was last published on April 9, 2026.
+This document was last published on April 14, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

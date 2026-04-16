@@ -1,3 +1,7 @@
+---
+title: "DELETE"
+---
+
 # DELETE
 
 Athena Iceberg `DELETE` writes Iceberg position delete files to a table.

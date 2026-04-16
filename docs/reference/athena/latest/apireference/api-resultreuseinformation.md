@@ -1,3 +1,7 @@
+---
+title: "ResultReuseInformation"
+---
+
 # ResultReuseInformation
 
 Contains information about whether the result of a previous query was reused.

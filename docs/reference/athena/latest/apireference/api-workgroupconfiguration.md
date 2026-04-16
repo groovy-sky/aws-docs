@@ -1,3 +1,7 @@
+---
+title: "WorkGroupConfiguration"
+---
+
 # WorkGroupConfiguration
 
 The configuration of the workgroup, which includes the location in Amazon S3

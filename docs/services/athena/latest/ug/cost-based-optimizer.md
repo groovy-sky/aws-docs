@@ -1,3 +1,7 @@
+---
+title: "Use the cost-based optimizer"
+---
+
 # Use the cost-based optimizer
 
 You can use the cost-based optimizer (CBO) feature in Athena SQL to optimize your queries.

@@ -1,3 +1,7 @@
+---
+title: "CapacityReservation"
+---
+
 # CapacityReservation
 
 A reservation for a specified number of data processing units (DPUs). When a

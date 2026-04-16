@@ -1,3 +1,7 @@
+---
+title: "CalculationConfiguration"
+---
+
 # CalculationConfiguration
 
 Contains configuration information for the calculation.

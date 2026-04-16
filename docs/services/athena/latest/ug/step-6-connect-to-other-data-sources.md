@@ -1,3 +1,7 @@
+---
+title: "Step 6: Connect to other data sources"
+---
+
 # Step 6: Connect to other data sources
 
 This tutorial used a data source in Amazon S3 in CSV format. For information about using

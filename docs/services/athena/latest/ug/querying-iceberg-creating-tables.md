@@ -1,3 +1,7 @@
+---
+title: "Create Iceberg tables"
+---
+
 # Create Iceberg tables
 
 To create an Iceberg table for use in Athena, you can use a `CREATE TABLE`

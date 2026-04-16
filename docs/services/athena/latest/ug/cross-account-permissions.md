@@ -1,3 +1,7 @@
+---
+title: "Configure cross-account access in Athena to Amazon S3 buckets"
+---
+
 # Configure cross-account access in Athena to Amazon S3 buckets
 
 A common Amazon Athena scenario is granting access to users in an account different from the

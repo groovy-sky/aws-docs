@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot table errors"
+---
+
 # Troubleshoot table errors
 
 Use the information in this section to troubleshoot Athena for Spark table errors.

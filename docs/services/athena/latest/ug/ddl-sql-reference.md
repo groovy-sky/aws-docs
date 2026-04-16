@@ -1,3 +1,7 @@
+---
+title: "SQL reference for Athena"
+---
+
 # SQL reference for Athena
 
 Amazon Athena supports a subset of Data Definition Language (DDL) and Data Manipulation

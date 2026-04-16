@@ -1,3 +1,7 @@
+---
+title: "Example CloudTrail log queries"
+---
+
 # Example CloudTrail log queries
 
 The following example shows a portion of a query that returns all anonymous (unsigned)

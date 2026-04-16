@@ -1,3 +1,7 @@
+---
+title: "Query Apache Hudi datasets"
+---
+
 # Query Apache Hudi datasets
 
 [_Apache Hudi_](https://hudi.incubator.apache.org/)

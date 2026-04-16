@@ -1,3 +1,7 @@
+---
+title: "OpenX JSON SerDe"
+---
+
 # OpenX JSON SerDe
 
 Like the Hive JSON SerDe, you can use the OpenX JSON to process JSON data. The data are

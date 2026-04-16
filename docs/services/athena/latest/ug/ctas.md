@@ -1,3 +1,7 @@
+---
+title: "Create a table from query results (CTAS)"
+---
+
 # Create a table from query results (CTAS)
 
 A `CREATE TABLE AS SELECT` (CTAS) query creates a new table in Athena from the

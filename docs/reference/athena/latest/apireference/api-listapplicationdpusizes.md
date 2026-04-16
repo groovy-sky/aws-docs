@@ -1,3 +1,7 @@
+---
+title: "ListApplicationDPUSizes"
+---
+
 # ListApplicationDPUSizes
 
 Returns the supported DPU sizes for the supported application runtimes (for example,

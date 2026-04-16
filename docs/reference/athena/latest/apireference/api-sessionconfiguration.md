@@ -1,3 +1,7 @@
+---
+title: "SessionConfiguration"
+---
+
 # SessionConfiguration
 
 Contains session configuration information.

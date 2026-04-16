@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Snowflake connector"
+---
+
 # Amazon Athena Snowflake connector
 
 The Amazon Athena connector for [Snowflake](https://www.snowflake.com/)

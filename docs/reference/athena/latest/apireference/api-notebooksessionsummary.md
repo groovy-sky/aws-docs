@@ -1,3 +1,7 @@
+---
+title: "NotebookSessionSummary"
+---
+
 # NotebookSessionSummary
 
 Contains the notebook session ID and notebook session creation time.

@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot session errors"
+---
+
 # Troubleshoot session errors
 
 Use the information in this section to troubleshoot session issues.

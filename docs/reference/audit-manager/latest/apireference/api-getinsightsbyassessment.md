@@ -1,3 +1,7 @@
+---
+title: "GetInsightsByAssessment"
+---
+
 # GetInsightsByAssessment
 
 ###### Important

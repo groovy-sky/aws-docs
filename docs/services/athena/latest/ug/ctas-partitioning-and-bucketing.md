@@ -1,3 +1,7 @@
+---
+title: "Use partitioning and bucketing"
+---
+
 # Use partitioning and bucketing
 
 Partitioning and bucketing are two ways to reduce the amount of data Athena must scan when

@@ -1,3 +1,7 @@
+---
+title: "GetAssessmentReportUrl"
+---
+
 # GetAssessmentReportUrl
 
 ###### Important

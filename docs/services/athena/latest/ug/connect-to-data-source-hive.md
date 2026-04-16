@@ -1,3 +1,7 @@
+---
+title: "Use an external Hive metastore"
+---
+
 # Use an external Hive metastore
 
 You can use the Amazon Athena data connector for external Hive metastore to query data sets in

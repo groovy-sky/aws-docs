@@ -1,3 +1,7 @@
+---
+title: "Amazon Ion Hive SerDe"
+---
+
 # Amazon Ion Hive SerDe
 
 You can use the Amazon Ion Hive SerDe to query data stored in [Amazon Ion](https://amzn.github.io/ion-docs/guides/cookbook.html) format.

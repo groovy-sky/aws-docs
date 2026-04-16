@@ -1,3 +1,7 @@
+---
+title: "Use magic commands"
+---
+
 # Use magic commands
 
 Magic commands, or _magics_, are special commands that you can run in

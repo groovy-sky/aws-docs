@@ -1,3 +1,7 @@
+---
+title: "EvidenceFinderEnablement"
+---
+
 # EvidenceFinderEnablement
 
 The settings object that specifies whether evidence finder is enabled. This object also

@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Apache Kafka connector"
+---
+
 # Amazon Athena Apache Kafka connector
 
 The Amazon Athena connector for Apache Kafka enables Amazon Athena to run SQL queries on your

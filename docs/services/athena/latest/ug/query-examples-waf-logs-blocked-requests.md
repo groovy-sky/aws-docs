@@ -1,3 +1,7 @@
+---
+title: "Query for blocked requests or addresses"
+---
+
 # Query for blocked requests or addresses
 
 The examples in this section query for blocked requests or addresses.

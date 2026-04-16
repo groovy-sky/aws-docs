@@ -1,3 +1,7 @@
+---
+title: "Use a form in the Athena console to add an AWS Glue table"
+---
+
 # Use a form in the Athena console to add an AWS Glue table
 
 The following procedure shows you how to use the Athena console to add a table using the

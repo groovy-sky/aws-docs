@@ -1,3 +1,7 @@
+---
+title: "Use the Amazon Athena Power BI connector"
+---
+
 # Use the Amazon Athena Power BI connector
 
 On Windows operating systems, you can use the Microsoft Power BI connector for Amazon Athena

@@ -1,3 +1,7 @@
+---
+title: "Functions in Amazon Athena"
+---
+
 # Functions in Amazon Athena
 
 For changes in functions between Athena engine versions, see [Athena engine versioning](engine-versions.md). For a list of the time

@@ -1,3 +1,7 @@
+---
+title: "Use workgroups to control query access and costs"
+---
+
 # Use workgroups to control query access and costs
 
 You can use Athena workgroups to separate workloads, control team access, enforce

@@ -1,3 +1,7 @@
+---
+title: "Edit a saved query"
+---
+
 # Edit a saved query
 
 ###### To edit a saved query

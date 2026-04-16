@@ -1,3 +1,7 @@
+---
+title: "Filter arrays"
+---
+
 # Filter arrays
 
 Create an array from a collection of rows if they match the filter criteria.

@@ -1,3 +1,7 @@
+---
+title: "Query restored Amazon Glacier objects"
+---
+
 # Query restored Amazon Glacier objects
 
 You can use Athena to query restored objects from the Amazon Glacier Flexible Retrieval (formerly

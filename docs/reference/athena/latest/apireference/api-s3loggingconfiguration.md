@@ -1,3 +1,7 @@
+---
+title: "S3LoggingConfiguration"
+---
+
 # S3LoggingConfiguration
 
 Configuration settings for delivering logs to Amazon S3 buckets.

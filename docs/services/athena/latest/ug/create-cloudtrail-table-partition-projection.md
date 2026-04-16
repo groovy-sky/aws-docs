@@ -1,3 +1,7 @@
+---
+title: "Create the table for CloudTrail logs in Athena using partition projection"
+---
+
 # Create the table for CloudTrail logs in Athena using partition projection
 
 Because CloudTrail logs have a known structure whose partition scheme you can specify in

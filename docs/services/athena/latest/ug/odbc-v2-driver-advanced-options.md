@@ -1,3 +1,7 @@
+---
+title: "Advanced options"
+---
+
 # Advanced options
 
 ## Fetch size

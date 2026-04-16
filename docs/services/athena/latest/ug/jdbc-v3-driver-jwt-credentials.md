@@ -1,3 +1,7 @@
+---
+title: "JWT credentials"
+---
+
 # JWT credentials
 
 With this authentication type, you can use a JSON web token (JWT) obtained from an

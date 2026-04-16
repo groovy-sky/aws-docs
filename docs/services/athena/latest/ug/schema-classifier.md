@@ -1,3 +1,7 @@
+---
+title: "Create tables for ETL jobs"
+---
+
 # Create tables for ETL jobs
 
 You can use Athena to create tables that AWS Glue can use for ETL jobs. AWS Glue jobs perform ETL

@@ -1,3 +1,7 @@
+---
+title: "Use the Athena notebook editor"
+---
+
 # Use the Athena notebook editor
 
 ###### Note

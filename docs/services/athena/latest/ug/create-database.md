@@ -1,3 +1,7 @@
+---
+title: "CREATE DATABASE"
+---
+
 # CREATE DATABASE
 
 Creates a database. The use of `DATABASE` and `SCHEMA` is

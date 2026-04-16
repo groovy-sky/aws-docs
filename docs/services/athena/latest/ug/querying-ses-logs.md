@@ -1,3 +1,7 @@
+---
+title: "Query Amazon SES event logs"
+---
+
 # Query Amazon SES event logs
 
 You can use Amazon Athena to query [Amazon Simple Email\

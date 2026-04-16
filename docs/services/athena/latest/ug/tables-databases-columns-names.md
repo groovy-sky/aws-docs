@@ -1,3 +1,7 @@
+---
+title: "Name databases, tables, and columns"
+---
+
 # Name databases, tables, and columns
 
 Use these guidelines for naming databases, tables, and columns in Athena.

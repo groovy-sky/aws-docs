@@ -1,3 +1,7 @@
+---
+title: "GetDatabase"
+---
+
 # GetDatabase
 
 Returns a database object for the specified database and data catalog.

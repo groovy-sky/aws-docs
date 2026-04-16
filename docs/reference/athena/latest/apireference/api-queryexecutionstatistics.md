@@ -1,3 +1,7 @@
+---
+title: "QueryExecutionStatistics"
+---
+
 # QueryExecutionStatistics
 
 The amount of data scanned during the query execution and the amount of time that it

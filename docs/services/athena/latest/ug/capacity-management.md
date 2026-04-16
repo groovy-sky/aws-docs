@@ -1,3 +1,7 @@
+---
+title: "Manage query processing capacity"
+---
+
 # Manage query processing capacity
 
 You can use capacity reservations to get dedicated serverless processing capacity for the queries you

@@ -1,3 +1,7 @@
+---
+title: "Start query execution"
+---
+
 # Start query execution
 
 The `StartQueryExample` shows how to submit a query to Athena, wait until

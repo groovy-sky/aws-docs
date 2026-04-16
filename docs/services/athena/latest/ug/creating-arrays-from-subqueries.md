@@ -1,3 +1,7 @@
+---
+title: "Create arrays from subqueries"
+---
+
 # Create arrays from subqueries
 
 Create an array from a collection of rows.

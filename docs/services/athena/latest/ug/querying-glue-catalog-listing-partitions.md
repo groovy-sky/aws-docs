@@ -1,3 +1,7 @@
+---
+title: "List partitions for a specific table"
+---
+
 # List partitions for a specific table
 
 You can use `SHOW PARTITIONS table_name` to list

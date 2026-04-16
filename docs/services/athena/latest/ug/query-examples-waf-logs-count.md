@@ -1,3 +1,7 @@
+---
+title: "Count referrers, IP addresses, or matched rules"
+---
+
 # Count referrers, IP addresses, or matched rules
 
 The examples in this section query for counts of log items of interest.

@@ -1,3 +1,7 @@
+---
+title: "WorkGroupSummary"
+---
+
 # WorkGroupSummary
 
 The summary information for the workgroup, which includes its name, state,

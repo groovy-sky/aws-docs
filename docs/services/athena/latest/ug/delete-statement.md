@@ -1,3 +1,7 @@
+---
+title: "DELETE"
+---
+
 # DELETE
 
 Deletes rows in an Apache Iceberg table. `DELETE` is transactional and is

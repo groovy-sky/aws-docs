@@ -1,3 +1,7 @@
+---
+title: "DML queries, functions, and operators"
+---
+
 # DML queries, functions, and operators
 
 The Athena DML query engine generally supports Trino and Presto syntax and adds its own

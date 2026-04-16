@@ -1,3 +1,7 @@
+---
+title: "SHOW PARTITIONS"
+---
+
 # SHOW PARTITIONS
 
 Lists all the partitions in an Athena table in unsorted order.

@@ -1,3 +1,7 @@
+---
+title: "BatchGetQueryExecutionInput"
+---
+
 # BatchGetQueryExecutionInput
 
 Contains an array of query execution IDs.

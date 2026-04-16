@@ -1,3 +1,7 @@
+---
+title: "GetInsights"
+---
+
 # GetInsights
 
 ###### Important

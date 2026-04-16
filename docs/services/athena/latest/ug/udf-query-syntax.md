@@ -1,3 +1,7 @@
+---
+title: "Query using UDF query syntax"
+---
+
 # Query using UDF query syntax
 
 The `USING EXTERNAL FUNCTION` clause specifies a UDF or multiple UDFs that

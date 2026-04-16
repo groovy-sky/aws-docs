@@ -1,3 +1,7 @@
+---
+title: "DROP VIEW"
+---
+
 # DROP VIEW
 
 Drops (deletes) an existing Athena or AWS Glue Data Catalog view. The optional `IF EXISTS`

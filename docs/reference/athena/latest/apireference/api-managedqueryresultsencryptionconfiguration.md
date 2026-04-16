@@ -1,3 +1,7 @@
+---
+title: "ManagedQueryResultsEncryptionConfiguration"
+---
+
 # ManagedQueryResultsEncryptionConfiguration
 
 If you encrypt query and calculation results in Athena owned storage, this field

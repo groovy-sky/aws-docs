@@ -1,3 +1,7 @@
+---
+title: "Query across regions"
+---
+
 # Query across regions
 
 Athena supports the ability to query Amazon S3 data in an AWS Region that is different from

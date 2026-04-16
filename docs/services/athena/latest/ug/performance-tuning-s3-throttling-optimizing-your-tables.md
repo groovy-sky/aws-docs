@@ -1,3 +1,7 @@
+---
+title: "Optimize your tables"
+---
+
 # Optimize your tables
 
 Structuring your data is important if you encounter throttling issues. Although Amazon S3

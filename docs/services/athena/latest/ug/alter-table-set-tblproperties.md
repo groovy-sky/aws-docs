@@ -1,3 +1,7 @@
+---
+title: "ALTER TABLE SET TBLPROPERTIES"
+---
+
 # ALTER TABLE SET TBLPROPERTIES
 
 Adds custom or predefined metadata properties to a table and sets their assigned values.

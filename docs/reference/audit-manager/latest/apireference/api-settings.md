@@ -1,3 +1,7 @@
+---
+title: "Settings"
+---
+
 # Settings
 
 The settings object that holds all supported Audit Manager settings.

@@ -1,3 +1,7 @@
+---
+title: "CapacityAllocation"
+---
+
 # CapacityAllocation
 
 Contains the submission time of a single allocation request for a capacity reservation

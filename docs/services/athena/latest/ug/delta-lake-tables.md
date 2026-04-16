@@ -1,3 +1,7 @@
+---
+title: "Query Linux Foundation Delta Lake tables"
+---
+
 # Query Linux Foundation Delta Lake tables
 
 Linux Foundation [Delta Lake](https://delta.io/) is a table format for

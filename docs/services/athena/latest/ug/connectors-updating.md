@@ -1,3 +1,7 @@
+---
+title: "Update a data source connector"
+---
+
 # Update a data source connector
 
 Athena recommends that you regularly update the data source connectors that you use to the

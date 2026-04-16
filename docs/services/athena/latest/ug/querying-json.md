@@ -1,3 +1,7 @@
+---
+title: "Query JSON data"
+---
+
 # Query JSON data
 
 Amazon Athena lets you query JSON-encoded data, extract data from nested JSON, search for

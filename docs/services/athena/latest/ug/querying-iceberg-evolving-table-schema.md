@@ -1,3 +1,7 @@
+---
+title: "Evolve Iceberg table schema"
+---
+
 # Evolve Iceberg table schema
 
 Iceberg schema updates are metadata-only changes. No data files are changed when you

@@ -1,3 +1,7 @@
+---
+title: "Connect to Amazon Athena with ODBC"
+---
+
 # Connect to Amazon Athena with ODBC
 
 Amazon Athena offers two ODBC drivers, versions 1.x and 2.x. The Athena ODBC 2.x driver is a

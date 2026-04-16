@@ -1,3 +1,7 @@
+---
+title: "Register and use data catalogs in Athena"
+---
+
 # Register and use data catalogs in Athena
 
 Athena supports mounting and connecting to multiple data catalogs.

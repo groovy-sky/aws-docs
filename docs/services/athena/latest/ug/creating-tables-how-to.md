@@ -1,3 +1,7 @@
+---
+title: "Create tables using AWS Glue or the Athena console"
+---
+
 # Create tables using AWS Glue or the Athena console
 
 You can create tables in Athena by using AWS Glue, the add table form, or by running a DDL

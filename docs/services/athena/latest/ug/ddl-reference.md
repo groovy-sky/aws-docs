@@ -1,3 +1,7 @@
+---
+title: "DDL statements"
+---
+
 # DDL statements
 
 Use the supported data definition language (DDL) statements presented here directly in

@@ -1,3 +1,7 @@
+---
+title: "ALTER TABLE ADD COLUMNS"
+---
+
 # ALTER TABLE ADD COLUMNS
 
 Adds one or more columns to an existing Iceberg table.

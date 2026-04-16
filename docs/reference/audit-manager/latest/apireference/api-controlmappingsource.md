@@ -1,3 +1,7 @@
+---
+title: "ControlMappingSource"
+---
+
 # ControlMappingSource
 
 The data source that determines where AWS Audit Manager collects evidence from for

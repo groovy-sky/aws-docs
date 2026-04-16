@@ -1,3 +1,7 @@
+---
+title: "SessionStatistics"
+---
+
 # SessionStatistics
 
 Contains statistics for a session.

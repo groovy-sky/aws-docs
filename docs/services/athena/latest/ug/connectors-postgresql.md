@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena PostgreSQL connector"
+---
+
 # Amazon Athena PostgreSQL connector
 
 The Amazon Athena PostgreSQL connector enables Athena to access your PostgreSQL

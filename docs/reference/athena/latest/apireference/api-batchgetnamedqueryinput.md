@@ -1,3 +1,7 @@
+---
+title: "BatchGetNamedQueryInput"
+---
+
 # BatchGetNamedQueryInput
 
 Contains an array of named query IDs.

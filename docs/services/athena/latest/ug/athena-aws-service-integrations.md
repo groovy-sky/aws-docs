@@ -1,3 +1,7 @@
+---
+title: "AWS service integrations with Athena"
+---
+
 # AWS service integrations with Athena
 
 You can use Athena to query data from the AWS services listed in this section. To see the

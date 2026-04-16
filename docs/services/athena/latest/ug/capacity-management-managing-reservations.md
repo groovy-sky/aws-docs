@@ -1,3 +1,7 @@
+---
+title: "Manage reservations"
+---
+
 # Manage reservations
 
 You can view and manage your capacity reservations on the **Capacity**

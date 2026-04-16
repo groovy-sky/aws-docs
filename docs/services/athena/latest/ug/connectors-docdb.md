@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena DocumentDB connector"
+---
+
 # Amazon Athena DocumentDB connector
 
 The Amazon Athena DocumentDB connector enables Athena to communicate with your DocumentDB instances

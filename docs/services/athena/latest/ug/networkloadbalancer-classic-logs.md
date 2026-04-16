@@ -1,3 +1,7 @@
+---
+title: "Query Network Load Balancer logs"
+---
+
 # Query Network Load Balancer logs
 
 Use Athena to analyze and process logs from Network Load Balancer. These logs receive detailed information

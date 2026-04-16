@@ -1,3 +1,7 @@
+---
+title: "Enable cross-account federated queries"
+---
+
 # Enable cross-account federated queries
 
 Federated query allows you to query data sources other than Amazon S3 using data source

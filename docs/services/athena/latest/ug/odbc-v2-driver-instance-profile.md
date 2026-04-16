@@ -1,3 +1,7 @@
+---
+title: "Instance profile"
+---
+
 # Instance profile
 
 This authentication type is used on EC2 instances and is delivered through the Amazon EC2

@@ -1,3 +1,7 @@
+---
+title: "Create a table for CloudFront real-time logs"
+---
+
 # Create a table for CloudFront real-time logs
 
 ###### To create a table for CloudFront real-time log file fields

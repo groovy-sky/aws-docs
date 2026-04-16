@@ -1,3 +1,7 @@
+---
+title: "Create a named query"
+---
+
 # Create a named query
 
 The `CreateNamedQueryExample` shows how to create a named query.

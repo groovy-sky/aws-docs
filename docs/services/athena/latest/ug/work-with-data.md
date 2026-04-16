@@ -1,3 +1,7 @@
+---
+title: "Create databases and tables"
+---
+
 # Create databases and tables
 
 Amazon Athena supports a subset of data definition language (DDL) statements and ANSI SQL

@@ -1,3 +1,7 @@
+---
+title: "ResultConfiguration"
+---
+
 # ResultConfiguration
 
 The location in Amazon S3 where query and calculation results are stored and

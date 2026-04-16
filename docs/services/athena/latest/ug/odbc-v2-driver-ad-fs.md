@@ -1,3 +1,7 @@
+---
+title: "AD FS"
+---
+
 # AD FS
 
 AD FS is a SAML based authentication plugin that works with the Active Directory

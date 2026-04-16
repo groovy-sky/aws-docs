@@ -1,3 +1,7 @@
+---
+title: "Concatenate strings and arrays"
+---
+
 # Concatenate strings and arrays
 
 Concatenating strings and concatenating arrays use similar techniques.

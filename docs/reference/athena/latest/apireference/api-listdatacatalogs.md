@@ -1,3 +1,7 @@
+---
+title: "ListDataCatalogs"
+---
+
 # ListDataCatalogs
 
 Lists the data catalogs in the current AWS account.

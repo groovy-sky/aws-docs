@@ -1,3 +1,7 @@
+---
+title: "View execution plans for SQL queries"
+---
+
 # View execution plans for SQL queries
 
 You can use the Athena query editor to see graphical representations of how your query will

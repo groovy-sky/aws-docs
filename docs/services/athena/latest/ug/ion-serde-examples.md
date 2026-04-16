@@ -1,3 +1,7 @@
+---
+title: "Path extractor examples"
+---
+
 # Path extractor examples
 
 The following path extractor examples show how to flatten and rename fields or extract

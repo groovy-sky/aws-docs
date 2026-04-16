@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Oracle connector"
+---
+
 # Amazon Athena Oracle connector
 
 The Amazon Athena connector for Oracle enables Amazon Athena to run SQL queries on data stored in

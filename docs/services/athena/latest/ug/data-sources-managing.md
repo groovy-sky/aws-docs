@@ -1,3 +1,7 @@
+---
+title: "Manage your data sources"
+---
+
 # Manage your data sources
 
 You can use the **Data sources and catalogs** page of the Athena console to manage the

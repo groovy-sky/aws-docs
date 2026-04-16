@@ -1,3 +1,7 @@
+---
+title: "SHOW TBLPROPERTIES"
+---
+
 # SHOW TBLPROPERTIES
 
 Lists table properties for the named table.

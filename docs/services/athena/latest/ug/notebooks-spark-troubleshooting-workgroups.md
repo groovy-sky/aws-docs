@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Spark-enabled workgroups"
+---
+
 # Troubleshoot Spark-enabled workgroups
 
 Use the following information to troubleshoot Spark-enabled workgroups in Athena.

@@ -1,3 +1,7 @@
+---
+title: "Authentication connection parameters"
+---
+
 # Authentication connection parameters
 
 The Athena JDBC 3.x driver supports several authentication methods. The connection

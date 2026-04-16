@@ -1,3 +1,7 @@
+---
+title: "Amazon Athena Google Cloud Storage connector"
+---
+
 # Amazon Athena Google Cloud Storage connector
 
 The Amazon Athena Google Cloud Storage connector enables Amazon Athena to run queries on Parquet

@@ -1,3 +1,7 @@
+---
+title: "Lazy Simple SerDe for CSV, TSV, and custom-delimited files"
+---
+
 # Lazy Simple SerDe for CSV, TSV, and custom-delimited files
 
 Because this is the default SerDe in Athena for data in CSV, TSV, and custom-delimited

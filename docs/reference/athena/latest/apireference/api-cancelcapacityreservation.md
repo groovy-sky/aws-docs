@@ -1,3 +1,7 @@
+---
+title: "CancelCapacityReservation"
+---
+
 # CancelCapacityReservation
 
 Cancels the capacity reservation with the specified name. Cancelled reservations

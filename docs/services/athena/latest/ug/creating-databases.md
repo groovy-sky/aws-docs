@@ -1,3 +1,7 @@
+---
+title: "Create databases in Athena"
+---
+
 # Create databases in Athena
 
 A database in Athena is a logical grouping for tables you create in it. Before you create a

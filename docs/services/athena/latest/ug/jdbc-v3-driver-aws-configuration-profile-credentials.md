@@ -1,3 +1,7 @@
+---
+title: "AWS configuration profile credentials"
+---
+
 # AWS configuration profile credentials
 
 You can use credentials stored in an AWS configuration profile by setting the

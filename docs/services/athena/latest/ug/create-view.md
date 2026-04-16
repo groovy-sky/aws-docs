@@ -1,3 +1,7 @@
+---
+title: "CREATE VIEW and CREATE PROTECTED MULTI DIALECT VIEW"
+---
+
 # CREATE VIEW and CREATE PROTECTED MULTI DIALECT VIEW
 
 A view is a logical table that can be referenced by future queries. Views do not contain

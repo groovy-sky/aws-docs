@@ -1,3 +1,7 @@
+---
+title: "Use Amazon Athena Federated Query"
+---
+
 # Use Amazon Athena Federated Query
 
 If you have data in sources other than Amazon S3, you can use Athena Federated Query to query the data in

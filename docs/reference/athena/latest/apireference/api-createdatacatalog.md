@@ -1,3 +1,7 @@
+---
+title: "CreateDataCatalog"
+---
+
 # CreateDataCatalog
 
 Creates (registers) a data catalog with the specified name and properties. Catalogs

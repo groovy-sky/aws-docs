@@ -1,3 +1,7 @@
+---
+title: "Enable or disable a workgroup"
+---
+
 # Enable or disable a workgroup
 
 If you have permissions to do so, you can enable or disable workgroups in the console,

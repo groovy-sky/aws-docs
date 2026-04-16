@@ -1,3 +1,7 @@
+---
+title: "Create a workgroup"
+---
+
 # Create a workgroup
 
 Creating a workgroup requires permissions to `CreateWorkgroup` API actions. See

@@ -1,3 +1,7 @@
+---
+title: "Query Amazon GuardDuty findings"
+---
+
 # Query Amazon GuardDuty findings
 
 [Amazon GuardDuty](https://aws.amazon.com/guardduty) is a security monitoring service

@@ -1,3 +1,7 @@
+---
+title: "QueryResultsS3AccessGrantsConfiguration"
+---
+
 # QueryResultsS3AccessGrantsConfiguration
 
 Specifies whether Amazon S3 access grants are enabled for query

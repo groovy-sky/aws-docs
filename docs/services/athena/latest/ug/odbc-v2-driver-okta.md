@@ -1,3 +1,7 @@
+---
+title: "Okta"
+---
+
 # Okta
 
 Okta is a SAML-based authentication plugin that works with the Okta identity provider. For

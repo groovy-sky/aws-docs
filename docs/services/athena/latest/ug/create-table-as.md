@@ -1,3 +1,7 @@
+---
+title: "CREATE TABLE AS"
+---
+
 # CREATE TABLE AS
 
 Creates a new table populated with the results of a [SELECT](select.md) query. To create an empty table, use [CREATE TABLE](create-table.md). `CREATE TABLE AS`

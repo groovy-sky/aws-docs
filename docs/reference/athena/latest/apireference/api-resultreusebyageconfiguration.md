@@ -1,3 +1,7 @@
+---
+title: "ResultReuseByAgeConfiguration"
+---
+
 # ResultReuseByAgeConfiguration
 
 Specifies whether previous query results are reused, and if so, their maximum

@@ -1,3 +1,7 @@
+---
+title: "Use AWS Glue Data Catalog to connect to your data"
+---
+
 # Use AWS Glue Data Catalog to connect to your data
 
 Athena uses the AWS Glue Data Catalog to store metadata such as table and column names for your data

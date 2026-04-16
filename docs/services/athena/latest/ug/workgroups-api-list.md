@@ -1,3 +1,7 @@
+---
+title: "Use Athena workgroup APIs"
+---
+
 # Use Athena workgroup APIs
 
 The following are some of the REST API operations used for Athena workgroups. In all of the

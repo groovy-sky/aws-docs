@@ -1,3 +1,7 @@
+---
+title: "Create a table for CloudFront logs in Athena using partition projection with Parquet"
+---
+
 # Create a table for CloudFront logs in Athena using partition projection with Parquet
 
 The following example CREATE TABLE statement automatically uses partition projection

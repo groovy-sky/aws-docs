@@ -1,3 +1,7 @@
+---
+title: "Query AWS Global Accelerator flow logs"
+---
+
 # Query AWS Global Accelerator flow logs
 
 You can use AWS Global Accelerator to create accelerators that direct network traffic to optimal

@@ -1,3 +1,7 @@
+---
+title: "Permissions required to create connector and Athena catalog"
+---
+
 # Permissions required to create connector and Athena catalog
 
 To invoke Athena `CreateDataCatalog` you must create a role that has the

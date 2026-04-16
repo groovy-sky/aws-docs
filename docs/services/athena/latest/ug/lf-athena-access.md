@@ -1,3 +1,7 @@
+---
+title: "How Athena accesses data registered with Lake Formation"
+---
+
 # How Athena accesses data registered with Lake Formation
 
 The access workflow described in this section applies when you run Athena queries on

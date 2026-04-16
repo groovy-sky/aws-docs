@@ -1,3 +1,7 @@
+---
+title: "Connect Athena to IAM Identity Center"
+---
+
 # Connect Athena to IAM Identity Center
 
 The following section lists the process of connecting Athena to IAM Identity Center.

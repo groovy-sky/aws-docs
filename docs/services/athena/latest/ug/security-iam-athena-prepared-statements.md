@@ -1,3 +1,7 @@
+---
+title: "Configure access to prepared statements"
+---
+
 # Configure access to prepared statements
 
 This topic covers IAM permissions for prepared statements in Amazon Athena.

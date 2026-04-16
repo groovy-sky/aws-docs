@@ -1,3 +1,7 @@
+---
+title: "GetCapacityReservation"
+---
+
 # GetCapacityReservation
 
 Returns information about the capacity reservation with the specified name.

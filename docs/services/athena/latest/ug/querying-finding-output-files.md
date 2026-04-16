@@ -1,3 +1,7 @@
+---
+title: "Find query output files in Amazon S3"
+---
+
 # Find query output files in Amazon S3
 
 Query output files are stored in sub-folders on Amazon S3 in the following path pattern

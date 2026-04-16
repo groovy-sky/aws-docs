@@ -1,3 +1,7 @@
+---
+title: "Convert Athena data types to JSON"
+---
+
 # Convert Athena data types to JSON
 
 To convert Athena data types to JSON, use `CAST`.

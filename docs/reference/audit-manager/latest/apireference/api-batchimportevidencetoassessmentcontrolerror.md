@@ -1,3 +1,7 @@
+---
+title: "BatchImportEvidenceToAssessmentControlError"
+---
+
 # BatchImportEvidenceToAssessmentControlError
 
 An error entity for the `BatchImportEvidenceToAssessmentControl` API. This

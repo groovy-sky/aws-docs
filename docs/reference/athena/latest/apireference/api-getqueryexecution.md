@@ -1,3 +1,7 @@
+---
+title: "GetQueryExecution"
+---
+
 # GetQueryExecution
 
 Returns information about a single execution of a query if you have access to the

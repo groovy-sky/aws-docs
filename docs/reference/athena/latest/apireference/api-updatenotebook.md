@@ -1,3 +1,7 @@
+---
+title: "UpdateNotebook"
+---
+
 # UpdateNotebook
 
 Updates the contents of a Spark notebook.

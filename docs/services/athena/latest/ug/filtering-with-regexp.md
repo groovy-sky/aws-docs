@@ -1,3 +1,7 @@
+---
+title: "Find keywords in arrays using regexp_like"
+---
+
 # Find keywords in arrays using `regexp_like`
 
 The following examples illustrate how to search a dataset for a keyword within an

@@ -1,3 +1,7 @@
+---
+title: "Enable CloudWatch query metrics in Athena"
+---
+
 # Enable CloudWatch query metrics in Athena
 
 When you create a workgroup in the console, the setting for publishing query metrics

@@ -1,3 +1,7 @@
+---
+title: "Run a saved query"
+---
+
 # Run a saved query
 
 ###### To run a saved query

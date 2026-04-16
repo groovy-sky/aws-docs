@@ -1,3 +1,7 @@
+---
+title: "Work with CSV data in AWS Glue"
+---
+
 # Work with CSV data in AWS Glue
 
 This page describes how to use AWS Glue to create schema from CSV files that have quotes
