@@ -1,3 +1,7 @@
+---
+title: "Using VMware VCDR and NetApp CVO for Disaster Recovery (DR)"
+---
+
 # Using VMware VCDR and NetApp CVO for Disaster Recovery (DR)
 
 Publication date: **March 17, 2022 ( [Diagram history](#diagram-history))**

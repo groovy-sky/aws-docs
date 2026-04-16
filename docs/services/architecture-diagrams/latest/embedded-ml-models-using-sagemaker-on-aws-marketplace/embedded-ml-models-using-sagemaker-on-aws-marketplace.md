@@ -1,3 +1,7 @@
+---
+title: "Embedded ML models using Amazon SageMaker AI on AWS Marketplace"
+---
+
 # Embedded ML models using Amazon SageMaker AI on AWS Marketplace
 
 Publication date: **August 17, 2022 ( [Diagram history](#diagram-history))**

@@ -1,3 +1,7 @@
+---
+title: "Oracle PeopleSoft on AWS"
+---
+
 # Oracle PeopleSoft on AWS
 
 Publication date: **March 21, 2023 ( [Diagram history](#diagram-history))**

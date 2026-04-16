@@ -1,3 +1,7 @@
+---
+title: "Game Production in the Cloud - Workstations"
+---
+
 # Game Production in the Cloud - Workstations
 
 Publication date: **December 1, 2021 ( [Diagram history](#diagram-history))**

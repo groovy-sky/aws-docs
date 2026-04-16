@@ -1,3 +1,7 @@
+---
+title: "Smart Farm on Amazon Web Services"
+---
+
 # Smart Farm on Amazon Web Services
 
 Publication date: **October 24, 2022 ( [Diagram history](#diagram-history))**

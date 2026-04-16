@@ -1,3 +1,7 @@
+---
+title: "Financial Advisor Chat Assistant"
+---
+
 # Financial Advisor Chat Assistant
 
 Publication date: **January 10, 2022 ( [Diagram history](#diagram-history))**

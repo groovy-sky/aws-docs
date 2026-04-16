@@ -1,3 +1,7 @@
+---
+title: "Amazon Virtual Andon"
+---
+
 # Amazon Virtual Andon
 
 Publication date: **October 15, 2021 ( [Diagram history](#diagram-history))**

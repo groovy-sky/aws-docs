@@ -1,3 +1,7 @@
+---
+title: "Telecom Charging (OCS/CHF) on AWS Outposts"
+---
+
 # Telecom Charging (OCS/CHF) on AWS Outposts
 
 Publication date: **December 15, 2022 ( [Diagram history](#diagram-history))**

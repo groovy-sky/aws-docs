@@ -1,3 +1,7 @@
+---
+title: "Electric Vehicle Charging Station Management System"
+---
+
 # Electric Vehicle Charging Station Management System
 
 Publication date: **June 4, 2024 ( [Diagram history](#diagram-history))**

@@ -1,3 +1,7 @@
+---
+title: "Protegrity Data Protection for Amazon S3 and Snowflake"
+---
+
 # Protegrity Data Protection for Amazon S3 and Snowflake
 
 Publication date: **October 12, 2023 ( [Diagram history](#diagram-history))**

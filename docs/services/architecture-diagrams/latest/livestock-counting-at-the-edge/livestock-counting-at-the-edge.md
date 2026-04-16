@@ -1,3 +1,7 @@
+---
+title: "Livestock Counting at the Edge"
+---
+
 # Livestock Counting at the Edge
 
 Publication date: **July 12, 2022 ( [Diagram history](#diagram-history))**

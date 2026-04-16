@@ -1,3 +1,7 @@
+---
+title: "Security-rich API Management Using IBM API Connect on AWS"
+---
+
 # Security-rich API Management Using IBM API Connect on AWS
 
 Publication date: **October 26, 2023 ( [Diagram history](#diagram-history))**

@@ -1,3 +1,7 @@
+---
+title: "Moodle for High Availability on AWS"
+---
+
 # Moodle for High Availability on AWS
 
 Publication date: **December 22, 2021 ( [Diagram history](#diagram-history))**

@@ -1,3 +1,7 @@
+---
+title: "Connected Aircraft Solution Architecture"
+---
+
 # Connected Aircraft Solution Architecture
 
 Publication date: **September 22, 2022 ( [Diagram history](#diagram-history))**

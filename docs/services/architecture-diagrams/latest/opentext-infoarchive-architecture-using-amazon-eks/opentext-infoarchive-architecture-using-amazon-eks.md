@@ -1,3 +1,7 @@
+---
+title: "OpenText InfoArchive Architecture Using Amazon EKS and Amazon RDS"
+---
+
 # OpenText InfoArchive Architecture Using Amazon EKS and Amazon RDS
 
 Publication date: **May 23, 2023 ( [Diagram history](#diagram-history))**

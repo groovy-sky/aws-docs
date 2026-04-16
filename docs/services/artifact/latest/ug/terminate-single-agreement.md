@@ -1,3 +1,7 @@
+---
+title: "Terminating agreements for your AWS account in AWS Artifact"
+---
+
 # Terminating agreements for your AWS account in AWS Artifact
 
 If you used the AWS Artifact console to [accept an agreement for a single\

@@ -1,3 +1,7 @@
+---
+title: "Accepting agreements for your AWS account in AWS Artifact"
+---
+
 # Accepting agreements for your AWS account in AWS Artifact
 
 You can use the AWS Artifact console to review and accept agreements with AWS for your

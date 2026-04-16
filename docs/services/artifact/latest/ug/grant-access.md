@@ -1,3 +1,7 @@
+---
+title: "Granting user access to AWS Artifact"
+---
+
 # Granting user access to AWS Artifact
 
 Complete the following steps to grant users permissions to AWS Artifact based on the

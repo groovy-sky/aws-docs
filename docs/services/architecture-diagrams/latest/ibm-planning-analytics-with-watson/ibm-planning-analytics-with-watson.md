@@ -1,3 +1,7 @@
+---
+title: "IBM Planning Analytics with Watson on AWS"
+---
+
 # IBM Planning Analytics with Watson on AWS
 
 Publication date: **May 16, 2023 ( [Diagram history](#diagram-history))**

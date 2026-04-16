@@ -1,3 +1,7 @@
+---
+title: "AWS Connected Vehicle Reference Architecture"
+---
+
 # AWS Connected Vehicle Reference Architecture
 
 Publication date: **January 17, 2024 ( [Diagram history](#diagram-history))**

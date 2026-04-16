@@ -1,3 +1,7 @@
+---
+title: "Edit in the Cloud on AWS"
+---
+
 # Edit in the Cloud on AWS
 
 Publication date: **June 12, 2022 ( [Diagram history](#diagram-history))**

@@ -1,3 +1,7 @@
+---
+title: "Wafer Inspection with Machine Learning"
+---
+
 # Wafer Inspection with Machine Learning
 
 Publication date: **September 16, 2022 ( [Diagram history](#diagram-history))**

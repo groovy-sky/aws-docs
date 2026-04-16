@@ -1,3 +1,7 @@
+---
+title: "Example IAM policies for AWS Artifact in commercial AWS Regions"
+---
+
 # Example IAM policies for AWS Artifact in commercial AWS Regions
 
 You can create permissions policies that grant permissions to IAM users. You can

@@ -1,3 +1,7 @@
+---
+title: "Life Sciences Data Collection, Storage, and Processing"
+---
+
 # Life Sciences Data Collection, Storage, and Processing
 
 Publication date: **July 20, 2022 ( [Diagram history](#diagram-history))**

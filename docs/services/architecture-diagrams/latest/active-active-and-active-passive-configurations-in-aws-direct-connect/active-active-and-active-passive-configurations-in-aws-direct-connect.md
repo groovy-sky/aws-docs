@@ -1,3 +1,7 @@
+---
+title: "Active/Active and Active/Passive Configurations in AWS Direct Connect"
+---
+
 # Active/Active and Active/Passive Configurations in AWS Direct Connect
 
 Publication date: **September 21, 2023 ( [Diagram history](#diagram-history))**

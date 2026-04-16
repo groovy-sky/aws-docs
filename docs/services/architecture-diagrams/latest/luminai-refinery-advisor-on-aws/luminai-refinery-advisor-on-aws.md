@@ -1,3 +1,7 @@
+---
+title: "LUMINAI Refinery Advisor on AWS"
+---
+
 # LUMINAI Refinery Advisor on AWS
 
 Publication date: **February 29, 2024 ( [Diagram history](#diagram-history))**

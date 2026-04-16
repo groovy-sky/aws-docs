@@ -1,3 +1,7 @@
+---
+title: "Amazon VPC Lattice Reference Architectures"
+---
+
 # Amazon VPC Lattice Reference Architectures
 
 Publication date: **October 16, 2023 ( [Diagram history](#diagram-history))**

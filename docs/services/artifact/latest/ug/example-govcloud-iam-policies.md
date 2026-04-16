@@ -1,3 +1,7 @@
+---
+title: "Example IAM policies for AWS Artifact in AWS GovCloud (US) Regions"
+---
+
 # Example IAM policies for AWS Artifact in AWS GovCloud (US) Regions
 
 These policies are ONLY applicable in AWS GovCloud (US) Regions. For policies applicable to commercial AWS [Regions](../../../glossary/latest/reference/glos-chap.md#region),

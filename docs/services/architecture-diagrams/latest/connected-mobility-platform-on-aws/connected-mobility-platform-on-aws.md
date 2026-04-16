@@ -1,3 +1,7 @@
+---
+title: "Connected Mobility Platform"
+---
+
 # Connected Mobility Platform
 
 Publication date: **December 13, 2022 ( [Diagram history](#diagram-history))**

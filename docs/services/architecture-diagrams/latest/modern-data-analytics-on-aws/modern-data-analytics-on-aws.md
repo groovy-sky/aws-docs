@@ -1,3 +1,7 @@
+---
+title: "Modern Data Analytics Reference Architecture on AWS Diagram"
+---
+
 # Modern Data Analytics Reference Architecture on AWS Diagram
 
 Publication date: **May 31, 2022 ( [Diagram history](#diagram-history))**

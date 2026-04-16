@@ -1,3 +1,7 @@
+---
+title: "Using service-linked roles for AWS Artifact"
+---
+
 # Using service-linked roles for AWS Artifact
 
 AWS Artifact uses AWS Identity and Access Management (IAM)

@@ -1,3 +1,7 @@
+---
+title: "AWS DevOps Monitoring Dashboard"
+---
+
 # AWS DevOps Monitoring Dashboard
 
 Publication date: **April 12, 2022 ( [Diagram history](#diagram-history))**

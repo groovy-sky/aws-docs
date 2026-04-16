@@ -1,3 +1,7 @@
+---
+title: "Kelvin AI on AWS"
+---
+
 # Kelvin AI on AWS
 
 Publication date: **October 20, 2023 ( [Diagram history](#diagram-history))**

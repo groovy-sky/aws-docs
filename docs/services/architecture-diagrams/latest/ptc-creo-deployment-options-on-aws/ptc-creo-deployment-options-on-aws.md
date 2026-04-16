@@ -1,3 +1,7 @@
+---
+title: "PTC Creo on Amazon WorkSpaces Applications – EC2-based File Share for Users"
+---
+
 # PTC Creo on Amazon WorkSpaces Applications – EC2-based File Share for Users
 
 Publication date: **March 24, 2022 ( [Diagram history](#diagram-history))**

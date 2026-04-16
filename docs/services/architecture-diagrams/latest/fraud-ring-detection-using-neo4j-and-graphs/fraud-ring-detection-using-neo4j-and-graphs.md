@@ -1,3 +1,7 @@
+---
+title: "Fraud ring detection using Neo4j and graphs"
+---
+
 # Fraud ring detection using Neo4j and graphs
 
 Publication date: **June 10, 2024 ( [Diagram history](#diagram-history))**

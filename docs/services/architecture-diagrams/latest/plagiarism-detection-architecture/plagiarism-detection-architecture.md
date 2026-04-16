@@ -1,3 +1,7 @@
+---
+title: "Plagiarism Detection Architecture"
+---
+
 # Plagiarism Detection Architecture
 
 Publication date: **July 26, 2021 ( [Diagram history](#diagram-history))**

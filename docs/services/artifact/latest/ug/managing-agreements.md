@@ -1,3 +1,7 @@
+---
+title: "Managing agreements in AWS Artifact"
+---
+
 # Managing agreements in AWS Artifact
 
 You can use AWS Artifact to review and manage agreements for your AWS account or organization.

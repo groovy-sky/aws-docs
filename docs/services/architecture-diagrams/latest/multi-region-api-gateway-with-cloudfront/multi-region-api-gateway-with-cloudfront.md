@@ -1,3 +1,7 @@
+---
+title: "Multi-region API Gateway with CloudFront"
+---
+
 # Multi-region API Gateway with CloudFront
 
 Publication date: **April 19, 2022 ( [Diagram history](#diagram-history))**

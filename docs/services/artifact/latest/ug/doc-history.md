@@ -1,3 +1,7 @@
+---
+title: "Document history for AWS Artifact"
+---
+
 # Document history for AWS Artifact
 
 The following table provides a history of AWS Artifact releases and related changes to the AWS Artifact User Guide.

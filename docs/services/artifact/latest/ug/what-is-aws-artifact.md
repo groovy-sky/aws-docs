@@ -1,3 +1,7 @@
+---
+title: "What is AWS Artifact?"
+---
+
 # What is AWS Artifact?
 
 AWS Artifact provides on-demand downloads of AWS security and compliance documents. For example,

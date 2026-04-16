@@ -1,3 +1,7 @@
+---
+title: "Offline agreements in AWS Artifact"
+---
+
 # Offline agreements in AWS Artifact
 
 If you have an existing offline agreement, AWS Artifact displays the agreements that you

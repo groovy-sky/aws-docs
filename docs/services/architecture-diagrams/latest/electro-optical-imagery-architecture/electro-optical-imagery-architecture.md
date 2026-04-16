@@ -1,3 +1,7 @@
+---
+title: "Electro-Optical Imagery Reference Architecture"
+---
+
 # Electro-Optical Imagery Reference Architecture
 
 Publication date: **May 12, 2021 ( [Diagram history](#diagram-history))**

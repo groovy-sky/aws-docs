@@ -1,3 +1,7 @@
+---
+title: "Datavant Switchboard with AWS Clean Rooms"
+---
+
 # Datavant Switchboard with AWS Clean Rooms
 
 Publication date: **January 24, 2024 ( [Diagram history](#diagram-history))**

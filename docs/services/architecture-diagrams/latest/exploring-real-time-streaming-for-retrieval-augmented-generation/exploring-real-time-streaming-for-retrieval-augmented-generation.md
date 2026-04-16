@@ -1,3 +1,7 @@
+---
+title: "Exploring Real-Time Streaming for Retrieval Augmented Generation in GenerativeAI"
+---
+
 # Exploring Real-Time Streaming for Retrieval Augmented Generation in GenerativeAI
 
 Publication date: **August 12, 2024 ( [Diagram history](#diagram-history))**

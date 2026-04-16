@@ -1,3 +1,7 @@
+---
+title: "Data Lake Architecture for Renewable Energy"
+---
+
 # Data Lake Architecture for Renewable Energy
 
 Publication date: **October 26, 2022 ( [Diagram history](#diagram-history))**

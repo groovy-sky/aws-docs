@@ -1,3 +1,7 @@
+---
+title: "Identity and access management in AWS Artifact"
+---
+
 # Identity and access management in AWS Artifact
 
 When you sign up for AWS, you provide an email address and password that are

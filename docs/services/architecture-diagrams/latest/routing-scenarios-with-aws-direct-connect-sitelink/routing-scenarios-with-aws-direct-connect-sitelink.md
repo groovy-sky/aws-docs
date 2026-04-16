@@ -1,3 +1,7 @@
+---
+title: "Routing Scenarios with AWS Direct Connect SiteLink"
+---
+
 # Routing Scenarios with AWS Direct Connect SiteLink
 
 Publication date: **July 25, 2023 ( [Diagram history](#diagram-history))**

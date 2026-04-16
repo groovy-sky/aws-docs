@@ -1,3 +1,7 @@
+---
+title: "Downloading reports in AWS Artifact"
+---
+
 # Downloading reports in AWS Artifact
 
 You can download reports from the AWS Artifact console. When you download a report from AWS Artifact,

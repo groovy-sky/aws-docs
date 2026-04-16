@@ -1,3 +1,7 @@
+---
+title: "Industrial Data Lake for Predictive Maintenance using Amazon Monitron and Amazon Kinesis"
+---
+
 # Industrial Data Lake for Predictive Maintenance using Amazon Monitron and Amazon Kinesis
 
 Publication date: **September 28, 2022 ( [Diagram history](#diagram-history))**

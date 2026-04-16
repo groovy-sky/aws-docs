@@ -1,3 +1,7 @@
+---
+title: "Build a Healthcare Data Pipeline on AWS with IBM Cloud Pak for Data"
+---
+
 # Build a Healthcare Data Pipeline on AWS with IBM Cloud Pak for Data
 
 Publication date: **April 19, 2023 ( [Diagram history](#diagram-history))**

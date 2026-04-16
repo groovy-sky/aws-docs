@@ -1,3 +1,7 @@
+---
+title: "Fleet Management Solution for Connected Farm"
+---
+
 # Fleet Management Solution for Connected Farm
 
 Publication date: **August 19, 2022 ( [Diagram history](#diagram-history))**

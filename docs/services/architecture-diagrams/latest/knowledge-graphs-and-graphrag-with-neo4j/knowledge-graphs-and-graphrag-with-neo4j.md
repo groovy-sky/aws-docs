@@ -1,3 +1,7 @@
+---
+title: "Knowledge Graphs and GraphRAG with AWS and Neo4j"
+---
+
 # Knowledge Graphs and GraphRAG with AWS and Neo4j
 
 Publication date: **November 26, 2024 ( [Diagram history](#diagram-history))**

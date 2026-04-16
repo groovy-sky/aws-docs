@@ -1,3 +1,7 @@
+---
+title: "Serverless In-Game Screenshot Processor Pipeline for Game Studios"
+---
+
 # Serverless In-Game Screenshot Processor Pipeline for Game Studios
 
 Publication date: **December 23, 2021 ( [Diagram history](#diagram-history))**

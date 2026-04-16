@@ -1,3 +1,7 @@
+---
+title: "Modernize Applications with Microservices Using Amazon EKS"
+---
+
 # Modernize Applications with Microservices Using Amazon EKS
 
 Publication date: **July 24, 2023 ( [Diagram history](#diagram-history))**

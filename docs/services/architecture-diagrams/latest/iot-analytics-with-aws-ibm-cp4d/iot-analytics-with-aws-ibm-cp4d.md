@@ -1,3 +1,7 @@
+---
+title: "Near Real-Time IoT Analytics with AWS and IBM CP4D"
+---
+
 # Near Real-Time IoT Analytics with AWS and IBM CP4D
 
 Publication date: **May 12, 2023 ( [Diagram history](#diagram-history))**

@@ -1,3 +1,7 @@
+---
+title: "Flight Information Management System (FIMS)"
+---
+
 # Flight Information Management System (FIMS)
 
 Publication date: **February 2, 2022 ( [Diagram history](#diagram-history))**

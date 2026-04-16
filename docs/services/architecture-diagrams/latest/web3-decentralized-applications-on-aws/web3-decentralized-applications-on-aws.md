@@ -1,3 +1,7 @@
+---
+title: "Web3 Decentralized Applications on AWS"
+---
+
 # Web3 Decentralized Applications on AWS
 
 Publication date: **August 3, 2023 ( [Diagram history](#diagram-history))**

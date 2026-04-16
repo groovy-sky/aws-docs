@@ -1,3 +1,7 @@
+---
+title: "IBM DataStage on AWS with IBM CP4D"
+---
+
 # IBM DataStage on AWS with IBM CP4D
 
 Publication date: **May 3, 2023 ( [Diagram history](#diagram-history))**

@@ -1,3 +1,7 @@
+---
+title: "Real-Time Casino Player Analytics"
+---
+
 # Real-Time Casino Player Analytics
 
 Publication date: **April 19, 2022 ( [Diagram history](#diagram-history))**

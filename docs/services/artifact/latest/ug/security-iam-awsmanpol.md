@@ -1,3 +1,7 @@
+---
+title: "Using AWS managed policies for AWS Artifact"
+---
+
 # Using AWS managed policies for AWS Artifact
 
 An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed

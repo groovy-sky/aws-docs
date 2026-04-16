@@ -1,3 +1,7 @@
+---
+title: "Electro-Optical Imagery on AWS"
+---
+
 # Electro-Optical Imagery on AWS
 
 Publication date: **May 13, 2021 ( [Diagram history](#diagram-history))**

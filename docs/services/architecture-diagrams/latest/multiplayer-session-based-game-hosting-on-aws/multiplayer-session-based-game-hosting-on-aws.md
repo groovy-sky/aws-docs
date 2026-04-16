@@ -1,3 +1,7 @@
+---
+title: "Multiplayer Session-based Game Hosting on AWS"
+---
+
 # Multiplayer Session-based Game Hosting on AWS
 
 Publication date: **September 1, 2022 ( [Diagram history](#diagram-history))**

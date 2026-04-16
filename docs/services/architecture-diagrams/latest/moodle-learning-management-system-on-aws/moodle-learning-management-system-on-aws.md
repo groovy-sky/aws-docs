@@ -1,3 +1,7 @@
+---
+title: "Moodle Reference Architecture"
+---
+
 # Moodle Reference Architecture
 
 Publication date: **August 18, 2022 ( [Diagram history](#diagram-history))**

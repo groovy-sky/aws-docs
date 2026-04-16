@@ -1,3 +1,7 @@
+---
+title: "Local Clusters for Amazon EKS on AWS Outposts"
+---
+
 # Local Clusters for Amazon EKS on AWS Outposts
 
 Publication date: **June 02, 2023 ( [Diagram history](#diagram-history))**

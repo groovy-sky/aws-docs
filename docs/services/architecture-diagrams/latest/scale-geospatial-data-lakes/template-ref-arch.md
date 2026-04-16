@@ -1,3 +1,7 @@
+---
+title: "Scale Geospatial Data Lakes on AWS"
+---
+
 # Scale Geospatial Data Lakes on AWS
 
 Publication date: **August 14, 2023 ( [Diagram history](#diagram-history))**

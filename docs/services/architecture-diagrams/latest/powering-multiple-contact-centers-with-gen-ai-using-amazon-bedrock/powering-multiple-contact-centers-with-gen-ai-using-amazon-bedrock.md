@@ -1,3 +1,7 @@
+---
+title: "Powering Multiple Contact Centers with GenAI Using Amazon Bedrock"
+---
+
 # Powering Multiple Contact Centers with GenAI Using Amazon Bedrock
 
 Publication date: **October 4, 2023 ( [Diagram history](#diagram-history))**

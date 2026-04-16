@@ -1,3 +1,7 @@
+---
+title: "Traffic Segmentation Options in AWS Direct Connect"
+---
+
 # Traffic Segmentation Options in AWS Direct Connect
 
 Publication date: **November 9, 2023 ( [Diagram history](#diagram-history))**

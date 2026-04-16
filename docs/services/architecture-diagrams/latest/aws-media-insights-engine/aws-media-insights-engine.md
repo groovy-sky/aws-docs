@@ -1,3 +1,7 @@
+---
+title: "AWS Media Insights Engine"
+---
+
 # AWS Media Insights Engine
 
 **This version of the diagram has been archived.**

@@ -1,3 +1,7 @@
+---
+title: "Open edX on AWS"
+---
+
 # Open edX on AWS
 
 Publication date: **April 14, 2023 ( [Diagram history](#diagram-history))**

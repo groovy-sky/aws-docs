@@ -1,3 +1,7 @@
+---
+title: "High Performance Computing on AWS"
+---
+
 # High Performance Computing on AWS
 
 Publication date: **September 1, 2021 ( [Diagram history](#diagram-history))**

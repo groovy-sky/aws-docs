@@ -1,3 +1,7 @@
+---
+title: "Secure HTAP Data Architecture Using TiDB Cloud"
+---
+
 # Secure HTAP Data Architecture Using TiDB Cloud
 
 Publication date: **June 13, 2023 ( [Diagram history](#diagram-history))**
