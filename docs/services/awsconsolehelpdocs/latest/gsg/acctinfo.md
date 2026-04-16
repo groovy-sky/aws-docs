@@ -1,3 +1,7 @@
+---
+title: "Accessing your AWS account, organization, service quota, and billing information in the AWS Management Console"
+---
+
 # Accessing your AWS account, organization, service quota, and billing information in the AWS Management Console
 
 If you have the necessary permissions, you can access information about your AWS account, service quotas, organization, and billing information

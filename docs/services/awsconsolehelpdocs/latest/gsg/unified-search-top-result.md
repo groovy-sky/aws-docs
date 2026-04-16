@@ -1,3 +1,7 @@
+---
+title: "Viewing features of a service in the AWS Management Console"
+---
+
 # Viewing features of a service in the AWS Management Console
 
 You can view features of a service from within your search results.

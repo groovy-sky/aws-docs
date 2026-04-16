@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 The CloudTrail Data Service lets you ingest events into CloudTrail from any source in your
@@ -7,7 +11,7 @@ this data without maintaining multiple log aggregators and reporting tools. Afte
 `PutAuditEvents` to ingest your application activity into CloudTrail, you can use CloudTrail Lake to search, query, and analyze the data that is logged
 from your applications.
 
-This document was last published on April 9, 2026.
+This document was last published on April 16, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

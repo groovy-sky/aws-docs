@@ -1,3 +1,7 @@
+---
+title: "Choosing your Region"
+---
+
 # Choosing your Region
 
 For many services, you can choose an AWS Region that specifies where your resources

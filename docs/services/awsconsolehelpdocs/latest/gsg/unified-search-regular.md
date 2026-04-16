@@ -1,3 +1,7 @@
+---
+title: "Searching for AWS products in the AWS Management Console"
+---
+
 # Searching for AWS products in the AWS Management Console
 
 The following procedure details how to search for AWS products using the search tool.

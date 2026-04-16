@@ -1,3 +1,7 @@
+---
+title: "IAM users in the AWS Management Console"
+---
+
 # IAM users in the AWS Management Console
 
 IAM users may be able to change their password from the AWS Management Console depending on their permissions. Otherwise, they must use an AWS access portal.

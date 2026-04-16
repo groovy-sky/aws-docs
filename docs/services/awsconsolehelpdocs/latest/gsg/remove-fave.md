@@ -1,3 +1,7 @@
+---
+title: "Removing favorites in the AWS Management Console"
+---
+
 # Removing favorites in the AWS Management Console
 
 You can remove services and applications from your favorites using the **Services** menu. You can also remove services by using the search results page from the search bar.

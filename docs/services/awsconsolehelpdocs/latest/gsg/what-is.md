@@ -1,3 +1,7 @@
+---
+title: "What is the AWS Management Console?"
+---
+
 # What is the AWS Management Console?
 
 The [AWS Management Console](https://console.aws.amazon.com/) is a web-based application that contains and provides centralized access to all individual AWS service consoles.

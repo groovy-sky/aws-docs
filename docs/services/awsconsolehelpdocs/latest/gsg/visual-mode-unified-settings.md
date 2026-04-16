@@ -1,3 +1,7 @@
+---
+title: "Changing the visual mode of the AWS Management Console"
+---
+
 # Changing the visual mode of the AWS Management Console
 
 Your visual mode sets your console to light mode, dark mode, or the default display mode of your browser.

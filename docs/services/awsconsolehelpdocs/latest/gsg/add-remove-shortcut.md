@@ -1,3 +1,7 @@
+---
+title: "Favorites in the AWS Management Console"
+---
+
 # Favorites in the AWS Management Console
 
 To access your frequently used services and applications more quickly, you can save their service

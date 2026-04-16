@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for AWS User Experience Customization"
+---
+
 # Identity-based policy examples for AWS User Experience Customization
 
 By default, users and roles don't have permission to get or modify UXC resources. To

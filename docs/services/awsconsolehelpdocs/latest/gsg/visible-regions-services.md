@@ -1,3 +1,7 @@
+---
+title: "Configuring visible Regions and services in the AWS Management Console"
+---
+
 # Configuring visible Regions and services in the AWS Management Console
 
 Account administrators can control which AWS Regions and AWS services are visible

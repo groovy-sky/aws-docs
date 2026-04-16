@@ -1,3 +1,7 @@
+---
+title: "Signing in to multiple accounts"
+---
+
 # Signing in to multiple accounts
 
 You can sign in to up to five different identities simultaneously in a single web browser in the AWS Management Console. These can be any combination of root, IAM, or federated roles in different accounts or in the same account.

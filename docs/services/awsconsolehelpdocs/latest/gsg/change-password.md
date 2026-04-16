@@ -1,3 +1,7 @@
+---
+title: "Changing your password in the AWS Management Console"
+---
+
 # Changing your password in the AWS Management Console
 
 You may be able to change your password from the

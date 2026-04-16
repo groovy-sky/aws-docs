@@ -1,3 +1,7 @@
+---
+title: "Choosing a Region from the navigation bar in the AWS Management Console"
+---
+
 # Choosing a Region from the navigation bar in the AWS Management Console
 
 The following procedure details how you can change your Region from the navigation bar.

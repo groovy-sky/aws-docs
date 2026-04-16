@@ -1,3 +1,7 @@
+---
+title: "How AWS User Experience Customization works with IAM"
+---
+
 # How AWS User Experience Customization works with IAM
 
 AWS User Experience Customization (UXC) works with IAM policies to manage access to UXC API

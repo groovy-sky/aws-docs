@@ -1,3 +1,7 @@
+---
+title: "Accessing Unified Settings in the AWS Management Console"
+---
+
 # Accessing Unified Settings in the AWS Management Console
 
 The following procedure describes how to access Unified Settings.

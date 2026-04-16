@@ -1,3 +1,7 @@
+---
+title: "Adding services to your favorites in the AWS Management Console"
+---
+
 # Adding services to your favorites in the AWS Management Console
 
 You can add services to your favorites from the **Services** menu or the search results page from the search box.

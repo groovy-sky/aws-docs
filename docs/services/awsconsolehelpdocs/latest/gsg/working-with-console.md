@@ -1,3 +1,7 @@
+---
+title: "Configuring the AWS Management Console using Unified Settings"
+---
+
 # Configuring the AWS Management Console using Unified Settings
 
 This topic describes how to configure your AWS Management Console using the Unified Settings

@@ -1,3 +1,7 @@
+---
+title: "Accessing the Services menu in the AWS Management Console"
+---
+
 # Accessing the Services menu in the AWS Management Console
 
 You can use the Services menu, next to the search bar to access your recently visited services, view your Favorites list, and view all AWS services. You can also view services by type by choosing a service type, for example **Analytics** or **Application Integration**.

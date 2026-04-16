@@ -1,3 +1,7 @@
+---
+title: "Individual AWS service consoles in the AWS Management Console"
+---
+
 # Individual AWS service consoles in the AWS Management Console
 
 Each AWS service has its own individual service console that you can access within the AWS Management Console.

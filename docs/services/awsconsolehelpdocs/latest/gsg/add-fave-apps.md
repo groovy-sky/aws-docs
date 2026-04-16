@@ -1,3 +1,7 @@
+---
+title: "Adding applications to your favorites in the AWS Management Console"
+---
+
 # Adding applications to your favorites in the AWS Management Console
 
 You can add applications to your favorites from the **Services** menu.

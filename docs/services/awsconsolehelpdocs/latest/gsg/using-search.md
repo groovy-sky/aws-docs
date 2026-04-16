@@ -1,3 +1,7 @@
+---
+title: "Searching for products, services, features, and more using Unified Search in the AWS Management Console"
+---
+
 # Searching for products, services, features, and more using Unified Search in the AWS Management Console
 
 The search box in the navigation bar provides a unified search tool for finding

@@ -1,3 +1,7 @@
+---
+title: "Refining your search in the AWS Management Console"
+---
+
 # Refining your search in the AWS Management Console
 
 You can refine your search by content type and view additional information about search results.

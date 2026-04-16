@@ -1,3 +1,7 @@
+---
+title: "Federated identities in the AWS Management Console"
+---
+
 # Federated identities in the AWS Management Console
 
 Federated identity users must change their password from an AWS access portal. For more information, see [Resetting your AWS IAM Identity Center user password](../../../singlesignon/latest/userguide/resetpassword-accessportal.md) in the _AWS IAM Identity Center User Guide_.

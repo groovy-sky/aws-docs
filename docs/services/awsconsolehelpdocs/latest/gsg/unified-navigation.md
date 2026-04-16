@@ -1,3 +1,7 @@
+---
+title: "Using the AWS Management Console navigation bar via Unified Navigation"
+---
+
 # Using the AWS Management Console navigation bar via Unified Navigation
 
 This topic describes how to use Unified Navigation. Unified Navigation refers to the navigation bar that acts as the header and footer of the console.

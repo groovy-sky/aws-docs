@@ -1,3 +1,7 @@
+---
+title: "Changing the language of the AWS Management Console"
+---
+
 # Changing the language of the AWS Management Console
 
 The AWS Console Home experience includes the Unified Settings page where you can change

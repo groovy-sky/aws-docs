@@ -1,3 +1,7 @@
+---
+title: "Root users in the AWS Management Console"
+---
+
 # Root users in the AWS Management Console
 
 Root users can change their passwords directly from the AWS Management Console. A Root user is the account owner with complete access to all AWS services and resources. You're the root user if you created the AWS account and you sign in

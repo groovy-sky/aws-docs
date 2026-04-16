@@ -1,3 +1,7 @@
+---
+title: "Resetting Unified Settings in the AWS Management Console"
+---
+
 # Resetting Unified Settings in the AWS Management Console
 
 You can delete all Unified Settings configurations and restore the default settings by resetting Unified Settings.

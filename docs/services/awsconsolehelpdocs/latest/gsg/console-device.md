@@ -1,3 +1,7 @@
+---
+title: "Accessing the AWS Management Console with mobile devices"
+---
+
 # Accessing the AWS Management Console with mobile devices
 
 The [AWS Management Console](https://console.aws.amazon.com/) is designed to work on

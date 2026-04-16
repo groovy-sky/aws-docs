@@ -1,3 +1,7 @@
+---
+title: "Accessing AWS notifications and Health events"
+---
+
 # Accessing AWS notifications and Health events
 
 You can access some of your AWS notifications and view health events from the navigation bar. You can also access AWS User Notifications to view all of your AWS notifications and the AWS Health Dashboard from the navigation bar.

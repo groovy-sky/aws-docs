@@ -1,3 +1,7 @@
+---
+title: "Configuring Unified Settings in the AWS Management Console"
+---
+
 # Configuring Unified Settings in the AWS Management Console
 
 You can configure settings and defaults, such as display, language, and Region, from

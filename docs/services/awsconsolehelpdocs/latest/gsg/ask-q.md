@@ -1,3 +1,7 @@
+---
+title: "Chatting with Amazon Q Developer in AWS Console Home"
+---
+
 # Chatting with Amazon Q Developer in AWS Console Home
 
 Amazon Q Developer is a generative artificial intelligence (AI) powered conversational assistant that can help you understand, build, extend, and operate AWS applications.

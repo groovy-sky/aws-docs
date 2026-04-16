@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for the AWS Management Console"
+---
+
 # AWS managed policies for the AWS Management Console
 
 An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed

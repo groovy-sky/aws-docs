@@ -1,3 +1,7 @@
+---
+title: "Launching AWS CloudShell from the navigation bar in the AWS Management Console"
+---
+
 # Launching AWS CloudShell from the navigation bar in the AWS Management Console
 
 AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the

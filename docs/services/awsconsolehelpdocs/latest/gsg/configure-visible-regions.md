@@ -1,3 +1,7 @@
+---
+title: "Configuring visible Regions in the AWS Management Console"
+---
+
 # Configuring visible Regions in the AWS Management Console
 
 You can choose which AWS Regions appear in the Region selector for all users

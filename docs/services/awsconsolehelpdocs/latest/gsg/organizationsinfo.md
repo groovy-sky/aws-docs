@@ -1,3 +1,7 @@
+---
+title: "Accessing organization information in the AWS Management Console"
+---
+
 # Accessing organization information in the AWS Management Console
 
 If you have the necessary permissions, you can access information about your AWS organizations

@@ -1,3 +1,7 @@
+---
+title: "Editing Unified Settings in the AWS Management Console"
+---
+
 # Editing Unified Settings in the AWS Management Console
 
 The following procedure describes how to edit your preferred settings.

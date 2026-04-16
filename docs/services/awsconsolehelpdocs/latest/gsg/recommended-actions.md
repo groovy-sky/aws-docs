@@ -1,3 +1,7 @@
+---
+title: "AWS Recommended Actions in the AWS Management Console"
+---
+
 # AWS Recommended Actions in the AWS Management Console
 
 AWS Recommended Actions helps you work more efficiently in the AWS Management Console by providing contextual suggestions for

@@ -1,3 +1,7 @@
+---
+title: "Configuring visible services in the AWS Management Console"
+---
+
 # Configuring visible services in the AWS Management Console
 
 You can choose which AWS services appear in the Services menu for all users

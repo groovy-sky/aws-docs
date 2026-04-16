@@ -1,3 +1,7 @@
+---
+title: "Working with widgets in AWS Console Home"
+---
+
 # Working with widgets in AWS Console Home
 
 The Console Home dashboard includes widgets that display important information about
