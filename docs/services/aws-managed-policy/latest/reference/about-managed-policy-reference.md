@@ -1,3 +1,7 @@
+---
+title: "What are AWS managed policies?"
+---
+
 # What are AWS managed policies?
 
 An AWS managed policy is a standalone policy that is created and

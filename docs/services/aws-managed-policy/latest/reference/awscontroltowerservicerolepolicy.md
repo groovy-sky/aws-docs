@@ -1,3 +1,7 @@
+---
+title: "AWSControlTowerServiceRolePolicy"
+---
+
 # AWSControlTowerServiceRolePolicy
 
 **Description**: Provides access to AWS Resources managed or used by AWS Control Tower

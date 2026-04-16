@@ -1,3 +1,7 @@
+---
+title: "Getting started with AWS IQ requests"
+---
+
 End of support notice: On May 28, 2026, AWS
 will end support for AWS IQ. After May 28, 2026, you will
 no longer be able to access the AWS IQ console or AWS IQ resources.
