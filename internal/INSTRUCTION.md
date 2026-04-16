@@ -22,6 +22,7 @@ This document stores the current runtime logic of the crawler so future work can
 	- `partial` is normalized to `incremental`.
 	- `refresh-url` requires a single URL.
 	- `section` requires a top-level section name via `-name` (for example `vpc`) and only crawls URLs within that section key.
+	- `scheduled` picks exactly one section per run using UTC day-of-month and hour slot math (`(day-1)*24+hour`), then maps `slot % section_count` over discovered section keys sorted lexicographically.
 	- `detailed-logging` enables verbose fetch and crawl progress logs without changing crawl decisions.
 - `app.Run` constructs and wires these components in order:
 	- `config.Load`
@@ -41,10 +42,11 @@ High-level flow in `Crawler.Run`:
 1. Build queue from `seedQueue`.
 2. Apply section cap when mode is incremental-style and `max_sections > 0`.
 3. In `section` mode, derive allowed section keys from queue items whose first path segment matches the requested `-name` (case-insensitive).
-4. Process queue breadth-first while deduplicating with an in-memory `seen` set.
-5. Skip discovered URLs not allowed by include/exclude filters or `robots.txt`.
-6. When section filtering is active (`incremental` cap or `section` mode), only enqueue discovered URLs in the allowed section set.
-7. Emit run-summary logs with selected section count and processed URL count.
+4. In `scheduled` mode, derive unique section keys from queue, sort keys, and allow only one section selected by the current UTC hourly slot modulo section count.
+5. Process queue breadth-first while deduplicating with an in-memory `seen` set.
+6. Skip discovered URLs not allowed by include/exclude filters or `robots.txt`.
+7. When section filtering is active (`incremental` cap, `section` mode, or `scheduled` mode), only enqueue discovered URLs in the allowed section set.
+8. Emit run-summary logs with selected section count and processed URL count.
 
 URL processing (`processURL`) sequence:
 

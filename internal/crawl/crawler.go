@@ -67,6 +67,9 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 	sectionLimitedMode := options.Mode == "incremental" || options.Mode == "partial"
 	allowedSections := map[string]struct{}{}
 	selectedSectionName := ""
+	scheduledSlot := -1
+	scheduledIndex := -1
+	scheduledSectionCount := 0
 	if sectionLimitedMode && options.MaxSections > 0 {
 		cursor, err := c.store.GetSectionCursor()
 		if err != nil {
@@ -92,6 +95,18 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 		}
 	}
 
+	if options.Mode == "scheduled" {
+		selectedSectionKey, slot, index, sectionCount, err := selectSectionForScheduledRun(queue, time.Now().UTC())
+		if err != nil {
+			return err
+		}
+		allowedSections = map[string]struct{}{selectedSectionKey: {}}
+		selectedSectionName = selectedSectionKey
+		scheduledSlot = slot
+		scheduledIndex = index
+		scheduledSectionCount = sectionCount
+	}
+
 	seen := make(map[string]struct{}, len(queue))
 	filteredQueue := make([]string, 0, len(queue))
 	for _, item := range queue {
@@ -106,6 +121,8 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 	queue = filteredQueue
 	if options.Mode == "section" {
 		log.Printf("crawl run: mode=%s section=%s selected-sections=%d seed-urls=%d", options.Mode, selectedSectionName, len(allowedSections), len(queue))
+	} else if options.Mode == "scheduled" {
+		log.Printf("crawl run: mode=%s section-key=%s slot=%d index=%d section-count=%d seed-urls=%d", options.Mode, selectedSectionName, scheduledSlot, scheduledIndex, scheduledSectionCount, len(queue))
 	} else if len(allowedSections) > 0 {
 		log.Printf("crawl run: mode=%s max-sections=%d selected-sections=%d seed-urls=%d", options.Mode, options.MaxSections, len(allowedSections), len(queue))
 	} else {
@@ -980,6 +997,38 @@ func selectSectionsForRun(queue []string, limit int, cursor int) (map[string]str
 
 	next := (start + limit) % len(orderedSections)
 	return selected, next
+}
+
+func scheduledSlotAt(now time.Time) int {
+	day := now.Day()
+	hour := now.Hour()
+	return (day-1)*24 + hour
+}
+
+func selectSectionForScheduledRun(queue []string, now time.Time) (string, int, int, int, error) {
+	sections := make([]string, 0, len(queue))
+	seen := map[string]struct{}{}
+	for _, item := range queue {
+		section := sectionKey(item)
+		if section == "" {
+			continue
+		}
+		if _, exists := seen[section]; exists {
+			continue
+		}
+		seen[section] = struct{}{}
+		sections = append(sections, section)
+	}
+
+	if len(sections) == 0 {
+		return "", 0, 0, 0, fmt.Errorf("scheduled mode: no sections discovered")
+	}
+
+	sort.Strings(sections)
+	slot := scheduledSlotAt(now)
+	index := slot % len(sections)
+
+	return sections[index], slot, index, len(sections), nil
 }
 
 func (c *Crawler) filterReachableSeeds(ctx context.Context, seeds []string) []string {

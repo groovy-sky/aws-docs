@@ -1,6 +1,9 @@
 package crawl
 
-import "testing"
+import (
+	"testing"
+	"time"
+)
 
 func TestSelectSectionsForRunWrapsAndAdvancesCursor(t *testing.T) {
 	queue := []string{
@@ -56,6 +59,49 @@ func TestSelectSectionsForRunLimitAboveSectionCountSelectsAll(t *testing.T) {
 	}
 }
 
+func TestScheduledSlotAt(t *testing.T) {
+	now := time.Date(2026, time.April, 16, 13, 0, 0, 0, time.UTC)
+	slot := scheduledSlotAt(now)
+
+	if slot != 373 {
+		t.Fatalf("scheduledSlotAt() = %d, want 373", slot)
+	}
+}
+
+func TestSelectSectionForScheduledRun(t *testing.T) {
+	queue := []string{
+		"https://docs.aws.amazon.com/vpc/latest/userguide/",
+		"https://docs.aws.amazon.com/s3/latest/userguide/",
+		"https://docs.aws.amazon.com/iam/latest/userguide/",
+		"https://docs.aws.amazon.com/vpc/latest/peering/",
+	}
+
+	now := time.Date(2026, time.April, 16, 13, 0, 0, 0, time.UTC)
+	section, slot, index, sectionCount, err := selectSectionForScheduledRun(queue, now)
+	if err != nil {
+		t.Fatalf("selectSectionForScheduledRun() error = %v", err)
+	}
+
+	if slot != 373 {
+		t.Fatalf("slot = %d, want 373", slot)
+	}
+	if sectionCount != 3 {
+		t.Fatalf("sectionCount = %d, want 3", sectionCount)
+	}
+	if index != 1 {
+		t.Fatalf("index = %d, want 1", index)
+	}
+	if section != "docs.aws.amazon.com/s3" {
+		t.Fatalf("section = %q, want %q", section, "docs.aws.amazon.com/s3")
+	}
+}
+
+func TestSelectSectionForScheduledRunNoSections(t *testing.T) {
+	_, _, _, _, err := selectSectionForScheduledRun(nil, time.Now().UTC())
+	if err == nil {
+		t.Fatalf("selectSectionForScheduledRun(nil) expected error")
+	}
+}
 func TestNormalizeSectionName(t *testing.T) {
 	tests := []struct {
 		name      string

@@ -4,7 +4,7 @@ This directory contains the entrypoint for the AWS documentation mirroring pipel
 
 ## Current scope
 
-- CLI entrypoint with `partial`, `incremental`, `full`, `refresh-url`, and `section` modes.
+- CLI entrypoint with `partial`, `incremental`, `full`, `refresh-url`, `section`, and `scheduled` modes.
 - HTTP fetching with rate limiting, retry, conditional requests, and `robots.txt` checks.
 - Content extraction using configurable selectors.
 - HTML to Markdown conversion and internal link rewriting.
@@ -56,10 +56,18 @@ go run ./cmd/aws-docs -config config.json -mode incremental
 go run ./cmd/aws-docs -mode section -name vpc
 ```
 
+7. Crawl one scheduled section (for hourly cron):
+
+```bash
+go run ./cmd/aws-docs -mode scheduled
+```
+
 Notes:
 - `partial` is the default mode and is currently an alias for incremental behavior from stored seeds.
 - In `partial`/`incremental` mode, `-max-sections` limits how many discovered sections are processed in a run.
 - In `section` mode, `-name` is required and must be a top-level section name (for example `vpc`, `iam`, `lambda`).
+- In `scheduled` mode, crawler computes an hourly slot from UTC day-of-month and hour (`(day-1)*24+hour`) and selects one discovered section by `slot % section_count`.
+- In `scheduled` mode, section ordering is deterministic (sorted by section key), so queue selection remains stable across runs while still adapting to added/removed services.
 - CLI `-max-sections` overrides config only when value is greater than `0`.
 - To run effectively unbounded in `partial`/`incremental` mode with a config file, set `"max_sections": 0` and do not pass `-max-sections`.
 - Config file values `"include_path_patterns": []` and `"exclude_path_patterns": []` are respected as explicit empty filters (no path includes/excludes).

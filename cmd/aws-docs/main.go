@@ -15,7 +15,7 @@ func main() {
 	var options app.Options
 
 	flag.StringVar(&options.ConfigPath, "config", "", "optional path to crawler configuration")
-	flag.StringVar(&options.Mode, "mode", "partial", "run mode: partial, incremental, full, refresh-url, section")
+	flag.StringVar(&options.Mode, "mode", "partial", "run mode: partial, incremental, full, refresh-url, section, scheduled")
 	flag.StringVar(&options.Name, "name", "", "section name when mode=section (example: vpc)")
 	flag.StringVar(&options.URL, "url", "", "single URL to refresh when mode=refresh-url")
 	flag.IntVar(&options.MaxSections, "max-sections", 0, "maximum sections to process in partial/incremental mode (0 = config default)")
