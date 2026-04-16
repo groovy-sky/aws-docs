@@ -1,3 +1,7 @@
+---
+title: "Amazon Linux 2 09/25/2018 release notes"
+---
+
 # Amazon Linux 2 09/25/2018 release notes
 
 These are release notes for Amazon Linux 2.

@@ -1,8 +1,19 @@
+---
+title: "Amazon Linux 2 release notes"
+---
+
 # Amazon Linux 2 release notes
 
 The following table provides an overview of the important changes to Amazon Linux 2.
 
 ChangeDescriptionDate
+
+[Updated packages](relnotes-20260413.md)
+
+Amazon Linux 2
+2.0.20260413.0 includes updated packages for this release.
+
+April 14, 2026
 
 [Updated packages](relnotes-20260406.md)
 

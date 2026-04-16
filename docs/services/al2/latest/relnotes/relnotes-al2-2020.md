@@ -1,3 +1,7 @@
+---
+title: "Amazon Linux 2 release notes for 2020 and earlier"
+---
+
 # Amazon Linux 2 release notes for 2020 and earlier
 
 The following are the release notes for Amazon Linux 2 for 2020 and earlier.

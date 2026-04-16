@@ -1,3 +1,7 @@
+---
+title: "Amazon Linux 2 05/29/2020 release notes"
+---
+
 # Amazon Linux 2 05/29/2020 release notes
 
 These are release notes for Amazon Linux 2.

@@ -1,3 +1,7 @@
+---
+title: "Welcome to AWS Documentation"
+---
+
 # Welcome to AWS Documentation
 
 Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references, and more.
@@ -10,7 +14,7 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [/rds/?icmpid=docs\_homepage\_featuredsvcs](../services/rds/index.md)
 - [/lambda/?icmpid=docs\_homepage\_featuredsvcs](../services/lambda/index.md)
 - [/vpc/?icmpid=docs\_homepage\_featuredsvcs](../services/vpc/index.md)
-- [/next-generation-sagemaker/latest/userguide?icmpid=docs\_homepage\_featuredsvcs](../services/next-generation-sagemaker/latest/userguide.md)
+- [/next-generation-sagemaker/latest/userguide?icmpid=docs\_homepage\_featuredsvcs](https://docs.aws.amazon.com/next-generation-sagemaker/latest/userguide?icmpid=docs_homepage_featuredsvcs)
 - [/decision-guides/latest/generative-ai-on-aws-how-to-choose/guide.html?icmpid=docs\_homepage\_featuredsvcs](../services/decision-guides/latest/generative-ai-on-aws-how-to-choose/guide.md)
 - [https://kiro.dev/docs/?icmpid=docs\_homepage\_devtools](https://kiro.dev/docs?icmpid=docs_homepage_devtools)
 - [https://aws.amazon.com/getting-started/guides/setup-environment/](https://aws.amazon.com/getting-started/guides/setup-environment)
@@ -21,7 +25,7 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [https://aws.amazon.com/architecture/](https://aws.amazon.com/architecture)
 - [https://aws.amazon.com/solutions/](https://aws.amazon.com/solutions)
 - [/decision-guides/latest/analytics-on-aws-how-to-choose/analytics-on-aws-how-to-choose.html?icmpid=docs\_homepage\_analytics](../services/decision-guides/latest/analytics-on-aws-how-to-choose/analytics-on-aws-how-to-choose.md)
-- [/next-generation-sagemaker/latest/userguide?icmpid=docs\_homepage\_analytics](../services/next-generation-sagemaker/latest/userguide.md)
+- [/next-generation-sagemaker/latest/userguide?icmpid=docs\_homepage\_analytics](https://docs.aws.amazon.com/next-generation-sagemaker/latest/userguide?icmpid=docs_homepage_analytics)
 - [/appflow/?icmpid=docs\_homepage\_analytics](../services/appflow/index.md)
 - [/athena/?icmpid=docs\_homepage\_analytics](../services/athena/index.md)
 - [/clean-rooms/?icmpid=docs\_homepage\_analytics](../services/clean-rooms/index.md)
@@ -150,7 +154,7 @@ Find user guides, code samples, SDKs & toolkits, tutorials, API & CLI references
 - [/cloudshell/?icmpid=docs\_homepage\_devtools](../services/cloudshell/index.md)
 - [/codeartifact/?icmpid=docs\_homepage\_devtools](../services/codeartifact/index.md)
 - [/codebuild/?icmpid=docs\_homepage\_devtools](../services/codebuild/index.md)
-- [/codecatalyst?icmpid=docs\_homepage\_devtools](../services/codecatalyst/index.md)
+- [/codecatalyst?icmpid=docs\_homepage\_devtools](https://docs.aws.amazon.com/codecatalyst?icmpid=docs_homepage_devtools)
 - [/codedeploy/?icmpid=docs\_homepage\_devtools](../services/codedeploy/index.md)
 - [/codepipeline/?icmpid=docs\_homepage\_devtools](../services/codepipeline/index.md)
 - [/fis/?icmpid=docs\_homepage\_devtools](../services/fis/index.md)
