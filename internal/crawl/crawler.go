@@ -66,6 +66,7 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 
 	sectionLimitedMode := options.Mode == "incremental" || options.Mode == "partial"
 	allowedSections := map[string]struct{}{}
+	selectedSectionName := ""
 	if sectionLimitedMode && options.MaxSections > 0 {
 		cursor, err := c.store.GetSectionCursor()
 		if err != nil {
@@ -76,6 +77,18 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 		allowedSections, nextCursor = selectSectionsForRun(queue, options.MaxSections, cursor)
 		if err := c.store.PutSectionCursor(nextCursor); err != nil {
 			return err
+		}
+	}
+
+	if options.Mode == "section" {
+		sectionName, err := normalizeSectionName(options.Name)
+		if err != nil {
+			return err
+		}
+		selectedSectionName = sectionName
+		allowedSections = selectSectionsByName(queue, sectionName)
+		if len(allowedSections) == 0 {
+			return fmt.Errorf("section mode: no seed URLs found for section %q", sectionName)
 		}
 	}
 
@@ -91,7 +104,9 @@ func (c *Crawler) Run(ctx context.Context, options RunOptions) error {
 		filteredQueue = append(filteredQueue, item)
 	}
 	queue = filteredQueue
-	if len(allowedSections) > 0 {
+	if options.Mode == "section" {
+		log.Printf("crawl run: mode=%s section=%s selected-sections=%d seed-urls=%d", options.Mode, selectedSectionName, len(allowedSections), len(queue))
+	} else if len(allowedSections) > 0 {
 		log.Printf("crawl run: mode=%s max-sections=%d selected-sections=%d seed-urls=%d", options.Mode, options.MaxSections, len(allowedSections), len(queue))
 	} else {
 		log.Printf("crawl run: mode=%s seed-urls=%d", options.Mode, len(queue))
@@ -330,7 +345,67 @@ func (c *Crawler) seedQueue(ctx context.Context, options RunOptions) ([]string, 
 		}
 	}
 
+	if options.Mode == "section" {
+		sectionName, err := normalizeSectionName(options.Name)
+		if err != nil {
+			return nil, err
+		}
+
+		for _, host := range c.config.AllowedHosts {
+			candidate := "https://" + strings.TrimSpace(host) + "/" + sectionName + "/latest/"
+			normalized, err := canonicalizeSeedURL(candidate, c.config)
+			if err != nil || normalized == "" {
+				continue
+			}
+			if _, exists := seen[normalized]; exists || !IsAllowedURL(normalized, c.config) || !c.allowedByRobots(normalized) {
+				continue
+			}
+			seen[normalized] = struct{}{}
+			queue = append(queue, normalized)
+		}
+	}
+
 	return queue, nil
+}
+
+func normalizeSectionName(value string) (string, error) {
+	name := strings.Trim(strings.TrimSpace(value), "/")
+	if name == "" {
+		return "", fmt.Errorf("section mode requires -name")
+	}
+	if strings.Contains(name, "/") {
+		return "", fmt.Errorf("section mode requires a top-level section name, got %q", value)
+	}
+	return name, nil
+}
+
+func selectSectionsByName(queue []string, sectionName string) map[string]struct{} {
+	selected := map[string]struct{}{}
+	for _, item := range queue {
+		if !sectionNameMatches(item, sectionName) {
+			continue
+		}
+		key := sectionKey(item)
+		if key == "" {
+			continue
+		}
+		selected[key] = struct{}{}
+	}
+	return selected
+}
+
+func sectionNameMatches(rawURL string, sectionName string) bool {
+	parsed, err := url.Parse(rawURL)
+	if err != nil {
+		return false
+	}
+
+	trimmedPath := strings.Trim(parsed.EscapedPath(), "/")
+	if trimmedPath == "" {
+		return false
+	}
+	firstSegment := strings.SplitN(trimmedPath, "/", 2)[0]
+	return strings.EqualFold(firstSegment, sectionName)
 }
 
 func uniqueSectionsCount(urls []string) int {
@@ -827,7 +902,7 @@ func sectionKey(rawURL string) string {
 	if trimmedPath == "" {
 		return host + "/"
 	}
-	firstSegment := strings.SplitN(trimmedPath, "/", 2)[0]
+	firstSegment := strings.ToLower(strings.SplitN(trimmedPath, "/", 2)[0])
 	return host + "/" + firstSegment
 }
 

@@ -4,7 +4,7 @@ This directory contains the entrypoint for the AWS documentation mirroring pipel
 
 ## Current scope
 
-- CLI entrypoint with `partial`, `incremental`, `full`, and `refresh-url` modes.
+- CLI entrypoint with `partial`, `incremental`, `full`, `refresh-url`, and `section` modes.
 - HTTP fetching with rate limiting, retry, conditional requests, and `robots.txt` checks.
 - Content extraction using configurable selectors.
 - HTML to Markdown conversion and internal link rewriting.
@@ -50,9 +50,16 @@ go run ./cmd/aws-docs -mode refresh-url -url https://docs.aws.amazon.com/AWSEC2/
 go run ./cmd/aws-docs -config config.json -mode incremental
 ```
 
+6. Crawl a single section:
+
+```bash
+go run ./cmd/aws-docs -mode section -name vpc
+```
+
 Notes:
 - `partial` is the default mode and is currently an alias for incremental behavior from stored seeds.
 - In `partial`/`incremental` mode, `-max-sections` limits how many discovered sections are processed in a run.
+- In `section` mode, `-name` is required and must be a top-level section name (for example `vpc`, `iam`, `lambda`).
 - CLI `-max-sections` overrides config only when value is greater than `0`.
 - To run effectively unbounded in `partial`/`incremental` mode with a config file, set `"max_sections": 0` and do not pass `-max-sections`.
 - Config file values `"include_path_patterns": []` and `"exclude_path_patterns": []` are respected as explicit empty filters (no path includes/excludes).

@@ -55,3 +55,57 @@ func TestSelectSectionsForRunLimitAboveSectionCountSelectsAll(t *testing.T) {
 		t.Fatalf("cursor = %d, want 0", cursor)
 	}
 }
+
+func TestNormalizeSectionName(t *testing.T) {
+	tests := []struct {
+		name      string
+		input     string
+		want      string
+		wantError bool
+	}{
+		{name: "valid", input: "vpc", want: "vpc"},
+		{name: "trim slashes", input: "/vpc/", want: "vpc"},
+		{name: "missing", input: "", wantError: true},
+		{name: "nested", input: "vpc/latest", wantError: true},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got, err := normalizeSectionName(tt.input)
+			if tt.wantError {
+				if err == nil {
+					t.Fatalf("normalizeSectionName(%q) expected error", tt.input)
+				}
+				return
+			}
+
+			if err != nil {
+				t.Fatalf("normalizeSectionName(%q) error = %v", tt.input, err)
+			}
+			if got != tt.want {
+				t.Fatalf("normalizeSectionName(%q) = %q, want %q", tt.input, got, tt.want)
+			}
+		})
+	}
+}
+
+func TestSelectSectionsByName(t *testing.T) {
+	queue := []string{
+		"https://docs.aws.amazon.com/vpc/latest/userguide/",
+		"https://docs.aws.amazon.com/VPC/latest/tgw/",
+		"https://docs.aws.amazon.com/iam/latest/userguide/",
+	}
+
+	selected := selectSectionsByName(queue, "vpc")
+	if len(selected) != 1 {
+		t.Fatalf("selection size = %d, want 1", len(selected))
+	}
+	if _, ok := selected["docs.aws.amazon.com/vpc"]; !ok {
+		t.Fatalf("selection missing docs.aws.amazon.com/vpc")
+	}
+
+	none := selectSectionsByName(queue, "rds")
+	if len(none) != 0 {
+		t.Fatalf("selection size = %d, want 0", len(none))
+	}
+}

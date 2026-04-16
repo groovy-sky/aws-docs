@@ -16,6 +16,7 @@ import (
 type Options struct {
 	ConfigPath      string
 	Mode            string
+	Name            string
 	URL             string
 	MaxSections     int
 	DetailedLogging bool
@@ -82,6 +83,7 @@ func Run(ctx context.Context, options Options) (runErr error) {
 	runner := crawl.NewCrawler(cfg, database, fetcher, extractor, converter, mapper, writer, robots)
 	runErr = runner.Run(ctx, crawl.RunOptions{
 		Mode:        options.Mode,
+		Name:        options.Name,
 		URL:         options.URL,
 		MaxSections: cfg.MaxSections,
 	})

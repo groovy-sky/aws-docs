@@ -21,6 +21,7 @@ This document stores the current runtime logic of the crawler so future work can
 - Mode behavior:
 	- `partial` is normalized to `incremental`.
 	- `refresh-url` requires a single URL.
+	- `section` requires a top-level section name via `-name` (for example `vpc`) and only crawls URLs within that section key.
 	- `detailed-logging` enables verbose fetch and crawl progress logs without changing crawl decisions.
 - `app.Run` constructs and wires these components in order:
 	- `config.Load`
@@ -39,9 +40,11 @@ High-level flow in `Crawler.Run`:
 
 1. Build queue from `seedQueue`.
 2. Apply section cap when mode is incremental-style and `max_sections > 0`.
-3. Process queue breadth-first while deduplicating with an in-memory `seen` set.
-4. Skip discovered URLs not allowed by include/exclude filters or `robots.txt`.
-5. Emit run-summary logs with selected section count and processed URL count.
+3. In `section` mode, derive allowed section keys from queue items whose first path segment matches the requested `-name` (case-insensitive).
+4. Process queue breadth-first while deduplicating with an in-memory `seen` set.
+5. Skip discovered URLs not allowed by include/exclude filters or `robots.txt`.
+6. When section filtering is active (`incremental` cap or `section` mode), only enqueue discovered URLs in the allowed section set.
+7. Emit run-summary logs with selected section count and processed URL count.
 
 URL processing (`processURL`) sequence:
 
@@ -124,6 +127,7 @@ Current redirect handling:
 - Reachability pruning follows HTTP redirects first and keeps only the final normalized URL when it is still allowed by include/exclude filters and `robots.txt`; redirected seeds that land in excluded paths are removed before section selection.
 - Queue seed construction merges both sources: site/stored seeds and robots-derived seeds (robots structure roots plus sitemap-derived section roots), with deduplication and allowlist filtering applied before section selection.
 - In `incremental` and `partial` mode, when requested `max_sections` exceeds the section count represented by stored seeds, queue building backfills from configured seeds to reach the requested section window when possible.
+- In `section` mode, queue construction also attempts a direct section seed candidate per allowed host (`https://<host>/<name>/latest/`) so first-time section runs can bootstrap even when the section has not been persisted yet.
 - If no stored seeds exist, crawler discovers from robots-derived structure and sitemaps, then persists.
 - In `full` mode, sitemap URLs are added to queue for broader coverage.
 - In `incremental` and `partial` mode with `max_sections > 0`, section selection rotates across runs using a persisted cursor in metadata state (`section_cursor`) so each run advances to the next section window instead of always reusing the first sections.

@@ -33,6 +33,7 @@ type MarkdownDocument struct {
 
 type RunOptions struct {
 	Mode        string
+	Name        string
 	URL         string
 	MaxSections int
 }
