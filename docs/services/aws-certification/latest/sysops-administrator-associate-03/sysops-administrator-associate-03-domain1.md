@@ -1,3 +1,7 @@
+---
+title: "Content Domain 1: Monitoring, Logging, Analysis, Remediation, and Performance Optimization"
+---
+
 # Content Domain 1: Monitoring, Logging, Analysis, Remediation, and Performance Optimization
 
 ###### Tasks

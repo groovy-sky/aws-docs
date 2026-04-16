@@ -1,3 +1,7 @@
+---
+title: "Content Domain 1: Detection"
+---
+
 # Content Domain 1: Detection
 
 ###### Tasks

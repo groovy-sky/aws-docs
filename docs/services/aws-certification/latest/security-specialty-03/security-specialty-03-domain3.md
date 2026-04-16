@@ -1,3 +1,7 @@
+---
+title: "Content Domain 3: Infrastructure Security"
+---
+
 # Content Domain 3: Infrastructure Security
 
 ###### Tasks

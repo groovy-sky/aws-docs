@@ -1,3 +1,7 @@
+---
+title: "Content Domain 2: Incident Response"
+---
+
 # Content Domain 2: Incident Response
 
 ###### Tasks

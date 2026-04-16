@@ -1,3 +1,7 @@
+---
+title: "Content Domain 2: Exploratory Data Analysis"
+---
+
 # Content Domain 2: Exploratory Data Analysis
 
 ###### Tasks

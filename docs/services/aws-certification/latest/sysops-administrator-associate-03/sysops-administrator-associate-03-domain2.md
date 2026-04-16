@@ -1,3 +1,7 @@
+---
+title: "Content Domain 2: Reliability and Business Continuity"
+---
+
 # Content Domain 2: Reliability and Business Continuity
 
 ###### Tasks

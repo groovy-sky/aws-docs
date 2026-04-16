@@ -1,3 +1,7 @@
+---
+title: "Content Domain 2: Implementation and Integration"
+---
+
 # Content Domain 2: Implementation and Integration
 
 ## Task 2.1: Implement agentic AI solutions and tool integrations.

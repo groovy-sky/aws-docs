@@ -1,3 +1,7 @@
+---
+title: "Content Domain 5: Data Protection"
+---
+
 # Content Domain 5: Data Protection
 
 ###### Tasks

@@ -1,3 +1,7 @@
+---
+title: "AWS Certified Generative AI Developer - Professional (AIP-C01)"
+---
+
 # AWS Certified Generative AI Developer - Professional (AIP-C01)
 
 The AWS Certified Generative AI Developer - Professional (AIP-C01) exam is intended for individuals who perform a GenAI developer role. The exam validates a candidate's ability to effectively integrate foundation models (FMs) into applications and business workflows. This certification demonstrates practical knowledge of how to implement GenAI solutions into production environments by using AWS technologies.

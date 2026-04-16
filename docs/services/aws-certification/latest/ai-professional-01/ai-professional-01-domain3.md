@@ -1,3 +1,7 @@
+---
+title: "Content Domain 3: AI Safety, Security, and Governance"
+---
+
 # Content Domain 3: AI Safety, Security, and Governance
 
 ## Task 3.1: Implement input and output safety controls.

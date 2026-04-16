@@ -1,3 +1,7 @@
+---
+title: "Content Domain 2: Security"
+---
+
 # Content Domain 2: Security
 
 ###### Tasks

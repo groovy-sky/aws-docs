@@ -1,3 +1,7 @@
+---
+title: "Content Domain 3: Applications of Foundation Models"
+---
+
 # Content Domain 3: Applications of Foundation Models
 
 Domain 3 covers applications of foundation models and represents 28% of the scored content on the exam.

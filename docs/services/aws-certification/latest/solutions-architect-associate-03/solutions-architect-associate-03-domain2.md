@@ -1,3 +1,7 @@
+---
+title: "Content Domain 2: Design Resilient Architectures"
+---
+
 # Content Domain 2: Design Resilient Architectures
 
 ###### Tasks

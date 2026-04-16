@@ -1,3 +1,7 @@
+---
+title: "Content Domain 4: Monitoring and Logging"
+---
+
 # Content Domain 4: Monitoring and Logging
 
 ## Task Statement 4.1: Configure the collection, aggregation, and storage of logs and metrics.

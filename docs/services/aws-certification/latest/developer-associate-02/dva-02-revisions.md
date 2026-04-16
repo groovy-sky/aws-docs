@@ -1,3 +1,7 @@
+---
+title: "Revisions"
+---
+
 # Revisions
 
 AWS exam guides are periodically reviewed and revised to ensure that each certification exam tests skills and AWS services and features that are current and relevant for the job role(s) that the certification is designed to target. Exam guide revisions will be published at least one month before changes are reflected on your exam.

@@ -1,3 +1,7 @@
+---
+title: "Content Domain 5: Incident and Event Response"
+---
+
 # Content Domain 5: Incident and Event Response
 
 ## Task Statement 5.1: Manage event sources to process, notify, and take action in response to events.

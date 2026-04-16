@@ -1,3 +1,7 @@
+---
+title: "Content Domain 2: Data Store Management"
+---
+
 # Content Domain 2: Data Store Management
 
 ###### Tasks

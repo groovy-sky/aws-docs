@@ -1,3 +1,7 @@
+---
+title: "Content Domain 1: Foundation Model Integration, Data Management, and Compliance"
+---
+
 # Content Domain 1: Foundation Model Integration, Data Management, and Compliance
 
 ## Task 1.1: Analyze requirements and design GenAI solutions.

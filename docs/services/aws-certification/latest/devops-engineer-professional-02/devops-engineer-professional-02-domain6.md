@@ -1,3 +1,7 @@
+---
+title: "Content Domain 6: Security and Compliance"
+---
+
 # Content Domain 6: Security and Compliance
 
 ## Task Statement 6.1: Implement techniques for identity and access management at scale.

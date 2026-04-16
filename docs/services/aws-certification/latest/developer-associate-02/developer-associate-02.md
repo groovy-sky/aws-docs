@@ -1,3 +1,7 @@
+---
+title: "AWS Certified Developer - Associate (DVA-C02)"
+---
+
 # AWS Certified Developer - Associate (DVA-C02)
 
 The AWS Certified Developer - Associate (DVA-C02) exam is intended for individuals who perform a developer role. The exam validates a candidate's ability to demonstrate proficiency in developing, testing, deploying, and debugging AWS Cloud-based applications.

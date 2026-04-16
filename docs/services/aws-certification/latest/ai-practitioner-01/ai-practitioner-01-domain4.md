@@ -1,3 +1,7 @@
+---
+title: "Content Domain 4: Guidelines for Responsible AI"
+---
+
 # Content Domain 4: Guidelines for Responsible AI
 
 Domain 4 covers guidelines for responsible AI and represents 14% of the scored content on the exam.

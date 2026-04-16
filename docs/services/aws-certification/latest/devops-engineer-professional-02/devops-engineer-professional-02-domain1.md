@@ -1,3 +1,7 @@
+---
+title: "Content Domain 1: SDLC Automation"
+---
+
 # Content Domain 1: SDLC Automation
 
 ## Task Statement 1.1: Implement CI/CD pipelines.

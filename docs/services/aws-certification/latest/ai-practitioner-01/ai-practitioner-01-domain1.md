@@ -1,3 +1,7 @@
+---
+title: "Content Domain 1: Fundamentals of AI and ML"
+---
+
 # Content Domain 1: Fundamentals of AI and ML
 
 Domain 1 covers the fundamentals of AI and ML and represents 20% of the scored content on the exam.

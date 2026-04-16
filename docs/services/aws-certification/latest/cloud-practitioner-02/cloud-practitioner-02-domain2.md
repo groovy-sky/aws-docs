@@ -1,3 +1,7 @@
+---
+title: "Content Domain 2: Security and Compliance"
+---
+
 # Content Domain 2: Security and Compliance
 
 Domain 2 covers Security and Compliance and represents 30% of the scored content on the exam.

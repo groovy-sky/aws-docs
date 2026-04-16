@@ -1,3 +1,7 @@
+---
+title: "Content Domain 2: Configuration Management and IaC"
+---
+
 # Content Domain 2: Configuration Management and IaC
 
 ## Task Statement 2.1: Define cloud infrastructure and reusable components to provision and manage systems throughout their lifecycle.

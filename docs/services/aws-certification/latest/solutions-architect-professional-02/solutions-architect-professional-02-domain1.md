@@ -1,3 +1,7 @@
+---
+title: "Content Domain 1: Design Solutions for Organizational Complexity"
+---
+
 # Content Domain 1: Design Solutions for Organizational Complexity
 
 ###### Tasks

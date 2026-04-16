@@ -1,3 +1,7 @@
+---
+title: "Content Domain 4: Design Cost-Optimized Architectures"
+---
+
 # Content Domain 4: Design Cost-Optimized Architectures
 
 ###### Tasks

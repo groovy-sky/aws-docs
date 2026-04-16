@@ -1,3 +1,7 @@
+---
+title: "AWS Certified Machine Learning Engineer - Associate (MLA-C01)"
+---
+
 # AWS Certified Machine Learning Engineer - Associate (MLA-C01)
 
 The AWS Certified Machine Learning Engineer - Associate (MLA-C01) exam validates a candidate's ability to build, operationalize, deploy, and maintain machine learning (ML) solutions and pipelines by using the AWS Cloud.

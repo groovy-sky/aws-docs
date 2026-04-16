@@ -1,3 +1,7 @@
+---
+title: "Content Domain 4: Operational Efficiency and Optimization for GenAI Applications"
+---
+
 # Content Domain 4: Operational Efficiency and Optimization for GenAI Applications
 
 ## Task 4.1: Implement cost optimization and resource efficiency strategies.

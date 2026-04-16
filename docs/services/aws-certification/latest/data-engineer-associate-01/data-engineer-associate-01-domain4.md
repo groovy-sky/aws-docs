@@ -1,3 +1,7 @@
+---
+title: "Content Domain 4: Data Security and Governance"
+---
+
 # Content Domain 4: Data Security and Governance
 
 ###### Tasks

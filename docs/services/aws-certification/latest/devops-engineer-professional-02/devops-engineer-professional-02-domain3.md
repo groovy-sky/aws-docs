@@ -1,3 +1,7 @@
+---
+title: "Content Domain 3: Resilient Cloud Solutions"
+---
+
 # Content Domain 3: Resilient Cloud Solutions
 
 ## Task Statement 3.1: Implement highly available solutions to meet resilience and business requirements.

@@ -1,3 +1,7 @@
+---
+title: "Content Domain 3: Continuous Improvement for Existing Solutions"
+---
+
 # Content Domain 3: Continuous Improvement for Existing Solutions
 
 ###### Tasks

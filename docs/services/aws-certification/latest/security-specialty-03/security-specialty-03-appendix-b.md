@@ -1,3 +1,7 @@
+---
+title: "Appendix: Comparison of SCS-C02 and SCS-C03"
+---
+
 # Appendix: Comparison of SCS-C02 and SCS-C03
 
 ## Side-by-side comparison

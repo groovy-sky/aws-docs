@@ -1,3 +1,7 @@
+---
+title: "Content Domain 1: Cloud Concepts"
+---
+
 # Content Domain 1: Cloud Concepts
 
 Domain 1 covers Cloud Concepts and represents 24% of the scored content on the exam.

@@ -1,3 +1,7 @@
+---
+title: "Content Domain 3: Cloud Technology and Services"
+---
+
 # Content Domain 3: Cloud Technology and Services
 
 Domain 3 covers Cloud Technology and Services and represents 34% of the scored content on the exam.

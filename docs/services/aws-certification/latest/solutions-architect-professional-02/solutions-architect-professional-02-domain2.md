@@ -1,3 +1,7 @@
+---
+title: "Content Domain 2: Design for New Solutions"
+---
+
 # Content Domain 2: Design for New Solutions
 
 ###### Tasks

@@ -1,3 +1,7 @@
+---
+title: "Content Domain 6: Security Foundations and Governance"
+---
+
 # Content Domain 6: Security Foundations and Governance
 
 ###### Tasks

@@ -1,3 +1,7 @@
+---
+title: "Content Domain 2: Fundamentals of GenAI"
+---
+
 # Content Domain 2: Fundamentals of GenAI
 
 Domain 2 covers the fundamentals of GenAI and represents 24% of the scored content on the exam.

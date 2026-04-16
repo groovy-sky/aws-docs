@@ -1,3 +1,7 @@
+---
+title: "Content Domain 3: Design High-Performing Architectures"
+---
+
 # Content Domain 3: Design High-Performing Architectures
 
 ###### Tasks

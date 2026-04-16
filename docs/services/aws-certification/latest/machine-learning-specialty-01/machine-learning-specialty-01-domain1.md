@@ -1,3 +1,7 @@
+---
+title: "Content Domain 1: Data Engineering"
+---
+
 # Content Domain 1: Data Engineering
 
 ###### Tasks

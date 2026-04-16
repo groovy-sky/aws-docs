@@ -1,3 +1,7 @@
+---
+title: "Content Domain 4: Troubleshooting and Optimization"
+---
+
 # Content Domain 4: Troubleshooting and Optimization
 
 ###### Tasks

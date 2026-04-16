@@ -1,3 +1,7 @@
+---
+title: "AWS Certified Solutions Architect - Professional (SAP-C02)"
+---
+
 # AWS Certified Solutions Architect - Professional (SAP-C02)
 
 The AWS Certified Solutions Architect - Professional (SAP-C02) exam is intended for individuals who perform a solutions architect role. The exam validates a candidate's advanced technical skills and experience in designing optimized AWS solutions that are based on the AWS Well-Architected Framework.

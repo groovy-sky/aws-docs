@@ -1,3 +1,7 @@
+---
+title: "Content Domain 5: Security, Compliance, and Governance for AI Solutions"
+---
+
 # Content Domain 5: Security, Compliance, and Governance for AI Solutions
 
 Domain 5 covers security, compliance, and governance for AI solutions and represents 14% of the scored content on the exam.

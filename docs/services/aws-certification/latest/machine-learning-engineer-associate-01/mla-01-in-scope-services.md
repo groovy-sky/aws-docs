@@ -1,3 +1,7 @@
+---
+title: "In-Scope AWS Services"
+---
+
 # In-Scope AWS Services
 
 The following list contains AWS services and features that are in scope for the AWS Certified Machine Learning Engineer - Associate (MLA-C01) exam. This list is non-exhaustive and is subject to change. AWS offerings appear in categories that align with the offerings' primary functions.

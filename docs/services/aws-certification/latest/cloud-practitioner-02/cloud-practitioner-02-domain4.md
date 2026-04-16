@@ -1,3 +1,7 @@
+---
+title: "Content Domain 4: Billing, Pricing, and Support"
+---
+
 # Content Domain 4: Billing, Pricing, and Support
 
 Domain 4 covers Billing, Pricing, and Support and represents 12% of the scored content on the exam.

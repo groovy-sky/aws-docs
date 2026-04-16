@@ -1,3 +1,7 @@
+---
+title: "Content Domain 1: Design Secure Architectures"
+---
+
 # Content Domain 1: Design Secure Architectures
 
 ###### Tasks
