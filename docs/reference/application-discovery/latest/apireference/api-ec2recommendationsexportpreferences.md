@@ -1,3 +1,7 @@
+---
+title: "Ec2RecommendationsExportPreferences"
+---
+
 # Ec2RecommendationsExportPreferences
 
 ###### Important

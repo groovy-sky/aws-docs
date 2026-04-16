@@ -1,3 +1,7 @@
+---
+title: "AgentNetworkInfo"
+---
+
 # AgentNetworkInfo
 
 Network details about the host where the agent/collector resides.

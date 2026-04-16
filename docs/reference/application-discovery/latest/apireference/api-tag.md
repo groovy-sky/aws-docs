@@ -1,3 +1,7 @@
+---
+title: "Tag"
+---
+
 # Tag
 
 Metadata that help you categorize IT assets.

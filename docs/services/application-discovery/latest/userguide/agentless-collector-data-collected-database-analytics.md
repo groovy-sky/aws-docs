@@ -1,3 +1,7 @@
+---
+title: "Data collected by the Agentless Collector database and analytics data collection module"
+---
+
 AWS Application Discovery Service is no longer open to new customers. Alternatively, use AWS Transform which provides similar capabilities. For more information, see [AWS Application Discovery Service availability change](application-discovery-service-availability-change.md).
 
 # Data collected by the Agentless Collector database and analytics data collection module

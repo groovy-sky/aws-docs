@@ -1,3 +1,7 @@
+---
+title: "DeleteTags"
+---
+
 # DeleteTags
 
 ###### Important

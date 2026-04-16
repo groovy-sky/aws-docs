@@ -1,3 +1,7 @@
+---
+title: "StartBatchDeleteConfigurationTask"
+---
+
 # StartBatchDeleteConfigurationTask
 
 ###### Important

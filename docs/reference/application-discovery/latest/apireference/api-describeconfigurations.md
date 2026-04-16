@@ -1,3 +1,7 @@
+---
+title: "DescribeConfigurations"
+---
+
 # DescribeConfigurations
 
 ###### Important

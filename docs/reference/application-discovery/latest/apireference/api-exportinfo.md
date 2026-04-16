@@ -1,3 +1,7 @@
+---
+title: "ExportInfo"
+---
+
 # ExportInfo
 
 Information regarding the export status of discovered data. The value is an array of

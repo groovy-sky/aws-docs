@@ -1,3 +1,7 @@
+---
+title: "DescribeBatchDeleteConfigurationTask"
+---
+
 # DescribeBatchDeleteConfigurationTask
 
 ###### Important

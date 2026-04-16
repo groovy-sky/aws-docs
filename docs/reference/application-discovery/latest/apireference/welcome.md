@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 AWS Application Discovery Service (Application Discovery Service) helps you plan application migration projects. It automatically
@@ -77,7 +81,7 @@ Guide](../../../../services/application-discovery/latest/userguide.md).
 All data is handled according to the [AWS Privacy Policy](https://aws.amazon.com/privacy). You can operate Application Discovery Service offline to
 inspect collected data before it is shared with the service.
 
-This document was last published on April 9, 2026.
+This document was last published on April 14, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
