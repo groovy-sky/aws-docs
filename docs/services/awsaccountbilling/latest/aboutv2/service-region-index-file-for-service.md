@@ -1,3 +1,7 @@
+---
+title: "Service Region index file for AWS services"
+---
+
 # Service Region index file for AWS services
 
 To provide feedback about AWS Price List, complete this [short survey](https://amazonmr.au1.qualtrics.com/jfe/form/SV_cO0deTMyKyFeezA). Your responses will be anonymous. **Note:** This survey is in English only.

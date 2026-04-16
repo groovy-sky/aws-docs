@@ -1,3 +1,7 @@
+---
+title: "Stopping CloudTrail from sending events to CloudWatch Logs"
+---
+
 # Stopping CloudTrail from sending events to CloudWatch Logs
 
 You can stop sending AWS CloudTrail events to Amazon CloudWatch Logs by updating a trail to disable CloudWatch Logs

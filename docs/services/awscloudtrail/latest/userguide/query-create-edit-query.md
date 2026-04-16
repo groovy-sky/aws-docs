@@ -1,3 +1,7 @@
+---
+title: "Create or edit a query with the CloudTrail console"
+---
+
 # Create or edit a query with the CloudTrail console
 
 In this walkthrough, we open one of the sample queries, edit it to find actions taken by a specific user named `Alice`, and save it as a new query. You can also edit a saved

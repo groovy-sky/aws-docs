@@ -1,3 +1,7 @@
+---
+title: "Resilience in AWS CloudTrail"
+---
+
 # Resilience in AWS CloudTrail
 
 The AWS global infrastructure is built around AWS Regions and Availability Zones.

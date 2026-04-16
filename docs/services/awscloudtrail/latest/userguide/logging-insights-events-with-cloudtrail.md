@@ -1,3 +1,7 @@
+---
+title: "Working with CloudTrail Insights"
+---
+
 # Working with CloudTrail Insights
 
 AWS CloudTrail Insights help AWS users identify and respond to unusual activity associated with API

@@ -1,3 +1,7 @@
+---
+title: "How AWS CloudTrail works with IAM"
+---
+
 # How AWS CloudTrail works with IAM
 
 Before you use IAM to manage access to CloudTrail, learn what IAM features are

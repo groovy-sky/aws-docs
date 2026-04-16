@@ -1,3 +1,7 @@
+---
+title: "CloudTrail record contents for Insights events for trails"
+---
+
 # CloudTrail record contents for Insights events for trails
 
 AWS CloudTrail Insights event records for trails include fields that are different from other CloudTrail events in their

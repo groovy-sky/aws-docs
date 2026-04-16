@@ -1,3 +1,7 @@
+---
+title: "CloudTrail Lake supported Regions"
+---
+
 # CloudTrail Lake supported Regions
 
 ###### Note

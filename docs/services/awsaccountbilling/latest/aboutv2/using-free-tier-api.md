@@ -1,3 +1,7 @@
+---
+title: "Using the Free Tier API"
+---
+
 # Using the Free Tier API
 
 [AWS Free Tier](https://aws.amazon.com/free) offers free usage each month for

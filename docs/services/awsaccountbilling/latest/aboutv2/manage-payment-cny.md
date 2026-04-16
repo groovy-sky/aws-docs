@@ -1,3 +1,7 @@
+---
+title: "Making payments in Chinese yuan"
+---
+
 # Making payments in Chinese yuan
 
 If you're an AWS Inc. customer, you can make payments using the Chinese yuan

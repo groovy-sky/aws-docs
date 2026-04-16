@@ -1,3 +1,7 @@
+---
+title: "Canceling invitations"
+---
+
 # Canceling invitations
 
 When you sign in to your organization's management account, you can cancel invitations you sent that have not yet been responded to.

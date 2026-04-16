@@ -1,3 +1,7 @@
+---
+title: "CloudTrail log file examples"
+---
+
 # CloudTrail log file examples
 
 CloudTrail monitors events for your account. If you create a trail, it delivers those events as

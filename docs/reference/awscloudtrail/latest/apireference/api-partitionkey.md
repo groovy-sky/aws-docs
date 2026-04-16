@@ -1,3 +1,7 @@
+---
+title: "PartitionKey"
+---
+
 # PartitionKey
 
 Contains information about a partition key for an event data store.

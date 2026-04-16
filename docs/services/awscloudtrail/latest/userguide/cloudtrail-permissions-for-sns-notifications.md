@@ -1,3 +1,7 @@
+---
+title: "Amazon SNS topic policy for CloudTrail"
+---
+
 # Amazon SNS topic policy for CloudTrail
 
 To send notifications to an SNS topic, CloudTrail must have the required permissions. CloudTrail

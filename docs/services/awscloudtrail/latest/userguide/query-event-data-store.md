@@ -1,3 +1,7 @@
+---
+title: "CloudTrail Lake event data stores"
+---
+
 # CloudTrail Lake event data stores
 
 ###### Note

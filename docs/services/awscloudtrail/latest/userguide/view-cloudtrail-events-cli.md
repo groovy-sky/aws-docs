@@ -1,3 +1,7 @@
+---
+title: "Viewing recent management events with the AWS CLI"
+---
+
 # Viewing recent management events with the AWS CLI
 
 You can look up CloudTrail management events for the last 90 days for the current

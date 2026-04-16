@@ -1,3 +1,7 @@
+---
+title: "PutEventSelectors"
+---
+
 # PutEventSelectors
 
 Configures event selectors (also referred to as _basic event selectors_) or advanced event selectors for your trail. You can use

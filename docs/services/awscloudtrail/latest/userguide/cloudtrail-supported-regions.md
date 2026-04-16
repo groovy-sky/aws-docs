@@ -1,3 +1,7 @@
+---
+title: "CloudTrail supported Regions"
+---
+
 # CloudTrail supported Regions
 
 ###### Note

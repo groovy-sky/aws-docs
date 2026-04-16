@@ -1,3 +1,7 @@
+---
+title: "Enrich CloudTrail events by adding resource tag keys and IAM global condition keys"
+---
+
 # Enrich CloudTrail events by adding resource tag keys and IAM global condition keys
 
 You can enrich CloudTrail management events and data events by adding resource tag keys, principal

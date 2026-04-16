@@ -1,3 +1,7 @@
+---
+title: "Validating CloudTrail log file integrity with the AWS CLI"
+---
+
 # Validating CloudTrail log file integrity with the AWS CLI
 
 To validate logs with the AWS Command Line Interface, use the CloudTrail `validate-logs` command. The

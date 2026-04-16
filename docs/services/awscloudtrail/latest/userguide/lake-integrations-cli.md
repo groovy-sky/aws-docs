@@ -1,3 +1,7 @@
+---
+title: "Create, update, and manage CloudTrail Lake integrations with the AWS CLI"
+---
+
 # Create, update, and manage CloudTrail Lake integrations with the AWS CLI
 
 This section describes the commands you can use to create, update and manage your CloudTrail Lake integrations using the AWS CLI.

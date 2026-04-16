@@ -1,3 +1,7 @@
+---
+title: "Create an integration with an event source outside of AWS"
+---
+
 # Create an integration with an event source outside of AWS
 
 ###### Note

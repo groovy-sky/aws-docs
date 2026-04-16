@@ -1,3 +1,7 @@
+---
+title: "Set a refresh schedule for a custom dashboard with the CloudTrail console"
+---
+
 # Set a refresh schedule for a custom dashboard with the CloudTrail console
 
 This section describes how to set a dashboard refresh schedule. You can set a refresh

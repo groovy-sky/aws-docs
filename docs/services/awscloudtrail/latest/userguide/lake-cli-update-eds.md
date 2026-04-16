@@ -1,3 +1,7 @@
+---
+title: "Update an event data store with the AWS CLI"
+---
+
 # Update an event data store with the AWS CLI
 
 This section provides examples that show how to update an event data store's settings by running the AWS CLI `update-event-data-store` command.

@@ -1,3 +1,7 @@
+---
+title: "Manage dashboards with the AWS CLI"
+---
+
 # Manage dashboards with the AWS CLI
 
 This section describes several other commands that you can run to manage your dashboards, including

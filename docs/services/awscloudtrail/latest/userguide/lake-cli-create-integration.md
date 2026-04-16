@@ -1,3 +1,7 @@
+---
+title: "Create an integration to log events from outside AWS with the AWS CLI"
+---
+
 # Create an integration to log events from outside AWS with the AWS CLI
 
 This section describes how you can use the AWS CLI to create a CloudTrail Lake integration to log events from outside of AWS.

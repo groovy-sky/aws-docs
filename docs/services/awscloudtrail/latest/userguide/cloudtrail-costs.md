@@ -1,3 +1,7 @@
+---
+title: "Viewing your CloudTrail cost and usage with AWS Cost Explorer"
+---
+
 # Viewing your CloudTrail cost and usage with AWS Cost Explorer
 
 This section describes how you can view your CloudTrail costs and usage using [AWS Cost Explorer](../../../cost-management/latest/userguide/ce-what-is.md). Cost Explorer gives you the ability to visualize,

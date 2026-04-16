@@ -1,3 +1,7 @@
+---
+title: "Logging network activity events"
+---
+
 # Logging network activity events
 
 CloudTrail network activity events enable VPC endpoint owners to record AWS API calls made

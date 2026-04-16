@@ -1,3 +1,7 @@
+---
+title: "Optimize CloudTrail Lake queries"
+---
+
 # Optimize CloudTrail Lake queries
 
 This page provides guidance about how to optimize CloudTrail Lake queries to improve

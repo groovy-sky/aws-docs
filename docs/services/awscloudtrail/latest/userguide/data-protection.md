@@ -1,3 +1,7 @@
+---
+title: "Data protection in AWS CloudTrail"
+---
+
 # Data protection in AWS CloudTrail
 
 The AWS [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model)

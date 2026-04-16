@@ -1,3 +1,7 @@
+---
+title: "Enabling purchase order notifications"
+---
+
 # Enabling purchase order notifications
 
 You can enable email notifications on the Billing and Cost Management console by adding contacts to your

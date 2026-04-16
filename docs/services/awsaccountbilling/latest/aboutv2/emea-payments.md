@@ -1,3 +1,7 @@
+---
+title: "Managing your payments in AWS Europe"
+---
+
 # Managing your payments in AWS Europe
 
 If your account is with AWS Europe, follow the procedures in this section to manage your

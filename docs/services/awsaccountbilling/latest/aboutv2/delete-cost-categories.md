@@ -1,3 +1,7 @@
+---
+title: "Deleting cost categories"
+---
+
 # Deleting cost categories
 
 You can delete your cost categories using the following procedure.

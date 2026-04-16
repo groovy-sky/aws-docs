@@ -1,3 +1,7 @@
+---
+title: "Effective billing date, account activity, and volume discounts"
+---
+
 # Effective billing date, account activity, and volume discounts
 
 When the member account owner accepts your request to join the organization, you

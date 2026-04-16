@@ -1,3 +1,7 @@
+---
+title: "Explore AWS services with AWS Free Tier"
+---
+
 # Explore AWS services with AWS Free Tier
 
 ###### Note

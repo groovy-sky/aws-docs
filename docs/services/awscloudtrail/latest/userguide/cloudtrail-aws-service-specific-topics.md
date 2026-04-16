@@ -1,3 +1,7 @@
+---
+title: "CloudTrail supported services and integrations"
+---
+
 # CloudTrail supported services and integrations
 
 CloudTrail supports logging events for many AWS services. You can find the specifics for each

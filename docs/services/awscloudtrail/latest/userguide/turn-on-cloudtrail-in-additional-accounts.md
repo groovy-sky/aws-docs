@@ -1,3 +1,7 @@
+---
+title: "Create trails in additional accounts"
+---
+
 # Create trails in additional accounts
 
 You can use the console or the AWS CLI to create trails in additional AWS accounts and aggregate their log files to one Amazon S3 bucket.

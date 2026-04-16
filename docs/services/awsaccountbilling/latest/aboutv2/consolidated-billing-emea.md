@@ -1,3 +1,7 @@
+---
+title: "Consolidated billing in AWS EMEA"
+---
+
 # Consolidated billing in AWS EMEA
 
 The consolidated daily invoice feature combines your charges, so that you receive

@@ -1,3 +1,7 @@
+---
+title: "Create an event data store for CloudTrail events with the console"
+---
+
 # Create an event data store for CloudTrail events with the console
 
 ###### Note

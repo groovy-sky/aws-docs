@@ -1,3 +1,7 @@
+---
+title: "Create, update, and manage event data stores with the console"
+---
+
 # Create, update, and manage event data stores with the console
 
 ###### Note

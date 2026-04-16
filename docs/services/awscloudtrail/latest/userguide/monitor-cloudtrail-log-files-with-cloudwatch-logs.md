@@ -1,3 +1,7 @@
+---
+title: "Monitoring CloudTrail Log Files with Amazon CloudWatch Logs"
+---
+
 # Monitoring CloudTrail Log Files with Amazon CloudWatch Logs
 
 You can use [Amazon CloudWatch Logs](../../../amazoncloudwatch/latest/logs/whatiscloudwatchlogs.md) to monitor,

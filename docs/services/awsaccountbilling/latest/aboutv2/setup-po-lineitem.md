@@ -1,3 +1,7 @@
+---
+title: "Setting up purchase order configurations"
+---
+
 # Setting up purchase order configurations
 
 You can use purchase orders and their line item attributes to flexibly define a

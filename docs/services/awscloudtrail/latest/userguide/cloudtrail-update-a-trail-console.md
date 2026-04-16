@@ -1,3 +1,7 @@
+---
+title: "Updating a trail with the CloudTrail console"
+---
+
 # Updating a trail with the CloudTrail console
 
 This section describes how to change trail settings.

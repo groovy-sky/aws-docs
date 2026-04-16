@@ -1,3 +1,7 @@
+---
+title: "Creating and updating a trail with the console"
+---
+
 # Creating and updating a trail with the console
 
 You can use the CloudTrail console to create, update, or delete your trails. Trails created using the console are multi-Region. To create a trail that logs

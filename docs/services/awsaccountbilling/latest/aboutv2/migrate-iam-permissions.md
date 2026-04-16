@@ -1,3 +1,7 @@
+---
+title: "Use scripts to bulk migrate your policies to use fine-grained IAM actions"
+---
+
 # Use scripts to bulk migrate your policies to use fine-grained IAM actions
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "PutResourcePolicy"
+---
+
 # PutResourcePolicy
 
 Attaches a resource-based permission policy to a CloudTrail event data store, dashboard, or channel. For more information about resource-based policies, see

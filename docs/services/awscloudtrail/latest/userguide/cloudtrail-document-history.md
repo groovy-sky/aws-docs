@@ -1,3 +1,7 @@
+---
+title: "Document history"
+---
+
 # Document history
 
 The following table describes the important changes to the documentation for AWS CloudTrail. For

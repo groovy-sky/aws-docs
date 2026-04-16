@@ -1,3 +1,7 @@
+---
+title: "Getting set up with Billing"
+---
+
 # Getting set up with Billing
 
 Use this section to get started with the AWS Billing and Cost Management console. Prerequisites include signing up for AWS, setting up IAM users, and reviewing your AWS bills.

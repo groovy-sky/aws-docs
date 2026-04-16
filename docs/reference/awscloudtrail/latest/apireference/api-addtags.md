@@ -1,3 +1,7 @@
+---
+title: "AddTags"
+---
+
 # AddTags
 
 Adds one or more tags to a trail, event data store, dashboard, or channel, up to a limit of 50. Overwrites an

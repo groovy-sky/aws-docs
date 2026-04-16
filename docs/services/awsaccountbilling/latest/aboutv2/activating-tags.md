@@ -1,3 +1,7 @@
+---
+title: "Activating user-defined cost allocation tags"
+---
+
 # Activating user-defined cost allocation tags
 
 For tags to appear on your billing reports, you must activate them. Your
@@ -46,6 +50,6 @@ allocation tags, see [Quotas and restrictions](billing-limits.md). For more info
 
 Using user-defined cost allocation tags
 
-Using User Attributes for Cost Allocation
+Using user attributes for cost allocation
 
 All content copied from https://docs.aws.amazon.com/.

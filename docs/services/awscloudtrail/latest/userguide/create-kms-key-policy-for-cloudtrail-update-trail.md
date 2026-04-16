@@ -1,3 +1,7 @@
+---
+title: "Updating a resource to use your KMS key with the console"
+---
+
 # Updating a resource to use your KMS key with the console
 
 On the CloudTrail console, update a trail or an event data store to use an KMS key. Be

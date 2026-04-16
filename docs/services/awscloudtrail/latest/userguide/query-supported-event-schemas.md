@@ -1,3 +1,7 @@
+---
+title: "Supported SQL schemas for event data stores"
+---
+
 # Supported SQL schemas for event data stores
 
 ###### Note

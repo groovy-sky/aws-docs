@@ -1,3 +1,7 @@
+---
+title: "Creating, updating, and managing trails with the AWS CLI"
+---
+
 # Creating, updating, and managing trails with the AWS CLI
 
 You can use the AWS CLI to create, update, and manage your trails. When using the AWS CLI,

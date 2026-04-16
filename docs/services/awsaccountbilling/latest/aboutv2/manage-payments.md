@@ -1,3 +1,7 @@
+---
+title: "Managing your AWS payments"
+---
+
 # Managing your AWS payments
 
 To open an AWS account, you must have a valid payment method on file. Use the procedures

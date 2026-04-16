@@ -1,3 +1,7 @@
+---
+title: "Splitting charges within cost categories"
+---
+
 # Splitting charges within cost categories
 
 You can use split charge rules to allocate your charges between your cost category

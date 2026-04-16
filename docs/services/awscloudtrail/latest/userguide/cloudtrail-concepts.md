@@ -1,3 +1,7 @@
+---
+title: "CloudTrail concepts"
+---
+
 # CloudTrail concepts
 
 This section summarizes basic concepts related to CloudTrail.

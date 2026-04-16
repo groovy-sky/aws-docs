@@ -1,3 +1,7 @@
+---
+title: "AdvancedEventSelector"
+---
+
 # AdvancedEventSelector
 
 Advanced event selectors let you create fine-grained selectors for AWS CloudTrail management, data, and network activity events. They help you control costs by logging only those

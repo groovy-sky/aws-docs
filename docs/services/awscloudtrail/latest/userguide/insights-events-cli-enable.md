@@ -1,3 +1,7 @@
+---
+title: "Logging Insights events with the AWS CLI"
+---
+
 # Logging Insights events with the AWS CLI
 
 You can configure your trails and event data stores to log Insights events

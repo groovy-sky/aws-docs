@@ -1,3 +1,7 @@
+---
+title: "Copying trail events to CloudTrail Lake"
+---
+
 # Copying trail events to CloudTrail Lake
 
 You can copy existing trail events to a CloudTrail Lake event data store to create a point-in-time

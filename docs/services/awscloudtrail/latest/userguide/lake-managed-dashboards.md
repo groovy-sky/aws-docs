@@ -1,3 +1,7 @@
+---
+title: "Available managed dashboards"
+---
+
 # Available managed dashboards
 
 The section provides information about the available managed dashboards and

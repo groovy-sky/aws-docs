@@ -1,3 +1,7 @@
+---
+title: "Tag"
+---
+
 # Tag
 
 A custom key-value pair associated with a resource such as a CloudTrail

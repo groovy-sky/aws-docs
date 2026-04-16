@@ -1,3 +1,7 @@
+---
+title: "CreateEventDataStore"
+---
+
 # CreateEventDataStore
 
 ###### Important

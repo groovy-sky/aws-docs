@@ -1,3 +1,7 @@
+---
+title: "Encrypting CloudTrail log files, digest files, and event data stores with AWS KMS keys (SSE-KMS)"
+---
+
 # Encrypting CloudTrail log files, digest files, and event data stores with AWS KMS keys (SSE-KMS)
 
 By default, the log files and digest files delivered by CloudTrail to your bucket are encrypted by using

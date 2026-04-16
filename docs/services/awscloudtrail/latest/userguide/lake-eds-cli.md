@@ -1,3 +1,7 @@
+---
+title: "Create, update, and manage event data stores with the AWS CLI"
+---
+
 # Create, update, and manage event data stores with the AWS CLI
 
 ###### Note

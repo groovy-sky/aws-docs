@@ -1,3 +1,7 @@
+---
+title: "Reading your purchase order details page"
+---
+
 # Reading your purchase order details page
 
 You can review the contents of your individual purchase orders on the

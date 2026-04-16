@@ -1,3 +1,7 @@
+---
+title: "Understanding Consolidated Bills"
+---
+
 # Understanding Consolidated Bills
 
 If you manage an organization in AWS Organizations, you can use consolidated billing to view aggregated usage costs for accounts in the organization. Consolidated billing can also help you reduce those costs. For example, to ensure that you pay the lowest available prices for AWS products and services, AWS offers pricing tiers that reward higher usage with lower prices and discounted rates for purchasing instances in advance (known as _reservations_ or _Reserved Instances_). Using consolidated billing, you can combine usage from multiple accounts into a single invoice, allowing you to reach the tiers with lower prices faster. You can also apply unused reservations from one account to another account's instance usage.

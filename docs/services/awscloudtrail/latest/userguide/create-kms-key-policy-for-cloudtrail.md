@@ -1,3 +1,7 @@
+---
+title: "Configure AWS KMS key policies for CloudTrail"
+---
+
 # Configure AWS KMS key policies for CloudTrail
 
 You can create an AWS KMS key in three ways:

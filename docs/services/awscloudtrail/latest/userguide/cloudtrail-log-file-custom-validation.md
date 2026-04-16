@@ -1,3 +1,7 @@
+---
+title: "Custom implementations of CloudTrail log file integrity validation"
+---
+
 # Custom implementations of CloudTrail log file integrity validation
 
 Because CloudTrail uses industry standard, openly available cryptographic algorithms and hash

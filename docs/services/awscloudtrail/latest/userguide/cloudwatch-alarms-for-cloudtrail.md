@@ -1,3 +1,7 @@
+---
+title: "Creating CloudWatch alarms for CloudTrail events: examples"
+---
+
 # Creating CloudWatch alarms for CloudTrail events: examples
 
 This topic describes how to configure alarms for CloudTrail events, and includes examples.

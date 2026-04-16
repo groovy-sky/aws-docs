@@ -1,3 +1,7 @@
+---
+title: "ListInsightsMetricData"
+---
+
 # ListInsightsMetricData
 
 Returns Insights metrics data for trails that have enabled Insights. The request must include the `EventSource`,

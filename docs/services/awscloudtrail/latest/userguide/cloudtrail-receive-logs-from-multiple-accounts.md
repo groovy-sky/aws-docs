@@ -1,3 +1,7 @@
+---
+title: "Receiving CloudTrail log files from multiple accounts"
+---
+
 # Receiving CloudTrail log files from multiple accounts
 
 You can have CloudTrail deliver log files from multiple AWS accounts into a single Amazon S3

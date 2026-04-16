@@ -1,3 +1,7 @@
+---
+title: "Disable Lake query federation"
+---
+
 # Disable Lake query federation
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "AWS service events"
+---
+
 # AWS service events
 
 CloudTrail supports logging non-API service events. These events are created by AWS

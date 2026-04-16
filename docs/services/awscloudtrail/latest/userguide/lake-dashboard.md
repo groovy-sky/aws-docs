@@ -1,3 +1,7 @@
+---
+title: "CloudTrail Lake dashboards"
+---
+
 # CloudTrail Lake dashboards
 
 ###### Note

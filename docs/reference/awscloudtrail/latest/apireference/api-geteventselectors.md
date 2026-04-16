@@ -1,3 +1,7 @@
+---
+title: "GetEventSelectors"
+---
+
 # GetEventSelectors
 
 Describes the settings for the event selectors that you configured for your trail. The

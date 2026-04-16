@@ -1,3 +1,7 @@
+---
+title: "Supported CloudWatch metrics"
+---
+
 # Supported CloudWatch metrics
 
 ###### Note

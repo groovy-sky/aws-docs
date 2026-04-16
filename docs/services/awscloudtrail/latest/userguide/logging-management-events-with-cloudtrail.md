@@ -1,3 +1,7 @@
+---
+title: "Logging management events"
+---
+
 # Logging management events
 
 By default, trails and event data stores log management events and don't include data or Insights events.

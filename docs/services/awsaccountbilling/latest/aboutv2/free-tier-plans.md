@@ -1,3 +1,7 @@
+---
+title: "Choosing an AWS Free Tier plan"
+---
+
 # Choosing an AWS Free Tier plan
 
 When you sign up for your AWS account, you can choose between **Free**

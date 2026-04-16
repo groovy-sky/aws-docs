@@ -1,3 +1,7 @@
+---
+title: "Viewing invitations"
+---
+
 # Viewing invitations
 
 When you sign in to your organization's management account, you can view recent invitations you have sent or received.

@@ -1,4 +1,8 @@
-# Using Account Tags for Cost Allocation
+---
+title: "Using account tags for cost allocation"
+---
+
+# Using account tags for cost allocation
 
 ## Overview
 
@@ -7,11 +11,11 @@ allocate costs according to their internal organizational structure using accoun
 Account tags operate at the account level and automatically apply to all metered usage within tagged accounts. Once activated for cost allocation,
 these tags provide organization-wide cost visibility and work alongside resource-level tags for comprehensive cost allocation strategies.
 
-## How Account-Based Cost Allocation Works
+## How account-based cost allocation works
 
 When you apply tags to AWS accounts in your organization, those tags are automatically recorded with usage and associated costs from that account. All resources and usage within tagged accounts inherit the account-level tags, mitigating manual cost allocation processes at the account level.
 
-## Key Benefits
+## Key benefits
 
 Account tags for cost allocation map usage to internal organizational structures at the account level.
 You can see which business units, projects, or environments are consuming AWS services and the associated costs,
@@ -32,9 +36,9 @@ Before you can use account tags for cost allocation, ensure you have:
 
 - **Permissions:** Access to AWS Organizations and Billing and Cost Management consoles
 
-## Setting Up Account Tags for Cost Allocation
+## Setting up account tags for cost allocation
 
-### Step 1: Apply Account Tags in AWS Organizations
+### Step 1: Apply account tags in AWS Organizations
 
 ###### Note
 
@@ -46,7 +50,7 @@ As a best practice, do not use "accountTag" keyword in your tag keys, as this pr
 
 3. Apply tags that represent your organizational structure (for example, business unit, cost center, project, environment)
 
-### Step 2: Activate Account Tags for Cost Allocation and Verify Setup
+### Step 2: Activate account tags for cost allocation and verify setup
 
 1. Open the Billing and Cost Management console at [https://console.aws.amazon.com/costmanagement/](https://console.aws.amazon.com/costmanagement).
 
@@ -62,7 +66,7 @@ As a best practice, do not use "accountTag" keyword in your tag keys, as this pr
 
 7. It can take up to 24 hours for tag activation status to change to “Active”
 
-## Viewing Account Tags in Cost and Usage Reports
+## Viewing account tags in cost and usage reports
 
 After completing the setup, account tags will appear in your Cost and Usage Report 2.0 (CUR 2.0) alongside other cost allocation tags.
 When viewing cost data in CUR 2.0, tags from different sources (resources, user attributes, accounts, and cost categories) are
@@ -71,8 +75,8 @@ For detailed information about how tag prefixes work and examples of overlapping
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Using User Attributes for Cost Allocation
+Using user attributes for cost allocation
 
-Backfill cost allocation tags
+Using IAM principal for cost allocation
 
 All content copied from https://docs.aws.amazon.com/.

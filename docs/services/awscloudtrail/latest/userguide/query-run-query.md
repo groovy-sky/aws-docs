@@ -1,3 +1,7 @@
+---
+title: "Run a query and save query results with the console"
+---
+
 # Run a query and save query results with the console
 
 After you choose or save a query, you can run a query on an event data store.

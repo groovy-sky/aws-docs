@@ -1,3 +1,7 @@
+---
+title: "Viewing Insights events for trails with the console"
+---
+
 # Viewing Insights events for trails with the console
 
 This section describes how to view, look up, and download the last 90 days of Insights

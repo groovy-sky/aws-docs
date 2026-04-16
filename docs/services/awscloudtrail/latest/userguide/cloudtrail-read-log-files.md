@@ -1,3 +1,7 @@
+---
+title: "Downloading your CloudTrail log files"
+---
+
 # Downloading your CloudTrail log files
 
 Log files are in JSON format. If you have a JSON viewer add-on installed, you can view the

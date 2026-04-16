@@ -1,3 +1,7 @@
+---
+title: "Costs for Insights events"
+---
+
 # Costs for Insights events
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Turning off logging for a trail"
+---
+
 # Turning off logging for a trail
 
 When you create a trail, logging is turned on automatically. You can turn off logging for

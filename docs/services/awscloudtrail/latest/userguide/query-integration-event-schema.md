@@ -1,3 +1,7 @@
+---
+title: "CloudTrail Lake integrations event schema"
+---
+
 # CloudTrail Lake integrations event schema
 
 The following table describes the required and optional schema elements that match

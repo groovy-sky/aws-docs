@@ -1,3 +1,7 @@
+---
+title: "Managing event data stores with the AWS CLI"
+---
+
 # Managing event data stores with the AWS CLI
 
 This section describes several other commands that you can run to get information about your event data stores,

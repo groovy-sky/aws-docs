@@ -1,3 +1,7 @@
+---
+title: "Role policy document for CloudTrail to use CloudWatch Logs for monitoring"
+---
+
 # Role policy document for CloudTrail to use CloudWatch Logs for monitoring
 
 This section describes the permissions policy required for the CloudTrail role to send log events to

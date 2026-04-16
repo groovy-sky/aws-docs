@@ -1,3 +1,7 @@
+---
+title: "Creating a trail for your AWS account"
+---
+
 # Creating a trail for your AWS account
 
 When you create a trail, you enable ongoing delivery of events as log files to an Amazon S3

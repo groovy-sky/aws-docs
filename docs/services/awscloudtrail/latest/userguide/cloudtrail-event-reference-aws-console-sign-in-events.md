@@ -1,3 +1,7 @@
+---
+title: "AWS Management Console sign-in events"
+---
+
 # AWS Management Console sign-in events
 
 CloudTrail logs attempts to sign in to the AWS Management Console, the AWS Discussion Forums, and the AWS

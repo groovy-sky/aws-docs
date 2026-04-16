@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 This is the CloudTrail API Reference. It provides descriptions of actions, data
@@ -19,7 +23,7 @@ AWS SDKs, including how to download and install them, see [Tools to Build on AWS
 See the [AWS CloudTrail\
 User Guide](../../../../services/awscloudtrail/latest/userguide/cloudtrail-user-guide.md) for information about the data that is included with each AWS API call listed in the log files.
 
-This document was last published on April 9, 2026.
+This document was last published on April 14, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

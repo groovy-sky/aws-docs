@@ -1,3 +1,7 @@
+---
+title: "RegisterOrganizationDelegatedAdmin"
+---
+
 # RegisterOrganizationDelegatedAdmin
 
 Registers an organization’s member account as the CloudTrail [delegated administrator](../../../../services/awscloudtrail/latest/userguide/cloudtrail-delegated-administrator.md).

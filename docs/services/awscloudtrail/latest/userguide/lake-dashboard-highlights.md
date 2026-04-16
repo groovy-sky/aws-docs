@@ -1,3 +1,7 @@
+---
+title: "Enable the Highlights dashboard with the CloudTrail console"
+---
+
 # Enable the Highlights dashboard with the CloudTrail console
 
 Enable the Highlights dashboard to view an at-a-glance overview of the

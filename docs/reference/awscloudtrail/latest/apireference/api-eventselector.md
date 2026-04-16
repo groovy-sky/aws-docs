@@ -1,3 +1,7 @@
+---
+title: "EventSelector"
+---
+
 # EventSelector
 
 Use event selectors to further specify the management and data event settings for your

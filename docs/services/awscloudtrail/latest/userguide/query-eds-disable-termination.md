@@ -1,3 +1,7 @@
+---
+title: "Manage event data store lifecycles"
+---
+
 # Manage event data store lifecycles
 
 ###### Note

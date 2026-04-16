@@ -1,3 +1,7 @@
+---
+title: "Create an event data store for configuration items with the console"
+---
+
 # Create an event data store for configuration items with the console
 
 ###### Note

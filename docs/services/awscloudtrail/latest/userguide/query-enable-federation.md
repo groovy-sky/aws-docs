@@ -1,3 +1,7 @@
+---
+title: "Enable Lake query federation"
+---
+
 # Enable Lake query federation
 
 ###### Note

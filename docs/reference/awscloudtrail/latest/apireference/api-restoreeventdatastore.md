@@ -1,3 +1,7 @@
+---
+title: "RestoreEventDataStore"
+---
+
 # RestoreEventDataStore
 
 ###### Important

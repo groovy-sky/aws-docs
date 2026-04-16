@@ -1,3 +1,7 @@
+---
+title: "Viewing recent management events with the console"
+---
+
 # Viewing recent management events with the console
 
 You can use the **Event history** page in the CloudTrail console to view the

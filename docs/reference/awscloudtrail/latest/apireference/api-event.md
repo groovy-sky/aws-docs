@@ -1,3 +1,7 @@
+---
+title: "Event"
+---
+
 # Event
 
 Contains information about an event that was returned by a lookup request. The result

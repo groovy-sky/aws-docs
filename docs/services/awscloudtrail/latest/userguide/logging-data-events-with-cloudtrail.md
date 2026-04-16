@@ -1,3 +1,7 @@
+---
+title: "Logging data events"
+---
+
 # Logging data events
 
 This section describes how to log data events using the [CloudTrail console](#logging-data-events-console) and [AWS CLI](#creating-data-event-selectors-with-the-AWS-CLI).

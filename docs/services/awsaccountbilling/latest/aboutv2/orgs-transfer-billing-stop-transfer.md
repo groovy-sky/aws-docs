@@ -1,3 +1,7 @@
+---
+title: "Withdrawing transfers"
+---
+
 # Withdrawing transfers
 
 When you sign in to your organization's management account, you can withdraw a transfer at

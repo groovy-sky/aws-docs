@@ -1,3 +1,7 @@
+---
+title: "Delete a channel to delete an integration with the AWS CLI"
+---
+
 # Delete a channel to delete an integration with the AWS CLI
 
 This section describes how to run the `delete-channel` command to delete the channel for a CloudTrail Lake integration.

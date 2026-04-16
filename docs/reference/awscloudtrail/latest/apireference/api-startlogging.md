@@ -1,3 +1,7 @@
+---
+title: "StartLogging"
+---
+
 # StartLogging
 
 Starts the recording of AWS API calls and log file delivery for a trail.

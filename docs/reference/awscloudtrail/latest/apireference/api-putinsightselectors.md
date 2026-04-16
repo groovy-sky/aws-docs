@@ -1,3 +1,7 @@
+---
+title: "PutInsightSelectors"
+---
+
 # PutInsightSelectors
 
 Lets you enable Insights event logging on specific event categories by specifying the Insights selectors that you

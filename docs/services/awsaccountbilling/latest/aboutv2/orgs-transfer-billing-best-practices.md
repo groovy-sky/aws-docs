@@ -1,3 +1,7 @@
+---
+title: "Best practices"
+---
+
 # Best practices
 
 This page covers best practices for before you start using billing transfer, while you use it, and before you stop using it (if applicable).
@@ -165,6 +169,8 @@ Your organization must meet these requirements:
 - Customer has an email address for root account ownership
 
 - Organization serves one customer's workloads
+
+- Both parties involved in the account ownership transfer must review and comply with the [AWS Account Assignment requirements](https://aws.amazon.com/legal/aws-account-assignment-requirements)
 
 **Benefits**
 

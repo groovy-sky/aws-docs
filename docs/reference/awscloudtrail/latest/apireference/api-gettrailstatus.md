@@ -1,3 +1,7 @@
+---
+title: "GetTrailStatus"
+---
+
 # GetTrailStatus
 
 Returns a JSON-formatted list of information about the specified trail. Fields include

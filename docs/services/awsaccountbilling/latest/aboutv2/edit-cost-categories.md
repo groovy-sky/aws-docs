@@ -1,3 +1,7 @@
+---
+title: "Editing cost categories"
+---
+
 # Editing cost categories
 
 You can edit your cost categories using the following procedure. Cost category

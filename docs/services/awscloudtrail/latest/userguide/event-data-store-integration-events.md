@@ -1,3 +1,7 @@
+---
+title: "Create an event data store for events outside of AWS with the console"
+---
+
 # Create an event data store for events outside of AWS with the console
 
 ###### Note

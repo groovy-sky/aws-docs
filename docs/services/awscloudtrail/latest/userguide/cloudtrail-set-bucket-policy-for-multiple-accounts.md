@@ -1,3 +1,7 @@
+---
+title: "Setting bucket policy for multiple accounts"
+---
+
 # Setting bucket policy for multiple accounts
 
 For a bucket to receive log files from multiple accounts, its bucket policy must grant

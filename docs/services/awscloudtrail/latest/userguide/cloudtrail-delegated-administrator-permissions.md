@@ -1,3 +1,7 @@
+---
+title: "Required permissions to assign a delegated administrator"
+---
+
 # Required permissions to assign a delegated administrator
 
 When assigning a CloudTrail delegated administrator, you must have the permissions to add and remove the delegated administrator in CloudTrail, as well as certain

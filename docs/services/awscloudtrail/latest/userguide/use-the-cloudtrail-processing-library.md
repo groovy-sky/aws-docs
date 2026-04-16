@@ -1,3 +1,7 @@
+---
+title: "Using the CloudTrail Processing Library"
+---
+
 # Using the CloudTrail Processing Library
 
 The CloudTrail Processing Library is a Java library that provides an easy way to process AWS CloudTrail logs. You

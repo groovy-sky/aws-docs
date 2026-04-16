@@ -1,3 +1,7 @@
+---
+title: "Delivery of Insights events"
+---
+
 # Delivery of Insights events
 
 Unlike other types of events that CloudTrail captures, Insights events are logged only when CloudTrail

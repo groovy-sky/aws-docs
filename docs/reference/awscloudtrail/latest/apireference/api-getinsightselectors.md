@@ -1,3 +1,7 @@
+---
+title: "GetInsightSelectors"
+---
+
 # GetInsightSelectors
 
 Describes the settings for the Insights event selectors that you configured for your

@@ -1,3 +1,7 @@
+---
+title: "PublicKey"
+---
+
 # PublicKey
 
 Contains information about a returned public key.

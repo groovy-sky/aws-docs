@@ -1,3 +1,7 @@
+---
+title: "Earning additional credits"
+---
+
 # Earning additional credits
 
 If you are a new AWS customer, you can earn an additional USD $100 in credits

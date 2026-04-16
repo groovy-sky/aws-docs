@@ -1,3 +1,7 @@
+---
+title: "Non-API events captured by CloudTrail"
+---
+
 # Non-API events captured by CloudTrail
 
 In addition to logging AWS API calls, CloudTrail captures other related events that might have

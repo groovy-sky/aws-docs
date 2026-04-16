@@ -1,3 +1,7 @@
+---
+title: "Restore an event data store with the console"
+---
+
 # Restore an event data store with the console
 
 ###### Note

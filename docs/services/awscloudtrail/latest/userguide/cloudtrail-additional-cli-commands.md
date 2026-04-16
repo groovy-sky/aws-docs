@@ -1,3 +1,7 @@
+---
+title: "Managing trails with the AWS CLI"
+---
+
 # Managing trails with the AWS CLI
 
 The AWS CLI includes several other commands that help you manage your trails. These

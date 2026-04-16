@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy with AWS Billing"
+---
+
 # Identity-based policy with AWS Billing
 
 By default, users and roles don't have permission to create or modify Billing

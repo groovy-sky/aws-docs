@@ -1,3 +1,7 @@
+---
+title: "Creating a trail for your organization in the console"
+---
+
 # Creating a trail for your organization in the console
 
 To create an organization trail from the CloudTrail console, you must sign in to the console

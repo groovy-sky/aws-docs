@@ -1,3 +1,7 @@
+---
+title: "Filtering data events by using advanced event selectors"
+---
+
 # Filtering data events by using advanced event selectors
 
 This section describes how you can use advanced event selectors to create fine-grained selectors for logging data events, which can help

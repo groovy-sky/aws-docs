@@ -1,3 +1,7 @@
+---
+title: "Organization delegated administrator"
+---
+
 # Organization delegated administrator
 
 When you use CloudTrail with an AWS Organizations organization, you can assign any account within the

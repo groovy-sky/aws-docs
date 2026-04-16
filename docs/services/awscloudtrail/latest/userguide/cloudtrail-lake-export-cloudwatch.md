@@ -1,3 +1,7 @@
+---
+title: "Exporting data from CloudTrail Lake Event Data Store to CloudWatch"
+---
+
 # Exporting data from CloudTrail Lake Event Data Store to CloudWatch
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Working with CloudTrail log files"
+---
+
 # Working with CloudTrail log files
 
 You can perform more advanced tasks with your CloudTrail files.

@@ -1,3 +1,7 @@
+---
+title: "Prepare for creating a trail for your organization"
+---
+
 # Prepare for creating a trail for your organization
 
 Before you create a trail for your organization, be sure that your organization

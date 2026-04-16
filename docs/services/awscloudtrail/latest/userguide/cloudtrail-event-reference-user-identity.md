@@ -1,3 +1,7 @@
+---
+title: "CloudTrail userIdentity element"
+---
+
 # CloudTrail userIdentity element
 
 AWS Identity and Access Management (IAM) provides different types of identities. The `userIdentity`

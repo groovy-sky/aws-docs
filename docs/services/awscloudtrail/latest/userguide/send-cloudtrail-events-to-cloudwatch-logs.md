@@ -1,3 +1,7 @@
+---
+title: "Sending events to CloudWatch Logs"
+---
+
 # Sending events to CloudWatch Logs
 
 When you configure your trail to send events to CloudWatch Logs, CloudTrail sends only the events that

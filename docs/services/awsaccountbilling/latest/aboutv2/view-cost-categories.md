@@ -1,3 +1,7 @@
+---
+title: "Viewing cost categories"
+---
+
 # Viewing cost categories
 
 From the cost categories dashboard in AWS Billing and Cost Management, you can view comprehensive

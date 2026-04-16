@@ -1,3 +1,7 @@
+---
+title: "Delete a dashboard with the AWS CLI"
+---
+
 # Delete a dashboard with the AWS CLI
 
 This section describes how to use the AWS CLI `delete-dashboard` command to delete a CloudTrail Lake dashboard.

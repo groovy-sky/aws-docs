@@ -1,3 +1,7 @@
+---
+title: "LookupEvents"
+---
+
 # LookupEvents
 
 Looks up [management events](../../../../services/awscloudtrail/latest/userguide/cloudtrail-concepts.md#cloudtrail-concepts-management-events) or [CloudTrail Insights events](../../../../services/awscloudtrail/latest/userguide/cloudtrail-concepts.md#cloudtrail-concepts-insights-events) that are captured by CloudTrail.

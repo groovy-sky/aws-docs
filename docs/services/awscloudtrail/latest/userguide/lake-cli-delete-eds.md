@@ -1,3 +1,7 @@
+---
+title: "Delete an event data store with the AWS CLI"
+---
+
 # Delete an event data store with the AWS CLI
 
 This section demonstrates how to delete an event data store by running the AWS CLI `delete-event-data-store` command

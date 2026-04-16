@@ -1,3 +1,7 @@
+---
+title: "Copy trail events to a new event data store with the console"
+---
+
 # Copy trail events to a new event data store with the console
 
 This walkthrough shows you how to copy trail events to a new CloudTrail Lake event data store for historical analysis. For more information about copying trail events, see [Copy trail events to an event data store](cloudtrail-copy-trail-to-lake-eds.md).

@@ -1,3 +1,7 @@
+---
+title: "Using AWS CloudTrail with interface VPC endpoints"
+---
+
 # Using AWS CloudTrail with interface VPC endpoints
 
 If you use Amazon Virtual Private Cloud (Amazon VPC) to host your AWS resources, you can establish a private

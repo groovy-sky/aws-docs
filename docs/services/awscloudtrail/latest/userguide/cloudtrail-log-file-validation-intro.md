@@ -1,3 +1,7 @@
+---
+title: "Validating CloudTrail log file integrity"
+---
+
 # Validating CloudTrail log file integrity
 
 To determine whether a log file was modified, deleted, or unchanged after CloudTrail delivered

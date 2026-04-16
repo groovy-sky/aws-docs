@@ -1,3 +1,7 @@
+---
+title: "Configure CloudTrail settings"
+---
+
 # Configure CloudTrail settings
 
 You can use the **Settings** page on the CloudTrail console to configure and

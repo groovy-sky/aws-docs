@@ -1,3 +1,7 @@
+---
+title: "Finding the seller of record"
+---
+
 # Finding the seller of record
 
 AWS regularly reviews its business structure to support customers. AWS creates the
@@ -85,8 +89,13 @@ Japan
 Amazon Web Services Malaysia Sdn. Bhd. (Registration No. 201501028710
 (1154031-W))
 
-Level 26 & Level 35, The Gardens North Tower, Lingkaran Syed
-Putra, Mid Valley City, Kuala Lumpur, 59200, Malaysia
+Level 15, Boutique Office 1 (B01-C), Menara 2, KL Eco City, No. 3, Jalan Bangsar, Kuala Lumpur, 59200, Malaysia
+
+[Mexico](https://aws.amazon.com/legal/awsmx)
+
+AMAZON WEB SERVICES MEXICO
+
+Avenida Boulevard Manuel Ávila Camacho No. 261 Piso 5 Colonia Polanco, Ciudad de México, 11510, Mexico
 
 [New\
 Zealand](https://aws.amazon.com/legal/awsnz)
@@ -100,7 +109,7 @@ Zealand
 
 Amazon Web Services Singapore Private Limited
 
-23 Church Street, #10-01, Singapore 049481
+1, 17-00, Robinson Road, AIA Tower, Singapore, 048542
 
 [South\
 Africa](https://aws.amazon.com/legal/aws-za)
@@ -118,11 +127,11 @@ Amazon Web Services Korea LLC
 L12, East tower, 231, Teheran-ro, Gangnam-gu, Seoul, 06142,
 Republic of Korea
 
-[South Korea Telco](https://aws.amazon.com/tr/legal/amcskr)
+[Taiwan](https://aws.amazon.com/legal/awstw)
 
-AMCS Korea LLC
+Amazon Web Services Taiwan Limited
 
-L12, East tower, 231, Teheran-ro, Gangnam-gu, Seoul, 06142, Republic of Korea
+8F, No. 32, 36, Songren Road, Xinyi District, Taipei, 110049, Taiwan
 
 [Turkey](https://aws.amazon.com/tr/legal/awstr)
 

@@ -1,3 +1,7 @@
+---
+title: "CloudTrail Lake SQL constraints"
+---
+
 # CloudTrail Lake SQL constraints
 
 ###### Note

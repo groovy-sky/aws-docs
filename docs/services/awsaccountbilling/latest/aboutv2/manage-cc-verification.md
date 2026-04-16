@@ -1,3 +1,7 @@
+---
+title: "Managing your payment verifications"
+---
+
 # Managing your payment verifications
 
 Your bank might ask you for additional verification whenever you use a credit card to

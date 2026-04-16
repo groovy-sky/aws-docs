@@ -1,3 +1,7 @@
+---
+title: "Update an event data store with the console"
+---
+
 # Update an event data store with the console
 
 ###### Note

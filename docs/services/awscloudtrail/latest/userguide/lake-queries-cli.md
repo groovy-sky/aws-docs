@@ -1,3 +1,7 @@
+---
+title: "Run and manage CloudTrail Lake queries with the AWS CLI"
+---
+
 # Run and manage CloudTrail Lake queries with the AWS CLI
 
 You can use the AWS CLI to run and manage your CloudTrail Lake queries. When using the AWS CLI,

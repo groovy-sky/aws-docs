@@ -1,3 +1,7 @@
+---
+title: "Creating cost categories"
+---
+
 # Creating cost categories
 
 Cost allocation helps you map and assign your AWS Cloud costs to the correct groups

@@ -1,3 +1,7 @@
+---
+title: "Summarize query results in natural language"
+---
+
 # Summarize query results in natural language
 
 ###### Note

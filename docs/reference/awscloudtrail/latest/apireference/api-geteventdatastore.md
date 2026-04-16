@@ -1,3 +1,7 @@
+---
+title: "GetEventDataStore"
+---
+
 # GetEventDataStore
 
 ###### Important

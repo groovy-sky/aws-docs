@@ -1,3 +1,7 @@
+---
+title: "Infrastructure security in AWS CloudTrail"
+---
+
 # Infrastructure security in AWS CloudTrail
 
 As a managed service, AWS CloudTrail is protected by AWS global network security. For

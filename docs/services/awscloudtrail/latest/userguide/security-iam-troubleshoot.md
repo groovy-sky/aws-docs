@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting AWS CloudTrail identity and access"
+---
+
 # Troubleshooting AWS CloudTrail identity and access
 
 Use the following information to help you diagnose and fix common issues that you might

@@ -1,3 +1,7 @@
+---
+title: "Import trail events to an event data store with the AWS CLI"
+---
+
 # Import trail events to an event data store with the AWS CLI
 
 This section shows how to create and configure an event data store by running the

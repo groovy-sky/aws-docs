@@ -1,3 +1,7 @@
+---
+title: "Managing your AWS Europe credit card payment methods"
+---
+
 # Managing your AWS Europe credit card payment methods
 
 You can use the [Payment preferences](https://console.aws.amazon.com/billing/home) page

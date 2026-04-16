@@ -1,3 +1,7 @@
+---
+title: "Consolidating billing for AWS Organizations"
+---
+
 # Consolidating billing for AWS Organizations
 
 You can use the consolidated billing feature in AWS Organizations to consolidate billing and

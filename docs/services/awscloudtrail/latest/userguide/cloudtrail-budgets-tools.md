@@ -1,3 +1,7 @@
+---
+title: "Using AWS Budgets to manage costs"
+---
+
 # Using AWS Budgets to manage costs
 
 AWS Budgets a feature of AWS Billing and Cost Management, allows you to set custom budgets that alert you when

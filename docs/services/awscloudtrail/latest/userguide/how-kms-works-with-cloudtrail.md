@@ -1,3 +1,7 @@
+---
+title: "How AWS CloudTrail uses AWS KMS"
+---
+
 # How AWS CloudTrail uses AWS KMS
 
 This section describes how AWS KMS works with a CloudTrail trail that is encrypted with an SSE-KMS key.

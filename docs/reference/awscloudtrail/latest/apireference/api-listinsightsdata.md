@@ -1,3 +1,7 @@
+---
+title: "ListInsightsData"
+---
+
 # ListInsightsData
 
 Returns Insights events generated on a trail that logs data events. You can list Insights events that occurred in a Region within the last 90 days.

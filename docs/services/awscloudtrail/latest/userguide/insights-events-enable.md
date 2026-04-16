@@ -1,3 +1,7 @@
+---
+title: "Logging Insights events with the CloudTrail console"
+---
+
 # Logging Insights events with the CloudTrail console
 
 This section describes how you can enable Insights events on an existing trail

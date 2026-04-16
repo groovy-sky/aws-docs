@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for AWS CloudTrail"
+---
+
 # Identity-based policy examples for AWS CloudTrail
 
 By default, users and roles don't have permission to create or modify CloudTrail

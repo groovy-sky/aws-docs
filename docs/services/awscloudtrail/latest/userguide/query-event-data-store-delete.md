@@ -1,3 +1,7 @@
+---
+title: "Delete an event data store with the console"
+---
+
 # Delete an event data store with the console
 
 ###### Note

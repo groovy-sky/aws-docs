@@ -1,3 +1,7 @@
+---
+title: "Creating a trail for an organization with the AWS CLI"
+---
+
 # Creating a trail for an organization with the AWS CLI
 
 You can create an organization trail by using the AWS CLI. The AWS CLI is regularly

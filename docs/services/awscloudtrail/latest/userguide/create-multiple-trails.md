@@ -1,3 +1,7 @@
+---
+title: "Creating multiple trails"
+---
+
 # Creating multiple trails
 
 You can use CloudTrail log files to troubleshoot operational or security issues in your AWS

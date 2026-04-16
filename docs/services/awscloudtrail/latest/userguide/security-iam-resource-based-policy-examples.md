@@ -1,3 +1,7 @@
+---
+title: "AWS CloudTrail resource-based policy examples"
+---
+
 # AWS CloudTrail resource-based policy examples
 
 This section provides example resource-based polices for CloudTrail Lake dashboards, event data stores, and channels.

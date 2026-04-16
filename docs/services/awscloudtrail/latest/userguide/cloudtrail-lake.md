@@ -1,3 +1,7 @@
+---
+title: "Working with AWS CloudTrail Lake"
+---
+
 # Working with AWS CloudTrail Lake
 
 ###### Note

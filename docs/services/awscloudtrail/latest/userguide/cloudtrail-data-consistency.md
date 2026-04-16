@@ -1,3 +1,7 @@
+---
+title: "Managing data consistency in CloudTrail"
+---
+
 # Managing data consistency in CloudTrail
 
 CloudTrail uses a distributed computing model called [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency).

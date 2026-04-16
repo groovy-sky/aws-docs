@@ -1,3 +1,7 @@
+---
+title: "Add a CloudTrail delegated administrator"
+---
+
 # Add a CloudTrail delegated administrator
 
 You can add a delegated administrator to manage an organization's CloudTrail resources, such as trails and event data stores.

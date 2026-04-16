@@ -1,3 +1,7 @@
+---
+title: "Logging Billing and Cost Management API calls with AWS CloudTrail"
+---
+
 # Logging Billing and Cost Management API calls with AWS CloudTrail
 
 Billing and Cost Management is integrated with AWS CloudTrail, a service that provides a record of actions taken by a

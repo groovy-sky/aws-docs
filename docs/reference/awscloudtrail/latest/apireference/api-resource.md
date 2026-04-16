@@ -1,3 +1,7 @@
+---
+title: "Resource"
+---
+
 # Resource
 
 Specifies the type and name of a resource referenced by an event.

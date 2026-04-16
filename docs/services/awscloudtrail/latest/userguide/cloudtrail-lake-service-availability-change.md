@@ -1,3 +1,7 @@
+---
+title: "CloudTrail Lake availability change"
+---
+
 # CloudTrail Lake availability change
 
 ###### Note

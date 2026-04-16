@@ -1,3 +1,7 @@
+---
+title: "Working with CloudTrail event history"
+---
+
 # Working with CloudTrail event history
 
 CloudTrail is enabled by default for your AWS account and you automatically have access to the CloudTrail event history.

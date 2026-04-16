@@ -1,3 +1,7 @@
+---
+title: "Validate CloudTrail Lake saved query results"
+---
+
 # Validate CloudTrail Lake saved query results
 
 To determine whether the query results were modified, deleted, or unchanged after CloudTrail delivered

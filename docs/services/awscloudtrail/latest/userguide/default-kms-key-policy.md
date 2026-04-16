@@ -1,3 +1,7 @@
+---
+title: "Default KMS key policy created in CloudTrail console"
+---
+
 # Default KMS key policy created in CloudTrail console
 
 If you create an AWS KMS key in the CloudTrail console, the following policies are

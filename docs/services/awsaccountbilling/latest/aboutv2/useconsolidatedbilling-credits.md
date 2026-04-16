@@ -1,3 +1,7 @@
+---
+title: "Applying AWS credits"
+---
+
 # Applying AWS credits
 
 AWS credits are automatically applied to bills to help cover costs that are

@@ -1,3 +1,7 @@
+---
+title: "Updating transfers"
+---
+
 # Updating transfers
 
 When you sign in to your organization's management account, you can update the name assigned to transfers that allow you to manage and pay for another organization’s consolidated bill.

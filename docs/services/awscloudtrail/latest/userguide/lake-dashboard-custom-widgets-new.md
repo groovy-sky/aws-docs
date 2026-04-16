@@ -1,3 +1,7 @@
+---
+title: "Create a new widget from a SQL query with the CloudTrail console"
+---
+
 # Create a new widget from a SQL query with the CloudTrail console
 
 This section describes how to create a new widget by writing or pasting a SQL

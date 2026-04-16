@@ -1,3 +1,7 @@
+---
+title: "InsightSelector"
+---
+
 # InsightSelector
 
 A JSON string that contains a list of Insights types that are logged on a trail or event data store.

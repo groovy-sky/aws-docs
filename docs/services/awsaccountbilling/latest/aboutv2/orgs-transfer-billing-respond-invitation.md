@@ -1,3 +1,7 @@
+---
+title: "Responding to invitations"
+---
+
 # Responding to invitations
 
 When you sign in to your organization's management account, you can respond to invitations

@@ -1,3 +1,7 @@
+---
+title: "Viewing Insights events for event data stores"
+---
+
 # Viewing Insights events for event data stores
 
 This section describes how you can view Insights events for an Insights

@@ -1,3 +1,7 @@
+---
+title: "Understanding organization event data stores"
+---
+
 # Understanding organization event data stores
 
 ###### Note

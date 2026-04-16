@@ -1,3 +1,7 @@
+---
+title: "Setting up your India billing"
+---
+
 # Setting up your India billing
 
 If you sign up for a new account and choose India for your contact and billing address,
@@ -221,7 +225,7 @@ that your previous default payment method is not eligible for use in the new
 SOR. Refresh the page after you add your payment card for this alert to
 disappear.
 
-If you're unable to change the SOR using the preceding procedures, your account is likely operating in the legacy model where the functionality isn't available. We are currently migrating AWS India account from the legacy to the new model where the functionality is available. The expected completion date is December 2025.
+If you're unable to change the SOR using the preceding procedures, your account is likely operating in the legacy model where the functionality isn't available. We are currently migrating AWS India account from the legacy to the new model where the functionality is available. The migration is expected to be completed by December 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

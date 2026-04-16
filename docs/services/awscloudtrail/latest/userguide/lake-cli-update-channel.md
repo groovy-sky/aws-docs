@@ -1,3 +1,7 @@
+---
+title: "Update a channel with the AWS CLI"
+---
+
 # Update a channel with the AWS CLI
 
 This section describes how you can use the AWS CLI to update a channel for a CloudTrail Lake integration.

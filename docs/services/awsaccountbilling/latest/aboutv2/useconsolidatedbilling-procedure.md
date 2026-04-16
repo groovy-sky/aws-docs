@@ -1,3 +1,7 @@
+---
+title: "Consolidated billing process"
+---
+
 # Consolidated billing process
 
 AWS Organizations provides consolidated billing so that you can track the combined costs of all

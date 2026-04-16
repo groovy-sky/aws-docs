@@ -1,3 +1,7 @@
+---
+title: "Naming requirements for CloudTrail resources, S3 buckets, and KMS keys"
+---
+
 # Naming requirements for CloudTrail resources, S3 buckets, and KMS keys
 
 This section provides information about the naming requirements for CloudTrail resources, Amazon S3 buckets, and KMS keys.

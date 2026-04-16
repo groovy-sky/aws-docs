@@ -1,3 +1,7 @@
+---
+title: "CloudTrail digest file structure"
+---
+
 # CloudTrail digest file structure
 
 Each digest file contains the names of the log files that were delivered to your Amazon S3

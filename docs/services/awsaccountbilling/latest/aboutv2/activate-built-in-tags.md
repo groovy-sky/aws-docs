@@ -1,3 +1,7 @@
+---
+title: "Activating AWS-generated tags cost allocation tags"
+---
+
 # Activating AWS-generated tags cost allocation tags
 
 Management account owners can activate the AWS-generated tags in the Billing and Cost Management console. When a

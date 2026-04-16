@@ -1,3 +1,7 @@
+---
+title: "Applying for AWS Financing"
+---
+
 # Applying for AWS Financing
 
 You're required to submit an application before you can begin using Financing. Ensure you have

@@ -1,3 +1,7 @@
+---
+title: "Managing your SEPA direct debit payment method"
+---
+
 # Managing your SEPA direct debit payment method
 
 AWS Europe customers can add a bank account to allow SEPA direct debit payments. You can

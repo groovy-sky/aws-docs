@@ -1,3 +1,7 @@
+---
+title: "Compliance validation for AWS CloudTrail"
+---
+
 # Compliance validation for AWS CloudTrail
 
 Third-party auditors assess the security and compliance of AWS CloudTrail as part of

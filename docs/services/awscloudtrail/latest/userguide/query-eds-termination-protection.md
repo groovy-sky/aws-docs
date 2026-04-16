@@ -1,3 +1,7 @@
+---
+title: "Change termination protection with the console"
+---
+
 # Change termination protection with the console
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Copy trail events to an existing event data store with the console"
+---
+
 # Copy trail events to an existing event data store with the console
 
 Use the following procedure to copy trail events to an existing event data store. For information about how to create a new event data store, see [Create an event data store for CloudTrail events with the console](query-event-data-store-cloudtrail.md).

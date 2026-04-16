@@ -1,3 +1,7 @@
+---
+title: "Using the create-trail command to create a trail"
+---
+
 # Using the `create-trail` command to create a trail
 
 You can run the `create-trail` command to create trails that are

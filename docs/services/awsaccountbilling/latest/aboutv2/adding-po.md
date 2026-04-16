@@ -1,3 +1,7 @@
+---
+title: "Adding a purchase order"
+---
+
 # Adding a purchase order
 
 You can use the Billing and Cost Management console to add purchase orders to use in your invoices. Adding a

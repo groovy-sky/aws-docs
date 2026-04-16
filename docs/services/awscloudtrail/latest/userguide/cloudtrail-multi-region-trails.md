@@ -1,3 +1,7 @@
+---
+title: "Understanding multi-Region trails and opt-in Regions"
+---
+
 # Understanding multi-Region trails and opt-in Regions
 
 A trail can be applied to all AWS Regions that are [enabled](../../../accounts/latest/reference/manage-acct-regions.md#manage-acct-regions-enable-standalone) in your AWS account, or can be applied to a single Region. A trail

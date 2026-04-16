@@ -1,3 +1,7 @@
+---
+title: "Remove a widget from a dashboard with the CloudTrail console"
+---
+
 # Remove a widget from a dashboard with the CloudTrail console
 
 This section describes to remove a widget from a custom dashboard.

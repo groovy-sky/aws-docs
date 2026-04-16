@@ -1,3 +1,7 @@
+---
+title: "Viewing Insights events for trails"
+---
+
 # Viewing Insights events for trails
 
 This section describes how you can lookup the last 90 days of Insights events for a trail with CloudTrail Insights enabled. For information about how to view CloudTrail Insights for an event data store,

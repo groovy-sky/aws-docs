@@ -1,3 +1,7 @@
+---
+title: "Making payments using PIX (Brazil)"
+---
+
 # Making payments using PIX (Brazil)
 
 If you meet the requirements, you can use your preferred mobile banking app with the

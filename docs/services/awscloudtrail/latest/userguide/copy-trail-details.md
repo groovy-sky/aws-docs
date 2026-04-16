@@ -1,3 +1,7 @@
+---
+title: "View event copy details with the CloudTrail console"
+---
+
 # View event copy details with the CloudTrail console
 
 After a trail event copy starts, you can view the event copy details, including the status of the

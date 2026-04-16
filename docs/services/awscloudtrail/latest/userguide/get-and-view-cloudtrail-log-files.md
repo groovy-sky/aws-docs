@@ -1,3 +1,7 @@
+---
+title: "Getting and viewing your CloudTrail log files"
+---
+
 # Getting and viewing your CloudTrail log files
 
 After you create a trail and configure it to capture the log files you want, you need to

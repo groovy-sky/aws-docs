@@ -1,3 +1,7 @@
+---
+title: "Quotas in AWS CloudTrail"
+---
+
 # Quotas in AWS CloudTrail
 
 This section describes the resource quotas (formerly referred to as limits) in CloudTrail.

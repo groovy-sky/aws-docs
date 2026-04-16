@@ -1,3 +1,7 @@
+---
+title: "Copy trail events to an event data store"
+---
+
 # Copy trail events to an event data store
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Understanding CloudTrail events"
+---
+
 # Understanding CloudTrail events
 
 An event in CloudTrail is the record of an activity in an AWS account. This activity can

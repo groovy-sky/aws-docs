@@ -1,3 +1,7 @@
+---
+title: "Organizing costs using AWS Cost Categories"
+---
+
 # Organizing costs using AWS Cost Categories
 
 Cost allocation helps you identify who is spending what, within your organization.

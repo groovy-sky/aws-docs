@@ -1,3 +1,7 @@
+---
+title: "Managing CloudTrail Lake federation resources with AWS Lake Formation"
+---
+
 # Managing CloudTrail Lake federation resources with AWS Lake Formation
 
 ###### Note

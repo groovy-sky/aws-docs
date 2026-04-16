@@ -1,3 +1,7 @@
+---
+title: "Create a custom dashboard with the CloudTrail console"
+---
+
 # Create a custom dashboard with the CloudTrail console
 
 You can create custom dashboards and add up to 10 widgets to each custom dashboard.

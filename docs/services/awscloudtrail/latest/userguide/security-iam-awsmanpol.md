@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for AWS CloudTrail"
+---
+
 # AWS managed policies for AWS CloudTrail
 
 To add permissions to users, groups, and roles, it is easier to use AWS managed policies

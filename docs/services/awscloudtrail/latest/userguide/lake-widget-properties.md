@@ -1,3 +1,7 @@
+---
+title: "View properties for widgets"
+---
+
 # View properties for widgets
 
 This section describes the configurable view properties for the 4 view types: table, line chart, pie chart, and bar chart.

@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies"
+---
+
 # AWS managed policies
 
 Managed policies are standalone identity-based policies that you can attach to
@@ -107,6 +111,19 @@ service began tracking these changes. For automatic alerts about changes to this
 page, subscribe to the RSS feed on the AWS Billing Document history page.
 
 ChangeDescriptionDate
+
+[Billing](#security-iam-awsmanpol-Billing) and [AWSBillingReadOnlyAccess](#security-iam-awsmanpol-AWSBillingReadOnlyAccess) – Update to existing
+policies
+
+We added the following cost categories permission to `Billing`:
+
+- `ce:ListCostCategoryResourceAssociations`
+
+We added the following cost categories permission to `AWSBillingReadOnlyAccess`:
+
+- `ce:ListCostCategoryResourceAssociations`
+
+April 08, 2026
 
 [Billing](#security-iam-awsmanpol-Billing) and [AWSBillingReadOnlyAccess](#security-iam-awsmanpol-AWSBillingReadOnlyAccess) – Update to existing
 policies

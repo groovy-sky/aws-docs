@@ -1,3 +1,7 @@
+---
+title: "CreateTrail"
+---
+
 # CreateTrail
 
 Creates a trail that specifies the settings for delivery of log data to an Amazon S3 bucket.

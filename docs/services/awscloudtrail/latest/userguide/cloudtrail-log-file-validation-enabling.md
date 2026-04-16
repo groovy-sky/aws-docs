@@ -1,3 +1,7 @@
+---
+title: "Enabling log file integrity validation for CloudTrail"
+---
+
 # Enabling log file integrity validation for CloudTrail
 
 You can enable log file integrity validation by using the AWS Management Console, AWS Command Line

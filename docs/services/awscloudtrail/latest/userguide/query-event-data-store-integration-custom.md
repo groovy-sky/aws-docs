@@ -1,3 +1,7 @@
+---
+title: "Create a custom integration with the console"
+---
+
 # Create a custom integration with the console
 
 You can use CloudTrail to log and store user activity data from any source in your

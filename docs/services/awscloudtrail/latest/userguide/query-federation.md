@@ -1,3 +1,7 @@
+---
+title: "Federate an event data store"
+---
+
 # Federate an event data store
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting issues with an organization trail"
+---
+
 # Troubleshooting issues with an organization trail
 
 This section provides information on how to troubleshoot issues with an organization

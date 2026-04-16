@@ -1,3 +1,7 @@
+---
+title: "CloudTrail record contents for management, data, and network activity events"
+---
+
 # CloudTrail record contents for management, data, and network activity events
 
 This page describes the record contents of a management, data, or network activity

@@ -1,3 +1,7 @@
+---
+title: "Create a dashboard with the AWS CLI"
+---
+
 # Create a dashboard with the AWS CLI
 
 This section describes how to use the `create-dashboard` command to create

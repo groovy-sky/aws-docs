@@ -1,3 +1,7 @@
+---
+title: "Reserved Instances"
+---
+
 # Reserved Instances
 
 For billing purposes, the consolidated billing feature of AWS Organizations treats all the

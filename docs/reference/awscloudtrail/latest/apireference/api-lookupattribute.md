@@ -1,3 +1,7 @@
+---
+title: "LookupAttribute"
+---
+
 # LookupAttribute
 
 Specifies an attribute and value that filter the events returned.

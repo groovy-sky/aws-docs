@@ -1,3 +1,7 @@
+---
+title: "Receiving CloudTrail log files from multiple Regions"
+---
+
 # Receiving CloudTrail log files from multiple Regions
 
 When you create a multi-Region trail, CloudTrail logs events from all Regions enabled in your account. CloudTrail delivers log files to the same S3 bucket and

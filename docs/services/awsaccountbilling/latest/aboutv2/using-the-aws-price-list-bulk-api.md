@@ -1,3 +1,7 @@
+---
+title: "Getting price list files using the AWS Price List Bulk API"
+---
+
 # Getting price list files using the AWS Price List Bulk API
 
 To provide feedback about AWS Price List, complete this [short survey](https://amazonmr.au1.qualtrics.com/jfe/form/SV_cO0deTMyKyFeezA). Your responses will be anonymous. **Note:** This survey is in English only.

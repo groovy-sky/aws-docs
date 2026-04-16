@@ -1,3 +1,7 @@
+---
+title: "Managing your Bacs direct debit payment method"
+---
+
 # Managing your Bacs direct debit payment method
 
 AWS Europe customers can add a bank account to allow Bacs direct debit payments. You can

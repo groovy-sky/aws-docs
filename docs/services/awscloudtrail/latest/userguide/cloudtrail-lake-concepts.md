@@ -1,3 +1,7 @@
+---
+title: "CloudTrail Lake concepts and terminology"
+---
+
 # CloudTrail Lake concepts and terminology
 
 ###### Note

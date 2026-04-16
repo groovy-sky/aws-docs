@@ -1,3 +1,7 @@
+---
+title: "Sharing CloudTrail log files between AWS accounts"
+---
+
 # Sharing CloudTrail log files between AWS accounts
 
 This section explains how to share CloudTrail log files between multiple AWS accounts. The

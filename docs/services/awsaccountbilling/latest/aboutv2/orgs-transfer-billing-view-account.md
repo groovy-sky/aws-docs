@@ -1,3 +1,7 @@
+---
+title: "Viewing Billing and Cost Management data as a Bill Transfer account"
+---
+
 # Viewing Billing and Cost Management data as a Bill Transfer account
 
 When the transfer begins, the bill transfer account:

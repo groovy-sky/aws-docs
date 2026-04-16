@@ -1,3 +1,7 @@
+---
+title: "Security best practices in AWS CloudTrail"
+---
+
 # Security best practices in AWS CloudTrail
 
 AWS CloudTrail provides a number of security features to consider as you develop and implement

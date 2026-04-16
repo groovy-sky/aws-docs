@@ -1,3 +1,7 @@
+---
+title: "Manage payment method access using tags"
+---
+
 # Manage payment method access using tags
 
 You can use attribute-based access control (ABAC) to manage access to your purchase methods. When you create your payment methods, you can tags with key-value pairs. You can then create IAM policies and specify the tags. For example, if you add the `project` key and assign it a value of `test`, your IAM policies can explicitly allow or deny access to any payment instruments that has this tag.

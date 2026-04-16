@@ -1,3 +1,7 @@
+---
+title: "What Is AWS CloudTrail?"
+---
+
 # What Is AWS CloudTrail?
 
 AWS CloudTrail is an AWS service that helps you enable operational and risk auditing,

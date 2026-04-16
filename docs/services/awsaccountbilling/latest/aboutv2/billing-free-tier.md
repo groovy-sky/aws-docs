@@ -1,3 +1,7 @@
+---
+title: "Trying services using AWS Free Tier (before July 15, 2025)"
+---
+
 # Trying services using AWS Free Tier (before July 15, 2025)
 
 ###### Note

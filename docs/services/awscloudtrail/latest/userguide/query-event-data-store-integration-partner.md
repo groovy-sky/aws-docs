@@ -1,3 +1,7 @@
+---
+title: "Create an integration with a CloudTrail partner with the console"
+---
+
 # Create an integration with a CloudTrail partner with the console
 
 When you create an integration with an event source outside AWS, you can

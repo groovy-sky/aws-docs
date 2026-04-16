@@ -1,3 +1,7 @@
+---
+title: "Tagging cost categories"
+---
+
 # Tagging cost categories
 
 Tagging cost categories is beneficial to control access to cost categories.

@@ -1,3 +1,7 @@
+---
+title: "UpdateTrail"
+---
+
 # UpdateTrail
 
 Updates trail settings that control what events you are logging, and how to handle log

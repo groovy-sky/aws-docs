@@ -1,3 +1,7 @@
+---
+title: "Making payments"
+---
+
 # Making payments
 
 You can use the **Payments** page of the AWS Billing and Cost Management console to pay your AWS bill using the process in this section.

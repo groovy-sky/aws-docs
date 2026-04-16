@@ -1,3 +1,7 @@
+---
+title: "CloudWatch log group and log stream naming for CloudTrail"
+---
+
 # CloudWatch log group and log stream naming for CloudTrail
 
 Amazon CloudWatch will display the log group that you created for CloudTrail events alongside any other

@@ -1,3 +1,7 @@
+---
+title: "Creating a trail with the CloudTrail console"
+---
+
 # Creating a trail with the CloudTrail console
 
 A trail can be applied to all AWS Regions that are [enabled](../../../accounts/latest/reference/manage-acct-regions.md#manage-acct-regions-enable-standalone) in your AWS account, or can be applied to a single Region. A trail that applies to

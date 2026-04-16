@@ -1,3 +1,7 @@
+---
+title: "Configuring Amazon SNS notifications for CloudTrail"
+---
+
 # Configuring Amazon SNS notifications for CloudTrail
 
 You can be notified when CloudTrail publishes new log files to your Amazon S3 bucket. You manage

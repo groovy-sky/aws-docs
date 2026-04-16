@@ -1,3 +1,7 @@
+---
+title: "Creating a trail for an organization"
+---
+
 # Creating a trail for an organization
 
 If you have created an organization in AWS Organizations, you can create a trail that logs all

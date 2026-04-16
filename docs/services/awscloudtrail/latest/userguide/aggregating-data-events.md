@@ -1,3 +1,7 @@
+---
+title: "Aggregating data events"
+---
+
 # Aggregating data events
 
 Data events provide information about the resource operations performed on or in a resource. These are also known as data plane operations. Data events are often high-volume activities.

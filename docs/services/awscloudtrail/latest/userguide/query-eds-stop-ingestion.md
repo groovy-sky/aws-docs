@@ -1,3 +1,7 @@
+---
+title: "Stop and start event ingestion with the console"
+---
+
 # Stop and start event ingestion with the console
 
 ###### Note

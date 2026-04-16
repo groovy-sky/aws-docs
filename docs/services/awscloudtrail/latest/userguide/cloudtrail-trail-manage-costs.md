@@ -1,3 +1,7 @@
+---
+title: "Managing CloudTrail trail costs"
+---
+
 # Managing CloudTrail trail costs
 
 You can configure and manage CloudTrail trails in ways that capture the data you

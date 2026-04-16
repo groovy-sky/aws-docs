@@ -1,3 +1,7 @@
+---
+title: "Viewing Insights events for trails with the AWS CLI"
+---
+
 # Viewing Insights events for trails with the AWS CLI
 
 This section describes how to use the AWS CLI `lookup-events`

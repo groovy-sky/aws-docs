@@ -1,3 +1,7 @@
+---
+title: "DataResource"
+---
+
 # DataResource
 
 You can configure the `DataResource` in an `EventSelector` to log data events for the following three resource types:

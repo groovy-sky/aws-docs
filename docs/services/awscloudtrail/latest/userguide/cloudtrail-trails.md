@@ -1,3 +1,7 @@
+---
+title: "Working with CloudTrail trails"
+---
+
 # Working with CloudTrail trails
 
 _Trails_ capture a record of AWS activities, delivering and storing

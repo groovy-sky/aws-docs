@@ -1,3 +1,7 @@
+---
+title: "View sample queries with the CloudTrail console"
+---
+
 # View sample queries with the CloudTrail console
 
 The CloudTrail console provides a number of sample queries that can help you get started writing your

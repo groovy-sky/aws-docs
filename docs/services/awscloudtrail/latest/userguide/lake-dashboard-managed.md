@@ -1,3 +1,7 @@
+---
+title: "View a managed dashboard with the CloudTrail console"
+---
+
 # View a managed dashboard with the CloudTrail console
 
 CloudTrail Lake provides managed dashboards that show event trends for event data stores

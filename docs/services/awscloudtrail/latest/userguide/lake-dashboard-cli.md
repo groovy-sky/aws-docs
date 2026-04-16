@@ -1,3 +1,7 @@
+---
+title: "Create, update, and manage dashboards with the AWS CLI"
+---
+
 # Create, update, and manage dashboards with the AWS CLI
 
 This section describes the AWS CLI commands you can use to create, update, and manage your CloudTrail Lake dashboards.

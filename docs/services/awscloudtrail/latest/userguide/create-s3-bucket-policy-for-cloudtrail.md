@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 bucket policy for CloudTrail"
+---
+
 # Amazon S3 bucket policy for CloudTrail
 
 By default, Amazon S3 buckets and objects are private. Only the resource owner (the AWS

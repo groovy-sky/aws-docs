@@ -1,3 +1,7 @@
+---
+title: "Create an event data store with the AWS CLI"
+---
+
 # Create an event data store with the AWS CLI
 
 This section describes how to use the [`create-event-data-store`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-event-data-store.html)

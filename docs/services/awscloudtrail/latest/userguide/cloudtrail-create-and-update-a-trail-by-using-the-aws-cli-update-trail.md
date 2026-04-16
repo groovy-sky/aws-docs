@@ -1,3 +1,7 @@
+---
+title: "Using the update-trail command to update a trail"
+---
+
 # Using the `update-trail` command to update a trail
 
 ###### Important

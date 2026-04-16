@@ -1,3 +1,7 @@
+---
+title: "Viewing service-linked channels"
+---
+
 # Viewing service-linked channels
 
 AWS services can create a service-linked channel to receive CloudTrail events on your

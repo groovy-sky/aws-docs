@@ -1,3 +1,7 @@
+---
+title: "Disable the Highlights dashboard with the CloudTrail console"
+---
+
 # Disable the Highlights dashboard with the CloudTrail console
 
 This section describes how to disable the Highlights dashboard. Because termination
