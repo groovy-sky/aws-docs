@@ -860,7 +860,7 @@ string
 False
 
 The broker's host instance type to upgrade to. For a list of supported instance
-types, see [Broker instance types](../developer-guide/broker-instance-types.md).
+types, see [Broker instance types](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-instance-types).
 
 `pendingLdapServerMetadata`
 
@@ -1400,7 +1400,7 @@ string
 False
 
 The broker's host instance type to upgrade to. For a list of supported instance
-types, see [Broker instance types](../developer-guide/broker-instance-types.md).
+types, see [Broker instance types](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-instance-types).
 
 `ldapServerMetadata`
 
@@ -1518,7 +1518,7 @@ string
 False
 
 The broker's host instance type to upgrade to. For a list of supported instance
-types, see [Broker instance types](../developer-guide/broker-instance-types.md).
+types, see [Broker instance types](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-instance-types).
 
 `ldapServerMetadata`
 
@@ -1638,69 +1638,69 @@ For more information about using this API in one of the language-specific AWS SD
 
 ### DescribeBroker
 
-- [AWS Command Line Interface V2](../../../goto/cli2/mq-2017-11-27/describebroker.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/mq-2017-11-27/DescribeBroker)
 
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/mq-2017-11-27/describebroker.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/mq-2017-11-27/DescribeBroker)
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/mq-2017-11-27/describebroker.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/mq-2017-11-27/DescribeBroker)
 
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/mq-2017-11-27/describebroker.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/mq-2017-11-27/DescribeBroker)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/mq-2017-11-27/describebroker.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mq-2017-11-27/DescribeBroker)
 
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/mq-2017-11-27/describebroker.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/mq-2017-11-27/DescribeBroker)
 
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/mq-2017-11-27/describebroker.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/mq-2017-11-27/DescribeBroker)
 
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/mq-2017-11-27/describebroker.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/mq-2017-11-27/DescribeBroker)
 
-- [AWS SDK for Python](../../../goto/boto3/mq-2017-11-27/describebroker.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/mq-2017-11-27/DescribeBroker)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/mq-2017-11-27/describebroker.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mq-2017-11-27/DescribeBroker)
 
 ### UpdateBroker
 
-- [AWS Command Line Interface V2](../../../goto/cli2/mq-2017-11-27/updatebroker.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/mq-2017-11-27/UpdateBroker)
 
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/mq-2017-11-27/updatebroker.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/mq-2017-11-27/UpdateBroker)
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/mq-2017-11-27/updatebroker.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/mq-2017-11-27/UpdateBroker)
 
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/mq-2017-11-27/updatebroker.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/mq-2017-11-27/UpdateBroker)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/mq-2017-11-27/updatebroker.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mq-2017-11-27/UpdateBroker)
 
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/mq-2017-11-27/updatebroker.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/mq-2017-11-27/UpdateBroker)
 
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/mq-2017-11-27/updatebroker.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/mq-2017-11-27/UpdateBroker)
 
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/mq-2017-11-27/updatebroker.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/mq-2017-11-27/UpdateBroker)
 
-- [AWS SDK for Python](../../../goto/boto3/mq-2017-11-27/updatebroker.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/mq-2017-11-27/UpdateBroker)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/mq-2017-11-27/updatebroker.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mq-2017-11-27/UpdateBroker)
 
 ### DeleteBroker
 
-- [AWS Command Line Interface V2](../../../goto/cli2/mq-2017-11-27/deletebroker.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/mq-2017-11-27/DeleteBroker)
 
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/mq-2017-11-27/deletebroker.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/mq-2017-11-27/DeleteBroker)
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/mq-2017-11-27/deletebroker.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/mq-2017-11-27/DeleteBroker)
 
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/mq-2017-11-27/deletebroker.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/mq-2017-11-27/DeleteBroker)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/mq-2017-11-27/deletebroker.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mq-2017-11-27/DeleteBroker)
 
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/mq-2017-11-27/deletebroker.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/mq-2017-11-27/DeleteBroker)
 
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/mq-2017-11-27/deletebroker.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/mq-2017-11-27/DeleteBroker)
 
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/mq-2017-11-27/deletebroker.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/mq-2017-11-27/DeleteBroker)
 
-- [AWS SDK for Python](../../../goto/boto3/mq-2017-11-27/deletebroker.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/mq-2017-11-27/DeleteBroker)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/mq-2017-11-27/deletebroker.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mq-2017-11-27/DeleteBroker)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

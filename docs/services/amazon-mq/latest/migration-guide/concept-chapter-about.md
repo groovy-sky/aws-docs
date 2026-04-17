@@ -39,13 +39,13 @@ connecting
 to an Amazon MQ managed broker, see
 [Working\
 Examples of Using Java Message Service (JMS) with\
-ActiveMQ](../developer-guide/amazon-mq-working-java-example.md) in the
+ActiveMQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-working-java-example) in the
 _Amazon MQ Developer Guide_.
 
 ### Message persistence
 
 To replicate _persistence mode_ or _sync point_
-_control_ options with Amazon MQ, you can deploy your brokers as [active/standby brokers](../developer-guide/active-standby-broker-deployment.md). In the active/standby deployment, brokers use
+_control_ options with Amazon MQ, you can deploy your brokers as [active/standby brokers](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/active-standby-broker-deployment). In the active/standby deployment, brokers use
 shared storage across multiple Availability Zones, with an optional time to live
 (TTL).
 
@@ -57,7 +57,7 @@ Depending on the
 interlopability
 of your applications and the type of access that they need, you can
 permit public access, [VPN\
-access](../../../vpn/latest/s2svpn/vpc-vpn.md), or [VPC access](../../../vpc/latest/userguide/what-is-amazon-vpc.md) using
+access](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN), or [VPC access](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc) using
 Amazon Virtual Private Cloud
 (Amazon VPC).
 
@@ -79,7 +79,7 @@ For network access across multiple VPCs, you can use [VPC peering](../../../vpc/
 ### Availability options
 
 Amazon MQ supports durability-optimized brokers backed by [Amazon Elastic File System (Amazon EFS)](https://aws.amazon.com/efs). You can configure [single-instance\
-brokers](../developer-guide/single-broker-deployment.md) (one broker in one Availability Zone) or [active/standby brokers](../developer-guide/active-standby-broker-deployment.md) (two brokers in two different Availability Zones).
+brokers](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/single-broker-deployment) (one broker in one Availability Zone) or [active/standby brokers](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/active-standby-broker-deployment) (two brokers in two different Availability Zones).
 In either configuration, Amazon MQ can automatically provision infrastructure for high
 message durability by storing messages redundantly across multiple Availability
 Zones.
@@ -113,14 +113,14 @@ patterns:
 
 For more information about using Amazon MQ to set up the right broker topology for your
 cloud architecture, see [Amazon MQ Broker\
-Architecture](../developer-guide/amazon-mq-broker-architecture.md) in the _Amazon MQ Developer Guide_.
+Architecture](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-architecture) in the _Amazon MQ Developer Guide_.
 
 ###### Important
 
 Revising a broker configuration or an ActiveMQ user does
 not
 immediately apply those changes. For your changes to take effect, you must wait for
-the next maintenance window or reboot the broker. For more information, see [Amazon MQ Broker Configuration Lifecycle](../developer-guide/amazon-mq-broker-configuration-lifecycle.md) in the
+the next maintenance window or reboot the broker. For more information, see [Amazon MQ Broker Configuration Lifecycle](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-lifecycle) in the
 _Amazon MQ Developer Guide_.
 
 ### Performance and scalability
@@ -141,7 +141,7 @@ increase the compute capacity of your broker instances from
 `mq.t2.micro`
 (1 vCPU and 1 GiB) up to `mq.m5.4xlarge` (16 vCPU and 64
 GiB). For more information about Amazon MQ instance types, see [Instance\
-Types](../developer-guide/broker.md#broker-instance-types) in the _Amazon MQ Developer Guide_.
+Types](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker) in the _Amazon MQ Developer Guide_.
 
 ###### Note
 
@@ -193,7 +193,7 @@ reduce the amount of time that it takes to deliver messages to a consumer.
 
 Using _in-memory_ storage can further reduce overall latency across
 your messaging architecture. For more information on how different storage types can
-affect latency, see [Differences Between Storage Types](../developer-guide/broker-storage.md#differences-between-storage-types) in the
+affect latency, see [Differences Between Storage Types](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-storage) in the
 _Amazon MQ Developer Guide_.
 
 ### Destination options
@@ -225,7 +225,7 @@ allowed
 to create or modify brokers, and which applications are allowed to send and receive
 messages. For more information about authentication options, and how to integrate the
 [Lightweight Directory Access Protocol (LDAP)](https://ldap.com/)
-with your Amazon MQ brokers, see [Messaging Authentication and Authorization for ActiveMQ](../developer-guide/security-authentication-authorization.md) in the
+with your Amazon MQ brokers, see [Messaging Authentication and Authorization for ActiveMQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/security-authentication-authorization) in the
 _Amazon MQ Developer Guide_.
 
 Connections to Amazon MQ brokers use Transport Layer Security (TLS). To isolate your
@@ -234,7 +234,7 @@ within a
 VPC.
 To control network access to your brokers, you can configure security groups in the VPC.
 For more information, see [Security Best\
-Practices for Amazon MQ](../developer-guide/using-amazon-mq-securely.md) in the _Amazon MQ Developer Guide_.
+Practices for Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/using-amazon-mq-securely) in the _Amazon MQ Developer Guide_.
 
 Amazon MQ encrypts messages at rest and in transit using encryption keys that it manages
 and stores securely in [AWS Key Management Service (AWS KMS)](https://aws.amazon.com/kms).
@@ -247,10 +247,10 @@ applications that meet encryption compliance and regulatory requirements.
 
 For additional security, we highly recommend designing your application to use
 [client-side\
-encryption](../../../../reference/encryption-sdk/latest/developer-guide/introduction.md).
+encryption](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/introduction).
 
 For more information about Amazon MQ security and how messaging data is encrypted, see
-[Data Protection in Amazon MQ](../developer-guide/data-protection.md) in the
+[Data Protection in Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/data-protection) in the
 _Amazon MQ Developer Guide_.
 
 ### Broker quotas
@@ -280,7 +280,7 @@ as composite destinations, which enable producers to send the same message to mu
 destinations, and virtual destinations, which enable publishers to broadcast messages
 via a topic to a pool of receivers subscribing through queues.
 
-For more information, see [Amazon MQ Broker Configuration Parameters](../developer-guide/amazon-mq-broker-configuration-parameters.md) in the
+For more information, see [Amazon MQ Broker Configuration Parameters](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters) in the
 _Amazon MQ Developer Guide_.
 
 ### Cost estimation
