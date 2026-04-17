@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Amazon Elastic Container Service (Amazon ECS) is a highly scalable, fast, container
@@ -17,7 +21,7 @@ Amazon ECS, you don't need to operate your own cluster management and configurat
 management systems. You also don't need to worry about scaling your management
 infrastructure.
 
-This document was last published on April 13, 2026.
+This document was last published on April 16, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

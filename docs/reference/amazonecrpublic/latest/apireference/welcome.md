@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Amazon Elastic Container Registry Public (Amazon ECR Public) is a managed container image registry service. Amazon ECR provides both
@@ -7,7 +11,7 @@ and reliable registry for your Docker or Open Container Initiative (OCI) images.
 supports public repositories with this API. For information about the Amazon ECR API for private
 repositories, see [Amazon Elastic Container Registry API Reference](../../../amazonecr/latest/apireference/welcome.md).
 
-This document was last published on April 13, 2026.
+This document was last published on April 16, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
