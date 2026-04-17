@@ -83,13 +83,13 @@ aws dynamodb describe-table \
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [CreateKey](../../../goto/aws-cli/kms-2014-11-01/createkey.md)
+- [CreateKey](https://docs.aws.amazon.com/goto/aws-cli/kms-2014-11-01/CreateKey)
 
-- [CreateTable](../../../goto/aws-cli/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
 
-- [DescribeTable](../../../goto/aws-cli/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DescribeTable)
 
-- [UpdateTable](../../../goto/aws-cli/dynamodb-2012-08-10/updatetable.md)
+- [UpdateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateTable)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

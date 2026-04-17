@@ -448,11 +448,11 @@ Example usage of conditional operations with AWS SDK for Java 2.x.
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [DeleteItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/deleteitem.md)
+- [DeleteItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DeleteItem)
 
-- [PutItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/PutItem)
 
-- [UpdateItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
 
 JavaScript
 
@@ -880,11 +880,11 @@ async function exampleUsage() {
 
 - For API details, see the following topics in _AWS SDK for JavaScript API Reference_.
 
-- [DeleteItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/deleteitemcommand.md)
+- [DeleteItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/DeleteItemCommand)
 
-- [PutItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/putitemcommand.md)
+- [PutItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/PutItemCommand)
 
-- [UpdateItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/updateitemcommand.md)
+- [UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand)
 
 Python
 
@@ -1243,11 +1243,11 @@ def example_usage():
 
 - For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
 
-- [DeleteItem](../../../goto/boto3/dynamodb-2012-08-10/deleteitem.md)
+- [DeleteItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DeleteItem)
 
-- [PutItem](../../../goto/boto3/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/PutItem)
 
-- [UpdateItem](../../../goto/boto3/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

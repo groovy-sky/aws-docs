@@ -66,11 +66,11 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/dynamodb-2012-08-10/localsecondaryindex.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/LocalSecondaryIndex)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dynamodb-2012-08-10/localsecondaryindex.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/LocalSecondaryIndex)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dynamodb-2012-08-10/localsecondaryindex.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/LocalSecondaryIndex)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

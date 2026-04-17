@@ -79,7 +79,7 @@ public class HelloDynamoDB
 ```
 
 - For API details, see
-[ListTables](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -197,7 +197,7 @@ int main(int argc, char **argv) {
 ```
 
 - For API details, see
-[ListTables](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for C++ API Reference_.
 
 Java
@@ -281,7 +281,7 @@ public class ListTables {
 ```
 
 - For API details, see
-[ListTables](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -313,7 +313,7 @@ export const main = async () => {
 ```
 
 - For API details, see
-[ListTables](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/listtablescommand.md)
+[ListTables](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ListTablesCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -358,7 +358,7 @@ else:
 ```
 
 - For API details, see
-[ListTables](../../../goto/boto3/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -415,7 +415,7 @@ end
 ```
 
 - For API details, see
-[ListTables](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for Ruby API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

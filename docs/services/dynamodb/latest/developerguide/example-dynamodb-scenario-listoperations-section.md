@@ -316,7 +316,7 @@ Example usage of list operations with AWS SDK for Java 2.x.
 ```
 
 - For API details, see
-[UpdateItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updateitem.md)
+[UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -860,7 +860,7 @@ async function updateWithMultipleActions(
 ```
 
 - For API details, see
-[UpdateItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/updateitemcommand.md)
+[UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -1346,7 +1346,7 @@ def example_usage():
 ```
 
 - For API details, see
-[UpdateItem](../../../goto/boto3/dynamodb-2012-08-10/updateitem.md)
+[UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

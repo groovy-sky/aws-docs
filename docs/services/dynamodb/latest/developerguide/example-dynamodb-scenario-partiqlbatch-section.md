@@ -429,7 +429,7 @@ void WaitForEnter()
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../../reference/goto/dotnetsdkv3/dynamodb-2012-08-10/batchexecutestatement.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/goto/DotNetSDKV3/dynamodb-2012-08-10/BatchExecuteStatement)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -861,7 +861,7 @@ bool AwsDoc::DynamoDB::waitTableActive(const Aws::String &tableName,
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/batchexecutestatement.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchExecuteStatement)
 in _AWS SDK for C++ API Reference_.
 
 Go
@@ -1648,7 +1648,7 @@ public class ScenarioPartiQLBatch {
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/batchexecutestatement.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/BatchExecuteStatement)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -1859,7 +1859,7 @@ this table, the scenario cannot continue. Delete it?`,
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/batchexecutestatementcommand.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchExecuteStatementCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -2312,7 +2312,7 @@ class GettingStartedWithPartiQLBatch
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/batchexecutestatement.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/BatchExecuteStatement)
 in _AWS SDK for PHP API Reference_.
 
 Python
@@ -2501,7 +2501,7 @@ if __name__ == "__main__":
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../goto/boto3/dynamodb-2012-08-10/batchexecutestatement.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchExecuteStatement)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -2557,7 +2557,7 @@ end
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/batchexecutestatement.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/BatchExecuteStatement)
 in _AWS SDK for Ruby API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

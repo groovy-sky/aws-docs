@@ -25,11 +25,11 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/dax-2017-04-19/ssespecification.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/dax-2017-04-19/SSESpecification)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/dax-2017-04-19/ssespecification.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dax-2017-04-19/SSESpecification)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/dax-2017-04-19/ssespecification.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dax-2017-04-19/SSESpecification)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

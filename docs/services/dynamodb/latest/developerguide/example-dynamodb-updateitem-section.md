@@ -17,6 +17,8 @@ context in the following code examples:
 
 - [Create and manage MRSC global tables](example-dynamodb-scenario-mrscglobaltables-section.md)
 
+- [Getting started with DynamoDB](example-dynamodb-gettingstarted-070-section.md)
+
 - [Perform list operations](example-dynamodb-scenario-listoperations-section.md)
 
 - [Perform map operations](example-dynamodb-scenario-mapoperations-section.md)
@@ -111,7 +113,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[UpdateItem](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/updateitem.md)
+[UpdateItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/UpdateItem)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -291,7 +293,7 @@ function aws_cli_error_log() {
 ```
 
 - For API details, see
-[UpdateItem](../../../goto/aws-cli/dynamodb-2012-08-10/updateitem.md)
+[UpdateItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateItem)
 in _AWS CLI Command Reference_.
 
 C++
@@ -420,7 +422,7 @@ bool AwsDoc::DynamoDB::waitTableActive(const Aws::String &tableName,
 ```
 
 - For API details, see
-[UpdateItem](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/updateitem.md)
+[UpdateItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/UpdateItem)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -802,7 +804,7 @@ public class UpdateItem {
 ```
 
 - For API details, see
-[UpdateItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updateitem.md)
+[UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -846,7 +848,7 @@ export const main = async () => {
 ```
 
 - For API details, see
-[UpdateItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/updateitemcommand.md)
+[UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -941,7 +943,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 ```
 
 - For API details, see
-[UpdateItem](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/updateitem.md)
+[UpdateItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/UpdateItem)
 in _AWS SDK for PHP API Reference_.
 
 PowerShell
@@ -979,7 +981,7 @@ Genre                          Rap
 ```
 
 - For API details, see
-[UpdateItem](../../../powershell/v4/reference.md)
+[UpdateItem](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -1015,7 +1017,7 @@ Genre                          Rap
 ```
 
 - For API details, see
-[UpdateItem](../../../powershell/v5/reference.md)
+[UpdateItem](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -1184,7 +1186,7 @@ class UpdateQueryWrapper:
 ```
 
 - For API details, see
-[UpdateItem](../../../goto/boto3/dynamodb-2012-08-10/updateitem.md)
+[UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -1229,7 +1231,7 @@ class DynamoDBBasics
 ```
 
 - For API details, see
-[UpdateItem](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/updateitem.md)
+[UpdateItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/UpdateItem)
 in _AWS SDK for Ruby API Reference_.
 
 SAP ABAP

@@ -139,7 +139,7 @@ Demonstrate using begins\_with with different prefix lengths with AWS SDK for Ja
 ```
 
 - For API details, see
-[Query](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/query.md)
+[Query](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Query)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -201,7 +201,7 @@ async function queryWithBeginsWith(
 ```
 
 - For API details, see
-[Query](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/querycommand.md)
+[Query](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/QueryCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -246,7 +246,7 @@ def query_with_begins_with(
 ```
 
 - For API details, see
-[Query](../../../goto/boto3/dynamodb-2012-08-10/query.md)
+[Query](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Query)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

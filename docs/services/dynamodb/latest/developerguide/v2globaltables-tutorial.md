@@ -264,17 +264,17 @@ echo "Global table demonstration complete."
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [CreateTable](../../../goto/aws-cli/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteTable](../../../goto/aws-cli/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DeleteTable)
 
-- [DescribeTable](../../../goto/aws-cli/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DescribeTable)
 
-- [GetItem](../../../goto/aws-cli/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../goto/aws-cli/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/PutItem)
 
-- [UpdateTable](../../../goto/aws-cli/dynamodb-2012-08-10/updatetable.md)
+- [UpdateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateTable)
 
 Java
 
@@ -655,13 +655,13 @@ Complete example of global table operations using AWS SDK for Java 2.x.
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [CreateTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CreateTable)
 
-- [DescribeTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DescribeTable)
 
-- [PutItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/PutItem)
 
-- [UpdateTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updatetable.md)
+- [UpdateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateTable)
 
 ## Creating a global table configured for MRSC
 
@@ -917,19 +917,19 @@ aws dynamodb delete-table \
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [CreateTable](../../../goto/aws-cli/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteTable](../../../goto/aws-cli/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DeleteTable)
 
-- [DescribeTable](../../../goto/aws-cli/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DescribeTable)
 
-- [GetItem](../../../goto/aws-cli/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../goto/aws-cli/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/PutItem)
 
-- [UpdateItem](../../../goto/aws-cli/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateItem)
 
-- [UpdateTable](../../../goto/aws-cli/dynamodb-2012-08-10/updatetable.md)
+- [UpdateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateTable)
 
 Java
 
@@ -1596,19 +1596,19 @@ Complete MRSC workflow demonstration using AWS SDK for Java 2.x.
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [CreateTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DeleteTable)
 
-- [DescribeTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DescribeTable)
 
-- [GetItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/PutItem)
 
-- [UpdateItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
 
-- [UpdateTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updatetable.md)
+- [UpdateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateTable)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

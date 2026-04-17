@@ -261,7 +261,7 @@ backup or export of the data first.
 
 Backups taken through AWS Backup can leverage cold storage tiering, further reducing
 costs. Refer to the [Using AWS Backup with DynamoDB](backuprestore-howitworksaws.md) documentation for information on how enable
-backups through AWS Backup as well as the [Managing backup plans](../../../aws-backup/latest/devguide/about-backup-plans.md)
+backups through AWS Backup as well as the [Managing backup plans](https://docs.aws.amazon.com/aws-backup/latest/devguide/about-backup-plans)
 documentation for information on how to use lifecycle to move your backup to cold
 storage.
 
@@ -269,7 +269,7 @@ Alternatively, you may choose to export your table’s data to S3. To do so, ref
 [Export to Amazon S3](s3dataexport-howitworks.md) documentation. Once your
 data is exported, if you wish to leverage S3 Glacier Instant Retrieval, S3 Glacier Flexile
 Retrieval, or S3 Glacier Deep Archive to further reduce costs, see [Managing your storage\
-lifecycle](../../../s3/latest/userguide/object-lifecycle-mgmt.md).
+lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt).
 
 After your table has been backed up, you may choose to delete it either through the
 AWS Management Console or through the AWS Command Line Interface.

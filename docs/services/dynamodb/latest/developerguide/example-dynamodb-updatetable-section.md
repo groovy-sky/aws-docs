@@ -124,7 +124,7 @@ bool AwsDoc::DynamoDB::waitTableActive(const Aws::String &tableName,
 ```
 
 - For API details, see
-[UpdateTable](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/updatetable.md)
+[UpdateTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/UpdateTable)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -571,7 +571,7 @@ Update-DDBTable -TableName "myTable" -ReadCapacity 10 -WriteCapacity 5
 ```
 
 - For API details, see
-[UpdateTable](../../../powershell/v4/reference.md)
+[UpdateTable](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -585,7 +585,7 @@ Update-DDBTable -TableName "myTable" -ReadCapacity 10 -WriteCapacity 5
 ```
 
 - For API details, see
-[UpdateTable](../../../powershell/v5/reference.md)
+[UpdateTable](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -166,19 +166,19 @@ aws dynamodb describe-time-to-live \
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [AttachRolePolicy](../../../goto/aws-cli/iam-2010-05-08/attachrolepolicy.md)
+- [AttachRolePolicy](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/AttachRolePolicy)
 
-- [CreateRole](../../../goto/aws-cli/iam-2010-05-08/createrole.md)
+- [CreateRole](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/CreateRole)
 
-- [CreateTable](../../../goto/aws-cli/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
 
-- [DescribeTable](../../../goto/aws-cli/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DescribeTable)
 
-- [DescribeTimeToLive](../../../goto/aws-cli/dynamodb-2012-08-10/describetimetolive.md)
+- [DescribeTimeToLive](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DescribeTimeToLive)
 
-- [PutItem](../../../goto/aws-cli/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/PutItem)
 
-- [UpdateTimeToLive](../../../goto/aws-cli/dynamodb-2012-08-10/updatetimetolive.md)
+- [UpdateTimeToLive](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateTimeToLive)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

@@ -120,13 +120,13 @@ aws dynamodb delete-resource-policy \
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [CreateTable](../../../goto/aws-cli/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteResourcePolicy](../../../goto/aws-cli/dynamodb-2012-08-10/deleteresourcepolicy.md)
+- [DeleteResourcePolicy](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DeleteResourcePolicy)
 
-- [GetResourcePolicy](../../../goto/aws-cli/dynamodb-2012-08-10/getresourcepolicy.md)
+- [GetResourcePolicy](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/GetResourcePolicy)
 
-- [PutResourcePolicy](../../../goto/aws-cli/dynamodb-2012-08-10/putresourcepolicy.md)
+- [PutResourcePolicy](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/PutResourcePolicy)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

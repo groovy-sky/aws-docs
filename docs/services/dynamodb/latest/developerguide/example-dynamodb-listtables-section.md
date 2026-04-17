@@ -48,7 +48,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[ListTables](../../../../reference/goto/dotnetsdkv3/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/DotNetSDKV3/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -144,7 +144,7 @@ function aws_cli_error_log() {
 ```
 
 - For API details, see
-[ListTables](../../../goto/aws-cli/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/ListTables)
 in _AWS CLI Command Reference_.
 
 C++
@@ -193,7 +193,7 @@ bool AwsDoc::DynamoDB::listTables(
 ```
 
 - For API details, see
-[ListTables](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -445,7 +445,7 @@ public class ListTables {
 ```
 
 - For API details, see
-[ListTables](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -477,7 +477,7 @@ export const main = async () => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/dynamodb-examples-using-tables.md#dynamodb-examples-using-tables-listing-tables).
 
 - For API details, see
-[ListTables](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/listtablescommand.md)
+[ListTables](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ListTablesCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 **SDK for JavaScript (v2)**
@@ -512,7 +512,7 @@ ddb.listTables({ Limit: 10 }, function (err, data) {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/dynamodb-examples-using-tables.md#dynamodb-examples-using-tables-listing-tables).
 
 - For API details, see
-[ListTables](../../../../reference/goto/awsjavascriptsdk/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -565,7 +565,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 ```
 
 - For API details, see
-[ListTables](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for PHP API Reference_.
 
 PowerShell
@@ -581,7 +581,7 @@ Get-DDBTableList
 ```
 
 - For API details, see
-[ListTables](../../../powershell/v4/reference.md)
+[ListTables](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -595,7 +595,7 @@ Get-DDBTableList
 ```
 
 - For API details, see
-[ListTables](../../../powershell/v5/reference.md)
+[ListTables](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -666,7 +666,7 @@ class Movies:
 ```
 
 - For API details, see
-[ListTables](../../../goto/boto3/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -716,7 +716,7 @@ class Scaffold
 ```
 
 - For API details, see
-[ListTables](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/listtables.md)
+[ListTables](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/ListTables)
 in _AWS SDK for Ruby API Reference_.
 
 Rust

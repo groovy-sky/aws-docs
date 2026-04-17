@@ -165,7 +165,7 @@ public class CreateTTL {
 ```
 
 - For API details, see
-[PutItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/putitem.md)
+[PutItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/PutItem)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -222,7 +222,7 @@ export function createDynamoDBItem(table_name, region, partition_key, sort_key) 
 ```
 
 - For API details, see
-[PutItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/putitemcommand.md)
+[PutItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/PutItemCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -277,7 +277,7 @@ create_dynamodb_item(
 ```
 
 - For API details, see
-[PutItem](../../../goto/boto3/dynamodb-2012-08-10/putitem.md)
+[PutItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/PutItem)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

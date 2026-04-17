@@ -383,13 +383,13 @@ Complete example of global table operations using AWS SDK for Java 2.x.
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [CreateTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CreateTable)
 
-- [DescribeTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DescribeTable)
 
-- [PutItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/PutItem)
 
-- [UpdateTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updatetable.md)
+- [UpdateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateTable)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

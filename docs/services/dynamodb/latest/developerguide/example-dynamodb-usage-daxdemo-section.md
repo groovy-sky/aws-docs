@@ -341,17 +341,17 @@ if __name__ == "__main__":
 
 - For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
 
-- [CreateTable](../../../goto/boto3/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteTable](../../../goto/boto3/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DeleteTable)
 
-- [GetItem](../../../goto/boto3/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../goto/boto3/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/PutItem)
 
-- [Query](../../../goto/boto3/dynamodb-2012-08-10/query.md)
+- [Query](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Query)
 
-- [Scan](../../../goto/boto3/dynamodb-2012-08-10/scan.md)
+- [Scan](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Scan)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

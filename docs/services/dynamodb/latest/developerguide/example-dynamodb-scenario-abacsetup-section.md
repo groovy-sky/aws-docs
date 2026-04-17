@@ -131,11 +131,11 @@ done
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [CreatePolicy](../../../goto/aws-cli/iam-2010-05-08/createpolicy.md)
+- [CreatePolicy](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/CreatePolicy)
 
-- [CreateTable](../../../goto/aws-cli/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
 
-- [ListTables](../../../goto/aws-cli/dynamodb-2012-08-10/listtables.md)
+- [ListTables](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/ListTables)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

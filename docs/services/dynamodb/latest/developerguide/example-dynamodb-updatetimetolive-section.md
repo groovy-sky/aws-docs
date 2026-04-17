@@ -133,7 +133,7 @@ import java.util.logging.Logger;
 ```
 
 - For API details, see
-[UpdateTimeToLive](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updatetimetolive.md)
+[UpdateTimeToLive](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateTimeToLive)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -221,7 +221,7 @@ export const disableTTL = async (tableName, ttlAttribute, region = 'us-east-1') 
 ```
 
 - For API details, see
-[UpdateTimeToLive](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/updatetimetolivecommand.md)
+[UpdateTimeToLive](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateTimeToLiveCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -310,7 +310,7 @@ disable_ttl("your-table-name", "expireAt")
 ```
 
 - For API details, see
-[UpdateTimeToLive](../../../goto/boto3/dynamodb-2012-08-10/updatetimetolive.md)
+[UpdateTimeToLive](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateTimeToLive)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -79,7 +79,7 @@ import software.amazon.awssdk.services.dynamodb.model.WarmThroughput;
 ```
 
 - For API details, see
-[UpdateTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updatetable.md)
+[UpdateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateTable)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -147,7 +147,7 @@ updateDynamoDBTableWarmThroughput(
 ```
 
 - For API details, see
-[UpdateTable](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/updatetablecommand.md)
+[UpdateTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateTableCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -220,7 +220,7 @@ def update_dynamodb_table_warm_throughput(
 ```
 
 - For API details, see
-[UpdateTable](../../../goto/boto3/dynamodb-2012-08-10/updatetable.md)
+[UpdateTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateTable)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

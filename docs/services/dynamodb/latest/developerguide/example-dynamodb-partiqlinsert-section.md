@@ -184,9 +184,9 @@ export const insertExamples = async () => {
 
 - For API details, see the following topics in _AWS SDK for JavaScript API Reference_.
 
-- [BatchExecuteStatement](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/batchexecutestatementcommand.md)
+- [BatchExecuteStatement](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchExecuteStatementCommand)
 
-- [ExecuteStatement](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/executestatementcommand.md)
+- [ExecuteStatement](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ExecuteStatementCommand)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).
@@ -194,7 +194,7 @@ This topic also includes information about getting started and details about pre
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Detect PPE in images
+Getting started with DynamoDB
 
 Invoke a Lambda function from a browser
 

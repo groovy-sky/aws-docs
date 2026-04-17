@@ -160,7 +160,7 @@ namespace LowLevelBatchGet
 ```
 
 - For API details, see
-[BatchGetItem](../../../../reference/goto/dotnetsdkv3/dynamodb-2012-08-10/batchgetitem.md)
+[BatchGetItem](https://docs.aws.amazon.com/goto/DotNetSDKV3/dynamodb-2012-08-10/BatchGetItem)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -294,7 +294,7 @@ function aws_cli_error_log() {
 ```
 
 - For API details, see
-[BatchGetItem](../../../goto/aws-cli/dynamodb-2012-08-10/batchgetitem.md)
+[BatchGetItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/BatchGetItem)
 in _AWS CLI Command Reference_.
 
 C++
@@ -424,7 +424,7 @@ bool AwsDoc::DynamoDB::batchGetItem(
 ```
 
 - For API details, see
-[BatchGetItem](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/batchgetitem.md)
+[BatchGetItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchGetItem)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -664,7 +664,7 @@ public class BatchGetItemsPaginator {
 ```
 
 - For API details, see
-[BatchGetItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/batchgetitem.md)
+[BatchGetItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/BatchGetItem)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -718,7 +718,7 @@ export const main = async () => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/dynamodb-example-table-read-write-batch.md#dynamodb-example-table-read-write-batch-reading).
 
 - For API details, see
-[BatchGetItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/batchgetitemcommand.md)
+[BatchGetItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchGetItemCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 **SDK for JavaScript (v2)**
@@ -767,7 +767,7 @@ ddb.batchGetItem(params, function (err, data) {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/dynamodb-example-table-read-write-batch.md#dynamodb-example-table-read-write-batch-reading).
 
 - For API details, see
-[BatchGetItem](../../../../reference/goto/awsjavascriptsdk/dynamodb-2012-08-10/batchgetitem.md)
+[BatchGetItem](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/BatchGetItem)
 in _AWS SDK for JavaScript API Reference_.
 
 PowerShell
@@ -819,7 +819,7 @@ Price                          1.94
 ```
 
 - For API details, see
-[BatchGetItem](../../../powershell/v4/reference.md)
+[BatchGetItem](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -869,7 +869,7 @@ Price                          1.94
 ```
 
 - For API details, see
-[BatchGetItem](../../../powershell/v5/reference.md)
+[BatchGetItem](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -944,7 +944,7 @@ def do_batch_get(batch_keys):
 ```
 
 - For API details, see
-[BatchGetItem](../../../goto/boto3/dynamodb-2012-08-10/batchgetitem.md)
+[BatchGetItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchGetItem)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Swift

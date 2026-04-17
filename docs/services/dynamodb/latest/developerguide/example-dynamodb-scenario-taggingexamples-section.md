@@ -119,13 +119,13 @@ done
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [CreateTable](../../../goto/aws-cli/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
 
-- [ListTagsOfResource](../../../goto/aws-cli/dynamodb-2012-08-10/listtagsofresource.md)
+- [ListTagsOfResource](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/ListTagsOfResource)
 
-- [TagResource](../../../goto/aws-cli/dynamodb-2012-08-10/tagresource.md)
+- [TagResource](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/TagResource)
 
-- [UntagResource](../../../goto/aws-cli/dynamodb-2012-08-10/untagresource.md)
+- [UntagResource](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UntagResource)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

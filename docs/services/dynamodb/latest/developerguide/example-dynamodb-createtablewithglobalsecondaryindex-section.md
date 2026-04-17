@@ -174,7 +174,7 @@ import java.util.Map;
 ```
 
 - For API details, see
-[CreateTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/createtable.md)
+[CreateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CreateTable)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

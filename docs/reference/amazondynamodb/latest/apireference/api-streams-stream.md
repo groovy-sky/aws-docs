@@ -56,11 +56,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/streams-dynamodb-2012-08-10/stream.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/streams-dynamodb-2012-08-10/Stream)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/streams-dynamodb-2012-08-10/stream.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/streams-dynamodb-2012-08-10/Stream)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/streams-dynamodb-2012-08-10/stream.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/streams-dynamodb-2012-08-10/Stream)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

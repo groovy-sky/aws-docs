@@ -113,7 +113,7 @@ Writes a batch of items to the movie table.
 ```
 
 - For API details, see
-[BatchWriteItem](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/batchwriteitem.md)
+[BatchWriteItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/BatchWriteItem)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -260,7 +260,7 @@ function aws_cli_error_log() {
 ```
 
 - For API details, see
-[BatchWriteItem](../../../goto/aws-cli/dynamodb-2012-08-10/batchwriteitem.md)
+[BatchWriteItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/BatchWriteItem)
 in _AWS CLI Command Reference_.
 
 C++
@@ -435,7 +435,7 @@ AwsDoc::DynamoDB::getAttributeObjectsMap(const Aws::Utils::Json::JsonView &jsonV
 ```
 
 - For API details, see
-[BatchWriteItem](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/batchwriteitem.md)
+[BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchWriteItem)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -877,7 +877,7 @@ public class EnhancedBatchWriteItems {
 ```
 
 - For API details, see
-[BatchWriteItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/batchwriteitem.md)
+[BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/BatchWriteItem)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -946,7 +946,7 @@ export const main = async () => {
 ```
 
 - For API details, see
-[BatchWriteItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/batchwriteitemcommand.md)
+[BatchWriteItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchWriteItemCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 **SDK for JavaScript (v2)**
@@ -1005,7 +1005,7 @@ ddb.batchWriteItem(params, function (err, data) {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/dynamodb-example-table-read-write-batch.md#dynamodb-example-table-read-write-batch-writing).
 
 - For API details, see
-[BatchWriteItem](../../../../reference/goto/awsjavascriptsdk/dynamodb-2012-08-10/batchwriteitem.md)
+[BatchWriteItem](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/BatchWriteItem)
 in _AWS SDK for JavaScript API Reference_.
 
 PHP
@@ -1051,7 +1051,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 ```
 
 - For API details, see
-[BatchWriteItem](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/batchwriteitem.md)
+[BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/BatchWriteItem)
 in _AWS SDK for PHP API Reference_.
 
 PowerShell
@@ -1084,7 +1084,7 @@ Set-DDBBatchItem -RequestItem $requestItem
 ```
 
 - For API details, see
-[BatchWriteItem](../../../powershell/v4/reference.md)
+[BatchWriteItem](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -1115,7 +1115,7 @@ Set-DDBBatchItem -RequestItem $requestItem
 ```
 
 - For API details, see
-[BatchWriteItem](../../../powershell/v5/reference.md)
+[BatchWriteItem](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -1191,7 +1191,7 @@ class Movies:
 ```
 
 - For API details, see
-[BatchWriteItem](../../../goto/boto3/dynamodb-2012-08-10/batchwriteitem.md)
+[BatchWriteItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchWriteItem)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -1243,7 +1243,7 @@ class DynamoDBBasics
 ```
 
 - For API details, see
-[BatchWriteItem](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/batchwriteitem.md)
+[BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/BatchWriteItem)
 in _AWS SDK for Ruby API Reference_.
 
 Swift

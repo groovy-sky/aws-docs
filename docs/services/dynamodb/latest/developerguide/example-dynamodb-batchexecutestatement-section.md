@@ -321,7 +321,7 @@ Use batches of DELETE statements to delete items.
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../../reference/goto/dotnetsdkv3/dynamodb-2012-08-10/batchexecutestatement.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/goto/DotNetSDKV3/dynamodb-2012-08-10/BatchExecuteStatement)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -557,7 +557,7 @@ Use batches of DELETE statements to delete items.
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/batchexecutestatement.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchExecuteStatement)
 in _AWS SDK for C++ API Reference_.
 
 Go
@@ -928,7 +928,7 @@ export const main = async () => {
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/batchexecutestatementcommand.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchExecuteStatementCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PHP
@@ -998,7 +998,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/batchexecutestatement.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/BatchExecuteStatement)
 in _AWS SDK for PHP API Reference_.
 
 Python
@@ -1064,7 +1064,7 @@ class PartiQLBatchWrapper:
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../goto/boto3/dynamodb-2012-08-10/batchexecutestatement.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchExecuteStatement)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -1136,7 +1136,7 @@ class DynamoDBPartiQLBatch
 ```
 
 - For API details, see
-[BatchExecuteStatement](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/batchexecutestatement.md)
+[BatchExecuteStatement](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/BatchExecuteStatement)
 in _AWS SDK for Ruby API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

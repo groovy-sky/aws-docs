@@ -191,7 +191,7 @@ public class CreateTTL {
 ```
 
 - For API details, see
-[PutItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/putitem.md)
+[PutItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/PutItem)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -248,7 +248,7 @@ export function createDynamoDBItem(table_name, region, partition_key, sort_key) 
 ```
 
 - For API details, see
-[PutItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/putitemcommand.md)
+[PutItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/PutItemCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -303,7 +303,7 @@ create_dynamodb_item(
 ```
 
 - For API details, see
-[PutItem](../../../goto/boto3/dynamodb-2012-08-10/putitem.md)
+[PutItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/PutItem)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 ## Update an item and refresh the Time to Live
@@ -378,7 +378,7 @@ import java.util.Optional;
 ```
 
 - For API details, see
-[UpdateItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updateitem.md)
+[UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -429,7 +429,7 @@ export const updateItem = async (tableName, partitionKey, sortKey, region = 'us-
 ```
 
 - For API details, see
-[UpdateItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/updateitemcommand.md)
+[UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -480,7 +480,7 @@ update_dynamodb_item(
 ```
 
 - For API details, see
-[UpdateItem](../../../goto/boto3/dynamodb-2012-08-10/updateitem.md)
+[UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 The TTL examples discussed in this introduction demonstrate a method to ensure only

@@ -106,9 +106,9 @@ aws dynamodb query \
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [CreateTable](../../../goto/aws-cli/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
 
-- [Query](../../../goto/aws-cli/dynamodb-2012-08-10/query.md)
+- [Query](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Query)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

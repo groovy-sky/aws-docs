@@ -101,6 +101,8 @@ This topic also includes information about getting started and details about pre
 
   - [Detect PPE in images](example-cross-rekognitionphotoanalyzerppe-section.md)
 
+  - [Getting started with DynamoDB](example-dynamodb-gettingstarted-070-section.md)
+
   - [Insert data using PartiQL INSERT](example-dynamodb-partiqlinsert-section.md)
 
   - [Invoke a Lambda function from a browser](example-cross-lambdaforbrowser-section.md)

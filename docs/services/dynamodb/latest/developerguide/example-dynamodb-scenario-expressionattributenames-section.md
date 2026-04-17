@@ -349,9 +349,9 @@ Example usage of expression attribute names with AWS SDK for Java 2.x.
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [Query](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/query.md)
+- [Query](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Query)
 
-- [UpdateItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
 
 JavaScript
 
@@ -761,9 +761,9 @@ async function exampleUsage() {
 
 - For API details, see the following topics in _AWS SDK for JavaScript API Reference_.
 
-- [Query](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/querycommand.md)
+- [Query](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/QueryCommand)
 
-- [UpdateItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/updateitemcommand.md)
+- [UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand)
 
 Python
 
@@ -1128,9 +1128,9 @@ def example_usage():
 
 - For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
 
-- [Query](../../../goto/boto3/dynamodb-2012-08-10/query.md)
+- [Query](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Query)
 
-- [UpdateItem](../../../goto/boto3/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

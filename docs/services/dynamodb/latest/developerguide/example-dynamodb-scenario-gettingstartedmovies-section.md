@@ -868,25 +868,25 @@ Deletes the movie table.
 
 - For API details, see the following topics in _AWS SDK for .NET API Reference_.
 
-- [BatchWriteItem](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/batchwriteitem.md)
+- [BatchWriteItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/BatchWriteItem)
 
-- [CreateTable](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteItem](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/deleteitem.md)
+- [DeleteItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/DeleteItem)
 
-- [DeleteTable](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/DeleteTable)
 
-- [DescribeTable](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/DescribeTable)
 
-- [GetItem](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/PutItem)
 
-- [Query](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/query.md)
+- [Query](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/Query)
 
-- [Scan](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/scan.md)
+- [Scan](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/Scan)
 
-- [UpdateItem](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/UpdateItem)
 
 Bash
 
@@ -2094,25 +2094,25 @@ function aws_cli_error_log() {
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [BatchWriteItem](../../../goto/aws-cli/dynamodb-2012-08-10/batchwriteitem.md)
+- [BatchWriteItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/BatchWriteItem)
 
-- [CreateTable](../../../goto/aws-cli/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteItem](../../../goto/aws-cli/dynamodb-2012-08-10/deleteitem.md)
+- [DeleteItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DeleteItem)
 
-- [DeleteTable](../../../goto/aws-cli/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DeleteTable)
 
-- [DescribeTable](../../../goto/aws-cli/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DescribeTable)
 
-- [GetItem](../../../goto/aws-cli/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../goto/aws-cli/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/PutItem)
 
-- [Query](../../../goto/aws-cli/dynamodb-2012-08-10/query.md)
+- [Query](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Query)
 
-- [Scan](../../../goto/aws-cli/dynamodb-2012-08-10/scan.md)
+- [Scan](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Scan)
 
-- [UpdateItem](../../../goto/aws-cli/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateItem)
 
 C++
 
@@ -2644,25 +2644,25 @@ bool AwsDoc::DynamoDB::waitTableActive(const Aws::String &tableName,
 
 - For API details, see the following topics in _AWS SDK for C++ API Reference_.
 
-- [BatchWriteItem](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/batchwriteitem.md)
+- [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/BatchWriteItem)
 
-- [CreateTable](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteItem](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/deleteitem.md)
+- [DeleteItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/DeleteItem)
 
-- [DeleteTable](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/DeleteTable)
 
-- [DescribeTable](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/DescribeTable)
 
-- [GetItem](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/PutItem)
 
-- [Query](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/query.md)
+- [Query](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/Query)
 
-- [Scan](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/scan.md)
+- [Scan](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/Scan)
 
-- [UpdateItem](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/UpdateItem)
 
 Go
 
@@ -3744,25 +3744,25 @@ public class Scenario {
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [BatchWriteItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/batchwriteitem.md)
+- [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/BatchWriteItem)
 
-- [CreateTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/deleteitem.md)
+- [DeleteItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DeleteItem)
 
-- [DeleteTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DeleteTable)
 
-- [DescribeTable](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/DescribeTable)
 
-- [GetItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/PutItem)
 
-- [Query](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/query.md)
+- [Query](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Query)
 
-- [Scan](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/scan.md)
+- [Scan](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Scan)
 
-- [UpdateItem](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/UpdateItem)
 
 JavaScript
 
@@ -4042,25 +4042,25 @@ export const main = async () => {
 
 - For API details, see the following topics in _AWS SDK for JavaScript API Reference_.
 
-- [BatchWriteItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/batchwriteitemcommand.md)
+- [BatchWriteItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchWriteItemCommand)
 
-- [CreateTable](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/createtablecommand.md)
+- [CreateTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/CreateTableCommand)
 
-- [DeleteItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/deleteitemcommand.md)
+- [DeleteItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/DeleteItemCommand)
 
-- [DeleteTable](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/deletetablecommand.md)
+- [DeleteTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/DeleteTableCommand)
 
-- [DescribeTable](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/describetablecommand.md)
+- [DescribeTable](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/DescribeTableCommand)
 
-- [GetItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/getitemcommand.md)
+- [GetItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/GetItemCommand)
 
-- [PutItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/putitemcommand.md)
+- [PutItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/PutItemCommand)
 
-- [Query](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/querycommand.md)
+- [Query](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/QueryCommand)
 
-- [Scan](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/scancommand.md)
+- [Scan](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ScanCommand)
 
-- [UpdateItem](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/updateitemcommand.md)
+- [UpdateItem](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/UpdateItemCommand)
 
 Kotlin
 
@@ -4604,25 +4604,25 @@ class GettingStartedWithDynamoDB
 
 - For API details, see the following topics in _AWS SDK for PHP API Reference_.
 
-- [BatchWriteItem](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/batchwriteitem.md)
+- [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/BatchWriteItem)
 
-- [CreateTable](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteItem](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/deleteitem.md)
+- [DeleteItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DeleteItem)
 
-- [DeleteTable](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DeleteTable)
 
-- [DescribeTable](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/DescribeTable)
 
-- [GetItem](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/PutItem)
 
-- [Query](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/query.md)
+- [Query](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/Query)
 
-- [Scan](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/scan.md)
+- [Scan](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/Scan)
 
-- [UpdateItem](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/UpdateItem)
 
 Python
 
@@ -5286,25 +5286,25 @@ class Question:
 
 - For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
 
-- [BatchWriteItem](../../../goto/boto3/dynamodb-2012-08-10/batchwriteitem.md)
+- [BatchWriteItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/BatchWriteItem)
 
-- [CreateTable](../../../goto/boto3/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteItem](../../../goto/boto3/dynamodb-2012-08-10/deleteitem.md)
+- [DeleteItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DeleteItem)
 
-- [DeleteTable](../../../goto/boto3/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DeleteTable)
 
-- [DescribeTable](../../../goto/boto3/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/DescribeTable)
 
-- [GetItem](../../../goto/boto3/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../goto/boto3/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/PutItem)
 
-- [Query](../../../goto/boto3/dynamodb-2012-08-10/query.md)
+- [Query](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Query)
 
-- [Scan](../../../goto/boto3/dynamodb-2012-08-10/scan.md)
+- [Scan](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Scan)
 
-- [UpdateItem](../../../goto/boto3/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/UpdateItem)
 
 Ruby
 
@@ -5494,25 +5494,25 @@ end
 
 - For API details, see the following topics in _AWS SDK for Ruby API Reference_.
 
-- [BatchWriteItem](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/batchwriteitem.md)
+- [BatchWriteItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/BatchWriteItem)
 
-- [CreateTable](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteItem](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/deleteitem.md)
+- [DeleteItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DeleteItem)
 
-- [DeleteTable](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DeleteTable)
 
-- [DescribeTable](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/DescribeTable)
 
-- [GetItem](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/PutItem)
 
-- [Query](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/query.md)
+- [Query](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/Query)
 
-- [Scan](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/scan.md)
+- [Scan](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/Scan)
 
-- [UpdateItem](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/updateitem.md)
+- [UpdateItem](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/UpdateItem)
 
 SAP ABAP
 

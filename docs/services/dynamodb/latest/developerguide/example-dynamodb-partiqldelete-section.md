@@ -261,9 +261,9 @@ export const deleteExamples = async () => {
 
 - For API details, see the following topics in _AWS SDK for JavaScript API Reference_.
 
-- [BatchExecuteStatement](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/batchexecutestatementcommand.md)
+- [BatchExecuteStatement](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/BatchExecuteStatementCommand)
 
-- [ExecuteStatement](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/executestatementcommand.md)
+- [ExecuteStatement](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/ExecuteStatementCommand)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

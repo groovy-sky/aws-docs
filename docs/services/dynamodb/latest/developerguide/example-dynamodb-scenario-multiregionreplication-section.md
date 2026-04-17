@@ -154,17 +154,17 @@ echo "Global table demonstration complete."
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [CreateTable](../../../goto/aws-cli/dynamodb-2012-08-10/createtable.md)
+- [CreateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/CreateTable)
 
-- [DeleteTable](../../../goto/aws-cli/dynamodb-2012-08-10/deletetable.md)
+- [DeleteTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DeleteTable)
 
-- [DescribeTable](../../../goto/aws-cli/dynamodb-2012-08-10/describetable.md)
+- [DescribeTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/DescribeTable)
 
-- [GetItem](../../../goto/aws-cli/dynamodb-2012-08-10/getitem.md)
+- [GetItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/GetItem)
 
-- [PutItem](../../../goto/aws-cli/dynamodb-2012-08-10/putitem.md)
+- [PutItem](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/PutItem)
 
-- [UpdateTable](../../../goto/aws-cli/dynamodb-2012-08-10/updatetable.md)
+- [UpdateTable](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/UpdateTable)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using DynamoDB with an AWS SDK](../../../../reference/amazondynamodb/latest/developerguide/sdk-general-information-section.md).

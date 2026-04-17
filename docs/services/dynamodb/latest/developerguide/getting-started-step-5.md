@@ -253,7 +253,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[Query](../../../../reference/goto/dotnetsdkv4/dynamodb-2012-08-10/query.md)
+[Query](https://docs.aws.amazon.com/goto/DotNetSDKV4/dynamodb-2012-08-10/Query)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -430,7 +430,7 @@ function aws_cli_error_log() {
 ```
 
 - For API details, see
-[Query](../../../goto/aws-cli/dynamodb-2012-08-10/query.md)
+[Query](https://docs.aws.amazon.com/goto/aws-cli/dynamodb-2012-08-10/Query)
 in _AWS CLI Command Reference_.
 
 C++
@@ -532,7 +532,7 @@ bool AwsDoc::DynamoDB::queryItems(const Aws::String &tableName,
 ```
 
 - For API details, see
-[Query](../../../../reference/goto/sdkforcpp/dynamodb-2012-08-10/query.md)
+[Query](https://docs.aws.amazon.com/goto/SdkForCpp/dynamodb-2012-08-10/Query)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -1121,7 +1121,7 @@ public class QueryItemsUsingIndex {
 ```
 
 - For API details, see
-[Query](../../../../reference/goto/sdkforjavav2/dynamodb-2012-08-10/query.md)
+[Query](https://docs.aws.amazon.com/goto/SdkForJavaV2/dynamodb-2012-08-10/Query)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -1166,7 +1166,7 @@ export const main = async () => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/dynamodb-example-query-scan.md#dynamodb-example-table-query-scan-querying).
 
 - For API details, see
-[Query](../../../../reference/awsjavascriptsdk/v3/latest/client/dynamodb/command/querycommand.md)
+[Query](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/dynamodb/command/QueryCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 **SDK for JavaScript (v2)**
@@ -1211,7 +1211,7 @@ docClient.query(params, function (err, data) {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/dynamodb-example-query-scan.md#dynamodb-example-table-query-scan-querying).
 
 - For API details, see
-[Query](../../../../reference/goto/awsjavascriptsdk/dynamodb-2012-08-10/query.md)
+[Query](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/dynamodb-2012-08-10/Query)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -1307,7 +1307,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 ```
 
 - For API details, see
-[Query](../../../../reference/goto/sdkforphpv3/dynamodb-2012-08-10/query.md)
+[Query](https://docs.aws.amazon.com/goto/SdkForPHPV3/dynamodb-2012-08-10/Query)
 in _AWS SDK for PHP API Reference_.
 
 PowerShell
@@ -1345,7 +1345,7 @@ AlbumTitle                     Somewhat Famous
 ```
 
 - For API details, see
-[Query](../../../powershell/v4/reference.md)
+[Query](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -1381,7 +1381,7 @@ AlbumTitle                     Somewhat Famous
 ```
 
 - For API details, see
-[Query](../../../powershell/v5/reference.md)
+[Query](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -1501,7 +1501,7 @@ class UpdateQueryWrapper:
 ```
 
 - For API details, see
-[Query](../../../goto/boto3/dynamodb-2012-08-10/query.md)
+[Query](https://docs.aws.amazon.com/goto/boto3/dynamodb-2012-08-10/Query)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -1546,7 +1546,7 @@ class DynamoDBBasics
 ```
 
 - For API details, see
-[Query](../../../../reference/goto/sdkforrubyv3/dynamodb-2012-08-10/query.md)
+[Query](https://docs.aws.amazon.com/goto/SdkForRubyV3/dynamodb-2012-08-10/Query)
 in _AWS SDK for Ruby API Reference_.
 
 Rust

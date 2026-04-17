@@ -54,7 +54,7 @@ flow, and then shuts down automatically. Transient clusters are ideal for
 periodic processing tasks, such as running scripts.
 
 For information about Amazon EMR architecture and administration, see the [Amazon EMR Management\
-Guide](../../../elasticmapreduce/latest/managementguide.md).
+Guide](https://docs.aws.amazon.com/ElasticMapReduce/latest/ManagementGuide).
 
 When you launch an Amazon EMR cluster, you specify the initial number and type of Amazon EC2
 instances. You also specify other distributed applications (in addition to Hadoop
@@ -62,7 +62,7 @@ itself) that you want to run on the cluster. These applications include Hue, Mah
 Pig, Spark, and more.
 
 For information about applications for Amazon EMR, see the [Amazon EMR Release\
-Guide](../../../elasticmapreduce/latest/releaseguide.md).
+Guide](https://docs.aws.amazon.com/ElasticMapReduce/latest/ReleaseGuide).
 
 Depending on the cluster configuration, you might have one or more of the following
 node types:

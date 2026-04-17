@@ -204,25 +204,25 @@ Date: <Date>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/streams-dynamodb-2012-08-10/getsharditerator.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/streams-dynamodb-2012-08-10/GetShardIterator)
 
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/streams-dynamodb-2012-08-10/getsharditerator.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/streams-dynamodb-2012-08-10/GetShardIterator)
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/streams-dynamodb-2012-08-10/getsharditerator.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/streams-dynamodb-2012-08-10/GetShardIterator)
 
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/streams-dynamodb-2012-08-10/getsharditerator.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/streams-dynamodb-2012-08-10/GetShardIterator)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/streams-dynamodb-2012-08-10/getsharditerator.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/streams-dynamodb-2012-08-10/GetShardIterator)
 
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/streams-dynamodb-2012-08-10/getsharditerator.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/streams-dynamodb-2012-08-10/GetShardIterator)
 
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/streams-dynamodb-2012-08-10/getsharditerator.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/streams-dynamodb-2012-08-10/GetShardIterator)
 
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/streams-dynamodb-2012-08-10/getsharditerator.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/streams-dynamodb-2012-08-10/GetShardIterator)
 
-- [AWS SDK for Python](../../../../services/goto/boto3/streams-dynamodb-2012-08-10/getsharditerator.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/streams-dynamodb-2012-08-10/GetShardIterator)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/streams-dynamodb-2012-08-10/getsharditerator.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/streams-dynamodb-2012-08-10/GetShardIterator)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

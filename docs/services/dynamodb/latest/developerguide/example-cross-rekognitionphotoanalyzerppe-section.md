@@ -33,6 +33,6 @@ This topic also includes information about getting started and details about pre
 
 Delete data using PartiQL DELETE
 
-Insert data using PartiQL INSERT
+Getting started with DynamoDB
 
 All content copied from https://docs.aws.amazon.com/.
