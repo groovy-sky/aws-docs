@@ -1,3 +1,7 @@
+---
+title: "Connecting to nodes"
+---
+
 # Connecting to nodes
 
 ## Connecting to Valkey or Redis OSS nodes

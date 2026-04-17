@@ -1,3 +1,7 @@
+---
+title: "Function reference for Trusted Language Extensions for PostgreSQL"
+---
+
 # Function reference for Trusted Language Extensions for PostgreSQL
 
 View the following reference documentation about functions available in Trusted Language Extensions for PostgreSQL. Use

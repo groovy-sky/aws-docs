@@ -1,3 +1,7 @@
+---
+title: "Configuring delayed replication with MySQL"
+---
+
 # Configuring delayed replication with MySQL
 
 You can use delayed replication as a strategy for disaster recovery. With delayed

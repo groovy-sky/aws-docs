@@ -1,3 +1,7 @@
+---
+title: "RDS for PostgreSQL wait events"
+---
+
 # RDS for PostgreSQL wait events
 
 A _wait event_ is an indication that the session is waiting for

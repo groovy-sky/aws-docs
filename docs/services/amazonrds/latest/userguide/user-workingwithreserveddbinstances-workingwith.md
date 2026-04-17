@@ -1,3 +1,7 @@
+---
+title: "Purchasing reserved DB instances for Amazon RDS"
+---
+
 # Purchasing reserved DB instances for Amazon RDS
 
 You can use the AWS Management Console, the AWS CLI, and the RDS API to work with reserved DB instances.

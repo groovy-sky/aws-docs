@@ -1,3 +1,7 @@
+---
+title: "Invoking a Lambda function from an Amazon Aurora MySQL DB cluster"
+---
+
 # Invoking a Lambda function from an Amazon Aurora MySQL DB cluster
 
 You can invoke an AWS Lambda function from an Amazon Aurora MySQL-Compatible Edition DB cluster with the native function

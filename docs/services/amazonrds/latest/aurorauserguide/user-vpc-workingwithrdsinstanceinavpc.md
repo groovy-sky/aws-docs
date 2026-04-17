@@ -1,3 +1,7 @@
+---
+title: "Working with a DB cluster in a VPC"
+---
+
 # Working with a DB cluster in a VPC
 
 Your DB cluster is in a virtual private cloud (VPC). A VPC is a virtual network

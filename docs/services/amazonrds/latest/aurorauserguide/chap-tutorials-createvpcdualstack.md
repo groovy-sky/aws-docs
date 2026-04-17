@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a VPC for use with a DB cluster (dual-stack mode)"
+---
+
 # Tutorial: Create a VPC for use with a DB cluster (dual-stack mode)
 
 A common scenario includes a DB cluster

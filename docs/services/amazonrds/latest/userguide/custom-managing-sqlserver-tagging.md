@@ -1,3 +1,7 @@
+---
+title: "Tagging RDS Custom for SQL Server resources"
+---
+
 # Tagging RDS Custom for SQL Server resources
 
 You can tag RDS Custom resources as with Amazon RDS resources, but with some important differences:

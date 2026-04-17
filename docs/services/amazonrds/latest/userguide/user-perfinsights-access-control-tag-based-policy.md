@@ -1,3 +1,7 @@
+---
+title: "Using tag-based access control for Performance Insights"
+---
+
 # Using tag-based access control for Performance Insights
 
 You can control access to Performance Insights metrics using tags inherited from the parent DB instance.

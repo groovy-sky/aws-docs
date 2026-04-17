@@ -1,3 +1,7 @@
+---
+title: "Configuring ElastiCache clients"
+---
+
 # Configuring ElastiCache clients
 
 An ElastiCache cluster is protocol-compliant with Valkey, Memcached, and Redis OSS. The code, applications, and most

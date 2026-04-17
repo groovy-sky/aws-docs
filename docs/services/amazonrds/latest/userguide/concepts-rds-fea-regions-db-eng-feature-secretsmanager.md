@@ -1,3 +1,7 @@
+---
+title: "Supported Regions and DB engines for the Secrets Manager integration with Amazon RDS"
+---
+
 # Supported Regions and DB engines for the Secrets Manager integration with Amazon RDS
 
 With AWS Secrets Manager, you can replace hard-coded credentials in your code, including database

@@ -1,3 +1,7 @@
+---
+title: "Replication between Aurora and MySQL or between Aurora and another Aurora DB cluster (binary log replication)"
+---
+
 # Replication between Aurora and MySQL or between Aurora and another Aurora DB cluster (binary log replication)
 
 Because Amazon Aurora MySQL is compatible with MySQL, you can set up replication between a MySQL database and an Amazon Aurora MySQL DB

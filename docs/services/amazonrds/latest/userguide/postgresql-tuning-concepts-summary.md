@@ -1,3 +1,7 @@
+---
+title: "RDS for PostgreSQL wait events"
+---
+
 # RDS for PostgreSQL wait events
 
 The following table lists the wait events for RDS for PostgreSQL that most commonly

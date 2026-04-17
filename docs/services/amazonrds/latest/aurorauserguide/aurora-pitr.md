@@ -1,3 +1,7 @@
+---
+title: "Restoring a DB cluster to a specified time"
+---
+
 # Restoring a DB cluster to a specified time
 
 You can restore a DB cluster to a specific point in time, creating a new DB cluster.
@@ -26,9 +30,6 @@ DB instance, see [Restoring a DB instance to a\
 specified time](../userguide/user-pit.md).
 
 For more information about backing up and restoring an Aurora DB cluster, see [Overview of backing up and restoring an Aurora DB cluster](aurora-managing-backups.md).
-
-For Aurora MySQL, you can restore a provisioned DB cluster to an Aurora Serverless DB cluster. For more
-information, see [Restoring an Aurora Serverless v1 DB cluster](aurora-serverless-restorefromsnapshot.md).
 
 You can also use AWS Backup to manage backups of Amazon Aurora DB clusters. If your DB cluster is associated with a backup plan in
 AWS Backup, that backup plan is used for point-in-time recovery. For information, see [Restoring a DB cluster to a specified time using AWS Backup](aurora-pitr-bkp.md).

@@ -1,3 +1,7 @@
+---
+title: "Getting started with JSON for Valkey and Redis OSS"
+---
+
 # Getting started with JSON for Valkey and Redis OSS
 
 ElastiCache supports the native JavaScript Object Notation (JSON) format, which is a simple,

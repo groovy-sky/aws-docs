@@ -1,3 +1,7 @@
+---
+title: "Configuring SQL Server security protocols and ciphers"
+---
+
 # Configuring SQL Server security protocols and ciphers
 
 You can turn certain security protocols and ciphers on and off using DB parameters. The security parameters that you can configure

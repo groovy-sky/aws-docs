@@ -1,3 +1,7 @@
+---
+title: "Changing the db_owner to the rdsa account for your Amazon RDS for SQL Server database"
+---
+
 # Changing the `db_owner` to the `rdsa` account for your Amazon RDS for SQL Server database
 
 When you create or restore a database in an RDS for SQL Server DB instance, Amazon RDS sets the owner of the database to `rdsa`. If you have a Multi-AZ deployment using SQL Server Database Mirroring (DBM)

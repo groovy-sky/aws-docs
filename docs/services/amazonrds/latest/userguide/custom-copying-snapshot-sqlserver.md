@@ -1,3 +1,7 @@
+---
+title: "Copying an Amazon RDS Custom for SQL Server DB snapshot"
+---
+
 # Copying an Amazon RDS Custom for SQL Server DB snapshot
 
 With RDS Custom for SQL Server, you can copy automated backups and manual DB snapshots. After copying a

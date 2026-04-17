@@ -1,3 +1,7 @@
+---
+title: "Supported DB instance classes for Amazon RDS on AWS Outposts"
+---
+
 # Supported DB instance classes for Amazon RDS on AWS Outposts
 
 Amazon RDS on AWS Outposts supports the following DB instance classes:

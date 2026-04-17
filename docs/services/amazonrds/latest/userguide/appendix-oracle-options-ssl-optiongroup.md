@@ -1,3 +1,7 @@
+---
+title: "Adding the SSL option"
+---
+
 # Adding the SSL option
 
 To use SSL, your RDS for Oracle DB instance must

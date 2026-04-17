@@ -1,3 +1,7 @@
+---
+title: "DB instance classes"
+---
+
 # DB instance classes
 
 The DB instance class determines the computation and memory capacity of an Amazon RDS

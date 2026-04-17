@@ -1,3 +1,7 @@
+---
+title: "Using SCRAM for PostgreSQL password encryption"
+---
+
 # Using SCRAM for PostgreSQL password encryption
 
 The _Salted Challenge Response Authentication Mechanism_

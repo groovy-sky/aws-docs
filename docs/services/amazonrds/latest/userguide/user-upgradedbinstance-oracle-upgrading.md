@@ -1,3 +1,7 @@
+---
+title: "Upgrading the version of an RDS for Oracle DB instance"
+---
+
 # Upgrading the version of an RDS for Oracle DB instance
 
 To manually upgrade the DB engine version of an RDS for Oracle DB instance,use the AWS Management Console, the AWS CLI,

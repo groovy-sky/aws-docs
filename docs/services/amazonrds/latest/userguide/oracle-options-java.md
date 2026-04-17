@@ -1,3 +1,7 @@
+---
+title: "Oracle Java virtual machine"
+---
+
 # Oracle Java virtual machine
 
 Amazon RDS supports Oracle Java Virtual Machine (JVM) through the use of the `JVM`

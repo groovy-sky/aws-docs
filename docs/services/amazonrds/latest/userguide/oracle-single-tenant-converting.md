@@ -1,3 +1,7 @@
+---
+title: "Converting the single-tenant configuration to multi-tenant"
+---
+
 # Converting the single-tenant configuration to multi-tenant
 
 You can modify the architecture of an RDS for Oracle CDB from the single-tenant configuration to

@@ -1,3 +1,7 @@
+---
+title: "Other parameters that affect autovacuum"
+---
+
 # Other parameters that affect autovacuum
 
 The following query shows the values of some of the parameters that directly affect

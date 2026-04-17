@@ -1,3 +1,7 @@
+---
+title: "Upgrading the minor version or patch level of an Aurora MySQL DB cluster"
+---
+
 # Upgrading the minor version or patch level of an Aurora MySQL DB cluster
 
 You can use the following methods to upgrade the minor version of a DB cluster or to patch a DB cluster:

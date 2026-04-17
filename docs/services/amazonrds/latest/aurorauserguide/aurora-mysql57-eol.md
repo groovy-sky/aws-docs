@@ -1,13 +1,14 @@
+---
+title: "Preparing for Amazon Aurora MySQL-Compatible Edition version 2 end of standard support"
+---
+
 # Preparing for Amazon Aurora MySQL-Compatible Edition version 2 end of standard support
 
 Amazon Aurora MySQL-Compatible Edition version 2 (with MySQL 5.7 compatibility) is planned to reach the end of
 standard support on October 31, 2024. We recommend that you upgrade all clusters running
 Aurora MySQL version 2 to the default Aurora MySQL version 3 (with MySQL 8.0 compatibility) or
 higher before Aurora MySQL version 2 reaches the end of its standard support period. On
-October 31, 2024, Amazon RDS will automatically enroll your databases into [Amazon RDS Extended Support](extended-support.md). If you're running Amazon Aurora MySQL version
-2 (with MySQL 5.7 compatibility) in an Aurora Serverless version 1 cluster, this doesn't apply
-to you. If you want to upgrade your Aurora Serverless version 1 clusters to Aurora MySQL version
-3, see [Upgrade path for Aurora Serverless v1 DB clusters](#Aurora-Upgrade-Serverlessv1-Clusters).
+October 31, 2024, Amazon RDS will automatically enroll your databases into [Amazon RDS Extended Support](extended-support.md).
 
 You can find upcoming end-of-support dates for Aurora MySQL major versions in [_Release calendar for_\
 _Aurora MySQL major versions_](../auroramysqlreleasenotes/auroramysql-release-calendars.md#AuroraMySQL.release-calendars.major).
@@ -178,23 +179,6 @@ To learn more about the methods, planning, testing, and troubleshooting of Auror
 major version upgrades, be sure to thoroughly read [Upgrading the major version of an Amazon Aurora MySQL DB cluster](auroramysql-updates-majorversionupgrade.md), including [Troubleshooting for Aurora MySQL in-place upgrade](auroramysql-upgrading-troubleshooting.md). Also, note that some
 instance types aren't supported for Aurora MySQL version 3. For more information, see
 [Amazon AuroraDB instance classes](concepts-dbinstanceclass.md).
-
-## Upgrade path for Aurora Serverless v1 DB clusters
-
-Upgrading between major versions requires more extensive planning and testing than for
-a minor version. The process can take substantial time. We want to look at the upgrade
-as a three-step process, with activities before the upgrade, for the upgrade, and after
-the upgrade.
-
-Aurora MySQL version 2 (with MySQL 5.7 compatibility) will continue to receive standard
-support for Aurora Serverless v1 clusters.
-
-If you want to upgrade to Amazon Aurora MySQL 3 (with MySQL 8.0 compatibility) and
-continue running Aurora Serverless, you can use Amazon Aurora Serverless v2. To understand the
-differences between Aurora Serverless v1 and Aurora Serverless v2, see [Comparison of Aurora Serverless v2 and Aurora Serverless v1](aurora-serverless-v2-upgrade.md#aurora-serverless.comparison).
-
-**Upgrade to Aurora Serverless v2:** You can upgrade an
-Aurora Serverless v1 cluster to Aurora Serverless v2. For more information, see [Upgrading from an Aurora Serverless v1 cluster to Aurora Serverless v2](aurora-serverless-v2-upgrade.md#aurora-serverless-v2.upgrade-from-serverless-v1-procedure).
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

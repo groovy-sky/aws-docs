@@ -1,3 +1,7 @@
+---
+title: "Working with read replicas for Amazon RDS for PostgreSQL"
+---
+
 # Working with read replicas for Amazon RDS for PostgreSQL
 
 You can scale reads for your Amazon RDS for PostgreSQL DB instances by adding read replicas to the

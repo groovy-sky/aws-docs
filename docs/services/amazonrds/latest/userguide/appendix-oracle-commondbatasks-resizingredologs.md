@@ -1,3 +1,7 @@
+---
+title: "Resizing online redo logs"
+---
+
 # Resizing online redo logs
 
 An Amazon RDS DB instance running Oracle starts with four online redo logs, 128 MB

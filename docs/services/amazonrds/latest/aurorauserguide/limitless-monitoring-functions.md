@@ -1,3 +1,7 @@
+---
+title: "Aurora PostgreSQL Limitless Database functions"
+---
+
 # Aurora PostgreSQL Limitless Database functions
 
 The following table shows the new functions for Aurora PostgreSQL Limitless Database.

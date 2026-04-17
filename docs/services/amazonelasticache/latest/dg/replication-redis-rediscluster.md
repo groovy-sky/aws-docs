@@ -1,3 +1,7 @@
+---
+title: "Replication: Valkey and Redis OSS Cluster Mode Disabled vs. Enabled"
+---
+
 # Replication: Valkey and Redis OSS Cluster Mode Disabled vs. Enabled
 
 Beginning with Valkey 7.2 and Redis OSS version 3.2, you have the ability to create one of two distinct types of clusters

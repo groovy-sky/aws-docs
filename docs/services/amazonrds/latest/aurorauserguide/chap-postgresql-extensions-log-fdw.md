@@ -1,3 +1,7 @@
+---
+title: "Using the log_fdw extension to access the DB log using SQL"
+---
+
 # Using the log\_fdw extension to access the DB log using SQL
 
 Aurora PostgreSQL DB cluster

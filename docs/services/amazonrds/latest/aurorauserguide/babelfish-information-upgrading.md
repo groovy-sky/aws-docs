@@ -1,3 +1,7 @@
+---
+title: "Upgrading your Babelfish cluster to a new version"
+---
+
 # Upgrading your Babelfish cluster to a new version
 
 New versions of Babelfish become available with some new releases of the

@@ -1,3 +1,7 @@
+---
+title: "Rebooting a DB instance within an Aurora cluster"
+---
+
 # Rebooting a DB instance within an Aurora cluster
 
 This procedure is the most important operation that you take when performing reboots with Aurora. Many of the

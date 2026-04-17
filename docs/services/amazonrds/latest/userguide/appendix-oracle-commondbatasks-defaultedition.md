@@ -1,3 +1,7 @@
+---
+title: "Setting the default edition for a DB instance"
+---
+
 # Setting the default edition for a DB instance
 
 You can redefine database objects in a private environment called an edition. You

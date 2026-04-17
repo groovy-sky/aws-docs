@@ -1,3 +1,7 @@
+---
+title: "Required parameter settings for active-active clusters"
+---
+
 # Required parameter settings for active-active clusters
 
 Configuring parameters for active-active clusters in Amazon RDS for MySQL is essential for

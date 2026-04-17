@@ -1,3 +1,7 @@
+---
+title: "Best practices with Amazon Aurora PostgreSQL"
+---
+
 # Best practices with Amazon Aurora PostgreSQL
 
 Following, you can find several best practices for managing your Amazon Aurora PostgreSQL DB

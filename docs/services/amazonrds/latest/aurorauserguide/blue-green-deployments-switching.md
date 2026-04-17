@@ -1,3 +1,7 @@
+---
+title: "Switching a blue/green deployment in Amazon Aurora"
+---
+
 # Switching a blue/green deployment in Amazon Aurora
 
 A _switchover_ transitions the DB cluster, including its

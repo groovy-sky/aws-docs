@@ -1,3 +1,7 @@
+---
+title: "Creating a proxy for Amazon RDS"
+---
+
 # Creating a proxy for Amazon RDS
 
 You can associate a proxy with an RDS for MariaDB, RDS for Microsoft SQL Server,

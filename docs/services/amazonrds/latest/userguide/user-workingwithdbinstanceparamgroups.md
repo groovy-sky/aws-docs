@@ -1,3 +1,7 @@
+---
+title: "DB parameter groups for Amazon RDS DB instances"
+---
+
 # DB parameter groups for Amazon RDS DB instances
 
 DB instances use DB parameter groups. The following sections describe configuring and managing DB instance

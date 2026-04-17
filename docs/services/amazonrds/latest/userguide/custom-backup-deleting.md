@@ -1,3 +1,7 @@
+---
+title: "Deleting an RDS Custom for Oracle snapshot"
+---
+
 # Deleting an RDS Custom for Oracle snapshot
 
 ###### Note

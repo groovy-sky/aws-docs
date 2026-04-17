@@ -1,3 +1,7 @@
+---
+title: "Adding a new database user when using RDS Proxy"
+---
+
 # Adding a new database user when using RDS Proxy
 
 In some cases, you might add a new database user to an RDS DB instance or cluster that's

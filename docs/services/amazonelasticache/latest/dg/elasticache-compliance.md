@@ -1,3 +1,7 @@
+---
+title: "Compliance validation for Amazon ElastiCache"
+---
+
 # Compliance validation for Amazon ElastiCache
 
 Third-party auditors assess the security and compliance of AWS services as part of

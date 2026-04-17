@@ -1,3 +1,7 @@
+---
+title: "Local time zone for RDS Custom for SQL Server DB instances"
+---
+
 # Local time zone for RDS Custom for SQL Server DB instances
 
 The time zone of an RDS Custom for SQL Server DB instance is set by default. The current default is Coordinated Universal

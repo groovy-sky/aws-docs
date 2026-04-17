@@ -1,3 +1,7 @@
+---
+title: "io/aurora_respond_to_client"
+---
+
 # io/aurora\_respond\_to\_client
 
 The `io/aurora_respond_to_client` event occurs when a thread is waiting to return a result set to a client.

@@ -1,3 +1,7 @@
+---
+title: "Creating a blue/green deployment in Amazon Aurora"
+---
+
 # Creating a blue/green deployment in Amazon Aurora
 
 RDS copies the blue environment's topology and features to a staging area. If the blue DB instance

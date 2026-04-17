@@ -1,3 +1,7 @@
+---
+title: "Migrating from AIX or Windows to Linux for Amazon RDS for Db2"
+---
+
 # Migrating from AIX or Windows to Linux for Amazon RDS for Db2
 
 With this migration approach, you use native Db2 tools to back up your self-managed Db2

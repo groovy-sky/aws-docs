@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL database engine updates 2019-07-08 (version 2.04.5) (Deprecated)"
+---
+
 # Aurora MySQL database engine updates 2019-07-08 (version 2.04.5) (Deprecated)
 
 **Version:** 2.04.5

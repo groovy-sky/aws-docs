@@ -1,3 +1,7 @@
+---
+title: "Using native network encryption with an RDS for Oracle DB instance"
+---
+
 # Using native network encryption with an RDS for Oracle DB instance
 
 Oracle Database offers two ways to encrypt data over the network: native network

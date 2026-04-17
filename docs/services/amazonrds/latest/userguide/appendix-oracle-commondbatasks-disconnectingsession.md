@@ -1,3 +1,7 @@
+---
+title: "Disconnecting a session"
+---
+
 # Disconnecting a session
 
 To disconnect the current session by ending the dedicated server process, use the

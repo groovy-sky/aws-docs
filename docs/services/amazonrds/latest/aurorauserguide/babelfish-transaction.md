@@ -1,3 +1,7 @@
+---
+title: "Transaction isolation levels in Babelfish"
+---
+
 # Transaction isolation levels in Babelfish
 
 Babelfish supports transaction isolation levels `READ UNCOMMITTED`, `READ COMMITTED` and `SNAPSHOT`. Starting from Babelfish 3.4 version

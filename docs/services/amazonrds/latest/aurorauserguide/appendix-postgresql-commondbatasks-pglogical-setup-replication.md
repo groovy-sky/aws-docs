@@ -1,3 +1,7 @@
+---
+title: "Setting up logical replication for Aurora PostgreSQL DB cluster"
+---
+
 # Setting up logical replication for Aurora PostgreSQL DB cluster
 
 The following procedure shows you how to start logical replication between two Aurora PostgreSQL DB clusters. The steps assume that both the source (publisher) and

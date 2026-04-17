@@ -1,3 +1,7 @@
+---
+title: "LWLock:SubtransSLRU (LWLock:SubtransControlLock)"
+---
+
 # LWLock:SubtransSLRU (LWLock:SubtransControlLock)
 
 The `LWLock:SubtransSLRU` and `LWLock:SubtransBuffer` wait events

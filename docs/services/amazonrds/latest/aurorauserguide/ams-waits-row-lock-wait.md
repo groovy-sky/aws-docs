@@ -1,3 +1,7 @@
+---
+title: "synch/cond/innodb/row_lock_wait"
+---
+
 # synch/cond/innodb/row\_lock\_wait
 
 The `synch/cond/innodb/row_lock_wait` event occurs when one session has locked a row for an update, and another session tries to update the

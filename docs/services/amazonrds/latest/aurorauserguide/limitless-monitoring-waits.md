@@ -1,3 +1,7 @@
+---
+title: "Wait events for Aurora PostgreSQL Limitless Database"
+---
+
 # Wait events for Aurora PostgreSQL Limitless Database
 
 A wait event in Aurora PostgreSQL indicates a resource for which a session is waiting, such as input/output (I/O) and locks. Wait

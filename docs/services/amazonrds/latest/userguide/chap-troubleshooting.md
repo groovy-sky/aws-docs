@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting for Amazon RDS"
+---
+
 # Troubleshooting for Amazon RDS
 
 Use the following sections to help troubleshoot problems you have with DB instances in

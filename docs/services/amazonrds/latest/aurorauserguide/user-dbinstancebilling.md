@@ -1,3 +1,7 @@
+---
+title: "DB instance billing for Aurora"
+---
+
 # DB instance billing for Aurora
 
 Amazon RDS provisioned instances in an Amazon Aurora cluster are billed based on the following components:

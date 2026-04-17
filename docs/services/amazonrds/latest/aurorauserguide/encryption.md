@@ -1,3 +1,7 @@
+---
+title: "Protecting data using encryption"
+---
+
 # Protecting data using encryption
 
 Amazon Aurora encrypts database resources at the storage layer.

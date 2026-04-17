@@ -1,3 +1,7 @@
+---
+title: "Limitations and considerations of local write forwarding in Aurora PostgreSQL"
+---
+
 # Limitations and considerations of local write forwarding in Aurora PostgreSQL
 
 The following limitations currently apply to local write forwarding in Aurora PostgreSQL:

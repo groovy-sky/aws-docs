@@ -1,3 +1,7 @@
+---
+title: "RDS for Oracle limitations"
+---
+
 # RDS for Oracle limitations
 
 In the following sections, you can find important limitations of using RDS for Oracle. For

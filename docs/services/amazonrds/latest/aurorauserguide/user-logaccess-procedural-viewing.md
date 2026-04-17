@@ -1,3 +1,7 @@
+---
+title: "Viewing and listing database log files"
+---
+
 # Viewing and listing database log files
 
 You can view database log files for your Amazon Aurora DB engine by

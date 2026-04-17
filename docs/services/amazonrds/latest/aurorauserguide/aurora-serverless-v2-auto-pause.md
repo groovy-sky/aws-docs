@@ -1,3 +1,7 @@
+---
+title: "Scaling to Zero ACUs with automatic pause and resume for Aurora Serverless v2"
+---
+
 # Scaling to Zero ACUs with automatic pause and resume for Aurora Serverless v2
 
 You can specify that Aurora Serverless v2 DB instances scale down to zero ACUs and automatically pause, if they
@@ -46,9 +50,6 @@ You control this behavior by specifying whether the Aurora Serverless v2 DB inst
 automatically pause or not, and how long each instance must be idle before it pauses. To enable the auto-pause
 behavior for all the Aurora Serverless v2 DB instances in an Aurora cluster, you set the minimum capacity value
 for the cluster to zero ACUs.
-
-If you formerly took advantage of the Aurora Serverless v1 feature that scaled to zero ACUs after a period of
-inactivity, you can upgrade to Aurora Serverless v2 and use its corresponding auto-pause feature.
 
 The cost-savings benefits of the auto-pause feature are similar to using the stop/start cluster feature.
 Auto-pause for Aurora Serverless v2 has the additional benefits of a faster resume than starting a stopped
@@ -100,7 +101,7 @@ features or settings, the Aurora Serverless v2 instances won't automatically pau
 [Supported Regions and Aurora DB engines for Aurora Serverless v2](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md).
 
 - When an Aurora Serverless v2 instance resumes, its capacity might be lower than it was when the instance was
-paused. For details, see [Differences in auto-pause behavior between Aurora Serverless v2 and Aurora Serverless v1](#auto-pause-differences).
+paused.
 
 Certain conditions or settings prevent Aurora Serverless v2 instances from automatically pausing. For more
 information, see [Situations where Aurora Serverless v2 doesn't auto-pause](#auto-pause-whynot).
@@ -292,8 +293,6 @@ availability, responsiveness, and cost savings.
 
 - [Maintenance and upgrades](#auto-pause-maintenance)
 
-- [Comparison with Aurora Serverless v1](#auto-pause-differences)
-
 ### What happens when Aurora Serverless v2 instances pause
 
 When an Aurora Serverless v2 DB instance pauses after a period with no connections:
@@ -414,28 +413,6 @@ minor version upgrades and changes to properties such as parameter groups.
 applying maintenance, Aurora waits at least 20 minutes before pausing that instance again. That's to
 allow any background operations to finish. The twenty-minute period also avoids pausing and resuming the
 instance multiple times if the instance undergoes multiple administrative operations in succession.
-
-### Differences in auto-pause behavior between Aurora Serverless v2 and Aurora Serverless v1
-
-- The resumption time is improved in Aurora Serverless v2 compared with Aurora Serverless v1. The time to
-resume is typically approximately 15 seconds if the instance was paused for less than 24 hours. If the
-instance is paused for longer than 24 hours, the resume time might be longer.
-
-- The way that Aurora Serverless v2 applies to multi-AZ clusters means that some DB instances in the cluster
-might be paused while others are active. The writer instance resumes whenever any reader is running,
-because the writer is needed to coordinate certain activities within the cluster. Because
-Aurora Serverless v1 doesn't use reader instances, the entire cluster would always be paused or be
-active.
-
-- When the reader endpoint randomly picks a reader instance to connect to, that reader instance might
-already be active or might be auto-paused. Thus, the time to access the reader instance might vary and
-be harder to predict. Multi-AZ clusters that use Aurora Serverless v2 and auto-pause therefore might
-benefit from setting up custom endpoints for specific read-only use cases, instead of directing all
-read-only sessions to the reader endpoint.
-
-- Aurora Serverless v2 instances undergo maintenance operations with the same frequency as provisioned
-instances do. Because Aurora automatically resumes instances when such maintenance is needed, you might
-find that Aurora Serverless v2 instances resume more frequently than Aurora Serverless v1 clusters did.
 
 ## How Aurora Serverless v2 auto-pause works for different types of Aurora clusters
 
@@ -794,8 +771,7 @@ establishing a connection. That accounts for the typical case where an Aurora Se
 to one or a small number of incoming connections. If the instance is paused for longer than 24 hours, the time
 to resume might be longer.
 
-If your application was already using Aurora Serverless v1 and its automatic pause feature, you might already
-have such timeout intervals in place for connection attempts. If you are already using Aurora Serverless v2 in
+If you are using Aurora Serverless v2 in
 combination with the Aurora stop/start cluster feature, the resumption time for auto-paused Aurora Serverless v2
 instances is typically much shorter than the time to start a cluster that's stopped.
 
@@ -821,6 +797,6 @@ instance can't resume for some reason. For details about these events, see
 
 Performance and scaling for Aurora Serverless v2
 
-Migrating to Aurora Serverless v2
+Using the Amazon RDS Data API
 
 All content copied from https://docs.aws.amazon.com/.

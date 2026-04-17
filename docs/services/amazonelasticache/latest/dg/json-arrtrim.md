@@ -1,3 +1,7 @@
+---
+title: "JSON.ARRTRIM"
+---
+
 # JSON.ARRTRIM
 
 Trims an arrays at the path so that it becomes a subarray \[start, end\], both

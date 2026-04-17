@@ -1,3 +1,7 @@
+---
+title: "Upgrading Babelfish to a new major version"
+---
+
 # Upgrading Babelfish to a new major version
 
 For a major version upgrade, you need to first upgrade your Babelfish for

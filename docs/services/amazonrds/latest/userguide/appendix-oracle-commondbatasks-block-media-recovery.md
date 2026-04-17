@@ -1,3 +1,7 @@
+---
+title: "Performing block media recovery"
+---
+
 # Performing block media recovery
 
 You can recovery individual data blocks, known as _block media_

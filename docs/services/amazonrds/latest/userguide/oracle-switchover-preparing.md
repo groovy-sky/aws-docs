@@ -1,3 +1,7 @@
+---
+title: "Requirements for the Oracle Data Guard switchover"
+---
+
 # Requirements for the Oracle Data Guard switchover
 
 Before initiating the Oracle Data Guard switchover, make sure that your replication environment meets the following

@@ -1,3 +1,7 @@
+---
+title: "Analyzing database performance for a period of time"
+---
+
 # Analyzing database performance for a period of time
 
 Analyze database performance with on-demand analysis by creating a performance analysis report for a period of time. View performance analysis reports to find

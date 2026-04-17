@@ -1,3 +1,7 @@
+---
+title: "Configuring a DB instance for Amazon RDS Custom for Oracle"
+---
+
 # Configuring a DB instance for Amazon RDS Custom for Oracle
 
 ###### Note

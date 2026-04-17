@@ -1,3 +1,7 @@
+---
+title: "Securing Amazon RDS for Db2 DB instance connections"
+---
+
 # Securing Amazon RDS for Db2 DB instance connections
 
 Amazon RDS for Db2 supports ways to improve security for your RDS for Db2 DB instance.

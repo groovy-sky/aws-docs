@@ -1,3 +1,7 @@
+---
+title: "Best Practices for using Read Replicas"
+---
+
 # Best Practices for using Read Replicas
 
 Many applications, such as session stores, leaderboards, and recommendation engines, require high availability and handle significantly more read operations than write operations. These applications can often tolerate slightly stale data (eventual consistency), meaning that it's acceptable if different users momentarily see slightly different versions of the same data. For example:
@@ -41,7 +45,7 @@ port, you must authorize access to both ports from your client application by [c
 
 **Primary endpoint (Port 6379)**
 
-- Use for operations requiring immediate consistency
+- Use for operations requiring strong consistency
 
 - Guarantees reading the most up-to-date data
 
@@ -51,11 +55,11 @@ port, you must authorize access to both ports from your client application by [c
 
 - Example: `test-12345.serverless.use1.cache.amazonaws.com:6379`
 
-**Latency optimized endpoint (Port 6380)**
+**Read-optimized endpoint (Port 6380)**
 
 - Optimized for read operations that can tolerate eventual consistency
 
-- When possible, ElastiCache serverless automatically routes read requests to the replica node in the client's local Availability Zone. This optimization provides lower latency by avoiding the additional network latency incurred when retrieving data from a node in a different availability zone.
+- When possible, ElastiCache serverless automatically routes read requests to a replica node in the client's local Availability Zone. This optimization provides lower latency by avoiding the additional network latency incurred when retrieving data from a node in a different availability zone.
 
 - ElastiCache serverless automatically selects available nodes in other zones if a local node is unavailable
 

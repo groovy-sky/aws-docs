@@ -1,3 +1,7 @@
+---
+title: "Migrating data to Amazon RDS for Db2"
+---
+
 # Migrating data to Amazon RDS for Db2
 
 You can migrate self-managed Db2 databases to Amazon RDS for Db2 by using either AWS or native

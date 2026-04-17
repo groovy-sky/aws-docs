@@ -1,3 +1,7 @@
+---
+title: "Adding Auto Discovery to your Memcached client library"
+---
+
 # Adding Auto Discovery to your Memcached client library
 
 The configuration information for Auto Discovery is stored redundantly in each Memcached cluster

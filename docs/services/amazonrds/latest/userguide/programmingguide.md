@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS API reference"
+---
+
 # Amazon RDS API reference
 
 In addition to the AWS Management Console and the AWS Command Line Interface (AWS CLI), Amazon RDS also provides an API. You

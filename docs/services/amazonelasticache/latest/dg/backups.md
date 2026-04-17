@@ -1,3 +1,7 @@
+---
+title: "Snapshot and restore"
+---
+
 # Snapshot and restore
 
 Amazon ElastiCache caches running Valkey, Redis OSS, or Serverless Memcached can back up their data by creating a snapshot.

@@ -1,3 +1,7 @@
+---
+title: "Monitoring RDS Data API queries with Performance Insights"
+---
+
 # Monitoring RDS Data API queries with Performance Insights
 
 If your Aurora cluster is running Aurora Serverless v2 or provisioned instances, you can use Performance Insights with RDS Data

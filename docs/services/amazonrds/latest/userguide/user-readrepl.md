@@ -1,3 +1,7 @@
+---
+title: "Working with DB instance read replicas"
+---
+
 # Working with DB instance read replicas
 
 A _read replica_ is a read-only copy of a DB instance. You can reduce the

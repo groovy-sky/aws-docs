@@ -1,3 +1,7 @@
+---
+title: "Password management with Amazon RDS and AWS Secrets Manager"
+---
+
 # Password management with Amazon RDS and AWS Secrets Manager
 
 Amazon RDS

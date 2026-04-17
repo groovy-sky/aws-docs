@@ -1,3 +1,7 @@
+---
+title: "Delegating and controlling user password management"
+---
+
 # Delegating and controlling user password management
 
 As a DBA, you might want to delegate the management of user passwords. Or, you might want

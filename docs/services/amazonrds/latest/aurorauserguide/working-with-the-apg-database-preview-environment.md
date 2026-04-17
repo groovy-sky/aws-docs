@@ -1,3 +1,7 @@
+---
+title: "Working with the database preview environment"
+---
+
 # Working with the database preview environment
 
 The PostgreSQL community releases new major version of PostgreSQL annually. Similarly, Amazon Aurora makes PostgreSQL major versions available as Preview releases. This allows you

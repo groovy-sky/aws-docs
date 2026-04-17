@@ -1,3 +1,7 @@
+---
+title: "Viewing the enrollment of your Aurora DB clusters or global clusters in Amazon RDS Extended Support"
+---
+
 # Viewing the enrollment of your Aurora DB clusters or global clusters in Amazon RDS Extended Support
 
 You can view the enrollment of your Aurora DB clusters or global clusters in

@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS and customer responsibilities with Amazon RDS Extended Support"
+---
+
 # Amazon RDS and customer responsibilities with Amazon RDS Extended Support
 
 The following content describes the responsibilities of Amazon RDS and your

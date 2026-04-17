@@ -1,3 +1,7 @@
+---
+title: "Moving from standard IAM authentication to end-to-end IAM authentication for RDS Proxy"
+---
+
 # Moving from standard IAM authentication to end-to-end IAM authentication for RDS Proxy
 
 If you currently use standard IAM authentication for RDS Proxy, where clients authenticate to the proxy using IAM but the proxy connects to the database using secrets,

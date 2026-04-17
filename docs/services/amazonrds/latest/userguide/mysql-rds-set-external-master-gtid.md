@@ -1,3 +1,7 @@
+---
+title: "mysql.rds_set_external_master_gtid"
+---
+
 # mysql.rds\_set\_external\_master\_gtid
 
 Configures GTID-based replication from a MariaDB instance running external to Amazon RDS

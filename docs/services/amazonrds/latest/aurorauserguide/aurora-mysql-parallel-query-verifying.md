@@ -1,3 +1,7 @@
+---
+title: "Verifying which statements use parallel query for Aurora MySQL"
+---
+
 # Verifying which statements use parallel query for Aurora MySQL
 
 In typical operation, you don't need to perform any special actions to take advantage of parallel

@@ -1,3 +1,7 @@
+---
+title: "Using SSL/TLS to encrypt a connection to a DB instance or cluster"
+---
+
 # Using SSL/TLS to encrypt a connection to a DB instance or cluster
 
 You can use Secure Socket Layer (SSL) or Transport Layer

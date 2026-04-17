@@ -1,3 +1,7 @@
+---
+title: "Migrating data to Amazon Aurora with PostgreSQL compatibility"
+---
+
 # Migrating data to Amazon Aurora with PostgreSQL compatibility
 
 You have several options for migrating data from your existing database to an

@@ -1,3 +1,7 @@
+---
+title: "Optimizing and scaling your Amazon RDS DB instance"
+---
+
 # Optimizing and scaling your Amazon RDS DB instance
 
 This chapter includes details on advanced configurations and strategies for optimizing and

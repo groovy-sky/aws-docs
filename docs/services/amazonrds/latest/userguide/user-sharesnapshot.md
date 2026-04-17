@@ -1,3 +1,7 @@
+---
+title: "Sharing a DB snapshot for Amazon RDS"
+---
+
 # Sharing a DB snapshot for Amazon RDS
 
 Using Amazon RDS, you can share a manual DB snapshot in the following ways:

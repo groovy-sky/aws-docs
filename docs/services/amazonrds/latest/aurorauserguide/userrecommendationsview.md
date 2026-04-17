@@ -1,3 +1,7 @@
+---
+title: "Viewing Amazon Aurora recommendations"
+---
+
 # Viewing Amazon Aurora recommendations
 
 Using the Amazon RDS console, you can view Amazon Aurora recommendations for your database

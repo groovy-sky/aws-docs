@@ -1,3 +1,7 @@
+---
+title: "Client:ClientWrite"
+---
+
 # Client:ClientWrite
 
 The `Client:ClientWrite` event occurs when RDS for PostgreSQL is waiting to

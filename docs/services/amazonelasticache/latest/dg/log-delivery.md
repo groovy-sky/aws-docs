@@ -1,3 +1,7 @@
+---
+title: "Log delivery"
+---
+
 # Log delivery
 
 ###### Note

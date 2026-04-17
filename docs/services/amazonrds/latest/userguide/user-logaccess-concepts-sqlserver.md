@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Microsoft SQL Server database log files"
+---
+
 # Amazon RDS for Microsoft SQL Server database log files
 
 You can access Microsoft SQL Server error logs, agent logs, trace files, and dump files by using the Amazon RDS console,

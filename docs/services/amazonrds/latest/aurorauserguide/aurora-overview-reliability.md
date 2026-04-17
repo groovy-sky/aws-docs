@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora reliability"
+---
+
 # Amazon Aurora reliability
 
 Aurora is designed to be reliable, durable, and fault tolerant. You can architect your

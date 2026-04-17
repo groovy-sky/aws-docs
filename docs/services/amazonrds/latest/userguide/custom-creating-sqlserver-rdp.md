@@ -1,3 +1,7 @@
+---
+title: "Connecting to your RDS Custom DB instance using RDP"
+---
+
 # Connecting to your RDS Custom DB instance using RDP
 
 After you create your RDS Custom DB instance, you can connect to this instance using an RDP client. The procedure is the same as

@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Db2 stored procedure reference"
+---
+
 # Amazon RDS for Db2 stored procedure reference
 
 You can manage your Amazon RDS for Db2 DB instances running the Db2 engine by calling built-in

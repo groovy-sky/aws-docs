@@ -1,3 +1,7 @@
+---
+title: "Administering your Amazon RDS for Db2 DB instance"
+---
+
 # Administering your Amazon RDS for Db2 DB instance
 
 This topic covers the common management tasks that you perform with an Amazon RDS for Db2 DB

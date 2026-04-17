@@ -1,3 +1,7 @@
+---
+title: "Configuring auditing policy for Amazon RDS for Microsoft SQL Server"
+---
+
 # Configuring auditing policy for Amazon RDS for Microsoft SQL Server
 
 A SQL Server database instance has the server audit `RDS_DAS_AUDIT`, which is

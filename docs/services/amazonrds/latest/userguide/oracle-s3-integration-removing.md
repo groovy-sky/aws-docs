@@ -1,3 +1,7 @@
+---
+title: "Removing the Amazon S3 integration option"
+---
+
 # Removing the Amazon S3 integration option
 
 You can remove Amazon S3 integration option from a DB instance.

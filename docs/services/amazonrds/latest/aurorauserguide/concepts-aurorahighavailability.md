@@ -1,3 +1,7 @@
+---
+title: "High availability for Amazon Aurora"
+---
+
 # High availability for Amazon Aurora
 
 The Amazon Aurora architecture involves separation of storage and compute. Aurora includes some
@@ -135,9 +139,6 @@ mechanism to promote one of those reader instances to be the new primary instanc
 
 - If your provisioned or Aurora Serverless v2 cluster only contains a single DB instance, or if the primary instance and all
 reader instances are in the same AZ, make sure to manually create one or more new DB instances in another AZ.
-
-- If your cluster uses Aurora Serverless v1, Aurora automatically creates a new DB instance in another AZ. However, this process
-involves a host replacement and thus takes longer than a failover.
 
 ###### Note
 

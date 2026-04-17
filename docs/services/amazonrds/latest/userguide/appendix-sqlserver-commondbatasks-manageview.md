@@ -1,3 +1,7 @@
+---
+title: "Deny or allow viewing database names for Amazon RDS for SQL Server"
+---
+
 # Deny or allow viewing database names for Amazon RDS for SQL Server
 
 The master user cannot set `DENY VIEW ANY DATABASE TO LOGIN`

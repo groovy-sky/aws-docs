@@ -1,3 +1,7 @@
+---
+title: "Disabling fast inserts during bulk loading for Amazon RDS for SQL Server"
+---
+
 # Disabling fast inserts during bulk loading for Amazon RDS for SQL Server
 
 Starting with SQL Server 2016, fast inserts are enabled by default. Fast inserts leverage the minimal logging that occurs

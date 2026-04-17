@@ -1,3 +1,7 @@
+---
+title: "Importing data from an external MySQL database to an Amazon RDS for MySQL DB instance"
+---
+
 # Importing data from an external MySQL database to an Amazon RDS for MySQL DB instance
 
 You can import data from an existing MySQL database to an RDS for MySQL DB instance. You do

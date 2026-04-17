@@ -1,3 +1,7 @@
+---
+title: "Use ModifyDBInstance with an AWS SDK or CLI"
+---
+
 # Use `ModifyDBInstance` with an AWS SDK or CLI
 
 The following code examples show how to use `ModifyDBInstance`.
@@ -202,7 +206,7 @@ public class ModifyDBInstance {
 ```
 
 - For API details, see
-[ModifyDBInstance](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/modifydbinstance.md)
+[ModifyDBInstance](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/ModifyDBInstance)
 in _AWS SDK for Java 2.x API Reference_.
 
 Kotlin

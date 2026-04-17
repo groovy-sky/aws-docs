@@ -1,3 +1,7 @@
+---
+title: "Viewing CEV details for Amazon RDS Custom for Oracle"
+---
+
 # Viewing CEV details for Amazon RDS Custom for Oracle
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Dismissing Amazon RDS recommendations"
+---
+
 # Dismissing Amazon RDS recommendations
 
 You can dismiss one or more Amazon RDS recommendations using the Amazon RDS console, AWS CLI, or Amazon RDS API.

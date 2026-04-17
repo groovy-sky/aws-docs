@@ -1,3 +1,7 @@
+---
+title: "Importing data from Amazon S3 into an Aurora PostgreSQL DB cluster"
+---
+
 # Importing data from Amazon S3 into an Aurora PostgreSQL DB cluster
 
 You can import data that's been stored using Amazon Simple Storage Service into a table on an Aurora PostgreSQL DB cluster instance. To do this, you first install the Aurora PostgreSQL `aws_s3` extension. This extension provides

@@ -1,3 +1,7 @@
+---
+title: "JSON.TYPE"
+---
+
 # JSON.TYPE
 
 Reports the type of values at the given path.

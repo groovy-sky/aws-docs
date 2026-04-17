@@ -1,3 +1,7 @@
+---
+title: "Backing up an SSAS database"
+---
+
 # Backing up an SSAS database
 
 You can create SSAS database backup files only in the `D:\S3` folder on the DB

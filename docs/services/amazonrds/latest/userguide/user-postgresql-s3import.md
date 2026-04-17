@@ -1,3 +1,7 @@
+---
+title: "Importing data from Amazon S3 into an RDS for PostgreSQL DB instance"
+---
+
 # Importing data from Amazon S3 into an RDS for PostgreSQL DB instance
 
 You can import data that's been stored using Amazon Simple Storage Service into a table on an RDS for PostgreSQL DB

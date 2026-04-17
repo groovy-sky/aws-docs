@@ -1,3 +1,7 @@
+---
+title: "Copying a DB cluster snapshot across accounts"
+---
+
 # Copying a DB cluster snapshot across accounts
 
 You can enable other AWS accounts to copy DB cluster snapshots that you specify by using

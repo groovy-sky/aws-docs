@@ -1,3 +1,7 @@
+---
+title: "Creating an IAM policy to access AWS KMS resources"
+---
+
 # Creating an IAM policy to access AWS KMS resources
 
 Aurora can access the AWS KMS keys

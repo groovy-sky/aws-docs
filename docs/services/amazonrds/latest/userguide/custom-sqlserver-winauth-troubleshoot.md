@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Active Directory"
+---
+
 # Troubleshooting Active Directory
 
 The following are issues you might encounter when you set up or modify an AD.

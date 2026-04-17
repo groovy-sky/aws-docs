@@ -1,3 +1,7 @@
+---
+title: "Connecting to your MySQL DB instance"
+---
+
 # Connecting to your MySQL DB instance
 
 Before you can connect to a DB instance running the MySQL database engine, you must create a DB instance.

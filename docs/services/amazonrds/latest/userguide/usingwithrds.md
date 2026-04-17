@@ -1,3 +1,7 @@
+---
+title: "Security in Amazon RDS"
+---
+
 # Security in Amazon RDS
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a

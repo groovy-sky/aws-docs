@@ -1,3 +1,7 @@
+---
+title: "Automatically connecting an EC2 instance and a DB instance"
+---
+
 # Automatically connecting an EC2 instance and a DB instance
 
 You can use the Amazon RDS console to simplify setting up a connection between an Amazon Elastic Compute Cloud (Amazon EC2) instance and

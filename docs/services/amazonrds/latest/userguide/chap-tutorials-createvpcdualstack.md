@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a VPC for use with a DB instance (dual-stack mode)"
+---
+
 # Tutorial: Create a VPC for use with a DB instance (dual-stack mode)
 
 A common scenario includes a DB instance

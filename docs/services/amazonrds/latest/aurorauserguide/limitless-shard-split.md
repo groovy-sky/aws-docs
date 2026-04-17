@@ -1,3 +1,7 @@
+---
+title: "Splitting a shard in a DB shard group"
+---
+
 # Splitting a shard in a DB shard group
 
 You can split a shard in a DB shard group manually into two smaller shards. This is called a _user-initiated_ shard

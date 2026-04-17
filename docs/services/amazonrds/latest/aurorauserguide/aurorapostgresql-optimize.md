@@ -1,3 +1,7 @@
+---
+title: "Managing query execution plans for Aurora PostgreSQL"
+---
+
 # Managing query execution plans for Aurora PostgreSQL
 
 Aurora PostgreSQL query plan management is an optional feature that you can use with your

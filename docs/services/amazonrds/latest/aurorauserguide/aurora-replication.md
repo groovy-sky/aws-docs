@@ -1,3 +1,7 @@
+---
+title: "Replication with Amazon Aurora"
+---
+
 # Replication with Amazon Aurora
 
 There are several replication options with Aurora. Each Aurora DB cluster has built-in

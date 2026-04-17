@@ -1,3 +1,7 @@
+---
+title: "Configuring IAM authentication for RDS Proxy"
+---
+
 # Configuring IAM authentication for RDS Proxy
 
 To set up AWS Identity and Access Management (IAM) authentication for RDS Proxy in Amazon RDS, create and configure an

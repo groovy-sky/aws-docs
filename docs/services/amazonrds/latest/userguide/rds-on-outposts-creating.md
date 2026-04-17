@@ -1,3 +1,7 @@
+---
+title: "Creating DB instances for Amazon RDS on AWS Outposts"
+---
+
 # Creating DB instances for Amazon RDS on AWS Outposts
 
 Creating an Amazon RDS on AWS Outposts DB instance is similar to creating an Amazon RDS DB instance in

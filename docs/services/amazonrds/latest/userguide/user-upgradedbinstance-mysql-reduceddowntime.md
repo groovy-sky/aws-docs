@@ -1,3 +1,7 @@
+---
+title: "Using a read replica to reduce downtime when upgrading an RDS for MySQL database"
+---
+
 # Using a read replica to reduce downtime when upgrading an RDS for MySQL database
 
 In most cases, a blue/green deployment is the best option to reduce downtime when

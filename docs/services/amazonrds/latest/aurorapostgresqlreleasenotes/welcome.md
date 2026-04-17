@@ -1,3 +1,7 @@
+---
+title: "Release notes for Amazon Aurora PostgreSQL-Compatible Edition"
+---
+
 # Release notes for Amazon Aurora PostgreSQL-Compatible Edition
 
 The Amazon Aurora PostgreSQL-Compatible Edition release notes provide details about the Aurora PostgreSQL versions and extensions that are available for Amazon Aurora.

@@ -1,3 +1,7 @@
+---
+title: "Viewing Amazon RDS events"
+---
+
 # Viewing Amazon RDS events
 
 You can retrieve the following event information for your Amazon Aurora resources:

@@ -1,3 +1,7 @@
+---
+title: "Protecting data using encryption"
+---
+
 # Protecting data using encryption
 
 You can enable encryption for database resources.

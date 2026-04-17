@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS DB instance storage"
+---
+
 # Amazon RDS DB instance storage
 
 DB instances for Amazon RDS for Db2, MariaDB, MySQL, PostgreSQL, Oracle, and Microsoft SQL

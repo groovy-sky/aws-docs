@@ -1,3 +1,7 @@
+---
+title: "Considerations for process architecture"
+---
+
 # Considerations for process architecture
 
 Server processes handle user connections to an Oracle DB instance. By default, the Oracle DB instance uses

@@ -1,3 +1,7 @@
+---
+title: "Reclaiming storage space by vacuuming"
+---
+
 # Reclaiming storage space by vacuuming
 
 PostgreSQL Multiversion Concurrency Control (MVCC) helps to preserve data integrity by saving an internal copy of updated or

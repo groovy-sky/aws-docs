@@ -1,3 +1,7 @@
+---
+title: "Access Patterns for Accessing an ElastiCache Cache in an Amazon VPC"
+---
+
 # Access Patterns for Accessing an ElastiCache Cache in an Amazon VPC
 
 Amazon ElastiCache supports the following scenarios for accessing a cache in an Amazon VPC:

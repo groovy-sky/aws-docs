@@ -1,3 +1,7 @@
+---
+title: "Enabling and disabling block change tracking"
+---
+
 # Enabling and disabling block change tracking
 
 Block changing tracking records changed blocks in a tracking file. This technique

@@ -1,3 +1,7 @@
+---
+title: "Security best practices for Amazon RDS"
+---
+
 # Security best practices for Amazon RDS
 
 Use AWS Identity and Access Management (IAM) accounts to control access to Amazon RDS API operations, especially

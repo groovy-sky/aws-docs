@@ -1,3 +1,7 @@
+---
+title: "RDS for Oracle licensing options"
+---
+
 # RDS for Oracle licensing options
 
 Amazon RDS for Oracle has two licensing options: License Included (LI) and Bring Your Own License (BYOL). After you create an Oracle DB instance on

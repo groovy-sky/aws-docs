@@ -1,3 +1,7 @@
+---
+title: "Instance endpoints for Amazon Aurora"
+---
+
 # Instance endpoints for Amazon Aurora
 
 An _instance endpoint_ connects to a specific DB

@@ -1,3 +1,7 @@
+---
+title: "Viewing combined metrics with the Performance Insights dashboard"
+---
+
 # Viewing combined metrics with the Performance Insights dashboard
 
 ###### Important

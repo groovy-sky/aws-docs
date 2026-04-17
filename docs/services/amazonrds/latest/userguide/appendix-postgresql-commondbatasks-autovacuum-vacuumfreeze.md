@@ -1,3 +1,7 @@
+---
+title: "Performing a manual vacuum freeze"
+---
+
 # Performing a manual vacuum freeze
 
 You might want to perform a manual vacuum on a table that has a vacuum process already

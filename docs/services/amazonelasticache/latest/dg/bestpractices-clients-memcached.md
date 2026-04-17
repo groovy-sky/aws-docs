@@ -1,3 +1,7 @@
+---
+title: "Best practices for clients (Memcached)"
+---
+
 # Best practices for clients (Memcached)
 
 Learn best practices for common scenarios with ElastiCache for Memcached clusters.

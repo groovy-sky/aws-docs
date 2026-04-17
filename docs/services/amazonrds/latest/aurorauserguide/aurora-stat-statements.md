@@ -1,3 +1,7 @@
+---
+title: "aurora_stat_statements"
+---
+
 # aurora\_stat\_statements
 
 Displays all `pg_stat_statements` columns and adds more columns in the end.

@@ -1,3 +1,7 @@
+---
+title: "Enforcing a DN match with an SSL connection"
+---
+
 # Enforcing a DN match with an SSL connection
 
 You can use the Oracle parameter `SSL_SERVER_DN_MATCH` to enforce that

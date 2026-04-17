@@ -1,3 +1,7 @@
+---
+title: "JSON.ARRINDEX"
+---
+
 # JSON.ARRINDEX
 
 Searches for the first occurrence of a scalar JSON value in the arrays at the

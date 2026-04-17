@@ -1,3 +1,7 @@
+---
+title: "Using the COPY command with Aurora PostgreSQL Limitless Database"
+---
+
 # Using the COPY command with Aurora PostgreSQL Limitless Database
 
 You can use the [\\copy](https://www.postgresql.org/docs/current/app-psql.html) functionality in the

@@ -1,3 +1,7 @@
+---
+title: "Best practices when working with Valkey and Redis OSS node-based clusters"
+---
+
 # Best practices when working with Valkey and Redis OSS node-based clusters
 
 Multi-AZ use, having sufficient memory, cluster resizing and minimizing downtime are all useful concepts to keep in mind when working with node-based clusters in Valkey or Redis OSS.

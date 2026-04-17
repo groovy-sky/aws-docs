@@ -1,3 +1,7 @@
+---
+title: "Auditing database objects"
+---
+
 # Auditing database objects
 
 With pgAudit set up on your

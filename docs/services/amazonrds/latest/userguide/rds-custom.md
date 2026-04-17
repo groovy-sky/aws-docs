@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS Custom"
+---
+
 # Amazon RDS Custom
 
 Amazon RDS Custom automates database administration tasks and operations. RDS Custom makes it

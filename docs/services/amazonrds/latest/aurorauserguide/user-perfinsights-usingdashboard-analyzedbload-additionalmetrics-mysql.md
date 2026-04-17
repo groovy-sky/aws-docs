@@ -1,3 +1,7 @@
+---
+title: "SQL statistics for Aurora MySQL"
+---
+
 # SQL statistics for Aurora MySQL
 
 Aurora MySQL collect SQL statistics only at

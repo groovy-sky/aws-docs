@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting query performance for Aurora MySQL databases"
+---
+
 # Troubleshooting query performance for Aurora MySQL databases
 
 MySQL provides [query optimizer control](https://dev.mysql.com/doc/refman/8.0/en/controlling-optimizer.html)

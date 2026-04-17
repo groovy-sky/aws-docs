@@ -1,3 +1,7 @@
+---
+title: "Connecting to nodes in a Valkey or Redis OSS cluster"
+---
+
 # Connecting to nodes in a Valkey or Redis OSS cluster
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Modifying a Multi-AZ DB cluster for Amazon RDS"
+---
+
 # Modifying a Multi-AZ DB cluster for Amazon RDS
 
 A Multi-AZ DB cluster has a writer DB instance and two reader DB instances in three

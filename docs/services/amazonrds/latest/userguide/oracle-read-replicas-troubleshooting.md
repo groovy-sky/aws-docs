@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting RDS for Oracle replicas"
+---
+
 # Troubleshooting RDS for Oracle replicas
 
 This section describes possible replication problems and solutions.

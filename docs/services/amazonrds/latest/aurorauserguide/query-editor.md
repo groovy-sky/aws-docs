@@ -1,3 +1,7 @@
+---
+title: "Using the Aurora query editor"
+---
+
 # Using the Aurora query editor
 
 The Aurora query editor lets you run SQL statements on your Aurora DB cluster

@@ -1,3 +1,7 @@
+---
+title: "What is Amazon Aurora?"
+---
+
 # What is Amazon Aurora?
 
 Amazon Aurora (Aurora) is a fully managed relational database engine that's compatible with

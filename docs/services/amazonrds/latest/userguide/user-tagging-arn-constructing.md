@@ -1,3 +1,7 @@
+---
+title: "Constructing an ARN for Amazon RDS"
+---
+
 # Constructing an ARN for Amazon RDS
 
 Resources created in Amazon Web Services are each uniquely identified with an Amazon Resource Name (ARN).

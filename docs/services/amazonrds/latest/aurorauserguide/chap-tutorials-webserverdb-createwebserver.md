@@ -1,3 +1,7 @@
+---
+title: "Install a web server on your EC2 instance"
+---
+
 # Install a web server on your EC2 instance
 
 Install a web server on the EC2 instance you created in

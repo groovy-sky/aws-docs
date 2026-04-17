@@ -1,3 +1,7 @@
+---
+title: "Viewing Amazon RDS recommendations"
+---
+
 # Viewing Amazon RDS recommendations
 
 Using the Amazon RDS console, you can view Amazon RDS recommendations for your database

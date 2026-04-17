@@ -1,3 +1,7 @@
+---
+title: "Adding a user to the SQLAgentUser role"
+---
+
 # Adding a user to the SQLAgentUser role
 
 To allow an additional login or user to use SQL Server Agent, log in as the master

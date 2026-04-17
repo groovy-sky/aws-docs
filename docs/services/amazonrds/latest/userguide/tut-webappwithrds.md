@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a web server and an Amazon RDS DB instance"
+---
+
 # Tutorial: Create a web server and an Amazon RDS DB instance
 
 This tutorial shows you how to install an Apache web server with PHP and create a MariaDB, MySQL,

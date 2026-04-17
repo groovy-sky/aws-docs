@@ -1,3 +1,7 @@
+---
+title: "Accessing the Performance Insights dashboard"
+---
+
 # Accessing the Performance Insights dashboard
 
 Amazon RDS provides a consolidated view of Performance Insights and CloudWatch metrics in the Performance Insights dashboard.

@@ -1,3 +1,7 @@
+---
+title: "Configuring and managing a Multi-AZ deployment for Amazon RDS"
+---
+
 # Configuring and managing a Multi-AZ deployment for Amazon RDS
 
 Multi-AZ deployments can have one standby or two standby DB instances. When the deployment

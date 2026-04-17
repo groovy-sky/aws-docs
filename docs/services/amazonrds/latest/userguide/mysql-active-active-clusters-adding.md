@@ -1,3 +1,7 @@
+---
+title: "Adding a DB instance to an active-active cluster"
+---
+
 # Adding a DB instance to an active-active cluster
 
 You can add a DB instance to an Amazon RDS for MySQL active-active cluster by restoring a DB

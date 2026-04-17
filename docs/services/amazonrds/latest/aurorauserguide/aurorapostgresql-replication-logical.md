@@ -1,3 +1,7 @@
+---
+title: "Overview of PostgreSQL logical replication with Aurora"
+---
+
 # Overview of PostgreSQL logical replication with Aurora
 
 By using PostgreSQL's logical replication feature with your Aurora PostgreSQL DB

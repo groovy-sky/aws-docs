@@ -1,3 +1,7 @@
+---
+title: "ElastiCache API and interface VPC endpoints (AWS PrivateLink)"
+---
+
 # ElastiCache API and interface VPC endpoints (AWS PrivateLink)
 
 You can establish a private connection between your VPC and Amazon ElastiCache API endpoints by

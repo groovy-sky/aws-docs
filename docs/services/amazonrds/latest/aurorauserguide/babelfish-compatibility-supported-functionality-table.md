@@ -1,3 +1,7 @@
+---
+title: "Supported functionalities in Babelfish by version"
+---
+
 # Supported functionalities in Babelfish by version
 
 In the following tables, you can find the list of all the functionalities supported by

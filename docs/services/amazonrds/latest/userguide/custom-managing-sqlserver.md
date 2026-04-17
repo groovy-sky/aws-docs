@@ -1,3 +1,7 @@
+---
+title: "Managing an Amazon RDS Custom for SQL Server DB instance"
+---
+
 # Managing an Amazon RDS Custom for SQL Server DB instance
 
 Amazon RDS Custom for SQL Server supports a subset of the usual management tasks for Amazon RDS DB instances.

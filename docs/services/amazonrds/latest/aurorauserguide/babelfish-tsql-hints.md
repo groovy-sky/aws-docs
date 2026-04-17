@@ -1,3 +1,7 @@
+---
+title: "Using T-SQL query hints to improve Babelfish query performance"
+---
+
 # Using T-SQL query hints to improve Babelfish query performance
 
 Starting with version 2.3.0, Babelfish supports the use of query hints using `pg_hint_plan`. In Aurora PostgreSQL,

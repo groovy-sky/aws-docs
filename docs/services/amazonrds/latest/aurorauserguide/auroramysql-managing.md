@@ -1,3 +1,7 @@
+---
+title: "Managing Amazon Aurora MySQL"
+---
+
 # Managing Amazon Aurora MySQL
 
 The following sections discuss managing an Amazon Aurora MySQL DB cluster.

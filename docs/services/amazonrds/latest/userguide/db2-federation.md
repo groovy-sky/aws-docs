@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Db2 federation"
+---
+
 # Amazon RDS for Db2 federation
 
 You can use your Amazon RDS for Db2 database as a federated database. After setting up

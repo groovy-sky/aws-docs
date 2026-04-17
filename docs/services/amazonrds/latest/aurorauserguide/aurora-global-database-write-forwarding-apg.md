@@ -1,3 +1,7 @@
+---
+title: "Using write forwarding in an Aurora PostgreSQL global database"
+---
+
 # Using write forwarding in an Aurora PostgreSQL global database
 
 ###### Topics

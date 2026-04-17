@@ -1,3 +1,7 @@
+---
+title: "Options for Amazon RDS for Db2 DB instances"
+---
+
 # Options for Amazon RDS for Db2 DB instances
 
 The following shows the options, or additional features, that are available for Amazon RDS

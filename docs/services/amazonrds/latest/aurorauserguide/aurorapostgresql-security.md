@@ -1,3 +1,7 @@
+---
+title: "Security with Amazon Aurora PostgreSQL"
+---
+
 # Security with Amazon Aurora PostgreSQL
 
 For a general overview of Aurora security, see [Security in Amazon Aurora](usingwithrds.md). You can manage security for Amazon Aurora PostgreSQL at a few

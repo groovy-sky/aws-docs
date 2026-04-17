@@ -1,3 +1,7 @@
+---
+title: "Managing the Global Status History for RDS for MySQL"
+---
+
 # Managing the Global Status History for RDS for MySQL
 
 ###### Tip

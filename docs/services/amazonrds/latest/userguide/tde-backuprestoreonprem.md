@@ -1,3 +1,7 @@
+---
+title: "Backing up and restoring TDE certificates for on-premises databases"
+---
+
 # Backing up and restoring TDE certificates for on-premises databases
 
 You can back up TDE certificates for on-premises databases, then later restore them

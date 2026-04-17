@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS on AWS Outposts"
+---
+
 # Amazon RDS on AWS Outposts
 
 Amazon RDS on AWS Outposts extends RDS for SQL Server, RDS for MySQL, RDS for PostgreSQL, and RDS for Oracle databases to AWS Outposts

@@ -1,3 +1,7 @@
+---
+title: "Tuning with wait events for RDS for PostgreSQL"
+---
+
 # Tuning with wait events for RDS for PostgreSQL
 
 Wait events are an important tuning tool for RDS for PostgreSQL. When you can find out why

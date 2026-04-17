@@ -1,3 +1,7 @@
+---
+title: "RDS Custom service-linked role"
+---
+
 # RDS Custom service-linked role
 
 A _service-linked role_ gives Amazon RDS Custom access to resources in your AWS account. It makes

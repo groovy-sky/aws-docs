@@ -1,3 +1,7 @@
+---
+title: "Uninstalling Trusted Language Extensions for PostgreSQL"
+---
+
 # Uninstalling Trusted Language Extensions for PostgreSQL
 
 If you no longer want to create your own TLE extensions using TLE, you

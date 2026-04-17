@@ -1,3 +1,7 @@
+---
+title: "LWLock:lock_manager (LWLock:lockmanager)"
+---
+
 # LWLock:lock\_manager (LWLock:lockmanager)
 
 This event occurs when the RDS for PostgreSQL engine maintains the shared lock's

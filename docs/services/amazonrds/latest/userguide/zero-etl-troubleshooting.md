@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Amazon RDS zero-ETL integrations"
+---
+
 # Troubleshooting Amazon RDS zero-ETL integrations
 
 You can check the state of a zero-ETL integration by querying the [SVV\_INTEGRATION](../../../redshift/latest/dg/r-svv-integration.md) system table in the

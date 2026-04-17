@@ -1,3 +1,7 @@
+---
+title: "Setting up your Amazon RDS environment"
+---
+
 # Setting up your Amazon RDS environment
 
 This page provides a comprehensive guide for setting up Amazon Relational Database Service, including account

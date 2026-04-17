@@ -1,3 +1,7 @@
+---
+title: "Granting fine-grained access for Performance Insights"
+---
+
 # Granting fine-grained access for Performance Insights
 
 Fine-grained access control offers additional ways of controlling access to Performance Insights. This

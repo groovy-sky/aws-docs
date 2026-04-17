@@ -1,3 +1,7 @@
+---
+title: "Creating Aurora zero-ETL integrations with Amazon Redshift"
+---
+
 # Creating Aurora zero-ETL integrations with Amazon Redshift
 
 When you create an Aurora zero-ETL integration, you specify the source Aurora DB cluster and the target Amazon Redshift data

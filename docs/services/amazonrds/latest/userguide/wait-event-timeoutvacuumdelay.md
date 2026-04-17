@@ -1,3 +1,7 @@
+---
+title: "Timeout:VacuumDelay"
+---
+
 # Timeout:VacuumDelay
 
 The `Timeout:VacuumDelay` event indicates that the cost limit for

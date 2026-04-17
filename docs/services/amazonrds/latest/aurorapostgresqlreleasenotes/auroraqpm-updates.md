@@ -1,3 +1,7 @@
+---
+title: "Aurora PostgreSQL query plan management updates"
+---
+
 # Aurora PostgreSQL query plan management updates
 
 The AWS `apg_plan_mgmt` extension provides your Aurora PostgreSQL DB cluster with

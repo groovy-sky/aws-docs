@@ -1,3 +1,7 @@
+---
+title: "Importing data into an Amazon RDS for MariaDB DB instance"
+---
+
 # Importing data into an Amazon RDS for MariaDB DB instance
 
 You can use several different techniques to import data into an RDS for MariaDB DB instance.

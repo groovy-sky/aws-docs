@@ -1,3 +1,7 @@
+---
+title: "RDS for Oracle database architecture"
+---
+
 # RDS for Oracle database architecture
 
 The _Oracle multitenant architecture_, also known as the

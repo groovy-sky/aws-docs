@@ -1,3 +1,7 @@
+---
+title: "Managing automated backups"
+---
+
 # Managing automated backups
 
 This section shows how to manage automated backups for DB instances and Multi-AZ DB clusters.

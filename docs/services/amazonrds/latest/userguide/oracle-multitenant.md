@@ -1,3 +1,7 @@
+---
+title: "Working with CDBs in RDS for Oracle"
+---
+
 # Working with CDBs in RDS for Oracle
 
 In the Oracle multitenant architecture, a container database (CDB) can include

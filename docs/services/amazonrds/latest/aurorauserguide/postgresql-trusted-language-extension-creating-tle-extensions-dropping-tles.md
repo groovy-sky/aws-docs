@@ -1,3 +1,7 @@
+---
+title: "Dropping your TLE extensions from a database"
+---
+
 # Dropping your TLE extensions from a database
 
 You can drop your TLE extensions by using the `DROP EXTENSION` command

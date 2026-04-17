@@ -1,3 +1,7 @@
+---
+title: "Rebooting nodes"
+---
+
 # Rebooting nodes
 
 Some changes require that a Valkey, Memcached, or Redis OSS cluster reboot for the changes to be applied.

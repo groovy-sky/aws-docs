@@ -1,3 +1,7 @@
+---
+title: "Migrating data from a MySQL DB snapshot to a MariaDB DB instance"
+---
+
 # Migrating data from a MySQL DB snapshot to a MariaDB DB instance
 
 You can migrate an RDS for MySQL DB snapshot to a new DB instance running MariaDB using the

@@ -1,3 +1,7 @@
+---
+title: "Renaming a DB instance"
+---
+
 # Renaming a DB instance
 
 You can rename a DB instance by using the AWS Management Console,

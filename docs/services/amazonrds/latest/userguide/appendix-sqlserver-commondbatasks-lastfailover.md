@@ -1,3 +1,7 @@
+---
+title: "Determining the last failover time for Amazon RDS for SQL Server"
+---
+
 # Determining the last failover time for Amazon RDS for SQL Server
 
 To determine the last failover time, use the following stored procedure:

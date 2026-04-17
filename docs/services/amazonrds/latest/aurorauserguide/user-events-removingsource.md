@@ -1,3 +1,7 @@
+---
+title: "Removing a source identifier from an Amazon RDS event notification subscription"
+---
+
 # Removing a source identifier from an Amazon RDS event notification subscription
 
 You can remove a source identifier (the Amazon RDS source generating the event) from a subscription if you no longer

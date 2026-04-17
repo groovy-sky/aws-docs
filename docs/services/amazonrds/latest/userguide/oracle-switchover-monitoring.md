@@ -1,3 +1,7 @@
+---
+title: "Monitoring the Oracle Data Guard switchover"
+---
+
 # Monitoring the Oracle Data Guard switchover
 
 To check the status of your instances, use the AWS CLI command `describe-db-instances`. The following

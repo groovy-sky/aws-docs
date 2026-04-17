@@ -1,3 +1,7 @@
+---
+title: "RDS for Oracle users and privileges"
+---
+
 # RDS for Oracle users and privileges
 
 When you create an Amazon RDS for Oracle DB instance, the default master user has most of the maximum

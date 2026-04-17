@@ -1,3 +1,7 @@
+---
+title: "Attaching to the remote RDS for Db2 DB instance"
+---
+
 # Attaching to the remote RDS for Db2 DB instance
 
 Use the following steps to attach to your remote RDS for Db2 DB instance and run `get snapshot` operations.

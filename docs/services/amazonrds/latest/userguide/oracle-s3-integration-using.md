@@ -1,3 +1,7 @@
+---
+title: "Transferring files between Amazon RDS for Oracle and an Amazon S3 bucket"
+---
+
 # Transferring files between Amazon RDS for Oracle and an Amazon S3 bucket
 
 To transfer files between an RDS for Oracle DB instance and an Amazon S3 bucket, you can use the

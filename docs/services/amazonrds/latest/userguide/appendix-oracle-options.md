@@ -1,3 +1,7 @@
+---
+title: "Adding options to Oracle DB instances"
+---
+
 # Adding options to Oracle DB instances
 
 In Amazon RDS, an _option_ is an additional feature. Following, you can find a description of

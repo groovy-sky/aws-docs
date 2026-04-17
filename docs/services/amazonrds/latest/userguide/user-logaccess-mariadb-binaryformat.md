@@ -1,3 +1,7 @@
+---
+title: "Configuring MariaDB binary logging"
+---
+
 # Configuring MariaDB binary logging
 
 The _binary log_ is a set of log files that contain information

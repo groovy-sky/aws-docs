@@ -1,3 +1,7 @@
+---
+title: "Working with RDS for Db2 replica backups"
+---
+
 # Working with RDS for Db2 replica backups
 
 You can create and restore backups of an RDS for Db2 replica just like a primary database. However, there are important differences in how replica backups work, particularly regarding restore timing and backup retention settings.

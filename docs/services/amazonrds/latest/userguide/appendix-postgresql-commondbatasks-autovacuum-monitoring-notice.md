@@ -1,3 +1,7 @@
+---
+title: "Explanation of the NOTICE messages in RDS for PostgreSQL"
+---
+
 # Explanation of the NOTICE messages in RDS for PostgreSQL
 
 The `postgres_get_av_diag()` function provides the following NOTICE

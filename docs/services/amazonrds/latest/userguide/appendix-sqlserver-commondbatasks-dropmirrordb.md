@@ -1,3 +1,7 @@
+---
+title: "Dropping a database in an Amazon RDS for Microsoft SQL Server DB instance"
+---
+
 # Dropping a database in an Amazon RDS for Microsoft SQL Server DB instance
 
 You can drop a database on an Amazon RDS DB instance running Microsoft SQL Server in a Single-AZ

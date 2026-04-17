@@ -1,3 +1,7 @@
+---
+title: "Turning on SSAS"
+---
+
 # Turning on SSAS
 
 Use the following process to turn on SSAS for your DB instance:

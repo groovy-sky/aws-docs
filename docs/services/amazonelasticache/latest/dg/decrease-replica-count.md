@@ -1,3 +1,7 @@
+---
+title: "Decreasing the number of replicas in a shard"
+---
+
 # Decreasing the number of replicas in a shard
 
 You can decrease the number of replicas in a shard for Valkey or Redis OSS (cluster mode enabled), or in a

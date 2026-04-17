@@ -1,3 +1,7 @@
+---
+title: "Example: Lettuce config for cluster mode, TLS enabled"
+---
+
 # Example: Lettuce config for cluster mode, TLS enabled
 
 ###### Note

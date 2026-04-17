@@ -1,3 +1,7 @@
+---
+title: "Considerations for restoring DB instances on Amazon RDS on AWS Outposts"
+---
+
 # Considerations for restoring DB instances on Amazon RDS on AWS Outposts
 
 When you restore a DB instance in Amazon RDS on AWS Outposts, you can generally choose the

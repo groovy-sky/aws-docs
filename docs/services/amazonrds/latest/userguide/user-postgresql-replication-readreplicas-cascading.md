@@ -1,3 +1,7 @@
+---
+title: "Using cascading read replicas with RDS for PostgreSQL"
+---
+
 # Using cascading read replicas with RDS for PostgreSQL
 
 As of version 14.1, RDS for PostgreSQL supports cascading read replicas. With _cascading read replicas_, you can scale reads without adding

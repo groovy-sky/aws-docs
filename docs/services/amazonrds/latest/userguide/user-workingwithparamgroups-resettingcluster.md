@@ -1,3 +1,7 @@
+---
+title: "Resetting parameters in a DB cluster parameter group"
+---
+
 # Resetting parameters in a DB cluster parameter group
 
 You can reset parameters to their default values in a customer-created DB cluster parameter group. Changes to parameters in a

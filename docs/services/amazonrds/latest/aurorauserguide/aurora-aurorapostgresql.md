@@ -1,3 +1,7 @@
+---
+title: "Working with Amazon Aurora PostgreSQL"
+---
+
 # Working with Amazon Aurora PostgreSQL
 
 Amazon Aurora PostgreSQL is a fully managed, PostgreSQL–compatible, and ACID–compliant relational

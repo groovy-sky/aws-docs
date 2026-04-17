@@ -1,3 +1,7 @@
+---
+title: "Monitoring events, logs, and streams in an Amazon RDS DB instance"
+---
+
 # Monitoring events, logs, and streams in an Amazon RDS DB instance
 
 When you monitor your Amazon RDS

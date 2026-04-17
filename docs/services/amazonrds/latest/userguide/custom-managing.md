@@ -1,3 +1,7 @@
+---
+title: "Managing an Amazon RDS Custom for Oracle DB instance"
+---
+
 # Managing an Amazon RDS Custom for Oracle DB instance
 
 ###### Note

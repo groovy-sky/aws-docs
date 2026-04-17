@@ -1,3 +1,7 @@
+---
+title: "Checking your data after the update of the time zone file"
+---
+
 # Checking your data after the update of the time zone file
 
 We recommend that you check your data after you update the time zone file. During the prepare step, RDS for

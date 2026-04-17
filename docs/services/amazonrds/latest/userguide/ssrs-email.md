@@ -1,3 +1,7 @@
+---
+title: "Using SSRS Email to send reports"
+---
+
 # Using SSRS Email to send reports
 
 SSRS includes the SSRS Email extension, which you can use to send reports to

@@ -1,3 +1,7 @@
+---
+title: "Installing a Siebel database on Oracle on Amazon RDS"
+---
+
 # Installing a Siebel database on Oracle on Amazon RDS
 
 You can use Amazon RDS to host a Siebel Database on an Oracle DB instance.

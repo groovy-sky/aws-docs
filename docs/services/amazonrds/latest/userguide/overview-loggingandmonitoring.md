@@ -1,3 +1,7 @@
+---
+title: "Logging and monitoring in Amazon RDS"
+---
+
 # Logging and monitoring in Amazon RDS
 
 Monitoring is an important part of maintaining the reliability, availability, and

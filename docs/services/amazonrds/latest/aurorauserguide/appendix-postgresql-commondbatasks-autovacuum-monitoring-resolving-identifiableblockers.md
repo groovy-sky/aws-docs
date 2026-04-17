@@ -1,3 +1,7 @@
+---
+title: "Resolving identifiable vacuum blockers in Aurora PostgreSQL"
+---
+
 # Resolving identifiable vacuum blockers in Aurora PostgreSQL
 
 Autovacuum performs aggressive vacuums and lowers the age of transaction IDs to below the

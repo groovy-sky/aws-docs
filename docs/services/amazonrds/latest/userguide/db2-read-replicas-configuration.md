@@ -1,3 +1,7 @@
+---
+title: "Preparing to create an RDS for Db2 replica"
+---
+
 # Preparing to create an RDS for Db2 replica
 
 Before creating an RDS for Db2 replica, you must complete the following tasks for successful

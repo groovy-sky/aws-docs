@@ -1,3 +1,7 @@
+---
+title: "Infrastructure security in Amazon RDS"
+---
+
 # Infrastructure security in Amazon RDS
 
 As a managed service, Amazon Relational Database Service is protected by AWS global network security. For

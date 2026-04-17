@@ -1,3 +1,7 @@
+---
+title: "Monitoring the status of a file transfer task"
+---
+
 # Monitoring the status of a file transfer task
 
 To track the status of your S3 integration task, call the `rds_fn_task_status` function. It takes two parameters.

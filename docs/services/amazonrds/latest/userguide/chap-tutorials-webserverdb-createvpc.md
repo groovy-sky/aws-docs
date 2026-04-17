@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a VPC for use with a DB instance (IPv4 only)"
+---
+
 # Tutorial: Create a VPC for use with a DB instance (IPv4 only)
 
 A common scenario includes a DB instance in a virtual private cloud (VPC) based on the Amazon VPC

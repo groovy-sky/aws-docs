@@ -1,3 +1,7 @@
+---
+title: "Initiating the Oracle Data Guard switchover"
+---
+
 # Initiating the Oracle Data Guard switchover
 
 You can switch over an RDS for Oracle read replica to the primary role, and the former primary DB instance to a replica role.

@@ -1,3 +1,7 @@
+---
+title: "Configuring active-active clusters for RDS for MySQL"
+---
+
 # Configuring active-active clusters for RDS for MySQL
 
 An active-active cluster in Amazon RDS is a database configuration where multiple nodes

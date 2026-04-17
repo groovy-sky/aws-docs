@@ -1,3 +1,7 @@
+---
+title: "Support for Microsoft Distributed Transaction Coordinator in RDS for SQL Server"
+---
+
 # Support for Microsoft Distributed Transaction Coordinator in RDS for SQL Server
 
 A _distributed transaction_ is a database transaction in

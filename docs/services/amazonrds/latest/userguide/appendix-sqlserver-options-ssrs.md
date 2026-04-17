@@ -1,3 +1,7 @@
+---
+title: "Support for SQL Server Reporting Services in Amazon RDS for SQL Server"
+---
+
 # Support for SQL Server Reporting Services in Amazon RDS for SQL Server
 
 Microsoft SQL Server Reporting Services (SSRS) is a server-based application used for report

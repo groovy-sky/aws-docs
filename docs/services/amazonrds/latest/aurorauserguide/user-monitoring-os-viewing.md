@@ -1,3 +1,7 @@
+---
+title: "Viewing OS metrics in the RDS console"
+---
+
 # Viewing OS metrics in the RDS console
 
 You can view OS metrics reported by Enhanced Monitoring in the RDS console by

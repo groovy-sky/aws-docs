@@ -1,3 +1,7 @@
+---
+title: "Using SSIS"
+---
+
 # Using SSIS
 
 After deploying the SSIS project into the SSIS catalog, you can run packages directly from

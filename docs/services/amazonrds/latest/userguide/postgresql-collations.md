@@ -1,3 +1,7 @@
+---
+title: "Collations supported in  RDS for PostgreSQL"
+---
+
 # Collations supported in RDS for PostgreSQL
 
 Collations are set of rules that determine how character strings stored in the database

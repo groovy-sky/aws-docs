@@ -1,3 +1,7 @@
+---
+title: "Monitoring Amazon Aurora databases with CloudWatch Database Insights"
+---
+
 # Monitoring Amazon Aurora databases with CloudWatch Database Insights
 
 Monitor the database load (DB Load) for your fleet of Amazon Aurora DB instances with Database Insights. DB Load measures the level of session activity in your database. You can use Database Insights to analyze and troubleshoot the performance of your Amazon Aurora databases at scale.

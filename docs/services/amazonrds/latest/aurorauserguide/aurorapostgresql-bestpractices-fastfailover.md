@@ -1,3 +1,7 @@
+---
+title: "Fast failover with Amazon Aurora PostgreSQL"
+---
+
 # Fast failover with Amazon Aurora PostgreSQL
 
 Following, you can learn how to make sure that failover occurs as fast as possible. To

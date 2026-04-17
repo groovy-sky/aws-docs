@@ -1,3 +1,7 @@
+---
+title: "Considerations for security groups"
+---
+
 # Considerations for security groups
 
 For you to connect to your DB instance, it must be associated with a security group that contains the necessary IP addresses and network

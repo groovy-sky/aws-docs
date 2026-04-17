@@ -1,3 +1,7 @@
+---
+title: "SQL statistics for Performance Insights"
+---
+
 # SQL statistics for Performance Insights
 
 _SQL statistics_ are performance-related metrics about SQL queries that are collected by Performance Insights.

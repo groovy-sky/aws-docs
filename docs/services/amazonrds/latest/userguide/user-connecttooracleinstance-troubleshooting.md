@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting connections to your Oracle DB instance"
+---
+
 # Troubleshooting connections to your Oracle DB instance
 
 The following are issues you might encounter when you try to connect to your Oracle DB instance.

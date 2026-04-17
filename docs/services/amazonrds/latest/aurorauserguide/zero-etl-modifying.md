@@ -1,3 +1,7 @@
+---
+title: "Modifying Aurora zero-ETL integrations"
+---
+
 # Modifying Aurora zero-ETL integrations
 
 You can modify only the name, description, and data filtering options for a zero-ETL integration

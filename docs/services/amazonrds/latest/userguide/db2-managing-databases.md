@@ -1,3 +1,7 @@
+---
+title: "Common tasks for databases"
+---
+
 # Common tasks for databases
 
 You can create, drop, or restore databases on your RDS for Db2 DB instance. Creating,

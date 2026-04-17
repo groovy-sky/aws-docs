@@ -1,3 +1,7 @@
+---
+title: "Viewing temporary file usage with Performance Insights"
+---
+
 # Viewing temporary file usage with Performance Insights
 
 You can use Performance Insights to view temporary file usage by turning on the metrics

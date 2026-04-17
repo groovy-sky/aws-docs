@@ -1,3 +1,7 @@
+---
+title: "Examples: Invoking Lambda functions from your Aurora PostgreSQL DB cluster"
+---
+
 # Examples: Invoking Lambda functions from your Aurora PostgreSQL DB cluster
 
 Following, you can find several examples of calling the [aws\_lambda.invoke](postgresql-lambda-functions.md#aws_lambda.invoke) function. Most of the examples

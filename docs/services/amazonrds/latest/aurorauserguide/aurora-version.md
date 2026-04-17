@@ -1,3 +1,7 @@
+---
+title: "aurora_version"
+---
+
 # aurora\_version
 
 Returns the string value of the Amazon Aurora PostgreSQL-Compatible Edition version number.

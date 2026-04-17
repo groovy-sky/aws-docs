@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting applications on Aurora"
+---
+
 # Troubleshooting applications on Aurora
 
 Amazon RDS provides specific and descriptive errors to help you troubleshoot problems

@@ -1,3 +1,7 @@
+---
+title: "Requirements and considerations for RDS for Db2 replicas"
+---
+
 # Requirements and considerations for RDS for Db2 replicas
 
 Db2 replica requirements fall into several categories: licensing and versioning, backup

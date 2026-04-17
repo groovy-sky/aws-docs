@@ -1,3 +1,7 @@
+---
+title: "AWS Lambda function and parameter reference"
+---
+
 # AWS Lambda function and parameter reference
 
 Following is the reference for the functions and parameters to use for invoking Lambda with

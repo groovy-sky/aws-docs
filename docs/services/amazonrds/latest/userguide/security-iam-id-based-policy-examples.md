@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon RDS"
+---
+
 # Identity-based policy examples for Amazon RDS
 
 By default, permission sets and roles don't have permission to create or modify

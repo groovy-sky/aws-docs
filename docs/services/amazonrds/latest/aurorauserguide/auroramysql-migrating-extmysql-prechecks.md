@@ -1,3 +1,7 @@
+---
+title: "Reducing the time for physical migration to Amazon Aurora MySQL"
+---
+
 # Reducing the time for physical migration to Amazon Aurora MySQL
 
 You can make the following database modifications to speed up the process of migrating a database to

@@ -1,3 +1,7 @@
+---
+title: "Analyzing your database workload on an Amazon RDS for SQL Server DB instance with Database Engine Tuning Advisor"
+---
+
 # Analyzing your database workload on an Amazon RDS for SQL Server DB instance with Database Engine Tuning Advisor
 
 Database Engine Tuning Advisor is a client application provided by Microsoft that analyzes database workload and recommends an

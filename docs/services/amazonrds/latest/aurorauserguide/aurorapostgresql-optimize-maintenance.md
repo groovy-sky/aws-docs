@@ -1,3 +1,7 @@
+---
+title: "Improving Aurora PostgreSQL query plans"
+---
+
 # Improving Aurora PostgreSQL query plans
 
 Improve query plan management by evaluating plan performance and fixing plans. For

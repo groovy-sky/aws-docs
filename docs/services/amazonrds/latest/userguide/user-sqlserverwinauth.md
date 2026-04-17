@@ -1,3 +1,7 @@
+---
+title: "Working with AWS Managed Active Directory with RDS for SQL Server"
+---
+
 # Working with AWS Managed Active Directory with RDS for SQL Server
 
 You can use AWS Managed Microsoft AD to authenticate users with Windows Authentication when they connect to your

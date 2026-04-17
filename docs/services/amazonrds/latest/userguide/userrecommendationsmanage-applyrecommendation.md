@@ -1,3 +1,7 @@
+---
+title: "Applying Amazon RDS recommendations"
+---
+
 # Applying Amazon RDS recommendations
 
 To apply Amazon RDS recommendations using the Amazon RDS console, select a configuration based recommendation or an affected resource in the details page.

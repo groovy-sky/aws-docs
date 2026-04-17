@@ -1,3 +1,7 @@
+---
+title: "Support for SQL Server Integration Services in Amazon RDS for SQL Server"
+---
+
 # Support for SQL Server Integration Services in Amazon RDS for SQL Server
 
 Microsoft SQL Server Integration Services (SSIS) is a component that you can use to perform

@@ -1,3 +1,7 @@
+---
+title: "Setting up an SSL connection over JDBC"
+---
+
 # Setting up an SSL connection over JDBC
 
 To use an SSL connection over JDBC, you must create a keystore, trust the Amazon RDS

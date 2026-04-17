@@ -1,3 +1,7 @@
+---
+title: "Modifying a database activity stream for Amazon RDS"
+---
+
 # Modifying a database activity stream for Amazon RDS
 
 You might want to customize your Amazon RDS audit policy when your activity stream is started. If you don't want to lose time and data by

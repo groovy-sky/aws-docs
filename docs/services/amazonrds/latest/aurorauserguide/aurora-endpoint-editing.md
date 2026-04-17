@@ -1,3 +1,7 @@
+---
+title: "Editing a custom endpoint"
+---
+
 # Editing a custom endpoint
 
 You can edit the properties of a custom endpoint to change which DB instances are

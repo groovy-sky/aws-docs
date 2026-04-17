@@ -1,3 +1,7 @@
+---
+title: "Managing PostgreSQL partitions with the pg_partman extension"
+---
+
 # Managing PostgreSQL partitions with the pg\_partman extension
 
 PostgreSQL table partitioning provides a framework for high-performance handling of data

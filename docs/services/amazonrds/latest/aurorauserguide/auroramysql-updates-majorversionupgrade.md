@@ -1,3 +1,7 @@
+---
+title: "Upgrading the major version of an Amazon Aurora MySQL DB cluster"
+---
+
 # Upgrading the major version of an Amazon Aurora MySQL DB cluster
 
 In an Aurora MySQL version number such as 3.04.1, the 3 represents the major version. Aurora MySQL version 2 is compatible with MySQL 5.7. Aurora MySQL
@@ -128,12 +132,6 @@ Aurora MySQL provisioned cluster, version 3
 Not applicable
 
 Use a minor version upgrade procedure to upgrade between Aurora MySQL version 3 versions.
-
-Aurora Serverless v1 cluster
-
-Not applicable
-
-Aurora Serverless v1 is supported for Aurora MySQL only on version 2.
 
 Aurora Serverless v2 cluster
 

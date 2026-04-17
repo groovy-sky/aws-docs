@@ -1,3 +1,7 @@
+---
+title: "Parameters for logging in Aurora PostgreSQL"
+---
+
 # Parameters for logging in Aurora PostgreSQL
 
 You can customize the logging behavior for your Aurora PostgreSQL DB cluster

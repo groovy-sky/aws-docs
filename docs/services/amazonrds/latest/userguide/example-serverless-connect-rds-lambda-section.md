@@ -1,3 +1,7 @@
+---
+title: "Connecting to an Amazon RDS database in a Lambda function"
+---
+
 # Connecting to an Amazon RDS database in a Lambda function
 
 The following code examples show how to implement a Lambda function that connects to an RDS database. The function makes a simple database request and returns the result.

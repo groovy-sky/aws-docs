@@ -1,3 +1,7 @@
+---
+title: "Security in  Amazon Aurora"
+---
+
 # Security in Amazon Aurora
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a

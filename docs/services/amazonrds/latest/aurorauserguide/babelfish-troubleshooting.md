@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Babelfish"
+---
+
 # Troubleshooting Babelfish
 
 Following, you can find troubleshooting ideas and workarounds for some

@@ -1,3 +1,7 @@
+---
+title: "Collations supported in Aurora PostgreSQL"
+---
+
 # Collations supported in Aurora PostgreSQL
 
 Collations are set of rules that determine how character strings stored in the database

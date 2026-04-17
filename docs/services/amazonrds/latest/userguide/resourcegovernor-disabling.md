@@ -1,3 +1,7 @@
+---
+title: "Disabling Microsoft SQL Server resource governor for your RDS for SQL Server instance"
+---
+
 # Disabling Microsoft SQL Server resource governor for your RDS for SQL Server instance
 
 When you disable resource governor on RDS for SQL Server,

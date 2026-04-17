@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting connections to your RDS for PostgreSQL instance"
+---
+
 # Troubleshooting connections to your RDS for PostgreSQL instance
 
 ###### Topics

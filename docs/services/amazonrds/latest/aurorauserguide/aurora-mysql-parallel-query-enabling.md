@@ -1,3 +1,7 @@
+---
+title: "Turning parallel query on and off in Aurora MySQL"
+---
+
 # Turning parallel query on and off in Aurora MySQL
 
 When parallel query is turned on, Aurora MySQL determines whether to use it at runtime for each query. In the case of joins,

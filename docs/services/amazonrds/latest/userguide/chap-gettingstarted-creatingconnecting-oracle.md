@@ -1,3 +1,7 @@
+---
+title: "Creating and connecting to an Oracle DB instance"
+---
+
 # Creating and connecting to an Oracle DB instance
 
 This tutorial creates an EC2 instance and an RDS for Oracle DB instance. The tutorial shows you how to

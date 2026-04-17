@@ -1,3 +1,7 @@
+---
+title: "Testing an Oracle DB upgrade"
+---
+
 # Testing an Oracle DB upgrade
 
 Before you upgrade your DB instance to a major version, thoroughly test your database and all applications that

@@ -1,3 +1,7 @@
+---
+title: "Transportable databases function reference"
+---
+
 # Transportable databases function reference
 
 The `transport.import_from_server` function transports a PostgreSQL

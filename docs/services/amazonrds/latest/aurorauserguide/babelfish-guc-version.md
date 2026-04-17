@@ -1,3 +1,7 @@
+---
+title: "Using Babelfish product version parameter"
+---
+
 # Using Babelfish product version parameter
 
 A new Grand Unified Configuration (GUC) parameter called

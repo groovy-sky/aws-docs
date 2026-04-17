@@ -1,3 +1,7 @@
+---
+title: "Updating read replicas with MySQL"
+---
+
 # Updating read replicas with MySQL
 
 Read replicas are designed to support read queries, but you might need occasional updates.

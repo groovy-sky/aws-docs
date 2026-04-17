@@ -1,3 +1,7 @@
+---
+title: "Monitoring parallel query for Aurora MySQL"
+---
+
 # Monitoring parallel query for Aurora MySQL
 
 If your Aurora MySQL cluster uses parallel query, you might see an increase in `VolumeReadIOPS` values.

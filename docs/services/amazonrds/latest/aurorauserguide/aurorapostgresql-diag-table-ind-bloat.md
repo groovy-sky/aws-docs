@@ -1,3 +1,7 @@
+---
+title: "Diagnosing table and index bloat"
+---
+
 # Diagnosing table and index bloat
 
 You can use PostgreSQL Multiversion Concurrency Control (MVCC) to help preserve data

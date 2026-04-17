@@ -1,3 +1,7 @@
+---
+title: "Deleting RDS Custom for SQL Server automated backups"
+---
+
 # Deleting RDS Custom for SQL Server automated backups
 
 You can delete retained automated backups for RDS Custom for SQL Server when they are no longer needed. The procedure is the

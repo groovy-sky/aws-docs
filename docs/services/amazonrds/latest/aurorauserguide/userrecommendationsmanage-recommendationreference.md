@@ -1,3 +1,7 @@
+---
+title: "Recommendations from Amazon Aurora reference"
+---
+
 # Recommendations from Amazon Aurora reference
 
 Amazon Aurora generates recommendations for a resource when the resource is

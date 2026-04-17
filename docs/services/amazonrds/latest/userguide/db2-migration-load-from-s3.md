@@ -1,3 +1,7 @@
+---
+title: "Migrating Db2 data through Amazon S3 to Amazon RDS for Db2"
+---
+
 # Migrating Db2 data through Amazon S3 to Amazon RDS for Db2
 
 With this migration approach, you first save data from a single table into a data file

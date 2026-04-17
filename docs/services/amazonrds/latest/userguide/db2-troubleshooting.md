@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting for Amazon RDS for Db2"
+---
+
 # Troubleshooting for Amazon RDS for Db2
 
 The following content can help you troubleshoot issues that you encounter with

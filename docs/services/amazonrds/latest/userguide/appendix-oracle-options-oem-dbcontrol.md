@@ -1,3 +1,7 @@
+---
+title: "Oracle Enterprise Manager Database Express"
+---
+
 # Oracle Enterprise Manager Database Express
 
 Amazon RDS supports Oracle Enterprise Manager Database Express (EM Express) through the use of

@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora PostgreSQL reference"
+---
+
 # Amazon Aurora PostgreSQL reference
 
 In the following topics, you can find information about collations, functions, parameters,

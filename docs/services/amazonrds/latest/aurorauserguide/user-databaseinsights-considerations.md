@@ -1,3 +1,7 @@
+---
+title: "Considerations for Database Insights for  Amazon Aurora"
+---
+
 # Considerations for Database Insights for Amazon Aurora
 
 Following are considerations for Database Insights for Amazon Aurora.

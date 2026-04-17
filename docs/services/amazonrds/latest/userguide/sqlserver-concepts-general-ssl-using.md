@@ -1,3 +1,7 @@
+---
+title: "Using SSL with a Microsoft SQL Server DB instance"
+---
+
 # Using SSL with a Microsoft SQL Server DB instance
 
 You can use Secure Sockets Layer (SSL) to encrypt connections between your client

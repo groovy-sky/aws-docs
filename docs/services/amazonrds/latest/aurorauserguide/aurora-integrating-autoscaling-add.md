@@ -1,3 +1,7 @@
+---
+title: "Adding an auto scaling policy to an Amazon Aurora DB cluster"
+---
+
 # Adding an auto scaling policy to an Amazon Aurora DB cluster
 
 You can add a scaling policy using the AWS Management Console, the AWS CLI, or the Application Auto Scaling API.

@@ -1,3 +1,7 @@
+---
+title: "Using Aurora PostgreSQL managed plans"
+---
+
 # Using Aurora PostgreSQL managed plans
 
 To get the optimizer to use captured plans for your managed statements, set the

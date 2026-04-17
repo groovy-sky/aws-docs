@@ -1,3 +1,7 @@
+---
+title: "RDS Proxy command-line examples"
+---
+
 # RDS Proxy command-line examples
 
 To see how combinations of connection commands and SQL statements interact with RDS Proxy, look at the following

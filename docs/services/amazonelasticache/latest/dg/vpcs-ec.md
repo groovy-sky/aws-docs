@@ -1,3 +1,7 @@
+---
+title: "Understanding ElastiCache and Amazon VPCs"
+---
+
 # Understanding ElastiCache and Amazon VPCs
 
 ElastiCache is fully integrated with the Amazon Virtual Private Cloud (Amazon VPC). For ElastiCache users, this means the following:

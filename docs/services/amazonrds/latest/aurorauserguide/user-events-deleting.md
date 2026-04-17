@@ -1,3 +1,7 @@
+---
+title: "Deleting an Amazon RDS event notification subscription"
+---
+
 # Deleting an Amazon RDS event notification subscription
 
 You can delete a subscription when you no longer need it. All subscribers to the topic will no longer receive

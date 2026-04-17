@@ -1,3 +1,7 @@
+---
+title: "Understanding the behavior of autovacuum with invalid databases"
+---
+
 # Understanding the behavior of autovacuum with invalid databases
 
 A new value `-2` is introduced into the `datconnlimit` column in the

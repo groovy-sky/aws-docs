@@ -1,3 +1,7 @@
+---
+title: "Aurora PostgreSQL Limitless Database views"
+---
+
 # Aurora PostgreSQL Limitless Database views
 
 The following table shows the new views for Aurora PostgreSQL Limitless Database.

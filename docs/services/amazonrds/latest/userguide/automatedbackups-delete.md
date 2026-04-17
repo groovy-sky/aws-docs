@@ -1,3 +1,7 @@
+---
+title: "Deleting replicated backups for Amazon RDS"
+---
+
 # Deleting replicated backups for Amazon RDS
 
 You can delete replicated backups for DB instances using the Amazon RDS console. You can also use the `delete-db-instance-automated-backups` AWS CLI

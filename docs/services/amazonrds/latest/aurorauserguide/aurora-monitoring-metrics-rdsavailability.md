@@ -1,3 +1,7 @@
+---
+title: "Availability of Aurora metrics in the Amazon RDS console"
+---
+
 # Availability of Aurora metrics in the Amazon RDS console
 
 Not all metrics provided by Amazon Aurora are available in the Amazon RDS console. You can view these metrics using tools

@@ -1,3 +1,7 @@
+---
+title: "Modifying an Amazon RDS event notification subscription"
+---
+
 # Modifying an Amazon RDS event notification subscription
 
 After you have created a subscription, you can change the subscription name, source identifier, categories, or

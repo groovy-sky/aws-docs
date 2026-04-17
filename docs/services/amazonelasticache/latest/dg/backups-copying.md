@@ -1,3 +1,7 @@
+---
+title: "Copying backups"
+---
+
 # Copying backups
 
 You can create a copy of any backup, whether it was created automatically or manually.

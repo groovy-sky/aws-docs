@@ -1,3 +1,7 @@
+---
+title: "Using AD security groups for Aurora PostgreSQL access control"
+---
+
 # Using AD security groups for Aurora PostgreSQL access control
 
 From Aurora PostgreSQL 14.10 and 15.5 versions, Aurora PostgreSQL access control can be managed

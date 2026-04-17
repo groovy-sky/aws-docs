@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Aurora Blue/Green Deployments for database updates"
+---
+
 # Using Amazon Aurora Blue/Green Deployments for database updates
 
 A blue/green deployment copies a production database environment to a separate,

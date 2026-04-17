@@ -1,3 +1,7 @@
+---
+title: "Creating a rule that triggers on an Amazon Aurora event"
+---
+
 # Creating a rule that triggers on an Amazon Aurora event
 
 Using Amazon EventBridge, you can automate AWS services and respond to system events such as application

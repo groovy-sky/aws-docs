@@ -1,3 +1,7 @@
+---
+title: "Setting table-level autovacuum parameters"
+---
+
 # Setting table-level autovacuum parameters
 
 You can set autovacuum-related [storage parameters](https://www.postgresql.org/docs/current/static/sql-createtable.html) at a table level, which can be better than altering the behavior

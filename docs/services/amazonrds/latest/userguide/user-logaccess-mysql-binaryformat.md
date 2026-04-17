@@ -1,3 +1,7 @@
+---
+title: "Configuring  RDS for MySQL binary logging for Single-AZ databases"
+---
+
 # Configuring RDS for MySQL binary logging for Single-AZ databases
 
 The _binary log_ is a set of log files that contain information about

@@ -1,3 +1,7 @@
+---
+title: "Modifying a replication group"
+---
+
 # Modifying a replication group
 
 ###### Important Constraints

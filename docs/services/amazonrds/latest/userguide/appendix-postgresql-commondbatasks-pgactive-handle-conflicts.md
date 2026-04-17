@@ -1,3 +1,7 @@
+---
+title: "Handling conflicts in active-active replication"
+---
+
 # Handling conflicts in active-active replication
 
 The `pgactive` extension works per database and not per cluster. Each DB instance

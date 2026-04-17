@@ -1,3 +1,7 @@
+---
+title: "Importing transported tablespaces to your DB instance"
+---
+
 # Importing transported tablespaces to your DB instance
 
 Use the procedure `rdsadmin.rdsadmin_transport_util.import_xtts_tablespaces` to

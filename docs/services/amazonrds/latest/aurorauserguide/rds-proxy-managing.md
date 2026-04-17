@@ -1,3 +1,7 @@
+---
+title: "Managing an RDS Proxy"
+---
+
 # Managing an RDS Proxy
 
 This section provides information on how to manage RDS Proxy operation and configuration. These

@@ -1,3 +1,7 @@
+---
+title: "Creating a read replica"
+---
+
 # Creating a read replica
 
 You can create a read replica from an existing DB instance using the AWS Management Console, AWS CLI, or RDS

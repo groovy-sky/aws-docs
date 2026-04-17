@@ -1,3 +1,7 @@
+---
+title: "Deleting a subnet group"
+---
+
 # Deleting a subnet group
 
 If you decide that you no longer need your subnet group, you can delete it.

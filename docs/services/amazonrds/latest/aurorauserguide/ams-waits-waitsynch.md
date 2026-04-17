@@ -1,3 +1,7 @@
+---
+title: "synch/mutex/innodb/aurora_lock_thread_slot_futex"
+---
+
 # synch/mutex/innodb/aurora\_lock\_thread\_slot\_futex
 
 The `synch/mutex/innodb/aurora_lock_thread_slot_futex`

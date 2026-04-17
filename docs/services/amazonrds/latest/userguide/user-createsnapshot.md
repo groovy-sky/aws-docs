@@ -1,3 +1,7 @@
+---
+title: "Creating a DB snapshot for a Single-AZ DB instance for Amazon RDS"
+---
+
 # Creating a DB snapshot for a Single-AZ DB instance for Amazon RDS
 
 Amazon RDS creates a storage volume snapshot of your DB instance, backing up the entire DB instance and not just individual databases.

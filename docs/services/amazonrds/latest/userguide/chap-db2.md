@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Db2"
+---
+
 # Amazon RDS for Db2
 
 Amazon RDS supports DB instances that run the following editions of IBM Db2:

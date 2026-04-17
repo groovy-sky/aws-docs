@@ -1,3 +1,7 @@
+---
+title: "SSL/TLS support for MariaDB DB instances on Amazon RDS"
+---
+
 # SSL/TLS support for MariaDB DB instances on Amazon RDS
 
 Amazon RDS creates an SSL/TLS certificate and installs the certificate on the DB instance

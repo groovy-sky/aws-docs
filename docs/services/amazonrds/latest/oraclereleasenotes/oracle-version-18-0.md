@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Oracle Database 18c (18.0.0.0)"
+---
+
 # Amazon RDS for Oracle Database 18c (18.0.0.0)
 
 Amazon RDS for Oracle Database 18c (18.0.0.0) incorporates bug fixes from Oracle by using Release Updates (RUs).

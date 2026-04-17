@@ -1,3 +1,7 @@
+---
+title: "Analyzing top Oracle PDB load"
+---
+
 # Analyzing top Oracle PDB load
 
 When analyzing the load on an Oracle container DB (CDB), you might want to

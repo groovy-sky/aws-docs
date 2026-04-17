@@ -1,3 +1,7 @@
+---
+title: "Identify and resolve aggressive vacuum blockers in RDS for PostgreSQL"
+---
+
 # Identify and resolve aggressive vacuum blockers in RDS for PostgreSQL
 
 In PostgreSQL, vacuuming is vital for ensuring database health as it reclaims storage and

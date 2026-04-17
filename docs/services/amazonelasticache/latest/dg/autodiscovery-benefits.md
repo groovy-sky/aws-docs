@@ -1,3 +1,7 @@
+---
+title: "Benefits of Auto Discovery with Memcached"
+---
+
 # Benefits of Auto Discovery with Memcached
 
 When using Memcached, Auto Discovery offers the following benefits:

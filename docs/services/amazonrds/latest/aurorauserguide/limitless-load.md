@@ -1,3 +1,7 @@
+---
+title: "Loading data into Aurora PostgreSQL Limitless Database"
+---
+
 # Loading data into Aurora PostgreSQL Limitless Database
 
 You can load data into Aurora PostgreSQL Limitless Database tables by using the `COPY` command or by using the data loading utility.

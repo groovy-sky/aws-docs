@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a web server and an Amazon Aurora DB cluster"
+---
+
 # Tutorial: Create a web server and an Amazon Aurora DB cluster
 
 This tutorial shows you how to install an Apache web server with PHP and create a MariaDB, MySQL,

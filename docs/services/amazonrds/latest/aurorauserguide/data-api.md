@@ -1,3 +1,7 @@
+---
+title: "Using the Amazon RDS Data API"
+---
+
 # Using the Amazon RDS Data API
 
 By using RDS Data API (Data API), you can work with a web-services interface to your
@@ -32,8 +36,6 @@ without configuring a query tool to access Aurora in a VPC. For more information
 
 - [Limitations for the Amazon RDS Data API](data-api-limitations.md)
 
-- [Comparing Amazon RDS Data API behaviors for Aurora Serverless v2 and provisioned clusters with Aurora Serverless v1 clusters](data-api-differences.md)
-
 - [Authorizing access to the Amazon RDS Data API](data-api-access.md)
 
 - [Enabling the Amazon RDS Data API](data-api-enabling.md)
@@ -54,7 +56,7 @@ without configuring a query tool to access Aurora in a VPC. For more information
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Aurora Serverless v1 and Aurora database engine versions
+Scaling to 0 ACUs with auto-pause and resume
 
 Region and version availability for the Amazon RDS Data API
 

@@ -1,3 +1,7 @@
+---
+title: "Resolving vacuum performance issues in Aurora PostgreSQL"
+---
+
 # Resolving vacuum performance issues in Aurora PostgreSQL
 
 This section discusses factors that often contribute to slower vacuum performance and how

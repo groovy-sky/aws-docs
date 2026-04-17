@@ -1,3 +1,7 @@
+---
+title: "Creating a DB cluster that uses Aurora Serverless v2"
+---
+
 # Creating a DB cluster that uses Aurora Serverless v2
 
 To create an Aurora cluster where you can add Aurora Serverless v2 DB instances, you follow the same procedure as
@@ -141,8 +145,7 @@ aws rds create-db-cluster \
 ###### Note
 
 When you create an Aurora Serverless v2 DB cluster using the AWS CLI, the engine mode appears in the output as
-`provisioned` rather than `serverless`. The `serverless` engine mode refers to
-Aurora Serverless v1.
+`provisioned` rather than `serverless`.
 
 This example specifies the `--manage-master-user-password` option to generate the administrative password and
 manage it in Secrets Manager. For more information, see [Password management with Amazon Aurora and AWS Secrets Manager](rds-secrets-manager.md).

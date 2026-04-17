@@ -1,3 +1,7 @@
+---
+title: "Managing manual backups"
+---
+
 # Managing manual backups
 
 This section shows how to manage manual backups for DB instances and DB clusters.

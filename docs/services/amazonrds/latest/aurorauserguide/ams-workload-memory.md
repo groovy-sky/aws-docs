@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting memory usage issues for Aurora MySQL databases"
+---
+
 # Troubleshooting memory usage issues for Aurora MySQL databases
 
 While CloudWatch, Enhanced Monitoring, and Performance Insights provide a good overview of memory usage at the operating system level, such as how much memory the database process

@@ -1,3 +1,7 @@
+---
+title: "Creating a database account using IAM authentication"
+---
+
 # Creating a database account using IAM authentication
 
 With IAM database authentication, you don't need to assign database passwords to the

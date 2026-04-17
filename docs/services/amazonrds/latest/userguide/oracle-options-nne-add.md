@@ -1,3 +1,7 @@
+---
+title: "Adding the NATIVE_NETWORK_ENCRYPTION option"
+---
+
 # Adding the NATIVE\_NETWORK\_ENCRYPTION option
 
 The general process for adding the `NATIVE_NETWORK_ENCRYPTION` option to a

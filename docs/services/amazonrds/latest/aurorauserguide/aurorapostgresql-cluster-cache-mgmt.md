@@ -1,3 +1,7 @@
+---
+title: "Fast recovery after failover with cluster cache management for Aurora PostgreSQL"
+---
+
 # Fast recovery after failover with cluster cache management for Aurora PostgreSQL
 
 For fast recovery of the writer DB instance in your Aurora PostgreSQL clusters if there's a

@@ -1,3 +1,7 @@
+---
+title: "Sending AuroraMySQL log output to tables"
+---
+
 # Sending AuroraMySQL log output to tables
 
 You can direct the general and slow query logs to tables on the DB instance by creating a DB parameter group

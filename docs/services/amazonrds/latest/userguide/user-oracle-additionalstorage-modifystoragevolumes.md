@@ -1,3 +1,7 @@
+---
+title: "Add, remove, or modify storage volumes with RDS for Oracle"
+---
+
 # Add, remove, or modify storage volumes with RDS for Oracle
 
 You can add, modify, and remove additional storage volumes using the AWS Management Console or AWS CLI.

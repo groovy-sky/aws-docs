@@ -1,3 +1,7 @@
+---
+title: "Integrating Amazon Aurora PostgreSQL with other AWS services"
+---
+
 # Integrating Amazon Aurora PostgreSQL with other AWS services
 
 Amazon Aurora integrates with other AWS services so that you can extend your Aurora PostgreSQL

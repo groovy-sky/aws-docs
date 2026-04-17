@@ -1,3 +1,7 @@
+---
+title: "Integrating an Amazon RDS for SQL Server DB instance with Amazon S3"
+---
+
 # Integrating an Amazon RDS for SQL Server DB instance with Amazon S3
 
 You can transfer files between a DB instance running Amazon RDS for SQL Server and an Amazon S3
@@ -60,7 +64,7 @@ the restored instance. Files in `D:\S3` are deleted on a restored instance.
 
 - [Disabling RDS for SQL Server integration with S3](appendix-sqlserver-options-s3-integration-disabling.md)
 
-For more information on working with files in Amazon S3, see [Getting started with Amazon Simple Storage Service](../../../s3/latest/userguide/getstartedwiths3.md).
+For more information on working with files in Amazon S3, see [Getting started with Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3).
 
 ## Multi-AZ limitations for S3 integration
 

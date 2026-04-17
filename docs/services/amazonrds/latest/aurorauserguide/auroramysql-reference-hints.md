@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL hints"
+---
+
 # Aurora MySQL hints
 
 You can use SQL hints with Aurora MySQL queries to fine-tune performance. You can also use hints to prevent execution plans for

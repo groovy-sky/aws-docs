@@ -1,3 +1,7 @@
+---
+title: "Performing miscellaneous tasks for Oracle DB instances"
+---
+
 # Performing miscellaneous tasks for Oracle DB instances
 
 Following, you can find how to perform miscellaneous DBA tasks on your Amazon RDS DB

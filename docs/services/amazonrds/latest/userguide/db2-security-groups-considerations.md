@@ -1,3 +1,7 @@
+---
+title: "Considerations for security groups with Amazon RDS for Db2"
+---
+
 # Considerations for security groups with Amazon RDS for Db2
 
 For you to connect to your Amazon RDS for Db2 DB instance, it must be associated with a security

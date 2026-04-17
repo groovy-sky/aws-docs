@@ -1,3 +1,7 @@
+---
+title: "aurora_stat_get_db_commit_latency"
+---
+
 # aurora\_stat\_get\_db\_commit\_latency
 
 Gets the cumulative commit latency in microseconds for Aurora PostgreSQL databases.

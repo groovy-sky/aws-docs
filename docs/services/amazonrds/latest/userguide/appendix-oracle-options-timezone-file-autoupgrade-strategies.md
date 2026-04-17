@@ -1,3 +1,7 @@
+---
+title: "Strategies for updating your time zone file"
+---
+
 # Strategies for updating your time zone file
 
 Upgrading your DB engine and adding the `TIMEZONE_FILE_AUTOUPGRADE` option

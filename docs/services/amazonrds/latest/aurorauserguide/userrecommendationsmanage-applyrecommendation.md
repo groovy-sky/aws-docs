@@ -1,3 +1,7 @@
+---
+title: "Applying Amazon Aurora recommendations"
+---
+
 # Applying Amazon Aurora recommendations
 
 To apply Amazon Aurora recommendations using the Amazon RDS console, select a configuration based recommendation or an affected resource in the details page.

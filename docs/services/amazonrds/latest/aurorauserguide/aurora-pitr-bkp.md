@@ -1,8 +1,12 @@
+---
+title: "Restoring a DB cluster to a specified time using AWS Backup"
+---
+
 # Restoring a DB cluster to a specified time using AWS Backup
 
 You can use AWS Backup to manage your automated backups, and then to restore them to a specified time. To do this, you create a
 backup plan in AWS Backup and assign your DB cluster as a resource. Then you enable continuous backups for PITR in the backup rule.
-For more information on backup plans and backup rules, see the [_AWS Backup Developer Guide_](../../../aws-backup/latest/devguide.md).
+For more information on backup plans and backup rules, see the [_AWS Backup Developer Guide_](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 ## Enabling continuous backups in AWS Backup
 

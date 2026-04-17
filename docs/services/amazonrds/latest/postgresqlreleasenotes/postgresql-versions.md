@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for PostgreSQL updates"
+---
+
 # Amazon RDS for PostgreSQL updates
 
 Amazon RDS supports DB instances running several versions of PostgreSQL. You can specify any

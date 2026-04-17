@@ -1,3 +1,7 @@
+---
+title: "Considerations for Database Insights for Amazon RDS"
+---
+
 # Considerations for Database Insights for Amazon RDS
 
 Following are considerations for Database Insights for Amazon RDS.

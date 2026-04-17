@@ -1,3 +1,7 @@
+---
+title: "Accessing more SQL text in the Performance Insights dashboard"
+---
+
 # Accessing more SQL text in the Performance Insights dashboard
 
 By default, each row in the **Top SQL** table shows 500 bytes of SQL text for each SQL statement.

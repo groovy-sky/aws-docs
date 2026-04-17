@@ -1,3 +1,7 @@
+---
+title: "Configuring, starting, and stopping binary log (binlog) replication"
+---
+
 # Configuring, starting, and stopping binary log (binlog) replication
 
 The following stored procedures control how transactions are

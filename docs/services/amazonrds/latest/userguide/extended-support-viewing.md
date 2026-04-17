@@ -1,3 +1,7 @@
+---
+title: "Viewing the enrollment of your DB instances or Multi-AZ DB clusters in Amazon RDS Extended Support"
+---
+
 # Viewing the enrollment of your DB instances or Multi-AZ DB clusters in Amazon RDS Extended Support
 
 You can view the enrollment of your DB instances or

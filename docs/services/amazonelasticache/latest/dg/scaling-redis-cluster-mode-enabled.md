@@ -1,3 +1,7 @@
+---
+title: "Scaling Valkey or Redis OSS (Cluster Mode Enabled) clusters"
+---
+
 # Scaling Valkey or Redis OSS (Cluster Mode Enabled) clusters
 
 As demand on your clusters changes, you might decide to improve performance or reduce costs

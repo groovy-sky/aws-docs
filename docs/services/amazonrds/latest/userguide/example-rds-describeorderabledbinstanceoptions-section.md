@@ -1,3 +1,7 @@
+---
+title: "Use DescribeOrderableDBInstanceOptions with an AWS SDK or CLI"
+---
+
 # Use `DescribeOrderableDBInstanceOptions` with an AWS SDK or CLI
 
 The following code examples show how to use `DescribeOrderableDBInstanceOptions`.
@@ -47,7 +51,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DescribeOrderableDBInstanceOptions](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describeorderabledbinstanceoptions.md)
+[DescribeOrderableDBInstanceOptions](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeOrderableDBInstanceOptions)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -134,7 +138,7 @@ bool AwsDoc::RDS::chooseMicroDBInstanceClass(const Aws::String &engine,
 ```
 
 - For API details, see
-[DescribeOrderableDBInstanceOptions](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describeorderabledbinstanceoptions.md)
+[DescribeOrderableDBInstanceOptions](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeOrderableDBInstanceOptions)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -316,7 +320,7 @@ class InstanceWrapper:
 ```
 
 - For API details, see
-[DescribeOrderableDBInstanceOptions](../../../goto/boto3/rds-2014-10-31/describeorderabledbinstanceoptions.md)
+[DescribeOrderableDBInstanceOptions](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeOrderableDBInstanceOptions)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

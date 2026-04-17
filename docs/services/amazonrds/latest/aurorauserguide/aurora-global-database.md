@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Aurora Global Database"
+---
+
 # Using Amazon Aurora Global Database
 
 With the Amazon Aurora Global Database feature, you set up multiple Aurora DB clusters that span multiple AWS Regions.
@@ -132,8 +136,6 @@ If your engine versions require identical patch levels, you can perform the fail
 [Performing manual failovers for Aurora global databases](aurora-global-database-disaster-recovery.md#aurora-global-database-failover.manual-unplanned).
 
 - Aurora Global Database currently doesn't support the following Aurora features:
-
-- Aurora Serverless v1
 
 - Backtracking in Aurora
 

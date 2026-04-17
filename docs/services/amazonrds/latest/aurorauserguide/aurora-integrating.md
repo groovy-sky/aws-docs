@@ -1,3 +1,7 @@
+---
+title: "Integrating Aurora with other AWS services"
+---
+
 # Integrating Aurora with other AWS services
 
 Integrate Amazon Aurora with other AWS services so that you can extend your Aurora DB cluster

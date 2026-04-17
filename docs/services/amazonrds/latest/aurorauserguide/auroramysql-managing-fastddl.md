@@ -1,3 +1,7 @@
+---
+title: "Altering tables in Amazon Aurora using Fast DDL"
+---
+
 # Altering tables in Amazon Aurora using Fast DDL
 
 Amazon Aurora includes optimizations to run an `ALTER TABLE` operation in place,

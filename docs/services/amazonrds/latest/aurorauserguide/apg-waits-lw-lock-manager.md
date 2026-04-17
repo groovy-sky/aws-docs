@@ -1,3 +1,7 @@
+---
+title: "LWLock:lock_manager"
+---
+
 # LWLock:lock\_manager
 
 This event occurs when the Aurora PostgreSQL engine maintains the shared lock's

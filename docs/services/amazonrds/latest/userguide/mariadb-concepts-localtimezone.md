@@ -1,3 +1,7 @@
+---
+title: "Local time zone for MariaDB DB instances"
+---
+
 # Local time zone for MariaDB DB instances
 
 By default, the time zone for a MariaDB DB instance is Universal Time Coordinated

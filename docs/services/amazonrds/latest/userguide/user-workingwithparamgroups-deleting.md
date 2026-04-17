@@ -1,3 +1,7 @@
+---
+title: "Deleting a DB parameter group in Amazon RDS"
+---
+
 # Deleting a DB parameter group in Amazon RDS
 
 You can delete a DB parameter group using the AWS Management Console, AWS CLI, or RDS API. A parameter group is

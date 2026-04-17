@@ -1,3 +1,7 @@
+---
+title: "Connecting to your MariaDB DB instance"
+---
+
 # Connecting to your MariaDB DB instance
 
 After Amazon RDS provisions your DB instance, you can use any standard MariaDB client

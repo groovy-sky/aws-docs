@@ -1,3 +1,7 @@
+---
+title: "Modifying a CEV for RDS Custom for SQL Server"
+---
+
 # Modifying a CEV for RDS Custom for SQL Server
 
 You can modify a CEV using the AWS Management Console or the AWS CLI. You can modify the CEV description or its availability status. Your CEV

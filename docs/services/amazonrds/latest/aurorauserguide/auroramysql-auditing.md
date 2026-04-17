@@ -1,3 +1,7 @@
+---
+title: "Using Advanced Auditing with an Amazon Aurora MySQL DB cluster"
+---
+
 # Using Advanced Auditing with an Amazon Aurora MySQL DB cluster
 
 You can use the high-performance Advanced Auditing feature in Amazon Aurora MySQL to audit

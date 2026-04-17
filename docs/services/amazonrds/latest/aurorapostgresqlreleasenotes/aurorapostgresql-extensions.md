@@ -1,3 +1,7 @@
+---
+title: "Extension versions for Amazon Aurora PostgreSQL"
+---
+
 # Extension versions for Amazon Aurora PostgreSQL
 
 Aurora PostgreSQL support multiple extensions that enhance your database functionality. Each

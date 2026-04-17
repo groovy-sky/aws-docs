@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora PostgreSQL parameters"
+---
+
 # Amazon Aurora PostgreSQL parameters
 
 You manage your Amazon Aurora DB cluster in the same way that you manage Amazon RDS DB

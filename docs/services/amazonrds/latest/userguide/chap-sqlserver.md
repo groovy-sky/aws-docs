@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Microsoft SQL Server"
+---
+
 # Amazon RDS for Microsoft SQL Server
 
 Amazon RDS supports several versions and editions of Microsoft SQL Server. The following table shows the most recent supported minor version of each major version.

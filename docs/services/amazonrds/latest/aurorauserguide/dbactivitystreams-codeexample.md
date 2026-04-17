@@ -1,3 +1,7 @@
+---
+title: "Processing a database activity stream using the AWS SDK"
+---
+
 # Processing a database activity stream using the AWS SDK
 
 You can programmatically process an activity stream by using the AWS SDK. The

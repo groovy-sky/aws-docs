@@ -1,3 +1,7 @@
+---
+title: "Understanding Babelfish architecture and configuration"
+---
+
 # Understanding Babelfish architecture and configuration
 
 You manage the Aurora PostgreSQL-Compatible Edition DB cluster running Babelfish much as you would any

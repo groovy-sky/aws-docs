@@ -1,3 +1,7 @@
+---
+title: "MariaDB version numbers"
+---
+
 # MariaDB version numbers
 
 The version numbering sequence for the RDS for MariaDB database engine is either in the

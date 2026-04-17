@@ -1,3 +1,7 @@
+---
+title: "JSON.CLEAR"
+---
+
 # JSON.CLEAR
 
 Clears the arrays or an object at the path.

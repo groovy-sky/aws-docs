@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL configuration parameters"
+---
+
 # Aurora MySQL configuration parameters
 
 You manage your Amazon Aurora MySQL DB cluster in the same way that you manage other Amazon RDS DB instances, by using parameters in a
@@ -32,7 +36,6 @@ PostgreSQL documentation for the actual default value.
 Unless otherwise noted, parameters listed in the following tables are valid for Aurora MySQL versions 2 and 3.
 
 For more information about DB parameter groups, see [Parameter groups for Amazon Aurora](user-workingwithparamgroups.md).
-For rules and restrictions for Aurora Serverless v1 clusters, see [Parameter groups for Aurora Serverless v1](aurora-serverless-v1-how-it-works.md#aurora-serverless.parameter-groups).
 
 ###### Topics
 

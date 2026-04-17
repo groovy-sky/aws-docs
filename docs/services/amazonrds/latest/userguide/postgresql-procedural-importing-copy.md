@@ -1,3 +1,7 @@
+---
+title: "Using the \\copy command to import data to a table on a PostgreSQL DB instance"
+---
+
 # Using the \\copy command to import data to a table on a PostgreSQL DB instance
 
 The PostgreSQL `\copy` command is a meta-command available from the

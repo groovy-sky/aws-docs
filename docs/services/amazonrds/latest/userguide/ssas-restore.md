@@ -1,3 +1,7 @@
+---
+title: "Restoring an SSAS database"
+---
+
 # Restoring an SSAS database
 
 Use the following stored procedure to restore an SSAS database from a backup.

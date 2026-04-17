@@ -1,3 +1,7 @@
+---
+title: "Configuring Amazon EFS file system permissions"
+---
+
 # Configuring Amazon EFS file system permissions
 
 By default, only the root user (UID `0`) has read, write, and execute

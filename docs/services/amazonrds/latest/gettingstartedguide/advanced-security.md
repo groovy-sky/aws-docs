@@ -1,3 +1,7 @@
+---
+title: "Advanced security options in Amazon RDS"
+---
+
 # Advanced security options in Amazon RDS
 
 It's important to secure your Amazon RDS DB instance to protecting your data and ensuring

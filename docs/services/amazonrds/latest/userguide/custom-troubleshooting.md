@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting DB issues for Amazon RDS Custom for Oracle"
+---
+
 # Troubleshooting DB issues for Amazon RDS Custom for Oracle
 
 ###### Note

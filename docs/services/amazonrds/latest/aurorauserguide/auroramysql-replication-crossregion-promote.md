@@ -1,3 +1,7 @@
+---
+title: "Promoting a read replica to a DB cluster for Aurora MySQL"
+---
+
 # Promoting a read replica to a DB cluster for Aurora MySQL
 
 You can promote an Aurora MySQL read replica to a standalone DB cluster. When you promote an Aurora MySQL read

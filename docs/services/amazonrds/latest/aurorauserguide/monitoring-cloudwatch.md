@@ -1,3 +1,7 @@
+---
+title: "Monitoring Amazon Aurora metrics with Amazon CloudWatch"
+---
+
 # Monitoring Amazon Aurora metrics with Amazon CloudWatch
 
 Amazon CloudWatch is a metrics repository. The repository collects and processes raw data from

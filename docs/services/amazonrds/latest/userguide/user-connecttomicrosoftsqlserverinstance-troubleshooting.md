@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting connections to your SQL Server DB instance"
+---
+
 # Troubleshooting connections to your SQL Server DB instance
 
 The following table shows error messages that you might encounter when you attempt to

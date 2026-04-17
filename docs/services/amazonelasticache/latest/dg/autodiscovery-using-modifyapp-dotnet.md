@@ -1,3 +1,7 @@
+---
+title: "Using the ElastiCache Cluster Client for .NET"
+---
+
 # Using the ElastiCache Cluster Client for .NET
 
 ###### Note

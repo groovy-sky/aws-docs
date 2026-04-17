@@ -1,3 +1,7 @@
+---
+title: "Setting up binary log replication for Aurora MySQL"
+---
+
 # Setting up binary log replication for Aurora MySQL
 
 Setting up MySQL replication with Aurora MySQL involves the following steps, which are discussed in detail:

@@ -1,3 +1,7 @@
+---
+title: "Parameter reference for Aurora PostgreSQL query plan management"
+---
+
 # Parameter reference for Aurora PostgreSQL query plan management
 
 You can set your preferences for the `apg_plan_mgmt` extension by using the

@@ -1,3 +1,7 @@
+---
+title: "Using SSL with a PostgreSQL DB instance"
+---
+
 # Using SSL with a PostgreSQL DB instance
 
 Amazon RDS supports Secure Socket Layer (SSL) encryption for PostgreSQL DB instances.

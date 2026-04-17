@@ -1,3 +1,7 @@
+---
+title: "Finding the reasons for Aurora MySQL major version upgrade failures"
+---
+
 # Finding the reasons for Aurora MySQL major version upgrade failures
 
 In the [tutorial](auroramysql-upgrading-tutorial.md), the upgrade from Aurora MySQL version 2 to version 3 succeeded. But if the

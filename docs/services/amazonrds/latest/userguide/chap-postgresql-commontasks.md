@@ -1,3 +1,7 @@
+---
+title: "Common management tasks for Amazon RDS for PostgreSQL"
+---
+
 # Common management tasks for Amazon RDS for PostgreSQL
 
 The following are the common management tasks you perform with an Amazon RDS for PostgreSQL

@@ -1,3 +1,7 @@
+---
+title: "Choosing regions and availability zones for ElastiCache"
+---
+
 # Choosing regions and availability zones for ElastiCache
 
 You can provide additional scalability and reliability to your ElastiCache clusters by designating Regions and Availability Zones using the corresponding endpoint.

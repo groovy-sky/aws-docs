@@ -1,3 +1,7 @@
+---
+title: "Logging and monitoring in  Amazon Aurora"
+---
+
 # Logging and monitoring in Amazon Aurora
 
 Monitoring is an important part of maintaining the reliability, availability, and

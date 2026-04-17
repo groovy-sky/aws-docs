@@ -1,3 +1,7 @@
+---
+title: "DB cluster snapshot copying"
+---
+
 # DB cluster snapshot copying
 
 With Amazon Aurora, you can copy automated backups or manual DB cluster snapshots. After you copy a snapshot, the copy is a manual

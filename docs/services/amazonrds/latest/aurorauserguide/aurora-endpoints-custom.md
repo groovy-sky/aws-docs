@@ -1,3 +1,7 @@
+---
+title: "Custom endpoints for Amazon Aurora"
+---
+
 # Custom endpoints for Amazon Aurora
 
 A _custom endpoint_ for an Aurora cluster represents a set of DB
@@ -7,8 +11,7 @@ which instances this endpoint refers to, and you decide what purpose the endpoin
 serves.
 
 An Aurora DB cluster has no custom endpoints until you create one. You can create up to
-five custom endpoints for each provisioned Aurora cluster or Aurora Serverless v2 cluster. You
-can't use custom endpoints for Aurora Serverless v1 clusters.
+five custom endpoints for each provisioned Aurora cluster or Aurora Serverless v2 cluster.
 
 The custom endpoint provides balanced database connections based on criteria other than
 the read-only or read/write capability of the DB instances. For example, you might define a

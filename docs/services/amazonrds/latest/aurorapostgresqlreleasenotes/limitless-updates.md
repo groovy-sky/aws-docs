@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora PostgreSQL Limitless Database updates"
+---
+
 # Amazon Aurora PostgreSQL Limitless Database updates
 
 Here you can find information about versions of Amazon Aurora PostgreSQL Limitless Database. Limitless Database provides automated horizontal scaling to process millions of write

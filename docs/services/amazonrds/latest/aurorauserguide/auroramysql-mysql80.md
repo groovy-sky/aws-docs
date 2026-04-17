@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL version 3 compatible with MySQL 8.0"
+---
+
 # Aurora MySQL version 3 compatible with MySQL 8.0
 
 You can use Aurora MySQL version 3 to get the latest MySQL-compatible features, performance enhancements, and bug

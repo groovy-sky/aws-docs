@@ -1,3 +1,7 @@
+---
+title: "Monitoring use with CloudWatch Metrics"
+---
+
 # Monitoring use with CloudWatch Metrics
 
 ElastiCache provides metrics that enable you to monitor your clusters. You can access

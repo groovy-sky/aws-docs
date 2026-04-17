@@ -1,3 +1,7 @@
+---
+title: "Common ElastiCache Use Cases and How ElastiCache Can Help"
+---
+
 # Common ElastiCache Use Cases and How ElastiCache Can Help
 
 Whether serving the latest news, a top-10 leaderboard, a product catalog,

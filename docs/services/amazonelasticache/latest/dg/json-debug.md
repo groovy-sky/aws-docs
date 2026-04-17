@@ -1,3 +1,7 @@
+---
+title: "JSON.DEBUG"
+---
+
 # JSON.DEBUG
 
 Reports information. Supported subcommands are:

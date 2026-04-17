@@ -1,3 +1,7 @@
+---
+title: "Working with the Database Preview environment"
+---
+
 # Working with the Database Preview environment
 
 The PostgreSQL community continuously releases new PostgreSQL

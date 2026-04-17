@@ -1,3 +1,7 @@
+---
+title: "Storing large composite items (Valkey and Redis OSS)"
+---
+
 # Storing large composite items (Valkey and Redis OSS)
 
 In some scenarios, an application may store large composite items in Valkey or Redis OSS (such as a multi-GB hash dataset). This is not a recommended practice because it often leads to performance problems in Valkey or Redis OSS.

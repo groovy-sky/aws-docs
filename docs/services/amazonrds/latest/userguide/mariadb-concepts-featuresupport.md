@@ -1,3 +1,7 @@
+---
+title: "MariaDB feature support on Amazon RDS"
+---
+
 # MariaDB feature support on Amazon RDS
 
 RDS for MariaDB supports most of the features and capabilities of MariaDB. Some features might have

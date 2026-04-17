@@ -1,3 +1,7 @@
+---
+title: "Upgrading a DB instance for Amazon RDS Custom for Oracle"
+---
+
 # Upgrading a DB instance for Amazon RDS Custom for Oracle
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Controlling access with security groups"
+---
+
 # Controlling access with security groups
 
 VPC security groups control the access that traffic has in and out of a DB

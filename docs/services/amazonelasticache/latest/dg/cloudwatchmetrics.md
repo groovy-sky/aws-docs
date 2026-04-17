@@ -1,3 +1,7 @@
+---
+title: "Monitoring CloudWatch Cluster and Node Metrics"
+---
+
 # Monitoring CloudWatch Cluster and Node Metrics
 
 ElastiCache and CloudWatch are integrated so you can gather a variety of

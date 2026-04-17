@@ -1,3 +1,7 @@
+---
+title: "Best practices for Aurora MySQL performance and scaling"
+---
+
 # Best practices for Aurora MySQL performance and scaling
 
 You can apply the following best practices to improve the performance and scalability of

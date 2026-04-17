@@ -1,3 +1,7 @@
+---
+title: "DB cluster parameter groups for Amazon Aurora DB clusters"
+---
+
 # DB cluster parameter groups for Amazon Aurora DB clusters
 
 Amazon Aurora DB clusters use DB cluster parameter groups. The following sections
@@ -78,24 +82,16 @@ Aurora MySQL
 See [Aurora MySQL configuration parameters](auroramysql-reference-parametergroups.md).
 
 For Aurora Serverless clusters, see additional details in
-[Working with parameter groups for Aurora Serverless v2](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups)
-and
-[Parameter groups for Aurora Serverless v1](aurora-serverless-v1-how-it-works.md#aurora-serverless.parameter-groups).
+[Working with parameter groups for Aurora Serverless v2](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups).
 
 Aurora PostgreSQL
 
 See [Amazon Aurora PostgreSQL parameters](aurorapostgresql-reference-parametergroups.md).
 
 For Aurora Serverless clusters, see additional details in
-[Working with parameter groups for Aurora Serverless v2](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups)
-and
-[Parameter groups for Aurora Serverless v1](aurora-serverless-v1-how-it-works.md#aurora-serverless.parameter-groups).
+[Working with parameter groups for Aurora Serverless v2](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups).
 
 ###### Note
-
-Aurora Serverless v1 clusters have only DB cluster parameter groups, not DB parameter
-groups. For Aurora Serverless v2 clusters, you make all your changes to custom parameters in the
-DB cluster parameter group.
 
 Aurora Serverless v2 uses both DB cluster parameter groups and DB parameter groups.
 With Aurora Serverless v2, you can modify almost all of the configuration parameters.
@@ -103,8 +99,7 @@ Aurora Serverless v2 overrides the settings of some capacity-related configurati
 your workload isn't interrupted when Aurora Serverless v2 instances scale down.
 
 To learn more about Aurora Serverless configuration settings and which settings you can modify,
-see [Working with parameter groups for Aurora Serverless v2](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups)
-and [Parameter groups for Aurora Serverless v1](aurora-serverless-v1-how-it-works.md#aurora-serverless.parameter-groups).
+see [Working with parameter groups for Aurora Serverless v2](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups).
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

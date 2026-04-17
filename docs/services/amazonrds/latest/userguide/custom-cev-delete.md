@@ -1,3 +1,7 @@
+---
+title: "Deleting a CEV"
+---
+
 # Deleting a CEV
 
 ###### Note

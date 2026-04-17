@@ -1,3 +1,7 @@
+---
+title: "Release calendars for Amazon Aurora MySQL"
+---
+
 # Release calendars for Amazon Aurora MySQL
 
 The release calendars on this page can help you plan your major and minor version upgrades. For more information on Amazon Aurora

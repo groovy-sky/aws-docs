@@ -1,3 +1,7 @@
+---
+title: "Upgrading PostgreSQL extensions"
+---
+
 # Upgrading PostgreSQL extensions
 
 Upgrading your Aurora PostgreSQL DB cluster to a new major or minor version doesn't

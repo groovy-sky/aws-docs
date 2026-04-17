@@ -1,3 +1,7 @@
+---
+title: "Backing up and restoring TDE certificates on RDS for SQL Server"
+---
+
 # Backing up and restoring TDE certificates on RDS for SQL Server
 
 RDS for SQL Server provides stored procedures for backing up, restoring, and dropping TDE certificates. RDS for SQL Server also provides a function

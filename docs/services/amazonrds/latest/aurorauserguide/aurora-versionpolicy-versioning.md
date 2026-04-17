@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora versioning"
+---
+
 # Amazon Aurora versioning
 
 Amazon Aurora versions are different from the upstream community databases that they’re

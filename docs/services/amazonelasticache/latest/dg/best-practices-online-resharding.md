@@ -1,3 +1,7 @@
+---
+title: "Online cluster resizing"
+---
+
 # Online cluster resizing
 
 _Resharding_ involves adding and removing shards or nodes to your

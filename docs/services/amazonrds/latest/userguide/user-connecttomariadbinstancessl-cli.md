@@ -1,3 +1,7 @@
+---
+title: "Connecting to your MariaDB DB instance on Amazon RDS with SSL/TLS from the MySQL command-line client (encrypted)"
+---
+
 # Connecting to your MariaDB DB instance on Amazon RDS with SSL/TLS from the MySQL command-line client (encrypted)
 
 The `mysql` client program parameters are slightly different if you are

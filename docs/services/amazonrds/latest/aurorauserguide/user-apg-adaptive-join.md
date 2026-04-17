@@ -1,3 +1,7 @@
+---
+title: "Improving query performance using adaptive join"
+---
+
 # Improving query performance using adaptive join
 
 ## Overview

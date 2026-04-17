@@ -1,3 +1,7 @@
+---
+title: "Changing the global name of a database"
+---
+
 # Changing the global name of a database
 
 To change the global name of a database, use the Amazon RDS procedure

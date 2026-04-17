@@ -1,3 +1,7 @@
+---
+title: "Configuring parameter settings for the pgactive extension"
+---
+
 # Configuring parameter settings for the pgactive extension
 
 You can use the following query to view all the parameters associated with

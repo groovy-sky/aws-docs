@@ -1,3 +1,7 @@
+---
+title: "Creating a Valkey or Redis OSS (Cluster Mode Disabled) replication group from scratch"
+---
+
 # Creating a Valkey or Redis OSS (Cluster Mode Disabled) replication group from scratch
 
 You can create a Valkey or Redis OSS (cluster mode disabled) replication group from scratch using the ElastiCache

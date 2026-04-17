@@ -1,3 +1,7 @@
+---
+title: "Listing Amazon RDS event notification subscriptions"
+---
+
 # Listing Amazon RDS event notification subscriptions
 
 You can list your current Amazon RDS event notification subscriptions.

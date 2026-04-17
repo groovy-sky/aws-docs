@@ -1,3 +1,7 @@
+---
+title: "Amazon ElastiCache error messages"
+---
+
 # Amazon ElastiCache error messages
 
 The following error messages are returned by Amazon ElastiCache.

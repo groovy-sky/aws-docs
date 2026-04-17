@@ -1,3 +1,7 @@
+---
+title: "Connecting to Aurora MySQL with Kerberos authentication"
+---
+
 # Connecting to Aurora MySQL with Kerberos authentication
 
 To avoid errors, use a MySQL client with version 8.0.26 or higher on Unix platforms, 8.0.27 or higher on Windows.

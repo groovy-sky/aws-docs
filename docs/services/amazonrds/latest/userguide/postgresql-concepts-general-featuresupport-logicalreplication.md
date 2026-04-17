@@ -1,3 +1,7 @@
+---
+title: "Performing logical replication for Amazon RDS for PostgreSQL"
+---
+
 # Performing logical replication for Amazon RDS for PostgreSQL
 
 Starting with version 10.4, RDS for PostgreSQL supports the publication and subscription SQL

@@ -1,3 +1,7 @@
+---
+title: "Supported Regions and Aurora DB engines for Secrets Manager integration"
+---
+
 # Supported Regions and Aurora DB engines for Secrets Manager integration
 
 With AWS Secrets Manager, you can replace hard-coded credentials in your code, including

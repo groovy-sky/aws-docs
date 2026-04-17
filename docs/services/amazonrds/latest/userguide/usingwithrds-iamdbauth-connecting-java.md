@@ -1,3 +1,7 @@
+---
+title: "Connecting to your DB instance using IAM authentication and the AWS SDK for Java"
+---
+
 # Connecting to your DB instance using IAM authentication and the AWS SDK for Java
 
 You can connect to an

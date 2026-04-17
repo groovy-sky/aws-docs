@@ -1,3 +1,7 @@
+---
+title: "Restricted commands"
+---
+
 # Restricted commands
 
 To deliver a managed service experience, ElastiCache restricts access to certain cache engine-specific commands that require advanced privileges.

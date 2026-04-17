@@ -1,3 +1,7 @@
+---
+title: "Cross-Region resiliency for Global Database secondary clusters"
+---
+
 # Cross-Region resiliency for Global Database secondary clusters
 
 Aurora PostgreSQL versions 16.6, 15.10, 14.15, 13.18, 12.22, or higher and Aurora MySQL versions 3.09 or higher contain availability improvements that enable

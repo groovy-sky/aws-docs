@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS  DB engine, Region, and instance class support for Database Insights"
+---
+
 # Amazon RDS DB engine, Region, and instance class support for Database Insights
 
 The following table provides Amazon RDS DB engines that support Database Insights.

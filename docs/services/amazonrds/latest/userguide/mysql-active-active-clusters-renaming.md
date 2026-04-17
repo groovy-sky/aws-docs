@@ -1,3 +1,7 @@
+---
+title: "Renaming a DB instance in an active-active cluster"
+---
+
 # Renaming a DB instance in an active-active cluster
 
 You can change the name of a DB instance in an active-active cluster. To rename more than one DB instance in an

@@ -1,3 +1,7 @@
+---
+title: "Stopping and starting an Amazon Aurora DB cluster"
+---
+
 # Stopping and starting an Amazon Aurora DB cluster
 
 Stopping and starting Aurora DB clusters helps you manage costs for development and test
@@ -83,8 +87,8 @@ Some Aurora clusters can't be stopped and started:
 
 - You can't stop and start a cluster that is part of a [blue/green deployment](blue-green-deployments.md).
 
-- You can't stop and start an [Aurora Serverless v1 cluster](aurora-serverless.md).
-With [Aurora Serverless v2](aurora-serverless-v2.md), you can stop and start the cluster.
+- With
+[Aurora Serverless v2](aurora-serverless-v2.md), you can stop and start the cluster.
 
 ## Stopping an Aurora DB cluster
 

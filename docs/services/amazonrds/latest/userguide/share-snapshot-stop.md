@@ -1,3 +1,7 @@
+---
+title: "Stopping snapshot sharing for Amazon RDS"
+---
+
 # Stopping snapshot sharing for Amazon RDS
 
 To stop sharing a DB snapshot, you remove permission from the target AWS account.

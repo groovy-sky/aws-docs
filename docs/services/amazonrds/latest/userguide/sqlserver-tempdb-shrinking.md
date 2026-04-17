@@ -1,3 +1,7 @@
+---
+title: "Shrinking the tempdb database"
+---
+
 # Shrinking the tempdb database
 
 There are two ways to shrink the `tempdb` database on your Amazon RDS DB instance. You

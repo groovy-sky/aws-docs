@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon RDS DB instance"
+---
+
 # Creating an Amazon RDS DB instance
 
 Amazon RDS simplifies database creation so you can easily launch a fully-managed database. In

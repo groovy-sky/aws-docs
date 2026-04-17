@@ -1,3 +1,7 @@
+---
+title: "Turning off SSAS"
+---
+
 # Turning off SSAS
 
 To turn off SSAS, remove the `SSAS` option from its option group.

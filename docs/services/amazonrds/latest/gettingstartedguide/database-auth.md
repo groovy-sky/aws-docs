@@ -1,3 +1,7 @@
+---
+title: "Database authentication options for Amazon RDS"
+---
+
 # Database authentication options for Amazon RDS
 
 Authentication determines how users and applications connect to your Amazon RDS database. This

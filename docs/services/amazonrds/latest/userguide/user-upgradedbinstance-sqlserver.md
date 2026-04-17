@@ -1,3 +1,7 @@
+---
+title: "Upgrades of the Microsoft SQL Server DB engine"
+---
+
 # Upgrades of the Microsoft SQL Server DB engine
 
 When Amazon RDS supports a new version of a database engine, you can upgrade your DB instances

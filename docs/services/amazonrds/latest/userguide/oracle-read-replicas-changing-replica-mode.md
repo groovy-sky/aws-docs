@@ -1,3 +1,7 @@
+---
+title: "Modifying the RDS for Oracle replica mode"
+---
+
 # Modifying the RDS for Oracle replica mode
 
 To change the replica mode of an existing replica, use the console, AWS CLI, or RDS API. When you change to

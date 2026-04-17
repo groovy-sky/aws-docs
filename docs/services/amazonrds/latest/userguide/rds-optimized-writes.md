@@ -1,3 +1,7 @@
+---
+title: "Improving write performance with RDS Optimized Writes for MySQL"
+---
+
 # Improving write performance with RDS Optimized Writes for MySQL
 
 You can improve the performance of write transactions with RDS Optimized Writes for MySQL. When

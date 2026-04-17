@@ -1,3 +1,7 @@
+---
+title: "Creating a Valkey or Redis OSS replication group"
+---
+
 # Creating a Valkey or Redis OSS replication group
 
 You have the following options for creating a cluster with replica nodes. One applies

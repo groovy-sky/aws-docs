@@ -1,3 +1,7 @@
+---
+title: "Use GenerateRDSAuthToken with an AWS SDK"
+---
+
 # Use `GenerateRDSAuthToken` with an AWS SDK
 
 The following code example shows how to use `GenerateRDSAuthToken`.
@@ -68,7 +72,7 @@ public class GenerateRDSAuthToken {
 ```
 
 - For API details, see
-[GenerateRDSAuthToken](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/generaterdsauthtoken.md)
+[GenerateRDSAuthToken](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/GenerateRDSAuthToken)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

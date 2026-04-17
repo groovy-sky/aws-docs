@@ -1,3 +1,7 @@
+---
+title: "Setting up network prerequisites for RDS Proxy"
+---
+
 # Setting up network prerequisites for RDS Proxy
 
 Using RDS Proxy requires you to have a common virtual private cloud (VPC) between your

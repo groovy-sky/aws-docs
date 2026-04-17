@@ -1,3 +1,7 @@
+---
+title: "Monitoring OS metrics with Enhanced Monitoring"
+---
+
 # Monitoring OS metrics with Enhanced Monitoring
 
 With Enhanced Monitoring, you can monitor the operating system of your DB instance in real time. When you want to

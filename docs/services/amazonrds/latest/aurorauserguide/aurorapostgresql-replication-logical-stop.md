@@ -1,3 +1,7 @@
+---
+title: "Turning off logical replication"
+---
+
 # Turning off logical replication
 
 After completing your replication tasks, you should stop the replication process, drop

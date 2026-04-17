@@ -1,3 +1,7 @@
+---
+title: "Overview of the Performance Schema for Performance Insights on Aurora MySQL"
+---
+
 # Overview of the Performance Schema for Performance Insights on Aurora MySQL
 
 The Performance Schema is an optional feature for monitoring Aurora MySQL runtime performance at a low level of detail. The Performance Schema is designed to have minimal impact on

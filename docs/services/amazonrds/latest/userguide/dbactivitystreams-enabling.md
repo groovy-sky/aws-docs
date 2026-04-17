@@ -1,3 +1,7 @@
+---
+title: "Starting a database activity stream"
+---
+
 # Starting a database activity stream
 
 When you start an activity stream for the DB

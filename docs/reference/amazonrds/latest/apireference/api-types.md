@@ -1,3 +1,7 @@
+---
+title: "Data Types"
+---
+
 # Data Types
 
 The Amazon Relational Database Service API contains several data types that various actions use. This section describes each data type in detail.
@@ -227,6 +231,8 @@ The following data types are supported:
 - [ScalingConfigurationInfo](api-scalingconfigurationinfo.md)
 
 - [ServerlessV2FeaturesSupport](api-serverlessv2featuressupport.md)
+
+- [ServerlessV2PlatformVersionInfo](api-serverlessv2platformversioninfo.md)
 
 - [ServerlessV2ScalingConfiguration](api-serverlessv2scalingconfiguration.md)
 

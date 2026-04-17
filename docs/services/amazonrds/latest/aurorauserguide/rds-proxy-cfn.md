@@ -1,3 +1,7 @@
+---
+title: "Using RDS Proxy with AWS CloudFormation"
+---
+
 # Using RDS Proxy with AWS CloudFormation
 
 You can use RDS Proxy with AWS CloudFormation. This helps you to create groups of related resources.

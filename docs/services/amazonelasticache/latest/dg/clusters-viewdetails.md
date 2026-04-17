@@ -1,3 +1,7 @@
+---
+title: "Viewing an ElastiCache cluster's details"
+---
+
 # Viewing an ElastiCache cluster's details
 
 You can view detail information about one or more clusters using the ElastiCache console, AWS CLI, or ElastiCache API.

@@ -1,3 +1,7 @@
+---
+title: "Using Aurora PostgreSQL as a Knowledge Base for Amazon Bedrock"
+---
+
 # Using Aurora PostgreSQL as a Knowledge Base for Amazon Bedrock
 
 You can use an Aurora PostgreSQL DB cluster as a Knowledge Base for Amazon Bedrock. For more information,

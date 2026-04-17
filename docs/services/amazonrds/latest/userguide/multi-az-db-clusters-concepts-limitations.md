@@ -1,3 +1,7 @@
+---
+title: "Limitations of Multi-AZ DB clusters for Amazon RDS"
+---
+
 # Limitations of Multi-AZ DB clusters for Amazon RDS
 
 A Multi-AZ DB cluster has a writer DB instance and two reader DB instances in three separate Availability Zones.

@@ -1,3 +1,7 @@
+---
+title: "Changing an AWS KMS policy for Performance Insights"
+---
+
 # Changing an AWS KMS policy for Performance Insights
 
 Performance Insights uses an AWS KMS key to encrypt sensitive data. When you enable Performance Insights

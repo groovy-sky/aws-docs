@@ -1,3 +1,7 @@
+---
+title: "Using Oracle GoldenGate with Amazon RDS for Oracle"
+---
+
 # Using Oracle GoldenGate with Amazon RDS for Oracle
 
 Oracle GoldenGate collects, replicates, and manages transactional data between databases. It

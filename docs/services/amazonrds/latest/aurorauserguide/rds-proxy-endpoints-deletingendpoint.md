@@ -1,3 +1,7 @@
+---
+title: "Deleting a proxy endpoint"
+---
+
 # Deleting a proxy endpoint
 
 To delete an endpoint for your proxy, follow these instructions:

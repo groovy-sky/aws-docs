@@ -1,3 +1,7 @@
+---
+title: "Starting and stopping an RDS Custom for SQL Server DB instance"
+---
+
 # Starting and stopping an RDS Custom for SQL Server DB instance
 
 You can start and stop your RDS Custom for SQL Server DB instance. The same general requirements and limitations

@@ -1,3 +1,7 @@
+---
+title: "Improving query performance for Aurora PostgreSQL with Aurora Optimized Reads"
+---
+
 # Improving query performance for Aurora PostgreSQL with Aurora Optimized Reads
 
 You can achieve faster query processing for Aurora PostgreSQL with Aurora Optimized Reads. An

@@ -1,3 +1,7 @@
+---
+title: "Caching strategies for Memcached"
+---
+
 # Caching strategies for Memcached
 
 In the following topic, you can find strategies for populating and maintaining your Memcached
@@ -23,7 +27,7 @@ advantages and disadvantages.
 
 ## Read replicas
 
-You can often significantly improve performance for ElastiCache serverless caches by creating replicas and reading from them instead of the primary cache node. For more information see [Best Practices for using Read Replicas](readreplicas.md).
+You can often significantly improve performance for ElastiCache serverless caches by reading from replicas instead of the primary cache node. For more information see [Best Practices for using Read Replicas](readreplicas.md).
 
 ## Lazy loading
 

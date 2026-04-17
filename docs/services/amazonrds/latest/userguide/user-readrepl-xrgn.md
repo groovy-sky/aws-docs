@@ -1,3 +1,7 @@
+---
+title: "Creating a read replica in a different AWS Region"
+---
+
 # Creating a read replica in a different AWS Region
 
 With Amazon RDS, you can create a read replica in a different AWS Region from the source DB

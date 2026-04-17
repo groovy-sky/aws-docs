@@ -1,3 +1,7 @@
+---
+title: "Tagging backups"
+---
+
 # Tagging backups
 
 You can assign your own metadata to each backup in the form of tags. Tags enable you to categorize your backups in different ways, for example, by purpose, owner, or environment.

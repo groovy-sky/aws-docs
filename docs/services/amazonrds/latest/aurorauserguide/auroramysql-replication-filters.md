@@ -1,3 +1,7 @@
+---
+title: "Configuring replication filters with Aurora MySQL"
+---
+
 # Configuring replication filters with Aurora MySQL
 
 You can use replication filters to specify which databases and tables are replicated with a read replica. Replication filters

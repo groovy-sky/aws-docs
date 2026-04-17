@@ -1,3 +1,7 @@
+---
+title: "Integrating Amazon Aurora MySQL with other AWS services"
+---
+
 # Integrating Amazon Aurora MySQL with other AWS services
 
 Amazon Aurora MySQL integrates with other AWS services so that you can extend your Aurora MySQL

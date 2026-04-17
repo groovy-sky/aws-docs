@@ -1,3 +1,7 @@
+---
+title: "How Auto Discovery Works"
+---
+
 # How Auto Discovery Works
 
 ###### Topics

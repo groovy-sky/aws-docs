@@ -1,3 +1,7 @@
+---
+title: "Finding the connection information for an Amazon RDS DB instance"
+---
+
 # Finding the connection information for an Amazon RDS DB instance
 
 The connection information for a DB instance includes its endpoint, port, and a valid

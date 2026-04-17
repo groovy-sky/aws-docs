@@ -1,3 +1,7 @@
+---
+title: "Determining a recovery model for your Amazon RDS for SQL Server database"
+---
+
 # Determining a recovery model for your Amazon RDS for SQL Server database
 
 In Amazon RDS, the recovery model, retention period, and database status are linked.

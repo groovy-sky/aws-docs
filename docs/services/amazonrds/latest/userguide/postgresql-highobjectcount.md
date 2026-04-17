@@ -1,3 +1,7 @@
+---
+title: "Managing high object counts in Amazon RDS for PostgreSQL"
+---
+
 # Managing high object counts in Amazon RDS for PostgreSQL
 
 While PostgreSQL limitations are theoretical, having extremely high object counts in a database will cause noticeable performance impact to various operations. This documentation covers several common object types that, when having a high total count can lead to several possible impacts.

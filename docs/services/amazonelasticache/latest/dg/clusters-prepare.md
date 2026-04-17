@@ -1,3 +1,7 @@
+---
+title: "Preparing a cluster in ElastiCache"
+---
+
 # Preparing a cluster in ElastiCache
 
 Following, you can find instructions on creating a cluster using the ElastiCache console, the

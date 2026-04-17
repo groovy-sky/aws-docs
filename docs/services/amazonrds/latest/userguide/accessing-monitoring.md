@@ -1,3 +1,7 @@
+---
+title: "Viewing instance status"
+---
+
 # Viewing instance status
 
 Using the Amazon RDS console, you can quickly access the status of your DB instance.

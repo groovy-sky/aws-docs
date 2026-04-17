@@ -1,3 +1,7 @@
+---
+title: "OptionSetting"
+---
+
 # OptionSetting
 
 Option settings are the actual settings being applied or configured for that option. It is used when you modify an option group or describe option groups. For example, the NATIVE\_NETWORK\_ENCRYPTION option has a setting called SQLNET.ENCRYPTION\_SERVER that can have several different values.
@@ -84,11 +88,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/optionsetting.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/OptionSetting)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/optionsetting.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/OptionSetting)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/optionsetting.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/OptionSetting)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

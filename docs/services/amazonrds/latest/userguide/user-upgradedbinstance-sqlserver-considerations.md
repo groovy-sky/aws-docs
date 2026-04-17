@@ -1,3 +1,7 @@
+---
+title: "Considerations for SQL Server upgrades"
+---
+
 # Considerations for SQL Server upgrades
 
 Amazon RDS takes two DB snapshots during the upgrade process. The first DB snapshot is of the DB instance before any upgrade

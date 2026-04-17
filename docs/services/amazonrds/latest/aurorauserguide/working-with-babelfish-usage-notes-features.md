@@ -1,3 +1,7 @@
+---
+title: "Working with Babelfish"
+---
+
 # Working with Babelfish
 
 Following, you can find usage information for Babelfish, including some of the

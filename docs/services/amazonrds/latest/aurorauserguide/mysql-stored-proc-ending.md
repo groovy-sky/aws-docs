@@ -1,3 +1,7 @@
+---
+title: "Ending a session or query"
+---
+
 # Ending a session or query
 
 The following stored procedures end a session or query.

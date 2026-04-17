@@ -1,3 +1,7 @@
+---
+title: "Creating Aurora zero-ETL integrations with an Amazon SageMaker lakehouse"
+---
+
 # Creating Aurora zero-ETL integrations with an Amazon SageMaker lakehouse
 
 When you create an Aurora zero-ETL integration with an Amazon SageMaker lakehouse, you specify the source Aurora DB cluster and the target AWS Glue managed catalog. You can also customize encryption settings and add tags. Aurora creates an

@@ -1,3 +1,7 @@
+---
+title: "Deleting a cluster in ElastiCache"
+---
+
 # Deleting a cluster in ElastiCache
 
 As long as an ElastiCache cluster is in the _available_ state, you are being charged for it, whether or not

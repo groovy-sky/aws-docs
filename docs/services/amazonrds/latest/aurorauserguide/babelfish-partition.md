@@ -1,3 +1,7 @@
+---
+title: "Understanding partitioning in Babelfish"
+---
+
 # Understanding partitioning in Babelfish
 
 Starting with version 4.3.0, Babelfish introduces table and index partitioning with limited support.

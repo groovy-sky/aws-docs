@@ -1,3 +1,7 @@
+---
+title: "Best practices for clients (Valkey and Redis OSS)"
+---
+
 # Best practices for clients (Valkey and Redis OSS)
 
 Learn best practices for common scenarios and follow along with code examples of some of the most popular open source Valkey and Redis OSS client libraries

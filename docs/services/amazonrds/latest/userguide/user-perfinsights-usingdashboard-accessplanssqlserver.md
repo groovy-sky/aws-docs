@@ -1,3 +1,7 @@
+---
+title: "Analyzing SQL Server execution plans using the Performance Insights dashboard for Amazon RDS"
+---
+
 # Analyzing SQL Server execution plans using the Performance Insights dashboard for Amazon RDS
 
 When analyzing DB load on a SQL Server Database, you might want to know which plans are contributing the most to DB load.

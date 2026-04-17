@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for a Multi-AZ deployment in RDS Custom for Oracle"
+---
+
 # Prerequisites for a Multi-AZ deployment in RDS Custom for Oracle
 
 ###### Note

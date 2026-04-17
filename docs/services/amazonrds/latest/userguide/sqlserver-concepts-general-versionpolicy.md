@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for SQL Server version policy"
+---
+
 # Amazon RDS for SQL Server version policy
 
 This topic describes the version policy for Amazon RDS for SQL Server, including supported

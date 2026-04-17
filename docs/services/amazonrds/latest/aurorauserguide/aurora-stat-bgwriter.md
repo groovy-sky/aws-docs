@@ -1,3 +1,7 @@
+---
+title: "aurora_stat_bgwriter"
+---
+
 # aurora\_stat\_bgwriter
 
 `aurora_stat_bgwriter` is a statistics view showing information about

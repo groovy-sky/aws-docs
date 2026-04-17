@@ -1,3 +1,7 @@
+---
+title: "Using dynamic masking with Aurora PostgreSQL"
+---
+
 # Using dynamic masking with Aurora PostgreSQL
 
 Dynamic data masking is a security feature that protects sensitive data in Aurora PostgreSQL databases by controlling

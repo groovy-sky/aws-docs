@@ -1,3 +1,7 @@
+---
+title: "Skipping the current replication error for RDS for MySQL"
+---
+
 # Skipping the current replication error for RDS for MySQL
 
 You can skip an error on your read replica if the error is causing your read replica

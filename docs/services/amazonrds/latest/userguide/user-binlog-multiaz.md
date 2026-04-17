@@ -1,3 +1,7 @@
+---
+title: "Configuring MySQL binary logging for Multi-AZ DB clusters"
+---
+
 # Configuring MySQL binary logging for Multi-AZ DB clusters
 
 Binary logging in Amazon RDS for MySQL Multi-AZ DB clusters records all database changes to support

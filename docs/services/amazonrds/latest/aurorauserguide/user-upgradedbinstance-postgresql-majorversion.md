@@ -1,3 +1,7 @@
+---
+title: "Performing a major version upgrade"
+---
+
 # Performing a major version upgrade
 
 Major version upgrades might contain database changes that are not backward-compatible

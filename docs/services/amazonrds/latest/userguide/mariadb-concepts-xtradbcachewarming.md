@@ -1,3 +1,7 @@
+---
+title: "Cache warming for MariaDB on Amazon RDS"
+---
+
 # Cache warming for MariaDB on Amazon RDS
 
 InnoDB cache warming can provide performance gains for your MariaDB DB instance by

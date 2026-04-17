@@ -1,3 +1,7 @@
+---
+title: "Choosing the preconfigured dashboard with Performance Insights"
+---
+
 # Choosing the preconfigured dashboard with Performance Insights
 
 ###### Important

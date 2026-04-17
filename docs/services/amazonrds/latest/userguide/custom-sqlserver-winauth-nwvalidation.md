@@ -1,3 +1,7 @@
+---
+title: "Network Validation"
+---
+
 # Network Validation
 
 Before joining your RDS Custom instance to either self-managed or AWS Managed Microsoft AD, check the

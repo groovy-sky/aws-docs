@@ -1,3 +1,7 @@
+---
+title: "Adding tags to a performance analysis report in Performance Insights"
+---
+
 # Adding tags to a performance analysis report in Performance Insights
 
 You can add a tag when you create or view a report. You can add up to 50 tags for a report.

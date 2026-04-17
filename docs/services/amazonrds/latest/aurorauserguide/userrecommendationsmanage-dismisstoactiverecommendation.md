@@ -1,3 +1,7 @@
+---
+title: "Modifying dismissed Amazon Aurora recommendations to active recommendations"
+---
+
 # Modifying dismissed Amazon Aurora recommendations to active recommendations
 
 You can move one or more dismissed Amazon Aurora recommendations to active recommendations using the Amazon RDS console, AWS CLI, or Amazon RDS API.

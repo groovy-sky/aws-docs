@@ -1,3 +1,7 @@
+---
+title: "Creating a DB cluster that uses Aurora PostgreSQL Limitless Database"
+---
+
 # Creating a DB cluster that uses Aurora PostgreSQL Limitless Database
 
 You create a new Aurora DB cluster using the Limitless Database version of Aurora PostgreSQL, and add a DB shard group to the cluster. When adding a DB shard

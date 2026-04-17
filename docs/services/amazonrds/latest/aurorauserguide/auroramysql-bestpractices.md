@@ -1,3 +1,7 @@
+---
+title: "Best practices with Amazon Aurora MySQL"
+---
+
 # Best practices with Amazon Aurora MySQL
 
 This topic includes information on best practices and options for using or migrating data

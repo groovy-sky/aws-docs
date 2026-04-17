@@ -1,3 +1,7 @@
+---
+title: "Configuring IAM authentication for logical replication connections"
+---
+
 # Configuring IAM authentication for logical replication connections
 
 Starting with Aurora PostgreSQL versions 11 and higher, you can use AWS Identity and

@@ -1,3 +1,7 @@
+---
+title: "Choosing Metric Statistics and Periods"
+---
+
 # Choosing Metric Statistics and Periods
 
 While CloudWatch will allow you to choose any statistic and period for each metric, not all

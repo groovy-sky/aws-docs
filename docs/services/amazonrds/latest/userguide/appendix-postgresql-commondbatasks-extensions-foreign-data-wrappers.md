@@ -1,3 +1,7 @@
+---
+title: "Working with the supported foreign data wrappers for Amazon RDS for PostgreSQL"
+---
+
 # Working with the supported foreign data wrappers for Amazon RDS for PostgreSQL
 
 A foreign data wrapper (FDW) is a specific type of extension that provides access to external data. For example, the

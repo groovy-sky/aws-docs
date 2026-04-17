@@ -1,3 +1,7 @@
+---
+title: "Deleting an RDS Proxy"
+---
+
 # Deleting an RDS Proxy
 
 You can delete a proxy when you no longer need it. Or, you might delete a proxy if you take the DB instance or cluster

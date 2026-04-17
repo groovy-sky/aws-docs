@@ -1,3 +1,7 @@
+---
+title: "Using Kerberos authentication for Amazon RDS for MySQL"
+---
+
 # Using Kerberos authentication for Amazon RDS for MySQL
 
 You can use Kerberos authentication to authenticate users when they connect to your MySQL DB instance. The

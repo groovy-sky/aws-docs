@@ -1,3 +1,7 @@
+---
+title: "Microsoft SQL Server resource governor with RDS for SQL Server"
+---
+
 # Microsoft SQL Server resource governor with RDS for SQL Server
 
 Resource governor is a SQL Server Enterprise Edition feature that gives you precise control over

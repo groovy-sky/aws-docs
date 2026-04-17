@@ -1,3 +1,7 @@
+---
+title: "Stopping binary log replication for Aurora MySQL"
+---
+
 # Stopping binary log replication for Aurora MySQL
 
 To stop binary log replication with a MySQL DB instance, external MySQL database, or another Aurora DB cluster, follow

@@ -1,3 +1,7 @@
+---
+title: "Setting up logical replication for RDS for PostgreSQL DB instance"
+---
+
 # Setting up logical replication for RDS for PostgreSQL DB instance
 
 The following procedure shows you how to start logical replication between two RDS for PostgreSQL DB instances. The steps assume that both the source (publisher) and

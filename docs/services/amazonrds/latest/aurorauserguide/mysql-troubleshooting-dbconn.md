@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting connection issues for Aurora MySQL databases"
+---
+
 # Troubleshooting connection issues for Aurora MySQL databases
 
 Ensuring reliable connectivity between your applications and your RDS DB instance is crucial for

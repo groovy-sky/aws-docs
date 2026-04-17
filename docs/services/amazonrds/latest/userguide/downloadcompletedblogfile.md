@@ -1,3 +1,7 @@
+---
+title: "Reading log file contents using REST"
+---
+
 # Reading log file contents using REST
 
 Amazon RDS provides a REST endpoint that allows access to DB instance log files. This is useful if you need to write

@@ -1,3 +1,7 @@
+---
+title: "Performance Insights counter metrics"
+---
+
 # Performance Insights counter metrics
 
 Counter metrics are operating system and database performance metrics in the Performance
@@ -33,7 +37,7 @@ except RDS for SQL Server
 
 You can use `ListAvailableResourceMetrics` API
 for the list of available counter metrics for your DB instance. For more information, see
-[ListAvailableResourceMetrics](../../../../reference/performance-insights/latest/apireference/api-listavailableresourcemetrics.md) in the Amazon RDS Performance Insights API
+[ListAvailableResourceMetrics](https://docs.aws.amazon.com/performance-insights/latest/APIReference/API_ListAvailableResourceMetrics) in the Amazon RDS Performance Insights API
 Reference guide.
 
 CounterTypeUnitMetricDescriptionActiveMemoryKilobytesos.memory.activeThe amount of assigned memory, in kilobytes.BuffersMemoryKilobytesos.memory.buffersThe amount of memory used for buffering I/O requests prior to writing to the storage device, in kilobytes.CachedMemoryKilobytesos.memory.cachedThe amount of memory used for caching file system–based I/O, in kilobytes.DB CacheMemoryBytesos.memory.db.cache

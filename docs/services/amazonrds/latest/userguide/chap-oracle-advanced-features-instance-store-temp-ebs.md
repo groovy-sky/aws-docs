@@ -1,3 +1,7 @@
+---
+title: "Configuring a temporary tablespace group on an instance store and Amazon EBS"
+---
+
 # Configuring a temporary tablespace group on an instance store and Amazon EBS
 
 You can configure a temporary tablespace group to include temporary tablespaces on both an instance store and Amazon EBS. This technique is

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting stopped cross-Region automated backups"
+---
+
 # Troubleshooting stopped cross-Region automated backups
 
 Amazon RDS automatically stops cross-Region automated backup replication under specific

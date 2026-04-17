@@ -1,3 +1,7 @@
+---
+title: "Authorizing access to the Amazon RDS Data API"
+---
+
 # Authorizing access to the Amazon RDS Data API
 
 Users can invoke Amazon RDS Data API (Data API) operations only if they are authorized to
@@ -186,7 +190,7 @@ in the _IAM User Guide_.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Data API with Aurora Serverless v2 compared with Aurora Serverless v1
+Limitations
 
 Enabling Data API
 

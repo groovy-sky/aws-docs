@@ -1,3 +1,7 @@
+---
+title: "Backing up and restoring an Amazon RDS Custom for SQL Server DB instance"
+---
+
 # Backing up and restoring an Amazon RDS Custom for SQL Server DB instance
 
 Like Amazon RDS, RDS Custom creates and saves automated backups of your RDS Custom for SQL Server DB instance when backup retention is enabled.

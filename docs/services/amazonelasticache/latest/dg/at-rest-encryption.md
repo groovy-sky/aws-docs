@@ -1,3 +1,7 @@
+---
+title: "At-Rest Encryption in ElastiCache"
+---
+
 # At-Rest Encryption in ElastiCache
 
 To help keep your data secure, Amazon ElastiCache and Amazon S3 provide different ways to restrict access

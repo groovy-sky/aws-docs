@@ -1,3 +1,7 @@
+---
+title: "Enabling cross-Region automated backups for Amazon RDS"
+---
+
 # Enabling cross-Region automated backups for Amazon RDS
 
 You can enable backup replication on new or existing DB instances using the Amazon RDS

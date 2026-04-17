@@ -1,3 +1,7 @@
+---
+title: "Grant permission to tag Aurora resources during creation"
+---
+
 # Grant permission to tag Aurora resources during creation
 
 Some RDS API operations allow you to specify tags when you create the resource. You can use resource tags

@@ -1,3 +1,7 @@
+---
+title: "Using Blue/Green Deployments for Amazon Aurora Global Database"
+---
+
 # Using Blue/Green Deployments for Amazon Aurora Global Database
 
 Amazon RDS Blue/Green Deployments provide a capability for testing database changes safely.

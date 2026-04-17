@@ -1,3 +1,7 @@
+---
+title: "Working with storage for Amazon RDS DB instances"
+---
+
 # Working with storage for Amazon RDS DB instances
 
 To specify how you want your data stored in Amazon RDS, choose a storage type and provide a

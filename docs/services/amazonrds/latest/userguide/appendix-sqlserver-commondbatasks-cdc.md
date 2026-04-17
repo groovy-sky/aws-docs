@@ -1,3 +1,7 @@
+---
+title: "Using change data capture for Amazon RDS for SQL Server"
+---
+
 # Using change data capture for Amazon RDS for SQL Server
 
 Amazon RDS supports change data capture (CDC) for your DB instances running Microsoft SQL Server.

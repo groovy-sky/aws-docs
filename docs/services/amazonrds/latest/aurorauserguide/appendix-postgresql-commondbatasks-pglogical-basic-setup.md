@@ -1,3 +1,7 @@
+---
+title: "Setting up the pglogical extension"
+---
+
 # Setting up the pglogical extension
 
 To set up the `pglogical` extension on your

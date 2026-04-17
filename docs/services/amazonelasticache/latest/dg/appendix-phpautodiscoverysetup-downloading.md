@@ -1,3 +1,7 @@
+---
+title: "Downloading the installation package"
+---
+
 # Downloading the installation package
 
 To ensure that you use the correct version of the ElastiCache Cluster Client for PHP, you will

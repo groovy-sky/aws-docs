@@ -1,3 +1,7 @@
+---
+title: "Configuring your ElastiCache client for efficient load balancing (Memcached)"
+---
+
 # Configuring your ElastiCache client for efficient load balancing (Memcached)
 
 ###### Note

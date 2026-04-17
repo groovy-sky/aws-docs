@@ -1,3 +1,7 @@
+---
+title: "Deleting Aurora DB clusters and DB instances"
+---
+
 # Deleting Aurora DB clusters and DB instances
 
 You can delete an Aurora DB cluster when you no longer need it. Deleting the cluster removes
@@ -55,10 +59,6 @@ snapshot.
 
 - Retain automated backups. The default setting is not to retain automated backups.
 
-###### Note
-
-Automated backups for Aurora Serverless v1 DB clusters aren't retained.
-
 Aurora also requires you to confirm that you intend to delete the cluster.
 
 - **CLI and API** – Call the `delete-db-cluster` CLI command or
@@ -68,10 +68,6 @@ the cluster in case you need it later:
 - Create a final snapshot of the cluster volume.
 
 - Retain automated backups.
-
-###### Note
-
-Automated backups for Aurora Serverless v1 DB clusters aren't retained.
 
 ###### Topics
 

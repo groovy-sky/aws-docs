@@ -1,3 +1,7 @@
+---
+title: "Oracle Spatial"
+---
+
 # Oracle Spatial
 
 Amazon RDS supports Oracle Spatial through the use of the `SPATIAL` option. Oracle

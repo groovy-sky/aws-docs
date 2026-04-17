@@ -1,3 +1,7 @@
+---
+title: "Performing common RMAN tasks for Oracle DB instances"
+---
+
 # Performing common RMAN tasks for Oracle DB instances
 
 In the following section, you can find how you can perform Oracle Recovery Manager

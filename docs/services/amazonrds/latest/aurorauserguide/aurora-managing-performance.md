@@ -1,3 +1,7 @@
+---
+title: "Managing performance and scaling for Aurora DB clusters"
+---
+
 # Managing performance and scaling for Aurora DB clusters
 
 You can use the following options to manage performance and scaling for Aurora DB clusters
@@ -46,7 +50,7 @@ supported versions
 - Version 2 (compatible with MySQL 5.7): 2.11 and
 higher
 
-Aurora PostgreSQLAll supported versionsAurora Serverless v2All supported versionsAurora Serverless v1Not available
+Aurora PostgreSQLAll supported versionsAurora Serverless v2All supported versions
 
 - In Aurora versions lower than those in the preceding list, the cluster volume
 can reuse space that's freed up when you remove data, but the volume itself

@@ -1,3 +1,7 @@
+---
+title: "Deploying an SSIS project"
+---
+
 # Deploying an SSIS project
 
 On RDS, you can't deploy SSIS projects directly by using SQL Server Management Studio

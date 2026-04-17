@@ -1,3 +1,7 @@
+---
+title: "Lock:Relation"
+---
+
 # Lock:Relation
 
 The `Lock:Relation` event occurs when a query is waiting to acquire a lock on a table or view

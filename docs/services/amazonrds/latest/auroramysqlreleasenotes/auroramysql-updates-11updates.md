@@ -1,3 +1,7 @@
+---
+title: "Database engine updates for Amazon Aurora MySQL version 1 (Deprecated)"
+---
+
 # Database engine updates for Amazon Aurora MySQL version 1 (Deprecated)
 
 The following are Amazon Aurora version 1 database engine updates:

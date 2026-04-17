@@ -1,3 +1,7 @@
+---
+title: "Connecting to a database through RDS Proxy"
+---
+
 # Connecting to a database through RDS Proxy
 
 The way to connect to an RDS DB instance through a proxy or by connecting to the database is generally the same.

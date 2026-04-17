@@ -1,3 +1,7 @@
+---
+title: "Upgrading Amazon Aurora MySQL DB clusters"
+---
+
 # Upgrading Amazon Aurora MySQL DB clusters
 
 You can upgrade an Aurora MySQL DB cluster to get bug fixes, new Aurora MySQL features, or to

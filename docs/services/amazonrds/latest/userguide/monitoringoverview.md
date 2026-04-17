@@ -1,3 +1,7 @@
+---
+title: "Monitoring tools for Amazon RDS"
+---
+
 # Monitoring tools for Amazon RDS
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of Amazon RDS and your other AWS solutions.

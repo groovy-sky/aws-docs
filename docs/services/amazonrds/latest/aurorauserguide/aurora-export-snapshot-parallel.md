@@ -1,3 +1,7 @@
+---
+title: "Export performance in Aurora MySQL"
+---
+
 # Export performance in Aurora MySQL
 
 Aurora MySQL version 2 and version 3 DB cluster snapshots use an advanced export mechanism to improve performance and reduce

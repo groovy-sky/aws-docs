@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for creating an Amazon RDS for Db2 DB instance"
+---
+
 # Prerequisites for creating an Amazon RDS for Db2 DB instance
 
 The following items are prerequisites before creating a DB instance.

@@ -1,3 +1,7 @@
+---
+title: "Supported Regions and Aurora DB engines for zero-ETL integrations"
+---
+
 # Supported Regions and Aurora DB engines for zero-ETL integrations
 
 Amazon Aurora zero-ETL integrations is a fully managed solution for making

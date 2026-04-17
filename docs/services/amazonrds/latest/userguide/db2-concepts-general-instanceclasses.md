@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Db2 instance classes"
+---
+
 # Amazon RDS for Db2 instance classes
 
 The computation and memory capacity of a DB instance is determined by its instance class.

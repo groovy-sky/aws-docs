@@ -1,3 +1,7 @@
+---
+title: "Using pgactive to support active-active replication"
+---
+
 # Using pgactive to support active-active replication
 
 The `pgactive` extension uses active-active replication to support and coordinate

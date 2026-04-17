@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Aurora global databases with other AWS services"
+---
+
 # Using Amazon Aurora global databases with other AWS services
 
 You can use your Aurora global databases with other AWS services, such as Amazon S3 and AWS Lambda. Doing so requires that

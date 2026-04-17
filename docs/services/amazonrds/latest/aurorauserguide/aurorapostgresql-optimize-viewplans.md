@@ -1,3 +1,7 @@
+---
+title: "Examining Aurora PostgreSQL query plans in the dba_plans view"
+---
+
 # Examining Aurora PostgreSQL query plans in the dba\_plans view
 
 Database users and administrators that have been granted the

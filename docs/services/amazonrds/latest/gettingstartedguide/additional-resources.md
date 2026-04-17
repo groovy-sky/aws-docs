@@ -1,3 +1,7 @@
+---
+title: "Additional resources for Amazon RDS"
+---
+
 # Additional resources for Amazon RDS
 
 Amazon RDS offers multiple tools, configurations, and best practices to help you optimize your

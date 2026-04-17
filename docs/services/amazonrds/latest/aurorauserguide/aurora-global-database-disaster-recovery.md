@@ -1,3 +1,7 @@
+---
+title: "Using switchover or failover in Amazon Aurora Global Database"
+---
+
 # Using switchover or failover in Amazon Aurora Global Database
 
 The Aurora Global Database feature provides more business continuity and disaster recovery (BCDR) protection than

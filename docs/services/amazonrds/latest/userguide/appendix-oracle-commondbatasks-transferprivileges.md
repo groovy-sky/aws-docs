@@ -1,3 +1,7 @@
+---
+title: "Granting SELECT or EXECUTE privileges to SYS objects"
+---
+
 # Granting SELECT or EXECUTE privileges to SYS objects
 
 Usually you transfer privileges by using roles, which can contain many objects. To

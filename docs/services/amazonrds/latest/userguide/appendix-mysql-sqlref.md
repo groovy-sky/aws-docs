@@ -1,3 +1,7 @@
+---
+title: "RDS for MySQL stored procedure reference"
+---
+
 # RDS for MySQL stored procedure reference
 
 These topics describe system stored procedures that are available for Amazon RDS instances running the

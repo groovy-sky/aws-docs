@@ -1,3 +1,7 @@
+---
+title: "Examples: Invoking Lambda functions from your RDS for PostgreSQL DB instance"
+---
+
 # Examples: Invoking Lambda functions from your RDS for PostgreSQL DB instance
 
 Following, you can find several examples of calling the [aws\_lambda.invoke](postgresql-lambda-functions.md#aws_lambda.invoke) function. Most of the examples

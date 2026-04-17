@@ -1,3 +1,7 @@
+---
+title: "Using functions from the orafce extension"
+---
+
 # Using functions from the orafce extension
 
 The orafce extension provides functions and operators that emulate a subset of functions

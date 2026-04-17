@@ -1,3 +1,7 @@
+---
+title: "Setting up public or private access in Amazon RDS"
+---
+
 # Setting up public or private access in Amazon RDS
 
 When you create an Amazon RDS DB instance, one of the most important decisions you make is

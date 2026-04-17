@@ -1,3 +1,7 @@
+---
+title: "Setting up Kerberos authentication using Active Directory security groups for Babelfish"
+---
+
 # Setting up Kerberos authentication using Active Directory security groups for Babelfish
 
 Starting from Babelfish version 4.2.0, you can setup Kerberos authentication for

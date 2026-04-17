@@ -1,3 +1,7 @@
+---
+title: "Calling the Amazon RDS Data API"
+---
+
 # Calling the Amazon RDS Data API
 
 With the Amazon RDS Data API (Data API) enabled on your Aurora DB cluster, you can run SQL

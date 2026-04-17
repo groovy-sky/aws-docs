@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Amazon EFS integration"
+---
+
 # Troubleshooting Amazon EFS integration
 
 Your RDS for Oracle DB instance monitors the connectivity to an Amazon EFS file system. When

@@ -1,3 +1,7 @@
+---
+title: "Modifying an RDS Custom for SQL Server DB instance"
+---
+
 # Modifying an RDS Custom for SQL Server DB instance
 
 Modifying an RDS Custom for SQL Server DB instance is similar to doing this for Amazon RDS, but the changes that you can make are limited to the

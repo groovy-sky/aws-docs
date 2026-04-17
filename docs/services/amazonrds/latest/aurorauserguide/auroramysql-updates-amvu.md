@@ -1,3 +1,7 @@
+---
+title: "Enabling automatic upgrades between minor Aurora MySQL versions"
+---
+
 # Enabling automatic upgrades between minor Aurora MySQL versions
 
 For an Amazon Aurora MySQL DB cluster, you can specify that Aurora upgrades the DB cluster

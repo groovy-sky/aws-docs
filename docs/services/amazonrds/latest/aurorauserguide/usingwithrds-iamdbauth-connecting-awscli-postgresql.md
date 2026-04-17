@@ -1,3 +1,7 @@
+---
+title: "Connecting to your DB cluster using IAM authentication from the command line: AWS CLI and psql client"
+---
+
 # Connecting to your DB cluster using IAM authentication from the command line: AWS CLI and psql client
 
 You can connect from the command line to an Aurora PostgreSQL DB cluster with the

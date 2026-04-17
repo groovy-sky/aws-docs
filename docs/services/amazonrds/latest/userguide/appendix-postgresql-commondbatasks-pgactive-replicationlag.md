@@ -1,3 +1,7 @@
+---
+title: "Measuring replication lag among pgactive members"
+---
+
 # Measuring replication lag among pgactive members
 
 You can use the following query to view the replication lag among the

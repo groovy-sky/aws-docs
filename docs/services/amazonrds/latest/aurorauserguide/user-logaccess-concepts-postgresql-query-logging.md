@@ -1,3 +1,7 @@
+---
+title: "Turning on query logging for your Aurora PostgreSQL DB cluster"
+---
+
 # Turning on query logging for your Aurora PostgreSQL DB cluster
 
 You can collect more detailed information about your database activities, including

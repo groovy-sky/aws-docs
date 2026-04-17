@@ -1,3 +1,7 @@
+---
+title: "Terminology"
+---
+
 # Terminology
 
 To help you better understand Trusted Language Extensions, view the following glossary for terms used

@@ -1,3 +1,7 @@
+---
+title: "Working with RDS Proxy events"
+---
+
 # Working with RDS Proxy events
 
 An _event_ indicates a change in an environment such as an AWS

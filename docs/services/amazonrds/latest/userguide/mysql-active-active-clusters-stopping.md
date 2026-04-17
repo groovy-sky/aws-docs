@@ -1,3 +1,7 @@
+---
+title: "Stopping Group Replication on a DB instance in an active-active cluster"
+---
+
 # Stopping Group Replication on a DB instance in an active-active cluster
 
 You can stop Group Replication on a DB instance in an active-active

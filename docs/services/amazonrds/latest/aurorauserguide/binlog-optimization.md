@@ -1,3 +1,7 @@
+---
+title: "Optimizing binary log replication for Aurora MySQL"
+---
+
 # Optimizing binary log replication for Aurora MySQL
 
 Following, you can learn how to optimize binary log replication performance and troubleshoot related issues in

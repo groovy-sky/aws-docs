@@ -1,3 +1,7 @@
+---
+title: "Deleting Aurora zero-ETL integrations"
+---
+
 # Deleting Aurora zero-ETL integrations
 
 When you delete a zero-ETL integration, Amazon Aurora removes it from the source Aurora DB cluster. Your

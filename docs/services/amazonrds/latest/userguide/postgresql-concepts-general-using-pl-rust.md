@@ -1,3 +1,7 @@
+---
+title: "Using PL/Rust to write PostgreSQL functions in the Rust language"
+---
+
 # Using PL/Rust to write PostgreSQL functions in the Rust language
 
 PL/Rust is a trusted Rust language extension for PostgreSQL. You can use it for stored
@@ -107,7 +111,7 @@ aws rds modify-db-parameter-group \
       --region aws-region
 ```
 
-2. Use the [reboot-db-instance](../../../cli/latest/reference/rds/reboot-db-instance.md) AWS CLI command to reboot the DB instance and initialize the plrust library. The
+2. Use the [reboot-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/reboot-db-instance) AWS CLI command to reboot the DB instance and initialize the plrust library. The
     initial reboot may require additional time to complete.
 
 ```nohighlight

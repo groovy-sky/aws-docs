@@ -1,3 +1,7 @@
+---
+title: "RDS for Oracle features"
+---
+
 # RDS for Oracle features
 
 Amazon RDS for Oracle supports most of the features and capabilities of Oracle Database. Some features might have limited support or restricted

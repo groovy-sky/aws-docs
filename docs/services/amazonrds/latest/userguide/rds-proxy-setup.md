@@ -1,3 +1,7 @@
+---
+title: "Getting started with RDS Proxy"
+---
+
 # Getting started with RDS Proxy
 
 Use the information in the following pages to set up and manage [Amazon RDS Proxy](rds-proxy.md) and

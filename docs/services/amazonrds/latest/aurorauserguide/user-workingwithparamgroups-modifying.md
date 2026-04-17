@@ -1,3 +1,7 @@
+---
+title: "Modifying parameters in a DB parameter group in Amazon Aurora"
+---
+
 # Modifying parameters in a DB parameter group in Amazon Aurora
 
 You can modify parameter values in a customer-created DB parameter group; you can't change the

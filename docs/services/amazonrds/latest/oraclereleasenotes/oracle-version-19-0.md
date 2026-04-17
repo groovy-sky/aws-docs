@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Oracle Database 19c (19.0.0.0)"
+---
+
 # Amazon RDS for Oracle Database 19c (19.0.0.0)
 
 Amazon RDS for Oracle Database 19c (19.0.0.0) releases new minor engine versions quarterly. A Release

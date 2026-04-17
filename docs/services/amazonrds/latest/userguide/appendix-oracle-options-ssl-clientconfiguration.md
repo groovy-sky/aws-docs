@@ -1,3 +1,7 @@
+---
+title: "Configuring SQL*Plus to use SSL with an RDS for Oracle DB instance"
+---
+
 # Configuring SQL\*Plus to use SSL with an RDS for Oracle DB instance
 
 Before you can connect to an RDS for Oracle DB instance that uses the Oracle SSL option, you

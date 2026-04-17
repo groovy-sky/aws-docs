@@ -1,3 +1,7 @@
+---
+title: "Configure a client-side timeout (Valkey and Redis OSS)"
+---
+
 # Configure a client-side timeout (Valkey and Redis OSS)
 
 **Configuring the client-side timeout**

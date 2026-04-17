@@ -1,3 +1,7 @@
+---
+title: "Specifying DB parameters"
+---
+
 # Specifying DB parameters
 
 DB parameter types include the following:

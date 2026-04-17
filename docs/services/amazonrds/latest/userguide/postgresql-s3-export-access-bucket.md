@@ -1,3 +1,7 @@
+---
+title: "Setting up access to an Amazon S3 bucket"
+---
+
 # Setting up access to an Amazon S3 bucket
 
 To export data to Amazon S3, give your PostgreSQL DB

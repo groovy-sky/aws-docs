@@ -1,3 +1,7 @@
+---
+title: "Data protection in Amazon RDS"
+---
+
 # Data protection in Amazon RDS
 
 The AWS [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model)

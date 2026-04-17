@@ -1,3 +1,7 @@
+---
+title: "Extension versions for Amazon RDS for PostgreSQL"
+---
+
 # Extension versions for Amazon RDS for PostgreSQL
 
 Amazon RDS for PostgreSQL support multiple extensions that enhance your database functionality.

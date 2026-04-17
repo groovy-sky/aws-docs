@@ -1,3 +1,7 @@
+---
+title: "Setting up logical replication for your Aurora PostgreSQL DB cluster"
+---
+
 # Setting up logical replication for your Aurora PostgreSQL DB cluster
 
 Setting up logical replication requires `rds_superuser` privileges. Your

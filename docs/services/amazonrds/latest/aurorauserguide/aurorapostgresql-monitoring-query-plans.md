@@ -1,3 +1,7 @@
+---
+title: "Monitoring query execution plans and peak memory for Aurora PostgreSQL"
+---
+
 # Monitoring query execution plans and peak memory for Aurora PostgreSQL
 
 You can monitor query execution plans in your Aurora PostgreSQL DB instance to detect the execution plans

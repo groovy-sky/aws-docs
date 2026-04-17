@@ -1,3 +1,7 @@
+---
+title: "Scaling reads for your MySQL database with Amazon Aurora"
+---
+
 # Scaling reads for your MySQL database with Amazon Aurora
 
 You can use Amazon Aurora with your MySQL DB instance to take advantage of the read scaling capabilities of Amazon Aurora and

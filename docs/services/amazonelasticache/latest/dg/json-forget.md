@@ -1,3 +1,7 @@
+---
+title: "JSON.FORGET"
+---
+
 # JSON.FORGET
 
 An alias of [JSON.DEL](json-del.md).

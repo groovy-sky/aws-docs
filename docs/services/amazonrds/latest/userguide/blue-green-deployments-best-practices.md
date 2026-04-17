@@ -1,3 +1,7 @@
+---
+title: "Best practices for Amazon RDS blue/green deployments"
+---
+
 # Best practices for Amazon RDS blue/green deployments
 
 The following are best practices for blue/green deployments.

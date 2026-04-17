@@ -1,3 +1,7 @@
+---
+title: "Turning on query logging for your  RDS for PostgreSQL DB instance"
+---
+
 # Turning on query logging for your RDS for PostgreSQL DB instance
 
 You can collect more detailed information about your database activities, including

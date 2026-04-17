@@ -1,3 +1,7 @@
+---
+title: "Compliance validation for Amazon Aurora"
+---
+
 # Compliance validation for Amazon Aurora
 
 Third-party auditors assess the security and compliance of Amazon Aurora as part of multiple AWS

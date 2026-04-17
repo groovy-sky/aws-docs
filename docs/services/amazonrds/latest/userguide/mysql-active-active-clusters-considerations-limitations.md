@@ -1,3 +1,7 @@
+---
+title: "Limitations and considerations for active-active clusters"
+---
+
 # Limitations and considerations for active-active clusters
 
 Active-active clusters in Amazon RDS offer enhanced availability and scalability by

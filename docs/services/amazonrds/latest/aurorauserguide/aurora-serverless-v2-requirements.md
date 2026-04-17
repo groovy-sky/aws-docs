@@ -1,3 +1,7 @@
+---
+title: "Requirements and limitations for Aurora Serverless v2"
+---
+
 # Requirements and limitations for Aurora Serverless v2
 
 When you create a cluster where you intend to use Aurora Serverless v2 DB instances, pay attention to the following requirements and limitations.
@@ -11,8 +15,6 @@ When you create a cluster where you intend to use Aurora Serverless v2 DB instan
 - [Incompatible scaling configuration](#aurora-serverless-v2.requirements.incompatible-scaling-config)
 
 - [Some provisioned features aren't supported in Aurora Serverless v2](#aurora-serverless-v2.limitations)
-
-- [Some Aurora Serverless v2 aspects are different from Aurora Serverless v1](#aurora-serverless-v2.requirements.v1-v2-differences)
 
 ## Region and version availability
 
@@ -160,12 +162,6 @@ For troubleshooting information if your database encounters out-of-memory errors
 Aurora Auto Scaling isn't supported. This type of scaling adds new readers to handle additional read-intensive workload, based on CPU usage. However, scaling based on
 CPU usage isn't meaningful for Aurora Serverless v2. As an alternative, you can create Aurora Serverless v2 reader DB instances in advance and leave them scaled down to low
 capacity. That's a faster and less disruptive way to scale a cluster's read capacity than adding new DB instances dynamically.
-
-## Some Aurora Serverless v2 aspects are different from Aurora Serverless v1
-
-If you are an Aurora Serverless v1 user and this is your first time using Aurora Serverless v2, consult the
-[differences between Aurora Serverless v2 and Aurora Serverless v1 requirements](aurora-serverless-v2-upgrade.md#Serverless.v1-v2-requirements) to understand how requirements
-are different between Aurora Serverless v1 and Aurora Serverless v2.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

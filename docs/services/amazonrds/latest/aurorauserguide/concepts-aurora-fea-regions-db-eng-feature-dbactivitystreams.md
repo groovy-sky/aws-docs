@@ -1,11 +1,13 @@
+---
+title: "Supported Regions and Aurora DB engines for database activity streams"
+---
+
 # Supported Regions and Aurora DB engines for database activity streams
 
 By using database activity streams in Aurora, you can monitor and set alarms for
 auditing activity in your Aurora database. For more information, see [Monitoring Amazon Aurora with Database Activity Streams](dbactivitystreams.md).
 
 Database activity streams aren't supported for the following features:
-
-- Aurora Serverless v1
 
 - Aurora Serverless v2
 

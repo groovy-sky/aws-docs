@@ -1,3 +1,7 @@
+---
+title: "Connecting to Oracle with Kerberos authentication"
+---
+
 # Connecting to Oracle with Kerberos authentication
 
 This section assumes that you have set up your Oracle client as described in [Step 8: Configure an Oracle client](oracle-kerberos-setting-up.md#oracle-kerberos.setting-up.configure-oracle-client). To connect to the Oracle

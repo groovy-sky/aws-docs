@@ -1,3 +1,7 @@
+---
+title: "Requiring SSL/TLS for specific user accounts to a MariaDB DB instance on Amazon RDS"
+---
+
 # Requiring SSL/TLS for specific user accounts to a MariaDB DB instance on Amazon RDS
 
 You can require SSL/TLS encryption for specified user account connections to your

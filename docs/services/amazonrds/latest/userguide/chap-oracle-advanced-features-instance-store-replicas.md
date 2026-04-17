@@ -1,3 +1,7 @@
+---
+title: "Working with an instance store on an Oracle read replica"
+---
+
 # Working with an instance store on an Oracle read replica
 
 Read replicas support the flash cache and temporary tablespaces on an instance store. While the flash cache works the same way as on the

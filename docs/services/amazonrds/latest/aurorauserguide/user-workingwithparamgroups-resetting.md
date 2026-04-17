@@ -1,3 +1,7 @@
+---
+title: "Resetting parameters in a DB parameter group to their default values in Amazon Aurora"
+---
+
 # Resetting parameters in a DB parameter group to their default values in Amazon Aurora
 
 You can reset parameter values in a customer-created DB parameter group to their default values.

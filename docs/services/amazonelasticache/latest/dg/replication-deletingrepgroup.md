@@ -1,3 +1,7 @@
+---
+title: "Deleting a replication group"
+---
+
 # Deleting a replication group
 
 If you no longer need one of your clusters with replicas (called _replication groups_ in the API/CLI), you can delete it.

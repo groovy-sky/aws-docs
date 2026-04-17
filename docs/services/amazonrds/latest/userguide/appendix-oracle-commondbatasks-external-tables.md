@@ -1,3 +1,7 @@
+---
+title: "Working with external tables in RDS for Oracle"
+---
+
 # Working with external tables in RDS for Oracle
 
 _Oracle external tables_ are tables with data that is not

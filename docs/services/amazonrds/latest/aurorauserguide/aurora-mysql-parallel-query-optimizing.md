@@ -1,3 +1,7 @@
+---
+title: "Optimizing parallel query in Aurora MySQL"
+---
+
 # Optimizing parallel query in Aurora MySQL
 
 To optimize your DB cluster for parallel query, consider which DB clusters would benefit from parallel query and whether to upgrade for parallel query. Then, tune your workload and create schema objects for parallel query.

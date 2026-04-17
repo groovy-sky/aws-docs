@@ -1,3 +1,7 @@
+---
+title: "Setting up Oracle APEX and Oracle Rest Data Services (ORDS)"
+---
+
 # Setting up Oracle APEX and Oracle Rest Data Services (ORDS)
 
 The following topic lists the steps required to set up Oracle APEX and ORDS

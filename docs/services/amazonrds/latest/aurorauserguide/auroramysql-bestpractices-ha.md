@@ -1,3 +1,7 @@
+---
+title: "Best practices for Aurora MySQL high availability"
+---
+
 # Best practices for Aurora MySQL high availability
 
 You can apply the following best practices to improve the availability of your Aurora MySQL clusters.

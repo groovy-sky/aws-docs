@@ -1,3 +1,7 @@
+---
+title: "Upgrading Amazon Aurora PostgreSQL DB clusters"
+---
+
 # Upgrading Amazon Aurora PostgreSQL DB clusters
 
 Amazon Aurora makes new versions of the PostgreSQL database engine available in AWS Regions

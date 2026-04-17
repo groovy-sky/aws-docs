@@ -1,3 +1,7 @@
+---
+title: "Creating a Valkey or Redis OSS replication group from scratch"
+---
+
 # Creating a Valkey or Redis OSS replication group from scratch
 
 Following, you can find how to create a Valkey or Redis OSS replication group without using an

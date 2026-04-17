@@ -1,3 +1,7 @@
+---
+title: "Managing a Multi-AZ deployment for RDS Custom for SQL Server"
+---
+
 # Managing a Multi-AZ deployment for RDS Custom for SQL Server
 
 In a Multi-AZ DB instance deployment for RDS Custom for SQL Server, Amazon RDS automatically provisions and

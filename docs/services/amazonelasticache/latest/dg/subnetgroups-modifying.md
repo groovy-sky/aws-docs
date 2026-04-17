@@ -1,3 +1,7 @@
+---
+title: "Modifying a subnet group"
+---
+
 # Modifying a subnet group
 
 You can modify a subnet group's description, or modify the list of subnet IDs associated with the subnet group.

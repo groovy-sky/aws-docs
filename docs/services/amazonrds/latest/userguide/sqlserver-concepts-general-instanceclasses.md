@@ -1,3 +1,7 @@
+---
+title: "DB instance class support for Microsoft SQL Server"
+---
+
 # DB instance class support for Microsoft SQL Server
 
 The computation and memory capacity of a DB instance is determined by its DB instance

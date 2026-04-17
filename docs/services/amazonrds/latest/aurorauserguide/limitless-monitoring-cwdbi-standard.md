@@ -1,3 +1,7 @@
+---
+title: "Turning on the Standard mode of Database Insights for Aurora PostgreSQL Limitless Database"
+---
+
 # Turning on the Standard mode of Database Insights for Aurora PostgreSQL Limitless Database
 
 To turn on the Standard mode of Database Insights for your Aurora PostgreSQL Limitless Database, use the following procedures.

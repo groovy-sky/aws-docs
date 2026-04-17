@@ -1,3 +1,7 @@
+---
+title: "RDS for Oracle DB instance classes"
+---
+
 # RDS for Oracle DB instance classes
 
 The computation and memory capacity of an RDS for Oracle DB instance is determined by its instance

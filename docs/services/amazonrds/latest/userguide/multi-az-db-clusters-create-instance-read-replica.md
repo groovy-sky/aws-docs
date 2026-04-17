@@ -1,3 +1,7 @@
+---
+title: "Creating a DB instance read replica from a Multi-AZ DB cluster"
+---
+
 # Creating a DB instance read replica from a Multi-AZ DB cluster
 
 You can create a DB instance read replica from a Multi-AZ DB cluster in order to scale beyond the compute

@@ -1,3 +1,7 @@
+---
+title: "Tuning with wait events for Aurora PostgreSQL"
+---
+
 # Tuning with wait events for Aurora PostgreSQL
 
 Wait events are an important tuning tool for Aurora PostgreSQL. When you can find out why

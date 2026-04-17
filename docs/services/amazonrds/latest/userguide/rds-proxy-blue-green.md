@@ -1,3 +1,7 @@
+---
+title: "Using RDS Proxy with Blue/Green Deployments"
+---
+
 # Using RDS Proxy with Blue/Green Deployments
 
 Amazon RDS Proxy can be used with Blue/Green Deployments to reduce switchover downtime. RDS Proxy

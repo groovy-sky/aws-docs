@@ -1,3 +1,7 @@
+---
+title: "Best practices for Aurora PostgreSQL query plan management"
+---
+
 # Best practices for Aurora PostgreSQL query plan management
 
 Query plan management lets you control how and when query execution plans change. As a

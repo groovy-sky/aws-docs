@@ -1,3 +1,7 @@
+---
+title: "Increasing DB instance storage capacity"
+---
+
 # Increasing DB instance storage capacity
 
 To increase storage capacity for your DB instance, use either of the following

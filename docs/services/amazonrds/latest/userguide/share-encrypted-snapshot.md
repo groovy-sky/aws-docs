@@ -1,3 +1,7 @@
+---
+title: "Sharing encrypted snapshots for Amazon RDS"
+---
+
 # Sharing encrypted snapshots for Amazon RDS
 
 You can share DB snapshots that have been encrypted "at rest" using the AES-256 encryption algorithm, as described in

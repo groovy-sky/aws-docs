@@ -1,3 +1,7 @@
+---
+title: "Using SSL/TLS with an Amazon RDS for Db2 DB instance"
+---
+
 # Using SSL/TLS with an Amazon RDS for Db2 DB instance
 
 SSL is an industry-standard protocol for securing network connections between client and

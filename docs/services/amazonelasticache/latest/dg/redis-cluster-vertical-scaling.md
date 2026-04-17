@@ -1,3 +1,7 @@
+---
+title: "Online vertical scaling by modifying node type"
+---
+
 # Online vertical scaling by modifying node type
 
 By using online vertical scaling with Valkey version 7.2 or newer, or Redis OSS version 3.2.10 or newer, you can scale

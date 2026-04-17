@@ -1,3 +1,7 @@
+---
+title: "Migrating from Linux to Linux for Amazon RDS for Db2"
+---
+
 # Migrating from Linux to Linux for Amazon RDS for Db2
 
 With this migration approach, you back up your self-managed Db2 database to an Amazon S3

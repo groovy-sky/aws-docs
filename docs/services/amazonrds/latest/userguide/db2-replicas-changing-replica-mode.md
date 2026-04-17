@@ -1,3 +1,7 @@
+---
+title: "Modifying the RDS for Db2 replica mode"
+---
+
 # Modifying the RDS for Db2 replica mode
 
 You can change the replica mode of an existing Db2 replica between read-only and standby

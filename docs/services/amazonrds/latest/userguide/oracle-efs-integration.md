@@ -1,3 +1,7 @@
+---
+title: "Amazon EFS integration"
+---
+
 # Amazon EFS integration
 
 Amazon Elastic File System (Amazon EFS) provides serverless, fully elastic file storage so that you can share

@@ -1,3 +1,7 @@
+---
+title: "cpu"
+---
+
 # cpu
 
 The `cpu` wait event occurs when a thread is active in CPU or is waiting for CPU.

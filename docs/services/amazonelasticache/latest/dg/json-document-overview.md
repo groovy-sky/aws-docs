@@ -1,3 +1,7 @@
+---
+title: "JSON data type overview"
+---
+
 # JSON data type overview
 
 ElastiCache supports a number of Valkey and Redis OSS commands for working with the JSON data type. The

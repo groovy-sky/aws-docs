@@ -1,3 +1,7 @@
+---
+title: "aurora_volume_logical_start_lsn"
+---
+
 # aurora\_volume\_logical\_start\_lsn
 
 Returns the log sequence number (LSN) used for identifying the beginning of a record

@@ -1,3 +1,7 @@
+---
+title: "Configuring, starting, and stopping binary log (binlog) replication"
+---
+
 # Configuring, starting, and stopping binary log (binlog) replication
 
 You can call the following stored procedures while connected to the

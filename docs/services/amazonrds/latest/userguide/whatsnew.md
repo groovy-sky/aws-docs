@@ -1,3 +1,7 @@
+---
+title: "Document history"
+---
+
 # Document history
 
 **Current API version:** 2014-10-31
@@ -1169,7 +1173,7 @@ November 16, 2023
 RDS for SQL Server supports Microsoft SQL Server 2022
 
 You can now create RDS DB instances that use SQL Server 2022. For more information,
-see [Microsoft SQL Server versions on Amazon RDS](chap-sqlserver.md#SQLServer.Concepts.General.VersionSupport).
+see [Microsoft SQL Server versions on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SQLServer).
 
 November 15, 2023
 
@@ -3577,7 +3581,7 @@ Amazon RDS for SQL Server supports additional time zones
 
 You can match your DB instance time zone with your chosen time zone. For more
 information, see [Local\
-time zone for Microsoft SQL Server DB instances](chap-sqlserver.md#SQLServer.Concepts.General.TimeZone).
+time zone for Microsoft SQL Server DB instances](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SQLServer).
 
 September 11, 2020
 
@@ -3599,7 +3603,7 @@ August 27, 2020
 Amazon RDS for SQL Server supports Microsoft SQL Server 2019
 
 You can now create RDS DB instances that use SQL Server 2019. For more information,
-see [Microsoft SQL Server versions on Amazon RDS](chap-sqlserver.md#SQLServer.Concepts.General.VersionSupport).
+see [Microsoft SQL Server versions on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SQLServer).
 
 August 26, 2020
 
@@ -4087,7 +4091,7 @@ Multi-AZ supported on Amazon RDS for Microsoft SQL Server in new regions
 
 Multi-AZ on SQL Server is now available in China,
 Middle East (Bahrain), and Europe (Stockholm). For more information, see [Multi-AZ deployments for Microsoft\
-SQL Server](user-sqlservermultiaz.md).
+SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServerMultiAZ).
 
 November 22, 2019
 
@@ -4388,7 +4392,7 @@ Always On availability groups supported in Microsoft SQL Server 2017
 
 You can now use Always On Availability Groups in SQL Server 2017 Enterprise
 Edition 14.00.3049.1 or later. For more information, see [Multi-AZ deployments for Microsoft\
-SQL Server](user-sqlservermultiaz.md).
+SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServerMultiAZ).
 
 March 29, 2019
 

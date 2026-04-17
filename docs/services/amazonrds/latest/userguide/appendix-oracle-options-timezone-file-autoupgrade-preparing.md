@@ -1,3 +1,7 @@
+---
+title: "Preparing to update the time zone file"
+---
+
 # Preparing to update the time zone file
 
 A time zone file upgrade has two separate phases: prepare and upgrade. While not required, we strongly

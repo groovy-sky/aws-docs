@@ -1,3 +1,7 @@
+---
+title: "Accessing MySQL binary logs"
+---
+
 # Accessing MySQL binary logs
 
 You can use the mysqlbinlog utility to download or stream binary logs from RDS for MySQL DB instances. The binary log is downloaded to

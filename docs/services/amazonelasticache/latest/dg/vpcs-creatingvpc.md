@@ -1,3 +1,7 @@
+---
+title: "Creating a Virtual Private Cloud (VPC)"
+---
+
 # Creating a Virtual Private Cloud (VPC)
 
 In this example, you create an Amazon VPC with a private subnet for each Availability

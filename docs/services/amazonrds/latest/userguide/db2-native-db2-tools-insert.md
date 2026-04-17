@@ -1,3 +1,7 @@
+---
+title: "Importing data from Db2 to Amazon RDS for Db2 with the INSERT command"
+---
+
 # Importing data from Db2 to Amazon RDS for Db2 with the INSERT command
 
 You can use the `INSERT` command from a self-managed Db2 server to insert your

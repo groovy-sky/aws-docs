@@ -1,3 +1,7 @@
+---
+title: "Client:ClientWrite"
+---
+
 # Client:ClientWrite
 
 The `Client:ClientWrite` event occurs when Aurora PostgreSQL is waiting to

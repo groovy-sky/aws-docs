@@ -1,3 +1,7 @@
+---
+title: "Managing RDS_X$ views for Oracle DB instances"
+---
+
 # Managing RDS\_X$ views for Oracle DB instances
 
 You might need to access `SYS.X$` fixed tables, which are only accessible

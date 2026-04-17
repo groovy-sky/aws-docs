@@ -1,3 +1,7 @@
+---
+title: "aurora_stat_wait_type"
+---
+
 # aurora\_stat\_wait\_type
 
 Lists all supported wait types for Aurora PostgreSQL.

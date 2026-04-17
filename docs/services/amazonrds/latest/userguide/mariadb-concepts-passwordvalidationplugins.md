@@ -1,3 +1,7 @@
+---
+title: "Using the password validation plugins for RDS for MariaDB"
+---
+
 # Using the password validation plugins for RDS for MariaDB
 
 Starting with RDS for MariaDB version 11.4, you can use the following password validation

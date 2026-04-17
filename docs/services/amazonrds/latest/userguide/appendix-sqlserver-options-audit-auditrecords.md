@@ -1,3 +1,7 @@
+---
+title: "Viewing audit logs"
+---
+
 # Viewing audit logs
 
 Your audit logs are stored in `D:\rdsdbdata\SQLAudit`.

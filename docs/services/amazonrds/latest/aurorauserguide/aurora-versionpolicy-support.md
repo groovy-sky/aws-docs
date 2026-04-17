@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora version support"
+---
+
 # Amazon Aurora version support
 
 If your Amazon Aurora DB has complex dependencies on specific database engine behavior, we

@@ -1,3 +1,7 @@
+---
+title: "Transportable databases parameter reference"
+---
+
 # Transportable databases parameter reference
 
 Several parameters control the behavior of the `pg_transport` extension.

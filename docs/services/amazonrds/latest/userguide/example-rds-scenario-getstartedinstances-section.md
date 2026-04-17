@@ -1,3 +1,7 @@
+---
+title: "Learn the basics of Amazon RDS with an AWS SDK"
+---
+
 # Learn the basics of Amazon RDS with an AWS SDK
 
 The following code examples show how to:
@@ -789,29 +793,29 @@ public partial class RDSWrapper
 
 - For API details, see the following topics in _AWS SDK for .NET API Reference_.
 
-- [CreateDBInstance](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/createdbinstance.md)
+- [CreateDBInstance](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/CreateDBInstance)
 
-- [CreateDBParameterGroup](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/createdbparametergroup.md)
+- [CreateDBParameterGroup](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/CreateDBParameterGroup)
 
-- [CreateDBSnapshot](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/createdbsnapshot.md)
+- [CreateDBSnapshot](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/CreateDBSnapshot)
 
-- [DeleteDBInstance](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/deletedbinstance.md)
+- [DeleteDBInstance](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DeleteDBInstance)
 
-- [DeleteDBParameterGroup](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/deletedbparametergroup.md)
+- [DeleteDBParameterGroup](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DeleteDBParameterGroup)
 
-- [DescribeDBEngineVersions](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describedbengineversions.md)
+- [DescribeDBEngineVersions](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeDBEngineVersions)
 
-- [DescribeDBInstances](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describedbinstances.md)
+- [DescribeDBInstances](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeDBInstances)
 
-- [DescribeDBParameterGroups](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describedbparametergroups.md)
+- [DescribeDBParameterGroups](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeDBParameterGroups)
 
-- [DescribeDBParameters](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describedbparameters.md)
+- [DescribeDBParameters](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeDBParameters)
 
-- [DescribeDBSnapshots](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describedbsnapshots.md)
+- [DescribeDBSnapshots](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeDBSnapshots)
 
-- [DescribeOrderableDBInstanceOptions](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describeorderabledbinstanceoptions.md)
+- [DescribeOrderableDBInstanceOptions](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeOrderableDBInstanceOptions)
 
-- [ModifyDBParameterGroup](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/modifydbparametergroup.md)
+- [ModifyDBParameterGroup](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/ModifyDBParameterGroup)
 
 C++
 
@@ -1518,29 +1522,29 @@ bool AwsDoc::RDS::cleanUpResources(const Aws::String &parameterGroupName,
 
 - For API details, see the following topics in _AWS SDK for C++ API Reference_.
 
-- [CreateDBInstance](../../../../reference/goto/sdkforcpp/rds-2014-10-31/createdbinstance.md)
+- [CreateDBInstance](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/CreateDBInstance)
 
-- [CreateDBParameterGroup](../../../../reference/goto/sdkforcpp/rds-2014-10-31/createdbparametergroup.md)
+- [CreateDBParameterGroup](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/CreateDBParameterGroup)
 
-- [CreateDBSnapshot](../../../../reference/goto/sdkforcpp/rds-2014-10-31/createdbsnapshot.md)
+- [CreateDBSnapshot](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/CreateDBSnapshot)
 
-- [DeleteDBInstance](../../../../reference/goto/sdkforcpp/rds-2014-10-31/deletedbinstance.md)
+- [DeleteDBInstance](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DeleteDBInstance)
 
-- [DeleteDBParameterGroup](../../../../reference/goto/sdkforcpp/rds-2014-10-31/deletedbparametergroup.md)
+- [DeleteDBParameterGroup](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DeleteDBParameterGroup)
 
-- [DescribeDBEngineVersions](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describedbengineversions.md)
+- [DescribeDBEngineVersions](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeDBEngineVersions)
 
-- [DescribeDBInstances](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describedbinstances.md)
+- [DescribeDBInstances](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeDBInstances)
 
-- [DescribeDBParameterGroups](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describedbparametergroups.md)
+- [DescribeDBParameterGroups](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeDBParameterGroups)
 
-- [DescribeDBParameters](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describedbparameters.md)
+- [DescribeDBParameters](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeDBParameters)
 
-- [DescribeDBSnapshots](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describedbsnapshots.md)
+- [DescribeDBSnapshots](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeDBSnapshots)
 
-- [DescribeOrderableDBInstanceOptions](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describeorderabledbinstanceoptions.md)
+- [DescribeOrderableDBInstanceOptions](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeOrderableDBInstanceOptions)
 
-- [ModifyDBParameterGroup](../../../../reference/goto/sdkforcpp/rds-2014-10-31/modifydbparametergroup.md)
+- [ModifyDBParameterGroup](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/ModifyDBParameterGroup)
 
 Go
 
@@ -2746,29 +2750,29 @@ public class RDSScenario {
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [CreateDBInstance](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/createdbinstance.md)
+- [CreateDBInstance](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/CreateDBInstance)
 
-- [CreateDBParameterGroup](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/createdbparametergroup.md)
+- [CreateDBParameterGroup](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/CreateDBParameterGroup)
 
-- [CreateDBSnapshot](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/createdbsnapshot.md)
+- [CreateDBSnapshot](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/CreateDBSnapshot)
 
-- [DeleteDBInstance](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/deletedbinstance.md)
+- [DeleteDBInstance](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DeleteDBInstance)
 
-- [DeleteDBParameterGroup](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/deletedbparametergroup.md)
+- [DeleteDBParameterGroup](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DeleteDBParameterGroup)
 
-- [DescribeDBEngineVersions](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/describedbengineversions.md)
+- [DescribeDBEngineVersions](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeDBEngineVersions)
 
-- [DescribeDBInstances](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/describedbinstances.md)
+- [DescribeDBInstances](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeDBInstances)
 
-- [DescribeDBParameterGroups](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/describedbparametergroups.md)
+- [DescribeDBParameterGroups](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeDBParameterGroups)
 
-- [DescribeDBParameters](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/describedbparameters.md)
+- [DescribeDBParameters](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeDBParameters)
 
-- [DescribeDBSnapshots](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/describedbsnapshots.md)
+- [DescribeDBSnapshots](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeDBSnapshots)
 
-- [DescribeOrderableDBInstanceOptions](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/describeorderabledbinstanceoptions.md)
+- [DescribeOrderableDBInstanceOptions](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeOrderableDBInstanceOptions)
 
-- [ModifyDBParameterGroup](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/modifydbparametergroup.md)
+- [ModifyDBParameterGroup](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/ModifyDBParameterGroup)
 
 Kotlin
 
@@ -3899,29 +3903,29 @@ class InstanceWrapper:
 
 - For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
 
-- [CreateDBInstance](../../../goto/boto3/rds-2014-10-31/createdbinstance.md)
+- [CreateDBInstance](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/CreateDBInstance)
 
-- [CreateDBParameterGroup](../../../goto/boto3/rds-2014-10-31/createdbparametergroup.md)
+- [CreateDBParameterGroup](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/CreateDBParameterGroup)
 
-- [CreateDBSnapshot](../../../goto/boto3/rds-2014-10-31/createdbsnapshot.md)
+- [CreateDBSnapshot](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/CreateDBSnapshot)
 
-- [DeleteDBInstance](../../../goto/boto3/rds-2014-10-31/deletedbinstance.md)
+- [DeleteDBInstance](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DeleteDBInstance)
 
-- [DeleteDBParameterGroup](../../../goto/boto3/rds-2014-10-31/deletedbparametergroup.md)
+- [DeleteDBParameterGroup](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DeleteDBParameterGroup)
 
-- [DescribeDBEngineVersions](../../../goto/boto3/rds-2014-10-31/describedbengineversions.md)
+- [DescribeDBEngineVersions](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeDBEngineVersions)
 
-- [DescribeDBInstances](../../../goto/boto3/rds-2014-10-31/describedbinstances.md)
+- [DescribeDBInstances](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeDBInstances)
 
-- [DescribeDBParameterGroups](../../../goto/boto3/rds-2014-10-31/describedbparametergroups.md)
+- [DescribeDBParameterGroups](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeDBParameterGroups)
 
-- [DescribeDBParameters](../../../goto/boto3/rds-2014-10-31/describedbparameters.md)
+- [DescribeDBParameters](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeDBParameters)
 
-- [DescribeDBSnapshots](../../../goto/boto3/rds-2014-10-31/describedbsnapshots.md)
+- [DescribeDBSnapshots](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeDBSnapshots)
 
-- [DescribeOrderableDBInstanceOptions](../../../goto/boto3/rds-2014-10-31/describeorderabledbinstanceoptions.md)
+- [DescribeOrderableDBInstanceOptions](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeOrderableDBInstanceOptions)
 
-- [ModifyDBParameterGroup](../../../goto/boto3/rds-2014-10-31/modifydbparametergroup.md)
+- [ModifyDBParameterGroup](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/ModifyDBParameterGroup)
 
 Swift
 

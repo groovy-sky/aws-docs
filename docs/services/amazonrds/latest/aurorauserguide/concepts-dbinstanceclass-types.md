@@ -1,3 +1,7 @@
+---
+title: "DB instance class types"
+---
+
 # DB instance class types
 
 Amazon Aurora

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting point-in-time-recovery failures due to a log sequence number gap"
+---
+
 # Troubleshooting point-in-time-recovery failures due to a log sequence number gap
 
 When attempting point-in-time-recovery (PITR) in RDS for SQL Server, you might encounter failures due

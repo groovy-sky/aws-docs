@@ -1,3 +1,7 @@
+---
+title: "Settings for DB instances"
+---
+
 # Settings for DB instances
 
 In the following table, you can find details about settings that you choose when you

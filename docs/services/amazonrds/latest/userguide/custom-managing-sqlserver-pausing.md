@@ -1,3 +1,7 @@
+---
+title: "Pausing and resuming RDS Custom automation"
+---
+
 # Pausing and resuming RDS Custom automation
 
 RDS Custom automatically provides monitoring and instance recovery for an RDS Custom for SQL Server DB instance. If you need to

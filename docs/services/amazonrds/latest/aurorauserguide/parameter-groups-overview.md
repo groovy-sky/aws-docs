@@ -1,3 +1,7 @@
+---
+title: "Overview of parameter groups"
+---
+
 # Overview of parameter groups
 
 A _DB cluster parameter group_ acts as a container for

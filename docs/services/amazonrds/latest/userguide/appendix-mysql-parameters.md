@@ -1,3 +1,7 @@
+---
+title: "Parameters for MySQL"
+---
+
 # Parameters for MySQL
 
 By default, a MySQL DB instance uses a DB parameter group that is specific to a MySQL database.

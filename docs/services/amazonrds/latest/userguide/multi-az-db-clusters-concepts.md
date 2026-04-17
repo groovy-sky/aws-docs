@@ -1,3 +1,7 @@
+---
+title: "Multi-AZ DB cluster deployments for Amazon RDS"
+---
+
 # Multi-AZ DB cluster deployments for Amazon RDS
 
 A _Multi-AZ DB cluster deployment_ is a semisynchronous, high availability deployment

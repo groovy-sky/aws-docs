@@ -1,3 +1,7 @@
+---
+title: "Creating CloudWatch alarms to monitor Amazon Aurora"
+---
+
 # Creating CloudWatch alarms to monitor Amazon Aurora
 
 You can create a CloudWatch alarm that sends an Amazon SNS message when the alarm changes state. An alarm watches a single metric over a time period that you specify. The alarm can also perform one or

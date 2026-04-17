@@ -1,3 +1,7 @@
+---
+title: "Prerequisites and limitations"
+---
+
 # Prerequisites and limitations
 
 Before getting started with global datastores, be aware of the following:

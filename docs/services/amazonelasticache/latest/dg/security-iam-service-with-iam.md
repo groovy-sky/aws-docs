@@ -1,3 +1,7 @@
+---
+title: "How Amazon ElastiCache works with IAM"
+---
+
 # How Amazon ElastiCache works with IAM
 
 Before you use IAM to manage access to ElastiCache, learn what IAM features are

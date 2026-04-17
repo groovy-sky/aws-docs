@@ -1,3 +1,7 @@
+---
+title: "Monitoring MariaDB read replicas"
+---
+
 # Monitoring MariaDB read replicas
 
 For MariaDB read replicas, you can monitor replication lag in Amazon CloudWatch by viewing

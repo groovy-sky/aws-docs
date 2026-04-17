@@ -1,3 +1,7 @@
+---
+title: "Checking Aurora MySQL version numbers"
+---
+
 # Checking Aurora MySQL version numbers
 
 Although Aurora MySQL-Compatible Edition is compatible with the MySQL database engines, Aurora MySQL includes features and bug

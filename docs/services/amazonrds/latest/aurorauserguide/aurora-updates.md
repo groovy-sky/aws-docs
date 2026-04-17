@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora updates"
+---
+
 # Amazon Aurora updates
 
 Amazon Aurora releases updates regularly. Updates are applied to Amazon Aurora DB clusters during system maintenance windows. The timing

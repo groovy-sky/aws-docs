@@ -1,3 +1,7 @@
+---
+title: "Distributed query tracing in PostgreSQL logs in Aurora PostgreSQL Limitless Database"
+---
+
 # Distributed query tracing in PostgreSQL logs in Aurora PostgreSQL Limitless Database
 
 Distributed query tracing is a tool to trace and correlate queries in PostgreSQL logs across Aurora PostgreSQL Limitless Database. In Aurora PostgreSQL, you use the transaction

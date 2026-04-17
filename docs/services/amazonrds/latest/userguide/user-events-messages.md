@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS event categories and event messages"
+---
+
 # Amazon RDS event categories and event messages
 
 Amazon RDS generates a significant number of events in categories that you can subscribe to using the Amazon RDS Console, AWS CLI, or the API.

@@ -1,3 +1,7 @@
+---
+title: "Using Auto Discovery"
+---
+
 # Using Auto Discovery
 
 To begin using Auto Discovery with ElastiCache for Memcached, follow these steps:

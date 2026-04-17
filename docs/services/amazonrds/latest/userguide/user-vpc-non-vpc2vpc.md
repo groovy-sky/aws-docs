@@ -1,3 +1,7 @@
+---
+title: "Moving a DB instance not in a VPC into a VPC"
+---
+
 # Moving a DB instance not in a VPC into a VPC
 
 Some legacy DB instances on the EC2-Classic platform are not in a VPC.

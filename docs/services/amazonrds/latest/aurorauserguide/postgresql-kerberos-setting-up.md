@@ -1,3 +1,7 @@
+---
+title: "Setting up Kerberos authentication for PostgreSQL DB clusters"
+---
+
 # Setting up Kerberos authentication for PostgreSQL DB clusters
 
 You use AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) to set up Kerberos authentication for a

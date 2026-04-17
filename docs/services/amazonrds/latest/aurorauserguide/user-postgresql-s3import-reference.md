@@ -1,3 +1,7 @@
+---
+title: "Function reference"
+---
+
 # Function reference
 
 ###### Functions

@@ -1,3 +1,7 @@
+---
+title: "Saving data from an Amazon Aurora MySQL DB cluster into text files in an Amazon S3 bucket"
+---
+
 # Saving data from an Amazon Aurora MySQL DB cluster into text files in an Amazon S3 bucket
 
 You can use the `SELECT INTO OUTFILE S3` statement to query data from an
@@ -13,9 +17,6 @@ The `LOAD DATA FROM S3` statement can use files created by the `SELECT INTO
 see [Loading data into an Amazon Aurora MySQL DB cluster from text files in an Amazon S3 bucket](auroramysql-integrating-loadfroms3.md).
 
 ###### Note
-
-This feature isn't supported for Aurora Serverless v1 DB clusters. It is supported
-for Aurora Serverless v2 DB clusters.
 
 You can also save DB cluster data and DB cluster snapshot data to Amazon S3 using the
 AWS Management Console, AWS CLI, or Amazon RDS API. For more information, see [Exporting DB cluster data to Amazon S3](export-cluster-data.md) and [Exporting DB cluster snapshot data to Amazon S3](aurora-export-snapshot.md).

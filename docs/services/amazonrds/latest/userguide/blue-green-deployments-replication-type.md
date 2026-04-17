@@ -1,3 +1,7 @@
+---
+title: "PostgreSQL replication methods for blue/green deployments"
+---
+
 # PostgreSQL replication methods for blue/green deployments
 
 Amazon RDS for PostgreSQL primarily uses physical replication for blue/green deployments. However,

@@ -1,3 +1,7 @@
+---
+title: "Choosing the new monitoring view from the Performance Insights page"
+---
+
 # Choosing the new monitoring view from the Performance Insights page
 
 ###### Important

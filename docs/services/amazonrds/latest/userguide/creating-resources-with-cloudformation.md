@@ -1,3 +1,7 @@
+---
+title: "Creating Amazon RDS resources with AWS CloudFormation"
+---
+
 # Creating Amazon RDS resources with AWS CloudFormation
 
 Amazon RDS is integrated

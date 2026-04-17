@@ -1,3 +1,7 @@
+---
+title: "Use DeleteDBParameterGroup with an AWS SDK or CLI"
+---
+
 # Use `DeleteDBParameterGroup` with an AWS SDK or CLI
 
 The following code examples show how to use `DeleteDBParameterGroup`.
@@ -38,7 +42,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DeleteDBParameterGroup](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/deletedbparametergroup.md)
+[DeleteDBParameterGroup](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DeleteDBParameterGroup)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -79,7 +83,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/c
 ```
 
 - For API details, see
-[DeleteDBParameterGroup](../../../../reference/goto/sdkforcpp/rds-2014-10-31/deletedbparametergroup.md)
+[DeleteDBParameterGroup](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DeleteDBParameterGroup)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -212,7 +216,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[DeleteDBParameterGroup](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/deletedbparametergroup.md)
+[DeleteDBParameterGroup](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DeleteDBParameterGroup)
 in _AWS SDK for Java 2.x API Reference_.
 
 Python
@@ -267,7 +271,7 @@ class InstanceWrapper:
 ```
 
 - For API details, see
-[DeleteDBParameterGroup](../../../goto/boto3/rds-2014-10-31/deletedbparametergroup.md)
+[DeleteDBParameterGroup](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DeleteDBParameterGroup)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

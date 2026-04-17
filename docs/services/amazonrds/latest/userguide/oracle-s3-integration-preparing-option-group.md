@@ -1,3 +1,7 @@
+---
+title: "Adding the Amazon S3 integration option"
+---
+
 # Adding the Amazon S3 integration option
 
 To integrate Amazon RDS for Oracle with Amazon S3, your DB instance must be associated with an option group

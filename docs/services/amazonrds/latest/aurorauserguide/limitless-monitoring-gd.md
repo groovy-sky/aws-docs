@@ -1,3 +1,7 @@
+---
+title: "Monitoring Aurora PostgreSQL Limitless Database with Amazon GuardDuty RDS Protection"
+---
+
 # Monitoring Aurora PostgreSQL Limitless Database with Amazon GuardDuty RDS Protection
 
 Amazon GuardDuty is a threat detection service that helps protect your accounts, containers, workloads, and the data within your AWS environment. Using

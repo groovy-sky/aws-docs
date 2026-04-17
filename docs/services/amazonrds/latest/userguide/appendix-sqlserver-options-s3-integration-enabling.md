@@ -1,3 +1,7 @@
+---
+title: "Enabling RDS for SQL Server integration with S3"
+---
+
 # Enabling RDS for SQL Server integration with S3
 
 In the following section, you can find how to enable Amazon S3 integration with Amazon RDS for SQL

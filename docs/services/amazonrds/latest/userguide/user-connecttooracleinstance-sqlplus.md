@@ -1,3 +1,7 @@
+---
+title: "Connecting to your DB instance using SQL*Plus"
+---
+
 # Connecting to your DB instance using SQL\*Plus
 
 You can use a utility like SQL\*Plus to connect to an Amazon RDS DB instance running Oracle. To download Oracle

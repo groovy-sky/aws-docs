@@ -1,3 +1,7 @@
+---
+title: "Viewing a Performance Insights metric widget in CloudWatch"
+---
+
 # Viewing a Performance Insights metric widget in CloudWatch
 
 Select a Performance Insights metric widget in the Amazon RDS Performance Insights dashboard and view the metric data in the CloudWatch console.

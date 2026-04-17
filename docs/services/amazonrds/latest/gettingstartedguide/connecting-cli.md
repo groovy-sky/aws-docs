@@ -1,3 +1,7 @@
+---
+title: "Using the AWS CLI to retrieve and validate connection information for Amazon RDS"
+---
+
 # Using the AWS CLI to retrieve and validate connection information for Amazon RDS
 
 While the AWS Command Line Interface (AWS CLI) doesn't directly connect to a database for querying or

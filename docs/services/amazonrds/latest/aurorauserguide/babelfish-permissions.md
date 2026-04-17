@@ -1,3 +1,7 @@
+---
+title: "Managing permissions and access control in Babelfish for Aurora PostgreSQL"
+---
+
 # Managing permissions and access control in Babelfish for Aurora PostgreSQL
 
 In Babelfish for Aurora PostgreSQL, you can manage permissions and access control for databases, schemas,

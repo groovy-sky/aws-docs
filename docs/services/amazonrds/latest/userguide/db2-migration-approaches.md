@@ -1,3 +1,7 @@
+---
+title: "Using AWS services to migrate data from Db2 to Amazon RDS for Db2"
+---
+
 # Using AWS services to migrate data from Db2 to Amazon RDS for Db2
 
 In Amazon RDS, there are several ways you can migrate data from a Db2 database to Amazon RDS for Db2.

@@ -1,3 +1,7 @@
+---
+title: "Processing Amazon RDS Data API query results in JSON format"
+---
+
 # Processing Amazon RDS Data API query results in JSON format
 
 When you call the `ExecuteStatement` operation, you can choose to have the query results returned as

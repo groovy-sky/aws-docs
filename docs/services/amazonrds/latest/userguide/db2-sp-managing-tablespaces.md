@@ -1,3 +1,7 @@
+---
+title: "Stored procedures for tablespaces for RDS for Db2"
+---
+
 # Stored procedures for tablespaces for RDS for Db2
 
 The built-in stored procedures described in this topic manage tablespaces for Amazon RDS for Db2

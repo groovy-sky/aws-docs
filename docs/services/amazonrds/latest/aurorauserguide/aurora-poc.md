@@ -1,3 +1,7 @@
+---
+title: "Performing a proof of concept with Amazon Aurora"
+---
+
 # Performing a proof of concept with Amazon Aurora
 
 Following, you can find an explanation of how to set up and run a proof of concept for Aurora. A

@@ -1,3 +1,7 @@
+---
+title: "High availability using replication groups"
+---
+
 # High availability using replication groups
 
 Single-node Amazon ElastiCache Valkey and Redis OSS clusters are in-memory entities with limited data protection

@@ -1,3 +1,7 @@
+---
+title: "Monitoring Aurora PostgreSQL Limitless Database with CloudWatch Database Insights"
+---
+
 # Monitoring Aurora PostgreSQL Limitless Database with CloudWatch Database Insights
 
 The Standard mode of Database Insights is required as part of enabling Aurora PostgreSQL Limitless Database. You can use it to monitor the database load (DB Load) of your Limitless Database DB instances in real time.

@@ -1,3 +1,7 @@
+---
+title: "Recommendations from Amazon Aurora"
+---
+
 # Recommendations from Amazon Aurora
 
 Amazon Aurora provides automated

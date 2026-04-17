@@ -1,3 +1,7 @@
+---
+title: "Reference for the apg_plan_mgmt.dba_plans view for Aurora PostgreSQL-Compatible Edition"
+---
+
 # Reference for the apg\_plan\_mgmt.dba\_plans view for Aurora PostgreSQL-Compatible Edition
 
 The columns of plan information in the `apg_plan_mgmt.dba_plans` view

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting workload issues for Aurora MySQL databases"
+---
+
 # Troubleshooting workload issues for Aurora MySQL databases
 
 Database workload can be viewed as reads and writes. With an understanding of "normal" database workload, you can tune queries

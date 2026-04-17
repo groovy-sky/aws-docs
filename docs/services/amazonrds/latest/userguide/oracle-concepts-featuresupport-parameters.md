@@ -1,3 +1,7 @@
+---
+title: "RDS for Oracle initialization parameters"
+---
+
 # RDS for Oracle initialization parameters
 
 In Amazon RDS, you manage parameters using a DB parameter group. Using this group, you can

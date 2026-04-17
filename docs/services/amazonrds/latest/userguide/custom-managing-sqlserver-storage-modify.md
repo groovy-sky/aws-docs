@@ -1,3 +1,7 @@
+---
+title: "Modifying the storage for an RDS Custom for SQL Server DB instance"
+---
+
 # Modifying the storage for an RDS Custom for SQL Server DB instance
 
 Modifying storage for an RDS Custom for SQL Server DB instance is similar to modifying storage for an Amazon RDS DB instance, but you can only do the

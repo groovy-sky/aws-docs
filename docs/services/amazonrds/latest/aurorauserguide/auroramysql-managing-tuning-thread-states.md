@@ -1,3 +1,7 @@
+---
+title: "Tuning Aurora MySQL with thread states"
+---
+
 # Tuning Aurora MySQL with thread states
 
 The following table summarizes the most common general thread states for Aurora MySQL.

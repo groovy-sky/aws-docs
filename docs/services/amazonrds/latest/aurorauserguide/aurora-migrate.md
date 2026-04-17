@@ -1,3 +1,7 @@
+---
+title: "Migrating data to an Amazon Aurora DB cluster"
+---
+
 # Migrating data to an Amazon Aurora DB cluster
 
 You have several options for migrating data from your existing database to an Amazon Aurora DB

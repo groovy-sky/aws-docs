@@ -1,3 +1,7 @@
+---
+title: "Event triggers for RDS for PostgreSQL"
+---
+
 # Event triggers for RDS for PostgreSQL
 
 All current PostgreSQL versions support event triggers, and so do all available

@@ -1,3 +1,7 @@
+---
+title: "Deleting an RDS Custom for SQL Server snapshot"
+---
+
 # Deleting an RDS Custom for SQL Server snapshot
 
 You can delete DB snapshots managed by RDS Custom for SQL Server when you no longer need them. The deletion procedure is the same for both Amazon RDS and

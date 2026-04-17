@@ -1,3 +1,7 @@
+---
+title: "Using BCP utility from Linux to import and export data"
+---
+
 # Using BCP utility from Linux to import and export data
 
 The BCP (Bulk Copy Program) utility provides an efficient way to transfer large amounts

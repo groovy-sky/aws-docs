@@ -1,3 +1,7 @@
+---
+title: "Associating a DB cluster parameter group with a DB cluster in Amazon Aurora"
+---
+
 # Associating a DB cluster parameter group with a DB cluster in Amazon Aurora
 
 You can create your own DB cluster parameter groups with customized settings. You can associate a DB cluster parameter group

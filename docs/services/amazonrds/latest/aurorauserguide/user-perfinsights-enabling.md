@@ -1,3 +1,7 @@
+---
+title: "Turning Performance Insights on and off for Aurora"
+---
+
 # Turning Performance Insights on and off for Aurora
 
 ###### Important

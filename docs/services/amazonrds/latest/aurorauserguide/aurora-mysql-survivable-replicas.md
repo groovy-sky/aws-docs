@@ -1,3 +1,7 @@
+---
+title: "Rebooting an Aurora cluster with read availability"
+---
+
 # Rebooting an Aurora cluster with read availability
 
 With the read availability feature, you can reboot the writer instance of your Aurora cluster without rebooting the reader

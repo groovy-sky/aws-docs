@@ -1,3 +1,7 @@
+---
+title: "Parameter groups for Amazon Aurora"
+---
+
 # Parameter groups for Amazon Aurora
 
 _Database parameters_ specify how the database is configured. For example, database parameters can specify

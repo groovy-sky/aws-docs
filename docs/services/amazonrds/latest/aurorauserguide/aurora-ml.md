@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Aurora machine learning"
+---
+
 # Using Amazon Aurora machine learning
 
 By using Amazon Aurora machine learning, you can integrate your Aurora DB cluster with one of the following AWS machine learning services,

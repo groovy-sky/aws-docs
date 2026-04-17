@@ -1,3 +1,7 @@
+---
+title: "Oracle Management Agent for Enterprise Manager Cloud Control"
+---
+
 # Oracle Management Agent for Enterprise Manager Cloud Control
 
 Oracle Enterprise Manager (OEM) Management Agent is a software component that monitors

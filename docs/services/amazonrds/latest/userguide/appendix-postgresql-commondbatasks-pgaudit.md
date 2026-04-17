@@ -1,3 +1,7 @@
+---
+title: "Using pgAudit to log database activity"
+---
+
 # Using pgAudit to log database activity
 
 Financial institutions, government agencies, and many industries need to keep

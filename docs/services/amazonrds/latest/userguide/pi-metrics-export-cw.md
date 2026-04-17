@@ -1,3 +1,7 @@
+---
+title: "Exporting Performance Insights metrics to CloudWatch"
+---
+
 # Exporting Performance Insights metrics to CloudWatch
 
 Performance Insights lets you export the preconfigured or custom metrics dashboard for your DB instance to

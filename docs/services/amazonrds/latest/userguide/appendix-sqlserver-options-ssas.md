@@ -1,3 +1,7 @@
+---
+title: "Support for SQL Server Analysis Services in Amazon RDS for SQL Server"
+---
+
 # Support for SQL Server Analysis Services in Amazon RDS for SQL Server
 
 Microsoft SQL Server Analysis Services (SSAS) is part of the Microsoft Business Intelligence (MSBI) suite. SSAS is an online

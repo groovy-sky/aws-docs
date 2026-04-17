@@ -1,3 +1,7 @@
+---
+title: "Securing your Amazon RDS DB instance"
+---
+
 # Securing your Amazon RDS DB instance
 
 Security is a critical aspect of Amazon RDS database management, ensuring that sensitive data

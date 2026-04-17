@@ -1,3 +1,7 @@
+---
+title: "Creating an RDS for Db2 replica in standby mode"
+---
+
 # Creating an RDS for Db2 replica in standby mode
 
 By default, Db2 replicas are created in read-only mode. You can create a replica in

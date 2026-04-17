@@ -1,3 +1,7 @@
+---
+title: "Managing table-based MariaDB logs"
+---
+
 # Managing table-based MariaDB logs
 
 You can direct the general and slow query logs to tables on the DB instance. To do so,

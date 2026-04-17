@@ -1,3 +1,7 @@
+---
+title: "Improved memory management in Aurora PostgreSQL"
+---
+
 # Improved memory management in Aurora PostgreSQL
 
 Aurora PostgreSQL now includes advanced memory management capabilities to optimize

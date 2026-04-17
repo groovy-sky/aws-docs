@@ -1,3 +1,7 @@
+---
+title: "Using pgAdmin to connect to a RDS for PostgreSQL DB instance"
+---
+
 # Using pgAdmin to connect to a RDS for PostgreSQL DB instance
 
 You can use the open-source tool pgAdmin to connect to your RDS for PostgreSQL DB instance.

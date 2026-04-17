@@ -1,3 +1,7 @@
+---
+title: "How to perform a major version upgrade for RDS for PostgreSQL"
+---
+
 # How to perform a major version upgrade for RDS for PostgreSQL
 
 We recommend the following process when performing a major version upgrade on

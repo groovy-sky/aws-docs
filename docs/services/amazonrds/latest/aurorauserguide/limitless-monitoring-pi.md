@@ -1,3 +1,7 @@
+---
+title: "Monitoring Aurora PostgreSQL Limitless Database with Performance Insights"
+---
+
 # Monitoring Aurora PostgreSQL Limitless Database with Performance Insights
 
 Use Performance Insights to monitor your Aurora PostgreSQL Limitless Database cluster. Performance Insights works similarly for Aurora PostgreSQL Limitless Database as it does for standard Aurora DB clusters. However, you track metrics

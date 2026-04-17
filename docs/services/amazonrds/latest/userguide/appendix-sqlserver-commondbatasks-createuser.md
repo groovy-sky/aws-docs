@@ -1,3 +1,7 @@
+---
+title: "Creating a database user for Amazon RDS for SQL Server"
+---
+
 # Creating a database user for Amazon RDS for SQL Server
 
 You can create a database user for your Amazon RDS for Microsoft SQL Server DB instance by running a T-SQL script like the following example. Use

@@ -1,3 +1,7 @@
+---
+title: "Lock:transactionid"
+---
+
 # Lock:transactionid
 
 The `Lock:transactionid` event occurs when a transaction is waiting for a row-level lock.

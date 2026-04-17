@@ -1,3 +1,7 @@
+---
+title: "Performing an incremental backup of a tenant database"
+---
+
 # Performing an incremental backup of a tenant database
 
 You can perform an incremental backup of the current tenant database in your CDB.

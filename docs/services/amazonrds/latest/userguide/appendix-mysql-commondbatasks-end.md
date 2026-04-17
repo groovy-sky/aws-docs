@@ -1,3 +1,7 @@
+---
+title: "Ending a session or query for RDS for MySQL"
+---
+
 # Ending a session or query for RDS for MySQL
 
 You can end user sessions or queries on DB instances by using the

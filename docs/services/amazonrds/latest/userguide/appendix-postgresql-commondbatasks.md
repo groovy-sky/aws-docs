@@ -1,3 +1,7 @@
+---
+title: "Common DBA tasks for Amazon RDS for PostgreSQL"
+---
+
 # Common DBA tasks for Amazon RDS for PostgreSQL
 
 Database administrators (DBAs) perform a variety of tasks when administering an

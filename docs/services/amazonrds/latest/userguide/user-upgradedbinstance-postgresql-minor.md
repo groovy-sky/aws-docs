@@ -1,3 +1,7 @@
+---
+title: "Automatic minor version upgrades for RDS for PostgreSQL"
+---
+
 # Automatic minor version upgrades for RDS for PostgreSQL
 
 If you enable the **Auto minor version upgrade** option when

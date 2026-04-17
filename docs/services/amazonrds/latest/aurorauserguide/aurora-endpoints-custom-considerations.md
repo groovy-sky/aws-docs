@@ -1,3 +1,7 @@
+---
+title: "Considerations for custom endpoints in Amazon Aurora"
+---
+
 # Considerations for custom endpoints in Amazon Aurora
 
 Use the following sections to manage, specify properties, and use membership rules for

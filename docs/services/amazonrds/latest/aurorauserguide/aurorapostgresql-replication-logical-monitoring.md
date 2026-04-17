@@ -1,3 +1,7 @@
+---
+title: "Monitoring the write-through cache and logical slots for Aurora PostgreSQL logical replication"
+---
+
 # Monitoring the write-through cache and logical slots for Aurora PostgreSQL logical replication
 
 Monitor the logical replication write-through cache and manage logical slots to

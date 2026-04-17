@@ -1,3 +1,7 @@
+---
+title: "Automatic minor version upgrades for RDS for MySQL"
+---
+
 # Automatic minor version upgrades for RDS for MySQL
 
 If you specify the following settings when creating or modifying a DB instance, you can have your

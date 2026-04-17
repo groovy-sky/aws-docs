@@ -1,3 +1,7 @@
+---
+title: "Getting information from the Babelfish system catalog"
+---
+
 # Getting information from the Babelfish system catalog
 
 You can obtain information about the database objects that are stored in your

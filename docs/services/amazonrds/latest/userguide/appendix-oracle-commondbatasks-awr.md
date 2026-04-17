@@ -1,3 +1,7 @@
+---
+title: "Generating performance reports with Automatic Workload Repository (AWR)"
+---
+
 # Generating performance reports with Automatic Workload Repository (AWR)
 
 To gather performance data and generate reports, Oracle recommends Automatic

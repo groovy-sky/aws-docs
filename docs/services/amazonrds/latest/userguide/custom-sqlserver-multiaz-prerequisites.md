@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for a Multi-AZ deployment with RDS Custom for SQL Server"
+---
+
 # Prerequisites for a Multi-AZ deployment with RDS Custom for SQL Server
 
 If you have an existing RDS Custom for SQL Server Single-AZ deployment, the following additional

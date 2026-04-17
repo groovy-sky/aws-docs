@@ -1,3 +1,7 @@
+---
+title: "Authenticating with the Valkey and Redis OSS AUTH command"
+---
+
 # Authenticating with the Valkey and Redis OSS AUTH command
 
 ###### Note
@@ -320,6 +324,6 @@ If you need to disable access control on an ElastiCache Cluster, see [Disabling 
 
 Authenticating with IAM
 
-Disabling access control on an ElastiCache Valkey or Redis OSS cache
+Migrating from AUTH to IAM
 
 All content copied from https://docs.aws.amazon.com/.

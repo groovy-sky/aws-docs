@@ -1,3 +1,7 @@
+---
+title: "Creating an Aurora DB cluster or a global cluster with Amazon RDS Extended Support"
+---
+
 # Creating an Aurora DB cluster or a global cluster with Amazon RDS Extended Support
 
 When you create an Aurora DB cluster or a global cluster, select **Enable**

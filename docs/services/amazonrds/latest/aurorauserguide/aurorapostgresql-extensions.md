@@ -1,3 +1,7 @@
+---
+title: "Extension versions for Amazon Aurora PostgreSQL"
+---
+
 # Extension versions for Amazon Aurora PostgreSQL
 
 You can install and configure various PostgreSQL extensions for use with Aurora PostgreSQL

@@ -1,3 +1,7 @@
+---
+title: "Monitoring the status of a task"
+---
+
 # Monitoring the status of a task
 
 To track the status of your granting or revoking task, call the

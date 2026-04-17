@@ -1,3 +1,7 @@
+---
+title: "Improving Babelfish query performance"
+---
+
 # Improving Babelfish query performance
 
 You can achieve faster query processing in Babelfish using query hints and the PostgreSQL optimizer.

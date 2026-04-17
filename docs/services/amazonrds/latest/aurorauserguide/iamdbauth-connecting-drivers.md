@@ -1,3 +1,7 @@
+---
+title: "Connecting to your DB cluster using IAM authentication with the AWS drivers"
+---
+
 # Connecting to your DB cluster using IAM authentication with the AWS drivers
 
 The AWS suite of drivers has been designed to provide support for faster

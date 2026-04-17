@@ -1,3 +1,7 @@
+---
+title: "Requiring SSL/TLS for all connections to a MariaDB DB instance on Amazon RDS"
+---
+
 # Requiring SSL/TLS for all connections to a MariaDB DB instance on Amazon RDS
 
 Use the `require_secure_transport` parameter to require that all user

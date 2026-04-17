@@ -1,3 +1,7 @@
+---
+title: "Working with Multi-AZ deployments for Amazon RDS on AWS Outposts"
+---
+
 # Working with Multi-AZ deployments for Amazon RDS on AWS Outposts
 
 For Multi-AZ deployments, Amazon RDS creates a primary DB instance on one AWS Outpost. RDS

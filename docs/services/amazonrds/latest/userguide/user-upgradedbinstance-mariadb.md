@@ -1,3 +1,7 @@
+---
+title: "Upgrades of the MariaDB DB engine"
+---
+
 # Upgrades of the MariaDB DB engine
 
 When Amazon RDS supports a new version of a database engine, you can upgrade your DB instances

@@ -1,3 +1,7 @@
+---
+title: "Restoring to a specified time from a replicated backup for Amazon RDS"
+---
+
 # Restoring to a specified time from a replicated backup for Amazon RDS
 
 You can restore a DB instance to a specific point in time from a replicated backup using the Amazon RDS console. You can also use

@@ -1,3 +1,7 @@
+---
+title: "Caching database query results"
+---
+
 # Caching database query results
 
 A common pattern to reduce database query latencies is query caching. Applications

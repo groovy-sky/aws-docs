@@ -1,3 +1,7 @@
+---
+title: "Backing up and restoring data with additional storage volumes in RDS for Oracle"
+---
+
 # Backing up and restoring data with additional storage volumes in RDS for Oracle
 
 You can use automated backups and create a DB snapshot with your DB instance with additional storage volumes.

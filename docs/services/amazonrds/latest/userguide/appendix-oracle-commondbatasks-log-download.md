@@ -1,3 +1,7 @@
+---
+title: "Accessing online and archived redo logs"
+---
+
 # Accessing online and archived redo logs
 
 You might want to access your online and archived redo log files for mining with

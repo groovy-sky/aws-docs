@@ -1,3 +1,7 @@
+---
+title: "AuroraMySQL database log files"
+---
+
 # AuroraMySQL database log files
 
 You can monitor the Aurora MySQL logs directly through the Amazon RDS console, Amazon RDS

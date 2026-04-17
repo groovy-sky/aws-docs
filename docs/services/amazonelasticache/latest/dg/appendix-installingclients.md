@@ -1,3 +1,7 @@
+---
+title: "Installing & compiling cluster clients"
+---
+
 # Installing & compiling cluster clients
 
 This section covers installing, configuring, and compiling the PHP and .NET Amazon ElastiCache

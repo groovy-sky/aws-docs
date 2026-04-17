@@ -1,3 +1,7 @@
+---
+title: "Example: Using logical replication with Aurora PostgreSQL DB clusters"
+---
+
 # Example: Using logical replication with Aurora PostgreSQL DB clusters
 
 The following procedure shows you how to start logical replication between two

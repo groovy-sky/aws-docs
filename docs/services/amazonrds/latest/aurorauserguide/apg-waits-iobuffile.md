@@ -1,3 +1,7 @@
+---
+title: "IO:BufFileRead and IO:BufFileWrite"
+---
+
 # IO:BufFileRead and IO:BufFileWrite
 
 The `IO:BufFileRead` and `IO:BufFileWrite` events occur when

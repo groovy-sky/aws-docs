@@ -1,3 +1,7 @@
+---
+title: "Babelfish limitations"
+---
+
 # Babelfish limitations
 
 The following limitations currently apply to Babelfish for Aurora PostgreSQL:

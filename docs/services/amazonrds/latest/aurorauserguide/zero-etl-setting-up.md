@@ -1,3 +1,7 @@
+---
+title: "Getting started with Aurora zero-ETL integrations"
+---
+
 # Getting started with Aurora zero-ETL integrations
 
 Before you create a zero-ETL integration, configure your Aurora DB cluster and your data warehouse with
@@ -126,7 +130,7 @@ warehouse. The data warehouse must meet the following requirements:
 - Encrypted (if using a provisioned cluster). For more information, see [Amazon Redshift database\
 encryption](../../../redshift/latest/mgmt/working-with-db-encryption.md).
 
-For instructions to create a data warehouse, see [Creating a cluster](../../../redshift/latest/mgmt/create-cluster.md) for provisioned
+For instructions to create a data warehouse, see [Creating a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/create-cluster) for provisioned
 clusters, or [Creating a workgroup with a namespace](../../../redshift/latest/mgmt/serverless-console-workgroups-create-workgroup-wizard.md) for Redshift Serverless.
 
 ### Enable case sensitivity on the data warehouse

@@ -1,3 +1,7 @@
+---
+title: "MariaDB on Amazon RDS versions"
+---
+
 # MariaDB on Amazon RDS versions
 
 For MariaDB, version numbers are organized as version X.Y.Z. In Amazon RDS terminology, X.Y

@@ -1,3 +1,7 @@
+---
+title: "Amazon VPC and Amazon RDS"
+---
+
 # Amazon VPC and Amazon RDS
 
 Amazon Virtual Private Cloud (Amazon VPC) makes it possible for you to launch AWS

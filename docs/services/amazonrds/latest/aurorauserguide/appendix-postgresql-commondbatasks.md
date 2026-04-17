@@ -1,3 +1,7 @@
+---
+title: "Working with extensions and foreign data wrappers"
+---
+
 # Working with extensions and foreign data wrappers
 
 To extend the functionality to your Aurora PostgreSQL-Compatible Edition DB cluster, you can install

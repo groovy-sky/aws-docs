@@ -1,3 +1,7 @@
+---
+title: "Enabling GTID-based replication for an Aurora MySQL cluster"
+---
+
 # Enabling GTID-based replication for an Aurora MySQL cluster
 
 When GTID-based replication is enabled for an Aurora MySQL DB cluster, the GTID settings apply

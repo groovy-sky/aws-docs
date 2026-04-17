@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS updates to AWS managed policies"
+---
+
 # Amazon RDS updates to AWS managed policies
 
 View details about updates to AWS managed policies for Amazon RDS since this service began tracking these changes. For automatic

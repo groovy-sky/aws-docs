@@ -1,3 +1,7 @@
+---
+title: "Stored procedures for audit policies for RDS for Db2"
+---
+
 # Stored procedures for audit policies for RDS for Db2
 
 The built-in stored procedures described in this topic manage audit policies for

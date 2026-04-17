@@ -1,3 +1,7 @@
+---
+title: "Stopping automated backup replication for Amazon RDS"
+---
+
 # Stopping automated backup replication for Amazon RDS
 
 You can stop backup replication for DB instances using the Amazon RDS console. You can also use the

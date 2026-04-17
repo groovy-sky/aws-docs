@@ -1,3 +1,7 @@
+---
+title: "Handling sequences in active-active replication"
+---
+
 # Handling sequences in active-active replication
 
 An RDS for PostgreSQL DB instance with the `pgactive` extension uses two different

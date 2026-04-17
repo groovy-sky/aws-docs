@@ -1,3 +1,7 @@
+---
+title: "Support for native backup and restore in SQL Server"
+---
+
 # Support for native backup and restore in SQL Server
 
 By using native backup and restore for SQL Server databases, you can create a

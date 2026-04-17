@@ -1,3 +1,7 @@
+---
+title: "Unsupported functionalities in Babelfish"
+---
+
 # Unsupported functionalities in Babelfish
 
 In the following table and lists, you can find functionality that isn't currently

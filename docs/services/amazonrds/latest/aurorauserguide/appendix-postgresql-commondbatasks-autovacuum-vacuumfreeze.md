@@ -1,3 +1,7 @@
+---
+title: "Performing a manual vacuum freeze"
+---
+
 # Performing a manual vacuum freeze
 
 You might want to perform a manual vacuum on a table that has a vacuum process already
@@ -90,7 +94,7 @@ Some lower versions of Amazon Aurora can't terminate an autovacuum process using
 preceding command and fail with the following error: `ERROR: 42501: must be a
                  superuser to terminate superuser process LOCATION: pg_terminate_backend,
                  signalfuncs.c:227`. To find the PostgreSQL versions
-that have been patched, search for the following bullet in [Amazon Aurora PostgreSQL updates](../../../index/index.md):
+that have been patched, search for the following bullet in [Amazon Aurora PostgreSQL updates](https://docs.aws.amazon.com/'):
 
 ```nohighlight
 

@@ -1,3 +1,7 @@
+---
+title: "Tuning RDS for PostgreSQL with Amazon DevOps Guru proactive insights"
+---
+
 # Tuning RDS for PostgreSQL with Amazon DevOps Guru proactive insights
 
 DevOps Guru proactive insights detects conditions on your RDS for PostgreSQL DB instances that can cause problems, and lets you know

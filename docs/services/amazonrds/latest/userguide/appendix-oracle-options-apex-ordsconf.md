@@ -1,3 +1,7 @@
+---
+title: "Configuring Oracle Rest Data Services (ORDS)"
+---
+
 # Configuring Oracle Rest Data Services (ORDS)
 
 The following topic lists the configuration options for ORDS 21 and 22:

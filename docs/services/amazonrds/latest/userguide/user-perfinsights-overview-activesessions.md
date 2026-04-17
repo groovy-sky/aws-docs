@@ -1,3 +1,7 @@
+---
+title: "Database load"
+---
+
 # Database load
 
 _Database load (DB load)_ measures the level of session activity in your

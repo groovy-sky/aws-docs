@@ -1,3 +1,7 @@
+---
+title: "Adding a source identifier to an Amazon RDS event notification subscription"
+---
+
 # Adding a source identifier to an Amazon RDS event notification subscription
 
 You can add a source identifier (the Amazon RDS source generating the event) to an existing subscription.

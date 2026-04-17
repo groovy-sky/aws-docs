@@ -1,3 +1,7 @@
+---
+title: "Aurora PostgreSQL query plan management"
+---
+
 # Aurora PostgreSQL query plan management
 
 With query plan management turned on for your Aurora PostgreSQL DB cluster, the optimizer

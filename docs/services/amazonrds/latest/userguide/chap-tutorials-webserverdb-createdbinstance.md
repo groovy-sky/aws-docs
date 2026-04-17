@@ -1,3 +1,7 @@
+---
+title: "Create an Amazon RDS DB instance"
+---
+
 # Create an Amazon RDS DB instance
 
 Create an RDS for MariaDB, RDS for MySQL, or RDS for PostgreSQL DB instance that maintains the data used by a web

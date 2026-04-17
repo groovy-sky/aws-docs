@@ -1,3 +1,7 @@
+---
+title: "Scenarios for accessing a DB cluster in a VPC"
+---
+
 # Scenarios for accessing a DB cluster in a VPC
 
 Amazon Aurora supports the following scenarios for accessing a DB cluster

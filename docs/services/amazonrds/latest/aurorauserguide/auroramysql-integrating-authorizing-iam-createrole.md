@@ -1,3 +1,7 @@
+---
+title: "Creating an IAM role to allow Amazon Aurora to access AWS services"
+---
+
 # Creating an IAM role to allow Amazon Aurora to access AWS services
 
 After creating an IAM policy to allow Aurora to access AWS resources, you must

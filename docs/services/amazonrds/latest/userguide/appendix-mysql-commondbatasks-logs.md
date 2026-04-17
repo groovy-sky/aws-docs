@@ -1,3 +1,7 @@
+---
+title: "Sending MySQL log output to tables"
+---
+
 # Sending MySQL log output to tables
 
 You can direct the general and slow query logs to tables on the DB instance by creating a DB parameter group

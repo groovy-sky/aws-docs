@@ -1,3 +1,7 @@
+---
+title: "Deploying SSAS projects on Amazon RDS"
+---
+
 # Deploying SSAS projects on Amazon RDS
 
 On RDS, you can't deploy SSAS projects directly by using SQL Server Management Studio

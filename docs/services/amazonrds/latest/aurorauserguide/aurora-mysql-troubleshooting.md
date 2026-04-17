@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Amazon Aurora MySQL database performance"
+---
+
 # Troubleshooting Amazon Aurora MySQL database performance
 
 This topic focuses on some common Aurora MySQL DB performance issues, and how to troubleshoot or collect information to remediate

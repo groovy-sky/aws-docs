@@ -1,3 +1,7 @@
+---
+title: "Automatically connecting an EC2 instance and a Multi-AZ DB cluster"
+---
+
 # Automatically connecting an EC2 instance and a Multi-AZ DB cluster
 
 You can use the Amazon RDS console to simplify setting up a connection between an Amazon Elastic Compute Cloud (Amazon EC2) instance and a

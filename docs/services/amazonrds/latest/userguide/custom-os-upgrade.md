@@ -1,3 +1,7 @@
+---
+title: "RDS Custom for SQL Server Operating system updates"
+---
+
 # RDS Custom for SQL Server Operating system updates
 
 RDS Custom for SQL Server provides the following methods to apply operating system updates to your RDS Provided Engine Version (RPEV) instances:

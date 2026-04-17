@@ -1,3 +1,7 @@
+---
+title: "Connecting to a Babelfish DB cluster"
+---
+
 # Connecting to a Babelfish DB cluster
 
 To connect to Babelfish, you connect to the endpoint of the Aurora PostgreSQL

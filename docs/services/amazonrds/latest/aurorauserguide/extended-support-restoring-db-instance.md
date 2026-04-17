@@ -1,3 +1,7 @@
+---
+title: "Restoring an Aurora DB cluster or a global cluster with Amazon RDS Extended Support"
+---
+
 # Restoring an Aurora DB cluster or a global cluster with Amazon RDS Extended Support
 
 When you restore an Aurora DB cluster or a global cluster, select **Enable**

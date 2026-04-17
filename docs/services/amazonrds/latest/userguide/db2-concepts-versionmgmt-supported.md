@@ -1,3 +1,7 @@
+---
+title: "Upgrade management for Amazon RDS Db2 instances"
+---
+
 # Upgrade management for Amazon RDS Db2 instances
 
 To see the current list of supported Db2 minor versions on RDS, use one of the following commands:

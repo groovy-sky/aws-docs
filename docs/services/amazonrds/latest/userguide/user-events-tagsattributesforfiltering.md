@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS event notification tags and attributes"
+---
+
 # Amazon RDS event notification tags and attributes
 
 When Amazon RDS sends an event notification to Amazon Simple Notification Service (SNS) or Amazon EventBridge, the notification

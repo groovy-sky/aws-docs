@@ -1,3 +1,7 @@
+---
+title: "Skipping corrupt blocks"
+---
+
 # Skipping corrupt blocks
 
 To skip corrupt blocks during index and table scans, use the

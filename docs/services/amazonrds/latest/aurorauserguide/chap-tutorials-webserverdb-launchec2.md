@@ -1,3 +1,7 @@
+---
+title: "Launch an EC2 instance to connect with your DB cluster"
+---
+
 # Launch an EC2 instance to connect with your DB cluster
 
 Create an Amazon EC2 instance in the public subnet of your VPC.

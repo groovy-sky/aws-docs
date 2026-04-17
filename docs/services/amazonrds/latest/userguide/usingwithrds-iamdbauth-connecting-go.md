@@ -1,3 +1,7 @@
+---
+title: "Connecting to your DB instance using IAM authentication and the AWS SDK for Go"
+---
+
 # Connecting to your DB instance using IAM authentication and the AWS SDK for Go
 
 You can connect to an

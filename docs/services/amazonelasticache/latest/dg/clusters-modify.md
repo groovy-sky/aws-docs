@@ -1,3 +1,7 @@
+---
+title: "Modifying an ElastiCache cluster"
+---
+
 # Modifying an ElastiCache cluster
 
 In addition to adding or removing nodes from an ElastiCache cluster,

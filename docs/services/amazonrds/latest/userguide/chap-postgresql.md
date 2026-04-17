@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for PostgreSQL"
+---
+
 # Amazon RDS for PostgreSQL
 
 Amazon RDS supports DB instances running several versions of PostgreSQL. For a list of

@@ -1,3 +1,7 @@
+---
+title: "Connecting to Memcached Cache Nodes Manually"
+---
+
 # Connecting to Memcached Cache Nodes Manually
 
 If your client program does not use Auto Discovery, it can manually connect

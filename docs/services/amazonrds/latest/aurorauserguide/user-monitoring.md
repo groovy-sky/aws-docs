@@ -1,3 +1,7 @@
+---
+title: "Viewing metrics in the Amazon RDS console"
+---
+
 # Viewing metrics in the Amazon RDS console
 
 Amazon RDS integrates with Amazon CloudWatch to display a variety of Aurora DB cluster metrics in the RDS console. Some

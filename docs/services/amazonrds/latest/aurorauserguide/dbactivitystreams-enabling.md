@@ -1,3 +1,7 @@
+---
+title: "Starting a database activity stream"
+---
+
 # Starting a database activity stream
 
 To monitor database activity for all instances in your Aurora DB cluster, start an activity stream at the cluster level. Any

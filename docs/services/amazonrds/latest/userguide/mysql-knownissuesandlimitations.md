@@ -1,3 +1,7 @@
+---
+title: "Known issues and limitations for Amazon RDS for MySQL"
+---
+
 # Known issues and limitations for Amazon RDS for MySQL
 
 Known issues and limitations for working with Amazon RDS for MySQL are as follows.

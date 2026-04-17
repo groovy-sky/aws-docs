@@ -1,3 +1,7 @@
+---
+title: "Creating a headless Aurora DB cluster in a secondary Region"
+---
+
 # Creating a headless Aurora DB cluster in a secondary Region
 
 Although an Aurora global database requires at least one secondary Aurora DB cluster in a

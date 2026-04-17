@@ -1,3 +1,7 @@
+---
+title: "Assigning a subnet group to a cache"
+---
+
 # Assigning a subnet group to a cache
 
 After you have created a subnet group, you can launch a cache in an Amazon VPC.

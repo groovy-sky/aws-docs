@@ -1,3 +1,7 @@
+---
+title: "SQL statistics for Aurora PostgreSQL"
+---
+
 # SQL statistics for Aurora PostgreSQL
 
 For each SQL call and for each second that a query runs, Performance Insights collects

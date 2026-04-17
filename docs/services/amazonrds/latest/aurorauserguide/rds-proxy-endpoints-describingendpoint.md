@@ -1,3 +1,7 @@
+---
+title: "Viewing proxy endpoints"
+---
+
 # Viewing proxy endpoints
 
 To view existing proxy endpoints, follow these instructions:

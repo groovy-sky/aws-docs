@@ -1,3 +1,7 @@
+---
+title: "NATIVE_NETWORK_ENCRYPTION option settings"
+---
+
 # NATIVE\_NETWORK\_ENCRYPTION option settings
 
 You can specify encryption requirements on both the server and the client. The DB instance can act as a client

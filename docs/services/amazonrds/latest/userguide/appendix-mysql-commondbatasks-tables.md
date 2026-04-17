@@ -1,3 +1,7 @@
+---
+title: "Working with InnoDB tablespaces to improve crash recovery times for RDS for MySQL"
+---
+
 # Working with InnoDB tablespaces to improve crash recovery times for RDS for MySQL
 
 Every table in MySQL consists of a table definition, data, and indexes. The MySQL

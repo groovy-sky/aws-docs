@@ -1,3 +1,7 @@
+---
+title: "Disabling GTID-based replication for an Aurora MySQL DB cluster"
+---
+
 # Disabling GTID-based replication for an Aurora MySQL DB cluster
 
 You can disable GTID-based replication for an Aurora MySQL DB

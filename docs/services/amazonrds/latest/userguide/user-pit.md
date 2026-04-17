@@ -1,3 +1,7 @@
+---
+title: "Restoring a DB instance to a specified time for Amazon RDS"
+---
+
 # Restoring a DB instance to a specified time for Amazon RDS
 
 You can restore a DB instance to a specific point in time, creating a new DB instance without modifying the source DB instance.
@@ -70,7 +74,7 @@ Server databases.
 
 You can also use AWS Backup to manage backups of Amazon RDS DB instances. If your DB instance is associated with a backup plan in AWS Backup,
 that backup plan is used for point-in-time recovery. Backups that were created with AWS Backup have names ending in
-`awsbackup:AWS-Backup-job-number`. For information about AWS Backup, see the [_AWS Backup Developer Guide_](../../../aws-backup/latest/devguide.md).
+`awsbackup:AWS-Backup-job-number`. For information about AWS Backup, see the [_AWS Backup Developer Guide_](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 ###### Note
 

@@ -1,3 +1,7 @@
+---
+title: "Using RDS Proxy with Aurora global databases"
+---
+
 # Using RDS Proxy with Aurora global databases
 
 An _Aurora global database_ is a single database that

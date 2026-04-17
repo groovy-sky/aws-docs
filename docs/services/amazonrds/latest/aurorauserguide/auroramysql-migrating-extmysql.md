@@ -1,3 +1,7 @@
+---
+title: "Migrating data from an external MySQL database to an Amazon Aurora MySQL DB cluster"
+---
+
 # Migrating data from an external MySQL database to an Amazon Aurora MySQL DB cluster
 
 If your database supports the InnoDB or MyISAM tablespaces, you have these options for

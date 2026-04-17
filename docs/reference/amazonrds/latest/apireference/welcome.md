@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and
@@ -42,7 +46,7 @@ from the user guide.
 - For more information about how to use the Query API, see
 [Using the Query API](../../../../services/amazonrds/latest/userguide/using-the-query-api.md).
 
-This document was last published on April 13, 2026.
+This document was last published on April 16, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Restore an Amazon RDS DB instance from a DB snapshot"
+---
+
 # Tutorial: Restore an Amazon RDS DB instance from a DB snapshot
 
 Often, when working with Amazon RDS you might have a DB instance that you work with

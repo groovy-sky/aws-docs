@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL thread states"
+---
+
 # Aurora MySQL thread states
 
 The following are some common thread states for Aurora MySQL.

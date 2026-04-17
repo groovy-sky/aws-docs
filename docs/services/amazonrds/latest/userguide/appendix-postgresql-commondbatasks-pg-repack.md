@@ -1,3 +1,7 @@
+---
+title: "Reducing bloat in tables and indexes with the pg_repack extension"
+---
+
 # Reducing bloat in tables and indexes with the pg\_repack extension
 
 You can use the `pg_repack` extension to remove bloat from tables and indexes

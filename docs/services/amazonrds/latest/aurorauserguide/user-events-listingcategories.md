@@ -1,3 +1,7 @@
+---
+title: "Listing the Amazon RDS event notification categories"
+---
+
 # Listing the Amazon RDS event notification categories
 
 All events for a resource type are grouped into categories. To view the list of categories available, use the

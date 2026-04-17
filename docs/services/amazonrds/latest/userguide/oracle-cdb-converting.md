@@ -1,3 +1,7 @@
+---
+title: "Converting an RDS for Oracle non-CDB to a CDB"
+---
+
 # Converting an RDS for Oracle non-CDB to a CDB
 
 You can change the architecture of an Oracle database from the non-CDB architecture to the

@@ -1,3 +1,7 @@
+---
+title: "Setting up database authentication and resource access manually"
+---
+
 # Setting up database authentication and resource access manually
 
 The manual process for setting up database authentication and resource access has the following steps:

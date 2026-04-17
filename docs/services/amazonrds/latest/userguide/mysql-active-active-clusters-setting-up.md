@@ -1,3 +1,7 @@
+---
+title: "Setting up an active-active cluster with new DB instances"
+---
+
 # Setting up an active-active cluster with new DB instances
 
 Complete the following steps to set up an active-active cluster using new

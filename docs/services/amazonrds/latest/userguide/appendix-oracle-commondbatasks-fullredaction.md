@@ -1,3 +1,7 @@
+---
+title: "Setting the default displayed values for full redaction"
+---
+
 # Setting the default displayed values for full redaction
 
 To change the default displayed values for full redaction on your Amazon RDS Oracle

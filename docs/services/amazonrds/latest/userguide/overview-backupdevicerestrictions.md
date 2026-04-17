@@ -1,3 +1,7 @@
+---
+title: "Automated backups with unsupported MySQL storage engines"
+---
+
 # Automated backups with unsupported MySQL storage engines
 
 For the MySQL DB engine, automated backups are only supported for the InnoDB storage

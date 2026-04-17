@@ -1,3 +1,7 @@
+---
+title: "Comparing Aurora MySQL version 3 and MySQL 8.0 Community Edition"
+---
+
 # Comparing Aurora MySQL version 3 and MySQL 8.0 Community Edition
 
 You can use the following information to learn about the changes to be aware of when you convert from a different MySQL

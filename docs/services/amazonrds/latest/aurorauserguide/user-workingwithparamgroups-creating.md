@@ -1,3 +1,7 @@
+---
+title: "Creating a DB parameter group in Amazon Aurora"
+---
+
 # Creating a DB parameter group in Amazon Aurora
 
 You can create a new DB parameter group using the AWS Management Console, the AWS CLI, or the RDS API.

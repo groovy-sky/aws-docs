@@ -1,3 +1,7 @@
+---
+title: "Create with express configuration"
+---
+
 # Create with express configuration
 
 You can create and connect to an Aurora PostgreSQL serverless database in seconds using

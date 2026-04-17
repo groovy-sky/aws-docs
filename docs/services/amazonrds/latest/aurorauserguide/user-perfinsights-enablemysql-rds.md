@@ -1,3 +1,7 @@
+---
+title: "Turn on the Performance Schema for Aurora MySQL"
+---
+
 # Turn on the Performance Schema for Aurora MySQL
 
 Assume that Performance Insights is turned on for your DB instance but isn't

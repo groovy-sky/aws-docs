@@ -1,3 +1,7 @@
+---
+title: "Using Full Text Search in Babelfish"
+---
+
 # Using Full Text Search in Babelfish
 
 Starting with version 4.0.0, Babelfish provides limited support for Full Text Search (FTS). FTS is a powerful feature in relational databases that enables efficient searching and indexing of text-heavy data.

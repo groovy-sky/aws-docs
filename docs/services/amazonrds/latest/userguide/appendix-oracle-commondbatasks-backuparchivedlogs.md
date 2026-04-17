@@ -1,3 +1,7 @@
+---
+title: "Backing up archived redo log files"
+---
+
 # Backing up archived redo log files
 
 You can use the Amazon RDS package `rdsadmin.rdsadmin_rman_util` to back up archived redo logs for an

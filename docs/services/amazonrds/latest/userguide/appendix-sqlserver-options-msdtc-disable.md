@@ -1,3 +1,7 @@
+---
+title: "Disabling MSDTC"
+---
+
 # Disabling MSDTC
 
 To disable MSDTC, remove the `MSDTC` option from its option group.

@@ -1,3 +1,7 @@
+---
+title: "Kerberos authentication with Babelfish"
+---
+
 # Kerberos authentication with Babelfish
 
 Babelfish for Aurora PostgreSQL 15.2 version supports authentication to your DB cluster using Kerberos. This

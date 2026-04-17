@@ -1,3 +1,7 @@
+---
+title: "Upgrades of the RDS for PostgreSQL DB engine"
+---
+
 # Upgrades of the RDS for PostgreSQL DB engine
 
 There are two types of upgrades that you can manage for your PostgreSQL

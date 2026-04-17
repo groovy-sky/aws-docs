@@ -1,3 +1,7 @@
+---
+title: "Auto migrating EC2 databases to Amazon Aurora  using AWS Database Migration Service"
+---
+
 # Auto migrating EC2 databases to Amazon Aurora using AWS Database Migration Service
 
 You can use the Aurora console to migrate an EC2 database to

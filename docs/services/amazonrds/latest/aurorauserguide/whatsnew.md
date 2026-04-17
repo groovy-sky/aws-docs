@@ -1,3 +1,7 @@
+---
+title: "Document history"
+---
+
 # Document history
 
 **Current API version:** 2014-10-31
@@ -217,7 +221,7 @@ Aurora Global Database writer endpoints
 
 Each Aurora Global Database now comes with a writer endpoint that is automatically updated by Aurora to route requests
 to the current writer instance of the primary DB cluster after an Aurora Global Database switchover and failover operation. To learn more about using the writer endpoint along with Aurora
-Global Database switchover and failover, see [Using switchover or failover in Amazon Aurora Global Database](aurora-global-database-disaster-recovery.md).
+Global Database switchover and failover, see [Using switchover or failover in Amazon Aurora Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery).
 
 October 22, 2024
 

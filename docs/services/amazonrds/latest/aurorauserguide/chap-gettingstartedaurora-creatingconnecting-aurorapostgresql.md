@@ -1,3 +1,7 @@
+---
+title: "Creating and connecting to an Aurora PostgreSQL DB cluster"
+---
+
 # Creating and connecting to an Aurora PostgreSQL DB cluster
 
 There are two ways of creating an Aurora PostgreSQL cluster: full configuration and express

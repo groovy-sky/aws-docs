@@ -1,3 +1,7 @@
+---
+title: "Deleting an RDS Custom for Oracle DB instance"
+---
+
 # Deleting an RDS Custom for Oracle DB instance
 
 ###### Note

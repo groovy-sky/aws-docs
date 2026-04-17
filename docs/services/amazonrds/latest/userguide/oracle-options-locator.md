@@ -1,3 +1,7 @@
+---
+title: "Oracle Locator"
+---
+
 # Oracle Locator
 
 Amazon RDS supports Oracle Locator through the use of the `LOCATOR` option. Oracle

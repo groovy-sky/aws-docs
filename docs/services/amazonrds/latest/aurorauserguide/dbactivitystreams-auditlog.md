@@ -1,3 +1,7 @@
+---
+title: "Audit log contents and examples for database activity streams"
+---
+
 # Audit log contents and examples for database activity streams
 
 Monitored events are represented in the database activity stream as JSON strings. The structure consists of a

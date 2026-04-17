@@ -1,3 +1,7 @@
+---
+title: "Auto Scaling Valkey and Redis OSS clusters"
+---
+
 # Auto Scaling Valkey and Redis OSS clusters
 
 ## Prerequisites

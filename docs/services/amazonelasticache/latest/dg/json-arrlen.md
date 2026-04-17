@@ -1,3 +1,7 @@
+---
+title: "JSON.ARRLEN"
+---
+
 # JSON.ARRLEN
 
 Gets the length of the array values at the path.

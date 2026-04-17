@@ -1,3 +1,7 @@
+---
+title: "Monitoring Oracle GoldenGate"
+---
+
 # Monitoring Oracle GoldenGate
 
 When you use Oracle GoldenGate for replication, make sure that the Oracle GoldenGate process is up and running and

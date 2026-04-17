@@ -1,3 +1,7 @@
+---
+title: "Logical migration from MySQL to Amazon Aurora MySQL by using mysqldump"
+---
+
 # Logical migration from MySQL to Amazon Aurora MySQL by using mysqldump
 
 Because Amazon Aurora MySQL is a MySQL-compatible database, you can use the `mysqldump` utility to copy data from

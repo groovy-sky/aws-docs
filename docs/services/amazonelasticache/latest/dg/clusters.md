@@ -1,3 +1,7 @@
+---
+title: "Managing clusters in ElastiCache"
+---
+
 # Managing clusters in ElastiCache
 
 A _cluster_ is a collection of one or more cache nodes,

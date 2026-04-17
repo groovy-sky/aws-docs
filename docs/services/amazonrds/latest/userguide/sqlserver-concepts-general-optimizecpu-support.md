@@ -1,3 +1,7 @@
+---
+title: "DB instance classes that support Optimize CPU"
+---
+
 # DB instance classes that support Optimize CPU
 
 RDS for SQL Server supports Optimize CPU beginning with the 7th Generation instance class type.

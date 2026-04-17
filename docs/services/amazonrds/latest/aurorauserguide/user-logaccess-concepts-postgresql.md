@@ -1,3 +1,7 @@
+---
+title: "Aurora PostgreSQL  database log files"
+---
+
 # Aurora PostgreSQL database log files
 
 You can monitor the following types of Aurora PostgreSQL

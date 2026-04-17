@@ -1,3 +1,7 @@
+---
+title: "Use Console-to-Code to generate code for your Amazon Aurora console actions"
+---
+
 # Use Console-to-Code to generate code for your Amazon Aurora console actions
 
 The console provides a guided path for creating resources and testing prototypes. If

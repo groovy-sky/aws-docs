@@ -1,3 +1,7 @@
+---
+title: "Cross-VPC cloning with Amazon Aurora"
+---
+
 # Cross-VPC cloning with Amazon Aurora
 
 Suppose that you want to impose different network access controls on the original cluster and

@@ -1,3 +1,7 @@
+---
+title: "Enabling GTID-based replication for new read replicas for RDS for MySQL"
+---
+
 # Enabling GTID-based replication for new read replicas for RDS for MySQL
 
 When GTID-based replication is enabled for an RDS for MySQL DB instance, GTID-based

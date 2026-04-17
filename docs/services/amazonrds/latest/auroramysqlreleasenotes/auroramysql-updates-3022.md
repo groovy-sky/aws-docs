@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL database engine updates 2022-11-18 (version 3.02.2) (Deprecated)"
+---
+
 # Aurora MySQL database engine updates 2022-11-18 (version 3.02.2) (Deprecated)
 
 **Version:** 3.02.2

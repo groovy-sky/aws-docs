@@ -1,3 +1,7 @@
+---
+title: "Managing logical replication slots for  RDS for PostgreSQL"
+---
+
 # Managing logical replication slots for RDS for PostgreSQL
 
 Before you can perform a major version upgrade on an

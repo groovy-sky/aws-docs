@@ -1,3 +1,7 @@
+---
+title: "Local time zone for MySQL DB instances"
+---
+
 # Local time zone for MySQL DB instances
 
 By default, the time zone for a MySQL DB instance is Universal Time Coordinated

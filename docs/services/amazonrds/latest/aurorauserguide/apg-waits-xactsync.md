@@ -1,3 +1,7 @@
+---
+title: "IO:XactSync"
+---
+
 # IO:XactSync
 
 The `IO:XactSync` event occurs when the database is waiting for the Aurora

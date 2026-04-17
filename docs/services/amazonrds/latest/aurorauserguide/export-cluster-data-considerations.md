@@ -1,3 +1,7 @@
+---
+title: "Considerations for DB cluster exports"
+---
+
 # Considerations for DB cluster exports
 
 Use the following sections to learn about the limitations, file naming conventions, and data conversion and storage when exporting DB cluster data to Amazon S3.
@@ -18,8 +22,6 @@ Exporting DB cluster data to Amazon S3 has the following limitations:
 exports.
 
 - You can have up to five concurrent DB snapshot export tasks in progress per AWS account.
-
-- Aurora Serverless v1 DB clusters don't support exports to S3.
 
 - Aurora MySQL and Aurora PostgreSQL support exports to S3 only for the provisioned engine mode.
 

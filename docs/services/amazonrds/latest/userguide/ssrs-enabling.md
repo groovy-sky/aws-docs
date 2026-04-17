@@ -1,3 +1,7 @@
+---
+title: "Turning on SSRS"
+---
+
 # Turning on SSRS
 
 Use the following process to turn on SSRS for your DB instance:

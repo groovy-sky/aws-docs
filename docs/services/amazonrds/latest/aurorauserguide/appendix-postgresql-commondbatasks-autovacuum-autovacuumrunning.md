@@ -1,3 +1,7 @@
+---
+title: "Determining if autovacuum is currently running and for how long"
+---
+
 # Determining if autovacuum is currently running and for how long
 
 If you need to manually vacuum a table, make sure to determine if autovacuum is currently

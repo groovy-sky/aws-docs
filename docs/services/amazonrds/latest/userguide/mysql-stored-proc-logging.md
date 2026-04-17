@@ -1,3 +1,7 @@
+---
+title: "Rotating the query logs"
+---
+
 # Rotating the query logs
 
 The following stored procedures rotate MySQL logs to backup tables. For more information, see [MySQL database log files](user-logaccess-concepts-mysql.md).

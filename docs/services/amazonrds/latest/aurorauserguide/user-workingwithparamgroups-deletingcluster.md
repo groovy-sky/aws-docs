@@ -1,3 +1,7 @@
+---
+title: "Deleting a DB cluster parameter groupin Amazon Aurora"
+---
+
 # Deleting a DB cluster parameter groupin Amazon Aurora
 
 You can delete a DB cluster parameter group using the AWS Management Console, AWS CLI, or RDS API. A DB cluster parameter group parameter group

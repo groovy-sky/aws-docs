@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS Extended Support updates"
+---
+
 # Amazon RDS Extended Support updates
 
 Learn about the Amazon RDS Extended Support updates below.

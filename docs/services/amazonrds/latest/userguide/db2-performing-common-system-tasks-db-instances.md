@@ -1,3 +1,7 @@
+---
+title: "Performing common system tasks for Amazon RDS for Db2 DB instances"
+---
+
 # Performing common system tasks for Amazon RDS for Db2 DB instances
 
 You can perform certain common database administrator tasks related to the system on your

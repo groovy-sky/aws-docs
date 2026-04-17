@@ -1,3 +1,7 @@
+---
+title: "Accessing MariaDB error logs"
+---
+
 # Accessing MariaDB error logs
 
 The MariaDB error log is written to the `<host-name>.err` file.

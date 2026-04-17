@@ -1,3 +1,7 @@
+---
+title: "Bring Your Own Media with RDS Custom for SQL Server"
+---
+
 # Bring Your Own Media with RDS Custom for SQL Server
 
 RDS Custom for SQL Server supports two licensing models: License Included (LI) and Bring Your Own Media

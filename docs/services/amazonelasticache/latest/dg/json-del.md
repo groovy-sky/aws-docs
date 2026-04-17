@@ -1,3 +1,7 @@
+---
+title: "JSON.DEL"
+---
+
 # JSON.DEL
 
 Deletes the JSON values at the path in a document key. If the path is the root, it

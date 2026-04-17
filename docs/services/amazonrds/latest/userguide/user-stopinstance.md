@@ -1,3 +1,7 @@
+---
+title: "Stopping an Amazon RDS DB instance temporarily"
+---
+
 # Stopping an Amazon RDS DB instance temporarily
 
 You can stop your DB instance intermittently for temporary testing or for a daily development

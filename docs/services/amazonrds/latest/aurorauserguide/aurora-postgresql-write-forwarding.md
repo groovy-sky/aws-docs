@@ -1,3 +1,7 @@
+---
+title: "Local write forwarding in Aurora PostgreSQL"
+---
+
 # Local write forwarding in Aurora PostgreSQL
 
 _Local (in-cluster) write forwarding_ allows your applications to issue read/write transactions directly on an

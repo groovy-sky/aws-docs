@@ -1,3 +1,7 @@
+---
+title: "How Amazon RDS works with IAM"
+---
+
 # How Amazon RDS works with IAM
 
 Before you use IAM to manage access to Amazon RDS, you should understand what IAM

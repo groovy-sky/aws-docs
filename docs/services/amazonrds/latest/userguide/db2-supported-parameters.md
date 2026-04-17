@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Db2 parameters"
+---
+
 # Amazon RDS for Db2 parameters
 
 Amazon RDS for Db2 uses three types of parameters: database manager configuration parameters,

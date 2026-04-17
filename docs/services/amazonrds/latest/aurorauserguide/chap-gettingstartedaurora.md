@@ -1,3 +1,7 @@
+---
+title: "Getting started with Amazon Aurora"
+---
+
 # Getting started with Amazon Aurora
 
 In this section, you can find out how to create and connect to an Aurora DB cluster using

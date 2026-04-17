@@ -1,3 +1,7 @@
+---
+title: "JSON.STRLEN"
+---
+
 # JSON.STRLEN
 
 Gets the lengths of the JSON string values at the path.

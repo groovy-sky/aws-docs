@@ -1,3 +1,7 @@
+---
+title: "Viewing and monitoring Amazon RDS zero-ETL integrations"
+---
+
 # Viewing and monitoring Amazon RDS zero-ETL integrations
 
 You can view the details of an Amazon RDS zero-ETL integration to see its configuration
@@ -107,7 +111,7 @@ Currently, Amazon RDS doesn't publish any integration metrics to CloudWatch.
 ## Monitoring integrations with Amazon EventBridge for Amazon Redshift
 
 Amazon Redshift send integration-related events to Amazon EventBridge. For a list of events and their
-corresponding event IDs, see [Zero-ETL integration event notifications with Amazon EventBridge](../../../redshift/latest/mgmt/integration-event-notifications.md) in the _Amazon Redshift_
+corresponding event IDs, see [Zero-ETL integration event notifications with Amazon EventBridge](https://docs.aws.amazon.com/redshift/latest/mgmt/integration-event-notifications) in the _Amazon Redshift_
 _Management Guide_.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)

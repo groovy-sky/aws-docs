@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for MySQL"
+---
+
 # Amazon RDS for MySQL
 
 Amazon RDS supports several versions of MySQL for DB instances. For complete information about the supported versions, see [MySQL on Amazon RDS versions](mysql-concepts-versionmgmt.md).

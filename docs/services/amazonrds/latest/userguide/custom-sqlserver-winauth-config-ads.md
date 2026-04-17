@@ -1,3 +1,7 @@
+---
+title: "Configure Microsoft Active Directory using Directory Service"
+---
+
 # Configure Microsoft Active Directory using Directory Service
 
 AWS Managed Microsoft AD creates a fully managed Microsoft Active Directory in AWS that is powered

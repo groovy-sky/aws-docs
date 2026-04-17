@@ -1,3 +1,7 @@
+---
+title: "aurora_stat_wait_event"
+---
+
 # aurora\_stat\_wait\_event
 
 Lists all supported wait events for Aurora PostgreSQL. For information about Aurora PostgreSQL

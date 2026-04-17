@@ -1,3 +1,7 @@
+---
+title: "Working with SQL Server databases by using the tds_fdw extension"
+---
+
 # Working with SQL Server databases by using the tds\_fdw extension
 
 You can use the PostgreSQL `tds_fdw` extension to access databases that support

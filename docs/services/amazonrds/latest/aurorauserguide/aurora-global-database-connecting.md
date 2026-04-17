@@ -1,3 +1,7 @@
+---
+title: "Connecting to Amazon Aurora Global Database"
+---
+
 # Connecting to Amazon Aurora Global Database
 
 Each Aurora Global Database comes with a writer endpoint that is automatically updated by Aurora to route requests

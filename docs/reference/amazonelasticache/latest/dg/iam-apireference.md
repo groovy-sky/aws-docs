@@ -1,3 +1,7 @@
+---
+title: "ElastiCache API permissions: Actions, resources, and conditions reference"
+---
+
 # ElastiCache API permissions: Actions, resources, and conditions reference
 
 When you set up [access\

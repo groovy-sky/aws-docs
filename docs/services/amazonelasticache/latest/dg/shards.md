@@ -1,3 +1,7 @@
+---
+title: "Working with shards in ElastiCache"
+---
+
 # Working with shards in ElastiCache
 
 A shard (API/CLI: node group) is a collection of one to six ElastiCache for Valkey or Redis OSS nodes.

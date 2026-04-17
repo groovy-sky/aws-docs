@@ -1,3 +1,7 @@
+---
+title: "Attaching the AmazonRDSPerformanceInsightsFullAccess policy to an IAM principal"
+---
+
 # Attaching the AmazonRDSPerformanceInsightsFullAccess policy to an IAM principal
 
 `AmazonRDSPerformanceInsightsFullAccess` is an AWS managed

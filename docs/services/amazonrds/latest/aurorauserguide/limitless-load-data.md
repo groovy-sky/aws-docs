@@ -1,3 +1,7 @@
+---
+title: "Loading data from an Aurora PostgreSQL DB cluster or RDS for PostgreSQL DB instance"
+---
+
 # Loading data from an Aurora PostgreSQL DB cluster or RDS for PostgreSQL DB instance
 
 After you complete the resource and authentication setup, connect to the cluster endpoint and call the

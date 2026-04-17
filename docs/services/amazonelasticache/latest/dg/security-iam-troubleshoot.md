@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Amazon ElastiCache identity and access"
+---
+
 # Troubleshooting Amazon ElastiCache identity and access
 
 Use the following information to help you diagnose and fix common issues that you might

@@ -1,3 +1,7 @@
+---
+title: "Setting up access to an Amazon S3 bucket"
+---
+
 # Setting up access to an Amazon S3 bucket
 
 To import data from an Amazon S3 file, give the RDS for PostgreSQL DB

@@ -1,3 +1,7 @@
+---
+title: "Monitoring active-active clusters"
+---
+
 # Monitoring active-active clusters
 
 Monitoring active-active clusters in Amazon RDS for MySQL is crucial for tracking

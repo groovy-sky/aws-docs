@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora DB engine, Region, and instance class support for Database Insights"
+---
+
 # Amazon Aurora DB engine, Region, and instance class support for Database Insights
 
 The following table provides Amazon Aurora DB engines that support Database Insights.

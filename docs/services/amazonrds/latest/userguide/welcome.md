@@ -1,3 +1,7 @@
+---
+title: "What is Amazon Relational Database Service (Amazon RDS)?"
+---
+
 # What is Amazon Relational Database Service (Amazon RDS)?
 
 Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a

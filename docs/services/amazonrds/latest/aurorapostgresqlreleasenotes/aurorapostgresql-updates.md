@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora PostgreSQL updates"
+---
+
 # Amazon Aurora PostgreSQL updates
 
 Following, you can find information about versions of the Amazon Aurora PostgreSQL-Compatible Edition database
@@ -983,7 +987,7 @@ efficiency. For more information, see [Using subquery cache to improve Aurora Po
 switching from nested loop to hash join operations at runtime when the PostgreSQL
 optimizer makes suboptimal join choices due to cardinality estimate errors. For more
 information on adaptive join, see [Improving query\
-performance using adaptive join](../aurorauserguide/user-apg-adaptive-join.md).
+performance using adaptive join](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/user-apg-adaptive-join).
 
 **Critical stability enhancements**
 

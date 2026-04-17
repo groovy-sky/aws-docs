@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Aurora PostgreSQL Limitless Database"
+---
+
 # Using Amazon Aurora PostgreSQL Limitless Database
 
 Amazon Aurora PostgreSQL Limitless Database provides automated horizontal scaling to process millions of write transactions per second and manages petabytes of data while

@@ -1,3 +1,7 @@
+---
+title: "Monitoring read replication"
+---
+
 # Monitoring read replication
 
 You can monitor the status of a read replica in several ways. The Amazon RDS console shows the

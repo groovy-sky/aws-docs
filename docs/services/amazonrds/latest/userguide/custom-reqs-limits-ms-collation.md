@@ -1,3 +1,7 @@
+---
+title: "Setting character sets and collations for RDS Custom for SQL Server DB instances"
+---
+
 # Setting character sets and collations for RDS Custom for SQL Server DB instances
 
 ## Overview

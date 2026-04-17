@@ -1,3 +1,7 @@
+---
+title: "Amazon AuroraDB instance classes"
+---
+
 # Amazon AuroraDB instance classes
 
 The DB instance class determines the computation and memory capacity of an

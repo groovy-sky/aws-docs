@@ -1,3 +1,7 @@
+---
+title: "Managing multi-source replication"
+---
+
 # Managing multi-source replication
 
 The following stored procedures set up and manage replication channels on a

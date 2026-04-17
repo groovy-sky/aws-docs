@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora DB clusters"
+---
+
 # Amazon Aurora DB clusters
 
 An Amazon Aurora _DB cluster_ consists of one or more DB instances and a

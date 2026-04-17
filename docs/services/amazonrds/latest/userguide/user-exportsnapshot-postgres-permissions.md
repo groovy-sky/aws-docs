@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting RDS for PostgreSQL permissions errors"
+---
+
 # Troubleshooting RDS for PostgreSQL permissions errors
 
 When exporting PostgreSQL databases to Amazon S3, you might see a

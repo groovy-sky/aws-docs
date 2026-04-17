@@ -1,3 +1,7 @@
+---
+title: "Monitoring threats with Amazon GuardDuty RDS Protectionfor Amazon Aurora"
+---
+
 # Monitoring threats with Amazon GuardDuty RDS Protectionfor Amazon Aurora
 
 Amazon GuardDuty is a threat detection service that helps protect your accounts, containers, workloads, and

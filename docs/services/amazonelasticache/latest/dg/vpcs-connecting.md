@@ -1,3 +1,7 @@
+---
+title: "Connecting to a cache running in an Amazon VPC"
+---
+
 # Connecting to a cache running in an Amazon VPC
 
 This example shows how to launch an Amazon EC2 instance in your Amazon VPC.

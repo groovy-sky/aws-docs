@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for MariaDB"
+---
+
 # Amazon RDS for MariaDB
 
 Amazon RDS supports several versions of MariaDB for DB instances. For complete information about the supported versions, see [MariaDB on Amazon RDS versions](mariadb-concepts-versionmgmt.md).

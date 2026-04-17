@@ -1,3 +1,7 @@
+---
+title: "Overview of Aurora PostgreSQL query plan management"
+---
+
 # Overview of Aurora PostgreSQL query plan management
 
 Aurora PostgreSQL query plan management is designed to ensure plan stability regardless of

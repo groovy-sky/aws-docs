@@ -1,3 +1,7 @@
+---
+title: "Monitoring snapshot exports"
+---
+
 # Monitoring snapshot exports
 
 You can monitor DB snapshot exports using the AWS Management Console, the AWS CLI, or the RDS API.

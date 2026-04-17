@@ -1,3 +1,7 @@
+---
+title: "Oracle GoldenGate architecture"
+---
+
 # Oracle GoldenGate architecture
 
 The Oracle GoldenGate architecture for use with Amazon RDS consists of the following decoupled modules:

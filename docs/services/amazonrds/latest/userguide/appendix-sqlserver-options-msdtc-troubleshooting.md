@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting MSDTC for RDS for SQL Server"
+---
+
 # Troubleshooting MSDTC for RDS for SQL Server
 
 In some cases, you might have trouble establishing a connection between MSDTC running on a

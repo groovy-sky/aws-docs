@@ -1,3 +1,7 @@
+---
+title: "Supported features in Amazon Aurora by AWS Region and Aurora DB engine"
+---
+
 # Supported features in Amazon Aurora by AWS Region and Aurora DB engine
 
 Aurora MySQL- and PostgreSQL-compatible database engines support several Amazon Aurora and
@@ -42,8 +46,6 @@ Amazon RDS Proxy, are supported by both Amazon Aurora and Amazon RDS.
 - [Secrets Manager integration](concepts-aurora-fea-regions-db-eng-feature-secretsmanager.md)
 
 - [Aurora Serverless v2](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md)
-
-- [Aurora Serverless v1](concepts-aurora-fea-regions-db-eng-feature-serverlessv1.md)
 
 - [RDS Data API](concepts-aurora-fea-regions-db-eng-feature-data-api.md)
 

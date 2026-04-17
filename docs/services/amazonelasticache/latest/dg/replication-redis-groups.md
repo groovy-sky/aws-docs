@@ -1,3 +1,7 @@
+---
+title: "Understanding Valkey and Redis OSS replication"
+---
+
 # Understanding Valkey and Redis OSS replication
 
 Redis OSS implements replication in two ways:

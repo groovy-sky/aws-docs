@@ -1,3 +1,7 @@
+---
+title: "Working with SQL Server Developer Edition on RDS for SQL Server"
+---
+
 # Working with SQL Server Developer Edition on RDS for SQL Server
 
 RDS for SQL Server supports SQL Server Developer Edition. Developer Edition includes all SQL Server Enterprise Edition features but is licensed only for non-production use. You can create RDS for SQL Server Developer Edition instances using your own installation media through the custom engine version (CEV) feature.

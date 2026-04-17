@@ -1,3 +1,7 @@
+---
+title: "Using zero-downtime patching"
+---
+
 # Using zero-downtime patching
 
 Performing upgrades for Aurora MySQL DB clusters involves the possibility of an outage when the database is shut down and while
@@ -16,8 +20,6 @@ ZDP doesn't apply to the following:
 - Major version upgrades
 
 ZDP is available for all supported Aurora MySQL versions and DB instance classes.
-
-ZDP isn't supported for Aurora Serverless v1 or Aurora global databases.
 
 ###### Note
 

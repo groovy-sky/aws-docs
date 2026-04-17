@@ -1,3 +1,7 @@
+---
+title: "Migrating an on-premises database to Amazon RDS Custom for SQL Server"
+---
+
 # Migrating an on-premises database to Amazon RDS Custom for SQL Server
 
 You can use the following process to migrate an on-premises Microsoft SQL Server database

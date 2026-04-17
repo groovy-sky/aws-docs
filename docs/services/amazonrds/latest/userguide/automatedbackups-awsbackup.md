@@ -1,3 +1,7 @@
+---
+title: "Using AWS Backup to manage automated backups for Amazon RDS"
+---
+
 # Using AWS Backup to manage automated backups for Amazon RDS
 
 AWS Backup is a fully managed backup service that makes it easy to centralize and automate
@@ -9,7 +13,7 @@ backups of your Amazon RDS databases in AWS Backup.
 Backups managed by AWS Backup are considered manual DB snapshots, but don't count toward the DB snapshot quota for
 RDS. Backups that were created with AWS Backup have names ending in `awsbackup:backup-job-number`.
 
-For more information about AWS Backup, see the [_AWS Backup Developer Guide_](../../../aws-backup/latest/devguide.md).
+For more information about AWS Backup, see the [_AWS Backup Developer Guide_](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 ###### To view backups managed by AWS Backup
 

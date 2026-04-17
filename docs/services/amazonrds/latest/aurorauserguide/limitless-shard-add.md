@@ -1,3 +1,7 @@
+---
+title: "Adding a DB shard group to an existing Aurora PostgreSQL Limitless Database DB cluster"
+---
+
 # Adding a DB shard group to an existing Aurora PostgreSQL Limitless Database DB cluster
 
 You can create a DB shard group in an existing DB cluster, for example if you're restoring a DB cluster or you had deleted the DB shard

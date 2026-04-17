@@ -1,3 +1,7 @@
+---
+title: "Granting privileges to non-master users"
+---
+
 # Granting privileges to non-master users
 
 You can grant select privileges for many objects in the `SYS` schema by

@@ -1,3 +1,7 @@
+---
+title: "Manually creating an IAM role for SQL Server Audit"
+---
+
 # Manually creating an IAM role for SQL Server Audit
 
 Typically, when you create a new option, the AWS Management Console creates the IAM role and the IAM

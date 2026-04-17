@@ -1,3 +1,7 @@
+---
+title: "Customer-owned IP addresses for Amazon RDS on AWS Outposts"
+---
+
 # Customer-owned IP addresses for Amazon RDS on AWS Outposts
 
 Amazon RDS on AWS Outposts uses information that you provide about your on-premises network to create

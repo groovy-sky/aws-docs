@@ -1,3 +1,7 @@
+---
+title: "Setting up enhanced binlog for Aurora MySQL"
+---
+
 # Setting up enhanced binlog for Aurora MySQL
 
 Enhanced binlog reduces the compute performance overhead caused by turning on binlog, which can reach up to 50% in certain cases.

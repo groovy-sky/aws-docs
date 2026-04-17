@@ -1,3 +1,7 @@
+---
+title: "Supported Regions and Aurora DB engines for RDS Data API"
+---
+
 # Supported Regions and Aurora DB engines for RDS Data API
 
 RDS Data API (Data API) provides a web-services interface to an Amazon Aurora DB cluster.
@@ -44,7 +48,7 @@ RegionAurora MySQL version 2US East (N. Virginia)Version 2.11.3US East (Ohio)Ver
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Aurora Serverless v1
+Aurora Serverless v2
 
 Zero-downtime patching (ZDP)
 

@@ -1,3 +1,7 @@
+---
+title: "Supported node types"
+---
+
 # Supported node types
 
 ElastiCache supports the following node types.

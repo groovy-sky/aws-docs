@@ -1,3 +1,7 @@
+---
+title: "Optimize CPUs for RDS for SQL Server license-included instances"
+---
+
 # Optimize CPUs for RDS for SQL Server license-included instances
 
 With RDS for SQL Server, you can use Optimize CPU by specifying processor features to configure the vCPU

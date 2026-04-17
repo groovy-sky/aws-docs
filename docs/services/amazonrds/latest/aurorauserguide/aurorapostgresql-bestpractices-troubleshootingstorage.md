@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting storage issues in Aurora PostgreSQL"
+---
+
 # Troubleshooting storage issues in Aurora PostgreSQL
 
 If the amount of working memory needed for sort or index-creation operations exceeds

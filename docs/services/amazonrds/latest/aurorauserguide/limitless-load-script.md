@@ -1,3 +1,7 @@
+---
+title: "Setting up database authentication and resource access using a script"
+---
+
 # Setting up database authentication and resource access using a script
 
 The setup script creates one customer-managed AWS KMS key, one AWS Identity and Access Management (IAM) role, and two AWS Secrets Manager secrets.

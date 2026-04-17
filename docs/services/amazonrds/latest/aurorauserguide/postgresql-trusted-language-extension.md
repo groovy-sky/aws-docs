@@ -1,3 +1,7 @@
+---
+title: "Working with Trusted Language Extensions for PostgreSQL"
+---
+
 # Working with Trusted Language Extensions for PostgreSQL
 
 Trusted Language Extensions for PostgreSQL is an open source development kit for building

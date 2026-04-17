@@ -1,3 +1,7 @@
+---
+title: "DBProxy"
+---
+
 # DBProxy
 
 The data structure representing a proxy managed by the RDS Proxy.
@@ -197,11 +201,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/dbproxy.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DBProxy)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/dbproxy.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DBProxy)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/dbproxy.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/DBProxy)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

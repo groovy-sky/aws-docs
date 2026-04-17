@@ -1,3 +1,7 @@
+---
+title: "Working with PostgreSQL autovacuum on Amazon Aurora PostgreSQL"
+---
+
 # Working with PostgreSQL autovacuum on Amazon Aurora PostgreSQL
 
 We strongly recommend that you use the autovacuum feature to maintain the health of your

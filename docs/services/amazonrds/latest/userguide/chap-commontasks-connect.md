@@ -1,3 +1,7 @@
+---
+title: "Connecting to an Amazon RDS DB instance"
+---
+
 # Connecting to an Amazon RDS DB instance
 
 Before you can connect to a DB instance, you must create the DB instance. For

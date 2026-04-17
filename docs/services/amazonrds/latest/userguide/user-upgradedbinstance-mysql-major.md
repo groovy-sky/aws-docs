@@ -1,3 +1,7 @@
+---
+title: "Major version upgrades for RDS for MySQL"
+---
+
 # Major version upgrades for RDS for MySQL
 
 Amazon RDS supports the following in-place upgrades for major versions of the MySQL database engine:

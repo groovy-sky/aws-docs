@@ -1,3 +1,7 @@
+---
+title: "Auto migrating EC2 databases to  Amazon RDS using AWS Database Migration Service"
+---
+
 # Auto migrating EC2 databases to Amazon RDS using AWS Database Migration Service
 
 You can use the RDS console to migrate an EC2 database to

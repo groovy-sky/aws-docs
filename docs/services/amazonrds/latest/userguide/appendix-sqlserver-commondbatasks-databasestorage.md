@@ -1,3 +1,7 @@
+---
+title: "Working with storage in RDS for SQL Server"
+---
+
 # Working with storage in RDS for SQL Server
 
 With RDS for SQL Server, you can attach up to three additional volumes to your RDS for SQL Server instance, each

@@ -1,3 +1,7 @@
+---
+title: "Functions and views for Aurora PostgreSQL Limitless Database"
+---
+
 # Functions and views for Aurora PostgreSQL Limitless Database
 
 Aurora PostgreSQL Limitless Database has added functions and views. They're based on the corresponding Aurora PostgreSQL functions and views.

@@ -1,3 +1,7 @@
+---
+title: "Options for MySQL DB instances"
+---
+
 # Options for MySQL DB instances
 
 Following, you can find a description of options, or additional features, that are available for Amazon RDS

@@ -1,3 +1,7 @@
+---
+title: "Connecting to a Multi-AZ DB cluster for Amazon RDS"
+---
+
 # Connecting to a Multi-AZ DB cluster for Amazon RDS
 
 A Multi-AZ DB cluster has three DB instances instead of a single DB instance. Each

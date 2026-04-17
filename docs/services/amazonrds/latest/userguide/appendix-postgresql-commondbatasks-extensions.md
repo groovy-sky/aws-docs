@@ -1,3 +1,7 @@
+---
+title: "Using PostgreSQL extensions with Amazon RDS for PostgreSQL"
+---
+
 # Using PostgreSQL extensions with Amazon RDS for PostgreSQL
 
 You can extend the functionality of PostgreSQL by installing a variety of extensions and

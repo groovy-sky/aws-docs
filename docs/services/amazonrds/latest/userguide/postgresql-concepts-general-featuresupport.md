@@ -1,3 +1,7 @@
+---
+title: "Working with PostgreSQL features supported by Amazon RDS for PostgreSQL"
+---
+
 # Working with PostgreSQL features supported by Amazon RDS for PostgreSQL
 
 Amazon RDS for PostgreSQL supports many of the most common PostgreSQL features. For example,

@@ -1,3 +1,7 @@
+---
+title: "Modifying an Amazon RDS DB instance"
+---
+
 # Modifying an Amazon RDS DB instance
 
 You can change the settings of a DB instance to accomplish tasks such as adding additional

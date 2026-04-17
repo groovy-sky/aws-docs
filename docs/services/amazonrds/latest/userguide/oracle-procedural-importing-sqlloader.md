@@ -1,3 +1,7 @@
+---
+title: "Importing using Oracle SQL*Loader"
+---
+
 # Importing using Oracle SQL\*Loader
 
 You might consider Oracle SQL\*Loader for large databases that contain a limited number of objects. Because the process of exporting from a

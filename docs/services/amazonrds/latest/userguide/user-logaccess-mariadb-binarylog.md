@@ -1,3 +1,7 @@
+---
+title: "Accessing MariaDB binary logs"
+---
+
 # Accessing MariaDB binary logs
 
 You can use the mysqlbinlog utility to download binary logs in text format from MariaDB DB

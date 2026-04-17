@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting connections to your MySQL DB instance"
+---
+
 # Troubleshooting connections to your MySQL DB instance
 
 Two common causes of connection failures to a new DB instance are:

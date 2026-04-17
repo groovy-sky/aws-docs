@@ -1,3 +1,7 @@
+---
+title: "Scenarios for accessing a DB instance in a VPC"
+---
+
 # Scenarios for accessing a DB instance in a VPC
 
 Using Amazon Virtual Private Cloud (Amazon VPC), you can launch AWS resources, such as Amazon RDS DB instances,

@@ -1,3 +1,7 @@
+---
+title: "MariaDB Audit Plugin support for MySQL"
+---
+
 # MariaDB Audit Plugin support for MySQL
 
 Amazon RDS offers an audit plugin for MySQL database instances based on the open source MariaDB

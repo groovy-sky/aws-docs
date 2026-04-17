@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora storage"
+---
+
 # Amazon Aurora storage
 
 Following, you can learn about the Aurora storage subsystem. Aurora uses a distributed and

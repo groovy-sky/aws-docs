@@ -1,3 +1,7 @@
+---
+title: "Logging Performance Insights calls using AWS CloudTrail"
+---
+
 # Logging Performance Insights calls using AWS CloudTrail
 
 Performance Insights runs with AWS CloudTrail, a service that provides a record of

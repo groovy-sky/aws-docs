@@ -1,3 +1,7 @@
+---
+title: "EBCDIC collation for Db2 databases on Amazon RDS"
+---
+
 # EBCDIC collation for Db2 databases on Amazon RDS
 
 Amazon RDS for Db2 supports EBCDIC collation for Db2 databases. You can only specify an EBCDIC

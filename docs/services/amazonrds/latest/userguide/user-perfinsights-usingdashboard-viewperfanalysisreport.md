@@ -1,3 +1,7 @@
+---
+title: "Viewing a performance analysis report in Performance Insights"
+---
+
 # Viewing a performance analysis report in Performance Insights
 
 The **Performance analysis reports - new** tab lists all the reports

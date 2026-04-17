@@ -1,3 +1,7 @@
+---
+title: "Deleting a DB instance"
+---
+
 # Deleting a DB instance
 
 ###### Warning

@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Restoring a DB cluster from a DB cluster snapshot using the AWS CLI"
+---
+
 # Tutorial: Restoring a DB cluster from a DB cluster snapshot using the AWS CLI
 
 In this tutorial, you restore a DB cluster from a DB cluster snapshot using the AWS CLI. Restoring a DB cluster from a snapshot using the AWS CLI has two steps:

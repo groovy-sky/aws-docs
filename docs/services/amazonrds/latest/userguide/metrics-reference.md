@@ -1,3 +1,7 @@
+---
+title: "Metrics reference for Amazon RDS"
+---
+
 # Metrics reference for Amazon RDS
 
 In this reference, you can find descriptions of Amazon RDS metrics for Amazon CloudWatch, Performance Insights, and Enhanced Monitoring.

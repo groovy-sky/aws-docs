@@ -1,3 +1,7 @@
+---
+title: "Installing the ElastiCache cluster client for PHP"
+---
+
 # Installing the ElastiCache cluster client for PHP
 
 This section describes how to install, update, and remove the PHP components for the ElastiCache Cluster Client on Amazon EC2 instances.

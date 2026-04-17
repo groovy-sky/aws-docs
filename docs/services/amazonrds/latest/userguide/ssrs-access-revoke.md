@@ -1,3 +1,7 @@
+---
+title: "Revoking system-level permissions"
+---
+
 # Revoking system-level permissions
 
 The `RDS_SSRS_ROLE` system role doesn't have sufficient permissions to

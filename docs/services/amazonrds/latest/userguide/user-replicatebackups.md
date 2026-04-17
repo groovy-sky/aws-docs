@@ -1,3 +1,7 @@
+---
+title: "Replicating automated backups to another AWS Region"
+---
+
 # Replicating automated backups to another AWS Region
 
 For added disaster recovery capability, you can configure your Amazon RDS database instance to

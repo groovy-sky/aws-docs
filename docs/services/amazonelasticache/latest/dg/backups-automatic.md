@@ -1,3 +1,7 @@
+---
+title: "Scheduling automatic backups"
+---
+
 # Scheduling automatic backups
 
 You can enable automatic backups for any Valkey or Redis OSS serverless cache or node-based cluster.

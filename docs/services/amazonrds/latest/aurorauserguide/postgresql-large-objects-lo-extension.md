@@ -1,3 +1,7 @@
+---
+title: "Managing large objects with the lo module"
+---
+
 # Managing large objects with the lo module
 
 The lo module (extension) is for database users and developers working with

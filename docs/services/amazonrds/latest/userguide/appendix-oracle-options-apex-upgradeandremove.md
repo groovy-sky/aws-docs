@@ -1,3 +1,7 @@
+---
+title: "Upgrading and removing Oracle APEX"
+---
+
 # Upgrading and removing Oracle APEX
 
 To upgrade or remove Oracle APEX, follow the instructions in this topic:

@@ -1,3 +1,7 @@
+---
+title: "Connecting to PostgreSQL with Kerberos authentication"
+---
+
 # Connecting to PostgreSQL with Kerberos authentication
 
 You can connect to PostgreSQL with Kerberos authentication with the pgAdmin interface

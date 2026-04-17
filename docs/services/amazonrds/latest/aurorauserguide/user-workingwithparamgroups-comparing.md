@@ -1,3 +1,7 @@
+---
+title: "Comparing DB parameter groups"
+---
+
 # Comparing DB parameter groups
 
 You can use the AWS Management Console to view the differences between two DB parameter groups.

@@ -1,3 +1,7 @@
+---
+title: "Managing reserved memory for Valkey and Redis OSS"
+---
+
 # Managing reserved memory for Valkey and Redis OSS
 
 Reserved memory is memory set aside for nondata use. When performing a backup or failover,

@@ -1,3 +1,7 @@
+---
+title: "Identify and resolve aggressive vacuum blockers in Aurora PostgreSQL"
+---
+
 # Identify and resolve aggressive vacuum blockers in Aurora PostgreSQL
 
 In PostgreSQL, vacuuming is vital for ensuring database health as it reclaims storage and

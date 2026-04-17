@@ -1,3 +1,7 @@
+---
+title: "Overview of managing access permissions to your ElastiCache resources"
+---
+
 # Overview of managing access permissions to your ElastiCache resources
 
 Every AWS resource is owned by an AWS account, and permissions to create or access a

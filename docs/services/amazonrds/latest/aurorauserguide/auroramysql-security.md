@@ -1,3 +1,7 @@
+---
+title: "Security with Amazon Aurora MySQL"
+---
+
 # Security with Amazon Aurora MySQL
 
 Security for Amazon Aurora MySQL is managed at three levels:

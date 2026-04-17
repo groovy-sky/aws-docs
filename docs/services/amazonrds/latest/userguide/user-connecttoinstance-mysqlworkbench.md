@@ -1,3 +1,7 @@
+---
+title: "Connecting from MySQL Workbench"
+---
+
 # Connecting from MySQL Workbench
 
 ###### To connect from MySQL Workbench

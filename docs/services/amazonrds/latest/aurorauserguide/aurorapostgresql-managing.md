@@ -1,3 +1,7 @@
+---
+title: "Performance and scaling for Amazon Aurora PostgreSQL"
+---
+
 # Performance and scaling for Amazon Aurora PostgreSQL
 
 The following section discusses managing performance and scaling for an Amazon Aurora PostgreSQL
@@ -140,7 +144,7 @@ the total NVMe size. For more information, see [Improving query performance for 
 
 You can monitor the temporary storage available for a DB instance with the
 `FreeLocalStorage` CloudWatch metric,
- -->
+
 described in [Amazon CloudWatch metrics for Amazon Aurora](aurora-auroramonitoring-metrics.md). (This doesn't apply to
 Aurora Serverless v2.)
 

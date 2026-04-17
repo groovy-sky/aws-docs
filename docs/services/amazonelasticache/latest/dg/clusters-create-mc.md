@@ -1,3 +1,7 @@
+---
+title: "Creating a cluster for Memcached"
+---
+
 # Creating a cluster for Memcached
 
 The following examples show how to create a cluster using the AWS Management Console, AWS CLI and ElastiCache API.

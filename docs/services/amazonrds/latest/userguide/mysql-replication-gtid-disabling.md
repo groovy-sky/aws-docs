@@ -1,3 +1,7 @@
+---
+title: "Disabling GTID-based replication for a MySQL DB instance with read replicas"
+---
+
 # Disabling GTID-based replication for a MySQL DB instance with read replicas
 
 You can disable GTID-based replication for

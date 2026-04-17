@@ -1,3 +1,7 @@
+---
+title: "Securing your Amazon S3 bucket against the confused deputy problem"
+---
+
 # Securing your Amazon S3 bucket against the confused deputy problem
 
 When you create an Amazon RDS Custom for Oracle custom engine version (CEV) or an RDS Custom for SQL Server DB

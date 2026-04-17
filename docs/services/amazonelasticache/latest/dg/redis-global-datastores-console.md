@@ -1,3 +1,7 @@
+---
+title: "Using global datastores (console)"
+---
+
 # Using global datastores (console)
 
 To create a global datastore using the console, follow this two-step process:

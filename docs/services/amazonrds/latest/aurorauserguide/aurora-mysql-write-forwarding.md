@@ -1,3 +1,7 @@
+---
+title: "Using local write forwarding in an Amazon Aurora MySQL DB cluster"
+---
+
 # Using local write forwarding in an Amazon Aurora MySQL DB cluster
 
 _Local (in-cluster) write forwarding_ allows your applications to issue read/write transactions directly on an

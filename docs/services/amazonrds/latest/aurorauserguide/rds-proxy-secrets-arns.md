@@ -1,3 +1,7 @@
+---
+title: "Setting up database credentials for RDS Proxy"
+---
+
 # Setting up database credentials for RDS Proxy
 
 RDS Proxy in Amazon RDS uses AWS Secrets Manager to store and manage database credentials securely.

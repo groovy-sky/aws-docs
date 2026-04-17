@@ -1,3 +1,7 @@
+---
+title: "Starting and stopping mail queue"
+---
+
 # Starting and stopping mail queue
 
 Use the following instructions to start and stop the DB mail queue:

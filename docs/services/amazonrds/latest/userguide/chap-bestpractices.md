@@ -1,3 +1,7 @@
+---
+title: "Best practices for Amazon RDS"
+---
+
 # Best practices for Amazon RDS
 
 Learn best practices for working with Amazon RDS. As new best practices are identified, we will

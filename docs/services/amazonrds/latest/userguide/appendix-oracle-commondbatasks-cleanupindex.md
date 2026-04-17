@@ -1,3 +1,7 @@
+---
+title: "Cleaning up interrupted online index builds"
+---
+
 # Cleaning up interrupted online index builds
 
 To clean up failed online index builds, use the Amazon RDS procedure

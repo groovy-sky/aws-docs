@@ -1,3 +1,7 @@
+---
+title: "Working with MySQL databases by using the mysql_fdw extension"
+---
+
 # Working with MySQL databases by using the mysql\_fdw extension
 
 To access a MySQL-compatible database from your RDS for PostgreSQL DB instance, you can install and

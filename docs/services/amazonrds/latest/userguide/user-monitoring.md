@@ -1,3 +1,7 @@
+---
+title: "Viewing metrics in the Amazon RDS console"
+---
+
 # Viewing metrics in the Amazon RDS console
 
 Amazon RDS integrates with Amazon CloudWatch to display a variety of RDS DB instance metrics in the RDS console. For descriptions of

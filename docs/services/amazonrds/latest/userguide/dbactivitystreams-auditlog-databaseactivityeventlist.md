@@ -1,3 +1,7 @@
+---
+title: "databaseActivityEventList JSON array for database activity streams"
+---
+
 # databaseActivityEventList JSON array for database activity streams
 
 The audit log payload is an encrypted `databaseActivityEventList` JSON array. The following table lists alphabetically the

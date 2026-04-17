@@ -1,3 +1,7 @@
+---
+title: "Create an Aurora Serverless work item tracker"
+---
+
 # Create an Aurora Serverless work item tracker
 
 The following code examples show how to create a web application that tracks work items in an Amazon Aurora Serverless database and uses Amazon Simple Email Service (Amazon SES) to send reports.
@@ -190,6 +194,6 @@ This topic also includes information about getting started and details about pre
 
 Scenarios
 
-Serverless examples
+Creating an Amazon RDS DB instance
 
 All content copied from https://docs.aws.amazon.com/.

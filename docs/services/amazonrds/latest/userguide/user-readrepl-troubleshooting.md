@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting a MySQL read replica problem"
+---
+
 # Troubleshooting a MySQL read replica problem
 
 For MySQL DB instances, in some cases read replicas present replication errors or data

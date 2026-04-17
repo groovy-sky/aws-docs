@@ -1,3 +1,7 @@
+---
+title: "Viewing parameter values for a DB parameter group in Amazon RDS"
+---
+
 # Viewing parameter values for a DB parameter group in Amazon RDS
 
 You can get a list of all parameters in a DB parameter group and their values.

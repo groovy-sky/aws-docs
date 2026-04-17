@@ -1,3 +1,7 @@
+---
+title: "Finding information about replicated backups for Amazon RDS"
+---
+
 # Finding information about replicated backups for Amazon RDS
 
 You can use the following CLI commands to find information about replicated backups:

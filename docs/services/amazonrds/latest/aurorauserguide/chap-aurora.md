@@ -1,3 +1,7 @@
+---
+title: "Managing an Amazon Aurora DB cluster"
+---
+
 # Managing an Amazon Aurora DB cluster
 
 This section shows how to manage and maintain your Aurora DB cluster.

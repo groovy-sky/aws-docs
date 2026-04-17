@@ -1,3 +1,7 @@
+---
+title: "Administrative permissions on SSISDB"
+---
+
 # Administrative permissions on SSISDB
 
 When the instance is created or modified with the SSIS option, the result is an SSISDB

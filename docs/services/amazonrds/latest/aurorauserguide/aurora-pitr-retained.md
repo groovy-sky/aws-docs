@@ -1,12 +1,11 @@
+---
+title: "Restoring a DB cluster to a specified time from a retained automated backup"
+---
+
 # Restoring a DB cluster to a specified time from a retained automated backup
 
 You can restore a DB cluster from a retained automated backup after you delete the source DB cluster, if the backup is within
 the retention period of the source cluster. The process is similar to restoring a DB cluster from an automated backup.
-
-###### Note
-
-You can't restore an Aurora Serverless v1 DB cluster using this procedure, because automated backups for Aurora Serverless v1
-clusters aren't retained.
 
 ###### To restore a DB cluster to a specified time
 

@@ -1,3 +1,7 @@
+---
+title: "Creating a DB instance or a Multi-AZ DB cluster with Amazon RDS Extended Support"
+---
+
 # Creating a DB instance or a Multi-AZ DB cluster with Amazon RDS Extended Support
 
 When you create a DB instance or a Multi-AZ DB cluster, select **Enable**

@@ -1,3 +1,7 @@
+---
+title: "Promoting an RDS Custom for Oracle replica to a standalone DB instance"
+---
+
 # Promoting an RDS Custom for Oracle replica to a standalone DB instance
 
 ###### Note

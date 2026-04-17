@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Oracle Database 21c (21.0.0.0)"
+---
+
 # Amazon RDS for Oracle Database 21c (21.0.0.0)
 
 Amazon RDS for Oracle Database 21c (21.0.0.0) incorporates bug fixes from Oracle by using

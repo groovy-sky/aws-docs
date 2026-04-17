@@ -1,3 +1,7 @@
+---
+title: "Installing the MySQL command-line client"
+---
+
 # Installing the MySQL command-line client
 
 Most Linux distributions include the MariaDB client instead of the Oracle MySQL

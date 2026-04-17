@@ -1,3 +1,7 @@
+---
+title: "Working with a DB instance in a VPC"
+---
+
 # Working with a DB instance in a VPC
 
 Your DB instance is in a virtual private cloud (VPC). A VPC is a virtual network

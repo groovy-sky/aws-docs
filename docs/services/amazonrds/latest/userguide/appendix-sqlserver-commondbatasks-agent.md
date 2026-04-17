@@ -1,3 +1,7 @@
+---
+title: "Using SQL Server Agent for Amazon RDS"
+---
+
 # Using SQL Server Agent for Amazon RDS
 
 With Amazon RDS, you can use SQL Server Agent on a DB instance running Microsoft SQL Server Enterprise Edition, Standard Edition, or Web

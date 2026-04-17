@@ -1,3 +1,7 @@
+---
+title: "Modifying a proxy endpoint"
+---
+
 # Modifying a proxy endpoint
 
 To modify your proxy endpoints, follow these instructions:

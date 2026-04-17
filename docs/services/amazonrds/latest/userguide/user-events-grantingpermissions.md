@@ -1,3 +1,7 @@
+---
+title: "Granting permissions to publish notifications to an Amazon SNS topic"
+---
+
 # Granting permissions to publish notifications to an Amazon SNS topic
 
 To grant Amazon RDS permissions to publish notifications to an Amazon Simple Notification Service (Amazon SNS) topic, attach

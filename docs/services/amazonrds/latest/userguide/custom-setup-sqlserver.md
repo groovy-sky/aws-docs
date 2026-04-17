@@ -1,3 +1,7 @@
+---
+title: "Setting up your environment for Amazon RDS Custom for SQL Server"
+---
+
 # Setting up your environment for Amazon RDS Custom for SQL Server
 
 Before you create and manage a DB instance for Amazon RDS Custom for SQL Server DB instance, make sure to

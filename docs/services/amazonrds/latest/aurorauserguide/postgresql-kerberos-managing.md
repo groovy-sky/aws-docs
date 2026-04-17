@@ -1,3 +1,7 @@
+---
+title: "Managing an Aurora PostgreSQL DB cluster  in an Active Directory domain"
+---
+
 # Managing an Aurora PostgreSQL DB cluster in an Active Directory domain
 
 You can use the console, the CLI, or the RDS API to manage your DB cluster and

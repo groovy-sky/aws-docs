@@ -1,3 +1,7 @@
+---
+title: "IAM database authentication"
+---
+
 # IAM database authentication
 
 You can authenticate to your DB

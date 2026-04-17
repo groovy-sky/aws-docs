@@ -1,3 +1,7 @@
+---
+title: "Hardware specifications for DB instance classes"
+---
+
 # Hardware specifications for DB instance classes
 
 In the tables in this section, you can find hardware details about the Amazon RDS DB instance

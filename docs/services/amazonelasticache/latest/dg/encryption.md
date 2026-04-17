@@ -1,3 +1,7 @@
+---
+title: "Data security in Amazon ElastiCache"
+---
+
 # Data security in Amazon ElastiCache
 
 To help keep your data secure, Amazon ElastiCache and Amazon EC2 provide mechanisms to guard against

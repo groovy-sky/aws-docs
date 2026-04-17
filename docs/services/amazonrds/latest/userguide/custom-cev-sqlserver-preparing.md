@@ -1,3 +1,7 @@
+---
+title: "Preparing to create a CEV for RDS Custom for SQL Server"
+---
+
 # Preparing to create a CEV for RDS Custom for SQL Server
 
 You can create a CEV using an Amazon Machine Image (AMI) that contains pre-installed,

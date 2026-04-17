@@ -1,3 +1,7 @@
+---
+title: "Aurora PostgreSQL wait events"
+---
+
 # Aurora PostgreSQL wait events
 
 The following table lists the wait events for Aurora PostgreSQL that most commonly

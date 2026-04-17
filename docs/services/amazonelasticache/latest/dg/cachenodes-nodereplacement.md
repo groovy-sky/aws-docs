@@ -1,3 +1,7 @@
+---
+title: "Replacing nodes (Valkey and Redis OSS)"
+---
+
 # Replacing nodes (Valkey and Redis OSS)
 
 Amazon ElastiCache frequently upgrades its fleet with patches and upgrades being applied to

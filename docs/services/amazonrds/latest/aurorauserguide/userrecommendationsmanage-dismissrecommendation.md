@@ -1,3 +1,7 @@
+---
+title: "Dismissing Amazon Aurora recommendations"
+---
+
 # Dismissing Amazon Aurora recommendations
 
 You can dismiss one or more Amazon Aurora recommendations using the Amazon RDS console, AWS CLI, or Amazon RDS API.

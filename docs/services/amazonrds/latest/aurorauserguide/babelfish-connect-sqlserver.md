@@ -1,3 +1,7 @@
+---
+title: "Using a SQL Server client to connect to your DB cluster"
+---
+
 # Using a SQL Server client to connect to your DB cluster
 
 You can use a SQL Server client to connect with Babelfish on the TDS port.

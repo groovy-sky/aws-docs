@@ -1,3 +1,7 @@
+---
+title: "Restoring a Multi-AZ DB cluster to a specified time"
+---
+
 # Restoring a Multi-AZ DB cluster to a specified time
 
 You can restore a Multi-AZ DB cluster to a specific point in time, creating a new Multi-AZ DB cluster.

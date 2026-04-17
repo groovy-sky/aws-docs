@@ -1,3 +1,7 @@
+---
+title: "Stored procedures for storage access for RDS for Db2"
+---
+
 # Stored procedures for storage access for RDS for Db2
 
 The built-in stored procedures described in this topic manage storage access for RDS for Db2

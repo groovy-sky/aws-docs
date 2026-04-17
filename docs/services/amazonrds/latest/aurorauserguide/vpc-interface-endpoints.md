@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS API and interface VPC endpoints (AWS PrivateLink)"
+---
+
 # Amazon RDS API and interface VPC endpoints (AWS PrivateLink)
 
 You can establish a private connection between your VPC and Amazon RDS API endpoints by creating

@@ -1,3 +1,7 @@
+---
+title: "Sharing public snapshots"
+---
+
 # Sharing public snapshots
 
 You can share an unencrypted manual snapshot as public, which makes the snapshot available to all AWS accounts. Make sure

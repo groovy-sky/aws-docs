@@ -1,3 +1,7 @@
+---
+title: "Using write forwarding in an Amazon Aurora global database"
+---
+
 # Using write forwarding in an Amazon Aurora global database
 
 You can reduce the number of endpoints that you need to manage for applications running on

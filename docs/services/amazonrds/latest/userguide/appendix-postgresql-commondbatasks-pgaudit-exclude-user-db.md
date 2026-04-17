@@ -1,3 +1,7 @@
+---
+title: "Excluding users or databases from audit logging"
+---
+
 # Excluding users or databases from audit logging
 
 As discussed in [RDS for PostgreSQL database log files](user-logaccess-concepts-postgresql.md), PostgreSQL logs consume

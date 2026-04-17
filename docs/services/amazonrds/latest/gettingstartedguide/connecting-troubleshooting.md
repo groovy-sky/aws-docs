@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting connection issues to your Amazon RDS DB instance"
+---
+
 # Troubleshooting connection issues to your Amazon RDS DB instance
 
 When you attempt to connect to an Amazon RDS DB instance, you might encounter common

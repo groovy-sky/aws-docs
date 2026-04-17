@@ -1,3 +1,7 @@
+---
+title: "Compressing backup files"
+---
+
 # Compressing backup files
 
 To save space in your Amazon S3 bucket, you can compress your backup files. For more

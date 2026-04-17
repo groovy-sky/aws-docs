@@ -1,3 +1,7 @@
+---
+title: "Cluster endpoints for Amazon Aurora"
+---
+
 # Cluster endpoints for Amazon Aurora
 
 A _cluster endpoint_ (or _writer_

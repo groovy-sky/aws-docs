@@ -1,3 +1,7 @@
+---
+title: "Turning on extended data types in RDS for Oracle"
+---
+
 # Turning on extended data types in RDS for Oracle
 
 Amazon RDS for Oracle supports extended data types. With extended data types, the maximum size

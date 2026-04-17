@@ -1,3 +1,7 @@
+---
+title: "Hello Amazon RDS"
+---
+
 # Hello Amazon RDS
 
 The following code examples show how to get started using Amazon RDS.
@@ -51,7 +55,7 @@ public static class HelloRds
 ```
 
 - For API details, see
-[DescribeDBInstances](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describedbinstances.md)
+[DescribeDBInstances](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeDBInstances)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -180,7 +184,7 @@ int main(int argc, char **argv) {
 ```
 
 - For API details, see
-[DescribeDBInstances](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describedbinstances.md)
+[DescribeDBInstances](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeDBInstances)
 in _AWS SDK for C++ API Reference_.
 
 Go
@@ -302,7 +306,7 @@ public class DescribeDBInstances {
 ```
 
 - For API details, see
-[DescribeDBInstances](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/describedbinstances.md)
+[DescribeDBInstances](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeDBInstances)
 in _AWS SDK for Java 2.x API Reference_.
 
 Python
@@ -361,7 +365,7 @@ except ClientError as e:
 ```
 
 - For API details, see
-[DescribeDBInstances](../../../goto/boto3/rds-2014-10-31/describedbinstances.md)
+[DescribeDBInstances](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeDBInstances)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -418,7 +422,7 @@ end
 ```
 
 - For API details, see
-[DescribeDBInstances](../../../../reference/goto/sdkforrubyv3/rds-2014-10-31/describedbinstances.md)
+[DescribeDBInstances](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/DescribeDBInstances)
 in _AWS SDK for Ruby API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

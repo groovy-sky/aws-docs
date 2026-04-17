@@ -1,3 +1,7 @@
+---
+title: "Encrypting Amazon RDS resources"
+---
+
 # Encrypting Amazon RDS resources
 
 Amazon RDS can encrypt your Amazon RDS DB instances.

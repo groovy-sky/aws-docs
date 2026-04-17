@@ -1,3 +1,7 @@
+---
+title: "Using Kerberos authentication for Aurora MySQL"
+---
+
 # Using Kerberos authentication for Aurora MySQL
 
 You can use Kerberos authentication to authenticate users when they connect to your

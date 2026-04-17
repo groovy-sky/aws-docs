@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting a SQL Server read replica problem"
+---
+
 # Troubleshooting a SQL Server read replica problem
 
 You can monitor replication lag in Amazon CloudWatch by viewing the Amazon RDS `ReplicaLag`

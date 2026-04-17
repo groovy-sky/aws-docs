@@ -1,3 +1,7 @@
+---
+title: "Modifying cluster mode"
+---
+
 # Modifying cluster mode
 
 Valkey and Redis OSS are a distributed in-memory databases that supports sharding and replication.

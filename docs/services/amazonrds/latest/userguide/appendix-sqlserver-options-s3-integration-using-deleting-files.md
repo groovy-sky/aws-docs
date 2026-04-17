@@ -1,3 +1,7 @@
+---
+title: "Deleting files on the RDS DB instance"
+---
+
 # Deleting files on the RDS DB instance
 
 To delete the files available on the DB instance, use the Amazon RDS stored procedure

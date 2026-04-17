@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting for RDS Proxy"
+---
+
 # Troubleshooting for RDS Proxy
 
 Following, you can find troubleshooting ideas for some common RDS Proxy issues and information on CloudWatch logs for

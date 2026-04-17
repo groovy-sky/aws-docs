@@ -1,3 +1,7 @@
+---
+title: "Log rotation and retention for MariaDB"
+---
+
 # Log rotation and retention for MariaDB
 
 When logging is enabled, Amazon RDS rotates table logs or deletes log files at regular intervals. This measure is a precaution to reduce the possibility of a

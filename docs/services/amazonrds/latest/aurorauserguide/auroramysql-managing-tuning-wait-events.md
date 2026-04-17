@@ -1,3 +1,7 @@
+---
+title: "Tuning Aurora MySQL with wait events"
+---
+
 # Tuning Aurora MySQL with wait events
 
 The following table summarizes the Aurora MySQL wait events that most commonly indicate performance problems. The

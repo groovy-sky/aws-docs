@@ -1,3 +1,7 @@
+---
+title: "Connecting to your Oracle DB instance"
+---
+
 # Connecting to your Oracle DB instance
 
 After Amazon RDS provisions your Oracle DB instance, you can use any standard SQL client application

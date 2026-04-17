@@ -1,3 +1,7 @@
+---
+title: "Version Management for ElastiCache"
+---
+
 # Version Management for ElastiCache
 
 Manage how you would like to update your ElastiCache caches and node-based clusters updated for the Valkey, Memcached, and Redis OSS engines.

@@ -1,3 +1,7 @@
+---
+title: "Restoring from a Multi-AZ DB cluster snapshot to a DB instance"
+---
+
 # Restoring from a Multi-AZ DB cluster snapshot to a DB instance
 
 A _Multi-AZ DB cluster snapshot_ is a storage volume snapshot of your DB cluster,

@@ -1,3 +1,7 @@
+---
+title: "Logging for Aurora MySQL databases"
+---
+
 # Logging for Aurora MySQL databases
 
 Aurora MySQL logs provide essential information about database activity and errors. By enabling these logs, you can identify and

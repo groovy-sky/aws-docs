@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL version 2 compatible with MySQL 5.7"
+---
+
 # Aurora MySQL version 2 compatible with MySQL 5.7
 
 This topic describes the differences between Aurora MySQL version 2 and MySQL 5.7 Community Edition.

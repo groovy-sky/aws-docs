@@ -1,3 +1,7 @@
+---
+title: "Overview of RDS for MySQL database logs"
+---
+
 # Overview of RDS for MySQL database logs
 
 You can monitor the following types of RDS for MySQL log files:

@@ -1,3 +1,7 @@
+---
+title: "Overview of Trusted Language Extensions for PostgreSQL"
+---
+
 # Overview of Trusted Language Extensions for PostgreSQL
 
 Trusted Language Extensions for PostgreSQL is a PostgreSQL extension that you install in your Aurora PostgreSQL DB cluster in the same way that you set up other PostgreSQL

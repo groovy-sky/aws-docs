@@ -1,3 +1,7 @@
+---
+title: "Determining which tables are currently eligible for autovacuum"
+---
+
 # Determining which tables are currently eligible for autovacuum
 
 Often, it is one or two tables in need of vacuuming. Tables whose

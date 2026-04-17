@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora MySQL reference"
+---
+
 # Amazon Aurora MySQL reference
 
 This reference includes information about Aurora MySQL parameters, status variables, and general SQL extensions or

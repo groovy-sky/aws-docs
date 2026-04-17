@@ -1,3 +1,7 @@
+---
+title: "Working with Amazon RDS for Microsoft SQL Server logs"
+---
+
 # Working with Amazon RDS for Microsoft SQL Server logs
 
 You can use the Amazon RDS console to view, watch, and download SQL Server Agent logs, Microsoft SQL Server error logs, and SQL Server

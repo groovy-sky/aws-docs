@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting DB issues for Amazon RDS Custom for SQL Server"
+---
+
 # Troubleshooting DB issues for Amazon RDS Custom for SQL Server
 
 The shared responsibility model of RDS Custom provides OS shell–level access and

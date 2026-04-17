@@ -1,3 +1,7 @@
+---
+title: "DeleteCustomDBEngineVersion"
+---
+
 # DeleteCustomDBEngineVersion
 
 Deletes a custom engine version. To run this command, make sure you meet the following prerequisites:
@@ -420,25 +424,25 @@ https://rds.us-east-1.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/rds-2014-10-31/deletecustomdbengineversion.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/rds-2014-10-31/DeleteCustomDBEngineVersion)
 
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/rds-2014-10-31/deletecustomdbengineversion.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/rds-2014-10-31/DeleteCustomDBEngineVersion)
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/deletecustomdbengineversion.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DeleteCustomDBEngineVersion)
 
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/rds-2014-10-31/deletecustomdbengineversion.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/rds-2014-10-31/DeleteCustomDBEngineVersion)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/deletecustomdbengineversion.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DeleteCustomDBEngineVersion)
 
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/rds-2014-10-31/deletecustomdbengineversion.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rds-2014-10-31/DeleteCustomDBEngineVersion)
 
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/rds-2014-10-31/deletecustomdbengineversion.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rds-2014-10-31/DeleteCustomDBEngineVersion)
 
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/rds-2014-10-31/deletecustomdbengineversion.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rds-2014-10-31/DeleteCustomDBEngineVersion)
 
-- [AWS SDK for Python](../../../../services/goto/boto3/rds-2014-10-31/deletecustomdbengineversion.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DeleteCustomDBEngineVersion)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/deletecustomdbengineversion.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/DeleteCustomDBEngineVersion)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

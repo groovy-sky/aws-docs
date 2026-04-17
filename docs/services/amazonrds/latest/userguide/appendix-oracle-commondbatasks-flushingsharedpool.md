@@ -1,3 +1,7 @@
+---
+title: "Flushing the shared pool"
+---
+
 # Flushing the shared pool
 
 To flush the shared pool, use the Amazon RDS procedure

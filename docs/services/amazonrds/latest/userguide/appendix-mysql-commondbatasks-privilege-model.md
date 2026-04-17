@@ -1,3 +1,7 @@
+---
+title: "Role-based privilege model for RDS for MySQL"
+---
+
 # Role-based privilege model for RDS for MySQL
 
 Starting with RDS for MySQL version 8.0.36, you can't modify the tables in the

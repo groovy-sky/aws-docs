@@ -1,3 +1,7 @@
+---
+title: "Changing the capacity of a DB shard group"
+---
+
 # Changing the capacity of a DB shard group
 
 You can use the AWS Management Console or AWS CLI to change the capacity of a DB shard group.

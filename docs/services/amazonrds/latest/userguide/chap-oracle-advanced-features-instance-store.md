@@ -1,3 +1,7 @@
+---
+title: "Storing temporary data in an RDS for Oracle instance store"
+---
+
 # Storing temporary data in an RDS for Oracle instance store
 
 Use an instance store for the temporary tablespaces and the Database Smart Flash Cache

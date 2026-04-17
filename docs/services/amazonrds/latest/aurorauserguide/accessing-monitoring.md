@@ -1,3 +1,7 @@
+---
+title: "Viewing cluster status"
+---
+
 # Viewing cluster status
 
 Using the Amazon RDS console, you can quickly access the status of your DB cluster.

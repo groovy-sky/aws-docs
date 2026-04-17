@@ -1,3 +1,7 @@
+---
+title: "Understanding the pgactive schema"
+---
+
 # Understanding the pgactive schema
 
 The pgactive schema manages active-active replication in RDS for PostgreSQL. This schema

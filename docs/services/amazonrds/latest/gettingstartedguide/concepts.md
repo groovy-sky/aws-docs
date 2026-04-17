@@ -1,3 +1,7 @@
+---
+title: "Key concepts and architecture of Amazon RDS"
+---
+
 # Key concepts and architecture of Amazon RDS
 
 Amazon RDS is a fully managed service that simplifies the deployment and management of relational

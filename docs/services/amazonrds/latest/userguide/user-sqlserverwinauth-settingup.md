@@ -1,3 +1,7 @@
+---
+title: "Setting up Windows Authentication for SQL Server DB instances"
+---
+
 # Setting up Windows Authentication for SQL Server DB instances
 
 You use AWS Directory Service for Microsoft Active Directory, also called AWS Managed Microsoft AD, to set up Windows Authentication for a

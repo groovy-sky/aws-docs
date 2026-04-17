@@ -1,3 +1,7 @@
+---
+title: "Aurora PostgreSQL Limitless Database sample schemas"
+---
+
 # Aurora PostgreSQL Limitless Database sample schemas
 
 We provide the following sample schemas for Aurora PostgreSQL Limitless Database:

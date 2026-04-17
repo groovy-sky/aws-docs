@@ -1,3 +1,7 @@
+---
+title: "RDS Proxy concepts and terminology"
+---
+
 # RDS Proxy concepts and terminology
 
 You can simplify connection management for your

@@ -1,3 +1,7 @@
+---
+title: "Performance Insights API and interface VPC endpoints (AWS PrivateLink)"
+---
+
 # Performance Insights API and interface VPC endpoints (AWS PrivateLink)
 
 You can use AWS PrivateLink to create a private connection between your VPC and

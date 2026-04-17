@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting self-managed Active Directory"
+---
+
 # Troubleshooting self-managed Active Directory
 
 The following are issues you might encounter when you set up or modify self-managed AD.

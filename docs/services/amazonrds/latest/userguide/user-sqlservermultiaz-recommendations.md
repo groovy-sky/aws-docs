@@ -1,3 +1,7 @@
+---
+title: "Microsoft SQL Server Multi-AZ deployment limitations, notes, and recommendations"
+---
+
 # Microsoft SQL Server Multi-AZ deployment limitations, notes, and recommendations
 
 The following are some limitations when working with Multi-AZ deployments on RDS for SQL Server DB instances:

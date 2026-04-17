@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora on the AWS Free Tier"
+---
+
 # Amazon Aurora on the AWS Free Tier
 
 Aurora PostgreSQL is also available on the [AWS\

@@ -1,3 +1,7 @@
+---
+title: "Create with full configuration"
+---
+
 # Create with full configuration
 
 This tutorial creates an EC2 instance and an Aurora PostgreSQL DB cluster. The tutorial shows you how to access the DB

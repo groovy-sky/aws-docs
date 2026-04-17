@@ -1,3 +1,7 @@
+---
+title: "Overview of RDS for Oracle engine upgrades"
+---
+
 # Overview of RDS for Oracle engine upgrades
 
 Before upgrading your RDS for Oracle DB instance, familiarize yourself with the following
@@ -34,7 +38,7 @@ that contains the RU patches in engine version 19.0.0.0.ru-2025-01.rur-2025-01.r
 Spatial patches. Typically, RDS for Oracle releases SPBs 2–3 weeks after the
 corresponding RU. For an explanation of the differences between RUs and SPBs, see [Release Updates (RUs) and Spatial Patch Bundles (SPBs)](user-upgradedbinstance-oracle-minor.md#RUs-and-SPBs). For information about
 supported RUs and SPBs, see [Release notes for Amazon Relational Database Service (Amazon RDS) for\
-Oracle](../oraclereleasenotes.md).
+Oracle](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes).
 
 RDS for Oracle supports the following upgrades to a DB instance.
 

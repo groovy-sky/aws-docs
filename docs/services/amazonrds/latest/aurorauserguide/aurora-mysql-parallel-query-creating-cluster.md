@@ -1,3 +1,7 @@
+---
+title: "Creating a parallel query DB cluster in Aurora MySQL"
+---
+
 # Creating a parallel query DB cluster in Aurora MySQL
 
 To create an Aurora MySQL cluster with parallel query, add new instances to it, or

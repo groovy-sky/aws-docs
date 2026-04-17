@@ -1,3 +1,7 @@
+---
+title: "Creating an RDS for Oracle replica in mounted mode"
+---
+
 # Creating an RDS for Oracle replica in mounted mode
 
 By default, Oracle replicas are read-only. To create a replica in mounted mode, use the console, the AWS CLI, or

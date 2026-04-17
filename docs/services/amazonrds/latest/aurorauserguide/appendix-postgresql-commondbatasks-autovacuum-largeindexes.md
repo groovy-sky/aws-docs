@@ -1,3 +1,7 @@
+---
+title: "Managing autovacuum with large indexes"
+---
+
 # Managing autovacuum with large indexes
 
 As part of its operation, _autovacuum_ performs several [vacuum phases](https://www.postgresql.org/docs/current/progress-reporting.html) while running on a table. Before the table is cleaned up, all of

@@ -1,3 +1,7 @@
+---
+title: "SQL statistics for Amazon RDS for SQL Server"
+---
+
 # SQL statistics for Amazon RDS for SQL Server
 
 Amazon RDS for SQL Server collects SQL statistics both at the statement and digest level. At the statement level, the ID column represents the

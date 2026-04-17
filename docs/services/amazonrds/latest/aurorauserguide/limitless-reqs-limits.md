@@ -1,3 +1,7 @@
+---
+title: "Aurora PostgreSQL Limitless Database requirements and considerations"
+---
+
 # Aurora PostgreSQL Limitless Database requirements and considerations
 
 Aurora PostgreSQL Limitless Database has the following requirements and considerations.

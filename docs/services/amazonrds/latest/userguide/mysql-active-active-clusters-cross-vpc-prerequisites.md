@@ -1,3 +1,7 @@
+---
+title: "Preparing for a cross-VPC active-active cluster"
+---
+
 # Preparing for a cross-VPC active-active cluster
 
 You can configure an active-active cluster with Amazon RDS for MySQL DB instances in more

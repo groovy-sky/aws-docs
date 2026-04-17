@@ -1,3 +1,7 @@
+---
+title: "Updating read replicas with MariaDB"
+---
+
 # Updating read replicas with MariaDB
 
 Read replicas are designed to support read queries, but you might need occasional updates.

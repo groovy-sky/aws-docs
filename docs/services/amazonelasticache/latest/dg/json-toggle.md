@@ -1,3 +1,7 @@
+---
+title: "JSON.TOGGLE"
+---
+
 # JSON.TOGGLE
 
 Toggles Boolean values between true and false at the path.

@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora endpoint connections"
+---
+
 # Amazon Aurora endpoint connections
 
 Amazon Aurora typically involves a cluster of DB instances instead of a single instance. Each

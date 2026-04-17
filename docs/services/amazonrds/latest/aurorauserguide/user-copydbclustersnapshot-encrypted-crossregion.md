@@ -1,3 +1,7 @@
+---
+title: "Copying an encrypted DB cluster snapshot by using the AWS CLI or Amazon RDS API"
+---
+
 # Copying an encrypted DB cluster snapshot by using the AWS CLI or Amazon RDS API
 
 Use the procedures in the following sections to copy an encrypted DB cluster snapshot by

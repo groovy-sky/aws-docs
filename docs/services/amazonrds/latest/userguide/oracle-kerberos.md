@@ -1,3 +1,7 @@
+---
+title: "Configuring Kerberos authentication for Amazon RDS for Oracle"
+---
+
 # Configuring Kerberos authentication for Amazon RDS for Oracle
 
 You can use Kerberos authentication to authenticate users when they connect to your Amazon RDS for Oracle DB instance. In this configuration, your DB

@@ -1,3 +1,7 @@
+---
+title: "Supported PostgreSQL extension versions"
+---
+
 # Supported PostgreSQL extension versions
 
 RDS for PostgreSQL supports many PostgreSQL extensions. The PostgreSQL community sometimes

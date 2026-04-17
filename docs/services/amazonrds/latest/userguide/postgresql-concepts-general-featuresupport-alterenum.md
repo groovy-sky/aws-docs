@@ -1,3 +1,7 @@
+---
+title: "Custom data types and enumerations with RDS for PostgreSQL"
+---
+
 # Custom data types and enumerations with RDS for PostgreSQL
 
 PostgreSQL supports creating custom data types and working with enumerations. For

@@ -1,3 +1,7 @@
+---
+title: "synch/cond/sql/MDL_context::COND_wait_status"
+---
+
 # synch/cond/sql/MDL\_context::COND\_wait\_status
 
 The `synch/cond/sql/MDL_context::COND_wait_status` event occurs when there are threads waiting

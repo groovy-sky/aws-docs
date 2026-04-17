@@ -1,3 +1,7 @@
+---
+title: "Backing up a control file"
+---
+
 # Backing up a control file
 
 You can back up a control file using the Amazon RDS procedure

@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Oracle database log files"
+---
+
 # Amazon RDS for Oracle database log files
 
 You can access Oracle alert logs, audit files, and trace files by using the Amazon RDS console

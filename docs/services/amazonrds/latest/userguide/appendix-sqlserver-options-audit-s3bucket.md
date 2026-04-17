@@ -1,3 +1,7 @@
+---
+title: "Configuring an S3 bucket"
+---
+
 # Configuring an S3 bucket
 
 The audit log files are automatically uploaded from the DB instance to your S3 bucket. The

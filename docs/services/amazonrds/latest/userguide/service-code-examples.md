@@ -1,3 +1,7 @@
+---
+title: "Code examples for Amazon RDS using AWS SDKs"
+---
+
 # Code examples for Amazon RDS using AWS SDKs
 
 The following code examples show how to use Amazon RDS with an AWS software development kit (SDK).
@@ -56,6 +60,8 @@ This topic also includes information about getting started and details about pre
 - [Scenarios](service-code-examples-scenarios.md)
 
   - [Create an Aurora Serverless work item tracker](example-cross-rdsdatatracker-section.md)
+
+  - [Creating an Amazon RDS DB instance](example-rds-gettingstarted-036-section.md)
 - [Serverless examples](service-code-examples-serverless-examples.md)
 
   - [Connecting to an Amazon RDS database in a Lambda function](example-serverless-connect-rds-lambda-section.md)

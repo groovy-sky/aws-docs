@@ -1,3 +1,7 @@
+---
+title: "Automatically connecting a Lambda function and a Multi-AZ DB cluster"
+---
+
 # Automatically connecting a Lambda function and a Multi-AZ DB cluster
 
 You can use the RDS console to simplify setting up a connection between a Lambda function and

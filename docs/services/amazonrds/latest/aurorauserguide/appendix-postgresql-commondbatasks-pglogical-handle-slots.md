@@ -1,3 +1,7 @@
+---
+title: "Managing logical replication slots for Aurora PostgreSQL"
+---
+
 # Managing logical replication slots for Aurora PostgreSQL
 
 Before you can perform a major version upgrade on an Aurora PostgreSQL DB cluster's writer instance

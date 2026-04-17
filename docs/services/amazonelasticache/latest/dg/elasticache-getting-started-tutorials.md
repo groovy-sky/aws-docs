@@ -1,3 +1,7 @@
+---
+title: "Tutorials: Getting started with Python and ElastiCache"
+---
+
 # Tutorials: Getting started with Python and ElastiCache
 
 This section contains hands-on tutorials to help you learn about ElastiCache for Valkey and Redis OSS. We encourage you to work through one of the language-specific tutorials.

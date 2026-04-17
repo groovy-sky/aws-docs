@@ -1,3 +1,7 @@
+---
+title: "Accessing the MariaDB slow query and general logs"
+---
+
 # Accessing the MariaDB slow query and general logs
 
 You can write the MariaDB slow query log and general log to a file or database table by

@@ -1,3 +1,7 @@
+---
+title: "Working with storage in RDS for Oracle"
+---
+
 # Working with storage in RDS for Oracle
 
 Every RDS for Oracle instance has a primary storage volume. To increase storage capacity,

@@ -1,3 +1,7 @@
+---
+title: "Enabling network communication from Amazon Aurora to other AWS services"
+---
+
 # Enabling network communication from Amazon Aurora to other AWS services
 
 To use certain other AWS services with Amazon Aurora, the network configuration of

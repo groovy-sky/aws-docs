@@ -1,3 +1,7 @@
+---
+title: "Tuning Aurora MySQL with Amazon DevOps Guru proactive insights"
+---
+
 # Tuning Aurora MySQL with Amazon DevOps Guru proactive insights
 
 DevOps Guru proactive insights detect known problematic conditions on your Aurora MySQL DB clusters before they occur. DevOps Guru can do the following:

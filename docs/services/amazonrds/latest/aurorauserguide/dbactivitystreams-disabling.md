@@ -1,3 +1,7 @@
+---
+title: "Stopping a database activity stream"
+---
+
 # Stopping a database activity stream
 
 You can stop an activity stream using the console or AWS CLI.

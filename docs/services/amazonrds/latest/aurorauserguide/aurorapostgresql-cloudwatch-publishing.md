@@ -1,3 +1,7 @@
+---
+title: "Turning on the option to publish logs to Amazon CloudWatch"
+---
+
 # Turning on the option to publish logs to Amazon CloudWatch
 
 To publish your Aurora PostgreSQL DB cluster's PostgreSQL log to CloudWatch Logs, choose the

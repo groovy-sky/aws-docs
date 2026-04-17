@@ -1,3 +1,7 @@
+---
+title: "Working with MySQL read replicas"
+---
+
 # Working with MySQL read replicas
 
 Following, you can find specific information about working with read replicas on

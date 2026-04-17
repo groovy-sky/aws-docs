@@ -1,3 +1,7 @@
+---
+title: "Licensing Microsoft SQL Server on Amazon RDS"
+---
+
 # Licensing Microsoft SQL Server on Amazon RDS
 
 When you set up an Amazon RDS DB instance for Microsoft SQL Server, the software license is

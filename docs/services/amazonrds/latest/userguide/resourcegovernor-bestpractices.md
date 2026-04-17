@@ -1,3 +1,7 @@
+---
+title: "Best practices for configuring resource governor on RDS for SQL Server"
+---
+
 # Best practices for configuring resource governor on RDS for SQL Server
 
 To control resource consumption, RDS for SQL Server supports Microsoft SQL Server resource governor.

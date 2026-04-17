@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL database engine updates: 2017-05-15 (version 1.13) (Deprecated)"
+---
+
 # Aurora MySQL database engine updates: 2017-05-15 (version 1.13) (Deprecated)
 
 **Version:** 1.13

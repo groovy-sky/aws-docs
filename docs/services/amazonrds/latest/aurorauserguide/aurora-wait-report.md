@@ -1,3 +1,7 @@
+---
+title: "aurora_wait_report"
+---
+
 # aurora\_wait\_report
 
 This function shows wait event activity over a period of time.

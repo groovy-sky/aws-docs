@@ -1,3 +1,7 @@
+---
+title: "Recommendations for MySQL features in Aurora MySQL"
+---
+
 # Recommendations for MySQL features in Aurora MySQL
 
 The following features are available in Aurora MySQL for MySQL compatibility. However, they have

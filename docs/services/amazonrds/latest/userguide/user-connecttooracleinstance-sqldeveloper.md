@@ -1,3 +1,7 @@
+---
+title: "Connecting to your DB instance using Oracle SQL developer"
+---
+
 # Connecting to your DB instance using Oracle SQL developer
 
 In this procedure, you connect to your DB instance by using Oracle SQL Developer. To download a standalone

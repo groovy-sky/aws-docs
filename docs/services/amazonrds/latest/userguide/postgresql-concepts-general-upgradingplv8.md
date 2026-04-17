@@ -1,3 +1,7 @@
+---
+title: "Upgrading and using the PLV8 extension"
+---
+
 # Upgrading and using the PLV8 extension
 
 PLV8 is a trusted Javascript language extension for PostgreSQL. You can use it for stored

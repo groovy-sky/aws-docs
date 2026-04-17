@@ -1,3 +1,7 @@
+---
+title: "Determining if the tables in your database need vacuuming"
+---
+
 # Determining if the tables in your database need vacuuming
 
 You can use the following query to show the number of unfrozen transactions in a database.

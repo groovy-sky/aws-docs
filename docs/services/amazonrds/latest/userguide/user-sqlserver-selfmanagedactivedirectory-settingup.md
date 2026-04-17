@@ -1,3 +1,7 @@
+---
+title: "Setting up self-managed Active Directory"
+---
+
 # Setting up self-managed Active Directory
 
 To set up a self-managed AD, take the following steps.

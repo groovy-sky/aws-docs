@@ -1,3 +1,7 @@
+---
+title: "Enabling in-transit encryption on a node-based Redis OSS cluster using Python"
+---
+
 # Enabling in-transit encryption on a node-based Redis OSS cluster using Python
 
 The following guide will demonstrate how to enable in-transit encryption on a Redis OSS 7.0 cluster that was originally created with in-transit encryption disabled. TCP and TLS

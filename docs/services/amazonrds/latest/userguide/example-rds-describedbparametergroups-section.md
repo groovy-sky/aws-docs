@@ -1,3 +1,7 @@
+---
+title: "Use DescribeDBParameterGroups with an AWS SDK or CLI"
+---
+
 # Use `DescribeDBParameterGroups` with an AWS SDK or CLI
 
 The following code examples show how to use `DescribeDBParameterGroups`.
@@ -37,7 +41,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DescribeDBParameterGroups](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describedbparametergroups.md)
+[DescribeDBParameterGroups](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeDBParameterGroups)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -80,7 +84,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/c
 ```
 
 - For API details, see
-[DescribeDBParameterGroups](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describedbparametergroups.md)
+[DescribeDBParameterGroups](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeDBParameterGroups)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -226,7 +230,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[DescribeDBParameterGroups](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/describedbparametergroups.md)
+[DescribeDBParameterGroups](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeDBParameterGroups)
 in _AWS SDK for Java 2.x API Reference_.
 
 Python
@@ -287,7 +291,7 @@ class InstanceWrapper:
 ```
 
 - For API details, see
-[DescribeDBParameterGroups](../../../goto/boto3/rds-2014-10-31/describedbparametergroups.md)
+[DescribeDBParameterGroups](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeDBParameterGroups)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -324,7 +328,7 @@ end
 ```
 
 - For API details, see
-[DescribeDBParameterGroups](../../../../reference/goto/sdkforrubyv3/rds-2014-10-31/describedbparametergroups.md)
+[DescribeDBParameterGroups](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/DescribeDBParameterGroups)
 in _AWS SDK for Ruby API Reference_.
 
 SAP ABAP

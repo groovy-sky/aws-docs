@@ -1,3 +1,7 @@
+---
+title: "Importing and exporting SQL Server data using other methods"
+---
+
 # Importing and exporting SQL Server data using other methods
 
 Following, you can find information about using snapshots to import your Microsoft SQL Server

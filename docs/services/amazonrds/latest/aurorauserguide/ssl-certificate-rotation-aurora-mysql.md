@@ -1,3 +1,7 @@
+---
+title: "Updating applications to connect to Aurora MySQL DB clusters using new TLS certificates"
+---
+
 # Updating applications to connect to Aurora MySQL DB clusters using new TLS certificates
 
 As of January 13, 2023, Amazon RDS has published new Certificate Authority (CA) certificates

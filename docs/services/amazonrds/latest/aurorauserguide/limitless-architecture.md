@@ -1,3 +1,7 @@
+---
+title: "Aurora PostgreSQL Limitless Database architecture"
+---
+
 # Aurora PostgreSQL Limitless Database architecture
 
 Limitless Database achieves scale with a two-layer architecture consisting of multiple database nodes. Nodes are either routers or

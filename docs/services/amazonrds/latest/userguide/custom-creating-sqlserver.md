@@ -1,3 +1,7 @@
+---
+title: "Creating and connecting to a DB instance for Amazon RDS Custom for SQL Server"
+---
+
 # Creating and connecting to a DB instance for Amazon RDS Custom for SQL Server
 
 You can create an RDS Custom DB instance, and then connect to it using AWS Systems Manager or Remote

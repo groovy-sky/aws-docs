@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora and customer responsibilities with Amazon RDS Extended Support"
+---
+
 # Amazon Aurora and customer responsibilities with Amazon RDS Extended Support
 
 The following content describes the responsibilities of Amazon Aurora and your

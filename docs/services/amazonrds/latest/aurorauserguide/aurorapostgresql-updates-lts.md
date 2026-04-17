@@ -1,3 +1,7 @@
+---
+title: "Using an Aurora PostgreSQL long-term support (LTS) release"
+---
+
 # Using an Aurora PostgreSQL long-term support (LTS) release
 
 Each new Aurora PostgreSQL version remains available for a certain amount of time for you to use when you create or

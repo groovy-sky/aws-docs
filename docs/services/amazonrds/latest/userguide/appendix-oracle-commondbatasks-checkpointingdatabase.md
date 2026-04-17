@@ -1,3 +1,7 @@
+---
+title: "Checkpointing a database"
+---
+
 # Checkpointing a database
 
 To checkpoint the database, use the Amazon RDS procedure

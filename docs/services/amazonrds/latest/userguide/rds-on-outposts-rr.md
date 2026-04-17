@@ -1,3 +1,7 @@
+---
+title: "Creating read replicas for Amazon RDS on AWS Outposts"
+---
+
 # Creating read replicas for Amazon RDS on AWS Outposts
 
 Amazon RDS on AWS Outposts uses the DB engines' built-in replication functionality to create a read replica from a

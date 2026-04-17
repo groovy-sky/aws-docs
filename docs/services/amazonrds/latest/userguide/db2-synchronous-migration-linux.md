@@ -1,3 +1,7 @@
+---
+title: "Migrating synchronously from Linux to Linux for Amazon RDS for Db2"
+---
+
 # Migrating synchronously from Linux to Linux for Amazon RDS for Db2
 
 With

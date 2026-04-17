@@ -1,3 +1,7 @@
+---
+title: "Monitoring an Amazon Aurora global database"
+---
+
 # Monitoring an Amazon Aurora global database
 
 When you create the Aurora DB clusters that make up your Aurora global database, you can choose many options that let you monitor your

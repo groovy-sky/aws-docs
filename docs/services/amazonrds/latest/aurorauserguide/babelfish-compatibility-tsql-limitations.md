@@ -1,3 +1,7 @@
+---
+title: "T-SQL differences in Babelfish"
+---
+
 # T-SQL differences in Babelfish
 
 Following, you can find a table of T-SQL functionality as supported in the current

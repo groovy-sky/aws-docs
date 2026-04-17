@@ -1,3 +1,7 @@
+---
+title: "io/redo_log_flush"
+---
+
 # io/redo\_log\_flush
 
 The `io/redo_log_flush` event occurs when a session is writing persistent data to Amazon Aurora storage.

@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Restore an Amazon Aurora DB cluster from a DB cluster snapshot"
+---
+
 # Tutorial: Restore an Amazon Aurora DB cluster from a DB cluster snapshot
 
 A common scenario when working with Amazon Aurora is to have a DB instance that you work with occasionally but that you don't need

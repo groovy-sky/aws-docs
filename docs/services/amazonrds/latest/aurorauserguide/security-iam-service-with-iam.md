@@ -1,3 +1,7 @@
+---
+title: "How Amazon Aurora works with IAM"
+---
+
 # How Amazon Aurora works with IAM
 
 Before you use IAM to manage access to Amazon Aurora, you should understand what IAM

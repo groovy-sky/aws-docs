@@ -1,3 +1,7 @@
+---
+title: "Known issues and limitations for Amazon RDS for Db2"
+---
+
 # Known issues and limitations for Amazon RDS for Db2
 
 The following items are known issues and limitations for working with Amazon RDS for Db2:

@@ -1,3 +1,7 @@
+---
+title: "Publishing database logs to Amazon CloudWatch Logs"
+---
+
 # Publishing database logs to Amazon CloudWatch Logs
 
 In an on-premises database, the database logs reside on the file system. Amazon RDS doesn't

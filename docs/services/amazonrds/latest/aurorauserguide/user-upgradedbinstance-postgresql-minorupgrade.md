@@ -1,3 +1,7 @@
+---
+title: "Performing a minor version upgrade"
+---
+
 # Performing a minor version upgrade
 
 You can use the following methods to upgrade the minor version of a DB cluster or to patch
@@ -145,9 +149,6 @@ versions later than 16.1, 15.3, 14.8, 13.11, 12.15, and 11.20, ZDP
 is supported with TLSv1.3 connections.
 
 - ZDP isn't supported in the following cases:
-
-- When Aurora PostgreSQL DB clusters are configured as
-Aurora Serverless v1.
 
 - During the upgrade of any Aurora reader instances.
 

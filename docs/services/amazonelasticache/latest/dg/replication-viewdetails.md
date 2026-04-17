@@ -1,3 +1,7 @@
+---
+title: "Viewing a replication group's details"
+---
+
 # Viewing a replication group's details
 
 There are times you may want to view the details of a replication group.

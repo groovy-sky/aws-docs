@@ -1,3 +1,7 @@
+---
+title: "Connecting to your Amazon RDS for Db2 DB instance with IBM Db2 CLP"
+---
+
 # Connecting to your Amazon RDS for Db2 DB instance with IBM Db2 CLP
 
 You can use a command line utility such as IBM Db2 CLP to connect to Amazon RDS for Db2 DB

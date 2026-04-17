@@ -1,3 +1,7 @@
+---
+title: "Resolving unidentifiable vacuum blockers in Aurora PostgreSQL"
+---
+
 # Resolving unidentifiable vacuum blockers in Aurora PostgreSQL
 
 This section explores additional reasons that can prevent vacuuming from making progress.

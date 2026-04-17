@@ -1,3 +1,7 @@
+---
+title: "Change data capture (CDC) support with RDS Custom for SQL Server"
+---
+
 # Change data capture (CDC) support with RDS Custom for SQL Server
 
 ## Overview

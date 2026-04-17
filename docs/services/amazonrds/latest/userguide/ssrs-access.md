@@ -1,3 +1,7 @@
+---
+title: "Accessing the SSRS web portal"
+---
+
 # Accessing the SSRS web portal
 
 Use the following process to access the SSRS web portal:

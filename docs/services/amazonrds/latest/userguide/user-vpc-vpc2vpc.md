@@ -1,3 +1,7 @@
+---
+title: "Updating the VPC for a DB instance"
+---
+
 # Updating the VPC for a DB instance
 
 You can use the AWS Management Console to move your DB instance to a different VPC.

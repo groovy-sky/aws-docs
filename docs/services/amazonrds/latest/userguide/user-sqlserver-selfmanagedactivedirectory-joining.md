@@ -1,3 +1,7 @@
+---
+title: "Joining your DB instance to self-managed Active Directory"
+---
+
 # Joining your DB instance to self-managed Active Directory
 
 To join your RDS for SQL Server DB instance to your self-managed AD, follow these steps:

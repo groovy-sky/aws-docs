@@ -1,3 +1,7 @@
+---
+title: "Calling the Amazon RDS Data API with the AWS CLI"
+---
+
 # Calling the Amazon RDS Data API with the AWS CLI
 
 You can call RDS Data API (Data API) using the AWS CLI.
@@ -29,7 +33,7 @@ The AWS CLI can format responses in JSON.
 ## Starting a SQL transaction
 
 You can start a SQL transaction using the `aws rds-data
-                            begin-transaction` CLI command. The call returns a transaction
+	                            begin-transaction` CLI command. The call returns a transaction
 identifier.
 
 ###### Important
@@ -53,7 +57,7 @@ For Linux, macOS, or Unix:
 ```nohighlight
 
 aws rds-data begin-transaction --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" \
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret"
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret"
 ```
 
 For Windows:
@@ -61,7 +65,7 @@ For Windows:
 ```nohighlight
 
 aws rds-data begin-transaction --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" ^
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret"
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret"
 ```
 
 The following is an example of the response.
@@ -69,8 +73,8 @@ The following is an example of the response.
 ```json
 
 {
-    "transactionId": "ABC1234567890xyz"
-}
+	    "transactionId": "ABC1234567890xyz"
+	}
 ```
 
 ## Running a SQL statement
@@ -82,7 +86,7 @@ You can run the SQL statement in a transaction by specifying the transaction
 identifier with the `--transaction-id` option. You can start a
 transaction using the `aws rds-data begin-transaction` CLI
 command. You can end and commit a transaction using the `aws rds-data
-                            commit-transaction` CLI command.
+	                            commit-transaction` CLI command.
 
 ###### Important
 
@@ -111,9 +115,9 @@ metadata in the results. The default is
 - `--database` (optional) – The name of the database.
 
 The `--database` option might not work when you run a SQL statement after running `--sql "use
-                                      database_name;"` in the previous request. We recommend that you use the
+  	                                    database_name;"` in the previous request. We recommend that you use the
 `--database` option instead of running `--sql "use
-                                  database_name;"` statements.
+  	                                database_name;"` statements.
 
 - `--continue-after-timeout | --no-continue-after-timeout`
 (optional) – A value that indicates whether to continue running
@@ -135,8 +139,6 @@ The DB cluster returns a response for the call.
 
 The response size limit is 1 MiB. If the call returns more than 1 MiB of response data, the call is terminated.
 
-For Aurora Serverless v1, the maximum number of requests per second is 1,000. For all other supported databases, there is no limit.
-
 For example, the following CLI command runs a single SQL statement and
 omits the metadata in the results (the default).
 
@@ -145,8 +147,8 @@ For Linux, macOS, or Unix:
 ```nohighlight
 
 aws rds-data execute-statement --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" \
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
---sql "select * from mytable"
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
+	--sql "select * from mytable"
 ```
 
 For Windows:
@@ -154,8 +156,8 @@ For Windows:
 ```nohighlight
 
 aws rds-data execute-statement --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" ^
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
---sql "select * from mytable"
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
+	--sql "select * from mytable"
 ```
 
 The following is an example of the response.
@@ -163,34 +165,34 @@ The following is an example of the response.
 ```json
 
 {
-    "numberOfRecordsUpdated": 0,
-    "records": [
-        [
-            {
-                "longValue": 1
-            },
-            {
-                "stringValue": "ValueOne"
-            }
-        ],
-        [
-            {
-                "longValue": 2
-            },
-            {
-                "stringValue": "ValueTwo"
-            }
-        ],
-        [
-            {
-                "longValue": 3
-            },
-            {
-                "stringValue": "ValueThree"
-            }
-        ]
-    ]
-}
+	    "numberOfRecordsUpdated": 0,
+	    "records": [
+	        [
+	            {
+	                "longValue": 1
+	            },
+	            {
+	                "stringValue": "ValueOne"
+	            }
+	        ],
+	        [
+	            {
+	                "longValue": 2
+	            },
+	            {
+	                "stringValue": "ValueTwo"
+	            }
+	        ],
+	        [
+	            {
+	                "longValue": 3
+	            },
+	            {
+	                "stringValue": "ValueThree"
+	            }
+	        ]
+	    ]
+	}
 ```
 
 The following CLI command runs a single SQL statement in a transaction by
@@ -201,8 +203,8 @@ For Linux, macOS, or Unix:
 ```nohighlight
 
 aws rds-data execute-statement --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" \
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
---sql "update mytable set quantity=5 where id=201" --transaction-id "ABC1234567890xyz"
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
+	--sql "update mytable set quantity=5 where id=201" --transaction-id "ABC1234567890xyz"
 ```
 
 For Windows:
@@ -210,8 +212,8 @@ For Windows:
 ```nohighlight
 
 aws rds-data execute-statement --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" ^
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
---sql "update mytable set quantity=5 where id=201" --transaction-id "ABC1234567890xyz"
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
+	--sql "update mytable set quantity=5 where id=201" --transaction-id "ABC1234567890xyz"
 ```
 
 The following is an example of the response.
@@ -219,8 +221,8 @@ The following is an example of the response.
 ```json
 
 {
-    "numberOfRecordsUpdated": 1
-}
+	    "numberOfRecordsUpdated": 1
+	}
 ```
 
 The following CLI command runs a single SQL statement with parameters.
@@ -230,8 +232,8 @@ For Linux, macOS, or Unix:
 ```nohighlight
 
 aws rds-data execute-statement --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" \
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
---sql "insert into mytable values (:id, :val)" --parameters "[{\"name\": \"id\", \"value\": {\"longValue\": 1}},{\"name\": \"val\", \"value\": {\"stringValue\": \"value1\"}}]"
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
+	--sql "insert into mytable values (:id, :val)" --parameters "[{\"name\": \"id\", \"value\": {\"longValue\": 1}},{\"name\": \"val\", \"value\": {\"stringValue\": \"value1\"}}]"
 ```
 
 For Windows:
@@ -239,8 +241,8 @@ For Windows:
 ```nohighlight
 
 aws rds-data execute-statement --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" ^
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
---sql "insert into mytable values (:id, :val)" --parameters "[{\"name\": \"id\", \"value\": {\"longValue\": 1}},{\"name\": \"val\", \"value\": {\"stringValue\": \"value1\"}}]"
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
+	--sql "insert into mytable values (:id, :val)" --parameters "[{\"name\": \"id\", \"value\": {\"longValue\": 1}},{\"name\": \"val\", \"value\": {\"stringValue\": \"value1\"}}]"
 ```
 
 The following is an example of the response.
@@ -248,8 +250,8 @@ The following is an example of the response.
 ```json
 
 {
-    "numberOfRecordsUpdated": 1
-}
+	    "numberOfRecordsUpdated": 1
+	}
 ```
 
 The following CLI command runs a data definition language (DDL) SQL statement. The DDL statement renames column
@@ -268,8 +270,8 @@ For Linux, macOS, or Unix:
 ```nohighlight
 
 aws rds-data execute-statement --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" \
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
---sql "alter table mytable change column job role varchar(100)" --continue-after-timeout
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
+	--sql "alter table mytable change column job role varchar(100)" --continue-after-timeout
 ```
 
 For Windows:
@@ -277,8 +279,8 @@ For Windows:
 ```nohighlight
 
 aws rds-data execute-statement --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" ^
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
---sql "alter table mytable change column job role varchar(100)" --continue-after-timeout
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
+	--sql "alter table mytable change column job role varchar(100)" --continue-after-timeout
 ```
 
 The following is an example of the response.
@@ -286,9 +288,9 @@ The following is an example of the response.
 ```json
 
 {
-    "generatedFields": [],
-    "numberOfRecordsUpdated": 0
-}
+	    "generatedFields": [],
+	    "numberOfRecordsUpdated": 0
+	}
 ```
 
 ###### Note
@@ -307,7 +309,7 @@ use this command to perform a bulk import or update operation.
 You can run the SQL statement in a transaction by specifying the
 transaction identifier with the `--transaction-id` option. You
 can start a transaction by using the `aws rds-data
-                            begin-transaction` CLI command. You can end and commit a
+	                            begin-transaction` CLI command. You can end and commit a
 transaction by using the `aws rds-data commit-transaction` CLI
 command.
 
@@ -353,8 +355,6 @@ set.
 
 The response size limit is 1 MiB. If the call returns more than 1 MiB of response data, the call is terminated.
 
-For Aurora Serverless v1, the maximum number of requests per second is 1,000. For all other supported databases, there is no limit.
-
 For example, the following CLI command runs a batch SQL statement over an
 array of data with a parameter set.
 
@@ -363,11 +363,11 @@ For Linux, macOS, or Unix:
 ```nohighlight
 
 aws rds-data batch-execute-statement --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" \
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
---sql "insert into mytable values (:id, :val)" \
---parameter-sets "[[{\"name\": \"id\", \"value\": {\"longValue\": 1}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueOne\"}}],
-[{\"name\": \"id\", \"value\": {\"longValue\": 2}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueTwo\"}}],
-[{\"name\": \"id\", \"value\": {\"longValue\": 3}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueThree\"}}]]"
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
+	--sql "insert into mytable values (:id, :val)" \
+	--parameter-sets "[[{\"name\": \"id\", \"value\": {\"longValue\": 1}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueOne\"}}],
+	[{\"name\": \"id\", \"value\": {\"longValue\": 2}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueTwo\"}}],
+	[{\"name\": \"id\", \"value\": {\"longValue\": 3}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueThree\"}}]]"
 ```
 
 For Windows:
@@ -375,11 +375,11 @@ For Windows:
 ```nohighlight
 
 aws rds-data batch-execute-statement --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" ^
---database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
---sql "insert into mytable values (:id, :val)" ^
---parameter-sets "[[{\"name\": \"id\", \"value\": {\"longValue\": 1}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueOne\"}}],
-[{\"name\": \"id\", \"value\": {\"longValue\": 2}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueTwo\"}}],
-[{\"name\": \"id\", \"value\": {\"longValue\": 3}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueThree\"}}]]"
+	--database "mydb" --secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
+	--sql "insert into mytable values (:id, :val)" ^
+	--parameter-sets "[[{\"name\": \"id\", \"value\": {\"longValue\": 1}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueOne\"}}],
+	[{\"name\": \"id\", \"value\": {\"longValue\": 2}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueTwo\"}}],
+	[{\"name\": \"id\", \"value\": {\"longValue\": 3}},{\"name\": \"val\", \"value\": {\"stringValue\": \"ValueThree\"}}]]"
 ```
 
 ###### Note
@@ -391,7 +391,7 @@ option.
 
 Using the `aws rds-data commit-transaction` CLI command, you can
 end a SQL transaction that you started with `aws rds-data
-                            begin-transaction` and commit the changes.
+	                            begin-transaction` and commit the changes.
 
 In addition to the common options, specify the following option:
 
@@ -409,8 +409,8 @@ For Linux, macOS, or Unix:
 ```nohighlight
 
 aws rds-data commit-transaction --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" \
---secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
---transaction-id "ABC1234567890xyz"
+	--secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
+	--transaction-id "ABC1234567890xyz"
 ```
 
 For Windows:
@@ -418,8 +418,8 @@ For Windows:
 ```nohighlight
 
 aws rds-data commit-transaction --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" ^
---secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
---transaction-id "ABC1234567890xyz"
+	--secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
+	--transaction-id "ABC1234567890xyz"
 ```
 
 The following is an example of the response.
@@ -427,15 +427,15 @@ The following is an example of the response.
 ```json
 
 {
-    "transactionStatus": "Transaction Committed"
-}
+	    "transactionStatus": "Transaction Committed"
+	}
 ```
 
 ## Rolling back a SQL transaction
 
 Using the `aws rds-data rollback-transaction` CLI command, you can
 roll back a SQL transaction that you started with `aws rds-data
-                            begin-transaction`. Rolling back a transaction cancels its
+	                            begin-transaction`. Rolling back a transaction cancels its
 changes.
 
 ###### Important
@@ -458,8 +458,8 @@ For Linux, macOS, or Unix:
 ```nohighlight
 
 aws rds-data rollback-transaction --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" \
---secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
---transaction-id "ABC1234567890xyz"
+	--secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" \
+	--transaction-id "ABC1234567890xyz"
 ```
 
 For Windows:
@@ -467,8 +467,8 @@ For Windows:
 ```nohighlight
 
 aws rds-data rollback-transaction --resource-arn "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster" ^
---secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
---transaction-id "ABC1234567890xyz"
+	--secret-arn "arn:aws:secretsmanager:us-east-1:123456789012:secret:mysecret" ^
+	--transaction-id "ABC1234567890xyz"
 ```
 
 The following is an example of the response.
@@ -476,8 +476,8 @@ The following is an example of the response.
 ```json
 
 {
-    "transactionStatus": "Rollback Complete"
-    }
+	    "transactionStatus": "Rollback Complete"
+	    }
 ```
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)

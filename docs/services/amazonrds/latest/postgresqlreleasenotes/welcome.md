@@ -1,3 +1,7 @@
+---
+title: "Release notes for Amazon Relational Database Service (Amazon RDS) for PostgreSQL"
+---
+
 # Release notes for Amazon Relational Database Service (Amazon RDS) for PostgreSQL
 
 The Amazon RDS for PostgreSQL release notes provide details about the PostgreSQL versions and

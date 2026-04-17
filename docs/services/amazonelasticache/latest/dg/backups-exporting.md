@@ -1,3 +1,7 @@
+---
+title: "Exporting a backup"
+---
+
 # Exporting a backup
 
 Amazon ElastiCache supports exporting your ElastiCache for Redis OSS backup to an Amazon Simple Storage Service (Amazon S3) bucket,

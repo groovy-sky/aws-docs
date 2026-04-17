@@ -1,3 +1,7 @@
+---
+title: "Using Microsoft SQL Server resource governor for your RDS for SQL Server instance"
+---
+
 # Using Microsoft SQL Server resource governor for your RDS for SQL Server instance
 
 After adding the resource governor option to your option group, resource governor

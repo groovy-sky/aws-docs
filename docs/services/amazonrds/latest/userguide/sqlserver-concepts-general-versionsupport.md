@@ -1,3 +1,7 @@
+---
+title: "Microsoft SQL Server versions on Amazon RDS"
+---
+
 # Microsoft SQL Server versions on Amazon RDS
 
 You can specify any currently supported Microsoft SQL Server version when creating a new DB

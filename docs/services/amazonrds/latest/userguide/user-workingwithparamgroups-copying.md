@@ -1,3 +1,7 @@
+---
+title: "Copying a DB parameter group in Amazon RDS"
+---
+
 # Copying a DB parameter group in Amazon RDS
 
 You can copy custom DB parameter groups that you create. Copying a parameter group can be

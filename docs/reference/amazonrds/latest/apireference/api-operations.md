@@ -1,3 +1,7 @@
+---
+title: "Actions"
+---
+
 # Actions
 
 The following actions are supported:
@@ -197,6 +201,8 @@ The following actions are supported:
 - [DescribeReservedDBInstances](api-describereserveddbinstances.md)
 
 - [DescribeReservedDBInstancesOfferings](api-describereserveddbinstancesofferings.md)
+
+- [DescribeServerlessV2PlatformVersions](api-describeserverlessv2platformversions.md)
 
 - [DescribeSourceRegions](api-describesourceregions.md)
 

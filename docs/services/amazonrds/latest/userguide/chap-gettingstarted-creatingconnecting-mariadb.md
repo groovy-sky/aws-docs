@@ -1,3 +1,7 @@
+---
+title: "Creating and connecting to a MariaDB DB instance"
+---
+
 # Creating and connecting to a MariaDB DB instance
 
 This tutorial creates an EC2 instance and an RDS for MariaDB DB instance. The tutorial shows you how to access the DB

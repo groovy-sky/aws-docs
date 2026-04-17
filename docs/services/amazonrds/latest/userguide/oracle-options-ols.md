@@ -1,3 +1,7 @@
+---
+title: "Oracle Label Security"
+---
+
 # Oracle Label Security
 
 Amazon RDS supports Oracle Label Security for the Enterprise Edition of Oracle Database through the use of the OLS

@@ -1,3 +1,7 @@
+---
+title: "Controlling Data API timeout behavior"
+---
+
 # Controlling Data API timeout behavior
 
 All calls to the Data API are synchronous. Suppose that you perform a Data API operation that runs a SQL statement
@@ -35,24 +39,24 @@ timeouts to a higher value:
 ```java
 
 public RdsDataClient createRdsDataClient() {
-    return RdsDataClient.builder()
-        .region(Region.US_EAST_1) // Change this to your desired Region
-        .overrideConfiguration(createOverrideConfiguration())
-        .httpClientBuilder(createHttpClientBuilder())
-        .credentialsProvider(defaultCredentialsProvider()) // Change this to your desired credentials provider
-        .build();
-}
+	    return RdsDataClient.builder()
+	        .region(Region.US_EAST_1) // Change this to your desired Region
+	        .overrideConfiguration(createOverrideConfiguration())
+	        .httpClientBuilder(createHttpClientBuilder())
+	        .credentialsProvider(defaultCredentialsProvider()) // Change this to your desired credentials provider
+	        .build();
+	}
 
-private static ClientOverrideConfiguration createOverrideConfiguration() {
-    return ClientOverrideConfiguration.builder()
-        .apiCallTimeout(Duration.ofSeconds(60))
-        .build();
-}
+	private static ClientOverrideConfiguration createOverrideConfiguration() {
+	    return ClientOverrideConfiguration.builder()
+	        .apiCallTimeout(Duration.ofSeconds(60))
+	        .build();
+	}
 
-private HttpClientBuilder createHttpClientBuilder() {
-    return ApacheHttpClient.builder() // Change this to your desired HttpClient
-        .socketTimeout(Duration.ofSeconds(60));
-}
+	private HttpClientBuilder createHttpClientBuilder() {
+	    return ApacheHttpClient.builder() // Change this to your desired HttpClient
+	        .socketTimeout(Duration.ofSeconds(60));
+	}
 
 ```
 
@@ -61,23 +65,23 @@ Here is an equivalent example using the asynchronous data client:
 ```java
 
 public static RdsDataAsyncClient createRdsDataAsyncClient() {
-    return RdsDataAsyncClient.builder()
-        .region(Region.US_EAST_1) // Change this to your desired Region
-        .overrideConfiguration(createOverrideConfiguration())
-        .credentialsProvider(defaultCredentialsProvider())  // Change this to your desired credentials provider
-        .build();
-}
+	    return RdsDataAsyncClient.builder()
+	        .region(Region.US_EAST_1) // Change this to your desired Region
+	        .overrideConfiguration(createOverrideConfiguration())
+	        .credentialsProvider(defaultCredentialsProvider())  // Change this to your desired credentials provider
+	        .build();
+	}
 
-private static ClientOverrideConfiguration createOverrideConfiguration() {
-    return ClientOverrideConfiguration.builder()
-        .apiCallAttemptTimeout(Duration.ofSeconds(60))
-        .build();
-}
+	private static ClientOverrideConfiguration createOverrideConfiguration() {
+	    return ClientOverrideConfiguration.builder()
+	        .apiCallAttemptTimeout(Duration.ofSeconds(60))
+	        .build();
+	}
 
-private HttpClientBuilder createHttpClientBuilder() {
-    return NettyNioAsyncHttpClient.builder() // Change this to your desired AsyncHttpClient
-        .readTimeout(Duration.ofSeconds(60));
-}
+	private HttpClientBuilder createHttpClientBuilder() {
+	    return NettyNioAsyncHttpClient.builder() // Change this to your desired AsyncHttpClient
+	        .readTimeout(Duration.ofSeconds(60));
+	}
 
 ```
 

@@ -1,3 +1,7 @@
+---
+title: "Functions of postgres_get_av_diag() in RDS for PostgreSQL"
+---
+
 # Functions of postgres\_get\_av\_diag() in RDS for PostgreSQL
 
 The `postgres_get_av_diag()` function retrieves diagnostic information about

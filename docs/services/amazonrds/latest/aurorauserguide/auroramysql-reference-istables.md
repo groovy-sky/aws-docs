@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL–specific information_schema tables"
+---
+
 # Aurora MySQL–specific information\_schema tables
 
 Aurora MySQL has certain `information_schema` tables that are specific to Aurora.

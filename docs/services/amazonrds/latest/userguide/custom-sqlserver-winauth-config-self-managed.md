@@ -1,3 +1,7 @@
+---
+title: "Configure Self-Managed or On-premise AD"
+---
+
 # Configure Self-Managed or On-premise AD
 
 To join your on-premise or self-managed Microsoft AD to your RDS Custom for SQL Server DB instance, your Active Domain must be configured as follows:

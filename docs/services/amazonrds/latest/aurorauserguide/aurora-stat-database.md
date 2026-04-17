@@ -1,3 +1,7 @@
+---
+title: "aurora_stat_database"
+---
+
 # aurora\_stat\_database
 
 It carries all columns of pg\_stat\_database and adds new columns in the end.

@@ -1,3 +1,7 @@
+---
+title: "Limitations and considerations for Amazon RDS blue/green deployments"
+---
+
 # Limitations and considerations for Amazon RDS blue/green deployments
 
 Blue/green deployments in Amazon RDS require careful consideration of factors such as

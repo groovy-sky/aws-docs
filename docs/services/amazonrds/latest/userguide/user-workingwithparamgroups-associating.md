@@ -1,3 +1,7 @@
+---
+title: "Associating a DB parameter group with a DB instance in Amazon RDS"
+---
+
 # Associating a DB parameter group with a DB instance in Amazon RDS
 
 You can create your own DB parameter groups with customized settings. You can associate a DB parameter group

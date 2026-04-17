@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora PostgreSQL releases and engine versions"
+---
+
 # Amazon Aurora PostgreSQL releases and engine versions
 
 Amazon Aurora PostgreSQL-Compatible Edition releases are updated regularly. Updates are applied to

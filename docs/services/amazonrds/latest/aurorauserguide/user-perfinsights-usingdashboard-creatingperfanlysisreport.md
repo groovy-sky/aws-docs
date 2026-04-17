@@ -1,3 +1,7 @@
+---
+title: "Creating a performance analysis report in Performance Insights"
+---
+
 # Creating a performance analysis report in Performance Insights
 
 You can create a performance analysis report for a specific period in the Performance Insights dashboard. You can select a time period and add one or more

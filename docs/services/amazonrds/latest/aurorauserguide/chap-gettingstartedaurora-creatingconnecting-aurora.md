@@ -1,3 +1,7 @@
+---
+title: "Creating and connecting to an Aurora MySQL DB cluster"
+---
+
 # Creating and connecting to an Aurora MySQL DB cluster
 
 This tutorial creates an EC2 instance and an Aurora MySQL DB cluster. The tutorial shows you how to access the DB

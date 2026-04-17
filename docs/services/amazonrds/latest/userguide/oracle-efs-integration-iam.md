@@ -1,3 +1,7 @@
+---
+title: "Configuring IAM permissions for RDS for Oracle integration with Amazon EFS"
+---
+
 # Configuring IAM permissions for RDS for Oracle integration with Amazon EFS
 
 By default, Amazon EFS integration feature doesn't use an IAM role: the

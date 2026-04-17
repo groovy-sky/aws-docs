@@ -1,3 +1,7 @@
+---
+title: "Using a PostgreSQL client to connect to your DB cluster"
+---
+
 # Using a PostgreSQL client to connect to your DB cluster
 
 You can use a PostgreSQL client to connect to Babelfish on the PostgreSQL

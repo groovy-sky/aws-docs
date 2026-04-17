@@ -1,3 +1,7 @@
+---
+title: "Post-upgrade cleanup for Aurora MySQL version 3"
+---
+
 # Post-upgrade cleanup for Aurora MySQL version 3
 
 After you finish upgrading any Aurora MySQL version 2 clusters to Aurora MySQL version 3, you can perform these other cleanup actions:

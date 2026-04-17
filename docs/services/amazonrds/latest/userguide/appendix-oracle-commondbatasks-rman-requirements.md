@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for RMAN backups"
+---
+
 # Prerequisites for RMAN backups
 
 Before backing up your database using the `rdsadmin.rdsadmin_rman_util`

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting SSAS issues"
+---
+
 # Troubleshooting SSAS issues
 
 You might encounter the following issues when using SSAS.

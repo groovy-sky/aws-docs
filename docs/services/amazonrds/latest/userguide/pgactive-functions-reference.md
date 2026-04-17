@@ -1,3 +1,7 @@
+---
+title: "pgactive functions reference"
+---
+
 # pgactive functions reference
 
 Following, you can find a list of pgactive functions with their parameters, return values,

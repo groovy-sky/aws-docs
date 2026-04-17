@@ -1,3 +1,7 @@
+---
+title: "Invoking an AWS Lambda function from an Aurora PostgreSQL DB cluster"
+---
+
 # Invoking an AWS Lambda function from an Aurora PostgreSQL DB cluster
 
 AWS Lambda is an event-driven compute service that lets you run code without provisioning or managing servers. It's available for use

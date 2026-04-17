@@ -1,3 +1,7 @@
+---
+title: "Importing data into PostgreSQL on Amazon RDS"
+---
+
 # Importing data into PostgreSQL on Amazon RDS
 
 Suppose that you have an existing PostgreSQL deployment that you want to move to

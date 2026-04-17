@@ -1,3 +1,7 @@
+---
+title: "SQL Server Audit"
+---
+
 # SQL Server Audit
 
 In Amazon RDS, you can audit Microsoft SQL Server databases by using the built-in SQL Server

@@ -1,3 +1,7 @@
+---
+title: "Removing the PHP cluster client"
+---
+
 # Removing the PHP cluster client
 
 ###### Topics

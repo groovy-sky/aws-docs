@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora PostgreSQL wait events"
+---
+
 # Amazon Aurora PostgreSQL wait events
 
 The following are common wait events for Aurora PostgreSQL. To learn more about wait

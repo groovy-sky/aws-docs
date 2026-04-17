@@ -1,3 +1,7 @@
+---
+title: "Taking manual backups"
+---
+
 # Taking manual backups
 
 In addition to automatic backups, you can create a _manual_ backup

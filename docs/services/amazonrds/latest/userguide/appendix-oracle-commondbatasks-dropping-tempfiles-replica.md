@@ -1,3 +1,7 @@
+---
+title: "Dropping tempfiles on a read replica"
+---
+
 # Dropping tempfiles on a read replica
 
 You can't drop an existing temporary tablespace on a read replica. You can

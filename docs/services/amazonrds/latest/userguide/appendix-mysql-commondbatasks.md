@@ -1,3 +1,7 @@
+---
+title: "Common DBA tasks for MySQL DB instances"
+---
+
 # Common DBA tasks for MySQL DB instances
 
 In the following content, you can find descriptions of the Amazon RDS-specific implementations

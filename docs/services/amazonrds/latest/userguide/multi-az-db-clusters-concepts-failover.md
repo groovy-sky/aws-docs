@@ -1,3 +1,7 @@
+---
+title: "Failing over a Multi-AZ DB cluster for Amazon RDS"
+---
+
 # Failing over a Multi-AZ DB cluster for Amazon RDS
 
 If there is a planned or unplanned outage of your writer DB instance in a Multi-AZ DB cluster, Amazon RDS

@@ -1,3 +1,7 @@
+---
+title: "JSON.ARRPOP"
+---
+
 # JSON.ARRPOP
 
 Removes and returns element at the index from the array. Popping an empty array

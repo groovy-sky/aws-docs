@@ -1,3 +1,7 @@
+---
+title: "Collation limitations and behavior differences"
+---
+
 # Collation limitations and behavior differences
 
 Babelfish uses the ICU library for collation support. PostgreSQL is built with a specific

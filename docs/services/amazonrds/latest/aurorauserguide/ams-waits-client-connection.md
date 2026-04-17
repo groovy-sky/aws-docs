@@ -1,3 +1,7 @@
+---
+title: "io/socket/sql/client_connection"
+---
+
 # io/socket/sql/client\_connection
 
 The `io/socket/sql/client_connection` event occurs

@@ -1,3 +1,7 @@
+---
+title: "MariaDB database log files"
+---
+
 # MariaDB database log files
 
 You can monitor the MariaDB error log, slow query log, the IAM database authentication error log, and the general log.

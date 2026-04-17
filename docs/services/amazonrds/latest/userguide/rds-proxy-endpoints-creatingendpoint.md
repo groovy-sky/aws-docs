@@ -1,3 +1,7 @@
+---
+title: "Creating a proxy endpoint"
+---
+
 # Creating a proxy endpoint
 
 To create a proxy endpoint, follow these instructions:

@@ -1,3 +1,7 @@
+---
+title: "Database engine updates for Amazon Aurora MySQL"
+---
+
 # Database engine updates for Amazon Aurora MySQL
 
 Amazon Aurora releases updates regularly. Updates are applied to Aurora DB clusters during system

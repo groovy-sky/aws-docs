@@ -1,3 +1,7 @@
+---
+title: "Migrating an RDS for MySQL snapshot to Aurora"
+---
+
 # Migrating an RDS for MySQL snapshot to Aurora
 
 You can migrate a DB snapshot of an RDS for MySQL DB instance to create an Aurora MySQL DB cluster. The new Aurora MySQL DB

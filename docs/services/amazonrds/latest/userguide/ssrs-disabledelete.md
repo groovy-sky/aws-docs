@@ -1,3 +1,7 @@
+---
+title: "Disabling and deleting SSRS databases"
+---
+
 # Disabling and deleting SSRS databases
 
 Use the following procedures to disable SSRS and delete SSRS databases:

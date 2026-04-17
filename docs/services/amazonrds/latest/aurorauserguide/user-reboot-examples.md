@@ -1,3 +1,7 @@
+---
+title: "Examples of Aurora reboot operations"
+---
+
 # Examples of Aurora reboot operations
 
 The following Aurora MySQL examples show different combinations of reboot operations for reader and writer DB

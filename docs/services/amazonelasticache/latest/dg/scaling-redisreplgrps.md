@@ -1,3 +1,7 @@
+---
+title: "Scaling replica nodes for Valkey or Redis OSS (Cluster Mode Disabled)"
+---
+
 # Scaling replica nodes for Valkey or Redis OSS (Cluster Mode Disabled)
 
 A Valkey or Redis OSS cluster with replica nodes (called _replication group_ in the

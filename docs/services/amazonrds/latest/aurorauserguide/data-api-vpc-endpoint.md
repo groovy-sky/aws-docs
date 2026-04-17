@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon VPC endpoint for the Amazon RDS Data API (AWS PrivateLink)"
+---
+
 # Creating an Amazon VPC endpoint for the Amazon RDS Data API (AWS PrivateLink)
 
 Amazon VPC enables you to launch AWS resources, such as Aurora DB clusters and

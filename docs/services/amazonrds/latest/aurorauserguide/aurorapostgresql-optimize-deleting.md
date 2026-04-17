@@ -1,3 +1,7 @@
+---
+title: "Deleting Aurora PostgreSQL query plans"
+---
+
 # Deleting Aurora PostgreSQL query plans
 
 Delete execution plans that you aren't using or plans that aren't valid. For more

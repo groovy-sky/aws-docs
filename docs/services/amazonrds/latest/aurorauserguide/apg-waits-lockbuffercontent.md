@@ -1,3 +1,7 @@
+---
+title: "LWLock:buffer_content (BufferContent)"
+---
+
 # LWLock:buffer\_content (BufferContent)
 
 The `LWLock:buffer_content` event occurs when a session is waiting to read or

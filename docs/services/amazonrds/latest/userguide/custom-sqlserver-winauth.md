@@ -1,3 +1,7 @@
+---
+title: "Working with Microsoft Active Directory with RDS Custom for SQL Server"
+---
+
 # Working with Microsoft Active Directory with RDS Custom for SQL Server
 
 RDS Custom for SQL Server allows to join your instances to a Self-Managed Active Directory (AD) or AWS Managed Microsoft AD.

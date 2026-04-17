@@ -1,3 +1,7 @@
+---
+title: "Using shared plan cache"
+---
+
 # Using shared plan cache
 
 ## Overview

@@ -1,3 +1,7 @@
+---
+title: "Monitoring and tuning the replication process"
+---
+
 # Monitoring and tuning the replication process
 
 We strongly recommend that you routinely monitor your RDS for PostgreSQL DB instance and

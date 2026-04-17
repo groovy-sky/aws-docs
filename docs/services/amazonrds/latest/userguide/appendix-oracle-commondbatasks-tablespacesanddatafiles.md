@@ -1,3 +1,7 @@
+---
+title: "Working with tablespaces in RDS for Oracle"
+---
+
 # Working with tablespaces in RDS for Oracle
 
 You can use tablespaces with RDS for Oracle, which is a logical storage unit that

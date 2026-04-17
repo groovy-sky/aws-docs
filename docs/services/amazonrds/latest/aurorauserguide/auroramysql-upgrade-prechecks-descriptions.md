@@ -1,3 +1,7 @@
+---
+title: "Precheck descriptions reference for Aurora MySQL"
+---
+
 # Precheck descriptions reference for Aurora MySQL
 
 The upgrade prechecks for Aurora MySQL are described here in detail.

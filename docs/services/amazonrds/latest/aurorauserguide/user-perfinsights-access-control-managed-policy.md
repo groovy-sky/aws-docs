@@ -1,3 +1,7 @@
+---
+title: "Attaching the AmazonRDSPerformanceInsightsReadOnly policy to an IAM principal"
+---
+
 # Attaching the AmazonRDSPerformanceInsightsReadOnly policy to an IAM principal
 
 `AmazonRDSPerformanceInsightsReadOnly` is an AWS managed

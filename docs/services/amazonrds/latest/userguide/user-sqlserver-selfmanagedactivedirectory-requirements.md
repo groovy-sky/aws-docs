@@ -1,3 +1,7 @@
+---
+title: "Requirements"
+---
+
 # Requirements
 
 Make sure you've met the following requirements before joining an RDS for SQL Server DB instance to your self-managed AD domain.

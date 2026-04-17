@@ -1,3 +1,7 @@
+---
+title: "CPU"
+---
+
 # CPU
 
 This event occurs when a thread is active in CPU or is waiting for CPU.

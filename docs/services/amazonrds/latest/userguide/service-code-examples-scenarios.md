@@ -1,3 +1,7 @@
+---
+title: "Scenarios for Amazon RDS using AWS SDKs"
+---
+
 # Scenarios for Amazon RDS using AWS SDKs
 
 The following code examples show you how to implement common scenarios in Amazon RDS
@@ -10,6 +14,8 @@ Scenarios target an intermediate level of experience to help you understand serv
 ###### Examples
 
 - [Create an Aurora Serverless work item tracker](example-cross-rdsdatatracker-section.md)
+
+- [Creating an Amazon RDS DB instance](example-rds-gettingstarted-036-section.md)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

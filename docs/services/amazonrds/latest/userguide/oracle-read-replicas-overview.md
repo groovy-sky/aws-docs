@@ -1,3 +1,7 @@
+---
+title: "Overview of RDS for Oracle replicas"
+---
+
 # Overview of RDS for Oracle replicas
 
 An _Oracle replica_ database is a physical copy of your primary database. An Oracle replica in read-only mode is called a

@@ -1,3 +1,7 @@
+---
+title: "mysql.rds_replica_status"
+---
+
 # mysql.rds\_replica\_status
 
 Shows the replication status of a MariaDB read replica.

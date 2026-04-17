@@ -1,3 +1,7 @@
+---
+title: "MySQL on Amazon RDS versions"
+---
+
 # MySQL on Amazon RDS versions
 
 For MySQL, version numbers are organized as version = X.Y.Z. In Amazon RDS terminology, X.Y

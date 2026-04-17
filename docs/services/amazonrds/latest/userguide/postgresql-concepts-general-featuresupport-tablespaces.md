@@ -1,3 +1,7 @@
+---
+title: "Tablespaces for RDS for PostgreSQL"
+---
+
 # Tablespaces for RDS for PostgreSQL
 
 RDS for PostgreSQL supports tablespaces for compatibility. Because all storage is on a

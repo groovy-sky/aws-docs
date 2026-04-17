@@ -1,3 +1,7 @@
+---
+title: "New temporary table behavior in Aurora MySQL version 3"
+---
+
 # New temporary table behavior in Aurora MySQL version 3
 
 Aurora MySQL version 3 handles temporary tables differently from earlier Aurora MySQL versions. This new behavior is inherited

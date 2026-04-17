@@ -1,3 +1,7 @@
+---
+title: "Setting the database time zone"
+---
+
 # Setting the database time zone
 
 You can set the time zone of your Amazon RDS Oracle database in the following ways:

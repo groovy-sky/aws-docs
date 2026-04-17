@@ -1,3 +1,7 @@
+---
+title: "Amazon Resource Names (ARNs) in Amazon RDS"
+---
+
 # Amazon Resource Names (ARNs) in Amazon RDS
 
 Resources created in Amazon Web Services are each uniquely identified with an Amazon Resource Name

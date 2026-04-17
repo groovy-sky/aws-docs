@@ -1,3 +1,7 @@
+---
+title: "Creating a cluster for Valkey or Redis OSS"
+---
+
 # Creating a cluster for Valkey or Redis OSS
 
 The following examples show how to create a Valkey or Redis OSS cluster using the AWS Management Console, AWS CLI and ElastiCache API.

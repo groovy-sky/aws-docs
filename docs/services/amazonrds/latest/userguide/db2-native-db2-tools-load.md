@@ -1,3 +1,7 @@
+---
+title: "Importing data from a client machine to Amazon RDS for Db2 with the LOAD command"
+---
+
 # Importing data from a client machine to Amazon RDS for Db2 with the LOAD command
 
 You can use the `LOAD CLIENT` command to load data from a file on a client

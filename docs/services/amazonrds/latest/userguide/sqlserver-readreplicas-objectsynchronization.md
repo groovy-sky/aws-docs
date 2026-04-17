@@ -1,3 +1,7 @@
+---
+title: "Synchronizing database users and objects with a SQL Server read replica"
+---
+
 # Synchronizing database users and objects with a SQL Server read replica
 
 Any logins, custom server roles, SQL agent jobs, or other server-level objects that exist in the primary DB instance

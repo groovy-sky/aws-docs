@@ -1,3 +1,7 @@
+---
+title: "SQL statistics for Amazon RDS for Oracle"
+---
+
 # SQL statistics for Amazon RDS for Oracle
 
 Amazon RDS for Oracle collects SQL statistics both at the statement and digest level. At the statement level, the ID column represents the

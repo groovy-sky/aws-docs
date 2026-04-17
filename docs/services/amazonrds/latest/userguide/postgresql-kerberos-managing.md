@@ -1,3 +1,7 @@
+---
+title: "Managing an  RDS for PostgreSQL DB instance in an Active Directory domain"
+---
+
 # Managing an RDS for PostgreSQL DB instance in an Active Directory domain
 
 You can use the console, the CLI, or the RDS API to manage your DB instance and

@@ -1,3 +1,7 @@
+---
+title: "Setting up your environment for Amazon Aurora"
+---
+
 # Setting up your environment for Amazon Aurora
 
 Before you use Amazon Aurora for the first time, complete the following tasks.

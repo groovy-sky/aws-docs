@@ -1,3 +1,7 @@
+---
+title: "Database is creating temporary tables on disk"
+---
+
 # Database is creating temporary tables on disk
 
 Your recent on-disk temporary table usage increased significantly, up to `percentage`. The database is

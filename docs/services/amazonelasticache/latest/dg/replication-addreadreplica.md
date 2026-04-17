@@ -1,3 +1,7 @@
+---
+title: "Adding a read replica for Valkey or Redis OSS (Cluster Mode Disabled)"
+---
+
 # Adding a read replica for Valkey or Redis OSS (Cluster Mode Disabled)
 
 Information in the following topic applies to Valkey or Redis OSS (cluster mode disabled) replication groups

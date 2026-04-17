@@ -1,3 +1,7 @@
+---
+title: "Connecting to your Amazon RDS for Db2 DB instance with IBM CLPPlus"
+---
+
 # Connecting to your Amazon RDS for Db2 DB instance with IBM CLPPlus
 
 You can use a utility such as IBM CLPPlus to connect to an Amazon RDS for Db2 DB instance. This

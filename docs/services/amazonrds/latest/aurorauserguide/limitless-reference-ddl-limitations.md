@@ -1,3 +1,7 @@
+---
+title: "DDL limitations and other information for Aurora PostgreSQL Limitless Database"
+---
+
 # DDL limitations and other information for Aurora PostgreSQL Limitless Database
 
 The following topics describe limitations or provide more information for DDL SQL commands in Aurora PostgreSQL Limitless Database.

@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS DB instances"
+---
+
 # Amazon RDS DB instances
 
 A _DB instance_ is an isolated database environment running in the

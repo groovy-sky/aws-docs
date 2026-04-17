@@ -1,3 +1,7 @@
+---
+title: "Database authentication with Babelfish for Aurora PostgreSQL"
+---
+
 # Database authentication with Babelfish for Aurora PostgreSQL
 
 Babelfish for Aurora PostgreSQL supports two ways to authenticate database users. Password

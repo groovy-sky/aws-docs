@@ -1,3 +1,7 @@
+---
+title: "Working with RDS Custom for SQL Server"
+---
+
 # Working with RDS Custom for SQL Server
 
 Following, you can find instructions for creating, managing, and maintaining your RDS Custom for SQL Server DB instances.

@@ -1,3 +1,7 @@
+---
+title: "Getting an existing ARN for Amazon RDS"
+---
+
 # Getting an existing ARN for Amazon RDS
 
 You can get the ARN of an RDS resource by using the AWS Management Console, AWS Command Line Interface (AWS CLI), or RDS API.

@@ -1,3 +1,7 @@
+---
+title: "Scenarios for accessing a DB instance in a VPC"
+---
+
 # Scenarios for accessing a DB instance in a VPC
 
 Amazon RDS supports the following scenarios for accessing a DB instance

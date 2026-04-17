@@ -1,3 +1,7 @@
+---
+title: "Creating a custom dashboard with Performance Insights"
+---
+
 # Creating a custom dashboard with Performance Insights
 
 ###### Important

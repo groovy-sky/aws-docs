@@ -1,3 +1,7 @@
+---
+title: "Setting up the pgAudit extension"
+---
+
 # Setting up the pgAudit extension
 
 To set up the pgAudit extension on your RDS for PostgreSQL DB instance

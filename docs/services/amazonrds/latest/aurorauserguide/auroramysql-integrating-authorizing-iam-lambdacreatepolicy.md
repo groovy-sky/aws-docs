@@ -1,3 +1,7 @@
+---
+title: "Creating an IAM policy to access AWS Lambda resources"
+---
+
 # Creating an IAM policy to access AWS Lambda resources
 
 You can create an IAM policy that provides the minimum

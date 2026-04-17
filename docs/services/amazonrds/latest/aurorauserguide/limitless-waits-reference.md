@@ -1,3 +1,7 @@
+---
+title: "Limitless Database wait events"
+---
+
 # Limitless Database wait events
 
 The following wait events apply to Aurora PostgreSQL Limitless Database. You can monitor these wait events to identify bottlenecks in Aurora PostgreSQL Limitless Database processing.

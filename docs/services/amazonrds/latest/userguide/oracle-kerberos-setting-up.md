@@ -1,3 +1,7 @@
+---
+title: "Setting up Kerberos for Oracle DB instances"
+---
+
 # Setting up Kerberos for Oracle DB instances
 
 Use AWS Directory Service for Microsoft Active Directory, also called AWS Managed Microsoft AD, to set up Kerberos authentication for an Oracle DB instance. To set up Kerberos

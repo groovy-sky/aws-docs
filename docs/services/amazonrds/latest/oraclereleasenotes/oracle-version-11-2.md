@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Oracle Database 11g Release 2 (11.2.0.4)"
+---
+
 # Amazon RDS for Oracle Database 11g Release 2 (11.2.0.4)
 
 For Amazon RDS for Oracle Database 11g Release 2 (11.2.0.4), Amazon RDS incorporates bug fixes from Oracle by using their

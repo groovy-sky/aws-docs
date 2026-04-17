@@ -1,3 +1,7 @@
+---
+title: "Exporting DB cluster data to Amazon S3"
+---
+
 # Exporting DB cluster data to Amazon S3
 
 You can export data from a live Amazon Aurora DB cluster to an Amazon S3 bucket. The export process runs in the background and doesn't

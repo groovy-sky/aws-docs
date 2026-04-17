@@ -1,3 +1,7 @@
+---
+title: "Database engine updates for Amazon Aurora MySQL version 3"
+---
+
 # Database engine updates for Amazon Aurora MySQL version 3
 
 The following are database engine updates for Amazon Aurora MySQL version 3.

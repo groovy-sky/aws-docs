@@ -1,3 +1,7 @@
+---
+title: "Stored procedures for buffer pools for RDS for Db2"
+---
+
 # Stored procedures for buffer pools for RDS for Db2
 
 The built-in stored procedures described in this topic manage buffer pools for

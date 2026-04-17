@@ -1,3 +1,7 @@
+---
+title: "Modifying an RDS Proxy"
+---
+
 # Modifying an RDS Proxy
 
 You can change specific settings associated with a proxy after you create the proxy. You do so by modifying

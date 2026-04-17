@@ -1,3 +1,7 @@
+---
+title: "Database engine updates and fixes for Amazon Aurora MySQL"
+---
+
 # Database engine updates and fixes for Amazon Aurora MySQL
 
 You can find the following information in the _Release notes for Amazon_

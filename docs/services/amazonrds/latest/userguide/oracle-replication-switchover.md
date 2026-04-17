@@ -1,3 +1,7 @@
+---
+title: "Performing an Oracle Data Guard switchover"
+---
+
 # Performing an Oracle Data Guard switchover
 
 A _switchover_ is a role reversal between a primary database and a

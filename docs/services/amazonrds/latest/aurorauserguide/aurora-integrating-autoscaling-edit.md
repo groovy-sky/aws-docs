@@ -1,3 +1,7 @@
+---
+title: "Editing an auto scaling policy for an Amazon Aurora DB cluster"
+---
+
 # Editing an auto scaling policy for an Amazon Aurora DB cluster
 
 You can edit a scaling policy using the AWS Management Console, the AWS CLI, or the Application Auto Scaling API.

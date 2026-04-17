@@ -1,3 +1,7 @@
+---
+title: "Restoring from an RDS Custom for SQL Server DB snapshot"
+---
+
 # Restoring from an RDS Custom for SQL Server DB snapshot
 
 When you restore an RDS Custom for SQL Server DB instance, you provide the name of the DB snapshot and a name for the new instance.

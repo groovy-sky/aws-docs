@@ -1,3 +1,7 @@
+---
+title: "Reserved DB instances for Amazon RDS"
+---
+
 # Reserved DB instances for Amazon RDS
 
 Using reserved DB instances, you can reserve a DB instance for a one- or three-year term. Reserved DB instances provide you with a

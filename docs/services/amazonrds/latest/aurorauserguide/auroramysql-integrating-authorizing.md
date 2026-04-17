@@ -1,3 +1,7 @@
+---
+title: "Authorizing Amazon Aurora MySQL to access other AWS services on your behalf"
+---
+
 # Authorizing Amazon Aurora MySQL to access other AWS services on your behalf
 
 For your Aurora MySQL DB cluster to access other services on your behalf, create and

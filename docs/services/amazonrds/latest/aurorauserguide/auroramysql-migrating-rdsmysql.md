@@ -1,3 +1,7 @@
+---
+title: "Migrating data from an RDS for MySQL DB instance to an Amazon Aurora MySQL DB cluster"
+---
+
 # Migrating data from an RDS for MySQL DB instance to an Amazon Aurora MySQL DB cluster
 
 You can migrate (copy) data to an Amazon Aurora MySQL DB cluster from an RDS for MySQL DB instance.

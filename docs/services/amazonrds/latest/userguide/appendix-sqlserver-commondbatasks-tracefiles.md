@@ -1,3 +1,7 @@
+---
+title: "Working with trace and dump files for Amazon RDS for SQL Server"
+---
+
 # Working with trace and dump files for Amazon RDS for SQL Server
 
 This section describes working with trace files and dump files for your Amazon RDS DB

@@ -1,3 +1,7 @@
+---
+title: "IPC:parallel wait events"
+---
+
 # IPC:parallel wait events
 
 The following `IPC:parallel wait events` indicate that a session is waiting for

@@ -1,3 +1,7 @@
+---
+title: "Removing additional storage volumes"
+---
+
 # Removing additional storage volumes
 
 You can remove additional storage volumes from RDS for Oracle and RDS for SQL Server DB instances when they are no

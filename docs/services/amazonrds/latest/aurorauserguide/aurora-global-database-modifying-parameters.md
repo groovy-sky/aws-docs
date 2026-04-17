@@ -1,3 +1,7 @@
+---
+title: "Modifying parameters for an Aurora global database"
+---
+
 # Modifying parameters for an Aurora global database
 
 You can configure the Aurora DB cluster parameter groups independently for each Aurora

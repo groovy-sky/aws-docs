@@ -1,3 +1,7 @@
+---
+title: "Regions, Availability Zones, and Local Zones"
+---
+
 # Regions, Availability Zones, and Local Zones
 
 Amazon cloud computing resources are hosted in multiple locations world-wide. These

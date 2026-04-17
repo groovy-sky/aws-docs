@@ -1,3 +1,7 @@
+---
+title: "Connecting to RDS for PostgreSQL with the Amazon Web Services (AWS) Python Driver"
+---
+
 # Connecting to RDS for PostgreSQL with the Amazon Web Services (AWS) Python Driver
 
 The Amazon Web Services (AWS) Python Driver is designed as an advanced Python wrapper. This wrapper is

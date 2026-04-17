@@ -1,3 +1,7 @@
+---
+title: "Setting distributed recovery"
+---
+
 # Setting distributed recovery
 
 To set distributed recovery, use the Amazon RDS procedures

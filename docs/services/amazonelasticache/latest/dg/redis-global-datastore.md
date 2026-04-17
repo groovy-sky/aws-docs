@@ -1,3 +1,7 @@
+---
+title: "Replication across AWS Regions using global datastores"
+---
+
 # Replication across AWS Regions using global datastores
 
 ###### Note

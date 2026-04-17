@@ -1,3 +1,7 @@
+---
+title: "SQL statistics for RDS PostgreSQL"
+---
+
 # SQL statistics for RDS PostgreSQL
 
 For each SQL call and for each second that a query runs,

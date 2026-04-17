@@ -1,3 +1,7 @@
+---
+title: "Adding storage volumes"
+---
+
 # Adding storage volumes
 
 For RDS for Oracle and RDS for SQL Server DB instances, you can add up to three storage volumes to increase your

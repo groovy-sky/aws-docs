@@ -1,3 +1,7 @@
+---
+title: "Getting started with Amazon Aurora Global Database"
+---
+
 # Getting started with Amazon Aurora Global Database
 
 To get started with Aurora Global Database, first decide which Aurora DB engine you want to

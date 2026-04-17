@@ -1,3 +1,7 @@
+---
+title: "Retrieving time-series metrics for Performance Insights"
+---
+
 # Retrieving time-series metrics for Performance Insights
 
 The `GetResourceMetrics` operation retrieves one or more time-series metrics from the Performance Insights

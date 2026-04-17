@@ -1,3 +1,7 @@
+---
+title: "Oracle Statspack"
+---
+
 # Oracle Statspack
 
 The Oracle Statspack option installs and enables the Oracle Statspack performance

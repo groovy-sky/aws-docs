@@ -1,3 +1,7 @@
+---
+title: "Stored procedures for granting and revoking privileges for RDS for Db2"
+---
+
 # Stored procedures for granting and revoking privileges for RDS for Db2
 
 The built-in stored procedures described in this topic manage users, roles, groups, and

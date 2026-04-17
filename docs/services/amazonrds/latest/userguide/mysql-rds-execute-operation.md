@@ -1,3 +1,7 @@
+---
+title: "mysql.rds_execute_operation"
+---
+
 # mysql.rds\_execute\_operation
 
 Executes InnoDB operations to manage buffer pool states and temporary tablespace.

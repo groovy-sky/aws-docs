@@ -1,3 +1,7 @@
+---
+title: "Amazon CloudWatch metrics for Amazon RDS Performance Insights"
+---
+
 # Amazon CloudWatch metrics for Amazon RDS Performance Insights
 
 Performance Insights automatically publishes some metrics to Amazon CloudWatch. The same data can be

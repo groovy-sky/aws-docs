@@ -1,3 +1,7 @@
+---
+title: "Accessing your ElastiCache cluster or replication group"
+---
+
 # Accessing your ElastiCache cluster or replication group
 
 Your Amazon ElastiCache instances are designed to be accessed through an Amazon EC2 instance.

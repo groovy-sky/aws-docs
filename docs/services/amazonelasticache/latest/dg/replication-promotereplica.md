@@ -1,3 +1,7 @@
+---
+title: "Promoting a read replica to primary, for Valkey or Redis OSS (cluster mode disabled) replication groups"
+---
+
 # Promoting a read replica to primary, for Valkey or Redis OSS (cluster mode disabled) replication groups
 
 Information in the following topic applies to

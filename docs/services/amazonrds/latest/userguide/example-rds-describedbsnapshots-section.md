@@ -1,3 +1,7 @@
+---
+title: "Use DescribeDBSnapshots with an AWS SDK or CLI"
+---
+
 # Use `DescribeDBSnapshots` with an AWS SDK or CLI
 
 The following code examples show how to use `DescribeDBSnapshots`.
@@ -44,7 +48,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DescribeDBSnapshots](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describedbsnapshots.md)
+[DescribeDBSnapshots](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeDBSnapshots)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -85,7 +89,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/c
 ```
 
 - For API details, see
-[DescribeDBSnapshots](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describedbsnapshots.md)
+[DescribeDBSnapshots](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeDBSnapshots)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -266,7 +270,7 @@ class InstanceWrapper:
 ```
 
 - For API details, see
-[DescribeDBSnapshots](../../../goto/boto3/rds-2014-10-31/describedbsnapshots.md)
+[DescribeDBSnapshots](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeDBSnapshots)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -304,7 +308,7 @@ end
 ```
 
 - For API details, see
-[DescribeDBSnapshots](../../../../reference/goto/sdkforrubyv3/rds-2014-10-31/describedbsnapshots.md)
+[DescribeDBSnapshots](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/DescribeDBSnapshots)
 in _AWS SDK for Ruby API Reference_.
 
 Swift

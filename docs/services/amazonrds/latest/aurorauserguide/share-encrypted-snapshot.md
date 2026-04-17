@@ -1,3 +1,7 @@
+---
+title: "Sharing encrypted snapshots"
+---
+
 # Sharing encrypted snapshots
 
 You can share DB cluster snapshots that have been encrypted "at rest" using the AES-256 encryption algorithm, as described in

@@ -1,3 +1,7 @@
+---
+title: "Using psql to connect to your RDS for PostgreSQL DB instance"
+---
+
 # Using psql to connect to your RDS for PostgreSQL DB instance
 
 You can use a local instance of the psql command line utility to connect to a

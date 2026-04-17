@@ -1,3 +1,7 @@
+---
+title: "Rebooting a DB instance"
+---
+
 # Rebooting a DB instance
 
 You can stop and start the database service on your RDS DB instance in a single operation,

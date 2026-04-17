@@ -1,3 +1,7 @@
+---
+title: "Working with Amazon Aurora MySQL"
+---
+
 # Working with Amazon Aurora MySQL
 
 Amazon Aurora MySQL is a fully managed, MySQL-compatible, relational database engine that

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting for Aurora MySQL in-place upgrade"
+---
+
 # Troubleshooting for Aurora MySQL in-place upgrade
 
 Use the following tips to help troubleshoot problems with Aurora MySQL in-place upgrades. These tips don't apply to Aurora Serverless DB

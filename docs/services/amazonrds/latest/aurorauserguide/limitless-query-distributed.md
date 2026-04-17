@@ -1,3 +1,7 @@
+---
+title: "Distributed queries in Aurora PostgreSQL Limitless Database"
+---
+
 # Distributed queries in Aurora PostgreSQL Limitless Database
 
 Distributed queries run on a router and more than one shard. The query is received by one of the routers. The router creates and manages the

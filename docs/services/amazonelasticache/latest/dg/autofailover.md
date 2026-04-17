@@ -1,3 +1,7 @@
+---
+title: "Minimizing downtime in ElastiCache by using Multi-AZ with Valkey and Redis OSS"
+---
+
 # Minimizing downtime in ElastiCache by using Multi-AZ with Valkey and Redis OSS
 
 There are a number of instances where ElastiCache for Valkey and Redis OSS may need to replace a primary node; these include certain types of planned maintenance and the unlikely event of a primary node or Availability Zone failure.

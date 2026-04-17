@@ -1,3 +1,7 @@
+---
+title: "Deleting Amazon RDS zero-ETL integrations"
+---
+
 # Deleting Amazon RDS zero-ETL integrations
 
 When you delete a zero-ETL integration, Amazon RDS removes it from the source database. Your

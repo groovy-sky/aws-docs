@@ -1,3 +1,7 @@
+---
+title: "Connecting a client machine to an Amazon RDS for Db2 DB instance"
+---
+
 # Connecting a client machine to an Amazon RDS for Db2 DB instance
 
 To use any of the native Db2 tools to move data from a Db2 database to an Amazon RDS for Db2

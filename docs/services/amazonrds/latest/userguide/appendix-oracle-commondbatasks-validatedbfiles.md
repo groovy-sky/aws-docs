@@ -1,3 +1,7 @@
+---
+title: "Validating database files in RDS for Oracle"
+---
+
 # Validating database files in RDS for Oracle
 
 You can use the Amazon RDS package `rdsadmin.rdsadmin_rman_util` to validate

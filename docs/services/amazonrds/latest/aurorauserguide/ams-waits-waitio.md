@@ -1,3 +1,7 @@
+---
+title: "io/table/sql/handler"
+---
+
 # io/table/sql/handler
 
 The `io/table/sql/handler` event occurs when work has been delegated to a storage engine.

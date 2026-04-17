@@ -1,3 +1,7 @@
+---
+title: "Reader endpoints for Amazon Aurora"
+---
+
 # Reader endpoints for Amazon Aurora
 
 A _reader endpoint_ for an Aurora DB cluster provides

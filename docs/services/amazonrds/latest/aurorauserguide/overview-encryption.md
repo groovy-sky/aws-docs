@@ -1,3 +1,7 @@
+---
+title: "Encrypting Amazon Aurora resources"
+---
+
 # Encrypting Amazon Aurora resources
 
 Amazon Aurora protects your data both at rest and in

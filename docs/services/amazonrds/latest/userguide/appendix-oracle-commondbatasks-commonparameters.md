@@ -1,3 +1,7 @@
+---
+title: "Common parameters for RMAN procedures"
+---
+
 # Common parameters for RMAN procedures
 
 You can use procedures in the Amazon RDS package `rdsadmin.rdsadmin_rman_util` to perform tasks with

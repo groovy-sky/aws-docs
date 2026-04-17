@@ -1,3 +1,7 @@
+---
+title: "Using logical replication to perform a major version upgrade for Aurora PostgreSQL"
+---
+
 # Using logical replication to perform a major version upgrade for Aurora PostgreSQL
 
 Using logical replication and Aurora fast cloning, you can perform a major version upgrade that uses the current version of Aurora PostgreSQL database

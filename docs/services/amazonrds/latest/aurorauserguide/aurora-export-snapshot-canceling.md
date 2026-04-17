@@ -1,3 +1,7 @@
+---
+title: "Canceling a snapshot export task"
+---
+
 # Canceling a snapshot export task
 
 You can cancel a DB snapshot export task using the AWS Management Console, the AWS CLI, or the RDS

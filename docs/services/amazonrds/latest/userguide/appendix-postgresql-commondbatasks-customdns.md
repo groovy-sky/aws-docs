@@ -1,3 +1,7 @@
+---
+title: "Using a custom DNS server for outbound network access"
+---
+
 # Using a custom DNS server for outbound network access
 
 RDS for PostgreSQL supports outbound network access on your DB instances and allows Domain

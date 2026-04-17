@@ -1,3 +1,7 @@
+---
+title: "Considerations for Amazon RDS for Db2 stored procedures"
+---
+
 # Considerations for Amazon RDS for Db2 stored procedures
 
 Before using the Amazon RDS system stored procedures for RDS for Db2 DB instances running the Db2

@@ -1,3 +1,7 @@
+---
+title: "Configuring a VPN tunnel between RDS Custom for Oracle primary and replica instances"
+---
+
 # Configuring a VPN tunnel between RDS Custom for Oracle primary and replica instances
 
 ###### Note

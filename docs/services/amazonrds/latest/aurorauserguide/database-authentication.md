@@ -1,3 +1,7 @@
+---
+title: "Database authentication with  Amazon Aurora"
+---
+
 # Database authentication with Amazon Aurora
 
 Amazon Aurora supports several ways to authenticate database users.

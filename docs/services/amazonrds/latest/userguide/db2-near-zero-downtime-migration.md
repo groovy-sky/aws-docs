@@ -1,3 +1,7 @@
+---
+title: "Migrating from Linux to Linux with near-zero downtime for Amazon RDS for Db2"
+---
+
 # Migrating from Linux to Linux with near-zero downtime for Amazon RDS for Db2
 
 With this migration approach, you migrate a Linux-based Db2 database from

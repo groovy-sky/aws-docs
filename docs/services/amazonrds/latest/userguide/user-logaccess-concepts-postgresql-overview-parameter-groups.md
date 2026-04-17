@@ -1,3 +1,7 @@
+---
+title: "Parameters for logging in RDS for PostgreSQL"
+---
+
 # Parameters for logging in RDS for PostgreSQL
 
 You can customize the logging behavior for your

@@ -1,3 +1,7 @@
+---
+title: "Managing Aurora PostgreSQL  connection churn with pooling"
+---
+
 # Managing Aurora PostgreSQL connection churn with pooling
 
 When client applications connect and disconnect so often that Aurora PostgreSQL DB cluster

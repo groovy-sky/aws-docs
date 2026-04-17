@@ -1,3 +1,7 @@
+---
+title: "Connecting to a DB instance running the PostgreSQL database engine"
+---
+
 # Connecting to a DB instance running the PostgreSQL database engine
 
 After Amazon RDS provisions your DB instance, you can use any standard SQL client application

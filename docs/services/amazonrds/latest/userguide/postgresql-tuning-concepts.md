@@ -1,3 +1,7 @@
+---
+title: "Essential concepts for RDS for PostgreSQL tuning"
+---
+
 # Essential concepts for RDS for PostgreSQL tuning
 
 Before you tune your RDS for PostgreSQL database, make sure to learn what wait events are

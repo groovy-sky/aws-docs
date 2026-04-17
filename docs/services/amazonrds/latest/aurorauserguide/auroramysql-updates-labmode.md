@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora MySQL lab mode"
+---
+
 # Amazon Aurora MySQL lab mode
 
 ###### Important

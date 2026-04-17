@@ -1,3 +1,7 @@
+---
+title: "Master user account privileges"
+---
+
 # Master user account privileges
 
 When you create a new DB instance

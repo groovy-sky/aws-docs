@@ -1,3 +1,7 @@
+---
+title: "aurora_stat_activity"
+---
+
 # aurora\_stat\_activity
 
 Returns one row per server process, showing information related to the current

@@ -1,3 +1,7 @@
+---
+title: "Working with MariaDB read replicas"
+---
+
 # Working with MariaDB read replicas
 
 Following, you can find specific information about working with read replicas on

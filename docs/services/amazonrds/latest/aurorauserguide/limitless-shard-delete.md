@@ -1,3 +1,7 @@
+---
+title: "Deleting a DB shard group"
+---
+
 # Deleting a DB shard group
 
 You can delete a DB shard group if necessary. Deleting the DB shard group deletes the compute nodes (shards and routers), but not the

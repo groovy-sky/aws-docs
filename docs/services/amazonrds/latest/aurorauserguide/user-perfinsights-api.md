@@ -1,3 +1,7 @@
+---
+title: "Retrieving metrics with the Performance Insights API for Aurora"
+---
+
 # Retrieving metrics with the Performance Insights API for Aurora
 
 When Performance Insights is turned on, the API provides visibility into instance

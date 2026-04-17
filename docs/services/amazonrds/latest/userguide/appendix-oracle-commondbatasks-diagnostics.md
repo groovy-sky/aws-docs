@@ -1,3 +1,7 @@
+---
+title: "Diagnosing problems with RDS for Oracle DB instances"
+---
+
 # Diagnosing problems with RDS for Oracle DB instances
 
 Oracle Database includes a fault diagnosability infrastructure that you can use to

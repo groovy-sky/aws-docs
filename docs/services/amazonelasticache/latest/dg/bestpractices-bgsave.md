@@ -1,3 +1,7 @@
+---
+title: "Ensuring you have enough memory to make a Valkey or Redis OSS snapshot"
+---
+
 # Ensuring you have enough memory to make a Valkey or Redis OSS snapshot
 
 ###### Snapshots and synchronizations in Valkey 7.2 and later, and Redis OSS version 2.8.22 and later

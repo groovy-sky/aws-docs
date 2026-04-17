@@ -1,3 +1,7 @@
+---
+title: "Creating a proxy for Amazon Aurora"
+---
+
 # Creating a proxy for Amazon Aurora
 
 You can use Amazon RDS Proxy to improve the scalability, availability,

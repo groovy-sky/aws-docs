@@ -1,3 +1,7 @@
+---
+title: "Creating a custom IAM policy for Performance Insights"
+---
+
 # Creating a custom IAM policy for Performance Insights
 
 For users who don't have either the `AmazonRDSPerformanceInsightsReadOnly` or

@@ -1,3 +1,7 @@
+---
+title: "Analyzing execution plans using the Performance Insights dashboard for Amazon RDS"
+---
+
 # Analyzing execution plans using the Performance Insights dashboard for Amazon RDS
 
 In the Amazon RDS Performance Insights dashboard, you can find information about execution plans for Oracle and SQL Server DB instances.

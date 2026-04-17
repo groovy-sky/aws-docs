@@ -1,3 +1,7 @@
+---
+title: "Using the Query API"
+---
+
 # Using the Query API
 
 The following sections briefly discuss the parameters and request authentication used with the

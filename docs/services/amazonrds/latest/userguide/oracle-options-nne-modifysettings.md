@@ -1,3 +1,7 @@
+---
+title: "Modifying NATIVE_NETWORK_ENCRYPTION option settings"
+---
+
 # Modifying NATIVE\_NETWORK\_ENCRYPTION option settings
 
 After you enable the `NATIVE_NETWORK_ENCRYPTION` option, you can modify its

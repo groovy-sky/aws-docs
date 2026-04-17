@@ -1,3 +1,7 @@
+---
+title: "ElastiCache in-transit encryption (TLS)"
+---
+
 # ElastiCache in-transit encryption (TLS)
 
 To help keep your data secure, Amazon ElastiCache and Amazon EC2 provide mechanisms to guard against

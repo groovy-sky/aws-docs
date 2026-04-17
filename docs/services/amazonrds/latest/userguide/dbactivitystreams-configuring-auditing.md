@@ -1,3 +1,7 @@
+---
+title: "Configuring unified auditing for Oracle Database"
+---
+
 # Configuring unified auditing for Oracle Database
 
 When you configure unified auditing for use with database activity streams, the following situations are

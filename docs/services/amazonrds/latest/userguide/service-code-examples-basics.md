@@ -1,3 +1,7 @@
+---
+title: "Basic examples for Amazon RDS using AWS SDKs"
+---
+
 # Basic examples for Amazon RDS using AWS SDKs
 
 The following code examples show how to use the basics of Amazon Relational Database Service with AWS

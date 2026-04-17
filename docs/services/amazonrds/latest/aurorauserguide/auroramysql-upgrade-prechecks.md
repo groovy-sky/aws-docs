@@ -1,3 +1,7 @@
+---
+title: "Major version upgrade prechecks for Aurora MySQL"
+---
+
 # Major version upgrade prechecks for Aurora MySQL
 
 Upgrading MySQL from one major version to another, such as going from MySQL 5.7 to MySQL 8.0, involves some significant architectural changes that

@@ -1,3 +1,7 @@
+---
+title: "Setting and unsetting system diagnostic events"
+---
+
 # Setting and unsetting system diagnostic events
 
 To set and unset diagnostic events at the session level, you can use the Oracle SQL statement `ALTER

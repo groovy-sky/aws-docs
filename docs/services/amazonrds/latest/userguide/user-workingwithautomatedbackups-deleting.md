@@ -1,3 +1,7 @@
+---
+title: "Deleting retained automated backups"
+---
+
 # Deleting retained automated backups
 
 You can delete retained automated backups when they are no longer needed.

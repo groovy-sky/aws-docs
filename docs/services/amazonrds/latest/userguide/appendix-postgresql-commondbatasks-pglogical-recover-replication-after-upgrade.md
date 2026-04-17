@@ -1,3 +1,7 @@
+---
+title: "Reestablishing logical replication after a major upgrade"
+---
+
 # Reestablishing logical replication after a major upgrade
 
 Before you can perform a major version upgrade of an

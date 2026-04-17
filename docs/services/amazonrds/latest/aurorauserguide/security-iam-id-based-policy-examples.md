@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon Aurora"
+---
+
 # Identity-based policy examples for Amazon Aurora
 
 By default, permission sets and roles don't have permission to create or modify

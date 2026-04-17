@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting an upgrade failure for an RDS Custom for Oracle DB instance"
+---
+
 # Troubleshooting an upgrade failure for an RDS Custom for Oracle DB instance
 
 ###### Note

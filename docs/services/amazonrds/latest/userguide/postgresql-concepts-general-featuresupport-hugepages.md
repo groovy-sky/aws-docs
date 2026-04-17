@@ -1,3 +1,7 @@
+---
+title: "Huge pages for RDS for PostgreSQL"
+---
+
 # Huge pages for RDS for PostgreSQL
 
 _Huge pages_ are a memory management feature that

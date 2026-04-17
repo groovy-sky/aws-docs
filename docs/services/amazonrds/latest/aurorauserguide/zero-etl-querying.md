@@ -1,3 +1,7 @@
+---
+title: "Adding data to a source Aurora DB cluster and querying it"
+---
+
 # Adding data to a source Aurora DB cluster and querying it
 
 To finish creating a zero-ETL integration that replicates data from Amazon Aurora into

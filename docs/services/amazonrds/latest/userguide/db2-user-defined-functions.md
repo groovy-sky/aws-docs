@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Db2 user-defined function reference"
+---
+
 # Amazon RDS for Db2 user-defined function reference
 
 The following user-defined functions are available for Amazon RDS DB instances

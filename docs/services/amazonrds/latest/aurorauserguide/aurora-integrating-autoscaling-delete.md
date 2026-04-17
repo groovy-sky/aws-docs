@@ -1,3 +1,7 @@
+---
+title: "Deleting an auto scaling policy from your Amazon Aurora DB cluster"
+---
+
 # Deleting an auto scaling policy from your Amazon Aurora DB cluster
 
 You can delete a scaling policy using the AWS Management Console, the AWS CLI, or the Application Auto Scaling API.

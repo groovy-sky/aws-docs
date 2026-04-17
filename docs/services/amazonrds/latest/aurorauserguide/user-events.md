@@ -1,3 +1,7 @@
+---
+title: "Working with Amazon RDS event notification"
+---
+
 # Working with Amazon RDS event notification
 
 Amazon RDS uses the Amazon Simple Notification Service (Amazon SNS) to provide notification when an Amazon RDS event occurs.

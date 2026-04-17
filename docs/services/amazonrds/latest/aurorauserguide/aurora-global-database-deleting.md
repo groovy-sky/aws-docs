@@ -1,3 +1,7 @@
+---
+title: "Deleting an Amazon Aurora global database"
+---
+
 # Deleting an Amazon Aurora global database
 
 Because an Aurora global database typically holds business-critical data, you can't delete the global database and its

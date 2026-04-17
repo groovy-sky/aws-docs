@@ -1,3 +1,7 @@
+---
+title: "IPC:DamRecordTxAck"
+---
+
 # IPC:DamRecordTxAck
 
 The `IPC:DamRecordTxAck` event occurs when Aurora PostgreSQL in a session using

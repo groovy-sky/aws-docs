@@ -1,3 +1,7 @@
+---
+title: "Working with read replicas for Amazon RDS for Oracle"
+---
+
 # Working with read replicas for Amazon RDS for Oracle
 
 To configure replication between Oracle DB instances, you can create replica databases. For an overview of Amazon RDS

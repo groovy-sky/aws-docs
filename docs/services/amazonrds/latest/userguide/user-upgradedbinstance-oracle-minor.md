@@ -1,3 +1,7 @@
+---
+title: "Oracle minor version upgrades"
+---
+
 # Oracle minor version upgrades
 
 In RDS for Oracle, a minor version upgrade is an update to a major DB engine version. In RDS, a

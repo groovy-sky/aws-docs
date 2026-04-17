@@ -1,3 +1,7 @@
+---
+title: "Oracle native network encryption"
+---
+
 # Oracle native network encryption
 
 Amazon RDS supports Oracle native network encryption (NNE). With the

@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL wait events"
+---
+
 # Aurora MySQL wait events
 
 The following are some common wait events for Aurora MySQL.

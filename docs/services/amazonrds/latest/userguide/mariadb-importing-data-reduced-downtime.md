@@ -1,3 +1,7 @@
+---
+title: "Importing data to an Amazon RDS for MariaDB DB instance with reduced downtime"
+---
+
 # Importing data to an Amazon RDS for MariaDB DB instance with reduced downtime
 
 In some cases, you might need to import data from an external MariaDB database that

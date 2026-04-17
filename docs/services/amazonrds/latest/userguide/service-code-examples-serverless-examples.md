@@ -1,3 +1,7 @@
+---
+title: "Serverless examples for Amazon RDS"
+---
+
 # Serverless examples for Amazon RDS
 
 The following code examples show how to use Amazon RDS with AWS SDKs.
@@ -8,7 +12,7 @@ The following code examples show how to use Amazon RDS with AWS SDKs.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Create an Aurora Serverless work item tracker
+Creating an Amazon RDS DB instance
 
 Connecting to an Amazon RDS database in a Lambda function
 

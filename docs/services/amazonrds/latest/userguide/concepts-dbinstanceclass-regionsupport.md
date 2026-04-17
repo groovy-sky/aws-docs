@@ -1,3 +1,7 @@
+---
+title: "Determining DB instance class support in AWS Regions"
+---
+
 # Determining DB instance class support in AWS Regions
 
 To determine the DB instance classes supported by each DB engine in a specific

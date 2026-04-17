@@ -1,3 +1,7 @@
+---
+title: "Tuning Aurora MySQL"
+---
+
 # Tuning Aurora MySQL
 
 Wait events and thread states are important tuning tools for Aurora MySQL. If you can

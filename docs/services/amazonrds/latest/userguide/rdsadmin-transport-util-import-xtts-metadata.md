@@ -1,3 +1,7 @@
+---
+title: "Importing transportable tablespace metadata into your DB instance"
+---
+
 # Importing transportable tablespace metadata into your DB instance
 
 Use the procedure `rdsadmin.rdsadmin_transport_util.import_xtts_metadata` to

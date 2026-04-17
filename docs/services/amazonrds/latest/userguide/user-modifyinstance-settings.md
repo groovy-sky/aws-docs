@@ -1,3 +1,7 @@
+---
+title: "Settings for DB instances"
+---
+
 # Settings for DB instances
 
 In the following table, you can find details about which settings you can and can't
@@ -189,7 +193,7 @@ For more information, see [Introduction to backups](user-workingwithautomatedbac
 
 If you use AWS Backup to manage your backups, this option doesn't
 apply. For information about AWS Backup, see the [_AWS Backup Developer_\
-_Guide_](../../../aws-backup/latest/devguide.md).
+_Guide_](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 **CLI option:**
 
@@ -226,7 +230,7 @@ For more information, see [Introduction to backups](user-workingwithautomatedbac
 
 If you use AWS Backup to manage your backups, this option
 doesn't appear. For information about AWS Backup, see the [_AWS Backup Developer_\
-_Guide_](../../../aws-backup/latest/devguide.md).
+_Guide_](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 **CLI option:**
 

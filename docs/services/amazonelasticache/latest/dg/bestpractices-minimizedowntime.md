@@ -1,3 +1,7 @@
+---
+title: "Minimizing downtime during maintenance"
+---
+
 # Minimizing downtime during maintenance
 
 Cluster mode configuration has the best availability during managed or unmanaged operations.

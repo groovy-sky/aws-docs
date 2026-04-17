@@ -1,3 +1,7 @@
+---
+title: "Adding nodes to an ElastiCache cluster"
+---
+
 # Adding nodes to an ElastiCache cluster
 
 Adding nodes to a Memcached cluster increases the number of your cluster's

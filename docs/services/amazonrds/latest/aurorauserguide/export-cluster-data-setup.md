@@ -1,3 +1,7 @@
+---
+title: "Setting up access to an Amazon S3 bucket"
+---
+
 # Setting up access to an Amazon S3 bucket
 
 You identify the Amazon S3 bucket, then you give the DB cluster export task permission to access it.

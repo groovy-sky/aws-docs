@@ -1,3 +1,7 @@
+---
+title: "Oracle UTL_MAIL"
+---
+
 # Oracle UTL\_MAIL
 
 Amazon RDS supports Oracle UTL\_MAIL

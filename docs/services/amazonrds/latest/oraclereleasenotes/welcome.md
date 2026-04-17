@@ -1,3 +1,7 @@
+---
+title: "Release notes for Amazon Relational Database Service (Amazon RDS) for Oracle"
+---
+
 # Release notes for Amazon Relational Database Service (Amazon RDS) for Oracle
 
 The Amazon RDS for Oracle release notes provide details about the Oracle Database versions that are

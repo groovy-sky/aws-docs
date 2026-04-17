@@ -1,3 +1,7 @@
+---
+title: "Managing a Multi-AZ deployment for RDS Custom for Oracle"
+---
+
 # Managing a Multi-AZ deployment for RDS Custom for Oracle
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Overview of backing up and restoring an Aurora DB cluster"
+---
+
 # Overview of backing up and restoring an Aurora DB cluster
 
 The following topics describe Aurora backups and how to restore your Aurora DB cluster.
@@ -51,7 +55,7 @@ Snapshots managed by AWS Backup are considered manual DB cluster snapshots, but 
 quota for Aurora. Snapshots that were created with AWS Backup have names with
 `awsbackup:job-AWS-Backup-job-number`. For more information about AWS Backup, see the
 [_AWS Backup Developer_\
-_Guide_](../../../aws-backup/latest/devguide.md).
+_Guide_](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 You can also use AWS Backup to manage automated backups of Amazon Aurora DB clusters. If your DB cluster is associated with a backup
 plan in AWS Backup, you can use that backup plan for point-in-time recovery. Automated (continuous) backups that are managed by

@@ -1,3 +1,7 @@
+---
+title: "Using cascading read replicas with RDS for MySQL"
+---
+
 # Using cascading read replicas with RDS for MySQL
 
 RDS for MySQL supports cascading read replicas. With _cascading read replicas_, you can scale reads without

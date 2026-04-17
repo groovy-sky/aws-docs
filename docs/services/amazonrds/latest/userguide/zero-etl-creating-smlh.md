@@ -1,3 +1,7 @@
+---
+title: "Creating Amazon RDS zero-ETL integrations with an Amazon SageMaker lakehouse"
+---
+
 # Creating Amazon RDS zero-ETL integrations with an Amazon SageMaker lakehouse
 
 When you create an Amazon RDS zero-ETL integration with an Amazon SageMaker lakehouse, you specify the source RDS

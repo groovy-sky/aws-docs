@@ -1,3 +1,7 @@
+---
+title: "Querying Aurora PostgreSQL Limitless Database"
+---
+
 # Querying Aurora PostgreSQL Limitless Database
 
 Aurora PostgreSQL Limitless Database is compatible with PostgreSQL syntax for queries. You can query your Limitless Database using `psql` or any

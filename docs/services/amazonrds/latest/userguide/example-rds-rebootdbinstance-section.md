@@ -1,3 +1,7 @@
+---
+title: "Use RebootDBInstance with an AWS SDK or CLI"
+---
+
 # Use `RebootDBInstance` with an AWS SDK or CLI
 
 The following code examples show how to use `RebootDBInstance`.
@@ -117,7 +121,7 @@ public class RebootDBInstance {
 ```
 
 - For API details, see
-[RebootDBInstance](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/rebootdbinstance.md)
+[RebootDBInstance](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/RebootDBInstance)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

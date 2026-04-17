@@ -1,3 +1,7 @@
+---
+title: "Host-Level Metrics"
+---
+
 # Host-Level Metrics
 
 The `AWS/ElastiCache` namespace includes the following host-level metrics for individual cache

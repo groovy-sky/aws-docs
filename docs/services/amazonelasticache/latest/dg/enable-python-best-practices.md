@@ -1,3 +1,7 @@
+---
+title: "Best practices when enabling in-transit encryption"
+---
+
 # Best practices when enabling in-transit encryption
 
 ## Before enabling in-transit encryption: make sure you have proper DNS records handling

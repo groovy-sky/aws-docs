@@ -1,3 +1,7 @@
+---
+title: "Resizing tablespaces, data files, and tempfiles in RDS for Oracle"
+---
+
 # Resizing tablespaces, data files, and tempfiles in RDS for Oracle
 
 By default, Oracle tablespaces are created with auto-extend turned on and no

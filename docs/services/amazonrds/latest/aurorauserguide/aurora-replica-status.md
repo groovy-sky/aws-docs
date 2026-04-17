@@ -1,3 +1,7 @@
+---
+title: "aurora_replica_status"
+---
+
 # aurora\_replica\_status
 
 Displays the status of all Aurora PostgreSQL reader nodes.

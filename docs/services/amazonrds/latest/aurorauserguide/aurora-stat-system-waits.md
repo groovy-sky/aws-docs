@@ -1,3 +1,7 @@
+---
+title: "aurora_stat_system_waits"
+---
+
 # aurora\_stat\_system\_waits
 
 Reports wait event information for the Aurora PostgreSQL DB instance.

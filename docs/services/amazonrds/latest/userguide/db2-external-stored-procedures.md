@@ -1,3 +1,7 @@
+---
+title: "External stored procedures for Amazon RDS for Db2"
+---
+
 # External stored procedures for Amazon RDS for Db2
 
 You can create external routines and register them with your Amazon RDS for Db2 databases as

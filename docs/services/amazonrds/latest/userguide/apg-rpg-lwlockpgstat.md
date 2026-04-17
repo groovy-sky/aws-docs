@@ -1,3 +1,7 @@
+---
+title: "LWLock:pg_stat_statements"
+---
+
 # LWLock:pg\_stat\_statements
 
 The LWLock:pg\_stat\_statements wait event occurs when the `pg_stat_statements`

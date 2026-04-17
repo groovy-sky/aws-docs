@@ -1,3 +1,7 @@
+---
+title: "Managing logical slot synchronization for RDS for PostgreSQL"
+---
+
 # Managing logical slot synchronization for RDS for PostgreSQL
 
 Starting in community PostgreSQL 17, a new feature to automatically synchronize

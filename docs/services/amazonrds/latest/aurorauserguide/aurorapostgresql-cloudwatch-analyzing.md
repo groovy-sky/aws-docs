@@ -1,3 +1,7 @@
+---
+title: "Analyzing PostgreSQL logs using CloudWatch Logs Insights"
+---
+
 # Analyzing PostgreSQL logs using CloudWatch Logs Insights
 
 With the PostgreSQL logs from your Aurora PostgreSQL DB cluster published as CloudWatch Logs, you

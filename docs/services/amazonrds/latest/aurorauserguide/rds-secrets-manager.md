@@ -1,3 +1,7 @@
+---
+title: "Password management with Amazon Aurora and AWS Secrets Manager"
+---
+
 # Password management with Amazon Aurora and AWS Secrets Manager
 
 Amazon Aurora

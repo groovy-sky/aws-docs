@@ -1,3 +1,7 @@
+---
+title: "Creating and connecting to a Microsoft SQL Server DB instance"
+---
+
 # Creating and connecting to a Microsoft SQL Server DB instance
 
 This tutorial creates an EC2 instance and an RDS for Microsoft SQL Server DB instance. The tutorial shows you how to access

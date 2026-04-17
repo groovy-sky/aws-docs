@@ -1,3 +1,7 @@
+---
+title: "Importing data to an Amazon RDS for MySQL database with reduced downtime"
+---
+
 # Importing data to an Amazon RDS for MySQL database with reduced downtime
 
 In some cases, you might need to import data from an external MySQL database that supports

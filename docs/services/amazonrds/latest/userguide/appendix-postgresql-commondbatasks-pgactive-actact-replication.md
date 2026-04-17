@@ -1,3 +1,7 @@
+---
+title: "Understanding active-active conflicts"
+---
+
 # Understanding active-active conflicts
 
 When you use pgactive in active-active mode, writing to the same tables from multiple

@@ -1,3 +1,7 @@
+---
+title: "Finding the endpoint of your RDS for Oracle DB instance"
+---
+
 # Finding the endpoint of your RDS for Oracle DB instance
 
 Each Amazon RDS DB instance has an endpoint, and each endpoint has the DNS name and port number

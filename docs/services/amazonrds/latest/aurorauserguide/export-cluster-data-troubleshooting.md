@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting DB cluster exports"
+---
+
 # Troubleshooting DB cluster exports
 
 Use the following sections to help troubleshoot failure messages and PostgreSQL permission errors for DB cluster export tasks to Amazon S3.

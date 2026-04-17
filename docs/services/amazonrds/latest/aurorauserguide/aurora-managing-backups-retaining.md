@@ -1,3 +1,7 @@
+---
+title: "Retaining automated backups"
+---
+
 # Retaining automated backups
 
 When you delete a provisioned or Aurora Serverless v2 DB cluster, you can retain automated backups. This allows you to restore a
@@ -8,10 +12,6 @@ transaction logs from a DB cluster. They also include DB cluster properties, suc
 instance class, which are required to restore it to an active cluster.
 
 You can restore or remove retained automated backups using the AWS Management Console, RDS API, and AWS CLI.
-
-###### Note
-
-You can't retain automated backups for Aurora Serverless v1 DB clusters.
 
 ###### Topics
 

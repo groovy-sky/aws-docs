@@ -1,3 +1,7 @@
+---
+title: "JSON.NUMMULTBY"
+---
+
 # JSON.NUMMULTBY
 
 Multiplies the number values at the path by a given number.

@@ -1,3 +1,7 @@
+---
+title: "Performing a full backup of a tenant database"
+---
+
 # Performing a full backup of a tenant database
 
 You can perform a backup of all data blocks included a tenant database in a

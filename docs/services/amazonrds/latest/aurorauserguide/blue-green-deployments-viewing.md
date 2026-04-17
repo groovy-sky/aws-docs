@@ -1,3 +1,7 @@
+---
+title: "Viewing a blue/green deployment in Amazon Aurora"
+---
+
 # Viewing a blue/green deployment in Amazon Aurora
 
 You can view the details about a blue/green deployment using the AWS Management Console, the AWS CLI, or the RDS API.

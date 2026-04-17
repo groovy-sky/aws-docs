@@ -1,3 +1,7 @@
+---
+title: "Understanding the rds_superuser role"
+---
+
 # Understanding the rds\_superuser role
 
 In PostgreSQL, a _role_ can define a user, a group, or a set of

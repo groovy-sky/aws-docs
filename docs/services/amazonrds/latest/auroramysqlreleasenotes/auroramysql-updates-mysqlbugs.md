@@ -1,3 +1,7 @@
+---
+title: "MySQL bugs fixed by Aurora MySQL database engine updates"
+---
+
 # MySQL bugs fixed by Aurora MySQL database engine updates
 
 The following sections identify MySQL bugs that have been fixed by Aurora MySQL database

@@ -1,3 +1,7 @@
+---
+title: "Parameter reference for the pglogical extension"
+---
+
 # Parameter reference for the pglogical extension
 
 In the table you can find parameters associated with the `pglogical` extension.

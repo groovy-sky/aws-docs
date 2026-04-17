@@ -1,3 +1,7 @@
+---
+title: "Quotas and constraints for Amazon Aurora"
+---
+
 # Quotas and constraints for Amazon Aurora
 
 Following, you can find a description of the resource quotas and naming constraints for
@@ -69,7 +73,7 @@ For RDS for Oracle, you can create up to 15 read replicas per source DB instance
 Region, but we recommend limiting replicas to 5 to minimize replication lag.
 
 Backups managed by AWS Backup are considered manual DB clustersnapshots, but don't count toward the manual cluster snapshot quota. For information about AWS Backup,
-see the [_AWS Backup Developer Guide_](../../../aws-backup/latest/devguide.md).
+see the [_AWS Backup Developer Guide_](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 If you use any RDS API operations and exceed the default quota for the number of calls
 per second, the Amazon RDS API issues an error like the following one.

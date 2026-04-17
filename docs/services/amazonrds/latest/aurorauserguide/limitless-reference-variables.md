@@ -1,3 +1,7 @@
+---
+title: "Variables in Aurora PostgreSQL Limitless Database"
+---
+
 # Variables in Aurora PostgreSQL Limitless Database
 
 You can use the following variables to configure Aurora PostgreSQL Limitless Database.

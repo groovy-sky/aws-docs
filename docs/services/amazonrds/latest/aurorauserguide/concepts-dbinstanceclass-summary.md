@@ -1,3 +1,7 @@
+---
+title: "Hardware specifications for DB instance classesfor Aurora"
+---
+
 # Hardware specifications for DB instance classesfor Aurora
 
 In the table in this section, you can find hardware details about the Amazon RDS DB instance

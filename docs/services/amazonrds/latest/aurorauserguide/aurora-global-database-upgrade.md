@@ -1,3 +1,7 @@
+---
+title: "Upgrading an Amazon Aurora global database"
+---
+
 # Upgrading an Amazon Aurora global database
 
 Upgrading an Aurora global database follows the same procedures as upgrading Aurora DB

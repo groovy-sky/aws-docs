@@ -1,3 +1,7 @@
+---
+title: "Migrating using Oracle transportable tablespaces"
+---
+
 # Migrating using Oracle transportable tablespaces
 
 You can use the Oracle transportable tablespaces feature to copy a set of tablespaces from

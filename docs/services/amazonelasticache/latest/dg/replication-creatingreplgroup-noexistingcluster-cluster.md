@@ -1,3 +1,7 @@
+---
+title: "Creating a replication group in Valkey or Redis OSS (Cluster Mode Enabled) from scratch"
+---
+
 # Creating a replication group in Valkey or Redis OSS (Cluster Mode Enabled) from scratch
 
 You can create a Valkey or Redis OSS (cluster mode enabled) cluster (API/CLI: _replication group_)

@@ -1,3 +1,7 @@
+---
+title: "MySQL feature support on Amazon RDS"
+---
+
 # MySQL feature support on Amazon RDS
 
 RDS for MySQL supports most of the features and capabilities of MySQL. Some features might have

@@ -1,3 +1,7 @@
+---
+title: "Automatically connecting a Lambda function and a DB instance"
+---
+
 # Automatically connecting a Lambda function and a DB instance
 
 You can use the Amazon RDS console to simplify setting up a connection between a Lambda function

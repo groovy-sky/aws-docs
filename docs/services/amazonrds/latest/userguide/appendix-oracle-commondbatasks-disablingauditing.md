@@ -1,3 +1,7 @@
+---
+title: "Disabling auditing for the SYS.AUD$ table"
+---
+
 # Disabling auditing for the SYS.AUD$ table
 
 To disable auditing on the database audit trail table `SYS.AUD$`, use

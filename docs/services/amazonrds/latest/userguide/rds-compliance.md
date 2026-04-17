@@ -1,3 +1,7 @@
+---
+title: "Compliance validation for Amazon RDS"
+---
+
 # Compliance validation for Amazon RDS
 
 Third-party auditors assess the security and compliance of Amazon RDS as part of multiple AWS

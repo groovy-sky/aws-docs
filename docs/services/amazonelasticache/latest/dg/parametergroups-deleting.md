@@ -1,3 +1,7 @@
+---
+title: "Deleting an ElastiCache parameter group"
+---
+
 # Deleting an ElastiCache parameter group
 
 You can delete a custom parameter group using the ElastiCache console, the AWS CLI, or the

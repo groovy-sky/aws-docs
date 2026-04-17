@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL database engine updates 2025-04-09 (version 2.12.5, compatible with MySQL 5.7.44) - RDS Extended Support version"
+---
+
 # Aurora MySQL database engine updates 2025-04-09 (version 2.12.5, compatible with MySQL 5.7.44) - RDS Extended Support version
 
 **Version:** 2.12.5

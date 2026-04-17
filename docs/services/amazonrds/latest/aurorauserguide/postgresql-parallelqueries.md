@@ -1,3 +1,7 @@
+---
+title: "Best Practices for Parallel Queries in Aurora PostgreSQL"
+---
+
 # Best Practices for Parallel Queries in Aurora PostgreSQL
 
 Parallel query execution is a feature in PostgreSQL that allows a single SQL query to be broken into smaller tasks that are processed simultaneously by multiple background worker processes. Instead of executing a query entirely in a single backend process, PostgreSQL can distribute parts of the query, such as scans, joins, aggregations, or sorting, across multiple CPU cores. The _leader process_ coordinates this execution and gathers the results from the _parallel workers_.

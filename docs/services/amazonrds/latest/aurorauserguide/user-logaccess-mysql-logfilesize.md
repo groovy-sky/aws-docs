@@ -1,3 +1,7 @@
+---
+title: "Overview of Aurora MySQL database logs"
+---
+
 # Overview of Aurora MySQL database logs
 
 You can monitor the following types of Aurora MySQL log files:

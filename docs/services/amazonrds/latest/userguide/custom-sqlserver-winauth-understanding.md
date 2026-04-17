@@ -1,3 +1,7 @@
+---
+title: "Understanding Domain membership"
+---
+
 # Understanding Domain membership
 
 After you create or modify your DB instance, the instance becomes a member of the

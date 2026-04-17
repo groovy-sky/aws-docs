@@ -1,3 +1,7 @@
+---
+title: "Determining whether Performance Insights is managing the Performance Schema"
+---
+
 # Determining whether Performance Insights is managing the Performance Schema
 
 To find out whether Performance Insights is currently managing the Performance Schema for

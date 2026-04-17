@@ -1,3 +1,7 @@
+---
+title: "Deleting a backup"
+---
+
 # Deleting a backup
 
 An automatic backup is automatically deleted when its retention limit expires. If

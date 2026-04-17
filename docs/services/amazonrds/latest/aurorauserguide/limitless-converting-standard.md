@@ -1,3 +1,7 @@
+---
+title: "Converting standard tables to limitless tables"
+---
+
 # Converting standard tables to limitless tables
 
 You can convert standard tables into sharded or reference tables. During the conversion, data is moved from the standard table to the distributed

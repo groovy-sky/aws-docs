@@ -1,3 +1,7 @@
+---
+title: "synch/sxlock/innodb/hash_table_locks"
+---
+
 # synch/sxlock/innodb/hash\_table\_locks
 
 The `synch/sxlock/innodb/hash_table_locks` event occurs when pages not found in the buffer pool must be read

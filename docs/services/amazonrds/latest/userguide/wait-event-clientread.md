@@ -1,3 +1,7 @@
+---
+title: "Client:ClientRead"
+---
+
 # Client:ClientRead
 
 The `Client:ClientRead` event occurs when RDS for PostgreSQL is waiting to

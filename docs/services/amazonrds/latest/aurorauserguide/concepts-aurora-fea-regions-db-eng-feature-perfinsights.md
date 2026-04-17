@@ -1,3 +1,7 @@
+---
+title: "Supported Regions and Aurora DB engines for Performance Insights"
+---
+
 # Supported Regions and Aurora DB engines for Performance Insights
 
 ###### Important
@@ -75,8 +79,6 @@ RegionAurora PostgreSQL 17Aurora PostgreSQL 16Aurora PostgreSQL 15Aurora Postgre
 Aurora Serverless v2 supports Performance Insights for all MySQL-compatible and
 PostgreSQL-compatible versions. We recommend that you set the minimum capacity to at
 least 2 Aurora capacity units (ACUs).
-
-Aurora Serverless v1 doesn't support Performance Insights.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

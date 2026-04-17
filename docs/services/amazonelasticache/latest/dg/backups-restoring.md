@@ -1,3 +1,7 @@
+---
+title: "Restoring from a backup into a new cache"
+---
+
 # Restoring from a backup into a new cache
 
 You can restore an existing backup from Valkey into a new Valkey cache or node-based cluster, and

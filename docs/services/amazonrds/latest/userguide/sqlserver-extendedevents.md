@@ -1,3 +1,7 @@
+---
+title: "Using extended events with Amazon RDS for Microsoft SQL Server"
+---
+
 # Using extended events with Amazon RDS for Microsoft SQL Server
 
 You can use extended events in Microsoft SQL Server to capture debugging and troubleshooting information for Amazon RDS for SQL Server. Extended events replace

@@ -1,3 +1,7 @@
+---
+title: "Preparing for Amazon Aurora MySQL-Compatible Edition version 1 end of life"
+---
+
 # Preparing for Amazon Aurora MySQL-Compatible Edition version 1 end of life
 
 Amazon Aurora MySQL-Compatible Edition version 1 (with MySQL 5.6 compatibility) is planned to reach end of life
@@ -10,9 +14,6 @@ For Aurora provisioned DB clusters, you can complete upgrades from Aurora MySQL 
 You can find instructions for the in-place upgrade mechanism in [How to perform an in-place upgrade](auroramysql-upgrading-procedure.md). Another way to complete the upgrade is to take a snapshot of an Aurora MySQL version
 1 cluster and restore the snapshot to an Aurora MySQL version 2 cluster. Or you can follow a multistep process that runs the old and
 new clusters side by side. For more details about each method, see [Upgrading the major version of an Amazon Aurora MySQL DB cluster](auroramysql-updates-majorversionupgrade.md).
-
-For Aurora Serverless v1 DB clusters, you can perform an in-place upgrade from Aurora MySQL version 1 to Aurora MySQL version 2. For more
-details about this method, see [Modifying an Aurora Serverless v1 DB cluster](aurora-serverless-modifying.md).
 
 For Aurora provisioned DB clusters, you can complete upgrades from Aurora MySQL version 1 to Aurora MySQL version 3 by using a two-stage
 upgrade process:

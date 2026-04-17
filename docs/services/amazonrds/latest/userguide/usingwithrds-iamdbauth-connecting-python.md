@@ -1,3 +1,7 @@
+---
+title: "Connecting to your DB instance using IAM authentication and the AWS SDK for Python (Boto3)"
+---
+
 # Connecting to your DB instance using IAM authentication and the AWS SDK for Python (Boto3)
 
 You can connect to an

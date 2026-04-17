@@ -1,3 +1,7 @@
+---
+title: "Securing MySQL DB instance connections"
+---
+
 # Securing MySQL DB instance connections
 
 You can implement robust security measures to protect MySQL DB instances from unauthorized

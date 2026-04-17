@@ -1,3 +1,7 @@
+---
+title: "Setting up Oracle GoldenGate"
+---
+
 # Setting up Oracle GoldenGate
 
 To set up Oracle GoldenGate using Amazon RDS, configure the hub on an Amazon EC2 instance, and then configure the

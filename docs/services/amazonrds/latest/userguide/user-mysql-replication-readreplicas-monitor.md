@@ -1,3 +1,7 @@
+---
+title: "Monitoring replication lag for MySQL read replicas"
+---
+
 # Monitoring replication lag for MySQL read replicas
 
 For MySQL read replicas, you can monitor replication lag in Amazon CloudWatch by viewing

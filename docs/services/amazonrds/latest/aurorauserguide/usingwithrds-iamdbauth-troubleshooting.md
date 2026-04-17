@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting for IAM DB authentication"
+---
+
 # Troubleshooting for IAM DB authentication
 
 Following, you can find troubleshooting ideas for some common IAM DB authentication

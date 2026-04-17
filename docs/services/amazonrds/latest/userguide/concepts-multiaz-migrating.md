@@ -1,3 +1,7 @@
+---
+title: "Converting a DB instance to a Multi-AZ deployment for Amazon RDS"
+---
+
 # Converting a DB instance to a Multi-AZ deployment for Amazon RDS
 
 Modifying a DB instance to a Multi-AZ deployment improves availability by adding a

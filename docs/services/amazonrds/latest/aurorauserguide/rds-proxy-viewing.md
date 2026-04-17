@@ -1,3 +1,7 @@
+---
+title: "Viewing a proxy"
+---
+
 # Viewing a proxy
 
 After you create one or more RDS proxies, you can view and manage them in the

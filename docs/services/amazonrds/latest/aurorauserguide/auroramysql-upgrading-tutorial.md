@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL in-place upgrade tutorial"
+---
+
 # Aurora MySQL in-place upgrade tutorial
 
 The following Linux examples show how you might perform the general steps of the in-place

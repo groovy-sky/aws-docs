@@ -1,3 +1,7 @@
+---
+title: "Database authentication with Amazon RDS"
+---
+
 # Database authentication with Amazon RDS
 
 Amazon RDS

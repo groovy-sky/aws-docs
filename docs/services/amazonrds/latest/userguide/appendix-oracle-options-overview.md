@@ -1,3 +1,7 @@
+---
+title: "Overview of Oracle DB options"
+---
+
 # Overview of Oracle DB options
 
 To enable options for your Oracle database, add them to an option group, and then associate the option group

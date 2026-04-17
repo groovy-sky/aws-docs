@@ -1,3 +1,7 @@
+---
+title: "Connecting to your Amazon RDS DB instance"
+---
+
 # Connecting to your Amazon RDS DB instance
 
 Once your Amazon RDS DB instance is up and running, the next step is to establish a connection.

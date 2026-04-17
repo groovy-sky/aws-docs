@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a VPC for use with a DB cluster (IPv4 only)"
+---
+
 # Tutorial: Create a VPC for use with a DB cluster (IPv4 only)
 
 A common scenario includes a DB cluster in a virtual private cloud (VPC) based on the Amazon VPC

@@ -1,3 +1,7 @@
+---
+title: "Enabling MariaDB binary log annotation"
+---
+
 # Enabling MariaDB binary log annotation
 
 In a MariaDB DB instance, you can use the `Annotate_rows` event to annotate a

@@ -1,3 +1,7 @@
+---
+title: "Lock:tuple"
+---
+
 # Lock:tuple
 
 The `Lock:tuple` event occurs when a backend process is waiting to

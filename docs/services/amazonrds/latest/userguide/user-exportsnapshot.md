@@ -1,3 +1,7 @@
+---
+title: "Exporting DB snapshot data to Amazon S3 for Amazon RDS"
+---
+
 # Exporting DB snapshot data to Amazon S3 for Amazon RDS
 
 You can export DB snapshot data to an Amazon S3 bucket. The export process runs in the background

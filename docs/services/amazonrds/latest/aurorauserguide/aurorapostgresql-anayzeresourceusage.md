@@ -1,3 +1,7 @@
+---
+title: "Using Amazon CloudWatch metrics to analyze resource usage for Aurora PostgreSQL"
+---
+
 # Using Amazon CloudWatch metrics to analyze resource usage for Aurora PostgreSQL
 
 Aurora automatically sends metric data to CloudWatch in 1-minute periods. You can analyze

@@ -1,3 +1,7 @@
+---
+title: "Replication with Amazon Aurora MySQL"
+---
+
 # Replication with Amazon Aurora MySQL
 
 The Aurora MySQL replication features are key to the high availability and performance of your cluster. Aurora

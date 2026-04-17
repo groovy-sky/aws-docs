@@ -1,3 +1,7 @@
+---
+title: "Scaling and high availability in Amazon RDS"
+---
+
 # Scaling and high availability in Amazon RDS
 
 Scaling and high availability are important aspects of managing your Amazon RDS DB instance to

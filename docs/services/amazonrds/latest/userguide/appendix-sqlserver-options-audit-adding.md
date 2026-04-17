@@ -1,3 +1,7 @@
+---
+title: "Adding SQL Server Audit to the DB instance options"
+---
+
 # Adding SQL Server Audit to the DB instance options
 
 Enabling SQL Server Audit requires two steps: enabling the option on the DB instance, and

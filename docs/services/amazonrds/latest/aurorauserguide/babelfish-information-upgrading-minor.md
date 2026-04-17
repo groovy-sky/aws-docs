@@ -1,3 +1,7 @@
+---
+title: "Upgrading Babelfish to a new minor version"
+---
+
 # Upgrading Babelfish to a new minor version
 
 A minor version update aims to maintain backward compatibility. However, in some

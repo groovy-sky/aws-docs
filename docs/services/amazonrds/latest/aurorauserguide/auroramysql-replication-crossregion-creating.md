@@ -1,3 +1,7 @@
+---
+title: "Creating a cross-Region read replica DB cluster for Aurora MySQL"
+---
+
 # Creating a cross-Region read replica DB cluster for Aurora MySQL
 
 You can create an Aurora DB cluster that is a cross-Region read replica by using the AWS Management Console, the AWS Command Line Interface

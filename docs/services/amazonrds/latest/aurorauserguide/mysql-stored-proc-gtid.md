@@ -1,3 +1,7 @@
+---
+title: "Replicating transactions using GTIDs"
+---
+
 # Replicating transactions using GTIDs
 
 The following stored procedures control how transactions are replicated

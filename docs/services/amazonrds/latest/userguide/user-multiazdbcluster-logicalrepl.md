@@ -1,3 +1,7 @@
+---
+title: "Setting up PostgreSQL logical replication with Multi-AZ DB clusters for Amazon RDS"
+---
+
 # Setting up PostgreSQL logical replication with Multi-AZ DB clusters for Amazon RDS
 
 By using PostgreSQL logical replication with your Multi-AZ DB cluster, you can replicate

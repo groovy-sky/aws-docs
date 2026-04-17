@@ -1,3 +1,7 @@
+---
+title: "create-cache-cluster¶"
+---
+
 - [← copy-snapshot](copy-snapshot.md "previous chapter (use the left arrow)")/
 - [create-cache-parameter-group →](create-cache-parameter-group.md "next chapter (use the right arrow)")
 
@@ -19,7 +23,7 @@ Search boxSearch
 
 ### Feedback
 
-Did you find this page useful? Do you have a suggestion to improve the documentation? [Give us feedback](../../../../forms/aws-doc-feedback.md).
+Did you find this page useful? Do you have a suggestion to improve the documentation? [Give us feedback](https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_guide_name=Reference&hidden_service_name=AWS+Command+Line+Interface&topic_url=https%3A%2F%2Fdocs.aws.amazon.com%2Fcli%2Flatest%2Freference%2Felasticache%2Fcreate-cache-cluster.html).
 
 If you would like to suggest an improvement or fix for the AWS CLI, check out our [contributing guide](https://github.com/aws/aws-cli/blob/develop/CONTRIBUTING.md) on GitHub.
 
@@ -39,7 +43,7 @@ Creates a cluster. All nodes in the cluster run the same protocol-compliant cach
 
 This operation is not supported for Valkey or Redis OSS (cluster mode enabled) clusters.
 
-See also: [AWS API Documentation](../../../../goto/webapi/elasticache-2015-02-02/createcachecluster.md)
+See also: [AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/elasticache-2015-02-02/CreateCacheCluster)
 
 ## Synopsis [¶](\#synopsis "Permalink to this heading")
 

@@ -1,3 +1,7 @@
+---
+title: "Using a Service Master Key with RDS Custom for SQL Server"
+---
+
 # Using a Service Master Key with RDS Custom for SQL Server
 
 RDS Custom for SQL Server supports using a Service Master Key (SMK). RDS Custom retains the same SMK throughout the lifespan of your RDS Custom for SQL Server DB instance.

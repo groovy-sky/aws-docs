@@ -1,3 +1,7 @@
+---
+title: "Exporting DB cluster snapshot data to Amazon S3"
+---
+
 # Exporting DB cluster snapshot data to Amazon S3
 
 You can export DB cluster snapshot data to an Amazon S3 bucket. The export process runs in the background and doesn't affect the performance

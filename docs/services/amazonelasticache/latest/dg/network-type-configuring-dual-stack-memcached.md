@@ -1,3 +1,7 @@
+---
+title: "Configuring a preferred protocol for dual stack clusters (Memcached)"
+---
+
 # Configuring a preferred protocol for dual stack clusters (Memcached)
 
 For Memcached clusters you can control the protocol clients will use to connect to the nodes in the cluster with the IP Discovery parameter. The IP Discovery parameter can be set to either IPv4 or IPv6.

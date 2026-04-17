@@ -1,3 +1,7 @@
+---
+title: "Setting the NLS_LANG value in RDS Custom for Oracle"
+---
+
 # Setting the NLS\_LANG value in RDS Custom for Oracle
 
 ###### Note

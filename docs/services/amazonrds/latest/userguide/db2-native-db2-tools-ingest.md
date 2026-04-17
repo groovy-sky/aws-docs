@@ -1,3 +1,7 @@
+---
+title: "Importing data from Db2 to Amazon RDS for Db2 with the INGEST utility"
+---
+
 # Importing data from Db2 to Amazon RDS for Db2 with the INGEST utility
 
 You can use the `INGEST` utility to continually stream data from files and

@@ -1,3 +1,7 @@
+---
+title: "Removing a cluster from an Amazon Aurora global database"
+---
+
 # Removing a cluster from an Amazon Aurora global database
 
 You can remove Aurora DB clusters from your Aurora global database for several different reasons. For example,

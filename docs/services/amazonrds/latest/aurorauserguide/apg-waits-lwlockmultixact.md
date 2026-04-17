@@ -1,3 +1,7 @@
+---
+title: "LWLock:MultiXact"
+---
+
 # LWLock:MultiXact
 
 The `LWLock:MultiXactMemberBuffer`, `LWLock:MultiXactOffsetBuffer`,

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting applications on Amazon RDS"
+---
+
 # Troubleshooting applications on Amazon RDS
 
 Amazon RDS provides specific and descriptive errors to help you troubleshoot problems

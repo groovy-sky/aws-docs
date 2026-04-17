@@ -1,3 +1,7 @@
+---
+title: "Turn on the Performance Schema for Amazon RDS for MariaDB or MySQL"
+---
+
 # Turn on the Performance Schema for Amazon RDS for MariaDB or MySQL
 
 Assume that Performance Insights is turned on for your DB instance or Multi-AZ DB cluster but isn't

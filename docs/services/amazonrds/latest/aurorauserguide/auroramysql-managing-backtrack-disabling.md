@@ -1,3 +1,7 @@
+---
+title: "Disabling backtracking for an Aurora MySQL DB cluster"
+---
+
 # Disabling backtracking for an Aurora MySQL DB cluster
 
 You can disable the Backtrack feature for a DB cluster.

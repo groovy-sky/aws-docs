@@ -1,3 +1,7 @@
+---
+title: "Managing active-active clusters"
+---
+
 # Managing active-active clusters
 
 The following stored procedures set up and manage RDS for MySQL active-active clusters. For more information, see [Configuring active-active clusters for RDS for MySQL](mysql-active-active-clusters.md).

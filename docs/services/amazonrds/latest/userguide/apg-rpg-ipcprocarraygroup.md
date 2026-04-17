@@ -1,3 +1,7 @@
+---
+title: "IPC:ProcArrayGroupUpdate"
+---
+
 # IPC:ProcArrayGroupUpdate
 
 The `IPC:ProcArrayGroupUpdate` event occurs when a session is waiting for the

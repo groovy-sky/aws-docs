@@ -1,3 +1,7 @@
+---
+title: "Versions with Amazon RDS Extended Support"
+---
+
 # Versions with Amazon RDS Extended Support
 
 RDS Extended Support is only available for major versions. It isn't

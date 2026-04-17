@@ -1,3 +1,7 @@
+---
+title: "Using pglogical to synchronize data across instances"
+---
+
 # Using pglogical to synchronize data across instances
 
 All currently available Aurora PostgreSQL versions support the `pglogical`

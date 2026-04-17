@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS Extended Support with Amazon RDS"
+---
+
 # Amazon RDS Extended Support with Amazon RDS
 
 RDS Extended Support allows you to continue running a database on a major engine version past the

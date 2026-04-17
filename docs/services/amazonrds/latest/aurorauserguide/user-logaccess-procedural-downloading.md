@@ -1,3 +1,7 @@
+---
+title: "Downloading a database log file"
+---
+
 # Downloading a database log file
 
 You can use the AWS Management Console, AWS CLI, or API to download a database log file.

@@ -1,3 +1,7 @@
+---
+title: "Failover process for an RDS Custom for SQL Server Multi-AZ deployment"
+---
+
 # Failover process for an RDS Custom for SQL Server Multi-AZ deployment
 
 If a planned or unplanned outage of your DB instance results from an infrastructure

@@ -1,3 +1,7 @@
+---
+title: "Monitoring log events in Amazon CloudWatch"
+---
+
 # Monitoring log events in Amazon CloudWatch
 
 With Aurora PostgreSQL log events published and available as Amazon CloudWatch Logs, you

@@ -1,3 +1,7 @@
+---
+title: "Setting NNE values in the sqlnet.ora"
+---
+
 # Setting NNE values in the sqlnet.ora
 
 With Oracle native network encryption, you can set network encryption on the server side and client side. The

@@ -1,3 +1,7 @@
+---
+title: "Monitoring database activity streams"
+---
+
 # Monitoring database activity streams
 
 Database activity streams monitor and report activities. The stream of activity is collected and transmitted to Amazon Kinesis.

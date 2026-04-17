@@ -1,3 +1,7 @@
+---
+title: "Use DescribeDBEngineVersions with an AWS SDK or CLI"
+---
+
 # Use `DescribeDBEngineVersions` with an AWS SDK or CLI
 
 The following code examples show how to use `DescribeDBEngineVersions`.
@@ -40,7 +44,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DescribeDBEngineVersions](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describedbengineversions.md)
+[DescribeDBEngineVersions](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeDBEngineVersions)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -113,7 +117,7 @@ bool AwsDoc::RDS::getDBEngineVersions(const Aws::String &engineName,
 ```
 
 - For API details, see
-[DescribeDBEngineVersions](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describedbengineversions.md)
+[DescribeDBEngineVersions](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeDBEngineVersions)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -265,7 +269,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[DescribeDBEngineVersions](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/describedbengineversions.md)
+[DescribeDBEngineVersions](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeDBEngineVersions)
 in _AWS SDK for Java 2.x API Reference_.
 
 Python
@@ -328,7 +332,7 @@ class InstanceWrapper:
 ```
 
 - For API details, see
-[DescribeDBEngineVersions](../../../goto/boto3/rds-2014-10-31/describedbengineversions.md)
+[DescribeDBEngineVersions](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeDBEngineVersions)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

@@ -1,3 +1,7 @@
+---
+title: "Pricing and data retention for Performance Insights"
+---
+
 # Pricing and data retention for Performance Insights
 
 By default, Performance Insights includes 7 days of performance data history and 1 million API requests per month. You

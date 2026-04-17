@@ -1,3 +1,7 @@
+---
+title: "Supporting table partition"
+---
+
 # Supporting table partition
 
 Aurora PostgreSQL Query Plan Management (QPM) supports declarative table partitioning in the following versions:

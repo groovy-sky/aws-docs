@@ -1,3 +1,7 @@
+---
+title: "Using global datastores (CLI)"
+---
+
 # Using global datastores (CLI)
 
 You can use the AWS Command Line Interface (AWS CLI) to control multiple AWS services from the command

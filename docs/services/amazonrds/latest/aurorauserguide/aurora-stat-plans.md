@@ -1,3 +1,7 @@
+---
+title: "aurora_stat_plans"
+---
+
 # aurora\_stat\_plans
 
 Returns a row for every tracked execution plan.

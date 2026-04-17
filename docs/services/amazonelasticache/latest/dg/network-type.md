@@ -1,3 +1,7 @@
+---
+title: "Choosing a network type in ElastiCache"
+---
+
 # Choosing a network type in ElastiCache
 
 ElastiCache supports the Internet Protocol versions 4 and 6 (IPv4 and IPv6), allowing you to configure your cluster to accept:

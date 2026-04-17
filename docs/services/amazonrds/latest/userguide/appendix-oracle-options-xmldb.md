@@ -1,3 +1,7 @@
+---
+title: "Oracle XML DB"
+---
+
 # Oracle XML DB
 
 Oracle XML DB adds native XML support to your DB instance. With XML DB, you can store and

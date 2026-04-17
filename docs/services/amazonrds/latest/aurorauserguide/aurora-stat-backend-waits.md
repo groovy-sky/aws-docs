@@ -1,3 +1,7 @@
+---
+title: "aurora_stat_backend_waits"
+---
+
 # aurora\_stat\_backend\_waits
 
 Displays statistics for wait activity for a specific backend process.

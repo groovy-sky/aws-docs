@@ -1,3 +1,7 @@
+---
+title: "Modifying an Amazon Aurora DB cluster"
+---
+
 # Modifying an Amazon Aurora DB cluster
 
 You can change the settings of a DB cluster to accomplish tasks such as changing its backup retention period or its database
@@ -285,11 +289,11 @@ can be set only for specific DB instances.
 
 ###### Note
 
-Additional settings are available if you are modifying an Aurora Serverless v1 or Aurora Serverless v2 DB cluster. For
-information about these settings, see [Modifying an Aurora Serverless v1 DB cluster](aurora-serverless-modifying.md) and [Managing Aurora Serverless v2 DB clusters](aurora-serverless-v2-administration.md).
+Additional settings are available if you are modifying an Aurora Serverless v2 DB cluster. For
+information about these settings, see [Managing Aurora Serverless v2 DB clusters](aurora-serverless-v2-administration.md).
 
-Some settings aren't available for Aurora Serverless v1 and Aurora Serverless v2 because of their limitations. For more
-information, see [Limitations of Aurora Serverless v1](aurora-serverless.md#aurora-serverless.limitations) and [Requirements and limitations for Aurora Serverless v2](aurora-serverless-v2-requirements.md).
+Some settings aren't available for Aurora Serverless v2 because of their limitations. For more
+information, see [Requirements and limitations for Aurora Serverless v2](aurora-serverless-v2-requirements.md).
 
 Setting and descriptionMethodScopeDowntime notes
 
@@ -370,10 +374,8 @@ An outage doesn't occur during this change.
 
 **Capacity settings**
 
-The scaling properties of an Aurora Serverless v1 DB cluster. You can only modify scaling properties for DB
+The scaling properties of an Aurora Serverless v2 DB cluster. You can only modify scaling properties for DB
 clusters in `serverless` DB engine mode.
-
-For information about Aurora Serverless v1, see [Using Amazon Aurora Serverless v1](aurora-serverless.md).
 
 Using the AWS Management Console, [Modifying the DB cluster by using the console, CLI, and API](#Aurora.Modifying.Cluster).
 
@@ -434,27 +436,6 @@ Using the AWS CLI, run [https://docs.aws.amazon.com/cli/latest/reference/rds/mod
 `--no-copy-tags-to-snapshot` option.
 
 Using the RDS API, call [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API\_ModifyDBCluster.html](../../../../reference/amazonrds/latest/apireference/api-modifydbcluster.md) and set the `CopyTagsToSnapshot` parameter.
-
-The entire DB cluster
-
-An outage doesn't occur during this change.
-
-**Data API**
-
-You can access Aurora Serverless v1 with web services–based applications, including AWS Lambda and
-AWS AppSync.
-
-This setting only applies to an Aurora Serverless v1 DB cluster.
-
-For more information, see
-[Using the Amazon RDS Data API](data-api.md).
-
-Using the AWS Management Console, [Modifying the DB cluster by using the console, CLI, and API](#Aurora.Modifying.Cluster).
-
-Using the AWS CLI, run [`modify-db-cluster`](../../../cli/latest/reference/rds/modify-db-cluster.md) and set the `--enable-http-endpoint`
-option.
-
-Using the RDS API, call [`ModifyDBCluster`](../../../../reference/amazonrds/latest/apireference/api-modifydbcluster.md) and set the `EnableHttpEndpoint` parameter.
 
 The entire DB cluster
 

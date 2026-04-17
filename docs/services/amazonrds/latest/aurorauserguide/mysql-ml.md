@@ -1,3 +1,7 @@
+---
+title: "Using Amazon Aurora machine learning with Aurora MySQL"
+---
+
 # Using Amazon Aurora machine learning with Aurora MySQL
 
 By using Amazon Aurora machine learning with your Aurora MySQL DB cluster, you can use Amazon Bedrock, Amazon Comprehend, or Amazon SageMaker AI, depending on your needs. They each

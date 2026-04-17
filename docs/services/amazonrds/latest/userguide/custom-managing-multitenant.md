@@ -1,3 +1,7 @@
+---
+title: "Working with container databases (CDBs) in RDS Custom for Oracle"
+---
+
 # Working with container databases (CDBs) in RDS Custom for Oracle
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Configuring multi-source-replication for Amazon RDS for MySQL"
+---
+
 # Configuring multi-source-replication for Amazon RDS for MySQL
 
 With multi-source replication, you can set up an Amazon RDS for MySQL DB instance as a replica that receives binary log events from more than one RDS for MySQL source DB instance.

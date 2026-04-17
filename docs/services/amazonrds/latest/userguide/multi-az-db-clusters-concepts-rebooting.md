@@ -1,3 +1,7 @@
+---
+title: "Rebooting a Multi-AZ DB cluster and reader DB instances for Amazon RDS"
+---
+
 # Rebooting a Multi-AZ DB cluster and reader DB instances for Amazon RDS
 
 You might need to reboot your Multi-AZ DB cluster, usually for maintenance reasons. For

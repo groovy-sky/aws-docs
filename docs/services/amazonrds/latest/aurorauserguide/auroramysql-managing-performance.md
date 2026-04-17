@@ -1,3 +1,7 @@
+---
+title: "Managing performance and scaling for Amazon Aurora MySQL"
+---
+
 # Managing performance and scaling for Amazon Aurora MySQL
 
 ## Scaling Aurora MySQL DB instances

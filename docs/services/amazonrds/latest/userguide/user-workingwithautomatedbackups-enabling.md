@@ -1,3 +1,7 @@
+---
+title: "Enabling automated backups"
+---
+
 # Enabling automated backups
 
 If your DB instance doesn't have automated backups enabled, you can enable them at

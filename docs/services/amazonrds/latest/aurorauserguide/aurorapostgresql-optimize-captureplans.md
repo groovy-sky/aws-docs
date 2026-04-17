@@ -1,3 +1,7 @@
+---
+title: "Capturing Aurora PostgreSQL execution plans"
+---
+
 # Capturing Aurora PostgreSQL execution plans
 
 Aurora PostgreSQL query plan management offers two different modes for capturing query

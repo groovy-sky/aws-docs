@@ -1,3 +1,7 @@
+---
+title: "Upgrading Amazon Aurora DB clusters"
+---
+
 # Upgrading Amazon Aurora DB clusters
 
 With Amazon Aurora, you can control and test upgrades to your DB clusters. Amazon Aurora provides

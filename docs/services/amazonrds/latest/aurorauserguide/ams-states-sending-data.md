@@ -1,3 +1,7 @@
+---
+title: "sending data"
+---
+
 # sending data
 
 The `sending data` thread state indicates that a thread is reading and filtering rows for a query to

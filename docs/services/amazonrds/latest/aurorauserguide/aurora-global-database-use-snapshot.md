@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Aurora global database from an Aurora or Amazon RDS snapshot"
+---
+
 # Creating an Amazon Aurora global database from an Aurora or Amazon RDS snapshot
 
 You can restore a snapshot of an Aurora DB cluster or from an Amazon RDS DB instance to use as the starting point for your Aurora global database.

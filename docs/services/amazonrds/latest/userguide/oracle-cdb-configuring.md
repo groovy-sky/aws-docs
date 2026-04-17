@@ -1,3 +1,7 @@
+---
+title: "Configuring an RDS for Oracle CDB"
+---
+
 # Configuring an RDS for Oracle CDB
 
 Configuring a CDB is similar to configuring a non-CDB.

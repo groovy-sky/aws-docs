@@ -1,3 +1,7 @@
+---
+title: "AWS KMS key management"
+---
+
 # AWS KMS key management
 
 Amazon Aurora automatically integrates with [AWS Key Management Service (AWS KMS)](../../../kms/latest/developerguide.md) for key management.
@@ -72,7 +76,7 @@ condition for using the customer managed key for encryption.
 
 For more information, see [Allowing users in other accounts to use a KMS key](../../../kms/latest/developerguide/key-policy-modifying-external-accounts.md) in the
 _AWS Key Management Service Developer Guide_ and [Key\
-policies in AWS KMS](../../../kms/latest/developerguide/key-policies.md).
+policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies).
 
 ## Amazon RDS encryption context
 

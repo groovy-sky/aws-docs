@@ -1,3 +1,7 @@
+---
+title: "Security best practices for  Amazon Aurora"
+---
+
 # Security best practices for Amazon Aurora
 
 Use AWS Identity and Access Management (IAM) accounts to control access to Amazon RDS API operations, especially

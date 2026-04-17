@@ -1,3 +1,7 @@
+---
+title: "Enabling auditing for the SYS.AUD$ table"
+---
+
 # Enabling auditing for the SYS.AUD$ table
 
 To enable auditing on the database audit trail table `SYS.AUD$`, use the Amazon RDS procedure

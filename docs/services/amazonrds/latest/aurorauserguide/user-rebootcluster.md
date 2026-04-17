@@ -1,3 +1,7 @@
+---
+title: "Rebooting an Amazon Aurora DB cluster or Amazon Aurora DB instance"
+---
+
 # Rebooting an Amazon Aurora DB cluster or Amazon Aurora DB instance
 
 You might need to reboot your DB cluster or some instances within the cluster, usually for maintenance reasons.

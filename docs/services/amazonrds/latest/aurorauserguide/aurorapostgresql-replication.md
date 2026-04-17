@@ -1,3 +1,7 @@
+---
+title: "Replication with Amazon Aurora PostgreSQL"
+---
+
 # Replication with Amazon Aurora PostgreSQL
 
 Following, you can find information about replication with Amazon Aurora PostgreSQL, including

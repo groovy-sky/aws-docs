@@ -1,3 +1,7 @@
+---
+title: "Parallel query for Amazon Aurora MySQL"
+---
+
 # Parallel query for Amazon Aurora MySQL
 
 This topic describes the parallel query performance optimization for Amazon Aurora MySQL-Compatible Edition. This feature uses a special processing

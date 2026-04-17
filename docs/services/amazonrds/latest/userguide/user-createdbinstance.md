@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon RDS DB instance"
+---
+
 # Creating an Amazon RDS DB instance
 
 The basic building block of Amazon RDS is the DB instance, where you create your databases. You

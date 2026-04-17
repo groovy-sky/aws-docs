@@ -1,3 +1,7 @@
+---
+title: "Monitoring Amazon RDS events"
+---
+
 # Monitoring Amazon RDS events
 
 An _event_ indicates a change in an environment. This can be an AWS environment, an SaaS partner service or

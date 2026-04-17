@@ -1,3 +1,7 @@
+---
+title: "Managing your Amazon RDS DB instance"
+---
+
 # Managing your Amazon RDS DB instance
 
 Effective database management ensures data availability, reliability, and performance over

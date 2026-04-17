@@ -1,3 +1,7 @@
+---
+title: "Dead connection handling in PostgreSQL"
+---
+
 # Dead connection handling in PostgreSQL
 
 Dead connections occur when a database session remains active on the server despite the

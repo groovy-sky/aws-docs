@@ -1,3 +1,7 @@
+---
+title: "Considerations for Oracle database upgrades"
+---
+
 # Considerations for Oracle database upgrades
 
 Before you upgrade your Oracle instance, review the following information.

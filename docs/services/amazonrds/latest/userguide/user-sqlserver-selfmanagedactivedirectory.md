@@ -1,3 +1,7 @@
+---
+title: "Working with self-managed Active Directory with an Amazon RDS for SQL Server DB instance"
+---
+
 # Working with self-managed Active Directory with an Amazon RDS for SQL Server DB instance
 
 Amazon RDS for SQL Server seamlessly integrates with your self-managed Active Directory (AD) domain,

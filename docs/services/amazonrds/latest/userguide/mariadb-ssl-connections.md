@@ -1,3 +1,7 @@
+---
+title: "Encrypting client connections with SSL/TLS to MariaDB DB instances on Amazon RDS"
+---
+
 # Encrypting client connections with SSL/TLS to MariaDB DB instances on Amazon RDS
 
 Secure Sockets Layer (SSL) is an industry-standard protocol for securing network

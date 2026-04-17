@@ -1,3 +1,7 @@
+---
+title: "RAM disk for the stats_temp_directory"
+---
+
 # RAM disk for the stats\_temp\_directory
 
 You can use the RDS for PostgreSQL parameter `rds.pg_stat_ramdisk_size` to

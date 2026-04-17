@@ -1,3 +1,7 @@
+---
+title: "Using a dedicated log volume (DLV)"
+---
+
 # Using a dedicated log volume (DLV)
 
 You can use a dedicated log volume (DLV) for a DB instance that uses Provisioned IOPS (PIOPS) storage. A DLV moves PostgreSQL

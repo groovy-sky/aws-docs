@@ -1,3 +1,7 @@
+---
+title: "Rotating your SSL/TLS certificate"
+---
+
 # Rotating your SSL/TLS certificate
 
 Amazon RDS Certificate Authority certificates rds-ca-2019 expired in

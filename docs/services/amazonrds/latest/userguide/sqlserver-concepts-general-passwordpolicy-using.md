@@ -1,3 +1,7 @@
+---
+title: "Using Password Policy for SQL Server logins on RDS for SQL Server"
+---
+
 # Using Password Policy for SQL Server logins on RDS for SQL Server
 
 Amazon RDS allows you to set the password policy for your Amazon RDS DB instance running Microsoft SQL Server.

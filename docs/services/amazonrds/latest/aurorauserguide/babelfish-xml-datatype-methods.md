@@ -1,3 +1,7 @@
+---
+title: "Babelfish supports XML datatype methods"
+---
+
 # Babelfish supports XML datatype methods
 
 Starting with version 5.4.0, Babelfish now supports stored procedures sp\_xml\_preparedocument and sp\_xml\_removedocument, rowset function OPENXML() and xml dataype method .VALUE(). With these functions and procedures querying on XML data becomes much easier.

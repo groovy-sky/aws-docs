@@ -1,3 +1,7 @@
+---
+title: "Using SSL with an RDS for Oracle DB instance"
+---
+
 # Using SSL with an RDS for Oracle DB instance
 
 Secure Sockets Layer (SSL) is an industry-standard protocol for securing network connections between client and

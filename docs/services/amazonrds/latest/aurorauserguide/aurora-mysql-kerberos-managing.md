@@ -1,3 +1,7 @@
+---
+title: "Managing a DB cluster in a domain"
+---
+
 # Managing a DB cluster in a domain
 
 You can use the AWS CLI or the RDS API to manage your DB cluster and its relationship with your managed Active Directory. For

@@ -1,3 +1,7 @@
+---
+title: "Monitoring your Amazon RDS DB instance"
+---
+
 # Monitoring your Amazon RDS DB instance
 
 Effective monitoring is essential to maintain the health and performance of your Amazon RDS DB

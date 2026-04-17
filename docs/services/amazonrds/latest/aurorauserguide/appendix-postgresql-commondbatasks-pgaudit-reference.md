@@ -1,3 +1,7 @@
+---
+title: "Reference for the pgAudit extension"
+---
+
 # Reference for the pgAudit extension
 
 You can specify the level of detail that you want for your audit log by changing one or more of the

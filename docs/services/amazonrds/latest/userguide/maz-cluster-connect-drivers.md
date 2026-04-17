@@ -1,3 +1,7 @@
+---
+title: "Connecting to Multi-AZ DB clusters with the AWS drivers for Amazon RDS"
+---
+
 # Connecting to Multi-AZ DB clusters with the AWS drivers for Amazon RDS
 
 The AWS suite of drivers has been designed to provide support for faster switchover

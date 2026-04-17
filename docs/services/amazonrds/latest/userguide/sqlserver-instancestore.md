@@ -1,3 +1,7 @@
+---
+title: "Instance store support for the tempdb database on Amazon RDS for SQL Server"
+---
+
 # Instance store support for the tempdb database on Amazon RDS for SQL Server
 
 An _instance store_ provides temporary block-level

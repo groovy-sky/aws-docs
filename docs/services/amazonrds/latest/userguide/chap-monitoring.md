@@ -1,3 +1,7 @@
+---
+title: "Monitoring metrics in an Amazon RDS instance"
+---
+
 # Monitoring metrics in an Amazon RDS instance
 
 In the following sections, you can find an overview of Amazon RDS monitoring and an explanation

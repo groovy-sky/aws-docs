@@ -1,3 +1,7 @@
+---
+title: "Read consistency for write forwarding"
+---
+
 # Read consistency for write forwarding
 
 You can control the degree of read consistency on a DB cluster. The read consistency

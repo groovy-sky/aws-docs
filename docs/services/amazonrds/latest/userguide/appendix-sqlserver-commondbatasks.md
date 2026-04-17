@@ -1,3 +1,7 @@
+---
+title: "Common DBA tasks for Amazon RDS for Microsoft SQL Server"
+---
+
 # Common DBA tasks for Amazon RDS for Microsoft SQL Server
 
 This section describes the Amazon RDS-specific implementations of some common DBA tasks for DB

@@ -1,3 +1,7 @@
+---
+title: "Optimizing query performance in Aurora PostgreSQL"
+---
+
 # Optimizing query performance in Aurora PostgreSQL
 
 Optimizing query performance is crucial because it helps databases run faster and more

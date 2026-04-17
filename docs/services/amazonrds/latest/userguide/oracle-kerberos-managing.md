@@ -1,3 +1,7 @@
+---
+title: "Managing a DB instance in a domain"
+---
+
 # Managing a DB instance in a domain
 
 You can use the console, the CLI, or the RDS API to manage your DB instance and its relationship with your Microsoft Active Directory. For

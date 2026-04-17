@@ -1,3 +1,7 @@
+---
+title: "Configuring advanced RDS for Oracle features"
+---
+
 # Configuring advanced RDS for Oracle features
 
 RDS for Oracle supports various advanced features, including HugePages, an instance store, and extended data

@@ -1,3 +1,7 @@
+---
+title: "Backing up and restoring a CDB"
+---
+
 # Backing up and restoring a CDB
 
 You can back up and restore your CDB using either RDS DB snapshots or Recovery Manager

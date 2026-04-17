@@ -1,3 +1,7 @@
+---
+title: "PostgreSQL version numbers"
+---
+
 # PostgreSQL version numbers
 
 The version numbering sequence for the PostgreSQL database engine is as

@@ -1,9 +1,12 @@
+---
+title: "Supported Regions and Aurora DB engines for Aurora Serverless v2"
+---
+
 # Supported Regions and Aurora DB engines for Aurora Serverless v2
 
 Aurora Serverless v2 is an on-demand, auto-scaling feature designed to be a
 cost-effective approach to running intermittent or unpredictable workloads on Amazon Aurora.
-It automatically scales capacity up or down as needed by your applications. The scaling
-is faster and more granular than with Aurora Serverless v1. With Aurora Serverless v2, each
+It automatically scales capacity up or down as needed by your applications. With Aurora Serverless v2, each
 cluster can contain a writer DB instance and multiple reader DB instances. You can
 combine Aurora Serverless v2 and traditional provisioned DB instances within the same
 cluster. For more information, see [Using Aurora Serverless v2](aurora-serverless-v2.md).
@@ -38,6 +41,6 @@ depending on your engine version. For details, see [Aurora Serverless v2 capacit
 
 Secrets Manager integration
 
-Aurora Serverless v1
+RDS Data API
 
 All content copied from https://docs.aws.amazon.com/.

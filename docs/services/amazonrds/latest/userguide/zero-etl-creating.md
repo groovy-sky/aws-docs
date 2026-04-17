@@ -1,3 +1,7 @@
+---
+title: "Creating Amazon RDS zero-ETL integrations with Amazon Redshift"
+---
+
 # Creating Amazon RDS zero-ETL integrations with Amazon Redshift
 
 When you create an Amazon RDS zero-ETL integration, you specify the source RDS

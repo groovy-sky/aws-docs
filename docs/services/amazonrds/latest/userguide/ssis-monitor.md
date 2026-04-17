@@ -1,3 +1,7 @@
+---
+title: "Monitoring the status of a deployment task"
+---
+
 # Monitoring the status of a deployment task
 
 To track the status of your deployment task, call the `rds_fn_task_status`

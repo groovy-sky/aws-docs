@@ -1,3 +1,7 @@
+---
+title: "Choosing your node size"
+---
+
 # Choosing your node size
 
 The node size you select for your ElastiCache cluster impacts costs, performance, and fault tolerance.

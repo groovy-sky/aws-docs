@@ -1,3 +1,7 @@
+---
+title: "Monitoring the status of a deployment task"
+---
+
 # Monitoring the status of a deployment task
 
 To track the status of your deployment (or download) task, call the

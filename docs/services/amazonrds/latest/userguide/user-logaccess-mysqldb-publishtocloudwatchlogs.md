@@ -1,3 +1,7 @@
+---
+title: "Publishing MySQL logs to Amazon CloudWatch Logs"
+---
+
 # Publishing MySQL logs to Amazon CloudWatch Logs
 
 You can configure your MySQL DB instance to publish log data to a log group in Amazon CloudWatch Logs. With CloudWatch Logs, you can

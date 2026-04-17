@@ -1,3 +1,7 @@
+---
+title: "Aurora zero-ETL integrations"
+---
+
 # Aurora zero-ETL integrations
 
 An Aurora

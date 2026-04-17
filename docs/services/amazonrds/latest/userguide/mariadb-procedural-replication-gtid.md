@@ -1,3 +1,7 @@
+---
+title: "Configuring GTID-based replication with an external source instance"
+---
+
 # Configuring GTID-based replication with an external source instance
 
 You can set up replication based on global transaction identifiers (GTIDs) from an

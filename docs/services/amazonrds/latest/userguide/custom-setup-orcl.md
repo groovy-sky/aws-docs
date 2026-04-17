@@ -1,3 +1,7 @@
+---
+title: "Setting up your environment for Amazon RDS Custom for Oracle"
+---
+
 # Setting up your environment for Amazon RDS Custom for Oracle
 
 ###### Note

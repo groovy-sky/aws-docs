@@ -1,3 +1,7 @@
+---
+title: "Network configuration port rules"
+---
+
 # Network configuration port rules
 
 Make sure that you have met the following network configurations:

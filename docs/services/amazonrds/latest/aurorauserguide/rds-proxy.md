@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS Proxyfor Aurora"
+---
+
 # Amazon RDS Proxyfor Aurora
 
 By using Amazon RDS Proxy, you can allow your applications to pool and share database

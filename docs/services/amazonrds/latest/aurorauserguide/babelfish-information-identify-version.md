@@ -1,3 +1,7 @@
+---
+title: "Identifying your version of Babelfish"
+---
+
 # Identifying your version of Babelfish
 
 You can query Babelfish to find details about the Babelfish version, the

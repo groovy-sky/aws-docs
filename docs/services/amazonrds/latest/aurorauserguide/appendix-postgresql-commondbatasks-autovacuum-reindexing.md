@@ -1,3 +1,7 @@
+---
+title: "Reindexing a table when autovacuum is running"
+---
+
 # Reindexing a table when autovacuum is running
 
 If an index has become corrupt, autovacuum continues to process the table and fails. If

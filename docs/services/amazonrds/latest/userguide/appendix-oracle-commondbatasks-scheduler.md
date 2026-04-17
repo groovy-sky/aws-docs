@@ -1,3 +1,7 @@
+---
+title: "Performing common scheduling tasks for Oracle DB instances"
+---
+
 # Performing common scheduling tasks for Oracle DB instances
 
 Some scheduler jobs owned by `SYS` can interfere with normal database

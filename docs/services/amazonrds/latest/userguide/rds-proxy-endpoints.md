@@ -1,3 +1,7 @@
+---
+title: "Working with Amazon RDS Proxy endpoints"
+---
+
 # Working with Amazon RDS Proxy endpoints
 
 RDS Proxy endpoints provide flexible and efficient ways to manage database connections, which

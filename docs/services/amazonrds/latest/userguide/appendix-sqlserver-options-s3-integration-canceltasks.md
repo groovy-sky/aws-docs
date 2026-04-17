@@ -1,3 +1,7 @@
+---
+title: "Canceling a task"
+---
+
 # Canceling a task
 
 To cancel S3 integration tasks, use the `msdb.dbo.rds_cancel_task` stored procedure with the `task_id`

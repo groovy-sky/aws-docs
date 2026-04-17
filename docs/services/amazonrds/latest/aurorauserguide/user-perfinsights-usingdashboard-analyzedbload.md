@@ -1,3 +1,7 @@
+---
+title: "Analyzing DB load by wait events"
+---
+
 # Analyzing DB load by wait events
 
 If the **Database load** chart shows a bottleneck, you can find out where the load is

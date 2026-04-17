@@ -1,3 +1,7 @@
+---
+title: "DB cluster parameter group settings for Babelfish"
+---
+
 # DB cluster parameter group settings for Babelfish
 
 When you create an Aurora PostgreSQL DB cluster and choose **Turn on**

@@ -1,3 +1,7 @@
+---
+title: "Switching a blue/green deployment in Amazon RDS"
+---
+
 # Switching a blue/green deployment in Amazon RDS
 
 A _switchover_ transitions the green environment

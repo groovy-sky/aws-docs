@@ -1,3 +1,7 @@
+---
+title: "Working with the EXTRACT and REPLICAT utilities of Oracle GoldenGate"
+---
+
 # Working with the EXTRACT and REPLICAT utilities of Oracle GoldenGate
 
 The Oracle GoldenGate utilities `EXTRACT` and `REPLICAT` work together to keep the

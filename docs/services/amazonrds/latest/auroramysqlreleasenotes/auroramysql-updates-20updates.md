@@ -1,3 +1,7 @@
+---
+title: "Database engine updates for Amazon Aurora MySQL version 2"
+---
+
 # Database engine updates for Amazon Aurora MySQL version 2
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Increasing the number of replicas in a shard"
+---
+
 # Increasing the number of replicas in a shard
 
 You can increase the number of replicas in a Valkey or Redis OSS (cluster mode enabled) shard or Valkey or Redis OSS (cluster mode disabled)

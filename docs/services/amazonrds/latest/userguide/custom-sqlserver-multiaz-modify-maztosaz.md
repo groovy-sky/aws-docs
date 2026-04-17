@@ -1,3 +1,7 @@
+---
+title: "Modifying an RDS Custom for SQL Server Multi-AZ deployment to a Single-AZ deployment"
+---
+
 # Modifying an RDS Custom for SQL Server Multi-AZ deployment to a Single-AZ deployment
 
 You can modify an existing RDS Custom for SQL Server DB instance from a Multi-AZ to a Single-AZ deployment.

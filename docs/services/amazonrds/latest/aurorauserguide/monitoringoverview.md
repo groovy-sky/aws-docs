@@ -1,3 +1,7 @@
+---
+title: "Monitoring tools for Amazon Aurora"
+---
+
 # Monitoring tools for Amazon Aurora
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of Amazon Aurora and your other AWS solutions.

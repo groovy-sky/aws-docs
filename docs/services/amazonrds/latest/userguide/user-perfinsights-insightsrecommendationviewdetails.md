@@ -1,3 +1,7 @@
+---
+title: "Viewing Performance Insights proactive recommendations"
+---
+
 # Viewing Performance Insights proactive recommendations
 
 Amazon RDS Performance Insights monitors specific metrics and automatically creates thresholds by analyzing what levels might be

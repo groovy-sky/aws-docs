@@ -1,3 +1,7 @@
+---
+title: "Local time zone for Amazon RDS for Db2 DB instances"
+---
+
 # Local time zone for Amazon RDS for Db2 DB instances
 
 The time zone of an Amazon RDS DB instance running Db2 is set by default. The default is

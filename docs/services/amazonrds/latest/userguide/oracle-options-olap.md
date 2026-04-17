@@ -1,3 +1,7 @@
+---
+title: "Oracle OLAP"
+---
+
 # Oracle OLAP
 
 Amazon RDS supports Oracle OLAP through the use of the `OLAP` option.

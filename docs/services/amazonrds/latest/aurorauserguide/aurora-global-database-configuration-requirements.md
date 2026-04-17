@@ -1,3 +1,7 @@
+---
+title: "Configuration requirements of an Amazon Aurora global database"
+---
+
 # Configuration requirements of an Amazon Aurora global database
 
 Before you start working with your global database, plan the cluster and instance names, AWS Regions, number of instances

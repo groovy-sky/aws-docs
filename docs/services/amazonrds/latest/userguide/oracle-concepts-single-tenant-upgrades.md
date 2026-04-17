@@ -1,3 +1,7 @@
+---
+title: "Upgrading your CDB"
+---
+
 # Upgrading your CDB
 
 You can upgrade a CDB to a different Oracle Database release. For example, you can upgrade

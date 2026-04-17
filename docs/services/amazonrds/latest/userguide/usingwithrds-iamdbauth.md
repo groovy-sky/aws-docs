@@ -1,3 +1,7 @@
+---
+title: "IAM database authentication for MariaDB, MySQL, and PostgreSQL"
+---
+
 # IAM database authentication for MariaDB, MySQL, and PostgreSQL
 
 You can authenticate to your DB

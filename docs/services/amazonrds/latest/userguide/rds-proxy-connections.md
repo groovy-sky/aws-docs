@@ -1,3 +1,7 @@
+---
+title: "RDS Proxy connection considerations"
+---
+
 # RDS Proxy connection considerations
 
 ## Configuring connection settings

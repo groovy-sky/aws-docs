@@ -1,3 +1,7 @@
+---
+title: "Deleting a performance analysis report in Performance Insights"
+---
+
 # Deleting a performance analysis report in Performance Insights
 
 You can delete a report from the list of reports displayed in the **Performance analysis reports** tab

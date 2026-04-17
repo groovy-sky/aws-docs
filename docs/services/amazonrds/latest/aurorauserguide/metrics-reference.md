@@ -1,3 +1,7 @@
+---
+title: "Metrics reference for Amazon Aurora"
+---
+
 # Metrics reference for Amazon Aurora
 
 In this reference, you can find descriptions of Amazon Aurora metrics for Amazon CloudWatch, Performance Insights, and Enhanced Monitoring.

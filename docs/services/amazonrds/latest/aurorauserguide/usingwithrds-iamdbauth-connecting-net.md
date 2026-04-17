@@ -1,3 +1,7 @@
+---
+title: "Connecting to your DB cluster using IAM authentication and the AWS SDK for .NET"
+---
+
 # Connecting to your DB cluster using IAM authentication and the AWS SDK for .NET
 
 You can connect to an

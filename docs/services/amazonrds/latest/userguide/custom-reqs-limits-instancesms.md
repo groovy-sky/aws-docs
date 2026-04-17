@@ -1,3 +1,7 @@
+---
+title: "DB instance class support for RDS Custom for SQL Server"
+---
+
 # DB instance class support for RDS Custom for SQL Server
 
 Check if the DB instance class is supported in your Region by using the

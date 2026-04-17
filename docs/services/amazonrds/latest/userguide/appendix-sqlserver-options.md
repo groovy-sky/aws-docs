@@ -1,3 +1,7 @@
+---
+title: "Options for the Microsoft SQL Server database engine"
+---
+
 # Options for the Microsoft SQL Server database engine
 
 In this section, you can find descriptions for options that are

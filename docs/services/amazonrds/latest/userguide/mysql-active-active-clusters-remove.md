@@ -1,3 +1,7 @@
+---
+title: "Removing a DB instance from an active-active cluster"
+---
+
 # Removing a DB instance from an active-active cluster
 
 When you remove a DB instance from an active-active cluster, it reverts to a standalone DB instance.

@@ -1,3 +1,7 @@
+---
+title: "Babelfish for Aurora PostgreSQL updates"
+---
+
 # Babelfish for Aurora PostgreSQL updates
 
 Following, you can find information about versions of the Babelfish that have been
@@ -3441,7 +3445,7 @@ For more information on the major version upgrade, see
 - Support sys.systypes system compatibility view.
 
 - Support for a new GUC parameter called babelfishpg\_tds.product\_version that allows you to set SQL Server product version number that is returned as an output by Babelfish. For more information,
-see [Using Babelfish product version GUC](../aurorauserguide/babelfish-guc-version.md).
+see [Using Babelfish product version GUC](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-guc-version).
 
 - Added support to generate data definition scripts for various objects present in a Babelfish for Aurora PostgreSQL database. For more information,
 see [DDL exports supported by Babelfish](../aurorauserguide/babelfish-query-database.md#babelfish-ddl-exports).
@@ -4235,7 +4239,7 @@ For more information on the major version upgrade, see
 - Support sys.systypes system compatibility view.
 
 - Support for a new GUC parameter called babelfishpg\_tds.product\_version that allows you to set SQL Server product version number that is returned as an output by Babelfish. For more information,
-see [Using Babelfish product version GUC](../aurorauserguide/babelfish-guc-version.md).
+see [Using Babelfish product version GUC](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-guc-version).
 
 - Added support to generate data definition scripts for various objects present in a Babelfish for Aurora PostgreSQL database. For more information,
 see [DDL exports supported by Babelfish](../aurorauserguide/babelfish-query-database.md#babelfish-ddl-exports).
@@ -4372,7 +4376,7 @@ For more information on the major version upgrade, see
 [Upgrading your Babelfish cluster to a new version](../aurorauserguide/babelfish-information.md#babelfish-information-upgrading).
 
 - Support for T-SQL hints (join methods, index usage, MAXDOP). For more information on the T-SQL hints supported by Babelfish,
-see [Using T-SQL query hints to improve Babelfish query performance](../aurorauserguide/babelfish-tsql-hints.md).
+see [Using T-SQL query hints to improve Babelfish query performance](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-tsql-hints).
 
 - Babelfish now supports Zero-downtime patching (ZDP). For more information, see
 [Minor\
@@ -4777,7 +4781,7 @@ Babelfish DB clusters running on Aurora PostgreSQL 13.7 or older versions can't 
 
 - CREATE ROLE (AUTHORIZATION clause not supported), DROP ROLE, ALTER ROLE.
 
-- Babelfish now maps the error code for @@ERROR=213. For more information on error handling, see [Managing Babelfish error handling.](../aurorauserguide/babelfish-strict.md)
+- Babelfish now maps the error code for @@ERROR=213. For more information on error handling, see [Managing Babelfish error handling.](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-strict)
 
 - Fixed an issue with SUBSTRING(CHARINDEX()) variable assignment that caused Babelfish to become unavailable.
 

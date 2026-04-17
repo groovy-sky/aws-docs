@@ -1,3 +1,7 @@
+---
+title: "Working with replicas for Amazon RDS for Db2"
+---
+
 # Working with replicas for Amazon RDS for Db2
 
 RDS for Db2 supports creating replica databases to provide read scaling and disaster recovery

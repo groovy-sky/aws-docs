@@ -1,3 +1,7 @@
+---
+title: "Creating and using an IAM policy for IAM database access"
+---
+
 # Creating and using an IAM policy for IAM database access
 
 To allow a user or role to connect to your DB instance,

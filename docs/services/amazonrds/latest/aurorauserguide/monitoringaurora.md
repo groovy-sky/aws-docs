@@ -1,3 +1,7 @@
+---
+title: "Monitoring metrics in an Amazon Aurora cluster"
+---
+
 # Monitoring metrics in an Amazon Aurora cluster
 
 Amazon Aurora uses a cluster of replicated database servers. Typically, monitoring an Aurora cluster requires checking

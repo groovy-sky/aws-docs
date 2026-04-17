@@ -1,3 +1,7 @@
+---
+title: "Monitoring DB load with Performance Insights on Amazon RDS"
+---
+
 # Monitoring DB load with Performance Insights on Amazon RDS
 
 ###### Important

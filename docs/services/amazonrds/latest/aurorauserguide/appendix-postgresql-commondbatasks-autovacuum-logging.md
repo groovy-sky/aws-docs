@@ -1,3 +1,7 @@
+---
+title: "Logging autovacuum and vacuum activities"
+---
+
 # Logging autovacuum and vacuum activities
 
 Information about autovacuum activities is sent to the `postgresql.log` based

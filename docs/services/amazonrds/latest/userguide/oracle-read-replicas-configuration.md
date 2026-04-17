@@ -1,3 +1,7 @@
+---
+title: "Preparing to create an Oracle replica"
+---
+
 # Preparing to create an Oracle replica
 
 Before you can begin using your replica, perform the following tasks.

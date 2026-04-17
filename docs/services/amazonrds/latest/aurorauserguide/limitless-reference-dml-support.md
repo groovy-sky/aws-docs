@@ -1,3 +1,7 @@
+---
+title: "Supported and unsupported Data Manipulation Language (DML) and query processing SQL commands"
+---
+
 # Supported and unsupported Data Manipulation Language (DML) and query processing SQL commands
 
 The following table lists the DML commands that are supported and not supported by Aurora PostgreSQL Limitless Database, with references to limitations or more

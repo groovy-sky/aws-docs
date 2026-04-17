@@ -1,3 +1,7 @@
+---
+title: "Other ElastiCache tutorials and videos"
+---
+
 # Other ElastiCache tutorials and videos
 
 The following tutorials address tasks of interest to the Amazon ElastiCache user.

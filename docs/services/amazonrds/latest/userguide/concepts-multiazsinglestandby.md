@@ -1,3 +1,7 @@
+---
+title: "Multi-AZ DB instance deployments for Amazon RDS"
+---
+
 # Multi-AZ DB instance deployments for Amazon RDS
 
 Amazon RDS provides high availability and failover support for DB instances using Multi-AZ

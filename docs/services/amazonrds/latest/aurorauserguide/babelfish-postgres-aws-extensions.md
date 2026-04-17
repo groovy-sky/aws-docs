@@ -1,3 +1,7 @@
+---
+title: "Using Aurora PostgreSQL extensions with Babelfish"
+---
+
 # Using Aurora PostgreSQL extensions with Babelfish
 
 Aurora PostgreSQL provides extensions for working with other AWS services. These are optional extensions that

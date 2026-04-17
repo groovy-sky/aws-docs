@@ -1,3 +1,7 @@
+---
+title: "Displaying volume status for an Aurora PostgreSQL DB cluster"
+---
+
 # Displaying volume status for an Aurora PostgreSQL DB cluster
 
 In Amazon Aurora, a DB cluster volume consists of a collection of logical blocks. Each of

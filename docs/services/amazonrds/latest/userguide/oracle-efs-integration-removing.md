@@ -1,3 +1,7 @@
+---
+title: "Removing the EFS_INTEGRATION option"
+---
+
 # Removing the EFS\_INTEGRATION option
 
 The steps for removing the `EFS_INTEGRATION` option depend on whether you're

@@ -1,3 +1,7 @@
+---
+title: "Adding a router to a DB shard group"
+---
+
 # Adding a router to a DB shard group
 
 You can add a router to a DB shard group.

@@ -1,3 +1,7 @@
+---
+title: "RDS for PostgreSQL database log files"
+---
+
 # RDS for PostgreSQL database log files
 
 You can monitor the following types of

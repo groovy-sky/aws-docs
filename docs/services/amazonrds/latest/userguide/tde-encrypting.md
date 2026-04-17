@@ -1,3 +1,7 @@
+---
+title: "Encrypting data on RDS for SQL Server"
+---
+
 # Encrypting data on RDS for SQL Server
 
 When the TDE option is added to an option group, Amazon RDS generates a certificate that's

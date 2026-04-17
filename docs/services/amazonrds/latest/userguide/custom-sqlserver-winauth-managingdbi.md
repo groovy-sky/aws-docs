@@ -1,3 +1,7 @@
+---
+title: "Managing a DB instance in a Domain"
+---
+
 # Managing a DB instance in a Domain
 
 You can use the console, AWS CLI, or the Amazon RDS API to manage your DB instance and its

@@ -1,3 +1,7 @@
+---
+title: "Creating your first Amazon RDS DB instance"
+---
+
 # Creating your first Amazon RDS DB instance
 
 Amazon RDS simplifies the process of setting up and managing relational databases in the cloud.

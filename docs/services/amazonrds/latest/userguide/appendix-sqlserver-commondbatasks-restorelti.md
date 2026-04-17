@@ -1,3 +1,7 @@
+---
+title: "Restoring license-terminated DB instances for Amazon RDS for SQL Server"
+---
+
 # Restoring license-terminated DB instances for Amazon RDS for SQL Server
 
 Microsoft has requested that some Amazon RDS customers who did not report their Microsoft

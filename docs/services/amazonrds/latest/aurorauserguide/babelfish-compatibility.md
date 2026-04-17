@@ -1,3 +1,7 @@
+---
+title: "Differences between Babelfish for Aurora PostgreSQL and SQL Server"
+---
+
 # Differences between Babelfish for Aurora PostgreSQL and SQL Server
 
 Babelfish is an evolving Aurora PostgreSQL feature, with new functionality added in

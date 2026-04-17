@@ -1,3 +1,7 @@
+---
+title: "Adjusting database links for use with DB instances in a VPC"
+---
+
 # Adjusting database links for use with DB instances in a VPC
 
 To use Oracle database links with Amazon RDS DB instances inside the same virtual

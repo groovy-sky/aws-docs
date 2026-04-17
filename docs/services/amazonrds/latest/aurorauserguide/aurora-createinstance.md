@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Aurora DB cluster"
+---
+
 # Creating an Amazon Aurora DB cluster
 
 An Amazon Aurora DB cluster consists of a DB instance, compatible with either MySQL or

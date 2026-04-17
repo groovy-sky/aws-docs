@@ -1,3 +1,7 @@
+---
+title: "Creating a subnet group"
+---
+
 # Creating a subnet group
 
 A _cache subnet group_ is a collection of subnets that you may want

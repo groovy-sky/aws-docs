@@ -1,3 +1,7 @@
+---
+title: "DNS names and underlying IP"
+---
+
 # DNS names and underlying IP
 
 Clients maintain a server list containing the addresses and ports of

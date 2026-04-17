@@ -1,3 +1,7 @@
+---
+title: "Redo transport compression with RDS for Oracle"
+---
+
 # Redo transport compression with RDS for Oracle
 
 Use RDS for Oracle redo transport compression to improve the replication performance between your primary DB instance and standby replicas. This is particularly useful in environments that have limited network bandwidth or high-latency connections.

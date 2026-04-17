@@ -1,3 +1,7 @@
+---
+title: "Setting up Kerberos authentication for PostgreSQL DB instances"
+---
+
 # Setting up Kerberos authentication for PostgreSQL DB instances
 
 You use AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) to set up Kerberos authentication for a

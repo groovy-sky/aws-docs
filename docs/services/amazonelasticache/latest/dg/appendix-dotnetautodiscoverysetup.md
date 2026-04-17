@@ -1,3 +1,7 @@
+---
+title: "Installing the ElastiCache cluster client for .NET"
+---
+
 # Installing the ElastiCache cluster client for .NET
 
 You can find the ElastiCache .NET Cluster Client code as open source at [https://github.com/awslabs/elasticache-cluster-config-net](https://github.com/awslabs/elasticache-cluster-config-net).

@@ -1,3 +1,7 @@
+---
+title: "Working with Oracle databases by using the oracle_fdw extension"
+---
+
 # Working with Oracle databases by using the oracle\_fdw extension
 
 To access an Oracle database from your

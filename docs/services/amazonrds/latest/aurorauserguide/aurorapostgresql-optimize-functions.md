@@ -1,3 +1,7 @@
+---
+title: "Function reference for Aurora PostgreSQL query plan management"
+---
+
 # Function reference for Aurora PostgreSQL query plan management
 
 The `apg_plan_mgmt` extension provides the following functions.

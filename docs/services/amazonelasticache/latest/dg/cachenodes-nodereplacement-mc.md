@@ -1,3 +1,7 @@
+---
+title: "Replacing nodes (Memcached)"
+---
+
 # Replacing nodes (Memcached)
 
 Amazon ElastiCache for Memcached frequently upgrades its fleet with patches and upgrades being applied to

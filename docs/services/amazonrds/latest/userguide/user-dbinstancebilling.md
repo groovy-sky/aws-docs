@@ -1,3 +1,7 @@
+---
+title: "DB instance billing for Amazon RDS"
+---
+
 # DB instance billing for Amazon RDS
 
 Amazon RDS instances are billed based on the following components:

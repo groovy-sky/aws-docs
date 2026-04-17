@@ -1,3 +1,7 @@
+---
+title: "Upgrading PostgreSQL extensions in RDS for PostgreSQL databases"
+---
+
 # Upgrading PostgreSQL extensions in RDS for PostgreSQL databases
 
 A PostgreSQL engine upgrade doesn't upgrade most PostgreSQL extensions.

@@ -1,3 +1,7 @@
+---
+title: "Modifying an Amazon Aurora global database"
+---
+
 # Modifying an Amazon Aurora global database
 
 The **Databases** page in the AWS Management Console lists all your Aurora global

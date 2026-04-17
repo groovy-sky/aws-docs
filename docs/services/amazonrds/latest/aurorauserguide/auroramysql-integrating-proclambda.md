@@ -1,3 +1,7 @@
+---
+title: "Invoking a Lambda function with an Aurora MySQL stored procedure (deprecated)"
+---
+
 # Invoking a Lambda function with an Aurora MySQL stored procedure (deprecated)
 
 You can invoke an AWS Lambda function from an Aurora MySQL DB cluster by calling the

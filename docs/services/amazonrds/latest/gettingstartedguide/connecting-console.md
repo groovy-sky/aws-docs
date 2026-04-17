@@ -1,3 +1,7 @@
+---
+title: "Using the Amazon RDS console to retrieve connection information"
+---
+
 # Using the Amazon RDS console to retrieve connection information
 
 Before you can connect to your Amazon RDS DB instance, you need to gather the connection

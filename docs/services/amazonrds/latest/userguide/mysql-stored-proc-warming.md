@@ -1,3 +1,7 @@
+---
+title: "Warming the InnoDB cache"
+---
+
 # Warming the InnoDB cache
 
 The following stored procedures save, load, or cancel loading the InnoDB buffer pool on RDS for MySQL DB instances. For more

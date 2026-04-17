@@ -1,3 +1,7 @@
+---
+title: "Using cascading read replicas with RDS for MariaDB"
+---
+
 # Using cascading read replicas with RDS for MariaDB
 
 RDS for MariaDB supports cascading read replicas. With _cascading read replicas_, you can scale reads without

@@ -1,3 +1,7 @@
+---
+title: "Connecting to your Amazon RDS for Db2 DB instance with IBM Db2 Data Management Console"
+---
+
 # Connecting to your Amazon RDS for Db2 DB instance with IBM Db2 Data Management Console
 
 You can connect to your Amazon RDS for Db2 DB instance with IBM Db2 Data Management Console. IBM Db2 Data Management Console can administer and

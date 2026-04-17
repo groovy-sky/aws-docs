@@ -1,3 +1,7 @@
+---
+title: "Starting and stopping replication with MySQL read replicas"
+---
+
 # Starting and stopping replication with MySQL read replicas
 
 You can stop and restart the replication process on an Amazon RDS DB instance by calling the

@@ -1,3 +1,7 @@
+---
+title: "Choosing a major version for an RDS for PostgreSQL upgrade"
+---
+
 # Choosing a major version for an RDS for PostgreSQL upgrade
 
 Major version upgrades can contain changes that are not backward-compatible

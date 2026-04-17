@@ -1,3 +1,7 @@
+---
+title: "Using third-party software with your RDS for Oracle DB instance"
+---
+
 # Using third-party software with your RDS for Oracle DB instance
 
 You can host an RDS for Oracle DB instance that supports tools and third-party software.

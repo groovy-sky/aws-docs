@@ -1,3 +1,7 @@
+---
+title: "Creating custom functions to verify passwords"
+---
+
 # Creating custom functions to verify passwords
 
 You can create a custom password verification function in the following ways:

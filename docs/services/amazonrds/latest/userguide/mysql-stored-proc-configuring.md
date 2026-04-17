@@ -1,3 +1,7 @@
+---
+title: "Setting and showing binary log configuration"
+---
+
 # Setting and showing binary log configuration
 
 The following stored procedures set and show configuration parameters, such as for binary log file retention.

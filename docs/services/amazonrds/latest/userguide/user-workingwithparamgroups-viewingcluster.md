@@ -1,3 +1,7 @@
+---
+title: "Viewing parameter values for a DB cluster parameter group"
+---
+
 # Viewing parameter values for a DB cluster parameter group
 
 You can get a list of all parameters in a DB cluster parameter group and their values.

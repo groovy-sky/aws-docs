@@ -1,3 +1,7 @@
+---
+title: "Viewing OS metrics using CloudWatch Logs"
+---
+
 # Viewing OS metrics using CloudWatch Logs
 
 After you have enabled Enhanced Monitoring for your DB instance or Multi-AZ DB cluster, you can view the metrics for it

@@ -1,3 +1,7 @@
+---
+title: "Integrating an Amazon RDS for Db2 DB instance with Amazon S3"
+---
+
 # Integrating an Amazon RDS for Db2 DB instance with Amazon S3
 
 You can transfer files between your Amazon RDS for Db2 DB instance and an Amazon Simple Storage Service (Amazon S3) bucket

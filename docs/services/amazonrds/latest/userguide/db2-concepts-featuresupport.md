@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Db2 features"
+---
+
 # Amazon RDS for Db2 features
 
 Amazon RDS for Db2 supports most of the features and capabilities of the IBM Db2 database. Some

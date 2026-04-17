@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting access to Amazon S3"
+---
+
 # Troubleshooting access to Amazon S3
 
 If you encounter connection problems when attempting to export data to Amazon S3, first confirm that the outbound access rules for

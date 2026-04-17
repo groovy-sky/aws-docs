@@ -1,3 +1,7 @@
+---
+title: "Controlling user access to the PostgreSQL database"
+---
+
 # Controlling user access to the PostgreSQL database
 
 New databases in PostgreSQL are always created with a default set of privileges in the

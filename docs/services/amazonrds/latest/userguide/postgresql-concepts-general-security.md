@@ -1,3 +1,7 @@
+---
+title: "Securing connections to RDS for PostgreSQL with SSL/TLS"
+---
+
 # Securing connections to RDS for PostgreSQL with SSL/TLS
 
 RDS for PostgreSQL supports Secure Socket Layer (SSL) encryption for PostgreSQL DB

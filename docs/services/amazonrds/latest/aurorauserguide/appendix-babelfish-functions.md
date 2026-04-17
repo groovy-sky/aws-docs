@@ -1,3 +1,7 @@
+---
+title: "Working with Babelfish for Aurora PostgreSQL procedures"
+---
+
 # Working with Babelfish for Aurora PostgreSQL procedures
 
 ## Overview

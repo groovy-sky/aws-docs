@@ -1,3 +1,7 @@
+---
+title: "Choosing the new monitoring view from the Monitoring tab"
+---
+
 # Choosing the new monitoring view from the Monitoring tab
 
 ###### Important

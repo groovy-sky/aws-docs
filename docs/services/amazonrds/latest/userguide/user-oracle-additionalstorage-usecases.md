@@ -1,3 +1,7 @@
+---
+title: "Use cases for additional storage volumes in RDS for Oracle"
+---
+
 # Use cases for additional storage volumes in RDS for Oracle
 
 Additional storage volumes support various database management scenarios.

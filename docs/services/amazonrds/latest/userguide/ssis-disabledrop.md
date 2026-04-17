@@ -1,3 +1,7 @@
+---
+title: "Disable and drop SSIS database"
+---
+
 # Disable and drop SSIS database
 
 Use the following steps to disable or drop SSIS databases:

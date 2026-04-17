@@ -1,3 +1,7 @@
+---
+title: "Maximum CPU"
+---
+
 # Maximum CPU
 
 In the dashboard, the **Database load** chart collects, aggregates, and displays session information.

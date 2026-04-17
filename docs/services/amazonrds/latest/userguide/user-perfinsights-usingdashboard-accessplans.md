@@ -1,3 +1,7 @@
+---
+title: "Analyzing Oracle execution plans using the Performance Insights dashboard for Amazon RDS"
+---
+
 # Analyzing Oracle execution plans using the Performance Insights dashboard for Amazon RDS
 
 When analyzing DB load on an Oracle Database, you might want to know which plans are contributing the most to DB load.

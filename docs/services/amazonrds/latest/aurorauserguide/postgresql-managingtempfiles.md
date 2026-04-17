@@ -1,3 +1,7 @@
+---
+title: "Managing temporary files with PostgreSQL"
+---
+
 # Managing temporary files with PostgreSQL
 
 In PostgreSQL, a complex query might perform several sort or hash operations at the same

@@ -1,3 +1,7 @@
+---
+title: "Disabling access control on an ElastiCache Valkey or Redis OSS cache"
+---
+
 # Disabling access control on an ElastiCache Valkey or Redis OSS cache
 
 Follow the instructions below to disable access control on a Valkey or Redis OSS TLS-enabled
@@ -109,7 +113,7 @@ aws elasticache describe-replication-groups --replication-group-id <replication-
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Authenticating with AUTH
+Migrating from AUTH to IAM
 
 Internetwork traffic privacy
 

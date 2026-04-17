@@ -1,3 +1,7 @@
+---
+title: "Creating an IAM policy to access Amazon S3 resources"
+---
+
 # Creating an IAM policy to access Amazon S3 resources
 
 Aurora can access Amazon S3 resources to either load data to or save data from an

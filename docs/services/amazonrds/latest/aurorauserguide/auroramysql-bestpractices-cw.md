@@ -1,3 +1,7 @@
+---
+title: "Evaluating DB instance usage for Aurora MySQL with Amazon CloudWatch metrics"
+---
+
 # Evaluating DB instance usage for Aurora MySQL with Amazon CloudWatch metrics
 
 You can use CloudWatch metrics to monitor your DB instance throughput and determine whether your DB instance class provides sufficient resources for

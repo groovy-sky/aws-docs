@@ -1,3 +1,7 @@
+---
+title: "Optimizing correlated subqueries in Aurora PostgreSQL"
+---
+
 # Optimizing correlated subqueries in Aurora PostgreSQL
 
 A correlated subquery references table columns from the outer query. It is evaluated once

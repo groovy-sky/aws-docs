@@ -1,3 +1,7 @@
+---
+title: "Tagging Amazon Aurora Global Database resources"
+---
+
 # Tagging Amazon Aurora Global Database resources
 
 With the Aurora Global Database feature, you can apply RDS tags to resources at different levels within a global

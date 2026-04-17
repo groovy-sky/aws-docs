@@ -1,3 +1,7 @@
+---
+title: "Aurora PostgreSQL functions reference"
+---
+
 # Aurora PostgreSQL functions reference
 
 Following, you can find a list of Aurora PostgreSQL functions that are available for your

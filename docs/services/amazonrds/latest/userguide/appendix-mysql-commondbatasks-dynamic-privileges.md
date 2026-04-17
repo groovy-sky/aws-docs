@@ -1,3 +1,7 @@
+---
+title: "Dynamic privileges for RDS for MySQL"
+---
+
 # Dynamic privileges for RDS for MySQL
 
 Dynamic privileges are MySQL privileges that you can explicitly grant by using the

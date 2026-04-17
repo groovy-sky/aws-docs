@@ -1,3 +1,7 @@
+---
+title: "Use ModifyDBParameterGroup with an AWS SDK or CLI"
+---
+
 # Use `ModifyDBParameterGroup` with an AWS SDK or CLI
 
 The following code examples show how to use `ModifyDBParameterGroup`.
@@ -41,7 +45,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[ModifyDBParameterGroup](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/modifydbparametergroup.md)
+[ModifyDBParameterGroup](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/ModifyDBParameterGroup)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -82,7 +86,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/c
 ```
 
 - For API details, see
-[ModifyDBParameterGroup](../../../../reference/goto/sdkforcpp/rds-2014-10-31/modifydbparametergroup.md)
+[ModifyDBParameterGroup](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/ModifyDBParameterGroup)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -203,7 +207,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[ModifyDBParameterGroup](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/modifydbparametergroup.md)
+[ModifyDBParameterGroup](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/ModifyDBParameterGroup)
 in _AWS SDK for Java 2.x API Reference_.
 
 Python
@@ -261,7 +265,7 @@ class InstanceWrapper:
 ```
 
 - For API details, see
-[ModifyDBParameterGroup](../../../goto/boto3/rds-2014-10-31/modifydbparametergroup.md)
+[ModifyDBParameterGroup](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/ModifyDBParameterGroup)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

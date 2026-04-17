@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon Aurora global database"
+---
+
 # Creating an Amazon Aurora global database
 
 To create an Aurora global database and its associated resources by using the AWS Management Console, the AWS CLI,

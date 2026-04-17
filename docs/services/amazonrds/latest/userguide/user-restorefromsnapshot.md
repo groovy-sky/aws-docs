@@ -1,3 +1,7 @@
+---
+title: "Restoring to a DB instance"
+---
+
 # Restoring to a DB instance
 
 This section shows how to restore to a DB instance. This page shows how to restore to an Amazon RDS DB instance from a DB snapshot.

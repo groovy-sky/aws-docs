@@ -1,3 +1,7 @@
+---
+title: "Deleting messages"
+---
+
 # Deleting messages
 
 You use the `rds_sysmail_delete_mailitems_sp` stored procedure to delete messages.

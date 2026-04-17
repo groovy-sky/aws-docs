@@ -1,3 +1,7 @@
+---
+title: "Upgrading an Oracle DB snapshot"
+---
+
 # Upgrading an Oracle DB snapshot
 
 Upgrading your Oracle DB snapshots in Amazon RDS ensures that your database remains secure,

@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora Auto Scaling with Aurora Replicas"
+---
+
 # Amazon Aurora Auto Scaling with Aurora Replicas
 
 To meet your connectivity and workload requirements, Aurora Auto Scaling dynamically adjusts the number of Aurora Replicas (reader

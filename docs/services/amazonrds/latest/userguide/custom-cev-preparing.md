@@ -1,3 +1,7 @@
+---
+title: "Preparing to create a CEV"
+---
+
 # Preparing to create a CEV
 
 ###### Note
@@ -161,7 +165,7 @@ patches.
 - The readme files in the .zip file that you downloaded in [Step 1 (Optional): Download the manifest templates](#custom-cev.preparing.templates)
 
 - The patches listed in each Release Update (RU) in [Release\
-notes for Amazon Relational Database Service (Amazon RDS) for Oracle](../oraclereleasenotes.md)
+notes for Amazon Relational Database Service (Amazon RDS) for Oracle](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes)
 
 ## Step 3: Upload your installation files to Amazon S3
 
@@ -567,7 +571,7 @@ Each Oracle Database release has a different list of supported installation
 files. When you create your CEV manifest, make sure to specify only files that are
 supported by RDS Custom for Oracle. Otherwise, CEV creation fails with an error. All patches listed
 in [Release notes\
-for Amazon Relational Database Service (Amazon RDS) for Oracle](../oraclereleasenotes.md) are supported.
+for Amazon Relational Database Service (Amazon RDS) for Oracle](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes) are supported.
 
 ### Creating the CEV manifest
 

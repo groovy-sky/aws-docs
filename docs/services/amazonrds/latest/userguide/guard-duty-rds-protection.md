@@ -1,3 +1,7 @@
+---
+title: "Monitoring threats with Amazon GuardDuty RDS Protection"
+---
+
 # Monitoring threats with Amazon GuardDuty RDS Protection
 
 Amazon GuardDuty is a threat detection service that helps protect your accounts, containers, workloads, and

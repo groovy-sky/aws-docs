@@ -1,3 +1,7 @@
+---
+title: "Automatically rotating passwords for users"
+---
+
 # Automatically rotating passwords for users
 
 With AWS Secrets Manager, you can replace hardcoded credentials in your code (including passwords) with an API call to Secrets Manager to retrieve the secret programmatically.

@@ -1,3 +1,7 @@
+---
+title: "SQL statistics for MariaDB and MySQL"
+---
+
 # SQL statistics for MariaDB and MySQL
 
 MariaDB and MySQL collect SQL statistics only at

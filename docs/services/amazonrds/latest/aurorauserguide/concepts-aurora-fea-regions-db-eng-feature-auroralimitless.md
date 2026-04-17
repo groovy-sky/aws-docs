@@ -1,3 +1,7 @@
+---
+title: "Supported Regions Aurora PostgreSQL Limitless Database"
+---
+
 # Supported Regions Aurora PostgreSQL Limitless Database
 
 Amazon Aurora PostgreSQL Limitless Database provides automated horizontal scaling to process millions of write

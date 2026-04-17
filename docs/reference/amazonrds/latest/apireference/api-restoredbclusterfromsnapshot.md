@@ -1,3 +1,7 @@
+---
+title: "RestoreDBClusterFromSnapshot"
+---
+
 # RestoreDBClusterFromSnapshot
 
 Creates a new DB cluster from a DB snapshot or DB cluster snapshot.
@@ -293,9 +297,42 @@ Type: Boolean
 
 Required: No
 
+**EnableInternetAccessGateway**
+
+Specifies that the restored DB cluster should use internet-based connectivity
+through an internet access gateway. This allows clients to connect to the
+cluster over the internet without requiring a VPC.
+
+This parameter must be used together with `EnableVPCNetworking`
+set to `false`. When both parameters are specified, IAM database
+authentication is required. You must also specify
+`EnableIAMDatabaseAuthentication`.
+
+Valid for Cluster Type: Aurora PostgreSQL clusters
+
+Type: Boolean
+
+Required: No
+
 **EnablePerformanceInsights**
 
 Specifies whether to turn on Performance Insights for the DB cluster.
+
+Type: Boolean
+
+Required: No
+
+**EnableVPCNetworking**
+
+Specifies whether to enable VPC networking for the restored DB cluster. Set
+this parameter to `false` to create a cluster without the VPC network interface (ENI).
+
+This parameter must be used together with
+`EnableInternetAccessGateway`. When both parameters are specified,
+IAM database authentication is required. You must also specify
+`EnableIAMDatabaseAuthentication`.
+
+Valid for Cluster Type: Aurora PostgreSQL clusters
 
 Type: Boolean
 
@@ -1034,25 +1071,25 @@ https://rds.us-west-2.amazonaws.com/
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/rds-2014-10-31/restoredbclusterfromsnapshot.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/rds-2014-10-31/RestoreDBClusterFromSnapshot)
 
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/rds-2014-10-31/restoredbclusterfromsnapshot.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/rds-2014-10-31/RestoreDBClusterFromSnapshot)
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/rds-2014-10-31/restoredbclusterfromsnapshot.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/RestoreDBClusterFromSnapshot)
 
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/rds-2014-10-31/restoredbclusterfromsnapshot.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/rds-2014-10-31/RestoreDBClusterFromSnapshot)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/rds-2014-10-31/restoredbclusterfromsnapshot.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/RestoreDBClusterFromSnapshot)
 
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/rds-2014-10-31/restoredbclusterfromsnapshot.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rds-2014-10-31/RestoreDBClusterFromSnapshot)
 
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/rds-2014-10-31/restoredbclusterfromsnapshot.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rds-2014-10-31/RestoreDBClusterFromSnapshot)
 
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/rds-2014-10-31/restoredbclusterfromsnapshot.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rds-2014-10-31/RestoreDBClusterFromSnapshot)
 
-- [AWS SDK for Python](../../../../services/goto/boto3/rds-2014-10-31/restoredbclusterfromsnapshot.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/RestoreDBClusterFromSnapshot)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/rds-2014-10-31/restoredbclusterfromsnapshot.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/RestoreDBClusterFromSnapshot)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

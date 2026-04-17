@@ -1,3 +1,7 @@
+---
+title: "Oracle major version upgrades"
+---
+
 # Oracle major version upgrades
 
 To perform a major version upgrade, modify the DB instance manually. Major version

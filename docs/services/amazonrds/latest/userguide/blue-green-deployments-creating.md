@@ -1,3 +1,7 @@
+---
+title: "Creating a blue/green deployment in Amazon RDS"
+---
+
 # Creating a blue/green deployment in Amazon RDS
 
 When you create a blue/green deployment, you specify the source DB instance

@@ -1,3 +1,7 @@
+---
+title: "Working with Active Directory with RDS for SQL Server"
+---
+
 # Working with Active Directory with RDS for SQL Server
 
 You can join an RDS for SQL Server DB instance to a Microsoft Active Directory (AD) domain. Your AD domain can be hosted on

@@ -1,3 +1,7 @@
+---
+title: "Using explain plan to improve Babelfish query performance"
+---
+
 # Using explain plan to improve Babelfish query performance
 
 Starting with version 2.1.0, Babelfish includes two functions that

@@ -1,3 +1,7 @@
+---
+title: "Disabling RDS for SQL Server integration with S3"
+---
+
 # Disabling RDS for SQL Server integration with S3
 
 Following, you can find how to disable Amazon S3 integration with Amazon RDS for SQL Server. Files in

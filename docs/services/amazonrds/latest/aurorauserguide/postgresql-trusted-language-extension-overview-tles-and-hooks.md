@@ -1,3 +1,7 @@
+---
+title: "Using PostgreSQL hooks with your TLE extensions"
+---
+
 # Using PostgreSQL hooks with your TLE extensions
 
 A _hook_ is a callback mechanism available in PostgreSQL that

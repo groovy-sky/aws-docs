@@ -1,3 +1,7 @@
+---
+title: "JSON.OBJLEN"
+---
+
 # JSON.OBJLEN
 
 Gets the number of keys in the object values at the path.

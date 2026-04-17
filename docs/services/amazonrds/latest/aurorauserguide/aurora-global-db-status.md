@@ -1,3 +1,7 @@
+---
+title: "aurora_global_db_status"
+---
+
 # aurora\_global\_db\_status
 
 Displays information about various aspects of Aurora global database lag, specifically,

@@ -1,3 +1,7 @@
+---
+title: "Recommendations from Amazon RDS reference"
+---
+
 # Recommendations from Amazon RDS reference
 
 Amazon RDS generates recommendations for a resource when the resource is

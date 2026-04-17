@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting out-of-memory issues for Aurora MySQL databases"
+---
+
 # Troubleshooting out-of-memory issues for Aurora MySQL databases
 
 The Aurora MySQL `aurora_oom_response` instance-level parameter can enable the DB instance to monitor the system memory and estimate

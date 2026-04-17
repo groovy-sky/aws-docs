@@ -1,3 +1,7 @@
+---
+title: "Amazon CloudWatch metrics for Amazon Aurora"
+---
+
 # Amazon CloudWatch metrics for Amazon Aurora
 
 The `AWS/RDS` namespace includes the following metrics that apply to database entities running on

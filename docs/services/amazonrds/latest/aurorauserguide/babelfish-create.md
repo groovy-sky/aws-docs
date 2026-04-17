@@ -1,3 +1,7 @@
+---
+title: "Creating a Babelfish for Aurora PostgreSQL DB cluster"
+---
+
 # Creating a Babelfish for Aurora PostgreSQL DB cluster
 
 Babelfish for Aurora PostgreSQL is supported on Aurora PostgreSQL version 13.4 and higher.

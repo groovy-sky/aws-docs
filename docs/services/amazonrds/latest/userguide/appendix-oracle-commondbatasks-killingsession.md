@@ -1,3 +1,7 @@
+---
+title: "Terminating a session"
+---
+
 # Terminating a session
 
 To terminate a session, use the Amazon RDS procedure

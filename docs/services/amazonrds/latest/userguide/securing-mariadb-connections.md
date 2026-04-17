@@ -1,3 +1,7 @@
+---
+title: "Securing MariaDB DB instance connections"
+---
+
 # Securing MariaDB DB instance connections
 
 You can manage the security of your MariaDB DB instances.

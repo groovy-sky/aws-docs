@@ -1,3 +1,7 @@
+---
+title: "Babelfish supports linked servers"
+---
+
 # Babelfish supports linked servers
 
 Babelfish for Aurora PostgreSQL supports linked servers by using the PostgreSQL `tds_fdw`

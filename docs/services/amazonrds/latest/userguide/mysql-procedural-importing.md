@@ -1,3 +1,7 @@
+---
+title: "Restoring a backup into an Amazon RDS for MySQL DB instance"
+---
+
 # Restoring a backup into an Amazon RDS for MySQL DB instance
 
 Amazon RDS supports importing MySQL databases with backup files. You can create a backup of

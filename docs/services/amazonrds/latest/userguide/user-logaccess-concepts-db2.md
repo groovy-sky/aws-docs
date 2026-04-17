@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Db2 database log files"
+---
+
 # Amazon RDS for Db2 database log files
 
 You can access RDS for Db2 diagnostic logs and notify logs by using the Amazon RDS console, AWS CLI,

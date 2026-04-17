@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Oracle Database 12c Release 2 (12.2.0.1)"
+---
+
 # Amazon RDS for Oracle Database 12c Release 2 (12.2.0.1)
 
 For Oracle Database 12c Release 2 (12.2.0.1), Oracle changed the way it releases Oracle Database updates.

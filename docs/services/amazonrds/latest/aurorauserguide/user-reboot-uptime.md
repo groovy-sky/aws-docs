@@ -1,3 +1,7 @@
+---
+title: "Checking uptime for Aurora clusters and instances"
+---
+
 # Checking uptime for Aurora clusters and instances
 
 You can check and monitor the length of time since the last reboot for each DB instance in your Aurora cluster.

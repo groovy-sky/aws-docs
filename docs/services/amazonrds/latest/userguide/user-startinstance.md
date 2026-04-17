@@ -1,3 +1,7 @@
+---
+title: "Starting an Amazon RDS DB instance that was previously stopped"
+---
+
 # Starting an Amazon RDS DB instance that was previously stopped
 
 This topic explains how to start an Amazon RDS DB instance that was previously stopped, outlining the

@@ -1,3 +1,7 @@
+---
+title: "AWS CLI examples for custom endpoints for Amazon Aurora"
+---
+
 # AWS CLI examples for custom endpoints for Amazon Aurora
 
 The following tutorial uses AWS CLI examples with Unix shell syntax to show how you

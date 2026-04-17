@@ -1,3 +1,7 @@
+---
+title: "Database architecture for Amazon RDS Custom for Oracle"
+---
+
 # Database architecture for Amazon RDS Custom for Oracle
 
 ###### Note

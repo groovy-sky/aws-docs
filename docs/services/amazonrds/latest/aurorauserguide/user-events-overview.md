@@ -1,3 +1,7 @@
+---
+title: "Overview of Amazon RDS event notification"
+---
+
 # Overview of Amazon RDS event notification
 
 Amazon RDS groups events into categories that you can subscribe to so that you can be notified when an event in that

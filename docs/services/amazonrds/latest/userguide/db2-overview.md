@@ -1,3 +1,7 @@
+---
+title: "Overview of Db2 on Amazon RDS"
+---
+
 # Overview of Db2 on Amazon RDS
 
 You can read the following sections to get an overview of Db2 on Amazon RDS.

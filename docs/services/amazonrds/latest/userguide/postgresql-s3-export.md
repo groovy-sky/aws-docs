@@ -1,3 +1,7 @@
+---
+title: "Exporting data from an RDS for PostgreSQL DB instance to Amazon S3"
+---
+
 # Exporting data from an RDS for PostgreSQL DB instance to Amazon S3
 
 You can query data from an RDS for PostgreSQL DB instance

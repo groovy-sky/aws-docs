@@ -1,3 +1,7 @@
+---
+title: "Stored procedures for databases for RDS for Db2"
+---
+
 # Stored procedures for databases for RDS for Db2
 
 The built-in stored procedures described in this topic manage databases for Amazon RDS for Db2.

@@ -1,3 +1,7 @@
+---
+title: "Migrating a snapshot of an RDS for PostgreSQL DB instance to an Aurora PostgreSQL DB cluster"
+---
+
 # Migrating a snapshot of an RDS for PostgreSQL DB instance to an Aurora PostgreSQL DB cluster
 
 To create an Aurora PostgreSQL DB cluster, you can migrate a DB snapshot of an

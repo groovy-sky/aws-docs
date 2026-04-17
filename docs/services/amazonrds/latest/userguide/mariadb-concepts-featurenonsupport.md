@@ -1,3 +1,7 @@
+---
+title: "MariaDB features not supported by Amazon RDS"
+---
+
 # MariaDB features not supported by Amazon RDS
 
 The following MariaDB features are not supported on Amazon RDS:

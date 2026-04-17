@@ -1,3 +1,7 @@
+---
+title: "Giving Aurora access to Lambda"
+---
+
 # Giving Aurora access to Lambda
 
 Before you can invoke Lambda functions from an Aurora MySQL DB cluster, make sure to first give your cluster

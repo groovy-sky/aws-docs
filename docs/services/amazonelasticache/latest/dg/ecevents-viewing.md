@@ -1,3 +1,7 @@
+---
+title: "Viewing ElastiCache events"
+---
+
 # Viewing ElastiCache events
 
 ElastiCache logs events that relate to your cluster instances, security groups, and parameter groups.

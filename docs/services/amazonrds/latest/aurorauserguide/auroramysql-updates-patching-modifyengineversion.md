@@ -1,3 +1,7 @@
+---
+title: "Upgrading Aurora MySQL by modifying the engine version"
+---
+
 # Upgrading Aurora MySQL by modifying the engine version
 
 Upgrading the minor version of an Aurora MySQL DB cluster applies additional fixes and new features to an existing cluster.

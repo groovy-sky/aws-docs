@@ -1,3 +1,7 @@
+---
+title: "Determining who can connect to your Amazon RDS DB instance"
+---
+
 # Determining who can connect to your Amazon RDS DB instance
 
 Security groups act as virtual firewalls for your Amazon RDS DB instance, controlling inbound

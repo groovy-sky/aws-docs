@@ -1,3 +1,7 @@
+---
+title: "Finding replication group endpoints"
+---
+
 # Finding replication group endpoints
 
 An application can connect to any node in a replication group, provided that it has the DNS

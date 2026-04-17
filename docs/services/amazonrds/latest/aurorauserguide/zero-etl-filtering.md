@@ -1,3 +1,7 @@
+---
+title: "Data filtering for Aurora zero-ETL integrations"
+---
+
 # Data filtering for Aurora zero-ETL integrations
 
 Aurora

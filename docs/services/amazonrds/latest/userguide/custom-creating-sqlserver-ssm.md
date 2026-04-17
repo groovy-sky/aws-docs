@@ -1,3 +1,7 @@
+---
+title: "Connecting to your RDS Custom DB instance using AWS Systems Manager"
+---
+
 # Connecting to your RDS Custom DB instance using AWS Systems Manager
 
 After you create your RDS Custom DB instance, you can connect to it using AWS Systems Manager

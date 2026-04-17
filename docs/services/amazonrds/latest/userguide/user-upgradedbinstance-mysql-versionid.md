@@ -1,3 +1,7 @@
+---
+title: "MySQL version numbers"
+---
+
 # MySQL version numbers
 
 The version numbering sequence for the RDS for MySQL database engine is either in the

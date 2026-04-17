@@ -1,3 +1,7 @@
+---
+title: "Quotas and constraints for Amazon RDS"
+---
+
 # Quotas and constraints for Amazon RDS
 
 Following, you can find a description of the resource quotas and naming constraints for
@@ -87,7 +91,7 @@ For RDS for Oracle, you can create up to 15 read replicas per source DB instance
 Region, but we recommend limiting replicas to 5 to minimize replication lag.
 
 Backups managed by AWS Backup are considered manual DB snapshots, but don't count toward the manual snapshot quota. For information about AWS Backup,
-see the [_AWS Backup Developer Guide_](../../../aws-backup/latest/devguide.md).
+see the [_AWS Backup Developer Guide_](https://docs.aws.amazon.com/aws-backup/latest/devguide).
 
 Note that the default quota for cross-Region
 automated backups is 20 for an AWS account, the default quota for the number of

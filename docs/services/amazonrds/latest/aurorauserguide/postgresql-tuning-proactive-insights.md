@@ -1,3 +1,7 @@
+---
+title: "Tuning Aurora PostgreSQL with Amazon DevOps Guru proactive insights"
+---
+
 # Tuning Aurora PostgreSQL with Amazon DevOps Guru proactive insights
 
 DevOps Guru proactive insights detects conditions on your Aurora PostgreSQL DB clusters that can cause problems, and lets you know

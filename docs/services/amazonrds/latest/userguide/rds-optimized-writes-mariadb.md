@@ -1,3 +1,7 @@
+---
+title: "Improving write performance with Amazon RDS Optimized Writes for MariaDB"
+---
+
 # Improving write performance with Amazon RDS Optimized Writes for MariaDB
 
 You can improve the performance of write transactions with RDS Optimized Writes for

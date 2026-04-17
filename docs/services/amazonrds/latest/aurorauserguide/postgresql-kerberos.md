@@ -1,3 +1,7 @@
+---
+title: "Using Kerberos authentication with Aurora PostgreSQL"
+---
+
 # Using Kerberos authentication with Aurora PostgreSQL
 
 You can use Kerberos to authenticate users when they connect to your DB cluster

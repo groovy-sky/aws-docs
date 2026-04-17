@@ -1,3 +1,7 @@
+---
+title: "Invoking an AWS Lambda function from an  RDS for PostgreSQL DB instance"
+---
+
 # Invoking an AWS Lambda function from an RDS for PostgreSQL DB instance
 
 AWS Lambda is an event-driven compute service that lets you run code without provisioning or managing servers. It's available for use

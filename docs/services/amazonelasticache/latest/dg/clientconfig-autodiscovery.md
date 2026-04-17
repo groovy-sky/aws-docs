@@ -1,3 +1,7 @@
+---
+title: "Connecting for using auto discovery"
+---
+
 # Connecting for using auto discovery
 
 If your applications use Auto Discovery, you only need to know the configuration

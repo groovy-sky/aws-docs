@@ -1,3 +1,7 @@
+---
+title: "Target tracking scaling policies"
+---
+
 # Target tracking scaling policies
 
 With target tracking scaling policies, you select a metric and set a target value.

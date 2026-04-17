@@ -1,3 +1,7 @@
+---
+title: "Importing data from an external MariaDB database to an Amazon RDS for MariaDB DB instance"
+---
+
 # Importing data from an external MariaDB database to an Amazon RDS for MariaDB DB instance
 
 You can import data from an existing MariaDB database to an RDS for MariaDB DB instance. You do

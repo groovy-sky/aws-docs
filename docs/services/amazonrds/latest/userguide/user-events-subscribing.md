@@ -1,3 +1,7 @@
+---
+title: "Subscribing to Amazon RDS event notification"
+---
+
 # Subscribing to Amazon RDS event notification
 
 The simplest way to create a subscription is with the RDS console. If you choose to create event notification

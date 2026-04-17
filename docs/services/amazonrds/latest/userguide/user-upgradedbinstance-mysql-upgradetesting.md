@@ -1,3 +1,7 @@
+---
+title: "Testing an RDS for MySQL upgrade"
+---
+
 # Testing an RDS for MySQL upgrade
 
 Before you perform a major version upgrade on your DB instance, thoroughly test your

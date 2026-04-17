@@ -1,3 +1,7 @@
+---
+title: "Copying a DB snapshot for Amazon RDS"
+---
+
 # Copying a DB snapshot for Amazon RDS
 
 With Amazon RDS, you can copy automated backups or manual DB snapshots. After you copy a

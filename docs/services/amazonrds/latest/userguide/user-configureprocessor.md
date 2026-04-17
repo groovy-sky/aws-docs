@@ -1,3 +1,7 @@
+---
+title: "Configuring the processor for a DB instance class in RDS for Oracle"
+---
+
 # Configuring the processor for a DB instance class in RDS for Oracle
 
 Amazon RDS DB instance classes support Intel Hyper-Threading Technology, which enables multiple threads to run

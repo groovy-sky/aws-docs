@@ -1,3 +1,7 @@
+---
+title: "Creating C# or JDBC client connections to Babelfish"
+---
+
 # Creating C\# or JDBC client connections to Babelfish
 
 In the following you can find some examples of using C# and JDBC classes to

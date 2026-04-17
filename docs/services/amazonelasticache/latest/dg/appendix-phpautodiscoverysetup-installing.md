@@ -1,3 +1,7 @@
+---
+title: "Installation steps for new users"
+---
+
 # Installation steps for new users
 
 ###### Topics

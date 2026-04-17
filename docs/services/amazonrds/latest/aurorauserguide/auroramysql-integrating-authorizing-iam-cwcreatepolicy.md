@@ -1,3 +1,7 @@
+---
+title: "Creating an IAM policy to access CloudWatch Logs resources"
+---
+
 # Creating an IAM policy to access CloudWatch Logs resources
 
 Aurora can access CloudWatch Logs to export audit log data from an Aurora DB cluster.

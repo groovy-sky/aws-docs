@@ -1,3 +1,7 @@
+---
+title: "Using Kerberos authentication for Amazon RDS for Db2"
+---
+
 # Using Kerberos authentication for Amazon RDS for Db2
 
 You can use Kerberos authentication to authenticate users when they connect

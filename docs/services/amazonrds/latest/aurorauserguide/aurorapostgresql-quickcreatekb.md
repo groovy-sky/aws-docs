@@ -1,3 +1,7 @@
+---
+title: "Quick create an Aurora PostgreSQL Knowledge Base for Amazon Bedrock"
+---
+
 # Quick create an Aurora PostgreSQL Knowledge Base for Amazon Bedrock
 
 Amazon Bedrock's retrieval augmented generation (RAG) workflow relies on vector data stored in an Aurora PostgreSQL database to power content retrieval.

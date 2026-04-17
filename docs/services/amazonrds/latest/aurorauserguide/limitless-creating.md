@@ -1,3 +1,7 @@
+---
+title: "Creating Aurora PostgreSQL Limitless Database tables"
+---
+
 # Creating Aurora PostgreSQL Limitless Database tables
 
 There are three types of tables that contain your data in Aurora PostgreSQL Limitless Database:

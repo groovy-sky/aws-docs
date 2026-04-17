@@ -1,3 +1,7 @@
+---
+title: "Collecting and maintaining the Global Status History"
+---
+
 # Collecting and maintaining the Global Status History
 
 Amazon RDS provides a set of procedures that take snapshots of the values of status variables over time and write them to a table,

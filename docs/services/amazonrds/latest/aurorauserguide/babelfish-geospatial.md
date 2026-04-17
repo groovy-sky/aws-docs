@@ -1,3 +1,7 @@
+---
+title: "Babelfish supports Geospatial data types"
+---
+
 # Babelfish supports Geospatial data types
 
 Starting with versions 3.5.0 and 4.1.0, Babelfish includes support for the following two spatial data types:

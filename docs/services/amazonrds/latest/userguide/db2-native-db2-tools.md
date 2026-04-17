@@ -1,3 +1,7 @@
+---
+title: "Using native Db2 tools to migrate data from Db2 to Amazon RDS for Db2"
+---
+
 # Using native Db2 tools to migrate data from Db2 to Amazon RDS for Db2
 
 You can use several native Db2 tools, utilities, and commands to move data directly from a

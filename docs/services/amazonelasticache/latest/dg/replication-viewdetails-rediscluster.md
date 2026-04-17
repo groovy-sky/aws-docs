@@ -1,3 +1,7 @@
+---
+title: "Viewing a replication group: Valkey or Redis OSS (Cluster Mode Enabled)"
+---
+
 # Viewing a replication group: Valkey or Redis OSS (Cluster Mode Enabled)
 
 ## Viewing a Valkey or Redis OSS (Cluster Mode Enabled) cluster (Console)

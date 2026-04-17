@@ -1,3 +1,7 @@
+---
+title: "Monitoring Amazon Aurora with Database Activity Streams"
+---
+
 # Monitoring Amazon Aurora with Database Activity Streams
 
 By using Database Activity Streams, you can monitor near real-time streams of database

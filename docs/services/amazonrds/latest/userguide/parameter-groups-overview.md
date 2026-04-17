@@ -1,3 +1,7 @@
+---
+title: "Overview of parameter groups"
+---
+
 # Overview of parameter groups
 
 A _DB parameter group_ acts as a container for engine configuration values that are

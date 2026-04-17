@@ -1,3 +1,7 @@
+---
+title: "Available PostgreSQL database versions"
+---
+
 # Available PostgreSQL database versions
 
 Amazon RDS supports DB instances running several editions of PostgreSQL. You can specify

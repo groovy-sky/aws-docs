@@ -1,3 +1,7 @@
+---
+title: "IO:DataFileRead"
+---
+
 # IO:DataFileRead
 
 The `IO:DataFileRead` event occurs when a connection waits

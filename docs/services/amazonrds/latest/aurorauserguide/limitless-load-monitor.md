@@ -1,3 +1,7 @@
+---
+title: "Monitoring data loading"
+---
+
 # Monitoring data loading
 
 Aurora PostgreSQL Limitless Database provides several ways to monitor data loading jobs:

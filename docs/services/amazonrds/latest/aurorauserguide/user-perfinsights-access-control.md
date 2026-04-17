@@ -1,3 +1,7 @@
+---
+title: "Configuring access policies for Performance Insights"
+---
+
 # Configuring access policies for Performance Insights
 
 To access Performance Insights, a principal must have the appropriate permissions from AWS Identity and Access Management (IAM).

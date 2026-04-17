@@ -1,3 +1,7 @@
+---
+title: "Viewing storage volume details for your DB instance"
+---
+
 # Viewing storage volume details for your DB instance
 
 You can view your storage volume configuration from the AWS Management Console or AWS

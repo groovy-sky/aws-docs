@@ -1,3 +1,7 @@
+---
+title: "Connecting to your Microsoft SQL Server DB instance"
+---
+
 # Connecting to your Microsoft SQL Server DB instance
 
 After Amazon RDS provisions your DB instance, you can use any standard SQL client application to connect to the DB instance. In this

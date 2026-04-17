@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting cross-Region replicas for Amazon Aurora MySQL"
+---
+
 # Troubleshooting cross-Region replicas for Amazon Aurora MySQL
 
 Following you can find a list of common error messages that you might encounter when creating an Amazon Aurora

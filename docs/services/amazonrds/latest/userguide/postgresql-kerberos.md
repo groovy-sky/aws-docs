@@ -1,3 +1,7 @@
+---
+title: "Using Kerberos authentication with Amazon RDS for PostgreSQL"
+---
+
 # Using Kerberos authentication with Amazon RDS for PostgreSQL
 
 You can use Kerberos to authenticate users when they connect to your DB

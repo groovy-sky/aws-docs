@@ -1,3 +1,7 @@
+---
+title: "Connecting to RDS for MariaDB with the AWS JDBC Driver and AWS Python Driver;"
+---
+
 # Connecting to RDS for MariaDB with the AWS JDBC Driver and AWS Python Driver;
 
 Connect to RDS for MariaDB DB instances with the AWS JDBC Driver and the AWS Python Driver. For more information, see the following topics.

@@ -1,3 +1,7 @@
+---
+title: "Oracle Secure Sockets Layer"
+---
+
 # Oracle Secure Sockets Layer
 
 To enable SSL encryption for an RDS for Oracle DB instance, add the Oracle SSL option to the

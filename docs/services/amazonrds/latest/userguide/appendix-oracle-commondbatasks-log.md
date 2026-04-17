@@ -1,3 +1,7 @@
+---
+title: "Performing common log-related tasks for Oracle DB instances"
+---
+
 # Performing common log-related tasks for Oracle DB instances
 
 Following, you can find how to perform certain common DBA tasks related to logging on

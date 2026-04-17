@@ -1,3 +1,7 @@
+---
+title: "Importing a PostgreSQL database from an Amazon EC2 instance"
+---
+
 # Importing a PostgreSQL database from an Amazon EC2 instance
 
 If you have data in a PostgreSQL server on an Amazon EC2 instance and want to move it

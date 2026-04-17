@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting RDS for Db2 replication issues"
+---
+
 # Troubleshooting RDS for Db2 replication issues
 
 This topic describes common RDS for Db2 replication issues and provides troubleshooting

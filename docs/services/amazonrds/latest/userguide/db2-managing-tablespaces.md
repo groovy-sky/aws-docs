@@ -1,3 +1,7 @@
+---
+title: "Common tasks for tablespaces"
+---
+
 # Common tasks for tablespaces
 
 You can create, alter, rename, or drop tablespaces for an RDS for Db2 database. Creating, altering,

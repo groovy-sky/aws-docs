@@ -1,3 +1,7 @@
+---
+title: "synch/mutex/innodb/buf_pool_mutex"
+---
+
 # synch/mutex/innodb/buf\_pool\_mutex
 
 The `synch/mutex/innodb/buf_pool_mutex` event occurs when a thread has

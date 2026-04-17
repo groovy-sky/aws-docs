@@ -1,3 +1,7 @@
+---
+title: "Rebooting an Aurora cluster without read availability"
+---
+
 # Rebooting an Aurora cluster without read availability
 
 Without the read availability feature, you reboot an entire Aurora DB cluster by rebooting

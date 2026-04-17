@@ -1,3 +1,7 @@
+---
+title: "Stopping snapshot sharing"
+---
+
 # Stopping snapshot sharing
 
 To stop sharing a DB cluster snapshot, you remove permission from the target AWS account.

@@ -1,3 +1,7 @@
+---
+title: "Tuning memory parameters for Aurora PostgreSQL"
+---
+
 # Tuning memory parameters for Aurora PostgreSQL
 
 In Amazon Aurora PostgreSQL, you can use several parameters that control the amount of memory used

@@ -1,3 +1,7 @@
+---
+title: "Analyzing metrics with the Performance Insights dashboard"
+---
+
 # Analyzing metrics with the Performance Insights dashboard
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Working with MariaDB replication in Amazon RDS"
+---
+
 # Working with MariaDB replication in Amazon RDS
 
 You usually use read replicas to configure replication between Amazon RDS DB instances. For

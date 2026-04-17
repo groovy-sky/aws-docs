@@ -1,3 +1,7 @@
+---
+title: "Microsoft SQL Server security"
+---
+
 # Microsoft SQL Server security
 
 The Microsoft SQL Server database engine uses role-based security. The master user name that you specify when you create a DB

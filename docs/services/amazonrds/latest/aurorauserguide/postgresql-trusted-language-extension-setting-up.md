@@ -1,3 +1,7 @@
+---
+title: "Setting up Trusted Language Extensions in your Aurora PostgreSQL DB cluster"
+---
+
 # Setting up Trusted Language Extensions in your Aurora PostgreSQL DB cluster
 
 The following steps assume that your Aurora PostgreSQL DB cluster
@@ -129,7 +133,7 @@ aws rds modify-db-parameter-group \
       --region aws-region
 ```
 
-2. Use the [reboot-db-instance](../../../cli/latest/reference/rds/reboot-db-instance.md) AWS CLI
+2. Use the [reboot-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/reboot-db-instance) AWS CLI
     command to reboot the writer instance of your Aurora PostgreSQL
     DB cluster and initialize
     the `pg_tle` library.

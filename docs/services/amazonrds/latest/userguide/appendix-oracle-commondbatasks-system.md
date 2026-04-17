@@ -1,3 +1,7 @@
+---
+title: "Performing common system tasks for Oracle DB instances"
+---
+
 # Performing common system tasks for Oracle DB instances
 
 Following, you can find how to perform certain common DBA tasks related to the system

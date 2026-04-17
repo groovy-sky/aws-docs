@@ -1,3 +1,7 @@
+---
+title: "Db2 audit logging"
+---
+
 # Db2 audit logging
 
 With Db2 audit logging, Amazon RDS records database activity, including users logging on to the

@@ -1,3 +1,7 @@
+---
+title: "Importing data from Amazon S3 to your Aurora PostgreSQL DB cluster"
+---
+
 # Importing data from Amazon S3 to your Aurora PostgreSQL DB cluster
 
 You import data from your Amazon S3 bucket by using the `table_import_from_s3` function of the aws\_s3

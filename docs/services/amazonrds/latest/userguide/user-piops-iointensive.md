@@ -1,3 +1,7 @@
+---
+title: "I/O-intensive storage modifications"
+---
+
 # I/O-intensive storage modifications
 
 Amazon RDS DB instances use Amazon Elastic Block Store (EBS) volumes for database and log storage. Depending on the amount of storage requested, RDS

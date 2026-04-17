@@ -1,3 +1,7 @@
+---
+title: "Managing spatial data with the PostGIS extension"
+---
+
 # Managing spatial data with the PostGIS extension
 
 PostGIS is an extension to PostgreSQL for storing and managing spatial information. To

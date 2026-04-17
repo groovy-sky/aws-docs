@@ -1,3 +1,7 @@
+---
+title: "Configuring Oracle Connection Manager on an Amazon EC2 instance"
+---
+
 # Configuring Oracle Connection Manager on an Amazon EC2 instance
 
 Oracle Connection Manager (CMAN) is a proxy server that forwards connection requests to database servers or other

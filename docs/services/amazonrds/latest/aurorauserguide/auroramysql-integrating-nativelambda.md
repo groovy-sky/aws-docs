@@ -1,3 +1,7 @@
+---
+title: "Invoking a Lambda function with an Aurora MySQL native function"
+---
+
 # Invoking a Lambda function with an Aurora MySQL native function
 
 ###### Note

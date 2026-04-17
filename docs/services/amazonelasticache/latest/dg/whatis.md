@@ -1,3 +1,7 @@
+---
+title: "What is Amazon ElastiCache?"
+---
+
 # What is Amazon ElastiCache?
 
 Welcome to the _Amazon ElastiCache User Guide_. Amazon ElastiCache is a web service that makes

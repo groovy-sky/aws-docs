@@ -1,3 +1,7 @@
+---
+title: "Retaining archived redo logs"
+---
+
 # Retaining archived redo logs
 
 You can retain archived redo logs locally on your DB instance for use with

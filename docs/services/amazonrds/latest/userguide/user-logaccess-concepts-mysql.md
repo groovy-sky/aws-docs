@@ -1,3 +1,7 @@
+---
+title: "MySQL database log files"
+---
+
 # MySQL database log files
 
 You can monitor the MySQL logs directly through the Amazon RDS console, Amazon RDS

@@ -1,3 +1,7 @@
+---
+title: "Publishing Aurora PostgreSQL logs to Amazon CloudWatch Logs"
+---
+
 # Publishing Aurora PostgreSQL logs to Amazon CloudWatch Logs
 
 You can configure your Aurora PostgreSQL DB cluster to export log data to Amazon CloudWatch Logs on a

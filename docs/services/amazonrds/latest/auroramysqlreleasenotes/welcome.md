@@ -1,3 +1,7 @@
+---
+title: "Release notes for Amazon Aurora MySQL-Compatible Edition"
+---
+
 # Release notes for Amazon Aurora MySQL-Compatible Edition
 
 Amazon Aurora MySQL-Compatible Edition releases updates regularly. Updates are applied to Aurora MySQL DB clusters during system maintenance windows. The timing when updates

@@ -1,3 +1,7 @@
+---
+title: "Monitoring Amazon RDS log files"
+---
+
 # Monitoring Amazon RDS log files
 
 Every RDS database engine generates logs that you can access for auditing and troubleshooting. The type of logs depends on your database

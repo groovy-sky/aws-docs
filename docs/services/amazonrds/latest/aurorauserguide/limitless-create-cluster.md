@@ -1,3 +1,7 @@
+---
+title: "Creating your DB cluster"
+---
+
 # Creating your DB cluster
 
 Use the following procedures to create an Aurora PostgreSQL DB cluster that uses Aurora PostgreSQL Limitless Database.

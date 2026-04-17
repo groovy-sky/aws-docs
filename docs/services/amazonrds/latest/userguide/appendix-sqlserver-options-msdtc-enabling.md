@@ -1,3 +1,7 @@
+---
+title: "Enabling MSDTC"
+---
+
 # Enabling MSDTC
 
 Use the following process to enable MSDTC for your DB instance:

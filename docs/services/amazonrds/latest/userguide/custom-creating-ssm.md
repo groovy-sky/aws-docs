@@ -1,3 +1,7 @@
+---
+title: "Connecting to your RDS Custom DB instance using Session Manager"
+---
+
 # Connecting to your RDS Custom DB instance using Session Manager
 
 ###### Note

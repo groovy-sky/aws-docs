@@ -1,3 +1,7 @@
+---
+title: "Setting up and enabling Enhanced Monitoring"
+---
+
 # Setting up and enabling Enhanced Monitoring
 
 To use Enhanced Monitoring, you must create an IAM role, and then enable Enhanced Monitoring.

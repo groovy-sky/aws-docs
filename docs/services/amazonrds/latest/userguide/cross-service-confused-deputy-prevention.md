@@ -1,3 +1,7 @@
+---
+title: "Preventing cross-service confused deputy problems"
+---
+
 # Preventing cross-service confused deputy problems
 
 The _confused deputy problem_ is a security issue where an entity that

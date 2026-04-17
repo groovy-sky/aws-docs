@@ -1,3 +1,7 @@
+---
+title: "Monitoring backtracking for an Aurora MySQL DB cluster"
+---
+
 # Monitoring backtracking for an Aurora MySQL DB cluster
 
 You can view backtracking information and monitor backtracking metrics for a DB

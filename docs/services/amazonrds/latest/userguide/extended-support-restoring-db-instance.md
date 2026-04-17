@@ -1,3 +1,7 @@
+---
+title: "Restoring a DB instance or a Multi-AZ DB cluster with Amazon RDS Extended Support"
+---
+
 # Restoring a DB instance or a Multi-AZ DB cluster with Amazon RDS Extended Support
 
 When you restore a DB instance or a Multi-AZ DB cluster, select **Enable**

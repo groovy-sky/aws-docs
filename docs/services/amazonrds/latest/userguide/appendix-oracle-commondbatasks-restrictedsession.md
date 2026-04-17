@@ -1,3 +1,7 @@
+---
+title: "Enabling and disabling restricted sessions"
+---
+
 # Enabling and disabling restricted sessions
 
 To enable and disable restricted sessions, use the Amazon RDS procedure

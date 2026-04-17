@@ -1,3 +1,7 @@
+---
+title: "Creating a CEV"
+---
+
 # Creating a CEV
 
 ###### Note

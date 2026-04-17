@@ -1,3 +1,7 @@
+---
+title: "Turning on the Advanced mode of Database Insights for Amazon RDS"
+---
+
 # Turning on the Advanced mode of Database Insights for Amazon RDS
 
 To turn on the Advanced mode of Database Insights for Amazon RDS, use the following procedures.

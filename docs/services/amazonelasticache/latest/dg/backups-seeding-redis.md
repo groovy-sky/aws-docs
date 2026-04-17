@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Seeding a new node-based cluster with an externally created backup"
+---
+
 # Tutorial: Seeding a new node-based cluster with an externally created backup
 
 When you create a new Valkey or Redis OSS node-based cluster, you can seed it with data from a Valkey or Redis OSS .rdb backup file.

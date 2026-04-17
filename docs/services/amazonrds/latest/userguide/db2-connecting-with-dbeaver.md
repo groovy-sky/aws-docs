@@ -1,3 +1,7 @@
+---
+title: "Connecting to your Amazon RDS for Db2 DB instance with DBeaver"
+---
+
 # Connecting to your Amazon RDS for Db2 DB instance with DBeaver
 
 You can use third-party tools such as DBeaver to connect to Amazon RDS for Db2 DB

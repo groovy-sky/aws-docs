@@ -1,3 +1,7 @@
+---
+title: "Features not supported and features with limited support"
+---
+
 # Features not supported and features with limited support
 
 The following Microsoft SQL Server features aren't supported on Amazon RDS:

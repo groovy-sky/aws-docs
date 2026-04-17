@@ -1,3 +1,7 @@
+---
+title: "Creating and connecting to a MySQL DB instance"
+---
+
 # Creating and connecting to a MySQL DB instance
 
 This tutorial creates an EC2 instance and an RDS for MySQL DB instance. The tutorial shows you how to access the DB

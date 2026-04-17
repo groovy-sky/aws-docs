@@ -1,3 +1,7 @@
+---
+title: "Monitoring RDS for MariaDB DB engine upgrades with events"
+---
+
 # Monitoring RDS for MariaDB DB engine upgrades with events
 
 When you upgrade the engine version of an RDS for MariaDB database, Amazon RDS emits a specific event during each phase of the process. To track the progress of an upgrade, you can view or subscribe to these events.

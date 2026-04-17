@@ -1,3 +1,7 @@
+---
+title: "Tagging Amazon Aurora andAmazon RDS resources"
+---
+
 # Tagging Amazon Aurora andAmazon RDS resources
 
 An Amazon RDS _tag_ is a name-value pair that you define and associate with

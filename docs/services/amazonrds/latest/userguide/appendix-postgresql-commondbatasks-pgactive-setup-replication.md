@@ -1,3 +1,7 @@
+---
+title: "Setting up active-active replication for RDS for PostgreSQL DB instances"
+---
+
 # Setting up active-active replication for RDS for PostgreSQL DB instances
 
 The following procedure shows you how to start active-active replication between two

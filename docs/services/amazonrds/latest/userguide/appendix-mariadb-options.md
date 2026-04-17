@@ -1,3 +1,7 @@
+---
+title: "Options for MariaDB database engine"
+---
+
 # Options for MariaDB database engine
 
 Following, you can find descriptions for options, or additional features, that are available for Amazon RDS

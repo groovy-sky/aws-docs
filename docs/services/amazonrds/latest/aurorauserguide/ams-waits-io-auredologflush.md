@@ -1,3 +1,7 @@
+---
+title: "io/aurora_redo_log_flush"
+---
+
 # io/aurora\_redo\_log\_flush
 
 The `io/aurora_redo_log_flush` event occurs when a session is writing

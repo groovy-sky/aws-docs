@@ -1,3 +1,7 @@
+---
+title: "Using the postgres_fdw extension to access external data"
+---
+
 # Using the postgres\_fdw extension to access external data
 
 You can access data in a table on a remote database server with the [postgres\_fdw](https://www.postgresql.org/docs/current/static/postgres-fdw.html)

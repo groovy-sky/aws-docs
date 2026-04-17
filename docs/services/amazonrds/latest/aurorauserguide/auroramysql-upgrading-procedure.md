@@ -1,3 +1,7 @@
+---
+title: "How to perform an in-place upgrade"
+---
+
 # How to perform an in-place upgrade
 
 We recommend that you review the background material in [How the Aurora MySQL in-place major version upgrade works](auroramysql-updates-majorversionupgrade.md#AuroraMySQL.Upgrading.Sequence).

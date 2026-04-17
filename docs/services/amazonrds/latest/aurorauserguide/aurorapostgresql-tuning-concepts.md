@@ -1,3 +1,7 @@
+---
+title: "Essential concepts for Aurora PostgreSQL tuning"
+---
+
 # Essential concepts for Aurora PostgreSQL tuning
 
 Before you tune your Aurora PostgreSQL database, make sure to learn what wait events are

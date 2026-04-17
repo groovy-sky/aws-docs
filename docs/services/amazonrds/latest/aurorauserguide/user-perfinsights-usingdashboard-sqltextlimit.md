@@ -1,3 +1,7 @@
+---
+title: "Setting the SQL text limit for Aurora PostgreSQL DB instances"
+---
+
 # Setting the SQL text limit for Aurora PostgreSQL DB instances
 
 Aurora PostgreSQL

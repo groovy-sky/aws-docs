@@ -1,3 +1,7 @@
+---
+title: "Changing the SSAS mode"
+---
+
 # Changing the SSAS mode
 
 You can change the mode in which SSAS runs, either Tabular or Multidimensional. To

@@ -1,3 +1,7 @@
+---
+title: "Testing Amazon Aurora MySQL using fault injection queries"
+---
+
 # Testing Amazon Aurora MySQL using fault injection queries
 
 You can test the fault tolerance of your Aurora MySQL DB cluster by using fault injection queries. Fault injection queries are

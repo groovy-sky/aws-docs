@@ -1,3 +1,7 @@
+---
+title: "Turning on the Standard mode of Database Insights for Amazon Aurora"
+---
+
 # Turning on the Standard mode of Database Insights for Amazon Aurora
 
 To turn on the Standard mode of Database Insights for Amazon Aurora, use the following procedures.

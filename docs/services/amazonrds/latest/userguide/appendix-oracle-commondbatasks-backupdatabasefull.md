@@ -1,3 +1,7 @@
+---
+title: "Performing a full database backup"
+---
+
 # Performing a full database backup
 
 You can perform a backup of all blocks of data files included in the backup using

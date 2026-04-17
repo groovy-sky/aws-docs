@@ -1,3 +1,7 @@
+---
+title: "Promoting a read replica to be a standalone DB instance"
+---
+
 # Promoting a read replica to be a standalone DB instance
 
 You can promote a read replica into a standalone DB instance. If a source DB instance has several read

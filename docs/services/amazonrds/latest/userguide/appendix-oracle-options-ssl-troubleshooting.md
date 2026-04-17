@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting SSL connections"
+---
+
 # Troubleshooting SSL connections
 
 You might query your database and receive the `ORA-28860` error.

@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora DB engine, Region, and instance class support for Performance Insights"
+---
+
 # Amazon Aurora DB engine, Region, and instance class support for Performance Insights
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "JSON.RESP"
+---
+
 # JSON.RESP
 
 Returns the JSON value at the given path in the Valkey or Redis OSS Serialization Protocol (RESP). If the value is

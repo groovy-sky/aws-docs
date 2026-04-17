@@ -1,3 +1,7 @@
+---
+title: "Adding data to a source RDS database and querying it"
+---
+
 # Adding data to a source RDS database and querying it
 
 To finish creating a zero-ETL integration that replicates data from Amazon RDS into

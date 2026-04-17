@@ -1,3 +1,7 @@
+---
+title: "Resource-level permissions"
+---
+
 # Resource-level permissions
 
 You can restrict the scope of permissions by specifying resources in an IAM policy. Many ElastiCache API actions support a resource type that

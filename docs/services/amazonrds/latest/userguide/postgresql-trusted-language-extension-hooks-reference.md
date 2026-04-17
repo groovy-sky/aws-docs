@@ -1,3 +1,7 @@
+---
+title: "Hooks reference for Trusted Language Extensions for PostgreSQL"
+---
+
 # Hooks reference for Trusted Language Extensions for PostgreSQL
 
 Trusted Language Extensions for PostgreSQL supports PostgreSQL hooks. A _hook_ is an internal callback

@@ -1,3 +1,7 @@
+---
+title: "Using SQL Server Audit"
+---
+
 # Using SQL Server Audit
 
 You can control server audits, server audit specifications, and database audit

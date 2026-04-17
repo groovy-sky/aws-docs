@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL stored procedure reference"
+---
+
 # Aurora MySQL stored procedure reference
 
 You can manage your Aurora MySQL DB cluster by calling built-in stored procedures.

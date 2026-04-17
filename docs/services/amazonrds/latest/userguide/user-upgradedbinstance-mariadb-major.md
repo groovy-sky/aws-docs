@@ -1,3 +1,7 @@
+---
+title: "Major version upgrades for RDS for MariaDB"
+---
+
 # Major version upgrades for RDS for MariaDB
 
 Major version upgrades can contain database changes that are not backward-compatible

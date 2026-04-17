@@ -1,3 +1,7 @@
+---
+title: "Improving query performance for RDS for MariaDB with Amazon RDS Optimized Reads"
+---
+
 # Improving query performance for RDS for MariaDB with Amazon RDS Optimized Reads
 
 You can achieve faster query processing for RDS for MariaDB with Amazon RDS Optimized Reads. An RDS for MariaDB DB

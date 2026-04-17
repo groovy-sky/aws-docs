@@ -1,3 +1,7 @@
+---
+title: "Exporting Performance Insights metrics as a new dashboard to CloudWatch"
+---
+
 # Exporting Performance Insights metrics as a new dashboard to CloudWatch
 
 Choose a preconfigured or custom metrics dashboard from the Performance Insights dashboard and export

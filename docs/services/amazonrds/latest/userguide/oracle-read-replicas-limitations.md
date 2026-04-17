@@ -1,3 +1,7 @@
+---
+title: "Requirements and considerations for RDS for Oracle replicas"
+---
+
 # Requirements and considerations for RDS for Oracle replicas
 
 Before creating an Oracle replica, familiarize yourself with the following requirements

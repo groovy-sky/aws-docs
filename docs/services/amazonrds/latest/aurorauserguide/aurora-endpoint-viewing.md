@@ -1,3 +1,7 @@
+---
+title: "Viewing custom endpoints"
+---
+
 # Viewing custom endpoints
 
 To view custom endpoints with the AWS Management Console, go to the cluster detail page for the

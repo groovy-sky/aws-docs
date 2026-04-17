@@ -1,3 +1,7 @@
+---
+title: "MariaDB on Amazon RDS SQL reference"
+---
+
 # MariaDB on Amazon RDS SQL reference
 
 Following, you can find descriptions of system stored procedures that are available for Amazon RDS

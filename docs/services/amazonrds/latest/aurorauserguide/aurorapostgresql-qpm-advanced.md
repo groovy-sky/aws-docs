@@ -1,3 +1,7 @@
+---
+title: "Advanced features in Query Plan Management"
+---
+
 # Advanced features in Query Plan Management
 
 Following you can find information about the advanced Aurora PostgreSQL Query Plan Management (QPM) features:

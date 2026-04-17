@@ -1,3 +1,7 @@
+---
+title: "Monitoring Aurora PostgreSQL Limitless Database"
+---
+
 # Monitoring Aurora PostgreSQL Limitless Database
 
 You can use Amazon CloudWatch, Enhanced Monitoring, and Performance Insights to monitor Aurora PostgreSQL Limitless Database. There are also new statistics functions and views, and wait events, for Aurora PostgreSQL Limitless Database

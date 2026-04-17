@@ -1,3 +1,7 @@
+---
+title: "Multi-AZ deployments for Amazon RDS for Microsoft SQL Server"
+---
+
 # Multi-AZ deployments for Amazon RDS for Microsoft SQL Server
 
 Multi-AZ deployments provide increased availability, data durability, and fault tolerance for DB instances. In the event of planned

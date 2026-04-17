@@ -1,3 +1,7 @@
+---
+title: "Enabling and disabling IAM database authentication"
+---
+
 # Enabling and disabling IAM database authentication
 
 By default, IAM database authentication is disabled on DB

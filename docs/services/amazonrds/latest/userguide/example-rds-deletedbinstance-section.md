@@ -1,3 +1,7 @@
+---
+title: "Use DeleteDBInstance with an AWS SDK or CLI"
+---
+
 # Use `DeleteDBInstance` with an AWS SDK or CLI
 
 The following code examples show how to use `DeleteDBInstance`.
@@ -40,7 +44,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DeleteDBInstance](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/deletedbinstance.md)
+[DeleteDBInstance](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DeleteDBInstance)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -83,7 +87,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/c
 ```
 
 - For API details, see
-[DeleteDBInstance](../../../../reference/goto/sdkforcpp/rds-2014-10-31/deletedbinstance.md)
+[DeleteDBInstance](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DeleteDBInstance)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -239,7 +243,7 @@ public class DeleteDBInstance {
 ```
 
 - For API details, see
-[DeleteDBInstance](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/deletedbinstance.md)
+[DeleteDBInstance](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DeleteDBInstance)
 in _AWS SDK for Java 2.x API Reference_.
 
 Kotlin
@@ -310,7 +314,7 @@ try {
 ```
 
 - For API details, see
-[DeleteDBInstance](../../../../reference/goto/sdkforphpv3/rds-2014-10-31/deletedbinstance.md)
+[DeleteDBInstance](https://docs.aws.amazon.com/goto/SdkForPHPV3/rds-2014-10-31/DeleteDBInstance)
 in _AWS SDK for PHP API Reference_.
 
 Python
@@ -370,7 +374,7 @@ class InstanceWrapper:
 ```
 
 - For API details, see
-[DeleteDBInstance](../../../goto/boto3/rds-2014-10-31/deletedbinstance.md)
+[DeleteDBInstance](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DeleteDBInstance)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Swift

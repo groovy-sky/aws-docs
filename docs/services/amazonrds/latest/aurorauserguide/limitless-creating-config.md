@@ -1,3 +1,7 @@
+---
+title: "Creating limitless tables by using variables"
+---
+
 # Creating limitless tables by using variables
 
 You can use variables to create sharded and reference tables by setting the table creation mode. Then the tables that you create will use this

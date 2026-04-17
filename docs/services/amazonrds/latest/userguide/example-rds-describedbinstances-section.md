@@ -1,3 +1,7 @@
+---
+title: "Use DescribeDBInstances with an AWS SDK or CLI"
+---
+
 # Use `DescribeDBInstances` with an AWS SDK or CLI
 
 The following code examples show how to use `DescribeDBInstances`.
@@ -43,7 +47,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DescribeDBInstances](../../../../reference/goto/dotnetsdkv3/rds-2014-10-31/describedbinstances.md)
+[DescribeDBInstances](https://docs.aws.amazon.com/goto/DotNetSDKV3/rds-2014-10-31/DescribeDBInstances)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -104,7 +108,7 @@ bool AwsDoc::RDS::describeDBInstance(const Aws::String &dbInstanceIdentifier,
 ```
 
 - For API details, see
-[DescribeDBInstances](../../../../reference/goto/sdkforcpp/rds-2014-10-31/describedbinstances.md)
+[DescribeDBInstances](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/DescribeDBInstances)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -261,7 +265,7 @@ public class DescribeDBInstances {
 ```
 
 - For API details, see
-[DescribeDBInstances](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/describedbinstances.md)
+[DescribeDBInstances](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeDBInstances)
 in _AWS SDK for Java 2.x API Reference_.
 
 Kotlin
@@ -333,7 +337,7 @@ try {
 ```
 
 - For API details, see
-[DescribeDBInstances](../../../../reference/goto/sdkforphpv3/rds-2014-10-31/describedbinstances.md)
+[DescribeDBInstances](https://docs.aws.amazon.com/goto/SdkForPHPV3/rds-2014-10-31/DescribeDBInstances)
 in _AWS SDK for PHP API Reference_.
 
 Python
@@ -394,7 +398,7 @@ class InstanceWrapper:
 ```
 
 - For API details, see
-[DescribeDBInstances](../../../goto/boto3/rds-2014-10-31/describedbinstances.md)
+[DescribeDBInstances](https://docs.aws.amazon.com/goto/boto3/rds-2014-10-31/DescribeDBInstances)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -431,7 +435,7 @@ end
 ```
 
 - For API details, see
-[DescribeDBInstances](../../../../reference/goto/sdkforrubyv3/rds-2014-10-31/describedbinstances.md)
+[DescribeDBInstances](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/DescribeDBInstances)
 in _AWS SDK for Ruby API Reference_.
 
 Swift

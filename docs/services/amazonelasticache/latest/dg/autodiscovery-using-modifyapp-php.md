@@ -1,3 +1,7 @@
+---
+title: "Using the ElastiCache Cluster Client for PHP"
+---
+
 # Using the ElastiCache Cluster Client for PHP
 
 The program below demonstrates how to use the ElastiCache Cluster Client to connect

@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL global status variables"
+---
+
 # Aurora MySQL global status variables
 
 Aurora MySQL includes status variables from community MySQL and variables that are unique

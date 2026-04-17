@@ -1,3 +1,7 @@
+---
+title: "Using Custom Data Types in TLE"
+---
+
 # Using Custom Data Types in TLE
 
 PostgreSQL supports commands to register new base types (also known as scalar types)

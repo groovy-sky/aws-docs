@@ -1,3 +1,7 @@
+---
+title: "Maintaining an Amazon Aurora DB cluster"
+---
+
 # Maintaining an Amazon Aurora DB cluster
 
 Periodically, Amazon RDS performs maintenance on Amazon RDS resources. The following topics describe these maintenance actions and how to apply them.

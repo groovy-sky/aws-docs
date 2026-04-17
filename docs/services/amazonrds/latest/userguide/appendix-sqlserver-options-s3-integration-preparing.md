@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for integrating RDS for SQL Server with S3"
+---
+
 # Prerequisites for integrating RDS for SQL Server with S3
 
 Before you begin, find or create the S3 bucket that you want to use. Also, add permissions so that the RDS DB instance can access the S3 bucket.

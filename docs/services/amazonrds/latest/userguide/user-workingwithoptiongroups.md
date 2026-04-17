@@ -1,3 +1,7 @@
+---
+title: "Working with option groups"
+---
+
 # Working with option groups
 
 Some DB engines offer additional features that make it easier to manage data and

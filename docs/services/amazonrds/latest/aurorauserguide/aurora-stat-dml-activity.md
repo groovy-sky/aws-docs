@@ -1,3 +1,7 @@
+---
+title: "aurora_stat_dml_activity"
+---
+
 # aurora\_stat\_dml\_activity
 
 Reports cumulative activity for each type of data manipulation language (DML)

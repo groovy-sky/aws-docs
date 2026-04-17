@@ -1,3 +1,7 @@
+---
+title: "Turning on the Advanced mode of Database Insights for Amazon Aurora"
+---
+
 # Turning on the Advanced mode of Database Insights for Amazon Aurora
 
 To turn on the Advanced mode of Database Insights for Amazon Aurora, use the following procedures.

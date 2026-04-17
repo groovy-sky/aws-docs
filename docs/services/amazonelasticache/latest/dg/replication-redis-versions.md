@@ -1,3 +1,7 @@
+---
+title: "How synchronization and backup are implemented"
+---
+
 # How synchronization and backup are implemented
 
 All supported versions of Valkey and Redis OSS support backup and synchronization between the primary and replica nodes.

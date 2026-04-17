@@ -1,3 +1,7 @@
+---
+title: "Oracle Transparent Data Encryption"
+---
+
 # Oracle Transparent Data Encryption
 
 Amazon RDS supports Oracle Transparent Data Encryption (TDE), a feature of the Oracle Advanced

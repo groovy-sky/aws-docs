@@ -1,3 +1,7 @@
+---
+title: "Connecting to your DB instance using IAM authentication"
+---
+
 # Connecting to your DB instance using IAM authentication
 
 With IAM database authentication, you use an authentication token when you connect

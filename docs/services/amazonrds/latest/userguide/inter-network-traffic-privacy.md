@@ -1,3 +1,7 @@
+---
+title: "Internetwork traffic privacy"
+---
+
 # Internetwork traffic privacy
 
 Connections are protected both between Amazon RDS

@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL database engine updates 2023-11-13 (version 3.04.1, compatible with MySQL 8.0.28)"
+---
+
 # Aurora MySQL database engine updates 2023-11-13 (version 3.04.1, compatible with MySQL 8.0.28)
 
 **Version:** 3.04.1

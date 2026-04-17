@@ -1,3 +1,7 @@
+---
+title: "Overview of the Performance Schema for Performance Insights on Amazon RDS for MariaDB or MySQL"
+---
+
 # Overview of the Performance Schema for Performance Insights on Amazon RDS for MariaDB or MySQL
 
 The Performance Schema is an optional feature for monitoring Amazon RDS

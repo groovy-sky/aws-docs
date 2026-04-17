@@ -1,3 +1,7 @@
+---
+title: "Finding the connection information for a MariaDB DB instance"
+---
+
 # Finding the connection information for a MariaDB DB instance
 
 The connection information for a DB instance includes its endpoint, port, and a valid database user, such

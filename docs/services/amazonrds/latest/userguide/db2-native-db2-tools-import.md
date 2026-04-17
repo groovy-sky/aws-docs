@@ -1,3 +1,7 @@
+---
+title: "Importing data from a client machine to Amazon RDS for Db2 with the IMPORT command"
+---
+
 # Importing data from a client machine to Amazon RDS for Db2 with the IMPORT command
 
 You can use the `IMPORT` command from a client machine to import your data into

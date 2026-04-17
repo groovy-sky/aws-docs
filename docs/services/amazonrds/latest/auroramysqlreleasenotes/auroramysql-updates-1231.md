@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL database engine updates 2020-11-24 (version 1.23.1) (Deprecated)"
+---
+
 # Aurora MySQL database engine updates 2020-11-24 (version 1.23.1) (Deprecated)
 
 **Version:** 1.23.1

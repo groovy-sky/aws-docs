@@ -1,3 +1,7 @@
+---
+title: "Adding Performance Insights metrics to an existing CloudWatch dashboard"
+---
+
 # Adding Performance Insights metrics to an existing CloudWatch dashboard
 
 Add a preconfigured or custom metrics dashboard to an existing CloudWatch dashboard. You can add a label to the

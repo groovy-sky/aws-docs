@@ -1,3 +1,7 @@
+---
+title: "Common tasks for buffer pools"
+---
+
 # Common tasks for buffer pools
 
 You can create, alter, or drop buffer pools for an RDS for Db2 database. Creating, altering,

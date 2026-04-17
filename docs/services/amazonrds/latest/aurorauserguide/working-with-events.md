@@ -1,3 +1,7 @@
+---
+title: "Monitoring Amazon Aurora events"
+---
+
 # Monitoring Amazon Aurora events
 
 An _event_ indicates a change in an environment. This can be an AWS environment, an SaaS partner service or

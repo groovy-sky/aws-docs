@@ -1,3 +1,7 @@
+---
+title: "Connecting to your Db2 DB instance"
+---
+
 # Connecting to your Db2 DB instance
 
 After Amazon RDS provisions your Amazon RDS for Db2 DB instance, you can use any standard SQL client

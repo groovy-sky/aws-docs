@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Oracle GoldenGate"
+---
+
 # Troubleshooting Oracle GoldenGate
 
 This section explains the most common issues when using Oracle GoldenGate with Amazon RDS for Oracle.

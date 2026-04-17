@@ -1,3 +1,7 @@
+---
+title: "Lock:advisory"
+---
+
 # Lock:advisory
 
 The `Lock:advisory` event occurs when a PostgreSQL application uses a lock to

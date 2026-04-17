@@ -1,3 +1,7 @@
+---
+title: "Analyzing queries with the Top SQL tab in Performance Insights"
+---
+
 # Analyzing queries with the Top SQL tab in Performance Insights
 
 In the Amazon RDS Performance Insights dashboard, you can find information about running and recent queries in the **Top SQL** tab

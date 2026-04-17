@@ -1,3 +1,7 @@
+---
+title: "Versions with Amazon RDS Extended Support"
+---
+
 # Versions with Amazon RDS Extended Support
 
 RDS Extended Support is available for Aurora MySQL and for Aurora PostgreSQL. For

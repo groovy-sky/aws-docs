@@ -1,3 +1,7 @@
+---
+title: "Setting the SQL text limit for Amazon RDS for PostgreSQL DB instances"
+---
+
 # Setting the SQL text limit for Amazon RDS for PostgreSQL DB instances
 
 Amazon RDS for PostgreSQL

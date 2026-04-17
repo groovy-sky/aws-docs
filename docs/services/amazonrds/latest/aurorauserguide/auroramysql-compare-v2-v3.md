@@ -1,3 +1,7 @@
+---
+title: "Comparing Aurora MySQL version 2 and Aurora MySQL version 3"
+---
+
 # Comparing Aurora MySQL version 2 and Aurora MySQL version 3
 
 Use the following to learn about changes to be aware of when you upgrade your Aurora MySQL version 2 cluster to version

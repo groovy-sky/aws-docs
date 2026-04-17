@@ -1,3 +1,7 @@
+---
+title: "LWLock:BufferIO (IPC:BufferIO)"
+---
+
 # LWLock:BufferIO (IPC:BufferIO)
 
 The `LWLock:BufferIO` event occurs when Aurora PostgreSQL or RDS for PostgreSQL is waiting for other processes to

@@ -1,3 +1,7 @@
+---
+title: "Aurora MySQL isolation levels"
+---
+
 # Aurora MySQL isolation levels
 
 Learn how DB instances in an Aurora MySQL cluster implement the database property of

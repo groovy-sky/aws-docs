@@ -1,3 +1,7 @@
+---
+title: "Viewing a replication group's details (AWS CLI)"
+---
+
 # Viewing a replication group's details (AWS CLI)
 
 You can view the details for a replication group using the AWS CLI `describe-replication-groups` command.

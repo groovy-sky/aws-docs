@@ -1,3 +1,7 @@
+---
+title: "Configuring an RDS for Oracle instance store"
+---
+
 # Configuring an RDS for Oracle instance store
 
 By default, 100% of instance store space is allocated to the temporary tablespace. To configure the instance store to allocate space to

@@ -1,3 +1,7 @@
+---
+title: "Use DescribeAccountAttributes with an AWS SDK or CLI"
+---
+
 # Use `DescribeAccountAttributes` with an AWS SDK or CLI
 
 The following code examples show how to use `DescribeAccountAttributes`.
@@ -162,7 +166,7 @@ public class DescribeAccountAttributes {
 ```
 
 - For API details, see
-[DescribeAccountAttributes](../../../../reference/goto/sdkforjavav2/rds-2014-10-31/describeaccountattributes.md)
+[DescribeAccountAttributes](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeAccountAttributes)
 in _AWS SDK for Java 2.x API Reference_.
 
 Kotlin

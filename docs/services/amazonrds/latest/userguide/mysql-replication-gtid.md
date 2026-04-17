@@ -1,3 +1,7 @@
+---
+title: "Using GTID-based replication"
+---
+
 # Using GTID-based replication
 
 The following content explains how to use global transaction identifiers (GTIDs) with

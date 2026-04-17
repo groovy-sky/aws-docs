@@ -1,3 +1,7 @@
+---
+title: "Babelfish architecture"
+---
+
 # Babelfish architecture
 
 When you create an Aurora PostgreSQL cluster with Babelfish turned on, Aurora provisions

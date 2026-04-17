@@ -1,3 +1,7 @@
+---
+title: "Lettuce client configuration (Valkey and Redis OSS)"
+---
+
 # Lettuce client configuration (Valkey and Redis OSS)
 
 This section describes the recommended Java and Lettuce configuration options, and how they

@@ -1,3 +1,7 @@
+---
+title: "Working with unlogged tables in Aurora PostgreSQL"
+---
+
 # Working with unlogged tables in Aurora PostgreSQL
 
 Amazon Aurora PostgreSQL supports unlogged tables that are crash-safe and maintain data

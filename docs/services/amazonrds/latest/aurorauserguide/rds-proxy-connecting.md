@@ -1,3 +1,7 @@
+---
+title: "Connecting to a database through RDS Proxy"
+---
+
 # Connecting to a database through RDS Proxy
 
 You connect to an Aurora DB cluster or cluster that uses

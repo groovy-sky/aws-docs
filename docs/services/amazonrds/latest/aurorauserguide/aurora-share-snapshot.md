@@ -1,3 +1,7 @@
+---
+title: "Sharing a DB cluster snapshot"
+---
+
 # Sharing a DB cluster snapshot
 
 Using Amazon RDS, you can share a manual DB cluster snapshot in the following ways:

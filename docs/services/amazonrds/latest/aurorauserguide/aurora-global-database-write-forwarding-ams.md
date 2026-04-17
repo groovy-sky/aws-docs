@@ -1,3 +1,7 @@
+---
+title: "Using write forwarding in an Aurora MySQL global database"
+---
+
 # Using write forwarding in an Aurora MySQL global database
 
 ###### Topics

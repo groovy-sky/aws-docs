@@ -1,3 +1,7 @@
+---
+title: "Deleting a blue/green deployment in Amazon RDS"
+---
+
 # Deleting a blue/green deployment in Amazon RDS
 
 You can delete a blue/green deployment before or after you switch it over.

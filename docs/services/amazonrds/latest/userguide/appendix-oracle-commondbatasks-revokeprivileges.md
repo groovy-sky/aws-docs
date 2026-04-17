@@ -1,3 +1,7 @@
+---
+title: "Revoking SELECT or EXECUTE privileges on SYS objects"
+---
+
 # Revoking SELECT or EXECUTE privileges on SYS objects
 
 To revoke privileges on a single object, use the Amazon RDS procedure

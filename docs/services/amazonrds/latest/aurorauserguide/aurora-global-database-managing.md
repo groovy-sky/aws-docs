@@ -1,3 +1,7 @@
+---
+title: "Managing an Amazon Aurora global database"
+---
+
 # Managing an Amazon Aurora global database
 
 You perform most management

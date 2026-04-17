@@ -1,3 +1,7 @@
+---
+title: "Connecting to an Amazon RDS DB instance using a database client"
+---
+
 # Connecting to an Amazon RDS DB instance using a database client
 
 Database clients provide a user-friendly way to connect to and manage your Amazon RDS DB

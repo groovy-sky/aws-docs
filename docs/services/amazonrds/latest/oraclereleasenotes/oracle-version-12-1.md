@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS for Oracle Database 12c Release 1 (12.1.0.2)"
+---
+
 # Amazon RDS for Oracle Database 12c Release 1 (12.1.0.2)
 
 For Amazon RDS for Oracle Database 12c Release 1 (12.1.0.2), Amazon RDS incorporates bug fixes from Oracle by using

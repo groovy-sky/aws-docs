@@ -1,3 +1,7 @@
+---
+title: "SQL constructs for parallel query in Aurora MySQL"
+---
+
 # SQL constructs for parallel query in Aurora MySQL
 
 In the following section, you can find more detail about why particular SQL statements use or don't use

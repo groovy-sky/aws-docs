@@ -1,3 +1,7 @@
+---
+title: "Configuring buffer pool size and redo log capacity in MySQL 8.4"
+---
+
 # Configuring buffer pool size and redo log capacity in MySQL 8.4
 
 In MySQL 8.4, Amazon RDS enables the `innodb_dedicated_server` parameter by

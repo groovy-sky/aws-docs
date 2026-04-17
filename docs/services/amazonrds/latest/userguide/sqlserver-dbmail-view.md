@@ -1,3 +1,7 @@
+---
+title: "Viewing messages, logs, and attachments"
+---
+
 # Viewing messages, logs, and attachments
 
 You use RDS stored procedures to view messages, event logs, and attachments.

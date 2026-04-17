@@ -1,3 +1,7 @@
+---
+title: "Monitoring Amazon RDS API calls in AWS CloudTrail"
+---
+
 # Monitoring Amazon RDS API calls in AWS CloudTrail
 
 AWS CloudTrail is an AWS service that helps you audit your AWS account. AWS CloudTrail is turned on for your AWS account when

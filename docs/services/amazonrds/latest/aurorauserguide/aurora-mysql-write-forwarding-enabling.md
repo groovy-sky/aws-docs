@@ -1,3 +1,7 @@
+---
+title: "Enabling local write forwarding"
+---
+
 # Enabling local write forwarding
 
 By default, local write forwarding isn't enabled for Aurora MySQL DB clusters. You enable local write forwarding at the

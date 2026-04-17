@@ -1,3 +1,7 @@
+---
+title: "Using identity-based policies (IAM policies) for Amazon ElastiCache"
+---
+
 # Using identity-based policies (IAM policies) for Amazon ElastiCache
 
 This topic provides examples of identity-based policies in which an account

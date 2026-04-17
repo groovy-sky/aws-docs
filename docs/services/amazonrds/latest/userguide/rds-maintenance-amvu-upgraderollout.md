@@ -1,3 +1,7 @@
+---
+title: "Using AWS Organizations upgrade rollout policy for automatic minor version upgrades"
+---
+
 # Using AWS Organizations upgrade rollout policy for automatic minor version upgrades
 
 Amazon RDS supports AWS Organizations upgrade rollout policy to manage automatic minor version upgrades across

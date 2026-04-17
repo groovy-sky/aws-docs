@@ -1,3 +1,7 @@
+---
+title: "IAM policy examples for database activity streams"
+---
+
 # IAM policy examples for database activity streams
 
 Any user with appropriate AWS Identity and Access Management (IAM) role privileges for database activity streams

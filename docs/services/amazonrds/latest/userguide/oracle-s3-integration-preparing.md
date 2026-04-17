@@ -1,3 +1,7 @@
+---
+title: "Configuring IAM permissions for RDS for Oracle integration with Amazon S3"
+---
+
 # Configuring IAM permissions for RDS for Oracle integration with Amazon S3
 
 For RDS for Oracle to integrate with Amazon S3, your DB instance must have access to an Amazon S3 bucket. The Amazon VPC used by your DB instance doesn't

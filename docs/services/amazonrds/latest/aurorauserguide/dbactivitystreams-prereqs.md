@@ -1,3 +1,7 @@
+---
+title: "Network prerequisites for Aurora MySQL database activity streams"
+---
+
 # Network prerequisites for Aurora MySQL database activity streams
 
 In the following section, you can find how to configure your virtual private cloud (VPC) for

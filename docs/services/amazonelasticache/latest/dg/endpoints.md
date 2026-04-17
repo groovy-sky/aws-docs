@@ -1,3 +1,7 @@
+---
+title: "Finding connection endpoints in ElastiCache"
+---
+
 # Finding connection endpoints in ElastiCache
 
 Your application connects to your ElastiCache cluster using endpoints.

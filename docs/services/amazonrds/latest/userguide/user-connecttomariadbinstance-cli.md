@@ -1,3 +1,7 @@
+---
+title: "Connecting from the MySQL command-line client (unencrypted) for RDS for MariaDB"
+---
+
 # Connecting from the MySQL command-line client (unencrypted) for RDS for MariaDB
 
 ###### Important

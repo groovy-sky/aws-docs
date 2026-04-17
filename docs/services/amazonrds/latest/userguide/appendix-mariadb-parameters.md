@@ -1,3 +1,7 @@
+---
+title: "Parameters for MariaDB"
+---
+
 # Parameters for MariaDB
 
 By default, a MariaDB DB instance uses a DB parameter group that is specific to a MariaDB database.

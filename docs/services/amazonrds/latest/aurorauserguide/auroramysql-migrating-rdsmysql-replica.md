@@ -1,3 +1,7 @@
+---
+title: "Migrating data from an RDS for MySQL DB instance to an Amazon Aurora MySQL DB cluster by using an Aurora read replica"
+---
+
 # Migrating data from an RDS for MySQL DB instance to an Amazon Aurora MySQL DB cluster by using an Aurora read replica
 
 Aurora uses the MySQL DB engines' binary log replication functionality to create a special type of DB cluster called an

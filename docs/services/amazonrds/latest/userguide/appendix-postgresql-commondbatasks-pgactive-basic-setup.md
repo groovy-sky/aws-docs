@@ -1,3 +1,7 @@
+---
+title: "Initializing the pgactive extension capability"
+---
+
 # Initializing the pgactive extension capability
 
 To initialize the `pgactive` extension capability on your RDS for PostgreSQL DB

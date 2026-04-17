@@ -1,3 +1,7 @@
+---
+title: "Administering your RDS for Oracle DB instance"
+---
+
 # Administering your RDS for Oracle DB instance
 
 Following are the common management tasks that you perform with an RDS for Oracle DB instance. Some

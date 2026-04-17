@@ -1,3 +1,7 @@
+---
+title: "Managing Babelfish error handling with escape hatches"
+---
+
 # Managing Babelfish error handling with escape hatches
 
 Babelfish mimics SQL behavior for control flow and transaction state whenever

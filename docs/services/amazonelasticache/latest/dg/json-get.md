@@ -1,3 +1,7 @@
+---
+title: "JSON.GET"
+---
+
 # JSON.GET
 
 Returns the serialized JSON at one or multiple paths.

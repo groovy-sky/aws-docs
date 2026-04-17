@@ -1,3 +1,7 @@
+---
+title: "Managing collations and character sets for Amazon RDS for Microsoft SQL Server"
+---
+
 # Managing collations and character sets for Amazon RDS for Microsoft SQL Server
 
 This topic provide guidance on how to manage collations and character sets for Microsoft SQL

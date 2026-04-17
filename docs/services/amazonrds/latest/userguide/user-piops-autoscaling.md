@@ -1,3 +1,7 @@
+---
+title: "Managing capacity automatically with Amazon RDS storage autoscaling"
+---
+
 # Managing capacity automatically with Amazon RDS storage autoscaling
 
 If your workload is unpredictable, you can enable storage autoscaling for an Amazon RDS DB instance. To

@@ -1,3 +1,7 @@
+---
+title: "Accessing the tempdb database on Microsoft SQL Server DB instances on Amazon RDS"
+---
+
 # Accessing the tempdb database on Microsoft SQL Server DB instances on Amazon RDS
 
 You can access the `tempdb` database on your Microsoft SQL Server DB instances on

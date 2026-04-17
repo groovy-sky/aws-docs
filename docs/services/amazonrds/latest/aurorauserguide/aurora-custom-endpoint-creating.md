@@ -1,3 +1,7 @@
+---
+title: "Creating a custom endpoint"
+---
+
 # Creating a custom endpoint
 
 Create a custom endpoint using the AWS Management Console, AWS CLI, or the Amazon RDS API.

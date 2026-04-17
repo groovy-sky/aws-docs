@@ -1,3 +1,7 @@
+---
+title: "Using SSAS on Amazon RDS"
+---
+
 # Using SSAS on Amazon RDS
 
 After deploying the SSAS project, you can directly process the OLAP database on SSMS.

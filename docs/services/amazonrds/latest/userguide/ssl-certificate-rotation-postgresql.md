@@ -1,3 +1,7 @@
+---
+title: "Updating applications to connect to PostgreSQL DB instances using new SSL/TLS certificates"
+---
+
 # Updating applications to connect to PostgreSQL DB instances using new SSL/TLS certificates
 
 Certificates used for Secure Socket Layer or Transport Layer Security (SSL/TLS) typically

@@ -1,3 +1,7 @@
+---
+title: "Getting started with Amazon RDS"
+---
+
 # Getting started with Amazon RDS
 
 In the following examples, you can find how to create and connect to a DB instance using

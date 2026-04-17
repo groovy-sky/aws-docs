@@ -1,3 +1,7 @@
+---
+title: "Essential concepts for Aurora MySQL tuning"
+---
+
 # Essential concepts for Aurora MySQL tuning
 
 Before you tune your Aurora MySQL database, make sure to learn what wait events and

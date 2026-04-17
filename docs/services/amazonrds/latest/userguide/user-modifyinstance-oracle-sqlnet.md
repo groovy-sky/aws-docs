@@ -1,3 +1,7 @@
+---
+title: "Modifying connection properties using sqlnet.ora parameters"
+---
+
 # Modifying connection properties using sqlnet.ora parameters
 
 The sqlnet.ora file includes parameters that configure Oracle Net features on Oracle database servers and clients.

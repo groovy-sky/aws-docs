@@ -1,3 +1,7 @@
+---
+title: "Functions and stored procedures for Amazon RDS for Microsoft SQL Server"
+---
+
 # Functions and stored procedures for Amazon RDS for Microsoft SQL Server
 
 Following, you can find a list of the Amazon RDS functions and stored procedures that help

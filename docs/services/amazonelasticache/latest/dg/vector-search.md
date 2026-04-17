@@ -1,3 +1,7 @@
+---
+title: "Getting started with Vector Search"
+---
+
 # Getting started with Vector Search
 
 Amazon ElastiCache for Valkey supports vector search, delivering latency as low as microseconds-the lowest latency vector search with the highest throughput and best price-performance at 95%+ recall rate among popular vector databases on AWS. ElastiCache for Valkey provides capabilities to index, search, and update billions of high-dimensional vector embeddings from popular providers like Amazon Bedrock, Amazon SageMaker, Anthropic or OpenAI for fast search and retrieval with up to 99% recall. Vector search for Amazon ElastiCache is ideal for use cases where peak performance and scalability are the most important selection criteria. This includes semantic caching, retrieval-augmented generation, real-time recommendations, personalization, and anomaly detection.

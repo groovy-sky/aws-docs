@@ -1,3 +1,7 @@
+---
+title: "Support for Linked Servers with Oracle OLEDB in Amazon RDS for SQL Server"
+---
+
 # Support for Linked Servers with Oracle OLEDB in Amazon RDS for SQL Server
 
 Linked servers with the Oracle Provider for OLEDB on RDS for SQL Server lets you access external data

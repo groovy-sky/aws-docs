@@ -1,3 +1,7 @@
+---
+title: "Adding an RDS for Oracle tenant database to your CDB instance"
+---
+
 # Adding an RDS for Oracle tenant database to your CDB instance
 
 In the RDS for Oracle multi-tenant configuration, a tenant database is a PDB. To add a

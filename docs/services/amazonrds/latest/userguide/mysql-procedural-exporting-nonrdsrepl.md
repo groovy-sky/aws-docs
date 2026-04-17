@@ -1,3 +1,7 @@
+---
+title: "Exporting data from a MySQL DB instance by using replication"
+---
+
 # Exporting data from a MySQL DB instance by using replication
 
 To export data from an RDS for MySQL DB instance to a MySQL instance running external

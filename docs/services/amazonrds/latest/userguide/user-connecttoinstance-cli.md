@@ -1,3 +1,7 @@
+---
+title: "Connecting from the MySQL command-line client (unencrypted)"
+---
+
 # Connecting from the MySQL command-line client (unencrypted)
 
 ###### Important

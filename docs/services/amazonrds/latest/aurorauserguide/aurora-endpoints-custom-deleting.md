@@ -1,3 +1,7 @@
+---
+title: "Deleting a custom endpoint"
+---
+
 # Deleting a custom endpoint
 
 Delete a custom endpoint using the AWS Management Console, AWS CLI, or the Amazon RDS API.

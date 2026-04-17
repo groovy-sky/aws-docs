@@ -1,3 +1,7 @@
+---
+title: "Migrating to Amazon RDS for Db2 with AWS Database Migration Service (AWS DMS)"
+---
+
 # Migrating to Amazon RDS for Db2 with AWS Database Migration Service (AWS DMS)
 
 You can use AWS DMS for one-time migrations and then synchronize from Db2 on Linux,

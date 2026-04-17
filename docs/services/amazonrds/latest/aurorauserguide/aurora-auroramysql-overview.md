@@ -1,3 +1,7 @@
+---
+title: "Overview of Amazon Aurora MySQL"
+---
+
 # Overview of Amazon Aurora MySQL
 
 The following sections provide an overview of Amazon Aurora MySQL.

@@ -1,3 +1,7 @@
+---
+title: "Configuring delayed replication with MariaDB"
+---
+
 # Configuring delayed replication with MariaDB
 
 You can use delayed replication as a strategy for disaster recovery. With delayed

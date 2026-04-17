@@ -1,3 +1,7 @@
+---
+title: "Installing autovacuum monitoring and diagnostic tools in Aurora PostgreSQL"
+---
+
 # Installing autovacuum monitoring and diagnostic tools in Aurora PostgreSQL
 
 The `postgres_get_av_diag()` function is currently available in the following

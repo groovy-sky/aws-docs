@@ -1,3 +1,7 @@
+---
+title: "Publishing MariaDB logs to Amazon CloudWatch Logs"
+---
+
 # Publishing MariaDB logs to Amazon CloudWatch Logs
 
 You can configure your MariaDB DB instance to publish log data to a log group in

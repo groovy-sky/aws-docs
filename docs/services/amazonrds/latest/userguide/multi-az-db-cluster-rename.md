@@ -1,3 +1,7 @@
+---
+title: "Renaming a Multi-AZ DB cluster for Amazon RDS"
+---
+
 # Renaming a Multi-AZ DB cluster for Amazon RDS
 
 You can rename a Multi-AZ DB cluster by using the AWS Management Console, the AWS CLI

@@ -1,3 +1,7 @@
+---
+title: "Setting up access to transaction log backups"
+---
+
 # Setting up access to transaction log backups
 
 To set up access to transaction log backups, complete the list of requirements in the [Requirements](user-sqlserver-addlfeat-transactionlogaccess.md#USER.SQLServer.AddlFeat.TransactionLogAccess.Requirements) section,

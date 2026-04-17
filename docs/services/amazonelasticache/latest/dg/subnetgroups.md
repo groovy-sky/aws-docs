@@ -1,3 +1,7 @@
+---
+title: "Subnets and subnet groups"
+---
+
 # Subnets and subnet groups
 
 A _subnet group_ is a collection of subnets (typically private)

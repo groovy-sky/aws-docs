@@ -1,3 +1,7 @@
+---
+title: "Managing collations"
+---
+
 # Managing collations
 
 The ICU library provides collation version tracking to ensure that indexes that depend on

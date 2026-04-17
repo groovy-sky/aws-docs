@@ -1,3 +1,7 @@
+---
+title: "Granting and revoking privileges for RDS for Db2"
+---
+
 # Granting and revoking privileges for RDS for Db2
 
 Users gain access to databases through membership in groups that are attached to

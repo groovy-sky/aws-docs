@@ -1,3 +1,7 @@
+---
+title: "Resilience in Amazon RDS"
+---
+
 # Resilience in Amazon RDS
 
 The AWS global infrastructure is built around AWS Regions and Availability Zones. AWS Regions provide multiple physically separated and isolated

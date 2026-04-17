@@ -1,3 +1,7 @@
+---
+title: "IPv6 client examples for Valkey, Memcached, and Redis OSS"
+---
+
 # IPv6 client examples for Valkey, Memcached, and Redis OSS
 
 ElastiCache is compatible with Valkey, Memcached, and Redis OSS. This means that clients which support IPv6 connections should

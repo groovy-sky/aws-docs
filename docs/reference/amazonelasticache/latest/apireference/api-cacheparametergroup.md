@@ -1,3 +1,7 @@
+---
+title: "CacheParameterGroup"
+---
+
 # CacheParameterGroup
 
 Represents the output of a `CreateCacheParameterGroup` operation.
@@ -58,11 +62,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/elasticache-2015-02-02/cacheparametergroup.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/elasticache-2015-02-02/CacheParameterGroup)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/elasticache-2015-02-02/cacheparametergroup.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/elasticache-2015-02-02/CacheParameterGroup)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/elasticache-2015-02-02/cacheparametergroup.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/elasticache-2015-02-02/CacheParameterGroup)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -1,3 +1,7 @@
+---
+title: "Getting started with Amazon Relational Database Service"
+---
+
 # Getting started with Amazon Relational Database Service
 
 Amazon Relational Database Service (Amazon RDS) is a managed database service that simplifies the process of

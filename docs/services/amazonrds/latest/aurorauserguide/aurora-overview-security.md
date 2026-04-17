@@ -1,3 +1,7 @@
+---
+title: "Amazon Aurora security"
+---
+
 # Amazon Aurora security
 
 Security for Amazon Aurora is managed at three levels:
@@ -52,7 +56,7 @@ For information about configuring security, see [Security in Amazon Aurora](usin
 ## Using SSL with Aurora DB clusters
 
 Amazon Aurora DB clusters support Secure Sockets Layer (SSL) connections from applications
-using the same process and public key as Amazon RDS DB instances. For more information, see [Security with Amazon Aurora MySQL](auroramysql-security.md), [Security with Amazon Aurora PostgreSQL](aurorapostgresql-security.md), or [Using TLS/SSL with Aurora Serverless v1](aurora-serverless.md#aurora-serverless.tls).
+using the same process and public key as Amazon RDS DB instances. For more information, see [Security with Amazon Aurora MySQL](auroramysql-security.md) or [Security with Amazon Aurora PostgreSQL](aurorapostgresql-security.md).
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -1,3 +1,7 @@
+---
+title: "Setting up Amazon RDS"
+---
+
 # Setting up Amazon RDS
 
 To start using Amazon RDS, you need to set up your AWS account and create a user with

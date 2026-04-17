@@ -1,3 +1,7 @@
+---
+title: "Canceling a SQL statement in a session"
+---
+
 # Canceling a SQL statement in a session
 
 To cancel a SQL statement in a session, use the Amazon RDS procedure

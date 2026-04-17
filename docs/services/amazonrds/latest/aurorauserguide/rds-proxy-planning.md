@@ -1,3 +1,7 @@
+---
+title: "Planning where to use RDS Proxy"
+---
+
 # Planning where to use RDS Proxy
 
 You can determine which of your DB instances, clusters, and applications might benefit the most from using

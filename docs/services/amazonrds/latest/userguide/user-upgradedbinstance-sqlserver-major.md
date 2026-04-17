@@ -1,3 +1,7 @@
+---
+title: "Major version upgrades for RDS for SQL Server"
+---
+
 # Major version upgrades for RDS for SQL Server
 
 Amazon RDS currently supports the following major version upgrades to a Microsoft SQL Server DB instance.

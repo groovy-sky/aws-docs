@@ -1,3 +1,7 @@
+---
+title: "Avoiding pinning an RDS Proxy"
+---
+
 # Avoiding pinning an RDS Proxy
 
 Multiplexing is more efficient when database requests don't rely on state information from previous

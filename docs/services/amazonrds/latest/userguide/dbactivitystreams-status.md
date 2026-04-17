@@ -1,3 +1,7 @@
+---
+title: "Getting the status of a database activity stream"
+---
+
 # Getting the status of a database activity stream
 
 You can get the status of an activity stream for your Amazon RDS

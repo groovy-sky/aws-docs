@@ -1,3 +1,7 @@
+---
+title: "Using Amazon RDS delegated extension support for PostgreSQL"
+---
+
 # Using Amazon RDS delegated extension support for PostgreSQL
 
 Using Amazon RDS delegated extension support for PostgreSQL, you can delegate the extension

@@ -1,3 +1,7 @@
+---
+title: "JSON.MGET"
+---
+
 # JSON.MGET
 
 Gets serialized JSONs at the path from multiple document keys. It returns null for

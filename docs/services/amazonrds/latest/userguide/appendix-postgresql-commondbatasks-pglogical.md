@@ -1,3 +1,7 @@
+---
+title: "Using pglogical to synchronize data across instances"
+---
+
 # Using pglogical to synchronize data across instances
 
 All currently available RDS for PostgreSQL versions support the `pglogical`

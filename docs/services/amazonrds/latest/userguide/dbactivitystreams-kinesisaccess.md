@@ -1,3 +1,7 @@
+---
+title: "Accessing an activity stream from Amazon Kinesis"
+---
+
 # Accessing an activity stream from Amazon Kinesis
 
 When you enable an activity stream for a database, a Kinesis stream is created for you. From Kinesis, you can monitor your

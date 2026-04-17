@@ -1,3 +1,7 @@
+---
+title: "Working with high availability features for RDS Custom for Oracle"
+---
+
 # Working with high availability features for RDS Custom for Oracle
 
 ###### Note

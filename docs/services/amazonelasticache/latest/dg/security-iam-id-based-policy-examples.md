@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon ElastiCache"
+---
+
 # Identity-based policy examples for Amazon ElastiCache
 
 By default, users and roles don't have permission to create or modify ElastiCache

@@ -1,3 +1,7 @@
+---
+title: "Viewing retained automated backups for Amazon Aurora"
+---
+
 # Viewing retained automated backups for Amazon Aurora
 
 To view your retained automated backups in the RDS console, choose **Automated backups** in the

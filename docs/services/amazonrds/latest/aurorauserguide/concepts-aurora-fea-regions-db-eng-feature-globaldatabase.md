@@ -1,3 +1,7 @@
+---
+title: "Supported Regions and DB engines for Aurora global databases"
+---
+
 # Supported Regions and DB engines for Aurora global databases
 
 An _Aurora global database_ is a single database that

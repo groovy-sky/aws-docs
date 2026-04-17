@@ -1,3 +1,7 @@
+---
+title: "Creating a DB cluster snapshot"
+---
+
 # Creating a DB cluster snapshot
 
 Amazon RDS creates a storage volume snapshot of your DB cluster, backing up the entire DB
@@ -92,7 +96,7 @@ parameters:
 
 You can check that the DB cluster snapshot is available by looking under **Snapshots**
 on the **Maintenance & backups** tab on the detail page for the
-cluster in the AWS Management Console, by using the [`describe-db-cluster-snapshots`](../../../cli/latest/reference/rds/describe-db-cluster-snapshots.md) CLI
+cluster in the AWS Management Console, by using the [`describe-db-cluster-snapshots`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-snapshots) CLI
 command, or by using the [`DescribeDBClusterSnapshots`](../../../../reference/amazonrds/latest/apireference/api-describedbclustersnapshots.md) API action.
 
 You can also use the [`wait db-cluster-snapshot-available`](../../../cli/latest/reference/rds/wait/db-cluster-snapshot-available.md) CLI command

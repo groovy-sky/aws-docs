@@ -1,3 +1,7 @@
+---
+title: "Monitoring RDS Proxy metrics with Amazon CloudWatch"
+---
+
 # Monitoring RDS Proxy metrics with Amazon CloudWatch
 
 You can monitor RDS Proxy by using Amazon CloudWatch. CloudWatch collects and processes raw data from the proxies into readable,
