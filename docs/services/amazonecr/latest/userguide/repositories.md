@@ -1,3 +1,7 @@
+---
+title: "Amazon ECR private repositories"
+---
+
 # Amazon ECR private repositories
 
 An Amazon ECR private repository contains your Docker images, Open Container Initiative (OCI)

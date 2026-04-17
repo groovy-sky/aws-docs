@@ -1,3 +1,7 @@
+---
+title: "Pulling an image with a pull through cache rule in Amazon ECR"
+---
+
 # Pulling an image with a pull through cache rule in Amazon ECR
 
 The following examples show the command syntax to use when pulling an image

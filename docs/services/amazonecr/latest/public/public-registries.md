@@ -1,3 +1,7 @@
+---
+title: "Amazon ECR public registries"
+---
+
 # Amazon ECR public registries
 
 Amazon ECR public registries host your container images in a highly available and scalable

@@ -1,3 +1,7 @@
+---
+title: "Logging Amazon ECR actions with AWS CloudTrail"
+---
+
 # Logging Amazon ECR actions with AWS CloudTrail
 
 Amazon ECR is integrated with AWS CloudTrail, a service that provides a record of actions taken

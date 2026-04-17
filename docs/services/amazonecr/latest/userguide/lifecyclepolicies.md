@@ -1,3 +1,7 @@
+---
+title: "Automate the cleanup of images by using lifecycle policies in Amazon ECR"
+---
+
 # Automate the cleanup of images by using lifecycle policies in Amazon ECR
 
 Amazon ECR lifecycle policies provide more control over the lifecycle management of images in a

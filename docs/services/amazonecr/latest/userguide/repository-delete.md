@@ -1,3 +1,7 @@
+---
+title: "Deleting a private repository in Amazon ECR"
+---
+
 # Deleting a private repository in Amazon ECR
 
 If you're finished using a repository, you can delete it. When you delete a repository

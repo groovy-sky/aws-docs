@@ -1,3 +1,7 @@
+---
+title: "Editing an Amazon ECR public repository"
+---
+
 # Editing an Amazon ECR public repository
 
 An existing public repository can be edited to change the catalog data details that

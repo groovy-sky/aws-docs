@@ -1,3 +1,7 @@
+---
+title: "Private registry permissions in Amazon ECR"
+---
+
 # Private registry permissions in Amazon ECR
 
 Amazon ECR uses a **registry policy** to grant permissions to an AWS

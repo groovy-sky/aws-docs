@@ -1,3 +1,7 @@
+---
+title: "Lifecycle policy properties in Amazon ECR"
+---
+
 # Lifecycle policy properties in Amazon ECR
 
 Lifecycle policies have the following properties.

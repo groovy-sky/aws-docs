@@ -1,3 +1,7 @@
+---
+title: "Amazon ECR Public troubleshooting"
+---
+
 # Amazon ECR Public troubleshooting
 
 This chapter helps you find diagnostic information for Amazon ECR Public, and provides

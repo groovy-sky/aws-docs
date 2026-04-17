@@ -1,3 +1,7 @@
+---
+title: "IAM permissions required to sync an upstream registry with an Amazon ECR private registry"
+---
+
 # IAM permissions required to sync an upstream registry with an Amazon ECR private registry
 
 In addition to the Amazon ECR API permissions needed to authenticate to a private

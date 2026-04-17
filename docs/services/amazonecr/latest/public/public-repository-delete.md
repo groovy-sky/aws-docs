@@ -1,3 +1,7 @@
+---
+title: "Deleting a public repository policy statement Amazon ECR public"
+---
+
 # Deleting a public repository policy statement Amazon ECR public
 
 If you're finished using a repository, you can delete it. When you delete a repository

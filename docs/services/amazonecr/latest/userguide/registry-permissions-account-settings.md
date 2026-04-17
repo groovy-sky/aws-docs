@@ -1,3 +1,7 @@
+---
+title: "Switching to the extended registry policy scope"
+---
+
 # Switching to the extended registry policy scope
 
 ###### Important

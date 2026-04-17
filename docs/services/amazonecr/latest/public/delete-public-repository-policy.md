@@ -1,3 +1,7 @@
+---
+title: "Deleting a public repository policy statement in Amazon ECR Public"
+---
+
 # Deleting a public repository policy statement in Amazon ECR Public
 
 If you no longer want an existing repository policy statement to apply to a

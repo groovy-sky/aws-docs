@@ -1,3 +1,7 @@
+---
+title: "Restoring an image"
+---
+
 # Restoring an image
 
 When you restore an archived image, it is moved from the ECR Archive storage class

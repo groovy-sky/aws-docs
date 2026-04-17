@@ -1,3 +1,7 @@
+---
+title: "Pushing a multi-architecture image to a public repository in Amazon ECR public"
+---
+
 # Pushing a multi-architecture image to a public repository in Amazon ECR public
 
 Amazon ECR Public supports creating and pushing Docker manifest lists which are used for

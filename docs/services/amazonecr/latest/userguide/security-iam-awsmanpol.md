@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for Amazon Elastic Container Registry"
+---
+
 # AWS managed policies for Amazon Elastic Container Registry
 
 An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed

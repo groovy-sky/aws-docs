@@ -1,3 +1,7 @@
+---
+title: "Amazon ECR events and EventBridge"
+---
+
 # Amazon ECR events and EventBridge
 
 Amazon EventBridge enables you to automate your AWS services and to respond automatically to

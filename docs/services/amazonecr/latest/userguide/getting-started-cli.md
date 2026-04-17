@@ -1,3 +1,7 @@
+---
+title: "Moving an image through its lifecycle in Amazon ECR"
+---
+
 # Moving an image through its lifecycle in Amazon ECR
 
 If you are using Amazon ECR for the first time, use the following steps with the Docker CLI and

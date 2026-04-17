@@ -1,3 +1,7 @@
+---
+title: "Amazon ECR service quotas"
+---
+
 # Amazon ECR service quotas
 
 The following table provides the default service quotas for Amazon Elastic Container Registry (Amazon ECR).
@@ -65,7 +69,7 @@ metrics.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-StartLifecyclePolicyPreview
+Getting started with Amazon ECR
 
 Troubleshooting
 

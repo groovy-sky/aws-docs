@@ -1,3 +1,7 @@
+---
+title: "Pushing an image to an Amazon ECR private repository"
+---
+
 # Pushing an image to an Amazon ECR private repository
 
 You can push your Docker images, manifest lists, and Open Container Initiative (OCI)

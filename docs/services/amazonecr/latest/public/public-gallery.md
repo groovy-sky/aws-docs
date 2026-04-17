@@ -1,3 +1,7 @@
+---
+title: "Amazon ECR Public Gallery"
+---
+
 # Amazon ECR Public Gallery
 
 The Amazon ECR Public Gallery is a public website to find and share container images hosted in

@@ -1,3 +1,7 @@
+---
+title: "Setting a private repository policy statement in Amazon ECR"
+---
+
 # Setting a private repository policy statement in Amazon ECR
 
 You can add an access policy statement to a repository in the AWS Management Console by following

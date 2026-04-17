@@ -1,3 +1,7 @@
+---
+title: "Private image replication in Amazon ECR"
+---
+
 # Private image replication in Amazon ECR
 
 You can configure your Amazon ECR private registry to support the replication of your

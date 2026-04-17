@@ -1,3 +1,7 @@
+---
+title: "Creating a pull through cache rule in Amazon ECR"
+---
+
 # Creating a pull through cache rule in Amazon ECR
 
 For each upstream registry containing images that you want to cache in your Amazon ECR

@@ -1,3 +1,7 @@
+---
+title: "MetricTransformation"
+---
+
 # MetricTransformation
 
 Indicates how to transform ingested log events to metric data in a CloudWatch
@@ -92,11 +96,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/metrictransformation.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/MetricTransformation)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/metrictransformation.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/MetricTransformation)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/metrictransformation.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/MetricTransformation)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

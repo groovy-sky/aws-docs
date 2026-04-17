@@ -1,3 +1,7 @@
+---
+title: "Granting registry permissions for pull through cache in Amazon ECR"
+---
+
 # Granting registry permissions for pull through cache in Amazon ECR
 
 Amazon ECR private registry permissions may be used to scope the permissions of

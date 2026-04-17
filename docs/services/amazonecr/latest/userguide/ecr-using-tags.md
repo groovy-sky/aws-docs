@@ -1,3 +1,7 @@
+---
+title: "Tagging a private repository in Amazon ECR"
+---
+
 # Tagging a private repository in Amazon ECR
 
 To help you manage your Amazon ECR repositories, you can assign your own metadata to new or

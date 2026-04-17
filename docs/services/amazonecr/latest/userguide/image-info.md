@@ -1,3 +1,7 @@
+---
+title: "Viewing image details in Amazon ECR"
+---
+
 # Viewing image details in Amazon ECR
 
 After you push an image to your repository, you can view information about it. The

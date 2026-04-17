@@ -1,3 +1,7 @@
+---
+title: "Deleting an image in Amazon ECR"
+---
+
 # Deleting an image in Amazon ECR
 
 If you're finished using an image, you can delete it from your repository. If you're

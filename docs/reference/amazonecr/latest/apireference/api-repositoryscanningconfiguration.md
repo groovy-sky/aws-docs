@@ -1,3 +1,7 @@
+---
+title: "RepositoryScanningConfiguration"
+---
+
 # RepositoryScanningConfiguration
 
 The details of the scanning configuration for a repository.
@@ -56,11 +60,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/ecr-2015-09-21/repositoryscanningconfiguration.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/ecr-2015-09-21/RepositoryScanningConfiguration)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ecr-2015-09-21/repositoryscanningconfiguration.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecr-2015-09-21/RepositoryScanningConfiguration)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ecr-2015-09-21/repositoryscanningconfiguration.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecr-2015-09-21/RepositoryScanningConfiguration)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

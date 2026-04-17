@@ -1,3 +1,7 @@
+---
+title: "Moving an image through its lifecycle in Amazon ECR Public"
+---
+
 # Moving an image through its lifecycle in Amazon ECR Public
 
 This quick start guide walks you through the steps needed to create a Docker image,

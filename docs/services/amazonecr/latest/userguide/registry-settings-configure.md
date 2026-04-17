@@ -1,3 +1,7 @@
+---
+title: "Configuring private image replication in Amazon ECR"
+---
+
 # Configuring private image replication in Amazon ECR
 
 Configure replication per Region for your private registry. You can configure

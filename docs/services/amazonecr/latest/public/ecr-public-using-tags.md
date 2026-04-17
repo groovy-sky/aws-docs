@@ -1,3 +1,7 @@
+---
+title: "Tag an Amazon ECR Public repository"
+---
+
 # Tag an Amazon ECR Public repository
 
 To help you manage your Amazon ECR Public repositories, you can optionally assign your own

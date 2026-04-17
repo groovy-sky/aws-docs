@@ -1,3 +1,7 @@
+---
+title: "Setting up permissions for cross-account ECR to ECR PTC"
+---
+
 # Setting up permissions for cross-account ECR to ECR PTC
 
 The Amazon ECR to Amazon ECR (ECR to ECR) pull through cache feature enables automatic

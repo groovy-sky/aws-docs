@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting pull through cache issues in Amazon ECR"
+---
+
 # Troubleshooting pull through cache issues in Amazon ECR
 
 When pulling an upstream image using a pull through cache rule, the following are the

@@ -1,3 +1,7 @@
+---
+title: "Amazon ECR Public service quotas"
+---
+
 # Amazon ECR Public service quotas
 
 The following table provides the default service quotas for Amazon ECR Public. For unauthenticated customers, Amazon ECR Public supports up to 500GB of data per month. This is the max amount of data supported and isn't adjustable.

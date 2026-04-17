@@ -1,3 +1,7 @@
+---
+title: "Private registry settings in Amazon ECR"
+---
+
 # Private registry settings in Amazon ECR
 
 Amazon ECR uses private registry settings to configure features at the registry level. The

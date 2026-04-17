@@ -1,3 +1,7 @@
+---
+title: "Storing your upstream repository credentials in an AWS Secrets Manager secret"
+---
+
 # Storing your upstream repository credentials in an AWS Secrets Manager secret
 
 When creating a pull through cache rule for an upstream repository that requires

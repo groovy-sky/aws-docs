@@ -1,3 +1,7 @@
+---
+title: "Templates to control repositories created during a pull through cache, create on push, or replication action"
+---
+
 # Templates to control repositories created during a pull through cache, create on push, or replication action
 
 Use Amazon ECR repository creation templates to define the settings for repositories created by

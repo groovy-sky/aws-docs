@@ -1,3 +1,7 @@
+---
+title: "Amazon Elastic Container Registry Identity-based policy examples"
+---
+
 # Amazon Elastic Container Registry Identity-based policy examples
 
 By default, users and roles don't have permission to create or modify Amazon ECR

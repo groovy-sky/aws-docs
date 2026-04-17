@@ -1,3 +1,7 @@
+---
+title: "Pushing a multi-architecture image to an Amazon ECR private repository"
+---
+
 # Pushing a multi-architecture image to an Amazon ECR private repository
 
 You can push multi-architecture images to an Amazon ECR repository by creating and

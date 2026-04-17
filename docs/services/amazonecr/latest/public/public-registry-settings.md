@@ -1,3 +1,7 @@
+---
+title: "Updating registry settings in Amazon ECR public"
+---
+
 # Updating registry settings in Amazon ECR public
 
 Your public registry provides settings to configure a custom alias and display

@@ -1,3 +1,7 @@
+---
+title: "Blob mounting in Amazon ECR"
+---
+
 # Blob mounting in Amazon ECR
 
 Amazon ECR supports a capability called blob mounting to share common image layers across repositories within a registry.

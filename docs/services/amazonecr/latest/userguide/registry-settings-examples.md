@@ -1,3 +1,7 @@
+---
+title: "Private image replication examples for Amazon ECR"
+---
+
 # Private image replication examples for Amazon ECR
 
 The following examples show common use cases for private image replication. If you

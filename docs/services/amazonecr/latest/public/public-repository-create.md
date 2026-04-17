@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon ECR public repository to store images"
+---
+
 # Creating an Amazon ECR public repository to store images
 
 Before you can push your Docker or Open Container Initiative (OCI) images to Amazon ECR,

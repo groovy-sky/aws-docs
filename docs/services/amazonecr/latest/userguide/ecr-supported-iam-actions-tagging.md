@@ -1,3 +1,7 @@
+---
+title: "Using Tag-Based Access Control"
+---
+
 # Using Tag-Based Access Control
 
 The Amazon ECR `CreateRepository` API action enables you to specify tags when you create the

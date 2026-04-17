@@ -1,3 +1,7 @@
+---
+title: "IAM permissions for pushing an image to an Amazon ECR private repository"
+---
+
 # IAM permissions for pushing an image to an Amazon ECR private repository
 
 Users need IAM permissions to push images to Amazon ECR private repositories.

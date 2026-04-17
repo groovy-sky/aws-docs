@@ -1,3 +1,7 @@
+---
+title: "Examples of lifecycle policies in Amazon ECR"
+---
+
 # Examples of lifecycle policies in Amazon ECR
 
 The following are example lifecycle policies showing the syntax.

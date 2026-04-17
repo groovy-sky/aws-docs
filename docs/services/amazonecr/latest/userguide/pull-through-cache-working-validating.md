@@ -1,3 +1,7 @@
+---
+title: "Validating pull through cache rules in Amazon ECR"
+---
+
 # Validating pull through cache rules in Amazon ECR
 
 After you create a pull through cache rule, for upstream registries that require

@@ -1,3 +1,7 @@
+---
+title: "Viewing the contents and details of a repository in Amazon ECR public"
+---
+
 # Viewing the contents and details of a repository in Amazon ECR public
 
 After you create a public repository, you can view details about it in the AWS Management Console.

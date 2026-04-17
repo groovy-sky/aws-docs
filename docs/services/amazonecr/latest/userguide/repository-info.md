@@ -1,3 +1,7 @@
+---
+title: "Viewing the contents and details of a private repository in Amazon ECR"
+---
+
 # Viewing the contents and details of a private repository in Amazon ECR
 
 After you created a private repository, you can view details about the repository in

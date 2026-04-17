@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon ECR private repository to store images"
+---
+
 # Creating an Amazon ECR private repository to store images
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Amazon ECR public repositories"
+---
+
 # Amazon ECR public repositories
 
 Amazon Elastic Container Registry provides API operations to create, monitor, and delete public image repositories

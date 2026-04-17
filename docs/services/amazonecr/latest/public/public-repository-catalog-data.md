@@ -1,3 +1,7 @@
+---
+title: "Specifying the repository catalog data in Amazon ECR public"
+---
+
 # Specifying the repository catalog data in Amazon ECR public
 
 When you create a public repository, you specify the catalog data that helps users

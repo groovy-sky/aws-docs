@@ -1,3 +1,7 @@
+---
+title: "Processor"
+---
+
 # Processor
 
 This structure contains the information about one processor in a log transformer.
@@ -202,11 +206,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/logs-2014-03-28/processor.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/Processor)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/logs-2014-03-28/processor.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/Processor)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/logs-2014-03-28/processor.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/Processor)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

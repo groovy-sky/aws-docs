@@ -1,3 +1,7 @@
+---
+title: "Amazon ECR private registry"
+---
+
 # Amazon ECR private registry
 
 An Amazon ECR private registry hosts your container images in a highly available and scalable

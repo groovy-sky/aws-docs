@@ -1,3 +1,7 @@
+---
+title: "How Amazon ECR Public works with IAM"
+---
+
 # How Amazon ECR Public works with IAM
 
 Before you use IAM to manage access to Amazon ECR, you should understand what IAM

@@ -1,3 +1,7 @@
+---
+title: "Amazon ECR public identity-based policy examples"
+---
+
 # Amazon ECR public identity-based policy examples
 
 By default, users and roles don't have permission to create or modify Amazon ECR Public

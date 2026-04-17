@@ -1,3 +1,7 @@
+---
+title: "Sync an upstream registry with an Amazon ECR private registry"
+---
+
 # Sync an upstream registry with an Amazon ECR private registry
 
 Using pull through cache rules, you can sync the contents of an upstream registry with

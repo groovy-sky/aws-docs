@@ -1,3 +1,7 @@
+---
+title: "Public repository policies in Amazon ECR Public"
+---
+
 # Public repository policies in Amazon ECR Public
 
 Amazon ECR uses resource-based permissions to control access to public repositories. When a

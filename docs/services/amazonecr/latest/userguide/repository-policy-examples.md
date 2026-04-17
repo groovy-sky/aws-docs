@@ -1,3 +1,7 @@
+---
+title: "Private repository policy examples in Amazon ECR"
+---
+
 # Private repository policy examples in Amazon ECR
 
 ###### Important

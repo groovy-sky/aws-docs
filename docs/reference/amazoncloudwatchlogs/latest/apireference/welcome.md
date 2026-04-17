@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Amazon CloudWatch Logs enables you to monitor, store, and access your system, application, and custom log files.

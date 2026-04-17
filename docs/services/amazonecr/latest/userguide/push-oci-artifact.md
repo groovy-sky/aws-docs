@@ -1,3 +1,7 @@
+---
+title: "Pushing a Helm chart to an Amazon ECR private repository"
+---
+
 # Pushing a Helm chart to an Amazon ECR private repository
 
 You can push Open Container Initiative (OCI) artifacts to an Amazon ECR repository. To

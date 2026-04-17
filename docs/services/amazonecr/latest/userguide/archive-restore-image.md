@@ -1,3 +1,7 @@
+---
+title: "Archiving an image in Amazon ECR"
+---
+
 # Archiving an image in Amazon ECR
 
 ## What is the ECR archival storage class?

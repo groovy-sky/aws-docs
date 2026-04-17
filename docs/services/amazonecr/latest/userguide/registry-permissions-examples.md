@@ -1,3 +1,7 @@
+---
+title: "Private registry policy examples for Amazon ECR"
+---
+
 # Private registry policy examples for Amazon ECR
 
 The following examples show registry permissions policy statements that you could

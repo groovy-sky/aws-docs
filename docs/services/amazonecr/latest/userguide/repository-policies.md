@@ -1,3 +1,7 @@
+---
+title: "Private repository policies in Amazon ECR"
+---
+
 # Private repository policies in Amazon ECR
 
 Amazon ECR uses resource-based permissions to control access to repositories. Resource-based

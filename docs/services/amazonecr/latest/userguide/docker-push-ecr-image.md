@@ -1,3 +1,7 @@
+---
+title: "Pushing a Docker image to an Amazon ECR private repository"
+---
+
 # Pushing a Docker image to an Amazon ECR private repository
 
 You can push your container images to an Amazon ECR repository with the **docker**

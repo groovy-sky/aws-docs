@@ -1,3 +1,7 @@
+---
+title: "Public repository policy examples in Amazon ECR Public"
+---
+
 # Public repository policy examples in Amazon ECR Public
 
 The following examples show policy statements that you use to control the permissions

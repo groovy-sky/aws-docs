@@ -1,3 +1,7 @@
+---
+title: "Archiving an image"
+---
+
 # Archiving an image
 
 You can archive images manually using the Amazon ECR console or AWS CLI, or automatically

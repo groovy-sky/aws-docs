@@ -1,3 +1,7 @@
+---
+title: "Registry authentication in Amazon ECR public"
+---
+
 # Registry authentication in Amazon ECR public
 
 You can use the AWS Management Console, the AWS CLI, or the AWS SDKs to create and manage public

@@ -1,3 +1,7 @@
+---
+title: "Private registry authentication in Amazon ECR"
+---
+
 # Private registry authentication in Amazon ECR
 
 You can use the AWS Management Console, the AWS CLI, or the AWS SDKs to create and manage private

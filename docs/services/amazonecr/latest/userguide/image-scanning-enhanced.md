@@ -1,3 +1,7 @@
+---
+title: "Scan images for OS and programming language package vulnerabilities in Amazon ECR"
+---
+
 # Scan images for OS and programming language package vulnerabilities in Amazon ECR
 
 Amazon ECR enhanced scanning is an integration with Amazon Inspector which provides vulnerability

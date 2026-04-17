@@ -1,3 +1,7 @@
+---
+title: "Deleting an image in a public repository in Amazon ECR public"
+---
+
 # Deleting an image in a public repository in Amazon ECR public
 
 If you are done using an image, you can delete it from your public repository. You can

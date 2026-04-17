@@ -1,3 +1,7 @@
+---
+title: "What Is Amazon Elastic Container Registry Public?"
+---
+
 # What Is Amazon Elastic Container Registry Public?
 
 Amazon Elastic Container Registry Public is a managed AWS container image registry service that is secure,

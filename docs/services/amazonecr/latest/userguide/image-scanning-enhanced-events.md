@@ -1,3 +1,7 @@
+---
+title: "EventBridge events sent for enhanced scanning in Amazon ECR"
+---
+
 # EventBridge events sent for enhanced scanning in Amazon ECR
 
 When enhanced scanning is turned on, Amazon ECR sends an event to EventBridge when the scan

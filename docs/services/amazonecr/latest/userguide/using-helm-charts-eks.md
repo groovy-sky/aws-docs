@@ -1,3 +1,7 @@
+---
+title: "Installing a Helm chart on an Amazon EKS cluster"
+---
+
 # Installing a Helm chart on an Amazon EKS cluster
 
 Helm charts hosted in Amazon ECR can be installed on your Amazon EKS clusters.
