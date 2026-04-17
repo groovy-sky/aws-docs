@@ -1,3 +1,7 @@
+---
+title: "Trace sampling rate"
+---
+
 # Trace sampling rate
 
 By default, when you enable Application Signals X-Ray centralized sampling is enabled

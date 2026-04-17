@@ -1,3 +1,7 @@
+---
+title: "Collect process metrics with the procstat plugin"
+---
+
 # Collect process metrics with the procstat plugin
 
 The _procstat_ plugin enables you to collect metrics from

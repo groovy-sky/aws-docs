@@ -1,3 +1,7 @@
+---
+title: "Using the CloudWatch Synthetics Recorder for Google Chrome"
+---
+
 # Using the CloudWatch Synthetics Recorder for Google Chrome
 
 Amazon provides a CloudWatch Synthetics Recorder to help you create

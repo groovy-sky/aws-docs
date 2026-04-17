@@ -1,3 +1,7 @@
+---
+title: "Metrics concepts"
+---
+
 # Metrics concepts
 
 The following terminology and concepts are central to your understanding and use of

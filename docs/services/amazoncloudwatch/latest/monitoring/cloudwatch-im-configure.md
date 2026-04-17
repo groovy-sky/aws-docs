@@ -1,3 +1,7 @@
+---
+title: "Monitoring details in Internet Monitor (Configure page)"
+---
+
 # Monitoring details in Internet Monitor (Configure page)
 
 On the **Configure** page, you can see details about your monitor, including a list of resources that

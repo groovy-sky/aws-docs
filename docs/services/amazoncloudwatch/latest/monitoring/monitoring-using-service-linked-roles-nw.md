@@ -1,3 +1,7 @@
+---
+title: "Using a service-linked role for Network Synthetic Monitor"
+---
+
 # Using a service-linked role for Network Synthetic Monitor
 
 Network Synthetic Monitor uses the following service-linked role for the permissions that it requires to

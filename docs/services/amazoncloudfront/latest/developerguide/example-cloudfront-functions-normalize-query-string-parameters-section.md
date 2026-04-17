@@ -1,3 +1,7 @@
+---
+title: "Normalize query string parameters in a CloudFront Functions viewer request"
+---
+
 # Normalize query string parameters in a CloudFront Functions viewer request
 
 The following code example shows how to normalize query string parameters in a CloudFront Functions viewer request.

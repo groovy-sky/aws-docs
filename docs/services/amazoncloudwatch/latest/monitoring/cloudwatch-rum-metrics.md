@@ -1,3 +1,7 @@
+---
+title: "CloudWatch metrics that you can collect with CloudWatch RUM"
+---
+
 # CloudWatch metrics that you can collect with CloudWatch RUM
 
 The tables in this section lists the metrics that you automatically collect with

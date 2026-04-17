@@ -1,3 +1,7 @@
+---
+title: "Route requests to an origin closer to the viewer in a CloudFront Functions viewer request event"
+---
+
 # Route requests to an origin closer to the viewer in a CloudFront Functions viewer request event
 
 The following code example shows how to route requests to an origin closer to the viewer in a CloudFront Functions viewer request event.

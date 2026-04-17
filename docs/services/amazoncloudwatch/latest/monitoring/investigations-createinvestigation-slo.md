@@ -1,3 +1,7 @@
+---
+title: "Create an investigation from a CloudWatch Application Signals Service Level Objective (SLO)"
+---
+
 # Create an investigation from a CloudWatch Application Signals Service Level Objective (SLO)
 
 You can start an investigation from a CloudWatch Application Signals Service Level Objective (SLO)

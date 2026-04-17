@@ -1,3 +1,7 @@
+---
+title: "Query your CloudWatch metrics with CloudWatch Metrics Insights"
+---
+
 # Query your CloudWatch metrics with CloudWatch Metrics Insights
 
 CloudWatch Metrics Insights is a powerful high-performance SQL query engine that you can use to query your

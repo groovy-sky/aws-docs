@@ -1,3 +1,7 @@
+---
+title: "How partial data is handled"
+---
+
 # How partial data is handled
 
 ## How partial data from a Metrics Insights query is evaluated

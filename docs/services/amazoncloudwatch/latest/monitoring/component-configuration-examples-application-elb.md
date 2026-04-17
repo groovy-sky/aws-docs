@@ -1,3 +1,7 @@
+---
+title: "Application Elastic Load Balancing"
+---
+
 # Application Elastic Load Balancing
 
 The following example shows a component configuration in JSON format for

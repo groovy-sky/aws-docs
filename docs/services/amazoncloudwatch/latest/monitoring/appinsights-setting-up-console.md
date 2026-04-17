@@ -1,3 +1,7 @@
+---
+title: "Set up, configure, and manage your application for monitoring from the CloudWatch console"
+---
+
 # Set up, configure, and manage your application for monitoring from the CloudWatch console
 
 This section provides steps to set up, configure, and manage your application

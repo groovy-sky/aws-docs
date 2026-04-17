@@ -1,3 +1,7 @@
+---
+title: "Configuring how CloudWatch alarms treat missing data"
+---
+
 # Configuring how CloudWatch alarms treat missing data
 
 Sometimes, not every expected data point for a metric gets reported to CloudWatch. For example,

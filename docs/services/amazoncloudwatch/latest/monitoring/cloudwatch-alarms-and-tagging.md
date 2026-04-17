@@ -1,3 +1,7 @@
+---
+title: "Alarms and tagging"
+---
+
 # Alarms and tagging
 
 _Tags_ are key-value pairs that can help you organize and categorize

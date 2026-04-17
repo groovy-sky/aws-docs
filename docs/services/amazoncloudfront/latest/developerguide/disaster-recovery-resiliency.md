@@ -1,3 +1,7 @@
+---
+title: "Resilience in Amazon CloudFront"
+---
+
 # Resilience in Amazon CloudFront
 
 The AWS global infrastructure is built around AWS Regions and Availability Zones. AWS

@@ -1,3 +1,7 @@
+---
+title: "CloudWatch metric stream output in JSON format"
+---
+
 # CloudWatch metric stream output in JSON format
 
 In a CloudWatch metric stream that uses the JSON format, each Firehose record contains multiple

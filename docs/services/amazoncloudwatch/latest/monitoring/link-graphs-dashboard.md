@@ -1,3 +1,7 @@
+---
+title: "Linking graphs on a CloudWatch dashboard"
+---
+
 # Linking graphs on a CloudWatch dashboard
 
 Link graphs on a CloudWatch dashboard so that changes in time are reflected on all

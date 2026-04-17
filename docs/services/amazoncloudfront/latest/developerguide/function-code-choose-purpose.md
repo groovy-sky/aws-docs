@@ -1,3 +1,7 @@
+---
+title: "Determine function purpose"
+---
+
 # Determine function purpose
 
 Before you write your function code, determine the purpose of your function. Most

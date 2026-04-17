@@ -1,3 +1,7 @@
+---
+title: "Amazon CloudFront KeyValueStore"
+---
+
 # Amazon CloudFront KeyValueStore
 
 CloudFront KeyValueStore is a secure, global, low-latency key value datastore that allows read access from

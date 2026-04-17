@@ -1,3 +1,7 @@
+---
+title: "Use search expressions in graphs"
+---
+
 # Use search expressions in graphs
 
 Search expressions are a type of math expression that you can add to CloudWatch graphs. Search

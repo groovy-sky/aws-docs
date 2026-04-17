@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Creating a CloudWatch Lambda dashboard with function name as the variable"
+---
+
 # Tutorial: Creating a CloudWatch Lambda dashboard with function name as the variable
 
 The steps in this procedure illustrate how to create a flexible dashboard that

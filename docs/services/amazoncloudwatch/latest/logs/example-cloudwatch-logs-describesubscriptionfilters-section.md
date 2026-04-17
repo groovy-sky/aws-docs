@@ -1,3 +1,7 @@
+---
+title: "Use DescribeSubscriptionFilters with an AWS SDK"
+---
+
 # Use `DescribeSubscriptionFilters` with an AWS SDK
 
 The following code examples show how to use `DescribeSubscriptionFilters`.
@@ -70,7 +74,7 @@ List the subscription filters.
 ```
 
 - For API details, see
-[DescribeSubscriptionFilters](../../../../reference/goto/sdkforcpp/logs-2014-03-28/describesubscriptionfilters.md)
+[DescribeSubscriptionFilters](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/DescribeSubscriptionFilters)
 in _AWS SDK for C++ API Reference_.
 
 Java
@@ -172,7 +176,7 @@ public class DescribeSubscriptionFilters {
 ```
 
 - For API details, see
-[DescribeSubscriptionFilters](../../../../reference/goto/sdkforjavav2/logs-2014-03-28/describesubscriptionfilters.md)
+[DescribeSubscriptionFilters](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/DescribeSubscriptionFilters)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -210,7 +214,7 @@ export default run();
 ```
 
 - For API details, see
-[DescribeSubscriptionFilters](../../../../reference/awsjavascriptsdk/v3/latest/client/cloudwatch-logs/command/describesubscriptionfilterscommand.md)
+[DescribeSubscriptionFilters](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudwatch-logs/command/DescribeSubscriptionFiltersCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 **SDK for JavaScript (v2)**
@@ -249,7 +253,7 @@ cwl.describeSubscriptionFilters(params, function (err, data) {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/cloudwatch-examples-subscriptions.md#cloudwatch-examples-subscriptions-describing).
 
 - For API details, see
-[DescribeSubscriptionFilters](../../../../reference/goto/awsjavascriptsdk/logs-2014-03-28/describesubscriptionfilters.md)
+[DescribeSubscriptionFilters](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/logs-2014-03-28/DescribeSubscriptionFilters)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin

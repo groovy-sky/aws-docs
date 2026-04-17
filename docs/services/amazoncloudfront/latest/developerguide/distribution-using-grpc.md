@@ -1,3 +1,7 @@
+---
+title: "Using gRPC with CloudFront distributions"
+---
+
 # Using gRPC with CloudFront distributions
 
 Amazon CloudFront supports gRPC, an open-source remote procedure call (RPC) framework built on

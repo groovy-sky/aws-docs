@@ -1,3 +1,7 @@
+---
+title: "Decide to use signed URLs or signed cookies"
+---
+
 # Decide to use signed URLs or signed cookies
 
 CloudFront signed URLs and signed cookies provide the same basic functionality: they allow you to control who can access

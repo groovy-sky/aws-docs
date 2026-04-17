@@ -1,3 +1,7 @@
+---
+title: "Requirements for using SSL/TLS certificates with CloudFront"
+---
+
 # Requirements for using SSL/TLS certificates with CloudFront
 
 The requirements for SSL/TLS certificates are described in this topic. They apply to both

@@ -1,3 +1,7 @@
+---
+title: "Container Insights"
+---
+
 # Container Insights
 
 Use CloudWatch Container Insights to collect, aggregate, and summarize metrics and logs from your

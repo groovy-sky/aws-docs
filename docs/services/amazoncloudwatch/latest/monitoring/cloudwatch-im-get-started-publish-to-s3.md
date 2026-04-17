@@ -1,3 +1,7 @@
+---
+title: "Publish internet measurements to Amazon S3 in Internet Monitor"
+---
+
 # Publish internet measurements to Amazon S3 in Internet Monitor
 
 You can choose to have Internet Monitor publish internet measurements to Amazon S3 for your internet-facing traffic to the monitored city-networks (client locations

@@ -1,3 +1,7 @@
+---
+title: "Remove an alternate domain name"
+---
+
 # Remove an alternate domain name
 
 If you want to stop routing traffic for a domain or subdomain to a CloudFront distribution, follow the

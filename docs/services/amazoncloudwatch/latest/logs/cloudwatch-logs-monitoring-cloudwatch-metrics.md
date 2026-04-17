@@ -1,3 +1,7 @@
+---
+title: "Monitoring with CloudWatch metrics"
+---
+
 # Monitoring with CloudWatch metrics
 
 You can use the tables in this section to review the metrics that Amazon CloudWatch Logs sends to Amazon CloudWatch every minute.

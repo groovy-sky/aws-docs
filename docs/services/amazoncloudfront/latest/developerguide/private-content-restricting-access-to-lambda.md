@@ -1,3 +1,7 @@
+---
+title: "Restrict access to an AWS Lambda function URL origin"
+---
+
 # Restrict access to an AWS Lambda function URL origin
 
 CloudFront provides _origin access control_ (OAC) for restricting

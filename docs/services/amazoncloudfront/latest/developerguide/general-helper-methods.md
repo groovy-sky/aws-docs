@@ -1,3 +1,7 @@
+---
+title: "General helper methods"
+---
+
 # General helper methods
 
 This page provides additional helper methods inside CloudFront Functions. To use these methods,

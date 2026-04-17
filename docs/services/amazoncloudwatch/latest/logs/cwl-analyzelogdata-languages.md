@@ -1,3 +1,7 @@
+---
+title: "Supported query languages"
+---
+
 # Supported query languages
 
 The following sections list the commands supported in each query language. They also

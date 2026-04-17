@@ -1,3 +1,7 @@
+---
+title: "Scheduling canary runs using cron"
+---
+
 # Scheduling canary runs using cron
 
 Using a cron expression gives you flexibility when you schedule a canary. Cron

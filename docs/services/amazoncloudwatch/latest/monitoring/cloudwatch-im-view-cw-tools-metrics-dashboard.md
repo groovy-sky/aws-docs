@@ -1,3 +1,7 @@
+---
+title: "View Internet Monitor metrics or set alarms in CloudWatch Metrics"
+---
+
 # View Internet Monitor metrics or set alarms in CloudWatch Metrics
 
 You can view or set alarms on Internet Monitor metrics by using CloudWatch alarms and CloudWatch Metrics in the CloudWatch console. Internet Monitor publishes

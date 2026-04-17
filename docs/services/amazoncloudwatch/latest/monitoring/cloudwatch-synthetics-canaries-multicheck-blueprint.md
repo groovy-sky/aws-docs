@@ -1,3 +1,7 @@
+---
+title: "Creating multi checks blueprint canary"
+---
+
 # Creating multi checks blueprint canary
 
 Amazon CloudWatch Synthetics multi checks blueprint helps you create a Synthetics canary by

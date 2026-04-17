@@ -1,3 +1,7 @@
+---
+title: "Using the CloudWatch agent to send embedded metric format logs"
+---
+
 # Using the CloudWatch agent to send embedded metric format logs
 
 This section describes how to install and use the CloudWatch agent.

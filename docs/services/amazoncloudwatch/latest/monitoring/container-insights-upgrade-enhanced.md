@@ -1,3 +1,7 @@
+---
+title: "Upgrading to Container Insights with enhanced observability for Amazon EKS in CloudWatch"
+---
+
 # Upgrading to Container Insights with enhanced observability for Amazon EKS in CloudWatch
 
 ###### Important

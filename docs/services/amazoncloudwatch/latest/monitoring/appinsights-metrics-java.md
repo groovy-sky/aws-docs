@@ -1,3 +1,7 @@
+---
+title: "Java"
+---
+
 # Java
 
 CloudWatch Application Insights supports the following metrics:

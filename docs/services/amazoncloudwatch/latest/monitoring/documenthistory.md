@@ -1,3 +1,7 @@
+---
+title: "Document history"
+---
+
 # Document history
 
 The following table describes important changes for each release of the _Amazon CloudWatch User Guide_, beginning in June 2018. To receive notifications
@@ -128,7 +132,7 @@ capability, available within CloudWatch investigations, automatically gathers an
 correlates your telemetry data, as well as your input and any actions taken during an
 investigation, and produces a streamlined incident report. Amazon CloudWatch enhanced
 incident report generation capabilities with an AI-powered root-cause workflow that guides
-customers through the "Five Why’s" analysis technique. For more information, see [Generate incident reports](investigations-incident-reports.md)
+customers through the "Five Why’s" analysis technique. For more information, see [Generate incident reports](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-Incident-Reports)
 
 November 30, 2025
 
@@ -583,7 +587,7 @@ CloudWatch supports enabling Node.js applications for Application Signals.
 
 November 15, 2024
 
-[New CloudWatchInternetMonitorReadOnlyAccess IAM policy](cloudwatch-im-permissions.md#security-iam-awsmanpol-CloudWatchInternetMonitorReadOnlyAccess)
+[New CloudWatchInternetMonitorReadOnlyAccess IAM policy](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-IM-permissions)
 
 CloudWatch added a **CloudWatchInternetMonitorReadOnlyAccess** policy, to
 grant read-only access to actions and resources available in the CloudWatch console for
@@ -616,7 +620,7 @@ recommendations.
 
 November 1, 2024
 
-[New CloudWatchInternetMonitorFullAccess IAM policy](cloudwatch-im-permissions.md#security-iam-awsmanpol-CloudWatchInternetMonitorFullAccess)
+[New CloudWatchInternetMonitorFullAccess IAM policy](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-IM-permissions)
 
 CloudWatch added a **CloudWatchInternetMonitorFullAccess** policy, to grant
 full access to actions and resources available in the CloudWatch console for Internet Monitor.
@@ -675,7 +679,7 @@ level objectives (SLOs)](cloudwatch-servicelevelobjectives.md).
 
 September 6, 2024
 
-[Internet Monitor refreshed dashboard and latency improvement suggestions](cloudwatch-im-monitor-and-optimize.md)
+[Internet Monitor refreshed dashboard and latency improvement suggestions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-IM-monitor-and-optimize)
 
 Amazon CloudWatch Internet Monitor has launched an updated console experience, including new features for
 visualizing configuration changes that can help you reduce latency for your application.
@@ -867,7 +871,7 @@ permissions were added
 
 February 12, 2024
 
-[New service linked role and IAM policy for CloudWatch Network Monitor](monitoring-using-service-linked-roles-nw.md)
+[New service linked role and IAM policy for CloudWatch Network Monitor](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitoring-using-service-linked-roles-nw)
 
 CloudWatch added a new service-linked role, called **AWSServiceRoleForNetworkMonitor**. CloudWatch added this new service-linked
 role to allow you to create monitors to fetch network metrics between source subnets and
@@ -959,7 +963,7 @@ quickly set up a metric stream to some third-party providers.
 
 October 17, 2023
 
-[CloudWatch releases alarm recommendations](best-practice-alarms.md)
+[CloudWatch releases alarm recommendations](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Best-Practice-Alarms)
 
 CloudWatch Synthetics now provides alarm recommendations for metrics from other AWS
 services. These recommendations can help you identify the metrics that you should set
@@ -973,7 +977,7 @@ CloudWatch Synthetics released runtime `syn-nodejs-puppeteer-6.0`.
 
 September 26, 2023
 
-[Adds Amazon CloudWatch Application Insights support for cross-account applications](appinsights-cross-account.md)
+[Adds Amazon CloudWatch Application Insights support for cross-account applications](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-cross-account)
 
 You can now share CloudWatch Application Insights applications across account boundaries.
 

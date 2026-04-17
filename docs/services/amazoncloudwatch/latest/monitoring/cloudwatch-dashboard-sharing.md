@@ -1,3 +1,7 @@
+---
+title: "Sharing CloudWatch dashboards"
+---
+
 # Sharing CloudWatch dashboards
 
 You can share your CloudWatch dashboards with people who do not have direct access to your

@@ -1,3 +1,7 @@
+---
+title: "Create signed URLs and cookies using an AWS SDK"
+---
+
 # Create signed URLs and cookies using an AWS SDK
 
 The following code example shows how to create signed URLs and cookies that allow access to restricted resources.
@@ -140,7 +144,7 @@ public class SigningUtilities {
 ```
 
 - For API details, see
-[CloudFrontUtilities](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/cloudfrontutilities.md)
+[CloudFrontUtilities](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/CloudFrontUtilities)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see
@@ -149,7 +153,7 @@ This topic also includes information about getting started and details about pre
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Get started with CloudFront
+Getting started with WAF
 
 CloudFront Functions examples
 

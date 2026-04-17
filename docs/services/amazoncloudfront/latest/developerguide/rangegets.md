@@ -1,3 +1,7 @@
+---
+title: "How CloudFront processes partial requests for an object (range GETs)"
+---
+
 # How CloudFront processes partial requests for an object (range GETs)
 
 For a large object, the viewer (web browser or other client) can make multiple

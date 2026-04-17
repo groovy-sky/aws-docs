@@ -1,3 +1,7 @@
+---
+title: "Manage high-cardinality operations"
+---
+
 # Manage high-cardinality operations
 
 Application Signals includes settings in the CloudWatch agent that you can use to manage the cardinality of your

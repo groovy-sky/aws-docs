@@ -1,3 +1,7 @@
+---
+title: "anomaly"
+---
+
 # anomaly
 
 Use `anomaly` to automatically identify unusual patterns and

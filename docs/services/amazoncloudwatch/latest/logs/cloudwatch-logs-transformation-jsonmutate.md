@@ -1,3 +1,7 @@
+---
+title: "JSON mutate processors"
+---
+
 # JSON mutate processors
 
 This section contains information about the JSON mutate processors that you can use with a log event

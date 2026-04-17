@@ -1,3 +1,7 @@
+---
+title: "Sample custom widgets for a CloudWatch dashboard"
+---
+
 # Sample custom widgets for a CloudWatch dashboard
 
 AWS provides sample custom widgets in both JavaScript and

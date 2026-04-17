@@ -1,3 +1,7 @@
+---
+title: "Use DeleteDistribution with an AWS SDK or CLI"
+---
+
 # Use `DeleteDistribution` with an AWS SDK or CLI
 
 The following code examples show how to use `DeleteDistribution`.
@@ -5,7 +9,7 @@ The following code examples show how to use `DeleteDistribution`.
 Action examples are code excerpts from larger programs and must be run in context. You can see this action in
 context in the following code example:
 
-- [Get started with CloudFront](example-cloudfront-gettingstarted-section.md)
+- [Get started with a basic CloudFront distribution](example-cloudfront-gettingstarted-section.md)
 
 CLI
 
@@ -116,7 +120,7 @@ public class DeleteDistribution {
 ```
 
 - For API details, see
-[DeleteDistribution](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/deletedistribution.md)
+[DeleteDistribution](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/DeleteDistribution)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot issues in Network Flow Monitor"
+---
+
 # Troubleshoot issues in Network Flow Monitor
 
 This section provides guidance for troubleshooting errors with Network Flow Monitor, including solving issues with

@@ -1,3 +1,7 @@
+---
+title: "Create an account-level field index policy"
+---
+
 # Create an account-level field index policy
 
 Use the steps in this section to create a field index policy that applies to all

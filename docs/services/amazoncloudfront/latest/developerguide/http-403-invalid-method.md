@@ -1,3 +1,7 @@
+---
+title: "HTTP 403 status code (Invalid method)"
+---
+
 # HTTP 403 status code (Invalid method)
 
 CloudFront returns a 403 (Invalid method) error if you're trying to use an HTTP method that you

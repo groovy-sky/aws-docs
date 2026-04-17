@@ -1,3 +1,7 @@
+---
+title: "Video on demand and live streaming video with CloudFront"
+---
+
 # Video on demand and live streaming video with CloudFront
 
 You can use CloudFront to deliver video on demand (VOD) or live streaming video by using any

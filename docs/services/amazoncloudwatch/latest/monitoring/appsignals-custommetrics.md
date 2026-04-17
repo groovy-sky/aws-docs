@@ -1,3 +1,7 @@
+---
+title: "Custom metrics with Application Signals"
+---
+
 # Custom metrics with Application Signals
 
 To monitor application performance and availability, Application Signals collects standard metrics (faults, errors, and latency) and runtime metrics from discovered applications after you enable it.

@@ -1,3 +1,7 @@
+---
+title: "Features enabled by data sources"
+---
+
 # Features enabled by data sources
 
 Data sources enable advanced log processing and analytics capabilities through field

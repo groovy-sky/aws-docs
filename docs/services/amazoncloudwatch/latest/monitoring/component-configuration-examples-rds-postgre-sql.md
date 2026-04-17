@@ -1,3 +1,7 @@
+---
+title: "RDS PostgreSQL"
+---
+
 # RDS PostgreSQL
 
 The following example shows a component configurations in JSON format for RDS

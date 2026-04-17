@@ -1,3 +1,7 @@
+---
+title: "Generate a report from an investigation"
+---
+
 # Generate a report from an investigation
 
 You can generate incident reports from in-progress or completed investigations.

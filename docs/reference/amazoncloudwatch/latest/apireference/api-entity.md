@@ -1,3 +1,7 @@
+---
+title: "Entity"
+---
+
 # Entity
 
 An entity associated with metrics, to allow for finding related telemetry. An entity
@@ -57,11 +61,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/entity.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/Entity)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/entity.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/Entity)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/entity.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/Entity)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -1,3 +1,7 @@
+---
+title: "x86-64 platforms"
+---
+
 # x86-64 platforms
 
 This section lists the versions of the Lambda Insights extension for x86-64 platforms, and the ARNs to use

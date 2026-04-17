@@ -1,3 +1,7 @@
+---
+title: "Update a distribution"
+---
+
 # Update a distribution
 
 In the CloudFront console, you can see the CloudFront distributions that are associated with your

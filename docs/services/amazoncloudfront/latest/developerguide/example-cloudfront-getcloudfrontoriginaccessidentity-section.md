@@ -1,3 +1,7 @@
+---
+title: "Use GetCloudFrontOriginAccessIdentity with a CLI"
+---
+
 # Use `GetCloudFrontOriginAccessIdentity` with a CLI
 
 The following code examples show how to use `GetCloudFrontOriginAccessIdentity`.
@@ -63,7 +67,7 @@ Get-CFCloudFrontOriginAccessIdentity -Id E3XXXXXXXXXXRT
 ```
 
 - For API details, see
-[GetCloudFrontOriginAccessIdentity](../../../powershell/v4/reference.md)
+[GetCloudFrontOriginAccessIdentity](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -86,7 +90,7 @@ Get-CFCloudFrontOriginAccessIdentity -Id E3XXXXXXXXXXRT
 ```
 
 - For API details, see
-[GetCloudFrontOriginAccessIdentity](../../../powershell/v5/reference.md)
+[GetCloudFrontOriginAccessIdentity](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

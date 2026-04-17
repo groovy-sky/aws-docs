@@ -1,3 +1,7 @@
+---
+title: "Setting up the CloudWatch agent to collect cluster metrics"
+---
+
 # Setting up the CloudWatch agent to collect cluster metrics
 
 ###### Important

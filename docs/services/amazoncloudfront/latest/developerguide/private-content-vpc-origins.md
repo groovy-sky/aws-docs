@@ -1,3 +1,7 @@
+---
+title: "Restrict access with VPC origins"
+---
+
 # Restrict access with VPC origins
 
 You can use CloudFront to deliver content from applications that are hosted in your virtual

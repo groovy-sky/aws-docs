@@ -1,3 +1,7 @@
+---
+title: "Create field indexes to improve query performance and reduce scan volume"
+---
+
 # Create field indexes to improve query performance and reduce scan volume
 
 You can create _field indexes_ of fields in your log events for

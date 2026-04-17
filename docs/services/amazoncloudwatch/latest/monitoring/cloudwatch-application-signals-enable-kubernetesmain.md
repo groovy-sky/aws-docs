@@ -1,3 +1,7 @@
+---
+title: "Enable your applications on Kubernetes"
+---
+
 # Enable your applications on Kubernetes
 
 Enable CloudWatch Application Signals on Kubernetes by using the custom setup steps described in this section.

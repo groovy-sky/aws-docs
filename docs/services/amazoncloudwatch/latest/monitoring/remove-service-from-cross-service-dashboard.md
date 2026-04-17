@@ -1,3 +1,7 @@
+---
+title: "Removing a service from appearing in the CloudWatch cross-service dashboard"
+---
+
 # Removing a service from appearing in the CloudWatch cross-service dashboard
 
 You can prevent a service's metrics from appearing in the cross-service dashboard. This

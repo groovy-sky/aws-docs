@@ -1,3 +1,7 @@
+---
+title: "MetricDataQuery"
+---
+
 # MetricDataQuery
 
 This structure is used in both `GetMetricData` and
@@ -66,7 +70,7 @@ Required: No
 
 This field can contain either a Metrics Insights query, or a metric math expression to
 be performed on the returned data. For more information about Metrics Insights queries,
-see [Metrics Insights query components and syntax](../../../../services/amazoncloudwatch/latest/monitoring/cloudwatch-metrics-insights-querylanguage.md) in the _Amazon_
+see [Metrics Insights query components and syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-metrics-insights-querylanguage) in the _Amazon_
 _CloudWatch User Guide_.
 
 A math expression can use the `Id` of the other metrics or queries to refer
@@ -148,11 +152,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/metricdataquery.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/MetricDataQuery)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/metricdataquery.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/MetricDataQuery)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/metricdataquery.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/MetricDataQuery)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

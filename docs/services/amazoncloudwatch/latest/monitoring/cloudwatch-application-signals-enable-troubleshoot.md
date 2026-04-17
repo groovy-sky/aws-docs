@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting your Application Signals installation"
+---
+
 # Troubleshooting your Application Signals installation
 
 This section contains troubleshooting tips for CloudWatch Application Signals.
@@ -539,7 +543,7 @@ both the CloudWatch agent and the ADOT auto-instrumentation agent to use the lat
 ###### To upgrade your agents for services running on Amazon ECS
 
 1. Create a new task definition revision. For more information, see
-    [Updating a task definition using the console](../../../amazonecs/latest/developerguide/update-task-definition-console-v2.md).
+    [Updating a task definition using the console](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-task-definition-console-v2).
 
 2. Replace the `$IMAGE` of the `ecs-cwagent` container with the latest image tag from
     [cloudwatch-agent](https://gallery.ecr.aws/cloudwatch-agent/cloudwatch-agent)

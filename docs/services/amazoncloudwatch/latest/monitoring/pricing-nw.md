@@ -1,3 +1,7 @@
+---
+title: "Pricing for Network Synthetic Monitor"
+---
+
 # Pricing for Network Synthetic Monitor
 
 With Network Synthetic Monitor, there are no upfront costs or long-term commitments. Pricing for Network Synthetic Monitor

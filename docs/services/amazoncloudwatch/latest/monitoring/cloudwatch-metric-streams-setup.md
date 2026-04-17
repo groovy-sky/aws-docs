@@ -1,3 +1,7 @@
+---
+title: "Set up a metric stream"
+---
+
 # Set up a metric stream
 
 Use the steps in the following sections to set up a CloudWatch metric stream.

@@ -1,3 +1,7 @@
+---
+title: "Install the CloudWatch agent with the Amazon CloudWatch Observability EKS add-on or the Helm chart"
+---
+
 # Install the CloudWatch agent with the Amazon CloudWatch Observability EKS add-on or the Helm chart
 
 You can use either the Amazon CloudWatch Observability EKS add-on or the Amazon CloudWatch Observability

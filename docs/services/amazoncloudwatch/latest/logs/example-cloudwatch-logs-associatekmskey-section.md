@@ -1,3 +1,7 @@
+---
+title: "Use AssociateKmsKey with an AWS SDK"
+---
+
 # Use `AssociateKmsKey` with an AWS SDK
 
 The following code example shows how to use `AssociateKmsKey`.
@@ -58,7 +62,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[AssociateKmsKey](../../../../reference/goto/dotnetsdkv3/logs-2014-03-28/associatekmskey.md)
+[AssociateKmsKey](https://docs.aws.amazon.com/goto/DotNetSDKV3/logs-2014-03-28/AssociateKmsKey)
 in _AWS SDK for .NET API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

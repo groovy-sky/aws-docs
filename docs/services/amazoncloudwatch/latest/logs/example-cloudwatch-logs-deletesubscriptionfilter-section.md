@@ -1,3 +1,7 @@
+---
+title: "Use DeleteSubscriptionFilter with an AWS SDK"
+---
+
 # Use `DeleteSubscriptionFilter` with an AWS SDK
 
 The following code examples show how to use `DeleteSubscriptionFilter`.
@@ -46,7 +50,7 @@ Delete the subscription filter.
 ```
 
 - For API details, see
-[DeleteSubscriptionFilter](../../../../reference/goto/sdkforcpp/logs-2014-03-28/deletesubscriptionfilter.md)
+[DeleteSubscriptionFilter](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/DeleteSubscriptionFilter)
 in _AWS SDK for C++ API Reference_.
 
 Java
@@ -119,7 +123,7 @@ public class DeleteSubscriptionFilter {
 ```
 
 - For API details, see
-[DeleteSubscriptionFilter](../../../../reference/goto/sdkforjavav2/logs-2014-03-28/deletesubscriptionfilter.md)
+[DeleteSubscriptionFilter](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/DeleteSubscriptionFilter)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -157,7 +161,7 @@ export default run();
 ```
 
 - For API details, see
-[DeleteSubscriptionFilter](../../../../reference/awsjavascriptsdk/v3/latest/client/cloudwatch-logs/command/deletesubscriptionfiltercommand.md)
+[DeleteSubscriptionFilter](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudwatch-logs/command/DeleteSubscriptionFilterCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 **SDK for JavaScript (v2)**
@@ -196,7 +200,7 @@ cwl.deleteSubscriptionFilter(params, function (err, data) {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/cloudwatch-examples-subscriptions.md#cloudwatch-examples-subscriptions-deleting).
 
 - For API details, see
-[DeleteSubscriptionFilter](../../../../reference/goto/awsjavascriptsdk/logs-2014-03-28/deletesubscriptionfilter.md)
+[DeleteSubscriptionFilter](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/logs-2014-03-28/DeleteSubscriptionFilter)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin

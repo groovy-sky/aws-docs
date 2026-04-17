@@ -1,3 +1,7 @@
+---
+title: "Log classes"
+---
+
 # Log classes
 
 CloudWatch Logs offers two classes of log groups:

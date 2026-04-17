@@ -1,3 +1,7 @@
+---
+title: "Metrics collected by the CloudWatch agent"
+---
+
 # Metrics collected by the CloudWatch agent
 
 You can collect metrics from servers by installing the CloudWatch agent on the server. You can

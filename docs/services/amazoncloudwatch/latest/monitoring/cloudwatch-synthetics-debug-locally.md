@@ -1,3 +1,7 @@
+---
+title: "Test a canary locally"
+---
+
 # Test a canary locally
 
 This section explains how to modify, test, and debug CloudWatch Synthetics canaries directly

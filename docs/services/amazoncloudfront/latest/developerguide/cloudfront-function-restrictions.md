@@ -1,3 +1,7 @@
+---
+title: "Restrictions on CloudFront Functions"
+---
+
 # Restrictions on CloudFront Functions
 
 The following restrictions apply only to CloudFront Functions.

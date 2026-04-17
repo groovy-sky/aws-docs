@@ -1,3 +1,7 @@
+---
+title: "Edit or delete a canary"
+---
+
 # Edit or delete a canary
 
 You can edit or delete an existing canary.

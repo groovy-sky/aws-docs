@@ -1,3 +1,7 @@
+---
+title: "Delete a key value store"
+---
+
 # Delete a key value store
 
 You can delete your key value store by using the Amazon CloudFront console or API.

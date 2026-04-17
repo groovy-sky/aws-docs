@@ -1,3 +1,7 @@
+---
+title: "Condition keys for CloudWatch Observability Admin"
+---
+
 # Condition keys for CloudWatch Observability Admin
 
 You can use IAM policies to control access to Amazon CloudWatch Observability Admin

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting distribution issues"
+---
+
 # Troubleshooting distribution issues
 
 Use the information here to help you diagnose and fix certificate errors,

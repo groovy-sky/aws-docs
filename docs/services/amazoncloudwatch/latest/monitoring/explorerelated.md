@@ -1,3 +1,7 @@
+---
+title: "Explore related telemetry"
+---
+
 # Explore related telemetry
 
 Computer systems can generate a large amount of telemetry, including both metrics and

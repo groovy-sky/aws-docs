@@ -1,3 +1,7 @@
+---
+title: "OpenSearch Piped Processing Language (PPL)"
+---
+
 # OpenSearch Piped Processing Language (PPL)
 
 This section contains a basic introduction to querying CloudWatch Logs using OpenSearch PPL.
@@ -38,20 +42,20 @@ SQL](cwl-analyzelogdata-sql.md), and [CloudWatch Metrics Insights](../monitoring
 
 Command or functionExample queryDescription
 
-fields
+`fields`
 
 `fields field1, field2`
 
 Displays a set of fields which needs projection.
 
-join
+`join`
 
 ``LEFT JOIN left=l, right=r on l.id = r.id `join_right_lg`
                                         | fields l.field_1, r.field_2``
 
 Joins two datasets together.
 
-where
+`where`
 
 `where field1="success" | where field2 !=
                                         "i-023fe0a90929d8822" | fields field3, field4, field5,field6
@@ -60,7 +64,7 @@ where
 Filters the data based on the conditions that you
 specify.
 
-aws:fieldIndex
+`aws:fieldIndex`
 
 ``source = [`aws:fieldIndex`="region", `region` =
                                         "us-west-2"] | where status = 200 | head 10``
@@ -69,14 +73,14 @@ Returns indexed data only, by forcing a query to scan only log
 groups that are indexed on a field that you specify in the
 query.
 
-stats
+`stats`
 
 `stats count(), count(field1), min(field1), max(field1),
                                         avg(field1) by field2 | head 1000`
 
 Performs aggregations and calculations
 
-parse
+`parse`
 
 `parse field1 ".*/(?<field2>[^/]+$)" | where field2
                                         = "requestId" | fields field1, field2 | head
@@ -86,7 +90,7 @@ Extracts a regular expression (regex) pattern from a string
 and displays the extracted pattern. The extracted pattern can be
 further used to create new fields or filter data.
 
-sort
+`sort`
 
 ``stats count(), count(field1), min(field1) as
                                         field1Alias, max(`field1`), avg(`field1`) by field2 | sort
@@ -95,7 +99,7 @@ sort
 Sort the displayed results by a field name. Use sort
  -FieldName to sort in descending order.
 
-eval
+`eval`
 
 `eval field2 = field1 * 2 | fields field1, field2 | head
                                         20`
@@ -105,25 +109,25 @@ different field. This is useful to mathematically modify a
 column, apply string functions to a column, or apply date
 functions to a column.
 
-rename
+`rename`
 
 `rename field2 as field1 | fields field1;`
 
 Renames one or more fields in the search result.
 
-head
+`head`
 
 ``fields `@message` | head 20``
 
 Limits the displayed query results to the first N rows.
 
-top
+`top`
 
 `top 2 field1 by field2`
 
 Finds the most frequent values for a field.
 
-dedup
+`dedup`
 
 `dedup field1 | fields field1, field2,
                                     field3`
@@ -131,14 +135,14 @@ dedup
 Removes duplicate entries based on the fields that you
 specify.
 
-rare
+`rare`
 
 `rare field1 by field2`
 
 Finds the least frequent values of all fields in the field
 list.
 
-subquery
+`subquery`
 
 ``where field_1 IN [ search source= `subquery_lg` | fields
                                         field_2 ] | fields id, field_1 ``
@@ -146,13 +150,13 @@ subquery
 Performs complex, nested queries within your PPL
 statements.
 
-trendline
+`trendline`
 
 `trendline sma(2, field1) as field1Alias`
 
 Calculates the moving averages of fields.
 
-eventStats
+`eventStats`
 
 `eventstats sum(field1) by field2`
 
@@ -161,7 +165,7 @@ It analyzes specified fields within your events, computes
 various statistical measures, and then appends these results to
 each original event as new fields.
 
-expand
+`expand`
 
 ``eval tags_array_string = json_extract(`@message`,
                                         '$.tags')| eval tags_array =
@@ -173,7 +177,7 @@ Breaks down a field containing multiple values into separate
 rows, creating a new row for each value in the specified
 field.
 
-fillnull
+`fillnull`
 
 ``fields `@timestamp`, error_code, status_code | fillnull
                                         using status_code = "UNKNOWN", error_code =
@@ -182,7 +186,7 @@ fillnull
 Fills null fields with the value that you provide. It can be
 used in one or more fields.
 
-flatten
+`flatten`
 
 `eval metadata_struct = json_object('size',
                                         json_extract(metadata_string, '$.size'), 'color',
@@ -193,7 +197,7 @@ Flattens a field. The field must be of this type:
 `struct<?,?>` or
 `array<struct<?,?>>`.
 
-cidrmatch
+`cidrmatch`
 
 `where cidrmatch(ip, '2003:db8::/32') | fields ip
                                     `
@@ -201,7 +205,7 @@ cidrmatch
 Checks if the specified IP address is within the given CIDR
 range.
 
-fieldsummary
+`fieldsummary`
 
 `where field1 != 200 | fieldsummary includefields= field1
                                         nulls=true`
@@ -209,7 +213,7 @@ fieldsummary
 Calculates basic statistics for each field (count, distinct
 count, min, max, avg, stddev, and mean).
 
-grok
+`grok`
 
 `grok email '.+@%{HOSTNAME:host}' | fields email,
                                         host`

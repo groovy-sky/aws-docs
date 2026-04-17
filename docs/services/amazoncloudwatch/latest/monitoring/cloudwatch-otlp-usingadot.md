@@ -1,3 +1,7 @@
+---
+title: "Exporting collector-less telemetry using AWS Distro for OpenTelemetry (ADOT) SDK"
+---
+
 # Exporting collector-less telemetry using AWS Distro for OpenTelemetry (ADOT) SDK
 
 You can use the ADOT SDKs to go collector-less and to send metrics, traces and logs directly to the OTLP endpoints.

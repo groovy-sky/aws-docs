@@ -1,3 +1,7 @@
+---
+title: "Install and manage agents for EC2 instances"
+---
+
 # Install and manage agents for EC2 instances
 
 Follow the steps in this section to install Network Flow Monitor agents for workloads on Amazon EC2 instances. You can install agents

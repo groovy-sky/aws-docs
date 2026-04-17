@@ -1,3 +1,7 @@
+---
+title: "Collect Java Management Extensions (JMX) metrics"
+---
+
 # Collect Java Management Extensions (JMX) metrics
 
 You can use the CloudWatch agent to collect Java Management Extensions (JMX) metrics from

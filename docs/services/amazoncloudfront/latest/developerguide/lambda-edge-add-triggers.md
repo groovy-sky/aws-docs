@@ -1,3 +1,7 @@
+---
+title: "Add triggers for a Lambda@Edge function"
+---
+
 # Add triggers for a Lambda@Edge function
 
 A Lambda@Edge trigger is one combination of a CloudFront distribution, cache behavior, and

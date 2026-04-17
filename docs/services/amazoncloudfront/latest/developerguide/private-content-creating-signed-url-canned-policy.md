@@ -1,3 +1,7 @@
+---
+title: "Create a signed URL using a canned policy"
+---
+
 # Create a signed URL using a canned policy
 
 To create a signed URL using a canned policy, complete the following steps.

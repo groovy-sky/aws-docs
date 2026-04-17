@@ -1,3 +1,7 @@
+---
+title: "Set up NGINX with sample traffic on Amazon EKS and Kubernetes"
+---
+
 # Set up NGINX with sample traffic on Amazon EKS and Kubernetes
 
 NGINX is a web server that can also be used as a load balancer and reverse

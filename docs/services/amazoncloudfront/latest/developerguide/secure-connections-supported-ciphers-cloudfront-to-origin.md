@@ -1,3 +1,7 @@
+---
+title: "Supported protocols and ciphers between CloudFront and the origin"
+---
+
 # Supported protocols and ciphers between CloudFront and the origin
 
 If you choose to [require HTTPS between CloudFront and your origin](distribution-web-values-specify.md#DownloadDistValuesOriginProtocolPolicy), you can decide [which SSL/TLS protocol to allow](distribution-web-values-specify.md#DownloadDistValuesOriginSSLProtocols) for the secure connection, and CloudFront can connect

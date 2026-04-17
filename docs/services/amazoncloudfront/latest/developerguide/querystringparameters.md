@@ -1,3 +1,7 @@
+---
+title: "Cache content based on query string parameters"
+---
+
 # Cache content based on query string parameters
 
 Some web applications use query strings to send information to the origin. A query

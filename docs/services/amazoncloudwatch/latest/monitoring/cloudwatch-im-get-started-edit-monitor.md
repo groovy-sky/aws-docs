@@ -1,3 +1,7 @@
+---
+title: "Edit a monitor in Internet Monitor"
+---
+
 # Edit a monitor in Internet Monitor
 
 Using the **Action** menu, you can edit a monitor in Amazon CloudWatch Internet Monitor after you create it. For example, you can

@@ -1,3 +1,7 @@
+---
+title: "CloudWatch Logs permissions reference"
+---
+
 # CloudWatch Logs permissions reference
 
 When you are setting up [Access control](auth-and-access-control-cwl.md#access-control-cwl) and writing permissions policies that you

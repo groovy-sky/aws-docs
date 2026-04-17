@@ -1,3 +1,7 @@
+---
+title: "Deleting the CloudWatch agent and Fluent Bit for Container Insights"
+---
+
 # Deleting the CloudWatch agent and Fluent Bit for Container Insights
 
 If you installed Container Insights by using installing the CloudWatch Observability

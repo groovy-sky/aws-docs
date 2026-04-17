@@ -1,3 +1,7 @@
+---
+title: "Amazon Virtual Private Cloud (Amazon VPC)"
+---
+
 # Amazon Virtual Private Cloud (Amazon VPC)
 
 The following example shows a component configuration in JSON format for Amazon VPC.

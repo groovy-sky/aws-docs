@@ -1,3 +1,7 @@
+---
+title: "Serve private content with signed URLs and signed cookies"
+---
+
 # Serve private content with signed URLs and signed cookies
 
 Many companies that distribute content over the internet want to restrict access to documents, business data, media

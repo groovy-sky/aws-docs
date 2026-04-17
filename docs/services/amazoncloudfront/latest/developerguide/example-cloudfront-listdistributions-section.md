@@ -1,6 +1,15 @@
+---
+title: "Use ListDistributions with an AWS SDK or CLI"
+---
+
 # Use `ListDistributions` with an AWS SDK or CLI
 
 The following code examples show how to use `ListDistributions`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in
+context in the following code example:
+
+- [Getting started with WAF](example-wafv2-gettingstarted-052-section.md)
 
 CLI
 
@@ -141,7 +150,7 @@ Get-CFDistributionList
 ```
 
 - For API details, see
-[ListDistributions](../../../powershell/v4/reference.md)
+[ListDistributions](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -155,7 +164,7 @@ Get-CFDistributionList
 ```
 
 - For API details, see
-[ListDistributions](../../../powershell/v5/reference.md)
+[ListDistributions](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -201,7 +210,7 @@ class CloudFrontWrapper:
 ```
 
 - For API details, see
-[ListDistributions](../../../goto/boto3/cloudfront-2020-05-31/listdistributions.md)
+[ListDistributions](https://docs.aws.amazon.com/goto/boto3/cloudfront-2020-05-31/ListDistributions)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

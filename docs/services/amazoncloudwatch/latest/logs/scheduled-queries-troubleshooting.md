@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting scheduled queries"
+---
+
 # Troubleshooting scheduled queries
 
 Use these troubleshooting topics to resolve common issues with scheduled

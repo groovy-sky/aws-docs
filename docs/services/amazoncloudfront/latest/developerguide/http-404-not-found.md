@@ -1,3 +1,7 @@
+---
+title: "HTTP 404 status code (Not Found)"
+---
+
 # HTTP 404 status code (Not Found)
 
 CloudFront returns a 404 (Not Found) error when the client attempts to access a resource

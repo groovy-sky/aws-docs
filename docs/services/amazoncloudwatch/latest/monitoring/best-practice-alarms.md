@@ -1,3 +1,7 @@
+---
+title: "Best practice alarm recommendations for AWS services"
+---
+
 # Best practice alarm recommendations for AWS services
 
 CloudWatch provides out-of-the box alarm recommendations. These are CloudWatch alarms that we

@@ -1,3 +1,7 @@
+---
+title: "Using a data table widget in a CloudWatch dashboard"
+---
+
 # Using a data table widget in a CloudWatch dashboard
 
 **Table properties**

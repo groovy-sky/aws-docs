@@ -1,3 +1,7 @@
+---
+title: "Receive notifications for detected problems"
+---
+
 # Receive notifications for detected problems
 
 You can use Amazon SNS notifications, Systems Manager OpsCenter, or CloudWatch Events to receive notifications about problems that are detected in your applications.

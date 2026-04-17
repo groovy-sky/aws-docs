@@ -1,3 +1,7 @@
+---
+title: "Use the Internet Monitor query interface"
+---
+
 # Use the Internet Monitor query interface
 
 An option for understanding more about internet traffic for your AWS application is to use the Internet Monitor

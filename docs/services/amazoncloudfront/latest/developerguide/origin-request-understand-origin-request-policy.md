@@ -1,3 +1,7 @@
+---
+title: "Understand origin request policies"
+---
+
 # Understand origin request policies
 
 CloudFront provides some predefined origin request policies, known as _managed policies_, for common use cases. You can use these

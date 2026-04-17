@@ -1,3 +1,7 @@
+---
+title: "Add an alternate domain name"
+---
+
 # Add an alternate domain name
 
 The following task list describes how to use the CloudFront console to add an

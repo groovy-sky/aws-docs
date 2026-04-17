@@ -1,3 +1,7 @@
+---
+title: "View available metrics"
+---
+
 # View available metrics
 
 Metrics are grouped first by namespace, and then by the various dimension combinations

@@ -1,3 +1,7 @@
+---
+title: "How Amazon CloudWatch Application Insights works"
+---
+
 # How Amazon CloudWatch Application Insights works
 
 CloudWatch Application Insights provides monitoring of your application resources. The following information describes how Application Insights works.

@@ -1,3 +1,7 @@
+---
+title: "Composite alarms"
+---
+
 # Composite alarms
 
 With CloudWatch, you can combine several alarms into one _composite alarm_ to

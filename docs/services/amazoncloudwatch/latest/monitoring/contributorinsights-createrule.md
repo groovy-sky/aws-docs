@@ -1,3 +1,7 @@
+---
+title: "Create a Contributor Insights rule in CloudWatch"
+---
+
 # Create a Contributor Insights rule in CloudWatch
 
 You can create rules to analyze log data. Any logs in JSON or Common Log Format (CLF) can

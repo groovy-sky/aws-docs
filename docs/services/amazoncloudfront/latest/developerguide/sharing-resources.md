@@ -1,3 +1,7 @@
+---
+title: "Working with shared resources in CloudFront"
+---
+
 # Working with shared resources in CloudFront
 
 Amazon CloudFront integrates with AWS Resource Access Manager (AWS RAM) to enable resource sharing. AWS RAM enables

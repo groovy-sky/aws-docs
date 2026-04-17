@@ -1,3 +1,7 @@
+---
+title: "Understand the cache key"
+---
+
 # Understand the cache key
 
 The _cache key_ determines whether a viewer request to a

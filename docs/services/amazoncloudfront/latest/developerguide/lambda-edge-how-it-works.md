@@ -1,3 +1,7 @@
+---
+title: "Get started with Lambda@Edge functions (console)"
+---
+
 # Get started with Lambda@Edge functions (console)
 
 With Lambda@Edge, you can use CloudFront triggers to invoke a Lambda function. When you

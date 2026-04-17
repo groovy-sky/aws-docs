@@ -1,3 +1,7 @@
+---
+title: "Adding an alarm to a CloudWatch dashboard"
+---
+
 # Adding an alarm to a CloudWatch dashboard
 
 ###### To add a single alarm, including its graph, to a dashboard

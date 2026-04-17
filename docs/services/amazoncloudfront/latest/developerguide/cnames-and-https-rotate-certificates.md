@@ -1,3 +1,7 @@
+---
+title: "Rotate SSL/TLS certificates"
+---
+
 # Rotate SSL/TLS certificates
 
 When your SSL/TLS certificates are near expiration, you need to rotate them to ensure the

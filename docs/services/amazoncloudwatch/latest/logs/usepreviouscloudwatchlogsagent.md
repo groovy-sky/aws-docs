@@ -1,3 +1,7 @@
+---
+title: "Use the previous CloudWatch agent to get started with CloudWatch Logs"
+---
+
 # Use the previous CloudWatch agent to get started with CloudWatch Logs
 
 ###### Important

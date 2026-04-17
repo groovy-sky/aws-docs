@@ -1,3 +1,7 @@
+---
+title: "CloudWatch pipelines"
+---
+
 # CloudWatch pipelines
 
 CloudWatch pipelines is a fully managed data collector that ingests, transforms, and routes log data

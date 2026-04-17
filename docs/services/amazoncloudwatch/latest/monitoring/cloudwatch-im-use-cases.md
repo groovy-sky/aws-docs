@@ -1,3 +1,7 @@
+---
+title: "Internet Monitor example use cases"
+---
+
 # Internet Monitor example use cases
 
 This section describes several specific examples of use cases for Internet Monitor, with links to blog posts with more details. These examples

@@ -1,3 +1,7 @@
+---
+title: "Get started with CloudWatch Database Insights"
+---
+
 # Get started with CloudWatch Database Insights
 
 The Standard mode of Database Insights is enabled by default for your Amazon RDS and Aurora databases. To get started with the Advanced mode of Database Insights, you can create a new database or modify a database.

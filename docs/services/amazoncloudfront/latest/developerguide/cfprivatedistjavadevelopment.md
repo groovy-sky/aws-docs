@@ -1,3 +1,7 @@
+---
+title: "Create a URL signature using Java"
+---
+
 # Create a URL signature using Java
 
 In addition to the following code example, you can use [the `CloudFrontUrlSigner` utility class in the AWS SDK for Java (version\

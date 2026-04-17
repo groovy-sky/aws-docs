@@ -1,3 +1,7 @@
+---
+title: "Removing a line graph widget from a CloudWatch dashboard"
+---
+
 # Removing a line graph widget from a CloudWatch dashboard
 
 ###### To remove a line graph widget from a dashboard

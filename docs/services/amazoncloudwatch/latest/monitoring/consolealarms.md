@@ -1,3 +1,7 @@
+---
+title: "Create a CloudWatch alarm based on a static threshold"
+---
+
 # Create a CloudWatch alarm based on a static threshold
 
 You choose a CloudWatch metric for the alarm to watch, and the threshold for that metric. The

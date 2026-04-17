@@ -1,3 +1,7 @@
+---
+title: "Analyze with Amazon OpenSearch Service"
+---
+
 # Analyze with Amazon OpenSearch Service
 
 CloudWatch Logs integrates with Amazon OpenSearch Service to enable you to create automatic

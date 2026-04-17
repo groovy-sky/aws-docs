@@ -1,3 +1,7 @@
+---
+title: "Create and configure CloudWatch Application Insights monitoring using CloudFormation templates"
+---
+
 # Create and configure CloudWatch Application Insights monitoring using CloudFormation templates
 
 You can add Application Insights monitoring, including key metrics and telemetry, to your

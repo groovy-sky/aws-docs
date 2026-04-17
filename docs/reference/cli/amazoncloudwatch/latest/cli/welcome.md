@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 As of November 7, 2017, we are no longer supporting the CloudWatch command line interface with new functionality. It is not available for download. The

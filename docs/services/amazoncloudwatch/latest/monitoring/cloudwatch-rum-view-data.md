@@ -1,3 +1,7 @@
+---
+title: "Viewing the CloudWatch RUM dashboard"
+---
+
 # Viewing the CloudWatch RUM dashboard
 
 CloudWatch RUM helps you collect data from user sessions about your application's

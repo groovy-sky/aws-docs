@@ -1,3 +1,7 @@
+---
+title: "Using math expressions with CloudWatch metrics"
+---
+
 # Using math expressions with CloudWatch metrics
 
 Metric math enables you to query multiple CloudWatch metrics and use math expressions to create

@@ -1,3 +1,7 @@
+---
+title: "CloudWatch search expression examples"
+---
+
 # CloudWatch search expression examples
 
 The following examples illustrate more search expression uses and syntax. Let's start

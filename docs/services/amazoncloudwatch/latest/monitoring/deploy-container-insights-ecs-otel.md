@@ -1,3 +1,7 @@
+---
+title: "Deploying the AWS Distro for OpenTelemetry to collect EC2 instance-level metrics on Amazon ECS clusters"
+---
+
 # Deploying the AWS Distro for OpenTelemetry to collect EC2 instance-level metrics on Amazon ECS clusters
 
 Use the steps in this section to use AWS Distro for OpenTelemetry to collect EC2

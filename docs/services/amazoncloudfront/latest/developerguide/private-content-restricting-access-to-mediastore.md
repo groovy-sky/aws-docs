@@ -1,3 +1,7 @@
+---
+title: "Restrict access to an AWS Elemental MediaStore origin"
+---
+
 # Restrict access to an AWS Elemental MediaStore origin
 
 CloudFront provides _origin access control_ (OAC) for

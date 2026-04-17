@@ -1,3 +1,7 @@
+---
+title: "Quotas and other considerations for continuous deployment"
+---
+
 # Quotas and other considerations for continuous deployment
 
 CloudFront continuous deployment is subject to the following quotas and other

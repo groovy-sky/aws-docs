@@ -1,3 +1,7 @@
+---
+title: "Deleting a metric filter"
+---
+
 # Deleting a metric filter
 
 A policy is identified by its name and the log group it belongs to.

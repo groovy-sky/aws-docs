@@ -1,3 +1,7 @@
+---
+title: "Writing a Python canary script"
+---
+
 # Writing a Python canary script
 
 This script passes as a successful run, and returns a string.

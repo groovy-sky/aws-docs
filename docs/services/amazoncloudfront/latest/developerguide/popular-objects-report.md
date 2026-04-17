@@ -1,3 +1,7 @@
+---
+title: "View CloudFront popular objects reports"
+---
+
 # View CloudFront popular objects reports
 
 View the Amazon CloudFront popular objects report to see the 50 most popular objects for a

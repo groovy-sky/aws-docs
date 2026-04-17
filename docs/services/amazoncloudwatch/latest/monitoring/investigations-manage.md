@@ -1,3 +1,7 @@
+---
+title: "Manage your current investigations"
+---
+
 # Manage your current investigations
 
 You can view a list of your current investigations, end active investigations, re-open

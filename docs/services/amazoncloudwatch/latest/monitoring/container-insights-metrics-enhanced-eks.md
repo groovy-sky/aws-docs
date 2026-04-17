@@ -1,3 +1,7 @@
+---
+title: "Amazon EKS and Kubernetes Container Insights with enhanced observability metrics"
+---
+
 # Amazon EKS and Kubernetes Container Insights with enhanced observability metrics
 
 The following tables list the metrics and dimensions that Container Insights with

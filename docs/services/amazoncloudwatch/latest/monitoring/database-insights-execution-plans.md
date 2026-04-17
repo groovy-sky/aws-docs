@@ -1,3 +1,7 @@
+---
+title: "Analyzing execution plans with CloudWatch Database Insights"
+---
+
 # Analyzing execution plans with CloudWatch Database Insights
 
 You can analyze execution plans for the Amazon Aurora PostgreSQL, RDS for Microsoft SQL Server and RDS for Oracle databases by using the following methods.

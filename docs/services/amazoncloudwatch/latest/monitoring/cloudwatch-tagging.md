@@ -1,3 +1,7 @@
+---
+title: "Tagging your Amazon CloudWatch resources"
+---
+
 # Tagging your Amazon CloudWatch resources
 
 A _tag_ is a custom attribute label that you or AWS assigns to an AWS resource.

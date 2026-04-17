@@ -1,3 +1,7 @@
+---
+title: "Create a distribution"
+---
+
 # Create a distribution
 
 This topic explains how to use the CloudFront console to create a distribution.

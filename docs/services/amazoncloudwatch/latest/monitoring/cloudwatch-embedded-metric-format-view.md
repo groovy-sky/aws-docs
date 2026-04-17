@@ -1,3 +1,7 @@
+---
+title: "Viewing your metrics and logs in the console"
+---
+
 # Viewing your metrics and logs in the console
 
 After you generate embedded metric format logs that extract metrics, you can use the CloudWatch console to view the metrics.

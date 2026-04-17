@@ -1,3 +1,7 @@
+---
+title: "Configure permissions for agents to deliver metrics"
+---
+
 # Configure permissions for agents to deliver metrics
 
 After you install agents for Network Flow Monitor, you must enable the agents to send network

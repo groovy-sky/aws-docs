@@ -1,3 +1,7 @@
+---
+title: "Restrict access to an Amazon S3 origin"
+---
+
 # Restrict access to an Amazon S3 origin
 
 CloudFront provides two ways to send authenticated requests to an Amazon S3 origin: _origin access control_ (OAC) and _origin access identity_ (OAI). OAC helps you secure your origins, such as

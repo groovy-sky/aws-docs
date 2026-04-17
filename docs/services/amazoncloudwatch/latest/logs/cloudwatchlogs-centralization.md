@@ -1,3 +1,7 @@
+---
+title: "Cross-account cross-Region log centralization"
+---
+
 # Cross-account cross-Region log centralization
 
 Amazon CloudWatch Logs data centralization works with AWS Organizations to collect log data from multiple member

@@ -1,3 +1,7 @@
+---
+title: "Optimize high availability with CloudFront origin failover"
+---
+
 # Optimize high availability with CloudFront origin failover
 
 You can set up CloudFront with origin failover for scenarios that require high availability.

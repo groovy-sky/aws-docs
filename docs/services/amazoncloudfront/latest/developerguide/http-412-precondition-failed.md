@@ -1,3 +1,7 @@
+---
+title: "HTTP 412 status code (Precondition Failed)"
+---
+
 # HTTP 412 status code (Precondition Failed)
 
 CloudFront returns a 412 (Precondition Failed) error code when access to the target

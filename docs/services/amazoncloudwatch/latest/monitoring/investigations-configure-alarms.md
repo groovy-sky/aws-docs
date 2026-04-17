@@ -1,3 +1,7 @@
+---
+title: "Configure alarms to create investigations"
+---
+
 # Configure alarms to create investigations
 
 You can configure an existing CloudWatch alarm to automatically create investigations in

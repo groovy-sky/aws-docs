@@ -1,3 +1,7 @@
+---
+title: "Differences between CloudFront Functions and Lambda@Edge"
+---
+
 # Differences between CloudFront Functions and Lambda@Edge
 
 CloudFront Functions and Lambda@Edge both provide a way to run code in response to CloudFront

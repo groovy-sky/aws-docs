@@ -1,3 +1,7 @@
+---
+title: "What is Amazon CloudFront?"
+---
+
 # What is Amazon CloudFront?
 
 Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content,

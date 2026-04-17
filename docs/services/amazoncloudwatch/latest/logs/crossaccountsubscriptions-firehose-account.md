@@ -1,3 +1,7 @@
+---
+title: "Cross-account cross-Region account-level subscriptions using Firehose"
+---
+
 # Cross-account cross-Region account-level subscriptions using Firehose
 
 To share log data across accounts, you need to establish a log data sender and

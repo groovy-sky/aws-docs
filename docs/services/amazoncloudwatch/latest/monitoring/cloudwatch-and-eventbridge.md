@@ -1,3 +1,7 @@
+---
+title: "Alarm events and EventBridge"
+---
+
 # Alarm events and EventBridge
 
 CloudWatch sends events to Amazon EventBridge whenever a CloudWatch alarm is created, updated, deleted, or

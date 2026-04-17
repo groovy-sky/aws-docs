@@ -1,3 +1,7 @@
+---
+title: "CloudWatch Logs Insights query language (Logs Insights QL)"
+---
+
 # CloudWatch Logs Insights query language (Logs Insights QL)
 
 This section includes full documentation of Logs Insights QL commands and

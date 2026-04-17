@@ -1,3 +1,7 @@
+---
+title: "All distribution settings reference"
+---
+
 # All distribution settings reference
 
 You can choose to manually edit your CloudFront distribution settings when you create or update your distribution. Following are the settings that you can edit.

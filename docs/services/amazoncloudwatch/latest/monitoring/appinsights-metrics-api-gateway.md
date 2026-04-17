@@ -1,3 +1,7 @@
+---
+title: "API Gateway REST API stages"
+---
+
 # API Gateway REST API stages
 
 CloudWatch Application Insights supports the following metrics:

@@ -1,3 +1,7 @@
+---
+title: "Write function code"
+---
+
 # Write function code
 
 You can use CloudFront Functions to write lightweight functions in JavaScript for high-scale,

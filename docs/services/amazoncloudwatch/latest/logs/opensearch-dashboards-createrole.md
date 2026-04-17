@@ -1,3 +1,7 @@
+---
+title: "Permissions that the integration needs"
+---
+
 # Permissions that the integration needs
 
 If you create an IAM role for the integration to use, instead of allowing CloudWatch Logs to

@@ -1,3 +1,7 @@
+---
+title: "Writing a JSON configuration for Node.js multi Checks blueprint"
+---
+
 # Writing a JSON configuration for Node.js multi Checks blueprint
 
 The Node.js multi checks blueprint allows you to create canaries that perform multiple

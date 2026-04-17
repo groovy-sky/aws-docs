@@ -1,3 +1,7 @@
+---
+title: "Use CloudWatch Logs Insights to explore Internet Monitor measurements"
+---
+
 # Use CloudWatch Logs Insights to explore Internet Monitor measurements
 
 You can use CloudWatch Logs Insights queries to filter a subset of logs for a specific city or geography (client location),

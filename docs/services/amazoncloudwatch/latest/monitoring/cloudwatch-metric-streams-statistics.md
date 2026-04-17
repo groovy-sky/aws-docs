@@ -1,3 +1,7 @@
+---
+title: "Statistics that can be streamed"
+---
+
 # Statistics that can be streamed
 
 Metric streams always include the following statistics: `Minimum`, `Maximum`,

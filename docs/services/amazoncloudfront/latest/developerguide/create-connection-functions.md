@@ -1,3 +1,7 @@
+---
+title: "Create CloudFront Connection Functions for mutual TLS (viewer) validation"
+---
+
 # Create CloudFront Connection Functions for mutual TLS (viewer) validation
 
 You create a CloudFront Connection Function in two stages:

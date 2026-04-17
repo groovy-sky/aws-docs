@@ -1,3 +1,7 @@
+---
+title: "CloudWatch Database Insights"
+---
+
 # CloudWatch Database Insights
 
 Use CloudWatch Database Insights to monitor and troubleshoot Amazon Aurora MySQL, Amazon Aurora PostgreSQL, Amazon Aurora PostgreSQL Limitless, Amazon RDS for SQL Server, RDS for MySQL, RDS for PostgreSQL, RDS for Oracle, and RDS for MariaDB databases at scale.

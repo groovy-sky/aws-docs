@@ -1,3 +1,7 @@
+---
+title: "Get statistics for a metric"
+---
+
 # Get statistics for a metric
 
 ## Examples

@@ -1,3 +1,7 @@
+---
+title: "Restrict access to an AWS Elemental MediaPackage v2 origin"
+---
+
 # Restrict access to an AWS Elemental MediaPackage v2 origin
 
 CloudFront provides _origin access control_ (OAC) for restricting

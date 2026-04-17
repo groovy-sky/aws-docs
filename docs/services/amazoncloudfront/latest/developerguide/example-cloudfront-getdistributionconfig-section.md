@@ -1,3 +1,7 @@
+---
+title: "Use GetDistributionConfig with an AWS SDK or CLI"
+---
+
 # Use `GetDistributionConfig` with an AWS SDK or CLI
 
 The following code examples show how to use `GetDistributionConfig`.
@@ -5,7 +9,7 @@ The following code examples show how to use `GetDistributionConfig`.
 Action examples are code excerpts from larger programs and must be run in context. You can see this action in
 context in the following code example:
 
-- [Get started with CloudFront](example-cloudfront-gettingstarted-section.md)
+- [Get started with a basic CloudFront distribution](example-cloudfront-gettingstarted-section.md)
 
 CLI
 
@@ -146,7 +150,7 @@ Get-CFDistributionConfig -Id EXAMPLE0000ID
 ```
 
 - For API details, see
-[GetDistributionConfig](../../../powershell/v4/reference.md)
+[GetDistributionConfig](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -160,7 +164,7 @@ Get-CFDistributionConfig -Id EXAMPLE0000ID
 ```
 
 - For API details, see
-[GetDistributionConfig](../../../powershell/v5/reference.md)
+[GetDistributionConfig](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -211,7 +215,7 @@ class CloudFrontWrapper:
 ```
 
 - For API details, see
-[GetDistributionConfig](../../../goto/boto3/cloudfront-2020-05-31/getdistributionconfig.md)
+[GetDistributionConfig](https://docs.aws.amazon.com/goto/boto3/cloudfront-2020-05-31/GetDistributionConfig)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

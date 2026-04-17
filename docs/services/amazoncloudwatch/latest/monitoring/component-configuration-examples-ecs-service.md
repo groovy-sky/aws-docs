@@ -1,3 +1,7 @@
+---
+title: "Amazon ECS services"
+---
+
 # Amazon ECS services
 
 The following example shows a component configuration in JSON format for an

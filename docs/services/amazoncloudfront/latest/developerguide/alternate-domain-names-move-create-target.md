@@ -1,3 +1,7 @@
+---
+title: "Set up the target standard distribution or distribution tenant"
+---
+
 # Set up the target standard distribution or distribution tenant
 
 Before you can move an alternate domain name, you must set up the target resource.

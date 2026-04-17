@@ -1,3 +1,7 @@
+---
+title: "Customize at the edge with CloudFront Functions"
+---
+
 # Customize at the edge with CloudFront Functions
 
 With CloudFront Functions, you can write lightweight functions in JavaScript for high-scale,

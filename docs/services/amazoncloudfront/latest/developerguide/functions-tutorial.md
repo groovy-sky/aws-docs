@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a simple function with CloudFront Functions"
+---
+
 # Tutorial: Create a simple function with CloudFront Functions
 
 This tutorial shows you how to get started with CloudFront Functions. You can create a simple

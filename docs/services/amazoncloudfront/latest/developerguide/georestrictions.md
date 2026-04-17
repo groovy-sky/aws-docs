@@ -1,3 +1,7 @@
+---
+title: "Restrict the geographic distribution of your content"
+---
+
 # Restrict the geographic distribution of your content
 
 You can use _geographic restrictions_, sometimes known as _geo_

@@ -1,3 +1,7 @@
+---
+title: "CloudWatch solution: NGINX workload on Amazon EC2"
+---
+
 # CloudWatch solution: NGINX workload on Amazon EC2
 
 This solution helps you configure out-of-the-box metric collection using CloudWatch agents for

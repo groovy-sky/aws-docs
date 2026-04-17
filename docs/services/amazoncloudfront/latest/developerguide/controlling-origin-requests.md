@@ -1,3 +1,7 @@
+---
+title: "Control origin requests with a policy"
+---
+
 # Control origin requests with a policy
 
 When a viewer request to CloudFront results in a _cache miss_

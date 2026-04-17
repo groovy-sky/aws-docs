@@ -1,3 +1,7 @@
+---
+title: "OTLP Endpoints"
+---
+
 # OTLP Endpoints
 
 OpenTelemetry Protocol (OTLP) is a general-purpose telemetry data delivery protocol

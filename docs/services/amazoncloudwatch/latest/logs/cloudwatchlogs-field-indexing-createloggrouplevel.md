@@ -1,3 +1,7 @@
+---
+title: "Create a log-group level field index policy"
+---
+
 # Create a log-group level field index policy
 
 Use the steps in this section to create a field index policy that applies to a

@@ -1,3 +1,7 @@
+---
+title: "Use CreateFunction with an AWS SDK"
+---
+
 # Use `CreateFunction` with an AWS SDK
 
 The following code example shows how to use `CreateFunction`.
@@ -91,7 +95,7 @@ public class CreateFunction {
 ```
 
 - For API details, see
-[CreateFunction](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/createfunction.md)
+[CreateFunction](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/CreateFunction)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "Use StartLiveTail with an AWS SDK"
+---
+
 # Use `StartLiveTail` with an AWS SDK
 
 The following code examples show how to use `StartLiveTail`.
@@ -113,7 +117,7 @@ You can handle the events from the Live Tail session in two ways:
 ```
 
 - For API details, see
-[StartLiveTail](../../../../reference/goto/dotnetsdkv3/logs-2014-03-28/startlivetail.md)
+[StartLiveTail](https://docs.aws.amazon.com/goto/DotNetSDKV3/logs-2014-03-28/StartLiveTail)
 in _AWS SDK for .NET API Reference_.
 
 Go
@@ -335,7 +339,7 @@ Stop the Live Tail session after a period of time has elapsed.
 ```
 
 - For API details, see
-[StartLiveTail](../../../../reference/goto/sdkforjavav2/logs-2014-03-28/startlivetail.md)
+[StartLiveTail](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/StartLiveTail)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -411,7 +415,7 @@ Stop the Live Tail session after a period of time has elapsed.
 ```
 
 - For API details, see
-[StartLiveTail](../../../../reference/awsjavascriptsdk/v3/latest/client/cloudwatch-logs/command/startlivetailcommand.md)
+[StartLiveTail](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudwatch-logs/command/StartLiveTailCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -532,7 +536,7 @@ Start the Live Tail session.
 ```
 
 - For API details, see
-[StartLiveTail](../../../goto/boto3/logs-2014-03-28/startlivetail.md)
+[StartLiveTail](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/StartLiveTail)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

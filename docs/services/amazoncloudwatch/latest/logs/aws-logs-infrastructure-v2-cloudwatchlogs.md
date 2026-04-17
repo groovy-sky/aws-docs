@@ -1,3 +1,7 @@
+---
+title: "Logs sent to CloudWatch Logs"
+---
+
 # Logs sent to CloudWatch Logs
 
 **User permissions**

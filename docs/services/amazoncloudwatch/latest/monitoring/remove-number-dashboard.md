@@ -1,3 +1,7 @@
+---
+title: "Removing a number widget from a CloudWatch dashboard"
+---
+
 # Removing a number widget from a CloudWatch dashboard
 
 ###### To remove a number widget from a dashboard

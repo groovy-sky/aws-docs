@@ -1,3 +1,7 @@
+---
+title: "(Recommended) Best practices to enhance investigations"
+---
+
 # (Recommended) Best practices to enhance investigations
 
 As a best practice, we recommend that you enable several AWS services and features

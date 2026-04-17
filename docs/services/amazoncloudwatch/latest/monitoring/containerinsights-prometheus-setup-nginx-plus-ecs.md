@@ -1,3 +1,7 @@
+---
+title: "Sample NGINX Plus workload for Amazon ECS clusters"
+---
+
 # Sample NGINX Plus workload for Amazon ECS clusters
 
 NGINX Plus is the commerical version of NGINX. You must have a licence to use it.

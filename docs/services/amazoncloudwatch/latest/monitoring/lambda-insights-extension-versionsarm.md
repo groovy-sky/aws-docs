@@ -1,3 +1,7 @@
+---
+title: "ARM64 platforms"
+---
+
 # ARM64 platforms
 
 This section lists the versions of the Lambda Insights extension for ARM64 platforms, and the ARNs to use

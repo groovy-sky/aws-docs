@@ -1,3 +1,7 @@
+---
+title: "Using resource-based policies with CloudWatch RUM"
+---
+
 # Using resource-based policies with CloudWatch RUM
 
 You can attach a resource policy to a CloudWatch RUM app monitor. By default, app monitors

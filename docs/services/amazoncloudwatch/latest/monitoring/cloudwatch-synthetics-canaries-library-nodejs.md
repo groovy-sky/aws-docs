@@ -1,3 +1,7 @@
+---
+title: "Library functions available for Node.js canary scripts using Puppeteer"
+---
+
 # Library functions available for Node.js canary scripts using Puppeteer
 
 This section describes the library functions available for Node.js canary scripts.

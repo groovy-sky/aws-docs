@@ -1,3 +1,7 @@
+---
+title: "Enable your applications on Lambda"
+---
+
 # Enable your applications on Lambda
 
 You can enable Application Signals for your Lambda functions. Application Signals

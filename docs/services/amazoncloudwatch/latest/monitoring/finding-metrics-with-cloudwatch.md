@@ -1,3 +1,7 @@
+---
+title: "Search for available metrics"
+---
+
 # Search for available metrics
 
 You can search within all of the metrics in your account using targeted search terms.

@@ -1,3 +1,7 @@
+---
+title: "View, edit, or delete vended logs dashboards"
+---
+
 # View, edit, or delete vended logs dashboards
 
 ## View vended logs dashboards in CloudWatch Logs or OpenSearch Service

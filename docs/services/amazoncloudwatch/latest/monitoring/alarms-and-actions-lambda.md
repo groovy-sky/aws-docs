@@ -1,3 +1,7 @@
+---
+title: "Invoke a Lambda function from an alarm"
+---
+
 # Invoke a Lambda function from an alarm
 
 CloudWatch alarms guarantees an asynchronous invocation of the Lambda function for a given

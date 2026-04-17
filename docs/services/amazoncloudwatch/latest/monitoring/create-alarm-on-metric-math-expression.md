@@ -1,3 +1,7 @@
+---
+title: "Create a CloudWatch alarm based on a metric math expression"
+---
+
 # Create a CloudWatch alarm based on a metric math expression
 
 Metric alarms are designed to evaluate time series that you define from either a single

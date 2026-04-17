@@ -1,3 +1,7 @@
+---
+title: "AWS Network Firewall rule group"
+---
+
 # AWS Network Firewall rule group
 
 CloudWatch Application Insights supports the following metrics:

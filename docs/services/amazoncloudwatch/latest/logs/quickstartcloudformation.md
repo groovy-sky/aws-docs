@@ -1,3 +1,7 @@
+---
+title: "Quick Start: Use CloudFormation to get started with CloudWatch Logs"
+---
+
 # Quick Start: Use CloudFormation to get started with CloudWatch Logs
 
 AWS CloudFormation enables you to describe and provision your AWS resources in JSON format. The advantages of

@@ -1,3 +1,7 @@
+---
+title: "Spans"
+---
+
 # Spans
 
 Spans sent to X-Ray are ingested and managed in a log group called `aws/spans`.

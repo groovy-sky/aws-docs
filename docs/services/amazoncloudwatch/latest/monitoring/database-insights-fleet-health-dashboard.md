@@ -1,3 +1,7 @@
+---
+title: "Viewing the Fleet Health Dashboard for CloudWatch Database Insights"
+---
+
 # Viewing the Fleet Health Dashboard for CloudWatch Database Insights
 
 You can use the Fleet Health Dashboard to view a snapshot of the health of your database fleet.

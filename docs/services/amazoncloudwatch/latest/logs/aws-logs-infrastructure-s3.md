@@ -1,3 +1,7 @@
+---
+title: "Logs sent to Amazon S3"
+---
+
 # Logs sent to Amazon S3
 
 When you set logs to be sent to Amazon S3, AWS creates or changes the resource

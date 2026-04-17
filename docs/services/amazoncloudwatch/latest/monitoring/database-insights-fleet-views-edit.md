@@ -1,3 +1,7 @@
+---
+title: "Edit a fleet health view for CloudWatch Database Insights"
+---
+
 # Edit a fleet health view for CloudWatch Database Insights
 
 To edit a fleet health view, use the following procedure.

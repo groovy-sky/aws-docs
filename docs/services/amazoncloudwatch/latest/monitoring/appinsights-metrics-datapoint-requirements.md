@@ -1,3 +1,7 @@
+---
+title: "Metrics with data points requirements"
+---
+
 # Metrics with data points requirements
 
 For metrics without an obvious default threshold to alarm on, Application Insights waits

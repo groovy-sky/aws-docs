@@ -1,3 +1,7 @@
+---
+title: "Viewing the Database Instance Dashboard for CloudWatch Database Insights"
+---
+
 # Viewing the Database Instance Dashboard for CloudWatch Database Insights
 
 Use the Database Instance Dashboard to view a snapshot of the health of a DB instance.

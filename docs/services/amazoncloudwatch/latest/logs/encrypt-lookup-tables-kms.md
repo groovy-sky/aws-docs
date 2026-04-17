@@ -1,3 +1,7 @@
+---
+title: "Encrypt lookup tables in CloudWatch Logs using AWS Key Management Service"
+---
+
 # Encrypt lookup tables in CloudWatch Logs using AWS Key Management Service
 
 Lookup table data is always encrypted in CloudWatch Logs. By default, CloudWatch Logs uses server-side encryption with

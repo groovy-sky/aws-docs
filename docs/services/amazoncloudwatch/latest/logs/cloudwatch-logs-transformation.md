@@ -1,3 +1,7 @@
+---
+title: "Transform logs during ingestion"
+---
+
 # Transform logs during ingestion
 
 With logs transformation and enrichment, you can normalize all your logs in a consistent

@@ -1,3 +1,7 @@
+---
+title: "Invalidate files"
+---
+
 # Invalidate files
 
 You can use the CloudFront console to create and run an invalidation, display a list of

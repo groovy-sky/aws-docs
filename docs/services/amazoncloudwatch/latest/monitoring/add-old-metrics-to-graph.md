@@ -1,3 +1,7 @@
+---
+title: "Graph metrics manually on a CloudWatch dashboard"
+---
+
 # Graph metrics manually on a CloudWatch dashboard
 
 ###### To add a metric that you can't find in search to a graph

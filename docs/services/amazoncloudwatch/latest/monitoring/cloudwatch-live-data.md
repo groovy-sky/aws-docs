@@ -1,3 +1,7 @@
+---
+title: "Using live data in CloudWatch dashboards"
+---
+
 # Using live data in CloudWatch dashboards
 
 You can choose whether your metric widgets display _live data_. Live data

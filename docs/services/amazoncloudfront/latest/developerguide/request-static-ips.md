@@ -1,3 +1,7 @@
+---
+title: "Request Anycast static IPs to use for allowlisting"
+---
+
 # Request Anycast static IPs to use for allowlisting
 
 You can request Anycast static IPs from CloudFront to use with your distributions. Anycast

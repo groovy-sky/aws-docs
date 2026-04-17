@@ -1,3 +1,7 @@
+---
+title: "Amazon CloudWatch permissions reference"
+---
+
 # Amazon CloudWatch permissions reference
 
 The following table lists each CloudWatch API operation and the corresponding actions for

@@ -1,3 +1,7 @@
+---
+title: "Prerequisites to configure an application for monitoring"
+---
+
 # Prerequisites to configure an application for monitoring
 
 You must complete the following prerequisites to configure an application with

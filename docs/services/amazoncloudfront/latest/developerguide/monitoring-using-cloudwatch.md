@@ -1,3 +1,7 @@
+---
+title: "Monitor CloudFront metrics with Amazon CloudWatch"
+---
+
 # Monitor CloudFront metrics with Amazon CloudWatch
 
 Amazon CloudFront is integrated with Amazon CloudWatch and automatically publishes operational metrics for

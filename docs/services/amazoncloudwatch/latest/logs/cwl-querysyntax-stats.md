@@ -1,3 +1,7 @@
+---
+title: "stats"
+---
+
 # stats
 
 Use `stats` to create visualizations of your log data such as

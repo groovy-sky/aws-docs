@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Run and modify a sample query"
+---
+
 # Tutorial: Run and modify a sample query
 
 The following tutorial helps you get started with CloudWatch Logs Insights. You run a

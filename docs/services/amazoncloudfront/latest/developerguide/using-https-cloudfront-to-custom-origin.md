@@ -1,3 +1,7 @@
+---
+title: "Require HTTPS for communication between CloudFront and your custom origin"
+---
+
 # Require HTTPS for communication between CloudFront and your custom origin
 
 You can require HTTPS for communication between CloudFront and your origin.

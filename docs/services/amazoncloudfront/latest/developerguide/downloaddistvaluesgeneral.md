@@ -1,3 +1,7 @@
+---
+title: "Distribution settings"
+---
+
 # Distribution settings
 
 The following values apply to the entire distribution.
@@ -49,7 +53,7 @@ class affects CloudFront performance for your distribution, see [CloudFront pric
 
 ## AWS WAF web ACL
 
-You can protect your CloudFront distribution with [AWS WAF](../../../waf/latest/developerguide/what-is-aws-waf.md), a web
+You can protect your CloudFront distribution with [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf), a web
 application firewall that allows you to secure your web applications and APIs to
 block requests before they reach your servers. You can [Enable AWS WAF for distributions](waf-one-click.md) when creating or
 editing a CloudFront distribution.

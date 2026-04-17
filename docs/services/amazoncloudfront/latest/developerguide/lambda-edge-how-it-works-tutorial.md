@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a basic Lambda@Edge function (console)"
+---
+
 # Tutorial: Create a basic Lambda@Edge function (console)
 
 This tutorial shows you how to get started with Lambda@Edge by creating and

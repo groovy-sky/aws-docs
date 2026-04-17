@@ -1,3 +1,7 @@
+---
+title: "Install the EKS AWS Network Flow Monitor Agent add-on"
+---
+
 # Install the EKS AWS Network Flow Monitor Agent add-on
 
 Follow the steps in this section to install the AWS Network Flow Monitor Agent add-on for Amazon Elastic Kubernetes Service (Amazon EKS), to send

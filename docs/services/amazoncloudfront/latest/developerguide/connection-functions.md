@@ -1,3 +1,7 @@
+---
+title: "Associate a CloudFront Connection Function"
+---
+
 # Associate a CloudFront Connection Function
 
 CloudFront Connection Functions allow you to implement custom certificate validation logic during TLS handshakes, providing extensions to the built-in mTLS authentication capabilities.

@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Run a query that produces a visualization grouped by log fields"
+---
+
 # Tutorial: Run a query that produces a visualization grouped by log fields
 
 When you run a query that uses the `stats` function to group

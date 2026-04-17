@@ -1,3 +1,7 @@
+---
+title: "Amazon VPC Network Address Translation (NAT) gateways"
+---
+
 # Amazon VPC Network Address Translation (NAT) gateways
 
 The following example shows a component configuration in JSON format for

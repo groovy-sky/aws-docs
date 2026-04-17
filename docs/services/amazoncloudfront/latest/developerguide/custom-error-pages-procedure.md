@@ -1,3 +1,7 @@
+---
+title: "Configure error response behavior"
+---
+
 # Configure error response behavior
 
 You have several options to manage how CloudFront responds when there’s an error. To

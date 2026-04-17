@@ -1,3 +1,7 @@
+---
+title: "Analyze historical data in Internet Monitor (Analyze page)"
+---
+
 # Analyze historical data in Internet Monitor (Analyze page)
 
 On the **Analyze** page in the Internet Monitor console, you can view your application's the top client locations

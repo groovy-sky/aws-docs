@@ -1,3 +1,7 @@
+---
+title: "Using Amazon CloudWatch dashboards"
+---
+
 # Using Amazon CloudWatch dashboards
 
 Amazon CloudWatch includes automatic pre-built dashboards and also enables you to create your own dashboards.
@@ -107,7 +111,7 @@ to your favorites list](add-dashboard-to-favorites.md)
 ## Create a cross-account cross-Region dashboard programmatically
 
 You can use the AWS APIs and SDKs to create dashboards programmatically. For more information,
-see [PutDashboard](../../../../reference/amazoncloudwatch/latest/apireference/api-putdashboard.md).
+see [PutDashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutDashboard).
 
 To enable cross-account cross-Region dashboards, we have added new parameters
 to the dashboard body structure, as shown in the following table

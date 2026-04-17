@@ -1,3 +1,7 @@
+---
+title: "Edit a log-group-level transformer"
+---
+
 # Edit a log-group-level transformer
 
 Use these steps to edit an existing log transformer.

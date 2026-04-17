@@ -1,3 +1,7 @@
+---
+title: "Dashboard Body Structure and Syntax"
+---
+
 # Dashboard Body Structure and Syntax
 
 ###### Contents

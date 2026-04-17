@@ -1,3 +1,7 @@
+---
+title: "Recommended alarms"
+---
+
 # Recommended alarms
 
 The following sections list the metrics that we recommend that you set best practice

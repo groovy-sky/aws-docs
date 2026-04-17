@@ -1,3 +1,7 @@
+---
+title: "Invalidate files to remove content"
+---
+
 # Invalidate files to remove content
 
 If you need to remove a file from CloudFront edge caches before it expires, you can do one

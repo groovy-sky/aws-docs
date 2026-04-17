@@ -1,3 +1,7 @@
+---
+title: "Logging Amazon CloudFront API calls using AWS CloudTrail"
+---
+
 # Logging Amazon CloudFront API calls using AWS CloudTrail
 
 CloudFront is integrated with [AWS CloudTrail](../../../awscloudtrail/latest/userguide/cloudtrail-user-guide.md), a service

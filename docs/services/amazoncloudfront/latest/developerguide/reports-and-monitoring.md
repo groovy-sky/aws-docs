@@ -1,3 +1,7 @@
+---
+title: "Reports, metrics, and logs"
+---
+
 # Reports, metrics, and logs
 
 CloudFront provides several options for reporting, monitoring, and logging your CloudFront resources. You

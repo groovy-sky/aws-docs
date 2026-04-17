@@ -1,3 +1,7 @@
+---
+title: "Examples of using the CLI with Internet Monitor"
+---
+
 # Examples of using the CLI with Internet Monitor
 
 This section includes examples for using the AWS Command Line Interface with Internet Monitor operations.

@@ -1,3 +1,7 @@
+---
+title: "Configure CloudWatch investigations"
+---
+
 # Configure CloudWatch investigations
 
 Configuring CloudWatch investigations creates an investigation group that CloudWatch investigations will use to access telemetry and

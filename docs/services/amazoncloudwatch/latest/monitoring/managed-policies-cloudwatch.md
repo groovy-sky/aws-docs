@@ -1,3 +1,7 @@
+---
+title: "AWS managed (predefined) policies for CloudWatch"
+---
+
 # AWS managed (predefined) policies for CloudWatch
 
 AWS addresses many common use cases by providing standalone IAM policies
@@ -189,7 +193,7 @@ to enable new Application Signals features.
 
 November 20, 2025
 
-[AIOpsConsoleAdminPolicy – Updated policy](../../../managed-policies-qinvestigations-aiopsconsoleadminpolicy/index.md)
+[AIOpsConsoleAdminPolicy – Updated policy](https://docs.aws.amazon.com/managed-policies-QInvestigations-AIOpsConsoleAdminPolicy)
 
 CloudWatch updated the
 **AIOpsConsoleAdminPolicy**

@@ -1,3 +1,7 @@
+---
+title: "Use scheduled events to invoke a Lambda function"
+---
+
 # Use scheduled events to invoke a Lambda function
 
 The following code examples show how to create an AWS Lambda function invoked by an Amazon EventBridge scheduled event.

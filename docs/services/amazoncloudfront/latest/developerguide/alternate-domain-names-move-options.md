@@ -1,3 +1,7 @@
+---
+title: "Move the alternate domain name"
+---
+
 # Move the alternate domain name
 
 Depending on your situation, choose from the following ways to move the alternate

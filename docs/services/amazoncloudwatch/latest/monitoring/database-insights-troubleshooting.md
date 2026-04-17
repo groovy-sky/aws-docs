@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting for CloudWatch Database Insights"
+---
+
 # Troubleshooting for CloudWatch Database Insights
 
 Use the following information to troubleshoot issues for CloudWatch Database Insights.

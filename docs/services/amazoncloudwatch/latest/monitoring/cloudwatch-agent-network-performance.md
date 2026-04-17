@@ -1,3 +1,7 @@
+---
+title: "Collect network performance metrics"
+---
+
 # Collect network performance metrics
 
 EC2 instances running on Linux that use the Elastic Network Adapter (ENA) publish

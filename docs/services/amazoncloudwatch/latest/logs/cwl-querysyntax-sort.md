@@ -1,3 +1,7 @@
+---
+title: "sort"
+---
+
 # sort
 
 Use `sort` to display log events in ascending

@@ -1,3 +1,7 @@
+---
+title: "Use UpdateDistribution with an AWS SDK or CLI"
+---
+
 # Use `UpdateDistribution` with an AWS SDK or CLI
 
 The following code examples show how to use `UpdateDistribution`.
@@ -5,7 +9,7 @@ The following code examples show how to use `UpdateDistribution`.
 Action examples are code excerpts from larger programs and must be run in context. You can see this action in
 context in the following code example:
 
-- [Get started with CloudFront](example-cloudfront-gettingstarted-section.md)
+- [Get started with a basic CloudFront distribution](example-cloudfront-gettingstarted-section.md)
 
 CLI
 
@@ -504,7 +508,7 @@ public class ModifyDistribution {
 ```
 
 - For API details, see
-[UpdateDistribution](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/updatedistribution.md)
+[UpdateDistribution](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/UpdateDistribution)
 in _AWS SDK for Java 2.x API Reference_.
 
 Python
@@ -555,7 +559,7 @@ class CloudFrontWrapper:
 ```
 
 - For API details, see
-[UpdateDistribution](../../../goto/boto3/cloudfront-2020-05-31/updatedistribution.md)
+[UpdateDistribution](https://docs.aws.amazon.com/goto/boto3/cloudfront-2020-05-31/UpdateDistribution)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

@@ -1,3 +1,7 @@
+---
+title: "Using AWS Distro for OpenTelemetry"
+---
+
 # Using AWS Distro for OpenTelemetry
 
 You can set up Container Insights to collect metrics from Amazon EKS clusters by using the

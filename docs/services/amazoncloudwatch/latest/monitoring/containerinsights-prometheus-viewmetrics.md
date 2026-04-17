@@ -1,3 +1,7 @@
+---
+title: "Viewing your Prometheus metrics"
+---
+
 # Viewing your Prometheus metrics
 
 You can monitor and alarm on all your Prometheus metrics including the curated

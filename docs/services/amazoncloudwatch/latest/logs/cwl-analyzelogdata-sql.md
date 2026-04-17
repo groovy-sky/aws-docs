@@ -1,3 +1,7 @@
+---
+title: "OpenSearch Structured Query Language (SQL)"
+---
+
 # OpenSearch Structured Query Language (SQL)
 
 This section contains a basic introduction to querying CloudWatch Logs using OpenSearch SQL.

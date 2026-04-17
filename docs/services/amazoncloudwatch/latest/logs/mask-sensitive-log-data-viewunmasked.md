@@ -1,3 +1,7 @@
+---
+title: "View unmasked data"
+---
+
 # View unmasked data
 
 To view unmasked data, a user must have the `logs:Unmask` permission. Users with this permission

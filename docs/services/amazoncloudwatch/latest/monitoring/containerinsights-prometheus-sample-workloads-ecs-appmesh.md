@@ -1,3 +1,7 @@
+---
+title: "Sample App Mesh workload for Amazon ECS clusters"
+---
+
 # Sample App Mesh workload for Amazon ECS clusters
 
 To collect metrics from a sample Prometheus workload for Amazon ECS, you must be

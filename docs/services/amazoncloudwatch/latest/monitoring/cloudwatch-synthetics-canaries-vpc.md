@@ -1,3 +1,7 @@
+---
+title: "Running a canary on a VPC"
+---
+
 # Running a canary on a VPC
 
 You can run canaries on endpoints on a VPC and public internal endpoints. To run a canary

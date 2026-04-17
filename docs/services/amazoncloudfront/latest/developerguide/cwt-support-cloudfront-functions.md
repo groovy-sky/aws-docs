@@ -1,3 +1,7 @@
+---
+title: "CWT support for CloudFront Functions"
+---
+
 # CWT support for CloudFront Functions
 
 This section provides details on support for CBOR Web Tokens (CWT) in your CloudFront

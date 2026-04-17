@@ -1,3 +1,7 @@
+---
+title: "Create a custom connector to a data source"
+---
+
 # Create a custom connector to a data source
 
 This topic describes how to connect a custom data source to CloudWatch.

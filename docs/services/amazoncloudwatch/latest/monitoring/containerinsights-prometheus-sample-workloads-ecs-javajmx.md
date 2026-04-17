@@ -1,3 +1,7 @@
+---
+title: "Sample Java/JMX workload for Amazon ECS clusters"
+---
+
 # Sample Java/JMX workload for Amazon ECS clusters
 
 JMX Exporter is an official Prometheus exporter that can scrape and expose JMX

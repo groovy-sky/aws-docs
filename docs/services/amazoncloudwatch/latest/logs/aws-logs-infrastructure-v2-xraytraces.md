@@ -1,3 +1,7 @@
+---
+title: "Traces sent to X-Ray"
+---
+
 # Traces sent to X-Ray
 
 **User permissions**

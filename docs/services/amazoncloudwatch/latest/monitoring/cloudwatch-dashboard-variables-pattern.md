@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Creating a dashboard that uses a regular expression pattern to switch between AWS Regions"
+---
+
 # Tutorial: Creating a dashboard that uses a regular expression pattern to switch between AWS Regions
 
 The steps in this procedure illustrate how to create a flexible dashboard that can

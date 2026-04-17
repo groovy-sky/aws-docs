@@ -1,3 +1,7 @@
+---
+title: "Groups"
+---
+
 # Groups
 
 You can create _groups_ to associate canaries with each other,

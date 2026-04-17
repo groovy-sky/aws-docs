@@ -1,3 +1,7 @@
+---
+title: "Setting up Container Insights on Amazon ECS"
+---
+
 # Setting up Container Insights on Amazon ECS
 
 You can use one or both of the following options to enable Container Insights on Amazon ECS

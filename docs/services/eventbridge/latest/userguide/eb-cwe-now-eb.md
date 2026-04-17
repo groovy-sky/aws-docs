@@ -1,3 +1,7 @@
+---
+title: "EventBridge is the evolution of Amazon CloudWatch Events"
+---
+
 # EventBridge is the evolution of Amazon CloudWatch Events
 
 EventBridge was formerly called Amazon CloudWatch Events. The default event bus and the rules you created in CloudWatch Events

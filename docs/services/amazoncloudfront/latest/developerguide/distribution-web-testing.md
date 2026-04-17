@@ -1,3 +1,7 @@
+---
+title: "Test a distribution"
+---
+
 # Test a distribution
 
 After you've created your distribution, CloudFront knows where your origin server is, and you

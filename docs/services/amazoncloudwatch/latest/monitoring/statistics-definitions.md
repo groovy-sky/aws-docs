@@ -1,3 +1,7 @@
+---
+title: "CloudWatch statistics definitions"
+---
+
 # CloudWatch statistics definitions
 
 Statistics are metric data aggregations over specified periods of time. When you graph

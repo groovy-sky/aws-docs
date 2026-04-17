@@ -1,3 +1,7 @@
+---
+title: "Unlinking graphs on a CloudWatch dashboard"
+---
+
 # Unlinking graphs on a CloudWatch dashboard
 
 ###### To unlink the graphs on a dashboard

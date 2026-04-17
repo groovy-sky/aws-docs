@@ -1,3 +1,7 @@
+---
+title: "Quick start with the Amazon CloudWatch Observability EKS add-on"
+---
+
 # Quick start with the Amazon CloudWatch Observability EKS add-on
 
 You can use the Amazon EKS add-on to install Container Insights with enhanced

@@ -1,3 +1,7 @@
+---
+title: "Step 1: Create a KeyValueStore for revoked certificates"
+---
+
 # Step 1: Create a KeyValueStore for revoked certificates
 
 Create a KeyValueStore to store revoked certificate serial numbers that your

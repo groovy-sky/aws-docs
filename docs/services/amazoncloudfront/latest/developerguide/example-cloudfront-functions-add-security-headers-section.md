@@ -1,3 +1,7 @@
+---
+title: "Add HTTP security headers to a CloudFront Functions viewer response event"
+---
+
 # Add HTTP security headers to a CloudFront Functions viewer response event
 
 The following code example shows how to add HTTP security headers to a CloudFront Functions viewer response event.

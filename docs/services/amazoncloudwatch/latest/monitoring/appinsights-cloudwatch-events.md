@@ -1,3 +1,7 @@
+---
+title: "Application Insights CloudWatch Events for detected problems"
+---
+
 # Application Insights CloudWatch Events for detected problems
 
 For each application that is added to CloudWatch Application Insights, a CloudWatch event is published for the

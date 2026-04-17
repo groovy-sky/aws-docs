@@ -1,3 +1,7 @@
+---
+title: "Using Internet Monitor with Amazon EventBridge"
+---
+
 # Using Internet Monitor with Amazon EventBridge
 
 Overall (global) health events that Internet Monitor creates for networking issues are published with Amazon EventBridge, so that you can send notifications about

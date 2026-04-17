@@ -1,3 +1,7 @@
+---
+title: "Use CreateLogStream with an AWS SDK or CLI"
+---
+
 # Use `CreateLogStream` with an AWS SDK or CLI
 
 The following code examples show how to use `CreateLogStream`.
@@ -57,7 +61,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[CreateLogStream](../../../../reference/goto/dotnetsdkv3/logs-2014-03-28/createlogstream.md)
+[CreateLogStream](https://docs.aws.amazon.com/goto/DotNetSDKV3/logs-2014-03-28/CreateLogStream)
 in _AWS SDK for .NET API Reference_.
 
 CLI

@@ -1,3 +1,7 @@
+---
+title: "Step 1: Create a Firehose delivery stream"
+---
+
 # Step 1: Create a Firehose delivery stream
 
 ###### Important

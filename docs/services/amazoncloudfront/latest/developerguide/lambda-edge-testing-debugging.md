@@ -1,3 +1,7 @@
+---
+title: "Test and debug Lambda@Edge functions"
+---
+
 # Test and debug Lambda@Edge functions
 
 It's important to test your Lambda@Edge function code standalone, to make sure that it

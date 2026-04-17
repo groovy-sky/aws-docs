@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Run a query that produces a time series visualization"
+---
+
 # Tutorial: Run a query that produces a time series visualization
 
 When you run a query that uses the `bin()` function to group

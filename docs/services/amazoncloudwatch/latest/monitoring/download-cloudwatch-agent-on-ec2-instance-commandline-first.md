@@ -1,3 +1,7 @@
+---
+title: "Download the CloudWatch agent package"
+---
+
 # Download the CloudWatch agent package
 
 ###### Note

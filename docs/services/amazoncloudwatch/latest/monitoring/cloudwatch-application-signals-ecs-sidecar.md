@@ -1,3 +1,7 @@
+---
+title: "Deploy using the sidecar strategy"
+---
+
 # Deploy using the sidecar strategy
 
 ## Step 1: Enable Application Signals in your account

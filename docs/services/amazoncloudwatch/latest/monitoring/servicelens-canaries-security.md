@@ -1,3 +1,7 @@
+---
+title: "Security considerations for Synthetics canaries"
+---
+
 # Security considerations for Synthetics canaries
 
 The following sections explain security issues that you should consider when creating

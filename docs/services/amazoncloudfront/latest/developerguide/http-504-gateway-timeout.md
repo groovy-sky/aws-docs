@@ -1,3 +1,7 @@
+---
+title: "HTTP 504 status code (Gateway Timeout)"
+---
+
 # HTTP 504 status code (Gateway Timeout)
 
 An HTTP 504 status code (gateway timeout) indicates that when CloudFront forwarded a

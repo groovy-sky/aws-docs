@@ -1,3 +1,7 @@
+---
+title: "Credentials"
+---
+
 # Credentials
 
 CloudWatch Logs data protection can find the following types of credentials.

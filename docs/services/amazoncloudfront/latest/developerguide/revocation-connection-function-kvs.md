@@ -1,3 +1,7 @@
+---
+title: "Revocation using CloudFront Connection Function and KVS"
+---
+
 # Revocation using CloudFront Connection Function and KVS
 
 You can implement certificate revocation checking for mutual TLS authentication by combining CloudFront Connection Functions with KeyValueStore. This approach provides a scalable, real-time certificate revocation mechanism that complements CloudFront's built-in certificate validation.

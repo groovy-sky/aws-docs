@@ -1,3 +1,7 @@
+---
+title: "Enable transaction search"
+---
+
 # Enable transaction search
 
 You can enable [Transaction Search](cloudwatch-transaction-search.md) through the console or by using an

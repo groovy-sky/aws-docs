@@ -1,3 +1,7 @@
+---
+title: "Use ListCloudFrontOriginAccessIdentities with a CLI"
+---
+
 # Use `ListCloudFrontOriginAccessIdentities` with a CLI
 
 The following code examples show how to use `ListCloudFrontOriginAccessIdentities`.
@@ -73,7 +77,7 @@ Quantity    : 2
 ```
 
 - For API details, see
-[ListCloudFrontOriginAccessIdentities](../../../powershell/v4/reference.md)
+[ListCloudFrontOriginAccessIdentities](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -99,7 +103,7 @@ Quantity    : 2
 ```
 
 - For API details, see
-[ListCloudFrontOriginAccessIdentities](../../../powershell/v5/reference.md)
+[ListCloudFrontOriginAccessIdentities](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

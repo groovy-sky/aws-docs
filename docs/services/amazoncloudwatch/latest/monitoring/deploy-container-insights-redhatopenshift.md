@@ -1,3 +1,7 @@
+---
+title: "Setting up Container Insights on RedHat OpenShift on AWS (ROSA)"
+---
+
 # Setting up Container Insights on RedHat OpenShift on AWS (ROSA)
 
 CloudWatch Container Insights with enhanced observability supports RedHat OpenShift on AWS

@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for Amazon CloudFront"
+---
+
 # AWS managed policies for Amazon CloudFront
 
 To add permissions to users, groups, and roles, it’s easier to use AWS managed policies

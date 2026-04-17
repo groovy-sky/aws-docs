@@ -1,3 +1,7 @@
+---
+title: "Getting started with Internet Monitor using the console"
+---
+
 # Getting started with Internet Monitor using the console
 
 To help you get started with Internet Monitor, this chapter provides the steps for creating and configuring a _monitor_. You create

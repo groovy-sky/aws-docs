@@ -1,3 +1,7 @@
+---
+title: "Tutorial for scraping Redis OSS Prometheus metrics on Amazon ECS Fargate"
+---
+
 # Tutorial for scraping Redis OSS Prometheus metrics on Amazon ECS Fargate
 
 This tutorial provides a hands-on introduction to scrape the Prometheus metrics of

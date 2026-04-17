@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting application issues"
+---
+
 # Troubleshooting application issues
 
 With Application Signals, you can troubleshoot rarely occurring latency spikes in your applications.

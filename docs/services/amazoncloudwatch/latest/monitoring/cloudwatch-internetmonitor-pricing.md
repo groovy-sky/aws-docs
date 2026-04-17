@@ -1,3 +1,7 @@
+---
+title: "Pricing for Internet Monitor"
+---
+
 # Pricing for Internet Monitor
 
 With Internet Monitor, there are no upfront costs or long-term commitments. Pricing for Internet Monitor has two components: a per

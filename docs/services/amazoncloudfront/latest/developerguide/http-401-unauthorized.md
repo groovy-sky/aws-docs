@@ -1,3 +1,7 @@
+---
+title: "HTTP 401 status code (Unauthorized)"
+---
+
 # HTTP 401 status code (Unauthorized)
 
 A 401 Unauthorized response status code indicates that the client request hasn't

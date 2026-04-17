@@ -1,3 +1,7 @@
+---
+title: "Observability using connection logs"
+---
+
 # Observability using connection logs
 
 CloudFront connection logs provide detailed visibility into mutual TLS authentication events, allowing you to monitor certificate validation, track connection attempts, and troubleshoot authentication issues.

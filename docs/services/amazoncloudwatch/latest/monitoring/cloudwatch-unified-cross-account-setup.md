@@ -1,3 +1,7 @@
+---
+title: "Link monitoring accounts with source accounts"
+---
+
 # Link monitoring accounts with source accounts
 
 The topics in this section explain how to set up links between monitoring accounts and

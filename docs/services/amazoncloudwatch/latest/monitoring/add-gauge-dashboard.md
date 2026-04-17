@@ -1,3 +1,7 @@
+---
+title: "Adding a gauge widget to a CloudWatch dashboard"
+---
+
 # Adding a gauge widget to a CloudWatch dashboard
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Setting up a new cross-account subscription"
+---
+
 # Setting up a new cross-account subscription
 
 Follow the steps in these sections to set up a new cross-account log

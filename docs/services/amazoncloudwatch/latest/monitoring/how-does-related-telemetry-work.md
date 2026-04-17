@@ -1,3 +1,7 @@
+---
+title: "How does CloudWatch find related telemetry?"
+---
+
 # How does CloudWatch find related telemetry?
 
 The CloudWatch **Explore related** pane shows you metrics and logs that

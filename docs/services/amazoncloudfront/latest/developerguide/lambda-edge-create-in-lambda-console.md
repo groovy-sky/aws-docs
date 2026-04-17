@@ -1,3 +1,7 @@
+---
+title: "Create a Lambda@Edge function"
+---
+
 # Create a Lambda@Edge function
 
 To set up AWS Lambda to run Lambda functions that are based on CloudFront events, follow

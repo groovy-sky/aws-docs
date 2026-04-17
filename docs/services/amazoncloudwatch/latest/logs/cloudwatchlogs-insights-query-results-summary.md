@@ -1,3 +1,7 @@
+---
+title: "Generate a natural language summary from CloudWatch Logs Insights query results"
+---
+
 # Generate a natural language summary from CloudWatch Logs Insights query results
 
 Analyzing log data is crucial for understanding your applications' behavior, but

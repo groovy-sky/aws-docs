@@ -1,3 +1,7 @@
+---
+title: "Installing the CloudWatch agent"
+---
+
 # Installing the CloudWatch agent
 
 You can install the CloudWatch agent on your Amazon EC2 instances, on-premises servers, and in containerized environments to collect

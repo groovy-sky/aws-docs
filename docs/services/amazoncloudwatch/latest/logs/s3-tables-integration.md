@@ -1,3 +1,7 @@
+---
+title: "Access logs with S3 Tables Integration"
+---
+
 # Access logs with S3 Tables Integration
 
 The S3 Tables Integration with CloudWatch allows you to access log data ingested into CloudWatch using

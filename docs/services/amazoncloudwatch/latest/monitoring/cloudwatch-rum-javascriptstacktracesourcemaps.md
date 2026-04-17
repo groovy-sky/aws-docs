@@ -1,3 +1,7 @@
+---
+title: "Enabling unminification of JavaScript error stack traces"
+---
+
 # Enabling unminification of JavaScript error stack traces
 
 When your web application JavaScript source code is minified, error stack traces can

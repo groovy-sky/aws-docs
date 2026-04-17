@@ -1,3 +1,7 @@
+---
+title: "Delete a connector to a data source"
+---
+
 # Delete a connector to a data source
 
 The instructions in this section describe how to delete a connector to a data source.

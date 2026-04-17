@@ -1,3 +1,7 @@
+---
+title: "Removing a gauge widget from a CloudWatch dashboard"
+---
+
 # Removing a gauge widget from a CloudWatch dashboard
 
 ###### To remove a gauge widget from a dashboard

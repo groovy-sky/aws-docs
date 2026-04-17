@@ -1,3 +1,7 @@
+---
+title: "Use StartQuery with an AWS SDK"
+---
+
 # Use `StartQuery` with an AWS SDK
 
 The following code examples show how to use `StartQuery`.
@@ -69,7 +73,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[StartQuery](../../../../reference/goto/dotnetsdkv4/logs-2014-03-28/startquery.md)
+[StartQuery](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/StartQuery)
 in _AWS SDK for .NET API Reference_.
 
 JavaScript
@@ -118,7 +122,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[StartQuery](../../../../reference/awsjavascriptsdk/v3/latest/client/cloudwatch-logs/command/startquerycommand.md)
+[StartQuery](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudwatch-logs/command/StartQueryCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -207,7 +211,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 ```
 
 - For API details, see
-[StartQuery](../../../goto/boto3/logs-2014-03-28/startquery.md)
+[StartQuery](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/StartQuery)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

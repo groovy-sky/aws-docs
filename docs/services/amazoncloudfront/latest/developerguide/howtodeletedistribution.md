@@ -1,3 +1,7 @@
+---
+title: "Delete a distribution"
+---
+
 # Delete a distribution
 
 The following procedure deletes a distribution by using the CloudFront console.

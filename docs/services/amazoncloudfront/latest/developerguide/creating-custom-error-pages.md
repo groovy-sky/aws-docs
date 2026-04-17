@@ -1,3 +1,7 @@
+---
+title: "Create a custom error page for specific HTTP status codes"
+---
+
 # Create a custom error page for specific HTTP status codes
 
 If you’d rather display a custom error message instead of the default

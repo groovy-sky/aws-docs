@@ -1,3 +1,7 @@
+---
+title: "Using the CloudWatch agent with Container Insights enhanced observability enabled"
+---
+
 # Using the CloudWatch agent with Container Insights enhanced observability enabled
 
 Use the instructions in one of the following sections to set up Container Insights on

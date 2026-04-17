@@ -1,3 +1,7 @@
+---
+title: "View detailed service activity and operational health with the service detail page"
+---
+
 # View detailed service activity and operational health with the service detail page
 
 When you instrument your application, [Amazon CloudWatch Application Signals](cloudwatch-application-monitoring-sections.md) maps

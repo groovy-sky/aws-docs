@@ -1,3 +1,7 @@
+---
+title: "Synthetic monitoring (canaries)"
+---
+
 # Synthetic monitoring (canaries)
 
 You can use Amazon CloudWatch Synthetics to create _canaries_,

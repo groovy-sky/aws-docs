@@ -1,3 +1,7 @@
+---
+title: "Add a metrics explorer widget to a CloudWatch dashboard"
+---
+
 # Add a metrics explorer widget to a CloudWatch dashboard
 
 The following steps explain how to add a metrics explorer widget to a

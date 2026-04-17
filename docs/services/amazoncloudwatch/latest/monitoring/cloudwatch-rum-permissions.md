@@ -1,3 +1,7 @@
+---
+title: "IAM policies to use CloudWatch RUM"
+---
+
 # IAM policies to use CloudWatch RUM
 
 To be able to fully manage CloudWatch RUM, you must be signed in as an IAM user or role

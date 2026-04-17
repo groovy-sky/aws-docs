@@ -1,3 +1,7 @@
+---
+title: "Embedding metrics within logs"
+---
+
 # Embedding metrics within logs
 
 The CloudWatch embedded metric format allows you to generate custom metrics asynchronously in the form of logs

@@ -1,3 +1,7 @@
+---
+title: "AWS services that publish CloudWatch metrics"
+---
+
 # AWS services that publish CloudWatch metrics
 
 You can use the following table to learn which AWS services publish metrics to CloudWatch.

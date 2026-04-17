@@ -1,3 +1,7 @@
+---
+title: "Install agents for self-managed Kubernetes instances"
+---
+
 # Install agents for self-managed Kubernetes instances
 
 Follow the steps in this section to install Network Flow Monitor agents for workloads on self-managed Kubernetes clusters. After you

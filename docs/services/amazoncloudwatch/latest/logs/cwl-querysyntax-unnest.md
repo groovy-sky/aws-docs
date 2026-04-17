@@ -1,3 +1,7 @@
+---
+title: "unnest"
+---
+
 # unnest
 
 Use `unnest` to flatten a list taken as input to produce

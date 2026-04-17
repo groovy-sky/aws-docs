@@ -1,3 +1,7 @@
+---
+title: "JavaScript runtime 1.0 features for CloudFront Functions"
+---
+
 # JavaScript runtime 1.0 features for CloudFront Functions
 
 The CloudFront Functions JavaScript runtime environment is compliant with [ECMAScript (ES) version 5.1](https://262.ecma-international.org/5.1) and

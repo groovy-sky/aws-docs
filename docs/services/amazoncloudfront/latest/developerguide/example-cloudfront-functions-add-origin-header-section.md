@@ -1,3 +1,7 @@
+---
+title: "Add an origin header to a CloudFront Functions viewer request event"
+---
+
 # Add an origin header to a CloudFront Functions viewer request event
 
 The following code example shows how to add an origin header to a CloudFront Functions viewer request event.

@@ -1,3 +1,7 @@
+---
+title: "Use DescribeLogGroups with an AWS SDK or CLI"
+---
+
 # Use `DescribeLogGroups` with an AWS SDK or CLI
 
 The following code examples show how to use `DescribeLogGroups`.
@@ -75,7 +79,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DescribeLogGroups](../../../../reference/goto/dotnetsdkv3/logs-2014-03-28/describeloggroups.md)
+[DescribeLogGroups](https://docs.aws.amazon.com/goto/DotNetSDKV3/logs-2014-03-28/DescribeLogGroups)
 in _AWS SDK for .NET API Reference_.
 
 CLI
@@ -148,7 +152,7 @@ export const main = async () => {
 ```
 
 - For API details, see
-[DescribeLogGroups](../../../../reference/awsjavascriptsdk/v3/latest/client/cloudwatch-logs/command/describeloggroupscommand.md)
+[DescribeLogGroups](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudwatch-logs/command/DescribeLogGroupsCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

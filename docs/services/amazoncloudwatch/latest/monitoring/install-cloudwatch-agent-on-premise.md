@@ -1,3 +1,7 @@
+---
+title: "Install the CloudWatch agent on on-premises servers"
+---
+
 # Install the CloudWatch agent on on-premises servers
 
 If you downloaded the CloudWatch agent on a computer and created your agent configuration

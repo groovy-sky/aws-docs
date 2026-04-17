@@ -1,3 +1,7 @@
+---
+title: "Add resources to your monitor"
+---
+
 # Add resources to your monitor
 
 When you create a monitor, you must associate your application's resources with it: Amazon Virtual Private Clouds (VPCs), Network Load Balancers,

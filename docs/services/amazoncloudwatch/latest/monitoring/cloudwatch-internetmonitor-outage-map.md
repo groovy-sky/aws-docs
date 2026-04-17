@@ -1,3 +1,7 @@
+---
+title: "Global internet weather map in Internet Monitor"
+---
+
 # Global internet weather map in Internet Monitor
 
 Internet Monitor displays a global internet weather map that is available to all AWS customers. To view the map, in the

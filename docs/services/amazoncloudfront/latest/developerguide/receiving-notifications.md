@@ -1,3 +1,7 @@
+---
+title: "Create alarms for metrics"
+---
+
 # Create alarms for metrics
 
 In the CloudFront console, you can set alarms to notify you by Amazon Simple Notification Service (Amazon SNS) based on

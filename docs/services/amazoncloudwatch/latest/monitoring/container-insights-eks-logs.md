@@ -1,3 +1,7 @@
+---
+title: "Send logs to CloudWatch Logs"
+---
+
 # Send logs to CloudWatch Logs
 
 To send logs from your containers to Amazon CloudWatch Logs, you can use Fluent Bit. For more

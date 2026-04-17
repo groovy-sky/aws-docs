@@ -1,3 +1,7 @@
+---
+title: "Export log data to Amazon S3 using the AWS CLI"
+---
+
 # Export log data to Amazon S3 using the AWS CLI
 
 In the following example, you use an export task to export all data from a CloudWatch Logs log

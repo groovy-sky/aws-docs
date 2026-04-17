@@ -1,3 +1,7 @@
+---
+title: "Internet Monitor cross-account observability"
+---
+
 # Internet Monitor cross-account observability
 
 With Internet Monitor cross-account observability, you can monitor your applications that span multiple AWS accounts within a single AWS Region.

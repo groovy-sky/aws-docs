@@ -1,3 +1,7 @@
+---
+title: "Control how long CloudFront caches errors"
+---
+
 # Control how long CloudFront caches errors
 
 CloudFront caches error responses for a default duration of 10 seconds. CloudFront then submits

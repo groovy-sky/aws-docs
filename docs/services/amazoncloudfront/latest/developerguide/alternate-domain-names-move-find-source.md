@@ -1,3 +1,7 @@
+---
+title: "Find the source standard distribution or distribution tenant"
+---
+
 # Find the source standard distribution or distribution tenant
 
 Before you can move an alternate domain name from one distribution (standard or

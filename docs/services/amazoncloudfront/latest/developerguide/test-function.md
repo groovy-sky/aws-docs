@@ -1,3 +1,7 @@
+---
+title: "Test functions"
+---
+
 # Test functions
 
 Before you deploy the function to the live stage (production), you can test your function

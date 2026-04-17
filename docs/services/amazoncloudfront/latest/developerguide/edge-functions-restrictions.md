@@ -1,3 +1,7 @@
+---
+title: "Restrictions on edge functions"
+---
+
 # Restrictions on edge functions
 
 The following topics describe the restrictions that apply to CloudFront Functions and

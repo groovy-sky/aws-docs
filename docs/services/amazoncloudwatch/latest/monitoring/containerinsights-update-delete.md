@@ -1,3 +1,7 @@
+---
+title: "Updating or deleting Container Insights on Amazon EKS and Kubernetes"
+---
+
 # Updating or deleting Container Insights on Amazon EKS and Kubernetes
 
 Use the steps in these sections to update your CloudWatch agent container image, or to

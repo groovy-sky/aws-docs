@@ -1,3 +1,7 @@
+---
+title: "Moving a graph on a CloudWatch dashboard"
+---
+
 # Moving a graph on a CloudWatch dashboard
 
 ###### To move a graph on a dashboard

@@ -1,3 +1,7 @@
+---
+title: "Notifying users on alarm changes"
+---
+
 # Notifying users on alarm changes
 
 This section explains how you can use AWS User Notifications or Amazon Simple Notification Service to have

@@ -1,3 +1,7 @@
+---
+title: "Before you begin"
+---
+
 # Before you begin
 
 Before you start the installation process, follow the steps in this section to make sure that your environment

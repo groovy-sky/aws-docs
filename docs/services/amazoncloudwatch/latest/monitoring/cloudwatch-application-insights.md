@@ -1,3 +1,7 @@
+---
+title: "Detect common application problems with CloudWatch Application Insights"
+---
+
 # Detect common application problems with CloudWatch Application Insights
 
 You can use Amazon CloudWatch Application Insights to detect problems with your applications. CloudWatch Application Insights facilitates observability for your applications and underlying AWS resources.

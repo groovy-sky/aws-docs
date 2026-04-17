@@ -1,3 +1,7 @@
+---
+title: "Infrastructure security in Amazon CloudFront"
+---
+
 # Infrastructure security in Amazon CloudFront
 
 As a managed service, Amazon CloudFront is protected by AWS global network security. For

@@ -1,3 +1,7 @@
+---
+title: "Amazon Route 53 Resolver endpoint"
+---
+
 # Amazon Route 53 Resolver endpoint
 
 CloudWatch Application Insights supports the following metrics:

@@ -1,3 +1,7 @@
+---
+title: "Filter pattern syntax for metric filters"
+---
+
 # Filter pattern syntax for metric filters
 
 ###### Note

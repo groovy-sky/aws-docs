@@ -1,3 +1,7 @@
+---
+title: "Use alternate domain names and HTTPS"
+---
+
 # Use alternate domain names and HTTPS
 
 If you want to use your own domain name in the URLs for your files (for example,

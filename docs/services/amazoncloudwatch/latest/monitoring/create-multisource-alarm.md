@@ -1,3 +1,7 @@
+---
+title: "Create an alarm based on a connected data source"
+---
+
 # Create an alarm based on a connected data source
 
 You can create alarms that watch metrics from data sources that aren't in CloudWatch. For more

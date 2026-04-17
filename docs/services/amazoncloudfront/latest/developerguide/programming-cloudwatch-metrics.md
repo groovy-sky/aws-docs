@@ -1,3 +1,7 @@
+---
+title: "Types of metrics for CloudFront"
+---
+
 # Types of metrics for CloudFront
 
 You can use the CloudWatch API or AWS Command Line Interface (AWS CLI) to get the CloudFront metrics in programs or

@@ -1,3 +1,7 @@
+---
+title: "Viewing canary statistics and details"
+---
+
 # Viewing canary statistics and details
 
 You can view details about your canaries and see statistics about their runs.

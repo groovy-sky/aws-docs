@@ -1,3 +1,7 @@
+---
+title: "Understanding hypothesis visualizations"
+---
+
 # Understanding hypothesis visualizations
 
 When CloudWatch investigations generates hypotheses that include multiple resources, the investigation view

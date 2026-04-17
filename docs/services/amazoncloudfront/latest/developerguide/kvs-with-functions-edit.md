@@ -1,3 +1,7 @@
+---
+title: "Update a key value store"
+---
+
 # Update a key value store
 
 When you update a key value store, you can change the key-value pairs, or change

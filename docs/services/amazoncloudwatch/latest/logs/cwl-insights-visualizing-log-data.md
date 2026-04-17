@@ -1,3 +1,7 @@
+---
+title: "Visualize log data in graphs"
+---
+
 # Visualize log data in graphs
 
 You can use visualizations such as bar charts, line charts, and stacked area

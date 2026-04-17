@@ -1,3 +1,7 @@
+---
+title: "Query metrics with PromQL"
+---
+
 # Query metrics with PromQL
 
 ###### Topics

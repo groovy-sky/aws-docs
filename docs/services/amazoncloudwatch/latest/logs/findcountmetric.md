@@ -1,3 +1,7 @@
+---
+title: "Example: Count HTTP 4xx codes"
+---
+
 # Example: Count HTTP 4xx codes
 
 As in the previous example, you might want to monitor your web service access logs

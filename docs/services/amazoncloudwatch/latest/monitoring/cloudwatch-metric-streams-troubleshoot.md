@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting metric streams in CloudWatch"
+---
+
 # Troubleshooting metric streams in CloudWatch
 
 If you're not seeing metric data at your final destination, check the

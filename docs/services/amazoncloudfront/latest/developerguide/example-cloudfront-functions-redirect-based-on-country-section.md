@@ -1,3 +1,7 @@
+---
+title: "Redirect to a new URL in a CloudFront Functions viewer request event"
+---
+
 # Redirect to a new URL in a CloudFront Functions viewer request event
 
 The following code example shows how to redirect to a new URL in a CloudFront Functions viewer request event.

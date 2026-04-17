@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon CloudFront"
+---
+
 # Identity-based policy examples for Amazon CloudFront
 
 By default, users and roles don't have permission to create or modify CloudFront

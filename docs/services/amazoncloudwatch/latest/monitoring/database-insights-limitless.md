@@ -1,3 +1,7 @@
+---
+title: "Monitoring Aurora Limitless databases with Database Insights"
+---
+
 # Monitoring Aurora Limitless databases with Database Insights
 
 Database Insights supports monitoring [Aurora PostgreSQL\

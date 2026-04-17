@@ -1,3 +1,7 @@
+---
+title: "Exploring your data with CloudWatch tools and the Internet Monitor query interface"
+---
+
 # Exploring your data with CloudWatch tools and the Internet Monitor query interface
 
 In addition to visualizing your performance and availability for your application with the Internet Monitor dashboard,

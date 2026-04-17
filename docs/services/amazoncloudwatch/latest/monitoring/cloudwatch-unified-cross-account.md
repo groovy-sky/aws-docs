@@ -1,3 +1,7 @@
+---
+title: "CloudWatch cross-account observability"
+---
+
 # CloudWatch cross-account observability
 
 With Amazon CloudWatch cross-account observability, you can monitor and troubleshoot applications

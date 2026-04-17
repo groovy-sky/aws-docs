@@ -1,3 +1,7 @@
+---
+title: "Amazon Elastic Container Service (Amazon ECS)"
+---
+
 # Amazon Elastic Container Service (Amazon ECS)
 
 CloudWatch Application Insights supports the following metrics:

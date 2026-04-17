@@ -1,3 +1,7 @@
+---
+title: "Customize with CloudFront Connection Functions"
+---
+
 # Customize with CloudFront Connection Functions
 
 CloudFront Connection Functions allow you to write lightweight JavaScript functions for mTLS

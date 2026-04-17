@@ -1,3 +1,7 @@
+---
+title: "Specification: Embedded metric format"
+---
+
 # Specification: Embedded metric format
 
 The CloudWatch embedded metric format is a JSON specification used to instruct CloudWatch Logs to automatically extract metric values embedded in structured log events.

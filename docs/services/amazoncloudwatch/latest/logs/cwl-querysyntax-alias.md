@@ -1,3 +1,7 @@
+---
+title: "Use aliases and comments in queries"
+---
+
 # Use aliases and comments in queries
 
 Create queries that contain aliases. Use aliases to rename log fields or

@@ -1,3 +1,7 @@
+---
+title: "Customize at the edge with functions"
+---
+
 # Customize at the edge with functions
 
 With Amazon CloudFront, you can write your own code to customize how your CloudFront distributions

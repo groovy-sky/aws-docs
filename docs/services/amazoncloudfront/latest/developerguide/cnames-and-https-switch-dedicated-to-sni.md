@@ -1,3 +1,7 @@
+---
+title: "Switch from a custom SSL/TLS certificate with dedicated IP addresses to SNI"
+---
+
 # Switch from a custom SSL/TLS certificate with dedicated IP addresses to SNI
 
 If you configured CloudFront to use a custom SSL/TLS certificate with dedicated IP addresses, you

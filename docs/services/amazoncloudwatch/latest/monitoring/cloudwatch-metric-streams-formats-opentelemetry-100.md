@@ -1,3 +1,7 @@
+---
+title: "CloudWatch metric stream output in OpenTelemetry 1.0.0 format"
+---
+
 # CloudWatch metric stream output in OpenTelemetry 1.0.0 format
 
 ###### Note

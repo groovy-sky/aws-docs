@@ -1,3 +1,7 @@
+---
+title: "IAM policies for users"
+---
+
 # IAM policies for users
 
 CloudWatch Logs has created two IAM policies,

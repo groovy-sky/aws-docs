@@ -1,3 +1,7 @@
+---
+title: "Kubernetes on AWS"
+---
+
 # Kubernetes on AWS
 
 CloudWatch Application Insights supports the following metrics:

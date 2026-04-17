@@ -1,3 +1,7 @@
+---
+title: "Publish custom metrics"
+---
+
 # Publish custom metrics
 
 You can publish your own metrics to CloudWatch using the OpenTelemetry Protocol (OTLP) or the

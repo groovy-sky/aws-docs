@@ -1,3 +1,7 @@
+---
+title: "Pay for file invalidation"
+---
+
 # Pay for file invalidation
 
 The first 1,000 invalidation paths that you submit per month are free; you pay for

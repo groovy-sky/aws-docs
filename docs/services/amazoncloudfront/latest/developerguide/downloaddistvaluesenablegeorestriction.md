@@ -1,3 +1,7 @@
+---
+title: "Geographic restrictions"
+---
+
 # Geographic restrictions
 
 If you need to prevent users in selected countries from accessing your content, you can

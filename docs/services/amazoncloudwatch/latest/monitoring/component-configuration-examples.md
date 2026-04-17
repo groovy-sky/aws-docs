@@ -1,3 +1,7 @@
+---
+title: "Component configuration examples"
+---
+
 # Component configuration examples
 
 The following examples show component configurations in JSON format for relevant

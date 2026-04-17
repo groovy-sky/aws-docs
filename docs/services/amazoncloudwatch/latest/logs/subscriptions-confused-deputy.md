@@ -1,3 +1,7 @@
+---
+title: "Confused deputy prevention"
+---
+
 # Confused deputy prevention
 
 The confused deputy problem is a security issue where an entity that doesn't have

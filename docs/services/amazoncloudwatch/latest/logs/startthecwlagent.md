@@ -1,3 +1,7 @@
+---
+title: "Start the CloudWatch Logs agent"
+---
+
 # Start the CloudWatch Logs agent
 
 If the CloudWatch Logs agent on your EC2 instance did not start automatically after installation,

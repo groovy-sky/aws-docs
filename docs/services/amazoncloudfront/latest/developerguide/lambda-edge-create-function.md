@@ -1,3 +1,7 @@
+---
+title: "Write and create a Lambda@Edge function"
+---
+
 # Write and create a Lambda@Edge function
 
 To use Lambda@Edge, you _write_ the code for your

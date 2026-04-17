@@ -1,3 +1,7 @@
+---
+title: "Using Amazon CloudWatch alarms"
+---
+
 # Using Amazon CloudWatch alarms
 
 You can create alarms that watch metrics and send notifications or automatically make

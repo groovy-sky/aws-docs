@@ -1,3 +1,7 @@
+---
+title: "Use CancelExportTask with an AWS SDK"
+---
+
 # Use `CancelExportTask` with an AWS SDK
 
 The following code example shows how to use `CancelExportTask`.
@@ -54,7 +58,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[CancelExportTask](../../../../reference/goto/dotnetsdkv3/logs-2014-03-28/cancelexporttask.md)
+[CancelExportTask](https://docs.aws.amazon.com/goto/DotNetSDKV3/logs-2014-03-28/CancelExportTask)
 in _AWS SDK for .NET API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

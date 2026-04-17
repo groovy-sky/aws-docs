@@ -1,3 +1,7 @@
+---
+title: "CloudWatch RUM"
+---
+
 # CloudWatch RUM
 
 With CloudWatch RUM, you can perform real user monitoring to collect and view client-side data

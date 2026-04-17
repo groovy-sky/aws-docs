@@ -1,3 +1,7 @@
+---
+title: "What is Amazon CloudWatch Application Insights?"
+---
+
 # What is Amazon CloudWatch Application Insights?
 
 CloudWatch Application Insights helps you monitor your applications that use Amazon EC2 instances along with other

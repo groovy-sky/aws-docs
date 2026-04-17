@@ -1,3 +1,7 @@
+---
+title: "Types of data that you can protect"
+---
+
 # Types of data that you can protect
 
 This section contains information about the types of data that you can protect in a CloudWatch Logs data protection

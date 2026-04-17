@@ -1,3 +1,7 @@
+---
+title: "(Optional) Configuring Application Signals"
+---
+
 # (Optional) Configuring Application Signals
 
 This section contains information about configuring CloudWatch Application Signals.

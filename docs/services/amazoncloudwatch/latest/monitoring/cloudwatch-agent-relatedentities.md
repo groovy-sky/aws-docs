@@ -1,3 +1,7 @@
+---
+title: "Using the CloudWatch agent with related telemetry"
+---
+
 # Using the CloudWatch agent with related telemetry
 
 Metrics and logs that are sent to CloudWatch can include an optional entity to correlate

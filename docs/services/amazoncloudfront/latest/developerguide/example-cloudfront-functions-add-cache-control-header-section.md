@@ -1,3 +1,7 @@
+---
+title: "Add a cache control header to a CloudFront Functions viewer response event"
+---
+
 # Add a cache control header to a CloudFront Functions viewer response event
 
 The following code example shows how to add a cache control header to a CloudFront Functions viewer response event.

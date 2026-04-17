@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 bucket"
+---
+
 # Amazon S3 bucket
 
 The following example shows a component configurations in JSON format for Amazon S3

@@ -1,3 +1,7 @@
+---
+title: "Copying a variable to another CloudWatch dashboard"
+---
+
 # Copying a variable to another CloudWatch dashboard
 
 After you create a dashboard with useful variables, you can copy these variables

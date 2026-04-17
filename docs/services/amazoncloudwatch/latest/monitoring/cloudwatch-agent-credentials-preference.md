@@ -1,3 +1,7 @@
+---
+title: "CloudWatch agent credentials preference"
+---
+
 # CloudWatch agent credentials preference
 
 This section outlines the credentials provider chain the CloudWatch agent uses to obtain

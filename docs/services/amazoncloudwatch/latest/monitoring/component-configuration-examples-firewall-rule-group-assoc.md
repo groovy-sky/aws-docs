@@ -1,3 +1,7 @@
+---
+title: "AWS Network Firewall rule group association"
+---
+
 # AWS Network Firewall rule group association
 
 The following example shows a component configuration in JSON format for

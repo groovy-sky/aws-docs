@@ -1,3 +1,7 @@
+---
+title: "Choose the event to trigger the function"
+---
+
 # Choose the event to trigger the function
 
 When you're deciding which CloudFront event you want to use to trigger a Lambda function,

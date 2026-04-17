@@ -1,3 +1,7 @@
+---
+title: "Track real-time performance and availability in Internet Monitor (Overview page)"
+---
+
 # Track real-time performance and availability in Internet Monitor (Overview page)
 
 The **Overview** page in the Internet Monitor console shows you a high-level view of performance and availability

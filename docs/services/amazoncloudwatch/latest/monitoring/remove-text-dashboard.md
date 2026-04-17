@@ -1,3 +1,7 @@
+---
+title: "Removing a text widget from a CloudWatch dashboard"
+---
+
 # Removing a text widget from a CloudWatch dashboard
 
 ###### To remove a text widget from a dashboard

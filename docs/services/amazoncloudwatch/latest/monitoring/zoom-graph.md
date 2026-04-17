@@ -1,3 +1,7 @@
+---
+title: "Zoom in on a line graph or stacked area graph"
+---
+
 # Zoom in on a line graph or stacked area graph
 
 In the CloudWatch console, you can use the mini-map zoom feature to focus on sections of line

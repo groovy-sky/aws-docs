@@ -1,3 +1,7 @@
+---
+title: "Create the CloudWatch agent configuration file with the wizard"
+---
+
 # Create the CloudWatch agent configuration file with the wizard
 
 The agent configuration file wizard,

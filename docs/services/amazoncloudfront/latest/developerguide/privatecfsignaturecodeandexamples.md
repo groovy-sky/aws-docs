@@ -1,3 +1,7 @@
+---
+title: "Code examples for creating a signature for a signed URL"
+---
+
 # Code examples for creating a signature for a signed URL
 
 This section includes downloadable application examples that demonstrate how to create

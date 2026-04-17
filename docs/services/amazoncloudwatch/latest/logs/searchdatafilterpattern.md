@@ -1,3 +1,7 @@
+---
+title: "Search log data using filter patterns"
+---
+
 # Search log data using filter patterns
 
 You can search your log data using the [Filter pattern syntax for metric filters, subscription filters, filter log events, and Live Tail](filterandpatternsyntax.md). You can search all the log streams within

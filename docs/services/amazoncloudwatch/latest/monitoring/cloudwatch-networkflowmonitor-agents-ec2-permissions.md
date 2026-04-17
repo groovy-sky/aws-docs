@@ -1,3 +1,7 @@
+---
+title: "Configure permissions for agents"
+---
+
 # Configure permissions for agents
 
 To enable agents to send metrics to the Network Flow Monitor ingestion backend, the EC2 instances that the agents run

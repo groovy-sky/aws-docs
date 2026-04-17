@@ -1,3 +1,7 @@
+---
+title: "Using CloudWatch anomaly detection"
+---
+
 # Using CloudWatch anomaly detection
 
 When you enable _anomaly detection_ for a metric, CloudWatch applies

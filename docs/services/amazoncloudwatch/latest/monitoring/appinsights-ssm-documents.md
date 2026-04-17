@@ -1,3 +1,7 @@
+---
+title: "AWS Systems Manager (SSM) Documents used by CloudWatch Application Insights"
+---
+
 # AWS Systems Manager (SSM) Documents used by CloudWatch Application Insights
 
 Application Insights uses the SSM Documents listed in this section to define the actions that

@@ -1,3 +1,7 @@
+---
+title: "Set up cross-account cross-region monitoring for CloudWatch Database Insights"
+---
+
 # Set up cross-account cross-region monitoring for CloudWatch Database Insights
 
 CloudWatch Database Insights supports cross-account and cross-region database fleet monitoring, enabling centralized observability

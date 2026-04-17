@@ -1,3 +1,7 @@
+---
+title: "Setting up Container Insights on Amazon ECS using AWS Distro for OpenTelemetry"
+---
+
 # Setting up Container Insights on Amazon ECS using AWS Distro for OpenTelemetry
 
 Use this section if you want to use AWS Distro for OpenTelemetry to set up CloudWatch

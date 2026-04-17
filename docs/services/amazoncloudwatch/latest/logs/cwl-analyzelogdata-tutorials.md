@@ -1,3 +1,7 @@
+---
+title: "Get started with Logs Insights QL: Query tutorials"
+---
+
 # Get started with Logs Insights QL: Query tutorials
 
 The following sections include sample query tutorials to help you get started

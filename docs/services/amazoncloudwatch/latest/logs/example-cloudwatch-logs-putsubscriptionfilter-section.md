@@ -1,3 +1,7 @@
+---
+title: "Use PutSubscriptionFilter with an AWS SDK"
+---
+
 # Use `PutSubscriptionFilter` with an AWS SDK
 
 The following code examples show how to use `PutSubscriptionFilter`.
@@ -50,7 +54,7 @@ Create the subscription filter.
 ```
 
 - For API details, see
-[PutSubscriptionFilter](../../../../reference/goto/sdkforcpp/logs-2014-03-28/putsubscriptionfilter.md)
+[PutSubscriptionFilter](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/PutSubscriptionFilter)
 in _AWS SDK for C++ API Reference_.
 
 Java
@@ -156,7 +160,7 @@ public class PutSubscriptionFilter {
 ```
 
 - For API details, see
-[PutSubscriptionFilter](../../../../reference/goto/sdkforjavav2/logs-2014-03-28/putsubscriptionfilter.md)
+[PutSubscriptionFilter](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/PutSubscriptionFilter)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -205,7 +209,7 @@ export default run();
 ```
 
 - For API details, see
-[PutSubscriptionFilter](../../../../reference/awsjavascriptsdk/v3/latest/client/cloudwatch-logs/command/putsubscriptionfiltercommand.md)
+[PutSubscriptionFilter](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudwatch-logs/command/PutSubscriptionFilterCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 **SDK for JavaScript (v2)**
@@ -246,7 +250,7 @@ cwl.putSubscriptionFilter(params, function (err, data) {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v2/developer-guide/cloudwatch-examples-subscriptions.md#cloudwatch-examples-subscriptions-creating).
 
 - For API details, see
-[PutSubscriptionFilter](../../../../reference/goto/awsjavascriptsdk/logs-2014-03-28/putsubscriptionfilter.md)
+[PutSubscriptionFilter](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/logs-2014-03-28/PutSubscriptionFilter)
 in _AWS SDK for JavaScript API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

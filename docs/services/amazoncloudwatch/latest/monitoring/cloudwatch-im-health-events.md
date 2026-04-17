@@ -1,3 +1,7 @@
+---
+title: "View health events and metrics in Internet Monitor (Health events page)"
+---
+
 # View health events and metrics in Internet Monitor (Health events page)
 
 The **Health events** page in the Internet Monitor console provides a map of health events that

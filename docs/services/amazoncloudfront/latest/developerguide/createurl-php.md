@@ -1,3 +1,7 @@
+---
+title: "Create a URL signature using PHP"
+---
+
 # Create a URL signature using PHP
 
 Any web server that runs PHP can use this PHP example code to create policy

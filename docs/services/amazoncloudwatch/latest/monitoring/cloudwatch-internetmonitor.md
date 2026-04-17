@@ -1,3 +1,7 @@
+---
+title: "Using Internet Monitor"
+---
+
 # Using Internet Monitor
 
 Internet Monitor provides visibility into how internet issues impact the performance and availability

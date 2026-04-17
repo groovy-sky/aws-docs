@@ -1,3 +1,7 @@
+---
+title: "AWS API usage metrics"
+---
+
 # AWS API usage metrics
 
 Most APIs that support AWS CloudTrail logging also report usage metrics to CloudWatch. API usage

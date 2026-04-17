@@ -1,3 +1,7 @@
+---
+title: "Writing a Node.js canary script using the Puppeteer runtime"
+---
+
 # Writing a Node.js canary script using the Puppeteer runtime
 
 ###### Topics

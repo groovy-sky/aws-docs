@@ -1,3 +1,7 @@
+---
+title: "Change health event thresholds for a monitor"
+---
+
 # Change health event thresholds for a monitor
 
 Internet Monitor uses a default threshold to determine when to create a

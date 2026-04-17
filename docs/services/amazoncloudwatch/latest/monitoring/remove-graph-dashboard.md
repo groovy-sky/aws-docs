@@ -1,3 +1,7 @@
+---
+title: "Removing a graph widget from a CloudWatch dashboard"
+---
+
 # Removing a graph widget from a CloudWatch dashboard
 
 ###### To remove a graph from a dashboard

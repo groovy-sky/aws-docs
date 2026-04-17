@@ -1,3 +1,7 @@
+---
+title: "Permissions required for Application Signals"
+---
+
 # Permissions required for Application Signals
 
 This section explains the permissions necessary for you to enable, manage, and operate

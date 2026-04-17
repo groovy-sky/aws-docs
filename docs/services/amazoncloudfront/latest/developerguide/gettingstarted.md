@@ -1,3 +1,7 @@
+---
+title: "Get started with CloudFront"
+---
+
 # Get started with CloudFront
 
 The topics in this section show you how to get started delivering your content with Amazon CloudFront.

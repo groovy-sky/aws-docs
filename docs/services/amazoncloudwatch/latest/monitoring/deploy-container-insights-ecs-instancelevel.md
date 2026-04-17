@@ -1,3 +1,7 @@
+---
+title: "Deploying the CloudWatch agent to collect EC2 instance-level metrics on Amazon ECS"
+---
+
 # Deploying the CloudWatch agent to collect EC2 instance-level metrics on Amazon ECS
 
 To deploy the CloudWatch agent to collect instance-level metrics from Amazon ECS clusters that

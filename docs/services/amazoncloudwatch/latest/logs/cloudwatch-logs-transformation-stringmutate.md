@@ -1,3 +1,7 @@
+---
+title: "String mutate processors"
+---
+
 # String mutate processors
 
 This section contains information about the string mutate processors that you can use with a log event

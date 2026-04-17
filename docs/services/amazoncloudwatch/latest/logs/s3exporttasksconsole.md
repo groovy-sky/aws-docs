@@ -1,3 +1,7 @@
+---
+title: "Export log data to Amazon S3 using the console"
+---
+
 # Export log data to Amazon S3 using the console
 
 In the following examples, you use the Amazon CloudWatch console to export all data from an

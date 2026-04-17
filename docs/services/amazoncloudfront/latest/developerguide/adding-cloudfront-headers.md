@@ -1,3 +1,7 @@
+---
+title: "Add CloudFront request headers"
+---
+
 # Add CloudFront request headers
 
 You can configure CloudFront to add specific HTTP headers to the requests that CloudFront receives

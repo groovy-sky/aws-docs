@@ -1,3 +1,7 @@
+---
+title: "Supported instrumentation setups"
+---
+
 # Supported instrumentation setups
 
 You can enable CloudWatch Application Signals with different instrumentation setups.

@@ -1,3 +1,7 @@
+---
+title: "Amazon VPC"
+---
+
 # Amazon VPC
 
 CloudWatch Application Insights supports the following metrics:

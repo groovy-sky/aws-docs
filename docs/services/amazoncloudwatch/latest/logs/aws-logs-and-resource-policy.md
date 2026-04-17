@@ -1,3 +1,7 @@
+---
+title: "Enable logging from AWS services"
+---
+
 # Enable logging from AWS services
 
 While many services publish logs only to CloudWatch Logs, some AWS services can publish logs

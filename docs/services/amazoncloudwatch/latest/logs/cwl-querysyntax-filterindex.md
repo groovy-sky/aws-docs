@@ -1,3 +1,7 @@
+---
+title: "filterIndex"
+---
+
 # filterIndex
 
 Use `filterIndex` to return indexed data only, by forcing a

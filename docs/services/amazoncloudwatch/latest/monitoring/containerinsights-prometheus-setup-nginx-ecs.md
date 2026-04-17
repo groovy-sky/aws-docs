@@ -1,3 +1,7 @@
+---
+title: "Sample NGINX workload for Amazon ECS clusters"
+---
+
 # Sample NGINX workload for Amazon ECS clusters
 
 The NGINX Prometheus exporter can scrape and expose NGINX data as Prometheus

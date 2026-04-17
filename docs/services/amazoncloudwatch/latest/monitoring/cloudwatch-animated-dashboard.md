@@ -1,3 +1,7 @@
+---
+title: "Viewing an animated CloudWatch dashboard"
+---
+
 # Viewing an animated CloudWatch dashboard
 
 You can view an animated dashboard that replays CloudWatch metric data that was captured

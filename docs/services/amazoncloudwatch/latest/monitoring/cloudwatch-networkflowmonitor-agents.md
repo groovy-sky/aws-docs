@@ -1,3 +1,7 @@
+---
+title: "Install Network Flow Monitor agents on EC2 and self-managed Kubernetes instances"
+---
+
 # Install Network Flow Monitor agents on EC2 and self-managed Kubernetes instances
 
 To provide performance metrics for network flows in your AWS workloads, Network Flow Monitor relies on _agents_

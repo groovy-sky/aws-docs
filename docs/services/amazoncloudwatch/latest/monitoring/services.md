@@ -1,3 +1,7 @@
+---
+title: "Monitor the operational health of your applications with Application Signals"
+---
+
 # Monitor the operational health of your applications with Application Signals
 
 Use Application Signals within the [CloudWatch console](https://console.aws.amazon.com/cloudwatch) to monitor and troubleshoot

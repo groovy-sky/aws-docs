@@ -1,3 +1,7 @@
+---
+title: "Required roles and permissions for CloudWatch canaries"
+---
+
 # Required roles and permissions for CloudWatch canaries
 
 Both the users who create and manage canaries, and the canaries themselves, must have

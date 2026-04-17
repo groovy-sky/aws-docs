@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting the CloudWatch agent"
+---
+
 # Troubleshooting the CloudWatch agent
 
 You can use the information in this section to troubleshoot issues you might encounter

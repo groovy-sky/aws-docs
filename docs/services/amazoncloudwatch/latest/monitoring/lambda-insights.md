@@ -1,3 +1,7 @@
+---
+title: "Lambda Insights"
+---
+
 # Lambda Insights
 
 CloudWatch Lambda Insights is a monitoring and troubleshooting solution for serverless

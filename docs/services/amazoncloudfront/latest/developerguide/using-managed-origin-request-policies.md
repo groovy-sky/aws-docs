@@ -1,3 +1,7 @@
+---
+title: "Use managed origin request policies"
+---
+
 # Use managed origin request policies
 
 CloudFront provides a set of managed origin request policies that you can attach to any of your

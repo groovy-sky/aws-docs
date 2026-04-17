@@ -1,3 +1,7 @@
+---
+title: "Delete Lambda@Edge functions and replicas"
+---
+
 # Delete Lambda@Edge functions and replicas
 
 You can delete a Lambda@Edge function only when the replicas of the function have been

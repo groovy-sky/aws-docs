@@ -1,3 +1,7 @@
+---
+title: "Amazon VPC NAT gateways"
+---
+
 # Amazon VPC NAT gateways
 
 CloudWatch Application Insights supports the following metrics:

@@ -1,3 +1,7 @@
+---
+title: "Create an alarm from a metric on a graph"
+---
+
 # Create an alarm from a metric on a graph
 
 You can graph a metric and then create an alarm from the metric on the graph, which has

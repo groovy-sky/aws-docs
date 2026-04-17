@@ -1,3 +1,7 @@
+---
+title: "Use HTTPS with CloudFront"
+---
+
 # Use HTTPS with CloudFront
 
 You can configure CloudFront to require that viewers use HTTPS so that connections are encrypted

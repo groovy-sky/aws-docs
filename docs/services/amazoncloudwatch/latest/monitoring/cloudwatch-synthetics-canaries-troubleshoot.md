@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting a failed canary"
+---
+
 # Troubleshooting a failed canary
 
 If your canary fails, check the following for troubleshooting.

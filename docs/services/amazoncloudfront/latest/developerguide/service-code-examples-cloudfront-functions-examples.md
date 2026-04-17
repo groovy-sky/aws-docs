@@ -1,3 +1,7 @@
+---
+title: "CloudFront Functions examples for CloudFront"
+---
+
 # CloudFront Functions examples for CloudFront
 
 The following code examples show how to use CloudFront with AWS SDKs.

@@ -1,3 +1,7 @@
+---
+title: "Standard logging reference"
+---
+
 # Standard logging reference
 
 The following sections apply to both standard logging (v2) and standard logging (legacy).

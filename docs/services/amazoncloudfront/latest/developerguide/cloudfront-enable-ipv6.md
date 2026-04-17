@@ -1,3 +1,7 @@
+---
+title: "Enable IPv6 for CloudFront distributions"
+---
+
 # Enable IPv6 for CloudFront distributions
 
 Amazon CloudFront supports both IPv4 and IPv6 from clients to AWS edge locations. CloudFront also supports IPv6 and dual-stack (IPv4 and IPv6) connectivity towards origins. This helps you achieve end-to-end IPv6 delivery.

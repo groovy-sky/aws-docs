@@ -1,3 +1,7 @@
+---
+title: "Move an alternate domain name"
+---
+
 # Move an alternate domain name
 
 If you try to add an alternate domain name to a standard distribution or distribution tenant, and the alternate domain

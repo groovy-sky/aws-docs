@@ -1,3 +1,7 @@
+---
+title: "Creating flexible CloudWatch dashboards with dashboard variables"
+---
+
 # Creating flexible CloudWatch dashboards with dashboard variables
 
 Use _dashboard variables_ to create flexible dashboards that can

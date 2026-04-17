@@ -1,3 +1,7 @@
+---
+title: "Customer managed policy examples"
+---
+
 # Customer managed policy examples
 
 In this section, you can find example user policies that grant permissions for various

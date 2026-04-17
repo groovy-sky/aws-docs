@@ -1,3 +1,7 @@
+---
+title: "Components and terms for Internet Monitor"
+---
+
 # Components and terms for Internet Monitor
 
 Internet Monitor uses or references the following concepts.

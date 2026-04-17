@@ -1,3 +1,7 @@
+---
+title: "Pattern analysis"
+---
+
 # Pattern analysis
 
 CloudWatch Logs Insights uses machine learning algorithms to find _patterns_ when

@@ -1,3 +1,7 @@
+---
+title: "(Optional) Set up Amazon EKS control plane logging"
+---
+
 # (Optional) Set up Amazon EKS control plane logging
 
 If you're using Amazon EKS, you can optionally enable Amazon EKS control plane logging, to

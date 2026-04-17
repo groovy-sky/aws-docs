@@ -1,3 +1,7 @@
+---
+title: "Use a monitor in Internet Monitor"
+---
+
 # Use a monitor in Internet Monitor
 
 There are several ways to use an Internet Monitor monitor after you create it: for example, you can view information in the CloudWatch dashboard,

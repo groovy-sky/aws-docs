@@ -1,3 +1,7 @@
+---
+title: "Validating the flow of log events"
+---
+
 # Validating the flow of log events
 
 After you create the subscription filter, CloudWatch Logs forwards all the incoming log

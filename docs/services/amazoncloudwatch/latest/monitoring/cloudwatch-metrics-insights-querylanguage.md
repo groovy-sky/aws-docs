@@ -1,3 +1,7 @@
+---
+title: "Query components and syntax in CloudWatch Metrics Insights"
+---
+
 # Query components and syntax in CloudWatch Metrics Insights
 
 CloudWatch Metrics Insights syntax is as follows.

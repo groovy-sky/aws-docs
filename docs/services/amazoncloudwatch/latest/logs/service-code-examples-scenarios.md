@@ -1,3 +1,7 @@
+---
+title: "Scenarios for CloudWatch Logs using AWS SDKs"
+---
+
 # Scenarios for CloudWatch Logs using AWS SDKs
 
 The following code examples show you how to implement common scenarios in CloudWatch Logs
@@ -9,6 +13,10 @@ Scenarios target an intermediate level of experience to help you understand serv
 
 ###### Examples
 
+- [Configure Amazon ECS Service Connect](example-ecs-serviceconnect-085-section.md)
+
+- [Creating your first Lambda function](example-lambda-gettingstarted-019-section.md)
+
 - [Run a large query](example-cloudwatch-logs-scenario-bigquery-section.md)
 
 - [Use scheduled events to invoke a Lambda function](example-cross-lambdascheduledevents-section.md)
@@ -17,6 +25,6 @@ Scenarios target an intermediate level of experience to help you understand serv
 
 StartQuery
 
-Run a large query
+Configure Amazon ECS Service Connect
 
 All content copied from https://docs.aws.amazon.com/.

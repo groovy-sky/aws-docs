@@ -1,3 +1,7 @@
+---
+title: "Conduct an CloudWatch investigation without additional configuration"
+---
+
 # Conduct an CloudWatch investigation without additional configuration
 
 You can conduct a CloudWatch investigations AI-powered root cause analysis without any additional

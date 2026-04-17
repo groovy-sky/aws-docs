@@ -1,3 +1,7 @@
+---
+title: "Media quality-aware resiliency"
+---
+
 # Media quality-aware resiliency
 
 Media quality-aware resiliency (MQAR) is an integrated capability between [Amazon CloudFront](https://aws.amazon.com/cloudfront) and [AWS Media Services](https://aws.amazon.com/media-services). MQAR provides automated cross-Region

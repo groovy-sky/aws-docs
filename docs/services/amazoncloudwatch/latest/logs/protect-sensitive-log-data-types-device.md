@@ -1,3 +1,7 @@
+---
+title: "Device identifiers"
+---
+
 # Device identifiers
 
 CloudWatch Logs data protection can find the following types of device identifiers.

@@ -1,3 +1,7 @@
+---
+title: "Helper methods for key value stores"
+---
+
 # Helper methods for key value stores
 
 ###### Note

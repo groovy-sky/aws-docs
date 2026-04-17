@@ -1,3 +1,7 @@
+---
+title: "Concepts"
+---
+
 # Concepts
 
 Each subscription filter is made up of the following key elements:

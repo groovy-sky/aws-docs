@@ -1,3 +1,7 @@
+---
+title: "Create a URL signature using C# and the .NET Framework"
+---
+
 # Create a URL signature using C\# and the .NET Framework
 
 The C# examples in this section implement an example application that demonstrates how to

@@ -1,3 +1,7 @@
+---
+title: "Use CreateKeyGroup with an AWS SDK"
+---
+
 # Use `CreateKeyGroup` with an AWS SDK
 
 The following code example shows how to use `CreateKeyGroup`.
@@ -38,7 +42,7 @@ public class CreateKeyGroup {
 ```
 
 - For API details, see
-[CreateKeyGroup](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/createkeygroup.md)
+[CreateKeyGroup](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/CreateKeyGroup)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

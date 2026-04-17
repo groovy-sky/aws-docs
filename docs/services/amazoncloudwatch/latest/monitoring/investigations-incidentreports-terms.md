@@ -1,3 +1,7 @@
+---
+title: "Incident report terminology"
+---
+
 # Incident report terminology
 
 The following terms are used in CloudWatch investigations incident reports:

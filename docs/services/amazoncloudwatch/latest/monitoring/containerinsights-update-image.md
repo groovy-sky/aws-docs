@@ -1,3 +1,7 @@
+---
+title: "Updating the CloudWatch agent container image"
+---
+
 # Updating the CloudWatch agent container image
 
 ###### Important

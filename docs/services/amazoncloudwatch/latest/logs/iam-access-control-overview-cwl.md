@@ -1,3 +1,7 @@
+---
+title: "Overview of managing access permissions to your CloudWatch Logs resources"
+---
+
 # Overview of managing access permissions to your CloudWatch Logs resources
 
 To provide access, add permissions to your users, groups, or roles:

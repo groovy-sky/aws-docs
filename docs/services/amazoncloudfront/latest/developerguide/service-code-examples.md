@@ -1,3 +1,7 @@
+---
+title: "Code examples for CloudFront using AWS SDKs"
+---
+
 # Code examples for CloudFront using AWS SDKs
 
 The following code examples show how to use CloudFront with an AWS software development kit (SDK).
@@ -47,7 +51,9 @@ This topic also includes information about getting started and details about pre
 
   - [Delete signing resources](example-cloudfront-deletesigningresources-section.md)
 
-  - [Get started with CloudFront](example-cloudfront-gettingstarted-section.md)
+  - [Get started with a basic CloudFront distribution](example-cloudfront-gettingstarted-section.md)
+
+  - [Getting started with WAF](example-wafv2-gettingstarted-052-section.md)
 
   - [Sign URLs and cookies](example-cloudfront-cloudfrontutilities-section.md)
 - [CloudFront Functions examples](service-code-examples-cloudfront-functions-examples.md)

@@ -1,3 +1,7 @@
+---
+title: "AWS services that support related telemetry"
+---
+
 # AWS services that support related telemetry
 
 The following table lists the AWS services that support related entity information

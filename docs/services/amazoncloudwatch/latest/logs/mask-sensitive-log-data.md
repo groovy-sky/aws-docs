@@ -1,3 +1,7 @@
+---
+title: "Help protect sensitive log data with masking"
+---
+
 # Help protect sensitive log data with masking
 
 You can help safeguard sensitive data that's ingested by CloudWatch Logs by using log group _data protection policies_. These policies

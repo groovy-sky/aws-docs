@@ -1,3 +1,7 @@
+---
+title: "How CloudFront delivers content"
+---
+
 # How CloudFront delivers content
 
 After some initial setup, CloudFront works together with your website or application and speeds up delivery

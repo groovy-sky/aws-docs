@@ -1,3 +1,7 @@
+---
+title: "Concurrent invalidation request maximum"
+---
+
 # Concurrent invalidation request maximum
 
 If you’re invalidating files individually, you can have invalidation requests for

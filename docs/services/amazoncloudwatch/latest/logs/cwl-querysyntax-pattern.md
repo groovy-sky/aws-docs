@@ -1,9 +1,13 @@
+---
+title: "pattern"
+---
+
 # pattern
 
 Use `pattern` to automatically cluster your log data into
 patterns.
 
-A pattern is shared text structure that recurs among your log fields. You
+A pattern is a shared text structure that recurs among your log fields. You
 can use `pattern` to surface emerging trends, monitor known
 errors, and identify frequently occurring or high-cost log lines. CloudWatch Logs Insights
 also provides a console experience you can use to find and further analyze

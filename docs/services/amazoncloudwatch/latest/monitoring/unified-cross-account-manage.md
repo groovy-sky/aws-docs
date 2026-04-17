@@ -1,3 +1,7 @@
+---
+title: "Manage monitoring accounts and source accounts"
+---
+
 # Manage monitoring accounts and source accounts
 
 After you set up your monitoring accounts and source accounts, you can use the steps

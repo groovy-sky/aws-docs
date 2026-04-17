@@ -1,3 +1,7 @@
+---
+title: "Rewrite a request URI based on KeyValueStore configuration for a CloudFront Functions viewer request event"
+---
+
 # Rewrite a request URI based on KeyValueStore configuration for a CloudFront Functions viewer request event
 
 The following code example shows how to rewrite a request URI based on KeyValueStore configuration for a CloudFront Functions viewer request event.

@@ -1,3 +1,7 @@
+---
+title: "Update functions"
+---
+
 # Update functions
 
 You can update a function at any time. The changes are made only to the version of the

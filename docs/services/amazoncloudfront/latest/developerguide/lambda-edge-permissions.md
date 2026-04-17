@@ -1,3 +1,7 @@
+---
+title: "Set up IAM permissions and roles for Lambda@Edge"
+---
+
 # Set up IAM permissions and roles for Lambda@Edge
 
 To configure Lambda@Edge, you must have the following IAM permissions and roles for

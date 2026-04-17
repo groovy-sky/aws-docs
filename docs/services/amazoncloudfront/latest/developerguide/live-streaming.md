@@ -1,3 +1,7 @@
+---
+title: "Deliver video streaming with CloudFront and AWS Media Services"
+---
+
 # Deliver video streaming with CloudFront and AWS Media Services
 
 To use AWS Media Services with CloudFront to deliver live content to a global audience,

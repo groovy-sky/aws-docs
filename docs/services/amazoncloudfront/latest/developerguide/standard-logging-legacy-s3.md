@@ -1,3 +1,7 @@
+---
+title: "Configure standard logging (legacy)"
+---
+
 # Configure standard logging (legacy)
 
 ###### Notes

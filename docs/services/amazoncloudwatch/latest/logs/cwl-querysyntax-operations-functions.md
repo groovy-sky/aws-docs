@@ -1,3 +1,7 @@
+---
+title: "Boolean, comparison, numeric, datetime, and other functions"
+---
+
 # Boolean, comparison, numeric, datetime, and other functions
 
 CloudWatch Logs Insights supports many other operations and functions in queries, as

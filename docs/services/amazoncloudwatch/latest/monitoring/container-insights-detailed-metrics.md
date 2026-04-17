@@ -1,3 +1,7 @@
+---
+title: "Container Insights with enhanced observability for Amazon EKS"
+---
+
 # Container Insights with enhanced observability for Amazon EKS
 
 On November 6, 2023, a new version of Container Insights was released. This version

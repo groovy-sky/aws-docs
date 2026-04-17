@@ -1,3 +1,7 @@
+---
+title: "Collect metrics and traces with OpenTelemetry"
+---
+
 # Collect metrics and traces with OpenTelemetry
 
 You can collect metrics and traces from your applications or services using the CloudWatch

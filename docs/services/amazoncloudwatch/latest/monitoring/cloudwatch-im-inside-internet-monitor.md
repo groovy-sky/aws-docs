@@ -1,3 +1,7 @@
+---
+title: "How Internet Monitor works"
+---
+
 # How Internet Monitor works
 
 This section provides information about how Internet Monitor works. This includes descriptions of how AWS collects the data

@@ -1,3 +1,7 @@
+---
+title: "View CloudFront viewers reports"
+---
+
 # View CloudFront viewers reports
 
 The CloudFront viewers reports include the following information for any date range in the

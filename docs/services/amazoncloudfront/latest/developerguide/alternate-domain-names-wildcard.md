@@ -1,3 +1,7 @@
+---
+title: "Use wildcards in alternate domain names"
+---
+
 # Use wildcards in alternate domain names
 
 When you add alternate domain names, you can use the \* wildcard at the beginning of a

@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 bucket"
+---
+
 # Amazon S3 bucket
 
 CloudWatch Application Insights supports the following metrics:

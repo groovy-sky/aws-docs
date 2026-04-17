@@ -1,3 +1,7 @@
+---
+title: "Removing an alarm widget from a CloudWatch dashboard"
+---
+
 # Removing an alarm widget from a CloudWatch dashboard
 
 ###### To remove an alarm widget from a dashboard

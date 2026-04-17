@@ -1,3 +1,7 @@
+---
+title: "OpenTelemetry Collector"
+---
+
 # OpenTelemetry Collector
 
 The OpenTelemetry Collector is an open source, vendor-agnostic agent that receives,

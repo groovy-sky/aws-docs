@@ -1,3 +1,7 @@
+---
+title: "Cross-account cross-Region log data sharing using Amazon Kinesis Data Streams"
+---
+
 # Cross-account cross-Region log data sharing using Amazon Kinesis Data Streams
 
 When you create a cross-account subscription, you can specify a single account or

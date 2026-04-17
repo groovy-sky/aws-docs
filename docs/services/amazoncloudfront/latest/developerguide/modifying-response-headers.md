@@ -1,3 +1,7 @@
+---
+title: "Add or remove HTTP headers in CloudFront responses with a policy"
+---
+
 # Add or remove HTTP headers in CloudFront responses with a policy
 
 You can configure CloudFront to modify the HTTP headers in the responses that it sends to

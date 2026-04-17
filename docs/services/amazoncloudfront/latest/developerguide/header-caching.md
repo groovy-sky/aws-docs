@@ -1,3 +1,7 @@
+---
+title: "Cache content based on request headers"
+---
+
 # Cache content based on request headers
 
 CloudFront lets you choose whether you want CloudFront to forward headers to your origin and to

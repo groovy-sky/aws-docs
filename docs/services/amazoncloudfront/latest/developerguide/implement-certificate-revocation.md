@@ -1,3 +1,7 @@
+---
+title: "Implement certificate revocation for mutual TLS (viewer) with CloudFront Functions and KeyValueStore"
+---
+
 # Implement certificate revocation for mutual TLS (viewer) with CloudFront Functions and KeyValueStore
 
 You can use CloudFront Connection Functions with KeyValueStore to implement certificate

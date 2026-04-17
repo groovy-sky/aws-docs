@@ -1,3 +1,7 @@
+---
+title: "What you need to know when invalidating files"
+---
+
 # What you need to know when invalidating files
 
 When you specify a file to invalidate, refer to the following information:

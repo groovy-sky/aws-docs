@@ -1,3 +1,7 @@
+---
+title: "OpenTelemetry"
+---
+
 # OpenTelemetry
 
 OpenTelemetry is an open-source observability framework that provides vendor-agnostic

@@ -1,3 +1,7 @@
+---
+title: "What is Internet Monitor?"
+---
+
 # What is Internet Monitor?
 
 With Internet Monitor, you can monitor your application's internet performance and availability, so that

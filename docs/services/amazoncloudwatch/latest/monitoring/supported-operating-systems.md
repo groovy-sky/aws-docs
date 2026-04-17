@@ -1,3 +1,7 @@
+---
+title: "Supported operating systems"
+---
+
 # Supported operating systems
 
 The CloudWatch agent is supported on the following operating systems:

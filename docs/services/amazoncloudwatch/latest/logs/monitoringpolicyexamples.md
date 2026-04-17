@@ -1,3 +1,7 @@
+---
+title: "Creating metric filters"
+---
+
 # Creating metric filters
 
 The following procedure and examples show how to create metric filters.

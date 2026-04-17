@@ -1,3 +1,7 @@
+---
+title: "CloudWatch investigations"
+---
+
 # CloudWatch investigations
 
 The CloudWatch investigations feature is a generative AI-powered assistant that can help you respond to

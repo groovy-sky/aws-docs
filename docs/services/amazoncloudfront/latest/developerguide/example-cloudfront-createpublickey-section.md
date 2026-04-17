@@ -1,3 +1,7 @@
+---
+title: "Use CreatePublicKey with an AWS SDK or CLI"
+---
+
 # Use `CreatePublicKey` with an AWS SDK or CLI
 
 The following code examples show how to use `CreatePublicKey`.
@@ -106,7 +110,7 @@ public class CreatePublicKey {
 ```
 
 - For API details, see
-[CreatePublicKey](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/createpublickey.md)
+[CreatePublicKey](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/CreatePublicKey)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

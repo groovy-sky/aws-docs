@@ -1,3 +1,7 @@
+---
+title: "View CloudFront reports in the console"
+---
+
 # View CloudFront reports in the console
 
 Each report provides detailed information and visualizations, so that you can optimize

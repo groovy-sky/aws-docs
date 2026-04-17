@@ -1,3 +1,7 @@
+---
+title: "Example: Use Application Signals to resolve an operational health issue"
+---
+
 # Example: Use Application Signals to resolve an operational health issue
 
 The following scenario provides an example of how Application Signals can be used to monitor your services and

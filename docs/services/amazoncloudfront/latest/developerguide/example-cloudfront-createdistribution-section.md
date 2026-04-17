@@ -1,3 +1,7 @@
+---
+title: "Use CreateDistribution with an AWS SDK or CLI"
+---
+
 # Use `CreateDistribution` with an AWS SDK or CLI
 
 The following code examples show how to use `CreateDistribution`.
@@ -7,7 +11,7 @@ context in the following code examples:
 
 - [Create a multi-tenant distribution and distribution tenant](example-cloudfront-createsaasresources-section.md)
 
-- [Get started with CloudFront](example-cloudfront-gettingstarted-section.md)
+- [Get started with a basic CloudFront distribution](example-cloudfront-gettingstarted-section.md)
 
 CLI
 
@@ -799,7 +803,7 @@ public class CreateDistribution {
 ```
 
 - For API details, see
-[CreateDistribution](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/createdistribution.md)
+[CreateDistribution](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/CreateDistribution)
 in _AWS SDK for Java 2.x API Reference_.
 
 PowerShell
@@ -841,7 +845,7 @@ New-CFDistribution `
 ```
 
 - For API details, see
-[CreateDistribution](../../../powershell/v4/reference.md)
+[CreateDistribution](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -881,7 +885,7 @@ New-CFDistribution `
 ```
 
 - For API details, see
-[CreateDistribution](../../../powershell/v5/reference.md)
+[CreateDistribution](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

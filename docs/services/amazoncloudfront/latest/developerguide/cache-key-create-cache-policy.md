@@ -1,3 +1,7 @@
+---
+title: "Create cache policies"
+---
+
 # Create cache policies
 
 You can use a cache policy to improve your cache hit ratio by controlling the values

@@ -1,3 +1,7 @@
+---
+title: "Adding a number widget to a CloudWatch dashboard"
+---
+
 # Adding a number widget to a CloudWatch dashboard
 
 ###### Note

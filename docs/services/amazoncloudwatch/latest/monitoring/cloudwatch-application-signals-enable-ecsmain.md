@@ -1,3 +1,7 @@
+---
+title: "Enable your applications on Amazon ECS"
+---
+
 # Enable your applications on Amazon ECS
 
 Enable CloudWatch Application Signals on Amazon ECS by using the custom setup steps described in this section.

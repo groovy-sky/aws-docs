@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Metrics Insights"
+---
+
 # Troubleshooting Metrics Insights
 
 ## The results include "Other," but I don't have this as a dimension

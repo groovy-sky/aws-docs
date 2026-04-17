@@ -1,3 +1,7 @@
+---
+title: "Required roles and permissions for canaries"
+---
+
 # Required roles and permissions for canaries
 
 Each canary must be associated with an IAM role that has certain permissions attached.

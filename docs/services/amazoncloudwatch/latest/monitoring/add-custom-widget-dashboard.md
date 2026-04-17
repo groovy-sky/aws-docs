@@ -1,3 +1,7 @@
+---
+title: "Using a custom widget on a CloudWatch dashboard"
+---
+
 # Using a custom widget on a CloudWatch dashboard
 
 A _custom widget_ is a CloudWatch dashboard widget that can call any

@@ -1,3 +1,7 @@
+---
+title: "Viewing Container Insights metrics"
+---
+
 # Viewing Container Insights metrics
 
 After you have Container Insights set up and it is collecting metrics, you can view those

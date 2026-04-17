@@ -1,3 +1,7 @@
+---
+title: "Editing a text widget on a CloudWatch dashboard"
+---
+
 # Editing a text widget on a CloudWatch dashboard
 
 ###### To edit a text widget on a dashboard

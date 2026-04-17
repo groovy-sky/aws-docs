@@ -1,3 +1,7 @@
+---
+title: "Monitoring canary events with Amazon EventBridge"
+---
+
 # Monitoring canary events with Amazon EventBridge
 
 Amazon EventBridge event rules can notify you when canaries change status or complete runs. EventBridge

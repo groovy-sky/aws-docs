@@ -1,3 +1,7 @@
+---
+title: "Enable trace to log correlation"
+---
+
 # Enable trace to log correlation
 
 You can enable _trace to log correlation_ in Application Signals. This automatically injects trace IDs and span IDs into the relevant application logs. Then, when you open a trace detail page in the Application Signals console,

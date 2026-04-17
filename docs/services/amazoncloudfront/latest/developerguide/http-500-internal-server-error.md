@@ -1,3 +1,7 @@
+---
+title: "HTTP 500 status code (Internal Server Error)"
+---
+
 # HTTP 500 status code (Internal Server Error)
 
 An HTTP 500 status code (Internal Server Error) indicates that the server

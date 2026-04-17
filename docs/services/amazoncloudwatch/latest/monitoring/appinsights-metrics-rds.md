@@ -1,3 +1,7 @@
+---
+title: "Amazon Relational Database Service (RDS)"
+---
+
 # Amazon Relational Database Service (RDS)
 
 CloudWatch Application Insights supports the following metrics:

@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Amazon CloudWatch enables you to publish, monitor, and manage various metrics,

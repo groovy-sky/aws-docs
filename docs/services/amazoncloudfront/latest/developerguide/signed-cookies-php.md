@@ -1,3 +1,7 @@
+---
+title: "Create signed cookies using PHP"
+---
+
 # Create signed cookies using PHP
 
 The following code example is similar to the example in the [Create a URL signature using PHP](createurl-php.md) in that it creates a

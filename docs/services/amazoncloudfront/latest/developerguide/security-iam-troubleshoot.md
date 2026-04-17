@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot Amazon CloudFront identity and access"
+---
+
 # Troubleshoot Amazon CloudFront identity and access
 
 Use the following information to help you diagnose and fix common issues that you might

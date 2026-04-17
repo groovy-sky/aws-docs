@@ -1,3 +1,7 @@
+---
+title: "Create the CloudWatch agent configuration file"
+---
+
 # Create the CloudWatch agent configuration file
 
 Before running the CloudWatch agent on any servers, you must create one or more CloudWatch agent

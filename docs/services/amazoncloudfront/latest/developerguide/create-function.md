@@ -1,3 +1,7 @@
+---
+title: "Create functions"
+---
+
 # Create functions
 
 You create a function in two stages:

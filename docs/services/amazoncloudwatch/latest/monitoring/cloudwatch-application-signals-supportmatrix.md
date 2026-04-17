@@ -1,3 +1,7 @@
+---
+title: "Supported systems"
+---
+
 # Supported systems
 
 Application Signals is supported and tested on Amazon EKS, native Kubernetes, Amazon ECS, and Amazon EC2. The instructions for

@@ -1,3 +1,7 @@
+---
+title: "Use metric streams"
+---
+
 # Use metric streams
 
 You can use _metric streams_ to continually stream CloudWatch metrics to a

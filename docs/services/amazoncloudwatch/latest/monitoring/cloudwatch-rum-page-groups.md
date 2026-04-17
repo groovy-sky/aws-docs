@@ -1,3 +1,7 @@
+---
+title: "Use page groups"
+---
+
 # Use page groups
 
 Use page groups to associate different pages in your application with each other so

@@ -1,3 +1,7 @@
+---
+title: "How Internet Monitor works with IAM"
+---
+
 # How Internet Monitor works with IAM
 
 Before you use IAM to manage access to Internet Monitor, learn what IAM features are

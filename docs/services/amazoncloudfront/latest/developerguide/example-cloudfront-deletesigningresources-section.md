@@ -1,3 +1,7 @@
+---
+title: "Delete CloudFront signing resources using AWS SDK"
+---
+
 # Delete CloudFront signing resources using AWS SDK
 
 The following code example shows how to delete resources that are used to gain access to restricted content in an Amazon Simple Storage Service (Amazon S3) bucket.
@@ -67,11 +71,11 @@ public class DeleteSigningResources {
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [DeleteKeyGroup](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/deletekeygroup.md)
+- [DeleteKeyGroup](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/DeleteKeyGroup)
 
-- [DeleteOriginAccessControl](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/deleteoriginaccesscontrol.md)
+- [DeleteOriginAccessControl](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/DeleteOriginAccessControl)
 
-- [DeletePublicKey](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/deletepublickey.md)
+- [DeletePublicKey](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/DeletePublicKey)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using CloudFront with an AWS SDK](../../../../reference/amazoncloudfront/latest/developerguide/sdk-general-information-section.md).
@@ -81,6 +85,6 @@ This topic also includes information about getting started and details about pre
 
 Create a multi-tenant distribution and distribution tenant
 
-Get started with CloudFront
+Get started with a basic CloudFront distribution
 
 All content copied from https://docs.aws.amazon.com/.

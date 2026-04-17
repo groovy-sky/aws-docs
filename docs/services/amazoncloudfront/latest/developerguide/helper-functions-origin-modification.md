@@ -1,3 +1,7 @@
+---
+title: "Helper methods for origin modification"
+---
+
 # Helper methods for origin modification
 
 This section applies if you dynamically update or change the origin used on the

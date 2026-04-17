@@ -1,3 +1,7 @@
+---
+title: "Gateways"
+---
+
 # Gateways
 
 Monitor how your agents discover and interact with external tools and services through AgentCore Gateway. For more information on Amazon Bedrock AgentCore Gateway,

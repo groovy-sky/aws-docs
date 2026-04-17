@@ -1,3 +1,7 @@
+---
+title: "Trust between CloudWatch and Firehose"
+---
+
 # Trust between CloudWatch and Firehose
 
 The Firehose delivery stream must trust CloudWatch through an IAM role that has write permissions

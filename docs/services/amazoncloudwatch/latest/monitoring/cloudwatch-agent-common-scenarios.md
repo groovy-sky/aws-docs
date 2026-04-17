@@ -1,3 +1,7 @@
+---
+title: "Common scenarios with the CloudWatch agent"
+---
+
 # Common scenarios with the CloudWatch agent
 
 This section provides you with different scenarios that outline how to complete common

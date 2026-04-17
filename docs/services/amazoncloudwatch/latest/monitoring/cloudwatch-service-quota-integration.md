@@ -1,3 +1,7 @@
+---
+title: "AWS usage metrics"
+---
+
 # AWS usage metrics
 
 CloudWatch collects metrics that track the usage of some AWS resources and APIs. These metrics are published in the

@@ -1,3 +1,7 @@
+---
+title: "Log anomaly detection"
+---
+
 # Log anomaly detection
 
 You can detect anomalies in your log data in two ways: by creating a _log anomaly_

@@ -1,3 +1,7 @@
+---
+title: "Modifying the code snippet to configure the CloudWatch RUM web client (optional)"
+---
+
 # Modifying the code snippet to configure the CloudWatch RUM web client (optional)
 
 You can modify the code snippet before inserting it into your application, to

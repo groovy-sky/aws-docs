@@ -1,3 +1,7 @@
+---
+title: "Create custom connection group (optional)"
+---
+
 # Create custom connection group (optional)
 
 By default, CloudFront creates a connection group for you when you create a multi-tenant distribution. The connection group controls how viewer

@@ -1,3 +1,7 @@
+---
+title: "Use natural language to generate and update CloudWatch Logs Insights queries"
+---
+
 # Use natural language to generate and update CloudWatch Logs Insights queries
 
 CloudWatch Logs supports a natural language query capability to help you generate and update

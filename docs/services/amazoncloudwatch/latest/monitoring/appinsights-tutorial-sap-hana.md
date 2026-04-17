@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Set up monitoring for SAP HANA"
+---
+
 # Tutorial: Set up monitoring for SAP HANA
 
 This tutorial demonstrates how to configure CloudWatch Application Insights to set up monitoring for your SAP

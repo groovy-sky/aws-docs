@@ -1,3 +1,7 @@
+---
+title: "SAP NetWeaver on Amazon EC2"
+---
+
 # SAP NetWeaver on Amazon EC2
 
 The following example shows a component configuration in JSON format for SAP NetWeaver on Amazon EC2.

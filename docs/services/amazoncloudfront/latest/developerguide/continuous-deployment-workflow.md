@@ -1,3 +1,7 @@
+---
+title: "CloudFront continuous deployment workflow"
+---
+
 # CloudFront continuous deployment workflow
 
 The following high-level workflow explains how to safely test and deploy configuration

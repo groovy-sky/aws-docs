@@ -1,3 +1,7 @@
+---
+title: "Use your custom data source"
+---
+
 # Use your custom data source
 
 After you create a data source, you can use it to query and visualize data from that source, as well as to set alarms.

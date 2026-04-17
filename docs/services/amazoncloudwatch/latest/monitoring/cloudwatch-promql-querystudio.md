@@ -1,3 +1,7 @@
+---
+title: "Running PromQL queries in Query Studio (Preview)"
+---
+
 # Running PromQL queries in Query Studio (Preview)
 
 ###### Note

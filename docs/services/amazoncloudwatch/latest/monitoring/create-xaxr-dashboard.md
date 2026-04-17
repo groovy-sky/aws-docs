@@ -1,3 +1,7 @@
+---
+title: "Creating a CloudWatch cross-account cross-Region dashboard with the AWS Management Console"
+---
+
 # Creating a CloudWatch cross-account cross-Region dashboard with the AWS Management Console
 
 You can create _cross-account cross-Region dashboards_, which

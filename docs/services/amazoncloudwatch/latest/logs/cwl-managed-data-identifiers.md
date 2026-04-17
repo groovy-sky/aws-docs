@@ -1,3 +1,7 @@
+---
+title: "CloudWatch Logs managed data identifiers for sensitive data types"
+---
+
 # CloudWatch Logs managed data identifiers for sensitive data types
 
 This section contains information about the types of data that you can protect using managed

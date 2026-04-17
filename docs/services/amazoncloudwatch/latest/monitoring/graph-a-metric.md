@@ -1,3 +1,7 @@
+---
+title: "Graph a metric"
+---
+
 # Graph a metric
 
 You can select metrics and create graphs of the metric data using the CloudWatch

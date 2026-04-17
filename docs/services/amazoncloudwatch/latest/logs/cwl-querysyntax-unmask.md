@@ -1,3 +1,7 @@
+---
+title: "unmask"
+---
+
 # unmask
 
 Use `unmask` to display all the content of a log event that

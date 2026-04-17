@@ -1,3 +1,7 @@
+---
+title: "Metrics collected by Application Signals"
+---
+
 # Metrics collected by Application Signals
 
 Application Signals collects both [standard application metrics](#AppSignals-StandardMetrics)

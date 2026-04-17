@@ -1,3 +1,7 @@
+---
+title: "Migrate to a multi-tenant distribution"
+---
+
 # Migrate to a multi-tenant distribution
 
 If you have a CloudFront standard distribution and you want to migrate to a multi-tenant distribution, follow these steps.

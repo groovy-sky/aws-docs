@@ -1,3 +1,7 @@
+---
+title: "Create an investigation"
+---
+
 # Create an investigation
 
 You can start an investigation from several AWS consoles, including (but not limited

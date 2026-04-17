@@ -1,3 +1,7 @@
+---
+title: "Transformation metrics and errors"
+---
+
 # Transformation metrics and errors
 
 CloudWatch Logs publishes transformation metrics to CloudWatch. These metrics include

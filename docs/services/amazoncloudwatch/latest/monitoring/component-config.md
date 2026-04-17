@@ -1,3 +1,7 @@
+---
+title: "Work with component configurations"
+---
+
 # Work with component configurations
 
 A component configuration is a text file in JSON format that describes the

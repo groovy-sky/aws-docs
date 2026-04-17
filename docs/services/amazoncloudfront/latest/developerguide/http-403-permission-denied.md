@@ -1,3 +1,7 @@
+---
+title: "HTTP 403 status code (Permission Denied)"
+---
+
 # HTTP 403 status code (Permission Denied)
 
 An HTTP 403 error means the client isn't authorized to access the requested

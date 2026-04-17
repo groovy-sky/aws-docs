@@ -1,3 +1,7 @@
+---
+title: "Adding an alarm from a different account to a CloudWatch cross-account dashboard"
+---
+
 # Adding an alarm from a different account to a CloudWatch cross-account dashboard
 
 1. Sign in to the monitoring account.

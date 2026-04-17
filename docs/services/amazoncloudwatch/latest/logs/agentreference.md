@@ -1,3 +1,7 @@
+---
+title: "CloudWatch Logs agent reference"
+---
+
 # CloudWatch Logs agent reference
 
 ###### Important

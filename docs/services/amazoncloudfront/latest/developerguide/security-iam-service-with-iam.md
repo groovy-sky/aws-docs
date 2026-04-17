@@ -1,3 +1,7 @@
+---
+title: "How Amazon CloudFront works with IAM"
+---
+
 # How Amazon CloudFront works with IAM
 
 Before you use IAM to manage access to CloudFront, learn what IAM features are

@@ -1,3 +1,7 @@
+---
+title: "Security and JavaScript for custom CloudWatch widgets"
+---
+
 # Security and JavaScript for custom CloudWatch widgets
 
 For security reasons, JavaScript is not allowed in the returned HTML. Removing the

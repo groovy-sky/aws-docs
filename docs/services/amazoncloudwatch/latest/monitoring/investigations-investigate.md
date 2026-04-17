@@ -1,3 +1,7 @@
+---
+title: "Investigate operational issues in your environment"
+---
+
 # Investigate operational issues in your environment
 
 You can create investigations in several ways depending on your workflow and the source of

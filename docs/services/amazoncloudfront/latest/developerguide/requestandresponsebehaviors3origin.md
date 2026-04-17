@@ -1,3 +1,7 @@
+---
+title: "Request and response behavior for Amazon S3 origins"
+---
+
 # Request and response behavior for Amazon S3 origins
 
 To understand how CloudFront processes requests and responses when you're using Amazon S3 as your

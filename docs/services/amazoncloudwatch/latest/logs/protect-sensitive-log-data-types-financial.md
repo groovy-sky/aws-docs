@@ -1,3 +1,7 @@
+---
+title: "Financial information"
+---
+
 # Financial information
 
 CloudWatch Logs data protection can find the following types of financial

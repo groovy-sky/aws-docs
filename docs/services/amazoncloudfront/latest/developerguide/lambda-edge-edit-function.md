@@ -1,3 +1,7 @@
+---
+title: "Edit a Lambda function"
+---
+
 # Edit a Lambda function
 
 After you create a Lambda@Edge function, you can use the Lambda console to edit

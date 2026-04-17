@@ -1,3 +1,7 @@
+---
+title: "Component configuration sections"
+---
+
 # Component configuration sections
 
 A component configuration includes several major sections. Sections in a component

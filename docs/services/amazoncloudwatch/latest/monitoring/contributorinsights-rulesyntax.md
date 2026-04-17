@@ -1,3 +1,7 @@
+---
+title: "Contributor Insights rule syntax in CloudWatch"
+---
+
 # Contributor Insights rule syntax in CloudWatch
 
 This section explains the syntax for Contributor Insights rules. Use this syntax only when

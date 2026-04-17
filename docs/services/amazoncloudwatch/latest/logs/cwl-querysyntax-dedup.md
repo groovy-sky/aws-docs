@@ -1,3 +1,7 @@
+---
+title: "dedup"
+---
+
 # dedup
 
 Use `dedup` to remove duplicate results based on specific

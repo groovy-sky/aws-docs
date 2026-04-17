@@ -1,3 +1,7 @@
+---
+title: "Locations and IP address ranges of CloudFront edge servers"
+---
+
 # Locations and IP address ranges of CloudFront edge servers
 
 For a list of the locations of CloudFront edge servers, see the [Amazon CloudFront Global Edge\

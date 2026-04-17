@@ -1,3 +1,7 @@
+---
+title: "lookup"
+---
+
 # lookup
 
 Use `lookup` to enrich your query results with reference data

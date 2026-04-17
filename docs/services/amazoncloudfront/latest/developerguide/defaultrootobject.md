@@ -1,3 +1,7 @@
+---
+title: "Specify a default root object"
+---
+
 # Specify a default root object
 
 You can configure CloudFront to return a specific object (the default root object) when a

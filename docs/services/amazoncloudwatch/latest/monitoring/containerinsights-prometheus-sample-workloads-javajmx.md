@@ -1,3 +1,7 @@
+---
+title: "Set up Java/JMX sample workload on Amazon EKS and Kubernetes"
+---
+
 # Set up Java/JMX sample workload on Amazon EKS and Kubernetes
 
 JMX Exporter is an official Prometheus exporter that can scrape and expose JMX

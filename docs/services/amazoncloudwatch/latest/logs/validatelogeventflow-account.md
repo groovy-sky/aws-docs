@@ -1,3 +1,7 @@
+---
+title: "Validate the flow of log events"
+---
+
 # Validate the flow of log events
 
 After you create the account-level subscription filter policy, CloudWatch Logs

@@ -1,3 +1,7 @@
+---
+title: "Using identity-based policies (IAM policies) for CloudWatch Logs"
+---
+
 # Using identity-based policies (IAM policies) for CloudWatch Logs
 
 This topic provides examples of identity-based policies in which an account

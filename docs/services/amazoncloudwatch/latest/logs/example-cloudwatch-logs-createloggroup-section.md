@@ -1,6 +1,15 @@
+---
+title: "Use CreateLogGroup with an AWS SDK or CLI"
+---
+
 # Use `CreateLogGroup` with an AWS SDK or CLI
 
 The following code examples show how to use `CreateLogGroup`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in
+context in the following code example:
+
+- [Configure Amazon ECS Service Connect](example-ecs-serviceconnect-085-section.md)
 
 .NET
 
@@ -55,7 +64,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[CreateLogGroup](../../../../reference/goto/dotnetsdkv3/logs-2014-03-28/createloggroup.md)
+[CreateLogGroup](https://docs.aws.amazon.com/goto/DotNetSDKV3/logs-2014-03-28/CreateLogGroup)
 in _AWS SDK for .NET API Reference_.
 
 CLI
@@ -107,7 +116,7 @@ export default run();
 ```
 
 - For API details, see
-[CreateLogGroup](../../../../reference/awsjavascriptsdk/v3/latest/client/cloudwatch-logs/command/createloggroupcommand.md)
+[CreateLogGroup](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudwatch-logs/command/CreateLogGroupCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

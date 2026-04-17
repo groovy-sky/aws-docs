@@ -1,3 +1,7 @@
+---
+title: "Adding an alarm status widget to a CloudWatch dashboard"
+---
+
 # Adding an alarm status widget to a CloudWatch dashboard
 
 ###### To add an alarm status widget to a dashboard

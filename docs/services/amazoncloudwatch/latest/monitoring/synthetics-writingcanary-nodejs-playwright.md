@@ -1,3 +1,7 @@
+---
+title: "Writing a Node.js canary script using the Playwright runtime"
+---
+
 # Writing a Node.js canary script using the Playwright runtime
 
 ###### Topics

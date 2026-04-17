@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Set up monitoring for SAP NetWeaver"
+---
+
 # Tutorial: Set up monitoring for SAP NetWeaver
 
 This tutorial demonstrates how to configure Amazon CloudWatch Application Insights to set up monitoring for SAP

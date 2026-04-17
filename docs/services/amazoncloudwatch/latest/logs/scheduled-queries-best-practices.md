@@ -1,3 +1,7 @@
+---
+title: "Best practices"
+---
+
 # Best practices
 
 Follow these best practices to ensure reliable and efficient scheduled query

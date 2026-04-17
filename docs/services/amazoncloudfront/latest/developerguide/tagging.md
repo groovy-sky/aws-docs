@@ -1,3 +1,7 @@
+---
+title: "Tag a distribution"
+---
+
 # Tag a distribution
 
 Tags are words or phrases that you can use to identify and organize your AWS resources.

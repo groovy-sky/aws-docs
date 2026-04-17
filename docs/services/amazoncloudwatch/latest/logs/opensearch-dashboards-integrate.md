@@ -1,3 +1,7 @@
+---
+title: "Step 1: Create the integration with OpenSearch Service"
+---
+
 # Step 1: Create the integration with OpenSearch Service
 
 The first step is creating the integration with OpenSearch Service, which you need to do only once.

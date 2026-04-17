@@ -1,3 +1,7 @@
+---
+title: "Cross-account cross-Region subscriptions"
+---
+
 # Cross-account cross-Region subscriptions
 
 You can collaborate with an owner of a different AWS account and receive their log

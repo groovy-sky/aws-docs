@@ -1,6 +1,15 @@
+---
+title: "Use GetLogEvents with an AWS SDK or CLI"
+---
+
 # Use `GetLogEvents` with an AWS SDK or CLI
 
 The following code examples show how to use `GetLogEvents`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in
+context in the following code example:
+
+- [Creating your first Lambda function](example-lambda-gettingstarted-019-section.md)
 
 CLI
 
@@ -158,7 +167,7 @@ public class GetLogEvents {
 ```
 
 - For API details, see
-[GetLogEvents](../../../../reference/goto/sdkforjavav2/logs-2014-03-28/getlogevents.md)
+[GetLogEvents](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/GetLogEvents)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "IAM permissions required to create or work with a data protection policy"
+---
+
 # IAM permissions required to create or work with a data protection policy
 
 To be able to work with data protection policies for log groups, you must have certain permissions as shown

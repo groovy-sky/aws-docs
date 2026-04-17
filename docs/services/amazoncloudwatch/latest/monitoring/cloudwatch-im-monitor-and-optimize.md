@@ -1,3 +1,7 @@
+---
+title: "Monitor and optimize with the Internet Monitor dashboard"
+---
+
 # Monitor and optimize with the Internet Monitor dashboard
 
 Using the Internet Monitor dashboard in the AWS Management Console, you can visualize data and get insights and suggestions about your AWS

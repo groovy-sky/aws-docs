@@ -1,3 +1,7 @@
+---
+title: "Canaries and X-Ray tracing"
+---
+
 # Canaries and X-Ray tracing
 
 You can choose to enable active AWS X-Ray tracing on canaries that use the `

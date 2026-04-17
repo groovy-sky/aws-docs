@@ -1,3 +1,7 @@
+---
+title: "Quick Start: Install and configure the CloudWatch Logs agent on an EC2 Linux instance at launch"
+---
+
 # Quick Start: Install and configure the CloudWatch Logs agent on an EC2 Linux instance at launch
 
 ###### Tip

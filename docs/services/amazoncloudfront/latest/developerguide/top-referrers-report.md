@@ -1,3 +1,7 @@
+---
+title: "View CloudFront top referrers reports"
+---
+
 # View CloudFront top referrers reports
 
 The CloudFront top referrers report includes the following for any date range in the

@@ -1,3 +1,7 @@
+---
+title: "Understand response headers policies"
+---
+
 # Understand response headers policies
 
 You can use a response headers policy to specify the HTTP headers that Amazon CloudFront removes or

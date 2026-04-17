@@ -1,3 +1,7 @@
+---
+title: "Elastic Block Store (EBS)"
+---
+
 # Elastic Block Store (EBS)
 
 CloudWatch Application Insights supports the following metrics:

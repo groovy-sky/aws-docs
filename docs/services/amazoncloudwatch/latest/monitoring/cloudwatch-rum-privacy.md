@@ -1,3 +1,7 @@
+---
+title: "Data protection and data privacy with CloudWatch RUM"
+---
+
 # Data protection and data privacy with CloudWatch RUM
 
 The AWS [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model) applies to data protection and data privacy

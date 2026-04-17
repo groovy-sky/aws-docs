@@ -1,3 +1,7 @@
+---
+title: "Log group-level subscription filters"
+---
+
 # Log group-level subscription filters
 
 You can use a subscription filter with Amazon Kinesis Data Streams, AWS Lambda, Amazon Data Firehose, or Amazon OpenSearch Service.

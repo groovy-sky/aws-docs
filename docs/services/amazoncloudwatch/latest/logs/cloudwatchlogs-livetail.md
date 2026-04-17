@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot with CloudWatch Logs Live Tail"
+---
+
 # Troubleshoot with CloudWatch Logs Live Tail
 
 CloudWatch Logs Live Tail helps you quickly troubleshoot incidents by viewing a streaming

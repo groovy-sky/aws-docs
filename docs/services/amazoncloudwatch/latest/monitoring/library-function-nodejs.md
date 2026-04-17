@@ -1,3 +1,7 @@
+---
+title: "Library functions available for Node.js canary"
+---
+
 # Library functions available for Node.js canary
 
 This section describes the library functions that are available for canary scripts

@@ -1,3 +1,7 @@
+---
+title: "Filter pattern syntax for metric filters, subscription filters, filter log events, and Live Tail"
+---
+
 # Filter pattern syntax for metric filters, subscription filters, filter log events, and Live Tail
 
 ###### Note

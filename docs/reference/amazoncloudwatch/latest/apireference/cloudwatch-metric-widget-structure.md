@@ -1,3 +1,7 @@
+---
+title: "GetMetricWidgetImage: Metric Widget Structure and Syntax"
+---
+
 # GetMetricWidgetImage: Metric Widget Structure and Syntax
 
 `MetricWidget` is an input parameter for the [https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API\_GetMetricWidgetImage.html](api-getmetricwidgetimage.md) API. It

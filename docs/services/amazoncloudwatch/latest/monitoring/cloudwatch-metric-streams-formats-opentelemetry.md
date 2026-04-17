@@ -1,3 +1,7 @@
+---
+title: "CloudWatch metric stream output in OpenTelemetry 0.7.0 format"
+---
+
 # CloudWatch metric stream output in OpenTelemetry 0.7.0 format
 
 OpenTelemetry is a collection of tools, APIs, and SDKs.

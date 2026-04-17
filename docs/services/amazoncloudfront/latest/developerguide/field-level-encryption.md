@@ -1,3 +1,7 @@
+---
+title: "Use field-level encryption to help protect sensitive data"
+---
+
 # Use field-level encryption to help protect sensitive data
 
 With Amazon CloudFront, you can enforce secure end-to-end connections to origin servers by

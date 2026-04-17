@@ -1,3 +1,7 @@
+---
+title: "Using the embedded metric format with AWS Distro for OpenTelemetry"
+---
+
 # Using the embedded metric format with AWS Distro for OpenTelemetry
 
 OpenTelemetry is an open-source initiative that removes boundaries and restrictions between vendor-specific formats for tracing, logs, and metrics by offering a single set of specifications and APIs.

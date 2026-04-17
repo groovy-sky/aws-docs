@@ -1,3 +1,7 @@
+---
+title: "Revert from a custom SSL/TLS certificate to the default CloudFront certificate"
+---
+
 # Revert from a custom SSL/TLS certificate to the default CloudFront certificate
 
 If you configured CloudFront to use HTTPS between viewers and CloudFront, and you configured

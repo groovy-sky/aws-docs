@@ -1,3 +1,7 @@
+---
+title: "Amazon FSx"
+---
+
 # Amazon FSx
 
 CloudWatch Application Insights supports the following metrics:

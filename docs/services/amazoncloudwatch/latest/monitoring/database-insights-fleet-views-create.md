@@ -1,3 +1,7 @@
+---
+title: "Create a fleet health view for CloudWatch Database Insights"
+---
+
 # Create a fleet health view for CloudWatch Database Insights
 
 To create a fleet health view, use the following procedure.

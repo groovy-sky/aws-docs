@@ -1,3 +1,7 @@
+---
+title: "Prerequisites"
+---
+
 # Prerequisites
 
 Make sure the following prerequisites are completed before installing the CloudWatch agent for

@@ -1,3 +1,7 @@
+---
+title: "Create a billing alarm to monitor your estimated AWS charges"
+---
+
 # Create a billing alarm to monitor your estimated AWS charges
 
 You can monitor your estimated AWS charges by using Amazon CloudWatch. When you enable the

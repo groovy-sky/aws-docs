@@ -1,3 +1,7 @@
+---
+title: "Create an alarm using a PromQL query"
+---
+
 # Create an alarm using a PromQL query
 
 You can create a CloudWatch alarm that uses a PromQL instant query to monitor metrics ingested

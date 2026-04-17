@@ -1,3 +1,7 @@
+---
+title: "Access logs (standard logs)"
+---
+
 # Access logs (standard logs)
 
 You can configure CloudFront to create log files that contain detailed information about every user

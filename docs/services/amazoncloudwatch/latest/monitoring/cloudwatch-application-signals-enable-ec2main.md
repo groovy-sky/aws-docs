@@ -1,3 +1,7 @@
+---
+title: "Enable your applications on Amazon EC2"
+---
+
 # Enable your applications on Amazon EC2
 
 Enable CloudWatch Application Signals on Amazon EC2 by using the custom setup steps described in this section.

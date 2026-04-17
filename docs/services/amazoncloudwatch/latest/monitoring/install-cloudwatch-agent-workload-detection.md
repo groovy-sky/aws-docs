@@ -1,3 +1,7 @@
+---
+title: "Install and Configure Amazon CloudWatch Agent with Workload Detection in the CloudWatch console"
+---
+
 # Install and Configure Amazon CloudWatch Agent with Workload Detection in the CloudWatch console
 
 ## Introduction

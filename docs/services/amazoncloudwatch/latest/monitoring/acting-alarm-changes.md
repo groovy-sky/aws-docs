@@ -1,3 +1,7 @@
+---
+title: "Acting on alarm changes"
+---
+
 # Acting on alarm changes
 
 CloudWatch can notify users on two types of alarm changes: when an alarm changes state, and when

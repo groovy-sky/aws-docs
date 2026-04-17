@@ -1,3 +1,7 @@
+---
+title: "Amazon SNS topic"
+---
+
 # Amazon SNS topic
 
 The following example shows a component configuration in JSON format for Amazon SNS

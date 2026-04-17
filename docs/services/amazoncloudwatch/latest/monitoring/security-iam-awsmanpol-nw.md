@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for Network Synthetic Monitor"
+---
+
 # AWS managed policies for Network Synthetic Monitor
 
 To add permissions to users, groups, and roles, it is easier to use AWS managed policies

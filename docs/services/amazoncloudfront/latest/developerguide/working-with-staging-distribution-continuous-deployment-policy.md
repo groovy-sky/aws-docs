@@ -1,3 +1,7 @@
+---
+title: "Work with a staging distribution and continuous deployment policy"
+---
+
 # Work with a staging distribution and continuous deployment policy
 
 You can create, update, and modify staging distributions and continuous deployment

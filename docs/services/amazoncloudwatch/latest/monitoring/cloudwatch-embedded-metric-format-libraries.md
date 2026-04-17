@@ -1,3 +1,7 @@
+---
+title: "Creating logs in embedded metric format using the client libraries"
+---
+
 # Creating logs in embedded metric format using the client libraries
 
 You can use the open-sourced client libraries that Amazon provides to create embedded metric format logs.

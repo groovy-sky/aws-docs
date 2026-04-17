@@ -1,3 +1,7 @@
+---
+title: "Adding a text widget to a CloudWatch dashboard"
+---
+
 # Adding a text widget to a CloudWatch dashboard
 
 ###### To add a text widget to a dashboard

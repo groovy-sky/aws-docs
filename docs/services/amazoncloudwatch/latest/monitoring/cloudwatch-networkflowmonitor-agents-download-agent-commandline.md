@@ -1,3 +1,7 @@
+---
+title: "Download prebuilt packages of the Network Flow Monitor agent by using the command line"
+---
+
 # Download prebuilt packages of the Network Flow Monitor agent by using the command line
 
 You can use the command line to install the Network Flow Monitor agent as a package in Amazon Linux 2023,

@@ -1,3 +1,7 @@
+---
+title: "AWS services where investigations are supported"
+---
+
 # AWS services where investigations are supported
 
 You can launch investigations from telemetry data (such as CloudWatch metrics, alarms, and

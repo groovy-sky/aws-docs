@@ -1,3 +1,7 @@
+---
+title: "Add a CORS header to a CloudFront Functions viewer response event"
+---
+
 # Add a CORS header to a CloudFront Functions viewer response event
 
 The following code example shows how to add a CORS header to a CloudFront Functions viewer response event.

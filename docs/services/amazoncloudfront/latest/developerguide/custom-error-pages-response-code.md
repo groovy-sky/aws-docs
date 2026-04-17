@@ -1,3 +1,7 @@
+---
+title: "Change response codes returned by CloudFront"
+---
+
 # Change response codes returned by CloudFront
 
 You can configure CloudFront to return a different HTTP status code to the viewer than what

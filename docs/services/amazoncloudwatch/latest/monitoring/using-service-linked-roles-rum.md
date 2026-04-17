@@ -1,3 +1,7 @@
+---
+title: "Using service-linked roles for CloudWatch RUM"
+---
+
 # Using service-linked roles for CloudWatch RUM
 
 CloudWatch RUM uses a AWS Identity and Access Management (IAM) [service-linked role](../../../iam/latest/userguide/id-roles-terms-and-concepts.md#iam-term-service-linked-role). A service-linked role is a unique type of IAM role

@@ -1,3 +1,7 @@
+---
+title: "Viewing a CloudWatch dashboard for a resource group"
+---
+
 # Viewing a CloudWatch dashboard for a resource group
 
 You can focus your view to display metrics and alarms from a single resource group.

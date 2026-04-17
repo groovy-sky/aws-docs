@@ -1,3 +1,7 @@
+---
+title: "CloudWatch investigations data retention"
+---
+
 # CloudWatch investigations data retention
 
 The retention period that you set for an investigation group determines how long that

@@ -1,3 +1,7 @@
+---
+title: "Use various origins with CloudFront distributions"
+---
+
 # Use various origins with CloudFront distributions
 
 When you create a distribution, you specify the _origin_

@@ -1,3 +1,7 @@
+---
+title: "PromQL querying"
+---
+
 # PromQL querying
 
 When you ingest OpenTelemetry metrics into CloudWatch via OpenTelemetry Protocol (OTLP), the

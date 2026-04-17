@@ -1,3 +1,7 @@
+---
+title: "Add a domain to your CloudFront standard distribution"
+---
+
 # Add a domain to your CloudFront standard distribution
 
 After you create a new CloudFront standard distribution, you can add a domain to it. Optionally, you can set up a Amazon Route 53 domain for your standard distribution when you create it. For more information, see [Create a CloudFront distribution in the console](distribution-web-creating-console.md#create-console-distribution).

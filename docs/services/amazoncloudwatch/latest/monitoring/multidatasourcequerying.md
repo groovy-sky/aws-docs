@@ -1,3 +1,7 @@
+---
+title: "Query metrics from other data sources"
+---
+
 # Query metrics from other data sources
 
 You can use CloudWatch to query, visualize, and create alarms for metrics from other data sources.

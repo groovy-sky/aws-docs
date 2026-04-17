@@ -1,3 +1,7 @@
+---
+title: "Retrieve custom metrics with collectd"
+---
+
 # Retrieve custom metrics with collectd
 
 You can retrieve additional metrics from your applications or services using the CloudWatch

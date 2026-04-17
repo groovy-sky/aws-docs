@@ -1,3 +1,7 @@
+---
+title: "Getting started with CloudWatch Logs"
+---
+
 # Getting started with CloudWatch Logs
 
 To collect logs from your Amazon EC2 instances and on-premises servers into CloudWatch Logs, use the unified CloudWatch agent. It

@@ -1,3 +1,7 @@
+---
+title: "limit"
+---
+
 # limit
 
 Use `limit` to specify the number of log events that you want

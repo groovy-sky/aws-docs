@@ -1,3 +1,7 @@
+---
+title: "Write CloudFront Connection Function code for mutual TLS (viewer) validation"
+---
+
 # Write CloudFront Connection Function code for mutual TLS (viewer) validation
 
 CloudFront Connection Functions enable you to write lightweight JavaScript functions for mTLS certificate validation and custom authentication logic. Your Connection Function code can validate client certificates, implement device-specific authentication rules, handle certificate revocation scenarios, and make allow/deny decisions for TLS connections at CloudFront edge locations worldwide.

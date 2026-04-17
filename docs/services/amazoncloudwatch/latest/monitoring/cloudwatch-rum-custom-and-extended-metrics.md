@@ -1,3 +1,7 @@
+---
+title: "Custom metrics and extended metrics that you can send to CloudWatch"
+---
+
 # Custom metrics and extended metrics that you can send to CloudWatch
 
 By default, RUM app monitors send metrics to CloudWatch. These default metrics and dimensions are listed in [CloudWatch metrics that you can collect with CloudWatch RUM](cloudwatch-rum-metrics.md).

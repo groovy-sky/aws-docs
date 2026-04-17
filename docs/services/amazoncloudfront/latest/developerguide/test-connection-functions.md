@@ -1,3 +1,7 @@
+---
+title: "Test CloudFront Connection Functions before deployment"
+---
+
 # Test CloudFront Connection Functions before deployment
 
 You can test CloudFront Connection Functions in the DEVELOPMENT stage using the TestConnectionFunction API operation. Testing allows you to validate your function logic with sample connection events before publishing to the LIVE stage.

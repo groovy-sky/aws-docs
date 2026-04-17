@@ -1,3 +1,7 @@
+---
+title: "Use CreateExportTask with an AWS SDK"
+---
+
 # Use `CreateExportTask` with an AWS SDK
 
 The following code example shows how to use `CreateExportTask`.
@@ -61,7 +65,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[CreateExportTask](../../../../reference/goto/dotnetsdkv3/logs-2014-03-28/createexporttask.md)
+[CreateExportTask](https://docs.aws.amazon.com/goto/DotNetSDKV3/logs-2014-03-28/CreateExportTask)
 in _AWS SDK for .NET API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

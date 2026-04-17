@@ -1,3 +1,7 @@
+---
+title: "Increase the proportion of requests that are served directly from the CloudFront caches (cache hit ratio)"
+---
+
 # Increase the proportion of requests that are served directly from the CloudFront caches (cache hit ratio)
 
 You can improve performance by increasing the proportion of your viewer requests that

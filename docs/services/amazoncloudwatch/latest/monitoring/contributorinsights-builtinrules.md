@@ -1,3 +1,7 @@
+---
+title: "Using Contributor Insights built-in rules in CloudWatch"
+---
+
 # Using Contributor Insights built-in rules in CloudWatch
 
 You can use Contributor Insights built-in rules

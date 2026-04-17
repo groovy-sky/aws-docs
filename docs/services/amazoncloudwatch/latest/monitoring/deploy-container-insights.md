@@ -1,3 +1,7 @@
+---
+title: "Setting up Container Insights"
+---
+
 # Setting up Container Insights
 
 The Container Insights setup process is different for Amazon ECS and Amazon EKS and Kubernetes.

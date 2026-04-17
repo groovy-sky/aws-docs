@@ -1,3 +1,7 @@
+---
+title: "Install the CloudWatch agent on new instances using CloudFormation"
+---
+
 # Install the CloudWatch agent on new instances using CloudFormation
 
 This section describes how to install the CloudWatch agent on new Amazon EC2 instances using

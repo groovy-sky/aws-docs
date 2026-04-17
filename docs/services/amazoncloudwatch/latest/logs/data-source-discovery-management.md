@@ -1,3 +1,7 @@
+---
+title: "Data source discovery and management"
+---
+
 # Data source discovery and management
 
 CloudWatch Logs automatically discovers and categorizes your log data by data source and type,

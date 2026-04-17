@@ -1,3 +1,7 @@
+---
+title: "Identity and access management for Amazon CloudWatch Logs"
+---
+
 # Identity and access management for Amazon CloudWatch Logs
 
 Access to Amazon CloudWatch Logs requires credentials that AWS can use to authenticate your requests.

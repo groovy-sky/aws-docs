@@ -1,3 +1,7 @@
+---
+title: "Publish functions"
+---
+
 # Publish functions
 
 When you publish your function, this copies the function from the `DEVELOPMENT`

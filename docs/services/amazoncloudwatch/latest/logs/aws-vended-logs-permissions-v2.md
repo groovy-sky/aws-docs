@@ -1,3 +1,7 @@
+---
+title: "Logging that requires additional permissions [V2]"
+---
+
 # Logging that requires additional permissions \[V2\]
 
 Some AWS services use a new method to send their logs. This is a flexible method

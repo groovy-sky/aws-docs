@@ -1,3 +1,7 @@
+---
+title: "Merge two graphs into one"
+---
+
 # Merge two graphs into one
 
 You can merge two different graphs into one, and then the resulting graph shows both

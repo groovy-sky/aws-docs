@@ -1,3 +1,7 @@
+---
+title: "Renaming a graph on a CloudWatch dashboard"
+---
+
 # Renaming a graph on a CloudWatch dashboard
 
 You can change the default name that CloudWatch assigns to a graph on your dashboard.

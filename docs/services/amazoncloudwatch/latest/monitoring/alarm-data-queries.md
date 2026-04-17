@@ -1,3 +1,7 @@
+---
+title: "Alarm data queries"
+---
+
 # Alarm data queries
 
 CloudWatch alarms can monitor various data sources. Choose the appropriate query type based on your monitoring needs.

@@ -1,3 +1,7 @@
+---
+title: "Restrict access to an Amazon S3 Multi-Region Access Point origin"
+---
+
 # Restrict access to an Amazon S3 Multi-Region Access Point origin
 
 You can use origin access control (OAC) to restrict access to an Amazon S3 Multi-Region

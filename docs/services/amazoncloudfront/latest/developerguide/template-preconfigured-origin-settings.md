@@ -1,3 +1,7 @@
+---
+title: "Preconfigured distribution settings reference"
+---
+
 # Preconfigured distribution settings reference
 
 When you create your CloudFront distribution, CloudFront automatically configures most distribution settings for you, based on your content origin type. Optionally, you can choose to manually edit your distribution settings. For more information, see [All distribution settings reference](distribution-web-values-specify.md).

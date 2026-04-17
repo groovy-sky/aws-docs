@@ -1,3 +1,7 @@
+---
+title: "Setting up Container Insights on Amazon EKS and Kubernetes"
+---
+
 # Setting up Container Insights on Amazon EKS and Kubernetes
 
 Container Insights is supported on Amazon EKS versions 1.23 and later. The quick start method

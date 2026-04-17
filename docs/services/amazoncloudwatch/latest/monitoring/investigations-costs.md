@@ -1,3 +1,7 @@
+---
+title: "Costs associated with CloudWatch investigations"
+---
+
 # Costs associated with CloudWatch investigations
 
 CloudWatch investigations might incur AWS service usage including telemetry and resource queries and

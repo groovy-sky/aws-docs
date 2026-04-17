@@ -1,3 +1,7 @@
+---
+title: "Service level objectives (SLOs)"
+---
+
 # Service level objectives (SLOs)
 
 You can use Application Signals to create _service level objectives_ for the services

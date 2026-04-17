@@ -1,3 +1,7 @@
+---
+title: "Set up rate limiting"
+---
+
 # Set up rate limiting
 
 Rate limiting is one of the recommendations you may receive when configuring security

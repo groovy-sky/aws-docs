@@ -1,3 +1,7 @@
+---
+title: "Use WebSockets with CloudFront distributions"
+---
+
 # Use WebSockets with CloudFront distributions
 
 Amazon CloudFront supports using WebSocket, a TCP-based protocol that is useful when you need

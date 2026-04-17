@@ -1,3 +1,7 @@
+---
+title: "Configure secure access and restrict access to content"
+---
+
 # Configure secure access and restrict access to content
 
 CloudFront provides several options for securing content that it delivers. The following are some

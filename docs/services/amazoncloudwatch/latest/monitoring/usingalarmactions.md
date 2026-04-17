@@ -1,3 +1,7 @@
+---
+title: "Stop, terminate, reboot, or recover an EC2 instance"
+---
+
 # Stop, terminate, reboot, or recover an EC2 instance
 
 Using Amazon CloudWatch alarm actions, you can create alarms that automatically stop, terminate,

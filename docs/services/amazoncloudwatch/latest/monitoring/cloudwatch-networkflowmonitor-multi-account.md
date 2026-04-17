@@ -1,3 +1,7 @@
+---
+title: "Initialize Network Flow Monitor for multi-account monitoring"
+---
+
 # Initialize Network Flow Monitor for multi-account monitoring
 
 If you want to monitor network flows in Network Flow Monitor for resources that are owned by different accounts,

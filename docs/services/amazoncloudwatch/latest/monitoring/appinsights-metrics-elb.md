@@ -1,3 +1,7 @@
+---
+title: "Elastic Load Balancer (ELB)"
+---
+
 # Elastic Load Balancer (ELB)
 
 CloudWatch Application Insights supports the following metrics:

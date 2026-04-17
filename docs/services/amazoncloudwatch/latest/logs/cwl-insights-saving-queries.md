@@ -1,3 +1,7 @@
+---
+title: "Save and re-run CloudWatch Logs Insights queries"
+---
+
 # Save and re-run CloudWatch Logs Insights queries
 
 After you create a query, you can save it, and run it again later. Queries are saved

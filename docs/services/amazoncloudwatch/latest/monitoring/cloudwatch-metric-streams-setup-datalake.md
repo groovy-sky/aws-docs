@@ -1,3 +1,7 @@
+---
+title: "Custom setup with Firehose"
+---
+
 # Custom setup with Firehose
 
 Use this method to create a metric stream and direct it to an

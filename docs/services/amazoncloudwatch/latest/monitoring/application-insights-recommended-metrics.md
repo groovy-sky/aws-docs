@@ -1,3 +1,7 @@
+---
+title: "Recommended metrics"
+---
+
 # Recommended metrics
 
 The following table lists the recommended metrics for each component type.

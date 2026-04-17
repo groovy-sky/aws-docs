@@ -1,3 +1,7 @@
+---
+title: "Logs and metrics supported by Amazon CloudWatch Application Insights"
+---
+
 # Logs and metrics supported by Amazon CloudWatch Application Insights
 
 The following lists show the supported logs and metrics for Amazon CloudWatch Application Insights.

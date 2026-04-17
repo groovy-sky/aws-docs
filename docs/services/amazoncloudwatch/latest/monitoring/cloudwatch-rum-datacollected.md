@@ -1,3 +1,7 @@
+---
+title: "Information collected by the CloudWatch RUM web client"
+---
+
 # Information collected by the CloudWatch RUM web client
 
 This section documents the **PutRumEvents** schema, which defines

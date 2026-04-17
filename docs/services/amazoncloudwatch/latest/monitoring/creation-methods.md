@@ -1,3 +1,7 @@
+---
+title: "Methods to create an investigation"
+---
+
 # Methods to create an investigation
 
 You can create investigations in the following ways:

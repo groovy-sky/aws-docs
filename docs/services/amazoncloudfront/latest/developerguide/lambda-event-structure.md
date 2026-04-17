@@ -1,3 +1,7 @@
+---
+title: "Lambda@Edge event structure"
+---
+
 # Lambda@Edge event structure
 
 The following topics describe the request and response event objects that CloudFront passes

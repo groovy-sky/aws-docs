@@ -1,3 +1,7 @@
+---
+title: "Viewer mTLS headers for cache policies and forwarded to origin"
+---
+
 # Viewer mTLS headers for cache policies and forwarded to origin
 
 When using mutual TLS authentication, CloudFront can extract information from client certificates and forward it to your origins as HTTP headers. This allows your origin servers to access certificate details without implementing certificate validation logic.

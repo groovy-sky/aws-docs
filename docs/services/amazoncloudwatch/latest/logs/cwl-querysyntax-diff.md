@@ -1,3 +1,7 @@
+---
+title: "diff"
+---
+
 # diff
 
 Compares the log events found in your requested time period with the log

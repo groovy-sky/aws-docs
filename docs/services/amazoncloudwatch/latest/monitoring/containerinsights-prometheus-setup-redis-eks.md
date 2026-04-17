@@ -1,3 +1,7 @@
+---
+title: "Tutorial for adding a new Prometheus scrape target: Redis OSS on Amazon EKS and Kubernetes clusters"
+---
+
 # Tutorial for adding a new Prometheus scrape target: Redis OSS on Amazon EKS and Kubernetes clusters
 
 This tutorial provides a hands-on introduction to scrape the Prometheus metrics

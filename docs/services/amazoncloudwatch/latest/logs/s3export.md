@@ -1,3 +1,7 @@
+---
+title: "Exporting log data to Amazon S3"
+---
+
 # Exporting log data to Amazon S3
 
 This chapter provides you with information, so you can export log data from your log

@@ -1,3 +1,7 @@
+---
+title: "Using the PutLogEvents API to send manually-created embedded metric format logs"
+---
+
 # Using the PutLogEvents API to send manually-created embedded metric format logs
 
 You can send embedded metric format logs to CloudWatch Logs using the CloudWatch Logs [PutLogEvents](../../../../reference/amazoncloudwatchlogs/latest/apireference/api-putlogevents.md) API.

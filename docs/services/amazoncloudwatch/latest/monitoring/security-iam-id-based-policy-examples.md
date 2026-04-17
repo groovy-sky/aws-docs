@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon CloudWatch"
+---
+
 # Identity-based policy examples for Amazon CloudWatch
 
 By default, users and roles don't have permission to create or modify CloudWatch

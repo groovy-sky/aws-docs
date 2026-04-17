@@ -1,3 +1,7 @@
+---
+title: "Metrics in Amazon CloudWatch"
+---
+
 # Metrics in Amazon CloudWatch
 
 Metrics are data about the performance of your systems. Amazon CloudWatch collects metrics through

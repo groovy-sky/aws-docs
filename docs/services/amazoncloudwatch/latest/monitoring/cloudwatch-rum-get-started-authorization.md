@@ -1,3 +1,7 @@
+---
+title: "Authorize your web application to send data to AWS"
+---
+
 # Authorize your web application to send data to AWS
 
 You have four options to set up data authentication:

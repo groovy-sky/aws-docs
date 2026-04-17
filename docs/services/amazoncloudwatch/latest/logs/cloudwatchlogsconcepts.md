@@ -1,3 +1,7 @@
+---
+title: "Amazon CloudWatch Logs concepts"
+---
+
 # Amazon CloudWatch Logs concepts
 
 The terminology and concepts that are central to your understanding and use of CloudWatch Logs

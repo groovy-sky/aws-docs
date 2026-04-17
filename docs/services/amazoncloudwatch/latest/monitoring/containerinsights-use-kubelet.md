@@ -1,3 +1,7 @@
+---
+title: "(Optional) Enable the Use_Kubelet feature for large clusters"
+---
+
 # (Optional) Enable the Use\_Kubelet feature for large clusters
 
 By default, the Use\_Kubelet feature is disabled in the FluentBit Kubernetes plugin.

@@ -1,3 +1,7 @@
+---
+title: "Install the CloudWatch agent with Prometheus metrics collection on Amazon EKS and Kubernetes clusters"
+---
+
 # Install the CloudWatch agent with Prometheus metrics collection on Amazon EKS and Kubernetes clusters
 
 This section explains how to set up the CloudWatch agent with Prometheus monitoring in a

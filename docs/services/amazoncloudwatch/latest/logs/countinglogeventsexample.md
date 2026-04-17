@@ -1,3 +1,7 @@
+---
+title: "Example: Count log events"
+---
+
 # Example: Count log events
 
 The simplest type of log event monitoring is to count the number of log events

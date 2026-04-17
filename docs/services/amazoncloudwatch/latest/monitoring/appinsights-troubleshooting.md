@@ -1,3 +1,7 @@
+---
+title: "View and troubleshoot problems detected by Amazon CloudWatch Application Insights"
+---
+
 # View and troubleshoot problems detected by Amazon CloudWatch Application Insights
 
 The topics in this section provide detailed information about the detected problems

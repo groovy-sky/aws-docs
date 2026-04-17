@@ -1,3 +1,7 @@
+---
+title: "Log management"
+---
+
 # Log management
 
 CloudWatch Logs provides advanced log management capabilities that help you organize, transform, and

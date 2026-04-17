@@ -1,3 +1,7 @@
+---
+title: "Runtime versions support policy"
+---
+
 # Runtime versions support policy
 
 Synthetics runtime versions are subject to maintenance and security updates. When any

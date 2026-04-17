@@ -1,3 +1,7 @@
+---
+title: "Work with key value store"
+---
+
 # Work with key value store
 
 You must create a key value store to hold the key-value pairs that you want to use in

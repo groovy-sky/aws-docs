@@ -1,3 +1,7 @@
+---
+title: "Actions for CloudFront using AWS SDKs"
+---
+
 # Actions for CloudFront using AWS SDKs
 
 The following code examples demonstrate how to perform individual CloudFront

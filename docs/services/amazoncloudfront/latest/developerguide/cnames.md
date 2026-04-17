@@ -1,3 +1,7 @@
+---
+title: "Use custom URLs by adding alternate domain names (CNAMEs)"
+---
+
 # Use custom URLs by adding alternate domain names (CNAMEs)
 
 When you create a distribution, CloudFront provides a domain name for it, such as

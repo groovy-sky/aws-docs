@@ -1,3 +1,7 @@
+---
+title: "IAM policy for CloudWatch Application Insights"
+---
+
 # IAM policy for CloudWatch Application Insights
 
 To use CloudWatch Application Insights, you must create an [AWS Identity and Access Management (IAM) policy](../../../iam/latest/userguide/access-policies.md) and attach it to your user, group, or

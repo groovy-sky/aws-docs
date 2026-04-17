@@ -1,3 +1,7 @@
+---
+title: "View CloudFront cache statistics reports"
+---
+
 # View CloudFront cache statistics reports
 
 The Amazon CloudFront cache statistics report shows the following information:

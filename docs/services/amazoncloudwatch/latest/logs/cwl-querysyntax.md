@@ -1,3 +1,7 @@
+---
+title: "CloudWatch Logs Insights language query syntax"
+---
+
 # CloudWatch Logs Insights language query syntax
 
 This section provides details about the Logs Insights QL. The query syntax
@@ -75,7 +79,7 @@ match one or more conditions.
 
 Forces a query to attempt to scan only the log groups
 that are both indexed on the field mentioned in a field
-index and also contain a value for the that field index.
+index and also contain a value for that field index.
 This reduces scanned volume by attempting to scan only log
 events from these log groups that contain the value
 specified in the query for this field index.

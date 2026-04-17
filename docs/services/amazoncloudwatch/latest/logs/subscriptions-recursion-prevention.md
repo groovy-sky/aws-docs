@@ -1,3 +1,7 @@
+---
+title: "Log recursion prevention"
+---
+
 # Log recursion prevention
 
 There is a risk of causing an infinite log recursion with subscription filters that

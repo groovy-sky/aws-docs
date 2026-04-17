@@ -1,3 +1,7 @@
+---
+title: "Viewing Contributor Insights reports in CloudWatch"
+---
+
 # Viewing Contributor Insights reports in CloudWatch
 
 To view graphs of report data and a ranked list of contributors found by your rules, follow these steps.

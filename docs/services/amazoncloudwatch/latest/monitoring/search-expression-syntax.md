@@ -1,3 +1,7 @@
+---
+title: "CloudWatch search expression syntax"
+---
+
 # CloudWatch search expression syntax
 
 A valid search expression has the following format.

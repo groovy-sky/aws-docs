@@ -1,3 +1,7 @@
+---
+title: "Download Helm charts and install agents"
+---
+
 # Download Helm charts and install agents
 
 You can download the Network Flow Monitor agent Helm charts from the AWS public repository by using the

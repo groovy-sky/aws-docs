@@ -1,3 +1,7 @@
+---
+title: "Container Insights Prometheus metrics monitoring"
+---
+
 # Container Insights Prometheus metrics monitoring
 
 CloudWatch Container Insights monitoring for Prometheus automates the discovery of Prometheus

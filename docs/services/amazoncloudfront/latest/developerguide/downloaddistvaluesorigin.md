@@ -1,3 +1,7 @@
+---
+title: "Origin settings"
+---
+
 # Origin settings
 
 When you use the CloudFront console to create or update a distribution, you provide information

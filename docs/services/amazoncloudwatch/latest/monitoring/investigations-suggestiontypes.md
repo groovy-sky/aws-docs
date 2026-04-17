@@ -1,3 +1,7 @@
+---
+title: "Insights that CloudWatch investigations can surface in investigations"
+---
+
 # Insights that CloudWatch investigations can surface in investigations
 
 CloudWatch investigations can surface the following types of items and add them to the

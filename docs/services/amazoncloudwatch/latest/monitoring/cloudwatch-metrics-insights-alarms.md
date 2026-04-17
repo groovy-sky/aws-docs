@@ -1,3 +1,7 @@
+---
+title: "Alarms on CloudWatch Metrics Insights queries in CloudWatch"
+---
+
 # Alarms on CloudWatch Metrics Insights queries in CloudWatch
 
 You can create alarms on Metrics Insights queries. This helps you have alarms that track

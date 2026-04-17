@@ -1,3 +1,7 @@
+---
+title: "Use CloudFront continuous deployment to safely test CDN configuration changes"
+---
+
 # Use CloudFront continuous deployment to safely test CDN configuration changes
 
 With Amazon CloudFront _continuous deployment_ you can safely

@@ -1,3 +1,7 @@
+---
+title: "Creating a Metrics Insights CloudWatch alarm"
+---
+
 # Creating a Metrics Insights CloudWatch alarm
 
 ###### To create an alarm on a Metrics Insights query using the console

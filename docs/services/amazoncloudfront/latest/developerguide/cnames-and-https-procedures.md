@@ -1,3 +1,7 @@
+---
+title: "Configure alternate domain names and HTTPS"
+---
+
 # Configure alternate domain names and HTTPS
 
 To use alternate domain names in the URLs for your files and to use HTTPS between

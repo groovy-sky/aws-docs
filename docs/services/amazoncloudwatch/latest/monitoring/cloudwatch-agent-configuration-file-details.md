@@ -1,3 +1,7 @@
+---
+title: "Manually create or edit the CloudWatch agent configuration file"
+---
+
 # Manually create or edit the CloudWatch agent configuration file
 
 The CloudWatch agent configuration file is a JSON file with four sections:

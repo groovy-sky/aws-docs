@@ -1,3 +1,7 @@
+---
+title: "Adding a CloudWatch dashboard to your favorites list"
+---
+
 # Adding a CloudWatch dashboard to your favorites list
 
 In the CloudWatch console, you can add dashboards, alarms, and log groups to a favorites

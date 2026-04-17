@@ -1,3 +1,7 @@
+---
+title: "How CloudWatch investigations finds data for suggestions"
+---
+
 # How CloudWatch investigations finds data for suggestions
 
 CloudWatch investigations uses a wide range of data sources to determine dependency relationships and plan

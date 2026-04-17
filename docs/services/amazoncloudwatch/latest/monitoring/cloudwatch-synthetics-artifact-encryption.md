@@ -1,3 +1,7 @@
+---
+title: "Encrypting canary artifacts"
+---
+
 # Encrypting canary artifacts
 
 CloudWatch Synthetics stores canary artifacts such as screenshots, HAR files, and reports in

@@ -1,3 +1,7 @@
+---
+title: "Set signed cookies using a canned policy"
+---
+
 # Set signed cookies using a canned policy
 
 To set a signed cookie by using a canned policy, complete the following steps. To create

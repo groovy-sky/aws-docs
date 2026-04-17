@@ -1,3 +1,7 @@
+---
+title: "Prometheus metrics collected by the CloudWatch agent"
+---
+
 # Prometheus metrics collected by the CloudWatch agent
 
 The CloudWatch agent with Prometheus support automatically collects metrics from several

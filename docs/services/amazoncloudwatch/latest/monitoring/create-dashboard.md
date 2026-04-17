@@ -1,3 +1,7 @@
+---
+title: "Creating a customized CloudWatch dashboard"
+---
+
 # Creating a customized CloudWatch dashboard
 
 To get started,

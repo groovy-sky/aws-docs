@@ -1,3 +1,7 @@
+---
+title: "Use signed URLs"
+---
+
 # Use signed URLs
 
 A signed URL includes additional information, for example, an expiration date and time, that gives you more control

@@ -1,3 +1,7 @@
+---
+title: "Add, remove, or replace content that CloudFront distributes"
+---
+
 # Add, remove, or replace content that CloudFront distributes
 
 This section explains how to make sure CloudFront can access the content that you want to be served to

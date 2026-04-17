@@ -1,3 +1,7 @@
+---
+title: "Set signed cookies using a custom policy"
+---
+
 # Set signed cookies using a custom policy
 
 To set a signed cookie that uses a custom policy, complete the following

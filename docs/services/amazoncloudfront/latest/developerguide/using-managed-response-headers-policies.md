@@ -1,3 +1,7 @@
+---
+title: "Use managed response headers policies"
+---
+
 # Use managed response headers policies
 
 With a CloudFront response headers policy, you can specify the HTTP headers that Amazon CloudFront

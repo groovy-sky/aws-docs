@@ -1,3 +1,7 @@
+---
+title: "filter"
+---
+
 # filter
 
 Use `filter` to get log events that match one or more

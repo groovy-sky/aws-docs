@@ -1,3 +1,7 @@
+---
+title: "Scenarios for CloudFront using AWS SDKs"
+---
+
 # Scenarios for CloudFront using AWS SDKs
 
 The following code examples show you how to implement common scenarios in CloudFront
@@ -13,7 +17,9 @@ Scenarios target an intermediate level of experience to help you understand serv
 
 - [Delete signing resources](example-cloudfront-deletesigningresources-section.md)
 
-- [Get started with CloudFront](example-cloudfront-gettingstarted-section.md)
+- [Get started with a basic CloudFront distribution](example-cloudfront-gettingstarted-section.md)
+
+- [Getting started with WAF](example-wafv2-gettingstarted-052-section.md)
 
 - [Sign URLs and cookies](example-cloudfront-cloudfrontutilities-section.md)
 

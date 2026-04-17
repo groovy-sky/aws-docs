@@ -1,3 +1,7 @@
+---
+title: "AWS Lambda function"
+---
+
 # AWS Lambda function
 
 CloudWatch Application Insights supports the following metrics:

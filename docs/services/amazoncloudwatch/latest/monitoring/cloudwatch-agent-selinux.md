@@ -1,3 +1,7 @@
+---
+title: "Set up the CloudWatch agent with security-enhanced Linux (SELinux)"
+---
+
 # Set up the CloudWatch agent with security-enhanced Linux (SELinux)
 
 If your system has security-enhanced Linux (SELinux) enabled, you must apply the

@@ -1,3 +1,7 @@
+---
+title: "Get started with a CloudFront standard distribution"
+---
+
 # Get started with a CloudFront standard distribution
 
 The procedures in this section show you how to use CloudFront to set up a standard distribution that does the following:

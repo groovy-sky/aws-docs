@@ -1,3 +1,7 @@
+---
+title: "Example: Count HTTP 404 codes"
+---
+
 # Example: Count HTTP 404 codes
 
 Using CloudWatch Logs, you can monitor how many times your Apache servers return a HTTP 404

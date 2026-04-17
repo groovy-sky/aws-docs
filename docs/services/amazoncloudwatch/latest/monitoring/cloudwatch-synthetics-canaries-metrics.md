@@ -1,3 +1,7 @@
+---
+title: "CloudWatch metrics published by canaries"
+---
+
 # CloudWatch metrics published by canaries
 
 Canaries publish the following metrics to CloudWatch in the `CloudWatchSynthetics`

@@ -1,3 +1,7 @@
+---
+title: "Manual installation on Amazon EC2"
+---
+
 # Manual installation on Amazon EC2
 
 ###### Note

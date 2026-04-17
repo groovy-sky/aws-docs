@@ -1,3 +1,7 @@
+---
+title: "Basic examples for CloudWatch Logs using AWS SDKs"
+---
+
 # Basic examples for CloudWatch Logs using AWS SDKs
 
 The following code examples show how to use the basics of Amazon CloudWatch Logs with AWS

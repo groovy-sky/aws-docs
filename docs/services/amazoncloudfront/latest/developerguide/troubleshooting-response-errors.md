@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting error response status codes in CloudFront"
+---
+
 # Troubleshooting error response status codes in CloudFront
 
 If CloudFront requests an object from your origin, and the origin returns an HTTP 4xx or 5xx

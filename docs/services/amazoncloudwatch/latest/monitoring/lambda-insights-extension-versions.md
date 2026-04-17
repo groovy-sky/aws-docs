@@ -1,3 +1,7 @@
+---
+title: "Available versions of the Lambda Insights extension"
+---
+
 # Available versions of the Lambda Insights extension
 
 This section lists the versions of the Lambda Insights extension, and the ARNs to use

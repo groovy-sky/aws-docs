@@ -1,3 +1,7 @@
+---
+title: "Add query to dashboard or export query results"
+---
+
 # Add query to dashboard or export query results
 
 After you run a query, you can add the query to a CloudWatch dashboard or copy the results

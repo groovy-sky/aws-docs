@@ -1,3 +1,7 @@
+---
+title: "Transaction Search"
+---
+
 # Transaction Search
 
 Transaction Search is an interactive analytics experience you can use to get complete visibility of your application transaction spans.

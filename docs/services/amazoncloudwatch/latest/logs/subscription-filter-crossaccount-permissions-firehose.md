@@ -1,3 +1,7 @@
+---
+title: "Step 3: Add/validate IAM permissions for the cross-account destination"
+---
+
 # Step 3: Add/validate IAM permissions for the cross-account destination
 
 According to AWS cross-account policy evaluation logic, in order to access

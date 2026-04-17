@@ -1,3 +1,7 @@
+---
+title: "CloudFront Functions event structure"
+---
+
 # CloudFront Functions event structure
 
 CloudFront Functions passes an `event` object to your function code as input when it

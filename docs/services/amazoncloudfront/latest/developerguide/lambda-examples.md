@@ -1,3 +1,7 @@
+---
+title: "Lambda@Edge example functions"
+---
+
 # Lambda@Edge example functions
 
 See the following examples to use Lambda functions with Amazon CloudFront.

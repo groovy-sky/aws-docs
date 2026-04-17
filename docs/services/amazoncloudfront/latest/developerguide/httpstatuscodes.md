@@ -1,3 +1,7 @@
+---
+title: "How CloudFront processes HTTP 4xx and 5xx status codes from your origin"
+---
+
 # How CloudFront processes HTTP 4xx and 5xx status codes from your origin
 
 When CloudFront requests an object from your Amazon S3 bucket or custom origin server, your

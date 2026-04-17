@@ -1,3 +1,7 @@
+---
+title: "Adding custom attributes"
+---
+
 # Adding custom attributes
 
 CloudWatch Application Signals utilizes OpenTelemetry to auto-instrument your applications and collect spans from popular libraries in different languages, such as Java, Python, and more.

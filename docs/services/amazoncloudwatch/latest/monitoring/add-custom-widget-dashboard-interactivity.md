@@ -1,3 +1,7 @@
+---
+title: "Interactivity in the custom widget in CloudWatch"
+---
+
 # Interactivity in the custom widget in CloudWatch
 
 Even though JavaScript is not allowed, there are other ways to allow interactivity with the returned HTML.

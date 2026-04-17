@@ -1,3 +1,7 @@
+---
+title: "Set up application for monitoring using the AWS Management Console"
+---
+
 # Set up application for monitoring using the AWS Management Console
 
 This section provides steps to set up, configure, and manage your CloudWatch Application Insights application

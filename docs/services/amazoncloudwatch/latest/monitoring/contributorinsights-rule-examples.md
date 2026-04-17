@@ -1,3 +1,7 @@
+---
+title: "CloudWatch Contributor Insights rule examples"
+---
+
 # CloudWatch Contributor Insights rule examples
 
 This section contains examples that illustrate use cases for Contributor Insights rules.

@@ -1,3 +1,7 @@
+---
+title: "Performance Counter metrics"
+---
+
 # Performance Counter metrics
 
 Performance Counter metrics are recommended for instances only when the

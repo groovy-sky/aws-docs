@@ -1,3 +1,7 @@
+---
+title: "SQL inference"
+---
+
 # SQL inference
 
 CloudWatch Metrics Insights uses several mechanisms to infer the intention of a given SQL

@@ -1,3 +1,7 @@
+---
+title: "Amazon DynamoDB table"
+---
+
 # Amazon DynamoDB table
 
 The following example shows a component configuration in JSON format for

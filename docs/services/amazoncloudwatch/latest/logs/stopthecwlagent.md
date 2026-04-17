@@ -1,3 +1,7 @@
+---
+title: "Stop the CloudWatch Logs agent"
+---
+
 # Stop the CloudWatch Logs agent
 
 Use the following procedure to stop the CloudWatch Logs agent on your EC2 instance.

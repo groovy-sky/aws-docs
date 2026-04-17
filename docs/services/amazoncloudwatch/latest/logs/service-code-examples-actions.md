@@ -1,3 +1,7 @@
+---
+title: "Actions for CloudWatch Logs using AWS SDKs"
+---
+
 # Actions for CloudWatch Logs using AWS SDKs
 
 The following code examples demonstrate how to perform individual CloudWatch Logs

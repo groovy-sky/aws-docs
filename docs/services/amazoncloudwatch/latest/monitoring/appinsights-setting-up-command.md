@@ -1,3 +1,7 @@
+---
+title: "Set up, configure, and manage your application for monitoring using the command line"
+---
+
 # Set up, configure, and manage your application for monitoring using the command line
 
 This section provides steps for setting up, configuring, and managing your

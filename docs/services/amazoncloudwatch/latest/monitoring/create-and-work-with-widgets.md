@@ -1,3 +1,7 @@
+---
+title: "Using widgets on CloudWatch dashboards"
+---
+
 # Using widgets on CloudWatch dashboards
 
 You can use the following types of widgets on CloudWatch dashboards:

@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Set up monitoring for SAP ASE"
+---
+
 # Tutorial: Set up monitoring for SAP ASE
 
 This tutorial demonstrates how to configure CloudWatch Application Insights to set up monitoring for your SAP

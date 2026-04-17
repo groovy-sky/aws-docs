@@ -1,3 +1,7 @@
+---
+title: "Determine which files to invalidate"
+---
+
 # Determine which files to invalidate
 
 If you want to invalidate multiple files such as all of the files in a directory

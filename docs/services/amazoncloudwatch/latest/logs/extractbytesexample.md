@@ -1,3 +1,7 @@
+---
+title: "Example: Extract fields from an Apache log and assign dimensions"
+---
+
 # Example: Extract fields from an Apache log and assign dimensions
 
 Sometimes, instead of counting, it is helpful to use values within individual log

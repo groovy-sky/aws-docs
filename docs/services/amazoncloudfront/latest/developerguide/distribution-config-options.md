@@ -1,3 +1,7 @@
+---
+title: "Understand how multi-tenant distributions work"
+---
+
 # Understand how multi-tenant distributions work
 
 You can create CloudFront multi-tenant distributions with settings that can be reused across multiple distribution tenants.

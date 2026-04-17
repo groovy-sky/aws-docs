@@ -1,3 +1,7 @@
+---
+title: "Metrics Insights sample queries"
+---
+
 # Metrics Insights sample queries
 
 This section contains examples of useful CloudWatch Metrics Insights queries that you can copy and use directly

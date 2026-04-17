@@ -1,3 +1,7 @@
+---
+title: "Searching and analyzing spans"
+---
+
 # Searching and analyzing spans
 
 Transaction Search provides you with a visual editor to search and analyze all ingested spans using attributes.

@@ -1,3 +1,7 @@
+---
+title: "Cache behavior settings"
+---
+
 # Cache behavior settings
 
 By setting the cache behavior, you can configure a variety of CloudFront functionality for a

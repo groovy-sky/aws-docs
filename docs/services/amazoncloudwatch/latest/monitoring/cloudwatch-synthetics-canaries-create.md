@@ -1,3 +1,7 @@
+---
+title: "Creating a canary"
+---
+
 # Creating a canary
 
 ###### Important

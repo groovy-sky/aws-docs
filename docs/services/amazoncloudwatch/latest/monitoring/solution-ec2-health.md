@@ -1,3 +1,7 @@
+---
+title: "CloudWatch solution: Amazon EC2 health"
+---
+
 # CloudWatch solution: Amazon EC2 health
 
 This solution helps you configure out-of-the-box metric collection using CloudWatch agents

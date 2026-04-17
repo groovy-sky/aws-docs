@@ -1,3 +1,7 @@
+---
+title: "Restrict access to Application Load Balancers"
+---
+
 # Restrict access to Application Load Balancers
 
 You can use both internal and internet-facing Application Load Balancers with Amazon CloudFront. You can use internal Application Load Balancers inside private subnets with CloudFront by using VPC origins. CloudFront VPC origins allow you to serve content from applications hosted in private VPC subnets without exposing them to the public internet. For more information, see [Restrict access with VPC origins](private-content-vpc-origins.md).

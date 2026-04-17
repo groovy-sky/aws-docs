@@ -1,3 +1,7 @@
+---
+title: "CloudWatch Logs quotas"
+---
+
 # CloudWatch Logs quotas
 
 You can use the table in this section to review the default service quotas, also referred to as limits, for an AWS account in Amazon CloudWatch Logs.

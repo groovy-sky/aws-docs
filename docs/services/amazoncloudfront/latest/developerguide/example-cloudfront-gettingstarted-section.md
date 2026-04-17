@@ -1,20 +1,18 @@
-# Get started with a basic CloudFront distribution using the CLI
+---
+title: "Get started with a basic CloudFront distribution"
+---
+
+# Get started with a basic CloudFront distribution
 
 The following code example shows how to:
 
-- Create an Amazon S3 bucket for content storage
+- Create an Amazon S3 bucket
 
-- Upload sample content to the S3 bucket
+- Upload content to the bucket
 
-- Create an origin access control (OAC) for secure S3 access
+- Create a CloudFront distribution with OAC
 
-- Create a CloudFront distribution with S3 as origin
-
-- Update S3 bucket policy to allow CloudFront access
-
-- Wait for distribution deployment and test content access
-
-- Clean up resources including distribution, OAC, and S3 bucket
+- Clean up resources
 
 Bash
 
@@ -329,23 +327,23 @@ echo "Tutorial completed at $(date)"
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [CreateDistribution](../../../goto/aws-cli/cloudfront-2020-05-31/createdistribution.md)
+- [CreateDistribution](https://docs.aws.amazon.com/goto/aws-cli/cloudfront-2020-05-31/CreateDistribution)
 
-- [CreateOriginAccessControl](../../../goto/aws-cli/cloudfront-2020-05-31/createoriginaccesscontrol.md)
+- [CreateOriginAccessControl](https://docs.aws.amazon.com/goto/aws-cli/cloudfront-2020-05-31/CreateOriginAccessControl)
 
-- [DeleteDistribution](../../../goto/aws-cli/cloudfront-2020-05-31/deletedistribution.md)
+- [DeleteDistribution](https://docs.aws.amazon.com/goto/aws-cli/cloudfront-2020-05-31/DeleteDistribution)
 
-- [DeleteOriginAccessControl](../../../goto/aws-cli/cloudfront-2020-05-31/deleteoriginaccesscontrol.md)
+- [DeleteOriginAccessControl](https://docs.aws.amazon.com/goto/aws-cli/cloudfront-2020-05-31/DeleteOriginAccessControl)
 
-- [GetDistribution](../../../goto/aws-cli/cloudfront-2020-05-31/getdistribution.md)
+- [GetDistribution](https://docs.aws.amazon.com/goto/aws-cli/cloudfront-2020-05-31/GetDistribution)
 
-- [GetDistributionConfig](../../../goto/aws-cli/cloudfront-2020-05-31/getdistributionconfig.md)
+- [GetDistributionConfig](https://docs.aws.amazon.com/goto/aws-cli/cloudfront-2020-05-31/GetDistributionConfig)
 
-- [GetOriginAccessControl](../../../goto/aws-cli/cloudfront-2020-05-31/getoriginaccesscontrol.md)
+- [GetOriginAccessControl](https://docs.aws.amazon.com/goto/aws-cli/cloudfront-2020-05-31/GetOriginAccessControl)
 
-- [UpdateDistribution](../../../goto/aws-cli/cloudfront-2020-05-31/updatedistribution.md)
+- [UpdateDistribution](https://docs.aws.amazon.com/goto/aws-cli/cloudfront-2020-05-31/UpdateDistribution)
 
-- [WaitDistributionDeployed](../../../goto/aws-cli/cloudfront-2020-05-31/waitdistributiondeployed.md)
+- [WaitDistributionDeployed](https://docs.aws.amazon.com/goto/aws-cli/cloudfront-2020-05-31/WaitDistributionDeployed)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using CloudFront with an AWS SDK](../../../../reference/amazoncloudfront/latest/developerguide/sdk-general-information-section.md).
@@ -355,6 +353,6 @@ This topic also includes information about getting started and details about pre
 
 Delete signing resources
 
-Sign URLs and cookies
+Getting started with WAF
 
 All content copied from https://docs.aws.amazon.com/.

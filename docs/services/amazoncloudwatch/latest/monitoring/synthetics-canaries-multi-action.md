@@ -1,3 +1,7 @@
+---
+title: "Start, stop, delete, or update runtime for multiple canaries"
+---
+
 # Start, stop, delete, or update runtime for multiple canaries
 
 You can stop, start, delete, or update the runtime of as many as five canaries with one

@@ -1,3 +1,7 @@
+---
+title: "Retrieve custom metrics with StatsD"
+---
+
 # Retrieve custom metrics with StatsD
 
 You can retrieve additional custom metrics from your applications or services using

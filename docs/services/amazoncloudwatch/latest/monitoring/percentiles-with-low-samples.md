@@ -1,3 +1,7 @@
+---
+title: "Percentile-based alarms and low data samples"
+---
+
 # Percentile-based alarms and low data samples
 
 When you set a percentile as the statistic for an alarm, you can specify what to do when

@@ -1,3 +1,7 @@
+---
+title: "Tutorial for adding a new Prometheus scrape target: Memcached on Amazon ECS"
+---
+
 # Tutorial for adding a new Prometheus scrape target: Memcached on Amazon ECS
 
 This tutorial provides a hands-on introduction to scrape the Prometheus metrics of

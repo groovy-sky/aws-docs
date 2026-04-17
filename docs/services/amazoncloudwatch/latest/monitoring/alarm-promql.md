@@ -1,3 +1,7 @@
+---
+title: "PromQL alarms"
+---
+
 # PromQL alarms
 
 A PromQL alarm monitors metrics using a Prometheus Query Language (PromQL) instant query.

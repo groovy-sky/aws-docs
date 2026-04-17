@@ -1,3 +1,7 @@
+---
+title: "Understanding scheduled queries concepts"
+---
+
 # Understanding scheduled queries concepts
 
 Before creating scheduled queries, understand these key concepts that affect how your

@@ -1,3 +1,7 @@
+---
+title: "Supported AWS Regions for Internet Monitor"
+---
+
 # Supported AWS Regions for Internet Monitor
 
 The AWS Regions and AWS Local Zones where Amazon CloudWatch Internet Monitor is supported are listed in this section. For more information about Regions that

@@ -1,3 +1,7 @@
+---
+title: "Amazon Simple Queue Service (SQS)"
+---
+
 # Amazon Simple Queue Service (SQS)
 
 The following example shows a component configuration in JSON format for

@@ -1,3 +1,7 @@
+---
+title: "Delete a fleet health view for CloudWatch Database Insights"
+---
+
 # Delete a fleet health view for CloudWatch Database Insights
 
 To delete a fleet health view, use the following procedure.

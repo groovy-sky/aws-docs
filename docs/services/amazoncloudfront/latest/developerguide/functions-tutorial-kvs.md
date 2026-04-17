@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Create a CloudFront function that includes key values"
+---
+
 # Tutorial: Create a CloudFront function that includes key values
 
 This tutorial shows you how to include key values with CloudFront function. Key values are part

@@ -1,3 +1,7 @@
+---
+title: "Enable origin mutual TLS for CloudFront distributions"
+---
+
 # Enable origin mutual TLS for CloudFront distributions
 
 After obtaining a client certificate through AWS Certificate Manager and configuring your origin server to require mutual TLS, you can enable origin mTLS on your CloudFront distribution.

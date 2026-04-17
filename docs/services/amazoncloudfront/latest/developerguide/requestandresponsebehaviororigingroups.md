@@ -1,3 +1,7 @@
+---
+title: "Request and response behavior for origin groups"
+---
+
 # Request and response behavior for origin groups
 
 Requests to an origin group work the same as requests to an origin that is not set up

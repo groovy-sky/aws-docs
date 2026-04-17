@@ -1,3 +1,7 @@
+---
+title: "Use file versioning to update or remove content with a CloudFront distribution"
+---
+
 # Use file versioning to update or remove content with a CloudFront distribution
 
 To update existing content that CloudFront is set up to distribute for you, we recommend that you use a version identifier in file names or in folder names. This helps give you

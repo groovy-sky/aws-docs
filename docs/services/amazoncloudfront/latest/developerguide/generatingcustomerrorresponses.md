@@ -1,3 +1,7 @@
+---
+title: "Generate custom error responses"
+---
+
 # Generate custom error responses
 
 If an object that you’re serving through CloudFront is unavailable for some reason, your web

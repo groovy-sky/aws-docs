@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Run a query with an aggregation function"
+---
+
 # Tutorial: Run a query with an aggregation function
 
 You can use aggregation functions with the `stats` command and

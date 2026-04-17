@@ -1,3 +1,7 @@
+---
+title: "Supported logs and discovered fields"
+---
+
 # Supported logs and discovered fields
 
 CloudWatch Logs Insights supports different log types. For every log that's sent to a Standard class

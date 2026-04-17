@@ -1,3 +1,7 @@
+---
+title: "Setting up Container Insights on Amazon ECS"
+---
+
 # Setting up Container Insights on Amazon ECS
 
 You can set up Container Insights with enhanced observability or Container Insights on

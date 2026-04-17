@@ -1,3 +1,7 @@
+---
+title: "HTTP 400 status code (Bad Request)"
+---
+
 # HTTP 400 status code (Bad Request)
 
 CloudFront returns a 400 bad request when the client sends some invalid data in the

@@ -1,3 +1,7 @@
+---
+title: "Use async and await"
+---
+
 # Use async and await
 
 CloudFront Functions JavaScript runtime functions 2.0 provide `async` and

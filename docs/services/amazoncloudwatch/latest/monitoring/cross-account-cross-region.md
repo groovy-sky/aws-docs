@@ -1,3 +1,7 @@
+---
+title: "Cross-account cross-Region CloudWatch console"
+---
+
 # Cross-account cross-Region CloudWatch console
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Restrict access to files"
+---
+
 # Restrict access to files
 
 You can control user access to your private content in two ways:

@@ -1,3 +1,7 @@
+---
+title: "Amazon ECS Container Insights with enhanced observability metrics"
+---
+
 # Amazon ECS Container Insights with enhanced observability metrics
 
 Container Insights with enhanced observability provides deeper visibility into containerized workloads by offering:

@@ -1,3 +1,7 @@
+---
+title: "CloudWatch usage metrics"
+---
+
 # CloudWatch usage metrics
 
 CloudWatch collects metrics that track the usage of some AWS resources.

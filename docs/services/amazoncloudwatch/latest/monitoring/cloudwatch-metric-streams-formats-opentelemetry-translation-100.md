@@ -1,3 +1,7 @@
+---
+title: "Translations with OpenTelemetry 1.0.0 format in CloudWatch"
+---
+
 # Translations with OpenTelemetry 1.0.0 format in CloudWatch
 
 CloudWatch performs some transformations to put CloudWatch data into

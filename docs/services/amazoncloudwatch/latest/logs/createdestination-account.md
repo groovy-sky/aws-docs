@@ -1,3 +1,7 @@
+---
+title: "Step 1: Create a destination"
+---
+
 # Step 1: Create a destination
 
 ###### Important

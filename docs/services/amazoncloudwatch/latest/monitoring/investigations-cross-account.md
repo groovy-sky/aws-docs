@@ -1,3 +1,7 @@
+---
+title: "Cross-account investigations"
+---
+
 # Cross-account investigations
 
 Cross-account CloudWatch investigations enables you to investigate application issues that span multiple

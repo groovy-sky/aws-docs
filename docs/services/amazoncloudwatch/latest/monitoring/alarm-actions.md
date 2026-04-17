@@ -1,3 +1,7 @@
+---
+title: "Alarm actions"
+---
+
 # Alarm actions
 
 You can specify what actions an alarm takes when it changes state between the OK, ALARM, and INSUFFICIENT\_DATA states.

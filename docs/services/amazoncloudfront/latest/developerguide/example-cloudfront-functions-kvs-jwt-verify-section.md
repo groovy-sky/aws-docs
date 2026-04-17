@@ -1,3 +1,7 @@
+---
+title: "Validate a simple token in a CloudFront Functions viewer request"
+---
+
 # Validate a simple token in a CloudFront Functions viewer request
 
 The following code example shows how to validate a simple token in a CloudFront Functions viewer request.

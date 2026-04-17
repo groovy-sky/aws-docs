@@ -1,3 +1,7 @@
+---
+title: "CloudFront events that can trigger a Lambda@Edge function"
+---
+
 # CloudFront events that can trigger a Lambda@Edge function
 
 For each cache behavior in a Amazon CloudFront distribution, you can add up to four

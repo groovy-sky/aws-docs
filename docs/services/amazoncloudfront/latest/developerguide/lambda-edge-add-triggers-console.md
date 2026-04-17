@@ -1,3 +1,7 @@
+---
+title: "Add triggers to a Lambda@Edge function"
+---
+
 # Add triggers to a Lambda@Edge function
 
 You can use the AWS Lambda console or Amazon CloudFront console to add a trigger to your

@@ -1,3 +1,7 @@
+---
+title: "PutDashboard"
+---
+
 # PutDashboard
 
 Creates a dashboard if it does not already exist, or updates an existing dashboard.
@@ -97,7 +101,7 @@ widget.
 ```
 
 {
-"DashboardName":"Dashboard with only one text widget",
+"DashboardName":"Dashboard-with-only-one-text-widget",
 "DashboardBody":{
    "widgets":[
       {
@@ -123,7 +127,7 @@ widget and one text widget.
 ```
 
 {
-    "DashboardName": "Two-Widget Dashboard",
+    "DashboardName": "Two-Widget-Dashboard",
     "DashboardBody": {
         "widgets": [
             {
@@ -170,7 +174,7 @@ side.
 ```
 
 {
-    "DashboardName": "Two-metric-widget Dashboard",
+    "DashboardName": "Two-metric-widget-Dashboard",
     "DashboardBody": {
         "widgets": [
             {
@@ -229,7 +233,7 @@ graph, and a separate widget below that, with an alarm.
 ```
 
 {
-    "DashboardName": "Dashboard with a three-metric graph and an alarm",
+    "DashboardName": "Dashboard-with-three-metric-graph-and-alarm",
     "DashboardBody": {
         "widgets": [
             {
@@ -294,7 +298,7 @@ metric math widget.
 ```
 
 {
-   "DashboardName":" One metric math widget and One metric widget",
+   "DashboardName":"One-metric-math-widget-and-One-metric-widget",
    "DashboardBody":{
       "widgets":[
          {
@@ -384,25 +388,25 @@ metric math widget.
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/monitoring-2010-08-01/putdashboard.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/PutDashboard)
 
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/monitoring-2010-08-01/putdashboard.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/PutDashboard)
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/monitoring-2010-08-01/putdashboard.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/PutDashboard)
 
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/monitoring-2010-08-01/putdashboard.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/PutDashboard)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/monitoring-2010-08-01/putdashboard.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/PutDashboard)
 
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/monitoring-2010-08-01/putdashboard.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/PutDashboard)
 
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/monitoring-2010-08-01/putdashboard.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/PutDashboard)
 
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/monitoring-2010-08-01/putdashboard.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/PutDashboard)
 
-- [AWS SDK for Python](../../../../services/goto/boto3/monitoring-2010-08-01/putdashboard.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/PutDashboard)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/monitoring-2010-08-01/putdashboard.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/PutDashboard)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

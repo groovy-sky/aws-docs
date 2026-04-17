@@ -1,3 +1,7 @@
+---
+title: "Code examples for CloudWatch Logs using AWS SDKs"
+---
+
 # Code examples for CloudWatch Logs using AWS SDKs
 
 The following code examples show how to use CloudWatch Logs with an AWS software development kit (SDK).
@@ -48,6 +52,10 @@ This topic also includes information about getting started and details about pre
 
     - [StartQuery](example-cloudwatch-logs-startquery-section.md)
 - [Scenarios](service-code-examples-scenarios.md)
+
+  - [Configure Amazon ECS Service Connect](example-ecs-serviceconnect-085-section.md)
+
+  - [Creating your first Lambda function](example-lambda-gettingstarted-019-section.md)
 
   - [Run a large query](example-cloudwatch-logs-scenario-bigquery-section.md)
 

@@ -1,3 +1,7 @@
+---
+title: "Java"
+---
+
 # Java
 
 The following example shows a component configuration in JSON format for

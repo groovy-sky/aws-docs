@@ -1,3 +1,7 @@
+---
+title: "Associate functions with distributions"
+---
+
 # Associate functions with distributions
 
 To use a function with a distribution, you associate the function with one or more cache

@@ -1,3 +1,7 @@
+---
+title: "HA Cluster"
+---
+
 # HA Cluster
 
 CloudWatch Application Insights supports the following metrics:

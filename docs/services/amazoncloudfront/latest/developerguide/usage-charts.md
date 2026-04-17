@@ -1,3 +1,7 @@
+---
+title: "View CloudFront usage reports"
+---
+
 # View CloudFront usage reports
 
 The CloudFront usage reports include the following information:

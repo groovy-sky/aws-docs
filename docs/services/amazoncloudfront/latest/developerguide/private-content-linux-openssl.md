@@ -1,3 +1,7 @@
+---
+title: "Linux commands and OpenSSL for base64 encoding and encryption"
+---
+
 # Linux commands and OpenSSL for base64 encoding and encryption
 
 You can use the following Linux command-line command and OpenSSL to hash and sign the policy statement,

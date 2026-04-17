@@ -1,3 +1,7 @@
+---
+title: "Detailed guide for autodiscovery on Amazon ECS clusters"
+---
+
 # Detailed guide for autodiscovery on Amazon ECS clusters
 
 Prometheus provides dozens of dynamic service-discovery mechanisms as described in

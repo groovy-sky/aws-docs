@@ -1,3 +1,7 @@
+---
+title: "Install agents on EC2 instances with SSM"
+---
+
 # Install agents on EC2 instances with SSM
 
 Network Flow Monitor agents provide performance metrics about network flows. Follow the steps in this section to

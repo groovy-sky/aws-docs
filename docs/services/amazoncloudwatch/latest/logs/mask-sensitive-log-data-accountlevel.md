@@ -1,3 +1,7 @@
+---
+title: "Create an account-wide data protection policy"
+---
+
 # Create an account-wide data protection policy
 
 You can use the CloudWatch Logs console or AWS CLI commands to create a data protection policy to mask sensitive data

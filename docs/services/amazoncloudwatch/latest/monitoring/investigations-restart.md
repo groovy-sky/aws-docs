@@ -1,3 +1,7 @@
+---
+title: "Restart an archived investigation"
+---
+
 # Restart an archived investigation
 
 You can restart archived investigations.

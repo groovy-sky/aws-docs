@@ -1,3 +1,7 @@
+---
+title: "Get started with a standard distribution (AWS CLI)"
+---
+
 # Get started with a standard distribution (AWS CLI)
 
 The procedures in this section show you how to use the AWS CLI with CloudFront to set up a basic configuration that involves the following:

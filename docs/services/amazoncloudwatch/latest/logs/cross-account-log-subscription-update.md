@@ -1,3 +1,7 @@
+---
+title: "Updating an existing cross-account subscription"
+---
+
 # Updating an existing cross-account subscription
 
 If you currently have a cross-account logs subscription where the destination

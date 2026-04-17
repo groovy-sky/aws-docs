@@ -1,3 +1,7 @@
+---
+title: "Encrypt log data in CloudWatch Logs using AWS Key Management Service"
+---
+
 # Encrypt log data in CloudWatch Logs using AWS Key Management Service
 
 Log group data is always encrypted in CloudWatch Logs. By default, CloudWatch Logs uses server-side encryption with

@@ -1,3 +1,7 @@
+---
+title: "Performing safe canary updates"
+---
+
 # Performing safe canary updates
 
 CloudWatch synthetics safe canary updates allows you to test the updates on your existing

@@ -1,3 +1,7 @@
+---
+title: "Set up Fluent Bit as a DaemonSet to send logs to CloudWatch Logs"
+---
+
 # Set up Fluent Bit as a DaemonSet to send logs to CloudWatch Logs
 
 The following sections help you deploy Fluent Bit to send logs from containers to

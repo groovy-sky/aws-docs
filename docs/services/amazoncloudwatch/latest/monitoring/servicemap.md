@@ -1,3 +1,7 @@
+---
+title: "View your application topology and monitor operational health with the CloudWatch application map"
+---
+
 # View your application topology and monitor operational health with the CloudWatch application map
 
 ###### Note

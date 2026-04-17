@@ -1,3 +1,7 @@
+---
+title: "Understanding AI-derived facts in incident reports"
+---
+
 # Understanding AI-derived facts in incident reports
 
 AI-derived facts form the foundation of CloudWatch investigations incident reports, representing

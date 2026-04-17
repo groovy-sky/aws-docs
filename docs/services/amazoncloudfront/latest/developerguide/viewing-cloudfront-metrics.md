@@ -1,3 +1,7 @@
+---
+title: "View CloudFront and edge function metrics"
+---
+
 # View CloudFront and edge function metrics
 
 You can view operational metrics about your CloudFront distributions and [edge functions](https://aws.amazon.com/cloudfront/features) in

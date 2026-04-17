@@ -1,3 +1,7 @@
+---
+title: "Application performance monitoring (APM)"
+---
+
 # Application performance monitoring (APM)
 
 CloudWatch Application Signals provides application performance monitoring (APM) features such as pre-built, standardized dashboards for critical application metrics,

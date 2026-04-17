@@ -1,3 +1,7 @@
+---
+title: "Quick partner setup"
+---
+
 # Quick partner setup
 
 CloudWatch provides a quick setup experience for the following third-party partners. To use this workflow,

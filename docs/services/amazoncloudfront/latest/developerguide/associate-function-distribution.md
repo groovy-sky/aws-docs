@@ -1,3 +1,7 @@
+---
+title: "Step 4: Associate the function to your distribution"
+---
+
 # Step 4: Associate the function to your distribution
 
 Once you publish your Connection Function, associate it with your mTLS-enabled

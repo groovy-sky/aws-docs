@@ -1,3 +1,7 @@
+---
+title: "HTTP 502 status code (Bad Gateway)"
+---
+
 # HTTP 502 status code (Bad Gateway)
 
 CloudFront returns a HTTP 502 status code (Bad Gateway) when CloudFront wasn't able to serve

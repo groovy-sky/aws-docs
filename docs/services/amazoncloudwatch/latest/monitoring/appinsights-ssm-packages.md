@@ -1,3 +1,7 @@
+---
+title: "AWS Systems Manager (SSM) packages used by CloudWatch Application Insights"
+---
+
 # AWS Systems Manager (SSM) packages used by CloudWatch Application Insights
 
 The packages listed in this section are used by Application Insights, and can be

@@ -1,3 +1,7 @@
+---
+title: "Logging and monitoring in Amazon CloudFront"
+---
+
 # Logging and monitoring in Amazon CloudFront
 
 Monitoring is an important part of maintaining the availability and performance of CloudFront

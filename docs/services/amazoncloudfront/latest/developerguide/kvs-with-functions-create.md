@@ -1,3 +1,7 @@
+---
+title: "Create a key value store"
+---
+
 # Create a key value store
 
 You can create a key value store and its key-value pairs at the same time. You can

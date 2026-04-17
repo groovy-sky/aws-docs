@@ -1,3 +1,7 @@
+---
+title: "Collect NVIDIA GPU metrics"
+---
+
 # Collect NVIDIA GPU metrics
 
 You can use the CloudWatch agent to collect NVIDIA GPU metrics from Linux servers. To set

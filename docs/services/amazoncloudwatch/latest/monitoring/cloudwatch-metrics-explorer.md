@@ -1,3 +1,7 @@
+---
+title: "Use metrics explorer to monitor resources by their tags and properties"
+---
+
 # Use metrics explorer to monitor resources by their tags and properties
 
 Metrics explorer is a tag-based tool that enables you to filter, aggregate, and

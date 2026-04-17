@@ -1,3 +1,7 @@
+---
+title: "Verifying prerequisites for Container Insights in CloudWatch"
+---
+
 # Verifying prerequisites for Container Insights in CloudWatch
 
 Before you install Container Insights on Amazon EKS or Kubernetes, verify the following.

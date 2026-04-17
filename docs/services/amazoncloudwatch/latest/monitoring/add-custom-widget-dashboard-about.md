@@ -1,3 +1,7 @@
+---
+title: "Details about custom widgets in CloudWatch"
+---
+
 # Details about custom widgets in CloudWatch
 
 Custom widgets work as follows:

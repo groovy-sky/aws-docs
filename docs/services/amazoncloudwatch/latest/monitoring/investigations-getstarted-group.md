@@ -1,3 +1,7 @@
+---
+title: "Set up an investigation group"
+---
+
 # Set up an investigation group
 
 To set up CloudWatch investigations in your account for use with an enhanced investigation, you create

@@ -1,3 +1,7 @@
+---
+title: "Helper methods for CloudFront SaaS Manager properties"
+---
+
 # Helper methods for CloudFront SaaS Manager properties
 
 Use the following helper functions for CloudFront SaaS Manager to retrieve values for your

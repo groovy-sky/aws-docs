@@ -1,3 +1,7 @@
+---
+title: "Use facets to group and explore logs"
+---
+
 # Use facets to group and explore logs
 
 Facets are useful for analyzing logs as they allow you to interactively filter and

@@ -1,3 +1,7 @@
+---
+title: "Starting the CloudWatch agent"
+---
+
 # Starting the CloudWatch agent
 
 You can start the CloudWatch agent using either Systems Manager Run Command or the command line.

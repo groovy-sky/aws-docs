@@ -1,3 +1,7 @@
+---
+title: "Using condition keys to limit access to CloudWatch namespaces"
+---
+
 # Using condition keys to limit access to CloudWatch namespaces
 
 Use IAM condition keys to limit users to publishing metrics only in the

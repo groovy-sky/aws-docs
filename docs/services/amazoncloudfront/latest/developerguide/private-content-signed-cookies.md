@@ -1,3 +1,7 @@
+---
+title: "Use signed cookies"
+---
+
 # Use signed cookies
 
 CloudFront signed cookies allow you to control who can access your content when you don't want to change your current URLs

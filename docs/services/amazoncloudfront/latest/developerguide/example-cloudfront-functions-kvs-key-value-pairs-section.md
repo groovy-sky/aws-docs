@@ -1,3 +1,7 @@
+---
+title: "Use key-value pairs in a CloudFront Functions viewer request"
+---
+
 # Use key-value pairs in a CloudFront Functions viewer request
 
 The following code example shows how to use key-value pairs in a CloudFront Functions viewer request.

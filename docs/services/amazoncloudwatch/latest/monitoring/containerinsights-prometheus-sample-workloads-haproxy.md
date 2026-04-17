@@ -1,3 +1,7 @@
+---
+title: "Set up HAProxy with a metric exporter on Amazon EKS and Kubernetes"
+---
+
 # Set up HAProxy with a metric exporter on Amazon EKS and Kubernetes
 
 HAProxy is an open-source proxy application. For more information, see [HAProxy](https://www.haproxy.org/).

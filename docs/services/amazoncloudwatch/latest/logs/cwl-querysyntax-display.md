@@ -1,3 +1,7 @@
+---
+title: "display"
+---
+
 # **display**
 
 Use `display` to show a specific field or fields in query

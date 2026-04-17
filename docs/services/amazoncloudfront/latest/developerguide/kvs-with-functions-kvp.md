@@ -1,3 +1,7 @@
+---
+title: "Work with key value data"
+---
+
 # Work with key value data
 
 This topic describes how to add key-value pairs to an existing key value store. To

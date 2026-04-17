@@ -1,3 +1,7 @@
+---
+title: "Adding a graph widget to a CloudWatch dashboard"
+---
+
 # Adding a graph widget to a CloudWatch dashboard
 
 The procedures

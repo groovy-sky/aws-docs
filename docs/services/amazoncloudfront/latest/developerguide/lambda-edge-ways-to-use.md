@@ -1,3 +1,7 @@
+---
+title: "Ways to use Lambda@Edge"
+---
+
 # Ways to use Lambda@Edge
 
 There are many uses for Lambda@Edge processing with your Amazon CloudFront distribution, such as

@@ -1,3 +1,7 @@
+---
+title: "Creating a custom widget for a CloudWatch dashboard"
+---
+
 # Creating a custom widget for a CloudWatch dashboard
 
 To create a custom widget, you can use one of the samples provided by AWS, or you can

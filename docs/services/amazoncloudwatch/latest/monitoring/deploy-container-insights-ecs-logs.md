@@ -1,3 +1,7 @@
+---
+title: "Set up FireLens to send logs to CloudWatch Logs"
+---
+
 # Set up FireLens to send logs to CloudWatch Logs
 
 FireLens for Amazon ECS enables you to use task definition parameters to route logs to

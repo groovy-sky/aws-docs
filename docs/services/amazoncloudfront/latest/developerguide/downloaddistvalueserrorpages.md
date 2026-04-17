@@ -1,3 +1,7 @@
+---
+title: "Custom error pages and error caching"
+---
+
 # Custom error pages and error caching
 
 You can have CloudFront return an object to the viewer (for example, an HTML file)

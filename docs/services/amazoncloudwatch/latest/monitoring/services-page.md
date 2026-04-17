@@ -1,3 +1,7 @@
+---
+title: "View overall service activity and operational health with the Services page"
+---
+
 # View overall service activity and operational health with the Services page
 
 Use the Services page to see a list of your services that are [enabled for Application Signals](cloudwatch-application-signals-enable.md). You can also view

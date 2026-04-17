@@ -1,3 +1,7 @@
+---
+title: "Built-in processors for AWS vended logs"
+---
+
 # Built-in processors for AWS vended logs
 
 This section contains information about the built-in processors that you can use with AWS services that vend logs.

@@ -1,3 +1,7 @@
+---
+title: "Using canary blueprints"
+---
+
 # Using canary blueprints
 
 This section provides details about each of the canary blueprints and the tasks each

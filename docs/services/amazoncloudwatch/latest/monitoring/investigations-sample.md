@@ -1,3 +1,7 @@
+---
+title: "See a sample investigation"
+---
+
 # See a sample investigation
 
 If you'd like to see an investigation in action before you configure an investigation

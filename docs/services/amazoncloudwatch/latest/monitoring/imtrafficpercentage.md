@@ -1,3 +1,7 @@
+---
+title: "Choose a percentage of traffic to monitor for your application"
+---
+
 # Choose a percentage of traffic to monitor for your application
 
 The coverage that you choose for the percentage of application traffic to monitor determines how many city-networks

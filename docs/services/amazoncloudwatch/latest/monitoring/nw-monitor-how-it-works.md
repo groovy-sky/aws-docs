@@ -1,3 +1,7 @@
+---
+title: "How Network Synthetic Monitor works"
+---
+
 # How Network Synthetic Monitor works
 
 Network Synthetic Monitor is fully managed by AWS, and doesn't require separate agents on monitored resources.

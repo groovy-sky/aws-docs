@@ -1,3 +1,7 @@
+---
+title: "Library functions available for Python canary scripts using Selenium"
+---
+
 # Library functions available for Python canary scripts using Selenium
 
 This section lists the Selenium library functions available for Python canary scripts.

@@ -1,3 +1,7 @@
+---
+title: "Amazon Simple Queue Server (SQS)"
+---
+
 # Amazon Simple Queue Server (SQS)
 
 CloudWatch Application Insights supports the following metrics:

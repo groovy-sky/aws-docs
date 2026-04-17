@@ -1,3 +1,7 @@
+---
+title: "Agent details - Evaluations"
+---
+
 # Agent details - Evaluations
 
 Evaluations provides continuous quality monitoring metrics for your AI agents. You can use

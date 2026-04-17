@@ -1,3 +1,7 @@
+---
+title: "Amazon EKS cluster"
+---
+
 # Amazon EKS cluster
 
 The following example shows a component configuration in JSON format for Amazon EKS

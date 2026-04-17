@@ -1,3 +1,7 @@
+---
+title: "AWS Step Functions"
+---
+
 # AWS Step Functions
 
 The following example shows a component configurations in JSON format for

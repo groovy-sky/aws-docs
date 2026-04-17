@@ -1,3 +1,7 @@
+---
+title: "Cache content based on cookies"
+---
+
 # Cache content based on cookies
 
 By default, CloudFront doesn’t consider cookies when processing requests and responses, or

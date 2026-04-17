@@ -1,3 +1,7 @@
+---
+title: "Additional network path metadata included for Amazon EKS"
+---
+
 # Additional network path metadata included for Amazon EKS
 
 When Network Flow Monitor gathers performance metrics for network flows between Amazon EKS components,

@@ -1,3 +1,7 @@
+---
+title: "Disable AWS WAF security protections"
+---
+
 # Disable AWS WAF security protections
 
 If your distribution doesn't need AWS WAF security protections, you can disable this

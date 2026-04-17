@@ -1,3 +1,7 @@
+---
+title: "Amazon DynamoDB table"
+---
+
 # Amazon DynamoDB table
 
 CloudWatch Application Insights supports the following metrics:

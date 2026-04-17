@@ -1,3 +1,7 @@
+---
+title: "Modifying destination membership at runtime"
+---
+
 # Modifying destination membership at runtime
 
 You might encounter situations where you have to add or remove log senders

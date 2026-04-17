@@ -1,3 +1,7 @@
+---
+title: "Create a data protection policy for a single log group"
+---
+
 # Create a data protection policy for a single log group
 
 You can use the CloudWatch Logs console or AWS CLI commands to create a data protection policy to mask sensitive data.

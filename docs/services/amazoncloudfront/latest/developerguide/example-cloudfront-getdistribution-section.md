@@ -1,3 +1,7 @@
+---
+title: "Use GetDistribution with a CLI"
+---
+
 # Use `GetDistribution` with a CLI
 
 The following code examples show how to use `GetDistribution`.
@@ -5,7 +9,7 @@ The following code examples show how to use `GetDistribution`.
 Action examples are code excerpts from larger programs and must be run in context. You can see this action in
 context in the following code example:
 
-- [Get started with CloudFront](example-cloudfront-gettingstarted-section.md)
+- [Get started with a basic CloudFront distribution](example-cloudfront-gettingstarted-section.md)
 
 CLI
 
@@ -158,7 +162,7 @@ Get-CFDistribution -Id EXAMPLE0000ID
 ```
 
 - For API details, see
-[GetDistribution](../../../powershell/v4/reference.md)
+[GetDistribution](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -172,7 +176,7 @@ Get-CFDistribution -Id EXAMPLE0000ID
 ```
 
 - For API details, see
-[GetDistribution](../../../powershell/v5/reference.md)
+[GetDistribution](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "Editing a graph on a CloudWatch dashboard"
+---
+
 # Editing a graph on a CloudWatch dashboard
 
 You can edit the graphs that you add to your CloudWatch dashboard. You can change a

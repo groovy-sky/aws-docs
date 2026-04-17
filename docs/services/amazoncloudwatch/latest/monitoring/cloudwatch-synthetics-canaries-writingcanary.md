@@ -1,3 +1,7 @@
+---
+title: "Writing a canary script"
+---
+
 # Writing a canary script
 
 The following sections explain how to write a canary script and how

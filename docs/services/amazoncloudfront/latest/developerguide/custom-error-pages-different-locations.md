@@ -1,3 +1,7 @@
+---
+title: "Store objects and custom error pages in different locations"
+---
+
 # Store objects and custom error pages in different locations
 
 If you want to store your objects and your custom error pages in different locations,

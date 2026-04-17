@@ -1,3 +1,7 @@
+---
+title: "SQL failover cluster instance"
+---
+
 # SQL failover cluster instance
 
 The following example shows a component configuration in JSON format for SQL

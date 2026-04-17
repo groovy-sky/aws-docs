@@ -1,3 +1,7 @@
+---
+title: "Create SaaS manager resources AWS SDK"
+---
+
 # Create SaaS manager resources AWS SDK
 
 The following code example shows how to create a multi-tenant distribution and distribution tenant with various configurations.
@@ -380,9 +384,9 @@ public class CreateDistributionTenant {
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [CreateDistribution](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/createdistribution.md)
+- [CreateDistribution](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/CreateDistribution)
 
-- [CreateDistributionTenant](../../../../reference/goto/sdkforjavav2/cloudfront-2020-05-31/createdistributiontenant.md)
+- [CreateDistributionTenant](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudfront-2020-05-31/CreateDistributionTenant)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using CloudFront with an AWS SDK](../../../../reference/amazoncloudfront/latest/developerguide/sdk-general-information-section.md).

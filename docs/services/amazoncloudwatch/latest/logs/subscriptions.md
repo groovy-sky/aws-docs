@@ -1,3 +1,7 @@
+---
+title: "Real-time processing of log data with subscriptions"
+---
+
 # Real-time processing of log data with subscriptions
 
 You can use subscriptions to get access to a real-time feed of log events from CloudWatch Logs and

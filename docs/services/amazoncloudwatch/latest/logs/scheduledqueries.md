@@ -1,3 +1,7 @@
+---
+title: "Automating log analysis with scheduled queries"
+---
+
 # Automating log analysis with scheduled queries
 
 Scheduled queries enable you to automate the execution of CloudWatch Logs Insights queries on a regular

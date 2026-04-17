@@ -1,3 +1,7 @@
+---
+title: "Require HTTPS for communication between CloudFront and your Amazon S3 origin"
+---
+
 # Require HTTPS for communication between CloudFront and your Amazon S3 origin
 
 When your origin is an Amazon S3 bucket, your options for using HTTPS for communications with CloudFront depend on how you're using the

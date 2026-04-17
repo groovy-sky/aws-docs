@@ -1,3 +1,7 @@
+---
+title: "Add a true client IP header to a CloudFront Functions viewer request event"
+---
+
 # Add a true client IP header to a CloudFront Functions viewer request event
 
 The following code example shows how to add a true client IP header to a CloudFront Functions viewer request event.

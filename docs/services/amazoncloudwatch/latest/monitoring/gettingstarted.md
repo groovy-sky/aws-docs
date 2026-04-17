@@ -1,3 +1,7 @@
+---
+title: "Getting started with CloudWatch automatic dashboards"
+---
+
 # Getting started with CloudWatch automatic dashboards
 
 The CloudWatch home page automatically displays metrics about every AWS service you use.

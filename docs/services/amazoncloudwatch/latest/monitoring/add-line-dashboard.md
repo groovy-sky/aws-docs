@@ -1,3 +1,7 @@
+---
+title: "Adding a line graph widget to a CloudWatch dashboard"
+---
+
 # Adding a line graph widget to a CloudWatch dashboard
 
 ###### To add a line widget to a dashboard

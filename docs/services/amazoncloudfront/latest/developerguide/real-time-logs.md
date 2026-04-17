@@ -1,3 +1,7 @@
+---
+title: "Use real-time access logs"
+---
+
 # Use real-time access logs
 
 With CloudFront real-time access logs, you can get information about requests made to a distribution in

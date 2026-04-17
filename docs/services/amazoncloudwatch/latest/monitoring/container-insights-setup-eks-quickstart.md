@@ -1,3 +1,7 @@
+---
+title: "Quick Start setup for Container Insights on Amazon EKS and Kubernetes"
+---
+
 # Quick Start setup for Container Insights on Amazon EKS and Kubernetes
 
 ###### Important

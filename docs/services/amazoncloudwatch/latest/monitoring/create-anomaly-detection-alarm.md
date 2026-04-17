@@ -1,3 +1,7 @@
+---
+title: "Create a CloudWatch alarm based on anomaly detection"
+---
+
 # Create a CloudWatch alarm based on anomaly detection
 
 You can create an alarm based on CloudWatch anomaly detection, which analyzes past metric data

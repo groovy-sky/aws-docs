@@ -1,3 +1,7 @@
+---
+title: "Create response headers policies"
+---
+
 # Create response headers policies
 
 You can use a response headers policy to specify the HTTP headers that Amazon CloudFront adds or

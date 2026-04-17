@@ -1,3 +1,7 @@
+---
+title: "Use dynamic labels"
+---
+
 # Use dynamic labels
 
 You can use dynamic labels with your graphs. Dynamic labels add a dynamically updated

@@ -1,3 +1,7 @@
+---
+title: "Using anomaly detection in CloudWatch Logs Insights"
+---
+
 # Using anomaly detection in CloudWatch Logs Insights
 
 In addition to creating log anomaly detectors for continuous monitoring, you can also

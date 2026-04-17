@@ -1,3 +1,7 @@
+---
+title: "Get suggestions to optimize application performance in Internet Monitor (Optimize page)"
+---
+
 # Get suggestions to optimize application performance in Internet Monitor (Optimize page)
 
 Use the **Optimize** page in the Internet Monitor console to get suggestions for how to optimize application performance

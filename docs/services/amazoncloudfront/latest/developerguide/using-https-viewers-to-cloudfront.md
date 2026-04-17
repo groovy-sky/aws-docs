@@ -1,3 +1,7 @@
+---
+title: "Require HTTPS for communication between viewers and CloudFront"
+---
+
 # Require HTTPS for communication between viewers and CloudFront
 
 You can configure one or more cache behaviors in your CloudFront distribution to require HTTPS for communication between viewers and CloudFront.

@@ -1,3 +1,7 @@
+---
+title: "Use CloudWatch Logs to run a large query"
+---
+
 # Use CloudWatch Logs to run a large query
 
 The following code examples show how to use CloudWatch Logs to query more than 10,000 records.
@@ -865,9 +869,9 @@ public class LargeQueryWorkflow
 
 - For API details, see the following topics in _AWS SDK for .NET API Reference_.
 
-- [GetQueryResults](../../../../reference/goto/dotnetsdkv4/logs-2014-03-28/getqueryresults.md)
+- [GetQueryResults](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/GetQueryResults)
 
-- [StartQuery](../../../../reference/goto/dotnetsdkv4/logs-2014-03-28/startquery.md)
+- [StartQuery](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/StartQuery)
 
 JavaScript
 
@@ -1121,9 +1125,9 @@ export class CloudWatchQuery {
 
 - For API details, see the following topics in _AWS SDK for JavaScript API Reference_.
 
-- [GetQueryResults](../../../../reference/awsjavascriptsdk/v3/latest/client/cloudwatch-logs/command/getqueryresultscommand.md)
+- [GetQueryResults](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudwatch-logs/command/GetQueryResultsCommand)
 
-- [StartQuery](../../../../reference/awsjavascriptsdk/v3/latest/client/cloudwatch-logs/command/startquerycommand.md)
+- [StartQuery](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudwatch-logs/command/StartQueryCommand)
 
 Python
 
@@ -1502,9 +1506,9 @@ class CloudWatchQuery:
 
 - For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
 
-- [GetQueryResults](../../../goto/boto3/logs-2014-03-28/getqueryresults.md)
+- [GetQueryResults](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/GetQueryResults)
 
-- [StartQuery](../../../goto/boto3/logs-2014-03-28/startquery.md)
+- [StartQuery](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/StartQuery)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Using CloudWatch Logs with an AWS SDK](../../../../reference/amazoncloudwatch/latest/logs/sdk-general-information-section.md).
@@ -1512,7 +1516,7 @@ This topic also includes information about getting started and details about pre
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Scenarios
+Creating your first Lambda function
 
 Use scheduled events to invoke a Lambda function
 

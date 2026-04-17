@@ -1,3 +1,7 @@
+---
+title: "Load testing CloudFront"
+---
+
 # Load testing CloudFront
 
 Traditional load testing methods don't work well with CloudFront because CloudFront uses DNS to

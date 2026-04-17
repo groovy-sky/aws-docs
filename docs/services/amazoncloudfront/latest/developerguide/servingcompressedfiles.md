@@ -1,3 +1,7 @@
+---
+title: "Serve compressed files"
+---
+
 # Serve compressed files
 
 When requested objects are compressed, downloads can be faster because the objects are

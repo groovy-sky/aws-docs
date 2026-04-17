@@ -1,3 +1,7 @@
+---
+title: "Prerequisites, IAM policies, and permissions needed to access CloudWatch Application Insights"
+---
+
 # Prerequisites, IAM policies, and permissions needed to access CloudWatch Application Insights
 
 To get started with CloudWatch Application Insights, verify that you have met the following prerequisites,

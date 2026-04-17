@@ -1,3 +1,7 @@
+---
+title: "(Optional) Try out Application Signals with a sample app"
+---
+
 # (Optional) Try out Application Signals with a sample app
 
 To try out CloudWatch Application Signals on a sample app before you instrument your own

@@ -1,3 +1,7 @@
+---
+title: "Working with log groups and log streams"
+---
+
 # Working with log groups and log streams
 
 A log stream is a sequence of log events that share the same source.

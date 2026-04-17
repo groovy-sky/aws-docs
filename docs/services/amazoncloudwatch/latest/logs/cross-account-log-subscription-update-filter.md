@@ -1,3 +1,7 @@
+---
+title: "Step 1: Update the subscription filters"
+---
+
 # Step 1: Update the subscription filters
 
 ###### Note

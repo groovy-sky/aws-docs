@@ -1,3 +1,7 @@
+---
+title: "Creating metrics from log events using filters"
+---
+
 # Creating metrics from log events using filters
 
 You can search and filter the log data coming into CloudWatch Logs by creating one or more

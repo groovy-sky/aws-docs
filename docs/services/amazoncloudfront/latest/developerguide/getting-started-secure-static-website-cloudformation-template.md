@@ -1,3 +1,7 @@
+---
+title: "Get started with a secure static website"
+---
+
 # Get started with a secure static website
 
 You can get started with Amazon CloudFront by using the solution described in this topic to create

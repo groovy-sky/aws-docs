@@ -1,3 +1,7 @@
+---
+title: "Synthetics runtime versions"
+---
+
 # Synthetics runtime versions
 
 When you create or update a canary, you choose a Synthetics runtime version for the

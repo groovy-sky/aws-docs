@@ -1,3 +1,7 @@
+---
+title: "Alarming on logs"
+---
+
 # Alarming on logs
 
 The steps in the following sections explain how to create CloudWatch alarms on logs.

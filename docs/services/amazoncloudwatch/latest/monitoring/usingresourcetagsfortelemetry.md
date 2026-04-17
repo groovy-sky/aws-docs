@@ -1,3 +1,7 @@
+---
+title: "Using resource tags for telemetry"
+---
+
 # Using resource tags for telemetry
 
 Once you have enabled resource tags for telemetry, you can leverage this enriched data to create powerful monitoring solutions that scale with your infrastructure. Use tag-based queries to group and filter metrics across multiple resources, create dynamic alarms that

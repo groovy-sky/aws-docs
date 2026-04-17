@@ -1,3 +1,7 @@
+---
+title: "What is Amazon CloudWatch?"
+---
+
 # What is Amazon CloudWatch?
 
 Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on
@@ -70,9 +74,9 @@ on Amazon ECS clusters, Amazon EKS clusters, and self-managed Kubernetes cluster
 CloudWatch Logs offers a suite of powerful features for comprehensive log management and analysis. Logs ingested from AWS services and custom applications are stored in
 [log groups and streams](../logs/working-with-log-groups-and-streams.md) for easy organization.
 Use [CloudWatch Logs Insights](../logs/analyzinglogdata.md) to perform interactive, fast queries on your log data, with a choice of three query languages including SQL and PPL.
-Use [log anomaly detection](../logs/logsanomalydetection.md) to find unusual patterns in log events in a log group, which can indicate issues.
-Create [metric filters](../logs/monitoringlogdata.md) to extract numerical values from logs and generate CloudWatch metrics, which you can use for alerting and dashboards.
-Set up [subscription filters](../logs/subscriptions.md) to process and analyze logs in real-time or route them to other services like Amazon S3 or Firehose.
+Use [log anomaly detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/LogsAnomalyDetection) to find unusual patterns in log events in a log group, which can indicate issues.
+Create [metric filters](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringLogData) to extract numerical values from logs and generate CloudWatch metrics, which you can use for alerting and dashboards.
+Set up [subscription filters](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions) to process and analyze logs in real-time or route them to other services like Amazon S3 or Firehose.
 
 ## Use the CloudWatch agent to gather metrics, logs, and traces from Amazon EC2 fleets
 

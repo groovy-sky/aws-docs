@@ -1,3 +1,7 @@
+---
+title: "Analyzing, optimizing, and reducing CloudWatch costs"
+---
+
 # Analyzing, optimizing, and reducing CloudWatch costs
 
 This section describes how Amazon CloudWatch features generate costs. It also provides methods that

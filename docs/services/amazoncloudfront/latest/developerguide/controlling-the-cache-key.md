@@ -1,3 +1,7 @@
+---
+title: "Control the cache key with a policy"
+---
+
 # Control the cache key with a policy
 
 With a CloudFront _cache policy_, you can specify the HTTP

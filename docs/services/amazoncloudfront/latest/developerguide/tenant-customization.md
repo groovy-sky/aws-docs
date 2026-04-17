@@ -1,3 +1,7 @@
+---
+title: "Distribution tenant customizations"
+---
+
 # Distribution tenant customizations
 
 When using a multi-tenant distribution, your distribution tenants inherit the multi-tenant distribution configuration. However, you

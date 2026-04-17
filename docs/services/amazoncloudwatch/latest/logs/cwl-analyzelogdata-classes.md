@@ -1,3 +1,7 @@
+---
+title: "Logs Insights QL commands supported in log classes"
+---
+
 # Logs Insights QL commands supported in log classes
 
 All Logs Insights QL query commands are supported on log groups in the

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting"
+---
+
 # Troubleshooting
 
 The following are the common troubleshooting scenarios and solutions for OTLP endpoint.

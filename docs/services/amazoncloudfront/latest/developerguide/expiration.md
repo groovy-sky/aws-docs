@@ -1,3 +1,7 @@
+---
+title: "Manage how long content stays in the cache (expiration)"
+---
+
 # Manage how long content stays in the cache (expiration)
 
 You can control how long your files stay in a CloudFront cache before CloudFront forwards another

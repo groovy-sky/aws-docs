@@ -1,3 +1,7 @@
+---
+title: "Quotas"
+---
+
 # Quotas
 
 You can request a CloudFront quota increase by using the following options:

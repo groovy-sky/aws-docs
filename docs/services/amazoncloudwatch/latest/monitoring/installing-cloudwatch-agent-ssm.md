@@ -1,3 +1,7 @@
+---
+title: "Install the CloudWatch agent using AWS Systems Manager"
+---
+
 # Install the CloudWatch agent using AWS Systems Manager
 
 Using AWS Systems Manager makes it easier to install the CloudWatch agent on a fleet of Amazon EC2

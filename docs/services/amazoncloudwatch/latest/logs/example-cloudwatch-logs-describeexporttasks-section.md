@@ -1,3 +1,7 @@
+---
+title: "Use DescribeExportTasks with an AWS SDK"
+---
+
 # Use `DescribeExportTasks` with an AWS SDK
 
 The following code example shows how to use `DescribeExportTasks`.
@@ -55,7 +59,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DescribeExportTasks](../../../../reference/goto/dotnetsdkv3/logs-2014-03-28/describeexporttasks.md)
+[DescribeExportTasks](https://docs.aws.amazon.com/goto/DotNetSDKV3/logs-2014-03-28/DescribeExportTasks)
 in _AWS SDK for .NET API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

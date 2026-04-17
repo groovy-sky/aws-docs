@@ -1,3 +1,7 @@
+---
+title: "Amazon Relational Database Service (RDS) Aurora MySQL"
+---
+
 # Amazon Relational Database Service (RDS) Aurora MySQL
 
 The following example shows a component configuration in JSON format for Amazon RDS

@@ -1,3 +1,7 @@
+---
+title: "Getting started"
+---
+
 # Getting started
 
 To get started with OpenTelemetry in CloudWatch, you can use the pre-packaged OpenTelemetry setup that is available with the

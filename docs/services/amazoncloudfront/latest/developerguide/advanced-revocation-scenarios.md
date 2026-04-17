@@ -1,3 +1,7 @@
+---
+title: "Advanced revocation scenarios"
+---
+
 # Advanced revocation scenarios
 
 For more complex certificate revocation requirements, consider these additional

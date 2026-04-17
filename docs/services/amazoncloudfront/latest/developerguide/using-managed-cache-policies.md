@@ -1,3 +1,7 @@
+---
+title: "Use managed cache policies"
+---
+
 # Use managed cache policies
 
 CloudFront provides a set of managed cache policies that you can attach to any of your

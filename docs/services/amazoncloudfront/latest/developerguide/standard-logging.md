@@ -1,3 +1,7 @@
+---
+title: "Configure standard logging (v2)"
+---
+
 # Configure standard logging (v2)
 
 You can enable access logs (standard logs) when you create or update a distribution. Standard logging

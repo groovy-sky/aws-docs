@@ -1,3 +1,7 @@
+---
+title: "Encrypt query results with AWS Key Management Service"
+---
+
 # Encrypt query results with AWS Key Management Service
 
 By default, CloudWatch Logs encrypts the stored results of your CloudWatch Logs Insights queries using the

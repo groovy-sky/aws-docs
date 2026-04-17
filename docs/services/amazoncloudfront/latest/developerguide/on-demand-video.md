@@ -1,3 +1,7 @@
+---
+title: "Deliver video on demand with CloudFront"
+---
+
 # Deliver video on demand with CloudFront
 
 To deliver video on demand (VOD) streaming with CloudFront, use the following

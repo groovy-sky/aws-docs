@@ -1,3 +1,7 @@
+---
+title: "Use Amazon CloudFront Origin Shield"
+---
+
 # Use Amazon CloudFront Origin Shield
 
 CloudFront Origin Shield is an additional layer in the CloudFront caching infrastructure that helps to

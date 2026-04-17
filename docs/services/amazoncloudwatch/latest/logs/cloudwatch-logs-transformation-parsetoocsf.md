@@ -1,3 +1,7 @@
+---
+title: "parseToOCSF"
+---
+
 # parseToOCSF
 
 The `parseToOCSF` processor converts logs into Open Cybersecurity

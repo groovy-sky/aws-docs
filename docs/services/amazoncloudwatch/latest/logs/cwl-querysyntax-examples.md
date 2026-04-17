@@ -1,3 +1,7 @@
+---
+title: "Sample queries"
+---
+
 # Sample queries
 
 This section contains a list of general and useful query commands that you can

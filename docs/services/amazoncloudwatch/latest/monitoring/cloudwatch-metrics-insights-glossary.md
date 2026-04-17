@@ -1,3 +1,7 @@
+---
+title: "Metrics Insights glossary"
+---
+
 # Metrics Insights glossary
 
 **label**

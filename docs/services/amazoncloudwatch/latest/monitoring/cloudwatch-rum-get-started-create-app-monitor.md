@@ -1,3 +1,7 @@
+---
+title: "Creating a CloudWatch RUM app monitor for a web application"
+---
+
 # Creating a CloudWatch RUM app monitor for a web application
 
 To start using CloudWatch RUM with your application, you create an _app_

@@ -1,3 +1,7 @@
+---
+title: "Viewing the cross-service CloudWatch dashboard"
+---
+
 # Viewing the cross-service CloudWatch dashboard
 
 You can switch

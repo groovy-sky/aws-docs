@@ -1,3 +1,7 @@
+---
+title: "Use Contributor Insights to analyze high-cardinality data"
+---
+
 # Use Contributor Insights to analyze high-cardinality data
 
 You can use Contributor Insights to analyze log data and create time series that display

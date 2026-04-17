@@ -1,3 +1,7 @@
+---
+title: "Sample code for canary scripts"
+---
+
 # Sample code for canary scripts
 
 This section contains code samples that illustrate some possible functions for

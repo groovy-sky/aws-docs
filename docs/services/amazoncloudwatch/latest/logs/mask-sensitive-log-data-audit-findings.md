@@ -1,3 +1,7 @@
+---
+title: "Audit findings reports"
+---
+
 # Audit findings reports
 
 If you set up CloudWatch Logs data protection audit policies to write audit reports to CloudWatch Logs, Amazon S3, or Firehose,

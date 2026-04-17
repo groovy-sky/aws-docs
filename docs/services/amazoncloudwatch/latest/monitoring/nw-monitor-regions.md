@@ -1,3 +1,7 @@
+---
+title: "Supported AWS Regions for Network Synthetic Monitor"
+---
+
 # Supported AWS Regions for Network Synthetic Monitor
 
 The AWS Regions where Network Synthetic Monitor is supported are listed in this section. For more information about Regions that

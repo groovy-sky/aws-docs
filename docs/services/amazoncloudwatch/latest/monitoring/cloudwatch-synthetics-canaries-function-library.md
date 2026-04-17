@@ -1,3 +1,7 @@
+---
+title: "Library functions available for canary scripts"
+---
+
 # Library functions available for canary scripts
 
 CloudWatch Synthetics includes several built-in classes and functions that you can call when

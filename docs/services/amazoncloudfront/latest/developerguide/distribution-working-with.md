@@ -1,3 +1,7 @@
+---
+title: "Configure distributions"
+---
+
 # Configure distributions
 
 You create an Amazon CloudFront distribution to tell CloudFront from where you want content to be delivered,

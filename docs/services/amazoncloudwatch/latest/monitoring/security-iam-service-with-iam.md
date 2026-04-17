@@ -1,3 +1,7 @@
+---
+title: "How Amazon CloudWatch works with IAM"
+---
+
 # How Amazon CloudWatch works with IAM
 
 Before you use IAM to manage access to CloudWatch, learn what IAM features are

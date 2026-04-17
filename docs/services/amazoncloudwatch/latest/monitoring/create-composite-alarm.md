@@ -1,3 +1,7 @@
+---
+title: "Create a composite alarm"
+---
+
 # Create a composite alarm
 
 The steps in this section explain how to use the CloudWatch console to create a composite

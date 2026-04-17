@@ -1,3 +1,7 @@
+---
+title: "Use Metrics Insights queries with metric math"
+---
+
 # Use Metrics Insights queries with metric math
 
 You can use a Metrics Insights query as an input to a metric math function. For more

@@ -1,3 +1,7 @@
+---
+title: "Container Insights with OpenTelemetry metrics for Amazon EKS"
+---
+
 # Container Insights with OpenTelemetry metrics for Amazon EKS
 
 ###### Preview

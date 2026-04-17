@@ -1,3 +1,7 @@
+---
+title: "Managing alarms"
+---
+
 # Managing alarms
 
 ###### Topics

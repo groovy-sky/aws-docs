@@ -1,3 +1,7 @@
+---
+title: "Logs sent to Amazon S3"
+---
+
 # Logs sent to Amazon S3
 
 **User permissions**

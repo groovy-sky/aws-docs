@@ -1,3 +1,7 @@
+---
+title: "Metrics Insights quotas"
+---
+
 # Metrics Insights quotas
 
 CloudWatch Metrics Insights currently has the following quotas:

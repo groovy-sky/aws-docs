@@ -1,3 +1,7 @@
+---
+title: "Publishing logs with the embedded metric format"
+---
+
 # Publishing logs with the embedded metric format
 
 You can generate embedded metric format logs using the following methods:

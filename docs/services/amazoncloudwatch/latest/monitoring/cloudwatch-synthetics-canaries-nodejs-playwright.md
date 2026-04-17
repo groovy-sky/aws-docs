@@ -1,3 +1,7 @@
+---
+title: "Library functions available for Node.js canary scripts using Playwright"
+---
+
 # Library functions available for Node.js canary scripts using Playwright
 
 This section describes the library functions that are available for canary scripts

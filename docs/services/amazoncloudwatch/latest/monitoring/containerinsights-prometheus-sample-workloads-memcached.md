@@ -1,3 +1,7 @@
+---
+title: "Set up memcached with a metric exporter on Amazon EKS and Kubernetes"
+---
+
 # Set up memcached with a metric exporter on Amazon EKS and Kubernetes
 
 memcached is an open-source memory object caching system. For more information,

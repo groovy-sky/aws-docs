@@ -1,3 +1,7 @@
+---
+title: "Using Network Synthetic Monitor"
+---
+
 # Using Network Synthetic Monitor
 
 Network Synthetic Monitor provides visibility into the performance of the network connecting your AWS

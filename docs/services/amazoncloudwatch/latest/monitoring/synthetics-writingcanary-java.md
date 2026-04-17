@@ -1,3 +1,7 @@
+---
+title: "Writing a canary script using the Java runtime"
+---
+
 # Writing a canary script using the Java runtime
 
 ###### Topics

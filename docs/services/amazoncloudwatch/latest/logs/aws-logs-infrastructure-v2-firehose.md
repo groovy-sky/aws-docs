@@ -1,3 +1,7 @@
+---
+title: "Logs sent to Firehose"
+---
+
 # Logs sent to Firehose
 
 **User permissions**

@@ -1,3 +1,7 @@
+---
+title: "CloudFront and edge function logging"
+---
+
 # CloudFront and edge function logging
 
 Amazon CloudFront provides different kinds of logging. You can log the viewer requests that come to

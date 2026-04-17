@@ -1,3 +1,7 @@
+---
+title: "Integration with Amazon EKS"
+---
+
 # Integration with Amazon EKS
 
 CloudWatch investigations investigation groups can utilize information directly from your Amazon EKS cluster. To

@@ -1,3 +1,7 @@
+---
+title: "CloudWatch service quotas"
+---
+
 # CloudWatch service quotas
 
 Amazon CloudWatch provides monitoring and observability for your AWS resources and applications.

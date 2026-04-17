@@ -1,3 +1,7 @@
+---
+title: "Restrict access to an AWS origin"
+---
+
 # Restrict access to an AWS origin
 
 You can configure CloudFront and some AWS origins in a way that provides the following

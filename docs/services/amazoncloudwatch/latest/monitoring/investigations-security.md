@@ -1,3 +1,7 @@
+---
+title: "Security in CloudWatch investigations"
+---
+
 # Security in CloudWatch investigations
 
 This section includes topics about how CloudWatch investigations integrate with AWS security and

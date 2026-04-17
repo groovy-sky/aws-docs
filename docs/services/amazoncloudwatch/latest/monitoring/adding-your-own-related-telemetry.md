@@ -1,3 +1,7 @@
+---
+title: "How to add related information to custom telemetry sent to CloudWatch"
+---
+
 # How to add related information to custom telemetry sent to CloudWatch
 
 When you publish your own metrics and logs to CloudWatch, the entity information needed

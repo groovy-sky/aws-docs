@@ -1,3 +1,7 @@
+---
+title: "Request and response behavior for custom origins"
+---
+
 # Request and response behavior for custom origins
 
 To understand how CloudFront processes requests and responses when you're using custom

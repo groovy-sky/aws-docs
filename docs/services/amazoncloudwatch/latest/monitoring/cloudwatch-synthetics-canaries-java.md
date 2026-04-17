@@ -1,3 +1,7 @@
+---
+title: "Library functions available for Java canary"
+---
+
 # Library functions available for Java canary
 
 The `executeStep` function is used to modularize the canary code and

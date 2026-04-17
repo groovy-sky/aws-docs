@@ -1,3 +1,7 @@
+---
+title: "Enable metric to log correlation"
+---
+
 # Enable metric to log correlation
 
 If you publish application logs to log groups in CloudWatch Logs, you can enable _metric to application log correlation_ in Application Signals. With

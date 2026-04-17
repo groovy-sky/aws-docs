@@ -1,3 +1,7 @@
+---
+title: "Hide Auto Scaling alarms"
+---
+
 # Hide Auto Scaling alarms
 
 When you view your alarms in the AWS Management Console, you can hide the alarms related to both

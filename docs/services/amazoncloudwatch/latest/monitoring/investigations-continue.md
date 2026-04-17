@@ -1,3 +1,7 @@
+---
+title: "View and continue an open investigation"
+---
+
 # View and continue an open investigation
 
 Use the steps in this section to view and continue and existing investigation

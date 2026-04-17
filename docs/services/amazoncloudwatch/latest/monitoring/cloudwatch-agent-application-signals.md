@@ -1,3 +1,7 @@
+---
+title: "Enable CloudWatch Application Signals"
+---
+
 # Enable CloudWatch Application Signals
 
 Use CloudWatch Application Signals to automatically instrument your applications on AWS so that you

@@ -1,3 +1,7 @@
+---
+title: "Protected health information (PHI)"
+---
+
 # Protected health information (PHI)
 
 CloudWatch Logs data protection can find the following types of protected health

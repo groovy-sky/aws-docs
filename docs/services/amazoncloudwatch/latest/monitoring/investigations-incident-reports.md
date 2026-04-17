@@ -1,3 +1,7 @@
+---
+title: "Generate incident reports"
+---
+
 # Generate incident reports
 
 Incident reports help you more quickly and easily write a report about your incident

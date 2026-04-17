@@ -1,3 +1,7 @@
+---
+title: "Customize the URL format for files in CloudFront"
+---
+
 # Customize the URL format for files in CloudFront
 
 After you set up your origin with the objects (content) that you want CloudFront to serve to your viewers,

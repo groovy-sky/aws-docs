@@ -1,3 +1,7 @@
+---
+title: "API Gateway REST API stages"
+---
+
 # API Gateway REST API stages
 
 The following example shows a component configuration in JSON format for API Gateway

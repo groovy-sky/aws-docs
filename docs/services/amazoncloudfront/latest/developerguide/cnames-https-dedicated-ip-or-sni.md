@@ -1,3 +1,7 @@
+---
+title: "Choose how CloudFront serves HTTPS requests"
+---
+
 # Choose how CloudFront serves HTTPS requests
 
 If you want your viewers to use HTTPS and to use alternate domain names for your

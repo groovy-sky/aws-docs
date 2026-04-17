@@ -1,3 +1,7 @@
+---
+title: "Modify the y-axis for a graph"
+---
+
 # Modify the y-axis for a graph
 
 You can set custom bounds for the y-axis on a graph to help you see the data better. For

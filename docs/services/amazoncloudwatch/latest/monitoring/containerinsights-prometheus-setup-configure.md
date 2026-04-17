@@ -1,3 +1,7 @@
+---
+title: "Scraping additional Prometheus sources and importing those metrics"
+---
+
 # Scraping additional Prometheus sources and importing those metrics
 
 The CloudWatch agent with Prometheus monitoring needs two configurations to scrape the

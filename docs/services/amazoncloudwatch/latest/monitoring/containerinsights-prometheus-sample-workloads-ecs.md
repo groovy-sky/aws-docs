@@ -1,3 +1,7 @@
+---
+title: "(Optional) Set up sample containerized Amazon ECS workloads for Prometheus metric testing"
+---
+
 # (Optional) Set up sample containerized Amazon ECS workloads for Prometheus metric testing
 
 To test the Prometheus metric support in CloudWatch Container Insights, you can set up one

@@ -1,3 +1,7 @@
+---
+title: "Use Quick Amazon S3 setup"
+---
+
 # Use Quick Amazon S3 setup
 
 The **Quick S3 Setup** method works well

@@ -1,3 +1,7 @@
+---
+title: "Deploy using the daemon strategy"
+---
+
 # Deploy using the daemon strategy
 
 ## Step 1: Enable Application Signals in your account

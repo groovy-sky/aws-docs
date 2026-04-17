@@ -1,3 +1,7 @@
+---
+title: "Logs sent to Firehose"
+---
+
 # Logs sent to Firehose
 
 This section applies when the types of logs listed in the table in the preceding

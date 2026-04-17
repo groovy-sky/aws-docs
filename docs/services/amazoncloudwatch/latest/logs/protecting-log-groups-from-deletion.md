@@ -1,3 +1,7 @@
+---
+title: "Protecting log groups from deletion"
+---
+
 # Protecting log groups from deletion
 
 ## Enabling deletion protection

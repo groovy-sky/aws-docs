@@ -1,3 +1,7 @@
+---
+title: "Connect to a prebuilt data source with a wizard"
+---
+
 # Connect to a prebuilt data source with a wizard
 
 This topic provides instructions for using the wizard to connect CloudWatch to the following data sources.

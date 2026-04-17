@@ -1,3 +1,7 @@
+---
+title: "Compliance validation for Amazon CloudFront"
+---
+
 # Compliance validation for Amazon CloudFront
 
 Third-party auditors assess the security and compliance of Amazon CloudFront as part of

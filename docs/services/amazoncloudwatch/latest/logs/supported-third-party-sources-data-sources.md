@@ -1,3 +1,7 @@
+---
+title: "Supported third-party sources for data sources"
+---
+
 # Supported third-party sources for data sources
 
 The following table lists the third-party sources that are automatically categorized

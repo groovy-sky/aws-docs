@@ -1,3 +1,7 @@
+---
+title: "Collect metrics, logs, and traces using the CloudWatch agent"
+---
+
 # Collect metrics, logs, and traces using the CloudWatch agent
 
 CloudWatch agent is a software component that collects metrics, logs, and traces from your Amazon EC2

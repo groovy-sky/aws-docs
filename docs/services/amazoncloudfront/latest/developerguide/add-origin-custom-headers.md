@@ -1,3 +1,7 @@
+---
+title: "Add custom headers to origin requests"
+---
+
 # Add custom headers to origin requests
 
 You can configure CloudFront to add custom headers to the requests that it sends to your origin.

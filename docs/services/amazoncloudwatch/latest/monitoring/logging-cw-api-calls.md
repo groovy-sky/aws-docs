@@ -1,3 +1,7 @@
+---
+title: "Logging Amazon CloudWatch API and console operations with AWS CloudTrail"
+---
+
 # Logging Amazon CloudWatch API and console operations with AWS CloudTrail
 
 Amazon CloudWatch, CloudWatch Synthetics, CloudWatch RUM, Amazon Q Developer operational investigations, Network Flow Monitor, and Internet Monitor are integrated with AWS CloudTrail, a service that provides a record

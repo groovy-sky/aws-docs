@@ -1,3 +1,7 @@
+---
+title: "Set up your AWS account"
+---
+
 # Set up your AWS account
 
 This topic describes preliminary steps, such as creating an

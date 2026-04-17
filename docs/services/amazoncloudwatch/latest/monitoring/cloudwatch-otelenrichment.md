@@ -1,3 +1,7 @@
+---
+title: "Enabling vended metrics in PromQL"
+---
+
 # Enabling vended metrics in PromQL
 
 You can enable OTel enrichment to make vended metrics for [supported AWS resources](usingresourcetagsfortelemetry.md) queryable via PromQL. Once enabled, metrics that contain a
