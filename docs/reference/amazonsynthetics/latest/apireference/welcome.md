@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 You can use Amazon CloudWatch Synthetics to continually monitor your services. You can
@@ -16,7 +20,7 @@ Before you create and manage canaries, be aware of the security considerations. 
 information, see [Security\
 Considerations for Synthetics Canaries](../../../../services/amazoncloudwatch/latest/monitoring/servicelens-canaries-security.md).
 
-This document was last published on April 14, 2026.
+This document was last published on April 17, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
