@@ -1,3 +1,7 @@
+---
+title: "Common general purpose bucket patterns for building applications on Amazon S3"
+---
+
 # Common general purpose bucket patterns for building applications on Amazon S3
 
 When you build applications on Amazon S3, you can use unique general purpose buckets to separate different datasets or workloads. When you build applications

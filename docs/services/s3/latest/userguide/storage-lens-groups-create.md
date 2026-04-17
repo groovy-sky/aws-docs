@@ -1,3 +1,7 @@
+---
+title: "Creating a Storage Lens group"
+---
+
 # Creating a Storage Lens group
 
 The following examples demonstrate how to create an Amazon S3 Storage Lens group by using the

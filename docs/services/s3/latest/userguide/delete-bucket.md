@@ -1,3 +1,7 @@
+---
+title: "Deleting a general purpose bucket"
+---
+
 # Deleting a general purpose bucket
 
 You can delete an empty Amazon S3 general purpose bucket. For information about emptying a general purpose bucket, see [Emptying a general purpose bucket](empty-bucket.md).

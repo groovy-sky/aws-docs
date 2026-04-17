@@ -1,3 +1,7 @@
+---
+title: "PutObject (SOAP API)"
+---
+
 # PutObject (SOAP API)
 
 ###### Note

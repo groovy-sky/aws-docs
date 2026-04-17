@@ -1,3 +1,7 @@
+---
+title: "Using S3 Vectors with OpenSearch Service"
+---
+
 # Using S3 Vectors with OpenSearch Service
 
 Amazon S3 Vectors integrates with OpenSearch to provide flexible vector storage and

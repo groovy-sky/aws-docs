@@ -1,3 +1,7 @@
+---
+title: "Parse Amazon S3 URIs using an AWS SDK"
+---
+
 # Parse Amazon S3 URIs using an AWS SDK
 
 The following code example shows how to parse Amazon S3 URIs to extract important components like the bucket name and object key.

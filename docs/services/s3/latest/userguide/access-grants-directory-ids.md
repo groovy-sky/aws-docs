@@ -1,3 +1,7 @@
+---
+title: "S3 Access Grants and corporate directory identities"
+---
+
 # S3 Access Grants and corporate directory identities
 
 You can use Amazon S3 Access Grants to grant access to AWS Identity and Access Management (IAM) principals (users or

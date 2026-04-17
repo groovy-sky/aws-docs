@@ -1,3 +1,7 @@
+---
+title: "Monitoring and logging requests made through a Multi-Region Access Point to underlying resources"
+---
+
 # Monitoring and logging requests made through a Multi-Region Access Point to underlying resources
 
 Amazon S3 logs requests made through Multi-Region Access Points and requests made to the API operations that

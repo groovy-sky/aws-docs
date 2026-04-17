@@ -1,3 +1,7 @@
+---
+title: "Configuring block public access settings for your account"
+---
+
 # Configuring block public access settings for your account
 
 ###### Important

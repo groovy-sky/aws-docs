@@ -1,3 +1,7 @@
+---
+title: "Configuring storage class analysis"
+---
+
 # Configuring storage class analysis
 
 By using the Amazon S3 analytics storage class analysis tool, you can analyze storage access

@@ -1,3 +1,7 @@
+---
+title: "Walkthroughs that use policies to manage access to your Amazon S3 resources"
+---
+
 # Walkthroughs that use policies to manage access to your Amazon S3 resources
 
 This topic provides the following introductory walkthrough examples for granting access to

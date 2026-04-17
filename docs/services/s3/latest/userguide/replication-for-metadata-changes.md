@@ -1,3 +1,7 @@
+---
+title: "Replicating metadata changes with replica modification sync"
+---
+
 # Replicating metadata changes with replica modification sync
 
 Amazon S3 replica modification sync can help you keep object metadata such as tags, access control

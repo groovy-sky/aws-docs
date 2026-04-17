@@ -1,3 +1,7 @@
+---
+title: "Viewing directory bucket properties"
+---
+
 # Viewing directory bucket properties
 
 You can view and configure the properties for an Amazon S3 directory bucket by using the Amazon S3

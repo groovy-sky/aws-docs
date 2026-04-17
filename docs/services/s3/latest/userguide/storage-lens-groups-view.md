@@ -1,3 +1,7 @@
+---
+title: "Viewing Storage Lens group details"
+---
+
 # Viewing Storage Lens group details
 
 The following examples demonstrate how to view Amazon S3 Storage Lens group configuration

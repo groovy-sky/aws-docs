@@ -1,3 +1,7 @@
+---
+title: "TableMaintenanceConfigurationValue"
+---
+
 # TableMaintenanceConfigurationValue
 
 The values that define a maintenance configuration for a table.
@@ -28,11 +32,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3tables-2018-05-10/tablemaintenanceconfigurationvalue.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3tables-2018-05-10/TableMaintenanceConfigurationValue)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3tables-2018-05-10/tablemaintenanceconfigurationvalue.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3tables-2018-05-10/TableMaintenanceConfigurationValue)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3tables-2018-05-10/tablemaintenanceconfigurationvalue.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3tables-2018-05-10/TableMaintenanceConfigurationValue)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

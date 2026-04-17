@@ -1,3 +1,7 @@
+---
+title: "Disabling ACLs for all new buckets and enforcing Object Ownership"
+---
+
 # Disabling ACLs for all new buckets and enforcing Object Ownership
 
 We recommend that you disable ACLs on your Amazon S3 buckets. You can do this by applying the

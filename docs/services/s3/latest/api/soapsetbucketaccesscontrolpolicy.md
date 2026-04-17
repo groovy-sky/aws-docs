@@ -1,3 +1,7 @@
+---
+title: "SetBucketAccessControlPolicy (SOAP API)"
+---
+
 # SetBucketAccessControlPolicy (SOAP API)
 
 ###### Note

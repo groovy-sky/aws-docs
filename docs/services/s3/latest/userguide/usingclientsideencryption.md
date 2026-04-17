@@ -1,3 +1,7 @@
+---
+title: "Protecting data by using client-side encryption"
+---
+
 # Protecting data by using client-side encryption
 
 _Client-side encryption_ is the act of encrypting your data

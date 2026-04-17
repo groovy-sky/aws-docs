@@ -1,3 +1,7 @@
+---
+title: "Use PutObjectAcl with an AWS SDK or CLI"
+---
+
 # Use `PutObjectAcl` with an AWS SDK or CLI
 
 The following code examples show how to use `PutObjectAcl`.
@@ -111,7 +115,7 @@ Aws::S3::Model::Type setGranteeType(const Aws::String &type) {
 ```
 
 - For API details, see
-[PutObjectAcl](../../../../reference/goto/sdkforcpp/s3-2006-03-01/putobjectacl.md)
+[PutObjectAcl](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/PutObjectAcl)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -184,7 +188,7 @@ class ObjectWrapper:
 ```
 
 - For API details, see
-[PutObjectAcl](../../../goto/boto3/s3-2006-03-01/putobjectacl.md)
+[PutObjectAcl](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObjectAcl)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

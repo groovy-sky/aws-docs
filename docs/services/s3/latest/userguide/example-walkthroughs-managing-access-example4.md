@@ -1,3 +1,7 @@
+---
+title: "Example 4 - Bucket owner granting cross-account permission to objects it does not own"
+---
+
 # Example 4 - Bucket owner granting cross-account permission to objects it does not own
 
 ###### Topics

@@ -1,3 +1,7 @@
+---
+title: "Limits"
+---
+
 # Limits
 
 Following is a table that describes current limits within Amazon SimpleDB.

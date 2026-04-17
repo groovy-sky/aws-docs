@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Mountpoint"
+---
+
 # Troubleshooting Mountpoint
 
 Mountpoint for Amazon S3 is backed by Support. If you need assistance, contact the

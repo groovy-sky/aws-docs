@@ -1,3 +1,7 @@
+---
+title: "Using Batch Operations with directory buckets"
+---
+
 # Using Batch Operations with directory buckets
 
 You can use Amazon S3 Batch Operations to perform operations on objects stored in S3 buckets. To

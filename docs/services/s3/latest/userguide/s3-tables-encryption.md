@@ -1,3 +1,7 @@
+---
+title: "Protecting S3 table data with encryption"
+---
+
 # Protecting S3 table data with encryption
 
 Data protection refers to protecting data while it's in transit (as it travels to and from

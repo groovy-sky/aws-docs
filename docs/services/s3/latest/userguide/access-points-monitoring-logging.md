@@ -1,3 +1,7 @@
+---
+title: "Monitoring and logging access points"
+---
+
 # Monitoring and logging access points
 
 Amazon S3 logs requests made through access points and requests made to the API operations that

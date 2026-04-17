@@ -1,3 +1,7 @@
+---
+title: "Create an S3 Access Grants instance"
+---
+
 # Create an S3 Access Grants instance
 
 To get started with using AmazonS3 Access Grants, you first create an S3 Access Grants instance. You can create

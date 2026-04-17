@@ -1,3 +1,7 @@
+---
+title: "AWS PrivateLink for S3 on Outposts"
+---
+
 # AWS PrivateLink for S3 on Outposts
 
 S3 on Outposts supports AWS PrivateLink, which provides direct management access to your

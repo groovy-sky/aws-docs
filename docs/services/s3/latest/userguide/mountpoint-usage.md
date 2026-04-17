@@ -1,3 +1,7 @@
+---
+title: "Configuring and using Mountpoint"
+---
+
 # Configuring and using Mountpoint
 
 To use Mountpoint for Amazon S3, your host needs valid AWS credentials with access to the Amazon S3 bucket or

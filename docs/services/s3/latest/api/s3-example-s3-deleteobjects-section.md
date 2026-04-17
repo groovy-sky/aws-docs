@@ -1,3 +1,7 @@
+---
+title: "Use DeleteObjects with an AWS SDK or CLI"
+---
+
 # Use `DeleteObjects` with an AWS SDK or CLI
 
 The following code examples show how to use `DeleteObjects`.
@@ -9,7 +13,7 @@ context in the following code examples:
 
 - [Delete all objects in a bucket](s3-example-s3-scenario-deleteallobjects-section.md)
 
-- [Get started with S3](s3-example-s3-gettingstarted-section.md)
+- [Getting started with Amazon S3](s3-example-s3-gettingstarted-section.md)
 
 .NET
 
@@ -58,7 +62,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DeleteObjects](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/deleteobjects.md)
+[DeleteObjects](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/DeleteObjects)
 in _AWS SDK for .NET API Reference_.
 
 **SDK for .NET**
@@ -458,7 +462,7 @@ Delete multiple objects in a versioned S3 bucket.
 ```
 
 - For API details, see
-[DeleteObjects](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/deleteobjects.md)
+[DeleteObjects](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/DeleteObjects)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -523,7 +527,7 @@ function delete_items_in_bucket() {
 ```
 
 - For API details, see
-[DeleteObjects](../../../goto/aws-cli/s3-2006-03-01/deleteobjects.md)
+[DeleteObjects](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/DeleteObjects)
 in _AWS CLI Command Reference_.
 
 C++
@@ -577,7 +581,7 @@ bool AwsDoc::S3::deleteObjects(const std::vector<Aws::String> &objectKeys,
 ```
 
 - For API details, see
-[DeleteObjects](../../../../reference/goto/sdkforcpp/s3-2006-03-01/deleteobjects.md)
+[DeleteObjects](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/DeleteObjects)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -819,7 +823,7 @@ public class DeleteMultiObjects {
 ```
 
 - For API details, see
-[DeleteObjects](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deleteobjects.md)
+[DeleteObjects](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteObjects)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -890,7 +894,7 @@ export const main = async ({ bucketName, keys }) => {
 ```
 
 - For API details, see
-[DeleteObjects](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/deleteobjectscommand.md)
+[DeleteObjects](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/DeleteObjectsCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -981,7 +985,7 @@ Delete a set of objects from a list of keys.
 ```
 
 - For API details, see
-[DeleteObjects](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/deleteobjects.md)
+[DeleteObjects](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/DeleteObjects)
 in _AWS SDK for PHP API Reference_.
 
 PowerShell
@@ -1048,7 +1052,7 @@ Remove-S3Object -BucketName $BucketName -KeyAndVersionCollection $keyVersions -F
 ```
 
 - For API details, see
-[DeleteObjects](../../../powershell/v4/reference.md)
+[DeleteObjects](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -1113,7 +1117,7 @@ Remove-S3Object -BucketName $BucketName -KeyAndVersionCollection $keyVersions -F
 ```
 
 - For API details, see
-[DeleteObjects](../../../powershell/v5/reference.md)
+[DeleteObjects](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -1234,7 +1238,7 @@ def permanently_delete_object(bucket, object_key):
 ```
 
 - For API details, see
-[DeleteObjects](../../../goto/boto3/s3-2006-03-01/deleteobjects.md)
+[DeleteObjects](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteObjects)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -1269,7 +1273,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/r
 ```
 
 - For API details, see
-[DeleteObjects](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/deleteobjects.md)
+[DeleteObjects](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/DeleteObjects)
 in _AWS SDK for Ruby API Reference_.
 
 Rust

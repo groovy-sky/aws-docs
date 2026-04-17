@@ -1,3 +1,7 @@
+---
+title: "Default encryption FAQ"
+---
+
 # Default encryption FAQ
 
 Amazon S3 now applies server-side encryption with Amazon S3 managed keys (SSE-S3) as the base level

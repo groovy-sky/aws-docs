@@ -1,3 +1,7 @@
+---
+title: "Creating a vector index in a vector bucket"
+---
+
 # Creating a vector index in a vector bucket
 
 ###### Note

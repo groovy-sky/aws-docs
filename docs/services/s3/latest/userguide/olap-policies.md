@@ -1,3 +1,7 @@
+---
+title: "Configuring IAM policies for Object Lambda Access Points"
+---
+
 # Configuring IAM policies for Object Lambda Access Points
 
 ###### Note

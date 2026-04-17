@@ -1,3 +1,7 @@
+---
+title: "Operations on Objects (SOAP API)"
+---
+
 # Operations on Objects (SOAP API)
 
 ###### Note

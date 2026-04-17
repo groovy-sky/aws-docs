@@ -1,3 +1,7 @@
+---
+title: "Viewing, editing or deleting access point policies"
+---
+
 # Viewing, editing or deleting access point policies
 
 You can use an AWS Identity and Access Management (IAM) access point policy to control the principal and resource that can access the access point.

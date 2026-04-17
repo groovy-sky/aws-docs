@@ -1,3 +1,7 @@
+---
+title: "Elements of a CORS configuration"
+---
+
 # Elements of a CORS configuration
 
 To configure your bucket to allow cross-origin requests, you create a CORS

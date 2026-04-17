@@ -1,3 +1,7 @@
+---
+title: "Create a Batch Replication job for new replication rules or destinations"
+---
+
 # Create a Batch Replication job for new replication rules or destinations
 
 In Amazon S3, live replication doesn't replicate any objects that already existed in your

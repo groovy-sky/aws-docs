@@ -1,3 +1,7 @@
+---
+title: "AWS CloudTrail data event log file examples for S3 Tables"
+---
+
 # AWS CloudTrail data event log file examples for S3 Tables
 
 A AWS CloudTrail log file includes information about the requested API operation, the date and

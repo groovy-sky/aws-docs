@@ -1,3 +1,7 @@
+---
+title: "Cataloging and analyzing your data with S3 Inventory"
+---
+
 # Cataloging and analyzing your data with S3 Inventory
 
 You can use Amazon S3 Inventory to help manage your storage. For example, you can use it to audit

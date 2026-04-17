@@ -1,3 +1,7 @@
+---
+title: "Use ListObjectVersions with an AWS SDK or CLI"
+---
+
 # Use `ListObjectVersions` with an AWS SDK or CLI
 
 The following code examples show how to use `ListObjectVersions`.
@@ -5,7 +9,7 @@ The following code examples show how to use `ListObjectVersions`.
 Action examples are code excerpts from larger programs and must be run in context. You can see this action in
 context in the following code examples:
 
-- [Get started with S3](s3-example-s3-gettingstarted-section.md)
+- [Getting started with Amazon S3](s3-example-s3-gettingstarted-section.md)
 
 - [Work with versioned objects](s3-example-s3-scenario-objectversioningusage-section.md)
 
@@ -102,7 +106,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[ListObjectVersions](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/listobjectversions.md)
+[ListObjectVersions](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/ListObjectVersions)
 in _AWS SDK for .NET API Reference_.
 
 CLI

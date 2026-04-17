@@ -1,3 +1,7 @@
+---
+title: "Using EventBridge for S3 Replication on Outposts"
+---
+
 # Using EventBridge for S3 Replication on Outposts
 
 Amazon S3 on Outposts is integrated with Amazon EventBridge and uses the `s3-outposts`

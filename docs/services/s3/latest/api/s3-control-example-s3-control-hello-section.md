@@ -1,3 +1,7 @@
+---
+title: "Hello Amazon S3 Control"
+---
+
 # Hello Amazon S3 Control
 
 The following code examples show how to get started using Amazon S3 Control.
@@ -133,7 +137,7 @@ public class HelloS3Batch {
 ```
 
 - For API details, see
-[ListJobs](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/listjobs.md)
+[ListJobs](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/ListJobs)
 in _AWS SDK for Java 2.x API Reference_.
 
 Python
@@ -171,7 +175,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 ```
 
 - For API details, see
-[ListJobs](../../../goto/boto3/s3control-2018-08-20/listjobs.md)
+[ListJobs](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/ListJobs)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

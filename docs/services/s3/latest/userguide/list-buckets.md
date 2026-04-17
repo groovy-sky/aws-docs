@@ -1,3 +1,7 @@
+---
+title: "Listing Amazon S3 general purpose buckets"
+---
+
 # Listing Amazon S3 general purpose buckets
 
 To return a list of general purpose buckets that you own, you can use [ListBuckets](../api/api-listbuckets.md).

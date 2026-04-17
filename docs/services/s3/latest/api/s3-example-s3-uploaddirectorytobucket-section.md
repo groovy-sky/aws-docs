@@ -1,3 +1,7 @@
+---
+title: "Recursively upload a local directory to an Amazon Simple Storage Service (Amazon S3) bucket"
+---
+
 # Recursively upload a local directory to an Amazon Simple Storage Service (Amazon S3) bucket
 
 The following code example shows how to upload a local directory recursively to an Amazon Simple Storage Service (Amazon S3) bucket.
@@ -46,7 +50,7 @@ import java.util.UUID;
 ```
 
 - For API details, see
-[UploadDirectory](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/uploaddirectory.md)
+[UploadDirectory](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/UploadDirectory)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "Deleting a table bucket"
+---
+
 # Deleting a table bucket
 
 You can use the Amazon S3 APIs, AWS Command Line Interface, or AWS SDKs to delete a table bucket. Before you

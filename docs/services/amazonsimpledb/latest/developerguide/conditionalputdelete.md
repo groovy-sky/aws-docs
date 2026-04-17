@@ -1,3 +1,7 @@
+---
+title: "Conditionally Putting and Deleting Data"
+---
+
 # Conditionally Putting and Deleting Data
 
 This section describes how to update or delete data when a specific condition is met.

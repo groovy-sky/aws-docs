@@ -1,3 +1,7 @@
+---
+title: "Determining whether you can access a directory bucket"
+---
+
 # Determining whether you can access a directory bucket
 
 The following AWS SDK examples show how to use the `HeadBucket` API operation

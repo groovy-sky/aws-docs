@@ -1,3 +1,7 @@
+---
+title: "Making requests using federated user temporary credentials"
+---
+
 # Making requests using federated user temporary credentials
 
 You can request temporary security credentials and provide them to your federated users or

@@ -1,3 +1,7 @@
+---
+title: "Listing directory buckets"
+---
+
 # Listing directory buckets
 
 The following examples show how to list directory buckets by using the AWS Management Console, AWS SDKs, and AWS CLI.

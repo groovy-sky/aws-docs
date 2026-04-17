@@ -1,3 +1,7 @@
+---
+title: "IAM identity-based policies for S3 Tables"
+---
+
 # IAM identity-based policies for S3 Tables
 
 By default, users and roles don't have permission to create or modify tables and table

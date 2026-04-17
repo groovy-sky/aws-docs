@@ -1,3 +1,7 @@
+---
+title: "Working with Storage Browser for Amazon S3"
+---
+
 # Working with Storage Browser for Amazon S3
 
 [Storage Browser for S3](https://aws.amazon.com/s3/features/storage-browser) is an open source component that you can add to your web application

@@ -1,3 +1,7 @@
+---
+title: "Authenticating and authorizing for directory buckets in Local Zones"
+---
+
 # Authenticating and authorizing for directory buckets in Local Zones
 
 Directory buckets in Local Zones support both AWS Identity and Access Management (IAM) authorization and session-based

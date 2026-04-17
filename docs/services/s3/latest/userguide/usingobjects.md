@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 objects overview"
+---
+
 # Amazon S3 objects overview
 
 Amazon S3 is an object store that uses unique key-values to store as many objects as you want.

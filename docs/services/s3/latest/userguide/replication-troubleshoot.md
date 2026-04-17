@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting replication"
+---
+
 # Troubleshooting replication
 
 This section lists troubleshooting tips for Amazon S3 Replication and information about

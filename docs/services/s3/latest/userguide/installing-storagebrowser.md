@@ -1,3 +1,7 @@
+---
+title: "Installing Storage Browser for S3"
+---
+
 # Installing Storage Browser for S3
 
 The fastest way to get started with Storage Browser is to clone one of the sample

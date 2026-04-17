@@ -1,3 +1,7 @@
+---
+title: "S3 Metadata journal tables schema"
+---
+
 # S3 Metadata journal tables schema
 
 The journal table records changes made to your data in near real time, helping you to identify new

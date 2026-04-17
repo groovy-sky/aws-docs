@@ -1,3 +1,7 @@
+---
+title: "Get an Amazon S3 object from a Multi-Region Access Point by using an AWS SDK"
+---
+
 # Get an Amazon S3 object from a Multi-Region Access Point by using an AWS SDK
 
 The following code example shows how to get an object from a Multi-Region Access Point.

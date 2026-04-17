@@ -1,3 +1,7 @@
+---
+title: "Region Endpoints"
+---
+
 # Region Endpoints
 
 To improve latency and to store data in a location that meets your requirements, Amazon SimpleDB enables you to select different Region endpoints.

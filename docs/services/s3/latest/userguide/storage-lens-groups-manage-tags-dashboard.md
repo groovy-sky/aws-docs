@@ -1,3 +1,7 @@
+---
+title: "Managing AWS resource tags with S3 Storage Lens"
+---
+
 # Managing AWS resource tags with S3 Storage Lens
 
 Each Amazon S3 Storage Lens dashboard is counted as an AWS resource with its own Amazon

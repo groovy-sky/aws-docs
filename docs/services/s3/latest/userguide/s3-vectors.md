@@ -1,3 +1,7 @@
+---
+title: "Working with S3 Vectors and vector buckets"
+---
+
 # Working with S3 Vectors and vector buckets
 
 ## What is Amazon S3 Vectors?

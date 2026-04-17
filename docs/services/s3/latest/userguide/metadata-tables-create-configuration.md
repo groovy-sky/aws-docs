@@ -1,3 +1,7 @@
+---
+title: "Creating metadata table configurations"
+---
+
 # Creating metadata table configurations
 
 To generate and store Amazon S3 Metadata in fully managed Apache Iceberg metadata tables,

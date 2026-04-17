@@ -1,3 +1,7 @@
+---
+title: "SOAP Error Responses"
+---
+
 # SOAP Error Responses
 
 ###### Note

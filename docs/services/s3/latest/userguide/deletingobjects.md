@@ -1,3 +1,7 @@
+---
+title: "Deleting Amazon S3 objects"
+---
+
 # Deleting Amazon S3 objects
 
 You can delete one or more objects directly from Amazon S3 using the Amazon S3 console, AWS SDKs,

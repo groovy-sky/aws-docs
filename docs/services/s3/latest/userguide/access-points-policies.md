@@ -1,3 +1,7 @@
+---
+title: "Configuring IAM policies for using access points"
+---
+
 # Configuring IAM policies for using access points
 
 Amazon S3 access points support AWS Identity and Access Management (IAM) resource policies that allow you to control the use

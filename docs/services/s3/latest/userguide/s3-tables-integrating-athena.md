@@ -1,3 +1,7 @@
+---
+title: "Querying Amazon S3 tables with Athena"
+---
+
 # Querying Amazon S3 tables with Athena
 
 Amazon Athena is an interactive query service that you can use to analyze data directly in Amazon S3 by using

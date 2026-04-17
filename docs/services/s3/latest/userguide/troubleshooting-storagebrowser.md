@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting Storage Browser for S3"
+---
+
 # Troubleshooting Storage Browser for S3
 
 If you’re experiencing issues with Storage Browser for S3, make sure to review the following troubleshooting tips:

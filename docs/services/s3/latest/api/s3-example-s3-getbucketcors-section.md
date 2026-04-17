@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketCors with an AWS SDK or CLI"
+---
+
 # Use `GetBucketCors` with an AWS SDK or CLI
 
 The following code examples show how to use `GetBucketCors`.
@@ -35,7 +39,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[GetBucketCors](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getbucketcors.md)
+[GetBucketCors](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetBucketCors)
 in _AWS SDK for .NET API Reference_.
 
 CLI
@@ -161,7 +165,7 @@ export const main = async ({ bucketName }) => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/s3-example-configuring-buckets.md#s3-example-configuring-buckets-get-cors).
 
 - For API details, see
-[GetBucketCors](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getbucketcorscommand.md)
+[GetBucketCors](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/GetBucketCorsCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -207,7 +211,7 @@ class BucketWrapper:
 ```
 
 - For API details, see
-[GetBucketCors](../../../goto/boto3/s3-2006-03-01/getbucketcors.md)
+[GetBucketCors](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetBucketCors)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -248,7 +252,7 @@ end
 ```
 
 - For API details, see
-[GetBucketCors](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/getbucketcors.md)
+[GetBucketCors](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/GetBucketCors)
 in _AWS SDK for Ruby API Reference_.
 
 SAP ABAP

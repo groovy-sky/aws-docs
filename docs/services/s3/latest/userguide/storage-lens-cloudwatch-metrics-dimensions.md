@@ -1,3 +1,7 @@
+---
+title: "S3 Storage Lens metrics and dimensions"
+---
+
 # S3 Storage Lens metrics and dimensions
 
 To send S3 Storage Lens metrics to CloudWatch, you must enable the CloudWatch publishing option within

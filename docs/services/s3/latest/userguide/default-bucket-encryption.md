@@ -1,3 +1,7 @@
+---
+title: "Configuring default encryption"
+---
+
 # Configuring default encryption
 
 ###### Important

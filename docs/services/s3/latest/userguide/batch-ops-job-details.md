@@ -1,3 +1,7 @@
+---
+title: "Viewing job details"
+---
+
 # Viewing job details
 
 If you want more information about an Amazon S3 Batch Operations job than you can retrieve

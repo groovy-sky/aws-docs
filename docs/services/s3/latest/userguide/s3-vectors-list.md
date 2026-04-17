@@ -1,10 +1,14 @@
+---
+title: "Listing vectors"
+---
+
 # Listing vectors
 
 You can list vectors in a vector index with the [ListVectors](../api/api-s3vectorbuckets-listvectors.md) API operation.
 For more information about the maximum number of vectors that can be returned per page, see
 [Limitations and restrictions](s3-vectors-limitations.md). The
 response includes a pagination token when results are truncated. For more information about
-the response elements of `ListVectors`, see [ListVectors](../api/api-s3vectorbuckets-listvectors.md) in the
+the response elements of `ListVectors`, see [ListVectors](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_ListVectors) in the
 _Amazon S3 API Reference_. You can also use `ListVectors` to
 export vector data from a specified
 vector index. `ListVectors` is strongly consistent. After a WRITE operation, you
@@ -19,7 +23,7 @@ listing operations across multiple parallel requests. When you specify a
 `segment-index` parameter (starting from 0) determines which segment to list. This
 approach helps improve performance when listing large vector indexes by enabling
 parallel processing. For more information about `segment-count` and `segment-index`,
-see [ListVectors](../api/api-s3vectorbuckets-listvectors.md) in the
+see [ListVectors](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_ListVectors) in the
 _Amazon S3 API Reference_.
 
 **To list all vectors in an index**

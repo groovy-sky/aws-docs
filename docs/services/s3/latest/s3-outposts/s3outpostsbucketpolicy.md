@@ -1,3 +1,7 @@
+---
+title: "Managing access to an Amazon S3 on Outposts bucket using a bucket policy"
+---
+
 # Managing access to an Amazon S3 on Outposts bucket using a bucket policy
 
 A bucket policy is a resource-based AWS Identity and Access Management (IAM) policy that you can use to grant

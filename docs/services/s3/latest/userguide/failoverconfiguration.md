@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Multi-Region Access Points routing states"
+---
+
 # Amazon S3 Multi-Region Access Points routing states
 
 Your Amazon S3 Multi-Region Access Points failover configuration determines the routing status of the

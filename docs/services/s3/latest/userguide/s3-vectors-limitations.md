@@ -1,3 +1,7 @@
+---
+title: "Limitations and restrictions"
+---
+
 # Limitations and restrictions
 
 Amazon S3 Vectors has certain limitations and restrictions that you should be aware of when planning your vector storage and search applications.

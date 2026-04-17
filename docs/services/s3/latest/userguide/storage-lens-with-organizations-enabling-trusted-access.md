@@ -1,3 +1,7 @@
+---
+title: "Enabling trusted access for S3 Storage Lens"
+---
+
 # Enabling trusted access for S3 Storage Lens
 
 By enabling trusted access, you allow Amazon S3 Storage Lens to access your AWS Organizations

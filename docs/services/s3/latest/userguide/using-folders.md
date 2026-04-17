@@ -1,3 +1,7 @@
+---
+title: "Organizing objects in the Amazon S3 console by using folders"
+---
+
 # Organizing objects in the Amazon S3 console by using folders
 
 In Amazon S3 general purpose buckets, objects are the primary resources, and objects are stored in buckets.

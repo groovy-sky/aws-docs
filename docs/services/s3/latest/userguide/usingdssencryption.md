@@ -1,3 +1,7 @@
+---
+title: "Using dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)"
+---
+
 # Using dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)
 
 Using dual-layer server-side encryption with AWS Key Management Service (AWS KMS) keys (DSSE-KMS) applies two

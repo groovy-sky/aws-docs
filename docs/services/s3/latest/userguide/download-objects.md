@@ -1,3 +1,7 @@
+---
+title: "Downloading objects"
+---
+
 # Downloading objects
 
 This section explains how to download objects from an Amazon S3 bucket. With Amazon S3, you can store

@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketNotification with a CLI"
+---
+
 # Use `GetBucketNotification` with a CLI
 
 The following code examples show how to use `GetBucketNotification`.
@@ -56,7 +60,7 @@ mimo arn:aws:sns:eu-west-1:123456789012:topic-1
 ```
 
 - For API details, see
-[GetBucketNotification](../../../powershell/v4/reference.md)
+[GetBucketNotification](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -79,7 +83,7 @@ mimo arn:aws:sns:eu-west-1:123456789012:topic-1
 ```
 
 - For API details, see
-[GetBucketNotification](../../../powershell/v5/reference.md)
+[GetBucketNotification](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

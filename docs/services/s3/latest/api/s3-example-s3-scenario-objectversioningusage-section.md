@@ -1,3 +1,7 @@
+---
+title: "Work with Amazon S3 versioned objects using an AWS SDK"
+---
+
 # Work with Amazon S3 versioned objects using an AWS SDK
 
 The following code example shows how to:
@@ -298,13 +302,13 @@ def usage_demo_single_object(obj_prefix="demo-versioning/"):
 
 - For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
 
-- [CreateBucket](../../../goto/boto3/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/CreateBucket)
 
-- [DeleteObject](../../../goto/boto3/s3-2006-03-01/deleteobject.md)
+- [DeleteObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteObject)
 
-- [ListObjectVersions](../../../goto/boto3/s3-2006-03-01/listobjectversions.md)
+- [ListObjectVersions](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/ListObjectVersions)
 
-- [PutBucketLifecycleConfiguration](../../../goto/boto3/s3-2006-03-01/putbucketlifecycleconfiguration.md)
+- [PutBucketLifecycleConfiguration](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutBucketLifecycleConfiguration)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

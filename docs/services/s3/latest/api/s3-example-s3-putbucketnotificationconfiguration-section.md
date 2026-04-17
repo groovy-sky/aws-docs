@@ -1,3 +1,7 @@
+---
+title: "Use PutBucketNotificationConfiguration with an AWS SDK or CLI"
+---
+
 # Use `PutBucketNotificationConfiguration` with an AWS SDK or CLI
 
 The following code examples show how to use `PutBucketNotificationConfiguration`.
@@ -100,7 +104,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[PutBucketNotificationConfiguration](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putbucketnotificationconfiguration.md)
+[PutBucketNotificationConfiguration](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutBucketNotificationConfiguration)
 in _AWS SDK for .NET API Reference_.
 
 CLI

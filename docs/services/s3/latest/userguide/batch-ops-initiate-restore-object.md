@@ -1,3 +1,7 @@
+---
+title: "Restore objects with Batch Operations"
+---
+
 # Restore objects with Batch Operations
 
 You can use Amazon S3 Batch Operations to perform large-scale batch operations on Amazon S3 objects.

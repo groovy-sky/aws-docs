@@ -1,3 +1,7 @@
+---
+title: "Making requests through a Multi-Region Access Point"
+---
+
 # Making requests through a Multi-Region Access Point
 
 Like other resources, Amazon S3 Multi-Region Access Points have Amazon Resource Names (ARNs). You can use these

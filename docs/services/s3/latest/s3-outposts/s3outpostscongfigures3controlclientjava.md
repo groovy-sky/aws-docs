@@ -1,3 +1,7 @@
+---
+title: "Configure the S3 control client for S3 on Outposts by using the SDK for Java"
+---
+
 # Configure the S3 control client for S3 on Outposts by using the SDK for Java
 
 The following example configures the Amazon S3 control client for Amazon S3 on Outposts by using the

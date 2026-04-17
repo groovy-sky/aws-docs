@@ -1,3 +1,7 @@
+---
+title: "Use CreateBucket with an AWS SDK or CLI"
+---
+
 # Use `CreateBucket` with an AWS SDK or CLI
 
 The following code examples show how to use `CreateBucket`.
@@ -7,7 +11,11 @@ context in the following code examples:
 
 - [Learn the basics](s3-example-s3-scenario-gettingstarted-section.md)
 
-- [Get started with S3](s3-example-s3-gettingstarted-section.md)
+- [Getting started with Amazon S3](s3-example-s3-gettingstarted-section.md)
+
+- [Getting started with Amazon SageMaker Feature Store](s3-example-iam-gettingstarted-028-section.md)
+
+- [Getting started with Config](s3-example-config-service-gettingstarted-053-section.md)
 
 - [Manage large messages using S3](s3-example-sqs-scenario-sqsextendedclient-section.md)
 
@@ -54,7 +62,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[CreateBucket](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/createbucket.md)
+[CreateBucket](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/CreateBucket)
 in _AWS SDK for .NET API Reference_.
 
 **SDK for .NET**
@@ -101,7 +109,7 @@ Create a bucket with object lock enabled.
 ```
 
 - For API details, see
-[CreateBucket](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/createbucket.md)
+[CreateBucket](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/CreateBucket)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -222,7 +230,7 @@ function create_bucket() {
 ```
 
 - For API details, see
-[CreateBucket](../../../goto/aws-cli/s3-2006-03-01/createbucket.md)
+[CreateBucket](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/CreateBucket)
 in _AWS CLI Command Reference_.
 
 C++
@@ -267,7 +275,7 @@ bool AwsDoc::S3::createBucket(const Aws::String &bucketName,
 ```
 
 - For API details, see
-[CreateBucket](../../../../reference/goto/sdkforcpp/s3-2006-03-01/createbucket.md)
+[CreateBucket](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/CreateBucket)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -562,7 +570,7 @@ Create a bucket with object lock enabled.
 ```
 
 - For API details, see
-[CreateBucket](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/createbucket.md)
+[CreateBucket](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CreateBucket)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -629,7 +637,7 @@ export const main = async ({ bucketName }) => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/s3-example-creating-buckets.md#s3-example-creating-buckets-new-bucket-2).
 
 - For API details, see
-[CreateBucket](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/createbucketcommand.md)
+[CreateBucket](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/CreateBucketCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -692,7 +700,7 @@ Create a bucket.
 ```
 
 - For API details, see
-[CreateBucket](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/createbucket.md)
+[CreateBucket](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/CreateBucket)
 in _AWS SDK for PHP API Reference_.
 
 Python
@@ -823,7 +831,7 @@ def create_versioned_bucket(bucket_name, prefix):
 ```
 
 - For API details, see
-[CreateBucket](../../../goto/boto3/s3-2006-03-01/createbucket.md)
+[CreateBucket](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/CreateBucket)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -891,7 +899,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 
 - For API details, see
-[CreateBucket](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/createbucket.md)
+[CreateBucket](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/CreateBucket)
 in _AWS SDK for Ruby API Reference_.
 
 Rust

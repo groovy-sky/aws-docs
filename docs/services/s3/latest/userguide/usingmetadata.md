@@ -1,3 +1,7 @@
+---
+title: "Working with object metadata"
+---
+
 # Working with object metadata
 
 There are two kinds of object metadata in Amazon S3: _system-defined metadata_

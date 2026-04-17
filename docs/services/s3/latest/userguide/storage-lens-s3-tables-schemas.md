@@ -1,3 +1,7 @@
+---
+title: "Understanding S3 Storage Lens table schemas"
+---
+
 # Understanding S3 Storage Lens table schemas
 
 When exporting S3 Storage Lens metrics to S3 tables, the data is organized into three separate

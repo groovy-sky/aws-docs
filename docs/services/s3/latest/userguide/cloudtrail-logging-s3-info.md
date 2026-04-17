@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 CloudTrail events"
+---
+
 # Amazon S3 CloudTrail events
 
 ###### Important

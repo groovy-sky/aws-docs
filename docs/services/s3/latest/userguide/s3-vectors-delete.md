@@ -1,3 +1,7 @@
+---
+title: "Deleting vectors from a vector index"
+---
+
 # Deleting vectors from a vector index
 
 You can delete specific vectors from a vector index by specifying their vector keys using the [DeleteVectors](../api/api-s3vectorbuckets-deletevectors.md) API. This operation is useful for removing outdated or incorrect data while

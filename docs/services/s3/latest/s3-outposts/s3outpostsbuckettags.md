@@ -1,3 +1,7 @@
+---
+title: "Adding tags for S3 on Outposts buckets"
+---
+
 # Adding tags for S3 on Outposts buckets
 
 You can add tags for your Amazon S3 on Outposts buckets to track storage costs and other criteria

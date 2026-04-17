@@ -1,3 +1,7 @@
+---
+title: "Browser-based uploads to Amazon S3 using the AWS Amplify library"
+---
+
 # Browser-based uploads to Amazon S3 using the AWS Amplify library
 
 This section describes how to upload files to Amazon S3 using the AWS Amplify JavaScript

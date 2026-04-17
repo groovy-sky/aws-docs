@@ -1,3 +1,7 @@
+---
+title: "Setting up your Outpost"
+---
+
 # Setting up your Outpost
 
 To get started with Amazon S3 on Outposts, you will need an Outpost with Amazon S3 capacity deployed

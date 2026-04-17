@@ -1,3 +1,7 @@
+---
+title: "Delete your access point for a general purpose bucket"
+---
+
 # Delete your access point for a general purpose bucket
 
 This section explains how to delete your access point for a general purpose bucket using the AWS Management Console, AWS Command Line Interface, or REST API.

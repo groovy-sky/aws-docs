@@ -1,3 +1,7 @@
+---
+title: "SchemaV2Field"
+---
+
 # SchemaV2Field
 
 Contains details about a schema field in the V2 format. This field format supports nested and complex data types such as `struct`, `list`, and `map`, in addition to primitive types.
@@ -48,11 +52,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3tables-2018-05-10/schemav2field.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3tables-2018-05-10/SchemaV2Field)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3tables-2018-05-10/schemav2field.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3tables-2018-05-10/SchemaV2Field)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3tables-2018-05-10/schemav2field.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3tables-2018-05-10/SchemaV2Field)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

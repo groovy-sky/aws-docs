@@ -1,3 +1,7 @@
+---
+title: "Identity and Access management in S3 Vectors"
+---
+
 # Identity and Access management in S3 Vectors
 
 Access management in S3 Vectors follows AWS security best practices, providing multiple

@@ -1,3 +1,7 @@
+---
+title: "Making requests using IAM user temporary credentials"
+---
+
 # Making requests using IAM user temporary credentials
 
 An AWS account or an IAM user can request temporary security credentials and use them

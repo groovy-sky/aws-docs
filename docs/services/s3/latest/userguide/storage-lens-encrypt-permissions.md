@@ -1,3 +1,7 @@
+---
+title: "Using an AWS KMS key to encrypt your metrics exports"
+---
+
 # Using an AWS KMS key to encrypt your metrics exports
 
 To grant Amazon S3 Storage Lens permission to encrypt your metrics exports by using a customer managed key,

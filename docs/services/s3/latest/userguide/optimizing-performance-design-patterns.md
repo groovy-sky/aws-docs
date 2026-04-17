@@ -1,3 +1,7 @@
+---
+title: "Performance design patterns for Amazon S3"
+---
+
 # Performance design patterns for Amazon S3
 
 When designing applications to upload and retrieve objects from Amazon S3, use our best

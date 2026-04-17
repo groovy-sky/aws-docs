@@ -1,3 +1,7 @@
+---
+title: "DeleteAccessGrantsLocation"
+---
+
 # DeleteAccessGrantsLocation
 
 Deregisters a location from your S3 Access Grants instance. You can only delete a location registration from an S3 Access Grants instance if there are no grants associated with this location. See [Delete a grant](api-control-deleteaccessgrant.md) for information on how to delete grants. You need to have at least one registered location in your S3 Access Grants instance in order to create access grants.
@@ -60,25 +64,25 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../goto/cli2/s3control-2018-08-20/deleteaccessgrantslocation.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/s3control-2018-08-20/DeleteAccessGrantsLocation)
 
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/s3control-2018-08-20/deleteaccessgrantslocation.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3control-2018-08-20/DeleteAccessGrantsLocation)
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3control-2018-08-20/deleteaccessgrantslocation.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3control-2018-08-20/DeleteAccessGrantsLocation)
 
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/s3control-2018-08-20/deleteaccessgrantslocation.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/s3control-2018-08-20/DeleteAccessGrantsLocation)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/deleteaccessgrantslocation.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/DeleteAccessGrantsLocation)
 
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/s3control-2018-08-20/deleteaccessgrantslocation.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/s3control-2018-08-20/DeleteAccessGrantsLocation)
 
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/s3control-2018-08-20/deleteaccessgrantslocation.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/s3control-2018-08-20/DeleteAccessGrantsLocation)
 
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/s3control-2018-08-20/deleteaccessgrantslocation.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3control-2018-08-20/DeleteAccessGrantsLocation)
 
-- [AWS SDK for Python](../../../goto/boto3/s3control-2018-08-20/deleteaccessgrantslocation.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/DeleteAccessGrantsLocation)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3control-2018-08-20/deleteaccessgrantslocation.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3control-2018-08-20/DeleteAccessGrantsLocation)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

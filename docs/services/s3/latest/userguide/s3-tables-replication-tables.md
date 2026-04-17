@@ -1,3 +1,7 @@
+---
+title: "Replicating S3 tables"
+---
+
 # Replicating S3 tables
 
 Amazon S3 Tables support automatic replication of Apache Iceberg tables stored in Amazon S3 table buckets. Replication destinations can be within the same AWS Region,

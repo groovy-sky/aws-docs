@@ -1,3 +1,7 @@
+---
+title: "Adding a tag to a directory bucket"
+---
+
 # Adding a tag to a directory bucket
 
 You can add tags to Amazon S3 directory buckets and modify these tags. There is no additional charge for using tags on directory buckets beyond the standard S3 API request rates. For more information, see [Amazon S3 pricing](../../pricing.md). For more information about tagging directory buckets, see [Using tags with S3 directory buckets](directory-buckets-tagging.md).

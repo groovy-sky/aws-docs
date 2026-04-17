@@ -1,3 +1,7 @@
+---
+title: "S3 Vectors resource-based policy examples"
+---
+
 # S3 Vectors resource-based policy examples
 
 Resource-based policies are attached to a resource. You can create resource-based policies

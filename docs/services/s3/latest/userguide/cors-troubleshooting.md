@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting CORS"
+---
+
 # Troubleshooting CORS
 
 The following topics can help you troubleshoot some common CORS issues related to

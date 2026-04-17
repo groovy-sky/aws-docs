@@ -1,3 +1,7 @@
+---
+title: "Listing Storage Lens group tags"
+---
+
 # Listing Storage Lens group tags
 
 The following examples demonstrate how to list the AWS resource tags associated with

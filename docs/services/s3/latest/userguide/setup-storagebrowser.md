@@ -1,3 +1,7 @@
+---
+title: "Setting up Storage Browser for S3"
+---
+
 # Setting up Storage Browser for S3
 
 To connect end users with Amazon S3 _locations_, you must first set up an authentication and

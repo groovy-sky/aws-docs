@@ -1,3 +1,7 @@
+---
+title: "Use PutBucketWebsite with an AWS SDK or CLI"
+---
+
 # Use `PutBucketWebsite` with an AWS SDK or CLI
 
 The following code examples show how to use `PutBucketWebsite`.
@@ -29,7 +33,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[PutBucketWebsite](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putbucketwebsite.md)
+[PutBucketWebsite](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutBucketWebsite)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -80,7 +84,7 @@ bool AwsDoc::S3::putWebsiteConfig(const Aws::String &bucketName,
 ```
 
 - For API details, see
-[PutBucketWebsite](../../../../reference/goto/sdkforcpp/s3-2006-03-01/putbucketwebsite.md)
+[PutBucketWebsite](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/PutBucketWebsite)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -200,7 +204,7 @@ public class SetWebsiteConfiguration {
 ```
 
 - For API details, see
-[PutBucketWebsite](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putbucketwebsite.md)
+[PutBucketWebsite](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutBucketWebsite)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -276,7 +280,7 @@ export const main = async ({ bucketName }) => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/s3-example-static-web-host.md#s3-example-static-web-host-set-website).
 
 - For API details, see
-[PutBucketWebsite](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/putbucketwebsitecommand.md)
+[PutBucketWebsite](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/PutBucketWebsiteCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PowerShell
@@ -292,7 +296,7 @@ Write-S3BucketWebsite -BucketName 'amzn-s3-demo-bucket' -WebsiteConfiguration_In
 ```
 
 - For API details, see
-[PutBucketWebsite](../../../powershell/v4/reference.md)
+[PutBucketWebsite](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -306,7 +310,7 @@ Write-S3BucketWebsite -BucketName 'amzn-s3-demo-bucket' -WebsiteConfiguration_In
 ```
 
 - For API details, see
-[PutBucketWebsite](../../../powershell/v5/reference.md)
+[PutBucketWebsite](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Ruby
@@ -368,7 +372,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 
 - For API details, see
-[PutBucketWebsite](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/putbucketwebsite.md)
+[PutBucketWebsite](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/PutBucketWebsite)
 in _AWS SDK for Ruby API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

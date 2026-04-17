@@ -1,3 +1,7 @@
+---
+title: "Using Amazon SQS, Amazon SNS, and Lambda"
+---
+
 # Using Amazon SQS, Amazon SNS, and Lambda
 
 Enabling notifications is a bucket-level operation. You store notification

@@ -1,3 +1,7 @@
+---
+title: "PutBucketEncryption"
+---
+
 # PutBucketEncryption
 
 This operation configures default encryption and Amazon S3 Bucket Keys for an existing bucket. You can also [block encryption types](api-blockedencryptiontypes.md) using this operation.
@@ -42,8 +46,8 @@ For more information about the encryption overriding behaviors in directory buck
 The [AWS managed key](../../../kms/latest/developerguide/concepts.md#aws-managed-cmk) ( `aws/s3`) isn't supported.
 
 - S3 Bucket Keys are always enabled for `GET` and `PUT` operations in a directory bucket and can’t be disabled. S3 Bucket Keys aren't supported, when you copy SSE-KMS encrypted objects from general purpose buckets
-to directory buckets, from directory buckets to general purpose buckets, or between directory buckets, through [CopyObject](api-copyobject.md), [UploadPartCopy](api-uploadpartcopy.md), [the Copy operation in Batch Operations](../userguide/directory-buckets-objects-batch-ops.md), or
-[the import jobs](../userguide/create-import-job.md). In this case, Amazon S3 makes a call to AWS KMS every time a copy request is made for a KMS-encrypted object.
+to directory buckets, from directory buckets to general purpose buckets, or between directory buckets, through [CopyObject](api-copyobject.md), [UploadPartCopy](api-uploadpartcopy.md), [the Copy operation in Batch Operations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-Batch-Ops), or
+[the import jobs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-import-job). In this case, Amazon S3 makes a call to AWS KMS every time a copy request is made for a KMS-encrypted object.
 
 - When you specify an [AWS KMS customer managed key](../../../kms/latest/developerguide/concepts.md#customer-cmk) for encryption in your directory bucket, only use the key ID or key ARN. The key alias format of the KMS key isn't supported.
 
@@ -284,25 +288,25 @@ To allow the use of SSE-C encryption in your write requests to a bucket, pass th
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../goto/cli2/s3-2006-03-01/putbucketencryption.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/s3-2006-03-01/PutBucketEncryption)
 
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/putbucketencryption.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/PutBucketEncryption)
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3-2006-03-01/putbucketencryption.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/PutBucketEncryption)
 
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/s3-2006-03-01/putbucketencryption.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/s3-2006-03-01/PutBucketEncryption)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putbucketencryption.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutBucketEncryption)
 
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/s3-2006-03-01/putbucketencryption.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/s3-2006-03-01/PutBucketEncryption)
 
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/s3-2006-03-01/putbucketencryption.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/s3-2006-03-01/PutBucketEncryption)
 
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/putbucketencryption.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/PutBucketEncryption)
 
-- [AWS SDK for Python](../../../goto/boto3/s3-2006-03-01/putbucketencryption.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutBucketEncryption)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/putbucketencryption.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/PutBucketEncryption)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

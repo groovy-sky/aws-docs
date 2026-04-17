@@ -1,3 +1,7 @@
+---
+title: "Retrieving objects from versioning-suspended buckets"
+---
+
 # Retrieving objects from versioning-suspended buckets
 
 A `GET Object` request returns the current version of an object whether

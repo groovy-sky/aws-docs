@@ -1,3 +1,7 @@
+---
+title: "Configuring a Multi-Region Access Point for use with AWS PrivateLink"
+---
+
 # Configuring a Multi-Region Access Point for use with AWS PrivateLink
 
 You can use Multi-Region Access Points to route Amazon S3 request traffic between AWS Regions. Each Multi-Region Access Point

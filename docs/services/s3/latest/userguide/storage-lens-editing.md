@@ -1,3 +1,7 @@
+---
+title: "Update an Amazon S3 Storage Lens dashboard"
+---
+
 # Update an Amazon S3 Storage Lens dashboard
 
 The Amazon S3 Storage Lens default dashboard is `default-account-dashboard`. This

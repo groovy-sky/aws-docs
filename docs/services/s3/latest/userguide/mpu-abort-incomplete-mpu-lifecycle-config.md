@@ -1,3 +1,7 @@
+---
+title: "Configuring a bucket lifecycle configuration to delete incomplete multipart uploads"
+---
+
 # Configuring a bucket lifecycle configuration to delete incomplete multipart uploads
 
 As a best practice, we recommend that you configure a lifecycle rule by using the

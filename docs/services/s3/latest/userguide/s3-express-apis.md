@@ -1,3 +1,7 @@
+---
+title: "Directory bucket API operations"
+---
+
 # Directory bucket API operations
 
 To manage directory buckets, you can use Regional (bucket level, or control plane) endpoint API operations. To manage objects in
@@ -89,7 +93,7 @@ The following Zonal endpoint API operations are supported for directory buckets:
 
 - [CreateMultipartUpload](../api/api-createmultipartupload.md)
 
-- [ListMultipartUploads](../api/api-listmultipartuploads.md)
+- [ListMultipartUploads](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads)
 
 - [ListParts](../api/api-listparts.md)
 

@@ -1,3 +1,7 @@
+---
+title: "Logging requests with server access logging"
+---
+
 # Logging requests with server access logging
 
 Server access logging provides detailed records for the requests that are made to a bucket.

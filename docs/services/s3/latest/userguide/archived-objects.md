@@ -1,3 +1,7 @@
+---
+title: "Working with archived objects"
+---
+
 # Working with archived objects
 
 To reduce your storage costs for infrequently accessed objects, you can _archive_ those objects. When you archive an object, it is moved

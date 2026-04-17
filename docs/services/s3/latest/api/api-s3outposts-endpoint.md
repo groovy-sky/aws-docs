@@ -1,3 +1,7 @@
+---
+title: "Endpoint"
+---
+
 # Endpoint
 
 Amazon S3 on Outposts Access Points simplify managing data access at scale for shared datasets in S3 on Outposts.
@@ -120,11 +124,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3outposts-2017-07-25/endpoint.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3outposts-2017-07-25/Endpoint)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3outposts-2017-07-25/endpoint.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3outposts-2017-07-25/Endpoint)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3outposts-2017-07-25/endpoint.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3outposts-2017-07-25/Endpoint)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

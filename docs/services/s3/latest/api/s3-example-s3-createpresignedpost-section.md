@@ -1,3 +1,7 @@
+---
+title: "Use CreatePresignedPost with an AWS SDK"
+---
+
 # Use `CreatePresignedPost` with an AWS SDK
 
 The following code example shows how to use `CreatePresignedPost`.
@@ -65,7 +69,7 @@ Create a presigned POST URL.
 ```
 
 - For API details, see
-[CreatePresignedPost](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/createpresignedpost.md)
+[CreatePresignedPost](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/CreatePresignedPost)
 in _AWS SDK for .NET API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

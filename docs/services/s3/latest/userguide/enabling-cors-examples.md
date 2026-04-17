@@ -1,3 +1,7 @@
+---
+title: "Configuring cross-origin resource sharing (CORS)"
+---
+
 # Configuring cross-origin resource sharing (CORS)
 
 Cross-origin resource sharing (CORS) defines a way for client web applications that are

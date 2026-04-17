@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Multi-Region Access Point failover controls errors"
+---
+
 # Amazon S3 Multi-Region Access Point failover controls errors
 
 When you update the failover configuration for your Multi-Region Access Point, you might encounter one of

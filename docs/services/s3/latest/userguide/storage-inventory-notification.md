@@ -1,3 +1,7 @@
+---
+title: "Setting up Amazon S3 Event Notifications for inventory completion"
+---
+
 # Setting up Amazon S3 Event Notifications for inventory completion
 
 You can set up an Amazon S3 event notification to receive notice when the manifest checksum

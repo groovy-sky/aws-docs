@@ -1,3 +1,7 @@
+---
+title: "Getting started with S3 Access Grants"
+---
+
 # Getting started with S3 Access Grants
 
 Amazon S3 Access Grants is an Amazon S3 feature that provides a scalable access control solution for your

@@ -1,3 +1,7 @@
+---
+title: "Creating replication rules on Outposts"
+---
+
 # Creating replication rules on Outposts
 
 S3 Replication on Outposts is the automatic, asynchronous replication of objects across buckets in

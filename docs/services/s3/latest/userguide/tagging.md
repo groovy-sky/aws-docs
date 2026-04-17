@@ -1,3 +1,7 @@
+---
+title: "Tagging for cost allocation or attribute-based access control (ABAC)"
+---
+
 # Tagging for cost allocation or attribute-based access control (ABAC)
 
 An AWS tag is a key-value pair that holds metadata. You attach the tags to your Amazon S3 resources, such as buckets. You can tag resources when you create them or manage tags on existing resources. There is no additional charge for using tags beyond the standard S3 API request rates. For more information, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing).

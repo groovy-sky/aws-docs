@@ -1,3 +1,7 @@
+---
+title: "Delete incomplete multipart uploads to Amazon S3 using an AWS SDK"
+---
+
 # Delete incomplete multipart uploads to Amazon S3 using an AWS SDK
 
 The following code example shows how to how to delete or stop incomplete Amazon S3 multipart uploads.
@@ -130,11 +134,11 @@ The following example shows how to create a rule to delete incomplete uploads ol
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [AbortMultipartUpload](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/abortmultipartupload.md)
+- [AbortMultipartUpload](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/AbortMultipartUpload)
 
-- [ListMultipartUploads](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/listmultipartuploads.md)
+- [ListMultipartUploads](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/ListMultipartUploads)
 
-- [PutBucketLifecycleConfiguration](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putbucketlifecycleconfiguration.md)
+- [PutBucketLifecycleConfiguration](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutBucketLifecycleConfiguration)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

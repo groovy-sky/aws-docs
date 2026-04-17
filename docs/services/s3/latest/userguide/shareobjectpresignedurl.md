@@ -1,3 +1,7 @@
+---
+title: "Sharing objects with presigned URLs"
+---
+
 # Sharing objects with presigned URLs
 
 By default, all Amazon S3 objects are private, only the object owner has permission to access

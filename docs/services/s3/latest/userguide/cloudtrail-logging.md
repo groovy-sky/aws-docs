@@ -1,3 +1,7 @@
+---
+title: "Logging Amazon S3 API calls using AWS CloudTrail"
+---
+
 # Logging Amazon S3 API calls using AWS CloudTrail
 
 [AWS CloudTrail](../../../awscloudtrail/latest/userguide/cloudtrail-user-guide.md) is

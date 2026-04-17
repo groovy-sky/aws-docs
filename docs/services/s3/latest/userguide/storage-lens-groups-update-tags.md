@@ -1,3 +1,7 @@
+---
+title: "Updating Storage Lens group tag values"
+---
+
 # Updating Storage Lens group tag values
 
 The following examples demonstrate how to update Storage Lens group tag values by

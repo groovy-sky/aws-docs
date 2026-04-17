@@ -1,3 +1,7 @@
+---
+title: "Viewing details about an Amazon S3 table"
+---
+
 # Viewing details about an Amazon S3 table
 
 You can view the general details of a table in a table bucket, such creation details, format and type, in the console or programmatically. You can view table encryption settings, and maintenance settings programmatically by using the S3 Tables REST API, AWS CLI or AWS SDKs.

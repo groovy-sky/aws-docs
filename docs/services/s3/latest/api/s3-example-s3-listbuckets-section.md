@@ -1,3 +1,7 @@
+---
+title: "Use ListBuckets with an AWS SDK or CLI"
+---
+
 # Use `ListBuckets` with an AWS SDK or CLI
 
 The following code examples show how to use `ListBuckets`.
@@ -68,7 +72,7 @@ namespace ListBucketsExample
 ```
 
 - For API details, see
-[ListBuckets](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/listbuckets.md)
+[ListBuckets](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/ListBuckets)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -105,7 +109,7 @@ bool AwsDoc::S3::listBuckets(const Aws::S3::S3ClientConfiguration &clientConfig)
 ```
 
 - For API details, see
-[ListBuckets](../../../../reference/goto/sdkforcpp/s3-2006-03-01/listbuckets.md)
+[ListBuckets](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/ListBuckets)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -244,7 +248,7 @@ public class ListBuckets {
 ```
 
 - For API details, see
-[ListBuckets](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/listbuckets.md)
+[ListBuckets](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/ListBuckets)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -311,7 +315,7 @@ export const main = async () => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/s3-example-creating-buckets.md#s3-example-creating-buckets-list-buckets).
 
 - For API details, see
-[ListBuckets](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/listbucketscommand.md)
+[ListBuckets](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/ListBucketsCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PowerShell
@@ -335,7 +339,7 @@ Get-S3Bucket -BucketName amzn-s3-demo-bucket
 ```
 
 - For API details, see
-[ListBuckets](../../../powershell/v4/reference.md)
+[ListBuckets](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -357,7 +361,7 @@ Get-S3Bucket -BucketName amzn-s3-demo-bucket
 ```
 
 - For API details, see
-[ListBuckets](../../../powershell/v5/reference.md)
+[ListBuckets](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -405,7 +409,7 @@ class BucketWrapper:
 ```
 
 - For API details, see
-[ListBuckets](../../../goto/boto3/s3-2006-03-01/listbuckets.md)
+[ListBuckets](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/ListBuckets)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -459,7 +463,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 
 - For API details, see
-[ListBuckets](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/listbuckets.md)
+[ListBuckets](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/ListBuckets)
 in _AWS SDK for Ruby API Reference_.
 
 Rust

@@ -1,3 +1,7 @@
+---
+title: "Viewing metadata table configurations"
+---
+
 # Viewing metadata table configurations
 
 If you've created a metadata table configuration for a general purpose bucket, you can view

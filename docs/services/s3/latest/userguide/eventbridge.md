@@ -1,3 +1,7 @@
+---
+title: "Using EventBridge"
+---
+
 # Using EventBridge
 
 Amazon S3 can send events to Amazon EventBridge whenever certain events happen in your bucket. Unlike

@@ -1,3 +1,7 @@
+---
+title: "Creating an Amazon S3 table"
+---
+
 # Creating an Amazon S3 table
 
 An Amazon S3 table is a subresource of a table bucket. Tables are stored in the Apache

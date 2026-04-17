@@ -1,3 +1,7 @@
+---
+title: "DeleteObject (SOAP API)"
+---
+
 # DeleteObject (SOAP API)
 
 ###### Note

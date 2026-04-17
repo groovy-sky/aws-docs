@@ -1,3 +1,7 @@
+---
+title: "Use DeleteBucketEncryption with a CLI"
+---
+
 # Use `DeleteBucketEncryption` with a CLI
 
 The following code examples show how to use `DeleteBucketEncryption`.
@@ -46,7 +50,7 @@ Performing the operation "Remove-S3BucketEncryption (DeleteBucketEncryption)" on
 ```
 
 - For API details, see
-[DeleteBucketEncryption](../../../powershell/v4/reference.md)
+[DeleteBucketEncryption](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -70,7 +74,7 @@ Performing the operation "Remove-S3BucketEncryption (DeleteBucketEncryption)" on
 ```
 
 - For API details, see
-[DeleteBucketEncryption](../../../powershell/v5/reference.md)
+[DeleteBucketEncryption](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

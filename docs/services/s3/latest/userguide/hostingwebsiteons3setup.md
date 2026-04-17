@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Configuring a static website on Amazon S3"
+---
+
 # Tutorial: Configuring a static website on Amazon S3
 
 ###### Important

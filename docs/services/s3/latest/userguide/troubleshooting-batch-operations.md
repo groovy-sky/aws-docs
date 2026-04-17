@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting S3 Batch Operations"
+---
+
 # Troubleshooting S3 Batch Operations
 
 Amazon S3 Batch Operations allows you to perform large-scale operations on Amazon S3 objects. This guide helps you troubleshoot common issues you might encounter.

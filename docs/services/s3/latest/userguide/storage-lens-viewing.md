@@ -1,3 +1,7 @@
+---
+title: "View an Amazon S3 Storage Lens dashboard configuration details"
+---
+
 # View an Amazon S3 Storage Lens dashboard configuration details
 
 You can view a Amazon S3 Storage Lens dashboard from the Amazon S3 console, AWS CLI, and SDK for Java.

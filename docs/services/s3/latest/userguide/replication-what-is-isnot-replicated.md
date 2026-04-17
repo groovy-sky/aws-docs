@@ -1,3 +1,7 @@
+---
+title: "What does Amazon S3 replicate?"
+---
+
 # What does Amazon S3 replicate?
 
 Amazon S3 replicates only specific items in buckets that are configured for replication.

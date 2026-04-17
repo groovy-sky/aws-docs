@@ -1,3 +1,7 @@
+---
+title: "Viewing the properties for an S3 general purpose bucket"
+---
+
 # Viewing the properties for an S3 general purpose bucket
 
 You can view properties for any Amazon S3 bucket you own. These settings include the following:

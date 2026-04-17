@@ -1,3 +1,7 @@
+---
+title: "Step 1: Configure a gateway VPC endpoint to reach S3 Express One Zone directory buckets"
+---
+
 # Step 1: Configure a gateway VPC endpoint to reach S3 Express One Zone directory buckets
 
 You can access both Zonal and Regional API operations through gateway virtual

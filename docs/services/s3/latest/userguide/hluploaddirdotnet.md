@@ -1,3 +1,7 @@
+---
+title: "Uploading a directory using the high-level .NET TransferUtility class"
+---
+
 # Uploading a directory using the high-level .NET TransferUtility class
 
 You can use the `TransferUtility` class to upload an entire directory. By

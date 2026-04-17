@@ -1,3 +1,7 @@
+---
+title: "Code examples for Amazon S3 using AWS SDKs"
+---
+
 # Code examples for Amazon S3 using AWS SDKs
 
 The following code examples show how to use Amazon S3 with an AWS software development kit (SDK).
@@ -219,11 +223,21 @@ This topic also includes information about getting started and details about pre
 
   - [Get an object from a bucket if it has been modified](s3-example-s3-getobject-ifmodifiedsince-section.md)
 
-  - [Get started with S3](s3-example-s3-gettingstarted-section.md)
-
   - [Get started with encryption](s3-example-s3-encryption-section.md)
 
   - [Get started with tags](s3-example-s3-scenario-tagging-section.md)
+
+  - [Getting started with Amazon Athena](s3-example-athena-gettingstarted-061-section.md)
+
+  - [Getting started with Amazon EMR](s3-example-emr-gettingstarted-037-section.md)
+
+  - [Getting started with Amazon S3](s3-example-s3-gettingstarted-section.md)
+
+  - [Getting started with Amazon SageMaker Feature Store](s3-example-iam-gettingstarted-028-section.md)
+
+  - [Getting started with Amazon Textract](s3-example-s3-gettingstarted-074-section.md)
+
+  - [Getting started with Config](s3-example-config-service-gettingstarted-053-section.md)
 
   - [Lock Amazon S3 objects](s3-example-s3-scenario-objectlock-section.md)
 

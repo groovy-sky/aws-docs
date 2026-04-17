@@ -1,3 +1,7 @@
+---
+title: "How S3 Storage Lens groups work"
+---
+
 # How S3 Storage Lens groups work
 
 You can use Storage Lens groups to aggregate metrics using custom filters based on

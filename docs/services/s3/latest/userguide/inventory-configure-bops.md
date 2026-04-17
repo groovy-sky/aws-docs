@@ -1,3 +1,7 @@
+---
+title: "Converting empty version ID strings in Amazon S3 Inventory reports to null strings"
+---
+
 # Converting empty version ID strings in Amazon S3 Inventory reports to null strings
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "How Amazon S3 authorizes a request"
+---
+
 # How Amazon S3 authorizes a request
 
 When Amazon S3 receives a request—for example, a bucket or an object operation—it first verifies

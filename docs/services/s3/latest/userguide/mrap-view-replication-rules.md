@@ -1,3 +1,7 @@
+---
+title: "View the replication rules for your Multi-Region Access Point"
+---
+
 # View the replication rules for your Multi-Region Access Point
 
 With Multi-Region Access Points, you can either set up one-way replication rules or two-way

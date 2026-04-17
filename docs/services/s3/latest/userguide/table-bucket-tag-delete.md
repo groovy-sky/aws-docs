@@ -1,3 +1,7 @@
+---
+title: "Deleting a tag from a table bucket"
+---
+
 # Deleting a tag from a table bucket
 
 You can remove tags from Amazon S3 table buckets. For more information about tagging table buckets, see [Using tags with S3 table buckets](table-bucket-tagging.md).

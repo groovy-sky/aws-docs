@@ -1,3 +1,7 @@
+---
+title: "Cost optimization for tables with Intelligent-Tiering"
+---
+
 # Cost optimization for tables with Intelligent-Tiering
 
 You can automatically optimize storage costs for tables by using S3 Intelligent-Tiering. The S3 Tables Intelligent-Tiering storage class automatically moves data to the most cost-effective access tier when access patterns change. When you use S3 Intelligent-Tiering, data accessed less frequently is automatically moved to lower-cost tiers, and moved back to the Frequent Access tier whenever you access it again.

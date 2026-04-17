@@ -1,3 +1,7 @@
+---
+title: "Configuring Requester Pays on a bucket"
+---
+
 # Configuring Requester Pays on a bucket
 
 You can configure an Amazon S3 bucket to be a _Requester_

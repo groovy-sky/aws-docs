@@ -1,3 +1,7 @@
+---
+title: "Updating server-side encryption for existing data"
+---
+
 # Updating server-side encryption for existing data
 
 All Amazon S3 buckets have encryption configured by default, and objects are automatically encrypted by

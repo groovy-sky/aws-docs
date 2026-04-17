@@ -1,3 +1,7 @@
+---
+title: "Configuring replication for use with Multi-Region Access Points"
+---
+
 # Configuring replication for use with Multi-Region Access Points
 
 When you make a request to a Multi-Region Access Point endpoint, Amazon S3 automatically routes the request to the

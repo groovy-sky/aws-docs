@@ -1,3 +1,7 @@
+---
+title: "Security in S3 on Outposts"
+---
+
 # Security in S3 on Outposts
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from

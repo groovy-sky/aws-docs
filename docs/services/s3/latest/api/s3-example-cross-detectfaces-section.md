@@ -1,3 +1,7 @@
+---
+title: "Detect faces in an image using an AWS SDK"
+---
+
 # Detect faces in an image using an AWS SDK
 
 The following code example shows how to:

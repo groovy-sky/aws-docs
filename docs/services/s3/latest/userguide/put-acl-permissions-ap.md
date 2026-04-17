@@ -1,3 +1,7 @@
+---
+title: "Configure access control lists (ACLs) through an access point for a general purpose bucket"
+---
+
 # Configure access control lists (ACLs) through an access point for a general purpose bucket
 
 This section explains how to configure ACLs through an access point for a general purpose bucket using the AWS Management Console,

@@ -1,3 +1,7 @@
+---
+title: "Use GetObjectRetention with an AWS SDK or CLI"
+---
+
 # Use `GetObjectRetention` with an AWS SDK or CLI
 
 The following code examples show how to use `GetObjectRetention`.
@@ -51,7 +55,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[GetObjectRetention](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getobjectretention.md)
+[GetObjectRetention](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetObjectRetention)
 in _AWS SDK for .NET API Reference_.
 
 CLI
@@ -189,7 +193,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[GetObjectRetention](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getobjectretention.md)
+[GetObjectRetention](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetObjectRetention)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -280,7 +284,7 @@ if (isMain(import.meta.url)) {
 ```
 
 - For API details, see
-[GetObjectRetention](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getobjectretentioncommand.md)
+[GetObjectRetention](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/GetObjectRetentionCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PowerShell
@@ -296,7 +300,7 @@ Get-S3ObjectRetention -BucketName 'amzn-s3-demo-bucket' -Key 'testfile.txt'
 ```
 
 - For API details, see
-[GetObjectRetention](../../../powershell/v4/reference.md)
+[GetObjectRetention](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -310,7 +314,7 @@ Get-S3ObjectRetention -BucketName 'amzn-s3-demo-bucket' -Key 'testfile.txt'
 ```
 
 - For API details, see
-[GetObjectRetention](../../../powershell/v5/reference.md)
+[GetObjectRetention](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

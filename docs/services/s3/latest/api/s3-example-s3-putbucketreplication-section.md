@@ -1,3 +1,7 @@
+---
+title: "Use PutBucketReplication with an AWS SDK or CLI"
+---
+
 # Use `PutBucketReplication` with an AWS SDK or CLI
 
 The following code examples show how to use `PutBucketReplication`.
@@ -187,7 +191,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[PutBucketReplication](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putbucketreplication.md)
+[PutBucketReplication](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutBucketReplication)
 in _AWS SDK for Java 2.x API Reference_.
 
 PowerShell
@@ -261,7 +265,7 @@ Write-S3BucketReplication @params
 ```
 
 - For API details, see
-[PutBucketReplication](../../../powershell/v4/reference.md)
+[PutBucketReplication](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -333,7 +337,7 @@ Write-S3BucketReplication @params
 ```
 
 - For API details, see
-[PutBucketReplication](../../../powershell/v5/reference.md)
+[PutBucketReplication](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

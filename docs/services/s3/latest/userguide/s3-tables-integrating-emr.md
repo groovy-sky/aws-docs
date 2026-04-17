@@ -1,3 +1,7 @@
+---
+title: "Accessing Amazon S3 tables with Amazon EMR"
+---
+
 # Accessing Amazon S3 tables with Amazon EMR
 
 Amazon EMR (previously called Amazon Elastic MapReduce) is a managed cluster platform that

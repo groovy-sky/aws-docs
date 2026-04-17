@@ -1,3 +1,7 @@
+---
+title: "Using server-side encryption with AWS KMS keys (SSE-KMS) in directory buckets"
+---
+
 # Using server-side encryption with AWS KMS keys (SSE-KMS) in directory buckets
 
 The security controls in AWS KMS can help you meet encryption-related compliance

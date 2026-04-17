@@ -1,3 +1,7 @@
+---
+title: "ListAccessPointsDescription"
+---
+
 # ListAccessPointsDescription
 
 Contains information about an S3 File System Access Point returned in list operations.
@@ -94,11 +98,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3files-2025-05-05/listaccesspointsdescription.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3files-2025-05-05/ListAccessPointsDescription)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3files-2025-05-05/listaccesspointsdescription.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3files-2025-05-05/ListAccessPointsDescription)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3files-2025-05-05/listaccesspointsdescription.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3files-2025-05-05/ListAccessPointsDescription)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot server access logging"
+---
+
 # Troubleshoot server access logging
 
 The following topics can help you troubleshoot issues that you might encounter when

@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for Amazon S3 on Outposts"
+---
+
 # AWS managed policies for Amazon S3 on Outposts
 
 An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed

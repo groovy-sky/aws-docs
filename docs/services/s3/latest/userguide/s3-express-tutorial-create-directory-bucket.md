@@ -1,3 +1,7 @@
+---
+title: "Step 2: Create a S3 Express One Zone directory bucket"
+---
+
 # Step 2: Create a S3 Express One Zone directory bucket
 
 01. Sign in to the AWS Management Console and open the Amazon S3 console at

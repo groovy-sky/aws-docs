@@ -1,3 +1,7 @@
+---
+title: "ImportDataRule"
+---
+
 # ImportDataRule
 
 Specifies a rule that controls how data is imported from S3 into the file
@@ -43,11 +47,11 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3files-2025-05-05/importdatarule.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3files-2025-05-05/ImportDataRule)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3files-2025-05-05/importdatarule.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3files-2025-05-05/ImportDataRule)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3files-2025-05-05/importdatarule.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3files-2025-05-05/ImportDataRule)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

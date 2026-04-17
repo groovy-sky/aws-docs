@@ -1,3 +1,7 @@
+---
+title: "Deleting metadata table configurations"
+---
+
 # Deleting metadata table configurations
 
 If you want to stop updating the metadata table configuration for an Amazon S3 general purpose bucket,

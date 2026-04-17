@@ -1,3 +1,7 @@
+---
+title: "Learn the basics of Amazon S3 with an AWS SDK"
+---
+
 # Learn the basics of Amazon S3 with an AWS SDK
 
 The following code examples show how to:
@@ -609,19 +613,19 @@ public class S3Wrapper
 
 - For API details, see the following topics in _AWS SDK for .NET API Reference_.
 
-- [CopyObject](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/CopyObject)
 
-- [CreateBucket](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/CreateBucket)
 
-- [DeleteBucket](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/deletebucket.md)
+- [DeleteBucket](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/DeleteBucket)
 
-- [DeleteObjects](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/deleteobjects.md)
+- [DeleteObjects](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/DeleteObjects)
 
-- [GetObject](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/GetObject)
 
-- [ListObjectsV2](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/listobjectsv2.md)
+- [ListObjectsV2](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/ListObjectsV2)
 
-- [PutObject](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/PutObject)
 
 Bash
 
@@ -1034,19 +1038,19 @@ function delete_bucket() {
 
 - For API details, see the following topics in _AWS CLI Command Reference_.
 
-- [CopyObject](../../../goto/aws-cli/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/CopyObject)
 
-- [CreateBucket](../../../goto/aws-cli/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/CreateBucket)
 
-- [DeleteBucket](../../../goto/aws-cli/s3-2006-03-01/deletebucket.md)
+- [DeleteBucket](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/DeleteBucket)
 
-- [DeleteObjects](../../../goto/aws-cli/s3-2006-03-01/deleteobjects.md)
+- [DeleteObjects](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/DeleteObjects)
 
-- [GetObject](../../../goto/aws-cli/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/GetObject)
 
-- [ListObjectsV2](../../../goto/aws-cli/s3-2006-03-01/listobjectsv2.md)
+- [ListObjectsV2](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/ListObjectsV2)
 
-- [PutObject](../../../goto/aws-cli/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/PutObject)
 
 C++
 
@@ -1329,19 +1333,19 @@ AwsDoc::S3::deleteBucket(const Aws::String &bucketName, Aws::S3::S3Client &clien
 
 - For API details, see the following topics in _AWS SDK for C++ API Reference_.
 
-- [CopyObject](../../../../reference/goto/sdkforcpp/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/CopyObject)
 
-- [CreateBucket](../../../../reference/goto/sdkforcpp/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/CreateBucket)
 
-- [DeleteBucket](../../../../reference/goto/sdkforcpp/s3-2006-03-01/deletebucket.md)
+- [DeleteBucket](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/DeleteBucket)
 
-- [DeleteObjects](../../../../reference/goto/sdkforcpp/s3-2006-03-01/deleteobjects.md)
+- [DeleteObjects](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/DeleteObjects)
 
-- [GetObject](../../../../reference/goto/sdkforcpp/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/GetObject)
 
-- [ListObjectsV2](../../../../reference/goto/sdkforcpp/s3-2006-03-01/listobjectsv2.md)
+- [ListObjectsV2](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/ListObjectsV2)
 
-- [PutObject](../../../../reference/goto/sdkforcpp/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/PutObject)
 
 Go
 
@@ -2570,19 +2574,19 @@ public class S3Actions {
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [CopyObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CopyObject)
 
-- [CreateBucket](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CreateBucket)
 
-- [DeleteBucket](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deletebucket.md)
+- [DeleteBucket](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteBucket)
 
-- [DeleteObjects](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deleteobjects.md)
+- [DeleteObjects](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteObjects)
 
-- [GetObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetObject)
 
-- [ListObjectsV2](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/listobjectsv2.md)
+- [ListObjectsV2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/ListObjectsV2)
 
-- [PutObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutObject)
 
 JavaScript
 
@@ -2887,19 +2891,19 @@ const main = async () => {
 
 - For API details, see the following topics in _AWS SDK for JavaScript API Reference_.
 
-- [CopyObject](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/copyobjectcommand.md)
+- [CopyObject](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/CopyObjectCommand)
 
-- [CreateBucket](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/createbucketcommand.md)
+- [CreateBucket](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/CreateBucketCommand)
 
-- [DeleteBucket](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/deletebucketcommand.md)
+- [DeleteBucket](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/DeleteBucketCommand)
 
-- [DeleteObjects](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/deleteobjectscommand.md)
+- [DeleteObjects](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/DeleteObjectsCommand)
 
-- [GetObject](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getobjectcommand.md)
+- [GetObject](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/GetObjectCommand)
 
-- [ListObjectsV2](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/listobjectsv2command.md)
+- [ListObjectsV2](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/ListObjectsV2Command)
 
-- [PutObject](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/putobjectcommand.md)
+- [PutObject](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/PutObjectCommand)
 
 Kotlin
 
@@ -3240,19 +3244,19 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 
 - For API details, see the following topics in _AWS SDK for PHP API Reference_.
 
-- [CopyObject](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/CopyObject)
 
-- [CreateBucket](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/CreateBucket)
 
-- [DeleteBucket](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/deletebucket.md)
+- [DeleteBucket](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/DeleteBucket)
 
-- [DeleteObjects](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/deleteobjects.md)
+- [DeleteObjects](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/DeleteObjects)
 
-- [GetObject](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/GetObject)
 
-- [ListObjectsV2](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/listobjectsv2.md)
+- [ListObjectsV2](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/ListObjectsV2)
 
-- [PutObject](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/PutObject)
 
 Python
 
@@ -3371,19 +3375,19 @@ if __name__ == "__main__":
 
 - For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
 
-- [CopyObject](../../../goto/boto3/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/CopyObject)
 
-- [CreateBucket](../../../goto/boto3/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/CreateBucket)
 
-- [DeleteBucket](../../../goto/boto3/s3-2006-03-01/deletebucket.md)
+- [DeleteBucket](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteBucket)
 
-- [DeleteObjects](../../../goto/boto3/s3-2006-03-01/deleteobjects.md)
+- [DeleteObjects](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteObjects)
 
-- [GetObject](../../../goto/boto3/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetObject)
 
-- [ListObjectsV2](../../../goto/boto3/s3-2006-03-01/listobjectsv2.md)
+- [ListObjectsV2](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/ListObjectsV2)
 
-- [PutObject](../../../goto/boto3/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObject)
 
 Ruby
 
@@ -3549,19 +3553,19 @@ run_scenario(ScenarioGettingStarted.new(Aws::S3::Resource.new)) if $PROGRAM_NAME
 
 - For API details, see the following topics in _AWS SDK for Ruby API Reference_.
 
-- [CopyObject](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/CopyObject)
 
-- [CreateBucket](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/CreateBucket)
 
-- [DeleteBucket](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/deletebucket.md)
+- [DeleteBucket](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/DeleteBucket)
 
-- [DeleteObjects](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/deleteobjects.md)
+- [DeleteObjects](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/DeleteObjects)
 
-- [GetObject](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/GetObject)
 
-- [ListObjectsV2](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/listobjectsv2.md)
+- [ListObjectsV2](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/ListObjectsV2)
 
-- [PutObject](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/PutObject)
 
 Rust
 

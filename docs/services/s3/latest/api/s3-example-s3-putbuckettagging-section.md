@@ -1,3 +1,7 @@
+---
+title: "Use PutBucketTagging with a CLI"
+---
+
 # Use `PutBucketTagging` with a CLI
 
 The following code examples show how to use `PutBucketTagging`.
@@ -5,7 +9,7 @@ The following code examples show how to use `PutBucketTagging`.
 Action examples are code excerpts from larger programs and must be run in context. You can see this action in
 context in the following code example:
 
-- [Get started with S3](s3-example-s3-gettingstarted-section.md)
+- [Getting started with Amazon S3](s3-example-s3-gettingstarted-section.md)
 
 CLI
 
@@ -66,7 +70,7 @@ Get-S3Bucket -BucketName amzn-s3-demo-bucket | Write-S3BucketTagging -TagSet @( 
 ```
 
 - For API details, see
-[PutBucketTagging](../../../powershell/v4/reference.md)
+[PutBucketTagging](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -88,7 +92,7 @@ Get-S3Bucket -BucketName amzn-s3-demo-bucket | Write-S3BucketTagging -TagSet @( 
 ```
 
 - For API details, see
-[PutBucketTagging](../../../powershell/v5/reference.md)
+[PutBucketTagging](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

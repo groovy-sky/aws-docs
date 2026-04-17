@@ -1,3 +1,7 @@
+---
+title: "Enforce conditional deletes on Amazon S3 buckets"
+---
+
 # Enforce conditional deletes on Amazon S3 buckets
 
 By using Amazon S3 bucket policies, you can enforce `If-Match` header

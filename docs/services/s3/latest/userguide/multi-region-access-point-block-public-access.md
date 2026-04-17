@@ -1,3 +1,7 @@
+---
+title: "Blocking public access with Amazon S3 Multi-Region Access Points"
+---
+
 # Blocking public access with Amazon S3 Multi-Region Access Points
 
 Each Multi-Region Access Point has distinct settings for Amazon S3 Block Public Access. These settings operate

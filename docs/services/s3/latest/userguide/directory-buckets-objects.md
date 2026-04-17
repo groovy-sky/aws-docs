@@ -1,3 +1,7 @@
+---
+title: "Working with objects in a directory bucket"
+---
+
 # Working with objects in a directory bucket
 
 After you create an Amazon S3 directory bucket, you can work with objects by using the Amazon S3

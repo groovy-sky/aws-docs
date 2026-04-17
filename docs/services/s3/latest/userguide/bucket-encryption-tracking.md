@@ -1,3 +1,7 @@
+---
+title: "Monitoring default encryption with AWS CloudTrail and Amazon EventBridge"
+---
+
 # Monitoring default encryption with AWS CloudTrail and Amazon EventBridge
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Monitoring metrics with Amazon CloudWatch"
+---
+
 # Monitoring metrics with Amazon CloudWatch
 
 Amazon CloudWatch metrics for Amazon S3 can help you understand and improve the performance of

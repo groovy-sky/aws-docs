@@ -1,3 +1,7 @@
+---
+title: "Basic examples for Amazon S3 using AWS SDKs"
+---
+
 # Basic examples for Amazon S3 using AWS SDKs
 
 The following code examples show how to use the basics of Amazon Simple Storage Service with AWS

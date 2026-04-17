@@ -1,3 +1,7 @@
+---
+title: "Perform a multipart copy of an Amazon S3 object using an AWS SDK"
+---
+
 # Perform a multipart copy of an Amazon S3 object using an AWS SDK
 
 The following code example shows how to perform a multipart copy of an Amazon S3 object.
@@ -130,13 +134,13 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 
 - For API details, see the following topics in _AWS SDK for .NET API Reference_.
 
-- [CompleteMultipartUpload](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/completemultipartupload.md)
+- [CompleteMultipartUpload](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/CompleteMultipartUpload)
 
-- [CreateMultipartUpload](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/createmultipartupload.md)
+- [CreateMultipartUpload](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/CreateMultipartUpload)
 
-- [GetObjectMetadata](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getobjectmetadata.md)
+- [GetObjectMetadata](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetObjectMetadata)
 
-- [UploadPartCopy](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/uploadpartcopy.md)
+- [UploadPartCopy](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/UploadPartCopy)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

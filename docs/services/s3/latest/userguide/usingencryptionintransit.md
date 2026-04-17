@@ -1,3 +1,7 @@
+---
+title: "Protecting data in transit with encryption"
+---
+
 # Protecting data in transit with encryption
 
 Amazon S3 supports both HTTP and HTTPS protocols for data transmission. HTTP transmits data in

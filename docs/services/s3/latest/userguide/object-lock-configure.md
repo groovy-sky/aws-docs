@@ -1,3 +1,7 @@
+---
+title: "Configuring S3 Object Lock"
+---
+
 # Configuring S3 Object Lock
 
 With Amazon S3 Object Lock, you can store objects in Amazon S3 general purpose buckets by using a

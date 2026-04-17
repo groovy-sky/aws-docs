@@ -1,3 +1,7 @@
+---
+title: "Static website tutorials"
+---
+
 # Static website tutorials
 
 The following tutorials or walkthroughs present complete procedures for how to create and
@@ -8,7 +12,7 @@ names, and so on. They are not intended for direct use in a production environme
 careful review and adaptation to meet the unique needs of your organization's environment.
 
 - [Hosting on-demand\
-streaming video with Amazon S3, Amazon CloudFront, and Amazon Route 53](tutorial-s3-cloudfront-route53-video-streaming.md) – You can use Amazon S3 with Amazon CloudFront
+streaming video with Amazon S3, Amazon CloudFront, and Amazon Route 53](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorial-s3-cloudfront-route53-video-streaming) – You can use Amazon S3 with Amazon CloudFront
 to host videos for on-demand viewing in a secure and scalable way. After your video is packaged into
 the right formats, you can store it on a server or in an S3 general purpose bucket, and then deliver it with
 CloudFront as viewers request it. In this tutorial, you will learn how to configure your general purpose bucket to
@@ -40,7 +44,7 @@ _Developer Guide_. After you complete this tutorial, you can optionally
 use CloudFront to improve the performance of your website. For more information, see
 [Speeding up your website with Amazon CloudFront](website-hosting-cloudfront-walkthrough.md).
 
-- [Deploying a static website to AWS Amplify Hosting from an S3 general purpose bucket](website-hosting-amplify.md) –
+- [Deploying a static website to AWS Amplify Hosting from an S3 general purpose bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-amplify) –
 We recommend that you use [AWS Amplify Hosting](../../../amplify/latest/userguide/welcome.md)
 to host static website content stored on S3. Amplify Hosting is a fully managed service that makes it easy to deploy your websites on a
 globally available content delivery network (CDN) powered by Amazon CloudFront, allowing secure static website hosting without extensive setup. With AWS Amplify Hosting, you can select the location of your objects within your general purpose bucket, deploy your content to a managed CDN, and generate a public HTTPS URL for your website to be accessible anywhere. For more information, see [Deploying a static\

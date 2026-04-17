@@ -1,3 +1,7 @@
+---
+title: "Making requests to S3 on Outposts over IPv6"
+---
+
 # Making requests to S3 on Outposts over IPv6
 
 Amazon S3 on Outposts and S3 on Outposts dual-stack endpoints support requests to S3 on Outposts

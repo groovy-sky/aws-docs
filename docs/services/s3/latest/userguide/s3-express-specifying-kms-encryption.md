@@ -1,3 +1,7 @@
+---
+title: "Specifying server-side encryption with AWS KMS (SSE-KMS) for new object uploads in directory buckets"
+---
+
 # Specifying server-side encryption with AWS KMS (SSE-KMS) for new object uploads in directory buckets
 
 For directory buckets, to encrypt your data with server-side encryption, you can use either server-side encryption with Amazon S3 managed keys (SSE-S3)

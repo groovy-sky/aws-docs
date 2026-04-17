@@ -1,3 +1,7 @@
+---
+title: "Downloading an object from a directory bucket"
+---
+
 # Downloading an object from a directory bucket
 
 The following code examples show how to read data from (download) an object in an Amazon S3

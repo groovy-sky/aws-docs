@@ -1,3 +1,7 @@
+---
+title: "Enabling or disabling live inventory tables"
+---
+
 # Enabling or disabling live inventory tables
 
 By default, your metadata table configuration contains a _journal_

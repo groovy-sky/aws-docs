@@ -1,3 +1,7 @@
+---
+title: "Delete a registered location"
+---
+
 # Delete a registered location
 
 You can delete a location registration from an Amazon S3 Access Grants instance. Deleting the

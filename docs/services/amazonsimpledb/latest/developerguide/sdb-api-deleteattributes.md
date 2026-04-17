@@ -1,3 +1,7 @@
+---
+title: "DeleteAttributes"
+---
+
 # DeleteAttributes
 
 ## Description

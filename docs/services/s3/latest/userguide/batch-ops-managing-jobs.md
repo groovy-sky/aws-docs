@@ -1,3 +1,7 @@
+---
+title: "Managing S3 Batch Operations jobs"
+---
+
 # Managing S3 Batch Operations jobs
 
 Amazon S3 provides a robust set of tools to help you manage your S3 Batch Operations jobs after you

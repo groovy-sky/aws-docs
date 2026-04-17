@@ -1,3 +1,7 @@
+---
+title: "Using Storage Browser for S3"
+---
+
 # Using Storage Browser for S3
 
 In Storage Browser for S3, a _location_ is an S3 general purpose bucket or prefix, that you

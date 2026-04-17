@@ -1,3 +1,7 @@
+---
+title: "Add a tag-set through an access point for a general purpose bucket"
+---
+
 # Add a tag-set through an access point for a general purpose bucket
 
 This section explains how to add a tag-set through an access point for a general purpose bucket using the AWS Management Console,

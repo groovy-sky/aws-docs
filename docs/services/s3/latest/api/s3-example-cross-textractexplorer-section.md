@@ -1,3 +1,7 @@
+---
+title: "Create an Amazon Textract explorer application"
+---
+
 # Create an Amazon Textract explorer application
 
 The following code examples show how to explore Amazon Textract output through an interactive application.

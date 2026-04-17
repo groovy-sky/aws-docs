@@ -1,3 +1,7 @@
+---
+title: "S3ObjectMetadata"
+---
+
 # S3ObjectMetadata
 
 ## Contents
@@ -81,7 +85,7 @@ Required: No
 The server-side encryption algorithm used when storing objects in Amazon S3.
 
 **Directory buckets** \- For directory buckets, there are only two supported options for server-side encryption: server-side encryption with Amazon S3 managed keys (SSE-S3) ( `AES256`) and server-side encryption with AWS KMS keys (SSE-KMS) ( `KMS`). For more
-information, see [Protecting data with server-side encryption](../userguide/s3-express-serv-side-encryption.md) in the _Amazon S3 User Guide_. For [the Copy operation in Batch Operations](../userguide/directory-buckets-objects-batch-ops.md), see [S3CopyObjectOperation](api-control-s3copyobjectoperation.md).
+information, see [Protecting data with server-side encryption](../userguide/s3-express-serv-side-encryption.md) in the _Amazon S3 User Guide_. For [the Copy operation in Batch Operations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-Batch-Ops), see [S3CopyObjectOperation](api-control-s3copyobjectoperation.md).
 
 Type: String
 
@@ -105,11 +109,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3control-2018-08-20/s3objectmetadata.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3control-2018-08-20/S3ObjectMetadata)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/s3objectmetadata.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/S3ObjectMetadata)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3control-2018-08-20/s3objectmetadata.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3control-2018-08-20/S3ObjectMetadata)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -1,3 +1,7 @@
+---
+title: "Making requests"
+---
+
 # Making requests
 
 Amazon S3 is a REST service. You can send requests to Amazon S3 using the REST API or the AWS SDK (see

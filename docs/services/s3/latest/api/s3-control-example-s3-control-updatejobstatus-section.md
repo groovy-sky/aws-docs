@@ -1,3 +1,7 @@
+---
+title: "Use UpdateJobStatus with an AWS SDK or CLI"
+---
+
 # Use `UpdateJobStatus` with an AWS SDK or CLI
 
 The following code examples show how to use `UpdateJobStatus`.
@@ -112,7 +116,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[UpdateJobStatus](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/updatejobstatus.md)
+[UpdateJobStatus](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/UpdateJobStatus)
 in _AWS SDK for Java 2.x API Reference_.
 
 Python
@@ -165,7 +169,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 ```
 
 - For API details, see
-[UpdateJobStatus](../../../goto/boto3/s3control-2018-08-20/updatejobstatus.md)
+[UpdateJobStatus](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/UpdateJobStatus)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "Use DeleteBucket with an AWS SDK"
+---
+
 # Use `DeleteBucket` with an AWS SDK
 
 The following code example shows how to use `DeleteBucket`.
@@ -60,7 +64,7 @@ import static com.example.s3.util.S3DirectoryBucketUtils.createS3Client;
 ```
 
 - For API details, see
-[DeleteBucket](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deletebucket.md)
+[DeleteBucket](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteBucket)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

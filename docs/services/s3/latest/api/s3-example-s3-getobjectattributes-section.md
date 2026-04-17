@@ -1,3 +1,7 @@
+---
+title: "Use GetObjectAttributes with an AWS SDK or CLI"
+---
+
 # Use `GetObjectAttributes` with an AWS SDK or CLI
 
 The following code examples show how to use `GetObjectAttributes`.
@@ -137,7 +141,7 @@ bool AwsDoc::S3::retrieveObjectHash(const Aws::String &bucket, const Aws::String
 ```
 
 - For API details, see
-[GetObjectAttributes](../../../../reference/goto/sdkforcpp/s3-2006-03-01/getobjectattributes.md)
+[GetObjectAttributes](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/GetObjectAttributes)
 in _AWS SDK for C++ API Reference_.
 
 CLI

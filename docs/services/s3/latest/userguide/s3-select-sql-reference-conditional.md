@@ -1,3 +1,7 @@
+---
+title: "Conditional functions"
+---
+
 # Conditional functions
 
 ###### Important

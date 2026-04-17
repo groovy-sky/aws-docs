@@ -1,3 +1,7 @@
+---
+title: "Example 3: Bucket owner granting permissions to objects it does not own"
+---
+
 # Example 3: Bucket owner granting permissions to objects it does not own
 
 ###### Important

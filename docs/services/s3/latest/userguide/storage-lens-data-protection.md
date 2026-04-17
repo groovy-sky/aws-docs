@@ -1,3 +1,7 @@
+---
+title: "Using S3 Storage Lens to protect your data"
+---
+
 # Using S3 Storage Lens to protect your data
 
 You can use Amazon S3 Storage Lens data-protection metrics to identify buckets where data-protection

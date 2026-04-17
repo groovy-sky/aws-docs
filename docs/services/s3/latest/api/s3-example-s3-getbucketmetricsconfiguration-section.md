@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketMetricsConfiguration with a CLI"
+---
+
 # Use `GetBucketMetricsConfiguration` with a CLI
 
 The following code examples show how to use `GetBucketMetricsConfiguration`.
@@ -49,7 +53,7 @@ Get-S3BucketMetricsConfiguration -BucketName 'amzn-s3-demo-bucket' -MetricsId 't
 ```
 
 - For API details, see
-[GetBucketMetricsConfiguration](../../../powershell/v4/reference.md)
+[GetBucketMetricsConfiguration](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -63,7 +67,7 @@ Get-S3BucketMetricsConfiguration -BucketName 'amzn-s3-demo-bucket' -MetricsId 't
 ```
 
 - For API details, see
-[GetBucketMetricsConfiguration](../../../powershell/v5/reference.md)
+[GetBucketMetricsConfiguration](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

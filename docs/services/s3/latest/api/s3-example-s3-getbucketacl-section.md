@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketAcl with an AWS SDK or CLI"
+---
+
 # Use `GetBucketAcl` with an AWS SDK or CLI
 
 The following code examples show how to use `GetBucketAcl`.
@@ -43,7 +47,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[GetBucketAcl](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getbucketacl.md)
+[GetBucketAcl](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetBucketAcl)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -170,7 +174,7 @@ Aws::String getPermissionString(const Aws::S3::Model::Permission &permission) {
 ```
 
 - For API details, see
-[GetBucketAcl](../../../../reference/goto/sdkforcpp/s3-2006-03-01/getbucketacl.md)
+[GetBucketAcl](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/GetBucketAcl)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -307,7 +311,7 @@ public class GetAcl {
 ```
 
 - For API details, see
-[GetBucketAcl](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getbucketacl.md)
+[GetBucketAcl](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetBucketAcl)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -368,7 +372,7 @@ export const main = async ({ bucketName }) => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/s3-example-access-permissions.md#s3-example-access-permissions-get-acl).
 
 - For API details, see
-[GetBucketAcl](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getbucketaclcommand.md)
+[GetBucketAcl](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/GetBucketAclCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PowerShell
@@ -393,7 +397,7 @@ testusername      9988776a6554433d22f1100112e334acb45566778899009e9887bd7f66c5f5
 ```
 
 - For API details, see
-[GetBucketAcl](../../../powershell/v5/reference.md)
+[GetBucketAcl](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -439,7 +443,7 @@ class BucketWrapper:
 ```
 
 - For API details, see
-[GetBucketAcl](../../../goto/boto3/s3-2006-03-01/getbucketacl.md)
+[GetBucketAcl](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetBucketAcl)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

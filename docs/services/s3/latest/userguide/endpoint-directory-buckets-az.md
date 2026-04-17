@@ -1,3 +1,7 @@
+---
+title: "Regional and Zonal endpoints for directory buckets in an Availability Zone"
+---
+
 # Regional and Zonal endpoints for directory buckets in an Availability Zone
 
 To access your objects and directory buckets stored in S3 Express One Zone, you

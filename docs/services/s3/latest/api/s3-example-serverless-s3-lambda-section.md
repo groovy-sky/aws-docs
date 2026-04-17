@@ -1,3 +1,7 @@
+---
+title: "Invoke a Lambda function from an Amazon S3 trigger"
+---
+
 # Invoke a Lambda function from an Amazon S3 trigger
 
 The following code examples show how to implement a Lambda function that receives an event triggered by uploading an object to an S3 bucket. The function retrieves the S3 bucket name and object key from the event parameter and calls the Amazon S3 API to retrieve and log the content type of the object.

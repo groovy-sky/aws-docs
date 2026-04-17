@@ -1,3 +1,7 @@
+---
+title: "Detect entities in text extracted from an image using an AWS SDK"
+---
+
 # Detect entities in text extracted from an image using an AWS SDK
 
 The following code example shows how to use Amazon Comprehend to detect entities in text extracted by Amazon Textract from an image that is stored in Amazon S3.

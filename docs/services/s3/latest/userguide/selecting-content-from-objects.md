@@ -1,3 +1,7 @@
+---
+title: "Querying data in place with Amazon S3 Select"
+---
+
 # Querying data in place with Amazon S3 Select
 
 ###### Important

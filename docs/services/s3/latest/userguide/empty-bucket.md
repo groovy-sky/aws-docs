@@ -1,3 +1,7 @@
+---
+title: "Emptying a general purpose bucket"
+---
+
 # Emptying a general purpose bucket
 
 You can empty a general purpose bucket's contents using the Amazon S3 console, AWS SDKs, or AWS Command Line Interface

@@ -1,3 +1,7 @@
+---
+title: "Data encryption in S3 on Outposts"
+---
+
 # Data encryption in S3 on Outposts
 
 By default, all data stored in Amazon S3 on Outposts is encrypted by using server-side encryption

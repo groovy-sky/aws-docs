@@ -1,3 +1,7 @@
+---
+title: "Best practices to optimize S3 Express One Zone performance"
+---
+
 # Best practices to optimize S3 Express One Zone performance
 
 When building applications that upload and retrieve objects from Amazon S3 Express One Zone, follow our best practice guidelines to optimize performance. To use the S3 Express One Zone storage class, you must create an S3 directory bucket. The S3 Express One Zone storage class isn't supported for use with S3 general purpose buckets.

@@ -1,3 +1,7 @@
+---
+title: "Generating a presigned URL to upload an object to an S3 on Outposts bucket"
+---
+
 # Generating a presigned URL to upload an object to an S3 on Outposts bucket
 
 To grant time-limited access to objects that are stored locally on an

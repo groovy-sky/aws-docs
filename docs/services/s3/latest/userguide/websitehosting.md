@@ -1,3 +1,7 @@
+---
+title: "Hosting a static website using Amazon S3"
+---
+
 # Hosting a static website using Amazon S3
 
 You can use Amazon S3 to host a static website. On a _static_ website,

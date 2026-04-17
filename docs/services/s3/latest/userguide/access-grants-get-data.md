@@ -1,3 +1,7 @@
+---
+title: "Accessing S3 data using credentials vended by S3 Access Grants"
+---
+
 # Accessing S3 data using credentials vended by S3 Access Grants
 
 After a grantee [obtains temporary\

@@ -1,3 +1,7 @@
+---
+title: "Use ListMultipartUploads with an AWS SDK or CLI"
+---
+
 # Use `ListMultipartUploads` with an AWS SDK or CLI
 
 The following code examples show how to use `ListMultipartUploads`.
@@ -132,7 +136,7 @@ public class ListMultipartUploads {
 ```
 
 - For API details, see
-[ListMultipartUploads](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/listmultipartuploads.md)
+[ListMultipartUploads](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/ListMultipartUploads)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

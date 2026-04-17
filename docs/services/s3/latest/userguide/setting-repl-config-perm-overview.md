@@ -1,3 +1,7 @@
+---
+title: "Setting up permissions for live replication"
+---
+
 # Setting up permissions for live replication
 
 When setting up live replication in Amazon S3, you must acquire the necessary permissions as

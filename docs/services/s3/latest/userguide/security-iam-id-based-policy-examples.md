@@ -1,3 +1,7 @@
+---
+title: "Identity-based policies for Amazon S3"
+---
+
 # Identity-based policies for Amazon S3
 
 By default, users and roles don't have permission to create or modify Amazon S3

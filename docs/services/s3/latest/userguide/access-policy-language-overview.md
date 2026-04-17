@@ -1,3 +1,7 @@
+---
+title: "Policies and permissions in Amazon S3"
+---
+
 # Policies and permissions in Amazon S3
 
 This page provides an overview of bucket and user policies in Amazon S3 and describes the basic

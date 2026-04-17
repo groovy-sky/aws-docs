@@ -1,3 +1,7 @@
+---
+title: "Managing S3 Intelligent-Tiering"
+---
+
 # Managing S3 Intelligent-Tiering
 
 The S3 Intelligent-Tiering storage class delivers automatic storage cost savings in three

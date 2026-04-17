@@ -1,3 +1,7 @@
+---
+title: "Amazon S3"
+---
+
 # Amazon S3
 
 The following actions are supported by Amazon S3:

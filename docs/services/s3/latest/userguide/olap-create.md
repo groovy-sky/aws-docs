@@ -1,3 +1,7 @@
+---
+title: "Creating Object Lambda Access Points"
+---
+
 # Creating Object Lambda Access Points
 
 ###### Note

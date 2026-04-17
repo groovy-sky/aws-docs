@@ -1,3 +1,7 @@
+---
+title: "Receiving replication failure events with Amazon S3 Event Notifications"
+---
+
 # Receiving replication failure events with Amazon S3 Event Notifications
 
 If you've enabled S3 Replication metrics on your replication configuration, you can set up Amazon S3

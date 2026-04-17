@@ -1,3 +1,7 @@
+---
+title: "Using the Amazon S3 Transfer Acceleration Speed Comparison tool"
+---
+
 # Using the Amazon S3 Transfer Acceleration Speed Comparison tool
 
 You can use the [Amazon S3 Transfer Acceleration Speed Comparison tool](https://s3-accelerate-speedtest.s3-accelerate.amazonaws.com/en/accelerate-speed-comparsion.html) to compare accelerated and

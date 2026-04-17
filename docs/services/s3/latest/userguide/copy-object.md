@@ -1,3 +1,7 @@
+---
+title: "Copying, moving, and renaming objects"
+---
+
 # Copying, moving, and renaming objects
 
 The `CopyObject` operation creates a copy of an object that's already stored in

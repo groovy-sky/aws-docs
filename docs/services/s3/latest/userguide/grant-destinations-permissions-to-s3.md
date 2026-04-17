@@ -1,3 +1,7 @@
+---
+title: "Granting permissions to publish event notification messages to a destination"
+---
+
 # Granting permissions to publish event notification messages to a destination
 
 You must grant the Amazon S3 principal the necessary permissions to call the relevant

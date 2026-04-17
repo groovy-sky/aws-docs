@@ -1,3 +1,7 @@
+---
+title: "Delete an S3 Access Grants instance"
+---
+
 # Delete an S3 Access Grants instance
 
 You can delete an Amazon S3 Access Grants instance from an AWS Region in your account. However,

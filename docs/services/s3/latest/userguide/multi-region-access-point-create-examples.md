@@ -1,3 +1,7 @@
+---
+title: "Create an Amazon S3 Multi-Region Access Point"
+---
+
 # Create an Amazon S3 Multi-Region Access Point
 
 The following example demonstrates how to create a Multi-Region Access Point by using the Amazon S3

@@ -1,3 +1,7 @@
+---
+title: "Deleting a single object"
+---
+
 # Deleting a single object
 
 You can use the Amazon S3 console or the DELETE API to delete a single existing object from an

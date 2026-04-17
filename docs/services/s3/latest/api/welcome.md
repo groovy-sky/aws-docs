@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 Welcome to the _Amazon Simple Storage Service API Reference_. This guide explains the Amazon Simple Storage Service (Amazon S3)

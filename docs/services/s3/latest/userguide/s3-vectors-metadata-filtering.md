@@ -1,3 +1,7 @@
+---
+title: "Metadata filtering"
+---
+
 # Metadata filtering
 
 Metadata filtering allows you to filter query results based on specific attributes

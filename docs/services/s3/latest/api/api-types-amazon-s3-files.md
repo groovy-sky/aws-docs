@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Files"
+---
+
 # Amazon S3 Files
 
 The following data types are supported by Amazon S3 Files:

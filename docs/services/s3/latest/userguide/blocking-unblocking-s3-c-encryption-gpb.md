@@ -1,3 +1,7 @@
+---
+title: "Blocking or unblocking SSE-C for a general purpose bucket"
+---
+
 # Blocking or unblocking SSE-C for a general purpose bucket
 
 Most modern use cases in Amazon S3 no longer use server-side encryption with customer-provided

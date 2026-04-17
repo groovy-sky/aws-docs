@@ -1,3 +1,7 @@
+---
+title: "Object Lock considerations"
+---
+
 # Object Lock considerations
 
 Amazon S3 Object Lock can help prevent objects from being deleted or overwritten for a fixed

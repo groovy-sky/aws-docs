@@ -1,3 +1,7 @@
+---
+title: "Directory bucket naming rules"
+---
+
 # Directory bucket naming rules
 
 When you create a directory bucket in Amazon S3, the following bucket naming rules apply. For

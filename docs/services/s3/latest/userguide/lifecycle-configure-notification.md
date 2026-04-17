@@ -1,3 +1,7 @@
+---
+title: "Configuring S3 Lifecycle event notifications"
+---
+
 # Configuring S3 Lifecycle event notifications
 
 To receive notice when Amazon S3 deletes an object or transitions it to another Amazon S3 storage

@@ -1,3 +1,7 @@
+---
+title: "Deleting an AWS resource tag from a Storage Lens group"
+---
+
 # Deleting an AWS resource tag from a Storage Lens group
 
 The following examples demonstrate how to delete an AWS resource tag from a Storage

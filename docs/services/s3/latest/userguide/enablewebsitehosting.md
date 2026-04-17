@@ -1,3 +1,7 @@
+---
+title: "Enabling website hosting"
+---
+
 # Enabling website hosting
 
 When you configure a bucket as a static website, you must enable static website

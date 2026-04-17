@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Tables"
+---
+
 # Amazon S3 Tables
 
 The following data types are supported by Amazon S3 Tables:

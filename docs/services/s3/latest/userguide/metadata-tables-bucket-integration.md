@@ -1,3 +1,7 @@
+---
+title: "Querying metadata tables with AWS analytics services"
+---
+
 # Querying metadata tables with AWS analytics services
 
 You can query your S3 managed metadata tables with AWS analytics services such as Amazon Athena,

@@ -1,3 +1,7 @@
+---
+title: "Tag"
+---
+
 # Tag
 
 A key-value pair that you use to label your resources. You can add tags to new resources when you create them, or you can add tags to existing resources. Tags can help you organize, track costs for, and control access to resources.
@@ -32,11 +36,11 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3control-2018-08-20/tag.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3control-2018-08-20/Tag)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/tag.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/Tag)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3control-2018-08-20/tag.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3control-2018-08-20/Tag)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

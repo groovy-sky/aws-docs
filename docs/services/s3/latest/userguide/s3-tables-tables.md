@@ -1,3 +1,7 @@
+---
+title: "Tables in S3 table buckets"
+---
+
 # Tables in S3 table buckets
 
 An S3 table represents a structured dataset consisting of underlying table data and related

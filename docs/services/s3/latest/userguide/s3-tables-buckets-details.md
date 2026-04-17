@@ -1,3 +1,7 @@
+---
+title: "Viewing details about an Amazon S3 table bucket"
+---
+
 # Viewing details about an Amazon S3 table bucket
 
 You can view the general details of an Amazon S3 table bucket, such as bucket owner and type, in the console or programmatically. You can view default encryption settings,

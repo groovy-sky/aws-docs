@@ -1,3 +1,7 @@
+---
+title: "Deleting Amazon S3 log files"
+---
+
 # Deleting Amazon S3 log files
 
 An Amazon S3 bucket with server access logging enabled can accumulate many server log objects

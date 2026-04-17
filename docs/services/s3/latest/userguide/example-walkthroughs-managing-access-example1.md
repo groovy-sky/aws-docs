@@ -1,3 +1,7 @@
+---
+title: "Example 1: Bucket owner granting its users bucket permissions"
+---
+
 # Example 1: Bucket owner granting its users bucket permissions
 
 ###### Important

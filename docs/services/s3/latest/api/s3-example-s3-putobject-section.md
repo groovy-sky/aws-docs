@@ -1,3 +1,7 @@
+---
+title: "Use PutObject with an AWS SDK or CLI"
+---
+
 # Use `PutObject` with an AWS SDK or CLI
 
 The following code examples show how to use `PutObject`.
@@ -7,7 +11,7 @@ context in the following code examples:
 
 - [Learn the basics](s3-example-s3-scenario-gettingstarted-section.md)
 
-- [Get started with S3](s3-example-s3-gettingstarted-section.md)
+- [Getting started with Amazon S3](s3-example-s3-gettingstarted-section.md)
 
 - [Make conditional requests](s3-example-s3-scenario-conditionalrequests-section.md)
 
@@ -65,7 +69,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[PutObject](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/putobject.md)
+[PutObject](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/PutObject)
 in _AWS SDK for .NET API Reference_.
 
 **SDK for .NET**
@@ -193,7 +197,7 @@ Put an object using a conditional request.
 ```
 
 - For API details, see
-[PutObject](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putobject.md)
+[PutObject](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutObject)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -252,7 +256,7 @@ function copy_file_to_bucket() {
 ```
 
 - For API details, see
-[PutObject](../../../goto/aws-cli/s3-2006-03-01/putobject.md)
+[PutObject](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/PutObject)
 in _AWS CLI Command Reference_.
 
 C++
@@ -307,7 +311,7 @@ bool AwsDoc::S3::putObject(const Aws::String &bucketName,
 ```
 
 - For API details, see
-[PutObject](../../../../reference/goto/sdkforcpp/s3-2006-03-01/putobject.md)
+[PutObject](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/PutObject)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -874,7 +878,7 @@ public class PutObjectRetention {
 ```
 
 - For API details, see
-[PutObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putobject.md)
+[PutObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutObject)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -1021,7 +1025,7 @@ if (isMain(import.meta.url)) {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/s3-example-creating-buckets.md#s3-example-creating-buckets-new-bucket-2).
 
 - For API details, see
-[PutObject](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/putobjectcommand.md)
+[PutObject](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/PutObjectCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -1096,7 +1100,7 @@ Upload an object to a bucket.
 ```
 
 - For API details, see
-[PutObject](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/putobject.md)
+[PutObject](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/PutObject)
 in _AWS SDK for PHP API Reference_.
 
 PowerShell
@@ -1168,7 +1172,7 @@ Write-S3Object -BucketName amzn-s3-demo-bucket -Folder . -KeyPrefix "TaggedFiles
 ```
 
 - For API details, see
-[PutObject](../../../powershell/v4/reference.md)
+[PutObject](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -1238,7 +1242,7 @@ Write-S3Object -BucketName amzn-s3-demo-bucket -Folder . -KeyPrefix "TaggedFiles
 ```
 
 - For API details, see
-[PutObject](../../../powershell/v5/reference.md)
+[PutObject](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -1346,7 +1350,7 @@ class S3ConditionalRequests:
 ```
 
 - For API details, see
-[PutObject](../../../goto/boto3/s3-2006-03-01/putobject.md)
+[PutObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObject)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -1488,7 +1492,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 
 - For API details, see
-[PutObject](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/putobject.md)
+[PutObject](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/PutObject)
 in _AWS SDK for Ruby API Reference_.
 
 Rust

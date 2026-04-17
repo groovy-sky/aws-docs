@@ -1,3 +1,7 @@
+---
+title: "Creating tables with tags"
+---
+
 # Creating tables with tags
 
 You can tag Amazon S3 tables when you create them. There is no additional charge for using tags on tables beyond the standard S3 API request rates. For more information, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing). For more information about tagging tables, see [Using tags with S3 tables](table-tagging.md).

@@ -1,3 +1,7 @@
+---
+title: "Configuring hybrid post-quantum TLS for your client"
+---
+
 # Configuring hybrid post-quantum TLS for your client
 
 To use PQ-TLS with Amazon S3, you need to configure your client to support post-quantum key

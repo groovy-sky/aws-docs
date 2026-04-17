@@ -1,3 +1,7 @@
+---
+title: "Configuring Amazon S3 Inventory"
+---
+
 # Configuring Amazon S3 Inventory
 
 Amazon S3 Inventory provides a flat file list of your objects and metadata, on a schedule that

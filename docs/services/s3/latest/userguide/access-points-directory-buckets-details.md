@@ -1,3 +1,7 @@
+---
+title: "View details for your access points for directory buckets"
+---
+
 # View details for your access points for directory buckets
 
 This section explains how to view details for your access point for directory buckets using the AWS Management Console, AWS CLI, AWS SDKs, or REST API.

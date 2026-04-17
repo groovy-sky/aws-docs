@@ -1,3 +1,7 @@
+---
+title: "Listing all Storage Lens groups"
+---
+
 # Listing all Storage Lens groups
 
 The following examples demonstrate how to list all Amazon S3 Storage Lens groups in an

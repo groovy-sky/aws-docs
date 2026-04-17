@@ -1,3 +1,7 @@
+---
+title: "InventoryS3BucketDestination"
+---
+
 # InventoryS3BucketDestination
 
 Contains the bucket name, file format, bucket owner (optional), and prefix (optional) where
@@ -57,11 +61,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3-2006-03-01/inventorys3bucketdestination.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/InventoryS3BucketDestination)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/inventorys3bucketdestination.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/InventoryS3BucketDestination)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/inventorys3bucketdestination.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/InventoryS3BucketDestination)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

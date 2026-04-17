@@ -1,3 +1,7 @@
+---
+title: "Use ListObjectsV2 with an AWS SDK or CLI"
+---
+
 # Use `ListObjectsV2` with an AWS SDK or CLI
 
 The following code examples show how to use `ListObjectsV2`.
@@ -9,7 +13,7 @@ context in the following code examples:
 
 - [Delete all objects in a bucket](s3-example-s3-scenario-deleteallobjects-section.md)
 
-- [Get started with S3](s3-example-s3-gettingstarted-section.md)
+- [Getting started with Amazon S3](s3-example-s3-gettingstarted-section.md)
 
 .NET
 
@@ -80,7 +84,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[ListObjectsV2](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/listobjectsv2.md)
+[ListObjectsV2](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/ListObjectsV2)
 in _AWS SDK for .NET API Reference_.
 
 **SDK for .NET**
@@ -145,7 +149,7 @@ List objects with a paginator.
 ```
 
 - For API details, see
-[ListObjectsV2](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/listobjectsv2.md)
+[ListObjectsV2](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/ListObjectsV2)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -206,7 +210,7 @@ function list_items_in_bucket() {
 ```
 
 - For API details, see
-[ListObjectsV2](../../../goto/aws-cli/s3-2006-03-01/listobjectsv2.md)
+[ListObjectsV2](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/ListObjectsV2)
 in _AWS CLI Command Reference_.
 
 C++
@@ -265,7 +269,7 @@ bool AwsDoc::S3::listObjects(const Aws::String &bucketName,
 ```
 
 - For API details, see
-[ListObjectsV2](../../../../reference/goto/sdkforcpp/s3-2006-03-01/listobjectsv2.md)
+[ListObjectsV2](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/ListObjectsV2)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -495,7 +499,7 @@ public class ListObjectsPaginated {
 ```
 
 - For API details, see
-[ListObjectsV2](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/listobjectsv2.md)
+[ListObjectsV2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/ListObjectsV2)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -562,7 +566,7 @@ export const main = async ({ bucketName, pageSize }) => {
 ```
 
 - For API details, see
-[ListObjectsV2](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/listobjectsv2command.md)
+[ListObjectsV2](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/ListObjectsV2Command)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -633,7 +637,7 @@ List objects in a bucket.
 ```
 
 - For API details, see
-[ListObjectsV2](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/listobjectsv2.md)
+[ListObjectsV2](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/ListObjectsV2)
 in _AWS SDK for PHP API Reference_.
 
 Python
@@ -685,7 +689,7 @@ class ObjectWrapper:
 ```
 
 - For API details, see
-[ListObjectsV2](../../../goto/boto3/s3-2006-03-01/listobjectsv2.md)
+[ListObjectsV2](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/ListObjectsV2)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -744,7 +748,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 
 - For API details, see
-[ListObjectsV2](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/listobjectsv2.md)
+[ListObjectsV2](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/ListObjectsV2)
 in _AWS SDK for Ruby API Reference_.
 
 Rust

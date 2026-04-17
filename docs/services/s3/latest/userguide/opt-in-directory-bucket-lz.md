@@ -1,3 +1,7 @@
+---
+title: "Enable accounts for Local Zones"
+---
+
 # Enable accounts for Local Zones
 
 The following topic describes how accounts are enabled for Dedicated Local Zones.

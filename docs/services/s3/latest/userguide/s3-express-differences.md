@@ -1,3 +1,7 @@
+---
+title: "Differences for directory buckets"
+---
+
 # Differences for directory buckets
 
 When using Amazon S3, you can choose the bucket type that best fits your application and

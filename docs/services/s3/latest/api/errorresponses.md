@@ -1,3 +1,7 @@
+---
+title: "Error responses"
+---
+
 # Error responses
 
 This section provides reference information about Amazon S3 errors.

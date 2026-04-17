@@ -1,3 +1,7 @@
+---
+title: "Signature calculations for trailing headers (chunked uploads) (AWS Signature Version 4)"
+---
+
 # Signature calculations for trailing headers (chunked uploads) (AWS Signature Version 4)
 
 When authenticating requests using the

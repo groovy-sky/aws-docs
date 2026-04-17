@@ -1,3 +1,7 @@
+---
+title: "Enforce conditional writes on Amazon S3 buckets"
+---
+
 # Enforce conditional writes on Amazon S3 buckets
 
 By using Amazon S3 bucket policies, you can enforce conditional writes for object uploads in your

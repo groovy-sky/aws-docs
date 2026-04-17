@@ -1,3 +1,7 @@
+---
+title: "DeleteBucket (SOAP API)"
+---
+
 # DeleteBucket (SOAP API)
 
 ###### Note

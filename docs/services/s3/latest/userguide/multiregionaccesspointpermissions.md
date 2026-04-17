@@ -1,3 +1,7 @@
+---
+title: "Permissions"
+---
+
 # Permissions
 
 Amazon S3 Multi-Region Access Points can simplify data access for Amazon S3 buckets in multiple AWS Regions. Multi-Region Access Points

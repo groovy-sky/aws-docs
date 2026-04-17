@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Object Lambda availability change"
+---
+
 # Amazon S3 Object Lambda availability change
 
 After careful consideration, S3 Object Lambda as of November 7th, 2025 is available only to existing

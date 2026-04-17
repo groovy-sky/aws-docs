@@ -1,3 +1,7 @@
+---
+title: "Importing objects into a directory bucket"
+---
+
 # Importing objects into a directory bucket
 
 After you create a directory bucket in Amazon S3, you can populate the new bucket with data by

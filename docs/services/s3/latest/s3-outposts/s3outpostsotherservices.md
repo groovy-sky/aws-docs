@@ -1,3 +1,7 @@
+---
+title: "Other AWS services that use S3 on Outposts"
+---
+
 # Other AWS services that use S3 on Outposts
 
 Other AWS services that run local to your AWS Outposts can also use your Amazon S3 on Outposts

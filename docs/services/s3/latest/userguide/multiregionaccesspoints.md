@@ -1,3 +1,7 @@
+---
+title: "Managing multi-Region traffic with Multi-Region Access Points"
+---
+
 # Managing multi-Region traffic with Multi-Region Access Points
 
 Amazon S3 Multi-Region Access Points provides a global endpoint that applications can use to fulfill requests from

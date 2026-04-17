@@ -1,3 +1,7 @@
+---
+title: "S3 Vectors best practices"
+---
+
 # S3 Vectors best practices
 
 Amazon S3 Vectors delivers purpose-built, cost-optimized vector storage for use by

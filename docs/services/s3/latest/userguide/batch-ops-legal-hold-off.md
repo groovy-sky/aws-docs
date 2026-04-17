@@ -1,3 +1,7 @@
+---
+title: "Using S3 Batch Operations to turn off S3 Object Lock legal holds"
+---
+
 # Using S3 Batch Operations to turn off S3 Object Lock legal holds
 
 The following example builds on the previous examples of creating a trust policy, and

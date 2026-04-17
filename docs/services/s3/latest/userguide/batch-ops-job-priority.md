@@ -1,3 +1,7 @@
+---
+title: "Assigning job priority"
+---
+
 # Assigning job priority
 
 You can assign each Amazon S3 Batch Operations job a numeric priority, which can be any

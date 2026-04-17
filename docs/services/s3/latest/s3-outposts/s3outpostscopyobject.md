@@ -1,3 +1,7 @@
+---
+title: "Copying an object in an Amazon S3 on Outposts bucket using the AWS SDK for Java"
+---
+
 # Copying an object in an Amazon S3 on Outposts bucket using the AWS SDK for Java
 
 Objects are the fundamental entities stored in Amazon S3 on Outposts. Every object is contained in a bucket.

@@ -1,3 +1,7 @@
+---
+title: "Sharing objects by using presigned URLs"
+---
+
 # Sharing objects by using presigned URLs
 
 To grant time-limited access to objects that are stored locally on an

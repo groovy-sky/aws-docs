@@ -1,3 +1,7 @@
+---
+title: "How is Amazon S3 on Outposts different from Amazon S3?"
+---
+
 # How is Amazon S3 on Outposts different from Amazon S3?
 
 Amazon S3 on Outposts delivers object storage to your on-premises AWS Outposts environment. Using

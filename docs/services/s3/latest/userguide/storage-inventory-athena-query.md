@@ -1,3 +1,7 @@
+---
+title: "Querying Amazon S3 Inventory with Amazon Athena"
+---
+
 # Querying Amazon S3 Inventory with Amazon Athena
 
 You can query Amazon S3 Inventory files with standard SQL queries by using Amazon Athena in all

@@ -1,3 +1,7 @@
+---
+title: "Deleting objects in Amazon S3 on Outposts buckets"
+---
+
 # Deleting objects in Amazon S3 on Outposts buckets
 
 Objects are the fundamental entities stored in Amazon S3 on Outposts. Every object is contained in a bucket.

@@ -1,3 +1,7 @@
+---
+title: "Permissions for querying metadata tables"
+---
+
 # Permissions for querying metadata tables
 
 Before you can query your S3 Metadata journal and live inventory tables, you must have certain S3

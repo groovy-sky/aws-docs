@@ -1,3 +1,7 @@
+---
+title: "How S3 Versioning works"
+---
+
 # How S3 Versioning works
 
 You can use S3 Versioning to keep multiple versions of an object in one bucket so that you

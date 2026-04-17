@@ -1,3 +1,7 @@
+---
+title: "Identity-based policy examples for Amazon S3"
+---
+
 # Identity-based policy examples for Amazon S3
 
 This section shows several example AWS Identity and Access Management (IAM) identity-based policies for controlling

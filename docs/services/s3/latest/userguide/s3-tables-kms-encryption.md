@@ -1,3 +1,7 @@
+---
+title: "Using server-side encryption with AWS KMS keys (SSE-KMS) in table buckets"
+---
+
 # Using server-side encryption with AWS KMS keys (SSE-KMS) in table buckets
 
 ###### Topics

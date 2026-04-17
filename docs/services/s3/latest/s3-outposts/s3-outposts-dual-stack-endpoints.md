@@ -1,3 +1,7 @@
+---
+title: "Using S3 on Outposts dual-stack endpoints"
+---
+
 # Using S3 on Outposts dual-stack endpoints
 
 S3 on Outposts dual-stack endpoints support requests to S3 on Outposts buckets over IPv6

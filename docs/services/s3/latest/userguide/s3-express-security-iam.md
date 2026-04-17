@@ -1,3 +1,7 @@
+---
+title: "Authorizing Regional endpoint API operations with IAM"
+---
+
 # Authorizing Regional endpoint API operations with IAM
 
 AWS Identity and Access Management (IAM) is an AWS service that helps administrators securely control access to

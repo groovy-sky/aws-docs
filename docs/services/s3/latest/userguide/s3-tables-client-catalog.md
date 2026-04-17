@@ -1,3 +1,7 @@
+---
+title: "Accessing Amazon S3 tables with the Amazon S3 Tables Catalog for Apache Iceberg"
+---
+
 # Accessing Amazon S3 tables with the Amazon S3 Tables Catalog for Apache Iceberg
 
 You can access S3 tables from open source query engines like Apache Spark by using the

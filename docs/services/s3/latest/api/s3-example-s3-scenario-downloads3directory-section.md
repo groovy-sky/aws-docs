@@ -1,3 +1,7 @@
+---
+title: "Download S3 'directories' from an Amazon Simple Storage Service (Amazon S3) bucket"
+---
+
 # Download S3 'directories' from an Amazon Simple Storage Service (Amazon S3) bucket
 
 The following code example shows how to download and filter the contents of Amazon S3 bucket 'directories'.

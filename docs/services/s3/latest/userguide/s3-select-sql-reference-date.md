@@ -1,3 +1,7 @@
+---
+title: "Date functions"
+---
+
 # Date functions
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "BatchPutAttributes"
+---
+
 # BatchPutAttributes
 
 ## Description

@@ -1,3 +1,7 @@
+---
+title: "Use PutObjectLockConfiguration with an AWS SDK or CLI"
+---
+
 # Use `PutObjectLockConfiguration` with an AWS SDK or CLI
 
 The following code examples show how to use `PutObjectLockConfiguration`.
@@ -122,7 +126,7 @@ Set the default retention period of a bucket.
 ```
 
 - For API details, see
-[PutObjectLockConfiguration](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putobjectlockconfiguration.md)
+[PutObjectLockConfiguration](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutObjectLockConfiguration)
 in _AWS SDK for .NET API Reference_.
 
 CLI
@@ -369,7 +373,7 @@ Set the default retention period of a bucket.
 ```
 
 - For API details, see
-[PutObjectLockConfiguration](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putobjectlockconfiguration.md)
+[PutObjectLockConfiguration](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutObjectLockConfiguration)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -557,7 +561,7 @@ if (isMain(import.meta.url)) {
 ```
 
 - For API details, see
-[PutObjectLockConfiguration](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/putobjectlockconfigurationcommand.md)
+[PutObjectLockConfiguration](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/PutObjectLockConfigurationCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -582,7 +586,7 @@ Put object lock configuration.
 ```
 
 - For API details, see
-[PutObjectLockConfiguration](../../../goto/boto3/s3-2006-03-01/putobjectlockconfiguration.md)
+[PutObjectLockConfiguration](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObjectLockConfiguration)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

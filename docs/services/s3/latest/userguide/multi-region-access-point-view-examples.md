@@ -1,3 +1,7 @@
+---
+title: "Viewing Amazon S3 Multi-Region Access Points configuration details"
+---
+
 # Viewing Amazon S3 Multi-Region Access Points configuration details
 
 The following example demonstrates how to view Multi-Region Access Point configuration details by using

@@ -1,3 +1,7 @@
+---
+title: "Configuring block public access settings for your S3 buckets"
+---
+
 # Configuring block public access settings for your S3 buckets
 
 Amazon S3 Block Public Access provides settings for access points, buckets, organizations,

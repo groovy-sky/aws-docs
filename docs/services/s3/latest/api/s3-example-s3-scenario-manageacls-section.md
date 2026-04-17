@@ -1,3 +1,7 @@
+---
+title: "Manage access control lists (ACLs) for Amazon S3 buckets using an AWS SDK"
+---
+
 # Manage access control lists (ACLs) for Amazon S3 buckets using an AWS SDK
 
 The following code example shows how to manage access control lists (ACLs) for Amazon S3 buckets.
@@ -199,13 +203,13 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 
 - For API details, see the following topics in _AWS SDK for .NET API Reference_.
 
-- [GetBucketAcl](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getbucketacl.md)
+- [GetBucketAcl](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetBucketAcl)
 
-- [GetObjectAcl](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getobjectacl.md)
+- [GetObjectAcl](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetObjectAcl)
 
-- [PutBucketAcl](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putbucketacl.md)
+- [PutBucketAcl](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutBucketAcl)
 
-- [PutObjectAcl](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putobjectacl.md)
+- [PutObjectAcl](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutObjectAcl)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

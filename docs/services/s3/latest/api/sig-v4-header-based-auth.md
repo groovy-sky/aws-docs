@@ -1,3 +1,7 @@
+---
+title: "Signature Calculations for the Authorization Header: Transferring Payload in a Single Chunk (AWS Signature Version 4)"
+---
+
 # Signature Calculations for the Authorization Header: Transferring Payload in a Single Chunk (AWS Signature Version 4)
 
 When using the `Authorization` header to authenticate requests, the header value includes,

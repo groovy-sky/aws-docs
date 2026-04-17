@@ -1,3 +1,7 @@
+---
+title: "Permissions for S3 Storage Lens tables"
+---
+
 # Permissions for S3 Storage Lens tables
 
 To work with S3 Storage Lens data exported to S3 Tables, you need appropriate AWS Identity and Access Management (IAM) permissions. This topic covers the permissions required for exporting metrics and managing encryption.

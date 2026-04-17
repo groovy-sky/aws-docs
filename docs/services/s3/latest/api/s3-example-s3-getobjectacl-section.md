@@ -1,3 +1,7 @@
+---
+title: "Use GetObjectAcl with an AWS SDK or CLI"
+---
+
 # Use `GetObjectAcl` with an AWS SDK or CLI
 
 The following code examples show how to use `GetObjectAcl`.
@@ -127,7 +131,7 @@ Aws::String getPermissionString(const Aws::S3::Model::Permission &permission) {
 ```
 
 - For API details, see
-[GetObjectAcl](../../../../reference/goto/sdkforcpp/s3-2006-03-01/getobjectacl.md)
+[GetObjectAcl](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/GetObjectAcl)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -231,7 +235,7 @@ testusername      9988776a6554433d22f1100112e334acb45566778899009e9887bd7f66c5f5
 ```
 
 - For API details, see
-[GetObjectAcl](../../../powershell/v5/reference.md)
+[GetObjectAcl](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -279,7 +283,7 @@ class ObjectWrapper:
 ```
 
 - For API details, see
-[GetObjectAcl](../../../goto/boto3/s3-2006-03-01/getobjectacl.md)
+[GetObjectAcl](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetObjectAcl)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

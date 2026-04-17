@@ -1,3 +1,7 @@
+---
+title: "Using Storage Lens groups"
+---
+
 # Using Storage Lens groups
 
 Amazon S3 Storage Lens groups aggregates metrics using custom filters based on object metadata.

@@ -1,3 +1,7 @@
+---
+title: "Use cases for directory buckets"
+---
+
 # Use cases for directory buckets
 
 Directory buckets support bucket creation in the following bucket location types: Availability Zone or Local Zone.

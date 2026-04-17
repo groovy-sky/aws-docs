@@ -1,3 +1,7 @@
+---
+title: "Best practices design patterns: optimizing Amazon S3 performance"
+---
+
 # Best practices design patterns: optimizing Amazon S3 performance
 
 Your applications can easily achieve thousands of transactions per second in request

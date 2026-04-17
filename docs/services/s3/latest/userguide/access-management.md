@@ -1,3 +1,7 @@
+---
+title: "Access control in Amazon S3"
+---
+
 # Access control in Amazon S3
 
 In AWS, a resource is an entity that you can work with. In Amazon Simple Storage Service (S3), _buckets_ and _objects_ are the

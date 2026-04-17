@@ -1,3 +1,7 @@
+---
+title: "Managing the lifecycle of objects"
+---
+
 # Managing the lifecycle of objects
 
 S3 Lifecycle helps you store objects cost effectively throughout their lifecycle by

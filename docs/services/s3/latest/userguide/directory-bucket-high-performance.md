@@ -1,3 +1,7 @@
+---
+title: "High performance workloads"
+---
+
 # High performance workloads
 
 ## S3 Express One Zone

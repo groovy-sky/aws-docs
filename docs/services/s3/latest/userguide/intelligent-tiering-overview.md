@@ -1,3 +1,7 @@
+---
+title: "How S3 Intelligent-Tiering works"
+---
+
 # How S3 Intelligent-Tiering works
 
 The Amazon S3 Intelligent-Tiering storage class automatically stores objects in three
@@ -55,7 +59,7 @@ Other actions **don't** constitute access that automatically
 moves objects from the Infrequent Access tier or the Archive Instant Access tier back to the
 Frequent Access tier. The following is a sample, not a definitive list, of such actions:
 
-- Invoking [HeadObject](../api/api-headobject.md), [GetObjectTagging](../api/api-getobjecttagging.md), [PutObjectTagging](../api/api-putobjecttagging.md), [ListObjects](../api/api-listobjects.md), [ListObjectsV2](../api/api-listobjectsv2.md), [ListObjectVersions](../api/api-listobjectversions.md), and
+- Invoking [HeadObject](../api/api-headobject.md), [GetObjectTagging](../api/api-getobjecttagging.md), [PutObjectTagging](../api/api-putobjecttagging.md), [ListObjects](../api/api-listobjects.md), [ListObjectsV2](../api/api-listobjectsv2.md), [ListObjectVersions](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectVersions), and
 [UpdateObjectEncryption](../api/api-updateobjectencryption.md).
 
 - Invoking [SelectObjectContent](../api/api-selectobjectcontent.md) doesn't constitute access that

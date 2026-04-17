@@ -1,3 +1,7 @@
+---
+title: "Networking for directory buckets"
+---
+
 # Networking for directory buckets
 
 To access directory buckets and objects inside, you use Regional and Zonal

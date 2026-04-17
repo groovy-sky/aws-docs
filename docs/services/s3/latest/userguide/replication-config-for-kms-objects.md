@@ -1,3 +1,7 @@
+---
+title: "Replicating encrypted objects (SSE-S3, SSE-KMS, DSSE-KMS, SSE-C)"
+---
+
 # Replicating encrypted objects (SSE-S3, SSE-KMS, DSSE-KMS, SSE-C)
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Configuring a custom error document"
+---
+
 # Configuring a custom error document
 
 After you configure your bucket as a static website, when an error occurs, Amazon S3

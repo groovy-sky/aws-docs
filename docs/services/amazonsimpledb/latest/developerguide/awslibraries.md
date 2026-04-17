@@ -1,3 +1,7 @@
+---
+title: "Available Libraries"
+---
+
 # Available Libraries
 
 AWS provides libraries (the AWS SDKs), which include sample code, tutorials, and

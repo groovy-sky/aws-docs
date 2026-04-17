@@ -1,3 +1,7 @@
+---
+title: "Use PutObjectLegalHold with an AWS SDK or CLI"
+---
+
 # Use `PutObjectLegalHold` with an AWS SDK or CLI
 
 The following code examples show how to use `PutObjectLegalHold`.
@@ -55,7 +59,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[PutObjectLegalHold](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putobjectlegalhold.md)
+[PutObjectLegalHold](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutObjectLegalHold)
 in _AWS SDK for .NET API Reference_.
 
 CLI
@@ -183,7 +187,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[PutObjectLegalHold](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putobjectlegalhold.md)
+[PutObjectLegalHold](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutObjectLegalHold)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -288,7 +292,7 @@ if (isMain(import.meta.url)) {
 ```
 
 - For API details, see
-[PutObjectLegalHold](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/putobjectlegalholdcommand.md)
+[PutObjectLegalHold](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/PutObjectLegalHoldCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Python
@@ -334,7 +338,7 @@ def set_legal_hold(s3_client, bucket: str, key: str) -> None:
 ```
 
 - For API details, see
-[PutObjectLegalHold](../../../goto/boto3/s3-2006-03-01/putobjectlegalhold.md)
+[PutObjectLegalHold](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObjectLegalHold)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

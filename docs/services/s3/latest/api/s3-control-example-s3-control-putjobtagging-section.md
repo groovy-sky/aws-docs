@@ -1,3 +1,7 @@
+---
+title: "Use PutJobTagging with an AWS SDK"
+---
+
 # Use `PutJobTagging` with an AWS SDK
 
 The following code examples show how to use `PutJobTagging`.
@@ -56,7 +60,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[PutJobTagging](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/putjobtagging.md)
+[PutJobTagging](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/PutJobTagging)
 in _AWS SDK for Java 2.x API Reference_.
 
 Python
@@ -96,7 +100,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 ```
 
 - For API details, see
-[PutJobTagging](../../../goto/boto3/s3control-2018-08-20/putjobtagging.md)
+[PutJobTagging](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/PutJobTagging)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

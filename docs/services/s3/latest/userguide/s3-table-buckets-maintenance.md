@@ -1,3 +1,7 @@
+---
+title: "Maintenance for table buckets"
+---
+
 # Maintenance for table buckets
 
 Amazon S3 offers maintenance operations to enhance the management and performance of your

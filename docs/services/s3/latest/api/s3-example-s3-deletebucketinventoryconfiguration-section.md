@@ -1,3 +1,7 @@
+---
+title: "Use DeleteBucketInventoryConfiguration with a CLI"
+---
+
 # Use `DeleteBucketInventoryConfiguration` with a CLI
 
 The following code examples show how to use `DeleteBucketInventoryConfiguration`.
@@ -47,7 +51,7 @@ Performing the operation "Remove-S3BucketInventoryConfiguration (DeleteBucketInv
 ```
 
 - For API details, see
-[DeleteBucketInventoryConfiguration](../../../powershell/v4/reference.md)
+[DeleteBucketInventoryConfiguration](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -71,7 +75,7 @@ Performing the operation "Remove-S3BucketInventoryConfiguration (DeleteBucketInv
 ```
 
 - For API details, see
-[DeleteBucketInventoryConfiguration](../../../powershell/v5/reference.md)
+[DeleteBucketInventoryConfiguration](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

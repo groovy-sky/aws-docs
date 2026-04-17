@@ -1,3 +1,7 @@
+---
+title: "Automate S3 Object Lambda setup with a CloudFormation template"
+---
+
 # Automate S3 Object Lambda setup with a CloudFormation template
 
 ###### Note

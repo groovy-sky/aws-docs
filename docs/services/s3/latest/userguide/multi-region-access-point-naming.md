@@ -1,3 +1,7 @@
+---
+title: "Rules for naming Amazon S3 Multi-Region Access Points"
+---
+
 # Rules for naming Amazon S3 Multi-Region Access Points
 
 When you create a Multi-Region Access Point, you give it a name, which is a string that you choose. You

@@ -1,3 +1,7 @@
+---
+title: "Categorizing your objects using tags"
+---
+
 # Categorizing your objects using tags
 
 Use object tagging to categorize storage. Each tag is a key-value pair.

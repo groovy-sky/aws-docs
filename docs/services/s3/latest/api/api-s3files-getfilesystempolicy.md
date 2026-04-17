@@ -1,3 +1,7 @@
+---
+title: "GetFileSystemPolicy"
+---
+
 # GetFileSystemPolicy
 
 Returns the IAM resource policy of an S3 File System.
@@ -109,25 +113,25 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../goto/cli2/s3files-2025-05-05/getfilesystempolicy.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/s3files-2025-05-05/GetFileSystemPolicy)
 
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/s3files-2025-05-05/getfilesystempolicy.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3files-2025-05-05/GetFileSystemPolicy)
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3files-2025-05-05/getfilesystempolicy.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3files-2025-05-05/GetFileSystemPolicy)
 
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/s3files-2025-05-05/getfilesystempolicy.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/s3files-2025-05-05/GetFileSystemPolicy)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3files-2025-05-05/getfilesystempolicy.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3files-2025-05-05/GetFileSystemPolicy)
 
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/s3files-2025-05-05/getfilesystempolicy.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/s3files-2025-05-05/GetFileSystemPolicy)
 
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/s3files-2025-05-05/getfilesystempolicy.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/s3files-2025-05-05/GetFileSystemPolicy)
 
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/s3files-2025-05-05/getfilesystempolicy.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3files-2025-05-05/GetFileSystemPolicy)
 
-- [AWS SDK for Python](../../../goto/boto3/s3files-2025-05-05/getfilesystempolicy.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/s3files-2025-05-05/GetFileSystemPolicy)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3files-2025-05-05/getfilesystempolicy.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3files-2025-05-05/GetFileSystemPolicy)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

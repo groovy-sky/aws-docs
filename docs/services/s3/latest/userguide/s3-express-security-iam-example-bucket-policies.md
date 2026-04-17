@@ -1,3 +1,7 @@
+---
+title: "Example bucket policies for directory buckets"
+---
+
 # Example bucket policies for directory buckets
 
 This section provides example directory bucket policies. To use these policies, replace

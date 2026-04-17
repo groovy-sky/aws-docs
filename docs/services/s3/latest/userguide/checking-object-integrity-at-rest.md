@@ -1,3 +1,7 @@
+---
+title: "Checking object integrity for data at rest in Amazon S3"
+---
+
 # Checking object integrity for data at rest in Amazon S3
 
 If you need to verify the content of datasets stored in Amazon S3, the S3 Batch Operations [Compute checksum](batch-ops-compute-checksums.md) operation calculates both full object or composite checksums for

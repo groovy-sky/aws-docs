@@ -1,3 +1,7 @@
+---
+title: "Configuring an IAM role for S3 Batch Replication"
+---
+
 # Configuring an IAM role for S3 Batch Replication
 
 Because Amazon S3 Batch Replication is a type of Batch Operations job, you must create an

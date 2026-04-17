@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketAnalyticsConfiguration with a CLI"
+---
+
 # Use `GetBucketAnalyticsConfiguration` with a CLI
 
 The following code examples show how to use `GetBucketAnalyticsConfiguration`.
@@ -47,7 +51,7 @@ Get-S3BucketAnalyticsConfiguration -BucketName 'amzn-s3-demo-bucket' -AnalyticsI
 ```
 
 - For API details, see
-[GetBucketAnalyticsConfiguration](../../../powershell/v4/reference.md)
+[GetBucketAnalyticsConfiguration](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -61,7 +65,7 @@ Get-S3BucketAnalyticsConfiguration -BucketName 'amzn-s3-demo-bucket' -AnalyticsI
 ```
 
 - For API details, see
-[GetBucketAnalyticsConfiguration](../../../powershell/v5/reference.md)
+[GetBucketAnalyticsConfiguration](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "Reducing the cost of SSE-KMS with Amazon S3 Bucket Keys"
+---
+
 # Reducing the cost of SSE-KMS with Amazon S3 Bucket Keys
 
 Amazon S3 Bucket Keys reduce the cost of Amazon S3 server-side encryption with AWS Key Management Service (AWS KMS) keys

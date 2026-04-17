@@ -1,3 +1,7 @@
+---
+title: "Upload a stream of unknown size to an Amazon S3 object using an AWS SDK"
+---
+
 # Upload a stream of unknown size to an Amazon S3 object using an AWS SDK
 
 The following code examples show how to upload a stream of unknown size to an Amazon S3 object.

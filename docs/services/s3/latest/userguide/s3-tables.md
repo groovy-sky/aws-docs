@@ -1,3 +1,7 @@
+---
+title: "Working with Amazon S3 Tables and table buckets"
+---
+
 # Working with Amazon S3 Tables and table buckets
 
 Amazon S3 Tables provide S3 storage that’s optimized for analytics workloads, with features

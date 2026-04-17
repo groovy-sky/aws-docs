@@ -1,3 +1,7 @@
+---
+title: "Detect objects in images with Amazon Rekognition using an AWS SDK"
+---
+
 # Detect objects in images with Amazon Rekognition using an AWS SDK
 
 The following code examples show how to build an app that uses Amazon Rekognition to detect objects by category in images.

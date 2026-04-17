@@ -1,3 +1,7 @@
+---
+title: "Helper files for using Amazon S3 Storage Lens"
+---
+
 # Helper files for using Amazon S3 Storage Lens
 
 Use the following JSON files and its key inputs for your examples.

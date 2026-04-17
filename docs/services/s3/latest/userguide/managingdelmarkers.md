@@ -1,3 +1,7 @@
+---
+title: "Managing delete markers"
+---
+
 # Managing delete markers
 
 ## Configuring lifecycle to clean up expired delete markers automatically

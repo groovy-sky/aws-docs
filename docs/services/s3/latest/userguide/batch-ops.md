@@ -1,3 +1,7 @@
+---
+title: "Performing object operations in bulk with Batch Operations"
+---
+
 # Performing object operations in bulk with Batch Operations
 
 You can use S3 Batch Operations to perform large-scale batch operations on Amazon S3 objects. S3 Batch Operations

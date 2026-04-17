@@ -1,3 +1,7 @@
+---
+title: "Associate or disassociate your IAM Identity Center instance"
+---
+
 # Associate or disassociate your IAM Identity Center instance
 
 In Amazon S3 Access Grants, you can associate the AWS IAM Identity Center instance of your corporate identity

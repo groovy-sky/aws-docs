@@ -1,3 +1,7 @@
+---
+title: "Authenticating Requests: Using Query Parameters (AWS Signature Version 4)"
+---
+
 # Authenticating Requests: Using Query Parameters (AWS Signature Version 4)
 
 As described in the authentication overview (see [Authentication Methods](sig-v4-authenticating-requests.md#auth-methods-intro)), you can provide authentication information

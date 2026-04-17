@@ -1,3 +1,7 @@
+---
+title: "S3 on Outposts supported regions"
+---
+
 # S3 on Outposts supported regions
 
 S3 on Outposts is supported in the following AWS Regions.

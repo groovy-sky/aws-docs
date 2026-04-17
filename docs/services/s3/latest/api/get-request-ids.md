@@ -1,3 +1,7 @@
+---
+title: "Getting Amazon S3 request IDs for AWS Support"
+---
+
 # Getting Amazon S3 request IDs for AWS Support
 
 Whenever you contact AWS Support because you've encountered errors or unexpected behavior in

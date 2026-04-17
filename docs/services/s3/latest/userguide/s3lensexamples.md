@@ -1,3 +1,7 @@
+---
+title: "Working with Amazon S3 Storage Lens by using the console and API"
+---
+
 # Working with Amazon S3 Storage Lens by using the console and API
 
 Amazon S3 Storage Lens is a cloud-storage analytics feature that you can use to gain organization-wide

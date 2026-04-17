@@ -1,3 +1,7 @@
+---
+title: "List your access points for general purpose buckets"
+---
+
 # List your access points for general purpose buckets
 
 This section explains how to list your access points for general purpose buckets using the AWS Management Console, AWS Command Line Interface, or REST API.

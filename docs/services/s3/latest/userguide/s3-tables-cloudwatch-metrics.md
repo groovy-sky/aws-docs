@@ -1,3 +1,7 @@
+---
+title: "Monitoring metrics with Amazon CloudWatch"
+---
+
 # Monitoring metrics with Amazon CloudWatch
 
 You can use Amazon CloudWatch metrics to track performance, detect anomalies, and monitor the operational health of tables. There are several sets of CloudWatch metrics that you can use with S3 Tables.

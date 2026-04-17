@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting S3 Metadata"
+---
+
 # Troubleshooting S3 Metadata
 
 Use the following information to help you diagnose and fix common issues that you might encounter when

@@ -1,3 +1,7 @@
+---
+title: "Checking object integrity in Amazon S3"
+---
+
 # Checking object integrity in Amazon S3
 
 Amazon S3 provides a range of data protection capabilities throughout an object's storage

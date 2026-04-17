@@ -1,3 +1,7 @@
+---
+title: "SELECT command"
+---
+
 # SELECT command
 
 ###### Important

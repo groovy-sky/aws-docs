@@ -1,3 +1,7 @@
+---
+title: "Resource-based policies for S3 Tables"
+---
+
 # Resource-based policies for S3 Tables
 
 S3 Tables provides resource-based policies for managing access to table buckets and

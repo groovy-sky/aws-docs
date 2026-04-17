@@ -1,3 +1,7 @@
+---
+title: "Delete an Amazon S3 Storage Lens dashboard"
+---
+
 # Delete an Amazon S3 Storage Lens dashboard
 
 You can't delete the default dashboard. However, you can disable it. Before deleting a

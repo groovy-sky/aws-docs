@@ -1,3 +1,7 @@
+---
+title: "Object operations for access points for directory buckets"
+---
+
 # Object operations for access points for directory buckets
 
 You can use access points to access an object using the following S3 data operations.

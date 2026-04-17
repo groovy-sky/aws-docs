@@ -1,3 +1,7 @@
+---
+title: "Using S3 Intelligent-Tiering"
+---
+
 # Using S3 Intelligent-Tiering
 
 You can use the S3 Intelligent-Tiering storage class to automatically optimize storage costs.

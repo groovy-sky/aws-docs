@@ -1,3 +1,7 @@
+---
+title: "Track an Amazon S3 object upload or download using an AWS SDK"
+---
+
 # Track an Amazon S3 object upload or download using an AWS SDK
 
 The following code example shows how to track an Amazon S3 object upload or download.
@@ -105,9 +109,9 @@ Track the progress of a file download.
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [GetObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetObject)
 
-- [PutObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutObject)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

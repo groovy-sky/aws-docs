@@ -1,3 +1,7 @@
+---
+title: "S3 Tables maintenance job status"
+---
+
 # S3 Tables maintenance job status
 
 S3 Tables maintenance jobs run periodically for your S3 tables or table buckets.

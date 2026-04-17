@@ -1,3 +1,7 @@
+---
+title: "Meeting compliance requirements with S3 Replication Time Control"
+---
+
 # Meeting compliance requirements with S3 Replication Time Control
 
 S3 Replication Time Control (S3 RTC) helps you meet compliance or business requirements for data replication and

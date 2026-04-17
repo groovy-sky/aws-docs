@@ -1,3 +1,7 @@
+---
+title: "Sharing S3 on Outposts by using AWS RAM"
+---
+
 # Sharing S3 on Outposts by using AWS RAM
 
 Amazon S3 on Outposts supports sharing S3 capacity across multiple accounts within an

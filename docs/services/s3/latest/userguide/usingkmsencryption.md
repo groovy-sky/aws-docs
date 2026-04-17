@@ -1,3 +1,7 @@
+---
+title: "Using server-side encryption with AWS KMS keys (SSE-KMS)"
+---
+
 # Using server-side encryption with AWS KMS keys (SSE-KMS)
 
 ###### Important

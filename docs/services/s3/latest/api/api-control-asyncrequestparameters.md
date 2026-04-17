@@ -1,3 +1,7 @@
+---
+title: "AsyncRequestParameters"
+---
+
 # AsyncRequestParameters
 
 A container for the request parameters associated with an asynchronous request.
@@ -32,11 +36,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3control-2018-08-20/asyncrequestparameters.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3control-2018-08-20/AsyncRequestParameters)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/asyncrequestparameters.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/AsyncRequestParameters)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3control-2018-08-20/asyncrequestparameters.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3control-2018-08-20/AsyncRequestParameters)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

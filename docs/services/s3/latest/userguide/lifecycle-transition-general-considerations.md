@@ -1,3 +1,7 @@
+---
+title: "Transitioning objects using Amazon S3 Lifecycle"
+---
+
 # Transitioning objects using Amazon S3 Lifecycle
 
 You can add transition actions to an S3 Lifecycle configuration to tell Amazon S3 to move

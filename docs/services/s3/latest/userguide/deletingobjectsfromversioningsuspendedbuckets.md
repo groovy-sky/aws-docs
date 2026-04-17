@@ -1,3 +1,7 @@
+---
+title: "Deleting objects from versioning-suspended buckets"
+---
+
 # Deleting objects from versioning-suspended buckets
 
 You can delete objects from versioning-suspended buckets to remove an object with a

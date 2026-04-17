@@ -1,3 +1,7 @@
+---
+title: "Use CompleteMultipartUpload with an AWS SDK"
+---
+
 # Use `CompleteMultipartUpload` with an AWS SDK
 
 The following code example shows how to use `CompleteMultipartUpload`.
@@ -77,7 +81,7 @@ import static com.example.s3.util.S3DirectoryBucketUtils.multipartUploadForDirec
 ```
 
 - For API details, see
-[CompleteMultipartUpload](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/completemultipartupload.md)
+[CompleteMultipartUpload](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CompleteMultipartUpload)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "Using Select to Create Amazon SimpleDB Queries"
+---
+
 # Using Select to Create Amazon SimpleDB Queries
 
 This section describes `Select`, a function that takes query

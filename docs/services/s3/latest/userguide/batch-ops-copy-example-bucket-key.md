@@ -1,3 +1,7 @@
+---
+title: "Using Batch Operations to enable S3 Bucket Keys for SSE-KMS"
+---
+
 # Using Batch Operations to enable S3 Bucket Keys for SSE-KMS
 
 S3 Bucket Keys reduce the cost of server-side encryption with AWS Key Management Service (AWS KMS) (SSE-KMS) by

@@ -1,3 +1,7 @@
+---
+title: "Inserting vectors into a vector index"
+---
+
 # Inserting vectors into a vector index
 
 You can add vectors to a vector index with the [PutVectors](../api/api-s3vectorbuckets-putvectors.md) API operation. Each

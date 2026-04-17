@@ -1,3 +1,7 @@
+---
+title: "Granting access with SQL semantics"
+---
+
 # Granting access with SQL semantics
 
 You can grant permissions to tables by using SQL semantics in table and table bucket policies. Examples of SQL semantics you can use are `CREATE`, `INSERT`, `DELETE`, `UPDATE`, and `ALTER`. The following

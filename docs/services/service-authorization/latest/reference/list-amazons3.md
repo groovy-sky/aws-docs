@@ -1,3 +1,7 @@
+---
+title: "Actions, resources, and condition keys for Amazon S3"
+---
+
 # Actions, resources, and condition keys for Amazon S3
 
 Amazon S3 (service prefix: `s3`) provides the following service-specific resources, actions, and condition context keys for use in IAM permission policies.

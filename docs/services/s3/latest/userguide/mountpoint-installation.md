@@ -1,3 +1,7 @@
+---
+title: "Installing Mountpoint"
+---
+
 # Installing Mountpoint
 
 You can download and install prebuilt packages of Mountpoint for Amazon S3 by using the command line.

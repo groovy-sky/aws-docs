@@ -1,3 +1,7 @@
+---
+title: "BlockedEncryptionTypes"
+---
+
 # BlockedEncryptionTypes
 
 A bucket-level setting for Amazon S3 general purpose buckets used to prevent the upload of new objects encrypted with the specified server-side encryption type. For example, blocking an encryption type will block `PutObject`, `CopyObject`, `PostObject`, multipart upload, and replication requests to the bucket for objects with the specified encryption type. However, you can continue to read and list any pre-existing objects already encrypted with the specified encryption type. For more information, see [Blocking or unblocking SSE-C for a general purpose bucket](../userguide/blocking-unblocking-s3-c-encryption-gpb.md).
@@ -36,11 +40,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3-2006-03-01/blockedencryptiontypes.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/BlockedEncryptionTypes)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/blockedencryptiontypes.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/BlockedEncryptionTypes)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/blockedencryptiontypes.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/BlockedEncryptionTypes)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

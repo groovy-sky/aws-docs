@@ -1,3 +1,7 @@
+---
+title: "Use CreateMultipartUpload with an AWS SDK"
+---
+
 # Use `CreateMultipartUpload` with an AWS SDK
 
 The following code example shows how to use `CreateMultipartUpload`.
@@ -65,7 +69,7 @@ import static com.example.s3.util.S3DirectoryBucketUtils.deleteDirectoryBucket;
 ```
 
 - For API details, see
-[CreateMultipartUpload](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/createmultipartupload.md)
+[CreateMultipartUpload](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CreateMultipartUpload)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

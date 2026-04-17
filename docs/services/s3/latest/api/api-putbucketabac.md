@@ -1,3 +1,7 @@
+---
+title: "PutBucketAbac"
+---
+
 # PutBucketAbac
 
 Sets the attribute-based access control (ABAC) property of the general purpose bucket. You must have `s3:PutBucketABAC` permission to perform this action. When you enable ABAC, you can use tags for access control on your buckets. Additionally, when ABAC is enabled, you must use the [TagResource](api-control-tagresource.md) and [UntagResource](api-control-untagresource.md) actions to manage tags on your buckets. You can nolonger use the [PutBucketTagging](api-putbuckettagging.md) and [DeleteBucketTagging](api-deletebuckettagging.md) actions to tag your bucket. For more information, see [Enabling ABAC in general purpose buckets](../userguide/buckets-tagging-enable-abac.md).
@@ -80,25 +84,25 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../goto/cli2/s3-2006-03-01/putbucketabac.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/s3-2006-03-01/PutBucketAbac)
 
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/putbucketabac.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/PutBucketAbac)
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3-2006-03-01/putbucketabac.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/PutBucketAbac)
 
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/s3-2006-03-01/putbucketabac.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/s3-2006-03-01/PutBucketAbac)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putbucketabac.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutBucketAbac)
 
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/s3-2006-03-01/putbucketabac.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/s3-2006-03-01/PutBucketAbac)
 
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/s3-2006-03-01/putbucketabac.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/s3-2006-03-01/PutBucketAbac)
 
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/putbucketabac.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/PutBucketAbac)
 
-- [AWS SDK for Python](../../../goto/boto3/s3-2006-03-01/putbucketabac.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutBucketAbac)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/putbucketabac.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/PutBucketAbac)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

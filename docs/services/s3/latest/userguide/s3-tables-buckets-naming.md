@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 table bucket, table, and namespace naming rules"
+---
+
 # Amazon S3 table bucket, table, and namespace naming rules
 
 When you create a table bucket, you choose a bucket name and AWS Region, the name must be unique

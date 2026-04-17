@@ -1,3 +1,7 @@
+---
+title: "Using S3 Replication metrics"
+---
+
 # Using S3 Replication metrics
 
 S3 Replication metrics provide detailed metrics for the replication rules in your replication

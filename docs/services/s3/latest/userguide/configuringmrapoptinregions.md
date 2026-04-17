@@ -1,3 +1,7 @@
+---
+title: "Configuring Multi-Region Access Point opt-in Regions"
+---
+
 # Configuring Multi-Region Access Point opt-in Regions
 
 An AWS opt-in Region is a Region that isn’t enabled by default in your AWS

@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Batch-transcoding videos with S3 Batch Operations"
+---
+
 # Tutorial: Batch-transcoding videos with S3 Batch Operations
 
 Video consumers use devices of all shapes, sizes, and vintages to enjoy media content.

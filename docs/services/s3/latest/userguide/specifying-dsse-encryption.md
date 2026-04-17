@@ -1,3 +1,7 @@
+---
+title: "Specifying dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)"
+---
+
 # Specifying dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)
 
 You can apply encryption when you are either uploading a new object or copying an existing

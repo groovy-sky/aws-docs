@@ -1,3 +1,7 @@
+---
+title: "Replication configuration file elements"
+---
+
 # Replication configuration file elements
 
 Amazon S3 stores a replication configuration as XML. If you're configuring replication

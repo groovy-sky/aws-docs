@@ -1,3 +1,7 @@
+---
+title: "CloudTrail log file examples for directory buckets"
+---
+
 # CloudTrail log file examples for directory buckets
 
 A CloudTrail log file includes information about the requested API operation, the date and

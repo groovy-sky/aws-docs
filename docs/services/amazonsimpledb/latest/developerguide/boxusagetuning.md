@@ -1,3 +1,7 @@
+---
+title: "Tuning Your Queries Using Composite Attributes"
+---
+
 # Tuning Your Queries Using Composite Attributes
 
 Careful implementation of attributes can increase the efficiency of query

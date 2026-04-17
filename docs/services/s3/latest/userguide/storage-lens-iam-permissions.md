@@ -1,3 +1,7 @@
+---
+title: "Setting Amazon S3 Storage Lens permissions"
+---
+
 # Setting Amazon S3 Storage Lens permissions
 
 Amazon S3 Storage Lens requires new permissions in AWS Identity and Access Management (IAM) to authorize access to S3 Storage Lens

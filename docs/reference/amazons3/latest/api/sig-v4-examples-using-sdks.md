@@ -1,3 +1,7 @@
+---
+title: "Examples: Signature Calculations in AWS Signature Version 4"
+---
+
 # Examples: Signature Calculations in AWS Signature Version 4
 
 ###### Topics

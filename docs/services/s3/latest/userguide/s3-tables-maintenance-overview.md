@@ -1,3 +1,7 @@
+---
+title: "S3 Tables maintenance"
+---
+
 # S3 Tables maintenance
 
 Amazon S3 automatically performs maintenance to enhance the performance of your tables in S3

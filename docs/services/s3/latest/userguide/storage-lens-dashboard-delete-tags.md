@@ -1,3 +1,7 @@
+---
+title: "Deleting AWS resource tags from a S3 Storage Lens dashboard"
+---
+
 # Deleting AWS resource tags from a S3 Storage Lens dashboard
 
 The following examples demonstrate how to delete AWS resource tags from an existing Storage

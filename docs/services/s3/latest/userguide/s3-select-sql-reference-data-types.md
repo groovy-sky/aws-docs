@@ -1,3 +1,7 @@
+---
+title: "Data types"
+---
+
 # Data types
 
 ###### Important

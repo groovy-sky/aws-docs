@@ -1,3 +1,7 @@
+---
+title: "Mount an Amazon S3 bucket as a local file system"
+---
+
 # Mount an Amazon S3 bucket as a local file system
 
 Mountpoint for Amazon S3 is a high-throughput open source file client for mounting an Amazon S3 bucket as a

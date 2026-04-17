@@ -1,3 +1,7 @@
+---
+title: "Deleting a tag from an access point for directory buckets"
+---
+
 # Deleting a tag from an access point for directory buckets
 
 You can remove tags from Access Points for directory buckets. For additional information, see [Using tags with S3 Access Points for directory buckets](access-points-db-tagging.md).

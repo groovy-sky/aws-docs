@@ -1,3 +1,7 @@
+---
+title: "Creating a CloudWatch metrics configuration for all the objects in your bucket"
+---
+
 # Creating a CloudWatch metrics configuration for all the objects in your bucket
 
 When you configure request metrics, you can create a CloudWatch metrics configuration

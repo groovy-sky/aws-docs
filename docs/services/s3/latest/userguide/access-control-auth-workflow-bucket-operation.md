@@ -1,3 +1,7 @@
+---
+title: "How Amazon S3 authorizes a request for a bucket operation"
+---
+
 # How Amazon S3 authorizes a request for a bucket operation
 
 When Amazon S3 receives a request for a bucket operation, Amazon S3 converts all the relevant

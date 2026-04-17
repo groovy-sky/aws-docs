@@ -1,3 +1,7 @@
+---
+title: "Virtual hosting of general purpose buckets"
+---
+
 # Virtual hosting of general purpose buckets
 
 Virtual hosting is the practice of serving multiple websites from a single web server. One

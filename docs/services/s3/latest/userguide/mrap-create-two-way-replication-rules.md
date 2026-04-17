@@ -1,3 +1,7 @@
+---
+title: "Create two-way replication rules for your Multi-Region Access Point"
+---
+
 # Create two-way replication rules for your Multi-Region Access Point
 
 Replication rules enable automatic and asynchronous copying of objects across buckets.

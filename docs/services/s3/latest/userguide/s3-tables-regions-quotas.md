@@ -1,3 +1,7 @@
+---
+title: "S3 Tables AWS Regions, endpoints, and service quotas"
+---
+
 # S3 Tables AWS Regions, endpoints, and service quotas
 
 The following sections include the supported AWS Regions and service quotas for

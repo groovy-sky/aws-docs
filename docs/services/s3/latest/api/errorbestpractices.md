@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 error best practices"
+---
+
 # Amazon S3 error best practices
 
 Many error responses contain additional structured data meant to be read and

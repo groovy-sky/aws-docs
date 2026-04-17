@@ -1,3 +1,7 @@
+---
+title: "Vector bucket naming rules"
+---
+
 # Vector bucket naming rules
 
 Vector bucket names must follow specific naming conventions to ensure uniqueness

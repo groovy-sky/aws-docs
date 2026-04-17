@@ -1,3 +1,7 @@
+---
+title: "Setting and monitoring default encryption for directory buckets"
+---
+
 # Setting and monitoring default encryption for directory buckets
 
 Amazon S3 buckets have bucket encryption enabled by default, and new objects are automatically

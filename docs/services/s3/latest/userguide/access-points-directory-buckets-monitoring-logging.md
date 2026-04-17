@@ -1,3 +1,7 @@
+---
+title: "Monitoring and logging access points for directory buckets"
+---
+
 # Monitoring and logging access points for directory buckets
 
 You can log requests made through access points and requests made to the APIs that

@@ -1,3 +1,7 @@
+---
+title: "Using Amazon S3 Storage Lens to optimize your storage costs"
+---
+
 # Using Amazon S3 Storage Lens to optimize your storage costs
 
 You can use S3 Storage Lens cost-optimization metrics to reduce the overall cost of your S3

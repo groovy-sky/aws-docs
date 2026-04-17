@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Configuring a static website using a custom domain registered with Route 53"
+---
+
 # Tutorial: Configuring a static website using a custom domain registered with Route 53
 
 Suppose that you want to host a static website on Amazon S3. You've registered a domain with

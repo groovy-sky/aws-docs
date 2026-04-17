@@ -1,3 +1,7 @@
+---
+title: "Data protection and encryption"
+---
+
 # Data protection and encryption
 
 For more information about how you can configure encryption for directory buckets, see

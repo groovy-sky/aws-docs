@@ -1,3 +1,7 @@
+---
+title: "Authenticating Requests (AWS Signature Version 4)"
+---
+
 # Authenticating Requests (AWS Signature Version 4)
 
 ###### Topics

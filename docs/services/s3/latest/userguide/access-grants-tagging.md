@@ -1,3 +1,7 @@
+---
+title: "Managing tags for S3 Access Grants"
+---
+
 # Managing tags for S3 Access Grants
 
 Tags in Amazon S3 Access Grants have similar characteristics to [object tags](object-tagging.md) in Amazon S3. Each

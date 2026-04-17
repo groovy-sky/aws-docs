@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Multi-Region Access Points failover controls"
+---
+
 # Amazon S3 Multi-Region Access Points failover controls
 
 With

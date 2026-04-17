@@ -1,3 +1,7 @@
+---
+title: "Cleaning up your example resources"
+---
+
 # Cleaning up your example resources
 
 If you created your static website as a learning exercise, you should delete the AWS

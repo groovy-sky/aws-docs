@@ -1,3 +1,7 @@
+---
+title: "Save EXIF and other image information using an AWS SDK"
+---
+
 # Save EXIF and other image information using an AWS SDK
 
 The following code example shows how to:

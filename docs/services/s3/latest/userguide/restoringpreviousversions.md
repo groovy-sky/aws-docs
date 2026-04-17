@@ -1,3 +1,7 @@
+---
+title: "Restoring previous versions"
+---
+
 # Restoring previous versions
 
 You can use versioning to retrieve previous versions of an object. There are two

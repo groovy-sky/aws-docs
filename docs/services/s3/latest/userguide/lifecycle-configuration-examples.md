@@ -1,3 +1,7 @@
+---
+title: "Examples of S3 Lifecycle configurations"
+---
+
 # Examples of S3 Lifecycle configurations
 
 This section provides examples of S3 Lifecycle configuration. Each example shows how you

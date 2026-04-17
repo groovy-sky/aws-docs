@@ -1,3 +1,7 @@
+---
+title: "Grantee"
+---
+
 # Grantee
 
 The user, group, or role to which you are granting access. You can grant access to an IAM user or role. If you have added your corporate directory to AWS IAM Identity Center and associated your Identity Center instance with your S3 Access Grants instance, the grantee can also be a corporate directory user or group.
@@ -32,11 +36,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3control-2018-08-20/grantee.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3control-2018-08-20/Grantee)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/grantee.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/Grantee)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3control-2018-08-20/grantee.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3control-2018-08-20/Grantee)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

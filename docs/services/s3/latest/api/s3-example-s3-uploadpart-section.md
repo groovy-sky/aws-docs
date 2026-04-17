@@ -1,3 +1,7 @@
+---
+title: "Use UploadPart with an AWS SDK or CLI"
+---
+
 # Use `UploadPart` with an AWS SDK or CLI
 
 The following code examples show how to use `UploadPart`.
@@ -79,7 +83,7 @@ Aws::S3::Model::UploadPartOutcome AwsDoc::S3::uploadPart(const Aws::String &buck
 ```
 
 - For API details, see
-[UploadPart](../../../../reference/goto/sdkforcpp/s3-2006-03-01/uploadpart.md)
+[UploadPart](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/UploadPart)
 in _AWS SDK for C++ API Reference_.
 
 CLI

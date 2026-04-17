@@ -1,3 +1,7 @@
+---
+title: "Setting Object Ownership when you create a bucket"
+---
+
 # Setting Object Ownership when you create a bucket
 
 When you create a bucket, you can configure S3 Object Ownership. To set

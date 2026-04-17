@@ -1,3 +1,7 @@
+---
+title: "Viewing directory bucket tags"
+---
+
 # Viewing directory bucket tags
 
 You can view or list tags applied to S3 directory buckets. For more information about tags, see [Using tags with S3 directory buckets](directory-buckets-tagging.md).

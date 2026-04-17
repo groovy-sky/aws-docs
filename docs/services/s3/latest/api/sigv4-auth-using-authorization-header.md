@@ -1,3 +1,7 @@
+---
+title: "Authenticating Requests: Using the Authorization Header (AWS Signature Version 4)"
+---
+
 # Authenticating Requests: Using the Authorization Header (AWS Signature Version 4)
 
 ###### Topics

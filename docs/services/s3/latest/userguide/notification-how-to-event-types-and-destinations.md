@@ -1,3 +1,7 @@
+---
+title: "Event notification types and destinations"
+---
+
 # Event notification types and destinations
 
 Amazon S3 supports several event notification types and destinations where the

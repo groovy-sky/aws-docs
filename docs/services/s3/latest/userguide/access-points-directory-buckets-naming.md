@@ -1,3 +1,7 @@
+---
+title: "Referencing access points for directory buckets"
+---
+
 # Referencing access points for directory buckets
 
 After you create an access point, you can use it as an endpoint to preform object operations.

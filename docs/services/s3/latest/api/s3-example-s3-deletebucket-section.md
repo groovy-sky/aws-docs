@@ -1,3 +1,7 @@
+---
+title: "Use DeleteBucket with an AWS SDK or CLI"
+---
+
 # Use `DeleteBucket` with an AWS SDK or CLI
 
 The following code examples show how to use `DeleteBucket`.
@@ -7,7 +11,11 @@ context in the following code examples:
 
 - [Learn the basics](s3-example-s3-scenario-gettingstarted-section.md)
 
-- [Get started with S3](s3-example-s3-gettingstarted-section.md)
+- [Getting started with Amazon S3](s3-example-s3-gettingstarted-section.md)
+
+- [Getting started with Amazon SageMaker Feature Store](s3-example-iam-gettingstarted-028-section.md)
+
+- [Getting started with Config](s3-example-config-service-gettingstarted-053-section.md)
 
 .NET
 
@@ -46,7 +54,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DeleteBucket](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/deletebucket.md)
+[DeleteBucket](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/DeleteBucket)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -99,7 +107,7 @@ function delete_bucket() {
 ```
 
 - For API details, see
-[DeleteBucket](../../../goto/aws-cli/s3-2006-03-01/deletebucket.md)
+[DeleteBucket](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/DeleteBucket)
 in _AWS CLI Command Reference_.
 
 C++
@@ -139,7 +147,7 @@ bool AwsDoc::S3::deleteBucket(const Aws::String &bucketName,
 ```
 
 - For API details, see
-[DeleteBucket](../../../../reference/goto/sdkforcpp/s3-2006-03-01/deletebucket.md)
+[DeleteBucket](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/DeleteBucket)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -263,7 +271,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[DeleteBucket](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deletebucket.md)
+[DeleteBucket](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteBucket)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -322,7 +330,7 @@ export const main = async ({ bucketName }) => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/s3-example-creating-buckets.md#s3-example-deleting-buckets).
 
 - For API details, see
-[DeleteBucket](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/deletebucketcommand.md)
+[DeleteBucket](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/DeleteBucketCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PHP
@@ -354,7 +362,7 @@ Delete an empty bucket.
 ```
 
 - For API details, see
-[DeleteBucket](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/deletebucket.md)
+[DeleteBucket](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/DeleteBucket)
 in _AWS SDK for PHP API Reference_.
 
 PowerShell
@@ -370,7 +378,7 @@ Remove-S3Bucket -BucketName amzn-s3-demo-bucket -DeleteBucketContent
 ```
 
 - For API details, see
-[DeleteBucket](../../../powershell/v4/reference.md)
+[DeleteBucket](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -384,7 +392,7 @@ Remove-S3Bucket -BucketName amzn-s3-demo-bucket -DeleteBucketContent
 ```
 
 - For API details, see
-[DeleteBucket](../../../powershell/v5/reference.md)
+[DeleteBucket](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -425,7 +433,7 @@ class BucketWrapper:
 ```
 
 - For API details, see
-[DeleteBucket](../../../goto/boto3/s3-2006-03-01/deletebucket.md)
+[DeleteBucket](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteBucket)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -460,7 +468,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/r
 ```
 
 - For API details, see
-[DeleteBucket](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/deletebucket.md)
+[DeleteBucket](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/DeleteBucket)
 in _AWS SDK for Ruby API Reference_.
 
 Rust

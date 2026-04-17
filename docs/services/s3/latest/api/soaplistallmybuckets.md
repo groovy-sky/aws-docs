@@ -1,3 +1,7 @@
+---
+title: "ListAllMyBuckets (SOAP API)"
+---
+
 # ListAllMyBuckets (SOAP API)
 
 ###### Note

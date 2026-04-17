@@ -1,3 +1,7 @@
+---
+title: "Managing object tags"
+---
+
 # Managing object tags
 
 This section explains how you can manage object tags using the AWS SDKs for

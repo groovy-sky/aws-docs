@@ -1,3 +1,7 @@
+---
+title: "Example 2: Bucket owner granting cross-account bucket permissions"
+---
+
 # Example 2: Bucket owner granting cross-account bucket permissions
 
 ###### Important

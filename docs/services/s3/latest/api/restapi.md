@@ -1,3 +1,7 @@
+---
+title: "Making requests using the REST API"
+---
+
 # Making requests using the REST API
 
 This section contains information on how to make requests to Amazon S3 endpoints by using the

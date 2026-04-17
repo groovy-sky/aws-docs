@@ -1,3 +1,7 @@
+---
+title: "Managing access to a table or database with Lake Formation"
+---
+
 # Managing access to a table or database with Lake Formation
 
 If your table buckets are integrated with the AWS analytics service using Lake Formation, then Lake Formation manages access

@@ -1,3 +1,7 @@
+---
+title: "Concepts for directory buckets in Local Zones"
+---
+
 # Concepts for directory buckets in Local Zones
 
 Before creating a directory bucket in a Local Zone, you must have the Local Zone ID where you want to create a bucket. You can find all Local Zone information by using the

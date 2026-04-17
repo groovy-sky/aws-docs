@@ -1,3 +1,7 @@
+---
+title: "Logging with AWS CloudTrail for directory buckets"
+---
+
 # Logging with AWS CloudTrail for directory buckets
 
 Amazon S3 is integrated with AWS CloudTrail, a service that provides a record of actions

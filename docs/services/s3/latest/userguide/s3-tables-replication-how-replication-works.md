@@ -1,3 +1,7 @@
+---
+title: "How S3 Tables replication works"
+---
+
 # How S3 Tables replication works
 
 S3 Tables replication creates read-only replicas of your Apache Iceberg tables across Regions

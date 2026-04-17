@@ -1,3 +1,7 @@
+---
+title: "Making requests to S3 Tables over IPv6"
+---
+
 # Making requests to S3 Tables over IPv6
 
 Amazon S3 supports the ability to access S3 buckets using the Internet Protocol version 6 (IPv6), in addition to the IPv4 protocol, using dual-stack endpoints. Dual-stack endpoints resolve to either an IPv6 endpoint or IPv4 endpoint depending on what your network supports.

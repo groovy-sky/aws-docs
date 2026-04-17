@@ -1,3 +1,7 @@
+---
+title: "Disabling trusted access for S3 Storage Lens"
+---
+
 # Disabling trusted access for S3 Storage Lens
 
 Removing an account as a delegated administrator or disabling trusted access limits the

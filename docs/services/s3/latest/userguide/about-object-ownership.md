@@ -1,3 +1,7 @@
+---
+title: "Controlling ownership of objects and disabling ACLs for your bucket"
+---
+
 # Controlling ownership of objects and disabling ACLs for your bucket
 
 S3 Object Ownership is an Amazon S3 bucket-level setting that you can use to control ownership

@@ -1,3 +1,7 @@
+---
+title: "Managing S3 Tables replication"
+---
+
 # Managing S3 Tables replication
 
 After you configure S3 Tables replication, you can monitor replica status to verify what's

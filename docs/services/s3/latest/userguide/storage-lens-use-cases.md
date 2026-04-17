@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Storage Lens metrics use cases"
+---
+
 # Amazon S3 Storage Lens metrics use cases
 
 You can use your Amazon S3 Storage Lens dashboard to visualize insights and trends, flag outliers,

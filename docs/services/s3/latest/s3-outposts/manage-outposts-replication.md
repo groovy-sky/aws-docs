@@ -1,3 +1,7 @@
+---
+title: "Managing your replication"
+---
+
 # Managing your replication
 
 This section describes additional replication configuration options that are available in

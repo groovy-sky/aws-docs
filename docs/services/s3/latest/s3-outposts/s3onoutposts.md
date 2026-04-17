@@ -1,3 +1,7 @@
+---
+title: "What is Amazon S3 on Outposts?"
+---
+
 # What is Amazon S3 on Outposts?
 
 AWS Outposts is a fully managed service that offers the same AWS infrastructure, AWS

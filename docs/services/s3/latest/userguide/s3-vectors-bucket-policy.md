@@ -1,3 +1,7 @@
+---
+title: "Managing vector bucket policies"
+---
+
 # Managing vector bucket policies
 
 Vector bucket policies are resource-based policies that you attach directly to vector buckets to control access to the bucket and its contents. You can add, view, edit, delete

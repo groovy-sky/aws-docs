@@ -1,3 +1,7 @@
+---
+title: "Using Amazon S3 Storage Lens with AWS Organizations"
+---
+
 # Using Amazon S3 Storage Lens with AWS Organizations
 
 Amazon S3 Storage Lens is a cloud-storage analytics feature that you can use to gain organization-wide

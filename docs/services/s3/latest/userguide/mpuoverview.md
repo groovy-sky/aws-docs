@@ -1,3 +1,7 @@
+---
+title: "Uploading and copying objects using multipart upload in Amazon S3"
+---
+
 # Uploading and copying objects using multipart upload in Amazon S3
 
 Multipart upload allows you to upload a single object to Amazon S3 as a set of parts. Each part is a
@@ -164,7 +168,7 @@ retrieve the checksum value in the following ways:
 individual parts of multipart uploads while they're still in process, you can use [`ListParts`](../api/api-listparts.md).
 
 - For the entire object, you can use [`PutObject`](../api/api-putobject.md). If you want
-to perform a multipart upload with a full object checksum, use [`CreateMultipartUpload`](../api/api-createmultipartupload.md) and [`CompleteMultipartUpload`](../api/api-completemultipartupload.md) by specifying the full object checksum
+to perform a multipart upload with a full object checksum, use [`CreateMultipartUpload`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateMultipartUpload) and [`CompleteMultipartUpload`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload) by specifying the full object checksum
 type. To validate the checksum value of the entire object or to confirm which checksum
 type is being used in the multipart upload, use [`ListParts`](../api/api-listparts.md).
 

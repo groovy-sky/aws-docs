@@ -1,3 +1,7 @@
+---
+title: "General purpose bucket quotas, limitations, and restrictions"
+---
+
 # General purpose bucket quotas, limitations, and restrictions
 
 An Amazon S3 general purpose bucket is owned by the AWS account that created it. Bucket ownership is not

@@ -1,3 +1,7 @@
+---
+title: "Querying metadata tables with open-source query engines"
+---
+
 # Querying metadata tables with open-source query engines
 
 You can query your S3 managed metadata tables by using open-source query engines, such as

@@ -1,3 +1,7 @@
+---
+title: "Use DeleteObject with an AWS SDK or CLI"
+---
+
 # Use `DeleteObject` with an AWS SDK or CLI
 
 The following code examples show how to use `DeleteObject`.
@@ -173,7 +177,7 @@ Delete an object in a versioned S3 bucket.
 ```
 
 - For API details, see
-[DeleteObject](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/deleteobject.md)
+[DeleteObject](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/DeleteObject)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -229,7 +233,7 @@ function delete_item_in_bucket() {
 ```
 
 - For API details, see
-[DeleteObject](../../../goto/aws-cli/s3-2006-03-01/deleteobject.md)
+[DeleteObject](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/DeleteObject)
 in _AWS CLI Command Reference_.
 
 C++
@@ -270,7 +274,7 @@ bool AwsDoc::S3::deleteObject(const Aws::String &objectKey,
 ```
 
 - For API details, see
-[DeleteObject](../../../../reference/goto/sdkforcpp/s3-2006-03-01/deleteobject.md)
+[DeleteObject](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/DeleteObject)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -424,7 +428,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[DeleteObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deleteobject.md)
+[DeleteObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteObject)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -492,7 +496,7 @@ export const main = async ({ bucketName, key }) => {
 ```
 
 - For API details, see
-[DeleteObject](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/deleteobjectcommand.md)
+[DeleteObject](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/DeleteObjectCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PHP
@@ -527,7 +531,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 ```
 
 - For API details, see
-[DeleteObject](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/deleteobject.md)
+[DeleteObject](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/DeleteObject)
 in _AWS SDK for PHP API Reference_.
 
 Python
@@ -791,7 +795,7 @@ def lambda_handler(event, context):
 ```
 
 - For API details, see
-[DeleteObject](../../../goto/boto3/s3-2006-03-01/deleteobject.md)
+[DeleteObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteObject)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Rust

@@ -1,3 +1,7 @@
+---
+title: "Creating a Batch Operations job with job tags used for labeling"
+---
+
 # Creating a Batch Operations job with job tags used for labeling
 
 You can label and control access to your Amazon S3 Batch Operations jobs by adding

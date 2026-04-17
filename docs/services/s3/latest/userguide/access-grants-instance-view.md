@@ -1,3 +1,7 @@
+---
+title: "Get the details of an S3 Access Grants instance"
+---
+
 # Get the details of an S3 Access Grants instance
 
 You can get the details of your Amazon S3 Access Grants instance in a particular AWS Region. You can get the details of your S3 Access Grants instance by using the

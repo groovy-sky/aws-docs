@@ -1,3 +1,7 @@
+---
+title: "Using HeadBucket to determine if an S3 on Outposts bucket exists and you have access permissions"
+---
+
 # Using HeadBucket to determine if an S3 on Outposts bucket exists and you have access permissions
 
 Objects are the fundamental entities stored in Amazon S3 on Outposts. Every object is contained in a bucket.

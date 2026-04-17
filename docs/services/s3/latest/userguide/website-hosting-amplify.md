@@ -1,3 +1,7 @@
+---
+title: "Deploying a static website to AWS Amplify Hosting from an S3 general purpose bucket"
+---
+
 # Deploying a static website to AWS Amplify Hosting from an S3 general purpose bucket
 
 We recommend that you use [AWS Amplify Hosting](../../../amplify/latest/userguide/welcome.md)

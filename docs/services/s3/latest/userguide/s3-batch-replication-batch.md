@@ -1,3 +1,7 @@
+---
+title: "Replicating existing objects with Batch Replication"
+---
+
 # Replicating existing objects with Batch Replication
 
 S3 Batch Replication differs from live replication, which continuously and automatically

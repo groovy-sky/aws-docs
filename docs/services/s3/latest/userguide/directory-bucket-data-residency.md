@@ -1,3 +1,7 @@
+---
+title: "Data residency workloads"
+---
+
 # Data residency workloads
 
 AWS Dedicated Local Zones (Dedicated Local Zones) are a type of AWS Infrastructure that are fully managed by AWS,

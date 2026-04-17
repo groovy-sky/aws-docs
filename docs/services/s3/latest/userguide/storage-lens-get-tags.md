@@ -1,3 +1,7 @@
+---
+title: "Retrieve AWS resource tags for a Storage Lens dashboard"
+---
+
 # Retrieve AWS resource tags for a Storage Lens dashboard
 
 The following examples demonstrate how to retrieve AWS resource tags for a S3 Storage Lens

@@ -1,3 +1,7 @@
+---
+title: "Enabling CloudWatch publishing for S3 Storage Lens"
+---
+
 # Enabling CloudWatch publishing for S3 Storage Lens
 
 You can publish S3 Storage Lens metrics to Amazon CloudWatch to create a unified view of your

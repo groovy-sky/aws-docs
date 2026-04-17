@@ -1,3 +1,7 @@
+---
+title: "Lifecycle configuration elements"
+---
+
 # Lifecycle configuration elements
 
 A S3 Lifecycle configuration consist of Lifecycle rules that include various elements that describe the actions Amazon S3 takes during an object's lifetime. Each S3 bucket can have one lifecycle configuration assigned to it, which can contain up to 1,000 rules. You specify an Amazon S3 Lifecycle configuration as XML, consisting of one or more

@@ -1,3 +1,7 @@
+---
+title: "Discovering your data with S3 Metadata tables"
+---
+
 # Discovering your data with S3 Metadata tables
 
 Amazon S3 Metadata accelerates data discovery by automatically capturing metadata for objects in your

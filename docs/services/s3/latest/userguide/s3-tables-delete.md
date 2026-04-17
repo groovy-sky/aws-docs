@@ -1,3 +1,7 @@
+---
+title: "Deleting an Amazon S3 table"
+---
+
 # Deleting an Amazon S3 table
 
 You can delete a table by using the Amazon S3 REST API, AWS SDKs, AWS Command Line Interface (AWS CLI), or by using

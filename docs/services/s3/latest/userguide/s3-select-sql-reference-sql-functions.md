@@ -1,3 +1,7 @@
+---
+title: "SQL functions"
+---
+
 # SQL functions
 
 ###### Important

@@ -1,3 +1,7 @@
+---
+title: "Controlling access from VPC endpoints with bucket policies"
+---
+
 # Controlling access from VPC endpoints with bucket policies
 
 You can use Amazon S3 bucket policies to control access to buckets from specific virtual private cloud (VPC)

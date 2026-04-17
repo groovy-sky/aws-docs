@@ -1,3 +1,7 @@
+---
+title: "Default SSE-C setting for new buckets FAQ"
+---
+
 # Default SSE-C setting for new buckets FAQ
 
 ###### Important

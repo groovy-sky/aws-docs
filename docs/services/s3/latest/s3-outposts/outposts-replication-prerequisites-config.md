@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for creating replication rules"
+---
+
 # Prerequisites for creating replication rules
 
 ###### Topics

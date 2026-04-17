@@ -1,3 +1,7 @@
+---
+title: "Work with Amazon S3 object lock features using an AWS SDK"
+---
+
 # Work with Amazon S3 object lock features using an AWS SDK
 
 The following code examples show how to work with S3 object lock features.
@@ -859,17 +863,17 @@ public class S3ActionsWrapper
 
 - For API details, see the following topics in _AWS SDK for .NET API Reference_.
 
-- [GetObjectLegalHold](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getobjectlegalhold.md)
+- [GetObjectLegalHold](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetObjectLegalHold)
 
-- [GetObjectLockConfiguration](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getobjectlockconfiguration.md)
+- [GetObjectLockConfiguration](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetObjectLockConfiguration)
 
-- [GetObjectRetention](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getobjectretention.md)
+- [GetObjectRetention](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetObjectRetention)
 
-- [PutObjectLegalHold](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putobjectlegalhold.md)
+- [PutObjectLegalHold](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutObjectLegalHold)
 
-- [PutObjectLockConfiguration](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putobjectlockconfiguration.md)
+- [PutObjectLockConfiguration](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutObjectLockConfiguration)
 
-- [PutObjectRetention](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putobjectretention.md)
+- [PutObjectRetention](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutObjectRetention)
 
 Go
 
@@ -2533,17 +2537,17 @@ public class S3LockActions {
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [GetObjectLegalHold](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getobjectlegalhold.md)
+- [GetObjectLegalHold](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetObjectLegalHold)
 
-- [GetObjectLockConfiguration](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getobjectlockconfiguration.md)
+- [GetObjectLockConfiguration](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetObjectLockConfiguration)
 
-- [GetObjectRetention](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getobjectretention.md)
+- [GetObjectRetention](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetObjectRetention)
 
-- [PutObjectLegalHold](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putobjectlegalhold.md)
+- [PutObjectLegalHold](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutObjectLegalHold)
 
-- [PutObjectLockConfiguration](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putobjectlockconfiguration.md)
+- [PutObjectLockConfiguration](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutObjectLockConfiguration)
 
-- [PutObjectRetention](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putobjectretention.md)
+- [PutObjectRetention](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutObjectRetention)
 
 JavaScript
 
@@ -3576,17 +3580,17 @@ export { confirmCleanup, cleanupAction };
 
 - For API details, see the following topics in _AWS SDK for JavaScript API Reference_.
 
-- [GetObjectLegalHold](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getobjectlegalholdcommand.md)
+- [GetObjectLegalHold](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/GetObjectLegalHoldCommand)
 
-- [GetObjectLockConfiguration](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getobjectlockconfigurationcommand.md)
+- [GetObjectLockConfiguration](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/GetObjectLockConfigurationCommand)
 
-- [GetObjectRetention](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getobjectretentioncommand.md)
+- [GetObjectRetention](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/GetObjectRetentionCommand)
 
-- [PutObjectLegalHold](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/putobjectlegalholdcommand.md)
+- [PutObjectLegalHold](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/PutObjectLegalHoldCommand)
 
-- [PutObjectLockConfiguration](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/putobjectlockconfigurationcommand.md)
+- [PutObjectLockConfiguration](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/PutObjectLockConfigurationCommand)
 
-- [PutObjectRetention](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/putobjectretentioncommand.md)
+- [PutObjectRetention](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/PutObjectRetentionCommand)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).
@@ -3594,7 +3598,7 @@ This topic also includes information about getting started and details about pre
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Get started with tags
+Getting started with Config
 
 Make conditional requests
 

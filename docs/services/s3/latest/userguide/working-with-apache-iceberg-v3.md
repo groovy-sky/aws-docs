@@ -1,3 +1,7 @@
+---
+title: "Working with Apache Iceberg V3"
+---
+
 # Working with Apache Iceberg V3
 
 Apache Iceberg Version 3 (V3) is the latest version of the Apache Iceberg table format

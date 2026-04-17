@@ -1,3 +1,7 @@
+---
+title: "Use CopyObject with an AWS SDK or CLI"
+---
+
 # Use `CopyObject` with an AWS SDK or CLI
 
 The following code examples show how to use `CopyObject`.
@@ -9,7 +13,7 @@ context in the following code examples:
 
 - [Get started with encryption](s3-example-s3-encryption-section.md)
 
-- [Get started with S3](s3-example-s3-gettingstarted-section.md)
+- [Getting started with Amazon S3](s3-example-s3-gettingstarted-section.md)
 
 - [Make conditional requests](s3-example-s3-scenario-conditionalrequests-section.md)
 
@@ -63,7 +67,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[CopyObject](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/copyobject.md)
+[CopyObject](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/CopyObject)
 in _AWS SDK for .NET API Reference_.
 
 **SDK for .NET**
@@ -146,7 +150,7 @@ Copy an object using a conditional request.
 ```
 
 - For API details, see
-[CopyObject](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/copyobject.md)
+[CopyObject](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/CopyObject)
 in _AWS SDK for .NET API Reference_.
 
 Bash
@@ -205,7 +209,7 @@ function copy_item_in_bucket() {
 ```
 
 - For API details, see
-[CopyObject](../../../goto/aws-cli/s3-2006-03-01/copyobject.md)
+[CopyObject](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/CopyObject)
 in _AWS CLI Command Reference_.
 
 C++
@@ -246,7 +250,7 @@ bool AwsDoc::S3::copyObject(const Aws::String &objectKey, const Aws::String &fro
 ```
 
 - For API details, see
-[CopyObject](../../../../reference/goto/sdkforcpp/s3-2006-03-01/copyobject.md)
+[CopyObject](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/CopyObject)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -428,7 +432,7 @@ import java.util.UUID;
 ```
 
 - For API details, see
-[CopyObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/copyobject.md)
+[CopyObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CopyObject)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -880,7 +884,7 @@ if (isMain(import.meta.url)) {
 ```
 
 - For API details, see
-[CopyObject](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/copyobjectcommand.md)
+[CopyObject](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/CopyObjectCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -956,7 +960,7 @@ Simple copy of an object.
 ```
 
 - For API details, see
-[CopyObject](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/copyobject.md)
+[CopyObject](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/CopyObject)
 in _AWS SDK for PHP API Reference_.
 
 PowerShell
@@ -1004,7 +1008,7 @@ Copy-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix data -LocalFolder c:\do
 ```
 
 - For API details, see
-[CopyObject](../../../powershell/v4/reference.md)
+[CopyObject](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -1050,7 +1054,7 @@ Copy-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix data -LocalFolder c:\do
 ```
 
 - For API details, see
-[CopyObject](../../../powershell/v5/reference.md)
+[CopyObject](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -1168,7 +1172,7 @@ class S3ConditionalRequests:
 ```
 
 - For API details, see
-[CopyObject](../../../goto/boto3/s3-2006-03-01/copyobject.md)
+[CopyObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/CopyObject)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -1282,7 +1286,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 
 - For API details, see
-[CopyObject](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/copyobject.md)
+[CopyObject](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/CopyObject)
 in _AWS SDK for Ruby API Reference_.
 
 Rust

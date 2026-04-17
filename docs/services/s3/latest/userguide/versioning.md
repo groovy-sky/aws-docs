@@ -1,3 +1,7 @@
+---
+title: "Retaining multiple versions of objects with S3 Versioning"
+---
+
 # Retaining multiple versions of objects with S3 Versioning
 
 Versioning in Amazon S3 is a means of keeping multiple variants of an object in the same bucket.

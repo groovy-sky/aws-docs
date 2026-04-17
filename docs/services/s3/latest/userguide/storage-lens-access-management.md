@@ -1,3 +1,7 @@
+---
+title: "Using S3 Storage Lens to audit Object Ownership settings"
+---
+
 # Using S3 Storage Lens to audit Object Ownership settings
 
 Amazon S3 Object Ownership is an S3 bucket-level setting that you can use to disable access

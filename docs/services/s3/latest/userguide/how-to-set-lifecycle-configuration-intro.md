@@ -1,3 +1,7 @@
+---
+title: "Setting an S3 Lifecycle configuration on a bucket"
+---
+
 # Setting an S3 Lifecycle configuration on a bucket
 
 You can set an Amazon S3 Lifecycle configuration on a bucket by using the Amazon S3 console,

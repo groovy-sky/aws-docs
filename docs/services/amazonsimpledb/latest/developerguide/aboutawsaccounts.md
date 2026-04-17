@@ -1,3 +1,7 @@
+---
+title: "Creating an AWS Account"
+---
+
 # Creating an AWS Account
 
 To access any web service AWS offers, you must first create an AWS account at [http://aws.amazon.com](http://aws.amazon.com/).

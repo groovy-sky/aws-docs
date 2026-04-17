@@ -1,3 +1,7 @@
+---
+title: "Use PutBucketLogging with an AWS SDK or CLI"
+---
+
 # Use `PutBucketLogging` with an AWS SDK or CLI
 
 The following code examples show how to use `PutBucketLogging`.
@@ -168,7 +172,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[PutBucketLogging](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putbucketlogging.md)
+[PutBucketLogging](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutBucketLogging)
 in _AWS SDK for .NET API Reference_.
 
 CLI

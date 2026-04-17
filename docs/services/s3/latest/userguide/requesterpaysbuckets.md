@@ -1,3 +1,7 @@
+---
+title: "Using Requester Pays general purpose buckets for storage transfers and usage"
+---
+
 # Using Requester Pays general purpose buckets for storage transfers and usage
 
 In general, bucket owners pay for all Amazon S3 storage and data transfer costs that are

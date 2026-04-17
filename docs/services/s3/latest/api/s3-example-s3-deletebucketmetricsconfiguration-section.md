@@ -1,3 +1,7 @@
+---
+title: "Use DeleteBucketMetricsConfiguration with a CLI"
+---
+
 # Use `DeleteBucketMetricsConfiguration` with a CLI
 
 The following code examples show how to use `DeleteBucketMetricsConfiguration`.
@@ -37,7 +41,7 @@ Remove-S3BucketMetricsConfiguration -BucketName 'amzn-s3-demo-bucket' -MetricsId
 ```
 
 - For API details, see
-[DeleteBucketMetricsConfiguration](../../../powershell/v4/reference.md)
+[DeleteBucketMetricsConfiguration](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -51,7 +55,7 @@ Remove-S3BucketMetricsConfiguration -BucketName 'amzn-s3-demo-bucket' -MetricsId
 ```
 
 - For API details, see
-[DeleteBucketMetricsConfiguration](../../../powershell/v5/reference.md)
+[DeleteBucketMetricsConfiguration](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

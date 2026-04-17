@@ -1,3 +1,7 @@
+---
+title: "Use PutBucketPolicy with an AWS SDK"
+---
+
 # Use `PutBucketPolicy` with an AWS SDK
 
 The following code example shows how to use `PutBucketPolicy`.
@@ -75,7 +79,7 @@ import static com.example.s3.util.S3DirectoryBucketUtils.getAwsAccountId;
 ```
 
 - For API details, see
-[PutBucketPolicy](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putbucketpolicy.md)
+[PutBucketPolicy](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutBucketPolicy)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "Download a stream of unknown size from an Amazon S3 object using an AWS SDK"
+---
+
 # Download a stream of unknown size from an Amazon S3 object using an AWS SDK
 
 The following code example shows how to download a stream of unknown size from an Amazon S3 object.

@@ -1,3 +1,7 @@
+---
+title: "Adding a tag to a table"
+---
+
 # Adding a tag to a table
 
 You can add tags to Amazon S3 tables and modify these tags. For more information about tagging tables, see [Using tags with S3 tables](table-tagging.md).

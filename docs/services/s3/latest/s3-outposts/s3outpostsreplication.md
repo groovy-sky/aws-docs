@@ -1,3 +1,7 @@
+---
+title: "Replicating objects for S3 on Outposts"
+---
+
 # Replicating objects for S3 on Outposts
 
 With S3 Replication on AWS Outposts, you can configure Amazon S3 on Outposts to automatically

@@ -1,3 +1,7 @@
+---
+title: "Manage large Amazon SQS messages using Amazon S3 with an AWS SDK"
+---
+
 # Manage large Amazon SQS messages using Amazon S3 with an AWS SDK
 
 The following code example shows how to use the Amazon SQS Extended Client Library to work with large Amazon SQS messages.
@@ -152,13 +156,13 @@ public class SqsExtendedClientExample {
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [CreateBucket](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CreateBucket)
 
-- [PutBucketLifecycleConfiguration](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putbucketlifecycleconfiguration.md)
+- [PutBucketLifecycleConfiguration](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutBucketLifecycleConfiguration)
 
-- [ReceiveMessage](../../../../reference/goto/sdkforjavav2/sqs-2012-11-05/receivemessage.md)
+- [ReceiveMessage](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/ReceiveMessage)
 
-- [SendMessage](../../../../reference/goto/sdkforjavav2/sqs-2012-11-05/sendmessage.md)
+- [SendMessage](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/SendMessage)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

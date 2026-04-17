@@ -1,3 +1,7 @@
+---
+title: "General purpose bucket naming rules"
+---
+
 # General purpose bucket naming rules
 
 When you create a general purpose bucket, make sure that you consider the length, valid characters,

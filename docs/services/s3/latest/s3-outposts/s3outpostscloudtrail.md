@@ -1,3 +1,7 @@
+---
+title: "Monitoring S3 on Outposts with AWS CloudTrail logs"
+---
+
 # Monitoring S3 on Outposts with AWS CloudTrail logs
 
 Amazon S3 on Outposts is integrated with AWS CloudTrail, a service that provides a record of

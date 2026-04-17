@@ -1,3 +1,7 @@
+---
+title: "Creating a metrics configuration that filters by prefix, object tag, or access point"
+---
+
 # Creating a metrics configuration that filters by prefix, object tag, or access point
 
 There are three types of Amazon CloudWatch metrics for Amazon S3: storage metrics, request

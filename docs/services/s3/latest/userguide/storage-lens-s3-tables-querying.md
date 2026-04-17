@@ -1,3 +1,7 @@
+---
+title: "Querying S3 Storage Lens data with analytics tools"
+---
+
 # Querying S3 Storage Lens data with analytics tools
 
 Before you can query S3 Storage Lens data exported to S3 Tables using AWS analytics services like Amazon Athena or Amazon EMR, you must enable analytics integration on the AWS-managed \`aws-s3\` table bucket and configure AWS Lake Formation permissions.

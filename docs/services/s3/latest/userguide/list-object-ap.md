@@ -1,3 +1,7 @@
+---
+title: "List objects through an access point for a general purpose bucket"
+---
+
 # List objects through an access point for a general purpose bucket
 
 This section explains how to list your objects through an access point for a general purpose bucket using the AWS Management Console,

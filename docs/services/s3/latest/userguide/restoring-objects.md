@@ -1,3 +1,7 @@
+---
+title: "Restoring an archived object"
+---
+
 # Restoring an archived object
 
 Amazon S3 objects in the following storage classes or tiers are archived and are not

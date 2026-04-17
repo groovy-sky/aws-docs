@@ -1,3 +1,7 @@
+---
+title: "Logging options for Amazon S3"
+---
+
 # Logging options for Amazon S3
 
 You can record the actions that are taken by users, roles, or AWS services on Amazon S3

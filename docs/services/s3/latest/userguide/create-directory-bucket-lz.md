@@ -1,3 +1,7 @@
+---
+title: "Creating a directory bucket in a Local Zone"
+---
+
 # Creating a directory bucket in a Local Zone
 
 In Dedicated Local Zones, you can create directory buckets to store and retrieve objects in a specific

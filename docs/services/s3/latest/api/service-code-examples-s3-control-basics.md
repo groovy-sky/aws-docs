@@ -1,3 +1,7 @@
+---
+title: "Basic examples for Amazon S3 Control using AWS SDKs"
+---
+
 # Basic examples for Amazon S3 Control using AWS SDKs
 
 The following code examples show how to use the basics of Amazon S3 Control with AWS

@@ -1,3 +1,7 @@
+---
+title: "Step 4: Manually upload objects to your S3 Express One Zone directory bucket"
+---
+
 # Step 4: Manually upload objects to your S3 Express One Zone directory bucket
 
 You can also manually upload objects to your directory bucket.

@@ -1,3 +1,7 @@
+---
+title: "Bucket policy examples"
+---
+
 # Bucket policy examples
 
 With S3 on Outposts bucket policies, you can secure access to objects in your S3 on Outposts

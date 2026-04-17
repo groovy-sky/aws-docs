@@ -1,3 +1,7 @@
+---
+title: "Upload an object through an access point for a general purpose bucket"
+---
+
 # Upload an object through an access point for a general purpose bucket
 
 This section explains how to upload an object through an access point for a general purpose bucket using the AWS Management Console,

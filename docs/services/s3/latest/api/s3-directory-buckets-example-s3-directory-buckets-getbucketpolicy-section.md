@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketPolicy with an AWS SDK"
+---
+
 # Use `GetBucketPolicy` with an AWS SDK
 
 The following code example shows how to use `GetBucketPolicy`.
@@ -64,7 +68,7 @@ import static com.example.s3.util.S3DirectoryBucketUtils.putDirectoryBucketPolic
 ```
 
 - For API details, see
-[GetBucketPolicy](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getbucketpolicy.md)
+[GetBucketPolicy](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetBucketPolicy)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

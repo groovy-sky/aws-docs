@@ -1,3 +1,7 @@
+---
+title: "Multi-Region Access Point request routing"
+---
+
 # Multi-Region Access Point request routing
 
 When you make a request through a Multi-Region Access Point, Amazon S3 determines which of the buckets that are

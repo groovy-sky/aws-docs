@@ -1,3 +1,7 @@
+---
+title: "Viewing metrics with Amazon S3 Storage Lens"
+---
+
 # Viewing metrics with Amazon S3 Storage Lens
 
 S3 Storage Lens aggregates your metrics and displays the information in the **Account snapshot** section on the

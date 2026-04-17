@@ -1,3 +1,7 @@
+---
+title: "Use PutObjectRetention with an AWS SDK or CLI"
+---
+
 # Use `PutObjectRetention` with an AWS SDK or CLI
 
 The following code examples show how to use `PutObjectRetention`.
@@ -57,7 +61,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[PutObjectRetention](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putobjectretention.md)
+[PutObjectRetention](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutObjectRetention)
 in _AWS SDK for .NET API Reference_.
 
 CLI
@@ -192,7 +196,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[PutObjectRetention](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putobjectretention.md)
+[PutObjectRetention](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutObjectRetention)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -290,7 +294,7 @@ if (isMain(import.meta.url)) {
 ```
 
 - For API details, see
-[PutObjectRetention](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/putobjectretentioncommand.md)
+[PutObjectRetention](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/PutObjectRetentionCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PowerShell
@@ -306,7 +310,7 @@ Write-S3ObjectRetention -BucketName 'amzn-s3-demo-bucket' -Key 'testfile.txt' -R
 ```
 
 - For API details, see
-[PutObjectRetention](../../../powershell/v4/reference.md)
+[PutObjectRetention](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -320,7 +324,7 @@ Write-S3ObjectRetention -BucketName 'amzn-s3-demo-bucket' -Key 'testfile.txt' -R
 ```
 
 - For API details, see
-[PutObjectRetention](../../../powershell/v5/reference.md)
+[PutObjectRetention](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -348,7 +352,7 @@ Put an object retention.
 ```
 
 - For API details, see
-[PutObjectRetention](../../../goto/boto3/s3-2006-03-01/putobjectretention.md)
+[PutObjectRetention](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObjectRetention)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

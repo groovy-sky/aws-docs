@@ -1,3 +1,7 @@
+---
+title: "CloudTrail log file entries for Amazon S3 and S3 on Outposts"
+---
+
 # CloudTrail log file entries for Amazon S3 and S3 on Outposts
 
 ###### Important

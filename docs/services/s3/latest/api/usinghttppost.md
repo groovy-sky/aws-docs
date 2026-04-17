@@ -1,3 +1,7 @@
+---
+title: "Browser-based uploads using POST (AWS signature version 2)"
+---
+
 # Browser-based uploads using POST (AWS signature version 2)
 
 Amazon S3 supports POST, which allows your users to upload content directly to Amazon S3. POST is

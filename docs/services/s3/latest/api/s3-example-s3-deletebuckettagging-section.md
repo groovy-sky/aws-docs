@@ -1,3 +1,7 @@
+---
+title: "Use DeleteBucketTagging with a CLI"
+---
+
 # Use `DeleteBucketTagging` with a CLI
 
 The following code examples show how to use `DeleteBucketTagging`.
@@ -41,7 +45,7 @@ Performing the operation "Remove-S3BucketTagging (DeleteBucketTagging)" on targe
 ```
 
 - For API details, see
-[DeleteBucketTagging](../../../powershell/v4/reference.md)
+[DeleteBucketTagging](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -65,7 +69,7 @@ Performing the operation "Remove-S3BucketTagging (DeleteBucketTagging)" on targe
 ```
 
 - For API details, see
-[DeleteBucketTagging](../../../powershell/v5/reference.md)
+[DeleteBucketTagging](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

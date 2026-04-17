@@ -1,3 +1,7 @@
+---
+title: "Required permissions for Amazon S3 API operations"
+---
+
 # Required permissions for Amazon S3 API operations
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Creating access points restricted to a virtual private cloud"
+---
+
 # Creating access points restricted to a virtual private cloud
 
 When you create an access point you can choose to make the access point accessible from the internet, or

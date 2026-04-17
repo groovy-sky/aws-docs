@@ -1,3 +1,7 @@
+---
+title: "Authorizing Zonal endpoint API operations with CreateSession"
+---
+
 # Authorizing Zonal endpoint API operations with `CreateSession`
 
 To use Zonal endpoint API operations (object-level, or data plane operations), except for

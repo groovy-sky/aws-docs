@@ -1,3 +1,7 @@
+---
+title: "Setting up replication"
+---
+
 # Setting up replication
 
 ###### Note

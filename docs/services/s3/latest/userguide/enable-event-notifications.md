@@ -1,3 +1,7 @@
+---
+title: "Enabling and configuring event notifications using the Amazon S3 console"
+---
+
 # Enabling and configuring event notifications using the Amazon S3 console
 
 You can enable certain Amazon S3 general purpose bucket events to send a notification message to a destination

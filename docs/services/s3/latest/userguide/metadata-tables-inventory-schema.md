@@ -1,3 +1,7 @@
+---
+title: "S3 Metadata live inventory tables schema"
+---
+
 # S3 Metadata live inventory tables schema
 
 The live inventory table provides a simple, queryable inventory of all the objects and their versions

@@ -1,3 +1,7 @@
+---
+title: "Speeding up your website with Amazon CloudFront"
+---
+
 # Speeding up your website with Amazon CloudFront
 
 You can use [Amazon CloudFront](http://aws.amazon.com/cloudfront) to improve the

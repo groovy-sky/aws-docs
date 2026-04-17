@@ -1,3 +1,7 @@
+---
+title: "Viewing S3 Storage Lens metrics on the dashboards"
+---
+
 # Viewing S3 Storage Lens metrics on the dashboards
 
 In the Amazon S3 console, S3 Storage Lens provides an interactive default dashboard that you can use to

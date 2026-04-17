@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Tables integration with AWS analytics services overview"
+---
+
 # Amazon S3 Tables integration with AWS analytics services overview
 
 To make tables in your account accessible by AWS analytics services, you integrate your Amazon S3

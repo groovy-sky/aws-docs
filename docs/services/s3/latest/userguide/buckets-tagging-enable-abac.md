@@ -1,3 +1,7 @@
+---
+title: "Enabling ABAC in general purpose buckets"
+---
+
 # Enabling ABAC in general purpose buckets
 
 Attribute-based access control (ABAC) is an authorization strategy that you use to define permissions based on attributes, i.e., tags. By default, ABAC is disabled for all Amazon S3 general purpose buckets. To use ABAC for general purpose buckets, you must enable it.

@@ -1,3 +1,7 @@
+---
+title: "General purpose buckets overview"
+---
+
 # General purpose buckets overview
 
 To upload your data (photos, videos, documents, etc.) to Amazon S3, you must first create an S3

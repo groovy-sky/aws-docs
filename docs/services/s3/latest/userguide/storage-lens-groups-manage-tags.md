@@ -1,3 +1,7 @@
+---
+title: "Managing AWS resource tags with Storage Lens groups"
+---
+
 # Managing AWS resource tags with Storage Lens groups
 
 Each Amazon S3 Storage Lens group is counted as an AWS resource with its own Amazon Resource

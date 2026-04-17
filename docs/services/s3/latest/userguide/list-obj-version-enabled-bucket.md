@@ -1,3 +1,7 @@
+---
+title: "Listing objects in a versioning-enabled bucket"
+---
+
 # Listing objects in a versioning-enabled bucket
 
 This section provides examples of listing object versions from a versioning-enabled

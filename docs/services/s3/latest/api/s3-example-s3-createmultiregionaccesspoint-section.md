@@ -1,3 +1,7 @@
+---
+title: "Use CreateMultiRegionAccessPoint with an AWS SDK"
+---
+
 # Use `CreateMultiRegionAccessPoint` with an AWS SDK
 
 The following code example shows how to use `CreateMultiRegionAccessPoint`.

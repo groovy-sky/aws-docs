@@ -1,3 +1,7 @@
+---
+title: "Configuring Storage Browser for S3"
+---
+
 # Configuring Storage Browser for S3
 
 To allow Storage Browser for S3 access to S3 buckets, the Storage Browser component

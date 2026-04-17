@@ -1,3 +1,7 @@
+---
+title: "Configuring fast, secure file transfers using Amazon S3 Transfer Acceleration"
+---
+
 # Configuring fast, secure file transfers using Amazon S3 Transfer Acceleration
 
 Amazon S3 Transfer Acceleration is a bucket-level feature that enables fast, easy, and secure transfers

@@ -1,3 +1,7 @@
+---
+title: "Learn the basics of Amazon S3 Control with an AWS SDK"
+---
+
 # Learn the basics of Amazon S3 Control with an AWS SDK
 
 The following code examples show how to learn core operations for Amazon S3 Control.
@@ -908,21 +912,21 @@ public class S3BatchActions {
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [CreateJob](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/createjob.md)
+- [CreateJob](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/CreateJob)
 
-- [DeleteJobTagging](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/deletejobtagging.md)
+- [DeleteJobTagging](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/DeleteJobTagging)
 
-- [DescribeJob](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/describejob.md)
+- [DescribeJob](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/DescribeJob)
 
-- [GetJobTagging](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/getjobtagging.md)
+- [GetJobTagging](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/GetJobTagging)
 
-- [ListJobs](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/listjobs.md)
+- [ListJobs](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/ListJobs)
 
-- [PutJobTagging](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/putjobtagging.md)
+- [PutJobTagging](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/PutJobTagging)
 
-- [UpdateJobPriority](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/updatejobpriority.md)
+- [UpdateJobPriority](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/UpdateJobPriority)
 
-- [UpdateJobStatus](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/updatejobstatus.md)
+- [UpdateJobStatus](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/UpdateJobStatus)
 
 Python
 
@@ -1413,21 +1417,21 @@ class S3BatchWrapper:
 
 - For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
 
-- [CreateJob](../../../goto/boto3/s3control-2018-08-20/createjob.md)
+- [CreateJob](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/CreateJob)
 
-- [DeleteJobTagging](../../../goto/boto3/s3control-2018-08-20/deletejobtagging.md)
+- [DeleteJobTagging](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/DeleteJobTagging)
 
-- [DescribeJob](../../../goto/boto3/s3control-2018-08-20/describejob.md)
+- [DescribeJob](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/DescribeJob)
 
-- [GetJobTagging](../../../goto/boto3/s3control-2018-08-20/getjobtagging.md)
+- [GetJobTagging](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/GetJobTagging)
 
-- [ListJobs](../../../goto/boto3/s3control-2018-08-20/listjobs.md)
+- [ListJobs](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/ListJobs)
 
-- [PutJobTagging](../../../goto/boto3/s3control-2018-08-20/putjobtagging.md)
+- [PutJobTagging](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/PutJobTagging)
 
-- [UpdateJobPriority](../../../goto/boto3/s3control-2018-08-20/updatejobpriority.md)
+- [UpdateJobPriority](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/UpdateJobPriority)
 
-- [UpdateJobStatus](../../../goto/boto3/s3control-2018-08-20/updatejobstatus.md)
+- [UpdateJobStatus](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/UpdateJobStatus)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

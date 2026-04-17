@@ -1,3 +1,7 @@
+---
+title: "Use DeleteBucketPolicy with an AWS SDK"
+---
+
 # Use `DeleteBucketPolicy` with an AWS SDK
 
 The following code example shows how to use `DeleteBucketPolicy`.
@@ -59,7 +63,7 @@ import org.slf4j.LoggerFactory;
 ```
 
 - For API details, see
-[DeleteBucketPolicy](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deletebucketpolicy.md)
+[DeleteBucketPolicy](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteBucketPolicy)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "Authenticating Requests: Browser-Based Uploads Using POST (AWS Signature Version 4)"
+---
+
 # Authenticating Requests: Browser-Based Uploads Using POST (AWS Signature Version 4)
 
 Amazon S3 supports HTTP POST requests so that users can upload content directly to Amazon S3. Using

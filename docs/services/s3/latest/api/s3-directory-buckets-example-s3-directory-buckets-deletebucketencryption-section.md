@@ -1,3 +1,7 @@
+---
+title: "Use DeleteBucketEncryption with an AWS SDK"
+---
+
 # Use `DeleteBucketEncryption` with an AWS SDK
 
 The following code example shows how to use `DeleteBucketEncryption`.
@@ -51,7 +55,7 @@ import static com.example.s3.util.S3DirectoryBucketUtils.deleteDirectoryBucket;
 ```
 
 - For API details, see
-[DeleteBucketEncryption](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deletebucketencryption.md)
+[DeleteBucketEncryption](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteBucketEncryption)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

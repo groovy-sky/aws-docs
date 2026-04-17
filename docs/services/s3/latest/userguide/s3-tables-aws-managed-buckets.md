@@ -1,3 +1,7 @@
+---
+title: "Working with AWS managed table buckets"
+---
+
 # Working with AWS managed table buckets
 
 AWS managed table buckets are specialized Amazon S3 table buckets designed to store AWS managed tables, such

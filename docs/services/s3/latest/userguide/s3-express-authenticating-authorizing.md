@@ -1,3 +1,7 @@
+---
+title: "Authenticating and authorizing requests"
+---
+
 # Authenticating and authorizing requests
 
 By default, directory buckets are private and can be accessed only by users who are

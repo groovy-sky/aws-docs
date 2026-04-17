@@ -1,3 +1,7 @@
+---
+title: "GeneratedManifestEncryption"
+---
+
 # GeneratedManifestEncryption
 
 The encryption configuration to use when storing the generated manifest.
@@ -25,11 +29,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3control-2018-08-20/generatedmanifestencryption.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3control-2018-08-20/GeneratedManifestEncryption)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/generatedmanifestencryption.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/GeneratedManifestEncryption)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3control-2018-08-20/generatedmanifestencryption.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3control-2018-08-20/GeneratedManifestEncryption)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

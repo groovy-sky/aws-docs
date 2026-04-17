@@ -1,3 +1,7 @@
+---
+title: "Using tags with S3 table buckets"
+---
+
 # Using tags with S3 table buckets
 
 An AWS tag is a key-value pair that holds metadata about resources, in this case Amazon S3 table buckets. You can tag S3 table buckets when you create them or manage tags on existing table buckets. For general information about tags, see [Tagging for cost allocation or attribute-based access control (ABAC)](tagging.md).

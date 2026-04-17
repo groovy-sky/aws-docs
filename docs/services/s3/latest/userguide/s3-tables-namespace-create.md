@@ -1,3 +1,7 @@
+---
+title: "Creating a namespace"
+---
+
 # Creating a namespace
 
 A table namespace is a logical construct that you group tables under within an Amazon S3 table

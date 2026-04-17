@@ -1,3 +1,7 @@
+---
+title: "Enabling versioning on buckets"
+---
+
 # Enabling versioning on buckets
 
 You can use S3 Versioning to keep multiple versions of an object in one bucket. This

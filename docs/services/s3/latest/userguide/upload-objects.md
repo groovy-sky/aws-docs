@@ -1,3 +1,7 @@
+---
+title: "Uploading objects"
+---
+
 # Uploading objects
 
 When you upload a file to Amazon S3, it is stored as an S3 _object_. Objects consist of the file data and metadata that describes the object.

@@ -1,3 +1,7 @@
+---
+title: "Working with delete markers"
+---
+
 # Working with delete markers
 
 A _delete marker_ in Amazon S3 is a placeholder (or marker)

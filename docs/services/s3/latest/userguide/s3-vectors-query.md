@@ -1,3 +1,7 @@
+---
+title: "Querying vectors"
+---
+
 # Querying vectors
 
 You can run a similarity query with the [QueryVectors](../api/api-s3vectorbuckets-queryvectors.md) API operation, where you

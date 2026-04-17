@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 on Outposts"
+---
+
 # Amazon S3 on Outposts
 
 The following actions are supported by Amazon S3 on Outposts:

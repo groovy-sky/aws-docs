@@ -1,3 +1,7 @@
+---
+title: "Security for S3 Tables"
+---
+
 # Security for S3 Tables
 
 Amazon S3 provides a variety of security features and tools. The following is a list of these

@@ -1,3 +1,7 @@
+---
+title: "Request redirection and the REST API"
+---
+
 # Request redirection and the REST API
 
 ###### Topics

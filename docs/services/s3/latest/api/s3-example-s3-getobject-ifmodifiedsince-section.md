@@ -1,3 +1,7 @@
+---
+title: "Get an object from an Amazon S3 bucket using an AWS SDK, specifying an If-Modified-Since header"
+---
+
 # Get an object from an Amazon S3 bucket using an AWS SDK, specifying an If-Modified-Since header
 
 The following code example shows how to read data from an object in an S3 bucket, but only if that bucket has not been modified since the last retrieval time.
@@ -202,6 +206,6 @@ This topic also includes information about getting started and details about pre
 
 Get an object from a Multi-Region Access Point
 
-Get started with S3
+Get started with encryption
 
 All content copied from https://docs.aws.amazon.com/.

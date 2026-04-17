@@ -1,3 +1,7 @@
+---
+title: "Replicating delete markers between buckets"
+---
+
 # Replicating delete markers between buckets
 
 By default, when S3 Replication is enabled and an object is deleted in the source

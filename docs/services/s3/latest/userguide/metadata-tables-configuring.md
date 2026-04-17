@@ -1,3 +1,7 @@
+---
+title: "Configuring metadata tables"
+---
+
 # Configuring metadata tables
 
 Amazon S3 Metadata accelerates data discovery by automatically capturing metadata for the objects

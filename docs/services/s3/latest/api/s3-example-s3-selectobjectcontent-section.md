@@ -1,3 +1,7 @@
+---
+title: "Use SelectObjectContent with an AWS SDK or CLI"
+---
+
 # Use `SelectObjectContent` with an AWS SDK or CLI
 
 The following code examples show how to use `SelectObjectContent`.
@@ -209,7 +213,7 @@ public class SelectObjectContentExample {
 ```
 
 - For API details, see
-[SelectObjectContent](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/selectobjectcontent.md)
+[SelectObjectContent](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/SelectObjectContent)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

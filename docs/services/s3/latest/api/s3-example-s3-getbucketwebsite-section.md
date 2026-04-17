@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketWebsite with an AWS SDK or CLI"
+---
+
 # Use `GetBucketWebsite` with an AWS SDK or CLI
 
 The following code examples show how to use `GetBucketWebsite`.
@@ -26,7 +30,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[GetBucketWebsite](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getbucketwebsite.md)
+[GetBucketWebsite](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetBucketWebsite)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -77,7 +81,7 @@ bool AwsDoc::S3::getWebsiteConfig(const Aws::String &bucketName,
 ```
 
 - For API details, see
-[GetBucketWebsite](../../../../reference/goto/sdkforcpp/s3-2006-03-01/getbucketwebsite.md)
+[GetBucketWebsite](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/GetBucketWebsite)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -167,7 +171,7 @@ export const main = async ({ bucketName }) => {
 ```
 
 - For API details, see
-[GetBucketWebsite](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getbucketwebsitecommand.md)
+[GetBucketWebsite](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/GetBucketWebsiteCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PowerShell
@@ -183,7 +187,7 @@ Get-S3BucketWebsite -BucketName 'amzn-s3-demo-bucket'
 ```
 
 - For API details, see
-[GetBucketWebsite](../../../powershell/v4/reference.md)
+[GetBucketWebsite](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -197,7 +201,7 @@ Get-S3BucketWebsite -BucketName 'amzn-s3-demo-bucket'
 ```
 
 - For API details, see
-[GetBucketWebsite](../../../powershell/v5/reference.md)
+[GetBucketWebsite](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

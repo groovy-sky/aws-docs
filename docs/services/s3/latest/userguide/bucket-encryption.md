@@ -1,3 +1,7 @@
+---
+title: "Setting default server-side encryption behavior for Amazon S3 buckets"
+---
+
 # Setting default server-side encryption behavior for Amazon S3 buckets
 
 ###### Important

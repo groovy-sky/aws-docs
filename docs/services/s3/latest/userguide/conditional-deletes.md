@@ -1,3 +1,7 @@
+---
+title: "How to perform conditional deletes"
+---
+
 # How to perform conditional deletes
 
 You can use conditional deletes to evaluate if your object exists or is unchanged before deleting it.

@@ -1,3 +1,7 @@
+---
+title: "Protecting data with server-side encryption"
+---
+
 # Protecting data with server-side encryption
 
 ###### Important

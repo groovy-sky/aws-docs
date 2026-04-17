@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot access denied (403 Forbidden) errors in Amazon S3"
+---
+
 # Troubleshoot access denied (403 Forbidden) errors in Amazon S3
 
 Access denied (HTTP `403 Forbidden`) errors appear when AWS explicitly or

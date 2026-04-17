@@ -1,3 +1,7 @@
+---
+title: "Operations supported by S3 Batch Operations"
+---
+
 # Operations supported by S3 Batch Operations
 
 You can use S3 Batch Operations to perform large-scale batch operations on Amazon S3 objects.

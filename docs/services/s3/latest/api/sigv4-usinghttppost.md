@@ -1,3 +1,7 @@
+---
+title: "Browser-Based Uploads Using POST (AWS Signature Version 4)"
+---
+
 # Browser-Based Uploads Using POST (AWS Signature Version 4)
 
 This section discusses how to upload files directly to Amazon S3 through a browser using HTTP POST

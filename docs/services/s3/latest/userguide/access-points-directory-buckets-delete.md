@@ -1,3 +1,7 @@
+---
+title: "Delete your access point for directory buckets"
+---
+
 # Delete your access point for directory buckets
 
 This section explains how to delete your access point using the AWS Management Console, AWS Command Line Interface, REST API, or AWS SDKs.

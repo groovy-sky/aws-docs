@@ -1,3 +1,7 @@
+---
+title: "Deleting an object from an MFA delete-enabled bucket"
+---
+
 # Deleting an object from an MFA delete-enabled bucket
 
 When you configure MFA delete, only the root user can permanently delete object versions or

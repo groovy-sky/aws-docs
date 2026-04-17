@@ -1,3 +1,7 @@
+---
+title: "Using server-side encryption with customer-provided keys (SSE-C)"
+---
+
 # Using server-side encryption with customer-provided keys (SSE-C)
 
 Server-side encryption is about protecting data at rest. Server-side encryption encrypts only

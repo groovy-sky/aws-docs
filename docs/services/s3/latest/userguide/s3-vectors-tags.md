@@ -1,3 +1,7 @@
+---
+title: "Using tags with S3 vector buckets"
+---
+
 # Using tags with S3 vector buckets
 
 An AWS tag is a key-value pair that holds metadata about resources, in this case Amazon S3

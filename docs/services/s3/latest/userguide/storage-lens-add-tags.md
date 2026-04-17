@@ -1,3 +1,7 @@
+---
+title: "Add AWS resource tags to a Storage Lens dashboard"
+---
+
 # Add AWS resource tags to a Storage Lens dashboard
 
 The following examples demonstrate how to add AWS resource tags to an S3 Storage Lens

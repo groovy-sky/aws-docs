@@ -1,3 +1,7 @@
+---
+title: "Rules for choosing buckets for Amazon S3 Multi-Region Access Points"
+---
+
 # Rules for choosing buckets for Amazon S3 Multi-Region Access Points
 
 Each Multi-Region Access Point is associated with the Regions where you want to fulfill requests. The

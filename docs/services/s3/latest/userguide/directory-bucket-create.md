@@ -1,3 +1,7 @@
+---
+title: "Creating directory buckets in an Availability Zone"
+---
+
 # Creating directory buckets in an Availability Zone
 
 To start using the Amazon S3 Express One Zone storage class, you create a directory bucket. The

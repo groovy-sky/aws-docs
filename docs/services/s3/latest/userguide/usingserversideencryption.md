@@ -1,3 +1,7 @@
+---
+title: "Using server-side encryption with Amazon S3 managed keys (SSE-S3)"
+---
+
 # Using server-side encryption with Amazon S3 managed keys (SSE-S3)
 
 ###### Important

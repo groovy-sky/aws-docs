@@ -1,3 +1,7 @@
+---
+title: "Appendix: SOAP API"
+---
+
 # Appendix: SOAP API
 
 ###### Note

@@ -1,3 +1,7 @@
+---
+title: "Access points naming rules, restrictions, and limitations"
+---
+
 # Access points naming rules, restrictions, and limitations
 
 Access points are named network endpoints attached to a bucket or a volume on an Amazon FSx file system that simplify managing data.

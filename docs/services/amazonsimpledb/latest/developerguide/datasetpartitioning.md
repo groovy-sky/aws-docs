@@ -1,3 +1,7 @@
+---
+title: "Data Set Partitioning"
+---
+
 # Data Set Partitioning
 
 Amazon SimpleDB allows up to 250 domains per subscriber. You can partition your data set among

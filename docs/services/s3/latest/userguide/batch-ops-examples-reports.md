@@ -1,3 +1,7 @@
+---
+title: "Examples: S3 Batch Operations completion reports"
+---
+
 # Examples: S3 Batch Operations completion reports
 
 When you create an S3 Batch Operations job, you can request a completion report for all tasks

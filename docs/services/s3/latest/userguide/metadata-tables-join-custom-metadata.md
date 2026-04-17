@@ -1,3 +1,7 @@
+---
+title: "Joining custom metadata with S3 metadata tables"
+---
+
 # Joining custom metadata with S3 metadata tables
 
 You can analyze data across your AWS managed metadata tables and customer (self-managed) metadata

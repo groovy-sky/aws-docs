@@ -1,3 +1,7 @@
+---
+title: "Renaming objects in directory buckets"
+---
+
 # Renaming objects in directory buckets
 
 Using the `RenameObject` operation, you can atomically rename an existing

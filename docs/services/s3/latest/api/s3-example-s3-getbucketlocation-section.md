@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketLocation with an AWS SDK or CLI"
+---
+
 # Use `GetBucketLocation` with an AWS SDK or CLI
 
 The following code examples show how to use `GetBucketLocation`.
@@ -49,7 +53,7 @@ ap-south-1
 ```
 
 - For API details, see
-[GetBucketLocation](../../../powershell/v4/reference.md)
+[GetBucketLocation](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -72,7 +76,7 @@ ap-south-1
 ```
 
 - For API details, see
-[GetBucketLocation](../../../powershell/v5/reference.md)
+[GetBucketLocation](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Rust

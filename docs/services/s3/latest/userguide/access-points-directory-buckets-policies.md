@@ -1,3 +1,7 @@
+---
+title: "Configuring IAM policies for using access points for directory buckets"
+---
+
 # Configuring IAM policies for using access points for directory buckets
 
 Access points support AWS Identity and Access Management (IAM) resource policies that allow you to control the use

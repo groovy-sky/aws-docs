@@ -1,3 +1,7 @@
+---
+title: "Tuning Queries"
+---
+
 # Tuning Queries
 
 ###### Topics

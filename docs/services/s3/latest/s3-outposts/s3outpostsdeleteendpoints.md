@@ -1,3 +1,7 @@
+---
+title: "Deleting an Amazon S3 on Outposts endpoint"
+---
+
 # Deleting an Amazon S3 on Outposts endpoint
 
 To route requests to an Amazon S3 on Outposts access point, you must create and configure an

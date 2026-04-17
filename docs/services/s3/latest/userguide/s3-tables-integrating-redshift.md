@@ -1,3 +1,7 @@
+---
+title: "Accessing Amazon S3 tables with Amazon Redshift"
+---
+
 # Accessing Amazon S3 tables with Amazon Redshift
 
 Amazon Redshift is a fast, fully managed, petabyte-scale data warehouse service that makes it simple

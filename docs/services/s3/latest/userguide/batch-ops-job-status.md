@@ -1,3 +1,7 @@
+---
+title: "Tracking job status and completion reports"
+---
+
 # Tracking job status and completion reports
 
 With S3 Batch Operations, you can view and update job status, add notifications and logging,

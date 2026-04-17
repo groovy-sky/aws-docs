@@ -1,3 +1,7 @@
+---
+title: "Viewing replication metrics in S3 Storage Lens dashboards"
+---
+
 # Viewing replication metrics in S3 Storage Lens dashboards
 
 In addition to [S3 Replication metrics](repl-metrics.md), you can use the

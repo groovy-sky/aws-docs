@@ -1,3 +1,7 @@
+---
+title: "Amazon EventBridge mapping and troubleshooting"
+---
+
 # Amazon EventBridge mapping and troubleshooting
 
 The following table describes how Amazon S3 event types are mapped to Amazon EventBridge event

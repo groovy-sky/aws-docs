@@ -1,3 +1,7 @@
+---
+title: "Creating a table bucket"
+---
+
 # Creating a table bucket
 
 Amazon S3 table buckets are an S3 bucket type that you can use to create and store tables as S3

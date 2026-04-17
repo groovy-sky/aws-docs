@@ -1,3 +1,7 @@
+---
+title: "Creating an S3 Batch Operations job"
+---
+
 # Creating an S3 Batch Operations job
 
 With Amazon S3 Batch Operations, you can perform large-scale batch operations on a list of

@@ -1,3 +1,7 @@
+---
+title: "Get started with encryption for Amazon S3 objects using an AWS SDK"
+---
+
 # Get started with encryption for Amazon S3 objects using an AWS SDK
 
 The following code example shows how to get started with encryption for Amazon S3 objects.
@@ -225,11 +229,11 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 
 - For API details, see the following topics in _AWS SDK for .NET API Reference_.
 
-- [CopyObject](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/CopyObject)
 
-- [GetObject](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetObject)
 
-- [GetObjectMetadata](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getobjectmetadata.md)
+- [GetObjectMetadata](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetObjectMetadata)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).
@@ -237,7 +241,7 @@ This topic also includes information about getting started and details about pre
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Get started with S3
+Get an object from a bucket if it has been modified
 
 Get started with tags
 

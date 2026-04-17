@@ -1,3 +1,7 @@
+---
+title: "AWS managed policies for S3 Tables"
+---
+
 # AWS managed policies for S3 Tables
 
 An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed

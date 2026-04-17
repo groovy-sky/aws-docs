@@ -1,3 +1,7 @@
+---
+title: "Example metadata table queries"
+---
+
 # Example metadata table queries
 
 The following examples show how you can get different types information from your S3 Metadata tables

@@ -1,3 +1,7 @@
+---
+title: "S3 API Reference"
+---
+
 # S3 API Reference
 
 This section contains the Amazon S3 API Reference documentation, which includes

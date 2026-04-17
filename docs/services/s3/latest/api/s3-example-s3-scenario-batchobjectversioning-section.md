@@ -1,3 +1,7 @@
+---
+title: "Manage versioned Amazon S3 objects in batches with a Lambda function using an AWS SDK"
+---
+
 # Manage versioned Amazon S3 objects in batches with a Lambda function using an AWS SDK
 
 The following code example shows how to manage versioned S3 objects in batches with a Lambda function.

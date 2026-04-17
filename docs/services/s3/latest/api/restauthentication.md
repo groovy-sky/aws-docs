@@ -1,3 +1,7 @@
+---
+title: "Signing and authenticating REST requests (AWS signature version 2)"
+---
+
 # Signing and authenticating REST requests (AWS signature version 2)
 
 ###### Topics

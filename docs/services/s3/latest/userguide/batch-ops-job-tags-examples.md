@@ -1,3 +1,7 @@
+---
+title: "Controlling permissions for Batch Operations using job tags"
+---
+
 # Controlling permissions for Batch Operations using job tags
 
 To help you manage your Amazon S3 Batch Operations jobs, you can add _job_

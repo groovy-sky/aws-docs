@@ -1,3 +1,7 @@
+---
+title: "Emptying a directory bucket"
+---
+
 # Emptying a directory bucket
 
 You can empty an Amazon S3 directory bucket by using the Amazon S3 console. For more information

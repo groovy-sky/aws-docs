@@ -1,3 +1,7 @@
+---
+title: "Optimizing S3 Express One Zone performance"
+---
+
 # Optimizing S3 Express One Zone performance
 
 Amazon S3 Express One Zone is a high-performance, single Availability Zone (AZ) S3 storage class

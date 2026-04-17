@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketTagging with a CLI"
+---
+
 # Use `GetBucketTagging` with a CLI
 
 The following code examples show how to use `GetBucketTagging`.
@@ -45,7 +49,7 @@ Get-S3BucketTagging -BucketName 'amzn-s3-demo-bucket'
 ```
 
 - For API details, see
-[GetBucketTagging](../../../powershell/v4/reference.md)
+[GetBucketTagging](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -59,7 +63,7 @@ Get-S3BucketTagging -BucketName 'amzn-s3-demo-bucket'
 ```
 
 - For API details, see
-[GetBucketTagging](../../../powershell/v5/reference.md)
+[GetBucketTagging](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

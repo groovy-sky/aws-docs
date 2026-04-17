@@ -1,3 +1,7 @@
+---
+title: "Use checksums to work with an Amazon S3 object using an AWS SDK"
+---
+
 # Use checksums to work with an Amazon S3 object using an AWS SDK
 
 The following code example shows how to use checksums to work with an Amazon S3 object.
@@ -189,11 +193,11 @@ uploaded.
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [CompleteMultipartUpload](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/completemultipartupload.md)
+- [CompleteMultipartUpload](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CompleteMultipartUpload)
 
-- [CreateMultipartUpload](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/createmultipartupload.md)
+- [CreateMultipartUpload](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CreateMultipartUpload)
 
-- [UploadPart](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/uploadpart.md)
+- [UploadPart](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/UploadPart)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

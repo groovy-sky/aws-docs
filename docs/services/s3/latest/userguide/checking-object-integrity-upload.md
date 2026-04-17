@@ -1,3 +1,7 @@
+---
+title: "Checking object integrity for data uploads in Amazon S3"
+---
+
 # Checking object integrity for data uploads in Amazon S3
 
 Amazon S3 uses checksum values to verify data integrity during upload and download

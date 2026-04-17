@@ -1,3 +1,7 @@
+---
+title: "Data Model"
+---
+
 # Data Model
 
 When using Amazon SimpleDB, you organize your structured data in domains within which you can put

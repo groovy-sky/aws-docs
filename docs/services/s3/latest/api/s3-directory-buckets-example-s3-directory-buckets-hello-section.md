@@ -1,3 +1,7 @@
+---
+title: "Hello Amazon S3 directory buckets"
+---
+
 # Hello Amazon S3 directory buckets
 
 The following code example shows how to get started using Amazon S3 directory buckets.
@@ -188,9 +192,9 @@ public class HelloS3DirectoryBuckets {
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [CreateBucket](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CreateBucket)
 
-- [ListDirectoryBuckets](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/listdirectorybuckets.md)
+- [ListDirectoryBuckets](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/ListDirectoryBuckets)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

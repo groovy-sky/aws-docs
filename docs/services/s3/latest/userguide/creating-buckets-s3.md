@@ -1,3 +1,7 @@
+---
+title: "Creating, configuring, and working with Amazon S3 general purpose buckets"
+---
+
 # Creating, configuring, and working with Amazon S3 general purpose buckets
 
 To store your data in Amazon S3, you work with resources known as buckets and objects. A

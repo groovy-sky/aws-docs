@@ -1,3 +1,7 @@
+---
+title: "Use ListDirectoryBuckets with an AWS SDK"
+---
+
 # Use `ListDirectoryBuckets` with an AWS SDK
 
 The following code example shows how to use `ListDirectoryBuckets`.
@@ -65,7 +69,7 @@ import static com.example.s3.util.S3DirectoryBucketUtils.deleteDirectoryBucket;
 ```
 
 - For API details, see
-[ListDirectoryBuckets](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/listdirectorybuckets.md)
+[ListDirectoryBuckets](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/ListDirectoryBuckets)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

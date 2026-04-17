@@ -1,3 +1,7 @@
+---
+title: "Access management for S3 Tables"
+---
+
 # Access management for S3 Tables
 
 In S3 Tables resources include table buckets and the tables that they contain. The root

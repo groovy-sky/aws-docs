@@ -1,3 +1,7 @@
+---
+title: "Managing your Amazon S3 access points for general purpose buckets"
+---
+
 # Managing your Amazon S3 access points for general purpose buckets
 
 This section explains how to manage your Amazon S3 access points for general purpose buckets using the

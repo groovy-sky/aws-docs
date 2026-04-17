@@ -1,3 +1,7 @@
+---
+title: "Networking for S3 on Outposts"
+---
+
 # Networking for S3 on Outposts
 
 You can use Amazon S3 on Outposts to store and retrieve objects on-premises for applications

@@ -1,3 +1,7 @@
+---
+title: "CreateBucket (SOAP API)"
+---
+
 # CreateBucket (SOAP API)
 
 ###### Note

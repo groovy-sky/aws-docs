@@ -1,3 +1,7 @@
+---
+title: "Use AbortMultipartUpload with an AWS SDK or CLI"
+---
+
 # Use `AbortMultipartUpload` with an AWS SDK or CLI
 
 The following code examples show how to use `AbortMultipartUpload`.
@@ -54,7 +58,7 @@ bool AwsDoc::S3::abortMultipartUpload(const Aws::String &bucket,
 ```
 
 - For API details, see
-[AbortMultipartUpload](../../../../reference/goto/sdkforcpp/s3-2006-03-01/abortmultipartupload.md)
+[AbortMultipartUpload](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/AbortMultipartUpload)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -449,7 +453,7 @@ public class AbortMultipartUploadExamples {
 ```
 
 - For API details, see
-[AbortMultipartUpload](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/abortmultipartupload.md)
+[AbortMultipartUpload](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/AbortMultipartUpload)
 in _AWS SDK for Java 2.x API Reference_.
 
 PowerShell
@@ -481,7 +485,7 @@ Remove-S3MultipartUpload -BucketName amzn-s3-demo-bucket -InitiatedDate "2014/01
 ```
 
 - For API details, see
-[AbortMultipartUpload](../../../powershell/v4/reference.md)
+[AbortMultipartUpload](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -511,7 +515,7 @@ Remove-S3MultipartUpload -BucketName amzn-s3-demo-bucket -InitiatedDate "2014/01
 ```
 
 - For API details, see
-[AbortMultipartUpload](../../../powershell/v5/reference.md)
+[AbortMultipartUpload](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

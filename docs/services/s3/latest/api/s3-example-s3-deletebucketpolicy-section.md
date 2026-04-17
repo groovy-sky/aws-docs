@@ -1,3 +1,7 @@
+---
+title: "Use DeleteBucketPolicy with an AWS SDK or CLI"
+---
+
 # Use `DeleteBucketPolicy` with an AWS SDK or CLI
 
 The following code examples show how to use `DeleteBucketPolicy`.
@@ -37,7 +41,7 @@ bool AwsDoc::S3::deleteBucketPolicy(const Aws::String &bucketName,
 ```
 
 - For API details, see
-[DeleteBucketPolicy](../../../../reference/goto/sdkforcpp/s3-2006-03-01/deletebucketpolicy.md)
+[DeleteBucketPolicy](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/DeleteBucketPolicy)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -136,7 +140,7 @@ public class DeleteBucketPolicy {
 ```
 
 - For API details, see
-[DeleteBucketPolicy](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deletebucketpolicy.md)
+[DeleteBucketPolicy](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteBucketPolicy)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -196,7 +200,7 @@ export const main = async ({ bucketName }) => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/s3-example-bucket-policies.md#s3-example-bucket-policies-delete-policy).
 
 - For API details, see
-[DeleteBucketPolicy](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/deletebucketpolicycommand.md)
+[DeleteBucketPolicy](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/DeleteBucketPolicyCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -242,7 +246,7 @@ Remove-S3BucketPolicy -BucketName 'amzn-s3-demo-bucket'
 ```
 
 - For API details, see
-[DeleteBucketPolicy](../../../powershell/v4/reference.md)
+[DeleteBucketPolicy](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -256,7 +260,7 @@ Remove-S3BucketPolicy -BucketName 'amzn-s3-demo-bucket'
 ```
 
 - For API details, see
-[DeleteBucketPolicy](../../../powershell/v5/reference.md)
+[DeleteBucketPolicy](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -298,7 +302,7 @@ class BucketWrapper:
 ```
 
 - For API details, see
-[DeleteBucketPolicy](../../../goto/boto3/s3-2006-03-01/deletebucketpolicy.md)
+[DeleteBucketPolicy](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteBucketPolicy)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -335,7 +339,7 @@ end
 ```
 
 - For API details, see
-[DeleteBucketPolicy](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/deletebucketpolicy.md)
+[DeleteBucketPolicy](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/DeleteBucketPolicy)
 in _AWS SDK for Ruby API Reference_.
 
 SAP ABAP

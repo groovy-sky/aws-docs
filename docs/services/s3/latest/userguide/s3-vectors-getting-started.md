@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Getting started with S3 Vectors"
+---
+
 # Tutorial: Getting started with S3 Vectors
 
 In this tutorial, you create an S3 vector bucket and a vector index in an AWS Region in the Amazon S3 console. Next, you

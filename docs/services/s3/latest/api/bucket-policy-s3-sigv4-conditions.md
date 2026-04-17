@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Signature Version 4 Authentication Specific Policy Keys"
+---
+
 # Amazon S3 Signature Version 4 Authentication Specific Policy Keys
 
 The following table shows the policy keys related Amazon S3 Signature Version 4

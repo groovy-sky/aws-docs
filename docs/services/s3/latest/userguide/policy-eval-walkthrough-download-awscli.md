@@ -1,3 +1,7 @@
+---
+title: "Setting up the tools for the walkthroughs"
+---
+
 # Setting up the tools for the walkthroughs
 
 The introductory examples (see [Walkthroughs that use policies to manage access to your Amazon S3 resources](example-walkthroughs-managing-access.md)) use the AWS Management Console to create

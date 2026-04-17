@@ -1,3 +1,7 @@
+---
+title: "Deleting multiple objects"
+---
+
 # Deleting multiple objects
 
 Because all objects in your S3 bucket incur storage costs, you should delete objects that

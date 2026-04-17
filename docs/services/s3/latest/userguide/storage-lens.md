@@ -1,3 +1,7 @@
+---
+title: "Monitoring your storage activity and usage with Amazon S3 Storage Lens"
+---
+
 # Monitoring your storage activity and usage with Amazon S3 Storage Lens
 
 Amazon S3 Storage Lens is a cloud-storage analytics feature that you can use to gain organization-wide

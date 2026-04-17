@@ -1,3 +1,7 @@
+---
+title: "Use CreateSession with an AWS SDK"
+---
+
 # Use `CreateSession` with an AWS SDK
 
 The following code example shows how to use `CreateSession`.
@@ -54,7 +58,7 @@ class S3ExpressWrapper:
 ```
 
 - For API details, see
-[CreateSession](../../../goto/boto3/s3-2006-03-01/createsession.md)
+[CreateSession](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/CreateSession)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

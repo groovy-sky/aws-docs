@@ -1,3 +1,7 @@
+---
+title: "Use DeleteBucketCors with an AWS SDK or CLI"
+---
+
 # Use `DeleteBucketCors` with an AWS SDK or CLI
 
 The following code examples show how to use `DeleteBucketCors`.
@@ -31,7 +35,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[DeleteBucketCors](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/deletebucketcors.md)
+[DeleteBucketCors](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/DeleteBucketCors)
 in _AWS SDK for .NET API Reference_.
 
 CLI
@@ -89,7 +93,7 @@ class BucketWrapper:
 ```
 
 - For API details, see
-[DeleteBucketCors](../../../goto/boto3/s3-2006-03-01/deletebucketcors.md)
+[DeleteBucketCors](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteBucketCors)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -131,7 +135,7 @@ end
 ```
 
 - For API details, see
-[DeleteBucketCors](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/deletebucketcors.md)
+[DeleteBucketCors](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/DeleteBucketCors)
 in _AWS SDK for Ruby API Reference_.
 
 SAP ABAP

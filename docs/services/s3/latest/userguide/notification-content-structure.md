@@ -1,3 +1,7 @@
+---
+title: "Event message structure"
+---
+
 # Event message structure
 
 The notification message that Amazon S3 sends to publish an event is in the JSON

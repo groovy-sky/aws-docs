@@ -1,3 +1,7 @@
+---
+title: "Working with XML-Restricted Characters"
+---
+
 # Working with XML-Restricted Characters
 
 You can store data in Amazon SimpleDB through the REST interface. All results are returned in XML

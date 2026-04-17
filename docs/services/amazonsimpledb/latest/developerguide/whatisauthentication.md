@@ -1,3 +1,7 @@
+---
+title: "What Is Authentication?"
+---
+
 # What Is Authentication?
 
 Authentication is a process for identifying and verifying who is sending a request. The

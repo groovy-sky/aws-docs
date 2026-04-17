@@ -1,3 +1,7 @@
+---
+title: "Appending data to objects in directory buckets"
+---
+
 # Appending data to objects in directory buckets
 
 You can add data to the end of existing objects stored in the S3 Express One Zone storage class in directory buckets.

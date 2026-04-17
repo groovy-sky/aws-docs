@@ -1,3 +1,7 @@
+---
+title: "Data protection and encryption in S3 Vectors"
+---
+
 # Data protection and encryption in S3 Vectors
 
 Amazon S3 Vectors provides 99.999999999% (11 9s) of durability for your vector data, which

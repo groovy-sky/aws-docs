@@ -1,3 +1,7 @@
+---
+title: "Deleting a Storage Lens group"
+---
+
 # Deleting a Storage Lens group
 
 The following examples demonstrate how to delete an Amazon S3 Storage Lens group by using the

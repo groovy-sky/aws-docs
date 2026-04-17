@@ -1,3 +1,7 @@
+---
+title: "Use CreateMultipartUpload with an AWS SDK or CLI"
+---
+
 # Use `CreateMultipartUpload` with an AWS SDK or CLI
 
 The following code examples show how to use `CreateMultipartUpload`.
@@ -58,7 +62,7 @@ AwsDoc::S3::createMultipartUpload(const Aws::String &bucket, const Aws::String &
 ```
 
 - For API details, see
-[CreateMultipartUpload](../../../../reference/goto/sdkforcpp/s3-2006-03-01/createmultipartupload.md)
+[CreateMultipartUpload](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/CreateMultipartUpload)
 in _AWS SDK for C++ API Reference_.
 
 CLI

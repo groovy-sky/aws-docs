@@ -1,3 +1,7 @@
+---
+title: "Managing access with S3 Access Grants"
+---
+
 # Managing access with S3 Access Grants
 
 To adhere to the principle of least privilege, you define granular access to your Amazon S3

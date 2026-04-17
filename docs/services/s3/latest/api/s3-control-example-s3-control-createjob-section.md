@@ -1,3 +1,7 @@
+---
+title: "Use CreateJob with an AWS SDK or CLI"
+---
+
 # Use `CreateJob` with an AWS SDK or CLI
 
 The following code examples show how to use `CreateJob`.
@@ -411,7 +415,7 @@ public class CreateGovernanceRetentionJob {
 ```
 
 - For API details, see
-[CreateJob](../../../../reference/goto/sdkforjavav2/s3control-2018-08-20/createjob.md)
+[CreateJob](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3control-2018-08-20/CreateJob)
 in _AWS SDK for Java 2.x API Reference_.
 
 Python
@@ -498,7 +502,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/p
 ```
 
 - For API details, see
-[CreateJob](../../../goto/boto3/s3control-2018-08-20/createjob.md)
+[CreateJob](https://docs.aws.amazon.com/goto/boto3/s3control-2018-08-20/CreateJob)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

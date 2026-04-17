@@ -1,3 +1,7 @@
+---
+title: "Viewing access point tags"
+---
+
 # Viewing access point tags
 
 You can view or list tags applied to access points. For more information about tags, see [Using tags with S3 Access Points for general purpose buckets](access-points-tagging.md).

@@ -1,3 +1,7 @@
+---
+title: "Setting up permissions for configuring metadata tables"
+---
+
 # Setting up permissions for configuring metadata tables
 
 To create a metadata table configuration, you must have the necessary AWS Identity and Access Management (IAM) permissions

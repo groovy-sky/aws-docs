@@ -1,3 +1,7 @@
+---
+title: "Adding a bucket policy by using the Amazon S3 console"
+---
+
 # Adding a bucket policy by using the Amazon S3 console
 
 You can use the [AWS Policy\

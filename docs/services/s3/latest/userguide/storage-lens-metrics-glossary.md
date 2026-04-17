@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Storage Lens metrics glossary"
+---
+
 # Amazon S3 Storage Lens metrics glossary
 
 The Amazon S3 Storage Lens metrics glossary provides a complete list of free and advanced metrics for

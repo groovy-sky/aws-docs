@@ -1,3 +1,7 @@
+---
+title: "Using a CSV manifest to copy objects across AWS accounts"
+---
+
 # Using a CSV manifest to copy objects across AWS accounts
 
 You can use Amazon S3 Batch Operations to perform large-scale batch operations on Amazon S3 objects.

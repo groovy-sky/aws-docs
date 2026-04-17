@@ -1,3 +1,7 @@
+---
+title: "Deleting a metrics filter"
+---
+
 # Deleting a metrics filter
 
 You can delete an Amazon CloudWatch request metrics filter if you no longer need it. When you

@@ -1,3 +1,7 @@
+---
+title: "Example: Browser-Based Upload using HTTP POST (Using AWS Signature Version 4)"
+---
+
 # Example: Browser-Based Upload using HTTP POST (Using AWS Signature Version 4)
 
 This section shows an example of using an HTTP POST request to upload content directly to Amazon S3.

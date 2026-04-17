@@ -1,3 +1,7 @@
+---
+title: "Streaming data to tables with Amazon Data Firehose"
+---
+
 # Streaming data to tables with Amazon Data Firehose
 
 Amazon Data Firehose is a fully managed service for delivering real-time [streaming data](https://aws.amazon.com/streaming-data) to destinations such as Amazon S3, Amazon Redshift, Amazon OpenSearch Service,

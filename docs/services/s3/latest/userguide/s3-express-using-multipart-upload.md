@@ -1,3 +1,7 @@
+---
+title: "Using multipart uploads with directory buckets"
+---
+
 # Using multipart uploads with directory buckets
 
 You can use the multipart upload process to upload a single object as a set of parts. Each

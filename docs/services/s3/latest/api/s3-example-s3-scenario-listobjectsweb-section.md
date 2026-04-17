@@ -1,3 +1,7 @@
+---
+title: "A web page that lists Amazon S3 objects using an AWS SDK"
+---
+
 # A web page that lists Amazon S3 objects using an AWS SDK
 
 The following code example shows how to list Amazon S3 objects in a web page.
@@ -72,7 +76,7 @@ export default App;
 ```
 
 - For API details, see
-[ListObjects](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/listobjectscommand.md)
+[ListObjects](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/ListObjectsCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "Website endpoints"
+---
+
 # Website endpoints
 
 When you configure your bucket as a static website, the website is available at the
@@ -45,7 +49,7 @@ objects within your general purpose bucket, deploy your content to a
 managed CDN, and generate a public HTTPS URL for your website to be
 accessible anywhere. For more information about Amplify Hosting, see
 [Deploying a static website to AWS Amplify Hosting from an S3\
-general purpose bucket](website-hosting-amplify.md) and [Deploying a static website from S3 using the Amplify\
+general purpose bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-amplify) and [Deploying a static website from S3 using the Amplify\
 console](../../../amplify/latest/userguide/deploy-from-amplify-console.md) in the _AWS Amplify Console User_
 _Guide_.
 

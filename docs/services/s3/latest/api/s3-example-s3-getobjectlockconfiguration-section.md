@@ -1,3 +1,7 @@
+---
+title: "Use GetObjectLockConfiguration with an AWS SDK or CLI"
+---
+
 # Use `GetObjectLockConfiguration` with an AWS SDK or CLI
 
 The following code examples show how to use `GetObjectLockConfiguration`.
@@ -50,7 +54,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[GetObjectLockConfiguration](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getobjectlockconfiguration.md)
+[GetObjectLockConfiguration](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetObjectLockConfiguration)
 in _AWS SDK for .NET API Reference_.
 
 CLI
@@ -180,7 +184,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[GetObjectLockConfiguration](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getobjectlockconfiguration.md)
+[GetObjectLockConfiguration](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetObjectLockConfiguration)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -268,7 +272,7 @@ if (isMain(import.meta.url)) {
 ```
 
 - For API details, see
-[GetObjectLockConfiguration](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getobjectlockconfigurationcommand.md)
+[GetObjectLockConfiguration](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/GetObjectLockConfigurationCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PowerShell
@@ -293,7 +297,7 @@ Enabled
 ```
 
 - For API details, see
-[GetObjectLockConfiguration](../../../powershell/v4/reference.md)
+[GetObjectLockConfiguration](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -316,7 +320,7 @@ Enabled
 ```
 
 - For API details, see
-[GetObjectLockConfiguration](../../../powershell/v5/reference.md)
+[GetObjectLockConfiguration](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -359,7 +363,7 @@ def is_object_lock_enabled(s3_client, bucket: str) -> bool:
 ```
 
 - For API details, see
-[GetObjectLockConfiguration](../../../goto/boto3/s3-2006-03-01/getobjectlockconfiguration.md)
+[GetObjectLockConfiguration](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetObjectLockConfiguration)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

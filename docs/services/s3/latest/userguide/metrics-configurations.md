@@ -1,3 +1,7 @@
+---
+title: "CloudWatch metrics configurations"
+---
+
 # CloudWatch metrics configurations
 
 With Amazon CloudWatch request metrics for Amazon S3, you can receive 1-minute CloudWatch metrics, set

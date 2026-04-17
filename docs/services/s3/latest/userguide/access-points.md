@@ -1,3 +1,7 @@
+---
+title: "Managing access to shared datasets with access points"
+---
+
 # Managing access to shared datasets with access points
 
 Amazon S3 access points simplify data access for any AWS service or customer application that stores

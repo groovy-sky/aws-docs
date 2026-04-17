@@ -1,3 +1,7 @@
+---
+title: "Using Amazon S3 Multi-Region Access Point failover controls"
+---
+
 # Using Amazon S3 Multi-Region Access Point failover controls
 
 This section explains how to manage and use your Amazon S3 Multi-Region Access Points failover controls by

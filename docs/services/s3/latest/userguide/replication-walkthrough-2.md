@@ -1,3 +1,7 @@
+---
+title: "Configuring replication for buckets in different accounts"
+---
+
 # Configuring replication for buckets in different accounts
 
 Live replication is the automatic, asynchronous copying of objects across buckets in the

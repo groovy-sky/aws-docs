@@ -1,3 +1,7 @@
+---
+title: "Setting the storage class of an object"
+---
+
 # Setting the storage class of an object
 
 You

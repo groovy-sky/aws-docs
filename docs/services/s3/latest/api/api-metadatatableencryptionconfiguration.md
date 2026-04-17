@@ -1,3 +1,7 @@
+---
+title: "MetadataTableEncryptionConfiguration"
+---
+
 # MetadataTableEncryptionConfiguration
 
 The encryption settings for an S3 Metadata journal table or inventory table configuration.
@@ -31,11 +35,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3-2006-03-01/metadatatableencryptionconfiguration.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/MetadataTableEncryptionConfiguration)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/metadatatableencryptionconfiguration.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/MetadataTableEncryptionConfiguration)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/metadatatableencryptionconfiguration.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/MetadataTableEncryptionConfiguration)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

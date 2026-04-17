@@ -1,3 +1,7 @@
+---
+title: "Record expiration for tables"
+---
+
 # Record expiration for tables
 
 By default, records in your S3 tables don't expire. To help minimize storage costs for your

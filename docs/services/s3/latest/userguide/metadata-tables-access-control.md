@@ -1,3 +1,7 @@
+---
+title: "Controlling access to metadata tables"
+---
+
 # Controlling access to metadata tables
 
 To control access to your Amazon S3 metadata tables, you can use AWS Identity and Access Management (IAM) resource-based

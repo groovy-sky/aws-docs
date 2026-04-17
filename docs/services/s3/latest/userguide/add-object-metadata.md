@@ -1,3 +1,7 @@
+---
+title: "Editing object metadata in the Amazon S3 console"
+---
+
 # Editing object metadata in the Amazon S3 console
 
 You can use the Amazon S3 console to edit metadata for existing S3 objects by using the **Copy** action. To edit metadata, you copy objects to the same destination and specify the new metadata you want to apply, which replaces the old metadata for the object. Some metadata is set

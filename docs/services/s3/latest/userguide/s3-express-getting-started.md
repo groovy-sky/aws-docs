@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Getting started with S3 Express One Zone"
+---
+
 # Tutorial: Getting started with S3 Express One Zone
 
 Amazon S3 Express One Zone is the first S3 storage class where you can select a single Availability

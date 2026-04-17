@@ -1,3 +1,7 @@
+---
+title: "Performing a Conditional Delete"
+---
+
 # Performing a Conditional Delete
 
 Conditional delete enables you to delete an item or one or more attributes of an item if the existing value of an

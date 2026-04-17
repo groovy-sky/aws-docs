@@ -1,3 +1,7 @@
+---
+title: "Adding a tag to a table bucket"
+---
+
 # Adding a tag to a table bucket
 
 You can add tags to Amazon S3 table buckets and modify these tags. For more information about tagging table buckets, see [Using tags with S3 table buckets](table-bucket-tagging.md).

@@ -1,3 +1,7 @@
+---
+title: "Deleting a directory bucket"
+---
+
 # Deleting a directory bucket
 
 You can delete only empty Amazon S3 directory buckets. Before you delete your

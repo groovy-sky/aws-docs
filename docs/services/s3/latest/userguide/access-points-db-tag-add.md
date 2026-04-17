@@ -1,3 +1,7 @@
+---
+title: "Adding a tag to an access point for directory buckets"
+---
+
 # Adding a tag to an access point for directory buckets
 
 You can add tags to Amazon S3 Access Points for directory buckets and modify these tags. For additional information, see [Using tags with S3 Access Points for directory buckets](access-points-db-tagging.md).

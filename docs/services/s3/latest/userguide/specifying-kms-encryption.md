@@ -1,3 +1,7 @@
+---
+title: "Specifying server-side encryption with AWS KMS (SSE-KMS)"
+---
+
 # Specifying server-side encryption with AWS KMS (SSE-KMS)
 
 All Amazon S3 buckets have encryption configured by default, and all new objects that are uploaded

@@ -1,3 +1,7 @@
+---
+title: "Metrics and dimensions"
+---
+
 # Metrics and dimensions
 
 The storage metrics and dimensions that Amazon S3 sends to Amazon CloudWatch are listed in

@@ -1,3 +1,7 @@
+---
+title: "How Amazon S3 authorizes a request for an object operation"
+---
+
 # How Amazon S3 authorizes a request for an object operation
 
 When Amazon S3 receives a request for an object operation, it converts all the relevant

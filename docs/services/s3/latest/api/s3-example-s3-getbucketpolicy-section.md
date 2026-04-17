@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketPolicy with an AWS SDK or CLI"
+---
+
 # Use `GetBucketPolicy` with an AWS SDK or CLI
 
 The following code examples show how to use `GetBucketPolicy`.
@@ -45,7 +49,7 @@ bool AwsDoc::S3::getBucketPolicy(const Aws::String &bucketName,
 ```
 
 - For API details, see
-[GetBucketPolicy](../../../../reference/goto/sdkforcpp/s3-2006-03-01/getbucketpolicy.md)
+[GetBucketPolicy](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/GetBucketPolicy)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -183,7 +187,7 @@ public class GetBucketPolicy {
 ```
 
 - For API details, see
-[GetBucketPolicy](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getbucketpolicy.md)
+[GetBucketPolicy](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetBucketPolicy)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -243,7 +247,7 @@ export const main = async ({ bucketName }) => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/s3-example-bucket-policies.md#s3-example-bucket-policies-get-policy).
 
 - For API details, see
-[GetBucketPolicy](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getbucketpolicycommand.md)
+[GetBucketPolicy](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/GetBucketPolicyCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 Kotlin
@@ -291,7 +295,7 @@ Get-S3BucketPolicy -BucketName 'amzn-s3-demo-bucket'
 ```
 
 - For API details, see
-[GetBucketPolicy](../../../powershell/v4/reference.md)
+[GetBucketPolicy](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -305,7 +309,7 @@ Get-S3BucketPolicy -BucketName 'amzn-s3-demo-bucket'
 ```
 
 - For API details, see
-[GetBucketPolicy](../../../powershell/v5/reference.md)
+[GetBucketPolicy](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -351,7 +355,7 @@ class BucketWrapper:
 ```
 
 - For API details, see
-[GetBucketPolicy](../../../goto/boto3/s3-2006-03-01/getbucketpolicy.md)
+[GetBucketPolicy](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetBucketPolicy)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -391,7 +395,7 @@ end
 ```
 
 - For API details, see
-[GetBucketPolicy](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/getbucketpolicy.md)
+[GetBucketPolicy](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/GetBucketPolicy)
 in _AWS SDK for Ruby API Reference_.
 
 SAP ABAP

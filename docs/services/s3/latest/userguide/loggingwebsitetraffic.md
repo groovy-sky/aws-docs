@@ -1,3 +1,7 @@
+---
+title: "(Optional) Logging web traffic"
+---
+
 # (Optional) Logging web traffic
 
 You can optionally enable Amazon S3 server access logging for a bucket that is configured

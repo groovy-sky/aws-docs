@@ -1,3 +1,7 @@
+---
+title: "How Amazon S3 works with IAM"
+---
+
 # How Amazon S3 works with IAM
 
 Before you use IAM to manage access to Amazon S3, learn what IAM features are

@@ -1,3 +1,7 @@
+---
+title: "S3 Express One Zone Availability Zones and Regions"
+---
+
 # S3 Express One Zone Availability Zones and Regions
 
 An Availability Zone is one or more discrete data centers with redundant power,

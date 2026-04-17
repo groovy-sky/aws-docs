@@ -1,3 +1,7 @@
+---
+title: "Use DeletePublicAccessBlock with a CLI"
+---
+
 # Use `DeletePublicAccessBlock` with a CLI
 
 The following code examples show how to use `DeletePublicAccessBlock`.
@@ -43,7 +47,7 @@ amzn-s3-demo-bucket
 ```
 
 - For API details, see
-[DeletePublicAccessBlock](../../../powershell/v4/reference.md)
+[DeletePublicAccessBlock](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -64,7 +68,7 @@ amzn-s3-demo-bucket
 ```
 
 - For API details, see
-[DeletePublicAccessBlock](../../../powershell/v5/reference.md)
+[DeletePublicAccessBlock](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

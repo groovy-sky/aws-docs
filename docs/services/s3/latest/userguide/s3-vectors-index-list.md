@@ -1,3 +1,7 @@
+---
+title: "Listing vector indexes"
+---
+
 # Listing vector indexes
 
 You can view all vector indexes within a vector bucket. The listing operation supports prefix-based filtering to help you find

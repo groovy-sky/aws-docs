@@ -1,3 +1,7 @@
+---
+title: "Creating an access point"
+---
+
 # Creating an access point
 
 You can create S3 access points by using the AWS Management Console, AWS Command Line Interface (AWS CLI), AWS SDKs, or Amazon S3

@@ -1,3 +1,7 @@
+---
+title: "Use GetObject with an AWS SDK"
+---
+
 # Use `GetObject` with an AWS SDK
 
 The following code example shows how to use `GetObject`.
@@ -80,7 +84,7 @@ import static com.example.s3.util.S3DirectoryBucketUtils.putDirectoryBucketObjec
 ```
 
 - For API details, see
-[GetObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getobject.md)
+[GetObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetObject)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

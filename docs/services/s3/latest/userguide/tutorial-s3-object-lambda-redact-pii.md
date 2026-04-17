@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Detecting and redacting PII data with S3 Object Lambda and Amazon Comprehend"
+---
+
 # Tutorial: Detecting and redacting PII data with S3 Object Lambda and Amazon Comprehend
 
 ###### Note

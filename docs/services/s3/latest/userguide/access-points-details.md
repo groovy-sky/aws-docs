@@ -1,3 +1,7 @@
+---
+title: "View details for your access point for general purpose buckets"
+---
+
 # View details for your access point for general purpose buckets
 
 This section explains how to view details for your access point for a general purpose bucket using the AWS Management Console, AWS Command Line Interface, or REST API.

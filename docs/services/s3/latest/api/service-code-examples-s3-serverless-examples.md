@@ -1,3 +1,7 @@
+---
+title: "Serverless examples for Amazon S3"
+---
+
 # Serverless examples for Amazon S3
 
 The following code examples show how to use Amazon S3 with AWS SDKs.

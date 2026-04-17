@@ -1,3 +1,7 @@
+---
+title: "Identifying Amazon S3 requests using CloudTrail"
+---
+
 # Identifying Amazon S3 requests using CloudTrail
 
 In Amazon S3, you can identify requests using an AWS CloudTrail event log. AWS CloudTrail is the

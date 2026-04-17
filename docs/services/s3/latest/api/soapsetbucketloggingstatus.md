@@ -1,3 +1,7 @@
+---
+title: "SetBucketLoggingStatus (SOAP API)"
+---
+
 # SetBucketLoggingStatus (SOAP API)
 
 ###### Note

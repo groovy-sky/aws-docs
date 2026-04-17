@@ -1,3 +1,7 @@
+---
+title: "Basic examples for S3 Directory Buckets using AWS SDKs"
+---
+
 # Basic examples for S3 Directory Buckets using AWS SDKs
 
 The following code examples show how to use the basics of Amazon S3 Directory Buckets with AWS

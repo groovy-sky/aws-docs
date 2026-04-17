@@ -1,3 +1,7 @@
+---
+title: "Consistency"
+---
+
 # Consistency
 
 Amazon SimpleDB keeps multiple copies of each domain. A successful write (using PutAttributes,

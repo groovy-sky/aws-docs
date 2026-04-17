@@ -1,3 +1,7 @@
+---
+title: "Hello Amazon S3"
+---
+
 # Hello Amazon S3
 
 The following code examples show how to get started using Amazon S3.
@@ -78,7 +82,7 @@ public class HelloS3
 ```
 
 - For API details, see
-[ListBuckets](../../../../reference/goto/dotnetsdkv4/s3-2006-03-01/listbuckets.md)
+[ListBuckets](https://docs.aws.amazon.com/goto/DotNetSDKV4/s3-2006-03-01/ListBuckets)
 in _AWS SDK for .NET API Reference_.
 
 C++
@@ -197,7 +201,7 @@ int main(int argc, char **argv) {
 ```
 
 - For API details, see
-[ListBuckets](../../../../reference/goto/sdkforcpp/s3-2006-03-01/listbuckets.md)
+[ListBuckets](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/ListBuckets)
 in _AWS SDK for C++ API Reference_.
 
 Go
@@ -327,7 +331,7 @@ public class HelloS3 {
 ```
 
 - For API details, see
-[ListBuckets](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/listbuckets.md)
+[ListBuckets](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/ListBuckets)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -383,7 +387,7 @@ export const helloS3 = async () => {
 ```
 
 - For API details, see
-[ListBuckets](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/listbucketscommand.md)
+[ListBuckets](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/ListBucketsCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PHP
@@ -407,7 +411,7 @@ var_dump($results);
 ```
 
 - For API details, see
-[ListBuckets](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/listbuckets.md)
+[ListBuckets](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/ListBuckets)
 in _AWS SDK for PHP API Reference_.
 
 Python
@@ -465,7 +469,7 @@ if __name__ == "__main__":
 ```
 
 - For API details, see
-[ListBuckets](../../../goto/boto3/s3-2006-03-01/listbuckets.md)
+[ListBuckets](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/ListBuckets)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 Ruby
@@ -517,7 +521,7 @@ end
 ```
 
 - For API details, see
-[ListBuckets](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/listbuckets.md)
+[ListBuckets](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/ListBuckets)
 in _AWS SDK for Ruby API Reference_.
 
 Rust

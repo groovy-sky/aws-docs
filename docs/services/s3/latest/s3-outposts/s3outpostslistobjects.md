@@ -1,3 +1,7 @@
+---
+title: "Listing the objects in an Amazon S3 on Outposts bucket"
+---
+
 # Listing the objects in an Amazon S3 on Outposts bucket
 
 Objects are the fundamental entities stored in Amazon S3 on Outposts. Every object is contained in a bucket.

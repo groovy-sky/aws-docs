@@ -1,3 +1,7 @@
+---
+title: "Operations on Buckets (SOAP API)"
+---
+
 # Operations on Buckets (SOAP API)
 
 ###### Note

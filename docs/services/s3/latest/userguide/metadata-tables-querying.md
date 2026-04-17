@@ -1,3 +1,7 @@
+---
+title: "Querying metadata tables"
+---
+
 # Querying metadata tables
 
 Your Amazon S3 Metadata tables are stored in an AWS managed S3 table bucket, which provides storage

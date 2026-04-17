@@ -1,3 +1,7 @@
+---
+title: "Naming Amazon S3 objects"
+---
+
 # Naming Amazon S3 objects
 
 The _object key_ (or key name) uniquely identifies the object in an

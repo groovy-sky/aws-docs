@@ -1,3 +1,7 @@
+---
+title: "Table namespaces"
+---
+
 # Table namespaces
 
 When you create tables within your Amazon S3 table bucket, you organize them into logical groupings

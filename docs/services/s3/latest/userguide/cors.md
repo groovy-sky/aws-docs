@@ -1,3 +1,7 @@
+---
+title: "Using cross-origin resource sharing (CORS)"
+---
+
 # Using cross-origin resource sharing (CORS)
 
 Cross-origin resource sharing (CORS) defines a way for client web applications that are

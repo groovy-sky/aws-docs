@@ -1,3 +1,7 @@
+---
+title: "Create a presigned URL for Amazon S3 using an AWS SDK"
+---
+
 # Create a presigned URL for Amazon S3 using an AWS SDK
 
 The following code examples show how to create a presigned URL for Amazon S3 and upload an object.

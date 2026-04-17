@@ -1,3 +1,7 @@
+---
+title: "Tutorial: Getting started with S3 Tables"
+---
+
 # Tutorial: Getting started with S3 Tables
 
 In this tutorial, you create a table bucket and integrate table buckets in your Region

@@ -1,3 +1,7 @@
+---
+title: "Managing S3 Versioning for your S3 on Outposts bucket"
+---
+
 # Managing S3 Versioning for your S3 on Outposts bucket
 
 When enabled, S3 Versioning saves multiple distinct copies of an object in the same bucket. You can use

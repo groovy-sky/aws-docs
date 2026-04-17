@@ -1,3 +1,7 @@
+---
+title: "Enabling and using S3 Transfer Acceleration"
+---
+
 # Enabling and using S3 Transfer Acceleration
 
 You can use Amazon S3 Transfer Acceleration to transfer files quickly and securely over long distances

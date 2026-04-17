@@ -1,3 +1,7 @@
+---
+title: "Enforcing and scoping SSE-KMS use for tables and table buckets"
+---
+
 # Enforcing and scoping SSE-KMS use for tables and table buckets
 
 You can use S3 Tables resource-based policies, KMS key policies, IAM

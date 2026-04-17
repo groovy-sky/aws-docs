@@ -1,3 +1,7 @@
+---
+title: "Security for directory buckets"
+---
+
 # Security for directory buckets
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from

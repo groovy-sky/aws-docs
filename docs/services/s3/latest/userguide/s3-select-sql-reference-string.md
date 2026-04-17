@@ -1,3 +1,7 @@
+---
+title: "String functions"
+---
+
 # String functions
 
 ###### Important

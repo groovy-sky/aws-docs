@@ -1,3 +1,7 @@
+---
+title: "Walkthrough: Configuring a bucket for notifications (SNS topic or SQS queue)"
+---
+
 # Walkthrough: Configuring a bucket for notifications (SNS topic or SQS queue)
 
 You can receive Amazon S3 notifications using Amazon Simple Notification Service (Amazon SNS) or Amazon Simple Queue Service (Amazon SQS). In

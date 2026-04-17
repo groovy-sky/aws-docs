@@ -1,3 +1,7 @@
+---
+title: "Viewing table bucket tags"
+---
+
 # Viewing table bucket tags
 
 You can view or list tags applied to Amazon S3 table buckets. For more information about tagging table buckets, see [Using tags with S3 table buckets](table-bucket-tagging.md).

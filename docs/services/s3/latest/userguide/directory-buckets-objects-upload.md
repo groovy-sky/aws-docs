@@ -1,3 +1,7 @@
+---
+title: "Uploading objects to a directory bucket"
+---
+
 # Uploading objects to a directory bucket
 
 After you create an Amazon S3 directory bucket, you can upload objects to it. The following

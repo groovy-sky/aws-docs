@@ -1,3 +1,7 @@
+---
+title: "Creating an S3 on Outposts bucket"
+---
+
 # Creating an S3 on Outposts bucket
 
 With Amazon S3 on Outposts, you can create S3 buckets on your AWS Outposts and easily store and

@@ -1,3 +1,7 @@
+---
+title: "Working with objects in Amazon S3"
+---
+
 # Working with objects in Amazon S3
 
 To store your data in Amazon S3, you work with resources known as buckets and objects. A

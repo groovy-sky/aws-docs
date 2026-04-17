@@ -1,3 +1,7 @@
+---
+title: "Using Amazon S3 access points for general purpose buckets"
+---
+
 # Using Amazon S3 access points for general purpose buckets
 
 The following examples demonstrate how to use access points for general purpose buckets with compatible operations in Amazon S3.

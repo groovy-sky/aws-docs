@@ -1,3 +1,7 @@
+---
+title: "Managing storage costs with Amazon S3 Intelligent-Tiering"
+---
+
 # Managing storage costs with Amazon S3 Intelligent-Tiering
 
 The S3 Intelligent-Tiering storage class is designed to optimize storage costs by automatically

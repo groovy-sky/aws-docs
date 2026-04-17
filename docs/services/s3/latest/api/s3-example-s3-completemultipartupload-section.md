@@ -1,3 +1,7 @@
+---
+title: "Use CompleteMultipartUpload with an AWS SDK or CLI"
+---
+
 # Use `CompleteMultipartUpload` with an AWS SDK or CLI
 
 The following code examples show how to use `CompleteMultipartUpload`.
@@ -58,7 +62,7 @@ Aws::S3::Model::CompleteMultipartUploadOutcome AwsDoc::S3::completeMultipartUplo
 ```
 
 - For API details, see
-[CompleteMultipartUpload](../../../../reference/goto/sdkforcpp/s3-2006-03-01/completemultipartupload.md)
+[CompleteMultipartUpload](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/CompleteMultipartUpload)
 in _AWS SDK for C++ API Reference_.
 
 CLI

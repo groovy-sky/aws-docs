@@ -1,3 +1,7 @@
+---
+title: "Setting up S3 Tables replication"
+---
+
 # Setting up S3 Tables replication
 
 You can set up replication to automatically create table replicas from a source table to up

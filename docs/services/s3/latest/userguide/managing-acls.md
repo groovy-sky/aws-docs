@@ -1,3 +1,7 @@
+---
+title: "Configuring ACLs"
+---
+
 # Configuring ACLs
 
 This section explains how to manage access permissions for S3 buckets and objects using

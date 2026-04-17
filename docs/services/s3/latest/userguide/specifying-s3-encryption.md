@@ -1,3 +1,7 @@
+---
+title: "Specifying server-side encryption with Amazon S3 managed keys (SSE-S3)"
+---
+
 # Specifying server-side encryption with Amazon S3 managed keys (SSE-S3)
 
 All Amazon S3 buckets have encryption configured by default, and all new objects that are uploaded

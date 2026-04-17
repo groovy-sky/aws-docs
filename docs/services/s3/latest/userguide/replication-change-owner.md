@@ -1,3 +1,7 @@
+---
+title: "Changing the replica owner"
+---
+
 # Changing the replica owner
 
 In replication, the owner of the source object also owns the replica by default. However,

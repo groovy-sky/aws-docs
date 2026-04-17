@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Vectors"
+---
+
 # Amazon S3 Vectors
 
 The following actions are supported by Amazon S3 Vectors:

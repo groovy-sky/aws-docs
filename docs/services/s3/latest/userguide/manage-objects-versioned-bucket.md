@@ -1,3 +1,7 @@
+---
+title: "Working with objects in a versioning-enabled bucket"
+---
+
 # Working with objects in a versioning-enabled bucket
 
 Objects that are stored in an Amazon S3 bucket before you set the versioning state have a

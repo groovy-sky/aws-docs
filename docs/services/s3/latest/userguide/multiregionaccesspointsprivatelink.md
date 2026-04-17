@@ -1,3 +1,7 @@
+---
+title: "Configuring a Multi-Region Access Point for use with AWS PrivateLink"
+---
+
 # Configuring a Multi-Region Access Point for use with AWS PrivateLink
 
 AWS PrivateLink provides you with private connectivity to Amazon S3 using private IP addresses

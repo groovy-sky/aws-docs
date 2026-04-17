@@ -1,3 +1,7 @@
+---
+title: "Deleting object versions from a versioning-enabled bucket"
+---
+
 # Deleting object versions from a versioning-enabled bucket
 
 You can delete object versions from Amazon S3 buckets whenever you want. You can also

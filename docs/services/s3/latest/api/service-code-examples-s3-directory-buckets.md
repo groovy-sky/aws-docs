@@ -1,3 +1,7 @@
+---
+title: "Code examples for S3 Directory Buckets using AWS SDKs"
+---
+
 # Code examples for S3 Directory Buckets using AWS SDKs
 
 The following code examples show how to use S3 Directory Buckets with an AWS software development kit (SDK).

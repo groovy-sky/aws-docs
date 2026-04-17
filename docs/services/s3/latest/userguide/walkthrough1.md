@@ -1,3 +1,7 @@
+---
+title: "Controlling access to a bucket with user policies"
+---
+
 # Controlling access to a bucket with user policies
 
 This walkthrough explains how user permissions work with Amazon S3. In this example, you create

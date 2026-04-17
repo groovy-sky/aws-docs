@@ -1,3 +1,7 @@
+---
+title: "View a grant"
+---
+
 # View a grant
 
 You can view the details of an access grant in your Amazon S3 Access Grants instance by using the Amazon S3

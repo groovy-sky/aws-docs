@@ -1,3 +1,7 @@
+---
+title: "Developing with Amazon S3 using the AWS CLI"
+---
+
 # Developing with Amazon S3 using the AWS CLI
 
 The Amazon S3 AWS CLI commands are organized into different sets in AWS CLI Command Reference and each has it’s own available commands. If you don't find the command that you're looking for in one set, check one of the other sets. The different sets are as follows:

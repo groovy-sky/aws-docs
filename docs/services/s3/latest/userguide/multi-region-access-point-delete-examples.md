@@ -1,3 +1,7 @@
+---
+title: "Deleting a Multi-Region Access Point"
+---
+
 # Deleting a Multi-Region Access Point
 
 The following procedure explains how to delete a Multi-Region Access Point by using the Amazon S3

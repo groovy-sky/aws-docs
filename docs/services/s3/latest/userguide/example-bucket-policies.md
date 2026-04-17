@@ -1,3 +1,7 @@
+---
+title: "Examples of Amazon S3 bucket policies"
+---
+
 # Examples of Amazon S3 bucket policies
 
 With Amazon S3 bucket policies, you can secure access to objects in your buckets, so that only

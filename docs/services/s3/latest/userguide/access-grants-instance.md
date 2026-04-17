@@ -1,3 +1,7 @@
+---
+title: "Working with S3 Access Grants instances"
+---
+
 # Working with S3 Access Grants instances
 
 To get started with using AmazonS3 Access Grants, you first create an S3 Access Grants instance. You can create

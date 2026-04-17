@@ -1,3 +1,7 @@
+---
+title: "Delete an object through an access point for a general purpose bucket"
+---
+
 # Delete an object through an access point for a general purpose bucket
 
 This section explains how to delete an object through an access point for a general purpose bucket using the AWS Management Console,

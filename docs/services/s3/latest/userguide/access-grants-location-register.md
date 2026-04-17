@@ -1,3 +1,7 @@
+---
+title: "Register a location"
+---
+
 # Register a location
 
 After you [create an Amazon S3 Access Grants\

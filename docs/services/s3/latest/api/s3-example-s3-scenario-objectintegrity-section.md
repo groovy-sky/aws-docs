@@ -1,3 +1,7 @@
+---
+title: "Work with Amazon S3 object integrity features using an AWS SDK"
+---
+
 # Work with Amazon S3 object integrity features using an AWS SDK
 
 The following code example shows how to work with S3 object integrity features.
@@ -1156,19 +1160,19 @@ bool AwsDoc::S3::createLargeFileIfNotExists() {
 
 - For API details, see the following topics in _AWS SDK for C++ API Reference_.
 
-- [AbortMultipartUpload](../../../../reference/goto/sdkforcpp/s3-2006-03-01/abortmultipartupload.md)
+- [AbortMultipartUpload](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/AbortMultipartUpload)
 
-- [CompleteMultipartUpload](../../../../reference/goto/sdkforcpp/s3-2006-03-01/completemultipartupload.md)
+- [CompleteMultipartUpload](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/CompleteMultipartUpload)
 
-- [CreateMultipartUpload](../../../../reference/goto/sdkforcpp/s3-2006-03-01/createmultipartupload.md)
+- [CreateMultipartUpload](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/CreateMultipartUpload)
 
-- [DeleteObject](../../../../reference/goto/sdkforcpp/s3-2006-03-01/deleteobject.md)
+- [DeleteObject](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/DeleteObject)
 
-- [GetObjectAttributes](../../../../reference/goto/sdkforcpp/s3-2006-03-01/getobjectattributes.md)
+- [GetObjectAttributes](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/GetObjectAttributes)
 
-- [PutObject](../../../../reference/goto/sdkforcpp/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/PutObject)
 
-- [UploadPart](../../../../reference/goto/sdkforcpp/s3-2006-03-01/uploadpart.md)
+- [UploadPart](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/UploadPart)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

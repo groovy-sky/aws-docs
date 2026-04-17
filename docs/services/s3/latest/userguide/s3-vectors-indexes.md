@@ -1,3 +1,7 @@
+---
+title: "Vector indexes"
+---
+
 # Vector indexes
 
 ###### Note

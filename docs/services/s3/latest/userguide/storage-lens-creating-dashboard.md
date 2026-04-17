@@ -1,3 +1,7 @@
+---
+title: "Create an Amazon S3 Storage Lens dashboard"
+---
+
 # Create an Amazon S3 Storage Lens dashboard
 
 You can create additional S3 Storage Lens custom dashboards that can be scoped to your organization

@@ -1,3 +1,7 @@
+---
+title: "Verifying bucket ownership with bucket owner condition"
+---
+
 # Verifying bucket ownership with bucket owner condition
 
 Amazon S3 bucket owner condition ensures that the buckets you use in your S3 operations belong

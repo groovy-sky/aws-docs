@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Tables"
+---
+
 # Amazon S3 Tables
 
 The following actions are supported by Amazon S3 Tables:

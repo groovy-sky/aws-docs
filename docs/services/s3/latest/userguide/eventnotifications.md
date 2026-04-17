@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Event Notifications"
+---
+
 # Amazon S3 Event Notifications
 
 You can use the Amazon S3 Event Notifications feature to receive notifications when certain

@@ -1,3 +1,7 @@
+---
+title: "Learn the basics of S3 Directory Buckets with an AWS SDK"
+---
+
 # Learn the basics of S3 Directory Buckets with an AWS SDK
 
 The following code examples show how to:
@@ -1112,19 +1116,19 @@ public class S3DirectoriesActions {
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [CopyObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CopyObject)
 
-- [CreateBucket](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/CreateBucket)
 
-- [DeleteBucket](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deletebucket.md)
+- [DeleteBucket](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteBucket)
 
-- [DeleteObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deleteobject.md)
+- [DeleteObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteObject)
 
-- [GetObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetObject)
 
-- [ListObjects](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/listobjects.md)
+- [ListObjects](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/ListObjects)
 
-- [PutObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutObject)
 
 PHP
 
@@ -1669,19 +1673,19 @@ class S3Service extends AWSServiceClass
 
 - For API details, see the following topics in _AWS SDK for PHP API Reference_.
 
-- [CopyObject](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/CopyObject)
 
-- [CreateBucket](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/CreateBucket)
 
-- [DeleteBucket](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/deletebucket.md)
+- [DeleteBucket](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/DeleteBucket)
 
-- [DeleteObject](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/deleteobject.md)
+- [DeleteObject](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/DeleteObject)
 
-- [GetObject](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/GetObject)
 
-- [ListObjects](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/listobjects.md)
+- [ListObjects](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/ListObjects)
 
-- [PutObject](../../../../reference/goto/sdkforphpv3/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/SdkForPHPV3/s3-2006-03-01/PutObject)
 
 Python
 
@@ -2459,19 +2463,19 @@ class S3ExpressWrapper:
 
 - For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
 
-- [CopyObject](../../../goto/boto3/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/CopyObject)
 
-- [CreateBucket](../../../goto/boto3/s3-2006-03-01/createbucket.md)
+- [CreateBucket](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/CreateBucket)
 
-- [DeleteBucket](../../../goto/boto3/s3-2006-03-01/deletebucket.md)
+- [DeleteBucket](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteBucket)
 
-- [DeleteObject](../../../goto/boto3/s3-2006-03-01/deleteobject.md)
+- [DeleteObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/DeleteObject)
 
-- [GetObject](../../../goto/boto3/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetObject)
 
-- [ListObjects](../../../goto/boto3/s3-2006-03-01/listobjects.md)
+- [ListObjects](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/ListObjects)
 
-- [PutObject](../../../goto/boto3/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObject)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

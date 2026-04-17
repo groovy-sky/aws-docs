@@ -1,3 +1,7 @@
+---
+title: "Visualizing metadata table data with Amazon Quick"
+---
+
 # Visualizing metadata table data with Amazon Quick
 
 With Amazon Quick, you can create interactive dashboards to analyze and visualize SQL query results

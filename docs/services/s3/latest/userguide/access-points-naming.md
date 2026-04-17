@@ -1,3 +1,7 @@
+---
+title: "Referencing access points with ARNs, access point aliases, or virtual-hosted–style URIs"
+---
+
 # Referencing access points with ARNs, access point aliases, or virtual-hosted–style URIs
 
 After you create an access point you can use these endpoints to preform a number of operations.

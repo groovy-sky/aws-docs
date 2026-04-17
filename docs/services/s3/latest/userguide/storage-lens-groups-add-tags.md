@@ -1,3 +1,7 @@
+---
+title: "Adding an AWS resource tag to a Storage Lens group"
+---
+
 # Adding an AWS resource tag to a Storage Lens group
 
 The following examples demonstrate how to add AWS resource tags to an Amazon S3 Storage

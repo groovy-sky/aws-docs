@@ -1,3 +1,7 @@
+---
+title: "Optimizing directory bucket performance"
+---
+
 # Optimizing directory bucket performance
 
 To obtain the best performance when using directory buckets, we recommend the following

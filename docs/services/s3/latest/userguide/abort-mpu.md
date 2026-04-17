@@ -1,3 +1,7 @@
+---
+title: "Aborting a multipart upload"
+---
+
 # Aborting a multipart upload
 
 After you initiate a multipart upload, you begin uploading parts. Amazon S3 stores these parts,

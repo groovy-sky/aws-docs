@@ -1,3 +1,7 @@
+---
+title: "Granting permissions for Batch Operations"
+---
+
 # Granting permissions for Batch Operations
 
 Before creating and running S3 Batch Operations jobs, you must grant required permissions. To

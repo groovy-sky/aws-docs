@@ -1,3 +1,7 @@
+---
+title: "Supported Amazon S3 object-level API operations for S3 Tables"
+---
+
 # Supported Amazon S3 object-level API operations for S3 Tables
 
 The following table includes supported S3 object-level API operations and corresponding

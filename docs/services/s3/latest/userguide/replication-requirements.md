@@ -1,3 +1,7 @@
+---
+title: "Requirements and considerations for replication"
+---
+
 # Requirements and considerations for replication
 
 Amazon S3 replication requires the following:

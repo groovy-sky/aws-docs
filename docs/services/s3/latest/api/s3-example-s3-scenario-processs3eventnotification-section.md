@@ -1,3 +1,7 @@
+---
+title: "Receive and process Amazon S3 event notifications by using an AWS SDK"
+---
+
 # Receive and process Amazon S3 event notifications by using an AWS SDK
 
 The following code example shows how to work with S3 event notifications in an object-oriented way.
@@ -116,13 +120,13 @@ This example show how to process S3 notification event by using Amazon SQS.
 
 - For API details, see the following topics in _AWS SDK for Java 2.x API Reference_.
 
-- [DeleteMessageBatch](../../../../reference/goto/sdkforjavav2/sqs-2012-11-05/deletemessagebatch.md)
+- [DeleteMessageBatch](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/DeleteMessageBatch)
 
-- [GetQueueAttributes](../../../../reference/goto/sdkforjavav2/sqs-2012-11-05/getqueueattributes.md)
+- [GetQueueAttributes](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/GetQueueAttributes)
 
-- [PutBucketNotificationConfiguration](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putbucketnotificationconfiguration.md)
+- [PutBucketNotificationConfiguration](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutBucketNotificationConfiguration)
 
-- [ReceiveMessage](../../../../reference/goto/sdkforjavav2/sqs-2012-11-05/receivemessage.md)
+- [ReceiveMessage](https://docs.aws.amazon.com/goto/SdkForJavaV2/sqs-2012-11-05/ReceiveMessage)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

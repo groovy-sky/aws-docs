@@ -1,3 +1,7 @@
+---
+title: "Getting replication status information"
+---
+
 # Getting replication status information
 
 Replication status can help you determine the current state of an object being replicated.

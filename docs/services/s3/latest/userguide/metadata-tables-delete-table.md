@@ -1,3 +1,7 @@
+---
+title: "Deleting metadata tables"
+---
+
 # Deleting metadata tables
 
 If you want to delete the metadata tables that you created for an Amazon S3 general purpose bucket, you

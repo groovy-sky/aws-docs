@@ -1,3 +1,7 @@
+---
+title: "Creating a vector bucket"
+---
+
 # Creating a vector bucket
 
 You can create a vector bucket using the S3 console or the AWS CLI. All data stored in vector buckets

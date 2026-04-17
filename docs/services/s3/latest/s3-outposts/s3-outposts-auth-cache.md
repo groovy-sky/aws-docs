@@ -1,3 +1,7 @@
+---
+title: "Authorization and authentication caching"
+---
+
 # Authorization and authentication caching
 
 S3 on Outposts securely caches authentication and authorization data locally on Outposts

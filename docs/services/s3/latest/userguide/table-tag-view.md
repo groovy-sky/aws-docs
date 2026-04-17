@@ -1,3 +1,7 @@
+---
+title: "Viewing table tags"
+---
+
 # Viewing table tags
 
 You can view or list tags applied to Amazon S3 tables. For more information about tags, see [Using tags with S3 tables](table-tagging.md).

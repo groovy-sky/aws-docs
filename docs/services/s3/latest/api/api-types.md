@@ -1,3 +1,7 @@
+---
+title: "Data Types"
+---
+
 # Data Types
 
 The following data types are supported by Amazon S3:

@@ -1,3 +1,7 @@
+---
+title: "Using AI assistants with S3 Storage Lens tables"
+---
+
 # Using AI assistants with S3 Storage Lens tables
 
 You can use AI assistants and conversational AI tools to interact with your S3 Storage Lens data exported to S3 Tables using natural language. By leveraging the Model Context Protocol (MCP) and the MCP Server for Amazon S3 Tables, you can query, analyze, and gain insights from your storage data without writing SQL queries.

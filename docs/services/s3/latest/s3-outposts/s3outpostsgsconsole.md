@@ -1,3 +1,7 @@
+---
+title: "Getting started by using the AWS Management Console"
+---
+
 # Getting started by using the AWS Management Console
 
 With Amazon S3 on Outposts, you can create S3 buckets on your AWS Outposts and easily store and

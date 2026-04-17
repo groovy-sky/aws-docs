@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 on Outposts with local Amazon EMR on Outposts"
+---
+
 # Amazon S3 on Outposts with local Amazon EMR on Outposts
 
 Amazon EMR is a managed cluster platform that simplifies running big data frameworks, such

@@ -1,3 +1,7 @@
+---
+title: "Make Amazon S3 conditional requests using an AWS SDK"
+---
+
 # Make Amazon S3 conditional requests using an AWS SDK
 
 The following code examples show how to add preconditions to Amazon S3 requests.
@@ -732,11 +736,11 @@ public class S3ActionsWrapper
 
 - For API details, see the following topics in _AWS SDK for .NET API Reference_.
 
-- [CopyObject](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/CopyObject)
 
-- [GetObject](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetObject)
 
-- [PutObject](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutObject)
 
 JavaScript
 
@@ -1546,11 +1550,11 @@ export { confirmCleanup, cleanupAction };
 
 - For API details, see the following topics in _AWS SDK for JavaScript API Reference_.
 
-- [CopyObject](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/copyobjectcommand.md)
+- [CopyObject](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/CopyObjectCommand)
 
-- [GetObject](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/getobjectcommand.md)
+- [GetObject](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/GetObjectCommand)
 
-- [PutObject](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/putobjectcommand.md)
+- [PutObject](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/PutObjectCommand)
 
 Python
 
@@ -1981,11 +1985,11 @@ class S3ConditionalRequests:
 
 - For API details, see the following topics in _AWS SDK for Python (Boto3) API Reference_.
 
-- [CopyObject](../../../goto/boto3/s3-2006-03-01/copyobject.md)
+- [CopyObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/CopyObject)
 
-- [GetObject](../../../goto/boto3/s3-2006-03-01/getobject.md)
+- [GetObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/GetObject)
 
-- [PutObject](../../../goto/boto3/s3-2006-03-01/putobject.md)
+- [PutObject](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutObject)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

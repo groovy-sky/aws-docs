@@ -1,3 +1,7 @@
+---
+title: "Vectors"
+---
+
 # Vectors
 
 Each vector consists of a key, which uniquely identifies each vector in a vector

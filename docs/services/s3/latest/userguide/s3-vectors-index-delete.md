@@ -1,3 +1,7 @@
+---
+title: "Deleting a vector index"
+---
+
 # Deleting a vector index
 
 You can delete a vector index when you no longer need it. This operation permanently removes the index and all vectors that are stored within it.

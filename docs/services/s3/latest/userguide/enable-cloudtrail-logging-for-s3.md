@@ -1,3 +1,7 @@
+---
+title: "Enabling CloudTrail event logging for S3 buckets and objects"
+---
+
 # Enabling CloudTrail event logging for S3 buckets and objects
 
 You can use CloudTrail data events to get information about bucket and object-level
@@ -73,7 +77,7 @@ information, see [AWS CLI examples for filtering data events](../../../awscloudt
 _User Guide_.
 
 To enable CloudTrail data events logging for objects in an S3 general purpose bucket or an S3
-directory bucket see [Creating a trail with the CloudTrail console](../../../awscloudtrail/latest/userguide/cloudtrail-create-a-trail-using-the-console-first-time.md) in the
+directory bucket see [Creating a trail with the CloudTrail console](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-a-trail-using-the-console-first-time) in the
 _AWS CloudTrail User Guide_.
 
 For more information about logging objects in an S3 directory bucket, see [Logging with AWS CloudTrail for directory buckets](s3-express-one-zone-logging.md).

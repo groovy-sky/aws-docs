@@ -1,3 +1,7 @@
+---
+title: "Examples: Tracking an S3 Batch Operations job in Amazon EventBridge through AWS CloudTrail"
+---
+
 # Examples: Tracking an S3 Batch Operations job in Amazon EventBridge through AWS CloudTrail
 
 Amazon S3 Batch Operations job activity is recorded as events in AWS CloudTrail. You can create a custom

@@ -1,3 +1,7 @@
+---
+title: "Authenticating SOAP requests"
+---
+
 # Authenticating SOAP requests
 
 ###### Note

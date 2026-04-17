@@ -1,3 +1,7 @@
+---
+title: "Data protection in Amazon S3"
+---
+
 # Data protection in Amazon S3
 
 In addition to the resilience offered by the AWS global infrastructure, Amazon S3 offers a

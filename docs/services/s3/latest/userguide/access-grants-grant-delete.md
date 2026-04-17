@@ -1,3 +1,7 @@
+---
+title: "Delete a grant"
+---
+
 # Delete a grant
 
 You can delete access grants from your Amazon S3 Access Grants instance. You can't undo an access grant

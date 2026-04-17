@@ -1,3 +1,7 @@
+---
+title: "Locating your inventory list"
+---
+
 # Locating your inventory list
 
 When an inventory list is published, the manifest files are published to the following

@@ -1,3 +1,7 @@
+---
+title: "AWS PrivateLink for Amazon S3"
+---
+
 # AWS PrivateLink for Amazon S3
 
 With AWS PrivateLink for Amazon S3, you can provision _interface VPC endpoints_

@@ -1,3 +1,7 @@
+---
+title: "Configuring event notifications using object key name filtering"
+---
+
 # Configuring event notifications using object key name filtering
 
 When configuring an Amazon S3 event notification, you must specify which supported Amazon S3

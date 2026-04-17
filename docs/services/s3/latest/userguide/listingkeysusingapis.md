@@ -1,3 +1,7 @@
+---
+title: "Listing object keys programmatically"
+---
+
 # Listing object keys programmatically
 
 In Amazon S3, keys can be listed by prefix. You can choose a common prefix for the names of
@@ -127,7 +131,7 @@ Get-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix sample
 ```
 
 - For API details, see
-[ListObjects](../../../powershell/v4/reference.md)
+[ListObjects](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -157,7 +161,7 @@ Get-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix sample
 ```
 
 - For API details, see
-[ListObjects](../../../powershell/v5/reference.md)
+[ListObjects](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)

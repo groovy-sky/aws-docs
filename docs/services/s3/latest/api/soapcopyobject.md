@@ -1,3 +1,7 @@
+---
+title: "CopyObject (SOAP API)"
+---
+
 # CopyObject (SOAP API)
 
 ###### Note

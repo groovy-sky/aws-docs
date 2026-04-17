@@ -1,3 +1,7 @@
+---
+title: "Copying an object using multipart upload"
+---
+
 # Copying an object using multipart upload
 
 Multipart upload allows you to copy objects as a set of parts. The examples in this

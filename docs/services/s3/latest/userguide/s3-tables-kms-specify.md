@@ -1,3 +1,7 @@
+---
+title: "Specifying server-side encryption with AWS KMS keys (SSE-KMS) in table buckets"
+---
+
 # Specifying server-side encryption with AWS KMS keys (SSE-KMS) in table buckets
 
 All Amazon S3 table buckets have encryption configured by default, and all new tables created

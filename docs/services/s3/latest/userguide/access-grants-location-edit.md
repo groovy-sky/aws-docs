@@ -1,3 +1,7 @@
+---
+title: "Update a registered location"
+---
+
 # Update a registered location
 
 You can update the AWS Identity and Access Management (IAM) role of a location that's registered in your Amazon

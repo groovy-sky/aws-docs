@@ -1,3 +1,7 @@
+---
+title: "Code examples for Amazon S3 Control using AWS SDKs"
+---
+
 # Code examples for Amazon S3 Control using AWS SDKs
 
 The following code examples show how to use Amazon S3 Control with an AWS software development kit (SDK).

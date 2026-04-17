@@ -1,3 +1,7 @@
+---
+title: "Copying objects from or to a directory bucket"
+---
+
 # Copying objects from or to a directory bucket
 
 The copy operation creates a copy of an object that is already stored in Amazon S3. You can

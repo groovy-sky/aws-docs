@@ -1,3 +1,7 @@
+---
+title: "Use HeadObject with an AWS SDK or CLI"
+---
+
 # Use `HeadObject` with an AWS SDK or CLI
 
 The following code examples show how to use `HeadObject`.
@@ -5,7 +9,7 @@ The following code examples show how to use `HeadObject`.
 Action examples are code excerpts from larger programs and must be run in context. You can see this action in
 context in the following code example:
 
-- [Get started with S3](s3-example-s3-gettingstarted-section.md)
+- [Getting started with Amazon S3](s3-example-s3-gettingstarted-section.md)
 
 CLI
 
@@ -187,7 +191,7 @@ public class GetObjectRestoreStatus {
 ```
 
 - For API details, see
-[HeadObject](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/headobject.md)
+[HeadObject](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/HeadObject)
 in _AWS SDK for Java 2.x API Reference_.
 
 Ruby
@@ -240,7 +244,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 ```
 
 - For API details, see
-[HeadObject](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/headobject.md)
+[HeadObject](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/HeadObject)
 in _AWS SDK for Ruby API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

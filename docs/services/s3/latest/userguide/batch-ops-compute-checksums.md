@@ -1,3 +1,7 @@
+---
+title: "Compute checksums"
+---
+
 # Compute checksums
 
 You can use S3 Batch Operations with the **Compute checksum** operation to

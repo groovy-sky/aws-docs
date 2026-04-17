@@ -1,3 +1,7 @@
+---
+title: "Setting Object Lock retention using Batch Operations"
+---
+
 # Setting Object Lock retention using Batch Operations
 
 You can use Amazon S3 Batch Operations with S3 Object Lock to manage retention for many

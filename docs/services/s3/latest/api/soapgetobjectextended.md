@@ -1,3 +1,7 @@
+---
+title: "GetObjectExtended (SOAP API)"
+---
+
 # GetObjectExtended (SOAP API)
 
 ###### Note

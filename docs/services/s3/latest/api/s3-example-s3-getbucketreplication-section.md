@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketReplication with an AWS SDK or CLI"
+---
+
 # Use `GetBucketReplication` with an AWS SDK or CLI
 
 The following code examples show how to use `GetBucketReplication`.
@@ -80,7 +84,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/j
 ```
 
 - For API details, see
-[GetBucketReplication](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getbucketreplication.md)
+[GetBucketReplication](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetBucketReplication)
 in _AWS SDK for Java 2.x API Reference_.
 
 PowerShell
@@ -96,7 +100,7 @@ Get-S3BucketReplication -BucketName amzn-s3-demo-bucket
 ```
 
 - For API details, see
-[GetBucketReplication](../../../powershell/v4/reference.md)
+[GetBucketReplication](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -110,7 +114,7 @@ Get-S3BucketReplication -BucketName amzn-s3-demo-bucket
 ```
 
 - For API details, see
-[GetBucketReplication](../../../powershell/v5/reference.md)
+[GetBucketReplication](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

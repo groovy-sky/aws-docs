@@ -1,3 +1,7 @@
+---
+title: "Managing public access to access points for general purpose buckets"
+---
+
 # Managing public access to access points for general purpose buckets
 
 Amazon S3 access points support independent _block public access_

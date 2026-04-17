@@ -1,3 +1,7 @@
+---
+title: "Visualizing your Storage Lens groups data"
+---
+
 # Visualizing your Storage Lens groups data
 
 You can visualize your Storage Lens groups data by [attaching the group to your Amazon S3 Storage Lens dashboard](storage-lens-groups-dashboard-console.md#storage-lens-groups-attach-dashboard-console). After you've included

@@ -1,3 +1,7 @@
+---
+title: "Viewing the settings for an S3 Bucket Key"
+---
+
 # Viewing the settings for an S3 Bucket Key
 
 You can view the settings for an S3 Bucket Key at the bucket or object level by using the

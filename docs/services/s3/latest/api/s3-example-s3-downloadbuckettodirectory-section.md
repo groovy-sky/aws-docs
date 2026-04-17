@@ -1,3 +1,7 @@
+---
+title: "Download all objects in an Amazon Simple Storage Service (Amazon S3) bucket to a local directory"
+---
+
 # Download all objects in an Amazon Simple Storage Service (Amazon S3) bucket to a local directory
 
 The following code example shows how to download all objects in an Amazon Simple Storage Service (Amazon S3) bucket to a local directory.
@@ -51,7 +55,7 @@ import java.util.stream.Collectors;
 ```
 
 - For API details, see
-[DownloadDirectory](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/downloaddirectory.md)
+[DownloadDirectory](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DownloadDirectory)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

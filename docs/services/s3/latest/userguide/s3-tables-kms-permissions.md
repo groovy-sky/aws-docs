@@ -1,3 +1,7 @@
+---
+title: "Permission requirements for S3 Tables SSE-KMS encryption"
+---
+
 # Permission requirements for S3 Tables SSE-KMS encryption
 
 When you use server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS) for tables in S3 table buckets you need to grant permissions for different identities in your account. At minimum your access identity and the S3 Tables maintenance principal need access to your key, the other permissions required depend on your use case.

@@ -1,3 +1,7 @@
+---
+title: "Monitoring replication with metrics, event notifications, and statuses"
+---
+
 # Monitoring replication with metrics, event notifications, and statuses
 
 You can monitor your live replication configurations and your S3 Batch Replication jobs

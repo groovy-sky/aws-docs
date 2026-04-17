@@ -1,3 +1,7 @@
+---
+title: "S3 Access Grants integrations"
+---
+
 # S3 Access Grants integrations
 
 S3 Access Grants can be used with the following AWS services and features. This page will be updated as new integrations become available.

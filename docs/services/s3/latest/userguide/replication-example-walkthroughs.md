@@ -1,3 +1,7 @@
+---
+title: "Examples for configuring live replication"
+---
+
 # Examples for configuring live replication
 
 The following examples provide step-by-step walkthroughs that show how to configure live

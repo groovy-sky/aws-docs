@@ -1,3 +1,7 @@
+---
+title: "Managing or pausing live replication"
+---
+
 # Managing or pausing live replication
 
 Live replication is the automatic, asynchronous copying of objects across buckets in the

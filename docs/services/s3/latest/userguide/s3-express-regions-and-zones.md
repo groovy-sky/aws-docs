@@ -1,3 +1,7 @@
+---
+title: "Regional and Zonal endpoints for directory buckets"
+---
+
 # Regional and Zonal endpoints for directory buckets
 
 To access the Regional and Zonal endpoints for directory buckets from your

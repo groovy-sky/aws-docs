@@ -1,3 +1,7 @@
+---
+title: "Using Multi-Region Access Points with supported API operations"
+---
+
 # Using Multi-Region Access Points with supported API operations
 
 Amazon S3 provides a set of operations to manage Multi-Region Access Points. Amazon S3 processes some of these

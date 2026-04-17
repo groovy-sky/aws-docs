@@ -1,3 +1,7 @@
+---
+title: "Aggregate functions"
+---
+
 # Aggregate functions
 
 ###### Important

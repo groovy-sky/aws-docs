@@ -1,3 +1,7 @@
+---
+title: "Working with directory buckets"
+---
+
 # Working with directory buckets
 
 Directory buckets organize data

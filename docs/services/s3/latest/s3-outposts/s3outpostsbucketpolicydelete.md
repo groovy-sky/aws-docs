@@ -1,3 +1,7 @@
+---
+title: "Deleting the bucket policy for your Amazon S3 on Outposts bucket"
+---
+
 # Deleting the bucket policy for your Amazon S3 on Outposts bucket
 
 A bucket policy is a resource-based AWS Identity and Access Management (IAM) policy that you can use to grant

@@ -1,3 +1,7 @@
+---
+title: "Setting permissions for website access"
+---
+
 # Setting permissions for website access
 
 When you configure a bucket as a static website, if you want your website to be

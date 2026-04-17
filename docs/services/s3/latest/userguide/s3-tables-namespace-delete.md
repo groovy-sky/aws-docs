@@ -1,3 +1,7 @@
+---
+title: "Delete a namespace"
+---
+
 # Delete a namespace
 
 Before you delete a table namespace from an Amazon S3 table bucket, you must delete all tables within

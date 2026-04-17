@@ -1,3 +1,7 @@
+---
+title: "Use DeleteObjectTagging with a CLI"
+---
+
 # Use `DeleteObjectTagging` with a CLI
 
 The following code examples show how to use `DeleteObjectTagging`.
@@ -48,7 +52,7 @@ testfile.txt
 ```
 
 - For API details, see
-[DeleteObjectTagging](../../../powershell/v4/reference.md)
+[DeleteObjectTagging](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -73,7 +77,7 @@ testfile.txt
 ```
 
 - For API details, see
-[DeleteObjectTagging](../../../powershell/v5/reference.md)
+[DeleteObjectTagging](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

@@ -1,3 +1,7 @@
+---
+title: "Setting Object Ownership on an existing bucket"
+---
+
 # Setting Object Ownership on an existing bucket
 
 You can configure S3 Object Ownership on an existing S3 bucket. To apply

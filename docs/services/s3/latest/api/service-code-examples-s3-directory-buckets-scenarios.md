@@ -1,3 +1,7 @@
+---
+title: "Scenarios for S3 Directory Buckets using AWS SDKs"
+---
+
 # Scenarios for S3 Directory Buckets using AWS SDKs
 
 The following code examples show you how to implement common scenarios in S3 Directory Buckets

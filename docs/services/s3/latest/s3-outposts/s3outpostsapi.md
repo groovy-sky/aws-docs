@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 on Outposts API operations"
+---
+
 # Amazon S3 on Outposts API operations
 
 This topic lists the Amazon S3, Amazon S3 Control, and Amazon S3 on Outposts API operations that you can

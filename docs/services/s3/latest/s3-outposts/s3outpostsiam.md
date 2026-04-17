@@ -1,3 +1,7 @@
+---
+title: "Setting up IAM with S3 on Outposts"
+---
+
 # Setting up IAM with S3 on Outposts
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access

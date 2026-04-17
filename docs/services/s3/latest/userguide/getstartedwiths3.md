@@ -1,3 +1,7 @@
+---
+title: "Getting started with Amazon S3"
+---
+
 # Getting started with Amazon S3
 
 You can get started with Amazon S3 by working with buckets and objects. A _bucket_ is a container for objects. An _object_ is

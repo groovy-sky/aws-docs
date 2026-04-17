@@ -1,3 +1,7 @@
+---
+title: "Common Parameters"
+---
+
 # Common Parameters
 
 This section describes parameters used by Amazon SimpleDB operations.

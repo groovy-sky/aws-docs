@@ -1,3 +1,7 @@
+---
+title: "Check if a bucket exists"
+---
+
 # Check if a bucket exists
 
 The following code example shows how to check if a bucket exists.
@@ -75,7 +79,7 @@ public class DoesBucketExist {
 ```
 
 - For API details, see
-[GetBucketAcl](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/getbucketacl.md)
+[GetBucketAcl](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/GetBucketAcl)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

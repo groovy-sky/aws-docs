@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 Control"
+---
+
 # Amazon S3 Control
 
 The following actions are supported by Amazon S3 Control:

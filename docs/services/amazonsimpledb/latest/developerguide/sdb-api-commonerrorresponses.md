@@ -1,3 +1,7 @@
+---
+title: "Common Error Responses"
+---
+
 # Common Error Responses
 
 Request authentication errors are described in [API Error Codes](apierror.md).

@@ -1,3 +1,7 @@
+---
+title: "View the details of a registered location"
+---
+
 # View the details of a registered location
 
 You can get the details of a location that's registered in your S3 Access Grants instance by using the

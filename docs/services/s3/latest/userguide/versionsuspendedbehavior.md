@@ -1,3 +1,7 @@
+---
+title: "Working with objects in a versioning-suspended bucket"
+---
+
 # Working with objects in a versioning-suspended bucket
 
 In Amazon S3, you can suspend versioning to stop accruing new versions of the same object in a

@@ -1,3 +1,7 @@
+---
+title: "Appendix: OPTIONS object"
+---
+
 # Appendix: OPTIONS object
 
 ## Description

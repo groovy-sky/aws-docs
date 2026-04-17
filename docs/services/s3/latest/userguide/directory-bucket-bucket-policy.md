@@ -1,3 +1,7 @@
+---
+title: "Managing directory bucket policies"
+---
+
 # Managing directory bucket policies
 
 You can add, delete, update, and view bucket policies for Amazon S3 directory buckets by

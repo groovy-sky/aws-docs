@@ -1,3 +1,7 @@
+---
+title: "(Optional) Configuring a webpage redirect"
+---
+
 # (Optional) Configuring a webpage redirect
 
 If your Amazon S3 bucket is configured for static website hosting, you can configure

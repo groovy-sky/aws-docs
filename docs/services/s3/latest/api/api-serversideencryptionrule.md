@@ -1,3 +1,7 @@
+---
+title: "ServerSideEncryptionRule"
+---
+
 # ServerSideEncryptionRule
 
 Specifies the default server-side encryption configuration.
@@ -50,8 +54,8 @@ _Amazon S3 User Guide_.
 
 - **Directory buckets** -
 S3 Bucket Keys are always enabled for `GET` and `PUT` operations in a directory bucket and can’t be disabled. S3 Bucket Keys aren't supported, when you copy SSE-KMS encrypted objects from general purpose buckets
-to directory buckets, from directory buckets to general purpose buckets, or between directory buckets, through [CopyObject](api-copyobject.md), [UploadPartCopy](api-uploadpartcopy.md), [the Copy operation in Batch Operations](../userguide/directory-buckets-objects-batch-ops.md), or
-[the import jobs](../userguide/create-import-job.md). In this case, Amazon S3 makes a call to AWS KMS every time a copy request is made for a KMS-encrypted object.
+to directory buckets, from directory buckets to general purpose buckets, or between directory buckets, through [CopyObject](api-copyobject.md), [UploadPartCopy](api-uploadpartcopy.md), [the Copy operation in Batch Operations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-Batch-Ops), or
+[the import jobs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-import-job). In this case, Amazon S3 makes a call to AWS KMS every time a copy request is made for a KMS-encrypted object.
 
 Type: Boolean
 
@@ -61,11 +65,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/s3-2006-03-01/serversideencryptionrule.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/ServerSideEncryptionRule)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/serversideencryptionrule.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/ServerSideEncryptionRule)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/s3-2006-03-01/serversideencryptionrule.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/s3-2006-03-01/ServerSideEncryptionRule)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

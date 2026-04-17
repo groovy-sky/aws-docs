@@ -1,3 +1,7 @@
+---
+title: "Use PutBucketLifecycleConfiguration with an AWS SDK or CLI"
+---
+
 # Use `PutBucketLifecycleConfiguration` with an AWS SDK or CLI
 
 The following code examples show how to use `PutBucketLifecycleConfiguration`.
@@ -46,7 +50,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[PutBucketLifecycleConfiguration](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/putbucketlifecycleconfiguration.md)
+[PutBucketLifecycleConfiguration](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/PutBucketLifecycleConfiguration)
 in _AWS SDK for .NET API Reference_.
 
 CLI
@@ -330,7 +334,7 @@ public class LifecycleConfiguration {
 ```
 
 - For API details, see
-[PutBucketLifecycleConfiguration](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putbucketlifecycleconfiguration.md)
+[PutBucketLifecycleConfiguration](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutBucketLifecycleConfiguration)
 in _AWS SDK for Java 2.x API Reference_.
 
 Python
@@ -382,7 +386,7 @@ class BucketWrapper:
 ```
 
 - For API details, see
-[PutBucketLifecycleConfiguration](../../../goto/boto3/s3-2006-03-01/putbucketlifecycleconfiguration.md)
+[PutBucketLifecycleConfiguration](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/PutBucketLifecycleConfiguration)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

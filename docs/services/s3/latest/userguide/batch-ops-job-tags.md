@@ -1,3 +1,7 @@
+---
+title: "Controlling access and labeling jobs using tags"
+---
+
 # Controlling access and labeling jobs using tags
 
 You can label and control access to your S3 Batch Operations jobs by adding

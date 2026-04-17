@@ -1,3 +1,7 @@
+---
+title: "Performance guidelines for Amazon S3"
+---
+
 # Performance guidelines for Amazon S3
 
 When building applications that upload and retrieve objects from Amazon S3, follow our best

@@ -1,3 +1,7 @@
+---
+title: "Billing for Amazon S3 error responses"
+---
+
 # Billing for Amazon S3 error responses
 
 In general, S3 bucket owners are billed for requests with

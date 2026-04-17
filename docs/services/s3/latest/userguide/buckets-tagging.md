@@ -1,3 +1,7 @@
+---
+title: "Using tags with S3 general purpose buckets"
+---
+
 # Using tags with S3 general purpose buckets
 
 An AWS tag is a key-value pair that holds metadata about resources, in this case Amazon S3 general purpose buckets. You can tag S3 buckets when you create them or manage tags on existing buckets. For general information about tags, see [Tagging for cost allocation or attribute-based access control (ABAC)](tagging.md).

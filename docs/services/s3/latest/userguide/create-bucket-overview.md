@@ -1,3 +1,7 @@
+---
+title: "Creating a general purpose bucket"
+---
+
 # Creating a general purpose bucket
 
 To upload your data to Amazon S3, you must first create an Amazon S3 general purpose bucket in one of the AWS Regions. The

@@ -1,3 +1,7 @@
+---
+title: "PutObjectInline (SOAP API)"
+---
+
 # PutObjectInline (SOAP API)
 
 ###### Note

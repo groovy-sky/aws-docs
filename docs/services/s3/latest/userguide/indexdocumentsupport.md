@@ -1,3 +1,7 @@
+---
+title: "Configuring an index document"
+---
+
 # Configuring an index document
 
 When you enable website hosting, you must also configure and upload an index document.

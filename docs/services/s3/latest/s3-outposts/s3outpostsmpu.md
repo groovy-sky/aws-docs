@@ -1,3 +1,7 @@
+---
+title: "Performing and managing a multipart upload with the SDK for Java"
+---
+
 # Performing and managing a multipart upload with the SDK for Java
 
 With Amazon S3 on Outposts, you can create S3 buckets on your AWS Outposts resources and store and

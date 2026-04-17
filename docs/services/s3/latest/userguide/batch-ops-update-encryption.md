@@ -1,3 +1,7 @@
+---
+title: "Update object encryption"
+---
+
 # Update object encryption
 
 You can use Amazon S3 Batch Operations to perform large-scale batch operations on Amazon S3 objects.

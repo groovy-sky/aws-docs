@@ -1,3 +1,7 @@
+---
+title: "Configuring your bucket to use an S3 Bucket Key with SSE-KMS for new objects"
+---
+
 # Configuring your bucket to use an S3 Bucket Key with SSE-KMS for new objects
 
 When you configure server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS), you can

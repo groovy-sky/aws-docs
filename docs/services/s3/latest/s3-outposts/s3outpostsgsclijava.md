@@ -1,3 +1,7 @@
+---
+title: "Getting started by using the AWS CLI and SDK for Java"
+---
+
 # Getting started by using the AWS CLI and SDK for Java
 
 With Amazon S3 on Outposts, you can create S3 buckets on your AWS Outposts and easily store and

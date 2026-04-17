@@ -1,3 +1,7 @@
+---
+title: "Operations on the Service (SOAP API)"
+---
+
 # Operations on the Service (SOAP API)
 
 ###### Note

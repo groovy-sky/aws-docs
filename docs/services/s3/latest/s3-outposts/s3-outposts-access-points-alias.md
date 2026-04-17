@@ -1,3 +1,7 @@
+---
+title: "Using a bucket-style alias for your S3 on Outposts bucket access point"
+---
+
 # Using a bucket-style alias for your S3 on Outposts bucket access point
 
 With S3 on Outposts, you must use access points to access any object in an Outposts bucket. Every

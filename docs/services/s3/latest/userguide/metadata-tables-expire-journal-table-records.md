@@ -1,3 +1,7 @@
+---
+title: "Expiring journal table records"
+---
+
 # Expiring journal table records
 
 By default, the records in your journal table don't expire. To help minimize the storage costs for

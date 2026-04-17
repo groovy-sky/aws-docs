@@ -1,3 +1,7 @@
+---
+title: "Use ListParts with an AWS SDK"
+---
+
 # Use `ListParts` with an AWS SDK
 
 The following code example shows how to use `ListParts`.
@@ -76,7 +80,7 @@ import static com.example.s3.util.S3DirectoryBucketUtils.multipartUploadForDirec
 ```
 
 - For API details, see
-[ListParts](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/listparts.md)
+[ListParts](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/ListParts)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

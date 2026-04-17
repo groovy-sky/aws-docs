@@ -1,3 +1,7 @@
+---
+title: "Enabling Amazon EventBridge"
+---
+
 # Enabling Amazon EventBridge
 
 You can enable Amazon EventBridge by using the S3 console, AWS Command Line Interface (AWS CLI), or Amazon S3 REST API.

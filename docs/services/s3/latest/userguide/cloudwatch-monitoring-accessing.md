@@ -1,3 +1,7 @@
+---
+title: "Accessing CloudWatch metrics"
+---
+
 # Accessing CloudWatch metrics
 
 You can use the following procedures to view the storage metrics for

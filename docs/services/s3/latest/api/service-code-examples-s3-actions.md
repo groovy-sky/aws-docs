@@ -1,3 +1,7 @@
+---
+title: "Actions for Amazon S3 using AWS SDKs"
+---
+
 # Actions for Amazon S3 using AWS SDKs
 
 The following code examples demonstrate how to perform individual Amazon S3

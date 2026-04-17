@@ -1,3 +1,7 @@
+---
+title: "Example approaches for unit and integration testing with an AWS SDK"
+---
+
 # Example approaches for unit and integration testing with an AWS SDK
 
 The following code example shows how to examples for best-practice techniques when writing unit and integration tests using an AWS SDK.

@@ -1,3 +1,7 @@
+---
+title: "Using service-linked roles for Amazon S3 Storage Lens"
+---
+
 # Using service-linked roles for Amazon S3 Storage Lens
 
 To use Amazon S3 Storage Lens to collect and aggregate metrics across all your accounts in

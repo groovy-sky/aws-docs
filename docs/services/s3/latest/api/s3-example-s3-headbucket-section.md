@@ -1,3 +1,7 @@
+---
+title: "Use HeadBucket with an AWS SDK or CLI"
+---
+
 # Use `HeadBucket` with an AWS SDK or CLI
 
 The following code examples show how to use `HeadBucket`.
@@ -45,7 +49,7 @@ function bucket_exists() {
 ```
 
 - For API details, see
-[HeadBucket](../../../goto/aws-cli/s3-2006-03-01/headbucket.md)
+[HeadBucket](https://docs.aws.amazon.com/goto/aws-cli/s3-2006-03-01/HeadBucket)
 in _AWS CLI Command Reference_.
 
 CLI
@@ -197,7 +201,7 @@ Get-S3HeadBucket: Error making request with Error Code Forbidden and Http Status
 ```
 
 - For API details, see
-[HeadBucket](../../../powershell/v5/reference.md)
+[HeadBucket](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 Python
@@ -244,7 +248,7 @@ class BucketWrapper:
 ```
 
 - For API details, see
-[HeadBucket](../../../goto/boto3/s3-2006-03-01/headbucket.md)
+[HeadBucket](https://docs.aws.amazon.com/goto/boto3/s3-2006-03-01/HeadBucket)
 in _AWS SDK for Python (Boto3) API Reference_.
 
 SAP ABAP

@@ -1,3 +1,7 @@
+---
+title: "GetBucketLoggingStatus (SOAP API)"
+---
+
 # GetBucketLoggingStatus (SOAP API)
 
 ###### Note

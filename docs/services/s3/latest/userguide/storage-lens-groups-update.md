@@ -1,3 +1,7 @@
+---
+title: "Updating a Storage Lens group"
+---
+
 # Updating a Storage Lens group
 
 The following examples demonstrate how to update an Amazon S3 Storage Lens group. You can

@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting versioning"
+---
+
 # Troubleshooting versioning
 
 The following topics can help you troubleshoot some common Amazon S3 versioning issues.

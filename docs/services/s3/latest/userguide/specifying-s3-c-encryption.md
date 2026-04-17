@@ -1,3 +1,7 @@
+---
+title: "Specifying server-side encryption with customer-provided keys (SSE-C)"
+---
+
 # Specifying server-side encryption with customer-provided keys (SSE-C)
 
 To use server-side encryption with customer provided keys (SSE-C) first make sure that

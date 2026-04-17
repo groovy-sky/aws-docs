@@ -1,3 +1,7 @@
+---
+title: "Use PutBucketEncryption with an AWS SDK"
+---
+
 # Use `PutBucketEncryption` with an AWS SDK
 
 The following code example shows how to use `PutBucketEncryption`.
@@ -83,7 +87,7 @@ import static com.example.s3.util.S3DirectoryBucketUtils.scheduleKeyDeletion;
 ```
 
 - For API details, see
-[PutBucketEncryption](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/putbucketencryption.md)
+[PutBucketEncryption](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/PutBucketEncryption)
 in _AWS SDK for Java 2.x API Reference_.
 
 For a complete list of AWS SDK developer guides and code examples, see

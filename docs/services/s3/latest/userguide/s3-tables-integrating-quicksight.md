@@ -1,3 +1,7 @@
+---
+title: "Visualizing table data with Quick"
+---
+
 # Visualizing table data with Quick
 
 Quick is a fast business analytics service to build visualizations, perform ad hoc

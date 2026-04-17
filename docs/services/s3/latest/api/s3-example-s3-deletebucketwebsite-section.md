@@ -1,3 +1,7 @@
+---
+title: "Use DeleteBucketWebsite with an AWS SDK or CLI"
+---
+
 # Use `DeleteBucketWebsite` with an AWS SDK or CLI
 
 The following code examples show how to use `DeleteBucketWebsite`.
@@ -37,7 +41,7 @@ bool AwsDoc::S3::deleteBucketWebsite(const Aws::String &bucketName,
 ```
 
 - For API details, see
-[DeleteBucketWebsite](../../../../reference/goto/sdkforcpp/s3-2006-03-01/deletebucketwebsite.md)
+[DeleteBucketWebsite](https://docs.aws.amazon.com/goto/SdkForCpp/s3-2006-03-01/DeleteBucketWebsite)
 in _AWS SDK for C++ API Reference_.
 
 CLI
@@ -135,7 +139,7 @@ public class DeleteWebsiteConfiguration {
 ```
 
 - For API details, see
-[DeleteBucketWebsite](../../../../reference/goto/sdkforjavav2/s3-2006-03-01/deletebucketwebsite.md)
+[DeleteBucketWebsite](https://docs.aws.amazon.com/goto/SdkForJavaV2/s3-2006-03-01/DeleteBucketWebsite)
 in _AWS SDK for Java 2.x API Reference_.
 
 JavaScript
@@ -199,7 +203,7 @@ export const main = async ({ bucketName }) => {
 - For more information, see [AWS SDK for JavaScript Developer Guide](../../../../reference/sdk-for-javascript/v3/developer-guide/s3-example-static-web-host.md#s3-example-static-web-host-delete-website).
 
 - For API details, see
-[DeleteBucketWebsite](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/deletebucketwebsitecommand.md)
+[DeleteBucketWebsite](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/DeleteBucketWebsiteCommand)
 in _AWS SDK for JavaScript API Reference_.
 
 PowerShell
@@ -225,7 +229,7 @@ Performing the operation "Remove-S3BucketWebsite (DeleteBucketWebsite)" on targe
 ```
 
 - For API details, see
-[DeleteBucketWebsite](../../../powershell/v4/reference.md)
+[DeleteBucketWebsite](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -249,7 +253,7 @@ Performing the operation "Remove-S3BucketWebsite (DeleteBucketWebsite)" on targe
 ```
 
 - For API details, see
-[DeleteBucketWebsite](../../../powershell/v5/reference.md)
+[DeleteBucketWebsite](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

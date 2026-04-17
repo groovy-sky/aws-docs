@@ -1,3 +1,7 @@
+---
+title: "Updating Storage Lens dashboard tags"
+---
+
 # Updating Storage Lens dashboard tags
 
 The following examples demonstrate how to update Storage Lens dashboard tags by

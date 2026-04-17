@@ -1,3 +1,7 @@
+---
+title: "Actions for S3 Directory Buckets using AWS SDKs"
+---
+
 # Actions for S3 Directory Buckets using AWS SDKs
 
 The following code examples demonstrate how to perform individual S3 Directory Buckets

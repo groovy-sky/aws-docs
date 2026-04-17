@@ -1,3 +1,7 @@
+---
+title: "Use GetBucketEncryption with an AWS SDK or CLI"
+---
+
 # Use `GetBucketEncryption` with an AWS SDK or CLI
 
 The following code examples show how to use `GetBucketEncryption`.
@@ -49,7 +53,7 @@ Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/d
 ```
 
 - For API details, see
-[GetBucketEncryption](../../../../reference/goto/dotnetsdkv3/s3-2006-03-01/getbucketencryption.md)
+[GetBucketEncryption](https://docs.aws.amazon.com/goto/DotNetSDKV3/s3-2006-03-01/GetBucketEncryption)
 in _AWS SDK for .NET API Reference_.
 
 CLI
@@ -101,7 +105,7 @@ Get-S3BucketEncryption -BucketName 'amzn-s3-demo-bucket'
 ```
 
 - For API details, see
-[GetBucketEncryption](../../../powershell/v4/reference.md)
+[GetBucketEncryption](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -115,7 +119,7 @@ Get-S3BucketEncryption -BucketName 'amzn-s3-demo-bucket'
 ```
 
 - For API details, see
-[GetBucketEncryption](../../../powershell/v5/reference.md)
+[GetBucketEncryption](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 For a complete list of AWS SDK developer guides and code examples, see

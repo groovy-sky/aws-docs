@@ -1,3 +1,7 @@
+---
+title: "Developing with directory buckets"
+---
+
 # Developing with directory buckets
 
 After you create your directory bucket, you can then immediately begin very

@@ -1,3 +1,7 @@
+---
+title: "Sample Query Data Set"
+---
+
 # Sample Query Data Set
 
 The following table contains the data set used throughout this section.

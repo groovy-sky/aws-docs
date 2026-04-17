@@ -1,3 +1,7 @@
+---
+title: "Replicating objects within and across Regions"
+---
+
 # Replicating objects within and across Regions
 
 You can use replication to enable automatic, asynchronous copying of objects across Amazon S3

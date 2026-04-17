@@ -1,3 +1,7 @@
+---
+title: "Using Amazon S3 dual-stack endpoints"
+---
+
 # Using Amazon S3 dual-stack endpoints
 
 Amazon S3 dual-stack endpoints support requests to S3 buckets over IPv6 and IPv4.

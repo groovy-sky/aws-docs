@@ -1,3 +1,7 @@
+---
+title: "Logging with AWS CloudTrail for S3 Tables"
+---
+
 # Logging with AWS CloudTrail for S3 Tables
 
 Amazon S3 is integrated with AWS CloudTrail, a service that provides a record of actions taken by a

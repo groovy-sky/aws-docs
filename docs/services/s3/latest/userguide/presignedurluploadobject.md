@@ -1,3 +1,7 @@
+---
+title: "Uploading objects with presigned URLs"
+---
+
 # Uploading objects with presigned URLs
 
 You may use presigned URLs to allow someone to upload an object to your Amazon S3 bucket. Using a

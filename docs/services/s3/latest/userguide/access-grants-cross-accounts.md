@@ -1,3 +1,7 @@
+---
+title: "S3 Access Grants cross-account access"
+---
+
 # S3 Access Grants cross-account access
 
 With S3 Access Grants, you can grant Amazon S3 data access to the following:

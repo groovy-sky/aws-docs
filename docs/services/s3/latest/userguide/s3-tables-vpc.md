@@ -1,3 +1,7 @@
+---
+title: "VPC connectivity for S3 Tables"
+---
+
 # VPC connectivity for S3 Tables
 
 All tables in S3 Tables are in the Apache Iceberg format and are made up of two types of S3 objects. These two types of objects are
@@ -213,11 +217,9 @@ JSON
                 "arn:aws:s3tables:us-east-1:111122223333:bucket/amzn-s3-demo-bucket/*"
             ],
             "Condition": {
-                "StringNotEquals": {
-                    "aws:SourceVpce": "vpce-1a2b3c4d"
-                },
-                "ForAllValues:StringNotEquals": {
-                    "aws:CalledVia": "s3tables.amazonaws.com"
+                "StringNotEqualsIfExists": {
+                    "aws:SourceVpce": "vpce-1a2b3c4d",
+                    "aws:CalledViaLast": "s3tables.amazonaws.com"
                 }
             }
         }

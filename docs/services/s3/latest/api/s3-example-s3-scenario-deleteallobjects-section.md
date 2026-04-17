@@ -1,3 +1,7 @@
+---
+title: "Delete all objects in a given Amazon S3 bucket using an AWS SDK"
+---
+
 # Delete all objects in a given Amazon S3 bucket using an AWS SDK
 
 The following code example shows how to delete all of the objects in an Amazon S3 bucket.
@@ -78,9 +82,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 
 - For API details, see the following topics in _AWS SDK for JavaScript API Reference_.
 
-- [DeleteObjects](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/deleteobjectscommand.md)
+- [DeleteObjects](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/DeleteObjectsCommand)
 
-- [ListObjectsV2](../../../../reference/awsjavascriptsdk/v3/latest/client/s3/command/listobjectsv2command.md)
+- [ListObjectsV2](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/command/ListObjectsV2Command)
 
 For a complete list of AWS SDK developer guides and code examples, see
 [Developing with Amazon S3 using the AWS SDKs](../../../../reference/amazons3/latest/api/sdk-general-information-section.md).

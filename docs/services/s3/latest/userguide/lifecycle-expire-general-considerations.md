@@ -1,3 +1,7 @@
+---
+title: "Expiring objects"
+---
+
 # Expiring objects
 
 You can add transition actions to an S3 Lifecycle configuration to tell Amazon S3 to delete

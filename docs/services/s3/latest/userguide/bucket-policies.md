@@ -1,3 +1,7 @@
+---
+title: "Bucket policies for Amazon S3"
+---
+
 # Bucket policies for Amazon S3
 
 A bucket policy is a resource-based policy that you can use to grant access permissions to

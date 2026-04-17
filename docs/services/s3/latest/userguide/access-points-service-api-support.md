@@ -1,3 +1,7 @@
+---
+title: "Access point compatibility"
+---
+
 # Access point compatibility
 
 You can use access points to access objects using the following subset of Amazon S3 APIs. All the

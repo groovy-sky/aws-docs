@@ -1,3 +1,7 @@
+---
+title: "Managing table bucket policies"
+---
+
 # Managing table bucket policies
 
 You can add, delete, update, and view bucket policies for Amazon S3 table buckets by using

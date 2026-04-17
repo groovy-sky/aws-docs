@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 analytics – Storage Class Analysis"
+---
+
 # Amazon S3 analytics – Storage Class Analysis
 
 By using Amazon S3 analytics _Storage Class Analysis_ you can analyze storage

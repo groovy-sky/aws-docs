@@ -1,3 +1,7 @@
+---
+title: "SetObjectAccessControlPolicy (SOAP API)"
+---
+
 # SetObjectAccessControlPolicy (SOAP API)
 
 ###### Note

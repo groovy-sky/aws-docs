@@ -1,3 +1,7 @@
+---
+title: "Logging and monitoring for S3 Tables"
+---
+
 # Logging and monitoring for S3 Tables
 
 Monitoring is an important part of maintaining the reliability, availability, and

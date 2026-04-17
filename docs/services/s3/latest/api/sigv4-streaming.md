@@ -1,3 +1,7 @@
+---
+title: "Signature Calculations for the Authorization Header: Transferring Payload in Multiple Chunks (Chunked Upload) (AWS Signature Version 4)"
+---
+
 # Signature Calculations for the Authorization Header: Transferring Payload in Multiple Chunks (Chunked Upload) (AWS Signature Version 4)
 
 As described in the [Overview](sigv4-auth-using-authorization-header.md#sigv4-auth-header-overview), when authenticating requests using the
