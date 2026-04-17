@@ -108,6 +108,7 @@ Current redirect handling:
 
 - `Converter` rewrites in-domain documentation links to local relative markdown links.
 - Link rewriting is host-based for `docs.aws.amazon.com` and is not gated by include/exclude crawl filters, so markdown stays repository-local even when crawl filters skip those URLs.
+- URL resolution now rewrites root-relative `/latest` links to inherit the current section prefix when the source URL path is `<section>/latest/...` (for example, from a VPC page `/latest/peering/` resolves as `/vpc/latest/peering/`). This prevents service prefixes from being dropped in generated links.
 - Image links (`.png`, `.jpg`, `.jpeg`, `.gif`, `.svg`, `.webp`, `.ico`) are always kept as absolute original URLs in markdown regardless of domain. For relative image values in source HTML, converter resolves them to absolute without crawl URL normalization so query/fragment parts remain intact.
 - Non-image asset href values (for example binary file extensions) stay absolute.
 - Conversion uses `html-to-markdown` then normalizes whitespace for deterministic output, and appends a source attribution footer that states all content was copied from `https://docs.aws.amazon.com/`.

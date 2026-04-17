@@ -70,7 +70,42 @@ func ResolveURL(baseURL, href string, cfg config.Config) (string, error) {
 	if err != nil {
 		return "", err
 	}
+	if shouldRewriteRootLatestToSection(reference, base) {
+		section := sectionPrefixFromLatestBase(base.Path)
+		if section != "" {
+			reference.Path = "/" + section + reference.Path
+		}
+	}
 	return NormalizeURL(base.ResolveReference(reference).String(), cfg)
+}
+
+func shouldRewriteRootLatestToSection(reference *url.URL, base *url.URL) bool {
+	if reference == nil || base == nil {
+		return false
+	}
+	if reference.IsAbs() || reference.Host != "" {
+		return false
+	}
+	return reference.Path == "/latest" || strings.HasPrefix(reference.Path, "/latest/")
+}
+
+func sectionPrefixFromLatestBase(basePath string) string {
+	cleaned := path.Clean(basePath)
+	trimmed := strings.Trim(cleaned, "/")
+	if trimmed == "" {
+		return ""
+	}
+	segments := strings.Split(trimmed, "/")
+	if len(segments) < 2 {
+		return ""
+	}
+	if !strings.EqualFold(segments[1], "latest") {
+		return ""
+	}
+	if segments[0] == "" || strings.EqualFold(segments[0], "latest") {
+		return ""
+	}
+	return segments[0]
 }
 
 func IsAllowedURL(rawURL string, cfg config.Config) bool {

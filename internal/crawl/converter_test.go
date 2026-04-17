@@ -117,3 +117,15 @@ func TestRewriteHrefStillRewritesSlashTerminatedSectionToLocal(t *testing.T) {
 		t.Fatalf("rewriteHref = %q, want %q", rewritten, "peering.md")
 	}
 }
+
+func TestRewriteHrefRewritesRootLatestToLocalSectionLink(t *testing.T) {
+	converter := NewConverter(config.Default(), NewMapper("docs"), nil)
+
+	source := "https://docs.aws.amazon.com/vpc/latest/userguide/"
+	href := "/latest/peering/"
+
+	rewritten := converter.rewriteHref(source, href)
+	if rewritten != "peering.md" {
+		t.Fatalf("rewriteHref = %q, want %q", rewritten, "peering.md")
+	}
+}
