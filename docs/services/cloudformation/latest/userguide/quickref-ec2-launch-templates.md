@@ -1,3 +1,7 @@
+---
+title: "Create launch templates with CloudFormation"
+---
+
 # Create launch templates with CloudFormation
 
 This section provides an example for creating an Amazon EC2 launch template using

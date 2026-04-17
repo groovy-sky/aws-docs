@@ -1,3 +1,7 @@
+---
+title: "Security best practices for CloudFormation"
+---
+
 # Security best practices for CloudFormation
 
 CloudFormation provides a number of security features to consider as you develop and implement your

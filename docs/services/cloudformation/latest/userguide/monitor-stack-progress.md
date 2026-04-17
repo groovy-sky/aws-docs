@@ -1,3 +1,7 @@
+---
+title: "Monitor stack progress"
+---
+
 # Monitor stack progress
 
 This section describes how to monitor a stack deployment that is currently in progress.

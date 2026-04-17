@@ -1,3 +1,7 @@
+---
+title: "Using drift-aware change sets"
+---
+
 # Using drift-aware change sets
 
 Drift-aware change sets are enhanced CloudFormation change sets that allow you to identify and

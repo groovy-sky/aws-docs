@@ -1,3 +1,7 @@
+---
+title: "Welcome"
+---
+
 # Welcome
 
 AWS Resource Groups lets you organize AWS resources such as Amazon Elastic Compute Cloud instances, Amazon Relational Database Service
@@ -31,7 +35,7 @@ results
 
 - Searching AWS resources based on a resource query
 
-This document was last published on April 10, 2026.
+This document was last published on April 16, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

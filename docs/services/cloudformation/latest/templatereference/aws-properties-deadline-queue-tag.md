@@ -1,3 +1,7 @@
+---
+title: "AWS::Deadline::Queue Tag"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -66,8 +70,8 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-PosixUser
+SchedulingMinPriorityOverride
 
-WindowsUser
+WeightedBalancedSchedulingConfiguration
 
 All content copied from https://docs.aws.amazon.com/.

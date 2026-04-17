@@ -1,3 +1,7 @@
+---
+title: "View stack information from the CloudFormation console"
+---
+
 # View stack information from the CloudFormation console
 
 After you've created a CloudFormation stack, you can use the AWS Management Console to view its data and

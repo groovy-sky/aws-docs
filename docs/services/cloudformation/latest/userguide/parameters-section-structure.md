@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template Parameters syntax"
+---
+
 # CloudFormation template Parameters syntax
 
 Use the optional `Parameters` section to customize your templates. With

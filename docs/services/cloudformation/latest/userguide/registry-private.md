@@ -1,3 +1,7 @@
+---
+title: "Use third-party private extensions that have been shared with you"
+---
+
 # Use third-party private extensions that have been shared with you
 
 To use third-party private extensions that have been shared with you, you must first

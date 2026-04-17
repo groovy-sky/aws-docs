@@ -1,3 +1,7 @@
+---
+title: "Bootstrapping Windows-based CloudFormation stacks"
+---
+
 # Bootstrapping Windows-based CloudFormation stacks
 
 This topic describes how to bootstrap a Windows stack and troubleshoot stack

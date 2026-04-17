@@ -1,3 +1,7 @@
+---
+title: "AWS::AutoScaling::AutoScalingGroup"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -170,7 +174,7 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 
 `AvailabilityZoneIds`
 
-Property description not available.
+The Availability Zone IDs where the Auto Scaling group can launch instances.
 
 _Required_: No
 

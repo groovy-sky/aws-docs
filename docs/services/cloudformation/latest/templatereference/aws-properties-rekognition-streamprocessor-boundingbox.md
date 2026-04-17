@@ -1,3 +1,7 @@
+---
+title: "AWS::Rekognition::StreamProcessor BoundingBox"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -17,7 +21,7 @@ and a `top` value of 0.25 (50/200).
 The `width` and `height` values represent the dimensions of the
 bounding box as a ratio of the overall image dimension. For example, if the input image is
 700x200 pixels, and the bounding box width is 70 pixels, the width returned is 0.1. For more information, see
-[BoundingBox](../../../../reference/rekognition/latest/apireference/api-boundingbox.md).
+[BoundingBox](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_BoundingBox).
 
 ###### Note
 

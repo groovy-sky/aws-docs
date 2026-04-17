@@ -1,3 +1,7 @@
+---
+title: "CloudFormation custom resource request and response reference"
+---
+
 # CloudFormation custom resource request and response reference
 
 CloudFormation manages custom resources through a request-response protocol that communicates with

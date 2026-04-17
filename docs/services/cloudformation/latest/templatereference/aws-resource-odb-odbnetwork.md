@@ -1,3 +1,7 @@
+---
+title: "AWS::ODB::OdbNetwork"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -302,6 +306,10 @@ For more information about using the `Ref` function, see [`Ref`](intrinsic-funct
 ### Fn::GetAtt
 
 The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+`Ec2PlacementGroupIds`
+
+The list of EC2 Placement Group IDs associated with your ODB network.
 
 `OciNetworkAnchorId`
 

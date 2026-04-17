@@ -1,3 +1,7 @@
+---
+title: "Detect drift on individual stack resources"
+---
+
 # Detect drift on individual stack resources
 
 You can detect drift on specific resources within a stack, rather than the entire

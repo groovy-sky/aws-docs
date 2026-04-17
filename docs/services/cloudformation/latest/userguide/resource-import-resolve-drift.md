@@ -1,3 +1,7 @@
+---
+title: "Resolve drift with an import operation"
+---
+
 # Resolve drift with an import operation
 
 There may be cases where a resource's configuration has drifted from its intended

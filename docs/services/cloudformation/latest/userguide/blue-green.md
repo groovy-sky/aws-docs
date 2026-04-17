@@ -1,3 +1,7 @@
+---
+title: "Perform ECS blue/green deployments through CodeDeploy using CloudFormation"
+---
+
 # Perform ECS blue/green deployments through CodeDeploy using CloudFormation
 
 To update an application running on Amazon Elastic Container Service (Amazon ECS), you can use a CodeDeploy blue/green

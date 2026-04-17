@@ -1,3 +1,7 @@
+---
+title: "Amazon Timestream template snippets"
+---
+
 # Amazon Timestream template snippets
 
 Amazon Timestream for InfluxDB makes it easy for application developers and DevOps teams to run fully managed InfluxDB

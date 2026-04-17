@@ -1,3 +1,7 @@
+---
+title: "AWS::CloudWatch::Alarm"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -32,6 +36,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "DatapointsToAlarm" : Integer,
       "Dimensions" : [ Dimension, ... ],
       "EvaluateLowSampleCountPercentile" : String,
+      "EvaluationCriteria" : EvaluationCriteria,
+      "EvaluationInterval" : Integer,
       "EvaluationPeriods" : Integer,
       "ExtendedStatistic" : String,
       "InsufficientDataActions" : [ String, ... ],
@@ -67,6 +73,9 @@ Properties:
   Dimensions:
     - Dimension
   EvaluateLowSampleCountPercentile: String
+  EvaluationCriteria:
+    EvaluationCriteria
+  EvaluationInterval: Integer
   EvaluationPeriods: Integer
   ExtendedStatistic: String
   InsufficientDataActions:
@@ -209,6 +218,30 @@ _Type_: String
 _Minimum_: `1`
 
 _Maximum_: `255`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`EvaluationCriteria`
+
+The evaluation criteria for the alarm.
+
+_Required_: No
+
+_Type_: [EvaluationCriteria](aws-properties-cloudwatch-alarm-evaluationcriteria.md)
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`EvaluationInterval`
+
+The frequency, in seconds, at which the alarm is evaluated.
+
+_Required_: No
+
+_Type_: Integer
+
+_Minimum_: `10`
+
+_Maximum_: `3600`
 
 _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
 
@@ -551,6 +584,6 @@ Resources:
 
 CloudWatch
 
-Dimension
+AlarmPromQLCriteria
 
 All content copied from https://docs.aws.amazon.com/.

@@ -1,3 +1,7 @@
+---
+title: "AWS::Rekognition::StreamProcessor"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -27,7 +31,7 @@ stream processor and it is the identifier for the stream processor. The
 `AWS::Rekognition::StreamProcessor` resource creates a stream processor in
 the same Region where you create the Amazon CloudFormation stack.
 
-For more information, see [CreateStreamProcessor](../../../../reference/rekognition/latest/apireference/api-createstreamprocessor.md).
+For more information, see [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
 
 ## Syntax
 
@@ -96,7 +100,7 @@ Properties:
 `BoundingBoxRegionsOfInterest`
 
 List of BoundingBox objects, each of which denotes a region of interest on screen.
-For more information, see the BoundingBox field of [RegionOfInterest](../../../../reference/rekognition/latest/apireference/api-regionofinterest.md).
+For more information, see the BoundingBox field of [RegionOfInterest](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_RegionOfInterest).
 
 _Required_: No
 
@@ -111,7 +115,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 Connected home settings to use on a streaming video. You can use a stream processor for connected home features and select
 what you want the stream processor to detect, such as people or pets. When the stream processor has started, one notification is sent for
 each object class specified. For more information,
-see the ConnectedHome section of [StreamProcessorSettings](../../../../reference/rekognition/latest/apireference/api-streamprocessorsettings.md).
+see the ConnectedHome section of [StreamProcessorSettings](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorSettings).
 
 _Required_: No
 
@@ -123,7 +127,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 
 Allows you to opt in or opt out to share data with Rekognition to improve model performance.
 You can choose this option at the account level or on a per-stream basis. Note that if you opt out at the account level this setting is ignored on individual streams.
-For more information, see [StreamProcessorDataSharingPreference](../../../../reference/rekognition/latest/apireference/api-streamprocessordatasharingpreference.md).
+For more information, see [StreamProcessorDataSharingPreference](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorDataSharingPreference).
 
 _Required_: No
 
@@ -134,7 +138,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 `FaceSearchSettings`
 
 The input parameters used to recognize faces in a streaming video analyzed by an Amazon Rekognition stream processor.
-For more information regarding the contents of the parameters, see [FaceSearchSettings](../../../../reference/rekognition/latest/apireference/api-facesearchsettings.md).
+For more information regarding the contents of the parameters, see [FaceSearchSettings](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_FaceSearchSettings).
 
 _Required_: No
 
@@ -147,7 +151,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 Amazon Rekognition's Video Stream Processor takes a Kinesis video stream as input. This is the Amazon Kinesis Data Streams instance
 to which the Amazon Rekognition stream processor streams the analysis results.
 This must be created within the constraints specified at
-[KinesisDataStream](../../../../reference/rekognition/latest/apireference/api-kinesisdatastream.md).
+[KinesisDataStream](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_KinesisDataStream).
 
 _Required_: No
 
@@ -158,7 +162,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 `KinesisVideoStream`
 
 The Kinesis video stream that provides the source of the streaming video for an Amazon Rekognition Video stream processor. For more information,
-see [KinesisVideoStream](../../../../reference/rekognition/latest/apireference/api-kinesisvideostream.md).
+see [KinesisVideoStream](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_KinesisVideoStream).
 
 _Required_: Yes
 
@@ -170,7 +174,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 
 The identifier for your Amazon Key Management Service key (Amazon KMS key). Optional parameter for connected home stream processors
 used to encrypt results and data published to your Amazon S3 bucket.
-For more information, see the KMSKeyId section of [CreateStreamProcessor](../../../../reference/rekognition/latest/apireference/api-createstreamprocessor.md).
+For more information, see the KMSKeyId section of [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
 
 _Required_: No
 
@@ -181,7 +185,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 `Name`
 
 The Name attribute specifies the name of the stream processor and it must be within the
-constraints described in the Name section of [StreamProcessor](../../../../reference/rekognition/latest/apireference/api-streamprocessor.md).
+constraints described in the Name section of [StreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessor).
 If you don't specify a name, Amazon CloudFormation generates a unique ID and uses that ID for the stream processor name.
 
 _Required_: No
@@ -201,7 +205,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 The Amazon Simple Notification Service topic to which Amazon Rekognition publishes the object detection results and completion status of a video analysis operation.
 Amazon Rekognition publishes a notification the first time an object of interest or a person is detected in the video stream.
 Amazon Rekognition also publishes an end-of-session notification with a summary when the stream processing session is complete.
-For more information, see [StreamProcessorNotificationChannel](../../../../reference/rekognition/latest/apireference/api-streamprocessornotificationchannel.md).
+For more information, see [StreamProcessorNotificationChannel](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorNotificationChannel).
 
 _Required_: No
 
@@ -211,10 +215,10 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 
 `PolygonRegionsOfInterest`
 
-A set of ordered lists of [Point](../../../../reference/rekognition/latest/apireference/api-point.md) objects.
+A set of ordered lists of [Point](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Point) objects.
 Each entry of the set contains a polygon denoting a region of interest on the screen. Each polygon is an ordered
-list of [Point](../../../../reference/rekognition/latest/apireference/api-point.md) objects.
-For more information, see the Polygon field of [RegionOfInterest](../../../../reference/rekognition/latest/apireference/api-regionofinterest.md).
+list of [Point](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Point) objects.
+For more information, see the Polygon field of [RegionOfInterest](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_RegionOfInterest).
 
 _Required_: No
 
@@ -229,7 +233,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 The ARN of the IAM role that allows access to the stream processor. The IAM role provides Rekognition read permissions to the Kinesis stream.
 It also provides write permissions to an Amazon S3 bucket and Amazon Simple Notification Service topic for a connected home stream processor.
 This is required for both face search and connected home stream processors.
-For information about constraints, see the RoleArn section of [CreateStreamProcessor](../../../../reference/rekognition/latest/apireference/api-createstreamprocessor.md).
+For information about constraints, see the RoleArn section of [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
 
 _Required_: Yes
 
@@ -244,7 +248,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 `S3Destination`
 
 The Amazon S3 bucket location to which Amazon Rekognition publishes the detailed inference results of a video analysis operation.
-For more information, see the S3Destination section of [StreamProcessorOutput](../../../../reference/rekognition/latest/apireference/api-streamprocessoroutput.md).
+For more information, see the S3Destination section of [StreamProcessorOutput](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorOutput).
 
 _Required_: No
 
@@ -255,7 +259,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 `Tags`
 
 A set of tags (key-value pairs) that you want to attach to the stream processor.
-For more information, see the Tags section of [CreateStreamProcessor](../../../../reference/rekognition/latest/apireference/api-createstreamprocessor.md).
+For more information, see the Tags section of [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
 
 _Required_: No
 

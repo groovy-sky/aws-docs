@@ -1,3 +1,7 @@
+---
+title: "Peer with a VPC in another AWS account"
+---
+
 # Peer with a VPC in another AWS account
 
 You can peer with a Virtual Private Cloud (VPC) in another AWS account by using [AWS::EC2::VPCPeeringConnection](../templatereference/aws-resource-ec2-vpcpeeringconnection.md). This creates a networking connection

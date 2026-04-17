@@ -1,3 +1,7 @@
+---
+title: "Amazon Neptune Analytics"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -7,6 +11,8 @@ Please update your bookmarks and links. For help getting started with CloudForma
 **Resource types**
 
 - [AWS::NeptuneGraph::Graph](aws-resource-neptunegraph-graph.md)
+
+- [AWS::NeptuneGraph::GraphSnapshot](aws-resource-neptunegraph-graphsnapshot.md)
 
 - [AWS::NeptuneGraph::PrivateGraphEndpoint](aws-resource-neptunegraph-privategraphendpoint.md)
 

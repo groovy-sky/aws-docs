@@ -1,3 +1,7 @@
+---
+title: "Auto scaling CloudFormation template snippets"
+---
+
 # Auto scaling CloudFormation template snippets
 
 With Amazon EC2 Auto Scaling, you can automatically scale Amazon EC2 instances, either with scaling policies or

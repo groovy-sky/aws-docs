@@ -1,3 +1,7 @@
+---
+title: "Amazon Verified Permissions"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -18,7 +22,7 @@ requirements. Cedar supports both role-based access control (RBAC) and attribute
 access control (ABAC) authorization models.
 
 For more information about configuring, administering, and using Amazon Verified Permissions in your
-applications, see the [Amazon Verified Permissions User Guide](../../../verifiedpermissions/latest/userguide.md).
+applications, see the [Amazon Verified Permissions User Guide](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide).
 
 For more information about the Cedar policy language, see the [Cedar Language Reference Guide](https://docs.cedarpolicy.com/).
 

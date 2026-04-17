@@ -1,3 +1,7 @@
+---
+title: "Import stacks into CloudFormation StackSets"
+---
+
 # Import stacks into CloudFormation StackSets
 
 A stack import operation can import existing stacks into new or existing StackSets, so that

@@ -1,3 +1,7 @@
+---
+title: "AWS::Organizations::OrganizationalUnit"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -154,6 +158,10 @@ The Amazon Resource Name (ARN) of this OU. For example:
 
 The unique identifier (ID) associated with this OU. For example:
 `ou-examplerootid111-exampleouid111`.
+
+`Path`
+
+The path in the organization where this OU exists.
 
 ## Examples
 

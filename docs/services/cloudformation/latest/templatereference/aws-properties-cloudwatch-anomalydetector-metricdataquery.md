@@ -1,3 +1,7 @@
+---
+title: "AWS::CloudWatch::AnomalyDetector MetricDataQuery"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -95,7 +99,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 
 This field can contain either a Metrics Insights query, or a metric math expression to
 be performed on the returned data. For more information about Metrics Insights queries,
-see [Metrics Insights query components and syntax](../../../amazoncloudwatch/latest/monitoring/cloudwatch-metrics-insights-querylanguage.md) in the _Amazon_
+see [Metrics Insights query components and syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-metrics-insights-querylanguage) in the _Amazon_
 _CloudWatch User Guide_.
 
 A math expression can use the `Id` of the other metrics or queries to refer

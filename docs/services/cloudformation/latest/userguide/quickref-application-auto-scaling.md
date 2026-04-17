@@ -1,3 +1,7 @@
+---
+title: "Configure Application Auto Scaling resources with CloudFormation"
+---
+
 # Configure Application Auto Scaling resources with CloudFormation
 
 This section provides CloudFormation template examples for Application Auto Scaling scaling policies and scheduled

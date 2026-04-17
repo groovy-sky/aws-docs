@@ -1,3 +1,7 @@
+---
+title: "Delete a stack from the CloudFormation console"
+---
+
 # Delete a stack from the CloudFormation console
 
 If you no longer need the resources in a stack, you can delete the entire stack.

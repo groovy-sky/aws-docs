@@ -1,3 +1,7 @@
+---
+title: "Cancel a stack update"
+---
+
 # Cancel a stack update
 
 After a stack update has begun, you can cancel the stack update if the stack is still in

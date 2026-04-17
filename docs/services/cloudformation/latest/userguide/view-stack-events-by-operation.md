@@ -1,3 +1,7 @@
+---
+title: "View stack events by operation"
+---
+
 # View stack events by operation
 
 You can view stack events grouped by operation to better understand the sequence and scope

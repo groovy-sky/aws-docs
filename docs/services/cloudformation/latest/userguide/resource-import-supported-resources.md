@@ -1,3 +1,7 @@
+---
+title: "Resource type support"
+---
+
 # Resource type support
 
 The following table lists AWS resource types that currently support import, drift

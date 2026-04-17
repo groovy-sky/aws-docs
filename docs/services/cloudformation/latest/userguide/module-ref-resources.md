@@ -1,3 +1,7 @@
+---
+title: "Reference module resources in CloudFormation templates"
+---
+
 # Reference module resources in CloudFormation templates
 
 In CloudFormation templates, you often need to set properties on one resource based on the

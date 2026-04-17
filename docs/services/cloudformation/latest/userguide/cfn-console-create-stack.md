@@ -1,3 +1,7 @@
+---
+title: "Create a stack from the CloudFormation console"
+---
+
 # Create a stack from the CloudFormation console
 
 You can create a stack template and then use it to create a stack using either the

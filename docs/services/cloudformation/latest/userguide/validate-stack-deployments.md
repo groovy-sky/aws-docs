@@ -1,3 +1,7 @@
+---
+title: "Validate stack deployments"
+---
+
 # Validate stack deployments
 
 With pre-deployment validation, you can identify and resolve potential deployment issues

@@ -1,3 +1,7 @@
+---
+title: "HookResultSummary"
+---
+
 # HookResultSummary
 
 A `ListHookResults` call returns a summary of a Hook invocation.
@@ -164,11 +168,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/cloudformation-2010-05-15/hookresultsummary.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudformation-2010-05-15/HookResultSummary)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudformation-2010-05-15/hookresultsummary.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudformation-2010-05-15/HookResultSummary)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudformation-2010-05-15/hookresultsummary.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudformation-2010-05-15/HookResultSummary)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

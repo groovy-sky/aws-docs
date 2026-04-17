@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template Metadata syntax"
+---
+
 # CloudFormation template Metadata syntax
 
 `Metadata` stores additional information using JSON or YAML objects. The types

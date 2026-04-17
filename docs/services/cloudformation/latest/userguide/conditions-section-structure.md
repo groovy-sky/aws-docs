@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template Conditions syntax"
+---
+
 # CloudFormation template Conditions syntax
 
 The optional `Conditions` section contains statements that define the

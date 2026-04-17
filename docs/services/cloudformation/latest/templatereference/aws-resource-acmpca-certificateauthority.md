@@ -1,3 +1,7 @@
+---
+title: "AWS::ACMPCA::CertificateAuthority"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -136,7 +140,8 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 Name of the algorithm your private CA uses to sign certificate requests.
 
 This parameter should not be confused with the `SigningAlgorithm` parameter
-used to sign certificates when they are issued.
+of the `IssueCertificate` API action, which is used to sign certificates when
+they are issued.
 
 _Required_: Yes
 

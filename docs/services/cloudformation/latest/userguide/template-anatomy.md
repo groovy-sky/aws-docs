@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template sections"
+---
+
 # CloudFormation template sections
 
 Every CloudFormation template consists of one or more sections, each serving a specific purpose.

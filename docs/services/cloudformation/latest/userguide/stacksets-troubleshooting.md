@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting CloudFormation StackSets"
+---
+
 # Troubleshooting CloudFormation StackSets
 
 This topic contains some common StackSets issues, and suggested solutions for those

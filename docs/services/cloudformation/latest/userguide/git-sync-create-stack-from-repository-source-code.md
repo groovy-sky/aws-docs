@@ -1,3 +1,7 @@
+---
+title: "Create a stack from repository source code with Git sync"
+---
+
 # Create a stack from repository source code with Git sync
 
 This topic explains how to create a CloudFormation stack that syncs to a Git repository with

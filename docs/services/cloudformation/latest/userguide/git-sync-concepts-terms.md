@@ -1,3 +1,7 @@
+---
+title: "How Git sync works with CloudFormation"
+---
+
 # How Git sync works with CloudFormation
 
 This topic describes how Git sync works and introduces the key concepts required to work

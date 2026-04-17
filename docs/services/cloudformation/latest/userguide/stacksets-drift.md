@@ -1,3 +1,7 @@
+---
+title: "Performing drift detection on CloudFormation StackSets"
+---
+
 # Performing drift detection on CloudFormation StackSets
 
 Even as you manage your stacks and the resources they contain through CloudFormation, users

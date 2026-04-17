@@ -1,3 +1,7 @@
+---
+title: "Deactivate third-party public extensions in your account"
+---
+
 # Deactivate third-party public extensions in your account
 
 When you no longer need an activated third-party public extension, use the

@@ -1,3 +1,7 @@
+---
+title: "Access CloudFormation using an interface endpoint (AWS PrivateLink)"
+---
+
 # Access CloudFormation using an interface endpoint (AWS PrivateLink)
 
 You can use AWS PrivateLink to create a private connection between your VPC and CloudFormation.

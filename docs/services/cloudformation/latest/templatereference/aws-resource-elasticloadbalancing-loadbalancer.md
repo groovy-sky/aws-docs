@@ -1,3 +1,7 @@
+---
+title: "AWS::ElasticLoadBalancing::LoadBalancer"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -556,7 +560,7 @@ in the _Elastic Load Balancing API Reference (version 2012-06-01)_
 - [ConfigureHealthCheck](../../../../reference/elasticloadbalancing/2012-06-01/apireference/api-configurehealthcheck.md) in the
 _Elastic Load Balancing API Reference (version 2012-06-01)_
 
-- [User Guide for Classic Load Balancers](../../../elasticloadbalancing/latest/classic.md)
+- [User Guide for Classic Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

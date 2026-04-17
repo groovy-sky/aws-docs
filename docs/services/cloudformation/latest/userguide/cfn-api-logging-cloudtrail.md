@@ -1,3 +1,7 @@
+---
+title: "Logging CloudFormation API calls with AWS CloudTrail"
+---
+
 # Logging CloudFormation API calls with AWS CloudTrail
 
 CloudFormation is integrated with AWS CloudTrail, a service that provides a record of actions taken by a

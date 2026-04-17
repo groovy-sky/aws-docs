@@ -1,10 +1,14 @@
+---
+title: "AWS::BedrockAgentCore::Memory StreamDeliveryResources"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
 
 # AWS::BedrockAgentCore::Memory StreamDeliveryResources
 
-The `StreamDeliveryResources` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Memory](aws-resource-bedrockagentcore-memory.md).
+Configuration for streaming memory record data to external resources.
 
 ## Syntax
 
@@ -33,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `Resources`
 
-Property description not available.
+List of stream delivery resource configurations.
 
 _Required_: Yes
 

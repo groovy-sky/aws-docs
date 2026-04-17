@@ -1,3 +1,7 @@
+---
+title: "AWS::KinesisAnalyticsV2::Application MonitoringConfiguration"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -6,7 +10,7 @@ Please update your bookmarks and links. For help getting started with CloudForma
 
 Describes configuration parameters for Amazon CloudWatch logging for a Java-based
 Kinesis Data Analytics application. For more information about CloudWatch logging, see
-[Monitoring](../../../managed-flink/latest/java/monitoring-overview.md).
+[Monitoring](https://docs.aws.amazon.com/managed-flink/latest/java/monitoring-overview).
 
 ## Syntax
 

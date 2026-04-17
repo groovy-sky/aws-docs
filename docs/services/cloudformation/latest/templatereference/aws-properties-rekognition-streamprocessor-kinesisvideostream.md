@@ -1,3 +1,7 @@
+---
+title: "AWS::Rekognition::StreamProcessor KinesisVideoStream"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -5,7 +9,7 @@ Please update your bookmarks and links. For help getting started with CloudForma
 # AWS::Rekognition::StreamProcessor KinesisVideoStream
 
 The Kinesis video stream that provides the source of the streaming video for an Amazon Rekognition Video stream processor. For more information, see
-[KinesisVideoStream](../../../../reference/rekognition/latest/apireference/api-kinesisvideostream.md).
+[KinesisVideoStream](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_KinesisVideoStream).
 
 ## Syntax
 

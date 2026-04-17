@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template Description syntax"
+---
+
 # CloudFormation template Description syntax
 
 The `Description` section (optional) enables you to include a text string that

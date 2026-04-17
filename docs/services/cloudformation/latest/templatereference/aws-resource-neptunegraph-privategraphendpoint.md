@@ -1,3 +1,7 @@
+---
+title: "AWS::NeptuneGraph::PrivateGraphEndpoint"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -116,7 +120,7 @@ VPC endpoint that provides a private connection between the Graph and specified 
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-VectorSearchConfiguration
+Tag
 
 Next
 

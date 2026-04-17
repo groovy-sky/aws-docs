@@ -1,3 +1,7 @@
+---
+title: "Protect CloudFormation stacks from being deleted"
+---
+
 # Protect CloudFormation stacks from being deleted
 
 You can prevent a stack from being accidentally deleted by enabling termination protection

@@ -1,3 +1,7 @@
+---
+title: "Amazon Redshift template snippets"
+---
+
 # Amazon Redshift template snippets
 
 Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. You can use

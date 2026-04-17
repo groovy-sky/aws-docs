@@ -1,3 +1,7 @@
+---
+title: "Activate trusted access for StackSets with AWS Organizations"
+---
+
 # Activate trusted access for StackSets with AWS Organizations
 
 This topic provides instructions on how to activate trusted access with AWS Organizations,

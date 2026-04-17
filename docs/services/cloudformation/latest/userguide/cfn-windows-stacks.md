@@ -1,3 +1,7 @@
+---
+title: "Deploy Windows-based stacks using CloudFormation"
+---
+
 # Deploy Windows-based stacks using CloudFormation
 
 This page provides links to technical reference documentation for CloudFormation resources

@@ -1,3 +1,7 @@
+---
+title: "AWS::Lightsail::DatabaseSnapshot"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -8,7 +12,7 @@ Creates a snapshot of your database in Amazon Lightsail. You can use snapshots f
 to make copies of a database, and to save data before deleting a database.
 
 The `create relational database snapshot` operation supports tag-based access
-control via request tags. For more information, see the [Amazon Lightsail Developer Guide](../../../lightsail/latest/userguide/amazon-lightsail-controlling-access-using-tags.md).
+control via request tags. For more information, see the [Amazon Lightsail Developer Guide](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-controlling-access-using-tags).
 
 ## Syntax
 
@@ -75,7 +79,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 `Tags`
 
 The tag keys and optional values for the resource. For more information about tags in
-Lightsail, see the [Amazon Lightsail Developer Guide](../../../lightsail/latest/userguide/amazon-lightsail-tags.md).
+Lightsail, see the [Amazon Lightsail Developer Guide](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-tags).
 
 _Required_: No
 

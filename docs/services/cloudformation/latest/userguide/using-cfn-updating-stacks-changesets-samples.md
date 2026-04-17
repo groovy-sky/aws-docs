@@ -1,3 +1,7 @@
+---
+title: "Example change sets for CloudFormation stacks"
+---
+
 # Example change sets for CloudFormation stacks
 
 This section provides examples of the change sets that CloudFormation would create for common

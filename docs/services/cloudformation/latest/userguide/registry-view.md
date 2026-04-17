@@ -1,3 +1,7 @@
+---
+title: "View the available and activated extensions in the CloudFormation registry"
+---
+
 # View the available and activated extensions in the CloudFormation registry
 
 To view the available and activated extensions in the CloudFormation registry, you can use

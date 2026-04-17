@@ -1,3 +1,7 @@
+---
+title: "Get started with StackSets using a sample template"
+---
+
 # Get started with StackSets using a sample template
 
 This tutorial will help you get started with StackSets using the AWS Management Console. It guides

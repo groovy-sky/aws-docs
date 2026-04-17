@@ -1,3 +1,7 @@
+---
+title: "Resource types you can use with AWS Resource Groups and Tag Editor"
+---
+
 # Resource types you can use with AWS Resource Groups and Tag Editor
 
 You can use the AWS Management Console or the AWS CLI to create resource groups and then interact with

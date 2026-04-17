@@ -1,3 +1,7 @@
+---
+title: "AWS::AppSync::SourceApiAssociation"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -100,14 +104,14 @@ When you pass the logical ID of an `AWS::AppSync::SourceApiAssociation`
 resource to the intrinsic `Ref` function, the function returns the ARN of the
 source API association.
 
-For more information about using the `Ref` function, see [Ref](../userguide/intrinsic-function-reference-ref.md).
+For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref).
 
 ### Fn::GetAtt
 
 `Fn::GetAtt` returns a value for a specified attribute of this type. The
 following are the available attributes and sample return values.
 
-For more information about using `Fn::GetAtt`, see [Fn::GetAtt](../userguide/intrinsic-function-reference-getatt.md).
+For more information about using `Fn::GetAtt`, see [Fn::GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt).
 
 `AssociationArn`
 

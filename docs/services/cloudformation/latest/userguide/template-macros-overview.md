@@ -1,3 +1,7 @@
+---
+title: "Overview of CloudFormation macros"
+---
+
 # Overview of CloudFormation macros
 
 There are two major steps to processing templates using macros: creating the macro

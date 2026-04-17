@@ -1,3 +1,7 @@
+---
+title: "Amazon EC2 CloudFormation template snippets"
+---
+
 # Amazon EC2 CloudFormation template snippets
 
 Amazon EC2 provides scalable compute capacity in the AWS Cloud. You can use Amazon EC2 to launch

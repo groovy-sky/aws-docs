@@ -1,3 +1,7 @@
+---
+title: "Determine the cause of a stack failure"
+---
+
 # Determine the cause of a stack failure
 
 If your stack creation fails, CloudFormation can help you to determine the event that is

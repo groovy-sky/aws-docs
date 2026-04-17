@@ -1,3 +1,7 @@
+---
+title: "AWS::Deadline::Monitor"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -21,6 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "DisplayName" : String,
       "IdentityCenterInstanceArn" : String,
+      "IdentityCenterRegion" : String,
       "RoleArn" : String,
       "Subdomain" : String,
       "Tags" : [ Tag, ... ]
@@ -37,6 +42,7 @@ Type: AWS::Deadline::Monitor
 Properties:
   DisplayName: String
   IdentityCenterInstanceArn: String
+  IdentityCenterRegion: String
   RoleArn: String
   Subdomain: String
   Tags:
@@ -73,6 +79,22 @@ _Required_: Yes
 _Type_: String
 
 _Pattern_: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}$`
+
+_Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
+
+`IdentityCenterRegion`
+
+Property description not available.
+
+_Required_: No
+
+_Type_: String
+
+_Pattern_: `^[a-z0-9-]+$`
+
+_Minimum_: `1`
+
+_Maximum_: `25`
 
 _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
 

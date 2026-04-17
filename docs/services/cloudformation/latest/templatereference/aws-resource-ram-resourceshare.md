@@ -1,3 +1,7 @@
+---
+title: "AWS::RAM::ResourceShare"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -278,7 +282,7 @@ Resources:
 
 - [CreateResourceShare](../../../../reference/ram/latest/apireference/api-createresourceshare.md) in the _AWS Resource Access Manager API Reference_
 
-- [AWS Resource Access Manager User Guide](../../../ram/latest/userguide.md)
+- [AWS Resource Access Manager User Guide](https://docs.aws.amazon.com/ram/latest/userguide)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

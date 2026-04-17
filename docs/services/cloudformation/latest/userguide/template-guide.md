@@ -1,3 +1,7 @@
+---
+title: "Working with CloudFormation templates"
+---
+
 # Working with CloudFormation templates
 
 An AWS CloudFormation template defines the AWS resources you want to create, update, or delete as

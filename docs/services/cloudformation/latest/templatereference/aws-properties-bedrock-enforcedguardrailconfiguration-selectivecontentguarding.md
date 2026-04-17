@@ -1,3 +1,7 @@
+---
+title: "AWS::Bedrock::EnforcedGuardrailConfiguration SelectiveContentGuarding"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -46,7 +50,7 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 
 `System`
 
-Selective guarding mode for system prompts."
+Selective guarding mode for system prompts.
 
 _Required_: No
 

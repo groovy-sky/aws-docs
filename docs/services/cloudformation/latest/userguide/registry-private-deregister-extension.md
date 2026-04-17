@@ -1,3 +1,7 @@
+---
+title: "Remove third-party private extensions from your account"
+---
+
 # Remove third-party private extensions from your account
 
 To remove a third-party private extension or extension version, use the [deregister-type](../../../cli/latest/reference/cloudformation/deregister-type.md) command.

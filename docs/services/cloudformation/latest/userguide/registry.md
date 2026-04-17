@@ -1,3 +1,7 @@
+---
+title: "Managing extensions with the CloudFormation registry"
+---
+
 # Managing extensions with the CloudFormation registry
 
 The CloudFormation registry serves as a centralized hub for managing extensions that can be

@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template Mappings syntax"
+---
+
 # CloudFormation template Mappings syntax
 
 The optional `Mappings` section helps you create key-value pairs that can be used

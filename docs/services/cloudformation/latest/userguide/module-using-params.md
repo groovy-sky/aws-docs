@@ -1,3 +1,7 @@
+---
+title: "Use parameters to specify module values"
+---
+
 # Use parameters to specify module values
 
 In CloudFormation, you can use template parameters to customize your stacks by providing input

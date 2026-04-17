@@ -1,3 +1,7 @@
+---
+title: "AWS::Lightsail::InstanceSnapshot"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -67,7 +71,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 `Tags`
 
 The tag keys and optional values for the resource. For more information about tags in
-Lightsail, see the [Amazon Lightsail Developer Guide](../../../lightsail/latest/userguide/amazon-lightsail-tags.md).
+Lightsail, see the [Amazon Lightsail Developer Guide](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-tags).
 
 _Required_: No
 

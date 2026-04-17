@@ -1,3 +1,7 @@
+---
+title: "Edit configuration data for extensions in your account"
+---
+
 # Edit configuration data for extensions in your account
 
 This topic provides guidance on editing configuration data for extensions in your

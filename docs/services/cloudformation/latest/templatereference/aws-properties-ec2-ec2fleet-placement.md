@@ -1,3 +1,7 @@
+---
+title: "AWS::EC2::EC2Fleet Placement"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -48,7 +52,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 The affinity setting for the instance on the Dedicated Host.
 
-This parameter is not supported for [CreateFleet](../../../../reference/awsec2/latest/apireference/api-createfleet.md) or [ImportInstance](../../../../reference/awsec2/latest/apireference/api-importinstance.md).
+This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet) or [ImportInstance](../../../../reference/awsec2/latest/apireference/api-importinstance.md).
 
 _Required_: No
 
@@ -64,7 +68,7 @@ On input, you can specify `AvailabilityZone` or `AvailabilityZoneId`,
 but not both. If you specify neither one, Amazon EC2 automatically selects an Availability Zone
 for you.
 
-This parameter is not supported for [CreateFleet](../../../../reference/awsec2/latest/apireference/api-createfleet.md).
+This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet).
 
 _Required_: No
 
@@ -89,7 +93,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 
 The ID of the Dedicated Host on which the instance resides.
 
-This parameter is not supported for [CreateFleet](../../../../reference/awsec2/latest/apireference/api-createfleet.md) or [ImportInstance](../../../../reference/awsec2/latest/apireference/api-importinstance.md).
+This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet) or [ImportInstance](../../../../reference/awsec2/latest/apireference/api-importinstance.md).
 
 _Required_: No
 
@@ -103,7 +107,7 @@ The ARN of the host resource group in which to launch the instances.
 
 On input, if you specify this parameter, either omit the **Tenancy** parameter or set it to `host`.
 
-This parameter is not supported for [CreateFleet](../../../../reference/awsec2/latest/apireference/api-createfleet.md).
+This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet).
 
 _Required_: No
 
@@ -116,7 +120,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 The number of the partition that the instance is in. Valid only if the placement group
 strategy is set to `partition`.
 
-This parameter is not supported for [CreateFleet](../../../../reference/awsec2/latest/apireference/api-createfleet.md).
+This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet).
 
 _Required_: No
 
@@ -139,7 +143,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 The tenancy of the instance. An instance with a
 tenancy of `dedicated` runs on single-tenant hardware.
 
-This parameter is not supported for [CreateFleet](../../../../reference/awsec2/latest/apireference/api-createfleet.md). The
+This parameter is not supported for [CreateFleet](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFleet). The
 `host` tenancy is not supported for [ImportInstance](../../../../reference/awsec2/latest/apireference/api-importinstance.md) or
 for T3 instances that are configured for the `unlimited` CPU credit
 option.

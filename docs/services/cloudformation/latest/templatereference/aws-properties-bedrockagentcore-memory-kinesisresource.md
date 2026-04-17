@@ -1,10 +1,14 @@
+---
+title: "AWS::BedrockAgentCore::Memory KinesisResource"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
 
 # AWS::BedrockAgentCore::Memory KinesisResource
 
-The `KinesisResource` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Memory](aws-resource-bedrockagentcore-memory.md).
+Configuration for Kinesis Data Stream delivery.
 
 ## Syntax
 
@@ -35,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `ContentConfigurations`
 
-Property description not available.
+Content configurations for stream delivery.
 
 _Required_: Yes
 
@@ -49,7 +53,7 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 
 `DataStreamArn`
 
-Property description not available.
+ARN of the Kinesis Data Stream.
 
 _Required_: Yes
 

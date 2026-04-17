@@ -1,3 +1,7 @@
+---
+title: "Lambda-backed custom resources"
+---
+
 # Lambda-backed custom resources
 
 When you associate a Lambda function with a custom resource, the function is invoked

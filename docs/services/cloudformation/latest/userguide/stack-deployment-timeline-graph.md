@@ -1,3 +1,7 @@
+---
+title: "View a timeline of a CloudFormation stack deployment"
+---
+
 # View a timeline of a CloudFormation stack deployment
 
 The stack deployment timeline graph provides a visual representation of a stack deployment

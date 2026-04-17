@@ -1,3 +1,7 @@
+---
+title: "Understand CloudFormation stack creation events"
+---
+
 # Understand CloudFormation stack creation events
 
 During stack deployment, several events occur to create, configure, and validate the

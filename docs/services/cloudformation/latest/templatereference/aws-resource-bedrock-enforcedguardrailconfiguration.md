@@ -1,3 +1,7 @@
+---
+title: "AWS::Bedrock::EnforcedGuardrailConfiguration"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -45,7 +49,7 @@ Properties:
 
 `GuardrailIdentifier`
 
-Property description not available.
+Identifier for the guardrail, could be the ID or the ARN.
 
 _Required_: Yes
 
@@ -61,7 +65,7 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 
 `GuardrailVersion`
 
-Property description not available.
+Numerical guardrail version.
 
 _Required_: Yes
 
@@ -99,35 +103,35 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 
 `ConfigId`
 
-Property description not available.
+Unique ID for the account enforced configuration.
 
 `CreatedAt`
 
-Property description not available.
+Timestamp.
 
 `CreatedBy`
 
-Property description not available.
+The ARN of the role used to update the configuration.
 
 `GuardrailArn`
 
-Property description not available.
+ARN representation for the guardrail.
 
 `GuardrailId`
 
-Property description not available.
+Unique ID for the guardrail.
 
 `Owner`
 
-Property description not available.
+Configuration owner type.
 
 `UpdatedAt`
 
-Property description not available.
+Timestamp.
 
 `UpdatedBy`
 
-Property description not available.
+The ARN of the role used to update the configuration.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -1,3 +1,7 @@
+---
+title: "AWS::ElasticLoadBalancingV2::LoadBalancer"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -473,13 +477,13 @@ myLoadBalancer:
 _Reference (version 2015-12-01)_
 
 - [User\
-Guide for Application Load Balancers](../../../elasticloadbalancing/latest/application.md)
+Guide for Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application)
 
 - [User Guide\
-for Network Load Balancers](../../../elasticloadbalancing/latest/network.md)
+for Network Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/network)
 
 - [User Guide\
-for Gateway Load Balancers](../../../elasticloadbalancing/latest/gateway.md)
+for Gateway Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

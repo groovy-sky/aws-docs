@@ -1,3 +1,7 @@
+---
+title: "Resolve write-only properties"
+---
+
 # Resolve write-only properties
 
 With the CloudFormation IaC generator, you can generate a template using resources provisioned in

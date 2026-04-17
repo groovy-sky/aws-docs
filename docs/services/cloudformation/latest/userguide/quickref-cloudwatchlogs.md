@@ -1,3 +1,7 @@
+---
+title: "Amazon CloudWatch Logs template snippets"
+---
+
 # Amazon CloudWatch Logs template snippets
 
 Amazon CloudWatch Logs can monitor your system, application, and custom log files from Amazon EC2 instances

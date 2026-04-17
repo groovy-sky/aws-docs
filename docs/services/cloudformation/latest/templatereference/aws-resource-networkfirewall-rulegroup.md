@@ -1,10 +1,14 @@
+---
+title: "AWS::NetworkFirewall::RuleGroup"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
 
 # AWS::NetworkFirewall::RuleGroup
 
-Use the [https://docs.aws.amazon.com/RuleGroup](../../../rulegroup/index.md) to define a reusable collection of stateless or stateful network traffic filtering rules.
+Use the [https://docs.aws.amazon.com/RuleGroup](https://docs.aws.amazon.com/RuleGroup) to define a reusable collection of stateless or stateful network traffic filtering rules.
 You use rule groups in an firewall policy to specify the filtering behavior of an firewall.
 
 ## Syntax

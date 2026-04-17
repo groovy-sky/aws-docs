@@ -1,3 +1,7 @@
+---
+title: "Prevent updates to stack resources"
+---
+
 # Prevent updates to stack resources
 
 When you create a stack, all update actions are allowed on all resources. By default, anyone

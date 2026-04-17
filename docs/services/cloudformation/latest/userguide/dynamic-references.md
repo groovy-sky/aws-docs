@@ -1,3 +1,7 @@
+---
+title: "Get values stored in other services using dynamic references"
+---
+
 # Get values stored in other services using dynamic references
 
 Dynamic references provide a convenient way for you to specify external values stored and

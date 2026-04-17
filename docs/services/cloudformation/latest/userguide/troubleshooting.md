@@ -1,3 +1,7 @@
+---
+title: "Troubleshooting CloudFormation"
+---
+
 # Troubleshooting CloudFormation
 
 When you use CloudFormation, you might encounter issues when you create, update, or delete

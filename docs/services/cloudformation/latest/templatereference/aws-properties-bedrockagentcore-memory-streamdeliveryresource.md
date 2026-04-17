@@ -1,10 +1,14 @@
+---
+title: "AWS::BedrockAgentCore::Memory StreamDeliveryResource"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
 
 # AWS::BedrockAgentCore::Memory StreamDeliveryResource
 
-The `StreamDeliveryResource` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Memory](aws-resource-bedrockagentcore-memory.md).
+Supported stream delivery resource types.
 
 ## Syntax
 
@@ -33,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `Kinesis`
 
-Property description not available.
+Kinesis Data Stream configuration.
 
 _Required_: No
 

@@ -1,3 +1,7 @@
+---
+title: "AWS::SecurityHub::HubV2"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -38,7 +42,7 @@ Properties:
 
 `Tags`
 
-The tags to add to the hub V2 resource when you enable Security Hub CSPM.
+The tags to add to the hub V2 resource when you enable Security Hub.
 
 _Required_: No
 

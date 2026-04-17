@@ -1,3 +1,7 @@
+---
+title: "AWS::BedrockAgentCore::Memory"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -131,7 +135,7 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 
 `StreamDeliveryResources`
 
-Property description not available.
+Configuration for streaming memory record data to external resources.
 
 _Required_: No
 

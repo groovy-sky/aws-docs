@@ -1,3 +1,7 @@
+---
+title: "Refer to resource outputs in another CloudFormation stack"
+---
+
 # Refer to resource outputs in another CloudFormation stack
 
 This walkthrough shows you how to reference outputs from one CloudFormation stack within another

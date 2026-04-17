@@ -1,3 +1,7 @@
+---
+title: "Understand module versioning"
+---
+
 # Understand module versioning
 
 The CloudFormation registry acts as a repository where you can register and manage modules for

@@ -1,3 +1,7 @@
+---
+title: "Control CloudFormation access with AWS Identity and Access Management"
+---
+
 # Control CloudFormation access with AWS Identity and Access Management
 
 With AWS Identity and Access Management (IAM), you can create IAM users and control their access to specific

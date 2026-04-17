@@ -1,3 +1,7 @@
+---
+title: "Getting started with CloudFormation"
+---
+
 # Getting started with CloudFormation
 
 You can begin using CloudFormation through the AWS Management Console by creating a stack from an example

@@ -1,3 +1,7 @@
+---
+title: "AWS::Rekognition::StreamProcessor ConnectedHomeSettings"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -11,7 +15,7 @@ what you want the stream processor to detect, such as people or pets.
 When the stream processor has started, one notification is sent
 for each object class specified. For example, if packages and pets are selected, one SNS notification is published the first time a package is
 detected and one SNS notification is published the first time a pet is detected. An end-of-session summary is also published.
-For more information, see the ConnectedHome section of [StreamProcessorSettings](../../../../reference/rekognition/latest/apireference/api-streamprocessorsettings.md).
+For more information, see the ConnectedHome section of [StreamProcessorSettings](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StreamProcessorSettings).
 
 ## Syntax
 

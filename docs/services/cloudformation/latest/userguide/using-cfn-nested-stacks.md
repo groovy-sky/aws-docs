@@ -1,3 +1,7 @@
+---
+title: "Split a template into reusable pieces using nested stacks"
+---
+
 # Split a template into reusable pieces using nested stacks
 
 As your infrastructure grows, you might find yourself repeatedly creating identical

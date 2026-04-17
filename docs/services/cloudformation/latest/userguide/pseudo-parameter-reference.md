@@ -1,3 +1,7 @@
+---
+title: "Get AWS values using pseudo parameters"
+---
+
 # Get AWS values using pseudo parameters
 
 Pseudo parameters are built-in variables that provide access to important AWS environment

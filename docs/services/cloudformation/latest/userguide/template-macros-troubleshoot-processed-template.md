@@ -1,3 +1,7 @@
+---
+title: "Troubleshoot the processed template"
+---
+
 # Troubleshoot the processed template
 
 When using a macro, the processed template can be found in the CloudFormation

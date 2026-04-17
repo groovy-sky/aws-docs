@@ -1,3 +1,7 @@
+---
+title: "Get a secure string value from Systems Manager Parameter Store"
+---
+
 # Get a secure string value from Systems Manager Parameter Store
 
 In CloudFormation, you can use sensitive data like passwords or license keys without

@@ -1,3 +1,7 @@
+---
+title: "CloudFormation best practices"
+---
+
 # CloudFormation best practices
 
 Best practices are recommendations that can help you use CloudFormation more effectively and

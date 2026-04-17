@@ -1,3 +1,7 @@
+---
+title: "Service configurations for resource groups"
+---
+
 # Service configurations for resource groups
 
 Resource groups enable you to manage collections of your AWS resources as a unit. Some

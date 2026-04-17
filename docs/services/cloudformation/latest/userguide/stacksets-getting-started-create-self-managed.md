@@ -1,3 +1,7 @@
+---
+title: "Create CloudFormation StackSets with self-managed permissions"
+---
+
 # Create CloudFormation StackSets with self-managed permissions
 
 This topic describes how to create StackSets with

@@ -1,10 +1,14 @@
+---
+title: "AWS::QuickSight::DataSource S3TablesParameters"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
 
 # AWS::QuickSight::DataSource S3TablesParameters
 
-The `S3TablesParameters` property type specifies Property description not available. for an [AWS::QuickSight::DataSource](aws-resource-quicksight-datasource.md).
+The parameters for S3 Tables.
 
 ## Syntax
 
@@ -32,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `TableBucketArn`
 
-Property description not available.
+The Amazon Resource Name (ARN) of the S3 Tables bucket.
 
 _Required_: No
 

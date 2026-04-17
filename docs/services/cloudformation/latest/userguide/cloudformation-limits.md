@@ -1,3 +1,7 @@
+---
+title: "Understand CloudFormation quotas"
+---
+
 # Understand CloudFormation quotas
 
 Your AWS account has CloudFormation quotas that you might need to know when authoring templates

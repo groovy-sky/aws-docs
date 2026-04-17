@@ -1,3 +1,7 @@
+---
+title: "AWS::NeptuneGraph::Graph VectorSearchConfiguration"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -45,6 +49,6 @@ _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-b
 
 Tag
 
-AWS::NeptuneGraph::PrivateGraphEndpoint
+AWS::NeptuneGraph::GraphSnapshot
 
 All content copied from https://docs.aws.amazon.com/.

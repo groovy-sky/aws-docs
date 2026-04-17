@@ -1,3 +1,7 @@
+---
+title: "AWS::S3Express::DirectoryBucket ServerSideEncryptionRule"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -44,7 +48,7 @@ disabled. It's only allowed to set the `BucketKeyEnabled` element to
 S3 Bucket Keys aren't supported, when you copy SSE-KMS encrypted objects from general
 purpose buckets to directory buckets, from directory buckets to general purpose buckets, or
 between directory buckets, through [CopyObject](../../../s3/latest/api/api-copyobject.md), [UploadPartCopy](../../../s3/latest/api/api-uploadpartcopy.md), [the Copy operation\
-in Batch Operations](../../../s3/latest/userguide/directory-buckets-objects-batch-ops.md), or [the import jobs](../../../s3/latest/userguide/create-import-job.md). In this case,
+in Batch Operations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-Batch-Ops), or [the import jobs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-import-job). In this case,
 Amazon S3 makes a call to AWS KMS every time a copy request is made for a
 KMS-encrypted object.
 

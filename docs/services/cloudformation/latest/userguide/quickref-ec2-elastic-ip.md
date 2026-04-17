@@ -1,3 +1,7 @@
+---
+title: "Allocate and associate Elastic IP addresses with CloudFormation"
+---
+
 # Allocate and associate Elastic IP addresses with CloudFormation
 
 The following template snippets are examples related to Elastic IP addresses (EIPs) in

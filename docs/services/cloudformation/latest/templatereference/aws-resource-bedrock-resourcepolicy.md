@@ -1,3 +1,7 @@
+---
+title: "AWS::Bedrock::ResourcePolicy"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -39,7 +43,7 @@ Properties:
 
 `PolicyDocument`
 
-Property description not available.
+The JSON string representing the Bedrock resource policy.
 
 _Required_: Yes
 
@@ -49,7 +53,7 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 
 `ResourceArn`
 
-Property description not available.
+The ARN of the Bedrock resource to which this resource policy applies.
 
 _Required_: Yes
 

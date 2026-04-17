@@ -1,3 +1,7 @@
+---
+title: "Get a secret or secret value from Secrets Manager"
+---
+
 # Get a secret or secret value from Secrets Manager
 
 Secrets Manager is a service that allows you to securely store and manage secrets like database

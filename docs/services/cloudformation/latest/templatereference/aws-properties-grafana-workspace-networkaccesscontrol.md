@@ -1,3 +1,7 @@
+---
+title: "AWS::Grafana::Workspace NetworkAccessControl"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -90,7 +94,7 @@ VPC endpoint IDs have the format
 `vpce-1a2b3c4d`.
 
 For more information about creating an interface VPC endpoint, see [Interface VPC\
-endpoints](../../../grafana/latest/userguide/vpc-endpoints.md) in the _Amazon Managed Grafana User_
+endpoints](https://docs.aws.amazon.com/grafana/latest/userguide/VPC-endpoints) in the _Amazon Managed Grafana User_
 _Guide_.
 
 ###### Note

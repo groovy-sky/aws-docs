@@ -1,3 +1,7 @@
+---
+title: "Create a CloudFormation template from resources scanned with IaC generator"
+---
+
 # Create a CloudFormation template from resources scanned with IaC generator
 
 This topic explains how to create a template from resources that were scanned using

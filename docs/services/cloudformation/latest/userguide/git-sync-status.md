@@ -1,3 +1,7 @@
+---
+title: "Git sync status dashboard"
+---
+
 # Git sync status dashboard
 
 To view the status of a AWS CloudFormation Git sync deployment, select the stack in the CloudFormation

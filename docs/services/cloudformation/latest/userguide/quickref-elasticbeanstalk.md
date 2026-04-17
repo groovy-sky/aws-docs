@@ -1,3 +1,7 @@
+---
+title: "Elastic Beanstalk template snippets"
+---
+
 # Elastic Beanstalk template snippets
 
 With Elastic Beanstalk, you can quickly deploy and manage applications in AWS without worrying about

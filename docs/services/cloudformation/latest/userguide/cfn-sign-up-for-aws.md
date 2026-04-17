@@ -1,3 +1,7 @@
+---
+title: "Signing up for an AWS account"
+---
+
 # Signing up for an AWS account
 
 When you sign up for AWS, your AWS account is automatically signed up for all services

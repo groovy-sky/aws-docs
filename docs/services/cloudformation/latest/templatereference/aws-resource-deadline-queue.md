@@ -1,3 +1,7 @@
+---
+title: "AWS::Deadline::Queue"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -27,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "JobRunAsUser" : JobRunAsUser,
       "RequiredFileSystemLocationNames" : [ String, ... ],
       "RoleArn" : String,
+      "SchedulingConfiguration" : SchedulingConfiguration,
       "Tags" : [ Tag, ... ]
     }
 }
@@ -52,6 +57,8 @@ Properties:
   RequiredFileSystemLocationNames:
     - String
   RoleArn: String
+  SchedulingConfiguration:
+    SchedulingConfiguration
   Tags:
     - Tag
 
@@ -179,6 +186,16 @@ _Required_: No
 _Type_: String
 
 _Pattern_: `^arn:(aws[a-zA-Z-]*):iam::\d{12}:role(/[!-.0-~]+)*/[\w+=,.@-]+$`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`SchedulingConfiguration`
+
+Property description not available.
+
+_Required_: No
+
+_Type_: [SchedulingConfiguration](aws-properties-deadline-queue-schedulingconfiguration.md)
 
 _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
 

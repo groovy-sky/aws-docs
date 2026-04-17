@@ -1,3 +1,7 @@
+---
+title: "Change sets for nested stacks"
+---
+
 # Change sets for nested stacks
 
 With _change sets for nested stacks_ you can preview the changes to

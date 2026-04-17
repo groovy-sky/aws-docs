@@ -1,3 +1,7 @@
+---
+title: "AWS::Rekognition::StreamProcessor KinesisDataStream"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -7,7 +11,7 @@ Please update your bookmarks and links. For help getting started with CloudForma
 Amazon Rekognition Video Stream Processor take as input a Kinesis video stream (Input) and a Kinesis data stream (Output).
 This is the Amazon Kinesis Data Streams instance to which the Amazon Rekognition stream processor streams the analysis results.
 This must be created within the constraints specified at
-[KinesisDataStream](../../../../reference/rekognition/latest/apireference/api-kinesisdatastream.md).
+[KinesisDataStream](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_KinesisDataStream).
 
 ## Syntax
 

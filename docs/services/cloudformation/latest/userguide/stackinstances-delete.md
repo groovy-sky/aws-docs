@@ -1,3 +1,7 @@
+---
+title: "Delete stacks from CloudFormation StackSets"
+---
+
 # Delete stacks from CloudFormation StackSets
 
 You can delete stacks from StackSets using either the CloudFormation console or the

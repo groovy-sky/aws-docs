@@ -1,3 +1,7 @@
+---
+title: "Create a change set for a CloudFormation stack"
+---
+
 # Create a change set for a CloudFormation stack
 
 To create a change set for a running stack, submit the changes that you want to make by

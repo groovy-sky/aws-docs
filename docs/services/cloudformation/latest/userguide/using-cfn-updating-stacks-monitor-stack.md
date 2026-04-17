@@ -1,3 +1,7 @@
+---
+title: "Monitor the progress of a stack update"
+---
+
 # Monitor the progress of a stack update
 
 You can monitor the progress of a stack update by viewing the stack's events. The stack's

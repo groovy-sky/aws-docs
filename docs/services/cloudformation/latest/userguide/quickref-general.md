@@ -1,3 +1,7 @@
+---
+title: "General template snippets"
+---
+
 # General template snippets
 
 The following examples show different CloudFormation template features that aren't specific to an

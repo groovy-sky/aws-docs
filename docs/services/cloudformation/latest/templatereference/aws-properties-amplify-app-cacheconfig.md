@@ -1,3 +1,7 @@
+---
+title: "AWS::Amplify::App CacheConfig"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -7,7 +11,7 @@ Please update your bookmarks and links. For help getting started with CloudForma
 Describes the cache configuration for an Amplify app.
 
 For more information about how Amplify applies an optimal cache
-configuration for your app based on the type of content that is being served, see [Managing cache configuration](../../../amplify/latest/userguide/managing-cache-configuration.md) in the _Amplify User_
+configuration for your app based on the type of content that is being served, see [Managing cache configuration](https://docs.aws.amazon.com/amplify/latest/userguide/managing-cache-configuration) in the _Amplify User_
 _guide_.
 
 ## Syntax

@@ -1,3 +1,7 @@
+---
+title: "Organizing CloudFormation parameters with AWS::CloudFormation::Interface metadata"
+---
+
 # Organizing CloudFormation parameters with `AWS::CloudFormation::Interface` metadata
 
 `AWS::CloudFormation::Interface` is a metadata key that defines how parameters

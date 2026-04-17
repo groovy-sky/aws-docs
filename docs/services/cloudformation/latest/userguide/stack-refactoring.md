@@ -1,3 +1,7 @@
+---
+title: "Stack refactoring"
+---
+
 # Stack refactoring
 
 With stack refactoring, you can reorganize resources in your CloudFormation stacks while
@@ -438,6 +442,8 @@ report any unsupported resources in the output of the [describe-stack-refactor](
 - `AWS::AppStream::StackUserAssociation`
 
 - `AWS::AppStream::User`
+
+- `AWS::AutoScaling::AutoScalingGroup`
 
 - `AWS::BackupGateway::Hypervisor`
 

@@ -1,3 +1,7 @@
+---
+title: "Supported configuration types and parameters"
+---
+
 # Supported configuration types and parameters
 
 Resource Groups supports using the following configuration types. Each configuration type has a

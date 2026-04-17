@@ -1,3 +1,7 @@
+---
+title: "CloudFormation configuration properties reference"
+---
+
 # CloudFormation configuration properties reference
 
 When you build a CodePipeline pipeline, you add a `Deploy` action to the pipeline with CloudFormation as a provider.

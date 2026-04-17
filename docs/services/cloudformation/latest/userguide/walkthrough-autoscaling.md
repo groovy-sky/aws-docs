@@ -1,3 +1,7 @@
+---
+title: "Create a scaled and load-balanced application"
+---
+
 # Create a scaled and load-balanced application
 
 For this walkthrough, you create a stack that helps you set up a scaled and load-balanced

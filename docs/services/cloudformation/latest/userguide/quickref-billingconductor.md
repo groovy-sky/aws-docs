@@ -1,3 +1,7 @@
+---
+title: "AWS Billing Console template snippets"
+---
+
 # AWS Billing Console template snippets
 
 This example creates one pricing plan with a 10% global markup pricing rule. This pricing plan is attached to the billing group.

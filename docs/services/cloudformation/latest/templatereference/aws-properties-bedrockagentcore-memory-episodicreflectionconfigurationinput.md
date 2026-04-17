@@ -1,3 +1,7 @@
+---
+title: "AWS::BedrockAgentCore::Memory EpisodicReflectionConfigurationInput"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -48,7 +52,7 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 
 `NamespaceTemplates`
 
-Property description not available.
+The namespaceTemplates over which to create reflections. Can be less nested than episode namespaces.
 
 _Required_: No
 

@@ -1,3 +1,7 @@
+---
+title: "Enable or disable automatic deployments for StackSets in AWS Organizations"
+---
+
 # Enable or disable automatic deployments for StackSets in AWS Organizations
 
 CloudFormation can automatically deploy additional stacks to new AWS Organizations accounts when

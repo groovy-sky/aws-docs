@@ -1,3 +1,7 @@
+---
+title: "Update a public third-party extension in your account"
+---
+
 # Update a public third-party extension in your account
 
 After you activate a third-party public extension, you can update most extension

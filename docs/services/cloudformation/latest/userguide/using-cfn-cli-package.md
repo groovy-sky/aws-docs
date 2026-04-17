@@ -1,3 +1,7 @@
+---
+title: "Upload local artifacts to an S3 bucket with the AWS CLI"
+---
+
 # Upload local artifacts to an S3 bucket with the AWS CLI
 
 You can use the AWS CLI to upload local artifacts that are referenced by a CloudFormation template

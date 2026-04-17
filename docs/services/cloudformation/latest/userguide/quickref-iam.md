@@ -1,3 +1,7 @@
+---
+title: "AWS Identity and Access Management template snippets"
+---
+
 # AWS Identity and Access Management template snippets
 
 This section contains AWS Identity and Access Management template snippets.

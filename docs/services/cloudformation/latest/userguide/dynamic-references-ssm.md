@@ -1,3 +1,7 @@
+---
+title: "Get a plaintext value from Systems Manager Parameter Store"
+---
+
 # Get a plaintext value from Systems Manager Parameter Store
 
 When you're creating a CloudFormation template, you might want to use plaintext values

@@ -1,3 +1,7 @@
+---
+title: "Create CloudFormation StackSets with service-managed permissions"
+---
+
 # Create CloudFormation StackSets with service-managed permissions
 
 With _service-managed_ permissions, you can deploy stacks to

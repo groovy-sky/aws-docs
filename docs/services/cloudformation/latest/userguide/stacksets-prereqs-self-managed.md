@@ -1,3 +1,7 @@
+---
+title: "Grant self-managed permissions"
+---
+
 # Grant self-managed permissions
 
 This topic provides instructions on how to create the IAM service roles required by

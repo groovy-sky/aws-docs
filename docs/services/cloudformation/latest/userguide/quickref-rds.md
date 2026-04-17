@@ -1,3 +1,7 @@
+---
+title: "Amazon RDS template snippets"
+---
+
 # Amazon RDS template snippets
 
 ###### Topics

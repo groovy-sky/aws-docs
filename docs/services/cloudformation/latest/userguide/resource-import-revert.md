@@ -1,3 +1,7 @@
+---
+title: "Reverting an import operation"
+---
+
 # Reverting an import operation
 
 To revert an import operation, specify a `Retain` deletion policy for the

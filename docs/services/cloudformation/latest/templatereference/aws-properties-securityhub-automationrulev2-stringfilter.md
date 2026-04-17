@@ -1,3 +1,7 @@
+---
+title: "AWS::SecurityHub::AutomationRuleV2 StringFilter"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -97,7 +101,7 @@ type of `AwsIamPolicy` and findings that have a resource type of `AwsEc2NetworkI
 - `ResourceType NOT_EQUALS AwsEc2NetworkInterface`
 
 `CONTAINS` and `NOT_CONTAINS` operators can be used only with automation rules V1.
-`CONTAINS_WORD` operator is only supported in `GetFindingsV2`, `GetFindingStatisticsV2`, `GetResourcesV2`, and `GetResourceStatisticsV2` APIs.
+`CONTAINS_WORD` operator is only supported in `GetFindingsV2`, `GetFindingStatisticsV2`, `GetResourcesV2`, and `GetResourcesStatisticsV2` APIs.
 For more information, see [Automation rules](../../../securityhub/latest/userguide/automation-rules.md) in the _AWS Security Hub CSPM User Guide_.
 
 _Required_: Yes

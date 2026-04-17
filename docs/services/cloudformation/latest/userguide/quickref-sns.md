@@ -1,3 +1,7 @@
+---
+title: "Amazon SNS template snippets"
+---
+
 # Amazon SNS template snippets
 
 This example shows an Amazon SNS topic resource. It requires a valid email address.

@@ -1,3 +1,7 @@
+---
+title: "Import AWS resources into a CloudFormation stack automatically"
+---
+
 # Import AWS resources into a CloudFormation stack automatically
 
 You can now import _named resources_ automatically when creating or

@@ -1,3 +1,7 @@
+---
+title: "Specify existing resources at runtime with CloudFormation-supplied parameter types"
+---
+
 # Specify existing resources at runtime with CloudFormation-supplied parameter types
 
 When creating your template, you can create parameters that require users to input

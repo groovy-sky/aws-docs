@@ -1,3 +1,7 @@
+---
+title: "AWS Lambda template"
+---
+
 # AWS Lambda template
 
 The following template uses an AWS Lambda (Lambda) function and custom resource to append a new security group to a

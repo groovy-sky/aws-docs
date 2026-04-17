@@ -1,3 +1,7 @@
+---
+title: "Importing existing resources into a stack"
+---
+
 # Importing existing resources into a stack
 
 This topic shows you how to import existing AWS resources into an existing stack by

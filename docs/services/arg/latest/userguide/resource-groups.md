@@ -1,3 +1,7 @@
+---
+title: "What are resource groups?"
+---
+
 # What are resource groups?
 
 You can use _resource groups_ to organize your AWS resources.
@@ -167,7 +171,7 @@ sensitive information in tags. We use tags to provide you with billing and
 administration services. Tags are not intended to be used for private or sensitive
 data.
 
-For more information about tagging, see the [Tag Editor User Guide](../../../tag-editor/latest/userguide.md). You can tag [supported resources](supported-resources.md) by using Tag Editor, and some
+For more information about tagging, see the [Tag Editor User Guide](https://docs.aws.amazon.com/tag-editor/latest/userguide). You can tag [supported resources](supported-resources.md) by using Tag Editor, and some
 additional resources by using tagging functionality in the service console in which you
 create and manage the resource.
 

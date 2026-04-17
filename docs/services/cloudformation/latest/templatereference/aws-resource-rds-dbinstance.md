@@ -1,3 +1,7 @@
+---
+title: "AWS::RDS::DBInstance"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -2229,7 +2233,7 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 `Timezone`
 
 The time zone of the DB instance.
-The time zone parameter is currently supported only by [RDS for Db2](../../../amazonrds/latest/userguide/db2-time-zone.md) and
+The time zone parameter is currently supported only by [RDS for Db2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-time-zone) and
 [RDS for SQL Server](../../../amazonrds/latest/userguide/chap-sqlserver.md#SQLServer.Concepts.General.TimeZone).
 
 _Required_: No

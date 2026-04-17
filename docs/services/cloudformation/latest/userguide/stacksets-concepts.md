@@ -1,3 +1,7 @@
+---
+title: "StackSets concepts"
+---
+
 # StackSets concepts
 
 The following terminology and concepts are central to your understanding and use of StackSets.

@@ -1,3 +1,7 @@
+---
+title: "Import AWS resources into a CloudFormation stack manually"
+---
+
 # Import AWS resources into a CloudFormation stack manually
 
 With resource import, you can import existing AWS resources into a new or existing

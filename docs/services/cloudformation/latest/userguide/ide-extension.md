@@ -1,3 +1,7 @@
+---
+title: "AWS CloudFormation Language Server"
+---
+
 # AWS CloudFormation Language Server
 
 The AWS CloudFormation Language Server provides capabilities to accelerate authoring

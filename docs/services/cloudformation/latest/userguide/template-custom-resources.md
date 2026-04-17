@@ -1,3 +1,7 @@
+---
+title: "Create custom provisioning logic with custom resources"
+---
+
 # Create custom provisioning logic with custom resources
 
 Custom resources provide a way for you to write custom provisioning logic into your

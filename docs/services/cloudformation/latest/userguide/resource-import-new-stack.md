@@ -1,3 +1,7 @@
+---
+title: "Creating a stack from existing resources"
+---
+
 # Creating a stack from existing resources
 
 This topic shows you how to create a stack from existing AWS resources by describing them

@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template snippets"
+---
+
 # CloudFormation template snippets
 
 ###### Topics

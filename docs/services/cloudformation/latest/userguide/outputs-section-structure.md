@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template Outputs syntax"
+---
+
 # CloudFormation template Outputs syntax
 
 The optional `Outputs` section declares output values for the stack. These

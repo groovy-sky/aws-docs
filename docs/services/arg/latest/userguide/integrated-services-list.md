@@ -1,3 +1,7 @@
+---
+title: "AWS services that work with AWS Resource Groups"
+---
+
 # AWS services that work with AWS Resource Groups
 
 You can use the following AWS services with AWS Resource Groups.

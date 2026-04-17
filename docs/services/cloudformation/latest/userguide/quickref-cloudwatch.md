@@ -1,3 +1,7 @@
+---
+title: "Amazon CloudWatch template snippets"
+---
+
 # Amazon CloudWatch template snippets
 
 Use these sample template snippets to help describe your Amazon CloudWatch resources in CloudFormation. For

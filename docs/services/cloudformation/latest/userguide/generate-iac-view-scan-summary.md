@@ -1,3 +1,7 @@
+---
+title: "View the scan summary in the CloudFormation console"
+---
+
 # View the scan summary in the CloudFormation console
 
 After the scan completes, you can view a visualization of resources found during the

@@ -1,3 +1,7 @@
+---
+title: "Get exported outputs from a deployed CloudFormation stack"
+---
+
 # Get exported outputs from a deployed CloudFormation stack
 
 When you have multiple stacks in the same AWS account and Region, you might want to share

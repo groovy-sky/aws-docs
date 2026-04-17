@@ -1,3 +1,7 @@
+---
+title: "Deploy applications on Amazon EC2"
+---
+
 # Deploy applications on Amazon EC2
 
 You can use CloudFormation to automatically install, configure, and start applications on Amazon EC2

@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template Resources syntax"
+---
+
 # CloudFormation template Resources syntax
 
 The `Resources` section is a required top-level section in a CloudFormation

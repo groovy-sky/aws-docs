@@ -1,3 +1,7 @@
+---
+title: "AWS::Organizations::Account"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -303,6 +307,10 @@ Returns the method by which the account joined the organization. For example:
 
 Returns the date the account became a part of the organization. For example:
 `2016-11-24T11:11:48-08:00`.
+
+`Paths`
+
+The paths in the organization where the account exists.
 
 `State`
 

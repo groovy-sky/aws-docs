@@ -1,3 +1,7 @@
+---
+title: "View CloudFormation stack events"
+---
+
 # View CloudFormation stack events
 
 You can view stack events to monitor the progress and status of your stack and

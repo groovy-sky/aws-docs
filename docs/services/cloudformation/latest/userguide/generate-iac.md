@@ -1,3 +1,7 @@
+---
+title: "Generate templates from existing resources with IaC generator"
+---
+
 # Generate templates from existing resources with IaC generator
 
 With the CloudFormation infrastructure as code generator (IaC generator), you can generate a

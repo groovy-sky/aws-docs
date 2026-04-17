@@ -1,3 +1,7 @@
+---
+title: "AWS::GameLift::ContainerGroupDefinition GameServerContainerDefinition"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -11,7 +15,7 @@ container group restarts.
 
 You can update a container definition and deploy the updates to an existing fleet. When
 creating or updating a game server container group definition, use the property
-[https://docs.aws.amazon.com/gamelift/latest/apireference/API\_GameServerContainerDefinitionInput](../../../../reference/gamelift/latest/apireference/api-gameservercontainerdefinitioninput.md).
+[https://docs.aws.amazon.com/gamelift/latest/apireference/API\_GameServerContainerDefinitionInput](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GameServerContainerDefinitionInput).
 
 **Part of:** [ContainerGroupDefinition](../../../../reference/gamelift/latest/apireference/api-containergroupdefinition.md)
 

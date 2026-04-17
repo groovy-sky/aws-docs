@@ -1,3 +1,7 @@
+---
+title: "Amazon SNS-backed custom resources"
+---
+
 # Amazon SNS-backed custom resources
 
 The following topic shows you how to configure a custom resource with a service token that

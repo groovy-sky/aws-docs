@@ -1,3 +1,7 @@
+---
+title: "Best practices for using CloudFormation StackSets"
+---
+
 # Best practices for using CloudFormation StackSets
 
 This section describes the best practices for defining a StackSet template, creating or adding

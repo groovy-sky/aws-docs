@@ -1,3 +1,7 @@
+---
+title: "Create wait conditions in a CloudFormation template"
+---
+
 # Create wait conditions in a CloudFormation template
 
 This topic explains how to create a wait condition in a template to coordinate the

@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for using CloudFormation StackSets"
+---
+
 # Prerequisites for using CloudFormation StackSets
 
 StackSets extend the functionality of stacks, so you can create, update, or delete

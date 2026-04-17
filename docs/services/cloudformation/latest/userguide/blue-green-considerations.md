@@ -1,3 +1,7 @@
+---
+title: "Considerations when managing ECS blue/green deployments using CloudFormation"
+---
+
 # Considerations when managing ECS blue/green deployments using CloudFormation
 
 The process of using CloudFormation to perform your ECS blue/green deployments through CodeDeploy

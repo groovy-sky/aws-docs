@@ -1,3 +1,7 @@
+---
+title: "Amazon DynamoDB template snippets"
+---
+
 # Amazon DynamoDB template snippets
 
 ###### Topics

@@ -1,3 +1,7 @@
+---
+title: "Continuous delivery with CodePipeline"
+---
+
 # Continuous delivery with CodePipeline
 
 Continuous delivery is a release practice in which code changes are automatically built,

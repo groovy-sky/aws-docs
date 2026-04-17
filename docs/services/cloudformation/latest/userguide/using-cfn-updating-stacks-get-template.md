@@ -1,3 +1,7 @@
+---
+title: "Update your stack template"
+---
+
 # Update your stack template
 
 To modify the resources or properties in a CloudFormation stack, you must update the stack's

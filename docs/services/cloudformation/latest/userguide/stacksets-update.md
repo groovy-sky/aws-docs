@@ -1,3 +1,7 @@
+---
+title: "Update CloudFormation StackSets"
+---
+
 # Update CloudFormation StackSets
 
 You can update your StackSet using either the CloudFormation console or the AWS CLI.

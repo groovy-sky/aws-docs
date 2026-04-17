@@ -1,3 +1,7 @@
+---
+title: "Managing stacks across accounts and Regions with StackSets"
+---
+
 # Managing stacks across accounts and Regions with StackSets
 
 CloudFormation StackSets extends the capability of stacks by allowing you to create, update, or delete

@@ -1,3 +1,7 @@
+---
+title: "AWS::FSx::FileSystem"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -309,7 +313,7 @@ and for Lustre file systems with the Persistent\_2 deployment type.
 Default value is `SSD`. For more information, see [Storage\
 type options](../../../fsx/latest/windowsguide/optimize-fsx-costs.md#storage-type-options) in the _FSx for Windows File Server User_
 _Guide_, [FSx for Lustre storage classes](../../../fsx/latest/lustreguide/using-fsx-lustre.md#lustre-storage-classes)
-in the _FSx for Lustre User Guide_, and [Working with Intelligent-Tiering](../../../fsx/latest/openzfsguide/performance-intelligent-tiering.md)
+in the _FSx for Lustre User Guide_, and [Working with Intelligent-Tiering](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/performance-intelligent-tiering)
 in the _Amazon FSx for OpenZFS User Guide_.
 
 _Required_: No

@@ -1,3 +1,7 @@
+---
+title: "cfn-response module"
+---
+
 # `cfn-response` module
 
 In your CloudFormation template, you can specify a Lambda function as the target of a custom

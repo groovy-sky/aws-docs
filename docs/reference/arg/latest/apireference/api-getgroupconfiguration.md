@@ -1,3 +1,7 @@
+---
+title: "GetGroupConfiguration"
+---
+
 # GetGroupConfiguration
 
 Retrieves the service configuration associated with the specified resource group. For
@@ -319,25 +323,25 @@ Connection: keep-alive
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/resource-groups-2017-11-27/getgroupconfiguration.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/resource-groups-2017-11-27/GetGroupConfiguration)
 
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/resource-groups-2017-11-27/getgroupconfiguration.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/resource-groups-2017-11-27/GetGroupConfiguration)
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/resource-groups-2017-11-27/getgroupconfiguration.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/resource-groups-2017-11-27/GetGroupConfiguration)
 
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/resource-groups-2017-11-27/getgroupconfiguration.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/resource-groups-2017-11-27/GetGroupConfiguration)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/resource-groups-2017-11-27/getgroupconfiguration.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/resource-groups-2017-11-27/GetGroupConfiguration)
 
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/resource-groups-2017-11-27/getgroupconfiguration.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/resource-groups-2017-11-27/GetGroupConfiguration)
 
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/resource-groups-2017-11-27/getgroupconfiguration.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/resource-groups-2017-11-27/GetGroupConfiguration)
 
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/resource-groups-2017-11-27/getgroupconfiguration.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/resource-groups-2017-11-27/GetGroupConfiguration)
 
-- [AWS SDK for Python](../../../../services/goto/boto3/resource-groups-2017-11-27/getgroupconfiguration.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/resource-groups-2017-11-27/GetGroupConfiguration)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/resource-groups-2017-11-27/getgroupconfiguration.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/resource-groups-2017-11-27/GetGroupConfiguration)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

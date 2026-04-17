@@ -1,3 +1,7 @@
+---
+title: "Create templates visually with Infrastructure Composer"
+---
+
 # Create templates visually with Infrastructure Composer
 
 AWS Infrastructure Composer (formerly known as **Application Composer**) helps you visually

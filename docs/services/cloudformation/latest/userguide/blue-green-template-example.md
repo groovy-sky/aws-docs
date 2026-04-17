@@ -1,3 +1,7 @@
+---
+title: "Blue/green deployment template example"
+---
+
 # Blue/green deployment template example
 
 The following example template sets up a CodeDeploy blue/green deployment on ECS, with a

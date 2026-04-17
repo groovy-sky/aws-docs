@@ -1,3 +1,7 @@
+---
+title: "Prerequisites for syncing stacks to a Git repository using Git sync"
+---
+
 # Prerequisites for syncing stacks to a Git repository using Git sync
 
 Before you sync a CloudFormation stack to your Git repository, verify that the following

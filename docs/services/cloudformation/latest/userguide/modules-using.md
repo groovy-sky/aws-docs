@@ -1,3 +1,7 @@
+---
+title: "Use modules from the CloudFormation private registry"
+---
+
 # Use modules from the CloudFormation private registry
 
 This topic explains how to use modules in CloudFormation templates. Think of modules as

@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template Rules syntax"
+---
+
 # CloudFormation template Rules syntax
 
 The `Rules` section is an optional part of a CloudFormation template that enables

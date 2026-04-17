@@ -1,3 +1,7 @@
+---
+title: "Perform custom processing on CloudFormation templates with template macros"
+---
+
 # Perform custom processing on CloudFormation templates with template macros
 
 With macros, you can perform custom processing on templates, from simple actions like

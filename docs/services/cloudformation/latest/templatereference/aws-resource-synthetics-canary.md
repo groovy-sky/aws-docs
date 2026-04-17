@@ -1,3 +1,7 @@
+---
+title: "AWS::Synthetics::Canary"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -17,7 +21,7 @@ To create canaries, you must have the `CloudWatchSyntheticsFullAccess` policy.
 If you are creating a new IAM role for the canary, you also need the
 the `iam:CreateRole`, `iam:CreatePolicy` and
 `iam:AttachRolePolicy` permissions. For more information, see [Necessary\
-Roles and Permissions](../../../amazoncloudwatch/latest/monitoring/cloudwatch-synthetics-canaries-roles.md).
+Roles and Permissions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Roles).
 
 Do not include secrets or proprietary information in your canary names. The canary name
 makes up part of the Amazon Resource Name (ARN) for the canary, and the ARN is included in

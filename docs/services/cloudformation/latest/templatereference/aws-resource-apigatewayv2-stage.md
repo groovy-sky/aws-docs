@@ -1,3 +1,7 @@
+---
+title: "AWS::ApiGatewayV2::Stage"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -179,6 +183,12 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 `MyTestStage`.
 
 For more information about using the `Ref` function, see [`Ref`](intrinsic-function-reference-ref.md).
+
+### Fn::GetAtt
+
+`Id`
+
+The identifier.
 
 ## Examples
 

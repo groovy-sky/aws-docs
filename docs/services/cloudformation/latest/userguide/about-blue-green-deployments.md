@@ -1,3 +1,7 @@
+---
+title: "About blue/green deployments"
+---
+
 # About blue/green deployments
 
 This topic provides an overview of how performing blue/green deployments with CloudFormation

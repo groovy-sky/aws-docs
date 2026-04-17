@@ -1,3 +1,7 @@
+---
+title: "Amazon S3 template snippets"
+---
+
 # Amazon S3 template snippets
 
 Use these Amazon S3 sample templates to help describe your Amazon S3 buckets with CloudFormation. For

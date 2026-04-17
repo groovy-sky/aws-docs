@@ -1,3 +1,7 @@
+---
+title: "Choose the Concurrency Mode for CloudFormation StackSets"
+---
+
 # Choose the Concurrency Mode for CloudFormation StackSets
 
 **Concurrency Mode** is a parameter for [StackSetOperationPreferences](../../../../reference/awscloudformation/latest/apireference/api-stacksetoperationpreferences.md) that allows you to choose how the concurrency level behaves

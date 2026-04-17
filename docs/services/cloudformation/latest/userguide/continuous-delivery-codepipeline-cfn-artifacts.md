@@ -1,3 +1,7 @@
+---
+title: "CloudFormation artifacts"
+---
+
 # CloudFormation artifacts
 
 CodePipeline performs tasks on artifacts as CodePipeline runs a pipeline. For CloudFormation, artifacts can include

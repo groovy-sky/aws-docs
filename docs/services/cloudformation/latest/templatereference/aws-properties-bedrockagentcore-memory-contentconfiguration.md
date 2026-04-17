@@ -1,10 +1,14 @@
+---
+title: "AWS::BedrockAgentCore::Memory ContentConfiguration"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
 
 # AWS::BedrockAgentCore::Memory ContentConfiguration
 
-The `ContentConfiguration` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Memory](aws-resource-bedrockagentcore-memory.md).
+Defines what content to stream and at what level of detail.
 
 ## Syntax
 
@@ -34,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `Level`
 
-Property description not available.
+Level of detail for streamed content.
 
 _Required_: No
 
@@ -46,7 +50,7 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 
 `Type`
 
-Property description not available.
+Type of content to stream.
 
 _Required_: Yes
 

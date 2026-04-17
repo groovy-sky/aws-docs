@@ -1,3 +1,7 @@
+---
+title: "Delete CloudFormation StackSets"
+---
+
 # Delete CloudFormation StackSets
 
 To delete a StackSet, you must first delete all stacks in the StackSet. For information about

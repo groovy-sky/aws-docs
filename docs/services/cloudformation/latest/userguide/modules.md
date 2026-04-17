@@ -1,3 +1,7 @@
+---
+title: "Create reusable resource configurations that can be included across templates with CloudFormation modules"
+---
+
 # Create reusable resource configurations that can be included across templates with CloudFormation modules
 
 _Modules_ are a way for you to package resource configurations for

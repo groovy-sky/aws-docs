@@ -1,3 +1,7 @@
+---
+title: "View deleted stacks from the CloudFormation console"
+---
+
 # View deleted stacks from the CloudFormation console
 
 By default, the CloudFormation console doesn't display stacks with a status of

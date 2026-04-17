@@ -1,3 +1,7 @@
+---
+title: "Service-managed stack import for CloudFormation StackSets"
+---
+
 # Service-managed stack import for CloudFormation StackSets
 
 The CloudFormation stack import operation can import existing stacks into new or existing StackSets,

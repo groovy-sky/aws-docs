@@ -1,3 +1,7 @@
+---
+title: "Walkthrough: Building a pipeline for test and production stacks"
+---
+
 # Walkthrough: Building a pipeline for test and production stacks
 
 Imagine a release process where you submit an CloudFormation template, which CloudFormation then uses to

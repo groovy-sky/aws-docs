@@ -1,3 +1,7 @@
+---
+title: "Activate a third-party public extension in your account"
+---
+
 # Activate a third-party public extension in your account
 
 The following topic shows you how to activate a third-party public extension in

@@ -1,3 +1,7 @@
+---
+title: "AWS::Rekognition::StreamProcessor FaceSearchSettings"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -5,8 +9,8 @@ Please update your bookmarks and links. For help getting started with CloudForma
 # AWS::Rekognition::StreamProcessor FaceSearchSettings
 
 The input parameters used to recognize faces in a streaming video analyzed by a Amazon Rekognition stream processor. `FaceSearchSettings` is a request
-parameter for [CreateStreamProcessor](../../../../reference/rekognition/latest/apireference/api-createstreamprocessor.md).
-For more information, see [FaceSearchSettings](../../../../reference/rekognition/latest/apireference/api-facesearchsettings.md).
+parameter for [CreateStreamProcessor](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateStreamProcessor).
+For more information, see [FaceSearchSettings](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_FaceSearchSettings).
 
 ## Syntax
 

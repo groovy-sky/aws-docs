@@ -1,3 +1,7 @@
+---
+title: "Update stacks directly"
+---
+
 # Update stacks directly
 
 When you want to quickly deploy updates to your stack, perform a direct update. With a

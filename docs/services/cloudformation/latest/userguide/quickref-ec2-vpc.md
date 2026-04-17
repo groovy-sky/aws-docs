@@ -1,3 +1,7 @@
+---
+title: "Configure Amazon VPC resources with CloudFormation"
+---
+
 # Configure Amazon VPC resources with CloudFormation
 
 This section provides examples for configuring Amazon VPC resources using CloudFormation. VPCs

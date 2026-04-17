@@ -1,3 +1,7 @@
+---
+title: "AWS::WAFv2::WebACL AWSManagedRulesAntiDDoSRuleSet"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -9,8 +13,8 @@ Configures the use of the anti-DDoS managed rule group, `AWSManagedRulesAntiDDoS
 The configuration that you provide here determines whether and how the rules in the rule group are used.
 
 For additional information about this and the other intelligent threat mitigation rule groups,
-see [Intelligent threat mitigation in AWS WAF](../../../waf/latest/developerguide/waf-managed-protections.md)
-and [AWS Managed Rules rule groups list](../../../waf/latest/developerguide/aws-managed-rule-groups-list.md)
+see [Intelligent threat mitigation in AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-protections)
+and [AWS Managed Rules rule groups list](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-list)
 in the _AWS WAF Developer Guide_.
 
 ## Syntax

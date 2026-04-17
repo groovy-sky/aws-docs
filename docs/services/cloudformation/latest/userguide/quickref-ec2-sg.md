@@ -1,3 +1,7 @@
+---
+title: "Manage security groups with CloudFormation"
+---
+
 # Manage security groups with CloudFormation
 
 The following snippets demonstrate how to use CloudFormation to manage security groups and

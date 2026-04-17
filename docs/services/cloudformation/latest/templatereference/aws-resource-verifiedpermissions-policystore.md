@@ -1,3 +1,7 @@
+---
+title: "AWS::VerifiedPermissions::PolicyStore"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -129,7 +133,7 @@ Currently, the only valid and required value is `Mode`.
 We recommend that you turn on `STRICT` mode only after you define a
 schema. If a schema doesn't exist, then `STRICT` mode causes any policy
 to fail validation, and Verified Permissions rejects the policy. You can turn off validation by
-using the [UpdatePolicyStore](../../../../reference/verifiedpermissions/latest/apireference/api-updatepolicystore.md). Then, when you have a schema defined, use [UpdatePolicyStore](../../../../reference/verifiedpermissions/latest/apireference/api-updatepolicystore.md) again to turn validation back on.
+using the [UpdatePolicyStore](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_UpdatePolicyStore). Then, when you have a schema defined, use [UpdatePolicyStore](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_UpdatePolicyStore) again to turn validation back on.
 
 _Required_: Yes
 

@@ -1,3 +1,7 @@
+---
+title: "Prevent failed StackSets deployments using target account gates"
+---
+
 # Prevent failed StackSets deployments using target account gates
 
 An account gate is an optional feature that helps you verify that a target account meets

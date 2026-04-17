@@ -1,3 +1,7 @@
+---
+title: "Moving resources between stacks"
+---
+
 # Moving resources between stacks
 
 Using the `resource import` feature, you can move resources between, or

@@ -1,3 +1,7 @@
+---
+title: "Update a CloudFormation stack"
+---
+
 # Update a CloudFormation stack
 
 ###### Note

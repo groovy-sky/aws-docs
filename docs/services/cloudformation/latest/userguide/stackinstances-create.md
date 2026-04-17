@@ -1,3 +1,7 @@
+---
+title: "Add stacks to CloudFormation StackSets"
+---
+
 # Add stacks to CloudFormation StackSets
 
 When you create a StackSet, you can create the stacks for that StackSet. CloudFormation also

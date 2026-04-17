@@ -1,3 +1,7 @@
+---
+title: "Configure Amazon EC2 Auto Scaling resources with CloudFormation"
+---
+
 # Configure Amazon EC2 Auto Scaling resources with CloudFormation
 
 The following examples show different snippets to include in templates for use with

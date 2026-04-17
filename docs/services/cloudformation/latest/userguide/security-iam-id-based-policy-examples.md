@@ -1,3 +1,7 @@
+---
+title: "Example IAM identity-based policies for CloudFormation"
+---
+
 # Example IAM identity-based policies for CloudFormation
 
 By default, users and roles don't have permission to create or modify CloudFormation

@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template format"
+---
+
 # CloudFormation template format
 
 You can author CloudFormation templates in JSON or YAML formats. Both formats serve the same

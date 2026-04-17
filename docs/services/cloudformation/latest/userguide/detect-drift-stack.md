@@ -1,3 +1,7 @@
+---
+title: "Detect drift on an entire CloudFormation stack"
+---
+
 # Detect drift on an entire CloudFormation stack
 
 Performing a drift detection operation on a stack determines whether the stack has

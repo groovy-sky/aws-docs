@@ -1,3 +1,7 @@
+---
+title: "Syncing stacks with source code stored in a Git repository with Git sync"
+---
+
 # Syncing stacks with source code stored in a Git repository with Git sync
 
 With Git sync, you can manage your CloudFormation stacks with source control. You do this by

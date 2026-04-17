@@ -1,3 +1,7 @@
+---
+title: "PendingResource"
+---
+
 # PendingResource
 
 A structure that identifies a resource that is currently pending addition to the group
@@ -24,11 +28,11 @@ Required: No
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/resource-groups-2017-11-27/pendingresource.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/resource-groups-2017-11-27/PendingResource)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/resource-groups-2017-11-27/pendingresource.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/resource-groups-2017-11-27/PendingResource)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/resource-groups-2017-11-27/pendingresource.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/resource-groups-2017-11-27/PendingResource)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

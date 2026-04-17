@@ -1,3 +1,7 @@
+---
+title: "Amazon Elastic Container Service sample templates"
+---
+
 # Amazon Elastic Container Service sample templates
 
 Amazon Elastic Container Service (Amazon ECS) is a container management service that makes it easy to run, stop, and

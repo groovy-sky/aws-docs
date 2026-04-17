@@ -1,3 +1,7 @@
+---
+title: "CloudFormation walkthroughs"
+---
+
 # CloudFormation walkthroughs
 
 This documentation provides a collection of walkthroughs designed to give you hands-on

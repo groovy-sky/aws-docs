@@ -1,3 +1,7 @@
+---
+title: "ResourceQuery"
+---
+
 # ResourceQuery
 
 The query you can use to define a resource group or a search for resources. A
@@ -147,11 +151,11 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/resource-groups-2017-11-27/resourcequery.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/resource-groups-2017-11-27/ResourceQuery)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/resource-groups-2017-11-27/resourcequery.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/resource-groups-2017-11-27/ResourceQuery)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/resource-groups-2017-11-27/resourcequery.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/resource-groups-2017-11-27/ResourceQuery)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

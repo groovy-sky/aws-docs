@@ -1,3 +1,7 @@
+---
+title: "Create a CloudFormation macro definition"
+---
+
 # Create a CloudFormation macro definition
 
 When you create a macro definition, the macro definition makes the underlying Lambda

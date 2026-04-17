@@ -1,3 +1,7 @@
+---
+title: "Record resource types in AWS Config"
+---
+
 # Record resource types in AWS Config
 
 You can specify that AWS Config automatically track your private resource types and record

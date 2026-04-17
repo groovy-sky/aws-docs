@@ -1,3 +1,7 @@
+---
+title: "AWS::QuickSight::DataSource DataSourceParameters"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -235,7 +239,7 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 
 `S3TablesParameters`
 
-Property description not available.
+The parameters for S3 Tables.
 
 _Required_: No
 

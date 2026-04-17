@@ -1,3 +1,7 @@
+---
+title: "AWS::Lightsail::Container"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -100,7 +104,7 @@ container image repositories, such as Amazon Elastic Container Registry (Amazon 
 private repositories.
 
 For more information, see [Configuring access to an Amazon ECR private repository for an Amazon Lightsail\
-container service](../../../lightsail/latest/userguide/amazon-lightsail-container-service-ecr-private-repo-access.md) in the _Amazon Lightsail Developer_
+container service](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-container-service-ecr-private-repo-access) in the _Amazon Lightsail Developer_
 _Guide_.
 
 _Required_: No

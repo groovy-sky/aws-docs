@@ -1,3 +1,7 @@
+---
+title: "What is CloudFormation?"
+---
+
 # What is CloudFormation?
 
 CloudFormation is a service that helps you model and set up your AWS resources so that you can
@@ -59,7 +63,7 @@ your template.
 ## Getting started with CloudFormation
 
 CloudFormation is available through the CloudFormation [console](https://console.aws.amazon.com/cloudformation), [API](../../../../reference/awscloudformation/latest/apireference.md),
-[AWS CLI](../../../cli/latest/reference/cloudformation.md), [AWS SDKs](https://aws.amazon.com/developer/tools), and through several integrations.
+[AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/cloudformation), [AWS SDKs](https://aws.amazon.com/developer/tools), and through several integrations.
 
 For an introduction to CloudFormation, see [How CloudFormation works](cloudformation-overview.md).
 

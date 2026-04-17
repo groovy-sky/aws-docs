@@ -1,3 +1,7 @@
+---
+title: "AWS::Lightsail::Certificate Tag"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -6,7 +10,7 @@ Please update your bookmarks and links. For help getting started with CloudForma
 
 Describes a tag key and optional value assigned to an Amazon Lightsail resource.
 
-For more information about tags in Lightsail, see the [Amazon Lightsail Developer Guide](../../../lightsail/latest/userguide/amazon-lightsail-tags.md).
+For more information about tags in Lightsail, see the [Amazon Lightsail Developer Guide](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-tags).
 
 ## Syntax
 

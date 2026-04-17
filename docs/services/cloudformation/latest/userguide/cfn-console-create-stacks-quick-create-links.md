@@ -1,3 +1,7 @@
+---
+title: "Use quick-create links to create CloudFormation stacks"
+---
+
 # Use quick-create links to create CloudFormation stacks
 
 Quick-create links provide a streamlined method to launch CloudFormation stacks directly from

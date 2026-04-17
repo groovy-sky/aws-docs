@@ -1,3 +1,7 @@
+---
+title: "Creating query-based groups in AWS Resource Groups"
+---
+
 # Creating query-based groups in AWS Resource Groups
 
 ## Types of resource group queries

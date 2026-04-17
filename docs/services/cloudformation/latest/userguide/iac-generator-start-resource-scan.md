@@ -1,3 +1,7 @@
+---
+title: "Start a resource scan with CloudFormation IaC generator"
+---
+
 # Start a resource scan with CloudFormation IaC generator
 
 Before you create a template from existing resources, you first must initiate a

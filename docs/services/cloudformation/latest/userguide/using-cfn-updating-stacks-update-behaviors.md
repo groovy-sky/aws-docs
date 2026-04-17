@@ -1,3 +1,7 @@
+---
+title: "Understand update behaviors of stack resources"
+---
+
 # Understand update behaviors of stack resources
 
 When you submit an update, CloudFormation updates resources based on differences between what you

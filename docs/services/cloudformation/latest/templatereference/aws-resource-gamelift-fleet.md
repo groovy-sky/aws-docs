@@ -1,3 +1,7 @@
+---
+title: "AWS::GameLift::Fleet"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -198,7 +202,7 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 
 The IP address ranges and port settings that allow inbound traffic to access game
 server processes and other processes on this fleet. Set this parameter for managed EC2 fleets. You can leave this parameter empty when creating the fleet, but you must call
-[https://docs.aws.amazon.com/gamelift/latest/apireference/API\_UpdateFleetPortSettings](../../../../reference/gamelift/latest/apireference/api-updatefleetportsettings.md) to set it before players can connect to game sessions.
+[https://docs.aws.amazon.com/gamelift/latest/apireference/API\_UpdateFleetPortSettings](https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateFleetPortSettings) to set it before players can connect to game sessions.
 As a best practice, we recommend
 opening ports for remote access only when you need them and closing them when you're finished.
 For Amazon GameLift Servers Realtime fleets, Amazon GameLift Servers automatically sets TCP and UDP ranges.

@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template Transform section"
+---
+
 # CloudFormation template Transform section
 
 The optional `Transform` section specifies one or more macros that CloudFormation

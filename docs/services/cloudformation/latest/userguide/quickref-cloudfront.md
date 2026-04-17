@@ -1,3 +1,7 @@
+---
+title: "Amazon CloudFront template snippets"
+---
+
 # Amazon CloudFront template snippets
 
 Use these sample template snippets with your Amazon CloudFront distribution resource in CloudFormation. For

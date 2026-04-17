@@ -1,3 +1,7 @@
+---
+title: "Register a third-party private extension in your account"
+---
+
 # Register a third-party private extension in your account
 
 This topic covers the steps to register a third-party private extension that's

@@ -1,3 +1,7 @@
+---
+title: "AWS::EC2::EC2Fleet TargetCapacitySpecificationRequest"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -52,7 +56,7 @@ _Required_: No
 
 _Type_: String
 
-_Allowed values_: `on-demand | spot | reserved-capacity`
+_Allowed values_: `on-demand | spot | capacity-block | reserved-capacity`
 
 _Update requires_: [Replacement](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-replacement)
 

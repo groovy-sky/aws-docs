@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template format version syntax"
+---
+
 # CloudFormation template format version syntax
 
 The `AWSTemplateFormatVersion` section (optional) identifies the template

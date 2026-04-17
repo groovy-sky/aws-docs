@@ -1,3 +1,7 @@
+---
+title: "Nesting an existing stack"
+---
+
 # Nesting an existing stack
 
 Use the `resource import` feature to nest an existing stack within another

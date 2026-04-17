@@ -1,3 +1,7 @@
+---
+title: "How CloudFormation works"
+---
+
 # How CloudFormation works
 
 This topic describes how CloudFormation works and introduces you to the key concepts you'll

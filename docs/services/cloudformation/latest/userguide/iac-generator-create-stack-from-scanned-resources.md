@@ -1,3 +1,7 @@
+---
+title: "Create a CloudFormation stack from scanned resources"
+---
+
 # Create a CloudFormation stack from scanned resources
 
 After you create your template, you can preview the generated template with Infrastructure Composer

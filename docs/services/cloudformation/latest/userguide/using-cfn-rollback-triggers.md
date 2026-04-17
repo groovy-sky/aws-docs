@@ -1,3 +1,7 @@
+---
+title: "Roll back your CloudFormation stack on alarm breach with rollback triggers"
+---
+
 # Roll back your CloudFormation stack on alarm breach with rollback triggers
 
 With rollback triggers, you can have CloudFormation monitor the state of your application during

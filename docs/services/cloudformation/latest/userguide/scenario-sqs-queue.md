@@ -1,3 +1,7 @@
+---
+title: "Amazon SQS template snippets"
+---
+
 # Amazon SQS template snippets
 
 This example shows an Amazon SQS queue.

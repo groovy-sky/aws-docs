@@ -1,3 +1,7 @@
+---
+title: "Walkthrough: Create a delay mechanism with a Lambda-backed custom resource"
+---
+
 # Walkthrough: Create a delay mechanism with a Lambda-backed custom resource
 
 This walkthrough shows you how to configure and launch a Lambda-backed custom resource using

@@ -1,10 +1,14 @@
+---
+title: "AWS::SecurityHub::ConnectorV2 ServiceNowProviderConfiguration"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
 
 # AWS::SecurityHub::ConnectorV2 ServiceNowProviderConfiguration
 
-The initial configuration settings required to establish an integration between Security Hub CSPM and ServiceNow ITSM.
+The initial configuration settings required to establish an integration between Security Hub and ServiceNow ITSM.
 
 ## Syntax
 

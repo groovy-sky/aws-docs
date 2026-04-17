@@ -1,3 +1,7 @@
+---
+title: "View a change set for a CloudFormation stack"
+---
+
 # View a change set for a CloudFormation stack
 
 After you create a change set, you can view the proposed changes before executing them.

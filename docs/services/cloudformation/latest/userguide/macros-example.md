@@ -1,3 +1,7 @@
+---
+title: "Example simple string replacement macro"
+---
+
 # Example simple string replacement macro
 
 The following example walks you through the process of using macros, from defining the

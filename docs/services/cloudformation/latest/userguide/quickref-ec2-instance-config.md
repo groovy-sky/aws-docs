@@ -1,3 +1,7 @@
+---
+title: "Configure Amazon EC2 instances with CloudFormation"
+---
+
 # Configure Amazon EC2 instances with CloudFormation
 
 The following snippets demonstrate how to configure Amazon EC2 instances using

@@ -1,3 +1,7 @@
+---
+title: "AWS::AppConfig::DeploymentStrategy"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -71,6 +75,10 @@ Properties:
 `DeploymentDurationInMinutes`
 
 Total amount of time for a deployment to last.
+
+###### Note
+
+AWS AppConfig Agent supports deploying feature flag or free-form configuration data to specific segments or individual users during a gradual rollout. Entity-based gradual deployments ensure that once a user or segment receives a configuration version, they continue to receive that same version throughout the deployment period, regardless of which compute resource serves their requests. For more information, see [Using AWS AppConfig Agent for user-based or entity-based gradual deployments](../../../appconfig/latest/userguide/appconfig-agent-how-to-use.md#appconfig-entity-based-gradual-deployments)
 
 _Required_: Yes
 

@@ -1,3 +1,7 @@
+---
+title: "Use third-party public extensions from the CloudFormation registry"
+---
+
 # Use third-party public extensions from the CloudFormation registry
 
 To use a third-party public extension in your template, you must first

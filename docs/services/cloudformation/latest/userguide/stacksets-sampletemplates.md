@@ -1,3 +1,7 @@
+---
+title: "CloudFormation StackSets sample templates"
+---
+
 # CloudFormation StackSets sample templates
 
 This section includes links to some sample CloudFormation templates that can help you use

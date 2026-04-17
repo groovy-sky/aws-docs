@@ -1,3 +1,7 @@
+---
+title: "Examples of CloudFormation stack operation commands for the AWS CLI and PowerShell"
+---
+
 # Examples of CloudFormation stack operation commands for the AWS CLI and PowerShell
 
 The following command line examples demonstrate how to perform individual CloudFormation
@@ -76,7 +80,7 @@ Stop-CFNUpdateStack -StackName "myStack"
 ```
 
 - For API details, see
-[CancelUpdateStack](../../../powershell/v4/reference.md)
+[CancelUpdateStack](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -90,7 +94,7 @@ Stop-CFNUpdateStack -StackName "myStack"
 ```
 
 - For API details, see
-[CancelUpdateStack](../../../powershell/v5/reference.md)
+[CancelUpdateStack](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 ## Continue rolling back an update
@@ -132,7 +136,7 @@ Resume-CFNUpdateRollback -StackName "myStack"
 ```
 
 - For API details, see
-[ContinueUpdateRollback](../../../powershell/v4/reference.md)
+[ContinueUpdateRollback](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -146,7 +150,7 @@ Resume-CFNUpdateRollback -StackName "myStack"
 ```
 
 - For API details, see
-[ContinueUpdateRollback](../../../powershell/v5/reference.md)
+[ContinueUpdateRollback](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 ## Create a stack
@@ -245,7 +249,7 @@ New-CFNStack -StackName "myStack" `
 ```
 
 - For API details, see
-[CreateStack](../../../powershell/v4/reference.md)
+[CreateStack](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -302,7 +306,7 @@ New-CFNStack -StackName "myStack" `
 ```
 
 - For API details, see
-[CreateStack](../../../powershell/v5/reference.md)
+[CreateStack](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 ###### Note
@@ -383,7 +387,7 @@ Remove-CFNStack -StackName "myStack"
 ```
 
 - For API details, see
-[DeleteStack](../../../powershell/v4/reference.md)
+[DeleteStack](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -397,7 +401,7 @@ Remove-CFNStack -StackName "myStack"
 ```
 
 - For API details, see
-[DeleteStack](../../../powershell/v5/reference.md)
+[DeleteStack](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 If the deletion fails and returns a `DELETE_FAILED` state, you can choose
@@ -494,7 +498,7 @@ Get-CFNStackEvent -StackName "myStack"
 ```
 
 - For API details, see
-[DescribeStackEvents](../../../powershell/v4/reference.md)
+[DescribeStackEvents](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -508,7 +512,7 @@ Get-CFNStackEvent -StackName "myStack"
 ```
 
 - For API details, see
-[DescribeStackEvents](../../../powershell/v5/reference.md)
+[DescribeStackEvents](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 ## Describe a stack resource
@@ -567,7 +571,7 @@ Get-CFNStackResource -StackName "myStack" -LogicalResourceId "MyDBInstance"
 ```
 
 - For API details, see
-[DescribeStackResource](../../../powershell/v4/reference.md)
+[DescribeStackResource](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -581,7 +585,7 @@ Get-CFNStackResource -StackName "myStack" -LogicalResourceId "MyDBInstance"
 ```
 
 - For API details, see
-[DescribeStackResource](../../../powershell/v5/reference.md)
+[DescribeStackResource](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 ## Describe stack resources
@@ -688,7 +692,7 @@ Get-CFNStackResourceList -PhysicalResourceId "i-123456" -LogicalResourceId "Ec2I
 ```
 
 - For API details, see
-[DescribeStackResources](../../../powershell/v4/reference.md)
+[DescribeStackResources](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -726,7 +730,7 @@ Get-CFNStackResourceList -PhysicalResourceId "i-123456" -LogicalResourceId "Ec2I
 ```
 
 - For API details, see
-[DescribeStackResources](../../../powershell/v5/reference.md)
+[DescribeStackResources](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 ## Describe stacks
@@ -848,7 +852,7 @@ Get-CFNStack -StackName "myStack"
 ```
 
 - For API details, see
-[DescribeStacks](../../../powershell/v4/reference.md)
+[DescribeStacks](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -870,7 +874,7 @@ Get-CFNStack -StackName "myStack"
 ```
 
 - For API details, see
-[DescribeStacks](../../../powershell/v5/reference.md)
+[DescribeStacks](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 By default, the `describe-stacks` command returns parameter values. To
@@ -963,7 +967,7 @@ Get-CFNTemplate -StackName "myStack"
 ```
 
 - For API details, see
-[GetTemplate](../../../powershell/v4/reference.md)
+[GetTemplate](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -977,7 +981,7 @@ Get-CFNTemplate -StackName "myStack"
 ```
 
 - For API details, see
-[GetTemplate](../../../powershell/v5/reference.md)
+[GetTemplate](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 ## List stack resources
@@ -1054,7 +1058,7 @@ Get-CFNStackResourceSummary -StackName "myStack"
 ```
 
 - For API details, see
-[ListStackResources](../../../powershell/v4/reference.md)
+[ListStackResources](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -1068,7 +1072,7 @@ Get-CFNStackResourceSummary -StackName "myStack"
 ```
 
 - For API details, see
-[ListStackResources](../../../powershell/v5/reference.md)
+[ListStackResources](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 ## List stacks
@@ -1141,7 +1145,7 @@ Get-CFNStackSummary -StackStatusFilter @("CREATE_IN_PROGRESS", "UPDATE_IN_PROGRE
 ```
 
 - For API details, see
-[ListStacks](../../../powershell/v4/reference.md)
+[ListStacks](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -1171,7 +1175,7 @@ Get-CFNStackSummary -StackStatusFilter @("CREATE_IN_PROGRESS", "UPDATE_IN_PROGRE
 ```
 
 - For API details, see
-[ListStacks](../../../powershell/v5/reference.md)
+[ListStacks](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 ## Update a stack
@@ -1272,7 +1276,7 @@ Update-CFNStack -StackName "myStack" `
 ```
 
 - For API details, see
-[UpdateStack](../../../powershell/v4/reference.md)
+[UpdateStack](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -1327,7 +1331,7 @@ Update-CFNStack -StackName "myStack" `
 ```
 
 - For API details, see
-[UpdateStack](../../../powershell/v5/reference.md)
+[UpdateStack](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 ###### Note
@@ -1396,7 +1400,7 @@ Test-CFNTemplate -TemplateURL https://s3.amazonaws.com/amzn-s3-demo-bucket/templ
 ```
 
 - For API details, see
-[ValidateTemplate](../../../powershell/v4/reference.md)
+[ValidateTemplate](https://docs.aws.amazon.com/powershell/v4/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V4)_.
 
 **Tools for PowerShell V5**
@@ -1418,7 +1422,7 @@ Test-CFNTemplate -TemplateURL https://s3.amazonaws.com/amzn-s3-demo-bucket/templ
 ```
 
 - For API details, see
-[ValidateTemplate](../../../powershell/v5/reference.md)
+[ValidateTemplate](https://docs.aws.amazon.com/powershell/v5/reference)
 in _AWS Tools for PowerShell Cmdlet Reference (V5)_.
 
 The following is an example response that produces a validation error.

@@ -1,3 +1,7 @@
+---
+title: "AWS::Transfer::Connector"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -32,6 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "As2Config" : As2Config,
       "EgressConfig" : ConnectorEgressConfig,
       "EgressType" : String,
+      "IpAddressType" : String,
       "LoggingRole" : String,
       "SecurityPolicyName" : String,
       "SftpConfig" : SftpConfig,
@@ -54,6 +59,7 @@ Properties:
   EgressConfig:
     ConnectorEgressConfig
   EgressType: String
+  IpAddressType: String
   LoggingRole: String
   SecurityPolicyName: String
   SftpConfig:
@@ -144,6 +150,18 @@ _Required_: No
 _Type_: String
 
 _Allowed values_: `SERVICE_MANAGED | VPC_LATTICE`
+
+_Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
+
+`IpAddressType`
+
+Property description not available.
+
+_Required_: No
+
+_Type_: String
+
+_Allowed values_: `IPV4 | DUALSTACK`
 
 _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-update-behaviors.md#update-no-interrupt)
 

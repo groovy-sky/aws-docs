@@ -1,3 +1,7 @@
+---
+title: "Amazon Simple Storage Service Tables (Amazon S3 Tables)"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).

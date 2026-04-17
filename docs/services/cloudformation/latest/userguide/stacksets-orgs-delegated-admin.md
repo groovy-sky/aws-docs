@@ -1,3 +1,7 @@
+---
+title: "Register a delegated administrator member account"
+---
+
 # Register a delegated administrator member account
 
 In addition to your organization's management account, member accounts with

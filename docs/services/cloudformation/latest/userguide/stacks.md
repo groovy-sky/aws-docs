@@ -1,3 +1,7 @@
+---
+title: "Managing AWS resources as a single unit with CloudFormation stacks"
+---
+
 # Managing AWS resources as a single unit with CloudFormation stacks
 
 A stack is a collection of AWS resources that you can manage as a single unit. In other

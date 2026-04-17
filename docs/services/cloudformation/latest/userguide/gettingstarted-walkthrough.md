@@ -1,3 +1,7 @@
+---
+title: "Creating your first stack"
+---
+
 # Creating your first stack
 
 This topic walks you through creating your first CloudFormation stack using the AWS Management Console. By

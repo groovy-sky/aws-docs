@@ -1,3 +1,7 @@
+---
+title: "Continue rolling back an update"
+---
+
 # Continue rolling back an update
 
 Sometimes, when CloudFormation tries to roll back a stack update, it can't roll back all the

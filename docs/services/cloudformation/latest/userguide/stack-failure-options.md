@@ -1,3 +1,7 @@
+---
+title: "Choose how to handle failures when provisioning resources"
+---
+
 # Choose how to handle failures when provisioning resources
 
 If your stack operation fails, you don't have to roll back resources that were already

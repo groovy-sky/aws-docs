@@ -1,3 +1,7 @@
+---
+title: "Amazon Elastic File System Sample Template"
+---
+
 # Amazon Elastic File System Sample Template
 
 Amazon Elastic File System (Amazon EFS) is a file storage service for Amazon Elastic Compute Cloud (Amazon EC2) instances. With Amazon EFS,

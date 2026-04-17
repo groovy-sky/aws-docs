@@ -1,3 +1,7 @@
+---
+title: "CloudFormation template snippets"
+---
+
 # CloudFormation template snippets
 
 This section provides a number of example scenarios that you can use to understand how to declare various CloudFormation

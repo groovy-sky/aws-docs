@@ -1,3 +1,7 @@
+---
+title: "AWS::SSM::Association"
+---
+
 This is the new _CloudFormation Template Reference Guide_.
 Please update your bookmarks and links. For help getting started with CloudFormation, see the
 [AWS CloudFormation User Guide](../userguide/welcome.md).
@@ -128,7 +132,7 @@ _Update requires_: [No interruption](../userguide/using-cfn-updating-stacks-upda
 The names or Amazon Resource Names (ARNs) of the Change Calendar type documents your
 associations are gated under. The associations only run when that Change Calendar is open. For
 more information, see [AWS Systems Manager Change\
-Calendar](../../../systems-manager/latest/userguide/systems-manager-change-calendar.md) in the _AWS Systems Manager User Guide_.
+Calendar](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-change-calendar) in the _AWS Systems Manager User Guide_.
 
 _Required_: No
 

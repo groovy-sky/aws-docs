@@ -1,3 +1,7 @@
+---
+title: "CloudFormation registry concepts"
+---
+
 # CloudFormation registry concepts
 
 This topic explains key concepts to help you understand and begin using the CloudFormation

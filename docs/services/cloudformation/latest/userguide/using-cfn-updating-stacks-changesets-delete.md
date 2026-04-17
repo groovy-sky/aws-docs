@@ -1,3 +1,7 @@
+---
+title: "Delete a change set for a CloudFormation stack"
+---
+
 # Delete a change set for a CloudFormation stack
 
 Deleting a change set removes it from the list of change sets for the stack. Deleting a
