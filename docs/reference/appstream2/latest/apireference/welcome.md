@@ -16,7 +16,7 @@ To learn more about WorkSpaces Applications, see the following resources:
 
 - [Amazon WorkSpaces Applications documentation](http://aws.amazon.com/documentation/appstream2)
 
-This document was last published on April 14, 2026.
+This document was last published on April 29, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
