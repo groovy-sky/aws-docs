@@ -14,7 +14,7 @@ information about using the AWS Command Line Interface (AWS CLI) to manage your
 AppFabric resources, see the [AppFabric section of the AWS CLI\
 Reference](../../../cli/latest/reference/appfabric/index.md).
 
-This document was last published on April 14, 2026.
+This document was last published on April 29, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -32,7 +32,7 @@ the connector-specific `ConnectorProfileProperties` when creating a new connecto
 profile using Amazon AppFlow API operations. For example, Salesforce users can refer to
 the [_Authorize Apps with OAuth_](https://help.salesforce.com/articleView?id=remoteaccess_authenticate.htm) documentation.
 
-This document was last published on April 14, 2026.
+This document was last published on April 29, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
