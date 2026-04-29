@@ -1,8 +1,8 @@
 ---
-title: "Create an outbound call to phone number in Amazon Connect Agent Workspace"
+title: "Create an outbound call to phone number in Amazon Connect Customer AI agent workspace"
 ---
 
-# Create an outbound call to phone number in Amazon Connect Agent Workspace
+# Create an outbound call to phone number in Amazon Connect Customer AI agent workspace
 
 Creates an outbound call to the given phone number and returns the contactId. It takes
 an optional parameter `queueARN` which specifies the outbound queue

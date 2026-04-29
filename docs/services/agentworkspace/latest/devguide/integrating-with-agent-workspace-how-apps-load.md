@@ -1,8 +1,8 @@
 ---
-title: "How applications are loaded in Amazon Connect Agent Workspace"
+title: "How applications are loaded in Amazon Connect Customer AI agent workspace"
 ---
 
-# How applications are loaded in Amazon Connect Agent Workspace
+# How applications are loaded in Amazon Connect Customer AI agent workspace
 
 The agent workspace allows users to handle multiple contacts
 concurrently. They will have only one contact selected at a time though, and the
@@ -28,8 +28,8 @@ different contacts.
 
 The agent workspace has a Content Security Policy (CSP) that only allows specific
 domains to be framed by setting [frame-src](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-src). The domains configured in the _AccessUrl_ and
-those added to _Approved Origins_ will be included in the agent
-workspace’s CSP. Ensure that all domains that your app uses for top level pages are
+those added to _Approved Origins_ will be included in the
+agent workspace’s CSP. Ensure that all domains that your app uses for top level pages are
 included between _AccessUrl_ and _Approved_
 _Origins_.
 
@@ -39,7 +39,7 @@ Events or data will not be shared between apps on different contacts.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Are you a first-time Amazon Connect agent workspace user?
+Are you a first-time Amazon Connect Customer AI agent workspace user?
 
 Recommendations and best practices
 

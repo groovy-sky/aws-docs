@@ -1,8 +1,8 @@
 ---
-title: "Amazon Connect Agent Workspace Email API"
+title: "Amazon Connect Customer AI agent workspace Email API"
 ---
 
-# Amazon Connect Agent Workspace Email API
+# Amazon Connect Customer AI agent workspace Email API
 
 The Amazon Connect SDK provides an `EmailClient` which serves as an interface that your app
 can use to subscribe to email contact events and make email contact requests.

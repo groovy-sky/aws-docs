@@ -1,8 +1,8 @@
 ---
-title: "Gets the outbound call permission configured for the agent in Amazon Connect Agent Workspace"
+title: "Gets the outbound call permission configured for the agent in Amazon Connect Customer AI agent workspace"
 ---
 
-# Gets the outbound call permission configured for the agent in Amazon Connect Agent Workspace
+# Gets the outbound call permission configured for the agent in Amazon Connect Customer AI agent workspace
 
 Gets true if the agent has the security profile permission for making outbound
 calls, false otherwise.

@@ -1,10 +1,10 @@
 ---
-title: "Focus an application in Amazon Connect Agent Workspace"
+title: "Focus an application in Amazon Connect Customer AI agent workspace"
 ---
 
-# Focus an application in Amazon Connect Agent Workspace
+# Focus an application in Amazon Connect Customer AI agent workspace
 
-Brings the application into focus in the Amazon Connect agent workspace for the given
+Brings the application into focus in the Amazon Connect Customer AI agent workspace for the given
 application instance ID.
 
 **Signature**

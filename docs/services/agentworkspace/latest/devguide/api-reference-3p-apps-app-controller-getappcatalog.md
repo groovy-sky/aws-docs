@@ -1,10 +1,10 @@
 ---
-title: "Get the application catalog in Amazon Connect Agent Workspace"
+title: "Get the application catalog in Amazon Connect Customer AI agent workspace"
 ---
 
-# Get the application catalog in Amazon Connect Agent Workspace
+# Get the application catalog in Amazon Connect Customer AI agent workspace
 
-Returns all the applications that are available in the Amazon Connect agent workspace for
+Returns all the applications that are available in the Amazon Connect Customer AI agent workspace for
 the current logged-in user.
 
 **Signature**

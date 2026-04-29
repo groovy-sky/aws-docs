@@ -1,11 +1,11 @@
 ---
-title: "Set the voice enhancement mode in Amazon Connect Agent Workspace"
+title: "Set the voice enhancement mode in Amazon Connect Customer AI agent workspace"
 ---
 
-# Set the voice enhancement mode in Amazon Connect Agent Workspace
+# Set the voice enhancement mode in Amazon Connect Customer AI agent workspace
 
-Sets the voice enhancement mode of the user that's currently logged in to Amazon
-Connect agent workspace. The voice enhancement mode can have the following values:
+Sets the voice enhancement mode of the user that's currently logged in to Amazon Connect
+Customer AI agent workspace. The voice enhancement mode can have the following values:
 
 - `VOICE_ISOLATION`: it suppresses background noise and isolates the
 agent's voice. This mode should only be enabled if the agent uses a wired

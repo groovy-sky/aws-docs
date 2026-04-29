@@ -1,10 +1,10 @@
 ---
-title: "Install the Amazon Connect SDK for developing applications for Amazon Connect Agent Workspace"
+title: "Install the Amazon Connect SDK for developing applications for Amazon Connect Customer AI agent workspace"
 ---
 
-# Install the Amazon Connect SDK for developing applications for Amazon Connect Agent Workspace
+# Install the Amazon Connect SDK for developing applications for Amazon Connect Customer AI agent workspace
 
-To develop applications for the Amazon Connect agent workspace you must first install
+To develop applications for the Amazon Connect Customer AI agent workspace you must first install
 the
 Amazon Connect SDK.
 

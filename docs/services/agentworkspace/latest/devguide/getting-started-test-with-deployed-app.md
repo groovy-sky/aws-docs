@@ -1,10 +1,10 @@
 ---
-title: "Test a deployed version of your application for Amazon Connect Agent Workspace"
+title: "Test a deployed version of your application for Amazon Connect Customer AI agent workspace"
 ---
 
-# Test a deployed version of your application for Amazon Connect Agent Workspace
+# Test a deployed version of your application for Amazon Connect Customer AI agent workspace
 
-When ready, deploy the app that you created for the Amazon Connect agent workspace to a
+When ready, deploy the app that you created for the Amazon Connect Customer AI agent workspace to a
 place that is internet accessible. Update your application configuration (or configure a
 new application) to point to the deployed version of your application. A simple way to
 deploy your app assuming it only has static assets is to [host them on S3](../../../s3/latest/userguide/websitehosting.md) and

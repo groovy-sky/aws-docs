@@ -1,8 +1,8 @@
 ---
-title: "Accept the incoming contact for the given contactId in Amazon Connect Agent Workspace"
+title: "Accept the incoming contact for the given contactId in Amazon Connect Customer AI agent workspace"
 ---
 
-# Accept the incoming contact for the given contactId in Amazon Connect Agent Workspace
+# Accept the incoming contact for the given contactId in Amazon Connect Customer AI agent workspace
 
 Accept the incoming contact for the given contactId.
 

@@ -1,11 +1,11 @@
 ---
-title: "Integrate application with Amazon Connect Agent Workspace contact data"
+title: "Integrate application with Amazon Connect Customer AI agent workspace contact data"
 ---
 
-# Integrate application with Amazon Connect Agent Workspace contact data
+# Integrate application with Amazon Connect Customer AI agent workspace contact data
 
 To integrate your application with contact data from the Amazon Connect
-agent workspace, instantiate
+Customer AI agent workspace, instantiate
 the contact client as follows:
 
 ```typescript

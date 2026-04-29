@@ -1,8 +1,8 @@
 ---
-title: "Amazon Connect Agent Workspace Quick Responses API"
+title: "Amazon Connect Customer AI agent workspace Quick Responses API"
 ---
 
-# Amazon Connect Agent Workspace Quick Responses API
+# Amazon Connect Customer AI agent workspace Quick Responses API
 
 The Amazon Connect SDK provides a `QuickResponsesClient` which serves as an interface that you
 can use to make requests to search your Amazon Connect Quick Responses Knowledge Base.

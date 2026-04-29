@@ -1,8 +1,8 @@
 ---
-title: "Confirm that an attached file has been uploaded in Amazon Connect Agent Workspace"
+title: "Confirm that an attached file has been uploaded in Amazon Connect Customer AI agent workspace"
 ---
 
-# Confirm that an attached file has been uploaded in Amazon Connect Agent Workspace
+# Confirm that an attached file has been uploaded in Amazon Connect Customer AI agent workspace
 
 Allows you to confirm that the attachment has been uploaded using the pre-signed
 URL provided in the startAttachedFileUpload API. The request accepts an Attachment

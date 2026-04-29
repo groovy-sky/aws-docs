@@ -1,11 +1,11 @@
 ---
-title: "Close an application in Amazon Connect Agent Workspace"
+title: "Close an application in Amazon Connect Customer AI agent workspace"
 ---
 
-# Close an application in Amazon Connect Agent Workspace
+# Close an application in Amazon Connect Customer AI agent workspace
 
-Closes the application for the given application instance ID in the Amazon Connect agent
-workspace.
+Closes the application for the given application instance ID in the Amazon Connect
+Customer AI agent workspace.
 
 **Signature**
 

@@ -1,12 +1,12 @@
 ---
-title: "Test your application for Amazon Connect Agent Workspace locally"
+title: "Test your application for Amazon Connect Customer AI agent workspace locally"
 ---
 
-# Test your application for Amazon Connect Agent Workspace locally
+# Test your application for Amazon Connect Customer AI agent workspace locally
 
 Once you have a minimal version of the app that you want to use in the Amazon Connect
-agent workspace with the Amazon Connect SDK that you want to test in the agent
-workspace, run your app locally and create an application in the AWS console with an _AccessUrl_ using the localhost endpoint, like `http://localhost:3000`
+Customer AI agent workspace with the Amazon Connect SDK that you want to test in the
+agent workspace, run your app locally and create an application in the AWS console with an _AccessUrl_ using the localhost endpoint, like `http://localhost:3000`
 .
 
 ## Creating an application and associating to your instance
@@ -28,8 +28,8 @@ apps) in the agent workspace (Preview)](../../../connect/latest/adminguide/3p-ap
 
 04. Fill out the necessary required information:
     1. **Name**: The name of the application
-        is what will show up to agents in the app launcher in the agent
-        workspace.
+        is what will show up to agents in the app launcher in the
+        agent workspace.
 
     2. **Namespace**: Namespace must be
         unique per application and, in the future, allow for applications to
@@ -87,7 +87,7 @@ you should see the following series of logs entries.
 
 ```
 
-If you see these, then your app correctly integrates with the _Amazon Connect Amazon Connect SDK_ and the [The create event in Amazon Connect Agent Workspace](integrating-with-agent-workspace-lifecycle-events-create.md) / [The destroy event in Amazon Connect Agent Workspace](integrating-with-agent-workspace-lifecycle-events-destroy.md) destroy
+If you see these, then your app correctly integrates with the _Amazon Connect Amazon Connect SDK_ and the [The create event in Amazon Connect Customer AI agent workspace](integrating-with-agent-workspace-lifecycle-events-create.md) / [The destroy event in Amazon Connect Customer AI agent workspace](integrating-with-agent-workspace-lifecycle-events-destroy.md) destroy
 lifecycle events.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)

@@ -1,8 +1,8 @@
 ---
-title: "Unsubscribe from self hold events in Amazon Connect Agent Workspace"
+title: "Unsubscribe from self hold events in Amazon Connect Customer AI agent workspace"
 ---
 
-# Unsubscribe from self hold events in Amazon Connect Agent Workspace
+# Unsubscribe from self hold events in Amazon Connect Customer AI agent workspace
 
 Unsubscribes from self hold events.
 

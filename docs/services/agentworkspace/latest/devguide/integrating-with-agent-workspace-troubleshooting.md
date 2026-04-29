@@ -1,12 +1,12 @@
 ---
-title: "Troubleshoot application setup in Amazon Connect Agent Workspace"
+title: "Troubleshoot application setup in Amazon Connect Customer AI agent workspace"
 ---
 
-# Troubleshoot application setup in Amazon Connect Agent Workspace
+# Troubleshoot application setup in Amazon Connect Customer AI agent workspace
 
 You can use the [Amazon Connect SDK's](https://github.com/amazon-connect/AmazonConnectSDK) `
             AppConfig` object to retrieve data about your applications’s setup in the Amazon Connect
-agent workspace, including its permissions. This will allow you to inspect its
+Customer AI agent workspace, including its permissions. This will allow you to inspect its
 state and determine which permissions were assigned to your app. Accessing its `
             permissions` property will return a list of strings, each representing a
 permissions that grants access to a set of events and requests. Performing an action,

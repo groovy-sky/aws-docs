@@ -1,8 +1,8 @@
 ---
-title: "Retrieve message templates that match a search query in Amazon Connect Agent Workspace"
+title: "Retrieve message templates that match a search query in Amazon Connect Customer AI agent workspace"
 ---
 
-# Retrieve message templates that match a search query in Amazon Connect Agent Workspace
+# Retrieve message templates that match a search query in Amazon Connect Customer AI agent workspace
 
 Returns the SearchMessageTemplatesResponse object, which contains the matching
 message templates and a token to retrieve the next page of results, if available.

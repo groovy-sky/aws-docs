@@ -1,8 +1,8 @@
 ---
-title: "Get detailed contact information in Amazon Connect Agent Workspace"
+title: "Get detailed contact information in Amazon Connect Customer AI agent workspace"
 ---
 
-# Get detailed contact information in Amazon Connect Agent Workspace
+# Get detailed contact information in Amazon Connect Customer AI agent workspace
 
 Retrieves detailed information for a specific contact by its ID.
 

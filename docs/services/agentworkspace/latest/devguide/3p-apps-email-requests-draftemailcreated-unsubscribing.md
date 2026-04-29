@@ -1,8 +1,8 @@
 ---
-title: "Unsubscribe from draft email creation notifications in Amazon Connect Agent Workspace"
+title: "Unsubscribe from draft email creation notifications in Amazon Connect Customer AI agent workspace"
 ---
 
-# Unsubscribe from draft email creation notifications in Amazon Connect Agent Workspace
+# Unsubscribe from draft email creation notifications in Amazon Connect Customer AI agent workspace
 
 Unsubscribes a callback function from the event that is fired when a draft email
 contact is created.

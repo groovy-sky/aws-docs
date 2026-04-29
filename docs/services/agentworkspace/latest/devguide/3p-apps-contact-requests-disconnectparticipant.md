@@ -1,8 +1,8 @@
 ---
-title: "Disconnect a participant from a contact in Amazon Connect Agent Workspace"
+title: "Disconnect a participant from a contact in Amazon Connect Customer AI agent workspace"
 ---
 
-# Disconnect a participant from a contact in Amazon Connect Agent Workspace
+# Disconnect a participant from a contact in Amazon Connect Customer AI agent workspace
 
 Disconnects a specific participant from the contact.
 

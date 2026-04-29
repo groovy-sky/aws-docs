@@ -1,11 +1,11 @@
 ---
-title: "Get the limit of contacts for the agent in Amazon Connect Agent Workspace"
+title: "Get the limit of contacts for the agent in Amazon Connect Customer AI agent workspace"
 ---
 
-# Get the limit of contacts for the agent in Amazon Connect Agent Workspace
+# Get the limit of contacts for the agent in Amazon Connect Customer AI agent workspace
 
 Returns a map of `ChannelType`-to-number indicating how many concurrent
-contacts can an Amazon Connect agent workspace agent have on a given channel. 0 represents a disabled
+contacts can an Amazon Connect Customer AI agent workspace agent have on a given channel. 0 represents a disabled
 channel.
 
 ```typescript

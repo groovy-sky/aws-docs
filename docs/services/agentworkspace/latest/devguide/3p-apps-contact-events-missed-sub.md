@@ -1,11 +1,11 @@
 ---
-title: "Subscribe a callback function when an Amazon Connect Agent Workspace contact is missed"
+title: "Subscribe a callback function when an Amazon Connect Customer AI agent workspace contact is missed"
 ---
 
-# Subscribe a callback function when an Amazon Connect Agent Workspace contact is missed
+# Subscribe a callback function when an Amazon Connect Customer AI agent workspace contact is missed
 
 Subscribes a callback function to-be-invoked whenever a contact missed event
-occurs in the Amazon Connect agent workspace. If no contact ID is provided, then it uses the context of
+occurs in the Amazon Connect Customer AI agent workspace. If no contact ID is provided, then it uses the context of
 the current contact that the 3P app was opened on.
 
 **Signature**

@@ -1,8 +1,8 @@
 ---
-title: "List all participants for a contact in Amazon Connect Agent Workspace"
+title: "List all participants for a contact in Amazon Connect Customer AI agent workspace"
 ---
 
-# List all participants for a contact in Amazon Connect Agent Workspace
+# List all participants for a contact in Amazon Connect Customer AI agent workspace
 
 Retrieves all participants associated with a specific contact.
 

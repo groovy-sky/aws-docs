@@ -1,10 +1,10 @@
 ---
-title: "Get the language of a user in Amazon Connect Agent Workspace"
+title: "Get the language of a user in Amazon Connect Customer AI agent workspace"
 ---
 
-# Get the language of a user in Amazon Connect Agent Workspace
+# Get the language of a user in Amazon Connect Customer AI agent workspace
 
-Returns the language setting for the current user in the Amazon Connect Agent Workspace.
+Returns the language setting for the current user in the Amazon Connect Customer AI agent workspace.
 
 ```typescript
 

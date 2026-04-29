@@ -1,8 +1,8 @@
 ---
-title: "Get a pre-signed S3 URL to download an approved attached file in Amazon Connect Agent Workspace"
+title: "Get a pre-signed S3 URL to download an approved attached file in Amazon Connect Customer AI agent workspace"
 ---
 
-# Get a pre-signed S3 URL to download an approved attached file in Amazon Connect Agent Workspace
+# Get a pre-signed S3 URL to download an approved attached file in Amazon Connect Customer AI agent workspace
 
 Returns a pre-signed URL to download an approved attached file while handling an
 active contact. The activeContactId is the id of the contact the agent is actively

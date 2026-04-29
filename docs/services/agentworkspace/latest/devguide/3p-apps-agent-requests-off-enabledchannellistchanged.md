@@ -1,8 +1,8 @@
 ---
-title: "Unsubscribe from agent enabled channel list changes in Amazon Connect Agent Workspace"
+title: "Unsubscribe from agent enabled channel list changes in Amazon Connect Customer AI agent workspace"
 ---
 
-# Unsubscribe from agent enabled channel list changes in Amazon Connect Agent Workspace
+# Unsubscribe from agent enabled channel list changes in Amazon Connect Customer AI agent workspace
 
 Unsubscribes from EnabledChannelListChanged event.
 

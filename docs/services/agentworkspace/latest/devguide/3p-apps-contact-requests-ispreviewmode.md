@@ -1,8 +1,8 @@
 ---
-title: "Check if contact is in preview mode in Amazon Connect Agent Workspace"
+title: "Check if contact is in preview mode in Amazon Connect Customer AI agent workspace"
 ---
 
-# Check if contact is in preview mode in Amazon Connect Agent Workspace
+# Check if contact is in preview mode in Amazon Connect Customer AI agent workspace
 
 Returns whether the contact is being previewed. During this time, calling
 engagePreviewContact will trigger the outbound dial to the end customer and end

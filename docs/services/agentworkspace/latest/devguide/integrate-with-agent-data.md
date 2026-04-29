@@ -1,10 +1,10 @@
 ---
-title: "Integrate application with Amazon Connect Agent Workspace agent data"
+title: "Integrate application with Amazon Connect Customer AI agent workspace agent data"
 ---
 
-# Integrate application with Amazon Connect Agent Workspace agent data
+# Integrate application with Amazon Connect Customer AI agent workspace agent data
 
-To integrate your application with agent data from the Amazon Connect agent workspace,
+To integrate your application with agent data from the Amazon Connect Customer AI agent workspace,
 instantiate
 the agent client as follows:
 
@@ -40,7 +40,7 @@ this example, it logs the event data to the console.
 import { AgentStateChanged } from "@amazon-connect/contact";
 
 // A simple callback that just console logs the state change event data
-// returned by the agent workspace whenever the logged-in agent's state changes
+// returned by the workspace whenever the logged-in agent's state changes
 const handler = async (data: AgentStateChanged) => {
     console.log(data);
 };

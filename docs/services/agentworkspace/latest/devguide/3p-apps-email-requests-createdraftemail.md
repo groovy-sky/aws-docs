@@ -1,8 +1,8 @@
 ---
-title: "Create a draft email contact in Amazon Connect Agent Workspace"
+title: "Create a draft email contact in Amazon Connect Customer AI agent workspace"
 ---
 
-# Create a draft email contact in Amazon Connect Agent Workspace
+# Create a draft email contact in Amazon Connect Customer AI agent workspace
 
 Creates a draft outbound email contact; can either be an agent initiated outbound
 draft email or an agent reply draft email. Upon successful draft creation, the email

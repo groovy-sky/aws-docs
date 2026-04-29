@@ -1,11 +1,11 @@
 ---
-title: "Amazon Connect Agent Workspace AppController API"
+title: "Amazon Connect Customer AI agent workspace AppController API"
 ---
 
-# Amazon Connect Agent Workspace AppController API
+# Amazon Connect Customer AI agent workspace AppController API
 
 The Amazon Connect SDK provides an `AppControllerClient` to control applications in the Amazon Connect
-agent workspace.
+Customer AI agent workspace.
 
 The `AppControllerClient` accepts an optional argument, `
         ConnectClientConfig` which itself is defined as:

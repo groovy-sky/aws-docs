@@ -1,8 +1,8 @@
 ---
-title: "Unsubscribe from participant disconnected events in Amazon Connect Agent Workspace"
+title: "Unsubscribe from participant disconnected events in Amazon Connect Customer AI agent workspace"
 ---
 
-# Unsubscribe from participant disconnected events in Amazon Connect Agent Workspace
+# Unsubscribe from participant disconnected events in Amazon Connect Customer AI agent workspace
 
 Unsubscribes from participant disconnected events.
 

@@ -1,11 +1,11 @@
 ---
-title: "Get the timestamp of the contact in Amazon Connect Agent Workspace"
+title: "Get the timestamp of the contact in Amazon Connect Customer AI agent workspace"
 ---
 
-# Get the timestamp of the contact in Amazon Connect Agent Workspace
+# Get the timestamp of the contact in Amazon Connect Customer AI agent workspace
 
 Returns a `Date` object with the timestamp associated with when the contact
-was placed in the queue in the Amazon Connect agent workspace.
+was placed in the queue in the Amazon Connect Customer AI agent workspace.
 
 ```typescript
 
