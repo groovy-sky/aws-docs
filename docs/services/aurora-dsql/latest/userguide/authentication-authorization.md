@@ -243,7 +243,7 @@ after Aurora DSQL successfully commits the modification transaction.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Getting started
+How billing works
 
 Generate an authentication token
 

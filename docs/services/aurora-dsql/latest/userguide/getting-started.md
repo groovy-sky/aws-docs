@@ -285,6 +285,6 @@ See the [Troubleshooting](troubleshooting.md) section of the Aurora DSQL documen
 
 What is Amazon Aurora DSQL?
 
-Authentication and authorization
+How billing works
 
 All content copied from https://docs.aws.amazon.com/.
