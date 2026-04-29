@@ -165,9 +165,9 @@ Amazon SNS [`Publish`](../../../sns/latest/api/api-publish.md) and [`PublishBatc
 
 [Amazon SQS API activity](../../../awssimplequeueservice/latest/sqsdeveloperguide/sqs-logging-using-cloudtrail.md#sqs-data-events-in-cloud-trail) on messages.
 
-**SQS**`AWS::SQS::Queue`AWS Supply Chain
+**SQS**`AWS::SQS::Queue`Supply Chain
 
-AWS Supply Chain API activity on an instance.
+Supply Chain API activity on an instance.
 
 **Supply Chain**`AWS::SCN::Instance`Amazon SWF
 

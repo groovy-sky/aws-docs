@@ -271,7 +271,7 @@ Using AWS CloudTrail](../../../amazonglacier/latest/dev/audit-logging.md)12/11/2
 [Logging\
 Amazon SageMaker AI API Calls with AWS CloudTrail](../../../sagemaker/latest/dg/logging-using-cloudtrail.md)
 
-01/11/2018Amazon Security Lake[Logging Amazon Security Lake API calls using CloudTrail](../../../security-lake/latest/userguide/securitylake-cloudtrail.md)05/30/2023Amazon Simple Email Service (Amazon SES)[Logging Amazon SES\
+01/11/2018Amazon Security Lake[Logging Amazon Security Lake API calls using CloudTrail](../../../security-lake/latest/userguide/securitylake-cloudtrail.md)05/30/2023AWS Security Agent[Logging AWS Security Agent API calls using CloudTrail](../../../securityagent/latest/userguide/logging-cloudtrail.md)03/18/2025Amazon Simple Email Service (Amazon SES)[Logging Amazon SES\
 API Calls By Using AWS CloudTrail](../../../ses/latest/dg/logging-using-cloudtrail.md)05/07/2015Amazon Simple Notification Service (Amazon SNS)[Logging\
 Amazon SNS API Calls using AWS CloudTrail](../../../sns/latest/dg/logging-using-cloudtrail.md)10/09/2014Amazon Simple Queue Service (Amazon SQS)[Logging Amazon SQS\
 API Actions Using AWS CloudTrail](../../../awssimplequeueservice/latest/sqsdeveloperguide/sqs-logging-using-cloudtrail.md)07/16/2014Amazon Simple Workflow Service (Amazon SWF)[Recording API calls with AWS CloudTrail](../../../amazonswf/latest/developerguide/ct-logging.md)

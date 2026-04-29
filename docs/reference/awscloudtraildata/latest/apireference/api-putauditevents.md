@@ -1,3 +1,7 @@
+---
+title: "PutAuditEvents"
+---
+
 # PutAuditEvents
 
 Ingests your application events into CloudTrail Lake. A required parameter,
@@ -155,25 +159,25 @@ HTTP Status Code: 400
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/cloudtrail-data-2021-08-11/putauditevents.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cloudtrail-data-2021-08-11/PutAuditEvents)
 
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/cloudtrail-data-2021-08-11/putauditevents.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cloudtrail-data-2021-08-11/PutAuditEvents)
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/cloudtrail-data-2021-08-11/putauditevents.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudtrail-data-2021-08-11/PutAuditEvents)
 
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/cloudtrail-data-2021-08-11/putauditevents.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cloudtrail-data-2021-08-11/PutAuditEvents)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudtrail-data-2021-08-11/putauditevents.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudtrail-data-2021-08-11/PutAuditEvents)
 
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/cloudtrail-data-2021-08-11/putauditevents.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cloudtrail-data-2021-08-11/PutAuditEvents)
 
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/cloudtrail-data-2021-08-11/putauditevents.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cloudtrail-data-2021-08-11/PutAuditEvents)
 
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/cloudtrail-data-2021-08-11/putauditevents.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cloudtrail-data-2021-08-11/PutAuditEvents)
 
-- [AWS SDK for Python](../../../../services/goto/boto3/cloudtrail-data-2021-08-11/putauditevents.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cloudtrail-data-2021-08-11/PutAuditEvents)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudtrail-data-2021-08-11/putauditevents.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudtrail-data-2021-08-11/PutAuditEvents)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -1,3 +1,7 @@
+---
+title: "ResultErrorEntry"
+---
+
 # ResultErrorEntry
 
 Includes the error code and error message for events that could not be ingested by CloudTrail.
@@ -42,11 +46,11 @@ Required: Yes
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS SDK for C++](../../../goto/sdkforcpp/cloudtrail-data-2021-08-11/resulterrorentry.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/cloudtrail-data-2021-08-11/ResultErrorEntry)
 
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/cloudtrail-data-2021-08-11/resulterrorentry.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cloudtrail-data-2021-08-11/ResultErrorEntry)
 
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/cloudtrail-data-2021-08-11/resulterrorentry.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cloudtrail-data-2021-08-11/ResultErrorEntry)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
