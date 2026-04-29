@@ -23,7 +23,7 @@ Amazon Web Services](http://aws.amazon.com/tools).
 For a list of Region-specific endpoints that App Runner supports, see [AWS App Runner\
 endpoints and quotas](../../../../general/latest/gr/apprunner.md) in the _AWS General Reference_.
 
-This document was last published on April 14, 2026.
+This document was last published on April 29, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
