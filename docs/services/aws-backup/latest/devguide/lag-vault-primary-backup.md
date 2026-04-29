@@ -54,7 +54,7 @@ as a primary backup target. You can perform this operation either through the AW
 
 When you specify both a backup vault and a logically air-gapped vault as targets for your backup jobs, AWS Backup determines the appropriate workflow based on the resource type and encryption configuration.
 
-![](https://docs.aws.amazon.com/images/aws-backup/latest/devguide/images/lag-vault-primary-backup-execution.png)
+![Backup workflow diagram showing primary resources routing to backup vault and logically air-gapped vault.](https://docs.aws.amazon.com/images/aws-backup/latest/devguide/images/lag-vault-primary-backup-execution.png)
 
 ###### Supported resources for primary backup to logically air-gapped vaults
 
