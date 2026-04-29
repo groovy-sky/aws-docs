@@ -6,15 +6,21 @@ title: "Welcome"
 
 ## Amazon Connect Service
 
-- [Amazon Connect actions](api-operations-amazon-connect-service.md)
+###### Note
 
-- [Amazon Connect data types](api-types-amazon-connect-service.md)
+Amazon Connect now refers to a portfolio of agentic solutions for business functions. The
+legacy product is now called Amazon Connect Customer, or simply Customer. The legacy name
+is used interchangeably in this documentation.
 
-Amazon Connect is a cloud-based contact center solution that you use to set up and manage a customer contact
-center and provide reliable customer engagement at any scale.
+- [Amazon Connect Customer actions](api-operations-amazon-connect-service.md)
 
-Amazon Connect provides metrics and real-time reporting that enable you to optimize contact routing. You can
-also resolve customer issues more efficiently by getting customers in touch with the appropriate agents.
+- [Amazon Connect Customer data types](api-types-amazon-connect-service.md)
+
+Amazon Connect Customer engages customers at every touchpoint and creates deeper
+relationships with AI powered capabilities.
+
+Build and manage customer communication experiences. Connect customers to agents, enable
+intelligent routing, and track performance in real-time.
 
 There are limits to the number of Amazon Connect resources that you can create. There are also limits to the
 number of requests that you can make per second. For more information, see [Amazon Connect Service Quotas](../../../../services/connect/latest/adminguide/amazon-connect-service-limits.md) in the
@@ -109,11 +115,6 @@ _Amazon Connect Administrator Guide_.
 - [Participant Service actions](api-operations-amazon-connect-participant-service.md)
 
 - [Participant Service data types](api-types-amazon-connect-participant-service.md)
-
-Amazon Connect is an easy-to-use omnichannel cloud contact center service that
-enables companies of any size to deliver superior customer service at a lower cost.
-Amazon Connect communications capabilities make it easy for companies to deliver
-personalized interactions across communication channels, including chat.
 
 Use the Amazon Connect Participant Service to manage participants (for example,
 agents, customers, and managers listening in), and to send messages and events within a
