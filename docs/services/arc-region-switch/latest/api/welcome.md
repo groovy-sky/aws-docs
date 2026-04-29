@@ -14,7 +14,7 @@ time objectives (RTOs) and maintain business continuity during regional disrupti
 For more information, see [Region switch in ARC](../../../r53recovery/latest/dg/region-switch.md) in the _Amazon Application_
 _Recovery Controller User Guide_.
 
-This document was last published on April 14, 2026.
+This document was last published on April 29, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
