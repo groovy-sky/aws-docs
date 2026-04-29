@@ -21,7 +21,7 @@ For more information about using zonal shift and zonal autoshift, see the
 [Amazon Application Recovery Controller \
 Developer Guide](../../../r53recovery/latest/dg/what-is-route53-recovery.md).
 
-This document was last published on April 14, 2026.
+This document was last published on April 29, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
