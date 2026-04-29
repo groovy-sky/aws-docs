@@ -24,7 +24,7 @@ database instances.
 
 - Any relevant Lambda limits. For more information, see [Lambda quotas](../../../lambda/latest/dg/gettingstarted-limits.md) in the _AWS Lambda Developer Guide_.
 
-- Only legacy connections support multiplexer setup.
+- Only Athena data catalog federated connectors support multiplexer setup.
 
 - Currently, Snowflake views with single split are supported.
 
@@ -90,6 +90,8 @@ aws glue describe-connection-type --connection-type SNOWFLAKE
 
 **Lambda environment properties**
 
+The following Lambda environment properties apply only when you use the connector with a Lambda function in your account.
+
 - glue\_connection – Specifies the name of the Glue connection associated with the federated connector.
 
 - **casing\_mode** – (Optional) Specifies
@@ -119,13 +121,13 @@ table called `Employee` in Snowflake, the query will fail.
 
 ###### Note
 
-- The Snowflake connector created using Glue connections does not support the use of a multiplexing handler.
+- The Snowflake connector created using a AWS Glue Data Catalog federated connection does not support the use of a multiplexing handler.
 
-- The Snowflake connector created using Glue connections only supports `ConnectionSchemaVersion` 2.
+- The Snowflake connector created using a AWS Glue Data Catalog federated connection only supports `ConnectionSchemaVersion` 2.
 
 **Storing credentials**
 
-All connectors that use Glue connections must use AWS Secrets Manager to store
+All connectors that use a AWS Glue Data Catalog federated connection must use AWS Secrets Manager to store
 credentials. For more information, see [Authenticate with Snowflake](connectors-snowflake-authentication.md).
 
 ###### Note

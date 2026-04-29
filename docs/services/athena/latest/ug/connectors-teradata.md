@@ -76,6 +76,8 @@ aws glue describe-connection-type --connection-type TERADATA
 
 **Lambda environment properties**
 
+The following Lambda environment properties apply only when you use the connector with a Lambda function in your account.
+
 - glue\_connection – Specifies the name of the Glue connection associated with the federated connector.
 
 - **casing\_mode** – (Optional) Specifies
@@ -95,11 +97,11 @@ Lower case all given schema and table names.
 
 ###### Note
 
-- All connectors that use Glue connections must use AWS Secrets Manager to store credentials.
+- All connectors that use a AWS Glue Data Catalog federated connection must use AWS Secrets Manager to store credentials.
 
-- The Teradata connector created using Glue connections does not support the use of a multiplexing handler.
+- The Teradata connector created using a AWS Glue Data Catalog federated connection does not support the use of a multiplexing handler.
 
-- The Teradata connector created using Glue connections only supports `ConnectionSchemaVersion` 2.
+- The Teradata connector created using a AWS Glue Data Catalog federated connection only supports `ConnectionSchemaVersion` 2.
 
 #### Connection string
 
