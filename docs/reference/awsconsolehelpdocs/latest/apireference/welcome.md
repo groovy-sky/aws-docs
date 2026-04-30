@@ -12,7 +12,7 @@ The `visibleServices` and `visibleRegions` settings control only the appearance 
 
 For more information about UXC features and console procedures, see [Getting started with AWS User Experience Customization](../../../../services/awsconsolehelpdocs/latest/gsg/getting-started-uxc.md). For information about required permissions, see [Identity and access management for AWS Management Console](../../../../services/awsconsolehelpdocs/latest/gsg/security-iam.md).
 
-This document was last published on April 16, 2026.
+This document was last published on April 29, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

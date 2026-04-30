@@ -62,6 +62,6 @@ You can also manage account customization settings programmatically or as infras
 
 AWS User Experience Customization
 
-Monitoring with CloudTrail logs
+API Reference
 
 All content copied from https://docs.aws.amazon.com/.
