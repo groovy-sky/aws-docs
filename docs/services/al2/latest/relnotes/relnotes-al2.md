@@ -8,6 +8,13 @@ The following table provides an overview of the important changes to Amazon Linu
 
 ChangeDescriptionDate
 
+[Updated packages](relnotes-20260427.md)
+
+Amazon Linux 2
+2.0.20260427.1 includes updated packages for this release.
+
+April 29, 2026
+
 [Updated packages](relnotes-20260413.md)
 
 Amazon Linux 2
