@@ -28,9 +28,7 @@ Used when invoking a Lambda function from your DB cluster.
 
 `aws_default_logs_role`
 
-This parameter is no longer required for exporting log data from your DB cluster to
-Amazon CloudWatch Logs. Aurora MySQL now uses a service-linked role for the required permissions. For more
-information about service-linked roles, see [Using service-linked roles for Amazon Aurora](usingwithrds-iam-servicelinkedroles.md).
+Used when publishing log data from your DB cluster to Amazon CloudWatch Logs with the `server_audit_logs_upload` parameter. For more information about publishing log data to Amazon CloudWatch Logs, see [Publishing Amazon Aurora MySQL logs to Amazon CloudWatch Logs](auroramysql-integrating-cloudwatch.md).
 
 `aws_default_s3_role`
 
@@ -41,7 +39,7 @@ In Aurora MySQL version 2, the IAM role specified in this parameter is used if a
 isn't specified for `aurora_load_from_s3_role` or
 `aurora_select_into_s3_role` for the appropriate statement.
 
-In Aurora MySQL version 3, the IAM role specified for this parameter is always used.
+In Aurora MySQL version 3 and version 8.4, the IAM role specified for this parameter is always used.
 
 `aurora_load_from_s3_role`
 
@@ -49,7 +47,7 @@ Used when invoking the `LOAD DATA FROM S3` or `LOAD XML FROM S3`
 statement from your DB cluster. If an IAM role is not specified for this parameter, the IAM
 role specified in `aws_default_s3_role` is used.
 
-In Aurora MySQL version 3, this parameter isn't available.
+In Aurora MySQL version 3 and version 8.4, this parameter isn't available.
 
 `aurora_select_into_s3_role`
 
@@ -57,7 +55,7 @@ Used when invoking the `SELECT INTO OUTFILE S3` statement from your DB cluster.
 If an IAM role is not specified for this parameter, the IAM role specified in
 `aws_default_s3_role` is used.
 
-In Aurora MySQL version 3, this parameter isn't available.
+In Aurora MySQL version 3 and version 8.4, this parameter isn't available.
 
 To associate an IAM role to permit your Amazon RDS cluster to communicate with other AWS services on your behalf, take
 the following steps.

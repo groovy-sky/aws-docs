@@ -12,15 +12,40 @@ number changes, for example going from version 10.6.14 to 10.6.16.
 
 ###### Topics
 
+- [Version currency timelines](#MariaDB.Concepts.VersionMgmt.VersionCurrencyTimelines)
+
 - [Supported MariaDB minor versions on Amazon RDS](#MariaDB.Concepts.VersionMgmt.Supported)
 
 - [Supported MariaDB major versions on Amazon RDS](#MariaDB.Concepts.VersionMgmt.ReleaseCalendar)
 
 - [Working with the Database Preview environment](#mariadb-working-with-the-database-preview-environment)
 
-- [MariaDB version 11.7 in the Database Preview environment](#mariadb-preview-environment-version-11-7)
+- [MariaDB version 12.3.1 in the Database Preview environment](#mariadb-preview-environment-version-12-3)
 
 - [Deprecated versions for Amazon RDS for MariaDB](#MariaDB.Concepts.DeprecatedVersions)
+
+## Version currency timelines
+
+RDS for MariaDB tracks community database engine releases on a defined cadence. These
+version currency timelines are published to give you transparency into that cadence.
+You can use these timelines to:
+
+- Plan major version upgrades and estimate when a new RDS for MariaDB major
+version will be available.
+
+- Schedule minor version upgrades during your maintenance windows.
+
+The following table lists the version currency timelines for RDS for MariaDB.
+
+Release typeTimelines
+
+Major versions
+
+Within 3 months of the community release of the first patch version
+
+Minor versions
+
+Within 30 days of the community release
 
 ## Supported MariaDB minor versions on Amazon RDS
 
@@ -724,13 +749,11 @@ rds-preview.us-east-2.amazonaws.com
 To create the RDS for MariaDB DB instance, follow the same process that you would
 for creating any Amazon RDS DB instance. For more information, see the [RDS API](user-createdbinstance.md#USER_CreateDBInstance.API) procedure in [Creating a DB instance](user-createdbinstance.md#USER_CreateDBInstance.Creating).
 
-## MariaDB version 11.7 in the Database Preview environment
+## MariaDB version 12.3.1 in the Database Preview environment
 
-MariaDB version 11.7 is now available in the Amazon RDS Database Preview environment.
-MariaDB version 11.7 contains several improvements that are described in [Changes and\
-improvements in MariaDB 11.7](https://mariadb.com/kb/en/changes-improvements-in-mariadb-11-7). This version also includes support for the
-vector data type, indexing, and search. For more information, see [Vector Overview](https://mariadb.com/kb/en/vector-overview) in the
-MariaDB documentation.
+MariaDB version 12.3.1 is now available in the Amazon RDS Database Preview environment.
+MariaDB version 12.3.1 contains several improvements that are described in [Changes and\
+improvements in MariaDB 12.3](https://mariadb.com/docs/release-notes/community-server/12.3/mariadb-12.3-changes-and-improvements).
 
 You can use the Database Preview environment to test your workloads against this
 release before it is available in all AWS Regions for production workloads. For
@@ -739,7 +762,7 @@ Preview Environment from the console, select [rds-preview/](https://console.aws.
 
 ## Deprecated versions for Amazon RDS for MariaDB
 
-Amazon RDS for MariaDB versions 10.0, 10.1, 10.2, and 10.3 are deprecated.
+Amazon RDS for MariaDB versions 10.0, 10.1, 10.2, 10.3, 10.4 and 10.5 are deprecated.
 
 For information about the Amazon RDS deprecation policy for MariaDB, see
 [Amazon RDS FAQs](https://aws.amazon.com/rds/faqs).

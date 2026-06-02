@@ -17,7 +17,7 @@ more information, see [Oracle time zone](appendix-oracle-options-timezone.md).
 
 The `alter_db_time_zone` procedure changes the time zone for
 only certain data types, and doesn't change `SYSDATE`. There are
-additional restrictions on setting the time zone listed in the [Oracle documentation](http://docs.oracle.com/cd/B19306_01/server.102/b14225/ch4datetime.htm).
+additional restrictions on setting the time zone listed in the [Oracle documentation](https://docs.oracle.com/en/database/oracle/oracle-database/19/nlspg/datetime-data-types-and-time-zone-support.html).
 
 ###### Note
 

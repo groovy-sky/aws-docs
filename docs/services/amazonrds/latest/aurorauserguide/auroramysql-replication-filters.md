@@ -93,7 +93,7 @@ You can use the `%` and `_` wildcard characters in the `replicate-wild-do-table`
 The binary logging format of the source DB instance is important for replication because it determines the record of data
 changes. The setting of the `binlog_format` parameter determines whether the replication is row-based or
 statement-based. For more information, see
-[Configuring Aurora MySQL binary logging for Single-AZ databases](user-logaccess-mysql-binaryformat.md).
+[Configuring Aurora MySQL binary logging](user-logaccess-mysql-binaryformat.md).
 
 ###### Note
 
@@ -104,7 +104,7 @@ All data definition language (DDL) statements are replicated as statements, rega
 
 The following limitations apply to replication filtering for Aurora MySQL:
 
-- Replication filters are supported only for Aurora MySQL version 3.
+- Replication filters are supported only for Aurora MySQL version 3 and version 8.4.
 
 - Each replication filtering parameter has a 2,000-character limit.
 

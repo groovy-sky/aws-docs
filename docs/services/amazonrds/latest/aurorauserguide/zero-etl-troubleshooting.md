@@ -194,6 +194,6 @@ zero-ETL integrations. For more information, see [DDL operations for Aurora Post
 
 Deleting zero-ETL integrations
 
-Using Aurora Serverless v2
+Using Aurora serverless
 
 All content copied from https://docs.aws.amazon.com/.

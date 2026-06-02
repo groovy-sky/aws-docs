@@ -50,7 +50,7 @@ Microsoft Windows Code Page 1257 8-bit Baltic
 
 CL8ISO8859P5
 
-ISO 88559-5 Latin/Cyrillic
+ISO 8859-5 Latin/Cyrillic
 
 CL8MSWIN1251
 

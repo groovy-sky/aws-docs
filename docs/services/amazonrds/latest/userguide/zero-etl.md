@@ -237,6 +237,15 @@ integrations.
 - If you perform [declarative partitioning](https://www.postgresql.org/docs/current/ddl-partitioning.html) transactions on the source DB instance, all
 affected tables enter a failed state and are no longer accessible.
 
+- If `max_slot_wal_keep_size` is set to a finite value on the
+source RDS for PostgreSQL instance, the logical replication slot used by the
+integration can be invalidated when WAL retention exceeds that size. An
+invalidated slot stops replication and the integration cannot recover
+without recreation. We recommend leaving `max_slot_wal_keep_size`
+at its PostgreSQL default of `-1` (unlimited), or setting it
+large enough to accommodate WAL generated during integration bootstrap and
+transient lag.
+
 ### RDS for Oracle limitations
 
 - The source database must be an RDS for Oracle instance running version 19c
@@ -289,7 +298,7 @@ Regions, see [Supported Regions and DB engines for Amazon RDS zero-ETL integrati
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Using RDS Proxy with Blue/Green Deployments
+Configuration guidelines
 
 Getting started with
 zero-ETL integrations

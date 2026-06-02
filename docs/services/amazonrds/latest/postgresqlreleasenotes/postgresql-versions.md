@@ -54,6 +54,8 @@ the PostgreSQL documentation.
 
 ###### Minor versions
 
+- [PostgreSQL version 18.4 on Amazon RDS](#postgresql-versions-version184)
+
 - [PostgreSQL version 18.3 on Amazon RDS](#postgresql-versions-version183)
 
 - [PostgreSQL version 18.2 on Amazon RDS](#postgresql-versions-version182)
@@ -69,6 +71,40 @@ the PostgreSQL documentation.
 - [PostgreSQL version 18 Beta 2 in the Amazon RDS Preview environment](#postgresql-versions-version18Beta2)
 
 - [PostgreSQL version 18 Beta 1 in the Amazon RDS Preview environment](#postgresql-versions-version18Beta1)
+
+### PostgreSQL version 18.4 on Amazon RDS
+
+PostgreSQL version 18.4 is now available on Amazon RDS. This release contains several fixes and
+improvements for PostgreSQL announced in the [PostgreSQL 18.4 release](https://www.postgresql.org/docs/release/18.4).
+
+**General enhancements**
+
+- Fixed `pgactive` extension unavailability issue during TRUNCATE operations.
+
+- Enabled SET for the parameter 'plv8.memory\_limit'.
+
+This version also includes the following extension changes:
+
+- The `pgactive` extension was updated to version 2.1.8.
+
+- The `PostGIS` extension was updated to version 3.6.3, and the following
+dependencies were updated:
+
+- Added support for postgis\_topology.
+
+- PROJ\_DATA was updated to version 1.24.
+
+- GEOS was updated to 3.14.1.
+
+- GDAL was updated to 3.11.5.
+
+- The `pg_partman` extension was updated to version 5.4.3.
+
+- The `pgcollection` extension was updated to version 1.1.1.
+
+- The `pgvector` extension was updated to version 0.8.2.
+
+- The `pgtap` extension was updated to version 1.3.4.
 
 ### PostgreSQL version 18.3 on Amazon RDS
 
@@ -86,7 +122,7 @@ improvements for PostgreSQL announced in the [PostgreSQL 18.2 release](https://w
 
 - Enhanced data collection capabilities.
 
-- _Advanced query performance monitoring_: Introduced the pg\_stat\_monitor extension to provide comprehensive query performance insights and help identify performance bottlenecks.
+- _Advanced query performance monitoring_: Introduced the pg\_stat\_monitor extension for PostgreSQL 18.2 and higher to provide comprehensive query performance insights and help identify performance bottlenecks. For extension availability by version, see [Extension versions for Amazon RDS for PostgreSQL](postgresql-extensions.md).
 
 This version also includes the following extension changes:
 
@@ -463,6 +499,8 @@ For version information on all extensions, see [Extensions supported for RDS for
 
 ###### Minor versions
 
+- [PostgreSQL version 17.10 on Amazon RDS](#postgresql-versions-version1710)
+
 - [PostgreSQL version 17.9 on Amazon RDS](#postgresql-versions-version179)
 
 - [PostgreSQL version 17.8 on Amazon RDS](#postgresql-versions-version178)
@@ -500,6 +538,34 @@ For version information on all extensions, see [Extensions supported for RDS for
 - [PostgreSQL version 17 Beta 2 in the Amazon RDS Preview environment](#postgresql-versions-version17Beta2)
 
 - [PostgreSQL version 17 Beta 1 in the Amazon RDS Preview environment](#postgresql-versions-version17Beta1)
+
+### PostgreSQL version 17.10 on Amazon RDS
+
+PostgreSQL version 17.10 is now available on Amazon RDS. This release contains several fixes and
+improvements for PostgreSQL announced in the [PostgreSQL 17.10 release](https://www.postgresql.org/docs/release/17.10).
+
+**General enhancements**
+
+- Fixed `pgactive` extension unavailability issue during TRUNCATE operations.
+
+- Enabled SET for the parameter 'plv8.memory\_limit'.
+
+This version also includes the following extension changes:
+
+- The `pgactive` extension was updated to version 2.1.8.
+
+- The `PostGIS` extension was updated to version 3.5.6, and the following
+dependencies were updated:
+
+- PROJ\_DATA was updated to version 1.24.
+
+- The `pg_partman` extension was updated to version 5.4.3.
+
+- The `pgcollection` extension was updated to version 1.1.1.
+
+- The `pgvector` extension was updated to version 0.8.2.
+
+- The `pgtap` extension was updated to version 1.3.4.
 
 ### PostgreSQL version 17.9 on Amazon RDS
 
@@ -991,6 +1057,8 @@ For version information on all extensions, see [Extensions supported for RDS for
 
 ###### Minor versions
 
+- [PostgreSQL version 16.14 on Amazon RDS](#postgresql-versions-version1614)
+
 - [PostgreSQL version 16.13 on Amazon RDS](#postgresql-versions-version1613)
 
 - [PostgreSQL version 16.12 on Amazon RDS](#postgresql-versions-version1612)
@@ -1052,6 +1120,38 @@ For version information on all extensions, see [Extensions supported for RDS for
 - [PostgreSQL version 16 Beta 2 in the Amazon RDS Preview environment](#postgresql-versions-version16Beta2)
 
 - [PostgreSQL version 16 Beta 1 in the Amazon RDS Preview environment](#postgresql-versions-version16Beta1)
+
+### PostgreSQL version 16.14 on Amazon RDS
+
+PostgreSQL version 16.14 is now available on Amazon RDS. This release contains several fixes and
+improvements for PostgreSQL announced in the [PostgreSQL 16.14 release](https://www.postgresql.org/docs/release/16.14).
+
+**General enhancements**
+
+- Fixed `pgactive` extension unavailability issue during TRUNCATE operations.
+
+- Enabled SET for the parameter 'plv8.memory\_limit'.
+
+- Added support for auto\_explain Configuration Parameters (auto\_explain.log\_wal,
+auto\_explain.log\_settings, auto\_explain.log\_level) in Amazon RDS PostgreSQL version 16 DB
+parameter groups.
+
+This version also includes the following extension changes:
+
+- The `pgactive` extension was updated to version 2.1.8.
+
+- The `PostGIS` extension was updated to version 3.4.6, and the following
+dependencies were updated:
+
+- PROJ\_DATA was updated to version 1.24.
+
+- The `pg_partman` extension was updated to version 5.4.3.
+
+- The `pgcollection` extension was updated to version 1.1.1.
+
+- The `pgvector` extension was updated to version 0.8.2.
+
+- The `pgtap` extension was updated to version 1.3.4.
 
 ### PostgreSQL version 16.13 on Amazon RDS
 
@@ -1738,6 +1838,8 @@ For version information on all extensions, see [Extensions supported for RDS for
 
 ###### Minor versions
 
+- [PostgreSQL version 15.18 on Amazon RDS](#postgresql-versions-version1518)
+
 - [PostgreSQL version 15.17 on Amazon RDS](#postgresql-versions-version1517)
 
 - [PostgreSQL version 15.16 on Amazon RDS](#postgresql-versions-version1516)
@@ -1803,6 +1905,38 @@ For version information on all extensions, see [Extensions supported for RDS for
 - [PostgreSQL version 15.2-R2 on Amazon RDS (Deprecated)](#postgresql-versions-version152R2)
 
 - [PostgreSQL version 15.2 on Amazon RDS (Deprecated)](#postgresql-versions-version152)
+
+### PostgreSQL version 15.18 on Amazon RDS
+
+PostgreSQL version 15.18 is now available on Amazon RDS. This release contains several fixes and
+improvements for PostgreSQL announced in the [PostgreSQL 15.18 release](https://www.postgresql.org/docs/release/15.18).
+
+**General enhancements**
+
+- Fixed `pgactive` extension unavailability issue during TRUNCATE operations.
+
+- Enabled SET for the parameter 'plv8.memory\_limit'.
+
+- Added support for auto\_explain Configuration Parameters (auto\_explain.log\_wal,
+auto\_explain.log\_settings, auto\_explain.log\_level) in Amazon RDS PostgreSQL version 15 DB
+parameter groups.
+
+This version also includes the following extension changes:
+
+- The `pgactive` extension was updated to version 2.1.8.
+
+- The `PostGIS` extension was updated to version 3.4.6, and the following
+dependencies were updated:
+
+- PROJ\_DATA was updated to version 1.24.
+
+- The `pg_partman` extension was updated to version 5.4.3.
+
+- The `pgcollection` extension was updated to version 1.1.1.
+
+- The `pgvector` extension was updated to version 0.8.2.
+
+- The `pgtap` extension was updated to version 1.3.4.
 
 ### PostgreSQL version 15.17 on Amazon RDS
 
@@ -2521,6 +2655,8 @@ For version information on all extensions, see [Extensions supported for RDS for
 
 ###### Minor versions
 
+- [PostgreSQL version 14.23 on Amazon RDS](#postgresql-versions-version1423)
+
 - [PostgreSQL version 14.22 on Amazon RDS](#postgresql-versions-version1422)
 
 - [PostgreSQL version 14.21 on Amazon RDS](#postgresql-versions-version1421)
@@ -2598,6 +2734,36 @@ For version information on all extensions, see [Extensions supported for RDS for
 - [PostgreSQL version 14.2 on Amazon RDS (Deprecated)](#postgresql-versions-version142)
 
 - [PostgreSQL version 14.1 on Amazon RDS (Deprecated)](#postgresql-versions-version141)
+
+### PostgreSQL version 14.23 on Amazon RDS
+
+PostgreSQL version 14.23 is now available on Amazon RDS. This release contains several fixes and
+improvements for PostgreSQL announced in the [PostgreSQL 14.23 release](https://www.postgresql.org/docs/release/14.23).
+
+**General enhancements**
+
+- Fixed `pgactive` extension unavailability issue during TRUNCATE operations.
+
+- Enabled SET for the parameter 'plv8.memory\_limit'.
+
+- Added support for auto\_explain Configuration Parameters (auto\_explain.log\_wal,
+auto\_explain.log\_settings, auto\_explain.log\_level) in Amazon RDS PostgreSQL version 14 DB
+parameter groups.
+
+This version also includes the following extension changes:
+
+- The `pgactive` extension was updated to version 2.1.8.
+
+- The `PostGIS` extension was updated to version 3.4.6, and the following
+dependencies were updated:
+
+- PROJ\_DATA was updated to version 1.24.
+
+- The `pg_partman` extension was updated to version 5.4.3.
+
+- The `pgvector` extension was updated to version 0.8.2.
+
+- The `pgtap` extension was updated to version 1.3.4.
 
 ### PostgreSQL version 14.22 on Amazon RDS
 

@@ -38,6 +38,10 @@ This procedure is supported for the following Amazon RDS for Oracle DB engine ve
 
 - Oracle Database 19c (19.0.0)
 
+###### Note
+
+Before running a backup, ensure the target directory exists. To create a directory: `EXEC rdsadmin.rdsadmin_util.create_directory('MYDIRECTORY');`
+
 The following example performs a full backup of the DB instance using the
 specified values for the parameters.
 
@@ -53,6 +57,13 @@ BEGIN
         p_rman_to_dbms_output => FALSE);
 END;
 /
+```
+
+To verify the backup completed and list the output files:
+
+```sql
+
+SELECT FILENAME, FILESIZE FROM TABLE(rdsadmin.rds_file_util.listdir('MYDIRECTORY'));
 ```
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)

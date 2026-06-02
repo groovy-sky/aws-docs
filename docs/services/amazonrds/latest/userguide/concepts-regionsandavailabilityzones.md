@@ -505,6 +505,6 @@ Currently, the only AWS Local Zone where Amazon RDS is available is Los Angeles 
 
 DB instance storage
 
-Supported Amazon RDS features by Region and engine
+Region opt-out and opt-in behavior
 
 All content copied from https://docs.aws.amazon.com/.

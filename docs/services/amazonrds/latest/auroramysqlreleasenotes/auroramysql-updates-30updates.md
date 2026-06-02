@@ -82,7 +82,7 @@ The following are database engine updates for Amazon Aurora MySQL version 3.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Aurora MySQL release calendars
+Aurora MySQL 8.4.7, May 21, 2026
 
 Aurora MySQL updates: 2026-02-17 (version 3.12.0, compatible with MySQL 8.0.44)
 

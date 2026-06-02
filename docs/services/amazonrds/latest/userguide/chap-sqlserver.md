@@ -65,7 +65,7 @@ guide. For more information, see [Setting up your Amazon RDS environment](chap-s
 
 - [Microsoft SQL Server versions on Amazon RDS](sqlserver-concepts-general-versionsupport.md)
 
-- [Amazon RDS for SQL Server version policy](sqlserver-concepts-general-versionpolicy.md)
+- [Version policy for Amazon RDS for Microsoft SQL Server](sqlserver-concepts-general-versionpolicy.md)
 
 - [Microsoft SQL Server features on Amazon RDS](sqlserver-concepts-general-featuresupport.md)
 
@@ -82,6 +82,8 @@ guide. For more information, see [Setting up your Amazon RDS environment](chap-s
 - [Connecting to your Microsoft SQL Server DB instance](user-connecttomicrosoftsqlserverinstance.md)
 
 - [Working with SQL Server Developer Edition on RDS for SQL Server](sqlserver-dev-edition.md)
+
+- [Bring Your Own Media (BYOM) for RDS for SQL Server](sqlserver-byom.md)
 
 - [Working with Active Directory with RDS for SQL Server](user-sqlserver-activedirectorywindowsauth.md)
 

@@ -20,6 +20,25 @@ New with Database?](https://aws.amazon.com/about-aws/whats-new/database) page. F
 
 ChangeDescriptionDate
 
+Aurora MySQL version 8.4 security documentation
+
+Added and updated documentation for security features in Aurora MySQL version 8.4, including authentication policy changes,
+password policies and the validate\_password component, TLS and cipher suite updates, new dynamic privileges,
+upgrade considerations from version 3 to 8.4, differences between Aurora MySQL 8.4 and MySQL 8.4 Community Edition,
+new upgrade prechecks, and master user privilege updates.
+For more information, see [Aurora MySQL version 8.4 compatible with MySQL 8.4](auroramysql-mysql84.md),
+[Comparing Aurora MySQL version 3 and version 8.4](auroramysql-compare-v3-v84.md),
+[Security considerations for upgrading from version 3 to 8.4](auroramysql-upgrade-v3-v84-security.md),
+[Comparing Aurora MySQL version 8.4 and MySQL 8.4 Community Edition](auroramysql-compare-v84-community.md),
+[Password policies and Password validation](auroramysql-passwordpolicies.md),
+[Security with Aurora MySQL](auroramysql-security.md),
+[Aurora MySQL reference](user-auroramysql-reference.md),
+[Aurora MySQL upgrade precheck descriptions](aurora-mysql-precheck-descriptions.md),
+[Master user account privileges](usingwithrds-masteraccounts.md), and
+[Password management with Amazon SageMaker AI](rds-secrets-manager.md).
+
+April 20, 2026
+
 Aurora PostgreSQL Zero-ETL integrations with Amazon SageMaker support additional Regions
 
 Aurora PostgreSQL Zero-ETL integrations with Amazon SageMaker are now available in additional Regions. For
@@ -118,13 +137,13 @@ January 7, 2025
 End-of-life information for Aurora Serverless v1
 
 AWS has announced the end-of-life date for Aurora Serverless v1: March 31st, 2025.
-We strongly recommend upgrading any Aurora Serverless v1 DB clusters to Aurora Serverless v2
+We strongly recommend upgrading any Aurora Serverless v1 DB clusters to Aurora serverless
 before that date. The upgrade can involve a change in the major version number
 of the database engine. Thus, it's important to plan, test, and implement this switchover
 before the end-of-life date.
 Starting January 8th, 2025, customers will no longer be able to create new Aurora Serverless v1 clusters or instances with either the AWS Management Console or the CLI.
-For information about the upgrade procedure from Aurora Serverless v1 to Aurora Serverless v2, see
-[Upgrading from an Aurora Serverless v1 cluster to Aurora Serverless v2](aurora-serverless-v2-upgrade.md#aurora-serverless-v2.upgrade-from-serverless-v1-procedure).
+For information about the upgrade procedure from Aurora Serverless v1 to Aurora serverless, see
+[Upgrading from an Aurora Serverless v1 cluster to Aurora serverless](aurora-serverless-v2-upgrade.md#aurora-serverless-v2.upgrade-from-serverless-v1-procedure).
 
 December 6, 2024
 
@@ -142,12 +161,12 @@ You can now use the db.r8g instance classes to create Aurora DB clusters. For mo
 
 November 21, 2024
 
-Aurora Serverless v2 supports automatic pause and resume
+Aurora serverless supports automatic pause and resume
 
-Aurora Serverless v2 DB instances can now scale all the way down to zero Aurora capacity units (ACUs)
+Aurora serverless DB instances can now scale all the way down to zero Aurora capacity units (ACUs)
 after a period of inactivity. To enable this feature, you set the minimum capacity value to 0 ACUs.
 For more information, see
-[Automatic pause and resume for Aurora Serverless v2](aurora-serverless-v2-auto-pause.md).
+[Automatic pause and resume for Aurora serverless](aurora-serverless-v2-auto-pause.md).
 
 November 20, 2024
 
@@ -235,10 +254,10 @@ zero-ETL integrations with Amazon Redshift](zero-etl.md).
 
 October 15, 2024
 
-Aurora Serverless v2 supports 256 ACUs
+Aurora serverless supports 256 ACUs
 
-You can now create Aurora Serverless v2 DB clusters with a maximum capacity of 256 Aurora capacity units (ACUs). For more information, see
-[Aurora Serverless v2 capacity](aurora-serverless-v2-how-it-works.md#aurora-serverless-v2.how-it-works.capacity).
+You can now create Aurora serverless DB clusters with a maximum capacity of 256 Aurora capacity units (ACUs). For more information, see
+[Aurora serverless capacity](aurora-serverless-v2-how-it-works.md#aurora-serverless-v2.how-it-works.capacity).
 
 October 3, 2024
 
@@ -258,9 +277,9 @@ For information about Performance Insights support, see
 
 September 26, 2024
 
-RDS Data API for Aurora Serverless v2 and provisioned is available for Aurora MySQL
+RDS Data API for Aurora serverless and provisioned is available for Aurora MySQL
 
-RDS Data API is now available for Aurora MySQL clusters that use Aurora Serverless v2 or provisioned instances.
+RDS Data API is now available for Aurora MySQL clusters that use Aurora serverless or provisioned instances.
 For usage information for RDS Data API, see
 [Using RDS Data API](data-api.md).
 For information about Aurora MySQL version and AWS Region support for RDS Data API, see
@@ -293,13 +312,13 @@ Amazon RDS removed `sns:Publish` permission from the
 
 August 7, 2024
 
-Aurora Serverless v2 supports auto-pause (scale-to-zero)
+Aurora serverless supports auto-pause (scale-to-zero)
 
-Aurora Serverless v2 DB instances can now scale all the way down to zero Aurora capacity units (ACUs)
+Aurora serverless DB instances can now scale all the way down to zero Aurora capacity units (ACUs)
 after a period of inactivity. To enable this feature, you set the minimum capacity value to 0.
 
 For more information, see
-[Using Aurora Serverless v2](aurora-serverless-v2.md).
+[Using Aurora serverless](aurora-serverless-v2.md).
 
 July 25, 2024
 
@@ -310,7 +329,7 @@ The Amazon Web Services (AWS) ODBC Driver for MySQL is a client driver designed 
 
 July 18, 2024
 
-RDS Data API for Aurora Serverless v2 is available in more Regions
+RDS Data API for Aurora serverless is available in more Regions
 
 RDS Data API is now available for Aurora PostgreSQL in several additional AWS Regions.
 For information about Region support for RDS Data API, see
@@ -428,9 +447,9 @@ Amazon RDS Proxy](rds-proxy.md).
 
 January 8, 2024
 
-RDS Data API with Aurora PostgreSQL Serverless v2 and provisioned
+RDS Data API with Aurora PostgreSQL Aurora serverless and provisioned
 
-You can now use RDS Data API with Aurora PostgreSQL Serverless v2 and provisioned DB clusters.
+You can now use RDS Data API with Aurora PostgreSQL Aurora serverless and provisioned DB clusters.
 With RDS Data API, you can access your Aurora clusters through a secure HTTP endpoint and run SQL statements without using
 database drivers or managing connections. For more information, see [Using RDS Data API](data-api.md).
 
@@ -624,10 +643,10 @@ Amazon Aurora MySQL DB cluster](aurora-mysql-write-forwarding.md).
 
 July 31, 2023
 
-Amazon Aurora supports Aurora Serverless v2 in an additional AWS Region
+Amazon Aurora supports Aurora serverless in an additional AWS Region
 
-You can now create Aurora Serverless v2 DB clusters in the Asia Pacific (Melbourne) AWS Region. For information about
-Aurora Serverless v2, see [Using Aurora Serverless v2](aurora-serverless-v2.md).
+You can now create Aurora serverless DB clusters in the Asia Pacific (Melbourne) AWS Region. For information about
+Aurora serverless, see [Using Aurora serverless](aurora-serverless-v2.md).
 
 June 28, 2023
 
@@ -663,13 +682,13 @@ for Amazon Aurora DB clusters](aurora-overview-storagereliability.md#aurora-stor
 
 May 11, 2023
 
-Amazon Aurora supports Aurora Serverless v2 in additional AWS Regions
+Amazon Aurora supports Aurora serverless in additional AWS Regions
 
-You can now create Aurora Serverless v2 DB clusters in the following AWS Regions:
+You can now create Aurora serverless DB clusters in the following AWS Regions:
 Asia Pacific (Hyderabad), Europe (Spain) Europe (Zurich),
-and Middle East (UAE). For information about Aurora Serverless v2, see
+and Middle East (UAE). For information about Aurora serverless, see
 [Using\
-Aurora Serverless v2](aurora-serverless-v2.md).
+Aurora serverless](aurora-serverless-v2.md).
 
 May 4, 2023
 
@@ -731,10 +750,10 @@ Amazon RDS Proxy](rds-proxy.md).
 
 March 15, 2023
 
-Amazon Aurora supports Aurora Serverless v2 in the China Regions
+Amazon Aurora supports Aurora serverless in the China Regions
 
-Aurora Serverless v2 is now available in the China (Beijing) and China (Ningxia) Regions. For more information, see
-[Aurora Serverless v2](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md).
+Aurora serverless is now available in the China (Beijing) and China (Ningxia) Regions. For more information, see
+[Aurora serverless](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md).
 
 March 15, 2023
 
@@ -851,10 +870,10 @@ in Secrets Manager. For more information, see [Password management with Amazon A
 
 December 22, 2022
 
-Amazon Aurora supports Aurora Serverless v2 in additional AWS Regions
+Amazon Aurora supports Aurora serverless in additional AWS Regions
 
-Aurora Serverless v2 is now available in the Africa (Cape Town) and Europe (Milan) Regions. For more information, see
-[Aurora Serverless v2](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md).
+Aurora serverless is now available in the Africa (Cape Town) and Europe (Milan) Regions. For more information, see
+[Aurora serverless](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md).
 
 December 21, 2022
 
@@ -1081,10 +1100,10 @@ For more information, see
 
 April 27, 2022
 
-Amazon Aurora Serverless v2 is now generally available
+Amazon Aurora serverless is now generally available
 
-Amazon Aurora Serverless v2 is generally available for all users. For more information, see
-[Using Aurora Serverless v2](aurora-serverless-v2.md).
+Amazon Aurora serverless is generally available for all users. For more information, see
+[Using Aurora serverless](aurora-serverless-v2.md).
 
 April 21, 2022
 
@@ -1441,10 +1460,10 @@ types](concepts-dbinstanceclass.md#Concepts.DBInstanceClass.Types).
 
 December 11, 2020
 
-Amazon Aurora Serverless v2 is now available in preview.
+Amazon Aurora serverless is now available in preview.
 
-Amazon Aurora Serverless v2 is available in preview. To work with Amazon Aurora Serverless v2, apply for access. For more information,
-see the [Aurora Serverless v2\
+Amazon Aurora serverless is available in preview. To work with Amazon Aurora serverless, apply for access. For more information,
+see the [Aurora serverless\
 page](https://pages.awscloud.com/AmazonAuroraServerlessv2Preview.html).
 
 December 1, 2020

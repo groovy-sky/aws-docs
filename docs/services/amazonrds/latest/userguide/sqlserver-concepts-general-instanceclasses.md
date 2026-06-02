@@ -31,6 +31,10 @@ Enterprise Edition
 
 `db.r7i.xlarge`– `db.r7i.48xlarge`
 
+`db.r8a.xlarge`– `db.r8a.16xlarge`
+
+`db.r8i.xlarge`– `db.r8i.96xlarge`
+
 `db.m5.xlarge`– `db.m5.24xlarge`
 
 `db.m5d.xlarge`– `db.m5d.24xlarge`
@@ -38,6 +42,10 @@ Enterprise Edition
 `db.m6i.xlarge`– `db.m6i.32xlarge`
 
 `db.m7i.xlarge`– `db.m7i.48xlarge`
+
+`db.m8a.xlarge`– `db.m8a.16xlarge`
+
+`db.m8i.xlarge`– `db.m8i.96xlarge`
 
 `db.x2iedn.xlarge`– `db.x2iedn.32xlarge`
 
@@ -55,6 +63,10 @@ Enterprise Edition
 
 `db.r7i.xlarge`– `db.r7i.48xlarge`
 
+`db.r8a.xlarge`– `db.r8a.16xlarge`
+
+`db.r8i.xlarge`– `db.r8i.96xlarge`
+
 `db.m5.xlarge`– `db.m5.24xlarge`
 
 `db.m5d.xlarge`– `db.m5d.24xlarge`
@@ -62,6 +74,10 @@ Enterprise Edition
 `db.m6i.xlarge`– `db.m6i.32xlarge`
 
 `db.m7i.xlarge`– `db.m7i.48xlarge`
+
+`db.m8a.xlarge`– `db.m8a.16xlarge`
+
+`db.m8i.xlarge`– `db.m8i.96xlarge`
 
 `db.x2iedn.xlarge`– `db.x2iedn.32xlarge`
 
@@ -79,6 +95,10 @@ Enterprise Edition
 
 `db.r7i.xlarge`– `db.r7i.48xlarge`
 
+`db.r8a.xlarge`– `db.r8a.16xlarge`
+
+`db.r8i.xlarge`– `db.r8i.96xlarge`
+
 `db.m5.xlarge`– `db.m5.24xlarge`
 
 `db.m5d.xlarge`– `db.m5d.24xlarge`
@@ -86,6 +106,10 @@ Enterprise Edition
 `db.m6i.xlarge`– `db.m6i.32xlarge`
 
 `db.m7i.xlarge`– `db.m7i.48xlarge`
+
+`db.m8a.xlarge`– `db.m8a.16xlarge`
+
+`db.m8i.xlarge`– `db.m8i.96xlarge`
 
 `db.x2iedn.xlarge`– `db.x2iedn.32xlarge`
 
@@ -105,6 +129,10 @@ Standard Edition
 
 `db.r7i.large`– `db.r7i.12xlarge`
 
+`db.r8a.large`– `db.r8a.12xlarge`
+
+`db.r8i.large`– `db.r8i.12xlarge`
+
 `db.m5.large`– `db.m5.24xlarge`
 
 `db.m5d.large`– `db.m5d.24xlarge`
@@ -112,6 +140,10 @@ Standard Edition
 `db.m6i.large`– `db.m6i.8xlarge`
 
 `db.m7i.large`– `db.m7i.12xlarge`
+
+`db.m8a.large`– `db.m8a.12xlarge`
+
+`db.m8i.large`– `db.m8i.12xlarge`
 
 `db.x2iedn.xlarge`– `db.x2iedn.8xlarge`
 
@@ -129,6 +161,10 @@ Standard Edition
 
 `db.r7i.large`– `db.r7i.12xlarge`
 
+`db.r8a.large`– `db.r8a.12xlarge`
+
+`db.r8i.large`– `db.r8i.12xlarge`
+
 `db.m5.large`– `db.m5.24xlarge`
 
 `db.m5d.large`– `db.m5d.24xlarge`
@@ -136,6 +172,10 @@ Standard Edition
 `db.m6i.large`– `db.m6i.8xlarge`
 
 `db.m7i.large`– `db.m7i.12xlarge`
+
+`db.m8a.large`– `db.m8a.12xlarge`
+
+`db.m8i.large`– `db.m8i.12xlarge`
 
 `db.x2iedn.xlarge`– `db.x2iedn.32xlarge`
 
@@ -153,6 +193,10 @@ Standard Edition
 
 `db.r7i.large`– `db.r7i.12xlarge`
 
+`db.r8a.large`– `db.r8a.12xlarge`
+
+`db.r8i.large`– `db.r8i.12xlarge`
+
 `db.m5.large`– `db.m5.24xlarge`
 
 `db.m5d.large`– `db.m5d.24xlarge`
@@ -160,6 +204,10 @@ Standard Edition
 `db.m6i.large`– `db.m6i.8xlarge`
 
 `db.m7i.large`– `db.m7i.12xlarge`
+
+`db.m8a.large`– `db.m8a.12xlarge`
+
+`db.m8i.large`– `db.m8i.12xlarge`
 
 `db.x2iedn.xlarge`– `db.x2iedn.32xlarge`
 
@@ -179,6 +227,10 @@ Web Edition
 
 `db.r7i.large`– `db.r7i.4xlarge`
 
+`db.r8a.large`– `db.r8a.8xlarge`
+
+`db.r8i.large`– `db.r8i.8xlarge`
+
 `db.m5.large`– `db.m5.4xlarge`
 
 `db.m5d.large`– `db.m5d.4xlarge`
@@ -186,6 +238,10 @@ Web Edition
 `db.m6i.large`– `db.m6i.4xlarge`
 
 `db.m7i.large`– `db.m7i.4xlarge`
+
+`db.m8a.large`– `db.m8a.8xlarge`
+
+`db.m8i.large`– `db.m8i.8xlarge`
 
 `db.z1d.large`– `db.z1d.13xlarge`
 
@@ -201,6 +257,10 @@ Web Edition
 
 `db.r7i.large`– `db.r7i.4xlarge`
 
+`db.r8a.large`– `db.r8a.8xlarge`
+
+`db.r8i.large`– `db.r8i.8xlarge`
+
 `db.m5.large`– `db.m5.4xlarge`
 
 `db.m5d.large`– `db.m5d.4xlarge`
@@ -208,6 +268,10 @@ Web Edition
 `db.m6i.large`– `db.m6i.4xlarge`
 
 `db.m7i.large`– `db.m7i.4xlarge`
+
+`db.m8a.large`– `db.m8a.8xlarge`
+
+`db.m8i.large`– `db.m8i.8xlarge`
 
 `db.z1d.large`– `db.z1d.3xlarge`
 
@@ -223,6 +287,10 @@ Web Edition
 
 `db.r7i.large`– `db.r7i.4xlarge`
 
+`db.r8a.large`– `db.r8a.8xlarge`
+
+`db.r8i.large`– `db.r8i.8xlarge`
+
 `db.m5.large`– `db.m5.4xlarge`
 
 `db.m5d.large`– `db.m5d.4xlarge`
@@ -230,6 +298,10 @@ Web Edition
 `db.m6i.large`– `db.m6i.4xlarge`
 
 `db.m7i.large`– `db.m7i.4xlarge`
+
+`db.m8a.large`– `db.m8a.8xlarge`
+
+`db.m8i.large`– `db.m8i.8xlarge`
 
 `db.z1d.large`– `db.z1d.3xlarge`
 
@@ -245,7 +317,15 @@ Developer Edition
 
 `db.m6i.xlarge`– `db.m6i.32xlarge`
 
+`db.m8a.xlarge`– `db.m8a.16xlarge`
+
+`db.m8i.xlarge`– `db.m8i.96xlarge`
+
 `db.r6i.xlarge`– `db.r6i.32xlarge`
+
+`db.r8a.xlarge`– `db.r8a.16xlarge`
+
+`db.r8i.xlarge`– `db.r8i.96xlarge`
 
 ###### Note
 

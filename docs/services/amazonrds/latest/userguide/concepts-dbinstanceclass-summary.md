@@ -99,6 +99,11 @@ the general-purpose instance classes.
 
 Instance classvCPUECUMemory (GiB)Instance storage (GiB)Max. EBS bandwidth (Mbps)Network bandwidth (Gbps)db.m8g.48xlarge192—768EBS-optimized only40,00050db.m8g.24xlarge96—384EBS-optimized only30,00040db.m8g.16xlarge64—256EBS-optimized only20,00030db.m8g.12xlarge48—192EBS-optimized only15,00022.5db.m8g.8xlarge32—128EBS-optimized only10,00015db.m8g.4xlarge\*16—64EBS-optimized onlyUp to 10,000Up to 15db.m8g.2xlarge\*8—32EBS-optimized onlyUp to 10,000Up to 15db.m8g.xlarge\*4—16EBS-optimized onlyUp to 10,000Up to 12.5db.m8g.large\*2—8EBS-optimized onlyUp to 10,000Up to 12.5
 
+**db.m8i – general-purpose instance classes powered**
+**by Intel Xeon 6 processors**
+
+Instance classvCPUProcessor coresSocketsECUMemory (GiB)Instance storage (GiB)Max. EBS bandwidth (Mbps)Network bandwidth (Gbps)db.m8i.metal-96xl3841922—1,536EBS only80,000100db.m8i.metal-48xl192961—768EBS only60,00075db.m8i.96xlarge384———1,536EBS only80,000100db.m8i.48xlarge192———768EBS only60,00075db.m8i.32xlarge128———512EBS only40,00050db.m8i.24xlarge96———384EBS only30,00040db.m8i.16xlarge64———256EBS only20,00030db.m8i.12xlarge48———192EBS only15,00022.5db.m8i.8xlarge32———128EBS only10,00015db.m8i.4xlarge16———64EBS onlyUp to 10,000Up to 15db.m8i.2xlarge8———32EBS onlyUp to 10,000Up to 15db.m8i.xlarge4———16EBS onlyUp to 10,000Up to 12.5db.m8i.large2———8EBS onlyUp to 10,000Up to 12.5
+
 **db.m7i – general-purpose instance classes powered by 4th**
 **generation Intel Xeon Scalable processors**
 
@@ -197,7 +202,7 @@ Instance classvCPUProcessor coresSocketsECUMemory (GiB)Instance storage (GiB)Max
 **db.x2iezn – memory-optimized instance classes with 2nd**
 **generation Intel Xeon Scalable processors**
 
-Instance classvCPUProcessor coresSocketsECUMemory (GiB)Instance storage (GiB)Max. EBS bandwidth (Mbps)Network bandwidth (Gbps)db.x2iezn.metal48242—1,536EBS-optimized only19,000100db.x2iezn.12xlarge>48———1,536EBS-optimized only19,000100db.x2iezn.8xlarge32———1,024EBS-optimized only12,00075db.x2iezn.6xlarge24———768EBS-optimized onlyUp to 9,50050db.x2iezn.4xlarge16———512EBS-optimized onlyUp to 4,750Up to 25db.x2iezn.2xlarge8———256EBS-optimized onlyUp to 3,170Up to 25
+Instance classvCPUProcessor coresSocketsECUMemory (GiB)Instance storage (GiB)Max. EBS bandwidth (Mbps)Network bandwidth (Gbps)db.x2iezn.metal48242—1,536EBS-optimized only19,000100db.x2iezn.12xlarge48———1,536EBS-optimized only19,000100db.x2iezn.8xlarge32———1,024EBS-optimized only12,00075db.x2iezn.6xlarge24———768EBS-optimized onlyUp to 9,50050db.x2iezn.4xlarge16———512EBS-optimized onlyUp to 4,750Up to 25db.x2iezn.2xlarge8———256EBS-optimized onlyUp to 3,170Up to 25
 
 **db.x1e – memory-optimized instance**
 **classes**
@@ -223,6 +228,11 @@ Instance classvCPUECUMemory (GiB)Instance storage (GiB)Max. EBS bandwidth (Mbps)
 **Graviton4 processors**
 
 Instance classvCPUECUMemory (GiB)Instance storage (GiB)Max. EBS bandwidth (Mbps)Network bandwidth (Gbps)db.r8g.48xlarge192—1536EBS-optimized only40,00050db.r8g.24xlarge96—768EBS-optimized only30,00040db.r8g.16xlarge64—512EBS-optimized only20,00030db.r8g.12xlarge48—384EBS-optimized only15,00022.5db.r8g.8xlarge32—256EBS-optimized only10,00015db.r8g.4xlarge\*16—128EBS-optimized onlyUp to 10,000Up to 15db.r8g.2xlarge\*8—64EBS-optimized onlyUp to 10,000Up to 15db.r8g.xlarge\*4—32EBS-optimized onlyUp to 10,000Up to 12.5db.r8g.large\*2—16EBS-optimized onlyUp to 10,000Up to 12.5
+
+**db.r8i – memory-optimized instance classes powered by**
+**Intel Xeon 6 processors**
+
+Instance classvCPUProcessor coresSocketsECUMemory (GiB)Instance storage (GiB)Max. EBS bandwidth (Mbps)Network bandwidth (Gbps)db.r8i.metal-96xl3841922—3,072EBS only80,000100db.r8i.metal-48xl192961—1,536EBS only60,00075db.r8i.96xlarge384———3,072EBS only80,000100db.r8i.48xlarge192———1,536EBS only60,00075db.r8i.32xlarge128———1,024EBS only40,00050db.r8i.24xlarge96———768EBS only30,00040db.r8i.16xlarge64———512EBS only20,00030db.r8i.12xlarge48———384EBS only15,00022.5db.r8i.8xlarge32———256EBS only10,00015db.r8i.4xlarge16———128EBS onlyUp to 10,000Up to 15db.r8i.2xlarge8———64EBS onlyUp to 10,000Up to 15db.r8i.xlarge4———32EBS onlyUp to 10,000Up to 12.5db.r8i.large2———16EBS onlyUp to 10,000Up to 12.5
 
 **db.r7i – memory-optimized instance classes powered by 4th**
 **generation Intel Xeon Scalable processors**
@@ -294,7 +304,7 @@ Instance classvCPUECUMemory (GiB)Instance storage (GiB)Max. EBS bandwidth (Mbps)
 **db.r5 – memory-optimized instance**
 **classes**
 
-Instance classvCPUECUMemory (GiB)Normalized unitsInstance storage (GiB)Max. EBS bandwidth (Mbps)Network bandwidth (Gbps)db.r5.24xlarge96347768192EBS-optimized only19,00025db.r5.16xlarge64264512128EBS-optimized only13,60020db.r5.12xlarge4817338496EBS-optimized only9,50012db.r5.8xlarge3213225664EBS-optimized only6,80010db.r5.4xlarge167112832EBS-optimized only4,750Up to 10db.r5.2xlarge\*8386416EBS-optimized onlyUp to 4,750Up to 10db.r5.xlarge\*419328EBS-optimized onlyUp to 4,750Up to 10db.r5.large\*210164EBS-optimized onlyUp to 4,750Up to 10
+Instance classvCPUECUMemory (GiB)Normalized unitsInstance storage (GiB)Max. EBS bandwidth (Mbps)Network bandwidth (Gbps)db.r5.24xlarge96347768192EBS-optimized only19,00025db.r5.16xlarge64264512128EBS-optimized only13,60020db.r5.12xlarge4817338496EBS-optimized only9,50010db.r5.8xlarge3213225664EBS-optimized only6,80010db.r5.4xlarge167112832EBS-optimized only4,750Up to 10db.r5.2xlarge\*8386416EBS-optimized onlyUp to 4,750Up to 10db.r5.xlarge\*419328EBS-optimized onlyUp to 4,750Up to 10db.r5.large\*210164EBS-optimized onlyUp to 4,750Up to 10
 
 **db.r4 – memory-optimized instance classes with Intel Xeon**
 **Scalable processors**

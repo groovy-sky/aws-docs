@@ -113,7 +113,7 @@ _AWS Directory Service Administration Guide_.
 
 The following limitations apply to Kerberos authentication for Aurora MySQL:
 
-- Kerberos authentication is supported for Aurora MySQL version 3.03 and higher.
+- Kerberos authentication is supported for Aurora MySQL version 3.03 and higher, and version 8.4.7 and higher.
 
 For information about AWS Region support, see [Kerberos authentication with Aurora MySQL](concepts-aurora-fea-regions-db-eng-feature-kerberosauthentication.md#Concepts.Aurora_Fea_Regions_DB-eng.Feature.KerberosAuthentication.amy).
 

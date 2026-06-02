@@ -32,6 +32,6 @@ To completely remove the old data and reclaim the disk space, call the appropria
 
 Publishing MySQL logs to Amazon CloudWatch Logs
 
-Configuring RDS for MySQL binary logging for Single-AZ databases
+Configuring RDS for MySQL binary logging for instance deployments
 
 All content copied from https://docs.aws.amazon.com/.

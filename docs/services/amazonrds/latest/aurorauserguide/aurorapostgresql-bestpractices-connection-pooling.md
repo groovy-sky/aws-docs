@@ -290,7 +290,7 @@ pgbench (14.3, server 13.3)
 ```
 
 This example shows you that pooling connections can significantly improve response times. For information about setting up RDS Proxy for your
-Aurora PostgreSQL DB cluster, see [Amazon RDS Proxyfor Aurora](rds-proxy.md).
+Aurora PostgreSQL DB cluster, see [Amazon RDS Proxy for Aurora](rds-proxy.md).
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

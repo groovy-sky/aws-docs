@@ -124,7 +124,7 @@ RESET max_parallel_workers_per_gather;
 
 Managing custom casts
 
-Working with
-parameters
+REPLICA IDENTITY FULL
+performance
 
 All content copied from https://docs.aws.amazon.com/.

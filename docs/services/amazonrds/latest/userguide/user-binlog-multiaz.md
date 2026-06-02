@@ -100,7 +100,7 @@ To configure binary log transaction compression using the Amazon RDS API, use th
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Configuring RDS for MySQL binary logging for Single-AZ databases
+Configuring RDS for MySQL binary logging for instance deployments
 
 Accessing MySQL binary logs
 

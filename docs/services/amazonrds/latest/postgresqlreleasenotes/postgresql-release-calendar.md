@@ -4,6 +4,31 @@ title: "Release calendars for Amazon RDS for PostgreSQL"
 
 # Release calendars for Amazon RDS for PostgreSQL
 
+## Version currency timelines
+
+RDS for PostgreSQL tracks community database engine releases on a defined cadence. These
+version currency timelines are published to give you transparency into that cadence. You
+can use these timelines to:
+
+- Plan major version upgrades and estimate when a new RDS for PostgreSQL major
+version will be available.
+
+- Schedule minor version upgrades during your maintenance windows
+
+The following table lists the version currency timelines for
+RDS for PostgreSQL.
+
+Release typeTimelines
+
+Major versions
+
+Within 30 days of the community release for first minor of the
+new major version <major>.1
+
+Minor versions
+
+Within 7 days of the community release
+
 ## Release calendar for Amazon RDS for PostgreSQL major versions
 
 RDS for PostgreSQL major versions are available under standard support at least until
@@ -35,7 +60,7 @@ November 2030
 
 28 February 2031
 
-1 March 2032
+1 March 2031
 
 1 March 2033
 
@@ -206,11 +231,19 @@ exact date when it is known.
 
 PostgreSQL minor engine versionCommunity release dateRDS release dateRDS end of standard support date
 
-18.1
+18.4
 
-13 November 2025
+14 May 2026
 
-14 November 2022
+14 May 2026
+
+September 2027
+
+18.3
+
+26 February 2026
+
+27 February 2026
 
 March 2027
 
@@ -222,13 +255,21 @@ March 2027
 
 March 2027
 
-18.3
+18.1
 
-26 February 2026
+13 November 2025
 
-27 February 2026
+14 November 2025
 
 March 2027
+
+17.10
+
+14 May 2026
+
+14 May 2026
+
+September 2027
 
 17.9
 
@@ -302,6 +343,14 @@ May 2026
 
 May 2026
 
+16.14
+
+14 May 2026
+
+14 May 2026
+
+September 2027
+
 16.13
 
 26 February 2026
@@ -374,6 +423,14 @@ May 2026
 
 May 2026
 
+15.18
+
+14 May 2026
+
+14 May 2026
+
+September 2027
+
 15.17
 
 26 February 2026
@@ -445,6 +502,14 @@ May 2026
 14 November 2024
 
 May 2026
+
+14.23
+
+14 May 2026
+
+14 May 2026
+
+September 2027
 
 14.22
 
@@ -610,6 +675,22 @@ exact date when it’s known.
 
 Minor engine versionCommunity release dateRDS release dateRDS end of Extended Support date
 
+13.23-rds.20260224
+
+Not applicable
+
+15 May 2026
+
+30 September 2027
+
+12.22-rds.20260224
+
+Not applicable
+
+15 May 2026
+
+30 September 2027
+
 12.22-rds.20250814\*
 
 Not applicable
@@ -633,6 +714,14 @@ Not applicable
 3 April 2025
 
 30 September 2026
+
+11.22-rds.20260224
+
+Not applicable
+
+15 May 2026
+
+30 September 2027
 
 11.22-rds.20250814\*
 

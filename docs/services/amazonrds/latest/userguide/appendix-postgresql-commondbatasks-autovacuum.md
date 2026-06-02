@@ -48,6 +48,8 @@ high-level information, see [Best practices for working with PostgreSQL](chap-be
 
 - [Identify and resolve aggressive vacuum blockers in RDS for PostgreSQL](appendix-postgresql-commondbatasks-autovacuum-monitoring.md)
 
+- [Adaptive autovacuum enhancements in PostgreSQL version 18](appendix-postgresql-commondbatasks-autovacuum-adaptivepg18.md)
+
 ## Allocating memory for autovacuum
 
 One of the most important parameters influencing autovacuum performance is the [`autovacuum_work_mem`](https://www.postgresql.org/docs/current/runtime-config-resource.html) parameter. In RDS for PostgreSQL versions 14 and
@@ -139,12 +141,19 @@ avoid wraparound. Amazon RDS updates the following autovacuum-related parameters
 
 - [autovacuum\_naptime](https://www.postgresql.org/docs/current/runtime-config-autovacuum.html)
 
+- [autovacuum\_max\_workers](https://www.postgresql.org/docs/current/runtime-config-autovacuum.html) (PostgreSQL version 18 and higher only)
+
+For RDS for PostgreSQL version 18, adaptive autovacuum scales
+`autovacuum_max_workers` dynamically. For more information, see [Adaptive autovacuum enhancements in PostgreSQL version 18](appendix-postgresql-commondbatasks-autovacuum-adaptivepg18.md).
+
 RDS modifies these parameters only if the new value makes autovacuum more aggressive. The
 parameters are modified in memory on the DB instance. The values in the parameter group
 aren't changed. To view the current in-memory settings, use the PostgreSQL [SHOW](https://www.postgresql.org/docs/current/sql-show.html) SQL command.
 
 When Amazon RDS modifies any of these autovacuum parameters, it generates an event for the
-affected DB instance. This event is visible on the AWS Management Console and through the Amazon RDS API. After
+affected DB instance. This event is visible on the AWS Management Console and through the Amazon RDS API. For
+more information about RDS events, see [Amazon RDS event categories and event messages](user-events-messages.md). To receive notifications when these
+events occur, see [Subscribing to Amazon RDS event notification](user-events-subscribing.md). After
 the `MaximumUsedTransactionIDs` CloudWatch metric returns below the threshold, Amazon RDS
 resets the autovacuum-related parameters in memory back to the values specified in the
 parameter group. It then generates another event corresponding to this change.

@@ -20,7 +20,7 @@ when creating or upgrading Aurora MySQL DB clusters and DB instances.
 When you perform administrative tasks using the AWS Management Console, AWS CLI, or RDS API, you specify the Aurora MySQL
 version in a descriptive alphanumeric format.
 
-Starting with Aurora MySQL version 2, Aurora engine versions have the following syntax.
+For Aurora MySQL version 2 and version 3, Aurora engine versions have the following syntax.
 
 ```nohighlight
 
@@ -49,10 +49,29 @@ For example, the engine versions for Aurora MySQL 3.04.0 and 2.11.2 are the foll
 5.7.mysql_aurora.2.11.2
 ```
 
+Starting with Aurora MySQL version 8.4, the engine version format is simplified. The version number uses a
+`major-version.minor-version` scheme, where the major version
+(such as `8.4`) represents MySQL compatibility and the minor version represents the feature and
+bug fix release. There is no separate patch level visible to customers, and the Aurora version number directly matches the MySQL
+compatibility version without a separate internal-to-external version mapping.
+
+```nohighlight
+
+mysql-major-version.mysql_aurora.major-version.minor-version
+```
+
+For example, the engine version for Aurora MySQL 8.4.7 is the following.
+
+```nohighlight
+
+8.4.mysql_aurora.8.4.7
+```
+
 ###### Note
 
 There isn't a one-to-one correspondence between community MySQL versions and the Aurora MySQL 2.x versions. For Aurora MySQL
-version 3, there is a more direct mapping. To check which bug fixes and new features are in a particular Aurora MySQL release,
+version 3, there is a more direct mapping. Starting with Aurora MySQL version 8.4, the Aurora version number directly matches
+the MySQL compatibility version. To check which bug fixes and new features are in a particular Aurora MySQL release,
 see [Database\
 engine updates for Amazon Aurora MySQL version 3](../auroramysqlreleasenotes/auroramysql-updates-30updates.md) and [Database engine updates for\
 Amazon Aurora MySQL version 2](../auroramysqlreleasenotes/auroramysql-updates-20updates.md) in the _Release Notes for Aurora MySQL_. For a chronological list of new features
@@ -77,7 +96,11 @@ For information about how CloudFormation treats changes to the `EngineVersion` s
 
 The Aurora version numbers that you can retrieve in your application using SQL queries use the format
 `<major version>.<minor
-      version>.<patch version>`. You can get this version
+      version>.<patch version>` for version 2 and version 3.
+For version 8.4 and higher, the format is
+`<major version>.<minor version>`
+(for example, `8.4.7`), where the major version such as `8.4` represents MySQL compatibility.
+You can get this version
 number for any DB instance in your Aurora MySQL cluster by querying the `AURORA_VERSION` system
 variable. To get this version number, use one of the following queries.
 
@@ -88,7 +111,7 @@ select @@aurora_version;
 
 ```
 
-Those queries produce output similar to the following.
+For version 2 and version 3, the output looks similar to the following.
 
 ```nohighlight
 
@@ -97,6 +120,19 @@ mysql> select aurora_version(), @@aurora_version;
 | aurora_version() | @@aurora_version |
 +------------------+------------------+
 | 3.05.2           | 3.05.2           |
++------------------+------------------+
+
+```
+
+For version 8.4 and higher, the output uses the simplified numbering scheme.
+
+```nohighlight
+
+mysql> select aurora_version(), @@aurora_version;
++------------------+------------------+
+| aurora_version() | @@aurora_version |
++------------------+------------------+
+| 8.4.7            | 8.4.7            |
 +------------------+------------------+
 
 ```

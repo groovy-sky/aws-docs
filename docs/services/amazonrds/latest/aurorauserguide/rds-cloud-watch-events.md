@@ -180,6 +180,6 @@ was invoked.
 
 Deleting an Amazon RDS event notification subscription
 
-Amazon RDS event categories and event messagesfor Aurora
+Amazon RDS event categories and event messages for Aurora
 
 All content copied from https://docs.aws.amazon.com/.

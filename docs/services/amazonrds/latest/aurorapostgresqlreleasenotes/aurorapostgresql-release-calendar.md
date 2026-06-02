@@ -9,9 +9,34 @@ and lifecycle, see [Amazon Aurora versions](../aurorauserguide/aurora-versionpol
 
 ###### Topics
 
+- [Version currency timelines](#aurorapostgresql.version.currency.timelines)
+
 - [Release calendar for Aurora PostgreSQL major versions](#aurorapostgresql.major.versions.supported)
 
 - [Release calendar for Aurora PostgreSQL minor versions](#aurorapostgresql.minor.versions.supported)
+
+- [Release calendar for Amazon Aurora PostgreSQL Limitless Database minor versions](#aurorapostgresql.limitless.minor.versions.supported)
+
+## Version currency timelines
+
+Aurora PostgreSQL tracks community database engine releases on a defined cadence.
+These version currency timelines are published to give you transparency into that
+cadence. You can use these timelines to:
+
+- Plan major version upgrades and estimate when a new Aurora PostgreSQL major
+version will be available.
+
+- Schedule minor version upgrades during your maintenance windows.
+
+- Select the right Aurora Long-Term Support (LTS) version for workloads that
+require staying on the same minor version across multiple release
+cycles.
+
+The following table lists the version currency timelines for Aurora PostgreSQL.
+
+Release typeTimelinesMajor versionsWithin 8 months of the community's first minor release for
+the new major version
+<major>.1Minor versionsWithin 3 months of the community release[Aurora LTS](../aurorauserguide/auroramysql-update-specialversions.md) (per major)Within 12 months of the Aurora major version release
 
 ## Release calendar for Aurora PostgreSQL major versions
 
@@ -76,7 +101,7 @@ PostgreSQL minor engine versionCommunity release dateAurora release dateAurora e
 
 6 April 2026
 
-October 2028
+30 September 2027
 
 17.7 (LTS)
 
@@ -92,7 +117,7 @@ October 2028
 
 25 November 2025
 
-June 2027
+30 April 2027
 
 17.5
 
@@ -100,15 +125,15 @@ June 2027
 
 30 June 2025
 
-December 2026
+31 December 2026
 
 17.4
 
 20 February 2025
 
-May 1 2025
+1 May 2025
 
-November 2026
+30 November 2026
 
 **16**
 
@@ -118,7 +143,7 @@ November 2026
 
 6 April 2026
 
-October 2028
+30 September 2027
 
 16.11
 
@@ -126,7 +151,7 @@ October 2028
 
 18 December 2025
 
-July 2027
+31 May 2027
 
 16.10
 
@@ -134,7 +159,7 @@ July 2027
 
 25 November 2025
 
-June 2027
+30 April 2027
 
 16.9
 
@@ -142,13 +167,13 @@ June 2027
 
 30 June 2025
 
-December 2026
+31 December 2026
 
 16.8 (LTS)
 
 20 February 2025
 
-April 8 2025
+8 April 2025
 
 28 February 2029
 
@@ -158,7 +183,7 @@ April 8 2025
 
 13 December 2024
 
-May 2026
+31 May 2026
 
 16.4
 
@@ -166,7 +191,7 @@ May 2026
 
 30 September 2024
 
-May 2026
+31 May 2026
 
 **15**
 
@@ -176,7 +201,7 @@ May 2026
 
 6 April 2026
 
-October 2028
+30 September 2027
 
 15.15
 
@@ -184,7 +209,7 @@ October 2028
 
 18 December 2025
 
-July 2027
+31 May 2027
 
 15.14
 
@@ -192,7 +217,7 @@ July 2027
 
 25 November 2025
 
-June 2027
+30 April 2027
 
 15.13
 
@@ -200,15 +225,15 @@ June 2027
 
 30 June 2025
 
-December 2026
+31 December 2026
 
 15.12
 
 20 February 2025
 
-April 8 2025
+8 April 2025
 
-November 2026
+30 November 2026
 
 15.10 (LTS)
 
@@ -224,7 +249,7 @@ November 2026
 
 30 September 2024
 
-May 2026
+31 May 2026
 
 **14**
 
@@ -234,7 +259,7 @@ May 2026
 
 6 April 2026
 
-October 2028
+30 September 2027
 
 14.20
 
@@ -242,7 +267,7 @@ October 2028
 
 18 December 2025
 
-28 February 2027
+31 May 2027
 
 14.19
 
@@ -250,7 +275,7 @@ October 2028
 
 25 November 2025
 
-28 February 2027
+30 April 2027
 
 14.18
 
@@ -258,15 +283,15 @@ October 2028
 
 30 June 2025
 
-December 2026
+31 December 2026
 
 14.17
 
 20 February 2025
 
-April 8 2025
+8 April 2025
 
-November 2026
+30 November 2026
 
 14.15
 
@@ -274,7 +299,7 @@ November 2026
 
 13 December 2024
 
-May 2026
+31 May 2026
 
 14.13
 
@@ -282,7 +307,7 @@ May 2026
 
 30 September 2024
 
-May 2026
+31 May 2026
 
 14.6 (LTS)
 
@@ -349,6 +374,52 @@ May 2026
 \\* Amazon RDS Extended Support eligible minor engine version. For more information, see [Using Amazon RDS Extended Support](../aurorauserguide/extended-support.md).
 
 LTS - Aurora PostgreSQL long-term support (LTS) releases. For more information see [Aurora PostgreSQL long-term support (LTS) releases](../aurorauserguide/aurorapostgresql-updates-lts.md).
+
+## Release calendar for Amazon Aurora PostgreSQL Limitless Database minor versions
+
+Aurora currently supports the following Aurora PostgreSQL Limitless Database minor versions of PostgreSQL.
+
+###### Note
+
+Dates with only a month and a year are approximate, and will be updated with an exact date when it's known.
+
+PostgreSQL Limitless minor engine versionAurora release dateAurora end of standard support date
+
+16.11-limitless
+
+February 25, 2026
+
+October 2027
+
+16.10-limitless
+
+February 24, 2026
+
+September 2027
+
+16.9-limitless
+
+September 5, 2025
+
+March 2027
+
+16.8-limitless
+
+May 8, 2025
+
+November 2026
+
+16.6-limitless
+
+January 24, 2025
+
+August 2026
+
+16.4-limitless
+
+October 31, 2024
+
+August 2026
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

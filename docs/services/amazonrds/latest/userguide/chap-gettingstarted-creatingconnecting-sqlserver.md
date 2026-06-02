@@ -66,8 +66,6 @@ Before you begin, complete the steps in the following sections:
 
 - [Sign up for an AWS account](chap-settingup.md#sign-up-for-aws)
 
-- [Create a user with administrative access](chap-settingup.md#create-an-admin)
-
 ## Create an EC2 instance
 
 Create an Amazon EC2 instance that you will use to connect to your database.

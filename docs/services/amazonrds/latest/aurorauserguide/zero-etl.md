@@ -102,7 +102,7 @@ warehouse or catalog.
 
 The Aurora DB cluster where data is replicated from.
 You can specify a DB cluster that
-uses provisioned DB instances or Aurora Serverless v2 DB instances as the
+uses provisioned DB instances or Aurora serverless DB instances as the
 source.
 
 **Target**
@@ -275,7 +275,7 @@ Regions, see [Supported Regions and Aurora DB engines for zero-ETL integrations]
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Using RDS Proxy with Aurora global databases
+Configuration guidelines
 
 Getting started with
 zero-ETL integrations

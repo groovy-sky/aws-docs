@@ -4,14 +4,17 @@ title: "Upgrading the major version of an Amazon Aurora MySQL DB cluster"
 
 # Upgrading the major version of an Amazon Aurora MySQL DB cluster
 
-In an Aurora MySQL version number such as 3.04.1, the 3 represents the major version. Aurora MySQL version 2 is compatible with MySQL 5.7. Aurora MySQL
-version 3 is compatible with MySQL 8.0.
+For Aurora MySQL version 2 and version 3, in a version number such as 3.04.1, the 3 represents the major version. Starting with version 8.4,
+in a version number such as 8.4.7, the 8.4 represents the major version. Aurora MySQL version 2 is compatible with MySQL 5.7. Aurora MySQL
+version 3 is compatible with MySQL 8.0. Aurora MySQL version 8.4 is compatible with MySQL 8.4.
 
 Upgrading between major versions requires more extensive planning and testing than for a minor version. The process can take substantial time. After the
 upgrade is finished, you also might have followup work to do. For example, this might occur because of differences in SQL compatibility or the way certain
 MySQL-related features work. Or it might occur because of differing parameter settings between the old and new versions.
 
 ###### Contents
+
+- [Upgrading from Aurora MySQL version 3 to version 8.4](auroramysql-updates-majorversionupgrade.md#AuroraMySQL.Updates.MajorVersionUpgrade.3to84)
 
 - [Upgrading from Aurora MySQL version 2 to version 3](auroramysql-updates-majorversionupgrade.md#AuroraMySQL.Updates.MajorVersionUpgrade.2to3)
 
@@ -34,11 +37,15 @@ MySQL-related features work. Or it might occur because of differing parameter se
 
   - [Precheck performance for Aurora MySQL](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.performance)
 
-  - [Summary of Community MySQL upgrade prechecks](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.community)
+  - [Summary of Community MySQL upgrade prechecks for Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.community)
 
-  - [Summary of Aurora MySQL upgrade prechecks](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.ams)
+  - [Summary of Aurora MySQL upgrade prechecks for Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.ams)
 
-  - [Precheck descriptions reference for Aurora MySQL](auroramysql-upgrade-prechecks-descriptions.md)
+  - [Summary of Community MySQL upgrade prechecks for Aurora MySQL version 3 to version 8.4](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.community-v3-to-v84)
+
+  - [Summary of Aurora MySQL upgrade prechecks for Aurora MySQL version 3 to version 8.4](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.ams-v3-to-v84)
+
+  - [Precheck descriptions for upgrading Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks-descriptions.md)
 
     - [Errors](auroramysql-upgrade-prechecks-descriptions.md#precheck-descriptions-errors)
 
@@ -53,6 +60,21 @@ MySQL-related features work. Or it might occur because of differing parameter se
     - [Notices](auroramysql-upgrade-prechecks-descriptions.md#precheck-descriptions-notices)
 
     - [Errors, warnings, or notices](auroramysql-upgrade-prechecks-descriptions.md#precheck-descriptions-all)
+  - [Precheck descriptions for upgrading Aurora MySQL version 3 to version 8.4](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md)
+
+    - [Errors](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-errors)
+
+      - [MySQL prechecks that report errors](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-errors.mysql)
+
+      - [Aurora MySQL prechecks that report errors](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-errors.aurora)
+    - [Warnings](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-warnings)
+
+      - [MySQL prechecks that report warnings](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-warnings.mysql)
+
+      - [Aurora MySQL prechecks that report warnings](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-warnings.aurora)
+    - [Notices](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-notices)
+
+    - [Errors, warnings, or notices](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-all)
 - [How to perform an in-place upgrade](auroramysql-upgrading-procedure.md)
 
   - [How in-place upgrades affect the parameter groups for a cluster](auroramysql-upgrading-procedure.md#AuroraMySQL.Upgrading.ParamGroups)
@@ -71,6 +93,10 @@ MySQL-related features work. Or it might occur because of differing parameter se
 - [Post-upgrade cleanup for Aurora MySQL version 3](auroramysql-mysql80-post-upgrade.md)
 
   - [Spatial indexes](auroramysql-mysql80-post-upgrade.md#AuroraMySQL.mysql80-spatial)
+
+## Upgrading from Aurora MySQL version 3 to version 8.4
+
+For security considerations and new features when upgrading from Aurora MySQL version 3 to Aurora MySQL version 8.4, see [Security considerations for upgrading from Aurora MySQL version 3 to version 8.4](auroramysql-upgrade-v3-v84-security.md).
 
 ## Upgrading from Aurora MySQL version 2 to version 3
 
@@ -129,28 +155,37 @@ For information about upgrading to Aurora MySQL version 3, see [Planning a major
 
 Aurora MySQL provisioned cluster, version 3
 
+Yes
+
+In-place upgrade is supported for MySQL 8.0–compatible Aurora MySQL clusters.
+
+For information about upgrading to Aurora MySQL version 8.4, see [Planning a major version upgrade for an Aurora MySQL cluster](#AuroraMySQL.Upgrading.Planning) and [How to perform an in-place upgrade](auroramysql-upgrading-procedure.md).
+
+Aurora MySQL provisioned cluster, version 8.4
+
 Not applicable
 
-Use a minor version upgrade procedure to upgrade between Aurora MySQL version 3 versions.
+Use a minor version upgrade procedure to upgrade between Aurora MySQL version 8.4 minor versions.
 
-Aurora Serverless v2 cluster
+Aurora serverless cluster
 
-Not applicable
+Yes
 
-Aurora Serverless v2 is supported for Aurora MySQL only on version 3.
+Aurora serverless is supported for Aurora MySQL on version 3 and higher.
 
 Cluster in an Aurora global database
 
 Yes
 
-To upgrade Aurora MySQL from version 2 to version 3, follow the [procedure for doing an\
-in-place upgrade](auroramysql-upgrading-procedure.md) for clusters in an Aurora global database. Perform the upgrade on the global cluster. Aurora upgrades the primary
-cluster and all the secondary clusters in the global database at the same time.
+To upgrade Aurora MySQL in an Aurora global database (version 2 to version 3, or version 3 to version 8.4), follow the
+[procedure for doing an in-place upgrade](auroramysql-upgrading-procedure.md) for clusters in an Aurora global database.
+Perform the upgrade on the global cluster. Aurora upgrades the primary cluster and all the secondary clusters in the global database at the
+same time.
 
 If you use the AWS CLI or RDS API, call the `modify-global-cluster` command or `ModifyGlobalCluster` operation instead
 of `modify-db-cluster` or `ModifyDBCluster`.
 
-You can perform an in-place upgrade from Aurora MySQL version 2 to version 3 only if the `lower_case_table_names` parameter is
+You can perform an in-place major version upgrade only if the `lower_case_table_names` parameter is
 set to default and you reboot your global database. For more information, see [Major version upgrades](aurora-global-database-upgrade.md#aurora-global-database-upgrade.major).
 
 Parallel query cluster
@@ -237,9 +272,9 @@ snapshot to minimize storage charges.
 
 - Aurora installs the binary for the new engine version on the writer DB instance.
 
-- Aurora uses the writer DB instance to upgrade your data to MySQL 5.7-compatible format. During this stage, Aurora modifies the system tables
-and performs other conversions that affect the data in your cluster volume. In particular, Aurora upgrades the partition metadata in the system
-tables to be compatible with the MySQL 5.7 partition format. This stage can take a long time if the tables in your cluster have a large number of
+- Aurora uses the writer DB instance to upgrade your data to the Aurora MySQL target version compatible format. During this stage, Aurora modifies
+the system tables and performs other conversions that affect the data in your cluster volume. For version 2 to version 3 upgrades, in particular, Aurora upgrades the partition metadata in the system
+tables to be compatible with the MySQL 8.0 partition format. This stage can take a long time if the tables in your cluster have a large number of
 partitions.
 
 If any errors occur during this stage, you can find the details in the MySQL error logs. After this stage starts, if the upgrade process
@@ -253,7 +288,9 @@ fails for any reason, Aurora restores the original data from the cloned cluster 
 ## Planning a major version upgrade for an Aurora MySQL cluster
 
 To help you decide the right time and approach to upgrade, you can learn the differences
-between Aurora MySQL version 3 and your current environment:
+between the target Aurora MySQL version and your current environment:
+
+**Upgrading from Aurora MySQL version 2 to version 3**
 
 - If you're converting from RDS for MySQL 8.0 or MySQL 8.0 Community Edition, see [Comparing Aurora MySQL version 3 and MySQL 8.0 Community Edition](auroramysql-compare-80-v3.md).
 
@@ -268,8 +305,24 @@ changes.
 of new reserved keywords introduced in MySQL 8.0 Community Edition. Do so before you
 upgrade. For more information, see [MySQL 8.0 New Keywords and Reserved Words](https://dev.mysql.com/doc/mysqld-version-reference/en/keywords-8-0.html) in the MySQL documentation.
 
+**Upgrading from Aurora MySQL version 3 to version 8.4**
+
+- If you're converting from RDS for MySQL 8.4 or MySQL 8.4 Community Edition, see [Comparing Aurora MySQL version 8.4 and MySQL 8.4 Community Edition](auroramysql-compare-v84-community.md).
+
+- If you're upgrading from Aurora MySQL version 3, RDS for MySQL 8.0, or community MySQL
+8.0, see [Comparing Aurora MySQL version 3 and Aurora MySQL version 8.4](auroramysql-compare-v3-v84.md).
+
+- Create new MySQL 8.4-compatible versions of any custom parameter groups. Apply any
+necessary custom parameter values to the new parameter groups. Consult [Parameter changes for Aurora MySQL version 8.4](auroramysql-compare-v3-v84.md#AuroraMySQL.Compare-v3-v84.parameters) to learn about parameter
+changes.
+
+- Review your Aurora MySQL version 3 database schema and object definitions for the usage
+of new or changed reserved keywords introduced in MySQL 8.4 Community Edition. Do so before you
+upgrade. For more information, see [MySQL 8.4 New Keywords and Reserved Words](https://dev.mysql.com/doc/mysqld-version-reference/en/keywords-8-4.html) in the MySQL documentation.
+
 You can also find more MySQL-specific upgrade considerations and tips in [Changes in\
-MySQL 8.0](https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html) in the _MySQL Reference Manual_. For example, you can
+MySQL 8.0](https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html) and [Changes in\
+MySQL 8.4](https://dev.mysql.com/doc/refman/8.4/en/upgrading-from-previous-series.html) in the _MySQL Reference Manual_. For example, you can
 use the command `mysqlcheck --check-upgrade` to analyze your existing Aurora MySQL
 databases and identify potential upgrade issues.
 

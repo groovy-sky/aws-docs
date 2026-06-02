@@ -50,7 +50,7 @@ supported versions
 - Version 2 (compatible with MySQL 5.7): 2.11 and
 higher
 
-Aurora PostgreSQLAll supported versionsAurora Serverless v2All supported versions
+Aurora PostgreSQLAll supported versionsAurora serverlessAll supported versions
 
 - In Aurora versions lower than those in the preceding list, the cluster volume
 can reuse space that's freed up when you remove data, but the volume itself
@@ -383,7 +383,7 @@ If your applications frequently open and close connections, or keep a large numb
 of long-lived connections open, we recommend that you use Amazon RDS Proxy. RDS Proxy is a
 fully managed, highly available database proxy that uses connection pooling to share
 database connections securely and efficiently. To learn more about RDS Proxy, see
-[Amazon RDS Proxyfor Aurora](rds-proxy.md).
+[Amazon RDS Proxy for Aurora](rds-proxy.md).
 
 ## Managing query execution plans
 

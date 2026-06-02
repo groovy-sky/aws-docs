@@ -95,7 +95,7 @@ To know the exact ACU usage incurred from compute redundancy, refer to the `DBSh
 
        If you create your Limitless Database DB cluster in the US East (N. Virginia) Region, don't include the
        `us-east-1e` Availability Zone (AZ) in your DB subnet group. Because of resource limitations,
-       Aurora Serverless v2—and therefore Limitless Database—isn't supported in the `us-east-1e` AZ.
+       Aurora serverless—and therefore Limitless Database—isn't supported in the `us-east-1e` AZ.
 
     4. Choose the **VPC security group (firewall)**, or use the default setting.
 07. For **Database authentication**, choose either **Password authentication** or **Password**
@@ -173,7 +173,7 @@ VPC associated with the DB cluster.
 ###### Note
 
 If you create your Limitless Database DB cluster in the US East (N. Virginia) Region, don't include the `us-east-1e`
-Availability Zone (AZ) in your DB subnet group. Because of resource limitations, Aurora Serverless v2—and therefore
+Availability Zone (AZ) in your DB subnet group. Because of resource limitations, Aurora serverless—and therefore
 Limitless Database—isn't supported in the `us-east-1e` AZ.
 
 - `--vpc-security-group-ids` – A list of VPC security groups to associate with the DB cluster.

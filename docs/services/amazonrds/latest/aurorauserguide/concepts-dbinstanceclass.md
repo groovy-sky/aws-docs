@@ -26,7 +26,7 @@ For more information about DB instance class types, supported DB engines, suppor
 
 - [Determining DB instance class support in AWS Regions](concepts-dbinstanceclass-regionsupportaurora.md)
 
-- [Hardware specifications for DB instance classesfor Aurora](concepts-dbinstanceclass-summary.md)
+- [Hardware specifications for DB instance classes for Aurora](concepts-dbinstanceclass-summary.md)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -70,7 +70,7 @@ CategoryMetrics**SQL**
 
 `FreeableMemory`
 
-`FreeLocalStorage` (This doesn't apply to Aurora Serverless v2.)
+`FreeLocalStorage` (This doesn't apply to Aurora serverless.)
 
 `NetworkReceiveThroughput`
 

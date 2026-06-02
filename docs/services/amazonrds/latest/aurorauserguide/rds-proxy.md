@@ -1,8 +1,8 @@
 ---
-title: "Amazon RDS Proxyfor Aurora"
+title: "Amazon RDS Proxy for Aurora"
 ---
 
-# Amazon RDS Proxyfor Aurora
+# Amazon RDS Proxy for Aurora
 
 By using Amazon RDS Proxy, you can allow your applications to pool and share database
 connections to improve their ability to scale. RDS Proxy makes applications more resilient to
@@ -63,6 +63,8 @@ code changes. For a list of supported engine versions, see [Supported Regions an
 
 - [Using RDS Proxy with Aurora global databases](rds-proxy-gdb.md)
 
+- [Best practices with RDS Proxy](rds-proxy-best-practices.md)
+
 ## Region and version availability
 
 For information about database engine version support and availability of RDS Proxy in a given AWS Region, see
@@ -95,7 +97,7 @@ for a proxy. That endpoint passes connections to the reader endpoint of the clus
 can take advantage of Aurora read scalability.
 For more information, see [Overview of proxy endpoints](rds-proxy-endpoints.md#rds-proxy-endpoints-overview).
 
-- You can use RDS Proxy with Aurora Serverless v2 clusters, but not with Aurora Serverless
+- You can use RDS Proxy with Aurora serverless clusters, but not with Aurora Serverless
 v1 clusters.
 
 - Your RDS Proxy must be in the same virtual private cloud (VPC) as the database. The
@@ -155,6 +157,12 @@ register a proxy target. This is a protected user that is essential for proxy fu
 You should avoid tampering with the `rdsproxyadmin` user in any capacity.
 Deleting or modifying the `rdsproxyadmin` user
 or its permissions can result in complete unavailability of the proxy to your application.
+
+Starting in Aurora MySQL version 8.4.7, the database engine
+enforces this protection. Attempts to `CREATE`, `DROP`,
+`RENAME`, `GRANT`, `REVOKE`, or
+`SET PASSWORD` for `rdsproxyadmin` return an error. For
+details, see [Reserved users in Aurora MySQL](auroramysql-security.md#AuroraMySQL.Security.ReservedUsers).
 
 For additional limitations for each DB engine, see the following sections:
 
@@ -233,6 +241,10 @@ aren't always accurate. As a work-around, use the [INSERT](https://www.postgresq
 with the `RETURNING` clause.
 
 - RDS Proxy currently doesn't support streaming replication mode.
+
+- RDS Proxy doesn't support direct SSL negotiation mode.
+
+- RDS Proxy only supports version 3.0 of the PostgreSQL messaging protocol.
 
 - The default `postgres` database must exist on the RDS for PostgreSQL instance
 for RDS Proxy to function. Don't delete this database even if your application uses

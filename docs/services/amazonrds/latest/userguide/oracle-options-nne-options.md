@@ -40,8 +40,8 @@ following conditions are met:
 that is not `DES`, `3DES`, or `RC4` (all key
 lengths).
 
-- `SQLNET.CHECKSUM_TYPES_SERVER` and
-`SQLNET.CHECKSUM_TYPES_CLIENT` have one matching secure checksumming
+- `SQLNET.CRYPTO_CHECKSUM_TYPES_SERVER` and
+`SQLNET.CRYPTO_CHECKSUM_TYPES_CLIENT` have one matching secure checksumming
 method that is not `MD5`.
 
 - The client is patched with the July 2021 PSU. If the client isn't patched, the
@@ -77,8 +77,8 @@ conditions are met:
 that is not `DES`, `3DES`, or `RC4` (all key
 lengths).
 
-- `SQLNET.CHECKSUM_TYPES_SERVER` and
-`SQLNET.CHECKSUM_TYPES_CLIENT` have one matching secure checksumming
+- `SQLNET.CRYPTO_CHECKSUM_TYPES_SERVER` and
+`SQLNET.CRYPTO_CHECKSUM_TYPES_CLIENT` have one matching secure checksumming
 method that is not `MD5`.
 
 - The client is patched with the July 2021 PSU. If the client isn't patched, the
@@ -167,6 +167,13 @@ client.
 `Requested` indicates that the DB instance does not require traffic from the
 client to be encrypted.
 
+###### Important
+
+With the default value of `Requested`, connections may remain
+unencrypted if the client does not support encryption. To enforce encryption
+for all connections, set `SQLNET.ENCRYPTION_SERVER` to
+`Required`.
+
 `SQLNET.ENCRYPTION_TYPES_CLIENT`
 
 `RC4_256`, `AES256`, `AES192`, `3DES168`,
@@ -209,11 +216,11 @@ will accept.
 
 11. `DES40`: DES40 (40-bit key size)
 
-You can specify either one value or a comma-separated list of values. If you a comma, don't
+You can specify either one value or a comma-separated list of values. If you use a comma, don't
 insert a space after the comma; otherwise, you receive an `InvalidParameterValue`
 error.
 
-This parameter and `SQLNET.SQLNET.ENCRYPTION_TYPES_SERVER` must have a common
+This parameter and `SQLNET.ENCRYPTION_TYPES_SERVER` must have a common
 cipher.
 
 `SQLNET.ENCRYPTION_TYPES_SERVER`
@@ -255,11 +262,11 @@ algorithms that the client will accept.
 
 11. `DES40`: DES40 (40-bit key size)
 
-You can specify either one value or a comma-separated list of values. If you a comma, don't
+You can specify either one value or a comma-separated list of values. If you use a comma, don't
 insert a space after the comma; otherwise, you receive an `InvalidParameterValue`
 error.
 
-This parameter and `SQLNET.SQLNET.ENCRYPTION_TYPES_SERVER` must have a common
+This parameter and `SQLNET.ENCRYPTION_TYPES_CLIENT` must have a common
 cipher.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)

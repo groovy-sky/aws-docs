@@ -1,12 +1,11 @@
 ---
-title: "Configuring Aurora MySQL  binary logging for Single-AZ databases"
+title: "Configuring Aurora MySQL binary logging"
 ---
 
-# Configuring Aurora MySQL binary logging for Single-AZ databases
+# Configuring Aurora MySQL binary logging
 
 The _binary log_ is a set of log files that contain information about
-data modifications made to an Aurora MySQL server
-instance. The binary log contains information such as the following:
+data modifications made to an Aurora MySQL DB cluster. The binary log contains information such as the following:
 
 - Events that describe database changes such as table creation or row
 modifications

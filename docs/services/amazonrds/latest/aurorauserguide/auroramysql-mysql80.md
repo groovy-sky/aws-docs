@@ -10,6 +10,12 @@ upgrade your clusters and applications to Aurora MySQL version 3.
 
 Some Aurora features, such as Aurora Serverless v2, require Aurora MySQL version 3.
 
+###### Tip
+
+Newer Aurora MySQL major versions are now available, starting with Aurora MySQL version 8.4 (compatible with MySQL 8.4).
+You can upgrade from Aurora MySQL version 3 to a newer major version.
+For more information about version numbering, see [Checking Aurora MySQL version numbers](auroramysql-updates-versions.md).
+
 ###### Topics
 
 - [Features from MySQL 8.0 Community Edition](#AuroraMySQL.8.0-features-community)
@@ -48,7 +54,7 @@ _Manual_.
 
 - Optimized `ADD COLUMN` and `RENAME COLUMN` clauses for the `ALTER TABLE` statement. These optimizations are
 called "instant DDL." Aurora MySQL version 3 is compatible with the community MySQL instant DDL feature. The former Aurora fast DDL
-feature isn't used. For usage information for instant DDL, see [Instant DDL (Aurora MySQL version 3)](auroramysql-managing-fastddl.md#AuroraMySQL.mysql80-instant-ddl).
+feature isn't used. For usage information for instant DDL, see [Instant DDL (Aurora MySQL version 3 and version 8.4)](auroramysql-managing-fastddl.md#AuroraMySQL.mysql80-instant-ddl).
 
 - Descending, functional, and invisible indexes. For usage information, see [Invisible Indexes](https://dev.mysql.com/doc/refman/8.0/en/invisible-indexes.html), [Descending Indexes](https://dev.mysql.com/doc/refman/8.0/en/descending-indexes.html), and [CREATE INDEX Statement](https://dev.mysql.com/doc/refman/8.0/en/create-index.html) in the
 _MySQL Reference Manual_.
@@ -76,8 +82,8 @@ changes, see [Inclusive language changes for Aurora MySQL version 3](auroramysql
 
 ## Aurora MySQL version 3 prerequisite for Aurora MySQL Serverless v2
 
-Aurora MySQL version 3 is a prerequisite for all DB instances in an Aurora MySQL Serverless v2 cluster.
-Aurora MySQL Serverless v2 includes support for reader instances in a DB cluster, and other Aurora features
+Aurora MySQL version 3 is a prerequisite for all DB instances in an Aurora MySQL Aurora serverless cluster.
+Aurora MySQL Aurora serverless includes support for reader instances in a DB cluster, and other Aurora features
 that aren't available for Aurora MySQL Serverless v1. It also has faster and more granular scaling than
 Aurora MySQL Serverless v1.
 
@@ -126,7 +132,7 @@ For more details, see the blog [Reduce downtime with Amazon Aurora MySQL databas
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Overview of Aurora MySQL
+Security considerations for upgrading from Aurora MySQL version 3 to version 8.4
 
 New temporary table behavior in Aurora MySQL version 3
 

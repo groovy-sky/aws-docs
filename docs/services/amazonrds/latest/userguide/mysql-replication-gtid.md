@@ -124,7 +124,7 @@ For more information about parameter groups, see [Parameter groups for Amazon RD
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Troubleshooting
+Missing records
 
 Enabling GTID-based replication for new read replicas
 

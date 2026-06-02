@@ -28,6 +28,8 @@ For more information about DB instance class types, supported DB engines, suppor
 
 - [Changing your DB instance class](#Concepts.DBInstanceClass.Changing)
 
+- [Cross-Availability Zone ENA Express support for Multi-AZ deployments](concepts-dbinstanceclass-crossazenaexpress.md)
+
 - [Configuring the processor for a DB instance class in RDS for Oracle](user-configureprocessor.md)
 
 - [Hardware specifications for DB instance classes](concepts-dbinstanceclass-summary.md)

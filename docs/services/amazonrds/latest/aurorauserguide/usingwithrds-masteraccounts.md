@@ -81,6 +81,34 @@ Starting with Aurora MySQL version 3.09.0, the master user also gets the `FLUSH_
 For more information about rds\_superuser\_role, see [Role-based privilege model](auroramysql-compare-80-v3.md#AuroraMySQL.privilege-model)
 .
 
+Version 8.4:
+
+`ALTER`, `ALLOW_NONEXISTENT_DEFINER`,
+`APPLICATION_PASSWORD_ADMIN`,
+`ALTER ROUTINE`, `CONNECTION_ADMIN`,
+`CREATE`, `CREATE ROLE`, `CREATE
+                                    ROUTINE`, `CREATE TEMPORARY TABLES`,
+`CREATE USER`, `CREATE VIEW`,
+`DELETE`, `DROP`, `DROP ROLE`,
+`EVENT`, `EXECUTE`,
+`FLUSH_OPTIMIZER_COSTS`, `FLUSH_PRIVILEGES`,
+`FLUSH_STATUS`, `FLUSH_TABLES`,
+`FLUSH_USER_RESOURCES`,
+`INDEX`, `INSERT`,
+`LOCK TABLES`, `OPTIMIZE_LOCAL_TABLE`,
+`PROCESS`, `REFERENCES`,
+`RELOAD`, `REPLICATION CLIENT`,
+`REPLICATION SLAVE`, `ROLE_ADMIN`,
+`SELECT`, `SET_ANY_DEFINER`,
+`SHOW DATABASES`, `SHOW_ROUTINE`,
+`SHOW VIEW`, `TRIGGER`,
+`UPDATE`, `XA_RECOVER_ADMIN`
+
+`rds_superuser_role`
+
+For more information about rds\_superuser\_role, see [Role-based privilege model](auroramysql-compare-80-v3.md#AuroraMySQL.privilege-model)
+.
+
 Aurora PostgreSQL
 
 `LOGIN`, `NOSUPERUSER`,

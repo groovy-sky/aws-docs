@@ -88,21 +88,26 @@ and higher, and 13.11 and higher
 **db.m8i – general-purpose instance classes powered by**
 **Intel Xeon 6 processors**
 
-Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.m8i.48xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.24xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.16xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.12xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.8xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.4xlargeNoNoNoNoBYOL only, all editionsNodb.m8i.2xlargeNoNoNoNoBYOL only, all editionsNodb.m8i.xlargeNoNoNoNoBYOL only, all editionsNodb.m8i.largeNoNoNoNoBYOL only, all editionsNodb.m8i.metal-96xlNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m8i.metal-48xlNoNoNoNoBYOL only, Enterprise Edition onlyNo
+Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.m8i.96xlargeNoNoYesNoNoNodb.m8i.48xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.m8i.32xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.m8i.24xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.m8i.16xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.m8i.12xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.m8i.8xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.m8i.4xlargeNoNoYesNoYesNodb.m8i.2xlargeNoNoYesNoYesNodb.m8i.xlargeNoNoYesNoYesNodb.m8i.largeNoNoYesNoYesNodb.m8i.metal-96xlNoNoNoNoBYOL onlyNodb.m8i.metal-48xlNoNoNoNoBYOL onlyNo
+
+**db.m8a – general-purpose instance classes powered by**
+**5th Generation AMD EPYC processors**
+
+Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.m8a.48xlargeNoNoNoNoNoNodb.m8a.24xlargeNoNoNoNoNoNodb.m8a.16xlargeNoNoYesNoNoNodb.m8a.12xlargeNoNoYesNoNoNodb.m8a.8xlargeNoNoYesNoNoNodb.m8a.4xlargeNoNoYesNoNoNodb.m8a.2xlargeNoNoYesNoNoNodb.m8a.xlargeNoNoYesNoNoNodb.m8a.largeNoNoYesNoNoNo
 
 **db.m7i – general-purpose instance classes powered by 4th**
 **generation Intel Xeon Scalable processors**
 
-Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.m7i.48xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, Enterprise Edition onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.m7i.24xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, Enterprise Edition onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.m7i.16xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, Enterprise Edition onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.m7i.12xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, Enterprise Edition onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.m7i.8xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, Enterprise Edition onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.m7i.4xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.m7i.2xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.m7i.xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.m7i.largeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.m7i.metal-48xlNoNoNoNoBYOL only, Enterprise Edition onlyNodb.m7i.metal-24xlNoNoNoNoBYOL only, Enterprise Edition onlyNo
+Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.m7i.48xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, Enterprise Edition onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.m7i.24xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, Enterprise Edition onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.m7i.16xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, Enterprise Edition onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.m7i.12xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, Enterprise Edition onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.m7i.8xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, Enterprise Edition onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.m7i.4xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.m7i.2xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.m7i.xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.m7i.largeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.m7i.metal-48xlNoNoNoNoBYOL onlyNodb.m7i.metal-24xlNoNoNoNoBYOL onlyNo
 
 **db.m7g – general-purpose instance classes powered by AWS**
 **Graviton3 processors**
@@ -201,11 +206,7 @@ NoMySQL 8.4 and 8.0BYOL only
 
 All PostgreSQL 17, 16, and 15 versions, 14.5 and higher 14 versions, and 13.7 and higher 13 versions
 
-db.m6id.metalNoNoNoNo
-
-BYOL only, Enterprise Edition only
-
-No
+db.m6id.metalNoNoNoNoBYOL onlyNo
 
 **db.m6idn – general-purpose instance classes with 3rd**
 **Generation Intel Xeon Scalable processors, SSD storage, and network**
@@ -367,11 +368,7 @@ NoMySQL 8.4 and 8.0BYOL only
 All PostgreSQL 17, 16, and 15 versions, 14.3 and higher 14 versions, 13.7 and higher 13 versions,
 12.11 and higher 12 versions, and 11.16 and higher 11 versions
 
-db.m6in.metalNoNoNoNo
-
-BYOL only, Enterprise Edition only
-
-No
+db.m6in.metalNoNoNoNoBYOL onlyNo
 
 **db.m6i – general-purpose instance classes powered by 3rd**
 **generation Intel Xeon Scalable processors**
@@ -430,11 +427,7 @@ Oracle Database 19c
 
 All available versions
 
-db.m6i.metalNoNoNoNo
-
-BYOL only, Enterprise Edition only
-
-No
+db.m6i.metalNoNoNoNoBYOL onlyNo
 
 **db.m5d – general-purpose instance classes powered by Intel**
 **Xeon Platinum processors and SSD storage**
@@ -616,11 +609,7 @@ Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.x2g.16xlarge
 
 **db.x2idn – memory-optimized instance classes powered by 3rd generation Intel Xeon Scalable processors**
 
-Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.x2idn.32xlargeNoMariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.4 and 8.0Enterprise Edition onlyPostgreSQL 15 versions, 14.6, and 13.9db.x2idn.24xlargeNoMariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.4 and 8.0Enterprise Edition onlyPostgreSQL 15 versions, 14.6, and 13.9db.x2idn.16xlargeNoMariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.4 and 8.0Enterprise Edition onlyPostgreSQL 15 versions, 14.6, and 13.9db.x2idn.metalNoNoNoNo
-
-BYOL only, Enterprise Edition only
-
-No
+Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.x2idn.32xlargeNoMariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.4 and 8.0Enterprise Edition onlyPostgreSQL 15 versions, 14.6, and 13.9db.x2idn.24xlargeNoMariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.4 and 8.0Enterprise Edition onlyPostgreSQL 15 versions, 14.6, and 13.9db.x2idn.16xlargeNoMariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.4 and 8.0Enterprise Edition onlyPostgreSQL 15 versions, 14.6, and 13.9db.x2idn.metalNoNoNoNoBYOL onlyNo
 
 **db.x2iedn – memory-optimized instance classes with local NVMe-based SSDs, powered by**
 **3rd generation Intel Xeon Scalable processors**
@@ -632,16 +621,12 @@ higherMySQL 8.4 and 8.0Enterprise Edition onlyAll PostgreSQL 17, 16, and 15 vers
 higherMySQL 8.4 and 8.0Enterprise Edition onlyAll PostgreSQL 17, 16, and 15 versions, 14.5 and higher 14 versions, 13.7 and higher 13 versions, and 13.4db.x2iedn.4xlargeYesMariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4Enterprise and Standard Editions only, SQL Server 2014 12.00 and
 higherMySQL 8.4 and 8.0Enterprise Edition and Standard Edition 2 (SE2)All PostgreSQL 17, 16, and 15 versions, 14.5 and higher 14 versions, 13.7 and higher 13 versions, and 13.4db.x2iedn.2xlargeYesMariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4Enterprise and Standard Editions only, SQL Server 2014 12.00 and
 higherMySQL 8.4 and 8.0Enterprise Edition and Standard Edition 2 (SE2)All PostgreSQL 17, 16, and 15 versions, 14.5 and higher 14 versions, 13.7 and higher 13 versions, and 13.4db.x2iedn.xlargeYesMariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4Enterprise and Standard Editions only, SQL Server 2014 12.00 and
-higherMySQL 8.4 and 8.0Enterprise Edition and Standard Edition 2 (SE2)All PostgreSQL 17, 16, and 15 versions, 14.5 and higher 14 versions, 13.7 and higher 13 versions, and 13.4db.x2iedn.metalNoNoNoNo
-
-BYOL only, Enterprise Edition only
-
-No
+higherMySQL 8.4 and 8.0Enterprise Edition and Standard Edition 2 (SE2)All PostgreSQL 17, 16, and 15 versions, 14.5 and higher 14 versions, 13.7 and higher 13 versions, and 13.4db.x2iedn.metalNoNoNoNoBYOL onlyNo
 
 **db.x2iezn – memory-optimized instance classes powered by 2nd generation Intel Xeon**
 **Scalable processors**
 
-Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.x2iezn.metalNoNoNoNoBYOL only, Enterprise Edition onlyNodb.x2iezn.8xlargeNoNoNoNoEnterprise Edition onlyNodb.x2iezn.6xlargeNoNoNoNoEnterprise Edition onlyNodb.x2iezn.4xlargeNoNoNoNoEnterprise Edition and Standard Edition 2 (SE2)Nodb.x2iezn.2xlargeNoNoNoNoEnterprise Edition and Standard Edition 2 (SE2)No
+Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.x2iezn.metalNoNoNoNoBYOL onlyNodb.x2iezn.8xlargeNoNoNoNoEnterprise Edition onlyNodb.x2iezn.6xlargeNoNoNoNoEnterprise Edition onlyNodb.x2iezn.4xlargeNoNoNoNoEnterprise Edition and Standard Edition 2 (SE2)Nodb.x2iezn.2xlargeNoNoNoNoEnterprise Edition and Standard Edition 2 (SE2)No
 
 **db.x1e – memory-optimized instance classes**
 
@@ -668,7 +653,12 @@ and higher, and 13.11 and higher
 **db.r8i – memory-optimized instance classes powered by**
 **Intel Xeon 6 processors**
 
-Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.r8i.48xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.24xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.16xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.12xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.8xlargeNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.4xlargeNoNoNoNoBYOL only, all editionsNodb.r8i.2xlargeNoNoNoNoBYOL only, all editionsNodb.r8i.xlargeNoNoNoNoBYOL only, all editionsNodb.r8i.largeNoNoNoNoBYOL only, all editionsNodb.r8i.metal-96xlNoNoNoNoBYOL only, Enterprise Edition onlyNodb.r8i.metal-48xlNoNoNoNoBYOL only, Enterprise Edition onlyNo
+Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.r8i.96xlargeNoNoYesNoNoNodb.r8i.48xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.r8i.32xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.r8i.24xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.r8i.16xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.r8i.12xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.r8i.8xlargeNoNoYesNoBYOL only, Enterprise Edition onlyNodb.r8i.4xlargeNoNoYesNoYesNodb.r8i.2xlargeNoNoYesNoYesNodb.r8i.xlargeNoNoYesNoYesNodb.r8i.largeNoNoYesNoYesNodb.r8i.metal-96xlNoNoNoNoBYOL onlyNodb.r8i.metal-48xlNoNoNoNoBYOL onlyNo
+
+**db.r8a – memory-optimized instance classes powered by**
+**5th Generation AMD EPYC processors**
+
+Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.r8a.48xlargeNoNoNoNoNoNodb.r8a.24xlargeNoNoNoNoNoNodb.r8a.16xlargeNoNoYesNoNoNodb.r8a.12xlargeNoNoYesNoNoNodb.r8a.8xlargeNoNoYesNoNoNodb.r8a.4xlargeNoNoYesNoNoNodb.r8a.2xlargeNoNoYesNoNoNodb.r8a.xlargeNoNoYesNoNoNodb.r8a.largeNoNoYesNoNoNo
 
 **db.r7i – memory-optimized instance classes preconfigured for high memory,**
 **storage, and I/O**
@@ -678,24 +668,16 @@ Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.r7i.8xlarge.
 **db.r7i – memory-optimized instance classes powered by 4th**
 **generation Intel Xeon Scalable processors**
 
-Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.r7i.48xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.r7i.24xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.r7i.16xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.r7i.12xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.r7i.8xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.r7i.4xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.r7i.2xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.r7i.xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.r7i.largeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4NoMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
-and higher, and 13.11 and higherdb.r7i.metal-48xlNoNoNoNo
-
-BYOL only, Enterprise Edition only
-
-Nodb.r7i.metal-24xlNoNoNoNo
-
-BYOL only, Enterprise Edition only
-
-No
+Instance classDb2MariaDBMicrosoft SQL ServerMySQLOraclePostgreSQLdb.r7i.48xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.r7i.24xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.r7i.16xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.r7i.12xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.r7i.8xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL onlyPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.r7i.4xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.r7i.2xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.r7i.xlargeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.r7i.largeDb2 11.5MariaDB 11.8, 11.4, 10.11, 10.6, 10.5, and 10.4YesMySQL 8.0.32 and higherBYOL only, all editionsPostgreSQL version 17.1 and higher, 16.1 and higher, 15.4 and higher, 14.9
+and higher, and 13.11 and higherdb.r7i.metal-48xlNoNoNoNoBYOL onlyNodb.r7i.metal-24xlNoNoNoNoBYOL onlyNo
 
 **db.r7g – memory-optimized instance classes powered by AWS Graviton3**
 **processors**
@@ -794,11 +776,7 @@ NoMySQL 8.4 and 8.0BYOL only
 
 All PostgreSQL 17, 16, and 15 versions, 14.5 and higher 14 versions, and 13.7 and higher 13 versions
 
-db.r6id.metalNoNoNoNo
-
-BYOL only, Enterprise Edition only
-
-No
+db.r6id.metalNoNoNoNoBYOL onlyNo
 
 **db.r6idn – memory-optimized instance classes powered by 3rd generation**
 **Intel Xeon Scalable processors**
@@ -951,11 +929,7 @@ NoMySQL 8.4 and 8.0BYOL only
 All PostgreSQL 17, 16, and 15 versions, 14.3 and higher 14 versions, 13.7 and higher 13 versions,
 12.11 and higher 12 versions, and 11.16 and higher 11 versions
 
-db.r6in.metalNoNoNoNo
-
-BYOL only, Enterprise Edition only
-
-No
+db.r6in.metalNoNoNoNoBYOL onlyNo
 
 **db.r6i – memory-optimized instance classes preconfigured for high memory,**
 **storage, and I/O**
@@ -1048,11 +1022,7 @@ All PostgreSQL 17, 16, 15, and 14 versions, 13.4 and higher 13 versions, 12.8 an
 
 Yes
 
-All PostgreSQL 17, 16, 15, and 14 versions, 13.4 and higher 13 versions, 12.8 and higher 12 versions, 11.13 and higher 11 versions, and 10.21 and higher 10 versionsdb.r6i.metalNoNoNoNo
-
-BYOL only, Enterprise Edition only
-
-No
+All PostgreSQL 17, 16, 15, and 14 versions, 13.4 and higher 13 versions, 12.8 and higher 12 versions, 11.13 and higher 11 versions, and 10.21 and higher 10 versionsdb.r6i.metalNoNoNoNoBYOL onlyNo
 
 **db.r5d – memory-optimized instance classes**
 
@@ -1578,11 +1548,7 @@ NoMySQL 8.4 and 8.0BYOL only
 
 All PostgreSQL 17, 16, and 15 versions, 14.5 and higher 14 versions, and 13.7 and higher 13 versions
 
-db.r6id.metalNoNoNoNo
-
-BYOL only, Enterprise Edition only
-
-No
+db.r6id.metalNoNoNoNoBYOL onlyNo
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -104,6 +104,6 @@ to _replicating_.
 
 Starting and stopping replication
 
-GTID-based replication
+Missing records
 
 All content copied from https://docs.aws.amazon.com/.

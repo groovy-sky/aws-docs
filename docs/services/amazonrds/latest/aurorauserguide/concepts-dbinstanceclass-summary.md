@@ -1,8 +1,8 @@
 ---
-title: "Hardware specifications for DB instance classesfor Aurora"
+title: "Hardware specifications for DB instance classes for Aurora"
 ---
 
-# Hardware specifications for DB instance classesfor Aurora
+# Hardware specifications for DB instance classes for Aurora
 
 In the table in this section, you can find hardware details about the Amazon RDS DB instance
 classes for Aurora.
@@ -12,13 +12,13 @@ For information about Aurora DB engine support for each DB instance class, see
 
 ###### Topics
 
-- [Hardware terminology for DB instance classesfor Aurora](#Concepts.DBInstanceClass.hardware-terminology)
+- [Hardware terminology for DB instance classes for Aurora](#Concepts.DBInstanceClass.hardware-terminology)
 
 - [Hardware specifications for the memory-optimized instance classes](#hw-specs-aur.mem-opt)
 
 - [Hardware specifications for the burstable-performance instance classes](#hardware-specifications.burstable-inst-classes)
 
-## Hardware terminology for DB instance classesfor Aurora
+## Hardware terminology for DB instance classes for Aurora
 
 The following terminology is used to describe hardware specifications for DB instance
 classes:
@@ -110,7 +110,7 @@ Instance classvCPUECUMemory (GiB)Instance storage (GiB)Max. EBS bandwidth (Mbps)
 
 **db.r5 – memory-optimized instance classes**
 
-Instance classvCPUECUMemory (GiB)Instance storage (GiB)Max. EBS bandwidth (Mbps)Network bandwidth (Gbps)db.r5.24xlarge96347768EBS-optimized only19,00025db.r5.16xlarge64264512EBS-optimized only13,60020db.r5.12xlarge48173384EBS-optimized only9,50012db.r5.8xlarge32132256EBS-optimized only6,80010db.r5.4xlarge1671128EBS-optimized only4,750Up to 10db.r5.2xlarge83864EBS-optimized onlyUp to 4,750Up to 10db.r5.xlarge41932EBS-optimized onlyUp to 4,750Up to 10db.r5.large21016EBS-optimized onlyUp to 4,750Up to 10
+Instance classvCPUECUMemory (GiB)Instance storage (GiB)Max. EBS bandwidth (Mbps)Network bandwidth (Gbps)db.r5.24xlarge96347768EBS-optimized only19,00025db.r5.16xlarge64264512EBS-optimized only13,60020db.r5.12xlarge48173384EBS-optimized only9,50010db.r5.8xlarge32132256EBS-optimized only6,80010db.r5.4xlarge1671128EBS-optimized only4,750Up to 10db.r5.2xlarge83864EBS-optimized onlyUp to 4,750Up to 10db.r5.xlarge41932EBS-optimized onlyUp to 4,750Up to 10db.r5.large21016EBS-optimized onlyUp to 4,750Up to 10
 
 **db.r4 – memory-optimized instance classes with Intel Xeon Scalable processors**
 

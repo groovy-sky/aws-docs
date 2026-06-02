@@ -33,7 +33,7 @@ the log file might be empty when you download it.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Amazon RDS event categories and event messagesfor Aurora
+Amazon RDS event categories and event messages for Aurora
 
 Viewing and listing database log files
 

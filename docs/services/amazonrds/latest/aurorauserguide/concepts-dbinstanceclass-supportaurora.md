@@ -6,9 +6,9 @@ title: "Supported DB engines for DB instance classes"
 
 The following tables show the supported DB instance classes for the Amazon Aurora DB engines.
 
-**db.serverless – Aurora Serverless v2 instance class with automatic capacity scaling**
+**db.serverless – Aurora serverless instance class with automatic capacity scaling**
 
-Instance classAurora MySQLAurora PostgreSQLdb.serverlessSee [Supported Regions and Aurora DB engines for Aurora Serverless v2](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md).See [Supported Regions and Aurora DB engines for Aurora Serverless v2](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md).
+Instance classAurora MySQLAurora PostgreSQLdb.serverlessSee [Supported Regions and Aurora DB engines for Aurora serverless](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md).See [Supported Regions and Aurora DB engines for Aurora serverless](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md).
 
 **db.x2g – memory-optimized instance classes powered by AWS Graviton2 processors**
 

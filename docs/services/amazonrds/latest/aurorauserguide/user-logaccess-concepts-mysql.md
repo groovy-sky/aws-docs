@@ -17,7 +17,7 @@ see [Monitoring Amazon Aurora log files](user-logaccess.md).
 
 - [Sending AuroraMySQL log output to tables](appendix-mysql-commondbatasks-logs.md)
 
-- [Configuring Aurora MySQL binary logging for Single-AZ databases](user-logaccess-mysql-binaryformat.md)
+- [Configuring Aurora MySQL binary logging](user-logaccess-mysql-binaryformat.md)
 
 - [Accessing MySQL binary logs](user-logaccess-mysql-binarylog.md)
 

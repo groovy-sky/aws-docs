@@ -7,7 +7,7 @@ title: "DB instance class types"
 Amazon Aurora
 supports DB instance classes for the following use cases:
 
-- [Aurora Serverless v2](#Concepts.DBInstanceClass.Types.serverless-v2)
+- [Aurora serverless](#Concepts.DBInstanceClass.Types.serverless-v2)
 
 - [Memory-optimized](#Concepts.DBInstanceClass.Types.memory)
 
@@ -18,13 +18,13 @@ supports DB instance classes for the following use cases:
 For more information about Amazon EC2 instance types, see [Instance types](../../../ec2/latest/userguide/instance-types.md) in the Amazon EC2
 documentation.
 
-## Aurora Serverless v2 instance class type
+## Aurora serverless instance class type
 
-The following Aurora Serverless v2 type is available:
+The following Aurora serverless type is available:
 
 - db.serverless – A special DB instance class type
-used by Aurora Serverless v2. Aurora adjusts the compute, memory, and network resources
-dynamically as the workload changes. For usage details, see [Using Aurora Serverless v2](aurora-serverless-v2.md).
+used by Aurora serverless. Aurora adjusts the compute, memory, and network resources
+dynamically as the workload changes. For usage details, see [Using Aurora serverless](aurora-serverless-v2.md).
 
 ## Memory-optimized instance class types
 
@@ -134,7 +134,7 @@ We recommend using the T DB instance classes only for development, test,
 or other nonproduction servers. For more detailed recommendations for the T instance
 classes, see [Using T instance classes for development and testing](auroramysql-bestpractices-performance.md#AuroraMySQL.BestPractices.T2Medium).
 
-For DB instance class hardware specifications, see [Hardware specifications for DB instance classesfor Aurora](concepts-dbinstanceclass-summary.md).
+For DB instance class hardware specifications, see [Hardware specifications for DB instance classes for Aurora](concepts-dbinstanceclass-summary.md).
 
 ## Optimized Reads instance class types
 

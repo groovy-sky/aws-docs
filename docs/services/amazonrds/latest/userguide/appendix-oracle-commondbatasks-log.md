@@ -35,13 +35,13 @@ For more information, see [Amazon RDS for Oracle database log files](user-logacc
 
 In force logging mode, Oracle logs all changes to the database except changes in
 temporary tablespaces and temporary segments ( `NOLOGGING` clauses are
-ignored). For more information, see [Specifying FORCE LOGGING mode](https://docs.oracle.com/cd/E11882_01/server.112/e25494/create.htm) in the Oracle documentation.
+ignored). For more information, see [Specifying FORCE LOGGING mode](https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/managing-the-redo-log.html) in the Oracle documentation.
 
 To set force logging, use the Amazon RDS procedure
 `rdsadmin.rdsadmin_util.force_logging`. The
 `force_logging` procedure has the following parameters.
 
-Parameter nameData typeDefaultYesDescription
+Parameter nameData typeDefaultRequiredDescription
 
 `p_enable`
 
@@ -62,10 +62,17 @@ The following example puts the database in force logging mode.
 EXEC rdsadmin.rdsadmin_util.force_logging(p_enable => true);
 ```
 
+To verify that force logging is enabled, run the following query:
+
+```sql
+
+SELECT FORCE_LOGGING FROM V$DATABASE;
+```
+
 ## Setting supplemental logging
 
 If you enable supplemental logging, LogMiner has the necessary information to
-support chained rows and clustered tables. For more information, see [Supplemental logging](https://docs.oracle.com/cd/E11882_01/server.112/e22490/logminer.htm) in the Oracle documentation.
+support chained rows and clustered tables. For more information, see [Supplemental logging](https://docs.oracle.com/en/database/oracle/oracle-database/19/sutil/oracle-logminer-utility.html) in the Oracle documentation.
 
 Oracle Database doesn't enable supplemental logging by default. To enable and
 disable supplemental logging, use the Amazon RDS procedure
@@ -100,7 +107,7 @@ No
 The type of supplemental logging. Valid values are
 `'ALL'`, `'FOREIGN KEY'`,
 `'PRIMARY KEY'`, `'UNIQUE'`, or
-`PROCEDURAL`.
+`'PROCEDURAL'`.
 
 The following example enables supplemental logging.
 
@@ -136,6 +143,13 @@ begin
         p_type   => 'PRIMARY KEY');
 end;
 /
+```
+
+To verify that supplemental logging is enabled, run the following query:
+
+```sql
+
+SELECT SUPPLEMENTAL_LOG_DATA_MIN, SUPPLEMENTAL_LOG_DATA_PK, SUPPLEMENTAL_LOG_DATA_UI, SUPPLEMENTAL_LOG_DATA_FK, SUPPLEMENTAL_LOG_DATA_ALL FROM V$DATABASE;
 ```
 
 ## Switching online log files
@@ -186,10 +200,14 @@ varchar2
 
 —
 
-Yes
+No
 
 The size of the log file in kilobytes (K), megabytes (M), or
 gigabytes (G).
+
+###### Note
+
+You must specify either `bytes` or `p_size`. If you specify both, the procedure uses `p_size`.
 
 The following command adds a 100 MB log file.
 

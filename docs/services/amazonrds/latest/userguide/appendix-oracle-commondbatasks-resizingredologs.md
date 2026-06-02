@@ -24,10 +24,10 @@ GROUP#     BYTES      STATUS
 
 /* Add four new logs that are each 512 MB */
 
-EXEC rdsadmin.rdsadmin_util.add_logfile(bytes => 536870912);
-EXEC rdsadmin.rdsadmin_util.add_logfile(bytes => 536870912);
-EXEC rdsadmin.rdsadmin_util.add_logfile(bytes => 536870912);
-EXEC rdsadmin.rdsadmin_util.add_logfile(bytes => 536870912);
+EXEC rdsadmin.rdsadmin_util.add_logfile(p_size => '512M');
+EXEC rdsadmin.rdsadmin_util.add_logfile(p_size => '512M');
+EXEC rdsadmin.rdsadmin_util.add_logfile(p_size => '512M');
+EXEC rdsadmin.rdsadmin_util.add_logfile(p_size => '512M');
 
 /* Query V$LOG to see the logs. */
 /* Now there are 8 logs.        */
@@ -71,7 +71,7 @@ EXEC rdsadmin.rdsadmin_util.switch_logfile;
 /* Query V$LOG to see the logs.        */
 /* Now one of the new logs is current. */
 
-SQL>SELECT GROUP#, BYTES, STATUS FROM V$LOG;
+SELECT GROUP#, BYTES, STATUS FROM V$LOG;
 
 GROUP#     BYTES      STATUS
 ---------- ---------- ----------------
@@ -98,7 +98,7 @@ GROUP#     BYTES      STATUS
 7          536870912  UNUSED
 8          536870912  UNUSED
 
-# Drop the final inactive log.
+/* Drop the final inactive log. */
 
 EXEC rdsadmin.rdsadmin_util.drop_logfile(grp => 2);
 
@@ -114,6 +114,10 @@ GROUP#     BYTES      STATUS
 7          536870912  UNUSED
 8          536870912  UNUSED
 ```
+
+###### Tip
+
+If the log status remains ACTIVE after the checkpoint, a long-running transaction may be holding it. Query `V$TRANSACTION` to identify active transactions, then retry the checkpoint after they complete.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

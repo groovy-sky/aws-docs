@@ -45,7 +45,7 @@ AWS instance classes.
 Every Aurora cluster is associated with a DB cluster parameter group. This parameter group
 assigns default values for every configuration value for the corresponding DB engine.
 The cluster parameter group includes defaults for both the cluster-level and instance-level
-parameters. Each DB instance within a provisioned or Aurora Serverless v2 cluster inherits the settings from
+parameters. Each DB instance within a provisioned or Aurora serverless cluster inherits the settings from
 that DB cluster parameter group.
 
 Each DB instance is also associated with a DB parameter group. The values in the DB parameter
@@ -60,7 +60,7 @@ those parameter groups yourself, and you can edit the parameter values. You can 
 parameter groups at creation time. You can also modify a DB cluster or instance later to use a custom
 parameter group.
 
-For provisioned and Aurora Serverless v2 instances, any configuration values that you modify in the
+For provisioned and Aurora serverless instances, any configuration values that you modify in the
 DB cluster parameter group override default values in the DB parameter group. If you edit the
 corresponding values in the DB parameter group, those values override the settings from the
 DB cluster parameter group.
@@ -82,24 +82,24 @@ Aurora MySQL
 See [Aurora MySQL configuration parameters](auroramysql-reference-parametergroups.md).
 
 For Aurora Serverless clusters, see additional details in
-[Working with parameter groups for Aurora Serverless v2](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups).
+[Working with parameter groups for Aurora serverless](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups).
 
 Aurora PostgreSQL
 
 See [Amazon Aurora PostgreSQL parameters](aurorapostgresql-reference-parametergroups.md).
 
 For Aurora Serverless clusters, see additional details in
-[Working with parameter groups for Aurora Serverless v2](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups).
+[Working with parameter groups for Aurora serverless](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups).
 
 ###### Note
 
-Aurora Serverless v2 uses both DB cluster parameter groups and DB parameter groups.
-With Aurora Serverless v2, you can modify almost all of the configuration parameters.
-Aurora Serverless v2 overrides the settings of some capacity-related configuration parameters so that
-your workload isn't interrupted when Aurora Serverless v2 instances scale down.
+Aurora serverless uses both DB cluster parameter groups and DB parameter groups.
+With Aurora serverless, you can modify almost all of the configuration parameters.
+Aurora serverless overrides the settings of some capacity-related configuration parameters so that
+your workload isn't interrupted when Aurora serverless instances scale down.
 
 To learn more about Aurora Serverless configuration settings and which settings you can modify,
-see [Working with parameter groups for Aurora Serverless v2](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups).
+see [Working with parameter groups for Aurora serverless](aurora-serverless-v2-setting-capacity.md#aurora-serverless-v2.parameter-groups).
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

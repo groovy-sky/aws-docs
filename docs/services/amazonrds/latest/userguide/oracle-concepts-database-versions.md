@@ -4,7 +4,7 @@ title: "RDS for Oracle releases"
 
 # RDS for Oracle releases
 
-RDS for Oracle for Oracle supports multiple Oracle Database releases.
+RDS for Oracle supports multiple Oracle Database releases.
 
 ###### Note
 
@@ -128,7 +128,7 @@ pool for the entire CDB or one isolated connection pool for each PDB.
 
 Y
 
-Enables or disables the deep vectorization framework.
+Enables or disables deep vectorization for In-Memory column store scans.
 
 [mandatory\_user\_profile](https://docs.oracle.com/en/database/oracle/oracle-database/21/refrn/MANDATORY_USER_PROFILE.html)
 
@@ -148,9 +148,9 @@ Specifies the mandatory user profile for a CDB or PDB.
 
 Y
 
-Enables or disables the deep vectorization framework.
+Enables or disables the automatic creation of SQL Quarantine configurations.
 
-[optimizer\_use\_sql\_quarantine](https://docs.oracle.com/en/database/oracle/oracle-database/21/refrn/OPTIMIZER_CAPTURE_SQL_QUARANTINE.html)
+[optimizer\_use\_sql\_quarantine](https://docs.oracle.com/en/database/oracle/oracle-database/21/refrn/OPTIMIZER_USE_SQL_QUARANTINE.html)
 
 `true | false`
 
@@ -158,7 +158,7 @@ Enables or disables the deep vectorization framework.
 
 Y
 
-Enables or disables the automatic creation of SQL Quarantine configurations.
+Enables or disables the use of SQL Quarantine configurations.
 
 [result\_cache\_execution\_threshold](https://docs.oracle.com/en/database/oracle/oracle-database/21/refrn/RESULT_CACHE_EXECUTION_THRESHOLD.html)
 

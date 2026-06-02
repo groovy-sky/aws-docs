@@ -1781,8 +1781,8 @@ instance type by running the EC2 operation [DescribeInstanceTypes](../../../../r
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Determining DB instance
-class support in AWS Regions
+Cross-AZ ENA
+Express support
 
 Hardware
 specifications

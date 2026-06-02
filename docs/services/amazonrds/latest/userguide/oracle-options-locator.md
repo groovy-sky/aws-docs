@@ -8,7 +8,7 @@ Amazon RDS supports Oracle Locator through the use of the `LOCATOR` option. Orac
 Locator provides capabilities that are typically required to support internet and wireless
 service-based applications and partner-based GIS solutions. Oracle Locator is a limited
 subset of Oracle Spatial. For more information, see [Oracle\
-Locator](https://docs.oracle.com/database/121/SPATL/sdo_locator.htm) in the Oracle documentation.
+Locator](https://docs.oracle.com/en/database/oracle/oracle-database/19/spatl/oracle-locator.html) in the Oracle documentation.
 
 ###### Important
 
@@ -33,7 +33,7 @@ Database Insider blog.
 The following are prerequisites for using Oracle Locator:
 
 - Your DB instance must be of sufficient class. Oracle Locator is not supported for the db.t3.small
-DB instance classes. For more information, see
+DB instance class. For more information, see
 [RDS for Oracle DB instance classes](oracle-concepts-instanceclasses.md).
 
 - Your DB instance must have **Auto Minor Version Upgrade** enabled.
@@ -113,12 +113,12 @@ Don't use any Oracle Spatial features unless you have a license for Oracle Spati
 
 For a list of features that are supported for Oracle Locator,
 see
-[Features Included with Locator](https://docs.oracle.com/database/121/SPATL/sdo_locator.htm)
+[Features Included with Locator](https://docs.oracle.com/en/database/oracle/oracle-database/19/spatl/oracle-locator.html)
 in the Oracle documentation.
 
 For a list of features that are not supported for Oracle Locator,
 see
-[Features Not Included with Locator](https://docs.oracle.com/database/121/SPATL/sdo_locator.htm)
+[Features Not Included with Locator](https://docs.oracle.com/en/database/oracle/oracle-database/19/spatl/oracle-locator.html)
 in the Oracle documentation.
 
 ## Removing the Oracle Locator option

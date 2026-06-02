@@ -8,9 +8,10 @@ Upgrading MySQL from one major version to another, such as going from MySQL 5.7 
 require careful planning and preparation. Unlike minor version upgrades where the focus is mainly on updating the database engine software and in some
 cases system tables, major MySQL upgrades often introduce fundamental changes to how the database stores and manages its metadata.
 
-To assist you in identifying such incompatibilities, when upgrading from Aurora MySQL version 2 to version 3, Aurora runs upgrade compatibility checks
-(prechecks) automatically to examine objects in your database cluster and identify known incompatibilities that can block the upgrade from proceeding. For
-details about the Aurora MySQL prechecks, see [Precheck descriptions reference for Aurora MySQL](auroramysql-upgrade-prechecks-descriptions.md). The Aurora prechecks run in addition to those run by the Community MySQL [upgrade checker utility](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-upgrade.html).
+To assist you in identifying such incompatibilities, Aurora runs upgrade compatibility checks
+(prechecks) automatically to examine objects in your database cluster and identify known incompatibilities that can block the upgrade from proceeding.
+These prechecks run for all major version upgrades, including version 2 to version 3 and version 3 to version 8.4. For
+details about the Aurora MySQL prechecks, see [Precheck descriptions for upgrading Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks-descriptions.md) and [Precheck descriptions for upgrading Aurora MySQL version 3 to version 8.4](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md). The Aurora prechecks run in addition to those run by the Community MySQL [upgrade checker utility](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-utilities-upgrade.html).
 
 These prechecks are mandatory. You can't choose to skip them. The prechecks provide the following benefits:
 
@@ -47,11 +48,15 @@ for the upgrade to complete. For more information on precheck performance consid
 
 - [Precheck performance for Aurora MySQL](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.performance)
 
-- [Summary of Community MySQL upgrade prechecks](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.community)
+- [Summary of Community MySQL upgrade prechecks for Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.community)
 
-- [Summary of Aurora MySQL upgrade prechecks](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.ams)
+- [Summary of Aurora MySQL upgrade prechecks for Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.ams)
 
-- [Precheck descriptions reference for Aurora MySQL](auroramysql-upgrade-prechecks-descriptions.md)
+- [Summary of Community MySQL upgrade prechecks for Aurora MySQL version 3 to version 8.4](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.community-v3-to-v84)
+
+- [Summary of Aurora MySQL upgrade prechecks for Aurora MySQL version 3 to version 8.4](auroramysql-upgrade-prechecks.md#AuroraMySQL.upgrade-prechecks.ams-v3-to-v84)
+
+- [Precheck descriptions for upgrading Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks-descriptions.md)
 
   - [Errors](auroramysql-upgrade-prechecks-descriptions.md#precheck-descriptions-errors)
 
@@ -66,6 +71,21 @@ for the upgrade to complete. For more information on precheck performance consid
   - [Notices](auroramysql-upgrade-prechecks-descriptions.md#precheck-descriptions-notices)
 
   - [Errors, warnings, or notices](auroramysql-upgrade-prechecks-descriptions.md#precheck-descriptions-all)
+- [Precheck descriptions for upgrading Aurora MySQL version 3 to version 8.4](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md)
+
+  - [Errors](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-errors)
+
+    - [MySQL prechecks that report errors](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-errors.mysql)
+
+    - [Aurora MySQL prechecks that report errors](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-errors.aurora)
+  - [Warnings](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-warnings)
+
+    - [MySQL prechecks that report warnings](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-warnings.mysql)
+
+    - [Aurora MySQL prechecks that report warnings](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-warnings.aurora)
+  - [Notices](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-notices)
+
+  - [Errors, warnings, or notices](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#precheck-v84-all)
 
 ## Precheck process for Aurora MySQL
 
@@ -80,7 +100,7 @@ For snapshot-restore upgrades, the precheck runs during the restore process. If 
 version. If errors are found, they're logged in the `upgrade-prechecks.log` file and the upgrade is canceled. Before attempting the
 upgrade again, resolve any errors returned in the `upgrade-prechecks.log` file.
 
-For more information, see [Finding the reasons for Aurora MySQL major version upgrade failures](auroramysql-upgrading-failure-events.md) and [Precheck descriptions reference for Aurora MySQL](auroramysql-upgrade-prechecks-descriptions.md).
+For more information, see [Finding the reasons for Aurora MySQL major version upgrade failures](auroramysql-upgrading-failure-events.md) and [Precheck descriptions for upgrading Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks-descriptions.md).
 
 To monitor precheck status, you can view the following events on your DB cluster.
 
@@ -153,7 +173,7 @@ For more information, see [this example](#precheck-query-failed).
 - `description` – A general description of the incompatibility, and how to remediate the issue.
 
 - `documentationLink` – Where applicable, a link to relevant Aurora MySQL or MySQL documentation is noted here. For more
-information, see [Precheck descriptions reference for Aurora MySQL](auroramysql-upgrade-prechecks-descriptions.md).
+information, see [Precheck descriptions for upgrading Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks-descriptions.md).
 
 - `detectedProblems` – If the precheck returns an error, warning, or notice, this shows details of the incompatibility, and
 incompatible objects where applicable:
@@ -184,7 +204,7 @@ problems in future releases.
 
 ## Precheck log output examples for Aurora MySQL
 
-The following examples show the precheck log output that you might see. For details of the prechecks that are run, see [Precheck descriptions reference for Aurora MySQL](auroramysql-upgrade-prechecks-descriptions.md).
+The following examples show the precheck log output that you might see. For details of the prechecks that are run, see [Precheck descriptions for upgrading Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks-descriptions.md).
 
 **Precheck status OK, no incompatibility detected**
 
@@ -375,7 +395,7 @@ If the prechecks fail due to lack of resources, you can detect this in the prech
 
 For more information, see [How the Aurora MySQL in-place major version upgrade works](auroramysql-updates-majorversionupgrade.md#AuroraMySQL.Upgrading.Sequence) and [Planning a major version upgrade for an Aurora MySQL cluster](auroramysql-updates-majorversionupgrade.md#AuroraMySQL.Upgrading.Planning).
 
-## Summary of Community MySQL upgrade prechecks
+## Summary of Community MySQL upgrade prechecks for Aurora MySQL version 2 to version 3
 
 The following is a general list of incompatibilities between MySQL 5.7 and 8.0:
 
@@ -433,12 +453,12 @@ clauses.
 
 - There must be no table or schema names that are invalid for MySQL 5.7.
 
-For details of the prechecks that are run, see [Precheck descriptions reference for Aurora MySQL](auroramysql-upgrade-prechecks-descriptions.md).
+For details of the prechecks that are run, see [Precheck descriptions for upgrading Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks-descriptions.md).
 
 For more information about upgrading to MySQL 8.0, see [Upgrading MySQL](https://dev.mysql.com/doc/refman/8.0/en/upgrading.html)
 in the MySQL documentation. For a general description of changes in MySQL 8.0, see [What is new in MySQL 8.0](https://dev.mysql.com/doc/refman/8.0/en/mysql-nutshell.html) in the MySQL documentation.
 
-## Summary of Aurora MySQL upgrade prechecks
+## Summary of Aurora MySQL upgrade prechecks for Aurora MySQL version 2 to version 3
 
 Aurora MySQL has its own specific requirements when upgrading from version 2 to version 3, including the following:
 
@@ -477,12 +497,48 @@ A larger prefix length was allowed in MySQL 5.7 using the `innodb_large_prefix` 
 
 - Tables can't have data file path inconsistency.
 
-For details of the prechecks that are run, see [Precheck descriptions reference for Aurora MySQL](auroramysql-upgrade-prechecks-descriptions.md).
+For details of the prechecks that are run, see [Precheck descriptions for upgrading Aurora MySQL version 2 to version 3](auroramysql-upgrade-prechecks-descriptions.md).
+
+## Summary of Community MySQL upgrade prechecks for Aurora MySQL version 3 to version 8.4
+
+The following is a general list of incompatibilities between MySQL 8.0 and 8.4:
+
+- There must be no partitioned tables that use `KEY` partitioning on columns with prefix key indexes. Prefix indexes are ignored by
+the partition function and are not allowed as of MySQL 8.4.0.
+
+- There must be no columns of type `FLOAT` or `DOUBLE` with the `AUTO_INCREMENT` flag set. This is no longer
+supported in MySQL 8.4.
+
+- Foreign key constraints should reference a full unique or primary key index on the parent table. Starting with MySQL 8.4.0, creating a
+foreign key that references a non-unique or partial parent index is forbidden by default.
+
+For details of the prechecks that are run, see [Precheck descriptions for upgrading Aurora MySQL version 3 to version 8.4](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md).
+
+For more information about upgrading to MySQL 8.4, see [Upgrading\
+MySQL](https://dev.mysql.com/doc/refman/8.4/en/upgrading.html) in the MySQL 8.4 documentation. For a general description of changes in MySQL 8.4, see [What is new in MySQL 8.4](https://dev.mysql.com/doc/refman/8.4/en/mysql-nutshell.html) in the MySQL 8.4 documentation.
+
+## Summary of Aurora MySQL upgrade prechecks for Aurora MySQL version 3 to version 8.4
+
+Aurora MySQL has its own specific requirements when upgrading from version 3 to version 8.4, including the following:
+
+- There must be no plugins installed that are unsupported in Aurora MySQL version 8.4. Uninstall any unsupported plugins before upgrading.
+
+- There must be no MySQL components installed that are unsupported in Aurora MySQL version 8.4. Uninstall any unsupported components before
+upgrading.
+
+- Replace the deprecated `validate_password` plugin with the `component_validate_password` component. The
+`validate_password` plugin is deprecated in Aurora MySQL version 8.4 and will be removed in a future release. For more information,
+see [Using the validate\_password component](auroramysql-passwordpolicies.md#AuroraMySQL.PasswordPolicies.validate-password).
+
+- All objects in the `sys` schema must have the correct object types. Mismatches can occur if the schema was manually modified. For
+more information, see [auroraUpgradeCheckForSysSchemaObjectTypeMismatch](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md#v84-auroraUpgradeCheckForSysSchemaObjectTypeMismatch).
+
+For details of the prechecks that are run, see [Precheck descriptions for upgrading Aurora MySQL version 3 to version 8.4](auroramysql-upgrade-prechecks-v3-to-v84-descriptions.md).
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Upgrading the major version of an Aurora MySQL DB cluster
 
-Precheck descriptions reference for Aurora MySQL
+Precheck descriptions for upgrading Aurora MySQL version 2 to version 3
 
 All content copied from https://docs.aws.amazon.com/.

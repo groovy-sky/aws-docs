@@ -89,6 +89,19 @@ Yes
 Set this parameter to `ON` to turn off hash join optimization in Aurora MySQL version 2.09 or
 higher. It isn't supported for version 3. For more information, see [Parallel query for Amazon Aurora MySQL](aurora-mysql-parallel-query.md).
 
+`aurora_enable_memory_management`
+
+Yes
+
+Available in Aurora MySQL version 8.4 and higher.
+
+When set to `ON` (the default), Aurora automatically manages memory
+recovery actions and the `aurora_oom_response` parameter is ignored.
+When set to `OFF`, Aurora uses the `aurora_oom_response`
+parameter to determine which recovery actions to take.
+
+For more information, see [Troubleshooting out-of-memory issues for Aurora MySQL databases](auroramysqloom.md).
+
 `aurora_enable_replica_log_compression`
 
 Yes
@@ -115,6 +128,21 @@ setting is available in Aurora MySQL version 3, but it isn't used.
 Yes
 
 This setting is turned on by default in Aurora MySQL 2.10 and higher.
+
+`aurora_enable_validate_password_component`
+
+Yes
+
+This parameter is available in Aurora MySQL version 8.4.7 and higher.
+
+The default value is `0` ( `false`).
+
+When set to `1` (or `true`), Aurora enables the
+`validate_password` component. When set to `0` (or
+`false`), Aurora disables the component. The component is managed through
+this parameter instead of the `INSTALL COMPONENT` and
+`UNINSTALL COMPONENT` commands. For more information, see
+[Using the validate\_password component](auroramysql-passwordpolicies.md#AuroraMySQL.PasswordPolicies.validate-password).
 
 `aurora_in_memory_relaylog`
 
@@ -201,6 +229,19 @@ it to `true` for case-insensitive comparison. By default, case-sensitive compari
 ( `false`). For more information, see [Using Kerberos authentication for Aurora MySQL](aurora-mysql-kerberos.md).
 
 This parameter is available in Aurora MySQL version 3.03 and higher.
+
+`authentication_policy`
+
+Yes
+
+This parameter is available in Aurora MySQL version 8.4.7 and higher.
+
+Supported values are
+`*:caching_sha2_password` (default) and
+`*:mysql_native_password`.
+
+For more information, see
+[Authentication policy (new in 8.4)](auroramysql-upgrade-v3-v84-security.md#AuroraMySQL.Upgrade-v3-v84-security.auth-policy).
 
 `auto_increment_increment`
 
@@ -294,7 +335,7 @@ you use enhanced binlog. For more information, see [Setting up enhanced binlog f
 
 `binlog_row_image`
 
-No
+Yes
 
 None
 
@@ -342,7 +383,7 @@ This parameter applies to Aurora MySQL version 2.12 and higher, and version 3.
 
 Yes
 
-This parameter applies to Aurora MySQL version 3.
+This parameter only applies to Aurora MySQL version 3. In Aurora MySQL version 8.4.7, the server uses the WRITESET behavior by default.
 
 `character-set-client-handshake`
 
@@ -806,6 +847,24 @@ No
 
 This parameter applies to Aurora MySQL version 3.
 
+`password_history`
+
+Yes
+
+Available in Aurora MySQL version 8.4 and higher.
+
+`password_require_current`
+
+Yes
+
+Available in Aurora MySQL version 8.4 and higher.
+
+`password_reuse_interval`
+
+Yes
+
+Available in Aurora MySQL version 8.4 and higher.
+
 `preload_buffer_size`
 
 Yes
@@ -1038,6 +1097,48 @@ Yes
 
 For more information, see [TLS versions for Aurora MySQL](auroramysql-security.md#AuroraMySQL.Security.SSL.TLS_Version).
 
+`validate_password.check_user_name`
+
+Yes
+
+Available in Aurora MySQL version 8.4 and higher.
+
+`validate_password.dictionary_file`
+
+No
+
+This parameter is not supported in Aurora MySQL version 8.4. The parameter is visible in the parameter group but cannot be modified.
+
+`validate_password.length`
+
+Yes
+
+Available in Aurora MySQL version 8.4 and higher.
+
+`validate_password.mixed_case_count`
+
+Yes
+
+Available in Aurora MySQL version 8.4 and higher.
+
+`validate_password.number_count`
+
+Yes
+
+Available in Aurora MySQL version 8.4 and higher.
+
+`validate_password.policy`
+
+Yes
+
+Available in Aurora MySQL version 8.4.7 and higher. Only LOW and MEDIUM levels are supported by Aurora MySQL.
+
+`validate_password.special_char_count`
+
+Yes
+
+Available in Aurora MySQL version 8.4 and higher.
+
 ## Instance-level parameters
 
 The following table shows all of the parameters that apply to a specific DB instance in an Aurora MySQL DB cluster.
@@ -1073,7 +1174,9 @@ For more information, see [Amazon Aurora MySQL lab mode](auroramysql-updates-lab
 
 Yes
 
-This parameter is supported for Aurora MySQL versions 2 and 3. For more information, see
+This parameter is supported for Aurora MySQL versions 2 and 3. Also available in
+Aurora MySQL 8.4 but only considered when `aurora_enable_memory_management`
+is set to `OFF`. For more information, see
 [Troubleshooting out-of-memory issues for Aurora MySQL databases](auroramysqloom.md).
 
 `aurora_parallel_query`
@@ -1221,6 +1324,12 @@ No
 
 This parameter applies to Aurora MySQL version 3.
 
+`default_password_lifetime`
+
+Yes
+
+Available in Aurora MySQL version 8.4 and higher.
+
 `default_time_zone`
 
 No
@@ -1244,6 +1353,12 @@ None
 Yes
 
 None
+
+`disconnect_on_expired_password`
+
+Yes
+
+Available in Aurora MySQL version 8.4 and higher.
 
 `delayed_insert_limit`
 
@@ -1646,7 +1761,8 @@ None
 
 No
 
-None
+Aurora MySQL manages the value of this parameter automatically based on the
+DB instance class. The value scales with the number of vCPUs on the instance.
 
 `innodb_read_only`
 
@@ -2879,6 +2995,11 @@ Yes
 
 This parameter applies to Aurora MySQL version 3. For details, see [New temporary table behavior in Aurora MySQL version 3](ams3-temptable-behavior.md).
 
+In Aurora MySQL version 8.4.7 and higher, the default value is calculated as
+`LEAST(4294967296, {AllocatedStorage*3/100})`. This formula sets the default
+to 3% of allocated storage, capped at a maximum of 4 GiB, and replaces the fixed 1 GiB
+default used in Aurora MySQL version 3.
+
 `temptable_max_ram`
 
 Yes
@@ -2966,43 +3087,43 @@ None
 
 No
 
-None
+Removed from Aurora MySQL version 8.4.
 
 `validate_password_dictionary_file`
 
 No
 
-None
+Removed from Aurora MySQL version 8.4.
 
 `validate_password_length`
 
 No
 
-None
+Removed from Aurora MySQL version 8.4.
 
 `validate_password_mixed_case_count`
 
 No
 
-None
+Removed from Aurora MySQL version 8.4.
 
 `validate_password_number_count`
 
 No
 
-None
+Removed from Aurora MySQL version 8.4.
 
 `validate_password_policy`
 
 No
 
-None
+Removed from Aurora MySQL version 8.4.
 
 `validate_password_special_char_count`
 
 No
 
-None
+Removed from Aurora MySQL version 8.4.
 
 `wait_timeout`
 

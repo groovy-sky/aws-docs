@@ -95,7 +95,7 @@ call mysql.rds_show_configuration;
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Configuring Aurora MySQL binary logging for Single-AZ databases
+Configuring Aurora MySQL binary logging
 
 PostgreSQL database log
 files

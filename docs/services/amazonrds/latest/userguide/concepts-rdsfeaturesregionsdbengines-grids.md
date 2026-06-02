@@ -70,7 +70,8 @@ FeatureRDS for Db2RDS for MariaDBRDS for MySQLRDS for OracleRDS for PostgreSQLRD
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Regions, Availability Zones, and Local Zones
+Opting back in to a
+Region
 
 Blue/Green Deployments
 

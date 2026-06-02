@@ -50,6 +50,10 @@ You can create a combination of mounted and read-only DB replicas for the same s
 mounted mode, or change a mounted replica to read-only mode. In either case, the Oracle database preserves the archived log retention
 setting.
 
+The following table summarizes the differences between mounted and read-only replicas to help you choose the right mode.
+
+Comparison of mounted and read-only replica modesFeatureMounted modeRead-only modePrimary use caseDisaster recovery without read offloadingDisaster recovery with read offloadingQuery accessNo (replica does not accept user connections)Yes (can run SELECT queries on the replica)License requirementOracle Data Guard (no Active Data Guard license needed)Active Data Guard license requiredResource usageLower (no query processing overhead)Higher (serves read workloads)When to chooseYou need a standby for failover only and want to minimize costsYou need to offload reporting or analytics queries from the primary
+
 ## Read replicas of CDBs
 
 RDS for Oracle supports Data Guard read replicas for Oracle Database 19c and 21c CDBs in both single-tenant and multi-tenant configurations.

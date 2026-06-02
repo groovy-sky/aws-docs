@@ -94,7 +94,7 @@ accounts.
 
 Transport Layer Security protocol versions 1.0 and 1.1 (TLS 1.0 and TLS 1.1) are
 deprecated. In accordance with security best practices, Oracle has deprecated the use of
-TLS 1.0 and TLS 1.1. To meet your security requirements, we strongly recommends that you
+TLS 1.0 and TLS 1.1. To meet your security requirements, we strongly recommend that you
 use TLS 1.2 instead.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)

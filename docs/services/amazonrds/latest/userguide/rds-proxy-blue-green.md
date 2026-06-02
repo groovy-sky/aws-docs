@@ -61,6 +61,6 @@ blue/green deployment has been created for that instance.
 
 Using RDS Proxy with AWS CloudFormation
 
-Zero-ETL integrations
+Best practices with RDS Proxy
 
 All content copied from https://docs.aws.amazon.com/.

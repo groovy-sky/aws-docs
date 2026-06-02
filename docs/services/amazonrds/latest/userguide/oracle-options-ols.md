@@ -10,7 +10,7 @@ option.
 Most database security controls access at the object level. Oracle Label Security provides fine-grained control of
 access to individual table rows. For example, you can use Label Security to enforce regulatory compliance with a
 policy-based administration model. You can use Label Security policies to control access to sensitive data, and
-restrict access to only users with the appropriate clearance level. For more information, see [Introduction to Oracle Label Security](https://docs.oracle.com/database/121/OLSAG/intro.htm)
+restrict access to only users with the appropriate clearance level. For more information, see [Introduction to Oracle Label Security](https://docs.oracle.com/en/database/oracle/oracle-database/19/olsag/introduction-to-oracle-label-security.html)
 in the Oracle documentation.
 
 ###### Topics
@@ -40,7 +40,7 @@ with Software Update License and Support.
 
 To use Oracle Label Security, you create policies that control access to specific rows
 in your tables. For more information, see [Creating an\
-Oracle Label Security policy](https://docs.oracle.com/database/121/OLSAG/getstrtd.htm) in the Oracle documentation.
+Oracle Label Security policy](https://docs.oracle.com/en/database/oracle/oracle-database/19/olsag/getting-started-ols.html) in the Oracle documentation.
 
 Consider the following:
 

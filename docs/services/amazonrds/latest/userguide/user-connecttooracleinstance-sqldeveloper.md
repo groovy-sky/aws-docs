@@ -37,14 +37,18 @@ instance.
 name on the **Configuration** tab of your database
 details page.
 
+- If your DB instance uses the CDB architecture (multitenant), you can
+also choose **Service Name** instead of
+**SID** and enter the PDB name to connect directly
+to your tenant database.
+
 The completed dialog box should look similar to the following.
 
 ![Creating a new connection in Oracle SQL Developer](https://docs.aws.amazon.com/images/AmazonRDS/latest/UserGuide/images/oracle-sqldev-newcon.png)
 
 4. Choose **Connect**.
 
-5. You can now start creating your own databases and running queries against your DB instance and
-    databases as usual. To run a test query against your DB instance, do the following:
+5. You can now start running queries against your DB instance as usual. To run a test query against your DB instance, do the following:
 1. In the **Worksheet** tab for your connection, enter the following SQL
        query.
 

@@ -45,7 +45,7 @@ Amazon RDS Proxy, are supported by both Amazon Aurora and Amazon RDS.
 
 - [Secrets Manager integration](concepts-aurora-fea-regions-db-eng-feature-secretsmanager.md)
 
-- [Aurora Serverless v2](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md)
+- [Aurora serverless](concepts-aurora-fea-regions-db-eng-feature-serverlessv2.md)
 
 - [RDS Data API](concepts-aurora-fea-regions-db-eng-feature-data-api.md)
 

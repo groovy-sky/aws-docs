@@ -65,7 +65,7 @@ For more information about creating a custom DB cluster parameter group, see [Cr
     `aurora_load_from_s3_role`, Aurora uses the IAM role specified in
     `aws_default_s3_role`.
 
-For Aurora MySQL version 3, use `aws_default_s3_role`.
+For Aurora MySQL version 3 and version 8.4, use `aws_default_s3_role`.
 
 If the cluster is part of an Aurora global database,
     set this parameter for each Aurora cluster in the global database. Although only the primary
@@ -92,12 +92,12 @@ If your DB cluster isn't publicly accessible and in a VPC public subnet, it is p
 ## Granting privileges to load data in Amazon Aurora MySQL
 
 The database user that issues the `LOAD DATA FROM S3` or `LOAD XML FROM S3` statement must have a
-specific role or privilege to issue either statement. In Aurora MySQL version 3, you grant the `AWS_LOAD_S3_ACCESS`
+specific role or privilege to issue either statement. In Aurora MySQL version 3 and version 8.4, you grant the `AWS_LOAD_S3_ACCESS`
 role. In Aurora MySQL version 2, you grant the `LOAD FROM S3` privilege. The administrative user for a DB cluster is
 granted the appropriate role or privilege by default. You can grant the privilege to another user by using one of the following
 statements.
 
-Use the following statement for Aurora MySQL version 3:
+Use the following statement for Aurora MySQL version 3 and version 8.4:
 
 ```sql
 

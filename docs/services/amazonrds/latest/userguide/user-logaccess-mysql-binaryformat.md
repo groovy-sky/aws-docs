@@ -1,12 +1,11 @@
 ---
-title: "Configuring  RDS for MySQL binary logging for Single-AZ databases"
+title: "Configuring RDS for MySQL binary logging for instance deployments"
 ---
 
-# Configuring RDS for MySQL binary logging for Single-AZ databases
+# Configuring RDS for MySQL binary logging for instance deployments
 
 The _binary log_ is a set of log files that contain information about
-data modifications made to an MySQL server
-instance. The binary log contains information such as the following:
+data modifications made to an RDS for MySQL DB instance. The binary log contains information such as the following:
 
 - Events that describe database changes such as table creation or row
 modifications

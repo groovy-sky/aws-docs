@@ -47,6 +47,8 @@ Managing master user passwords with Secrets Manager isn't supported for the foll
 
 - Binary log external replication
 
+- Managed master user passwords with the `validate_password` plugin or component enabled on Aurora MySQL
+
 ## Overview of managing master user passwords with AWS Secrets Manager
 
 With AWS Secrets Manager, you can replace hard-coded credentials in your code, including database

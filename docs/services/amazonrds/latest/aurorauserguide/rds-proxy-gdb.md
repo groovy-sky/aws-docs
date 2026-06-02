@@ -61,6 +61,6 @@ tasks, see the following topics:
 
 Using RDS Proxy with Blue/Green Deployments
 
-Zero-ETL integrations
+Best practices with RDS Proxy
 
 All content copied from https://docs.aws.amazon.com/.

@@ -20,7 +20,7 @@ In the following sections, you can find information about working with self-mana
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Troubleshooting SQL Server Developer Edition for RDS for SQL Server
+Troubleshooting BYOM
 
 Working with self-managed Active Directory
 

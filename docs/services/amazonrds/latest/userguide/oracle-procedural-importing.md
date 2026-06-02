@@ -30,6 +30,10 @@ Oracle databases with near-zero downtime using AWS DMS](https://aws.amazon.com/b
 Before you use the preceding migration techniques, we recommend that you back up your database. After you import the data, you can back up your
 RDS for Oracle DB instances by creating snapshots. Later, you can restore the snapshots. For more information, see [Backing up, restoring, and exporting data](chap-commontasks-backuprestore.md).
 
+The following table compares the import methods available for RDS for Oracle DB instances.
+
+Choosing an import method for Oracle on Amazon RDSMethodBest forDowntime impactComplexityLimitationsOracle SQL DeveloperSimple schemas under 100 MBHighLowNot suitable for large or complex databasesData Pump via Amazon S3100 MB to 5 TB without a network link to the sourceMediumMedium5 TB maximum per dump fileData Pump via database linkAny size with network connectivity to the sourceMediumMediumRequires VPC or VPN connectivity to the source databaseTransportable tablespacesMulti-TB migrations requiring minimum downtimeLowHighEnterprise Edition onlySQL\*LoaderFlat file loads and ETL workflowsVariesMediumManual DDL required; data must be in flat file formatMaterialized viewsOngoing synchronization before cutoverVery lowMediumRequires a database link to the source database
+
 For many database engines, ongoing replication can continue until you are ready to switch
 over to the target database. You can use AWS DMS to migrate to RDS for Oracle from either the same
 database engine or a different engine. If you migrate from a different database engine, you

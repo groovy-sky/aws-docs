@@ -1,32 +1,34 @@
 ---
-title: "Auto migrating EC2 databases to  Amazon RDS using AWS Database Migration Service"
+title: "Auto migrating databases to  Amazon RDS using AWS Database Migration Service"
 ---
 
-# Auto migrating EC2 databases to Amazon RDS using AWS Database Migration Service
+# Auto migrating databases to Amazon RDS using AWS Database Migration Service
 
-You can use the RDS console to migrate an EC2 database to
+You can use the RDS console to migrate a database from an EC2, on-prem or other cloud provider instance to
 RDS.
-RDS uses
-AWS Database Migration Service (AWS DMS) to migrate your source EC2 database.
-AWS DMS allows you to migrate relational databases into your AWS Cloud.
-For more information about AWS Database Migration Service, see
+AWS Database Migration Service (AWS DMS) is used for this.
+For more information about it, see
 [What is AWS Database Migration Service?](../../../dms/latest/userguide/welcome.md)
 in the _AWS Database Migration Service User Guide_.
 
 To begin the migration, you must create an equivalent
-RDSDB instance to migrate the data into.
-After you create your target database, you can import your EC2 database into it.
+RDSDB instance.
+After you create your target database, you can import your source into it.
 For source databases smaller than 1TiB, this migration action reduces
 the time and resources required to migrate your data into
 RDS.
 
 ## Overview
 
-The RDS console allows you to migrate EC2 databases
-into equivalent RDS databases. You must create an
+The RDS console allows you to migrate EC2, on-prem or other cloud provider database
+into equivalent RDS database. You must create an
 RDS database to enable migration from the console.
 
-You can migrate EC2 databases for the following databases engines:
+###### Note
+
+For the databases to be equivalent, they must have the same database engine and compatible engine versions.
+
+This approach can be used for the following database engines:
 
 - MySQL
 
@@ -37,9 +39,11 @@ You can migrate EC2 databases for the following databases engines:
 The migration process involves the following steps:
 
 - Create an equivalent database in RDS.
-For the databases to be equivalent, they must have the same database engine and compatible engine versions. They must also
-be in the same VPC. For instructions on creating your database, see
-
+Then, set up a proper network between source and target.
+For EC2 instances in the same region, account, and VPC, network setup can be skipped.
+For more information, see
+[Setting up a network](../../../dms/latest/userguide/dm-network.md)
+in the _AWS Database Migration Service User Guide_. For instructions on creating your database, see
 [Creating an Amazon RDS DB instance](user-createdbinstance.md).
 
 - Choose the type of replication for your database:
@@ -49,7 +53,7 @@ to the target database, creating new tables in the target when necessary.
 
 ###### Note
 
-This option causes an outage in your RDS database.
+This option requires downtime. Your target RDS database will be unavailable to applications during the migration process.
 
 - **Full load and change data capture (CDC) migration** – Similar to full load migration,
 with this option, RDS
@@ -59,13 +63,13 @@ to the target database. Change data capture collects changes to the database log
 
 ###### Note
 
-This option causes an outage in your RDS database.
+This option requires downtime. Your target RDS database will be unavailable to applications during the migration process.
 
 - **Change data capture (CDC)** – Use this option to keep your target database available through the migration.
 RDS migrates ongoing changes in your source database to the target database.
 
 - RDS creates the
-necessary networking resources to facilitate the migration.
+necessary resources to facilitate the migration.
 Once RDS
 creates the required resources, it notifies you about the resources
 created and allows you to initiate the data transfer.
@@ -75,49 +79,33 @@ type of replication and the size of the source database.
 
 ## Prerequisites
 
-### MySQL and MariaDB
+- [Setting up a network](../../../dms/latest/userguide/dm-network.md)
+(for EC2s in the same region, account and VPC, it can be skipped)
 
-Before you begin to work with a MySQL or MariaDB
-database as the source database, make sure
-that you have the following prerequisites. These prerequisites apply to AWS-managed sources.
+- Setting up source and target databases
 
-You must have an account for AWS DMS that has the Replication Admin role. The role
-needs the following privileges:
+- **MySQL and MariaDB**
 
-- **REPLICATION CLIENT** – This privilege
-is required for CDC tasks only. In other words, full-load-only tasks
-don't require this privilege.
+Please follow the following basic prerequisites for your source database:
 
-- **REPLICATION SLAVE** – This privilege is
-required for CDC tasks only. In other words, full-load-only tasks don't
-require this privilege.
+- [Using MySQL or MariaDB as a source](../../../dms/latest/userguide/dm-data-providers-source-mysql.md)
 
-The AWS DMS user must also have SELECT privileges for the source tables designated
-for replication.
+Please follow the following basic prerequisites for your target database:
 
-Grant the following privileges if you use MySQL-specific premigration assessments.
+- [Using MySQL or MariaDB as a target](../../../dms/latest/userguide/dm-data-providers-target-mysql.md)
 
-```sql
+Additionally when migrating from a MySQL source database, your RDS account must have the Replication Admin role.
+You must also have the proper privileges applied for that role.
 
-grant select on mysql.user to <dms_user>;
-grant select on mysql.db to <dms_user>;
-grant select on mysql.tables_priv to <dms_user>;
-grant select on mysql.role_edges to <dms_user>  #only for MySQL version 8.0.11 and higher
-```
+- **PostgreSQL**
 
-### PostgreSQL
+Please follow the following prerequisites for your source database:
 
-Before migrating data from an AWS-managed PostgreSQL source database, do the
-following:
+- [Using PostgreSQL as a source](../../../dms/latest/userguide/dm-data-providers-source-postgresql.md)
 
-- We recommend that you use an AWS user account with the minimum required permissions
-for the PostgreSQL DB instance as
-the user account for the PostgreSQL source endpoint for AWS DMS. Using the master
-account is not recommended.
-The account must have the `rds_superuser` role and the
-`rds_replication` role. The `rds_replication`
-role grants permissions to manage logical slots and to stream data using
-logical slots.
+Please follow the following prerequisites for your target database:
+
+- [Using PostgreSQL as a target](../../../dms/latest/userguide/dm-data-providers-target-postgresql.md)
 
 ###### Note
 
@@ -132,24 +120,19 @@ The following limitations apply to the auto-migrate process:
 
 - Your target database status must be **Available** to begin source database migration.
 
-- When migrating from a MySQL source database, your
-RDS account must have the Replication Admin role.
-You must also have the proper privileges applied for that role.
+- You can migrate your source database only to a database:
 
-- Your EC2 instance and target database must be in the same VPC.
+- that is not a member of a cluster
 
-- You can't migrate your EC2 database to the following target databases when using the
-**Migrate data from EC2 database** action:
+- that uses a supported version of MySQL, PostgreSQL, or MariaDB as listed
+[here](../../../dms/latest/userguide/chap-introduction-sources.md#CHAP_Introduction.Sources.HomogeneousDataMigrations)
 
-- Database that is a member of a cluster
+- [Limitations of DMS](../../../dms/latest/userguide/data-migrations.md#data-migrations-limitations)
 
-- Oracle, SQL Server, and Db2 databases
+###### Note
 
-- Databases with MySQL version lower than 5.7
-
-- Databases with PostgreSQL version lower than 10.4
-
-- Databases with MariaDB version lower than 10.2
+Although underlying AWS DMS tool supports selection rules for certain migration scenarios, the auto-migrating databases to
+RDS feature does not.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -283,6 +283,7 @@ us-west-2 supports db.r8g.large for mysql.
 
 Supported DB engines
 
-Configuring the processor for RDS for Oracle
+Cross-AZ ENA
+Express support
 
 All content copied from https://docs.aws.amazon.com/.

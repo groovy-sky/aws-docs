@@ -44,8 +44,7 @@ varchar2
 
 Yes
 
-The name of the object to grant privileges to. The object can
-be a schema or a role.
+The name of the user or role to grant privileges to.
 
 `p_privilege`
 
@@ -55,7 +54,7 @@ null
 
 Yes
 
-—
+The privilege to grant. Valid values include `SELECT`, `EXECUTE`, and `ALL`.
 
 `p_grant_option`
 

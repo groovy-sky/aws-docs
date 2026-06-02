@@ -6,6 +6,10 @@ title: "Backtracking an Aurora DB cluster"
 
 With Amazon Aurora MySQL-Compatible Edition, you can backtrack a DB cluster to a specific time, without restoring data from a backup.
 
+###### Important
+
+Backtracking is supported in Aurora MySQL version 2, version 3, and version 8.4.
+
 ###### Contents
 
 - [Overview of backtracking](auroramysql-managing-backtrack.md#AuroraMySQL.Managing.Backtrack.Overview)
@@ -142,7 +146,7 @@ complete.
 - You can't restore a cross-Region snapshot of a backtrack-enabled cluster in an AWS Region that doesn't
 support backtracking.
 
-- If you perform an in-place upgrade for a backtrack-enabled cluster from Aurora MySQL version 2 to version 3, you
+- If you perform an in-place upgrade for a backtrack-enabled cluster from Aurora MySQL version 2 to version 3, or from version 3 to version 8.4, you
 can't backtrack to a point in time before the upgrade happened.
 
 ## Region and version availability
@@ -151,12 +155,12 @@ Backtrack is not available for Aurora PostgreSQL.
 
 Following are the supported engines and Region availability for Backtrack with Aurora MySQL.
 
-RegionAurora MySQL version 3Aurora MySQL version 2US East (N. Virginia)All versionsAll versionsUS East (Ohio)All versionsAll versionsUS West (N. California)All versionsAll versionsUS West (Oregon)All versionsAll versionsAfrica (Cape Town)––Asia Pacific (Hong Kong)––Asia Pacific (Jakarta)––Asia Pacific (Malaysia)––Asia Pacific (Melbourne)––Asia Pacific (Mumbai)All versionsAll versionsAsia Pacific (New Zealand)––Asia Pacific (Osaka)All versionsVersion 2.07.3 and higherAsia Pacific (Seoul)All versionsAll versionsAsia Pacific (Singapore)All versionsAll versionsAsia Pacific (Sydney)All versionsAll versionsAsia Pacific (Taipei)––Asia Pacific (Thailand)––Asia Pacific (Tokyo)All versionsAll versionsCanada (Central)All versionsAll versionsCanada West (Calgary)––China (Beijing)––China (Ningxia)––Europe (Frankfurt)All versionsAll versionsEurope (Ireland)All versionsAll versionsEurope (London)All versionsAll versionsEurope (Milan)––Europe (Paris)All versionsAll versionsEurope (Spain)––Europe (Stockholm)––Europe (Zurich)––Israel (Tel Aviv)––Mexico (Central)––Middle East (Bahrain)––Middle East (UAE)––South America (São Paulo)––AWS GovCloud (US-East)––AWS GovCloud (US-West)––
+RegionAurora MySQL version 8.4Aurora MySQL version 3Aurora MySQL version 2US East (N. Virginia)All versionsAll versionsAll versionsUS East (Ohio)All versionsAll versionsAll versionsUS West (N. California)All versionsAll versionsAll versionsUS West (Oregon)All versionsAll versionsAll versionsAfrica (Cape Town)–––Asia Pacific (Hong Kong)–––Asia Pacific (Jakarta)–––Asia Pacific (Malaysia)–––Asia Pacific (Melbourne)–––Asia Pacific (Mumbai)All versionsAll versionsAll versionsAsia Pacific (New Zealand)–––Asia Pacific (Osaka)All versionsAll versionsVersion 2.07.3 and higherAsia Pacific (Seoul)All versionsAll versionsAll versionsAsia Pacific (Singapore)All versionsAll versionsAll versionsAsia Pacific (Sydney)All versionsAll versionsAll versionsAsia Pacific (Taipei)–––Asia Pacific (Thailand)–––Asia Pacific (Tokyo)All versionsAll versionsAll versionsCanada (Central)All versionsAll versionsAll versionsCanada West (Calgary)–––China (Beijing)–––China (Ningxia)–––Europe (Frankfurt)All versionsAll versionsAll versionsEurope (Ireland)All versionsAll versionsAll versionsEurope (London)All versionsAll versionsAll versionsEurope (Milan)–––Europe (Paris)All versionsAll versionsAll versionsEurope (Spain)–––Europe (Stockholm)–––Europe (Zurich)–––Israel (Tel Aviv)–––Mexico (Central)–––Middle East (Bahrain)–––Middle East (UAE)–––South America (São Paulo)–––AWS GovCloud (US-East)–––AWS GovCloud (US-West)–––
 
 ## Upgrade considerations for backtrack-enabled clusters
 
-You can upgrade a backtrack-enabled DB cluster from Aurora MySQL version 2 to version 3, because all minor versions of
-Aurora MySQL version 3 are supported for Backtrack.
+You can upgrade a backtrack-enabled DB cluster from Aurora MySQL version 2 to version 3, or from version 3 to version 8.4, because all minor versions of
+Aurora MySQL version 3 and version 8.4 are supported for Backtrack.
 
 ## Subscribing to a backtrack event with the console
 

@@ -52,7 +52,7 @@ When you create a clone using a different deployment configuration from the sour
 version of the source's Aurora DB engine.
 
 When you create clones from your Aurora DB clusters, the clones are created in your AWS account—the same account that
-owns the source Aurora DB cluster. However, you can also share Aurora Serverless v2 and provisioned Aurora DB clusters and clones
+owns the source Aurora DB cluster. However, you can also share Aurora serverless and provisioned Aurora DB clusters and clones
 with other AWS accounts. For more information, see [Cross-account cloning with AWS RAM and Amazon Aurora](aurora-managing-clone-cross-account.md).
 
 When you finish using the clone for your testing, development, or other purposes, you can
@@ -81,7 +81,7 @@ Zones.
 
 - You can create an Aurora provisioned clone from a provisioned Aurora DB cluster.
 
-- Clusters with Aurora Serverless v2 instances follow the same rules as provisioned clusters.
+- Clusters with Aurora serverless instances follow the same rules as provisioned clusters.
 
 ## How Aurora cloning works
 
@@ -206,7 +206,7 @@ The Create clone page opens, where you can configure **Settings**, **Connectivit
 4. For **DB instance identifier**, enter the name that you want to give to your cloned Aurora DB
     cluster.
 
-5. For Aurora Serverless v2 or provisioned DB clusters, choose either **Aurora I/O-Optimized** or
+5. For Aurora serverless or provisioned DB clusters, choose either **Aurora I/O-Optimized** or
     **Aurora Standard** for **Cluster storage configuration**.
 
 For more information, see [Storage configurations for Amazon Aurora DB clusters](aurora-overview-storagereliability.md#aurora-storage-type).
@@ -220,7 +220,7 @@ For more information, see [Storage configurations for Amazon Aurora DB clusters]
 You can accept the provided setting, or you can use a different DB instance class for your
 clone.
 
-- For an Aurora Serverless v2 clone, choose the **Capacity**
+- For an Aurora serverless clone, choose the **Capacity**
 **settings**.
 
 ![To create a Serverless clone from an Aurora DB cluster, specify the capacity.](https://docs.aws.amazon.com/images/AmazonRDS/latest/AuroraUserGuide/images/aurora-cloning-create-clone-3-serverless.png)
@@ -277,7 +277,7 @@ CLI command to create the initial clone cluster.
 - Use the
 `restore-db-cluster-to-point-in-time`
 CLI command. Specify values for the following parameters. In this typical case, the clone uses the same
-engine mode as the original cluster, either provisioned or Aurora Serverless v2.
+engine mode as the original cluster, either provisioned or Aurora serverless.
 
 - `--db-cluster-identifier` – Choose a meaningful name for your clone. You name the
 clone when you use the
@@ -325,7 +325,7 @@ cluster is available before trying to create the DB instance for your clone. For
 [Checking the status and getting clone details](#Aurora.Managing.Clone.CLI.check-status-get-details).
 
 For example, suppose you have a cluster named `tpch100g` that you want to clone. The following
-Linux example creates a cloned cluster named `tpch100g-clone`, an Aurora Serverless v2 writer
+Linux example creates a cloned cluster named `tpch100g-clone`, an Aurora serverless writer
 instance named `tpch100g-clone-instance`, and a provisioned reader instance named
 `tpch100g-clone-instance-2` for the new cluster.
 
@@ -335,8 +335,8 @@ need to specify the DB engine to use. Thus, the example tests the new cluster to
 use for the `--engine` parameter.
 
 This example also includes the `--serverless-v2-scaling-configuration` option when creating the
-clone cluster. That way, you can add Aurora Serverless v2 instances to the clone even if the original cluster
-didn't use Aurora Serverless v2.
+clone cluster. That way, you can add Aurora serverless instances to the clone even if the original cluster
+didn't use Aurora serverless.
 
 ```bash
 
@@ -413,7 +413,7 @@ This query returns output similar to the following.
 #### Creating the Aurora DB instance for your clone
 
 Use the [create-db-instance](../../../cli/latest/reference/rds/create-db-instance.md) CLI command to create
-the DB instance for your Aurora Serverless v2 or provisioned clone.
+the DB instance for your Aurora serverless or provisioned clone.
 
 The DB instance inherits the `--master-username` and `--master-user-password` properties
 from the source DB cluster.
@@ -444,8 +444,8 @@ aws rds create-db-instance ^
 
 ```
 
-The following example creates an Aurora Serverless v2 DB instance, for a clone that uses an engine version that
-supports Aurora Serverless v2.
+The following example creates an Aurora serverless DB instance, for a clone that uses an engine version that
+supports Aurora serverless.
 
 For Linux, macOS, or Unix:
 
@@ -502,9 +502,9 @@ clones.
 
 `--serverless-v2-scaling-configuration`
 
-(Newer versions that support Aurora Serverless v2) Use this parameter to configure the minimum and
-maximum capacity for an Aurora Serverless v2 clone. If you don't specify this parameter, you
-can't create any Aurora Serverless v2 instances in the clone cluster until you modify the cluster
+(Newer versions that support Aurora serverless) Use this parameter to configure the minimum and
+maximum capacity for an Aurora serverless clone. If you don't specify this parameter, you
+can't create any Aurora serverless instances in the clone cluster until you modify the cluster
 to add this attribute.
 
 For information about cross-VPC and cross-account cloning, see the following sections.

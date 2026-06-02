@@ -34,7 +34,7 @@ effect. In MySQL 8.4 and higher versions, `binlog_format` defaults to
 `ROW`.
 
 For information about setting the `binlog_format` parameter, see
-[Configuring RDS for MySQL binary logging for Single-AZ databases](user-logaccess-mysql-binaryformat.md).
+[Configuring RDS for MySQL binary logging for instance deployments](user-logaccess-mysql-binaryformat.md).
 For information about the implications of different MySQL replication types, see
 [Advantages\
 and disadvantages of statement-based and row-based replication](https://dev.mysql.com/doc/refman/8.0/en/replication-sbr-rbr.html) in the MySQL documentation.

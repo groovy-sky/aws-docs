@@ -49,7 +49,7 @@ You need both the endpoint and the port number to connect to the DB instance.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Licensing SQL Server on Amazon RDS
+SQL Server licensing
 
 Connecting to your DB instance with SSMS
 

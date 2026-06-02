@@ -18,6 +18,6 @@ Secrets Manager integration is available in all AWS Regions.
 
 RDS Proxy
 
-Aurora Serverless v2
+Aurora serverless
 
 All content copied from https://docs.aws.amazon.com/.

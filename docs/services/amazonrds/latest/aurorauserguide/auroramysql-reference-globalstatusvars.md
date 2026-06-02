@@ -245,14 +245,9 @@ This variable applies to Aurora MySQL version 3.06.0 and higher.
 
 `aurora_oom_status`
 
-Represents the current OOM status of this DB instance. When
-the value is `NORMAL`, it indicates that there are
-sufficient memory resources.
-
-If the value changes to `RESERVED`, it indicates
-that the server has low available memory. Actions are taken
-based on the `aurora_oom_response` parameter
-configuration.
+Current memory health state of the DB instance: healthy
+(no memory pressure), moderate memory pressure, or critical
+memory pressure.
 
 For more information, see [Troubleshooting out-of-memory issues for Aurora MySQL databases](auroramysqloom.md).
 

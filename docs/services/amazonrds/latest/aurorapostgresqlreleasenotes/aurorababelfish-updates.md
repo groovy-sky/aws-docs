@@ -62,10 +62,6 @@ Babelfish for Aurora PostgreSQL](../aurorauserguide/babelfish.md).
 
 - Added support for sys.fn\_varbintohexstr system object.
 
-**Security enhancements**
-
-- Babelfish cross-database queries will now respect Dynamic data masking policies so that tables show masked data according to the policies defined for the current login.
-
 **Critical enhancements**
 
 - Fixed an issue where executing queries from PostgreSQL endpoint in Active Directory Authentication enabled instances may lead to a reboot.
@@ -753,10 +749,6 @@ Babelfish for Aurora PostgreSQL](../aurorauserguide/babelfish.md).
 - Added support for implicit cast from (n)varchar/(n)char to datetimeoffset datatype.
 
 - Added support for sys.fn\_varbintohexstr system object.
-
-**Security enhancements**
-
-- Babelfish cross-database queries will now respect Dynamic data masking policies so that tables show masked data according to the policies defined for the current login.
 
 **Critical enhancements**
 

@@ -967,6 +967,6 @@ Yakutsk
 
 Functions and stored procedures
 
-Licensing SQL Server on Amazon RDS
+SQL Server licensing
 
 All content copied from https://docs.aws.amazon.com/.

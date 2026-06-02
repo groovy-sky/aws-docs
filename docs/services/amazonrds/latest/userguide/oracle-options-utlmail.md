@@ -126,7 +126,7 @@ After the UTL\_MAIL option is enabled,
 and your SMTP\_OUT\_SERVER is configured,
 you can send mail by using the `SEND` procedure.
 For more information, see
-[UTL\_MAIL](http://docs.oracle.com/cd/B19306_01/appdev.102/b14258/u_mail.htm)
+[UTL\_MAIL](https://docs.oracle.com/en/database/oracle/oracle-database/19/arpls/UTL_MAIL.html)
 in the Oracle documentation.
 
 ## Removing the Oracle UTL\_MAIL option

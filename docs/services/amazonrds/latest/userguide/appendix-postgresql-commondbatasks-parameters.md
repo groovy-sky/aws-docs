@@ -966,7 +966,8 @@ s
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Best Practices for Parallel Queries in RDS for PostgreSQL
+Initial PostgreSQL
+troubleshooting
 
 Tuning with wait events for RDS for PostgreSQL
 

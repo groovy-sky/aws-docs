@@ -71,6 +71,10 @@ In the following sections, see information about user permissions for Aurora MyS
 
 - [TLS connections to Aurora MySQL DB clusters](#AuroraMySQL.Security.SSL)
 
+- [Reserved users in Aurora MySQL](#AuroraMySQL.Security.ReservedUsers)
+
+- [Password policies and Password validation in Aurora MySQL](auroramysql-passwordpolicies.md)
+
 ## Master user privileges with Amazon Aurora MySQL
 
 When you create an Amazon Aurora MySQL DB instance, the master user has the default privileges listed in [Master user account privileges](usingwithrds-masteraccounts.md).
@@ -87,6 +91,20 @@ created.
 
 We strongly recommend that you do not use the master user directly in your applications. Instead, adhere to the best
 practice of using a database user created with the minimal privileges required for your application.
+
+You can choose between multiple authentication methods for your master user when creating or modifying
+your DB cluster:
+
+- [IAM database authentication](usingwithrds-iamdbauth.md)
+
+- [Password management with Amazon Aurora and AWS Secrets Manager](rds-secrets-manager.md)
+
+- Self-managed password-based authentication
+
+Starting Aurora MySQL version 8.4, when resetting the master user password via the AWS Management Console, CLI, or API,
+or through AWS Secrets Manager rotation, Aurora automatically uses the authentication plugin defined by the current
+`authentication_policy` parameter value at the time of the reset. In Aurora MySQL version 2 and 3,
+the `mysql_native_password` plugin is always used.
 
 For management of the Aurora MySQL DB cluster, the standard `kill` and
 `kill_query` commands have been restricted. Instead, use the Amazon RDS commands
@@ -130,9 +148,10 @@ We recommend the AWS JDBC Driver as a client that supports SAN with TLS. For mor
 
 You can require that all user connections to your Aurora MySQL DB cluster use TLS by
 using the `require_secure_transport` DB cluster parameter. By default,
-the `require_secure_transport` parameter is set to `OFF`. You
-can set the `require_secure_transport` parameter to `ON` to
-require TLS for connections to your DB cluster.
+the `require_secure_transport` parameter is set to `ON` in
+Aurora MySQL version 8.4, while it is set to `OFF` in Aurora MySQL versions
+2 and 3. You can set the `require_secure_transport` parameter to
+`ON` to require TLS for connections to your DB cluster.
 
 You can set the `require_secure_transport` parameter value by updating the
 DB cluster parameter group for your DB cluster. You don't need to reboot your DB cluster
@@ -141,7 +160,7 @@ groups, see [Parameter groups for Amazon Aurora](user-workingwithparamgroups.md)
 
 ###### Note
 
-The `require_secure_transport` parameter is available for Aurora MySQL version 2 and 3.
+The `require_secure_transport` parameter is available for Aurora MySQL versions 2 and above.
 You can set this parameter in a custom DB cluster parameter group. The parameter isn't available
 in DB instance parameter groups.
 
@@ -169,15 +188,23 @@ DeprecatedDeprecated
 
 Supported
 
-Not supportedAll supported TLS versions
+Not supportedTLS 1.2
 
 Aurora MySQL version 3 (lower than 3.04.0)
 
-DeprecatedDeprecatedSupportedNot supportedAll supported TLS versions
+DeprecatedDeprecatedSupportedNot supportedTLS 1.2
 
 Aurora MySQL version 3 (3.04.0 and higher)
 
-Not supported Not supported SupportedSupportedAll supported TLS versions
+Not supported Not supported SupportedSupportedTLS 1.2, TLS 1.3
+
+Aurora MySQL version 8.4
+
+Not supportedNot supportedSupportedSupportedTLS 1.2, TLS 1.3
+
+Aurora MySQL version 8.4
+
+Not supportedNot supportedSupportedSupportedAll supported TLS versions
 
 ###### Important
 
@@ -230,11 +257,12 @@ to allow to secure client TLS connections to your database. With configurable ci
 suites, you can control the connection encryption that your database server accepts.
 Doing this prevents the use of insecure or deprecated ciphers.
 
-Configurable cipher suites are supported in Aurora MySQL version 3 and Aurora MySQL
-version 2. To specify the list of permissible TLS 1.2, TLS 1.1, TLS 1.0 ciphers for
+Configurable cipher suites are supported in Aurora MySQL version 2 and above. To specify the list of permissible TLS 1.2, TLS 1.1, TLS 1.0 ciphers for
 encrypting connections, modify the `ssl_cipher` cluster parameter. Set
 the `ssl_cipher` parameter in a cluster parameter group using the
 AWS Management Console, the AWS CLI, or the RDS API.
+
+Aurora MySQL version 8.4 only supports ciphers aligned with modern cryptographic standards. Only GCM and CCM mode ciphers are supported. All other cipher modes, including CBC and CHACHA20-POLY1305, are not supported.
 
 Set the `ssl_cipher` parameter to a string of comma-separated cipher
 values for your TLS version. For the client application, you can specify the ciphers
@@ -253,63 +281,70 @@ TLS 1.3.
 The following table shows the supported ciphers along with the TLS encryption
 protocol and valid Aurora MySQL engine versions for each cipher.
 
-CipherEncryption protocolSupported Aurora MySQL versions
+CipherAurora MySQL 2.11.0+Aurora MySQL 3.04.0+Aurora MySQL 8.4.7+**TLS 1.0 Ciphers**
 
 `ECDHE-RSA-AES128-SHA`
 
-TLS 1.03.04.0 and higher, 2.11.0 and higher
-
-`ECDHE-RSA-AES128-SHA256`
-
-TLS 1.23.04.0 and higher, 2.11.0 and higher
-
-`ECDHE-RSA-AES128-GCM-SHA256`
-
-TLS 1.23.04.0 and higher, 2.11.0 and higher
+✓✓X
 
 `ECDHE-RSA-AES256-SHA`
 
-TLS 1.03.04.0 and higher, 2.11.0 and higher
-
-`ECDHE-RSA-AES256-GCM-SHA384`
-
-TLS 1.23.04.0 and higher, 2.11.0 and higher
-
-`ECDHE-RSA-CHACHA20-POLY1305`
-
-TLS 1.23.04.0 and higher, 2.11.0 and higher
+✓✓X
 
 `ECDHE-ECDSA-AES128-SHA`
 
-TLS 1.03.04.0 and higher, 2.11.0 and higher
+✓✓X
 
 `ECDHE-ECDSA-AES256-SHA`
 
-TLS 1.03.04.0 and higher, 2.11.0 and higher
+✓✓X**TLS 1.2 Ciphers**
+
+`ECDHE-RSA-AES128-GCM-SHA256`
+
+✓✓✓
+
+`ECDHE-RSA-AES256-GCM-SHA384`
+
+✓✓✓
 
 `ECDHE-ECDSA-AES128-GCM-SHA256`
 
-TLS 1.23.04.0 and higher, 2.11.0 and higher
+✓✓✓
 
 `ECDHE-ECDSA-AES256-GCM-SHA384`
 
-TLS 1.23.04.0 and higher, 2.11.0 and higher
+✓✓✓
+
+`ECDHE-RSA-AES128-SHA256`
+
+✓✓X
+
+`ECDHE-RSA-CHACHA20-POLY1305`
+
+✓✓X
 
 `ECDHE-ECDSA-CHACHA20-POLY1305`
 
-TLS 1.23.04.0 and higher, 2.11.0 and higher
+✓✓X**TLS 1.3 Ciphers**
 
 `TLS_AES_128_GCM_SHA256`
 
-TLS 1.33.04.0 and higher
+X✓✓
 
 `TLS_AES_256_GCM_SHA384`
 
-TLS 1.33.04.0 and higher
+X✓✓
 
 `TLS_CHACHA20_POLY1305_SHA256`
 
-TLS 1.33.04.0 and higher
+X✓X
+
+###### Important
+
+Before upgrading to Aurora MySQL version 8.4, verify that your applications support the updated
+cipher suites. Applications using TLS 1.0/1.1 or unsupported ciphers will not connect after
+upgrading if you have set the `require_secure_transport` parameter to
+`ON`.
 
 For information about modifying parameters in a DB cluster parameter group, see
 [Modifying parameters in a DB cluster parameter groupin Amazon Aurora](user-workingwithparamgroups-modifyingcluster.md). If you use the
@@ -394,17 +429,63 @@ GRANT USAGE ON *.* TO 'encrypted_user'@'%' REQUIRE SSL;
 When you use an RDS Proxy, you connect to the proxy endpoint instead of the usual
 cluster endpoint. You can make SSL/TLS required or optional for connections to the
 proxy, in the same way as for connections directly to the Aurora DB cluster. For
-information about using RDS Proxy, see [Amazon RDS Proxyfor Aurora](rds-proxy.md).
+information about using RDS Proxy, see [Amazon RDS Proxy for Aurora](rds-proxy.md).
 
 ###### Note
 
 For more information on TLS connections with MySQL, see the [MySQL documentation](https://dev.mysql.com/doc/refman/5.7/en/using-encrypted-connections.html).
 
+## Reserved users in Aurora MySQL
+
+The following usernames are reserved for Aurora MySQL features and cannot be used for your database user accounts:
+
+- `rdsadmin`
+
+- `rdsproxyadmin`
+
+- `rdsrepladmin`
+
+- `rdsrepladmin_priv_checks_user`
+
+- `rds_superuser_role`
+
+- `AWS_COMPREHEND_ACCESS`
+
+- `AWS_LAMBDA_ACCESS`
+
+- `AWS_LOAD_S3_ACCESS`
+
+- `AWS_SAGEMAKER_ACCESS`
+
+- `AWS_SELECT_S3_ACCESS`
+
+- `AWS_BEDROCK_ACCESS`
+
+Starting in Aurora MySQL version 8.4.7, you can't `CREATE`,
+`DROP`, `RENAME`, `GRANT`, `REVOKE`,
+or `SET PASSWORD` for the `rdsproxyadmin` user. Enforcement
+applies at any host, including `rdsproxyadmin@%`,
+`rdsproxyadmin@localhost`, and specific hosts or IP addresses. These
+operations return an error similar to the following:
+
+```nohighlight
+
+mysql> DROP USER 'rdsproxyadmin'@'%';
+ERROR 1396 (HY000): Operation DROP USER failed for 'rdsproxyadmin'@'%'
+
+mysql> GRANT SELECT ON testdb.* TO 'rdsproxyadmin'@'%';
+ERROR 1132 (42000): Access denied on rdsproxyadmin
+```
+
+The `rdsproxyadmin` account is created automatically the first time
+you register a proxy target for your DB cluster. For more information about the
+RDS Proxy monitoring user, see
+[Amazon RDS Proxy for Aurora](rds-proxy.md).
+
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Aurora MySQL version 2 compatible with MySQL 5.7
 
-Updating applications
-for new TLS certificates
+Password policies and Password validation in Aurora MySQL
 
 All content copied from https://docs.aws.amazon.com/.

@@ -1,8 +1,8 @@
 ---
-title: "Amazon RDS event categories and event messagesfor Aurora"
+title: "Amazon RDS event categories and event messages for Aurora"
 ---
 
-# Amazon RDS event categories and event messagesfor Aurora
+# Amazon RDS event categories and event messages for Aurora
 
 Amazon RDS generates a significant number of events in categories that you can subscribe to using the Amazon RDS Console, AWS CLI, or the API.
 
@@ -173,6 +173,14 @@ Failed to partition DB instances in DB cluster
 The operating system upgrades for the DB instances in the DB cluster
 failed.
 
+failure
+
+RDS-EVENT-0517
+
+The `upgrade_type` version upgrade for DB cluster `name` was canceled because a failover occurred on the associated global database. The DB cluster is now running engine version `version`. Retry the upgrade when the global database is available.
+
+Retry the upgrade when the global database is available.
+
 global failover
 
 RDS-EVENT-0181
@@ -287,6 +295,14 @@ RDS-EVENT-0397
 Aurora finished changing the DNS name that the global writer endpoint resolves to.
 
 None
+
+global failover
+
+RDS-EVENT-0519
+
+Global database failover to DB cluster `name` in global database `name` completed. The DB cluster has no instances. Create a DB instance to access your data.
+
+Create a DB instance to access your data.
 
 global failover
 
@@ -410,6 +426,14 @@ wait for the next maintenance window, or you can upgrade your DB cluster
 operating system manually.
 
 None
+
+maintenance
+
+RDS-EVENT-0518
+
+The engine version of DB cluster `name` has been changed from `previous_version` to `current_version` to align with the new primary cluster `name` after a failover.
+
+No action required. This change is automatic and keeps your global database consistent.
 
 maintenance
 
@@ -621,6 +645,22 @@ notification
 RDS-EVENT-0513
 
 Volume replacement for DB cluster `name` completed.
+
+None
+
+maintenance, serverless
+
+RDS-EVENT-0521
+
+DB cluster serverless platform update starting.
+
+None
+
+maintenance, serverless
+
+RDS-EVENT-0522
+
+DB cluster serverless platform update completed. Database cluster is online.
 
 None
 
@@ -1125,7 +1165,7 @@ RDS-EVENT-0370
 
 Initiated pause for the DB instance.
 
-A new attempt to pause an idle Aurora Serverless v2 DB instance
+A new attempt to pause an idle Aurora serverless DB instance
 was started.
 
 notification, serverless
@@ -1134,7 +1174,7 @@ RDS-EVENT-0371
 
 Pause was canceled for the DB instance.
 
-An attempt to pause an idle Aurora Serverless v2 DB instance was
+An attempt to pause an idle Aurora serverless DB instance was
 unsuccessful, due to workload.
 
 notification, serverless
@@ -1143,7 +1183,7 @@ RDS-EVENT-0372
 
 Successfully paused the DB instance.
 
-The Aurora Serverless v2 DB instance was paused.
+The Aurora serverless DB instance was paused.
 
 notification, serverless
 
@@ -1151,7 +1191,7 @@ RDS-EVENT-0373
 
 Initiated resume for the DB instance.
 
-The Aurora Serverless v2 DB instance started resuming, due to
+The Aurora serverless DB instance started resuming, due to
 new workload or administrative or maintenance activity.
 
 notification, serverless
@@ -1160,7 +1200,7 @@ RDS-EVENT-0374
 
 Successfully resumed the DB instance.
 
-The Aurora Serverless v2 DB instance resumed.
+The Aurora serverless DB instance resumed.
 
 notification
 
@@ -1333,6 +1373,31 @@ maintenance
 RDS-EVENT-0502
 
 Amazon RDS has scheduled a server certificate rotation for DB instance during the next maintenance window. This maintenance will require a database reboot.
+
+None
+
+maintenance, serverless
+
+RDS-EVENT-0523
+
+Amazon RDS can't perform the Serverless platform update because there are no available IP addresses in the specified subnets.
+Choose subnets with available IP addresses and try again.
+
+None
+
+maintenance, serverless
+
+RDS-EVENT-0524
+
+Amazon RDS can't perform the Serverless platform update because of insufficient capacity available.
+
+None
+
+maintenance, serverless
+
+RDS-EVENT-0525
+
+The Serverless platform update failed for the DB instance `name`.
 
 None
 

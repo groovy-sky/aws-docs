@@ -19,7 +19,7 @@ see [Monitoring Amazon RDS log files](user-logaccess.md).
 
 - [Sending MySQL log output to tables](appendix-mysql-commondbatasks-logs.md)
 
-- [Configuring RDS for MySQL binary logging for Single-AZ databases](user-logaccess-mysql-binaryformat.md)
+- [Configuring RDS for MySQL binary logging for instance deployments](user-logaccess-mysql-binaryformat.md)
 
 - [Configuring MySQL binary logging for Multi-AZ DB clusters](user-binlog-multiaz.md)
 

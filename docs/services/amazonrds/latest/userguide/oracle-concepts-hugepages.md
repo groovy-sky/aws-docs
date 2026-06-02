@@ -6,7 +6,7 @@ title: "Turning on HugePages for an RDS for Oracle instance"
 
 Amazon RDS for Oracle supports Linux kernel HugePages for increased database scalability. HugePages results in
 smaller page tables and less CPU time spent on memory management, increasing the performance of large database
-instances. For more information, see [Overview of HugePages](https://docs.oracle.com/database/121/UNXAR/appi_vlm.htm) in the
+instances. For more information, see [Overview of HugePages](https://docs.oracle.com/en/database/oracle/oracle-database/19/unxar/administering-oracle-database-on-linux.html) in the
 Oracle documentation.
 
 You can use HugePages with all supported versions and editions of RDS for Oracle.

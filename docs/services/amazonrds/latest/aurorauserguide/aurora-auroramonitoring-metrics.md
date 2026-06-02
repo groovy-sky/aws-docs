@@ -247,12 +247,11 @@ Count
 
 `ActiveTransactions`
 
-The average number of current transactions executing on an Aurora database instance per
-second.
+The average number of current transactions executing on an Aurora database instance per second.
 
-By default, Aurora doesn't enable this metric. To begin measuring this value, set
-`innodb_monitor_enable='all'` in the DB parameter group for a specific DB
-instance.
+Aurora doesn't enable this metric by default in versions prior to 3.08. To begin measuring this value, set `innodb_monitor_enable='all'` in the DB parameter group for a specific DB instance.
+
+In versions 3.08 and later, the value is sourced from internal tables by default and doesn't require the InnoDB monitor to be enabled.
 
 Aurora MySQL
 
@@ -263,8 +262,7 @@ Count per second
 The value of the `ServerlessDatabaseCapacity` metric divided
 by the maximum ACU value of the DB cluster.
 
-This metric is applicable only for Aurora
-Serverless v2.
+This metric is applicable only for Aurora serverless.
 
 Aurora MySQL and Aurora PostgreSQL
 
@@ -336,8 +334,8 @@ Bytes
 
 `AuroraMemoryHealthState`
 
-Indicates the memory health state. A value of `0` equals `NORMAL`. A value of `10` equals
-`RESERVED`, which means that the server is approaching a critical level of memory usage.
+Indicates the memory health state. `0` means healthy (no memory pressure),
+`5` means moderate memory pressure, `10` means critical memory pressure.
 
 For more information, see [Troubleshooting out-of-memory issues for Aurora MySQL databases](auroramysqloom.md).
 
@@ -741,7 +739,7 @@ pricing information, see the [Amazon RDS pricing \
 page](http://aws.amazon.com/rds/pricing)). You can increase the amount of free storage space for an instance by
 choosing a larger DB instance class for your instance.
 
-(This doesn't apply to Aurora Serverless v2.)
+(This doesn't apply to Aurora serverless.)
 
 Aurora MySQL and Aurora PostgreSQL
 
@@ -1031,7 +1029,7 @@ Bytes
 
 The number of IOPS for both read and writes on local storage attached to the DB instance. This metric represents a count and is measured once per second.
 
-This metric is applicable only for Aurora Serverless v2.
+This metric is applicable only for Aurora serverless.
 
 Aurora MySQL and Aurora PostgreSQL
 
@@ -1041,8 +1039,7 @@ Count per second
 
 The amount of data transferred to and from local storage associated with the DB instance. This metric represents bytes and is measured once per second.
 
-This metric is applicable only for Aurora
-Serverless v2.
+This metric is applicable only for Aurora serverless.
 
 Aurora MySQL and Aurora PostgreSQL
 

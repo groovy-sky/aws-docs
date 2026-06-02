@@ -9,9 +9,26 @@ upgrades, versioning, and lifecycle, see [Amazon Aurora versions](../aurorauserg
 
 ###### Topics
 
+- [Version Currency Timelines](#AuroraMySQL.release-calendars.version-currency)
+
 - [Release calendar for Aurora MySQL major versions](#AuroraMySQL.release-calendars.major)
 
 - [Release calendar for Aurora MySQL minor versions](#AuroraMySQL.release-calendars.minor)
+
+## Version Currency Timelines
+
+Amazon Aurora MySQL tracks community database engine releases on a defined cadence. These version currency timelines are published to give you
+transparency into that cadence. You can use these timelines to:
+
+- Plan major version upgrades and estimate when a new Aurora MySQL major version will be available.
+
+- Schedule minor version upgrades during your maintenance windows.
+
+- Select the right Aurora Long-Term Support (LTS) version for workloads that require staying on the same minor version across multiple release cycles.
+
+The following table lists the version currency timelines for Aurora MySQL.
+
+Release TypeTimelinesMajor versionsWithin 12 months of the community's first minor for the new major version <major>.1 (Oracle MySQL LTS majors)Minor versionsWithin 3 months of the community release[Aurora LTS](../aurorauserguide/auroramysql-update-specialversions.md) (per major)Within 12 months of the Aurora major version release
 
 ## Release calendar for Aurora MySQL major versions
 
@@ -27,12 +44,7 @@ You can also view information about support dates for major engine versions by
 using
 the AWS CLI or RDS API. For more information, see [Viewing support dates for engine versions in Amazon RDS Extended Support](../aurorauserguide/extended-support-viewing-support-dates.md).
 
-Community major versionAurora major versionCommunity end of life dateAurora end of standard support dateRDS start of Extended Support year 1 pricing dateRDS start of Extended Support year 3 pricing dateRDS end of Extended Support dateMinor versions eligible for RDS Extended SupportMySQL 8.0Aurora MySQL version 3April 202630 April 20281 May 2028Not applicable31 July 2029To be determinedMySQL 5.7Aurora MySQL version 2October 202331 October 20241 December 2024Not applicable28 February 2027Aurora MySQL 2.11 and 2.12MySQL 5.6 (deprecated)Aurora MySQL version 1 (deprecated)5 February 202128 February 2023Not applicableNot applicableNot applicableNot applicable
-
-###### Note
-
-Amazon RDS Extended Support for Aurora MySQL version 2 starts on November 1, 2024, but you won't be charged until December 1, 2024.
-Between November 1 and November 30, 2024, all Aurora MySQL version 2 DB clusters are covered under Amazon RDS Extended Support.
+Community major versionAurora major versionCommunity end of life dateAurora end of standard support dateRDS start of Extended Support year 1 pricing dateRDS start of Extended Support year 3 pricing dateRDS end of Extended Support dateMinor versions eligible for RDS Extended SupportMySQL 8.4Aurora MySQL version 8.4April 2032April 2032To be determinedTo be determinedTo be determinedTo be determinedMySQL 8.0Aurora MySQL version 3April 202630 April 20281 May 2028Not applicable31 July 2029To be determinedMySQL 5.7Aurora MySQL version 2October 202331 October 20241 December 2024Not applicable28 February 2027Aurora MySQL 2.11 and 2.12MySQL 5.6 (deprecated)Aurora MySQL version 1 (deprecated)5 February 202128 February 2023Not applicableNot applicableNot applicableNot applicable
 
 ## Release calendar for Aurora MySQL minor versions
 
@@ -48,6 +60,12 @@ Amazon RDS Extended Support charges apply only to certain minor versions after a
 .
 
 Aurora MySQL versionAurora MySQL release dateAurora MySQL end of standard support date
+
+**8.4.7** (Compatible with Community MySQL 8.4.7)
+
+May 21, 2026
+
+November 30, 2027
 
 **3.12** (Compatible with Community MySQL 8.0.44)
 
@@ -110,6 +128,6 @@ are compatible with MySQL version 5.7.44.
 
 Aurora MySQL release notes
 
-Aurora MySQL version 3
+Aurora MySQL version 8.4
 
 All content copied from https://docs.aws.amazon.com/.

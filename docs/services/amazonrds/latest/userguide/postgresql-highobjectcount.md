@@ -186,7 +186,7 @@ The approximate thresholds mentioned in this topic are only used to provide an e
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Explanation of the NOTICE messages
+Adaptive autovacuum in PostgreSQL 18
 
 Managing TOAST OID
 contention

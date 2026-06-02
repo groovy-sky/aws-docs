@@ -92,7 +92,7 @@ Dropping a directory doesn't remove its contents. Because the
 pathnames, files in dropped directories can appear in a newly created directory.
 Before you drop a directory, we recommend that you use `UTL_FILE.FREMOVE`
 to remove files from the directory. For more information, see [FREMOVE\
-procedure](https://docs.oracle.com/database/121/ARPLS/u_file.htm) in the Oracle documentation.
+procedure](https://docs.oracle.com/en/database/oracle/oracle-database/19/arpls/UTL_FILE.html) in the Oracle documentation.
 
 ## Listing files in a DB instance directory
 

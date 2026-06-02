@@ -11,8 +11,8 @@ from a DB instance. Amazon RDS supports NNE for all editions of Oracle Database.
 A detailed discussion of Oracle native network encryption is beyond the scope of this guide, but you should
 understand the strengths and weaknesses of each algorithm and key before you decide on a solution for your
 deployment. For information about the algorithms and keys that are available through Oracle native network
-encryption, see [Configuring network data encryption](http://www.oracle.com/webfolder/technetwork/tutorials/obe/db/11g/r2/prod/security/network_encrypt/ntwrkencrypt.htm) in the Oracle documentation. For more information about AWS
-security, see the [AWS security center](http://aws.amazon.com/security).
+encryption, see [Configuring network data encryption and integrity](https://docs.oracle.com/en/database/oracle/oracle-database/19/asoag/configuring-network-data-encryption-and-integrity.html) in the Oracle documentation. For more information about AWS
+security, see the [AWS security center](https://aws.amazon.com/security).
 
 ###### Note
 
@@ -28,11 +28,26 @@ For more information, see
 
 - [Adding the NATIVE\_NETWORK\_ENCRYPTION option](oracle-options-nne-add.md)
 
+- [Verifying that NNE is active](#Oracle.Options.NNE.Verify)
+
 - [Setting NNE values in the sqlnet.ora](oracle-options-nne-using.md)
 
 - [Modifying NATIVE\_NETWORK\_ENCRYPTION option settings](oracle-options-nne-modifysettings.md)
 
 - [Removing the NATIVE\_NETWORK\_ENCRYPTION option](oracle-options-nne-remove.md)
+
+## Verifying that NNE is active
+
+After connecting to your DB instance, run the following query to confirm your session is encrypted:
+
+```sql
+
+SELECT SYS_CONTEXT('USERENV', 'NETWORK_PROTOCOL') AS PROTOCOL,
+       SYS_CONTEXT('USERENV', 'ENCRYPTION_TYPE') AS ENCRYPTION
+FROM DUAL;
+```
+
+If NNE is active, the `ENCRYPTION` column shows the algorithm in use (for example, `AES256`). If it shows blank or NULL, the connection is not encrypted.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

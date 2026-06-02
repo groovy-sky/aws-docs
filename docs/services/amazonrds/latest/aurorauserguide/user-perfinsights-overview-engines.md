@@ -81,7 +81,7 @@ All
 
 All
 
-All except db.serverless (Aurora Serverless v2)
+All except db.serverless (Aurora serverless)
 
 [Viewing Performance Insights proactive recommendations](user-perfinsights-insightsrecommendationviewdetails.md)
 
@@ -121,7 +121,7 @@ Paid tier only
 
 All
 
-All except db.serverless (Aurora Serverless v2)
+All except db.serverless (Aurora serverless)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -289,11 +289,11 @@ can be set only for specific DB instances.
 
 ###### Note
 
-Additional settings are available if you are modifying an Aurora Serverless v2 DB cluster. For
-information about these settings, see [Managing Aurora Serverless v2 DB clusters](aurora-serverless-v2-administration.md).
+Additional settings are available if you are modifying an Aurora serverless DB cluster. For
+information about these settings, see [Managing Aurora serverless DB clusters](aurora-serverless-v2-administration.md).
 
-Some settings aren't available for Aurora Serverless v2 because of their limitations. For more
-information, see [Requirements and limitations for Aurora Serverless v2](aurora-serverless-v2-requirements.md).
+Some settings aren't available for Aurora serverless because of their limitations. For more
+information, see [Requirements and limitations for Aurora serverless](aurora-serverless-v2-requirements.md).
 
 Setting and descriptionMethodScopeDowntime notes
 
@@ -374,7 +374,7 @@ An outage doesn't occur during this change.
 
 **Capacity settings**
 
-The scaling properties of an Aurora Serverless v2 DB cluster. You can only modify scaling properties for DB
+The scaling properties of an Aurora serverless DB cluster. You can only modify scaling properties for DB
 clusters in `serverless` DB engine mode.
 
 Using the AWS Management Console, [Modifying the DB cluster by using the console, CLI, and API](#Aurora.Modifying.Cluster).
@@ -922,10 +922,10 @@ An outage doesn't occur during this change.
 
 **Serverless v2 capacity settings**
 
-The database capacity of an Aurora Serverless v2 DB cluster, measured in Aurora Capacity Units
+The database capacity of an Aurora serverless DB cluster, measured in Aurora Capacity Units
 (ACUs).
 
-For more information, see [Setting the Aurora Serverless v2 capacity range for a cluster](aurora-serverless-v2-administration.md#aurora-serverless-v2-setting-acus).
+For more information, see [Setting the Aurora serverless capacity range for a cluster](aurora-serverless-v2-administration.md#aurora-serverless-v2-setting-acus).
 
 Using the AWS Management Console, [Modifying the DB cluster by using the console, CLI, and API](#Aurora.Modifying.Cluster).
 

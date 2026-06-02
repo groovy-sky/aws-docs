@@ -97,6 +97,10 @@ command, or the API operation [DescribeDBInstances](../../../../reference/amazon
 
 ## Adding the TDE option
 
+###### Important
+
+The TDE option is permanent and cannot be removed from a DB instance. If you need to reverse this decision later, you must decrypt all data, export it, and import into a new DB instance without TDE. Plan accordingly before enabling TDE.
+
 To add the `TDE` option to your DB instance, complete the following steps:
 
 1. (Recommended) Take a snapshot of your DB instance.
@@ -153,9 +157,7 @@ restart as part of this operation. For more information, see
 [Modifying an Amazon RDS DB instance](overview-dbinstance-modifying.md).
 
 In the following example, you use the AWS CLI [add-option-to-option-group](../../../cli/latest/reference/rds/add-option-to-option-group.md) command to add the `TDE`
-option to an option group called `myoptiongroup`. For more
-information, see [Getting\
-started: Flink 1.13.2](../../../managed-flink/latest/java/earlier.md#getting-started-1-13).
+option to an option group called `myoptiongroup`.
 
 For Linux, macOS, or Unix:
 

@@ -25,6 +25,34 @@ support](rds-custom-for-oracle-end-of-support.md).
 
 March 31, 2028
 
+Amazon RDS supports MySQL 8.4.9 and 8.0.46
+
+You can now create Amazon RDS DB instances running MySQL 8.4.9 and 8.0.46. For more information, see [MySQL\
+on Amazon RDS versions](mysql-concepts-versionmgmt.md).
+
+May 11, 2026
+
+RDS for SQL Server supports the db.m8a and db.r8a instance classes
+
+You can now use the db.m8a and db.r8a instance classes for RDS for SQL Server.
+For more information, see [DB instance classes for SQL Server](sqlserver-concepts-general-instanceclasses.md).
+
+May 7, 2026
+
+RDS for SQL Server supports the db.m8i and db.r8i instance classes
+
+You can now use the db.m8i and db.r8i instance classes for RDS for SQL Server.
+For more information, see [DB instance classes for SQL Server](sqlserver-concepts-general-instanceclasses.md).
+
+April 30, 2026
+
+Amazon RDS supports MySQL 9.6 in the Database Preview environment
+
+MySQL 9.6 is now available in the Database Preview environment in the
+US East (Ohio) AWS Region. For more information, see [MySQL version 9.6 in the Database Preview environment](mysql-concepts-versionmgmt.md#mysql-preview-environment-version-9-6).
+
+April 16, 2026
+
 RDS for Oracle supports the db.m8i and db.r8i instance classes
 
 You can now use the db.m8i and db.r8i instance classes for RDS for Oracle.

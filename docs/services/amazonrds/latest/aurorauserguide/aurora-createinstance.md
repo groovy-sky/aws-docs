@@ -16,12 +16,12 @@ Aurora has two main types of DB cluster:
 workload. For more information, see [Amazon AuroraDB instance classes](concepts-dbinstanceclass.md).
 Aurora provisioned has several options, including Aurora global databases. For more information, see [Using Amazon Aurora Global Database](aurora-global-database.md).
 
-- Aurora Serverless – Aurora Serverless v2 is an on-demand
+- Aurora Serverless – Aurora serverless is an on-demand
 automatic scaling configuration for Aurora. Capacity is adjusted automatically based
 on application demand. You're charged only for the resources that your DB cluster
 consumes. This automation is especially useful for environments with highly variable
 and unpredictable workloads. For more information, see
-[Using Aurora Serverless v2](aurora-serverless-v2.md).
+[Using Aurora serverless](aurora-serverless-v2.md).
 
 Following, you can find out how to create an Aurora DB cluster. To get
 started, first see [DB cluster prerequisites](#Aurora.CreateInstance.Prerequisites).
@@ -329,8 +329,8 @@ enabled. For information about creating a DB cluster with **Easy create** enable
 07. Choose the **Engine version**.
 
     For more information, see [Amazon Aurora versions](aurora-versionpolicy.md). You can
-     use the filters to choose versions that are compatible with features that you want, such as Aurora Serverless v2.
-     For more information, see [Using Aurora Serverless v2](aurora-serverless-v2.md).
+     use the filters to choose versions that are compatible with features that you want, such as Aurora serverless.
+     For more information, see [Using Aurora serverless](aurora-serverless-v2.md).
 
 08. In **Templates**, choose the template that matches your use case.
 
@@ -1137,7 +1137,7 @@ Using the RDS API, call [`CreateDBCluster`](../../../../reference/amazonrds/late
 Choose **Create an RDS Proxy** to create a proxy for your DB cluster.
 Amazon RDS automatically creates an IAM role and a Secrets Manager secret for the proxy.
 
-For more information, see [Amazon RDS Proxyfor Aurora](rds-proxy.md).
+For more information, see [Amazon RDS Proxy for Aurora](rds-proxy.md).
 
 Not available when creating a DB cluster.
 

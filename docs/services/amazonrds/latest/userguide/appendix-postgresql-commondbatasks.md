@@ -52,6 +52,10 @@ Following are some common DBA tasks for RDS for PostgreSQL.
 
 - [Best Practices for Parallel Queries in RDS for PostgreSQL](postgresql-parallelqueries.md)
 
+- [Avoiding performance issues with REPLICA IDENTITY FULL in RDS for PostgreSQL](postgresql-replicaidentityfull.md)
+
+- [Initial troubleshooting for common PostgreSQL performance issues in RDS for PostgreSQL](postgresql-initialtroubleshooting.md)
+
 - [Working with parameters on your RDS for PostgreSQL DB instance](appendix-postgresql-commondbatasks-parameters.md)
 
 ## Working with logging mechanisms supported by RDS for PostgreSQL

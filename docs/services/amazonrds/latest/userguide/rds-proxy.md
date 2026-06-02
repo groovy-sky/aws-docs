@@ -59,6 +59,8 @@ code changes.
 
 - [Using RDS Proxy with Blue/Green Deployments](rds-proxy-blue-green.md)
 
+- [Best practices with RDS Proxy](rds-proxy-best-practices.md)
+
 ## Region and version availability
 
 Feature availability and support varies across specific versions of each database engine, and across AWS Regions.
@@ -295,6 +297,10 @@ aren't always accurate. As a work-around, use the [INSERT](https://www.postgresq
 with the `RETURNING` clause.
 
 - RDS Proxy currently doesn't support streaming replication mode.
+
+- RDS Proxy doesn't support direct SSL negotiation mode.
+
+- RDS Proxy only supports version 3.0 of the PostgreSQL messaging protocol.
 
 - With RDS for PostgreSQL 16, modifications to the `scram_iterations` value exclusively impact
 the authentication process between the proxy and the database.

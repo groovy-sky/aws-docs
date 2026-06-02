@@ -71,7 +71,7 @@ DB cluster at a given time can help to detect anomalous access patterns.
 
 ### Including Data API events in an AWS CloudTrail trail
 
-For Aurora PostgreSQL Serverless v2 and provisioned databases, the following Data API
+For Aurora PostgreSQL Aurora serverless and provisioned databases, the following Data API
 operations are logged to AWS CloudTrail as _data events_. [Data\
 events](../../../awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.md#logging-data-events) are high-volume data-plane API operations that CloudTrail doesn't log by default.
 Additional charges apply for data events. For information about CloudTrail pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing).
@@ -128,10 +128,10 @@ source and includes information about the requested action, the date and time of
 request parameters, and so on. CloudTrail log files aren't an ordered stack trace of the public
 API calls, so they don't appear in any specific order.
 
-**Aurora PostgreSQL Serverless v2 and provisioned**
+**Aurora PostgreSQL Aurora serverless and provisioned**
 
 The following example shows a CloudTrail log entry that demonstrates the
-`ExecuteStatement` operation for Aurora PostgreSQL Serverless v2 and provisioned databases. For these databases,
+`ExecuteStatement` operation for Aurora PostgreSQL Aurora serverless and provisioned databases. For these databases,
 all Data API events are data events where the event source is **rdsdataapi.amazonaws.com** and the event type is
 **Rds Data Service**.
 
@@ -167,50 +167,6 @@ all Data API events are data events where the event source is **rdsdataapi.amazo
     "requestID": "6ba9a36e-b3aa-4ca8-9a2e-15a9eada988e",
     "eventID": "a2c7a357-ee8e-4755-a0d0-aed11ed4253a",
     "eventType": "Rds Data Service",
-    "recipientAccountId": "123456789012"
-}
-
-```
-
-**Aurora Serverless v1**
-
-The following example shows how the preceding example CloudTrail log entry appears for
-Aurora Serverless v1. For Aurora Serverless v1, all events are management events where the event
-source is **rdsdata.amazonaws.com** and the event type is
-**AwsApiCall**.
-
-```json
-
-{
-    "eventVersion": "1.05",
-    "userIdentity": {
-        "type": "IAMUser",
-        "principalId": "AWS_ACCESS_KEY_ID_REDACTED",
-        "arn": "arn:aws:iam::123456789012:user/johndoe",
-        "accountId": "123456789012",
-        "accessKeyId": "AWS_ACCESS_KEY_ID_REDACTED",
-        "userName": "johndoe"
-    },
-    "eventTime": "2019-12-18T00:49:34Z",
-    "eventSource": "rdsdata.amazonaws.com",
-    "eventName": "ExecuteStatement",
-    "awsRegion": "us-east-1",
-    "sourceIPAddress": "192.0.2.0",
-    "userAgent": "aws-cli/1.16.102 Python/3.7.2 Windows/10 botocore/1.12.92",
-    "requestParameters": {
-        "continueAfterTimeout": false,
-        "database": "**********",
-        "includeResultMetadata": false,
-        "parameters": [],
-        "resourceArn": "arn:aws:rds:us-east-1:123456789012:cluster:my-database-1",
-        "schema": "**********",
-        "secretArn": "arn:aws:secretsmanager:us-east-1:123456789012:secret:dataapisecret-ABC123",
-        "sql": "**********"
-    },
-    "responseElements": null,
-    "requestID": "6ba9a36e-b3aa-4ca8-9a2e-15a9eada988e",
-    "eventID": "a2c7a357-ee8e-4755-a0d0-aed11ed4253a",
-    "eventType": "AwsApiCall",
     "recipientAccountId": "123456789012"
 }
 

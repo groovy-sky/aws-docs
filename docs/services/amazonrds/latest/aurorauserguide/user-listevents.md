@@ -28,7 +28,7 @@ you can retrieve events for up to the past 14 days.
 
 If you need to store events for longer periods of time, you can send Amazon RDS events to EventBridge. For more information, see [Creating a rule that triggers on an Amazon Aurora event](rds-cloud-watch-events.md)
 
-For descriptions of the Amazon Aurora events, see [Amazon RDS event categories and event messagesfor Aurora](user-events-messages.md).
+For descriptions of the Amazon Aurora events, see [Amazon RDS event categories and event messages for Aurora](user-events-messages.md).
 
 To access detailed information about events using AWS CloudTrail, including request parameters, see [CloudTrail events](logging-using-cloudtrail.md#service-name-info-in-cloudtrail.events).
 

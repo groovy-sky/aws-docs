@@ -55,7 +55,7 @@ For the normalization factors of the preconfigured RDS for Oracle DB instance cl
 
 If you're using the RDS console, you can find out whether a specific edition,
 instance class, and license combination is supported by choosing **Create**
-**database** and specifying different option. In the AWS CLI, you can run
+**database** and specifying different options. In the AWS CLI, you can run
 the following command:
 
 ```nohighlight
@@ -225,7 +225,7 @@ Bring Your Own License (BYOL)
 
 **Standard instance classes**
 
-db.m8i.large–db.m8i.4xlarge
+db.m8i.large–db.m8i.4xlarge, db.m8i.metal-48xl, db.m8i.metal-96xl
 
 db.m7i.large–db.m7i.4xlarge, db.m7i.metal-24xl, db.m7i.metal-48xl
 
@@ -241,7 +241,7 @@ db.m5.large–db.m5.4xlarge
 
 **Memory optimized instance classes**
 
-db.r8i.large–db.r8i.4xlarge
+db.r8i.large–db.r8i.4xlarge, db.r8i.metal-48xl, db.r8i.metal-96xl
 
 db.r7i.large–db.r7i.4xlarge, db.r7i.metal-24xl, db.r7i.metal-48xl
 
@@ -349,11 +349,15 @@ License Included
 
 **Standard instance classes**
 
+db.m8i.large–db.m8i.4xlarge
+
 db.m7i.large–db.m7i.4xlarge
 
 db.m5.large–db.m5.4xlarge
 
 **Memory optimized instance classes**
+
+db.r8i.large–db.r8i.4xlarge
 
 db.r7i.large–db.r7i.4xlarge
 

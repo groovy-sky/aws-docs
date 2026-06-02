@@ -53,7 +53,7 @@ CloudWatch dimension set
 
 The percentage of time for which the target group was available in the role
 indicated by the dimension. This metric is reported every minute. The most useful
-statistic for this metric is `Sum`.
+statistic for this metric is `Average`.
 
 1 minute
 [Dimension set 4](#proxy-dimension-set-4)`ClientConnections`
@@ -138,7 +138,7 @@ The most useful statistic for this metric is `Sum`.
 `DatabaseConnectionsBorrowLatency`
 
 The time in microseconds that it takes for the proxy being monitored to get a
-database connection. The most useful statistic for this metric is `Sum`.
+database connection. The most useful statistic for this metric is `Average`.
 1 minute and above
 [Dimension set 1](#proxy-dimension-set-1), [Dimension set 2](#proxy-dimension-set-2)`DatabaseConnectionsCurrentlyBorrowed`
 
@@ -205,6 +205,8 @@ useful statistic for this metric is `Sum`.
 The time in microseconds that the database took to respond to the query. The most useful statistic for
 this metric is `Average`.
 
+**Note:** Does not include data for PostgreSQL workload using Extended Protocol.
+
 1 minute and above
 [Dimension set 1](#proxy-dimension-set-1), [Dimension set 2](#proxy-dimension-set-2),
 [Dimension set 3](#proxy-dimension-set-3), [Dimension set 4](#proxy-dimension-set-4)`QueryRequests`
@@ -212,11 +214,16 @@ this metric is `Average`.
 The number of queries received. A query including multiple statements is counted as one query. The
 most useful statistic for this metric is `Sum`.
 
+**Note:** Does not include data for PostgreSQL workload using Extended Protocol.
+
 1 minute and above
 
 [Dimension set 1](#proxy-dimension-set-1), [Dimension set 2](#proxy-dimension-set-2)`QueryRequestsNoTLS`
+
 The number of queries received from non-TLS connections. A query including multiple statements is
 counted as one query. The most useful statistic for this metric is `Sum`.
+
+**Note:** Does not include data for PostgreSQL workload using Extended Protocol.
 
 1 minute and above
 [Dimension set 1](#proxy-dimension-set-1), [Dimension set 2](#proxy-dimension-set-2)
@@ -226,10 +233,15 @@ counted as one query. The most useful statistic for this metric is `Sum`.
 The number of queries received from TLS connections. A query including multiple statements is counted as
 one query. The most useful statistic for this metric is `Sum`.
 
+**Note:** Does not include data for PostgreSQL workload using Extended Protocol.
+
 1 minute and above
 [Dimension set 1](#proxy-dimension-set-1), [Dimension set 2](#proxy-dimension-set-2)`QueryResponseLatency`
+
 The time in microseconds between getting a query request and the proxy responding to it. The most useful
 statistic for this metric is `Average`.
+
+**Note:** Does not include data for PostgreSQL workload using Extended Protocol.
 
 1 minute and above
 [Dimension set 1](#proxy-dimension-set-1), [Dimension set 2](#proxy-dimension-set-2)

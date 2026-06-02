@@ -32,6 +32,6 @@ To completely remove the old data and reclaim the disk space, call the appropria
 
 Overview of Aurora MySQL database logs
 
-Configuring Aurora MySQL binary logging for Single-AZ databases
+Configuring Aurora MySQL binary logging
 
 All content copied from https://docs.aws.amazon.com/.

@@ -5,7 +5,7 @@ title: "Monitoring Amazon Aurora events"
 # Monitoring Amazon Aurora events
 
 An _event_ indicates a change in an environment. This can be an AWS environment, an SaaS partner service or
-application, or a custom application or service. For descriptions of the Aurora events, see [Amazon RDS event categories and event messagesfor Aurora](user-events-messages.md).
+application, or a custom application or service. For descriptions of the Aurora events, see [Amazon RDS event categories and event messages for Aurora](user-events-messages.md).
 
 ###### Topics
 
@@ -17,7 +17,7 @@ application, or a custom application or service. For descriptions of the Aurora 
 
 - [Creating a rule that triggers on an Amazon Aurora event](rds-cloud-watch-events.md)
 
-- [Amazon RDS event categories and event messagesfor Aurora](user-events-messages.md)
+- [Amazon RDS event categories and event messages for Aurora](user-events-messages.md)
 
 ## Overview of events for Aurora
 

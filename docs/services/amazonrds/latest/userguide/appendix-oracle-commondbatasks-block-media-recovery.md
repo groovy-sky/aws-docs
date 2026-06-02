@@ -4,7 +4,7 @@ title: "Performing block media recovery"
 
 # Performing block media recovery
 
-You can recovery individual data blocks, known as _block media_
+You can recover individual data blocks, known as _block media_
 _recovery_, using the Amazon RDS procedures
 `rdsadmin.rdsadmin_rman_util.recover_datafile_block`. You can use
 this overloaded procedure to recover either an individual data block or a range of

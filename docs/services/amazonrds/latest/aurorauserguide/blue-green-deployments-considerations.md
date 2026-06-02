@@ -198,8 +198,12 @@ If Aurora detects an attempt to execute a DCL statement in the blue environment,
 the blue environment and the green environment.
 
 During switchover, Aurora increments sequence values in the green
-environment to match those in the blue environment. If you have thousands of
-sequences, this can delay switchover.
+environment to match those in the blue environment. While a high volume of
+sequences generally allows the switchover to proceed, an exceptionally large
+number—such as several hundred thousand—might cause the process to
+time out before completion. You can increase the switchover timeout to allow
+more time for synchronization. For more information, see
+[Switchover timeout](blue-green-deployments-switching.md#blue-green-deployments-switching-timeout).
 
 Large objects in the blue environment aren't replicated to the green environment. This includes both existing large objects and any newly created or modified large objects during the blue/green deployment process.
 
