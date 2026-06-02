@@ -1,8 +1,8 @@
 ---
-title: "Delete an attached file in Amazon Connect Customer AI agent workspace"
+title: "Delete an attached file in Connect Customer agent workspace"
 ---
 
-# Delete an attached file in Amazon Connect Customer AI agent workspace
+# Delete an attached file in Connect Customer agent workspace
 
 Deletes an attached file along with the underlying S3 Object. The attached file is
 permanently deleted if S3 bucket versioning is not enabled. The request accepts an

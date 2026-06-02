@@ -1,11 +1,11 @@
 ---
-title: "Subscribe a callback function when an Amazon Connect Customer AI agent workspace user changes languages"
+title: "Subscribe a callback function when an Connect Customer agent workspace user changes languages"
 ---
 
-# Subscribe a callback function when an Amazon Connect Customer AI agent workspace user changes languages
+# Subscribe a callback function when an Connect Customer agent workspace user changes languages
 
 Subscribes a callback function to-be-invoked whenever a user LanguageChanged event
-occurs in the Amazon Connect Customer AI agent workspace.
+occurs in the Connect Customer agent workspace.
 
 **Signature**
 

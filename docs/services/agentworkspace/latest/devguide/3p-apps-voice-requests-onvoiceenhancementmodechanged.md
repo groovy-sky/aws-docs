@@ -1,8 +1,8 @@
 ---
-title: "Subscribe to voice enhancement mode change events in Amazon Connect Customer AI agent workspace"
+title: "Subscribe to voice enhancement mode change events in Connect Customer agent workspace"
 ---
 
-# Subscribe to voice enhancement mode change events in Amazon Connect Customer AI agent workspace
+# Subscribe to voice enhancement mode change events in Connect Customer agent workspace
 
 Subscribes a callback function whenever voice enhancements mode is changed in user's
 profile.

@@ -1,11 +1,11 @@
 ---
-title: "Get a list of dialable countries in Amazon Connect Customer AI agent workspace"
+title: "Get a list of dialable countries in Connect Customer agent workspace"
 ---
 
-# Get a list of dialable countries in Amazon Connect Customer AI agent workspace
+# Get a list of dialable countries in Connect Customer agent workspace
 
 Get a list of `DialableCountry` that contains the country code and calling
-code that the Amazon Connect instance is allowed to make calls to.
+code that the Connect Customer instance is allowed to make calls to.
 
 **Signature**
 

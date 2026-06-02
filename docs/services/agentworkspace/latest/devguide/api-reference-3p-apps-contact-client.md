@@ -1,11 +1,11 @@
 ---
-title: "Amazon Connect Customer AI agent workspace Contact API"
+title: "Connect Customer agent workspace Contact API"
 ---
 
-# Amazon Connect Customer AI agent workspace Contact API
+# Connect Customer agent workspace Contact API
 
 The Amazon Connect SDK provides an `ContactClient` which serves as an interface that your app
-in the Amazon Connect Customer AI agent workspace can use to subscribe to contact events and make contact data requests.
+in the Connect Customer agent workspace can use to subscribe to contact events and make contact data requests.
 
 The `ContactClient` accepts an optional constructor argument, `
         ConnectClientConfig` which itself is defined as:
@@ -122,6 +122,24 @@ The following sections describe API calls for working with the Contact API.
 - [offStartingAcw()](3p-apps-contact-events-startingacw-unsub.md)
 
 - [transfer()](3p-apps-contact-requests-transfer.md)
+
+- [reject()](3p-apps-contact-requests-reject.md)
+
+- [disconnectSelf()](3p-apps-contact-requests-disconnectself.md)
+
+- [isAutoAcceptEnabled()](3p-apps-contact-requests-isautoacceptenabled.md)
+
+- [onConnecting()](3p-apps-contact-events-connecting-sub.md)
+
+- [offConnecting()](3p-apps-contact-events-connecting-unsub.md)
+
+- [onError()](3p-apps-contact-events-error-sub.md)
+
+- [offError()](3p-apps-contact-events-error-unsub.md)
+
+- [onPending()](3p-apps-contact-events-pending-sub.md)
+
+- [offPending()](3p-apps-contact-events-pending-unsub.md)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

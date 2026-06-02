@@ -1,8 +1,8 @@
 ---
-title: "Subscribe to participant hold events in Amazon Connect Customer AI agent workspace"
+title: "Subscribe to participant hold events in Connect Customer agent workspace"
 ---
 
-# Subscribe to participant hold events in Amazon Connect Customer AI agent workspace
+# Subscribe to participant hold events in Connect Customer agent workspace
 
 Subscribes to events when any participant is put on hold.
 

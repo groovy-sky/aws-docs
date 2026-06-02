@@ -1,8 +1,8 @@
 ---
-title: "Determine if the Quick Responses feature is enabled in Amazon Connect Customer AI agent workspace"
+title: "Determine if the Quick Responses feature is enabled in Connect Customer agent workspace"
 ---
 
-# Determine if the Quick Responses feature is enabled in Amazon Connect Customer AI agent workspace
+# Determine if the Quick Responses feature is enabled in Connect Customer agent workspace
 
 Returns the QuickResponsesEnabledState object, which indicates if the quick
 responses feature is enabled for the Connect instance. Quick responses is considered

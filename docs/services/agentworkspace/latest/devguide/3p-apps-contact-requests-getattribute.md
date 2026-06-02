@@ -1,11 +1,11 @@
 ---
-title: "Get specific attributes for a contact in Amazon Connect Customer AI agent workspace"
+title: "Get specific attributes for a contact in Connect Customer agent workspace"
 ---
 
-# Get specific attributes for a contact in Amazon Connect Customer AI agent workspace
+# Get specific attributes for a contact in Connect Customer agent workspace
 
-Returns the requested attribute associated with the contact in the Amazon Connect
-Customer AI agent workspace.
+Returns the requested attribute associated with the contact in the Connect Customer
+agent workspace.
 
 ```typescript
 

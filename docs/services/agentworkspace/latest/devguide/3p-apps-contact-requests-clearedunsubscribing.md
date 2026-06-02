@@ -1,11 +1,11 @@
 ---
-title: "Unsubscribes the callback function from the contact cleared event in Amazon Connect Customer AI agent workspace"
+title: "Unsubscribes the callback function from the contact cleared event in Connect Customer agent workspace"
 ---
 
-# Unsubscribes the callback function from the contact cleared event in Amazon Connect Customer AI agent workspace
+# Unsubscribes the callback function from the contact cleared event in Connect Customer agent workspace
 
-Unsubscribes the callback function from the contact cleared event in Amazon Connect
-Customer AI agent workspace.
+Unsubscribes the callback function from the contact cleared event in Connect Customer
+agent workspace.
 
 **Signature**
 

@@ -1,14 +1,14 @@
 ---
-title: "Recommendations and best practices for Amazon Connect Customer AI agent workspace"
+title: "Recommendations and best practices for Connect Customer agent workspace"
 ---
 
-# Recommendations and best practices for Amazon Connect Customer AI agent workspace
+# Recommendations and best practices for Connect Customer agent workspace
 
-Use the following recommendations and best practices to optimize applications in the Amazon Connect Customer AI agent workspace.
+Use the following recommendations and best practices to optimize applications in the Connect Customer agent workspace.
 
 ###### Topics
 
-- [Ensuring that apps can only be embedded in the Amazon Connect Customer AI agent workspace](#recommendations-and-best-practices-embedded)
+- [Ensuring that apps can only be embedded in the Connect Customer agent workspace](#recommendations-and-best-practices-embedded)
 
 - [Using multiple domains within an app](#recommendations-and-best-practices-multiple-domains)
 
@@ -18,7 +18,7 @@ Use the following recommendations and best practices to optimize applications in
 
 - [Theming and styling](#recommendations-and-best-practices-theming-and-styling)
 
-## Ensuring that apps can only be embedded in the Amazon Connect Customer AI agent workspace
+## Ensuring that apps can only be embedded in the Connect Customer agent workspace
 
 It is recommended that apps correctly set the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) header with [frame-ancestors](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) to only allow Amazon Connect instances.
 
@@ -102,7 +102,7 @@ that your app meets these guidelines.
 The [Amazon Connect SDK](https://github.com/amazon-connect/AmazonConnectSDK) includes a
 standard Amazon Connect theme. We recommend that you use the theming package on top of
 Cloudscape, such that third-party applications match the overall look and feel of the
-Amazon Connect Customer AI agent workspace.
+Connect Customer agent workspace.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

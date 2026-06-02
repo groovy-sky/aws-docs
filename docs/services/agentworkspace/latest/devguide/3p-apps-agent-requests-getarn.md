@@ -1,11 +1,11 @@
 ---
-title: "Get the ARN of the agent in Amazon Connect Customer AI agent workspace"
+title: "Get the ARN of the agent in Connect Customer agent workspace"
 ---
 
-# Get the ARN of the agent in Amazon Connect Customer AI agent workspace
+# Get the ARN of the agent in Connect Customer agent workspace
 
 Returns the Amazon Resource Name(ARN) of the user that's currently logged in to the
-Amazon Connect Customer AI agent workspace.
+Connect Customer agent workspace.
 
 ```typescript
 

@@ -1,8 +1,8 @@
 ---
-title: "Subscribe to accepted email notifications in Amazon Connect Customer AI agent workspace"
+title: "Subscribe to accepted email notifications in Connect Customer agent workspace"
 ---
 
-# Subscribe to accepted email notifications in Amazon Connect Customer AI agent workspace
+# Subscribe to accepted email notifications in Connect Customer agent workspace
 
 Subscribes a callback function to-be-invoked whenever an inbound email contact has
 been accepted.

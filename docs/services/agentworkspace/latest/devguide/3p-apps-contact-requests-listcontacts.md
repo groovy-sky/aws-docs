@@ -1,8 +1,8 @@
 ---
-title: "List all contacts for the current agent in Amazon Connect Customer AI agent workspace"
+title: "List all contacts for the current agent in Connect Customer agent workspace"
 ---
 
-# List all contacts for the current agent in Amazon Connect Customer AI agent workspace
+# List all contacts for the current agent in Connect Customer agent workspace
 
 Lists all contacts for the current agent.
 

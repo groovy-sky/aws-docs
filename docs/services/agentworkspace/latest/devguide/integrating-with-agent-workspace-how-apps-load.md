@@ -1,8 +1,8 @@
 ---
-title: "How applications are loaded in Amazon Connect Customer AI agent workspace"
+title: "How applications are loaded in Connect Customer agent workspace"
 ---
 
-# How applications are loaded in Amazon Connect Customer AI agent workspace
+# How applications are loaded in Connect Customer agent workspace
 
 The agent workspace allows users to handle multiple contacts
 concurrently. They will have only one contact selected at a time though, and the
@@ -39,7 +39,7 @@ Events or data will not be shared between apps on different contacts.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Are you a first-time Amazon Connect Customer AI agent workspace user?
+Are you a first-time Connect Customer agent workspace user?
 
 Recommendations and best practices
 

@@ -1,8 +1,8 @@
 ---
-title: "Determine if the Message Template feature is enabled in Amazon Connect Customer AI agent workspace"
+title: "Determine if the Message Template feature is enabled in Connect Customer agent workspace"
 ---
 
-# Determine if the Message Template feature is enabled in Amazon Connect Customer AI agent workspace
+# Determine if the Message Template feature is enabled in Connect Customer agent workspace
 
 Returns the MessageTemplateEnabledState object, which indicates if the message
 template feature is enabled for the Connect instance. The Message Template feature

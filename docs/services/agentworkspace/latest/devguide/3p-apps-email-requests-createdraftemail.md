@@ -1,12 +1,12 @@
 ---
-title: "Create a draft email contact in Amazon Connect Customer AI agent workspace"
+title: "Create a draft email contact in Connect Customer agent workspace"
 ---
 
-# Create a draft email contact in Amazon Connect Customer AI agent workspace
+# Create a draft email contact in Connect Customer agent workspace
 
 Creates a draft outbound email contact; can either be an agent initiated outbound
-draft email or an agent reply draft email. Upon successful draft creation, the email
-contact will be in connected state. Returns an object that includes:
+draft email, an agent reply draft email, or a forwarded email. Upon successful draft
+creation, the email contact will be in connected state. Returns an object that includes:
 
 - `contactId: string`: The contact id of the newly created draft
 email contact
@@ -25,7 +25,10 @@ email conversation; "AGENT\_REPLY" indicates that this draft email is
 being sent in response to an incoming email contactrelatedContactIdstringThe id of the contact that is the reason for creating the new
 draft email; this is required when initiationMethod="AGENT\_REPLY"
 and should be the contact id of the email that this email is being
-sent in response to.expiryDurationInMinutesnumberLength of time before an unsent contact expires; Minimum is 1
+sent in response to. Also required when messageType="FORWARD"
+and should be the contact id of the email being forwarded.messageType"FORWARD"Optional. The type of message being created. Use with
+initiationMethod="OUTBOUND" to create a forward email
+contact.expiryDurationInMinutesnumberLength of time before an unsent contact expires; Minimum is 1
 minute, Maximum is 1 week; Default is 12 hours.attributesRecord<string, string>A custom key-value pair using an attribute map. The attributes
 are standard Amazon Connect attributes, and can be accessed in flows
 just like any other contact attributes.referencesRecord<string, { type: string; value: string; }>Well-formed data on a contact, used by agents to complete a
@@ -51,6 +54,21 @@ const acceptedInboundEmailContactId = "exampleContactId";
 const contact: EmailContactId = await emailClient.createDraftEmail({
    initiationMethod: "AGENT_REPLY",
    relatedContactId: acceptedInboundEmailContactId,
+});
+
+const { contactId } = contact;
+```
+
+**Usage for Forward Email**
+
+```typescript
+
+const emailContactIdToBeForwarded = "exampleContactId";
+
+const contact: EmailContactId = await emailClient.createDraftEmail({
+   initiationMethod: "OUTBOUND",
+   relatedContactId: emailContactIdToBeForwarded,
+   messageType: "FORWARD",
 });
 
 const { contactId } = contact;

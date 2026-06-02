@@ -1,11 +1,11 @@
 ---
-title: "Get all active application information in Amazon Connect Customer AI agent workspace"
+title: "Get all active application information in Connect Customer agent workspace"
 ---
 
-# Get all active application information in Amazon Connect Customer AI agent workspace
+# Get all active application information in Connect Customer agent workspace
 
 Returns the application information for all active application instances in the
-Amazon Connect Customer AI agent workspace.
+Connect Customer agent workspace.
 
 **Signature**
 

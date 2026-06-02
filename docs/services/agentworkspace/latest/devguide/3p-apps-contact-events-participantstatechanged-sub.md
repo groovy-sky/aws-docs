@@ -1,8 +1,8 @@
 ---
-title: "Subscribe to participant state change events in Amazon Connect Customer AI agent workspace"
+title: "Subscribe to participant state change events in Connect Customer agent workspace"
 ---
 
-# Subscribe to participant state change events in Amazon Connect Customer AI agent workspace
+# Subscribe to participant state change events in Connect Customer agent workspace
 
 Subscribes to participant state change events. This event fires when a participant's
 state

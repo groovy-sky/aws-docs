@@ -1,8 +1,8 @@
 ---
-title: "Subscribe to session expiration warning event in Amazon Connect Customer AI agent workspace"
+title: "Subscribe to session expiration warning event in Connect Customer agent workspace"
 ---
 
-# Subscribe to session expiration warning event in Amazon Connect Customer AI agent workspace
+# Subscribe to session expiration warning event in Connect Customer agent workspace
 
 Subscribes a callback function to be invoked whenever the agent's session is about to
 expire due to inactivity.

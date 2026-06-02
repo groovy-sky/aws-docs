@@ -1,11 +1,11 @@
 ---
-title: "Subscribe a callback function when an Amazon Connect Customer AI agent workspace contact starts ACW"
+title: "Subscribe a callback function when an Connect Customer agent workspace contact starts ACW"
 ---
 
-# Subscribe a callback function when an Amazon Connect Customer AI agent workspace contact starts ACW
+# Subscribe a callback function when an Connect Customer agent workspace contact starts ACW
 
 Subscribes a callback function to-be-invoked whenever a contact StartingAcw event
-occurs in the Amazon Connect Customer AI agent workspace. If no contact ID is provided, then it uses the context of
+occurs in the Connect Customer agent workspace. If no contact ID is provided, then it uses the context of
 the current contact that the 3P app was opened on.
 
 **Signature**

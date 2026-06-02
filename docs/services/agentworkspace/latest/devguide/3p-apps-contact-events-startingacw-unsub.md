@@ -1,11 +1,11 @@
 ---
-title: "Unsubscribe a callback function when an Amazon Connect Customer AI agent workspace contact starts ACW"
+title: "Unsubscribe a callback function when an Connect Customer agent workspace contact starts ACW"
 ---
 
-# Unsubscribe a callback function when an Amazon Connect Customer AI agent workspace contact starts ACW
+# Unsubscribe a callback function when an Connect Customer agent workspace contact starts ACW
 
-Unsubscribes the callback function from the contact StartingAcw event in the Amazon Connect
-Customer AI agent workspace.
+Unsubscribes the callback function from the contact StartingAcw event in the Connect Customer
+agent workspace.
 
 **Signature**
 

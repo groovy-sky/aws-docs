@@ -1,8 +1,8 @@
 ---
-title: "Get all the availability states configured for the current agent in Amazon Connect Customer AI agent workspace"
+title: "Get all the availability states configured for the current agent in Connect Customer agent workspace"
 ---
 
-# Get all the availability states configured for the current agent in Amazon Connect Customer AI agent workspace
+# Get all the availability states configured for the current agent in Connect Customer agent workspace
 
 Get all the availability states configured for the current agent.
 
@@ -38,7 +38,7 @@ User.Configuration.View
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-getState()
+getState() - Deprecated
 
 listQuickConnects()
 

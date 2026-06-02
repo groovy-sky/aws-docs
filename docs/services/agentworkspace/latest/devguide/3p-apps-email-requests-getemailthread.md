@@ -1,8 +1,8 @@
 ---
-title: "Get a list of email contacts in an email contact's tree in Amazon Connect Customer AI agent workspace"
+title: "Get a list of email contacts in an email contact's tree in Connect Customer agent workspace"
 ---
 
-# Get a list of email contacts in an email contact's tree in Amazon Connect Customer AI agent workspace
+# Get a list of email contacts in an email contact's tree in Connect Customer agent workspace
 
 Returns an array of EmailThreadContact objects (for the provided
 contactAssociationId) that represent that contact's email thread. The

@@ -1,8 +1,8 @@
 ---
-title: "Subscribe to participant added events in Amazon Connect Customer AI agent workspace"
+title: "Subscribe to participant added events in Connect Customer agent workspace"
 ---
 
-# Subscribe to participant added events in Amazon Connect Customer AI agent workspace
+# Subscribe to participant added events in Connect Customer agent workspace
 
 Subscribes to participant added events. This event fires when a new participant joins
 a

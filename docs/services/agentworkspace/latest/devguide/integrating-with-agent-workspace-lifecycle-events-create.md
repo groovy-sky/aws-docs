@@ -1,10 +1,10 @@
 ---
-title: "The create event in Amazon Connect Customer AI agent workspace"
+title: "The create event in Connect Customer agent workspace"
 ---
 
-# The create event in Amazon Connect Customer AI agent workspace
+# The create event in Connect Customer agent workspace
 
-The create event in the Amazon Connect Customer AI agent workspace results in the `
+The create event in the Connect Customer agent workspace results in the `
                     onCreate` handler passed into the `AmazonConnectApp.init()` to
 be invoked. `
                         Init` should be called in an application once it has successfully

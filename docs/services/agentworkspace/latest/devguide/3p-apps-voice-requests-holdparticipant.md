@@ -1,8 +1,8 @@
 ---
-title: "Place a participant on hold in Amazon Connect Customer AI agent workspace"
+title: "Place a participant on hold in Connect Customer agent workspace"
 ---
 
-# Place a participant on hold in Amazon Connect Customer AI agent workspace
+# Place a participant on hold in Connect Customer agent workspace
 
 Places a specific participant on hold.
 

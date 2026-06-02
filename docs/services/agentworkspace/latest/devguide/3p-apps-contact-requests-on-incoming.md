@@ -1,11 +1,11 @@
 ---
-title: "Subscribe to incoming contact events in Amazon Connect Customer AI agent workspace"
+title: "Subscribe to incoming contact events in Connect Customer agent workspace"
 ---
 
-# Subscribe to incoming contact events in Amazon Connect Customer AI agent workspace
+# Subscribe to incoming contact events in Connect Customer agent workspace
 
-Creates a subscription whenever a new incoming event occurs in the Amazon Connect
-Customer AI agent workspace.
+Creates a subscription whenever a new incoming event occurs in the Connect Customer
+agent workspace.
 
 **Signature**
 

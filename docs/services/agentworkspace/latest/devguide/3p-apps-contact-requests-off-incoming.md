@@ -1,11 +1,11 @@
 ---
-title: "Unsubscribe from incoming contact events in Amazon Connect Customer AI agent workspace"
+title: "Unsubscribe from incoming contact events in Connect Customer agent workspace"
 ---
 
-# Unsubscribe from incoming contact events in Amazon Connect Customer AI agent workspace
+# Unsubscribe from incoming contact events in Connect Customer agent workspace
 
-Unsubscribes the callback function from the contact incoming event in Amazon Connect
-Customer AI agent workspace.
+Unsubscribes the callback function from the contact incoming event in Connect Customer
+agent workspace.
 
 **Signature**
 

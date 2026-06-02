@@ -1,8 +1,8 @@
 ---
-title: "Gets the phone number of the initial customer connection in Amazon Connect Customer AI agent workspace"
+title: "Gets the phone number of the initial customer connection in Connect Customer agent workspace"
 ---
 
-# Gets the phone number of the initial customer connection in Amazon Connect Customer AI agent workspace
+# Gets the phone number of the initial customer connection in Connect Customer agent workspace
 
 Gets the phone number of the initial customer connection. Applicable only for
 voice contacts.

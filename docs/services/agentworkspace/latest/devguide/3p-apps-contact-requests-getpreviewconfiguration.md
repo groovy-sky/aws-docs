@@ -1,8 +1,8 @@
 ---
-title: "Get preview configuration for the given contactId in Amazon Connect Customer AI agent workspace"
+title: "Get preview configuration for the given contactId in Connect Customer agent workspace"
 ---
 
-# Get preview configuration for the given contactId in Amazon Connect Customer AI agent workspace
+# Get preview configuration for the given contactId in Connect Customer agent workspace
 
 This gets configuration information related to the preview experience.
 

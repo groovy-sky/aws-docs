@@ -1,11 +1,11 @@
 ---
-title: "Amazon Connect Customer AI agent workspace AppController API"
+title: "Connect Customer agent workspace AppController API"
 ---
 
-# Amazon Connect Customer AI agent workspace AppController API
+# Connect Customer agent workspace AppController API
 
-The Amazon Connect SDK provides an `AppControllerClient` to control applications in the Amazon Connect
-Customer AI agent workspace.
+The Amazon Connect SDK provides an `AppControllerClient` to control applications in the Connect Customer
+agent workspace.
 
 The `AppControllerClient` accepts an optional argument, `
         ConnectClientConfig` which itself is defined as:
@@ -51,7 +51,7 @@ API.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-offStateChanged()
+offNextAvailabilityStateChanged()
 
 closeApp()
 

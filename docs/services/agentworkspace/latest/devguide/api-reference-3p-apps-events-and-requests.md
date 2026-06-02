@@ -1,10 +1,10 @@
 ---
-title: "Amazon Connect Customer AI agent workspace API reference"
+title: "Connect Customer agent workspace API reference"
 ---
 
-# Amazon Connect Customer AI agent workspace API reference
+# Connect Customer agent workspace API reference
 
-This Amazon Connect Customer AI agent workspace API reference enumerates the agent events, agent requests,
+This Connect Customer agent workspace API reference enumerates the agent events, agent requests,
 contact events, and contact requests that are supported by the [Amazon Connect SDK](https://github.com/amazon-connect/AmazonConnectSDK).
 
 ###### Contents

@@ -1,11 +1,11 @@
 ---
-title: "Apply a theme to your application in Amazon Connect Customer AI agent workspace"
+title: "Apply a theme to your application in Connect Customer agent workspace"
 ---
 
-# Apply a theme to your application in Amazon Connect Customer AI agent workspace
+# Apply a theme to your application in Connect Customer agent workspace
 
-The theme package defines and applies the Amazon Connect theme when developing with [Cloudscape](https://cloudscape.design/) for the Amazon Connect
-Customer AI agent workspace.
+The theme package defines and applies the Connect Customer theme when developing with [Cloudscape](https://cloudscape.design/) for the Connect Customer
+agent workspace.
 
 **Install from NPM**
 

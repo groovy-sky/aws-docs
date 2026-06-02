@@ -1,8 +1,8 @@
 ---
-title: "Get specific participant information in Amazon Connect Customer AI agent workspace"
+title: "Get specific participant information in Connect Customer agent workspace"
 ---
 
-# Get specific participant information in Amazon Connect Customer AI agent workspace
+# Get specific participant information in Connect Customer agent workspace
 
 Retrieves information for a specific participant.
 

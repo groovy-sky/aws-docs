@@ -1,0 +1,33 @@
+---
+title: "List the contact-handling security profile permissions for the agent in Connect Customer agent workspace"
+---
+
+# List the contact-handling security profile permissions for the agent in Connect Customer agent workspace
+
+Returns the list of contact-handling security profile permissions granted to
+the agent currently logged in to the Connect Customer agent workspace. Each
+permission is returned as a string identifier (for example,
+`outboundCall`, `outboundEmail`). Apps can use this to gate
+contact-handling functionality based on what the agent is authorized to do.
+
+```typescript
+
+async listSecurityProfilePermissions(): Promise<string[]>
+
+```
+
+**Permissions required:**
+
+```typescript
+
+*
+
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+getAvailabilityState()
+
+onAvailabilityStateChanged()
+
+All content copied from https://docs.aws.amazon.com/.

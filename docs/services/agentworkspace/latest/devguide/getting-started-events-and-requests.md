@@ -1,11 +1,11 @@
 ---
-title: "Events and requests in Amazon Connect Customer AI agent workspace"
+title: "Events and requests in Connect Customer agent workspace"
 ---
 
-# Events and requests in Amazon Connect Customer AI agent workspace
+# Events and requests in Connect Customer agent workspace
 
 App developers can easily create applications that seamlessly integrate into the
-agent workspace experience in the Amazon Connect Customer AI agent workspace with the event and
+agent workspace experience in the Connect Customer agent workspace with the event and
 request functionality natively supported by [Amazon Connect SDK](https://github.com/amazon-connect/AmazonConnectSDK).
 You can build an app by leveraging the [Amazon\
 Connect SDK](https://github.com/amazon-connect/AmazonConnectSDK) to subscribe to agent/contact events (invoking a particular

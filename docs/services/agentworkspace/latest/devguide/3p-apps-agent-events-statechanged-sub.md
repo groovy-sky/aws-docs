@@ -1,11 +1,15 @@
 ---
-title: "Subscribe a callback function when an Amazon Connect Customer AI agent workspace agent state changes"
+title: "Subscribe a callback function when an Connect Customer agent workspace agent state changes - Deprecated"
 ---
 
-# Subscribe a callback function when an Amazon Connect Customer AI agent workspace agent state changes
+# Subscribe a callback function when an Connect Customer agent workspace agent state changes - Deprecated
+
+###### Note
+
+This API is deprecated, use [onAvailabilityStateChanged()](3p-apps-agent-events-availabilitystatechanged-sub.md) instead.
 
 Subscribes a callback function to-be-invoked whenever an agent state changed event
-occurs in the Amazon Connect Customer AI agent workspace.
+occurs in the Connect Customer agent workspace.
 
 **Signature**
 
@@ -47,6 +51,6 @@ User.Status.View
 
 setOffline()
 
-offStateChanged()
+offStateChanged() - Deprecated
 
 All content copied from https://docs.aws.amazon.com/.

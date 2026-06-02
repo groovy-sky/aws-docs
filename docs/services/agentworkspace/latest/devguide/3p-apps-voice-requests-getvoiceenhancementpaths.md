@@ -1,8 +1,8 @@
 ---
-title: "Get voice enhancement model paths in Amazon Connect Customer AI agent workspace"
+title: "Get voice enhancement model paths in Connect Customer agent workspace"
 ---
 
-# Get voice enhancement model paths in Amazon Connect Customer AI agent workspace
+# Get voice enhancement model paths in Connect Customer agent workspace
 
 Returns the voice enhancements models static assets URL paths.
 

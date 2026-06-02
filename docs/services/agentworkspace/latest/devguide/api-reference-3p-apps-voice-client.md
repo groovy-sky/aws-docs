@@ -1,11 +1,11 @@
 ---
-title: "Amazon Connect Customer AI agent workspace Voice API"
+title: "Connect Customer agent workspace Voice API"
 ---
 
-# Amazon Connect Customer AI agent workspace Voice API
+# Connect Customer agent workspace Voice API
 
 The Amazon Connect SDK provides an `VoiceClient` which serves as an interface that your app in the
-Amazon Connect Customer AI agent workspace can use to make data requests on voice contact.
+Connect Customer agent workspace can use to make data requests on voice contact.
 
 The `VoiceClient` accepts an optional constructor argument, `
         ConnectClientConfig` which itself is defined as:
@@ -114,7 +114,7 @@ The following sections describe API calls for working with the Voice API.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-offLanguageChanged()
+offVisualModeChange()
 
 canResumeParticipant()
 

@@ -1,10 +1,14 @@
 ---
-title: "Get the current state of the agent in Amazon Connect Customer AI agent workspace"
+title: "Get the current state of the agent in Connect Customer agent workspace - Deprecated"
 ---
 
-# Get the current state of the agent in Amazon Connect Customer AI agent workspace
+# Get the current state of the agent in Connect Customer agent workspace - Deprecated
 
-Returns the Amazon Connect Customer AI agent workspace agent's current `AgentState` object indicating
+###### Note
+
+This API is deprecated, use [getAvailabilityState()](3p-apps-agent-requests-getavailabilitystate.md) instead.
+
+Returns the Connect Customer agent workspace agent's current `AgentState` object indicating
 their availability state type. This object contains the following fields:
 
 - `agentStateARN`: The agent's current state ARN.

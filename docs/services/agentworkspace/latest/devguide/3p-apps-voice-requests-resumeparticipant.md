@@ -1,8 +1,8 @@
 ---
-title: "Resume a participant from hold in Amazon Connect Customer AI agent workspace"
+title: "Resume a participant from hold in Connect Customer agent workspace"
 ---
 
-# Resume a participant from hold in Amazon Connect Customer AI agent workspace
+# Resume a participant from hold in Connect Customer agent workspace
 
 Resumes a specific participant from hold.
 

@@ -1,0 +1,50 @@
+---
+title: "Subscribe a callback function when the Connect Customer agent workspace agent's network connection status changes"
+---
+
+# Subscribe a callback function when the Connect Customer agent workspace agent's network connection status changes
+
+Subscribes a callback function to be invoked whenever the agent's network
+connection status changes in the Connect Customer agent workspace.
+
+**Signature**
+
+```typescript
+
+onNetworkConnectionStatusChanged(handler: NetworkConnectionStatusChangedHandler)
+
+```
+
+**Usage**
+
+```typescript
+
+const handler: NetworkConnectionStatusChangedHandler = async (data: NetworkConnectionStatusChanged) => {
+    console.log("Network connection status changed! " + data.status);
+};
+
+agentClient.onNetworkConnectionStatusChanged(handler);
+
+// NetworkConnectionStatusChanged Structure
+{
+  status: NetworkConnectionStatus;
+  timestamp: number;
+}
+
+```
+
+**Permissions required:**
+
+```typescript
+
+*
+
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+getNetworkConnectionStatus()
+
+offNetworkConnectionStatusChanged()
+
+All content copied from https://docs.aws.amazon.com/.

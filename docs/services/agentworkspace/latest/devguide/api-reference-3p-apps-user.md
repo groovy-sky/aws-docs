@@ -1,11 +1,11 @@
 ---
-title: "Amazon Connect Customer AI agent workspace User API"
+title: "Connect Customer agent workspace User API"
 ---
 
-# Amazon Connect Customer AI agent workspace User API
+# Connect Customer agent workspace User API
 
 The Amazon Connect SDK provides an `SettingsClient` which serves as an interface that your app
-in Amazon Connect Customer AI agent workspace can use to make data requests on user settings.
+in Connect Customer agent workspace can use to make data requests on user settings.
 
 The `SettingsClient` accepts an optional constructor argument, `
         ConnectClientConfig` which itself is defined as:
@@ -58,6 +58,20 @@ The following sections describe API calls for working with the User API.
 - [onLanguageChanged()](3p-apps-user-events-languagechanged-sub.md)
 
 - [offLanguageChanged()](3p-apps-user-events-languagechanged-unsub.md)
+
+- [getUserArn()](3p-apps-user-requests-getuserarn.md)
+
+- [getInstanceId()](3p-apps-user-requests-getinstanceid.md)
+
+- [getNetworkType()](3p-apps-user-requests-getnetworktype.md)
+
+- [setLanguage()](3p-apps-user-requests-setlanguage.md)
+
+- [setVisualMode()](3p-apps-user-requests-setvisualmode.md)
+
+- [onVisualModeChange()](3p-apps-user-events-visualmodechange-sub.md)
+
+- [offVisualModeChange()](3p-apps-user-events-visualmodechange-unsub.md)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

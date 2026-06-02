@@ -1,10 +1,10 @@
 ---
-title: "Get the attributes of a contact in Amazon Connect Customer AI agent workspace"
+title: "Get the attributes of a contact in Connect Customer agent workspace"
 ---
 
-# Get the attributes of a contact in Amazon Connect Customer AI agent workspace
+# Get the attributes of a contact in Connect Customer agent workspace
 
-Returns a map of the attributes associated with the contact in the Amazon Connect Customer AI agent workspace. Each
+Returns a map of the attributes associated with the contact in the Connect Customer agent workspace. Each
 value in the map has the following shape: `{ name: string, value: string
                 }`.
 

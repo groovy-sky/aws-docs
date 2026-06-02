@@ -1,10 +1,10 @@
 ---
-title: "Get the queue of the contact in Amazon Connect Customer AI agent workspace"
+title: "Get the queue of the contact in Connect Customer agent workspace"
 ---
 
-# Get the queue of the contact in Amazon Connect Customer AI agent workspace
+# Get the queue of the contact in Connect Customer agent workspace
 
-Returns the queue associated with the contact in the Amazon Connect Customer AI agent workspace. The `Queue`
+Returns the queue associated with the contact in the Connect Customer agent workspace. The `Queue`
 object has the following fields:
 
 - `name`: The name of the queue.

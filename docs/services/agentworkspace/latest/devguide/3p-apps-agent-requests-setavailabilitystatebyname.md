@@ -1,8 +1,8 @@
 ---
-title: "Set the agent state with the given agent state name in Amazon Connect Customer AI agent workspace"
+title: "Set the agent state with the given agent state name in Connect Customer agent workspace"
 ---
 
-# Set the agent state with the given agent state name in Amazon Connect Customer AI agent workspace
+# Set the agent state with the given agent state name in Connect Customer agent workspace
 
 Sets the agent state with the given agent state name. The promise resolves after the
 agent state is set in the backend. The response status is either `updated` or `

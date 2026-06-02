@@ -1,16 +1,16 @@
 ---
-title: "Initialize the Amazon Connect SDK in your application for Amazon Connect Customer AI agent workspace"
+title: "Initialize the Amazon Connect SDK in your application for Connect Customer agent workspace"
 ---
 
-# Initialize the Amazon Connect SDK in your application for Amazon Connect Customer AI agent workspace
+# Initialize the Amazon Connect SDK in your application for Connect Customer agent workspace
 
 Initializing the [Amazon Connect SDK](https://github.com/amazon-connect/AmazonConnectSDK)
-in your app for the Amazon Connect Customer AI agent workspace requires calling `init` on
+in your app for the Connect Customer agent workspace requires calling `init` on
 the AmazonConnectApp module. This takes an `onCreate` and `onDestroy`
 callback, which will be invoked once the app has successfully initialized in the
 agent workspace and then when the agent workspace is going to destroy the iframe the
 app is running in. These are two of the lifecycle events that your app can integrate
-with. See [Application lifecycle events in Amazon Connect Customer AI agent workspace](../../../../services/agentworkspace/latest/devguide/integrating-with-agent-workspace-lifecycle-events.md) for details
+with. See [Application lifecycle events in Connect Customer agent workspace](../../../../services/agentworkspace/latest/devguide/integrating-with-agent-workspace-lifecycle-events.md) for details
 on the other app lifecycle events that your app can hook into.
 
 ```json

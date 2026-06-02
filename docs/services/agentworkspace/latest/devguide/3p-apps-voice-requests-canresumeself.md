@@ -1,8 +1,8 @@
 ---
-title: "Check if the current user can be resumed from hold in Amazon Connect Customer AI agent workspace"
+title: "Check if the current user can be resumed from hold in Connect Customer agent workspace"
 ---
 
-# Check if the current user can be resumed from hold in Amazon Connect Customer AI agent workspace
+# Check if the current user can be resumed from hold in Connect Customer agent workspace
 
 Checks whether the current user's participant can be resumed from hold for a specific
 contact.

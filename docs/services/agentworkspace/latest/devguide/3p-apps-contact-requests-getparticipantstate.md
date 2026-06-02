@@ -1,8 +1,8 @@
 ---
-title: "Get participant state in Amazon Connect Customer AI agent workspace"
+title: "Get participant state in Connect Customer agent workspace"
 ---
 
-# Get participant state in Amazon Connect Customer AI agent workspace
+# Get participant state in Connect Customer agent workspace
 
 Retrieves the current state of a specific participant.
 

@@ -1,8 +1,8 @@
 ---
-title: "Unsubscribe from self resume capability change events in Amazon Connect Customer AI agent workspace"
+title: "Unsubscribe from self resume capability change events in Connect Customer agent workspace"
 ---
 
-# Unsubscribe from self resume capability change events in Amazon Connect Customer AI agent workspace
+# Unsubscribe from self resume capability change events in Connect Customer agent workspace
 
 Unsubscribes from capability change events for the current user.
 

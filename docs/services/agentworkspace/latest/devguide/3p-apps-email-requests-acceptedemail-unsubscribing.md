@@ -1,8 +1,8 @@
 ---
-title: "Unsubscribe from accepted email notifications in Amazon Connect Customer AI agent workspace"
+title: "Unsubscribe from accepted email notifications in Connect Customer agent workspace"
 ---
 
-# Unsubscribe from accepted email notifications in Amazon Connect Customer AI agent workspace
+# Unsubscribe from accepted email notifications in Connect Customer agent workspace
 
 Unsubscribes a callback function from the event that is fired when an inbound
 email contact is accepted.

@@ -1,0 +1,32 @@
+---
+title: "Get the network type of the current Connect Customer instance in Connect Customer agent workspace"
+---
+
+# Get the network type of the current Connect Customer instance in Connect Customer agent workspace
+
+Returns the network type of the Connect Customer instance associated with the user that's
+currently logged in to the Connect Customer agent workspace. The returned
+`NetworkType` is either `"DUAL_STACK"` or
+`"IPV4"`.
+
+```typescript
+
+async getNetworkType(): Promise<NetworkType>
+
+```
+
+**Permissions required:**
+
+```typescript
+
+*
+
+```
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+getInstanceId()
+
+setLanguage()
+
+All content copied from https://docs.aws.amazon.com/.

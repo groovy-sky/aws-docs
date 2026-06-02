@@ -1,8 +1,8 @@
 ---
-title: "Subscribe to self hold events in Amazon Connect Customer AI agent workspace"
+title: "Subscribe to self hold events in Connect Customer agent workspace"
 ---
 
-# Subscribe to self hold events in Amazon Connect Customer AI agent workspace
+# Subscribe to self hold events in Connect Customer agent workspace
 
 Subscribes to events when the current user's participant is put on hold.
 

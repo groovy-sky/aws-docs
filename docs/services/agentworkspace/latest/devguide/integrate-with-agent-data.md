@@ -1,10 +1,10 @@
 ---
-title: "Integrate application with Amazon Connect Customer AI agent workspace agent data"
+title: "Integrate application with Connect Customer agent workspace agent data"
 ---
 
-# Integrate application with Amazon Connect Customer AI agent workspace agent data
+# Integrate application with Connect Customer agent workspace agent data
 
-To integrate your application with agent data from the Amazon Connect Customer AI agent workspace,
+To integrate your application with agent data from the Connect Customer agent workspace,
 instantiate
 the agent client as follows:
 

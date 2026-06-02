@@ -1,11 +1,11 @@
 ---
-title: "Amazon Connect Customer AI agent workspace Agent API"
+title: "Connect Customer agent workspace Agent API"
 ---
 
-# Amazon Connect Customer AI agent workspace Agent API
+# Connect Customer agent workspace Agent API
 
 The Amazon Connect SDK provides an `AgentClient` which serves as an interface that your app in the
-Amazon Connect Customer AI agent workspace can use to subscribe to agent events and make agent data requests.
+Connect Customer agent workspace can use to subscribe to agent events and make agent data requests.
 
 The `AgentClient` accepts an optional constructor argument, `
         ConnectClientConfig` which itself is defined as:
@@ -64,7 +64,7 @@ The following sections describe API calls for working with the Agent API.
 
 - [getRoutingProfile()](3p-apps-agent-requests-getroutingprofile.md)
 
-- [getState()](3p-apps-agent-requests-getstate.md)
+- [getState() - Deprecated](3p-apps-agent-requests-getstate.md)
 
 - [listAvailabilityStates()](3p-apps-agent-requests-listavailabilitystates.md)
 
@@ -84,9 +84,31 @@ The following sections describe API calls for working with the Agent API.
 
 - [setOffline()](3p-apps-agent-requests-setoffline.md)
 
-- [onStateChanged()](3p-apps-agent-events-statechanged-sub.md)
+- [onStateChanged() - Deprecated](3p-apps-agent-events-statechanged-sub.md)
 
-- [offStateChanged()](3p-apps-agent-events-statechanged-unsub.md)
+- [offStateChanged() - Deprecated](3p-apps-agent-events-statechanged-unsub.md)
+
+- [getDefaultOutboundQueue()](3p-apps-agent-requests-getdefaultoutboundqueue.md)
+
+- [getRoutingProfileQueues()](3p-apps-agent-requests-getroutingprofilequeues.md)
+
+- [getAvailabilityState()](3p-apps-agent-requests-getavailabilitystate.md)
+
+- [listSecurityProfilePermissions()](3p-apps-agent-requests-listsecurityprofilepermissions.md)
+
+- [onAvailabilityStateChanged()](3p-apps-agent-events-availabilitystatechanged-sub.md)
+
+- [offAvailabilityStateChanged()](3p-apps-agent-events-availabilitystatechanged-unsub.md)
+
+- [onNextAvailabilityStateChanged()](3p-apps-agent-events-nextavailabilitystatechanged-sub.md)
+
+- [getNetworkConnectionStatus()](3p-apps-agent-requests-getnetworkconnectionstatus.md)
+
+- [onNetworkConnectionStatusChanged()](3p-apps-agent-events-networkconnectionstatuschanged-sub.md)
+
+- [offNetworkConnectionStatusChanged()](3p-apps-agent-events-networkconnectionstatuschanged-unsub.md)
+
+- [offNextAvailabilityStateChanged()](3p-apps-agent-events-nextavailabilitystatechanged-unsub.md)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

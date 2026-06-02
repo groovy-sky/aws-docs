@@ -1,8 +1,8 @@
 ---
-title: "Subscribe to participant disconnected events in Amazon Connect Customer AI agent workspace"
+title: "Subscribe to participant disconnected events in Connect Customer agent workspace"
 ---
 
-# Subscribe to participant disconnected events in Amazon Connect Customer AI agent workspace
+# Subscribe to participant disconnected events in Connect Customer agent workspace
 
 Subscribes to participant disconnected events. This event fires when a participant
 leaves

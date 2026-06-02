@@ -1,10 +1,10 @@
 ---
-title: "Handle application errors in Amazon Connect Customer AI agent workspace"
+title: "Handle application errors in Connect Customer agent workspace"
 ---
 
-# Handle application errors in Amazon Connect Customer AI agent workspace
+# Handle application errors in Connect Customer agent workspace
 
-Applications can communicate errors back to the Amazon Connect Customer AI agent workspace by either
+Applications can communicate errors back to the Connect Customer agent workspace by either
 calling `
                 sendError` or `sendFatalError` on the `AmazonConnectApp`
 object. The agent workspace will shutdown an app if it sends a fatal error meaning that

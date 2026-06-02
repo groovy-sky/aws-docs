@@ -1,11 +1,11 @@
 ---
-title: "Get the application configuration in Amazon Connect Customer AI agent workspace"
+title: "Get the application configuration in Connect Customer agent workspace"
 ---
 
-# Get the application configuration in Amazon Connect Customer AI agent workspace
+# Get the application configuration in Connect Customer agent workspace
 
-Returns the application configuration for the given application ARN in the Amazon Connect
-Customer AI agent workspace.
+Returns the application configuration for the given application ARN in the Connect Customer
+agent workspace.
 
 **Signature**
 

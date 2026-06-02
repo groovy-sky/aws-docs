@@ -1,8 +1,8 @@
 ---
-title: "Transfer a contact to another agent in Amazon Connect Customer AI agent workspace"
+title: "Transfer a contact to another agent in Connect Customer agent workspace"
 ---
 
-# Transfer a contact to another agent in Amazon Connect Customer AI agent workspace
+# Transfer a contact to another agent in Connect Customer agent workspace
 
 Performs a cold transfer by transferring the given contact to another agent using a
 quick connect and disconnecting from the contact. The quick connect type has to be
@@ -46,6 +46,6 @@ Contact.Details.Edit
 
 offStartingAcw()
 
-Email
+reject()
 
 All content copied from https://docs.aws.amazon.com/.

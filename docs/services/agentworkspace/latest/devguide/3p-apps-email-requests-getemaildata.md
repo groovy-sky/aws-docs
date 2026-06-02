@@ -1,8 +1,8 @@
 ---
-title: "Get the metadata for an email contact in Amazon Connect Customer AI agent workspace"
+title: "Get the metadata for an email contact in Connect Customer agent workspace"
 ---
 
-# Get the metadata for an email contact in Amazon Connect Customer AI agent workspace
+# Get the metadata for an email contact in Connect Customer agent workspace
 
 Returns the metadata for an email contact id while handling an active contact. The
 activeContactId is the id of the email contact the agent is actively viewing while

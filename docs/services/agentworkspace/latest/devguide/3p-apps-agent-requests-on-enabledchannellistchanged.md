@@ -1,8 +1,8 @@
 ---
-title: "Subscribe to agent enabled channel list changes in Amazon Connect Customer AI agent workspace"
+title: "Subscribe to agent enabled channel list changes in Connect Customer agent workspace"
 ---
 
-# Subscribe to agent enabled channel list changes in Amazon Connect Customer AI agent workspace
+# Subscribe to agent enabled channel list changes in Connect Customer agent workspace
 
 Creates a subscription for EnabledChannelListChanged event. This gets triggered when
 an Agent's enabled channels get updated.
@@ -24,6 +24,9 @@ agentClient.onEnabledChannelListChanged(handler);
         enabledChannels: AgentRoutingProfileChannelTypes[];
     };
 }
+
+// AgentRoutingProfileChannelTypes
+type AgentRoutingProfileChannelTypes = "VOICE" | "CHAT" | "TASK" | "EMAIL";
 
 ```
 
