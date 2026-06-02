@@ -47,7 +47,7 @@ making HTTP Query requests](query-requests.md).
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Step 3: Create an administrator user
+Getting started with your account
 
 Plan your governance structure
 

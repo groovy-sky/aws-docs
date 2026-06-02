@@ -11,7 +11,7 @@ general information about how trusted access works, see [Using AWS Organizations
 services](../../../organizations/latest/userguide/orgs-integrate-services.md).
 
 After trusted access has been enabled, you can use the `accountID` parameter in
-those [Account Management API operations](api-operations.md) that support it. You can
+those [Account Management API operations](api-reference.md) that support it. You can
 use this parameter successfully only if you call the operation using credentials from the
 management account, or from the delegated admin account for your organization if you enable
 one. For more information, see [Enable a delegated admin account for AWS Account Management](using-orgs-delegated-admin.md).

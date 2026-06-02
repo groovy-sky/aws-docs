@@ -77,7 +77,7 @@ approach might also ease divestment of those units over time.
 
 ## Are you a first-time AWS user?
 
-If you're a first-time user of AWS, your first step is to sign up for an
+If you are a first-time user of AWS, your first step is to sign up for an
 AWS account. When you sign up, AWS creates an account with the details that you
 provide and assigns the account to you. After you create your AWS account, sign in as
 the [root user](root-user.md), activate multi-factor authentication (MFA)

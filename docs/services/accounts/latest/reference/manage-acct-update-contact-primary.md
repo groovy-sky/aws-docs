@@ -52,7 +52,7 @@ SMS.
 
 - For business AWS accounts, it's a best practice to enter a company phone
 number and email address rather than one belonging to an individual. Configuring
-the accounts [root user](root-user.md) with an individual's
+the account's [root user](root-user.md) with an individual's
 email address or phone number can make your account difficult to recover if that
 individual leaves the company.
 
@@ -220,7 +220,7 @@ against member accounts, you must [enable trusted access for the Account\
 service](../../../organizations/latest/userguide/services-that-can-integrate-account.md#integrate-enable-ta-account).
 
 - You can't access an account in a different
-organization from the one you're using to call the
+organization from the one you are using to call the
 operation.
 
 ###### Minimum permissions
