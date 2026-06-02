@@ -63,7 +63,7 @@ stats sum(packets) as packetsTransferred by srcAddr, dstAddr
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-parse
+expand
 
 stats
 

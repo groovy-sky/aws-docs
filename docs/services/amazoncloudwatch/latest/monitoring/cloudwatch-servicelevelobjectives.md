@@ -120,6 +120,12 @@ divided by the total requests. It is calculated as **(1 - Fault**
 are responses without a `5XX` error. `4XX` responses are treated as
 successful.
 
+In addition to creating SLOs on a single operation or on all operations of a service, you can create
+_composite SLOs_ that monitor a subset of operations for a service. Composite SLOs
+aggregate the `Availability` metric across multiple operations, giving you a unified view of
+reliability for a group of related operations. You can select between 2 and 20 operations to include in a
+composite SLO. For more information, see [Create a composite SLO on multiple operations](#CloudWatch-ServiceLevelObjectives-Create-Composite).
+
 ## Calculate error budget and attainment for period-based SLOs
 
 When you view information about an SLO, you see its current health status and its
@@ -528,6 +534,8 @@ good requests to total requests for the interval up to the time stamp that you s
 
 - [Create an SLO on a canary](#CloudWatch-ServiceLevelObjectives-Create-Canary)
 
+- [Create a composite SLO on multiple operations](#CloudWatch-ServiceLevelObjectives-Create-Composite)
+
 ### Create a period-based SLO
 
 Use the following procedure to create a period-based SLO.
@@ -541,34 +549,55 @@ Use the following procedure to create a period-based SLO.
 
 03. Choose **Create SLO**.
 
-04. Enter a name for the SLO. Including the name of a service or operation, along with appropriate
-     keywords such as latency or availability, will help you quickly identify what the SLO
-     status indicates during triage.
+04. For **Set Service Level Indicator (SLI)**, do one of the following:
 
-05. For **Set Service Level Indicator (SLI)**, do one of the following:
-
-    - To set the SLO on either of the standard application metrics `Latency` or
+    - To set the SLO on a service operation, all operations, or the dependency of a service,
+       using either of the standard application metrics `Latency` or
        `Availability`:
 
-      1. Choose **Service or Service Operation**.
+      1. For **Type**, choose **Service**.
 
       2. Select an account that this SLO will monitor.
 
       3. Select the service that this SLO will monitor.
 
-      4. Select the operation that this SLO will monitor. To create a service-level SLO that monitors the overall health of your service across all operations, select **All Operations**. Otherwise, select a specific operation to monitor.
+      4. For **Type**, choose one of the following:
 
-      5. For **Select a calculation method**, choose **Periods**.
+- **Service Operations** — to create an SLO on a service operation,
+all operations, or a subset of operations.
+
+- **Service Dependency** — to create an SLO on a dependency of the
+service.
+
+      5. If you chose **Service Operations**, select the operation that this SLO
+          will monitor. To create a service-level SLO that monitors the overall health of your service across
+          all operations, select **All Operations**. Otherwise, select a specific operation
+          to monitor.
+
+         To create an SLO that monitors a subset of operations, see [Create a composite SLO on multiple operations](#CloudWatch-ServiceLevelObjectives-Create-Composite).
+
+      6. If you chose **Service Dependency**, do the following:
+
+         1. Under **Select an operation**, select one specific operation or
+             select **All operations** to use the metrics from all operations of this
+             service that calls a dependency.
+
+         2. Under **Select a dependency**, search and select the required
+             dependency for which you want to measure the reliability.
+
+            After you select the dependency, you can view the updated graph and historical data
+             based on the dependency.
+      7. For **Select a calculation method**, choose **Periods**.
 
          The **Select service** and **Select operation**
           drop-downs are populated by services and operations that have been active within
           the past 24 hours.
 
-      6. Choose either **Availability** or **Latency**
+      8. Choose either **Availability** or **Latency**
           and then set the threshold.
     - To set the SLO on any CloudWatch metric or a CloudWatch metric math expression:
 
-      1. Choose **CloudWatch Metric**.
+      1. For **Type**, choose **CloudWatch Metric**.
 
       2. Choose **Select CloudWatch metric**.
 
@@ -588,19 +617,11 @@ Use the following procedure to create a period-based SLO.
 
       4. For **Set condition**, select a comparison operator and threshold
           for the SLO to use as the indicator of success.
-    - To set the SLO on the dependency of a service on either of the standard application metrics `Latency` or
-       `Availability`:
+05. If you selected **Service** in step 4, set the period length for this SLO.
 
-      1. Choose **Service Dependency**.
-
-      2. Under **Select a service**, select the service that this SLO will monitor.
-
-      3. Based on the selected service, under **Select an operation**, you can select one specific operation or select **All operations** to use the metrics from all operations of this service that calls a dependency.
-
-      4. Under **Select a dependency**, you can search and select the required dependency for which you want to measure the reliability.
-
-         After you select the dependency, you can view the updated graph and historical data based on the dependency.
-06. If you selected **Service Operation** or **Service Dependency** in step 5, set the period length for this SLO.
+06. Enter a name for the SLO. Including the name of a service or operation, along with appropriate
+     keywords such as latency or availability, will help you quickly identify what the SLO
+     status indicates during triage.
 
 07. Set the **interval** and **attainment goal** for the SLO.
      For more information about intervals and attainment goals and
@@ -686,32 +707,53 @@ Use the following procedure to create a request-based SLO.
 
 03. Choose **Create SLO**.
 
-04. Enter a name for the SLO. Including the name of a service or operation, along with appropriate
-     keywords such as latency or availability, will help you quickly identify what the SLO
-     status indicates during triage.
+04. For **Set Service Level Indicator (SLI)**, do one of the following:
 
-05. For **Set Service Level Indicator (SLI)**, do one of the following:
-
-    - To set the SLO on either of the standard application metrics `Latency` or
+    - To set the SLO on a service operation, all operations, or the dependency of a service,
+       using either of the standard application metrics `Latency` or
        `Availability`:
 
-      1. Choose **Service or Service Operation**.
+      1. For **Type**, choose **Service**.
 
       2. Select the service that this SLO will monitor.
 
-      3. Select the operation that this SLO will monitor. To create a service-level SLO that monitors the overall health of your service across all operations, select **All Operations**. Otherwise, select a specific operation to monitor.
+      3. For **Type**, choose one of the following:
 
-      4. For **Select a calculation method**, choose **Requests**.
+- **Service Operations** — to create an SLO on a service operation,
+all operations, or a subset of operations.
 
-      5. The **Select service** and **Select operation**
+- **Service Dependency** — to create an SLO on a dependency of the
+service.
+
+      4. If you chose **Service Operations**, select the operation that this SLO
+          will monitor. To create a service-level SLO that monitors the overall health of your service across
+          all operations, select **All Operations**. Otherwise, select a specific operation
+          to monitor.
+
+         To create an SLO that monitors a subset of operations, see [Create a composite SLO on multiple operations](#CloudWatch-ServiceLevelObjectives-Create-Composite).
+
+      5. If you chose **Service Dependency**, do the following:
+
+         1. Under **Select an operation**, select one specific operation or
+             select **All operations** to use the metrics from all operations of this
+             service that calls a dependency.
+
+         2. Under **Select a dependency**, search and select the required
+             dependency for which you want to measure the reliability.
+
+            After you select the dependency, you can view the updated graph and historical data
+             based on the dependency.
+      6. For **Select a calculation method**, choose **Requests**.
+
+      7. The **Select service** and **Select operation**
           drop-downs are populated by services and operations that have been active within
           the past 24 hours.
 
-      6. Choose either **Availability** or **Latency**.
+      8. Choose either **Availability** or **Latency**.
           If you choose **Latency**, set the threshold.
     - To set the SLO on any CloudWatch metric or a CloudWatch metric math expression:
 
-      1. Choose **CloudWatch Metric**.
+      1. For **Type**, choose **CloudWatch Metric**.
 
       2. For **Define target requests**, do the following:
          1. Choose whether you want to measure **Good Requests** or
@@ -743,18 +785,10 @@ Use the following procedure to create a request-based SLO.
          For more information about these screens, see
           [Graph a metric](graph-a-metric.md) and
           [Add a math expression to a CloudWatch graph](using-metric-math.md#adding-metrics-expression-console).
-    - To set the SLO on the dependency of a service on either of the standard application metrics `Latency` or
-       `Availability`:
+05. Enter a name for the SLO. Including the name of a service or operation, along with appropriate
+     keywords such as latency or availability, will help you quickly identify what the SLO
+     status indicates during triage.
 
-      1. Choose **Service Dependency**.
-
-      2. Under **Select a service**, select the service that this SLO will monitor.
-
-      3. Based on the selected service, under **Select an operation**, you can select one specific operation or select **All operations** to use the metrics from all operations of this service that calls a dependency.
-
-      4. Under **Select a dependency**, you can search and select the required dependency for which you want to measure the reliability.
-
-         After you select the dependency, you can view the updated graph and historical data based on the dependency.
 06. Set the **interval** and **attainment goal** for the SLO.
      For more information about intervals and attainment goals and
      how they work together, see [SLO concepts](#CloudWatch-ServiceLevelObjectives-concepts).
@@ -839,21 +873,21 @@ You can create SLOs to monitor the performance of your CloudWatch RUM app monito
 
 03. Choose **Create SLO**.
 
-04. Enter a name for the SLO. Including the app monitor name and appropriate keywords will help you quickly identify what the SLO status indicates during triage.
+04. For **Set Service Level Indicator (SLI)**, choose **RUM AppMonitor**.
 
-05. For **Set Service Level Indicator (SLI)**, choose **RUM AppMonitor**.
+05. Select the app monitor that this SLO will monitor from the dropdown list. The list shows the app monitor name along with the supported platform (Web, iOS, or Android).
 
-06. Select the app monitor that this SLO will monitor from the dropdown list. The list shows the app monitor name along with the supported platform (Web, iOS, or Android).
+06. (Optional) Select a specific page or screen to monitor. If you don't select a page, the SLO will monitor all pages for the app monitor.
 
-07. (Optional) Select a specific page or screen to monitor. If you don't select a page, the SLO will monitor all pages for the app monitor.
-
-08. For **Select metric**, choose the metric to use for the SLI. The available metrics depend on the platform:
+07. For **Select metric**, choose the metric to use for the SLI. The available metrics depend on the platform:
 
 - For web applications: `PerformanceNavigationDuration`, `JSErrorCount`, `Http4xxCount`, and `Http5xxCount`
 
 - For mobile applications (iOS and Android): `ScreenLoadTime`, `CrashCount`, `Http4xxCount`, and `Http5xxCount`
 
-09. For **Set condition**, select a comparison operator and threshold for the SLO to use as the indicator of success.
+08. For **Set condition**, select a comparison operator and threshold for the SLO to use as the indicator of success.
+
+09. Enter a name for the SLO. Including the app monitor name and appropriate keywords will help you quickly identify what the SLO status indicates during triage.
 
 10. Set the **interval** and **attainment goal** for the SLO. For more information, see [SLO concepts](#CloudWatch-ServiceLevelObjectives-concepts).
 
@@ -878,19 +912,19 @@ You can create SLOs to monitor the performance of your CloudWatch Synthetics can
 
 03. Choose **Create SLO**.
 
-04. Enter a name for the SLO. Including the canary name and appropriate keywords will help you quickly identify what the SLO status indicates during triage.
+04. For **Set Service Level Indicator (SLI)**, choose **Synthetics Canary**.
 
-05. For **Set Service Level Indicator (SLI)**, choose **Synthetics Canary**.
+05. Select the canary that this SLO will monitor from the dropdown list.
 
-06. Select the canary that this SLO will monitor from the dropdown list.
-
-07. For **Select metric**, choose either `SuccessPercent` or `Duration`:
+06. For **Select metric**, choose either `SuccessPercent` or `Duration`:
 
 - `SuccessPercent` measures the percentage of successful canary runs
 
 - `Duration` measures how long each canary run takes to complete
 
-08. For **Set condition**, select a comparison operator and threshold for the SLO to use as the indicator of success.
+07. For **Set condition**, select a comparison operator and threshold for the SLO to use as the indicator of success.
+
+08. Enter a name for the SLO. Including the canary name and appropriate keywords will help you quickly identify what the SLO status indicates during triage.
 
 09. Set the **interval** and **attainment goal** for the SLO. For more information, see [SLO concepts](#CloudWatch-ServiceLevelObjectives-concepts).
 
@@ -901,6 +935,92 @@ You can create SLOs to monitor the performance of your CloudWatch Synthetics can
 12. (Optional) Add tags to help organize and identify this SLO.
 
 13. Choose **Create SLO**.
+
+### Create a composite SLO on multiple operations
+
+You can create a composite SLO that monitors the `Availability` metric across a subset of
+operations for a service. This is useful when you want to track the reliability of a group of related
+operations together, rather than monitoring a single operation or all operations.
+
+Composite SLOs support both period-based and request-based evaluation. You can select between 2 and 20
+operations to include. There are two ways to select operations:
+
+- _Explicit selection_ — Manually pick individual operations from the
+dropdown.
+
+- _Pattern matching_ — Use a prefix or regular expression to
+automatically match operations by name.
+
+###### Note
+
+Composite SLOs support only the `Availability` metric. The `Latency` metric
+is not available for composite SLOs.
+
+###### To create a composite SLO
+
+01. Open the CloudWatch console at
+     [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch).
+
+02. In the navigation pane, choose **Service Level Objectives (SLO)**.
+
+03. Choose **Create SLO**.
+
+04. For **Set Service Level Indicator (SLI)**, for **Type**,
+     choose **Service**.
+
+05. Select the service that this SLO will monitor.
+
+06. For **Type**, choose **Service Operations**.
+
+07. Select the operations to include in this composite SLO. Do one of the following:
+
+    - To manually select operations, choose multiple operations from the
+       **Operation** dropdown. You can select between 2 and 20 operations.
+
+      The selected operations appear as tokens below the dropdown. You can remove an operation by
+       choosing the dismiss icon on its token.
+
+    - To select operations by pattern, select the **Use pattern matching**
+       checkbox. Then do the following:
+
+      1. For **Pattern type**, choose either **Prefix** or
+          **Regular expression**.
+
+- **Prefix** matches all operations whose names start with the
+text you enter. For example, entering `Invoke` matches operations named
+`InvokeFunction`, `InvokeAsync`, and so on.
+
+- **Regular expression** matches all operations whose names match
+the regex pattern you enter. For example, entering `^Invoke.*` matches the same
+operations as the prefix example.
+
+      2. Enter the pattern in the **Pattern** field. The console displays the
+          matched operations as tokens below the field so you can verify the results.
+
+After you select operations, the metric is automatically set to **Availability**.
+
+08. For **Select a calculation method**, choose either **Periods**
+     or **Requests**.
+
+09. If you selected **Periods**, set the period length and the availability
+     threshold for this SLO.
+
+10. Enter a name for the SLO, or use the auto-generated name. The auto-generated name includes the
+     service name and the word "composite" to help you identify it.
+
+11. Set the **interval** and **attainment goal** for the SLO.
+     For more information about intervals and attainment goals and
+     how they work together, see [SLO concepts](#CloudWatch-ServiceLevelObjectives-concepts).
+
+12. (Optional) Configure burn rates and alarms as needed. For more information, see [Calculate burn rates and optionally set burn rate alarms](#CloudWatch-ServiceLevelObjectives-burn).
+
+13. (Optional) Set one or more CloudWatch alarms or a warning threshold for the SLO.
+
+14. (Optional) Set time window exclusions if needed.
+
+15. (Optional) Add tags to help organize and identify this SLO.
+
+16. Choose **Create SLO**.
 
 ## Use SLO recommendations
 

@@ -231,11 +231,11 @@ AWS Config
 
 [AWS Config Usage and Success Metrics](../../../config/latest/developerguide/viewing-the-aws-config-dashboard.md#aws-config-dashboard-metrics)
 
-Amazon Connect
+Connect Customer
 
 `AWS/Connect`
 
-[Monitoring Amazon Connect in Amazon CloudWatch Metrics](../../../connect/latest/adminguide/monitoring-cloudwatch.md)
+[Monitoring Connect Customer in Amazon CloudWatch Metrics](../../../connect/latest/adminguide/monitoring-cloudwatch.md)
 
 Amazon Data Lifecycle Manager
 
@@ -928,12 +928,6 @@ Amazon Simple Email Service
 `AWS/SES`
 
 [Retrieving Amazon SES Event Data from CloudWatch](../../../ses/latest/developerguide/event-publishing-retrieving-cloudwatch.md)
-
-AWS SimSpace Weaver
-
-`AWS/simspaceweaver`
-
-[Monitoring AWS SimSpace Weaver with Amazon CloudWatch](../../../simspaceweaver/latest/userguide/monitoring-with-cloudwatch.md)
 
 Amazon Simple Notification Service
 

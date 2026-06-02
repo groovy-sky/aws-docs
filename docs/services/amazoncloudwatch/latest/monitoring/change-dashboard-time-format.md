@@ -179,6 +179,6 @@ CloudWatch might change the period. To set the period manually, choose the
 
 Changing the period override setting or refresh interval
 
-Metrics
+Dashboard Body Structure and Syntax
 
 All content copied from https://docs.aws.amazon.com/.

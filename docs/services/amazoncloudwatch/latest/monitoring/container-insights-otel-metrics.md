@@ -91,6 +91,58 @@ plugin](https://github.com/NVIDIA/k8s-device-plugin) and [NVIDIA container\
 toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) must be installed.AWS Neuron MonitorNeuronCore metrics[Neuron driver](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/setup/neuron-setup/pytorch/neuronx/ubuntu/torch-neuronx-ubuntu22.html) and [Neuron device plugin](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/containers/kubernetes-getting-started.html) must be installed.AWS Neuron MonitorNeuronDevice metrics[Neuron driver](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/setup/neuron-setup/pytorch/neuronx/ubuntu/torch-neuronx-ubuntu22.html) and [Neuron device plugin](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/containers/kubernetes-getting-started.html) must be installed.AWS Neuron MonitorNeuron system metrics[Neuron driver](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/setup/neuron-setup/pytorch/neuronx/ubuntu/torch-neuronx-ubuntu22.html) and [Neuron device plugin](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/containers/kubernetes-getting-started.html) must be installed.AWS Elastic Fabric AdapterEFA metrics[EFA device plugin](https://github.com/aws/eks-charts/tree/master/stable/aws-efa-k8s-device-plugin) must be installed.NVMeNVMe SMART metrics-Kube State MetricsPod, node, Deployment, DaemonSet, StatefulSet, ReplicaSet, Job, CronJob,
 Service, Namespace, PersistentVolume, PersistentVolumeClaim metrics-Kubernetes API serverAPI server and etcd metrics-
 
+## Disabling dual publishing
+
+Starting with Amazon CloudWatch Observability EKS add-on version v6.0.1-eksbuild.1 or later,
+the add-on publishes metrics through both Container Insights (legacy) and OTel Container
+Insights by default. If you want to use only one of these, you can disable the other.
+
+### Disable OTel Container Insights
+
+To stop publishing OTel Container Insights metrics and use only legacy Container
+Insights, set the `otelContainerInsights` configuration to disabled.
+
+Use the following configuration value:
+
+```json
+
+{"otelContainerInsights":{"enabled":false}}
+```
+
+Run the following command to apply the configuration:
+
+```bash
+
+aws eks update-addon \
+  --cluster-name CLUSTER_NAME \
+  --addon-name amazon-cloudwatch-observability \
+  --configuration-values '{"otelContainerInsights":{"enabled":false}}' \
+  --region REGION
+```
+
+### Disable Container Insights
+
+To stop publishing legacy Container Insights metrics and use only OTel Container
+Insights, set the `containerInsights` configuration to disabled.
+
+Use the following configuration value:
+
+```json
+
+{"containerInsights":{"enabled":false}}
+```
+
+Run the following command to apply the configuration:
+
+```bash
+
+aws eks update-addon \
+  --cluster-name CLUSTER_NAME \
+  --addon-name amazon-cloudwatch-observability \
+  --configuration-values '{"containerInsights":{"enabled":false}}' \
+  --region REGION
+```
+
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Container Insights with enhanced observability for Amazon EKS

@@ -62,8 +62,8 @@ is equal to `Min` multiplied by `SampleCount`.
 
 **EntityMetricData**
 
-Data for metrics that contain associated entity information. You can include up to
-two `EntityMetricData` objects, each of which can contain a single
+Data for metrics that contain associated entity information. You can include up to two
+`EntityMetricData` objects, each of which can contain a single
 `Entity` and associated metrics.
 
 The limit of metrics allowed, 1000, is the sum of both `EntityMetricData`
@@ -110,15 +110,14 @@ data) will fail the entire request, and no data will be ingested. The failed
 operation will return a 400 result with the error.
 
 - When set to `false`: Validation errors in the entity will not
-associate the metric with the entity, but the metric data will still be
-accepted and ingested. Validation errors in the metric data will fail the
-entire request, and no data will be ingested.
+associate the metric with the entity, but the metric data will still be accepted
+and ingested. Validation errors in the metric data will fail the entire request,
+and no data will be ingested.
 
-In the case of an invalid entity, the operation will return a
-`200` status, but an additional response header will contain
-information about the validation errors. The new header,
-`X-Amzn-Failure-Message` is an enumeration of the following
-values:
+In the case of an invalid entity, the operation will return a `200`
+status, but an additional response header will contain information about the
+validation errors. The new header, `X-Amzn-Failure-Message` is an
+enumeration of the following values:
 
 - `InvalidEntity` \- The provided entity is invalid.
 
@@ -134,13 +133,11 @@ of an entity is invalid.
 - `EntitySizeTooLarge` \- The number of
 `EntityMetricData` objects allowed is 2.
 
-- `MissingRequiredFields` \- There are missing required
-fields in the `KeyAttributes` for the provided
+- `MissingRequiredFields` \- There are missing required fields
+in the `KeyAttributes` for the provided
 `Type`.
 
-For details of the requirements for specifying an entity, see
-[How \
-to add related information to telemetry](../../../../services/amazoncloudwatch/latest/monitoring/adding-your-own-related-telemetry.md) in the
+For details of the requirements for specifying an entity, see [How to add related information to telemetry](../../../../services/amazoncloudwatch/latest/monitoring/adding-your-own-related-telemetry.md) in the
 _CloudWatch User Guide_.
 
 This parameter is _required_ when `EntityMetricData` is
@@ -322,8 +319,8 @@ https://monitoring.us-west-1.amazonaws.com
 
 ### Example
 
-The following example uses `EntityMetricData` to put a metric
-with entity data for a service running in Amazon EC2:
+The following example uses `EntityMetricData` to put a metric with
+entity data for a service running in Amazon EC2:
 
 #### Sample Request
 
@@ -362,8 +359,8 @@ https://monitoring.us-west-1.amazonaws.com
 
 ### Example
 
-The following example uses `EntityMetricData` to put a metric
-with entity data for a service running in Lambda:
+The following example uses `EntityMetricData` to put a metric with
+entity data for a service running in Lambda:
 
 #### Sample Request
 

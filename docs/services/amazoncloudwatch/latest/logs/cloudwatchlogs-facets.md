@@ -32,7 +32,7 @@ troubleshooting and configure them using the index policies. For custom facets, 
 recommend creating them on low-cardinality fields (fields having less than 100 unique
 values per day such as Status and ApplicationName). Facets with more than 100 unique
 values per day are classified as high-cardinality and values for these facets are not
-displayed. Select one or more facets and click to run queries across your logs.
+displayed. Select one or more facets and choose to run queries across your logs.
 
 To get started with facets in CloudWatch Logs Insights:
 
@@ -61,7 +61,7 @@ Facets with more than 100 unique values are not displayed. To query specific
 3. As facet values are selected, the query scope is updated to reflect the
     selection.
 
-4. After selecting the facets values, click run to execute your query.
+4. After selecting the facets values, choose run to execute your query.
 
 5. The maximum number of unique values supported per facet is 100. For
     example, if there are more than 100 values for a facet, then all the counts
@@ -108,6 +108,6 @@ a single log group4DeleteAccountPolicyDeletes a CloudWatch Logs account policy
 
 Effects of deleting a field index policy
 
-Pattern analysis
+Viewing surrounding logs in CloudWatch Logs Insights
 
 All content copied from https://docs.aws.amazon.com/.

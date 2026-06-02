@@ -5,9 +5,8 @@ title: "GetOTelEnrichment"
 # GetOTelEnrichment
 
 Returns the current status of vended metric enrichment for the account, including
-whether CloudWatch vended metrics are enriched with resource ARN and resource tag
-labels and queryable using PromQL. For the list of supported resources, see
-[Supported AWS infrastructure metrics](../../../../services/amazoncloudwatch/latest/monitoring/usingresourcetagsfortelemetry.md).
+whether CloudWatch vended metrics are enriched with resource ARN and resource tag labels
+and queryable using PromQL. For the list of supported resources, see [Supported AWS infrastructure metrics](../../../../services/amazoncloudwatch/latest/monitoring/usingresourcetagsfortelemetry.md).
 
 ## Response Elements
 
@@ -16,8 +15,8 @@ The following element is returned by the service.
 **Status**
 
 The status of OTel enrichment for the account. Valid values are
-`Running` (enrichment is enabled) and `Stopped`
-(enrichment is disabled).
+`Running` (enrichment is enabled) and `Stopped` (enrichment is
+disabled).
 
 Type: String
 

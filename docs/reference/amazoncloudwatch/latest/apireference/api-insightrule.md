@@ -39,7 +39,7 @@ Required: Yes
 **Schema**
 
 For rules that you create, this is always `{"Name": "CloudWatchLogRule",
-            "Version": 1}`. For managed rules, this is `{"Name": "ServiceLogRule",
+                "Version": 1}`. For managed rules, this is `{"Name": "ServiceLogRule",
                 "Version": 1}`
 
 Type: String
@@ -60,8 +60,10 @@ Required: Yes
 
 **ApplyOnTransformedLogs**
 
-Displays whether the rule is evaluated on the transformed versions of logs, for log groups
-that have [Log transformation](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-transformation.md) enabled. If this is `false`, log events are evaluated before they are transformed.
+Displays whether the rule is evaluated on the transformed versions of logs, for log
+groups that have [Log\
+transformation](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-transformation.md) enabled. If this is `false`, log events are
+evaluated before they are transformed.
 
 Type: Boolean
 

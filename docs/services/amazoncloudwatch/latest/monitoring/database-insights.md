@@ -45,7 +45,7 @@ Analyze operating system processes happening in your databases with detailed met
 [Amazon RDS\
 Enhanced Monitoring](../../../amazonrds/latest/aurorauserguide/user-perfinsights-counters.md) is required for this feature to work.
 
-Not supportedSupportedDefine and save fleet‐wide monitoring views to assess database health at scaleNot supportedSupportedAnalyze SQL locks with 15 months of retention and a guided UXNot supportedSupported only for Aurora PostgreSQLAnalyze SQL execution plans with 15 months of retention and guided UXNot supportedSupported only for Aurora PostgreSQL, RDS for Oracle, and RDS for SQL ServerVisualize per‐query statisticsNot supportedSupportedAnalyze slow SQL queries
+Not supportedSupportedDefine and save fleet‐wide monitoring views to assess database health at scaleNot supportedSupportedAnalyze SQL locks with 15 months of retention and a guided UXNot supportedSupported only for Aurora PostgreSQL and RDS for PostgreSQLAnalyze SQL execution plans with 15 months of retention and guided UXNot supportedSupported only for Aurora PostgreSQL, RDS for Oracle, and RDS for SQL ServerVisualize per‐query statisticsNot supportedSupportedAnalyze slow SQL queries
 
 Export of database logs to CloudWatch Logs is required for
 this feature to work.

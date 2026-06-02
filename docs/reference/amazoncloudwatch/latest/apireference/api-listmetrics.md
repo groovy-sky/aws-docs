@@ -23,8 +23,9 @@ haven't reported data in the past two weeks. To retrieve those metrics, use [Get
 
 **Dimensions**
 
-The dimensions to filter against. Only the dimension with names that match exactly will be
-returned. If you specify one dimension name and a metric has that dimension and also other dimensions, it will be returned.
+The dimensions to filter against. Only the dimension with names that match exactly
+will be returned. If you specify one dimension name and a metric has that dimension and
+also other dimensions, it will be returned.
 
 Type: Array of [DimensionFilter](api-dimensionfilter.md) objects
 

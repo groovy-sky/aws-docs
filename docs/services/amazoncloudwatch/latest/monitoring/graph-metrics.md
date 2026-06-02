@@ -24,6 +24,8 @@ how to graph metrics in CloudWatch.
 
 - [Create an alarm from a metric on a graph](create-alarm-metric-graph.md)
 
+- [GetMetricWidgetImage: Metric Widget Structure and Syntax](cloudwatch-metric-widget-structure.md)
+
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Search for available metrics

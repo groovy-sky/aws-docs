@@ -218,7 +218,7 @@ command, do not return pattern results.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Use facets to group and explore logs
+Viewing surrounding logs in CloudWatch Logs Insights
 
 Save and re-run queries
 

@@ -126,16 +126,19 @@ Unit: None
 
 `ContainerCpuUtilization`
 
-`TaskDefinitionFamily`, `ClusterName`
-
-`ServiceName`, `ClusterName`
-
 `ClusterName`
 
-`ClusterName`, `ServiceName`, `TaskId`
+`ContainerName`, `TaskId`, `ServiceName`,
+`ClusterName`
 
-`ClusterName`, `TaskDefinitionFamily`,
-`TaskId`
+`ContainerName`, `TaskDefinitionFamily`,
+`ClusterName`, `TaskId`
+
+`TaskDefinitionFamily`, `ClusterName`,
+`ContainerName`
+
+`ServiceName`, `ClusterName`,
+`ContainerName`
 
 The total percentage of CPU units being used by containers in the resource that
 is specified by the dimension set that you're using.
@@ -218,16 +221,19 @@ Unit: Percent
 
 `ContainerNetworkRxBytes`
 
-`TaskDefinitionFamily`, `ClusterName`
-
-`ServiceName`, `ClusterName`
-
 `ClusterName`
 
-`ClusterName`, `ServiceName`, `TaskId`
+`ContainerName`, `TaskId`, `ServiceName`,
+`ClusterName`
 
-`ClusterName`, `TaskDefinitionFamily`,
-`TaskId`
+`ContainerName`, `TaskDefinitionFamily`,
+`ClusterName`, `TaskId`
+
+`TaskDefinitionFamily`, `ClusterName`,
+`ContainerName`
+
+`ServiceName`, `ClusterName`,
+`ContainerName`
 
 The number of bytes received by the container that is specified by the
 dimensions that you're using. This metric is obtained from the Docker
@@ -242,16 +248,19 @@ Unit: Bytes/Second
 
 `ContainerNetworkTxBytes`
 
-`TaskDefinitionFamily`, `ClusterName`
-
-`ServiceName`, `ClusterName`
-
 `ClusterName`
 
-`ClusterName`, `ServiceName`, `TaskId`
+`ContainerName`, `TaskId`, `ServiceName`,
+`ClusterName`
 
-`ClusterName`, `TaskDefinitionFamily`,
-`TaskId`
+`ContainerName`, `TaskDefinitionFamily`,
+`ClusterName`, `TaskId`
+
+`TaskDefinitionFamily`, `ClusterName`,
+`ContainerName`
+
+`ServiceName`, `ClusterName`,
+`ContainerName`
 
 The number of bytes transmitted by the container that is specified by the
 dimensions that you're using. This metric is obtained from the Docker
@@ -771,6 +780,166 @@ The number of task sets in the service.
 
 Unit: Count
 
+`ContainerGPUUtilization`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`, `ContainerName`
+
+`ClusterName`, `TaskDefinitionFamily`, `ContainerName`
+
+`ClusterName`, `ServiceName`, `TaskId`, `ContainerName`
+
+`ClusterName`, `TaskDefinitionFamily`, `TaskId`, `ContainerName`
+
+`ClusterName`, `ServiceName`, `TaskId`, `ContainerName`, `AcceleratedDevice`
+
+The percentage utilization of the GPU(s) allocated to the container.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Percent
+
+`ContainerGPUMemoryUtilization`
+
+Same as `ContainerGPUUtilization`.
+
+The percentage of frame buffer memory used on the GPU(s) allocated to the container.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Percent
+
+`ContainerGPUMemoryTotal`
+
+Same as `ContainerGPUUtilization`.
+
+The total frame buffer size, in bytes, on the GPU(s) allocated to the container.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Bytes
+
+`ContainerGPUMemoryUsed`
+
+Same as `ContainerGPUUtilization`.
+
+The frame buffer memory, in bytes, used on the GPU(s) allocated to the container.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Bytes
+
+`ContainerGPUPowerDraw`
+
+Same as `ContainerGPUUtilization`.
+
+The power usage, in watts, of the GPU(s) allocated to the container.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Watts
+
+`ContainerGPUTemperature`
+
+Same as `ContainerGPUUtilization`.
+
+The temperature, in degrees Celsius, of the GPU(s) allocated to the container.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Celsius
+
+`ContainerGPURestartAppXidCount`
+
+Same as `ContainerGPUUtilization`.
+
+The count of NVIDIA Xid errors whose immediate-action resolution bucket is `RESTART_APP`, observed on the GPU(s) allocated to the container.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Count
+
+`TaskGPUUtilization`
+
+`ClusterName`
+
+`ClusterName`, `ServiceName`
+
+`ClusterName`, `TaskDefinitionFamily`
+
+`ClusterName`, `ServiceName`, `TaskId`
+
+`ClusterName`, `TaskDefinitionFamily`, `TaskId`
+
+`ClusterName`, `ServiceName`, `TaskId`, `AcceleratedDevice`
+
+The percentage utilization of the GPU(s) allocated to the task.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Percent
+
+`TaskGPUMemoryUtilization`
+
+Same as `TaskGPUUtilization`.
+
+The percentage of frame buffer memory used on the GPU(s) allocated to the task.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Percent
+
+`TaskGPUMemoryTotal`
+
+Same as `TaskGPUUtilization`.
+
+The total frame buffer size, in bytes, on the GPU(s) allocated to the task.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Bytes
+
+`TaskGPUMemoryUsed`
+
+Same as `TaskGPUUtilization`.
+
+The frame buffer memory, in bytes, used on the GPU(s) allocated to the task.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Bytes
+
+`TaskGPUPowerDraw`
+
+Same as `TaskGPUUtilization`.
+
+The power usage, in watts, of the GPU(s) allocated to the task.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Watts
+
+`TaskGPUTemperature`
+
+Same as `TaskGPUUtilization`.
+
+The temperature, in degrees Celsius, of the GPU(s) allocated to the task.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Celsius
+
+`TaskGPURestartAppXidCount`
+
+Same as `TaskGPUUtilization`.
+
+The count of NVIDIA Xid errors whose immediate-action resolution bucket is `RESTART_APP`, observed on the GPU(s) allocated to the task.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Count
+
 ###### Note
 
 The
@@ -907,6 +1076,30 @@ Unit: Bytes/second
 `ClusterName`
 
 The number of running tasks on a single EC2 instance in the cluster.
+
+Unit: Count
+
+`InstanceGPULimit`
+
+`ClusterName`
+
+`ClusterName`, `CapacityProviderName`
+
+`ClusterName`, `CapacityProviderName`, `ContainerInstanceId`, `EC2InstanceId`
+
+The total number of GPUs available on the instance.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
+
+Unit: Count
+
+`InstanceGPUUsageTotal`
+
+Same as `InstanceGPULimit`.
+
+The number of GPUs currently allocated to running tasks on the instance.
+
+Available only for Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance types.
 
 Unit: Count
 

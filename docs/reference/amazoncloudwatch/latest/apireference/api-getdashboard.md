@@ -34,7 +34,7 @@ Type: String
 
 The detailed information about the dashboard, including what widgets are included
 and their location on the dashboard. For more information about the
-`DashboardBody` syntax, see [Dashboard Body Structure and Syntax](cloudwatch-dashboard-body-structure.md).
+`DashboardBody` syntax, see [Dashboard Body Structure and Syntax](../../../../services/amazoncloudwatch/latest/monitoring/cloudwatch-dashboard-body-structure.md).
 
 Type: String
 

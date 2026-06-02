@@ -4,28 +4,16 @@ title: "Collect metrics, logs, and traces using the CloudWatch agent"
 
 # Collect metrics, logs, and traces using the CloudWatch agent
 
-CloudWatch agent is a software component that collects metrics, logs, and traces from your Amazon EC2
-instances, on-premises servers, and containerized applications. It enables you to monitor your
-infrastructure and applications more comprehensively than the basic monitoring provided by
+The CloudWatch agent is a software component that collects metrics, logs, and traces from your
+Amazon EC2 instances, on-premises servers, and containerized applications. It enables you to monitor
+your infrastructure and applications more comprehensively than the basic monitoring provided by
 default.
-
-**Key benefits**
-
-- Collect system-level metrics (CPU, memory, disk, network)
-
-- Gather custom metrics from your applications
-
-- Collect and centralize logs from various sources
-
-- Monitor both AWS and on-premises environments with a single tool
-
-- Set up alarms and notifications based on collected data
 
 The CloudWatch agent enables you to do the following:
 
 - Collect internal system-level metrics from Amazon EC2 instances across operating systems. The
-metrics can include in-guest metrics, in addition to the metrics for EC2 instances. The
-additional metrics that can be collected are listed in [Metrics collected by the CloudWatch agent](metrics-collected-by-cloudwatch-agent.md).
+metrics can include in-guest metrics, in addition to the metrics for Amazon EC2 instances. For a
+list of additional metrics that you can collect, see [Metrics collected by the CloudWatch agent](metrics-collected-by-cloudwatch-agent.md).
 
 - Collect system-level metrics from on-premises servers. These can include servers in a
 hybrid environment as well as servers not managed by AWS.
@@ -70,7 +58,7 @@ Pricing](http://aws.amazon.com/cloudwatch/pricing).
 The CloudWatch agent is open-source under the MIT license, and is [hosted on GitHub](https://github.com/aws/amazon-cloudwatch-agent). If you would
 like to build, customize or contribute to the CloudWatch agent, see the GitHub repository for the
 latest instructions. If you think you’ve found a potential security issue, do not post it on
-GitHub or any public forum. Instead, please follow the instructions at [Vulnerability Reporting](https://aws.amazon.com/security/vulnerability-reporting) or [email AWS security directly](mailto:aws-security@amazon.com).
+GitHub or any public forum. Instead, follow the instructions at [Vulnerability Reporting](https://aws.amazon.com/security/vulnerability-reporting) or [email AWS security directly](mailto:aws-security@amazon.com).
 
 You can download and install the CloudWatch agent manually using the command line, or you can
 integrate it with AWS Systems Manager. The general flow of installing the CloudWatch agent is as

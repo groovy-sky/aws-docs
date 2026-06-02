@@ -100,7 +100,7 @@ under the **Last modified** column, then repeat steps 6-7.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Tag a distribution
+Tag a CloudFront resource
 
 Use various origins
 

@@ -5,7 +5,8 @@ title: "DeleteDashboards"
 # DeleteDashboards
 
 Deletes all dashboards that you specify. You can specify up to 100 dashboards to
-delete. If there is an error during this call, no dashboards are deleted.
+delete. If there is an error during this call, the operation attempts to delete as many
+dashboards as possible.
 
 ## Request Parameters
 
@@ -43,12 +44,6 @@ The value of an input parameter is bad or out-of-range.
 **message**
 
 HTTP Status Code: 400
-
-**ResourceNotFound**
-
-The specified dashboard does not exist.
-
-HTTP Status Code: 404
 
 ## See Also
 

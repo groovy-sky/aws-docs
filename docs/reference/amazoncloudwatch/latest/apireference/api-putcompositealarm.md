@@ -148,7 +148,8 @@ Valid Values: \]
 `arn:aws:ssm:region:account-id:opsitem:severity
                   `
 
-**Start a Amazon Q Developer operational investigation**
+**Start a Amazon Q Developer operational**
+**investigation**
 
 `arn:aws:aiops:region:account-id:investigation-group:investigation-group-id
                   `
@@ -197,15 +198,15 @@ evaluated.
 Functions can include the following:
 
 - `ALARM("alarm-name or
-                      alarm-ARN")` is TRUE if the named alarm is in
+                          alarm-ARN")` is TRUE if the named alarm is in
 ALARM state.
 
 - `OK("alarm-name or
-                      alarm-ARN")` is TRUE if the named alarm is in OK
+                          alarm-ARN")` is TRUE if the named alarm is in OK
 state.
 
 - `INSUFFICIENT_DATA("alarm-name or
-                      alarm-ARN")` is TRUE if the named alarm is in
+                              alarm-ARN")` is TRUE if the named alarm is in
 INSUFFICIENT\_DATA state.
 
 - `TRUE` always evaluates to TRUE.
@@ -230,7 +231,7 @@ ALARM state and DeploymentInProgress is not in ALARM state. This example reduces
 alarm noise during a known deployment window.
 
 - `(ALARM(CPUUtilizationTooHigh) OR ALARM(DiskReadOpsTooHigh)) AND
-                      OK(NetworkOutTooHigh)` goes into ALARM state if CPUUtilizationTooHigh
+                          OK(NetworkOutTooHigh)` goes into ALARM state if CPUUtilizationTooHigh
 OR DiskReadOpsTooHigh is in ALARM state, and if NetworkOutTooHigh is in OK
 state. This provides another example of using a composite alarm to prevent
 noise. This rule ensures that you are not notified with an alarm action on high

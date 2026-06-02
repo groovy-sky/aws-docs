@@ -71,6 +71,6 @@ the benefit of populating many of the alarm fields for you.
 
 Modify the y-axis for a graph
 
-Using anomaly detection
+GetMetricWidgetImage: Metric Widget Structure and Syntax
 
 All content copied from https://docs.aws.amazon.com/.

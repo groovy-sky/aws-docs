@@ -16,18 +16,20 @@ data from the first time the rule was created might not be available.
 
 **ApplyOnTransformedLogs**
 
-Specify `true` to have this rule evaluate log events after they have been transformed by
-[Log transformation](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-transformation.md). If you specify `true`, then the log events in log groups that have transformers will
-be evaluated by Contributor Insights after being transformed. Log groups that don't have
-transformers will still have their original log events evaluated by Contributor Insights.
+Specify `true` to have this rule evaluate log events after they have been
+transformed by [Log\
+transformation](../../../../services/amazoncloudwatch/latest/logs/cloudwatch-logs-transformation.md). If you specify `true`, then the log events in log
+groups that have transformers will be evaluated by Contributor Insights after being
+transformed. Log groups that don't have transformers will still have their original log
+events evaluated by Contributor Insights.
 
 The default is `false`
 
 ###### Note
 
-If a log group has a transformer, and transformation fails for some log events, those log events won't be evaluated by
-Contributor Insights. For information about investigating log transformation failures, see
-[Transformation metrics and errors](../../../../services/amazoncloudwatch/latest/logs/transformation-errors-metrics.md).
+If a log group has a transformer, and transformation fails for some log events,
+those log events won't be evaluated by Contributor Insights. For information about
+investigating log transformation failures, see [Transformation metrics and errors](../../../../services/amazoncloudwatch/latest/logs/transformation-errors-metrics.md).
 
 Type: Boolean
 

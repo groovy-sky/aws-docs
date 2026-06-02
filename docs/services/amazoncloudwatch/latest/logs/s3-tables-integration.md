@@ -22,13 +22,9 @@ based on data source name and type (that can be managed from the **Log**
 **Management > Data Sources** tab in CloudWatch Logs Console). Once associated, CloudWatch Logs
 data becomes accessible through Amazon S3 Tables using the Apache Iceberg format. This format
 provides a standardized way for various analytics engines to query the data efficiently.
+This feature is available at no additional cost.
 
 ### Core Components
-
-Data Source Association
-
-The process of linking specific CloudWatch Logs sources to the S3 Tables
-integration based on data source and type criteria.
 
 Apache Iceberg Tables
 
@@ -36,17 +32,27 @@ The underlying table format used by S3 Tables that provides structured
 data storage and enables compatibility with multiple analytics
 engines.
 
+Data Source Association
+
+The process of linking specific CloudWatch Logs sources to the S3 Tables
+integration based on data source and type criteria.
+
 ### Data flow to S3 tables
 
 Understanding how data flows between CloudWatch Logs and S3 Tables helps you plan your
 integration and manage your log data effectively.
 
-When you create an association, CloudWatch Logs automatically sends new log events that
-match the associated data source name and type to a CloudWatch-managed S3 table bucket.
-You can find these events in the logs namespace under the corresponding table for
-that data source. The integration processes only log events added after you create
-the association and does not backfill logs from before the association was
-created.
+When you create an association, CloudWatch Logs automatically delivers new log events
+matching the associated data source name and type to a CloudWatch-managed S3 table bucket.
+These events appear in the logs namespace under the corresponding table for that
+data source. The integration processes only log events received after the
+association is created. Existing log data is not backfilled. When you create an S3
+Tables integration, if you leave the **Enable all log sources and types to**
+**be available in the S3 table** checkbox selected, all data sources in your
+account are automatically associated and delivered to S3 Tables by default, including
+any data sources added in the future. To deliver only specific data sources to S3
+Tables, clear this checkbox during integration creation and then individually
+associate the data sources you want to include.
 
 Data retention in the S3 table bucket matches the retention policy set for the log
 group. For example, if you set a log group to 1-day retention, CloudWatch Logs removes the
@@ -232,7 +238,21 @@ setting up appropriate IAM permissions.
 3. Customize how logs will be encrypted in S3 Tables, and the role that CloudWatch Logs
     will use to write your logs into S3 Tables.
 
-4. Choose **Create S3 Table Integration**.
+4. If you want all data sources to be automatically associated with the
+    integration, leave the **Enable all log sources and types to be**
+**available in the S3 table** checkbox selected (it is selected by
+    default). If you want to associate only specific data sources, clear this
+    checkbox.
+
+5. Choose **Create S3 Table Integration**.
+
+###### Note
+
+If you selected **Enable all log sources and types to be**
+**available in the S3 table** during creation, all data sources are
+automatically associated, including any data sources added in the future. You can
+stop here. The following steps are only needed if you cleared the checkbox and
+want to associate specific data sources.
 
 ###### To associate sources to an S3 Table Integration
 
@@ -284,7 +304,7 @@ Before you can use the data you have to do the following 3 steps:
 
 2. In the left navigation pane, choose **Table buckets**.
 
-3. Click the **Enable integration** on the top.
+3. Choose the **Enable integration** on the top.
 
 4. The first time that you integrate table buckets in any Region, Amazon Amazon S3 creates a new IAM service role on your behalf. This role allows Lake Formation to access all table buckets in your account and federate access to your tables in AWS Glue Data Catalog.
 

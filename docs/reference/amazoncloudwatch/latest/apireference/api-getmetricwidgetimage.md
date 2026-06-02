@@ -29,7 +29,7 @@ the metrics to include in the graph, statistics, annotations, title, axis limits
 on. You can include only one `MetricWidget` parameter in each
 `GetMetricWidgetImage` call.
 
-For more information about the syntax of `MetricWidget` see [GetMetricWidgetImage: Metric Widget Structure and Syntax](cloudwatch-metric-widget-structure.md).
+For more information about the syntax of `MetricWidget` see [GetMetricWidgetImage: Metric Widget Structure and Syntax](../../../../services/amazoncloudwatch/latest/monitoring/cloudwatch-metric-widget-structure.md).
 
 If any metric on the graph could not load all the requested data points, an orange
 triangle with an exclamation point appears next to the graph legend.

@@ -19,7 +19,8 @@ scoped to `*`. You can't return information about composite alarms if your
 
 **AlarmContributorId**
 
-The unique identifier of a specific alarm contributor to filter the alarm history results.
+The unique identifier of a specific alarm contributor to filter the alarm history
+results.
 
 Type: String
 

@@ -174,9 +174,8 @@ JSON
 
 Enable each monitoring account if you want to view cross-account CloudWatch data.
 
-When you complete the following procedure, CloudWatch creates a service-linked role that CloudWatch uses in the monitoring account to access data
-shared from your other accounts. This service-linked role is called **AWSServiceRoleForCloudWatchCrossAccount**. For more information,
-see [Using service-linked roles for CloudWatch](using-service-linked-roles.md).
+When you complete the following procedure, CloudWatch creates a service role that CloudWatch uses in the monitoring account to access data
+shared from your other accounts. This service role is called **ServiceRoleForCloudWatchCrossAccountV2**.
 
 ###### To enable your account to view cross-account CloudWatch data
 
@@ -269,7 +268,7 @@ This section contains troubleshooting tips for cross-account, console deployment
 
 Check the following:
 
-- Your monitoring account should have a role named **AWSServiceRoleForCloudWatchCrossAccount**. If it does not,
+- Your monitoring account should have a role named **ServiceRoleForCloudWatchCrossAccountV2**. If it does not,
 you need to create this role. For more information, see [Set Up a Monitoring Account](#setup_monitoring_account).
 
 - Each sharing account should have a role named **CloudWatch-CrossAccountSharingRole**. If it does not,
@@ -284,7 +283,7 @@ you need to create this role. For more information, see [Set Up A Sharing Accoun
 2. In the navigation pane, choose **Roles**.
 
 3. In the list of roles, make sure the needed role exists. In a sharing account, look for **CloudWatch-CrossAccountSharingRole**.
-    In a monitoring account, look for **AWSServiceRoleForCloudWatchCrossAccount**.
+    In a monitoring account, look for **ServiceRoleForCloudWatchCrossAccountV2**.
 
 4. If you are in a sharing account and **CloudWatch-CrossAccountSharingRole** already exists, choose **CloudWatch-CrossAccountSharingRole**.
 
@@ -356,10 +355,10 @@ organization, delete the
 **CloudWatch-CrossAccountSharing-ListAccountsRole** IAM role in
 the organization's management account.
 
-**Step 2: Remove the service-linked role**
+**Step 2: Remove the service role**
 
-In the monitoring account, delete the **AWSServiceRoleForCloudWatchCrossAccount**
-service-linked IAM role.
+In the monitoring account, delete the **ServiceRoleForCloudWatchCrossAccountV2**
+IAM service role.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

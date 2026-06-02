@@ -123,11 +123,11 @@ order.
 **SOURCE`**
 
 Including `SOURCE` in a query is a useful
-way to specify a large amount of log groups based on log
-group name prefix, account identifiers, and log group class
-to include in a query. This command is supported only when
-you create a query in the AWS CLI or programmatically, not in
-the CloudWatch console.
+way to specify a large amount of log groups to include in a query
+based on log group name prefix, account identifiers, log group
+class, data sources, or log group tags.
+This command is supported only when you create a query in the AWS CLI or
+programmatically, not in the CloudWatch console.
 
 **`**
 **stats`**
@@ -169,6 +169,22 @@ by matching field values. Use lookup tables to add
 reference data such as user details, application names,
 or product information to your query results.
 
+**`**
+**join`**
+
+Combines log events from a source log group with events
+from another log group or query result based on a matching field.
+Use the join command to correlate related log events across different
+sources using keys common across them such as matching request
+identifiers or transaction IDs.
+
+**`**
+**subqueries`**
+
+A subquery is a nested Logs Insights query that can be used
+as an input to another query. Subqueries can be used to derive
+intermediate result sets that are then consumed by subsequent commands.
+
 **[Other operations and\**
 **functions](cwl-querysyntax-operations-functions.md)**
 
@@ -201,6 +217,10 @@ commands.
 
 - [parse](cwl-querysyntax-parse.md)
 
+- [relevantfields](cwl-querysyntax-relevantfields.md)
+
+- [expand](cwl-querysyntax-expand.md)
+
 - [sort](cwl-querysyntax-sort.md)
 
 - [stats](cwl-querysyntax-stats.md)
@@ -214,6 +234,10 @@ commands.
 - [unnest](cwl-querysyntax-unnest.md)
 
 - [lookup](cwl-querysyntax-lookup.md)
+
+- [join](cwl-querysyntax-join.md)
+
+- [subqueries](cwl-querysyntax-subqueries.md)
 
 - [Boolean, comparison, numeric, datetime, and other functions](cwl-querysyntax-operations-functions.md)
 

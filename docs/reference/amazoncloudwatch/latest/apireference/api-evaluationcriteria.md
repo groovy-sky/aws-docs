@@ -4,8 +4,8 @@ title: "EvaluationCriteria"
 
 # EvaluationCriteria
 
-The evaluation criteria for an alarm. This is a union type that currently
-supports `PromQLCriteria`.
+The evaluation criteria for an alarm. This is a union type that currently supports
+`PromQLCriteria`.
 
 ## Contents
 

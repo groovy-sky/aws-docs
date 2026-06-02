@@ -208,7 +208,7 @@ triggers when any time series breaches the expected range. For more information,
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Create an alarm from a metric on a graph
+GetMetricWidgetImage: Metric Widget Structure and Syntax
 
 Using math expressions with CloudWatch metrics
 

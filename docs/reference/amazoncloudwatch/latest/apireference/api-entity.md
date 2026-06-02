@@ -17,9 +17,9 @@ the entity.
 Additional attributes of the entity that are not used to specify the identity of the
 entity. A list of key-value pairs.
 
-For details about how to use the attributes, see [How \
-to add related information to \
-telemetry](../../../../services/amazoncloudwatch/latest/monitoring/adding-your-own-related-telemetry.md) in the _CloudWatch User Guide_.
+For details about how to use the attributes, see [How\
+to add related information to telemetry](../../../../services/amazoncloudwatch/latest/monitoring/adding-your-own-related-telemetry.md) in the _CloudWatch_
+_User Guide_.
 
 Type: String to string map
 
@@ -42,10 +42,9 @@ There are five allowed attributes (key names): `Type`,
 `ResourceType`, `Identifier`, `Name`, and
 `Environment`.
 
-For details about how to use the key attributes to specify an entity, see [How \
-to add related \
-information to telemetry](../../../../services/amazoncloudwatch/latest/monitoring/adding-your-own-related-telemetry.md) in the _CloudWatch User_
-_Guide_.
+For details about how to use the key attributes to specify an entity, see [How\
+to add related information to telemetry](../../../../services/amazoncloudwatch/latest/monitoring/adding-your-own-related-telemetry.md) in the _CloudWatch_
+_User Guide_.
 
 Type: String to string map
 

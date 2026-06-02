@@ -17,9 +17,7 @@ exploration](cloudwatchlogs-facets.md).
 
 - [Features enabled by data sources](features-enabled-by-data-sources.md)
 
-- [Supported AWS services for data sources](supported-aws-services-data-sources.md)
-
-- [Supported third-party sources for data sources](supported-third-party-sources-data-sources.md)
+- [Supported data sources](supported-data-sources-catalog.md)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

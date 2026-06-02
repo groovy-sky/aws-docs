@@ -33,27 +33,29 @@ Console
 1. Sign in to the AWS Management Console and open the CloudFront console at
     [https://console.aws.amazon.com/cloudfront/v4/home](https://console.aws.amazon.com/cloudfront/v4/home).
 
-2. Choose the distribution for which you want to invalidate files.
+2. Choose the distribution for which you want to invalidate
+    files.
 
 3. Choose the **Invalidations** tab.
 
 4. Choose **Create invalidation**.
 
-5. For the files that you want to invalidate, enter one invalidation path
-    per line. For information about specifying invalidation paths, see [What you need to know when invalidating files](invalidation-specifying-objects.md).
+5. For the files that you want to invalidate, enter one
+    invalidation path per line. For information about specifying
+    invalidation paths, see [What you need to know when invalidating paths](invalidation-specifying-objects.md).
 
 ###### Important
 
-Specify file paths carefully. You can’t cancel an invalidation
+Specify file paths carefully. You can’t cancel an
+invalidation
 request after you start it.
 
 6. Choose **Create invalidation**.
 
 CloudFront API
 
-To learn about invalidating objects and displaying information about
-invalidations, see the following topics in the
-_Amazon CloudFront API Reference_:
+To learn about invalidating objects and displaying information
+about invalidations, see the following topics in the _Amazon CloudFront API Reference_:
 
 - [CreateInvalidation](../../../../reference/cloudfront/latest/apireference/api-createinvalidation.md)
 
@@ -63,9 +65,10 @@ _Amazon CloudFront API Reference_:
 
 ###### Note
 
-If you use the AWS Command Line Interface (AWS CLI) to invalidate files and you specify a path
-that includes the `*` wildcard, you must use quotes ( `"`)
-around the path, such as the following example:
+If you use the AWS Command Line Interface (AWS CLI) to invalidate files and you
+specify a path that includes the `*` wildcard, you
+must use quotes ( `"`) around the path, such as the
+following example:
 
 ```nohighlight
 
@@ -88,7 +91,7 @@ in the original and in the copy, CloudFront will try to invalidate the files
 twice, and both invalidations will count against your maximum number of free
 invalidations for the month. If you already reached the maximum number of
 free invalidations, you will be charged for both invalidations of each file.
-For more information, see [Concurrent invalidation request maximum](invalidationlimits.md).
+For more information, see [Quotas on invalidations](cloudfront-limits.md#limits-invalidations).
 
 ###### To copy, edit, and rerun an existing invalidation
 
@@ -124,8 +127,7 @@ invalidation after you submit it.
 You can display a list of the last 100 invalidations that you’ve created and
 run for a distribution by using the CloudFront console. If you want to get a list of
 more than 100 invalidations, use the `ListInvalidations` API
-operation. For more information, see [ListInvalidations](../../../../reference/cloudfront/latest/apireference/api-listinvalidations.md) in the
-_Amazon CloudFront API Reference_.
+operation. For more information, see [ListInvalidations](../../../../reference/cloudfront/latest/apireference/api-listinvalidations.md) in the _Amazon CloudFront API Reference_.
 
 ###### To list invalidations
 
@@ -163,8 +165,8 @@ paths.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-What you need to know when invalidating files
+What you need to know when invalidating tags
 
-Concurrent invalidation request maximum
+Pay for file invalidation
 
 All content copied from https://docs.aws.amazon.com/.

@@ -10,7 +10,9 @@ Represents the history of a specific alarm.
 
 **AlarmContributorAttributes**
 
-A map of attributes that describe the alarm contributor associated with this history item, providing context about the contributor's characteristics at the time of the event.
+A map of attributes that describe the alarm contributor associated with this history
+item, providing context about the contributor's characteristics at the time of the
+event.
 
 Type: String to string map
 
@@ -24,7 +26,8 @@ Required: No
 
 **AlarmContributorId**
 
-The unique identifier of the alarm contributor associated with this history item, if applicable.
+The unique identifier of the alarm contributor associated with this history item, if
+applicable.
 
 Type: String
 

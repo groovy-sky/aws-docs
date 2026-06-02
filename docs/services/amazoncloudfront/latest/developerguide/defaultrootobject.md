@@ -21,15 +21,14 @@ contents of your distribution.
 
 To avoid exposing the contents of your distribution or returning an error, specify
 a default root object for your distribution. You can specify the exact file name or
-the path to the file. For example, if your root object is an
-`index.html` file, you can specify that file name. If your
-`index.html` file is in another folder, specify the path
-instead such as
-`exampleFolderName/index.html`. If
-you set a path to the default root object, viewer requests to the root URL of the
-distribution will return the specified file from that path. You can use a file path
-to have more flexibility to organize your content at the origin, as your default
-root object can be in a folder instead of at the root level.
+the path to the file. For example, if your root object is an `index.html`
+file, you can specify that file name. If your `index.html` file
+is in another folder, specify the path instead such as `
+				exampleFolderName/index.html`. If you set a path to the
+default root object, viewer requests to the root URL of the distribution will return
+the specified file from that path. You can use a file path to have more flexibility
+to organize your content at the origin, as your default root object can be in a
+folder instead of at the root level.
 
 ###### To specify a default root object for your distribution
 
@@ -37,23 +36,21 @@ root object can be in a folder instead of at the root level.
     to.
 
 The file can be any type supported by CloudFront. For a list of constraints on
-    the file name, see the `DefaultRootObject` element in [DistributionConfig](../../../../reference/cloudfront/latest/apireference/api-distributionconfig.md) of the
-    _Amazon CloudFront API Reference_.
+    the file name, see the `DefaultRootObject` element in [DistributionConfig](../../../../reference/cloudfront/latest/apireference/api-distributionconfig.md) of the _Amazon CloudFront API Reference_.
 
 ###### Note
 
 If the file name of the default root object is too long or contains an
 invalid character, CloudFront returns the error `HTTP 400 Bad Request -
-   								InvalidDefaultRootObject`. In addition, CloudFront caches the code
-for 10 seconds (by default) and writes the results to the access
-logs.
+   							InvalidDefaultRootObject`. In addition, CloudFront caches the code for
+10 seconds (by default) and writes the results to the access logs.
 
 2. Confirm that the permissions for the object grant CloudFront at least read
     access.
 
 For more information about Amazon S3 permissions, see [Identity and\
-    access management in Amazon S3](../../../s3/latest/userguide/s3-access-control.md) in the
-    _Amazon Simple Storage Service User Guide_.
+    access management in Amazon S3](../../../s3/latest/userguide/s3-access-control.md) in the _Amazon Simple Storage Service User Guide_
+    .
 
 3. Update your distribution to refer to the default root object by using the
     CloudFront console or the CloudFront API.
@@ -66,33 +63,28 @@ To specify a default root object by using the CloudFront console:
 2. In the list of distributions in the top pane, select the
        distribution to update.
 
-3. In the **Settings** pane, on the
-       **General** tab, choose
-       **Edit**.
+3. In the **Settings** pane, on the **General** tab, choose **Edit**.
 
-4. In the **Edit settings** dialog box, in the
-       **Default root object** field, enter the file
-       name or path to the default root object.
+4. In the **Edit settings** dialog box, in the **Default**
+      **root object** field, enter the file name or path to the
+       default root object.
 
       ###### Tip
 
       Your string can't begin with a forward slash ( `/`).
       Only specify the object name or the path to the object. For
-      example, use `index.html` or
-      `exampleFolderName/index.html`.
-      Specifying a
-      `/exampleFolderName/index.html`
-      or `/index.html` can
-      lead to a [403 Access\
+      example, use `index.html` or `
+      									exampleFolderName/index.html`.
+      Specifying a `/
+      									exampleFolderName/index.html` or `
+      									/index.html` can lead to a [403 Access\
       Denied error](http-403-permission-denied.md).
 
 5. Choose **Save changes**.
 
-To update your configuration using the CloudFront API, specify a value for the
-`DefaultRootObject` element in your distribution. For
-information about using the CloudFront API to specify a default root object, see
-[UpdateDistribution](../../../../reference/cloudfront/latest/apireference/api-updatedistribution.md) in the
-_Amazon CloudFront API Reference_.
+To update your configuration using the CloudFront API, specify a value for the `
+						DefaultRootObject` element in your distribution. For information about
+using the CloudFront API to specify a default root object, see [UpdateDistribution](../../../../reference/cloudfront/latest/apireference/api-updatedistribution.md) in the _Amazon CloudFront API Reference_.
 
 4. Confirm that you have enabled the default root object by requesting your
     root URL. If your browser doesn't display the default root object, perform
@@ -127,30 +119,27 @@ Returns:
 
 ###### Note
 
-CloudFront does not determine whether a URL with multiple trailing slashes
-( `https://d111111abcdef8.cloudfront.net///`) is equivalent to
-`https://d111111abcdef8.cloudfront.net/`. Your origin server makes that
-comparison.
+CloudFront does not determine whether a URL with multiple trailing slashes ( `
+					https://d111111abcdef8.cloudfront.net///`) is equivalent to `
+					https://d111111abcdef8.cloudfront.net/`. Your origin server makes that comparison.
 
 If you define a default root object, an end-user request for a subdirectory of
-your distribution does not return the default root object. For example, suppose
-`index.html` is your default root object and that CloudFront receives an
-end-user request for the `install` directory under your CloudFront
-distribution:
+your distribution does not return the default root object. For example, suppose `
+				index.html` is your default root object and that CloudFront receives an end-user
+request for the `install` directory under your CloudFront distribution:
 
 `https://d111111abcdef8.cloudfront.net/install/`
 
-CloudFront does not return the default root object even if a copy of
-`index.html` appears in the `install` directory. However,
-if you specified a _path_ to your default root object,
-( `install/index.html`)CloudFront will return the default root
-object for end-user requests for the `install` directory
+CloudFront does not return the default root object even if a copy of `index.html`
+appears in the `install` directory. However, if you specified a _path_ to your default root object, ( `install/index.html`)CloudFront
+will return the default root object for end-user requests for the `install`
+directory
 
 If you configure your distribution to allow all of the HTTP methods that CloudFront
 supports, the default root object applies to all methods. For example, if your
-default root object is index.php and you write your application to submit a
-`POST` request to the root of your domain (https://example.com), CloudFront
-sends the request to https://example.com/index.php.
+default root object is index.php and you write your application to submit a `
+				POST` request to the root of your domain (https://example.com), CloudFront sends the
+request to https://example.com/index.php.
 
 The behavior of CloudFront default root objects is different from the behavior of Amazon S3
 index documents. When you configure an Amazon S3 bucket as a website and specify the
@@ -158,8 +147,7 @@ index document, Amazon S3 returns the index document even if a user requests a
 subdirectory in the bucket. (A copy of the index document must appear in every
 subdirectory.) For more information about configuring Amazon S3 buckets as websites and
 about index documents, see the [Hosting\
-Websites on Amazon S3](../../../s3/latest/userguide/websitehosting.md) chapter in the
-_Amazon Simple Storage Service User Guide_.
+Websites on Amazon S3](../../../s3/latest/userguide/websitehosting.md) chapter in the _Amazon Simple Storage Service User Guide_.
 
 ###### Important
 
@@ -181,8 +169,7 @@ visible to anyone who uses CloudFront to access your distribution:
 - Your bucket is not properly configured.
 
 - The Amazon S3 permissions on the bucket associated with your
-distribution and on the objects in the bucket grant access to
-_everyone_.
+distribution and on the objects in the bucket grant access to _everyone_.
 
 - An end user accesses your origin using your origin root URL.
 

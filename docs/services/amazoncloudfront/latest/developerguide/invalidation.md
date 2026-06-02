@@ -17,13 +17,15 @@ different name. For more information, see [Update existing files using versioned
 
 - [Choose between invalidating files and using versioned file names](#Invalidation_Expiration)
 
-- [Determine which files to invalidate](invalidation-access-logs.md)
+- [Determine which paths to invalidate](invalidation-access-logs.md)
 
-- [What you need to know when invalidating files](invalidation-specifying-objects.md)
+- [What you need to know when invalidating paths](invalidation-specifying-objects.md)
+
+- [Invalidating content by cache tags](invalidation-by-tags.md)
+
+- [What you need to know when invalidating tags](invalidation-specifying-tags.md)
 
 - [Invalidate files](invalidation-requests.md)
-
-- [Concurrent invalidation request maximum](invalidationlimits.md)
 
 - [Pay for file invalidation](payingforinvalidation.md)
 
@@ -58,6 +60,6 @@ For more information about file versioning, see [Update existing files using ver
 
 Specify a default root object
 
-Determine which files to invalidate
+Determine which paths to invalidate
 
 All content copied from https://docs.aws.amazon.com/.

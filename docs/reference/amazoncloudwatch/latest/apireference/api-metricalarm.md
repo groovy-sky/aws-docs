@@ -146,12 +146,17 @@ Required: No
 
 **EvaluationState**
 
-If the value of this field is `PARTIAL_DATA`, it indicates that not all the available data was able to be retrieved due to quota limitations. For more information, see [Create\
+If the value of this field is `PARTIAL_DATA`, it indicates that not all the
+available data was able to be retrieved due to quota limitations. For more information,
+see [Create\
 alarms on Metrics Insights queries](../../../../services/amazoncloudwatch/latest/monitoring/create-metrics-insights-alarm.md).
 
-If the value of this field is `EVALUATION_ERROR`, it indicates configuration errors in alarm setup that require review and correction. Refer to StateReason field of the alarm for more details.
+If the value of this field is `EVALUATION_ERROR`, it indicates
+configuration errors in alarm setup that require review and correction. Refer to
+StateReason field of the alarm for more details.
 
-If the value of this field is `EVALUATION_FAILURE`, it indicates temporary CloudWatch issues. We recommend manual monitoring until the issue is resolved
+If the value of this field is `EVALUATION_FAILURE`, it indicates temporary
+CloudWatch issues. We recommend manual monitoring until the issue is resolved
 
 Type: String
 

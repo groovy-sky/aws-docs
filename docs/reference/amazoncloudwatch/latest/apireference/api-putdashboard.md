@@ -31,7 +31,7 @@ CloudFormation template used to create the dashboard.
 The detailed information about the dashboard in JSON format, including the widgets
 to include and their location on the dashboard. This parameter is required.
 
-For more information about the syntax, see [Dashboard Body Structure and Syntax](cloudwatch-dashboard-body-structure.md).
+For more information about the syntax, see [Dashboard Body Structure and Syntax](../../../../services/amazoncloudwatch/latest/monitoring/cloudwatch-dashboard-body-structure.md).
 
 Type: String
 
@@ -47,6 +47,24 @@ created. The maximum length is 255, and valid characters are A-Z, a-z, 0-9, "-",
 Type: String
 
 Required: Yes
+
+**Tags**
+
+A list of key-value pairs to associate with the dashboard. You can associate as many
+as 50 tags with a dashboard.
+
+Tags can help you organize and categorize your dashboards. You can also use them to
+scope user permissions by granting a user permission to access or change only dashboards
+with certain tag values.
+
+You can use this parameter only when creating a new dashboard. If you specify
+`Tags` when updating an existing dashboard, the tag updates are ignored.
+To add or update tags on an existing dashboard, use [TagResource](api-tagresource.md).
+To remove tags, use [UntagResource](api-untagresource.md).
+
+Type: Array of [Tag](api-tag.md) objects
+
+Required: No
 
 ## Response Elements
 

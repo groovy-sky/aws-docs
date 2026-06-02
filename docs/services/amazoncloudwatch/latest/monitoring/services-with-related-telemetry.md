@@ -277,7 +277,7 @@ No
 
 Yes
 
-Amazon Connect
+Amazon Connect Customer
 
 `AWS::Connect::Instance`
 

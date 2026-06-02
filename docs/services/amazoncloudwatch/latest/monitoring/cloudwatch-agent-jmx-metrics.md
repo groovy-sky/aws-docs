@@ -34,10 +34,9 @@ Amazon EKS
 
 ###### To enable JMX on your Java application pods
 
-When using the CloudWatch Observability EKS add-on, you can manage how JMX metrics
-are enabled with annotations. For more information, see [Install the CloudWatch agent with the Amazon CloudWatch Observability EKS add-on or the Helm chart](install-cloudwatch-observability-eks-addon.md). To enable JMX
-metrics collection from a workload, add the following annotations to the workload
-manifest file under the `PodTemplate` section:
+When using the CloudWatch Observability EKS add-on, add the following annotations
+to the workload manifest file under the `PodTemplate` section to
+enable JMX metrics collection:
 
 - `instrumentation.opentelemetry.io/inject-java: "true"`
 
@@ -60,9 +59,16 @@ manifest file under the `PodTemplate` section:
 - For Tomcat metrics: `cloudwatch.aws.amazon.com/inject-jmx-tomcat:
                             "true"`
 
+You must also configure a `jmx` section in the CloudWatch agent
+configuration as described below. For more information about providing a custom
+agent configuration with the EKS add-on, see [Use a custom CloudWatch agent configuration](install-cloudwatch-observability-eks-addon.md#CloudWatch-Observability-EKS-addon-CustomAgentConfig).
+
+###### Fields common to Amazon EC2 and Amazon EKS
+
 To start collecting JMX metrics, add a `jmx` section inside the
 `metrics_collected` section of the CloudWatch agent configuration file. The
-`jmx` section can contain the following fields.
+`jmx` section must include at least one of the following target
+subsections.
 
 - `jvm` – Optional. Specifies that you want to retrieve Java
 Virtual Machine (JVM) metrics from the instance. For more information, see [Collect JVM metrics](#CloudWatch-Agent-JVM-metrics).
@@ -109,7 +115,7 @@ Apache Kafka consumer metrics from the instance. For more information, see [Coll
 
 This section can include the following fields:
 
-- `measurement` – Specifies the array of Kafka broker metrics
+- `measurement` – Specifies the array of Kafka consumer metrics
 to be collected. For a list of the possible values to use here, see the
 **Metric** column in the second metrics table in [Collect Kafka metrics](#CloudWatch-Agent-Kafka-metrics).
 
@@ -129,7 +135,7 @@ Apache Kafka producer metrics from the instance. For more information, see [Coll
 
 This section can include the following fields:
 
-- `measurement` – Specifies the array of Kafka broker metrics
+- `measurement` – Specifies the array of Kafka producer metrics
 to be collected. For a list of the possible values to use here, see the
 **Metric** column in the third metrics table in [Collect Kafka metrics](#CloudWatch-Agent-Kafka-metrics).
 
@@ -144,7 +150,7 @@ overriding the default unit for the metric. The unit that you specify must be
 a valid CloudWatch metric unit, as listed in the `Unit` description in
 [MetricDatum](../../../../reference/amazoncloudwatch/latest/apireference/api-metricdatum.md).
 
-- `tomcat` – Optional. Specifies that you want to retrieve Tomcat
+- `tomcat` – Optional. Specifies that you want to retrieve Apache Tomcat
 metrics from the instance. For more information, see [Collect Tomcat metrics](#CloudWatch-Agent-Tomcat-metrics).
 
 This section can include the following fields:
@@ -172,10 +178,13 @@ only the process metrics. If you specify this field, it's used in addition to
 dimensions specified in the `append_dimensions` field that is used for all
 types of metrics collected by the agent.
 
-###### The following fields are for Amazon EC2 only.
+###### Fields only on Amazon EC2
+
+The following fields apply only when running the CloudWatch agent on Amazon EC2
+instances.
 
 - `endpoint` – The address for the JMX client to connect to. The
-format is `ip:port`. If the endpoint is not the localhost, and password
+format is `ip:port`. If the endpoint is not localhost, both password
 authentication and SSL must be enabled.
 
 - `metrics_collection_interval` – Optional. Specifies how often to
@@ -235,8 +244,9 @@ of: `SASL/PLAIN`, `SASL/DIGEST-MD5`,
 enabled. Set to true if the JVM was configured with
 `com.sun.management.jmxremote.registry.ssl=true`.
 
-- `insecure` Set to `true` to opt out of the validation
-required if the agent is configured for a non-localhost endpoint.
+- `insecure` – Optional. Set to `true` to opt out of
+the validation required if the agent is configured for a non-localhost
+endpoint.
 
 The following is an example of the `jmx` section of the CloudWatch agent
 configuration file.
@@ -1048,8 +1058,8 @@ The Kafka topic.
 ## Collect Tomcat metrics
 
 You can use the CloudWatch agent to collect Apache Tomcat metrics. To set this up, add a
-`tomcat` section inside the `metrics_collected` section of the
-CloudWatch agent configuration file.
+`tomcat` section inside the `jmx` section of the CloudWatch
+agent configuration file.
 
 The following metrics can be collected.
 

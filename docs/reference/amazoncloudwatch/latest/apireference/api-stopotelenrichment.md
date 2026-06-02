@@ -4,10 +4,9 @@ title: "StopOTelEnrichment"
 
 # StopOTelEnrichment
 
-Disables enrichment and PromQL access for CloudWatch vended metrics for
-[supported AWS resources](../../../../services/amazoncloudwatch/latest/monitoring/usingresourcetagsfortelemetry.md) in the account. After disabling, these metrics
-are no longer enriched with resource ARN and resource tag labels, and cannot be
-queried using PromQL.
+Disables enrichment and PromQL access for CloudWatch vended metrics for [supported AWS resources](../../../../services/amazoncloudwatch/latest/monitoring/usingresourcetagsfortelemetry.md) in the account. After disabling,
+these metrics are no longer enriched with resource ARN and resource tag labels, and
+cannot be queried using PromQL.
 
 ## Errors
 

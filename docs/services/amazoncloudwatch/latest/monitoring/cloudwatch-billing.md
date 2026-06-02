@@ -99,6 +99,12 @@ _Embedded metrics_
 
 `MetricMonitorUsage`
 
+_OpenTelemetry metrics_
+
+`OTEL:Values`
+
+`OTEL:Bytes`
+
 **CloudWatch API requests**_API requests_
 
 `Requests`
@@ -321,6 +327,8 @@ WHEN line_item_usage_type LIKE '%%MetricInsightAlarmUsage%%' THEN 'Alarms (Metri
 WHEN line_item_usage_type LIKE '%%CompositeAlarmMonitorUsage%%' THEN 'Alarms (Composite)'
 -- Container Insights with enhanced observability
 WHEN (line_item_usage_type LIKE '%%MetricsUsage%%' OR line_item_usage_type LIKE '%%ObservationUsage%%') THEN 'Container Insights (Enhanced Observability)'
+-- OpenTelemetry metrics
+WHEN line_item_usage_type LIKE '%%CW:OTEL%%' THEN 'OpenTelemetry Metrics'
 -- Database Insights
 WHEN line_item_usage_type LIKE '%%DatabaseInsights%%' THEN 'Database Insights'
 -- Logs
@@ -1018,7 +1026,7 @@ _Amazon EKS_
 
 `ObservationUsage`
 
-`ObservationCount:CI-EKScode`
+`ObservationCount:CI-EKS`
 
 _Container Insights with enhanced observability for_
 _Amazon ECS_

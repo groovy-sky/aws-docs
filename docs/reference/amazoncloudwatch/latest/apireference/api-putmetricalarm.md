@@ -5,8 +5,8 @@ title: "PutMetricAlarm"
 # PutMetricAlarm
 
 Creates or updates an alarm and associates it with the specified metric, metric
-math expression, anomaly detection model, Metrics Insights query, or PromQL query. For more
-information about using a Metrics Insights query for an alarm, see [Create\
+math expression, anomaly detection model, Metrics Insights query, or PromQL query. For
+more information about using a Metrics Insights query for an alarm, see [Create\
 alarms on Metrics Insights queries](../../../../services/amazoncloudwatch/latest/monitoring/create-metrics-insights-alarm.md).
 
 Alarms based on anomaly detection models cannot have Auto Scaling actions.
@@ -121,7 +121,8 @@ values:
 - `arn:aws:ssm-incidents::account-id:responseplan/response-plan-name
                           `
 
-**Start a Amazon Q Developer operational investigation**
+**Start a Amazon Q Developer operational**
+**investigation**
 
 `arn:aws:aiops:region:account-id:investigation-group:investigation-group-id
                   `
@@ -223,8 +224,8 @@ If you use the `EvaluationCriteria` parameter, you cannot include the
 `ExtendedStatistic`, `Metrics`, `Threshold`,
 `ComparisonOperator`, `ThresholdMetricId`,
 `EvaluationPeriods`, or `DatapointsToAlarm` parameters of
-`PutMetricAlarm` in the same operation. Instead, all evaluation parameters
-are defined within this structure.
+`PutMetricAlarm` in the same operation. Instead, all evaluation
+parameters are defined within this structure.
 
 For an example of how to use this parameter, see the **PromQL**
 **alarm** example on this page.
@@ -404,10 +405,10 @@ in the array. For more information, see [MetricDataQuery](api-metricdataquery.md
 
 If you use the `Metrics` parameter, you cannot include the
 `Namespace`, `MetricName`, `Dimensions`,
-`Period`, `Unit`, `Statistic`,
-or `ExtendedStatistic` parameters of `PutMetricAlarm`
-in the same operation. Instead, you retrieve the metrics you are using in your
-math expression as part of the `Metrics` array.
+`Period`, `Unit`, `Statistic`, or
+`ExtendedStatistic` parameters of `PutMetricAlarm` in the same
+operation. Instead, you retrieve the metrics you are using in your math expression as
+part of the `Metrics` array.
 
 Type: Array of [MetricDataQuery](api-metricdataquery.md) objects
 
@@ -493,8 +494,8 @@ Required: No
 **Period**
 
 The length, in seconds, used each time the metric specified in
-`MetricName` is evaluated. Valid values are 10, 20, 30, and any multiple of
-60.
+`MetricName` is evaluated. Valid values are 10, 20, 30, and any multiple
+of 60.
 
 `Period` is required for alarms based on static thresholds. If you are
 creating an alarm based on a metric math expression, you specify the period for each
@@ -502,17 +503,18 @@ metric within the objects in the `Metrics` array.
 
 Be sure to specify 10, 20, or 30 only for metrics that are stored by a
 `PutMetricData` call with a `StorageResolution` of 1. If you
-specify a period of 10, 20, or 30 for a metric that does not have sub-minute resolution, the
-alarm still attempts to gather data at the period rate that you specify. In this case,
-it does not receive data for the attempts that do not correspond to a one-minute data
-resolution, and the alarm might often lapse into INSUFFICENT\_DATA status. Specifying 10, 20,
-or 30 also sets this alarm as a high-resolution alarm, which has a higher charge than
-other alarms. For more information about pricing, see [Amazon CloudWatch\
+specify a period of 10, 20, or 30 for a metric that does not have sub-minute resolution,
+the alarm still attempts to gather data at the period rate that you specify. In this
+case, it does not receive data for the attempts that do not correspond to a one-minute
+data resolution, and the alarm might often lapse into INSUFFICENT\_DATA status.
+Specifying 10, 20, or 30 also sets this alarm as a high-resolution alarm, which has a
+higher charge than other alarms. For more information about pricing, see [Amazon CloudWatch\
 Pricing](https://aws.amazon.com/cloudwatch/pricing).
 
 An alarm's total current evaluation period can be no longer than seven days, so
 `Period` multiplied by `EvaluationPeriods` can't be more than
-604,800 seconds. For alarms with a period of less than one hour (3,600 seconds), the total evaluation period can't be longer than one day (86,400 seconds).
+604,800 seconds. For alarms with a period of less than one hour (3,600 seconds), the
+total evaluation period can't be longer than one day (86,400 seconds).
 
 Type: Integer
 
@@ -853,9 +855,9 @@ The following example sets an alarm on an Metrics Insights query.
 
 The following example creates an alarm based on a PromQL query. The alarm
 evaluates the PromQL query every 30 seconds and its contributors (matching
-series) transition to the ALARM state if they are continuously breaching for
-300 seconds (pending period). Contributors transition back to OK after they
-are no longer breaching for 120 seconds (recovery period).
+series) transition to the ALARM state if they are continuously breaching for 300
+seconds (pending period). Contributors transition back to OK after they are no
+longer breaching for 120 seconds (recovery period).
 
 #### Sample Request
 

@@ -154,11 +154,30 @@ number
 
 Natural log
 
+`round(a: number [, d: number])`
+
+number
+
+Rounds the value of
+`a`. With one argument,
+rounds to the nearest integer. With two
+arguments, rounds to `d`
+decimal places.
+
 `sqrt(a: number)`
 
 number
 
 Square root
+
+`haversine(lat1: number, lon1: number, lat2: number, lon2: number)`
+
+number
+
+Computes the great-circle distance in
+kilometers between two geographic points
+specified by latitude and longitude in
+degrees.
 
 ## Structure types
 
@@ -423,6 +442,16 @@ LogField
 
 Returns the first non-null value from the list
 
+`case(cond1, val1, cond2, val2, ...,
+                                                  [default])`
+
+LogField
+
+Evaluates conditions in order and returns the
+value for the first true condition. If no condition
+is true and a default is provided, returns the
+default. Supports up to 10 branches.
+
 ## JSON functions
 
 **JSON functions**
@@ -648,6 +677,17 @@ searches for log events where the field
 `smoke_test` and replaces the value
 with the string `Smoke`.
 
+`regex_replace(fieldName: string, pattern:
+                                                  string, replacement:
+                                            string)`
+
+string
+
+Replaces all substrings matching the regular
+expression `pattern` with
+`replacement`. Uses RE2 regex
+syntax.
+
 `strcontains(str: string, searchValue:
                                                   string)`
 
@@ -656,9 +696,49 @@ number
 Returns 1 if `str` contains
 `searchValue` and 0 otherwise.
 
+`startsWith(str: string, searchValue:
+                                                  string)`
+
+number
+
+Returns 1 if `str` starts with
+`searchValue` and 0 otherwise.
+
+`endsWith(str: string, searchValue:
+                                                  string)`
+
+number
+
+Returns 1 if `str` ends with
+`searchValue` and 0 otherwise.
+
+`urlencode(str: string)`
+
+string
+
+URL-encodes the string.
+
+`urldecode(str: string)`
+
+string
+
+URL-decodes the string.
+
+`base64encode(str: string)`
+
+string
+
+Base64-encodes the string.
+
+`base64decode(str: string)`
+
+string
+
+Base64-decodes the string.
+
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-lookup
+subqueries
 
 Fields that contain special characters
 

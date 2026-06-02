@@ -49,7 +49,7 @@ Key Topics:
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Changing the time range or time zone format
+Dashboard Body Structure and Syntax
 
 Concepts
 

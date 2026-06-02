@@ -44,7 +44,7 @@ https://amazoncloudwatch-agent- `us-east-1`.s3. `us-east-1`.amazonaws.com/amazon
 
 x86-64
 
-Centos
+CentOS
 
 https://amazoncloudwatch-agent.s3.amazonaws.com/centos/amd64/latest/amazon-cloudwatch-agent.rpm
 
@@ -56,7 +56,7 @@ https://amazoncloudwatch-agent- `us-east-1`.s3. `us-east-1`.amazonaws.com/centos
 
 x86-64
 
-Redhat
+Red Hat
 
 https://amazoncloudwatch-agent.s3.amazonaws.com/redhat/amd64/latest/amazon-cloudwatch-agent.rpm
 
@@ -152,7 +152,7 @@ https://amazoncloudwatch-agent- `us-east-1`.s3. `us-east-1`.amazonaws.com/amazon
 
 ARM64
 
-Redhat
+Red Hat
 
 https://amazoncloudwatch-agent.s3.amazonaws.com/redhat/arm64/latest/amazon-cloudwatch-agent.rpm
 

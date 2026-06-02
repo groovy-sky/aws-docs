@@ -53,7 +53,7 @@ following actions on Amazon EC2 instances:
 
 - `ec2:DescribeInstanceStatus`
 
-The **AWSServiceRoleForCloudWatchCrossAccount** service-linked
+The **ServiceRoleForCloudWatchCrossAccountV2** service
 role permissions policy allows CloudWatch to complete the following actions:
 
 - `sts:AssumeRole`
@@ -227,7 +227,8 @@ This policy grants permissions for:
 groups. It also includes permissions to enable logging configuration for EKS cluster logging,
 WAF put logging configuration, enabling NLB logs, Route53 Resolver query logging,
 Amazon EC2 detailed monitoring, Security Hub, Bedrock Agentcore Gateway,
-Bedrock Agentcore Memory, and CloudFront Distribution.
+Bedrock Agentcore Memory, CloudFront Distribution, MSK Cluster,
+OpenTelemetry Enrichment, and Bedrock Agentcore Workload Identity.
 
 - Resource tagging operations with the
 `CloudWatchTelemetryRuleManaged` tag for tracking managed
@@ -444,20 +445,20 @@ actions:
 
 - `ssm-incidents:StartIncident`
 
-## Service-linked role permissions for CloudWatch cross-account cross-Region
+## Service role permissions for CloudWatch cross-account cross-Region
 
-CloudWatch uses the service-linked role named
-**AWSServiceRoleForCloudWatchCrossAccount** – CloudWatch uses
+CloudWatch uses the service role named
+**ServiceRoleForCloudWatchCrossAccountV2** – CloudWatch uses
 this role to access CloudWatch data in other AWS accounts that you specify. The SLR only
 provides the assume role permission to allow the CloudWatch service to assume the role in
 the sharing account. It is the sharing role that provides access to data.
 
-The **AWSServiceRoleForCloudWatchCrossAccount** service-linked
+The **ServiceRoleForCloudWatchCrossAccountV2** service
 role permissions policy allows CloudWatch to complete the following actions:
 
 - `sts:AssumeRole`
 
-The **AWSServiceRoleForCloudWatchCrossAccount** service-linked
+The **ServiceRoleForCloudWatchCrossAccountV2** service
 role trusts the CloudWatch service to assume the role.
 
 ## Service-linked role permissions for CloudWatch database Performance Insights
@@ -549,7 +550,7 @@ you.
 
 When you first enable an account to be a monitoring account for cross-account
 cross-Region functionality, CloudWatch creates
-**AWSServiceRoleForCloudWatchCrossAccount** for you.
+**ServiceRoleForCloudWatchCrossAccountV2** for you.
 
 When you first create an alarm that uses the `DB_PERF_INSIGHTS` metric
 math function, CloudWatch creates
@@ -564,7 +565,7 @@ _IAM User Guide_.
 CloudWatch does not allow you to edit the
 **AWSServiceRoleForCloudWatchEvents**,
 **AWSServiceRoleForCloudWatchAlarms\_ActionSSM**,
-**AWSServiceRoleForCloudWatchCrossAccount**, or
+**ServiceRoleForCloudWatchCrossAccountV2**, or
 **AWSServiceRoleForCloudWatchMetrics\_DbPerfInsights** roles.
 After you create these roles, you cannot change their names because various entities
 might reference these roles. However, you can edit the description of these roles
@@ -770,6 +771,16 @@ began tracking these changes. For automatic alerts about changes to this page,
 subscribe to the RSS feed on the CloudWatch Document history page.
 
 ChangeDescriptionDate
+
+[AWSObservabilityAdminTelemetryEnablementServiceRolePolicy](#service-linked-role-telemetry-enablement)
+– Update to service-linked role policy.
+
+Updated information about the [AWSObservabilityAdminTelemetryEnablementServiceRolePolicy](#service-linked-role-telemetry-enablement)
+that grants CloudWatch the permissions necessary to enable and manage
+telemetry configurations for the additional AWS resources based on telemetry
+rules.
+
+April 30, 2026
 
 [AWSObservabilityAdminTelemetryEnablementServiceRolePolicy](#service-linked-role-telemetry-enablement)
 – Update to service-linked role policy.

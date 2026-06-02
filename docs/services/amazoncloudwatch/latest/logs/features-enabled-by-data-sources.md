@@ -12,7 +12,7 @@ provide interactive filtering and analysis without writing queries. CloudWatch L
 automatically creates facets for data source name and type, and you can create
 facet policies on discovered fields to accelerate troubleshooting. Facets
 display value distributions and counts in CloudWatch Logs Insights, making it easy to
-identify patterns through point-and-click exploration.
+identify patterns through point-and-choose exploration.
 
 - **Pipelines**: Create transformation pipelines
 that apply to all logs from a specific data source name and type. This allows
@@ -41,6 +41,6 @@ data.
 
 Data source discovery and management
 
-Supported AWS services for data sources
+Supported data sources
 
 All content copied from https://docs.aws.amazon.com/.

@@ -41,6 +41,8 @@ For detailed information on the AWS troubleshooting tool, see [Support Automatio
 
 - [I updated my agent configuration but don’t see the new metrics or logs in the CloudWatch console](#CloudWatch-Agent-troubleshooting-update-no-new-metrics)
 
+- [The CloudWatch agent is using the wrong credentials](#CloudWatch-Agent-troubleshooting-wrong-credentials)
+
 - [CloudWatch agent files and locations](#CloudWatch-Agent-files-and-locations)
 
 - [Finding information about CloudWatch agent versions](#CloudWatch-Agent-troubleshooting-agent-version)
@@ -239,6 +241,13 @@ stored the updated file on the local computer, enter the following command:
 
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -s -m ec2 -c file:configuration-file-path
 ```
+
+## The CloudWatch agent is using the wrong credentials
+
+If the CloudWatch agent is using unexpected credentials, the agent may be resolving
+credentials from a different source than you expect. The agent follows a credentials
+provider chain that differs from the AWS SDK in some cases. For more information, see
+[CloudWatch agent credentials preference](cloudwatch-agent-credentials-preference.md).
 
 ## CloudWatch agent files and locations
 

@@ -43,6 +43,6 @@ For more information about using this API in one of the language-specific AWS SD
 
 StatisticSet
 
-Dashboard Body Structure and Syntax
+Common Parameters
 
 All content copied from https://docs.aws.amazon.com/.

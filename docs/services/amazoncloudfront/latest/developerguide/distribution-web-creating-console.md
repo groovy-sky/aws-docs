@@ -96,7 +96,7 @@ Multi-tenant
      multi-tenant distribution. The name will appear as the value for the
      `Name` key. You can change this value later.
      You can add up to 50 tags for your multi-tenant distribution. For more
-     information, see [Tag a distribution](tagging.md) .
+     information, see [Tag a CloudFront resource](tagging.md) .
 
 05. (Optional) For **Wildcard certificate**, choose the AWS Certificate Manager (ACM)
      certificate that will cover all subdomains under the root
@@ -187,7 +187,7 @@ template.
      multi-tenant distribution ID from the list.
 
 05. For **Manage tags**, add up to 50 key-value
-     pairs for the distribution tenant. For more information, see [Tag a distribution](tagging.md).
+     pairs for the distribution tenant. For more information, see [Tag a CloudFront resource](tagging.md).
 
 06. Choose **Next**.
 
@@ -266,7 +266,7 @@ Standard
      standard distribution. The name will appear as the value for the
      `Name` key as a tag. You can change this value later.
      You can add up to 50 tags for your standard distribution. For more
-     information, see [Tag a distribution](tagging.md).
+     information, see [Tag a CloudFront resource](tagging.md).
 
 04. Choose **Single website or app**, **Next**.
 

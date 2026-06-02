@@ -32,7 +32,7 @@ The following topics provide more details for each of these destinations.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Enable logging from AWS services
+Supported log destinations
 
 Logs sent to CloudWatch Logs
 

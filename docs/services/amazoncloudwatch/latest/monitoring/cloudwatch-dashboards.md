@@ -108,6 +108,8 @@ to your favorites list](add-dashboard-to-favorites.md)
 
 - [Changing the time range or time zone format](change-dashboard-time-format.md)
 
+- [Dashboard Body Structure and Syntax](cloudwatch-dashboard-body-structure.md)
+
 ## Create a cross-account cross-Region dashboard programmatically
 
 You can use the AWS APIs and SDKs to create dashboards programmatically. For more information,

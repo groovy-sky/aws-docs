@@ -104,7 +104,7 @@ objects. This helps create a folder-like organization in your bucket.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Cross-service confused deputy prevention
+Enable logging from third-party sources
 
 Export log data to Amazon S3 using the console
 

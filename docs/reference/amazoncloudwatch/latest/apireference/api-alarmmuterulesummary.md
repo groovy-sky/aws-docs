@@ -4,7 +4,8 @@ title: "AlarmMuteRuleSummary"
 
 # AlarmMuteRuleSummary
 
-Summary information about an alarm mute rule, including its name, status, and configuration details.
+Summary information about an alarm mute rule, including its name, status, and
+configuration details.
 
 ## Contents
 
@@ -20,7 +21,8 @@ Required: No
 
 **ExpireDate**
 
-The date and time when the mute rule expires and is no longer evaluated. This field is only present if an expiration date was configured.
+The date and time when the mute rule expires and is no longer evaluated. This field
+is only present if an expiration date was configured.
 
 Type: Timestamp
 
@@ -36,7 +38,8 @@ Required: No
 
 **MuteType**
 
-Indicates whether the mute rule is one-time or recurring. Valid values are `ONE_TIME` or `RECURRING`.
+Indicates whether the mute rule is one-time or recurring. Valid values are
+`ONE_TIME` or `RECURRING`.
 
 Type: String
 
@@ -44,7 +47,8 @@ Required: No
 
 **Status**
 
-The current status of the alarm mute rule. Valid values are `SCHEDULED`, `ACTIVE`, or `EXPIRED`.
+The current status of the alarm mute rule. Valid values are `SCHEDULED`,
+`ACTIVE`, or `EXPIRED`.
 
 Type: String
 

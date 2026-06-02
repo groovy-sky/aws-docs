@@ -4,15 +4,14 @@ title: "StartOTelEnrichment"
 
 # StartOTelEnrichment
 
-Enables enrichment and PromQL access for CloudWatch vended metrics for
-[supported AWS resources](../../../../services/amazoncloudwatch/latest/monitoring/usingresourcetagsfortelemetry.md) in the account. Once enabled, metrics that
-contain a resource identifier dimension (for example, EC2
+Enables enrichment and PromQL access for CloudWatch vended metrics for [supported AWS resources](../../../../services/amazoncloudwatch/latest/monitoring/usingresourcetagsfortelemetry.md) in the account. Once enabled,
+metrics that contain a resource identifier dimension (for example, EC2
 `CPUUtilization` with an `InstanceId` dimension) are enriched
-with resource ARN and resource tag labels and become queryable using
-PromQL.
+with resource ARN and resource tag labels and become queryable using PromQL.
 
-Before calling this operation, you must enable resource tags on telemetry for
-your account. For more information, see [Enable resource tags on telemetry](../../../../services/amazoncloudwatch/latest/monitoring/enableresourcetagsontelemetry.md).
+Before calling this operation, you must enable resource tags on telemetry for your
+account. For more information, see [Enable\
+resource tags on telemetry](../../../../services/amazoncloudwatch/latest/monitoring/enableresourcetagsontelemetry.md).
 
 ## Errors
 

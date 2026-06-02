@@ -4,8 +4,8 @@ title: "EntityMetricData"
 
 # EntityMetricData
 
-A set of metrics that are associated with an entity, such as a specific service
-or resource. Contains the entity and the list of metric data associated with it.
+A set of metrics that are associated with an entity, such as a specific service or
+resource. Contains the entity and the list of metric data associated with it.
 
 ## Contents
 

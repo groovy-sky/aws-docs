@@ -4,6 +4,11 @@ title: "OpenTelemetry"
 
 # OpenTelemetry
 
+###### Tip
+
+To learn more about OpenTelemetry on CloudWatch, check out the
+[Cloud Operations Enablement workshop and event series](https://aws-experience.com/amer/smb/events/series/Cloud-Operations-Enablement).
+
 OpenTelemetry is an open-source observability framework that provides vendor-agnostic
 instrumentation for collecting metrics, logs, and traces from your applications. Amazon CloudWatch
 supports OpenTelemetry natively across all three signal types: metrics queryable with PromQL

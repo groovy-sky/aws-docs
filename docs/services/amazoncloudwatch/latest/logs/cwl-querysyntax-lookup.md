@@ -78,7 +78,7 @@ The following shows the format of this command.
 
 ```nohighlight
 
-lookup table lookup-field as log-field [,...] output-mode output-field[,...]
+lookup table match-fields output-mode output-field[,...]
 ```
 
 The command uses the following arguments:
@@ -86,17 +86,48 @@ The command uses the following arguments:
 - `table` – The
 name of the lookup table to use.
 
-- `lookup-field` –
-The field in the lookup table to match against.
+- `match-fields` –
+Specify one or more fields to match log events against the
+lookup table. You can use either of the following
+forms:
 
-- `log-field` – The
-field in your log events to match. The match is exact and
-case-sensitive.
+- `lookup-field as
+                                              log-field
+                                              [,...]` – Use `as` when the
+lookup table column name differs from the log event
+field name. For example,
+`ip_address as srcAddr` matches the
+`ip_address` column in the lookup table
+against the `srcAddr` field in your log
+events.
+
+- `lookup-field
+                                              [,...]` – When the log event field name
+is the same as the lookup table column name, you can
+omit `as` and specify the field name
+directly. For example, `department, role`
+matches both columns against log event fields with
+the same names.
+
+When multiple match fields are specified, a row in the
+lookup table must match all fields to produce a result (AND
+logic).
 
 - `output-mode` –
-Specify `OUTPUT` to add the output fields
-to the results. If a field with the same name already exists
-in the log event, it is overwritten.
+Specifies how output fields are added to the results. Use one
+of the following:
+
+- `OUTPUT` – Adds the output fields
+to the results. If a field with the same name already
+exists in the log event, it is overwritten with the
+lookup table value. If no match is found, the field is
+set to null.
+
+- `OUTPUTNEW` – Adds the output
+fields to the results only if the field does not
+already exist in the log event. If the field already
+has a value, the original value is kept. If no match
+is found, the field is left unchanged.
 
 - `output-field` –
 One or more fields from the lookup table to add to the
@@ -144,10 +175,50 @@ fields user_id, action
 | filter department = "Engineering"
 ```
 
+###### Example: Use OUTPUTNEW to enrich without overwriting
+
+If your log events already contain a `hostname`
+field but it's sometimes empty, use `OUTPUTNEW` to
+fill in missing values without overwriting existing ones.
+
+```nohighlight
+
+fields srcAddr, hostname
+| lookup known_hosts ip_address as srcAddr OUTPUTNEW hostname, region
+```
+
+###### Example: Use lookup with multiple match fields
+
+You can match on more than one field. The following query
+matches both `srcAddr` and `dstPort`
+against the lookup table to identify known network
+services.
+
+```nohighlight
+
+fields @timestamp, srcAddr, dstAddr, dstPort
+| lookup network_services ip_address as srcAddr, port as dstPort OUTPUT service_name, owner
+| filter ispresent(service_name)
+```
+
+###### Example: Use lookup with matching field names
+
+When your log event field names match the lookup table column
+names exactly, you can omit the `as` keyword. The
+following query matches both `department` and
+`role` fields directly against the lookup
+table.
+
+```nohighlight
+
+fields @timestamp, department, role
+| lookup employees department, role OUTPUT office, manager
+```
+
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 unnest
 
-Boolean, comparison, numeric, datetime, and other functions
+join
 
 All content copied from https://docs.aws.amazon.com/.

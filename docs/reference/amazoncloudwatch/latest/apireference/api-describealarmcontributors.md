@@ -4,7 +4,9 @@ title: "DescribeAlarmContributors"
 
 # DescribeAlarmContributors
 
-Returns the information of the current alarm contributors that are in `ALARM` state. This operation returns details about the individual time series that contribute to the alarm's state.
+Returns the information of the current alarm contributors that are in
+`ALARM` state. This operation returns details about the individual time
+series that contribute to the alarm's state.
 
 ## Request Parameters
 
@@ -20,7 +22,8 @@ Required: Yes
 
 **NextToken**
 
-The token returned by a previous call to indicate that there is more data available.
+The token returned by a previous call to indicate that there is more data
+available.
 
 Type: String
 
@@ -32,7 +35,8 @@ The following elements are returned by the service.
 
 **AlarmContributors**
 
-A list of alarm contributors that provide details about the individual time series contributing to the alarm's state.
+A list of alarm contributors that provide details about the individual time series
+contributing to the alarm's state.
 
 Type: Array of [AlarmContributor](api-alarmcontributor.md) objects
 

@@ -6,19 +6,24 @@ title: "ListAlarmMuteRules"
 
 Lists alarm mute rules in your AWS account and region.
 
-You can filter the results by alarm name to find all mute rules targeting a specific alarm, or by status to find rules that are scheduled, active, or expired.
+You can filter the results by alarm name to find all mute rules targeting a specific
+alarm, or by status to find rules that are scheduled, active, or expired.
 
-This operation supports pagination for accounts with many mute rules. Use the `MaxRecords` and `NextToken` parameters to retrieve results in multiple calls.
+This operation supports pagination for accounts with many mute rules. Use the
+`MaxRecords` and `NextToken` parameters to retrieve results in
+multiple calls.
 
 **Permissions**
 
-To list mute rules, you need the `cloudwatch:ListAlarmMuteRules` permission.
+To list mute rules, you need the `cloudwatch:ListAlarmMuteRules`
+permission.
 
 ## Request Parameters
 
 **AlarmName**
 
-Filter results to show only mute rules that target the specified alarm name.
+Filter results to show only mute rules that target the specified alarm
+name.
 
 Type: String
 
@@ -28,7 +33,8 @@ Required: No
 
 **MaxRecords**
 
-The maximum number of mute rules to return in one call. The default is 50.
+The maximum number of mute rules to return in one call. The default is
+50.
 
 Type: Integer
 
@@ -38,7 +44,8 @@ Required: No
 
 **NextToken**
 
-The token returned from a previous call to indicate where to continue retrieving results.
+The token returned from a previous call to indicate where to continue retrieving
+results.
 
 Type: String
 
@@ -46,7 +53,8 @@ Required: No
 
 **Statuses**
 
-Filter results to show only mute rules with the specified statuses. Valid values are `SCHEDULED`, `ACTIVE`, or `EXPIRED`.
+Filter results to show only mute rules with the specified statuses. Valid values
+are `SCHEDULED`, `ACTIVE`, or `EXPIRED`.
 
 Type: Array of strings
 
@@ -66,7 +74,8 @@ Type: Array of [AlarmMuteRuleSummary](api-alarmmuterulesummary.md) objects
 
 **NextToken**
 
-The token to use when requesting the next set of results. If this field is absent, there are no more results to retrieve.
+The token to use when requesting the next set of results. If this field is absent,
+there are no more results to retrieve.
 
 Type: String
 

@@ -75,7 +75,7 @@ you to group the metrics into logical applications for easier focus and manageme
 
 The following image is an example of the dashboard for this solution.
 
-![Kafka cluster dashboard showing metrics for partitions, producer/consumer performance, and broker status.](https://docs.aws.amazon.com/images/AmazonCloudWatch/latest/monitoring/images/KafkaDashboard.png)
+![Kafka monitoring dashboard showing cluster metrics, producer group performance, and consumer group statistics.](https://docs.aws.amazon.com/images/AmazonCloudWatch/latest/monitoring/images/KafkaDashboard.png)
 
 ## Costs
 

@@ -19,26 +19,23 @@ the necessary permissions.
 
 1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam).
 
-2. In the navigation pane, choose **Roles** and then
-    **Create role**.
+2. In the navigation pane, choose **Roles**.
 
-3. Make sure that **AWS service** is selected under
-    **Trusted entity type**.
+3. Choose **Create role**.
 
-4. For **Use case**, choose **EC2** under
-    **Common use cases**.
+4. Under **Trusted entity type**, verify that **AWS**
+**service** is selected. For **Use case**, choose
+    **EC2**. Choose **Next**.
 
-5. Choose **Next**.
-
-6. In the list of policies, select the check box next to
+5. In the list of policies, select the check box next to
     **CloudWatchAgentServerPolicy**. If necessary, use the search box
     to find the policy.
 
-7. Choose **Next**.
+6. Choose **Next**.
 
-8. In **Role name**, enter a name for the role, such as
-    `CloudWatchAgentServerRole`. Optionally give it a description. Then
-    choose **Create role**.
+7. For **Role name**, enter a name for the role, such as
+    `CloudWatchAgentServerRole`. Choose **Create**
+**role**.
 
 (Optional) If the agent is going to send logs to CloudWatch Logs and you want the agent to
 be able to set retention policies for these log groups, you need to add the
@@ -56,40 +53,34 @@ credentials, which presents a security risk. To help mitigate this risk, we reco
 that you provide these users with only the permissions they require to perform the task
 and that you remove these users when they are no longer needed.
 
-01. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam).
+1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam).
 
-02. In the navigation pane, choose **Users** and then **Add**
-    **users**.
+2. In the navigation pane, choose **Users** and then **Add**
+**users**.
 
-03. Enter the user name for the new user.
+3. Enter the user name for the new user. Select **Access key - Programmatic**
+**access** and choose **Next: Permissions**.
 
-04. Select **Access key - Programmatic access** and choose
-     **Next: Permissions**.
+4. Choose **Attach existing policies directly**.
 
-05. Choose **Attach existing policies directly**.
+5. In the list of policies, select the check box next to
+    **CloudWatchAgentServerPolicy**. If necessary, use the search box
+    to find the policy. Choose **Next: Tags**.
 
-06. In the list of policies, select the check box next to
-     **CloudWatchAgentServerPolicy**. If necessary, use the search box
-     to find the policy.
+6. (Optional) Create tags for the new IAM user. Choose **Next:**
+**Review**. Confirm that the correct policy is listed and choose
+    **Create user**.
 
-07. Choose **Next: Tags**.
+7. Next to the name of the new user, choose **Show**. Copy the
+    access key and secret key to a file so that you can use them when installing the
+    agent. Choose **Close**.
 
-08. Optionally create tags for the new IAM, and then choose **Next:**
-    **Review**.
+### Attach an IAM role to an Amazon EC2 instance
 
-09. Confirm that the correct policy is listed, and choose **Create**
-    **user**.
+To enable the CloudWatch agent to send data from an Amazon EC2 instance, you must attach the
+IAM role you created to the instance.
 
-10. Next to the name of the new user, choose **Show**. Copy the
-     access key and secret key to a file so that you can use them when installing the
-     agent. Choose **Close**.
-
-### Attaching an IAM role to an Amazon EC2 instance
-
-To enable the CloudWatch agent to send data from an Amazon EC2 instance, you must attach the IAM
-role you created to the instance.
-
-For more information on attaching an IAM role to an instance, see [Attaching an IAM Role to an Instance](../../../ec2/latest/windowsguide/iam-roles-for-amazon-ec2.md#attach-iam-role) in the Amazon Elastic Compute Cloud User Guide.
+For more information about attaching an IAM role to an instance, see [Attaching an IAM Role to an Instance](../../../ec2/latest/windowsguide/iam-roles-for-amazon-ec2.md#attach-iam-role) in the Amazon Elastic Compute Cloud User Guide.
 
 ### Allowing the CloudWatch agent to set log retention policy
 
@@ -99,13 +90,13 @@ sends log events to. If you do this, you must grant the
 agent uses an IAM role to run on Amazon EC2 instances, and uses an IAM user for on-premises
 servers.
 
-###### To grant the CloudWatch agent's IAM role permission to set log retention policies
+###### To grant log retention permissions to the agent's IAM role
 
 1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam).
 
 2. In the left navigation pane, choose **Roles**.
 
-3. In the search box, Type the beginning of the name of the CloudWatch agent's IAM role.
+3. In the search box, enter the beginning of the name of the CloudWatch agent's IAM role.
     You chose this name when you created the role. It might be named
     `CloudWatchAgentServerRole`.
 
@@ -139,13 +130,13 @@ JSON
     `CloudWatchAgentPutLogsRetention` or something similar, and
     choose **Create policy**.
 
-###### To grant the CloudWatch agent's IAM user permission to set log retention policies
+###### To grant log retention permissions to the agent's IAM user
 
 1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam).
 
 2. In the left navigation pane, choose **Users**.
 
-3. In the search box, Type the beginning of the name of the CloudWatch agent's IAM user.
+3. In the search box, enter the beginning of the name of the CloudWatch agent's IAM user.
     You chose this name when you created the user.
 
 When you see the user, choose the name of the user.
@@ -184,7 +175,7 @@ JSON
 
 When the server is in a public subnet make sure there is access to an internet
 gateway. When the server is in a private subnet, access is through the NAT gateways or VPC
-Endpoint. For more information on NAT gateways, see [https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html](../../../vpc/latest/userguide/vpc-nat-gateway.md).
+Endpoint. For more information about NAT gateways, see [https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html](../../../vpc/latest/userguide/vpc-nat-gateway.md).
 
 Your Amazon EC2 instances must have outbound internet access to send data to CloudWatch or CloudWatch
 Logs. For more information about how to configure internet access, see [Internet\

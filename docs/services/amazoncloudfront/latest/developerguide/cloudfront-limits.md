@@ -9,14 +9,13 @@ You can request a CloudFront quota increase by using the following options:
 - You can use the Service Quotas console or the AWS Command Line Interface. For more information, see the
 following topics:
 
-- [Requesting a quota increase](../../../servicequotas/latest/userguide/request-quota-increase.md) in the
-_Service Quotas User Guide_
+- [Requesting\
+a quota increase](../../../servicequotas/latest/userguide/request-quota-increase.md) in the _Service Quotas User Guide_
 
-- [request-service-quota-increase](../../../cli/latest/reference/service-quotas/request-service-quota-increase.md) in the
-_AWS CLI Command Reference_
+- [request-service-quota-increase](../../../cli/latest/reference/service-quotas/request-service-quota-increase.md) in the _AWS CLI Command Reference_
 
-- If a CloudFront quota isn't available in Service Quotas, use the AWS Support Center Console to create a
-[service quota increase case](https://support.console.aws.amazon.com/support/home).
+- If a CloudFront quota isn't available in Service Quotas, use the AWS Support Center Console to create a [service\
+quota increase case](https://support.console.aws.amazon.com/support/home).
 
 CloudFront is subject to the following quotas.
 
@@ -142,8 +141,8 @@ For more information, see [Connection timeout](downloaddistvaluesorigin.md#origi
 
 Response timeout per origin
 
-This is also known as _origin read timeout_ or
-_origin request timeout_. For
+This is also known as _origin read timeout_
+or _origin request timeout_. For
 more information, see [Response timeout](downloaddistvaluesorigin.md#DownloadDistValuesOriginResponseTimeout).
 
 1-120 seconds
@@ -154,7 +153,7 @@ Keep-alive timeout per origin
 
 For more information, see [Keep-alive timeout (custom and VPC origins only)](downloaddistvaluesorigin.md#DownloadDistValuesOriginKeepaliveTimeout).
 
-1-120 seconds
+1-300 seconds
 
 [Request a higher quota](https://console.aws.amazon.com/support/home)
 
@@ -251,11 +250,13 @@ EntityDefault quota
 
 Custom cache policies per AWS account
 
-(Does not apply to [CloudFront managed cache policies](using-managed-cache-policies.md))
+(Does not apply to [CloudFront\
+managed cache policies](using-managed-cache-policies.md))
 
 20
 
-[Request a higher quota](https://console.aws.amazon.com/servicequotas/home/services/cloudfront/quotas/L-7D134442)
+[Request\
+a higher quota](https://console.aws.amazon.com/servicequotas/home/services/cloudfront/quotas/L-7D134442)
 
 Distributions associated with the same cache policy
 
@@ -427,8 +428,8 @@ Connection Functions per AWS account
 Maximum Connection Function size
 
 This quota isn't adjustable. To store additional data for your
-Connection Functions, create a key value store and add your key-value
-pairs. For more information, see [Amazon CloudFront KeyValueStore](kvs-with-functions.md).
+Connection Functions, create a key value store and add your
+key-value pairs. For more information, see [Amazon CloudFront KeyValueStore](kvs-with-functions.md).
 
 10 KB
 
@@ -493,13 +494,13 @@ your Lambda@Edge function can serve up to 10 requests per
 second. The total invocation limit is 10 times your
 concurrency limit.
 
-For more information, see the following topics in the
-_AWS Lambda Developer Guide_:
+For more information, see the following topics in the _AWS Lambda Developer Guide_:
 
 - [Understanding Lambda function\
 scaling](../../../lambda/latest/dg/scaling.md)
 
-- [Lambda API requests](../../../lambda/latest/dg/gettingstarted-limits.md#api-requests)
+- [Lambda\
+API requests](../../../lambda/latest/dg/gettingstarted-limits.md#api-requests)
 
 1,000 (in each AWS Region)
 
@@ -517,8 +518,8 @@ libraries
 Lambda@Edge requests per second (each supported
 AWS Region).
 
-For more information, see [Concurrency quotas](../../../lambda/latest/dg/lambda-concurrency.md#concurrency-quotas) in the
-_AWS Lambda Developer Guide_.
+For more information, see [Concurrency\
+quotas](../../../lambda/latest/dg/lambda-concurrency.md#concurrency-quotas) in the _AWS Lambda Developer Guide_.
 
 10,000
 
@@ -551,8 +552,7 @@ including headers and body
 
 - For a list of additional Lambda@Edge quotas that can be increased from
 Service Quotas, see [Amazon CloudFront\
-endpoints and quotas](../../../../general/latest/gr/cf-region.md#limits_cloudfront) in the
-_AWS General Reference_.
+endpoints and quotas](../../../../general/latest/gr/cf-region.md#limits_cloudfront) in the _AWS General Reference_.
 
 - In addition to these quotas, there are some other restrictions when using
 Lambda@Edge functions. For more information, see [Restrictions on Lambda@Edge](lambda-at-edge-function-restrictions.md).
@@ -587,19 +587,22 @@ AWS Certificate Manager (ACM) or upload to AWS Identity and Access Management (I
 
 EntityDefault quota
 
-File invalidation: maximum number of files allowed in active
-invalidation requests, excluding wildcard invalidations
+Number of paths or tags
 
-For more information, see [Invalidate files to remove content](invalidation.md).
+For more information, see [Invalidate files to remove content](invalidation.md) and [Invalidating content by cache tags](invalidation-by-tags.md).
 
-3,000
+150 paths or tags per second
 
-File invalidation: maximum number of active wildcard invalidations
-allowed
+Number of wildcard invalidations
 
-15
+1 wildcard invalidation per second
 
-File invalidation: maximum number of files that one wildcard
+Tag invalidation: maximum number of files that one tag based
+invalidation can process
+
+No quota
+
+Wildcard invalidation: maximum number of files that one wildcard
 invalidation can process
 
 No quota
@@ -790,7 +793,8 @@ value
 
 1,783 characters
 
-[Request a higher quota](https://console.aws.amazon.com/servicequotas/home/services/cloudfront/quotas/L-E9944CCE)
+[Request\
+a higher quota](https://console.aws.amazon.com/servicequotas/home/services/cloudfront/quotas/L-E9944CCE)
 
 Maximum length of a `CORS (Access-Control-Allow-Origin)`
 header value
@@ -856,8 +860,7 @@ For more information about multi-tenant distributions, see [Understand how multi
 
 ## Related information
 
-For more information, see [Amazon CloudFront endpoints and quotas](../../../../general/latest/gr/cf-region.md) in the
-_AWS General Reference_.
+For more information, see [Amazon CloudFront endpoints and quotas](../../../../general/latest/gr/cf-region.md) in the _AWS General Reference_.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

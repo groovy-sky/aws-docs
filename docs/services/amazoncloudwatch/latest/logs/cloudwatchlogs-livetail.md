@@ -190,7 +190,7 @@ match the filters, CloudWatch Logs might display only some matching events. If t
 the percentage of matching events that are displayed on screen is shown
 in **% displayed**.
 
-08. To pause the flow of events to investigate what is currently displayed, click anywhere
+08. To pause the flow of events to investigate what is currently displayed, choose anywhere
      in the events window.
 
 09. During the session, you can use the following to see more details about each log event.

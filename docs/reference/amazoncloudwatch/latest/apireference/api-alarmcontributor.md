@@ -4,13 +4,16 @@ title: "AlarmContributor"
 
 # AlarmContributor
 
-Represents an individual contributor to a multi-timeseries alarm, containing information about a specific time series and its contribution to the alarm's state.
+Represents an individual contributor to a multi-timeseries alarm, containing
+information about a specific time series and its contribution to the alarm's
+state.
 
 ## Contents
 
 **ContributorAttributes**
 
-A map of attributes that describe the contributor, such as metric dimensions and other identifying characteristics.
+A map of attributes that describe the contributor, such as metric dimensions and other
+identifying characteristics.
 
 Type: String to string map
 
@@ -34,7 +37,8 @@ Required: Yes
 
 **StateReason**
 
-An explanation for the contributor's current state, providing context about why it is in its current condition.
+An explanation for the contributor's current state, providing context about why it is
+in its current condition.
 
 Type: String
 

@@ -123,6 +123,6 @@ To see when your changes are propagated, view your distribution **Details** in t
 
 Test a distribution
 
-Tag a distribution
+Tag a CloudFront resource
 
 All content copied from https://docs.aws.amazon.com/.
