@@ -129,7 +129,7 @@ availability has the suffixes `-1` and
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Accessing CloudWatch metrics
+Accessing Prometheus metrics
 
 Metrics for RabbitMQ
 

@@ -193,7 +193,7 @@ is set to search the entire subtree under the node defined by `roleBase`.
 
 The following image highlights where to specify these optional settings.
 
-![Optional settings for LDAP attributes and search scope in role search matching.](https://docs.aws.amazon.com/images/amazon-mq/latest/developer-guide/images/amazon-mq-active-ldap-optional-settings.png)
+![Optional settings section with fields for User Role Name, Role Name, and checkboxes for subtree search.](https://docs.aws.amazon.com/images/amazon-mq/latest/developer-guide/images/amazon-mq-active-ldap-optional-settings.png)
 
 ## How LDAP integration works
 

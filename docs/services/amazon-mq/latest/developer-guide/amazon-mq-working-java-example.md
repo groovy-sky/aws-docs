@@ -35,7 +35,7 @@ To work with Amazon MQ programmatically, you must use inbound connections.
     protocols.
 
 4. In the **Details** section, under **Security and network**,
-    choose the name of your security group or ![Pencil icon indicating an edit or modification action.](https://docs.aws.amazon.com/images/amazon-mq/latest/developer-guide/images/amazon-mq-tutorials-broker-details-link.png).
+    choose the name of your security group or ![](https://docs.aws.amazon.com/images/amazon-mq/latest/developer-guide/images/amazon-mq-tutorials-broker-details-link.png).
 
 The **Security Groups** page of the EC2 Dashboard
     is displayed.

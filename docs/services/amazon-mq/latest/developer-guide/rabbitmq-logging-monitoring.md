@@ -4,9 +4,23 @@ title: "Available CloudWatch metrics for Amazon MQ for RabbitMQ brokers"
 
 # Available CloudWatch metrics for Amazon MQ for RabbitMQ brokers
 
+###### Warning
+
+Starting with RabbitMQ 4.2, `RabbitMQIOReadAverageTime` and `RabbitMQIOWriteAverageTime` are deprecated and will not publish meaningful values. These metrics will be removed from CloudWatch in the next major RabbitMQ release.
+
 ## RabbitMQ broker metrics
 
-MetricUnitDescription`ExchangeCount`CountThe total number of exchanges configured on the broker.`QueueCount`CountThe total number of queues configured on the broker.`ConnectionCount`CountThe total number of connections established on the broker.`ChannelCount`CountThe total number of channels established on the broker.`ConsumerCount`CountThe total number of consumers connected to the broker.`MessageCount`CountThe total number of messages in the queues.
+###### Note
+
+The management plugin is [not recommended for production or long-term monitoring by open source RabbitMQ](https://www.rabbitmq.com/docs/management). We recommend using Prometheus to query per-node metrics from RabbitMQ 4.2 onwards.
+
+MetricUnitDescription`ExchangeCount`CountThe total number of exchanges configured on the broker.`QueueCount`CountThe total number of queues configured on the broker.`ConnectionCount`CountThe total number of connections established on the broker.`ChannelCount`CountThe total number of channels established on the broker.
+
+###### Important
+
+The concept of channels is specific to AMQP 0-9-1.
+
+`ConsumerCount`CountThe total number of consumers connected to the broker.`MessageCount`CountThe total number of messages in the queues.
 
 ###### Note
 
@@ -17,16 +31,30 @@ broker.
 
 The number produced represents the number of messages per second at the time of sampling.
 
+###### Important
+
+This metric reflects only AMQP 0-9-1 protocol activity. For AMQP 1.0 metrics, see [Accessing Prometheus metrics](rabbitmq-prometheus-metrics.md).
+
 `ConfirmRate`CountThe rate at which the RabbitMQ server is confirming published messages. You can compare this metric with `PublishRate` to better understand
 how your broker is performing.
 
 The number produced represents the number of messages per second at the time of sampling.
 
+###### Important
+
+This metric reflects only AMQP 0-9-1 protocol activity. For AMQP 1.0 metrics, see [Accessing Prometheus metrics](rabbitmq-prometheus-metrics.md).
+
 `AckRate`CountThe rate at which messages are being acknowledged by consumers.
 
 The number produced represents the number of messages per second at the time of sampling.
 
-`SystemCpuUtilization`PercentThe percentage of allocated Amazon EC2 compute units that the broker currently uses. For cluster deployments, this value represents the aggregate of all three RabbitMQ nodes' corresponding metric values.`RabbitMQMemLimit`BytesThe RAM limit for a RabbitMQ broker. For cluster deployments, this value represents the aggregate of all three RabbitMQ nodes' corresponding metric values.`RabbitMQMemUsed`BytesThe volume of RAM used by a RabbitMQ broker. For cluster deployments, this value represents the aggregate of all three RabbitMQ nodes' corresponding metric values.`RabbitMQDiskFreeLimit`BytesThe disk limit for a RabbitMQ broker. For cluster deployments, this value represents the aggregate of all three RabbitMQ nodes' corresponding metric values. This metric is different per instance size. `RabbitMQDiskFree`BytesThe total volume of free disk space available in a RabbitMQ broker.
+###### Important
+
+This metric reflects only AMQP 0-9-1 protocol activity. For AMQP 1.0 metrics, see [Accessing Prometheus metrics](rabbitmq-prometheus-metrics.md).
+
+`SystemCpuUtilization`PercentThe percentage of allocated Amazon EC2 compute units that the broker currently uses. For cluster deployments, this value represents the aggregate of all three RabbitMQ nodes' corresponding metric values.`RabbitMQMemLimit`BytesThe RAM limit for a RabbitMQ broker. This metric varies depending on instance type. For more information, see
+[Memory and disk alarms](rmq-broker-instance-types.md#rabbitmq-memory-disk-thresholds). For cluster deployments, this value represents the aggregate of all three RabbitMQ nodes' corresponding metric values.`RabbitMQMemUsed`BytesThe volume of RAM used by a RabbitMQ broker. For cluster deployments, this value represents the aggregate of all three RabbitMQ nodes' corresponding metric values.`RabbitMQDiskFreeLimit`BytesThe disk limit for a RabbitMQ broker. For cluster deployments, this value represents the aggregate of all three RabbitMQ nodes' corresponding metric values. This metric varies depending on instance type and deployment mode. For more information, see
+[Memory and disk alarms](rmq-broker-instance-types.md#rabbitmq-memory-disk-thresholds).`RabbitMQDiskFree`BytesThe total volume of free disk space available in a RabbitMQ broker.
 When disk usage goes above its limit, the cluster will block all producer connections. For cluster deployments, this value represents the aggregate of all three RabbitMQ nodes' corresponding metric values.`RabbitMQFdUsed`CountNumber of file descriptors used. For cluster deployments, this value represents the aggregate of all three RabbitMQ nodes' corresponding metric values.`RabbitMQIOReadAverageTime`CountThe average time (in milliseconds) for RabbitMQ to perform one read operation. The value is proportional to the message size.`RabbitMQIOWriteAverageTime`CountThe average time (in milliseconds) for RabbitMQ to perform one write operation. The value is proportional to the message size.
 
 ## Dimensions for RabbitMQ broker metrics
@@ -37,9 +65,15 @@ The name of the broker.
 
 ## RabbitMQ node metrics
 
-MetricUnitDescription`SystemCpuUtilization`PercentThe percentage of allocated Amazon EC2 compute units that the broker currently uses.`RabbitMQMemLimit`BytesThe RAM limit for a RabbitMQ node.`RabbitMQMemUsed`BytesThe volume of RAM used by a RabbitMQ node.
-When memory use goes above the limit, the cluster will block all producer connections.`RabbitMQDiskFreeLimit`BytesThe disk limit for a RabbitMQ node. This metric is different per instance size.`RabbitMQDiskFree`BytesThe total volume of free disk space available in a RabbitMQ node.
-When disk usage goes above its limit, the cluster will block all producer connections.`RabbitMQFdUsed`CountNumber of file descriptors used.
+MetricUnitDescription`SystemCpuUtilization`PercentThe percentage of allocated Amazon EC2 compute units that the broker currently uses.`RabbitMQMemLimit`BytesThe RAM limit for a RabbitMQ node. This metric varies depending on instance type. For more information, see
+[Memory and disk alarms](rmq-broker-instance-types.md#rabbitmq-memory-disk-thresholds).`RabbitMQMemUsed`BytesThe volume of RAM used by a RabbitMQ node.
+When memory use goes above the limit, the cluster will block all producer connections.`RabbitMQDiskFreeLimit`BytesThe disk limit for a RabbitMQ node. This metric varies depending on instance type and deployment mode. For more information, see
+[Memory and disk alarms](rmq-broker-instance-types.md#rabbitmq-memory-disk-thresholds).`RabbitMQDiskFree`BytesThe total volume of free disk space available in a RabbitMQ node.
+When disk usage goes above its limit, the cluster will block all producer connections.`RabbitMQFdUsed`CountNumber of file descriptors used.`ExchangeCount`CountThe total number of exchanges configured on the node. Available for RabbitMQ 4.2 and above.`QueueCount`CountThe total number of queues configured on the node. Available for RabbitMQ 4.2 and above.`ConnectionCount`CountThe total number of connections established on the node. Available for RabbitMQ 4.2 and above.`ChannelCount`CountThe total number of channels established on the node. Available for RabbitMQ 4.2 and above.`ConsumerCount`CountThe total number of consumers connected to the node. Available for RabbitMQ 4.2 and above.`MessageCount`CountThe total number of messages in queues on the node. Available for RabbitMQ 4.2 and above.`MessageReadyCount`CountThe total number of ready messages in queues on the node. Available for RabbitMQ 4.2 and above.`MessageUnacknowledgedCount`CountThe total number of unacknowledged messages in queues on the node. Available for RabbitMQ 4.2 and above.
+
+## Aggregating cluster-wide metrics from RabbitMQ node metrics
+
+To get aggregated cluster-wide metrics, you can find the corresponding per-node metrics on the CloudWatch console by filtering on broker name and metric name. Then, select those metrics by clicking on the checkboxes, and choose **Add math** \> **Common** \> **Sum**.
 
 ## Dimensions for RabbitMQ node metrics
 

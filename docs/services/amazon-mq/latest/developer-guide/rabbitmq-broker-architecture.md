@@ -29,7 +29,7 @@ to continue to use the same endpoint to connect to the broker.
 
 The following diagram illustrates an Amazon MQ for RabbitMQ single-instance broker.
 
-![Diagram showing client, load balancer, Amazon MQ broker, and EBS volume in AWS Cloud.](https://docs.aws.amazon.com/images/amazon-mq/latest/developer-guide/images/amazon-mq-rabbitmq-broker-architecture-single-broker.png)
+![Client connecting through Network Load Balancer to Amazon MQ Broker and EBS Volume in us-west-2a.](https://docs.aws.amazon.com/images/amazon-mq/latest/developer-guide/images/amazon-mq-rabbitmq-broker-architecture-single-broker.png)
 
 ## Option 2: Amazon MQ for RabbitMQ cluster deployment
 
@@ -72,7 +72,7 @@ Availability Zones (AZ), each with its own Amazon EBS volume and a shared state.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Version upgrades
+Blue-green deployment
 
 Instance types
 

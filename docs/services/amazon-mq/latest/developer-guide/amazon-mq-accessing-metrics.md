@@ -54,6 +54,6 @@ metric.
 
 Logging and monitoring
 
-Metrics for ActiveMQ
+Accessing Prometheus metrics
 
 All content copied from https://docs.aws.amazon.com/.
