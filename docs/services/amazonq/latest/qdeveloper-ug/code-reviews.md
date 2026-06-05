@@ -9,7 +9,7 @@ to improve the posture of your applications throughout the development cycle. Yo
 an entire codebase, analyzing all files in your local project or workspace, or review a
 single file. You can also enable auto reviews that assess your code as you write it.
 
-Reviews are powered by both generative AI and rule-based automatic reasoning. [Amazon Q detectors](../../../codeguru/detector-library.md), informed
+Reviews are powered by both generative AI and rule-based automatic reasoning. [Amazon Q detectors](https://docs.aws.amazon.com/codeguru/detector-library), informed
 by years of AWS and Amazon.com security best practices, power the rule-based security and
 quality reviews. As security policies are updated and detectors are added, reviews
 automatically incorporate new detectors to ensure your code is compliant with the most

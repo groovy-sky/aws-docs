@@ -12,7 +12,7 @@ code issues and what each level of severity means.
 ## How severity is calculated
 
 The severity of a code issue is determined by the detector that generated the
-issue. Detectors in the [Amazon Q Detector Library](../../../codeguru/detector-library.md) are each assigned a severity using the Common
+issue. Detectors in the [Amazon Q Detector Library](https://docs.aws.amazon.com/codeguru/detector-library) are each assigned a severity using the Common
 Vulnerability Scoring System ( [CVSS](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)). The
 CVSS considers how the finding can be exploited in its context (for example, can it
 be done over internet, or is physical access required) and what level of access can

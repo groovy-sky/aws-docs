@@ -49,9 +49,9 @@ required) to sign in for free.
 
 ![Visual Studio Code logo, a stylized blue square with rounded corners and angled edges.](https://docs.aws.amazon.com/images/amazonq/latest/qdeveloper-ug/images/vs-code.png)[Download Amazon Q in Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.amazon-q-vscode)
 
-![Colorful cube shape with three visible faces in magenta, orange, and yellow.](https://docs.aws.amazon.com/images/amazonq/latest/qdeveloper-ug/images/jetbrains.png)[Download Amazon Q in JetBrains IDEs](https://plugins.jetbrains.com/plugin/24267-amazon-q)
+![The JetBrains logo.](https://docs.aws.amazon.com/images/amazonq/latest/qdeveloper-ug/images/jetbrains.png)[Download Amazon Q in JetBrains IDEs](https://plugins.jetbrains.com/plugin/24267-amazon-q)
 
-![Purple hexagonal logo with interlocking N shapes forming a continuous pattern.](https://docs.aws.amazon.com/images/amazonq/latest/qdeveloper-ug/images/visual-studio.png)[Download Amazon Q in the AWS Toolkit for Visual Studio](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.AWSToolkitforVisualStudio2022)
+![The Visual Studio logo.](https://docs.aws.amazon.com/images/amazonq/latest/qdeveloper-ug/images/visual-studio.png)[Download Amazon Q in the AWS Toolkit for Visual Studio](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.AWSToolkitforVisualStudio2022)
 
 ![The Eclipse logo.](https://docs.aws.amazon.com/images/amazonq/latest/qdeveloper-ug/images/eclipse-logo.png)[Download Amazon Q in Eclipse IDEs (Preview)](https://marketplace.eclipse.org/content/amazon-q)
 

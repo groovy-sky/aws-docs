@@ -10,6 +10,15 @@ feed.
 
 ChangeDescriptionDate
 
+Updated managed policies: AmazonQFullAccess and AmazonQDeveloperAccess
+
+Added `q:CreateArtifact`, `q:GetArtifact`,
+`q:GetArtifactActionResult`, and `q:PerformArtifactAction`
+permissions to the [AmazonQFullAccess](managed-policy.md#amazonq-policy-fullaccess) and [AmazonQDeveloperAccess](managed-policy.md#amazonq-policy-developeraccess) policies to enable Amazon Q artifacts (preview).
+For more information, see [Policy updates](managed-policy.md#update-table).
+
+May 21, 2026
+
 Updated Builder ID unsubscribe instructions
 
 Added guidance for unsubscribing a personal account (Builder ID) when the Amazon Q Developer Profile has been deleted, including steps to re-enable via the console and a link to create a Kiro Profile.
@@ -135,7 +144,7 @@ September 9, 2025
 Updated Amazon Q Developer for GitHub review agent content
 
 [Amazon Q Developer \
-for GitHub](amazon-q-for-github.md) code reviews include a code review summary with threaded findings. You can
+for GitHub](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/amazon-q-for-github) code reviews include a code review summary with threaded findings. You can
 interact with Amazon Q Developer in pull request comments about the findings.
 
 September 2, 2025
@@ -143,7 +152,7 @@ September 2, 2025
 Added prerequisites to Amazon Q Developer for GitHub review section
 
 [Amazon Q Developer \
-for GitHub](amazon-q-for-github.md) code reviews can only be initiated with Write, Maintain, or Admin role in GitHub.
+for GitHub](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/amazon-q-for-github) code reviews can only be initiated with Write, Maintain, or Admin role in GitHub.
 
 September 2, 2025
 

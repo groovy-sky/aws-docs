@@ -140,6 +140,22 @@ on the [Document history for Amazon Q Developer User Guide](doc-history.md) page
 
 ChangeDescriptionDate
 
+[AmazonQFullAccess](#amazonq-policy-fullaccess) \- Updated policy
+
+Added `q:CreateArtifact`, `q:GetArtifact`,
+`q:GetArtifactActionResult`, and `q:PerformArtifactAction`
+permissions to enable Amazon Q artifacts (preview).
+
+May 21, 2026
+
+[AmazonQDeveloperAccess](#amazonq-policy-developeraccess) \- Updated policy
+
+Added `q:CreateArtifact`, `q:GetArtifact`,
+`q:GetArtifactActionResult`, and `q:PerformArtifactAction`
+permissions to enable Amazon Q artifacts (preview).
+
+May 21, 2026
+
 [AmazonQDeveloperAccess](#amazonq-policy-developeraccess) \- Updated policy
 
 Additional permissions have been added to enable access to KMS keys to authorize with Identity Center.

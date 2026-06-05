@@ -61,6 +61,6 @@ FeatureQuota (per user)[Amazon Q Developer Agent for software development](../..
 
 Amazon Q Business
 
-QLDB
+Quick Setup
 
 All content copied from https://docs.aws.amazon.com/.

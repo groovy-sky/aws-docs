@@ -1,4 +1,8 @@
-![AWS logo](../../../../../services/amazonq/detector-library/next/static/media/aws-logo-506636a4-svg.md)
+---
+title: "Tag: aws-go-sdk"
+---
+
+![AWS logo](https://docs.aws.amazon.com/amazonq/detector-library/_next/static/media/aws-logo.506636a4.svg)
 
 [Amazon QDetector Library](../../../../../services/amazonq/detector-library.md) [Sign in to Amazon Q](https://console.aws.amazon.com/amazonq/home)
 
@@ -15,3 +19,5 @@
 ### [Missing Pagination](../../../../../services/amazonq/detector-library/go/missing-pagination.md)
 
 Missing pagination in paginated API calls
+
+All content copied from https://docs.aws.amazon.com/.
