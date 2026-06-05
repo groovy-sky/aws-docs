@@ -69,6 +69,8 @@ Data tiering has the following limitations:
 
 - Starting from Valley 8.1 and later, an item whose key + value size is less than 40 bytes will not be moved to the SSD.
 
+- Data tiering is not supported with durability-enabled clusters.
+
 ## Pricing
 
 R6gd nodes have 4.8x more total capacity (memory + SSD) and can help you achieve over 60 percent savings when running at maximum utilization compared to R6g nodes (memory only).
@@ -81,11 +83,11 @@ To monitor the ratio of items in DRAM compared to SSD, you can use the `CurrItem
 You can calculate the percentage as: _(CurrItems with Dimension: Tier = Memory \* 100) / (CurrItems with no dimension filter)_.
 
 If the configured eviction policy allows, then ElastiCache will start evicting items
-when the percentage of items in memory decreases below 5 percent.
+when less than 5 percent of available memory (DRAM) remains.
 On nodes configured with noeviction policy, write operations will receive an out of memory error.
 
 It is still recommended that you consider scaling out for
-Cluster Mode Enabled clusters or scaling up for Cluster Mode disabled clusters when the percentage of items in memory decreases below 5 percent.
+Cluster Mode Enabled clusters or scaling up for Cluster Mode disabled clusters when less than 5 percent of available memory (DRAM) remains.
 For more information on scaling see [Scaling Valkey or Redis OSS (Cluster Mode Enabled) clusters](scaling-redis-cluster-mode-enabled.md).
 
 For more information on metrics for Valkey or Redis OSS clusters that use data tiering see [Metrics for Valkey and Redis OSS](cachemetrics-redis.md).

@@ -152,6 +152,19 @@ Valid Values: `enabled | disabled | compatible`
 
 Required: No
 
+**Durability**
+
+Specifies the durability setting for the replication group.
+Use this parameter to change the durability mode of an existing replication group,
+for example from `sync` to `async` or vice versa. For more
+information, see [Durability](../../../../services/amazonelasticache/latest/dg/durability.md).
+
+Type: String
+
+Valid Values: `default | async | sync | disabled`
+
+Required: No
+
 **Engine**
 
 Modifies the engine listed in a replication group message. The options are valkey, memcached or redis.

@@ -51,6 +51,8 @@ as required by your application. You can also choose when to apply new software 
 
 When creating a node-based cluster you can choose from multiple supported versions of Valkey, Memcached and Redis OSS. For more information about supported engine versions see [Engine versions and upgrading in ElastiCache](engine-versions.md).
 
+For node-based Valkey clusters, you can enable _durability_ to persist your data in a distributed Multi-AZ transactional log. With durability enabled, your data is protected even if all cache nodes fail, and replicas recover independently without impacting primary node performance. For more information, see [Durability in ElastiCache](durability.md).
+
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Related services

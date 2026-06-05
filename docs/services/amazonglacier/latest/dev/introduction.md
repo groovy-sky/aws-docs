@@ -31,7 +31,7 @@ pricing](https://aws.amazon.com/s3/glacier/pricing).
 ###### Note
 
 This section is about the Amazon Glacier service. If you currently use the Amazon S3 Glacier storage classes
-( **S3 Glacier Instant Retrieval**, **S3 Glacier Flexible Retrieval**, and **S3 Glacier Deep Archive**), see [Storage classes for archiving objects](../../../s3/latest/userguide/glacier-storage-classes.md) in the _Amazon S3_
+( **S3 Glacier Instant Retrieval**, **S3 Glacier Flexible Retrieval**, and **S3 Glacier Deep Archive**), see [Storage classes for archiving objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/glacier-storage-classes) in the _Amazon S3_
 _User Guide_.
 
 If you currently use the Amazon Glacier service and want to learn more, we recommend that

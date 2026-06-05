@@ -35,9 +35,12 @@ When using IAM authentication, the following limitations apply:
 
 - IAM authentication is available when using ElastiCache for Valkey 7.2 and above or Redis OSS version 7.0 and above.
 
+- IAM authentication requires in-transit encryption (TLS) to be enabled on your cache. For more information, see
+[ElastiCache in-transit encryption (TLS)](in-transit-encryption.md).
+
 - For IAM-enabled ElastiCache users the username and user id properties must be identical.
 
-- The IAM authentication token is valid for 15 minutes. For long-lived connections, we recommend using a Valkey or Redis OSS client that supports a credentials provider interface.
+- The IAM authentication token is valid for 15 minutes. If the connection is re-authenticated with an expired token, the authentication request will be rejected. For long-lived connections, we recommend using a Valkey or Redis OSS client that supports a credentials provider interface to automatically generate fresh tokens before expiry.
 
 - An IAM authenticated connection to ElastiCache for Valkey or Redis OSS will automatically be disconnected after 12 hours. The connection can be prolonged for 12 hours by sending an `AUTH` or `HELLO` command with a new IAM authentication token.
 
@@ -323,7 +326,7 @@ public class RedisIAMAuthCredentialsProvider implements RedisCredentialsProvider
     public RedisIAMAuthCredentialsProvider(String userId,
         IAMAuthTokenRequest iamAuthTokenRequest,
         AWSCredentialsProvider awsCredentialsProvider) {
-        this.userName = userName;
+        this.userId = userId;
         this.awsCredentialsProvider = awsCredentialsProvider;
         this.iamAuthTokenRequest = iamAuthTokenRequest;
         this.iamAuthTokenSupplier = Suppliers.memoizeWithExpiration(this::getIamAuthToken, TOKEN_EXPIRY_SECONDS, TimeUnit.SECONDS);

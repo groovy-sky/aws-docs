@@ -73,16 +73,11 @@ Required: Yes
 
 **AtRestEncryptionEnabled**
 
-A flag that enables encryption at rest when set to `true`.
+A flag that enables encryption at-rest on the replication group when set to `true`.
+In some cases, encryption at-rest may be enabled even when this value is false.
+Use `StorageEncryptionType` to view the effective encryption state of a cluster.
 
-You cannot modify the value of `AtRestEncryptionEnabled` after the
-replication group is created. To enable encryption at rest on a replication group you
-must set `AtRestEncryptionEnabled` to `true` when you create the
-replication group.
-
-**Required:** Only available when creating a replication
-group in an Amazon VPC using Valkey `7.2` and later, Redis OSS version `3.2.6`, or Redis OSS `4.x` and
-later.
+You cannot modify the value of `AtRestEncryptionEnabled` after the replication group is created.
 
 Default: `true` when using Valkey, `false` when using Redis OSS
 
@@ -359,6 +354,20 @@ r6gd node type. This parameter must be set to true when using r6gd nodes. For mo
 information, see [Data tiering](../../../../services/amazonelasticache/latest/dg/data-tiering.md).
 
 Type: Boolean
+
+Required: No
+
+**Durability**
+
+Specifies the durability setting for the replication group.
+When set to `default`, the service determines the effective durability based on
+the engine version, cluster mode, and other parameters. The resolved setting is reflected
+in the `EffectiveDurability` property of the replication group. For more
+information, see [Durability](../../../../services/amazonelasticache/latest/dg/durability.md).
+
+Type: String
+
+Valid Values: `default | async | sync | disabled`
 
 Required: No
 

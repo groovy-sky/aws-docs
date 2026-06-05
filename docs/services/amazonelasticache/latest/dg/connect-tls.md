@@ -15,6 +15,20 @@ To use valkey-cli to connect to a Valkey or Redis OSS cluster enabled with in-tr
 
 2. At the command prompt of your EC2 instance, type the appropriate commands for the version of Linux you are using.
 
+**Amazon Linux 2023**
+
+If using Amazon Linux 2023, enter this:
+
+```nohighlight
+
+sudo dnf install gcc jemalloc-devel openssl-devel tcl tcl-devel -y
+wget -O valkey-8.0.0.tar.gz https://github.com/valkey-io/valkey/archive/refs/tags/8.0.0.tar.gz
+tar xvzf valkey-8.0.0.tar.gz
+cd valkey-8.0.0
+make valkey-cli BUILD_TLS=yes
+sudo install -m 755 src/valkey-cli /usr/local/bin/
+```
+
 **Amazon Linux 2**
 
 If using Amazon Linux 2, enter this:
@@ -60,6 +74,15 @@ sudo make install
 ```nohighlight
 
 valkey-cli -h Primary or Configuration Endpoint --tls -a 'your-password' -p 6379
+```
+
+###### Note
+
+If you are connecting to a cluster-mode enabled cache using the Configuration Endpoint, add the `-c` flag to enable cluster mode in the client. This allows the client to follow `MOVED` and `ASK` redirections automatically:
+
+```nohighlight
+
+valkey-cli -c -h Configuration Endpoint --tls -a 'your-password' -p 6379
 ```
 
 ###### Note

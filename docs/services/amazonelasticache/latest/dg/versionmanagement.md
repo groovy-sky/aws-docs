@@ -79,6 +79,8 @@ Node-based ElastiCache clusters support ElastiCache version 7.2 for Valkey and a
 
 - [Supported Valkey versions](#supported-engine-versions.valkey)
 
+- [Valkey 9.0](#valkey-version-9.0)
+
 - [Valkey 8.2](#valkey-version-8.2)
 
 - [Valkey 8.1](#valkey-version-8.1)
@@ -161,11 +163,33 @@ the system or cache software.
 upgrades are always a disruptive process that clears all cache data in the
 cluster.
 
+### ElastiCache version 9.0 for Valkey
+
+Here are some of the new features introduced in Valkey 9.0 (compared to ElastiCache Valkey 8.2):
+
+- **Durability** – ElastiCache version 9.0 for Valkey introduces durability via a Multi-AZ transactional log. Choose between synchronous writes (zero data loss, single-digit millisecond write latency) or asynchronous writes (microsecond write latency, up to 10 seconds of data at risk). Durability enables ElastiCache to serve as a data store for system-of-record workloads.
+
+- **Full-text search, aggregations, and hybrid search** – ElastiCache version 9.0 for Valkey extends the search capabilities introduced in Valkey 8.2 with full-text search, aggregation pipelines, and hybrid queries that combine text and vector results. Build powerful search experiences directly in your cache without managing a separate search engine. These capabilities are based on the open-source [valkey-search](https://github.com/valkey-io/valkey-search) project.
+
+- **Hash field expiration** – Set TTLs on individual fields within a hash, giving you fine-grained control over data lifecycle without managing separate keys. Expire stale fields automatically while keeping the rest of the hash intact. ( [#2089](https://github.com/valkey-io/valkey/pull/2089))
+
+- **Multi-database support in cluster mode** – Use numbered databases ( `SELECT 0`– `15`) in cluster-mode-enabled configurations, removing a long-standing limitation and simplifying migrations from standalone deployments to horizontally scaled clusters. ( [#1671](https://github.com/valkey-io/valkey/pull/1671))
+
+- **Up to 40% higher throughput with pipelining** – Optimized command parsing and prefetching across pipelined requests delivers significantly higher throughput for batch-heavy workloads, so you can process more operations per second without adding nodes. ( [#2092](https://github.com/valkey-io/valkey/pull/2092))
+
+- **Polygon-based geospatial queries** – The new `BYPOLYGON` option for `GEOSEARCH` and `GEOSEARCHSTORE` lets you query members inside arbitrary polygon boundaries, enabling real-world geofencing use cases like delivery zones, service areas, and regional targeting. ( [#1809](https://github.com/valkey-io/valkey/pull/1809))
+
+- Over 100 additional enhancements across the 9.0.0 through 9.0.3 releases, including 13 new features, 16 performance optimizations with SIMD acceleration, support for [DELIFEQ](https://valkey.io/commands/delifeq), expanded observability with per-node and per-slot metrics, MPTCP networking support, and automatic TLS certificate-based authentication. For the complete list, see [Valkey 9.0 Release Notes](https://github.com/valkey-io/valkey/releases/tag/9.0.0).
+
+For more information on Valkey, see [Valkey](https://valkey.io/).
+
+For more information on the Valkey 9.0 release, see [Valkey 9.0 Release Notes](https://github.com/valkey-io/valkey/blob/9.0/00-RELEASENOTES).
+
 ### ElastiCache version 8.2 for Valkey
 
 Here are some of the new features introduced in Valkey 8.2 (compared to ElastiCache Valkey 8.1):
 
-- ElastiCache for Valkey v8.2 provides native support for [vector search](vector-search.md), delivering latency as low as microseconds-the lowest latency vector search with the highest throughput and best price-performance at 95%+ recall rate among popular vector databases on AWS.
+- ElastiCache for Valkey v8.2 provides native support for [vector search](search.md), delivering latency as low as microseconds-the lowest latency vector search with the highest throughput and best price-performance at 95%+ recall rate among popular vector databases on AWS.
 
 For more information on Valkey, see [Valkey](https://valkey.io/).
 
@@ -225,6 +249,6 @@ For more information on the ElastiCache version 7.2 for Valkey release, see [Red
 Responsibilities with
 Extended Support
 
-Major engine version behavior and compatibility differences with Valkey
+Major version behavior and compatibility differences for Valkey
 
 All content copied from https://docs.aws.amazon.com/.

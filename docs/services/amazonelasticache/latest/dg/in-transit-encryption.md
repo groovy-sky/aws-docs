@@ -140,7 +140,7 @@ connections.
 
 ## Further Valkey and Redis OSS options
 
-For further information on options available for Valkey and Redis OSS, see the followling links.
+For further information on options available for Valkey and Redis OSS, see the following links.
 
 - [At-Rest Encryption in ElastiCache](at-rest-encryption.md)
 

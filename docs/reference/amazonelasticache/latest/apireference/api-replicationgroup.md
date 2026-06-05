@@ -22,18 +22,13 @@ Required: No
 
 **AtRestEncryptionEnabled**
 
-A flag that enables encryption at-rest when set to `true`.
+A flag that enables encryption at-rest on the cluster when set to `true`.
+In some cases, encryption at-rest may be enabled even when this value is false.
+Use `StorageEncryptionType` to view the effective encryption state of a cluster.
 
-You cannot modify the value of `AtRestEncryptionEnabled` after the cluster
-is created. To enable encryption at-rest on a cluster you must set
-`AtRestEncryptionEnabled` to `true` when you create a
-cluster.
+You cannot modify the value of `AtRestEncryptionEnabled` after the cluster is created.
 
-**Required:** Only available when creating a replication
-group in an Amazon VPC using Redis OSS version `3.2.6`, `4.x` or
-later.
-
-Default: `false`
+Default: `true` when using Valkey, `false` when using Redis OSS
 
 Type: Boolean
 
@@ -139,6 +134,29 @@ Required: No
 The user supplied description of the replication group.
 
 Type: String
+
+Required: No
+
+**Durability**
+
+The durability setting of the replication group. For more information, see [Durability](../../../../services/amazonelasticache/latest/dg/durability.md).
+
+Type: String
+
+Valid Values: `default | async | sync | disabled`
+
+Required: No
+
+**EffectiveDurability**
+
+The effective durability of the replication group. When `Durability` is set to
+`default`, the service resolves the actual durability based on the engine version,
+cluster mode, and other parameters. This field reflects the resolved value. For more
+information, see [Configuring Durability](../../../../services/amazonelasticache/latest/dg/durability-configuring.md).
+
+Type: String
+
+Valid Values: `async | sync | disabled`
 
 Required: No
 
@@ -311,6 +329,19 @@ The current state of this replication group - `creating`,
 `create-failed`, `snapshotting`.
 
 Type: String
+
+Required: No
+
+**StorageEncryptionType**
+
+Indicates the type of encryption for data stored at rest in the replication group.
+The value is `none` if at-rest encryption is not enabled,
+`sse-elasticache` if an ElastiCache service-managed key is used, or
+`sse-kms` if a customer-managed KMS key is used.
+
+Type: String
+
+Valid Values: `none | sse-elasticache | sse-kms`
 
 Required: No
 

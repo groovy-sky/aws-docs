@@ -159,7 +159,7 @@ from keys that match the given pattern. See [key permissions](https://valkey.io/
 - `%W~<pattern>` – Add the specified write key pattern. This behaves similar to the regular key pattern but only grants permission to write to keys that match the given pattern.
 See [ACL key permissions](https://valkey.io/topics/acl) for more information.
 
-- `%RW~<pattern>` – Alia for `~<pattern>`.
+- `%RW~<pattern>` – Alias for `~<pattern>`.
 
 - `(<rule list>)` – Create a new selector to match rules against. Selectors are evaluated after the user permissions, and are evaluated according to the
 order they are defined. If a command matches either the user permissions or any selector, it is allowed. See [ACL selectors](https://valkey.io/topics/acl) more information.

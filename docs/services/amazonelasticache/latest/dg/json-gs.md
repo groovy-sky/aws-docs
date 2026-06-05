@@ -37,7 +37,7 @@ To use JSON, you must be running Valkey 7.2 and later, or Redis OSS 6.2.6 or lat
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Related resources
+Getting started with data aggregations
 
 JSON data type overview
 

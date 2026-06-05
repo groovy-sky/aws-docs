@@ -128,7 +128,7 @@ Therefore, you should avoid sending sensitive data via the NAT instance.
 - The NAT instance adds the overhead of maintaining another instance.
 
 - The NAT instance serves as a single point of failure.
-For information about how to set up high availability NAT on VPC, see [High Availability for Amazon VPC NAT Instances: An Example](https://aws.amazon.com/articles/2781451301784570).
+For high availability, consider using a [NAT gateway](../../../amazonvpc/latest/userguide/vpc-nat-gateway.md) instead.
 
 #### How to access ElastiCache resources from outside AWS
 
@@ -344,7 +344,7 @@ The following topics may be of additional interest.
 
 - [Configuring ElastiCache Clients](clientconfig.md)
 
-- [High Availability for Amazon VPC NAT Instances: An Example](https://aws.amazon.com/articles/2781451301784570)
+- [NAT Gateways](../../../amazonvpc/latest/userguide/vpc-nat-gateway.md)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

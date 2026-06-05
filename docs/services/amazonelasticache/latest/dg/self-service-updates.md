@@ -154,7 +154,7 @@ For more information, see [describe-service-updates](../../../cli/latest/referen
 
 - To apply a service update on a list of clusters, run the following command:
 
-`aws elasticache batch-apply-update-action --service-update ServiceUpdateNameToApply=sample-service-update --cluster-names cluster-1 cluster2`
+`aws elasticache batch-apply-update-action --service-update-name sample-service-update --replication-group-ids cluster-1 cluster-2`
 
 For more information, see [batch-apply-update-action](../../../cli/latest/reference/elasticache/batch-apply-update-action.md).
 
