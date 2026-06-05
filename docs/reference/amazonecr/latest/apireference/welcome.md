@@ -14,7 +14,7 @@ repositories and images.
 Amazon ECR has service endpoints in each supported Region. For more information, see [Amazon ECR endpoints](../../../../general/latest/gr/ecr.md) in the
 _AWS General Reference_.
 
-This document was last published on April 16, 2026.
+This document was last published on June 5, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

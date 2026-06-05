@@ -51,6 +51,12 @@ more information, see [Templates to control repositories created during a pull t
 
 - Managed signing automatically generates cryptographic signatures when images are pushed to Amazon ECR, simplifying container image signing. For more information, see [Managed signing](managed-signing.md).
 
+## Sign up for an AWS account
+
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see
+[Getting started with an AWS account](../../../accounts/latest/reference/getting-started.md)
+in the _AWS Account Management Reference Guide_.
+
 ## How to get started with Amazon ECR
 
 If you are using Amazon Elastic Container Service (Amazon ECS) or Amazon Elastic Kubernetes Service (Amazon EKS), note that the setup for those
