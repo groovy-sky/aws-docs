@@ -15,7 +15,7 @@ For more information, see the [Amplify Hosting User Guide](../../../../services/
 Amplify Framework is a comprehensive set of SDKs, libraries, tools, and documentation
 for client app development. For more information, see the [Amplify Framework.](https://docs.amplify.aws/)
 
-This document was last published on April 14, 2026.
+This document was last published on June 5, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
