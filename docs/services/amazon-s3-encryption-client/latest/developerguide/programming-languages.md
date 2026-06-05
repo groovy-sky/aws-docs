@@ -5,13 +5,15 @@ title: "Amazon S3 Encryption Client programming languages"
 # Amazon S3 Encryption Client programming languages
 
 The Amazon S3 Encryption Client is supported in the following programming languages and platforms. This guide
-focuses on version 3. _x_ of the Amazon S3 Encryption Client for Java and Amazon S3 Encryption Client for Go. For more
+focuses on version 3. _x_ and later of the Amazon S3 Encryption Client for Java, Amazon S3 Encryption Client for Go, and Amazon S3 Encryption Client for Python. For more
 information on the remaining language implementations, see their respective AWS SDK
 Developer Guides.
 
 - [Java](java.md)
 
 - [Go](go.md)
+
+- [Python](python.md)
 
 - C++ ( [AWS SDK for C++](../../../../reference/sdk-for-cpp/latest/developer-guide.md))
 

@@ -13,7 +13,7 @@ The Amazon S3 Encryption Client supports industry-standard algorithms for encryp
 our knowledge evolves, we adjust our support for encryption algorithms to ensure that your
 sensitive data is protected. The following topic provides context on which encryption
 algorithms are fully supported and the different decryption modes supported in version 3. _x_
-of the Amazon S3 Encryption Client.
+and later of the Amazon S3 Encryption Client.
 
 ###### Topics
 
@@ -122,6 +122,11 @@ set a custom buffer size with the Amazon S3 Encryption Client for Go. As a resul
 decryption mode does not require any additional configuration when you
 instatiate your client with the Amazon S3 Encryption Client for Go.
 
+The Amazon S3 Encryption Client for Python always buffers the entire object into memory during
+decryption. As a result, the buffered decryption mode does not require
+any additional configuration when you instantiate your client with the
+Amazon S3 Encryption Client for Python.
+
 We recommend that you use the buffered decryption mode whenever
 possible. Since this is the default mode, you do not need to specify the
 buffered decryption mode when you instantiate your client.
@@ -132,7 +137,7 @@ buffered decryption mode when you instantiate your client.
 
 The Amazon S3 Encryption Client for Go does not support the delayed authentication mode. To
 decrypt objects under the delayed authentication mode, you must use
-the Amazon S3 Encryption Client for Java.
+the Amazon S3 Encryption Client for Java or Amazon S3 Encryption Client for Python.
 
 The delayed authentication mode also supports streaming decryption of
 AES-GCM encrypted objects, but it does not buffer or interrupt the
@@ -155,7 +160,7 @@ To enable the delayed authentication mode, specify the
 `enableDelayedAuthenticationMode` parameter when you
 instantiate the client.
 
-The following example specifies a raw AES key as the wrapping key.
+The following Java example specifies a raw AES key as the wrapping key.
 This client only encrypts with fully supported algorithms and decrypts
 using the delayed authentication mode.
 
@@ -166,6 +171,18 @@ S3Client s3Client = S3EncryptionClient.builderV4()
         .commitmentPolicy(CommitmentPolicy.REQUIRE_ENCRYPT_ALLOW_DECRYPT)
         .enableDelayedAuthenticationMode(true)
         .build();
+```
+
+The following Python example enables delayed authentication with a
+KMS key as the wrapping key.
+
+```python
+
+config = S3EncryptionClientConfig(
+    keyring=keyring,
+    enable_delayed_authentication=True,
+)
+s3ec = S3EncryptionClient(wrapped_s3_client=s3_client, config=config)
 ```
 
 ### Legacy
@@ -208,6 +225,18 @@ legacy wrapping algorithms.
 cmm, err := materials.NewCryptographicMaterialsManager(materials.NewKmsKeyring(kmsClient, kmsKeyArn, func(options *materials.KeyringOptions) {
     options.EnableLegacyWrappingAlgorithms = true
 })
+```
+
+Python
+
+The following example creates a keyring that uses a KMS key as the wrapping key and only
+encrypts with fully supported wrapping algorithms. However,
+it can decrypt data keys encrypted with fully supported or
+legacy wrapping algorithms.
+
+```python
+
+keyring = KmsKeyring(kms_client, kms_key_id, enable_legacy_wrapping_algorithms=True)
 ```
 
 **Unauthenticated legacy object encryption algorithms**
@@ -260,7 +289,24 @@ client, err := NewS3EncryptionClientV3(s3Client, cmm, func(clientOptions *client
 	}
 ```
 
-The `enableLegacyModes` parameter is designed to be a
+Python
+
+The following example creates a client that only
+encrypts with fully supported algorithms. However,
+it can decrypt objects encrypted with fully supported or
+legacy algorithms.
+
+```python
+
+config = S3EncryptionClientConfig(
+    keyring,
+    commitment_policy=CommitmentPolicy.REQUIRE_ENCRYPT_ALLOW_DECRYPT,
+    enable_legacy_unauthenticated_modes=True,
+)
+s3ec = S3EncryptionClient(s3_client, config)
+```
+
+The `enableLegacyUnauthenticatedModes` parameter is designed to be a
 temporary fix. After you've re-encrypted all of your objects with fully
 supported algorithms, you can remove it from your code.
 
@@ -302,7 +348,7 @@ AlgorithmC++GoJava.NETPHP v3Ruby v2AES-ECB NoNoLegacyLegacyNoLegacyAES-GCMFullNo
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Migrate from 2.x to 3.x
+Examples
 
 Document history
 

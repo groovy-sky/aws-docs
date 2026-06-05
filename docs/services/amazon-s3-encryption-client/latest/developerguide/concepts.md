@@ -97,7 +97,7 @@ Standard/Galois Counter Mode) keys, and Raw RSA keys.
 
 ###### Note
 
-Version 3. _x_ of the Amazon S3 Encryption Client for Go does not support Raw AES-GCM or Raw RSA wrapping keys.
+Version 3. _x_ of the Amazon S3 Encryption Client for Go and the Amazon S3 Encryption Client for Python do not support Raw AES-GCM or Raw RSA wrapping keys.
 
 When you use envelope encryption, you need to protect your wrapping keys from
 unauthorized access. You can do this in any of the following ways:
@@ -314,11 +314,12 @@ key commitment, the Amazon S3 Encryption Client verifies that the data key is th
 encrypted message. If data key verification fails, the decrypt operation fails.
 
 Support for key commitment is introduced in the latest minor versions of 3. _x_ for Java,
-Go, .NET, 2. _x_ for Ruby, PHP, and C++. These languages can decrypt objects with key
-commitment, but won't encrypt with key commitment. You can use this version to fully
-deploy the ability to decrypt ciphertext with key commitment.
+Go, .NET, 2. _x_ for Ruby, PHP, and C++. These
+languages can decrypt objects with key commitment, but won't encrypt with key commitment.
+You can use this version to fully deploy the ability to decrypt ciphertext with key
+commitment.
 
-Supported languages include full support for key commitment. By default, it encrypts and
+The latest major version of all supported languages include full support for key commitment. By default, it encrypts and
 decrypts only with key commitment. This is an ideal configuration for applications that
 don't need to decrypt ciphertext encrypted by earlier versions of the Amazon S3 Encryption Client.
 
@@ -368,8 +369,8 @@ you are certain that all of your ciphertexts are encrypted with key commitment.
 The commitment policy setting determines which algorithm suites you can use. If you specify
 an algorithm suite that conflicts with your commitment policy, the Amazon S3 Encryption Client returns an error.
 
-The Amazon S3 Encryption Client supports encryption using key commitment in major version 4.x for Java, Go, and
-.NET, and major version 3.x for Ruby, PHP, and C++.
+The Amazon S3 Encryption Client supports encryption using key commitment in major version 4.x for Java, Go,
+Python, and .NET, and major version 3.x for Ruby, PHP, and C++.
 
 For help setting your commitment policy, see the migration guide for your [programming language](programming-languages.md).
 
