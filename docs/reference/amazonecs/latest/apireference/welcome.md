@@ -21,10 +21,10 @@ Amazon ECS, you don't need to operate your own cluster management and configurat
 management systems. You also don't need to worry about scaling your management
 infrastructure.
 
-This document was last published on April 16, 2026.
+This document was last published on June 5, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-Actions by Amazon ECS resource
+Actions
 
 All content copied from https://docs.aws.amazon.com/.
