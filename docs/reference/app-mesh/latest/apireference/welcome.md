@@ -22,7 +22,7 @@ Discovery](../../../../services/amazonecs/latest/developerguide/service-discover
 see [DNS\
 for Services and Pods](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service) in the Kubernetes documentation.
 
-This document was last published on April 14, 2026.
+This document was last published on June 5, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

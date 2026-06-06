@@ -10,7 +10,7 @@ End of support notice: On September 30, 2026, AWS will discontinue support for A
 
 AWS App Mesh is a service mesh based on the [Envoy](https://www.envoyproxy.io/) proxy.
 
-![ECS Task/Kubernetes Pod with Proxy and Microservice Container communicating via ports 8080 and 8081.](https://docs.aws.amazon.com/images/app-mesh/latest/userguide/images/proxy.png)
+![Proxy container receiving external traffic on port 8080 and forwarding to microservice on port 8081.](https://docs.aws.amazon.com/images/app-mesh/latest/userguide/images/proxy.png)
 
 You must add an Envoy proxy to the Amazon ECS task, Kubernetes pod, or Amazon EC2 instance represented
 by your App Mesh endpoint, such as a virtual node or virtual gateway. App Mesh vends an Envoy proxy
@@ -60,14 +60,14 @@ Standard
 
 ```nohighlight
 
-840364872350.dkr.ecr.region-code.amazonaws.com/aws-appmesh-envoy:v1.34.13.0-prod
+840364872350.dkr.ecr.region-code.amazonaws.com/aws-appmesh-envoy:v1.34.13.1-prod
 ```
 
 FIPS-compliant
 
 ```nohighlight
 
-840364872350.dkr.ecr.region-code.amazonaws.com/aws-appmesh-envoy:v1.34.13.0-prod-fips
+840364872350.dkr.ecr.region-code.amazonaws.com/aws-appmesh-envoy:v1.34.13.1-prod-fips
 ```
 
 `me-south-1`
@@ -76,7 +76,7 @@ Standard
 
 ```
 
-772975370895.dkr.ecr.me-south-1.amazonaws.com/aws-appmesh-envoy:v1.34.13.0-prod
+772975370895.dkr.ecr.me-south-1.amazonaws.com/aws-appmesh-envoy:v1.34.13.1-prod
 ```
 
 `ap-east-1`
@@ -85,7 +85,7 @@ Standard
 
 ```
 
-856666278305.dkr.ecr.ap-east-1.amazonaws.com/aws-appmesh-envoy:v1.34.13.0-prod
+856666278305.dkr.ecr.ap-east-1.amazonaws.com/aws-appmesh-envoy:v1.34.13.1-prod
 ```
 
 `ap-southeast-3`
@@ -94,7 +94,7 @@ Standard
 
 ```
 
-909464085924.dkr.ecr.ap-southeast-3.amazonaws.com/aws-appmesh-envoy:v1.34.13.0-prod
+909464085924.dkr.ecr.ap-southeast-3.amazonaws.com/aws-appmesh-envoy:v1.34.13.1-prod
 ```
 
 `eu-south-1`
@@ -103,7 +103,7 @@ Standard
 
 ```
 
-422531588944.dkr.ecr.eu-south-1.amazonaws.com/aws-appmesh-envoy:v1.34.13.0-prod
+422531588944.dkr.ecr.eu-south-1.amazonaws.com/aws-appmesh-envoy:v1.34.13.1-prod
 ```
 
 `il-central-1`
@@ -112,7 +112,7 @@ Standard
 
 ```
 
-564877687649.dkr.ecr.il-central-1.amazonaws.com/aws-appmesh-envoy:v1.34.13.0-prod
+564877687649.dkr.ecr.il-central-1.amazonaws.com/aws-appmesh-envoy:v1.34.13.1-prod
 ```
 
 `af-south-1`
@@ -121,7 +121,7 @@ Standard
 
 ```
 
-924023996002.dkr.ecr.af-south-1.amazonaws.com/aws-appmesh-envoy:v1.34.13.0-prod
+924023996002.dkr.ecr.af-south-1.amazonaws.com/aws-appmesh-envoy:v1.34.13.1-prod
 ```
 
 `Public repository`
@@ -130,14 +130,14 @@ Standard
 
 ```
 
-public.ecr.aws/appmesh/aws-appmesh-envoy:v1.34.13.0-prod
+public.ecr.aws/appmesh/aws-appmesh-envoy:v1.34.13.1-prod
 ```
 
 FIPS-compliant
 
 ```
 
-public.ecr.aws/appmesh/aws-appmesh-envoy:v1.34.13.0-prod-fips
+public.ecr.aws/appmesh/aws-appmesh-envoy:v1.34.13.1-prod-fips
 ```
 
 ###### Note

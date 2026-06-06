@@ -25,7 +25,7 @@ Consider the following simple example application that doesn’t use App Mesh. T
 can be running on AWS Fargate, Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), Kubernetes on Amazon Elastic Compute Cloud (Amazon EC2)
 instances, or on Amazon EC2 instances with Docker.
 
-![Diagram showing client service connecting to servicea.apps.local, which connects to serviceb.apps.local.](https://docs.aws.amazon.com/images/app-mesh/latest/userguide/images/simple-app-diagram.png)
+![Client service connecting to servicea.apps.local which connects to serviceb.apps.local.](https://docs.aws.amazon.com/images/app-mesh/latest/userguide/images/simple-app-diagram.png)
 
 In this illustration, both `serviceA` and `serviceB` are discoverable
 through the `apps.local` namespace. Let's say, for example, you decide to deploy a new
@@ -39,7 +39,7 @@ App Mesh can help you do this without changing any application code or registere
 names. If you use App Mesh with this example application, then your mesh might look like the
 following illustration.
 
-![Diagram showing App Mesh architecture with virtual services, nodes, and router in a mesh network.](https://docs.aws.amazon.com/images/app-mesh/latest/userguide/images/simple-app-with-mesh-diagram.png)
+![App Mesh architecture with client service connecting through proxies to virtual services, router, and nodes.](https://docs.aws.amazon.com/images/app-mesh/latest/userguide/images/simple-app-with-mesh-diagram.png)
 
 In this configuration, the services no longer communicate with each other directly. Instead,
 they communicate with each other through a proxy. The proxy deployed with the
