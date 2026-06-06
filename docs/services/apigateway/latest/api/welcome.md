@@ -6,7 +6,7 @@ title: "Welcome"
 
 Amazon API Gateway helps developers deliver robust, secure, and scalable mobile and web application back ends. API Gateway allows developers to securely connect mobile and web applications to APIs that run on AWS Lambda, Amazon EC2, or other publicly addressable web services that are hosted outside of AWS.
 
-This document was last published on April 14, 2026.
+This document was last published on June 5, 2026.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

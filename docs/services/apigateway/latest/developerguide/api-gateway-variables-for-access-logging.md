@@ -183,43 +183,36 @@ The source IP address of the immediate TCP connection making the request to the 
 The PEM-encoded client certificate that the client presented
 during mutual TLS authentication. Present when a client accesses an
 API by using a custom domain name that has mutual TLS enabled.
-Present only in access logs if mutual TLS authentication
-fails.
 
 `$context.identity.clientCert.subjectDN`
 
 The distinguished name of the subject of the certificate that a
 client presents. Present when a client accesses an API by using a
-custom domain name that has mutual TLS enabled. Present only in
-access logs if mutual TLS authentication fails.
+custom domain name that has mutual TLS enabled.
 
 `$context.identity.clientCert.issuerDN`
 
 The distinguished name of the issuer of the certificate that a
 client presents. Present when a client accesses an API by using a
-custom domain name that has mutual TLS enabled. Present only in
-access logs if mutual TLS authentication fails.
+custom domain name that has mutual TLS enabled.
 
 `$context.identity.clientCert.serialNumber`
 
 The serial number of the certificate. Present when a client
 accesses an API by using a custom domain name that has mutual TLS
-enabled. Present only in access logs if mutual TLS authentication
-fails.
+enabled.
 
 `$context.identity.clientCert.validity.notBefore`
 
 The date before which the certificate is invalid. Present when a
 client accesses an API by using a custom domain name that has mutual
-TLS enabled. Present only in access logs if mutual TLS
-authentication fails.
+TLS enabled.
 
 `$context.identity.clientCert.validity.notAfter`
 
 The date after which the certificate is invalid. Present when a
 client accesses an API by using a custom domain name that has mutual
-TLS enabled. Present only in access logs if mutual TLS
-authentication fails.
+TLS enabled.
 
 `$context.identity.vpcId`
 

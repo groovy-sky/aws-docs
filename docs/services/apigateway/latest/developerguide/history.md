@@ -149,7 +149,7 @@ HTTP API AWS Lambda authorizers
 
 Added support for AWS Lambda authorizers for HTTP APIs. For more information, see
 [Working with AWS Lambda authorizers for\
-HTTP APIs](http-api-lambda-authorizer.md).
+HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-lambda-authorizer).
 
 September 9, 2020
 
@@ -157,7 +157,7 @@ HTTP API AWS service integrations
 
 Added support for AWS service integrations for HTTP APIs. For more information, see
 [Working with AWS service\
-integrations for HTTP APIs](http-api-develop-integrations-aws-services.md).
+integrations for HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-aws-services).
 
 August 20, 2020
 

@@ -30,6 +30,12 @@ when a warning is encountered. The default value is `false`.
 The `mode` query parameter to specify the update mode. Valid values are "merge" and "overwrite". By default,
 the update mode is "merge".
 
+###### Important
+
+When you use `overwrite` mode, the entire API definition is replaced.
+Any API configurations not explicitly included in the import body are reset to their default values.
+To preserve existing configurations, use `merge` mode, or ensure that your OpenAPI definition includes all desired API configuration settings, such as API Gateway extensions.
+
 Valid Values: `merge | overwrite`
 
 **[parameters](#API_PutRestApi_RequestSyntax)**
@@ -531,25 +537,25 @@ Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160607/us-east-1/ap
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
 
-- [AWS Command Line Interface V2](../../../goto/cli2/apigateway-2015-07-09/putrestapi.md)
+- [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/apigateway-2015-07-09/PutRestApi)
 
-- [AWS SDK for .NET V4](../../../../reference/goto/dotnetsdkv4/apigateway-2015-07-09/putrestapi.md)
+- [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/apigateway-2015-07-09/PutRestApi)
 
-- [AWS SDK for C++](../../../../reference/goto/sdkforcpp/apigateway-2015-07-09/putrestapi.md)
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/apigateway-2015-07-09/PutRestApi)
 
-- [AWS SDK for Go v2](../../../../reference/goto/sdkforgov2/apigateway-2015-07-09/putrestapi.md)
+- [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/apigateway-2015-07-09/PutRestApi)
 
-- [AWS SDK for Java V2](../../../../reference/goto/sdkforjavav2/apigateway-2015-07-09/putrestapi.md)
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/apigateway-2015-07-09/PutRestApi)
 
-- [AWS SDK for JavaScript V3](../../../../reference/goto/sdkforjavascriptv3/apigateway-2015-07-09/putrestapi.md)
+- [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/apigateway-2015-07-09/PutRestApi)
 
-- [AWS SDK for Kotlin](../../../../reference/goto/sdkforkotlin/apigateway-2015-07-09/putrestapi.md)
+- [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/apigateway-2015-07-09/PutRestApi)
 
-- [AWS SDK for PHP V3](../../../../reference/goto/sdkforphpv3/apigateway-2015-07-09/putrestapi.md)
+- [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/apigateway-2015-07-09/PutRestApi)
 
-- [AWS SDK for Python](../../../goto/boto3/apigateway-2015-07-09/putrestapi.md)
+- [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/apigateway-2015-07-09/PutRestApi)
 
-- [AWS SDK for Ruby V3](../../../../reference/goto/sdkforrubyv3/apigateway-2015-07-09/putrestapi.md)
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/apigateway-2015-07-09/PutRestApi)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
