@@ -414,7 +414,7 @@ No
 Yes
 No
 
-## AWS Application Migration Service
+## AWS Transform MGN
 
 **Resources****Tag Editor Tagging****Tag-based Groups****CloudFormation Stack-based Groups**
 
@@ -1679,7 +1679,7 @@ No
 Yes
 No
 
-## Amazon Connect
+## Amazon Connect Customer
 
 **Resources****Tag Editor Tagging****Tag-based Groups****CloudFormation Stack-based Groups**
 
@@ -1815,7 +1815,7 @@ No
 Yes
 No
 
-## Amazon Connect Cases
+## Amazon Connect Customer Cases
 
 **Resources****Tag Editor Tagging****Tag-based Groups****CloudFormation Stack-based Groups**
 
@@ -1837,7 +1837,7 @@ No
 Yes
 No
 
-## Amazon Connect Customer Profiles
+## Connect Customer Customer Profiles
 
 **Resources****Tag Editor Tagging****Tag-based Groups****CloudFormation Stack-based Groups**
 
@@ -1859,7 +1859,7 @@ No
 Yes
 No
 
-## Amazon Connect Outbound Campaigns
+## Amazon Connect Customer Outbound Campaigns
 
 **Resources****Tag Editor Tagging****Tag-based Groups****CloudFormation Stack-based Groups**
 
@@ -1869,7 +1869,7 @@ No
 Yes
 No
 
-## Amazon Connect Voice ID
+## Connect Customer Voice ID
 
 **Resources****Tag Editor Tagging****Tag-based Groups****CloudFormation Stack-based Groups**
 
@@ -1879,7 +1879,7 @@ No
 Yes
 No
 
-## Amazon Connect Wisdom
+## Amazon Connect Customer Wisdom
 
 **Resources****Tag Editor Tagging****Tag-based Groups****CloudFormation Stack-based Groups**
 
