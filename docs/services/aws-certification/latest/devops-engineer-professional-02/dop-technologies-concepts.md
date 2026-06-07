@@ -36,6 +36,6 @@ The following list contains technologies and concepts that might appear on the e
 
 Content Domain 6: Security and Compliance
 
-In-scope AWS services and features
+In-Scope AWS Services
 
 All content copied from https://docs.aws.amazon.com/.

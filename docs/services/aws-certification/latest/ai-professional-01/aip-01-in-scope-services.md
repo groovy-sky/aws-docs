@@ -1,14 +1,40 @@
 ---
-title: "In-scope AWS services and features"
+title: "In-Scope AWS Services"
 ---
 
-# In-scope AWS services and features
-
-## In-scope AWS services and features
+# In-Scope AWS Services
 
 The following list contains AWS services and features that are in scope for the exam. This list is non-exhaustive and is subject to change. AWS offerings appear in categories that align with the offerings' primary functions:
 
-### Analytics
+###### Topics
+
+- [Analytics](#aip-01-analytics)
+
+- [Application Integration](#aip-01-application-integration)
+
+- [Compute](#aip-01-compute)
+
+- [Containers](#aip-01-containers)
+
+- [Customer Engagement](#aip-01-customer-engagement)
+
+- [Database](#aip-01-database)
+
+- [Developer Tools](#aip-01-developer-tools)
+
+- [Machine Learning](#aip-01-machine-learning)
+
+- [Management and Governance](#aip-01-management-governance)
+
+- [Migration and Transfer](#aip-01-migration-transfer)
+
+- [Networking and Content Delivery](#aip-01-networking-content-delivery)
+
+- [Security, Identity, and Compliance](#aip-01-security-identity-compliance)
+
+- [Storage](#aip-01-storage)
+
+## Analytics
 
 - Amazon Athena
 
@@ -20,11 +46,11 @@ The following list contains AWS services and features that are in scope for the 
 
 - Amazon OpenSearch Service
 
-- Amazon QuickSight
+- Amazon Quick Sight
 
 - Amazon Managed Streaming for Apache Kafka (Amazon MSK)
 
-### Application Integration
+## Application Integration
 
 - Amazon AppFlow
 
@@ -38,7 +64,7 @@ The following list contains AWS services and features that are in scope for the 
 
 - AWS Step Functions
 
-### Compute
+## Compute
 
 - AWS App Runner
 
@@ -52,7 +78,7 @@ The following list contains AWS services and features that are in scope for the 
 
 - AWS Wavelength
 
-### Containers
+## Containers
 
 - Amazon ECR
 
@@ -62,11 +88,11 @@ The following list contains AWS services and features that are in scope for the 
 
 - AWS Fargate
 
-### Customer Engagement
+## Customer Engagement
 
 - Amazon Connect
 
-### Database
+## Database
 
 - Amazon Aurora
 
@@ -82,7 +108,7 @@ The following list contains AWS services and features that are in scope for the 
 
 - Amazon RDS
 
-### Developer Tools
+## Developer Tools
 
 - AWS Amplify
 
@@ -100,11 +126,13 @@ The following list contains AWS services and features that are in scope for the 
 
 - AWS CodePipeline
 
+- Kiro
+
 - AWS Tools and SDKs
 
 - AWS X-Ray
 
-### Machine Learning
+## Machine Learning
 
 - Amazon Augmented AI
 
@@ -129,6 +157,8 @@ The following list contains AWS services and features that are in scope for the 
 - Amazon Q Business Apps
 
 - Amazon Q Developer
+
+- Amazon Quick
 
 - Amazon Rekognition
 
@@ -158,7 +188,7 @@ The following list contains AWS services and features that are in scope for the 
 
 - Amazon Transcribe
 
-### Management and Governance
+## Management and Governance
 
 - AWS Auto Scaling
 
@@ -184,13 +214,13 @@ The following list contains AWS services and features that are in scope for the 
 
 - AWS Well-Architected Tool
 
-### Migration and Transfer
+## Migration and Transfer
 
 - AWS DataSync
 
 - AWS Transfer Family
 
-### Networking and Content Delivery
+## Networking and Content Delivery
 
 - Amazon API Gateway
 
@@ -208,7 +238,7 @@ The following list contains AWS services and features that are in scope for the 
 
 - Amazon VPC
 
-### Security, Identity, and Compliance
+## Security, Identity, and Compliance
 
 - Amazon Cognito
 
@@ -228,7 +258,7 @@ The following list contains AWS services and features that are in scope for the 
 
 - AWS WAF
 
-### Storage
+## Storage
 
 - Amazon EBS
 
@@ -246,6 +276,6 @@ The following list contains AWS services and features that are in scope for the 
 
 Mentions of AWS services on the exam
 
-Out-of-scope AWS services and features
+Out-of-Scope AWS Services
 
 All content copied from https://docs.aws.amazon.com/.

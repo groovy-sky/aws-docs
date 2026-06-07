@@ -56,7 +56,7 @@ title: "Content Domain 2: Implementation and Integration"
 
 - Skill 2.5.2: Develop accessible AI interfaces to accelerate adoption and integration of FMs (for example, by using AWS Amplify to develop declarative UI components, OpenAPI specifications for API-first development approaches, Amazon Bedrock Prompt Flows for no-code workflow builders).
 
-- Skill 2.5.3: Create business system enhancements (for example, by using Lambda functions to implement customer relationship management \[CRM\] enhancements, Step Functions to orchestrate document processing systems, Amazon Q Business data sources to provide internal knowledge tools, Amazon Bedrock Data Automation to manage automated data processing workflows).
+- Skill 2.5.3: Create business system enhancements (for example, by using Lambda functions to implement customer relationship management \[CRM\] enhancements, Step Functions to orchestrate document processing systems, Amazon Bedrock Data Automation to manage automated data processing workflows).
 
 - Skill 2.5.4: Enhance developer productivity to accelerate development workflows for GenAI applications (for example, by using Amazon Q Developer to generate and refactor code, code suggestions for API assistance, AI component testing, performance optimization).
 

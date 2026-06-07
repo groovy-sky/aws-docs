@@ -70,7 +70,7 @@ The following list contains AWS services and features that are out of scope for 
 
 - Amazon Pinpoint
 
-- Amazon Simple Email Service (Amazon SES)
+- Amazon SES
 
 - AWS Supply Chain
 
@@ -266,7 +266,7 @@ The following list contains AWS services and features that are out of scope for 
 
 - AWS Payment Cryptography
 
-- AWS Private Certificate Authority
+- AWS Private CA
 
 - AWS Resource Access Manager (AWS RAM)
 

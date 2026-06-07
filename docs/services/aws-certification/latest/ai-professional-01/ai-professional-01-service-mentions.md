@@ -18,6 +18,6 @@ Not every abbreviation is fully spelled out on the exam or available in the Help
 
 Technologies and concepts that might appear on the exam
 
-In-scope AWS services and features
+In-Scope AWS Services
 
 All content copied from https://docs.aws.amazon.com/.

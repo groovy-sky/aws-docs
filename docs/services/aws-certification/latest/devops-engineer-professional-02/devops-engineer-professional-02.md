@@ -32,7 +32,7 @@ The AWS Certified DevOps Engineer - Professional (DOP-C02) exam is intended for 
 
 - [Technologies and Concepts](dop-technologies-concepts.md)
 
-- [In-scope AWS services and features](dop-02-in-scope-services.md)
+- [In-Scope AWS Services](dop-02-in-scope-services.md)
 
 - [Survey](#devops-engineer-professional-02-survey)
 

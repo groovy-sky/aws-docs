@@ -40,7 +40,7 @@ Skills in:
 
 - Selecting multi-model or multi-container deployments
 
-- Selecting the correct deployment target (for example, SageMaker AI endpoints, Kubernetes, Amazon Elastic Container Service \[Amazon ECS\], Amazon Elastic Kubernetes Service \[Amazon EKS\], AWS Lambda)
+- Selecting the correct deployment target (for example, SageMaker AI endpoints, Kubernetes, Amazon ECS, Amazon Elastic Kubernetes Service \[Amazon EKS\], AWS Lambda)
 
 - Choosing model deployment strategies (for example, real time, batch)
 
@@ -52,7 +52,7 @@ Knowledge of:
 
 - How to compare scaling policies
 
-- Tradeoffs and use cases of infrastructure as code (IaC) options (for example, AWS CloudFormation, AWS Cloud Development Kit \[AWS CDK\])
+- Tradeoffs and use cases of infrastructure as code (IaC) options (for example, AWS CloudFormation, AWS CDK)
 
 - Containerization concepts and AWS container services
 
@@ -64,7 +64,7 @@ Skills in:
 
 - Automating the provisioning of compute resources, including communication between stacks (for example, by using CloudFormation, AWS CDK)
 
-- Building and maintaining containers (for example, Amazon Elastic Container Registry \[Amazon ECR\], Amazon EKS, Amazon ECS, by using bring your own container \[BYOC\] with SageMaker AI)
+- Building and maintaining containers (for example, Amazon ECR, Amazon EKS, Amazon ECS, by using bring your own container \[BYOC\] with SageMaker AI)
 
 - Configuring SageMaker AI endpoints within the VPC network
 

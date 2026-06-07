@@ -52,7 +52,7 @@ title: "Content Domain 4: Monitoring and Logging"
 
 ### Skills in:
 
-- Building CloudWatch dashboards and Amazon QuickSight visualizations
+- Building CloudWatch dashboards and Amazon Quick Sight visualizations
 
 - Associating CloudWatch alarms with CloudWatch metrics (standard and custom)
 

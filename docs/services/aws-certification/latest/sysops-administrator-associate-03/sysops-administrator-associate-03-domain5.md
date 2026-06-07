@@ -46,6 +46,6 @@ title: "Content Domain 5: Networking and Content Delivery"
 
 Content Domain 4: Security and Compliance
 
-In-scope AWS services and features
+In-Scope AWS Services
 
 All content copied from https://docs.aws.amazon.com/.
