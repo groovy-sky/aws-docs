@@ -97,7 +97,7 @@ $ C:\> aws account put-account-name \
 
 ```
 
-- AWS SDKs: [PutAccountName](api-putaccountname.md)
+- AWS SDKs: [PutAccountName](../../../../reference/accounts/latest/apireference/api-putaccountname.md)
 
 ## Update your account name for any AWS account in your organization
 
@@ -174,7 +174,7 @@ $ C:\> aws account put-account-name \
 
 ```
 
-- AWS SDKs: [PutAccountName](api-putaccountname.md)
+- AWS SDKs: [PutAccountName](../../../../reference/accounts/latest/apireference/api-putaccountname.md)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -19,7 +19,7 @@ SDK operations.
 user or role in one account in an organization accesses or changes an account
 attribute in a different member account in the same organization. The organizations
 context mode is automatically used when you _**do**_ include the `AccountId` parameter when
-you call one of the Account Management AWS CLI or AWS SDK operation. You can call the operations
+you call one of the Account Management AWS CLI or AWS SDK operations. You can call the operations
 in this mode from only the management account of the organization, or the delegated
 admin account for Account Management.
 
@@ -116,7 +116,7 @@ that are in either of two specified OUs.
 Because `account:AccountResourceOrgPaths` is a multi-valued string
 type, you must use the [`ForAnyValue` or `ForAllValues` multi-value\
 string operators](../../../iam/latest/userguide/reference-policies-multi-value-conditions.md#reference_policies_multi-key-or-value-conditions). Also, note that the prefix on the condition key is
-`account`, even though you're referencing paths to OUs in an
+`account`, even though you are referencing paths to OUs in an
 organization.
 
 ```nohighlight
@@ -148,7 +148,7 @@ key `project` and a value of either `blue` or
 Because `account:AccountResourceOrgTags` is a multi-valued string
 type, you must use the [`ForAnyValue` or `ForAllValues` multi-value\
 string operators](../../../iam/latest/userguide/reference-policies-multi-value-conditions.md#reference_policies_multi-key-or-value-conditions). Also, note that the prefix on the condition key is
-`account`, even though you're referencing the tags on an
+`account`, even though you are referencing the tags on an
 organization's member account.
 
 ```

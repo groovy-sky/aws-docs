@@ -45,7 +45,7 @@ Amazon SNS notifications for CloudTrail](../../../awscloudtrail/latest/userguide
 - [Receiving CloudTrail log files from multiple accounts](../../../awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.md)
 
 AWS CloudTrail logs all Account Management API operations found in the [API\
-Reference](api-reference.md) section of this guide. For example, calls to the
+Reference](../../../../reference/accounts/latest/apireference/welcome.md) section of this guide. For example, calls to the
 `CreateAccount`, `DeleteAlternateContact`, and
 `PutAlternateContact` operations generate entries in the CloudTrail log
 files.

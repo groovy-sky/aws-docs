@@ -155,11 +155,11 @@ You can retrieve, or update the **_root user_** email address
 (also referred to as the primary email address) by using the following AWS CLI
 commands or their AWS SDK equivalent operations:
 
-- [GetPrimaryEmail](api-getprimaryemail.md)
+- [GetPrimaryEmail](../../../../reference/accounts/latest/apireference/api-getprimaryemail.md)
 
-- [StartPrimaryEmailUpdate](api-startprimaryemailupdate.md)
+- [StartPrimaryEmailUpdate](../../../../reference/accounts/latest/apireference/api-startprimaryemailupdate.md)
 
-- [AcceptPrimaryEmailUpdate](api-acceptprimaryemailupdate.md)
+- [AcceptPrimaryEmailUpdate](../../../../reference/accounts/latest/apireference/api-acceptprimaryemailupdate.md)
 
 ###### Notes
 

@@ -100,9 +100,9 @@ You can retrieve, update, or delete the **_primary_** contact
 information by using the following AWS CLI commands or their AWS SDK
 equivalent operations:
 
-- [GetContactInformation](api-getcontactinformation.md)
+- [GetContactInformation](../../../../reference/accounts/latest/apireference/api-getcontactinformation.md)
 
-- [PutContactInformation](api-putcontactinformation.md)
+- [PutContactInformation](../../../../reference/accounts/latest/apireference/api-putcontactinformation.md)
 
 ###### Notes
 
@@ -208,9 +208,9 @@ You can retrieve, update, or delete the **_primary_**
 contact information by using the following AWS CLI commands or their
 AWS SDK equivalent operations:
 
-- [GetContactInformation](api-getcontactinformation.md)
+- [GetContactInformation](../../../../reference/accounts/latest/apireference/api-getcontactinformation.md)
 
-- [PutContactInformation](api-putcontactinformation.md)
+- [PutContactInformation](../../../../reference/accounts/latest/apireference/api-putcontactinformation.md)
 
 ###### Notes
 

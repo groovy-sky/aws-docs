@@ -119,11 +119,11 @@ You can retrieve, update, or delete the **_alternate_** contact
 information by using the following AWS CLI commands or their AWS SDK
 equivalent operations:
 
-- [GetAlternateContact](api-getalternatecontact.md)
+- [GetAlternateContact](../../../../reference/accounts/latest/apireference/api-getalternatecontact.md)
 
-- [PutAlternateContact](api-putalternatecontact.md)
+- [PutAlternateContact](../../../../reference/accounts/latest/apireference/api-putalternatecontact.md)
 
-- [DeleteAlternateContact](api-getalternatecontact.md)
+- [DeleteAlternateContact](../../../../reference/accounts/latest/apireference/api-getalternatecontact.md)
 
 ###### Notes
 
@@ -279,11 +279,11 @@ You can retrieve, update, or delete the **_alternate_** contact
 information by using the following AWS CLI commands or their AWS SDK
 equivalent operations:
 
-- [GetAlternateContact](api-getalternatecontact.md)
+- [GetAlternateContact](../../../../reference/accounts/latest/apireference/api-getalternatecontact.md)
 
-- [PutAlternateContact](api-putalternatecontact.md)
+- [PutAlternateContact](../../../../reference/accounts/latest/apireference/api-putalternatecontact.md)
 
-- [DeleteAlternateContact](api-getalternatecontact.md)
+- [DeleteAlternateContact](../../../../reference/accounts/latest/apireference/api-getalternatecontact.md)
 
 ###### Notes
 

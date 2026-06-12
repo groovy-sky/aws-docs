@@ -43,7 +43,7 @@ AWS account and AWS. The HTTPS Query API lets you issue HTTPS requests
 directly to the service. When you use the HTTPS API, you must include code
 to digitally sign requests using your credentials. For more information, see
 [Calling the API by\
-making HTTP Query requests](query-requests.md).
+making HTTP Query requests](../../../../reference/accounts/latest/apireference/welcome.md).
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
