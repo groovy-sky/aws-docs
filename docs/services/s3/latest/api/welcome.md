@@ -4,22 +4,17 @@ title: "Welcome"
 
 # Welcome
 
-Welcome to the _Amazon Simple Storage Service API Reference_. This guide explains the Amazon Simple Storage Service (Amazon S3)
+## Amazon S3
+
+Welcome to the _Amazon S3 API Reference_. This guide explains the Amazon Simple Storage Service (Amazon S3)
 application programming interface (API).
 
 You can use any toolkit that supports HTTP to use the REST API. You can even use a browser
 to fetch objects, as long as they are anonymously readable.
 
-The REST API uses the standard HTTP headers and status codes, so that standard browsers and
-toolkits work as expected. In some areas, we have added functionality to HTTP (for example, we
-added headers to support access control). In these cases, we have done our best to add the new
-functionality in a way that matched the style of standard HTTP usage.
-
-_Version_
+The REST API uses the standard HTTP headers and status codes, so that standard browsers and toolkits work as expected. In some areas, we have added functionality to HTTP (for example, we added headers to support access control). In these cases, we have done our best to add the new functionality in a way that matched the style of standard HTTP usage.
 
 The current version of the Amazon S3 API is `2006-03-01`.
-
-_Type_
 
 Amazon S3 supports the REST API.
 
@@ -27,86 +22,37 @@ Amazon S3 supports the REST API.
 
 Support for SOAP over HTTP is deprecated, but it is still available over HTTPS.
 However, new Amazon S3 features will not be supported for SOAP. We recommend that
-you use either this REST API or the AWS SDKs at the following link:
+you use either this REST API or the AWS SDKs.
 
-[https://aws.amazon.com/developer/tools/](https://aws.amazon.com/developer/tools?nc1=f_dr)
+## Amazon S3 Control
 
-This REST API reference includes:
+AWS S3 Control provides access to Amazon S3 control plane actions.
 
-- [S3 API Reference](type-api-reference.md) — which contains [Actions](api-operations.md) (operations) and [Data Types](api-types.md)
+## Amazon S3 Files
 
-- _Headers_ — [Common request headers](restcommonrequestheaders.md) and [Common response headers](restcommonresponseheaders.md)
+S3 Files makes S3 buckets accessible as high-performance file systems powered by EFS. This service enables file system interface access to S3 data with sub-millisecond latencies through mount targets, supporting AI/ML workloads, media processing, and hybrid storage workflows that require both file system and object storage access to the same data.
 
-- [Error responses](errorresponses.md)
+## Amazon S3 on Outposts
 
-- [Browser-Based Uploads Using POST (AWS Signature Version 4)](sigv4-usinghttppost.md)
+Amazon S3 on Outposts provides access to S3 on Outposts operations.
 
-###### Important
+## Amazon S3 Tables
 
-Read the following about authentication and access control before going to specific API
-topics.
+An Amazon S3 table represents a structured dataset consisting of tabular data in [Apache Parquet](https://parquet.apache.org/docs) format and related metadata. This data is stored inside an S3 table as a subresource. All tables in a table bucket are stored in the [Apache Iceberg](https://iceberg.apache.org/docs/latest) table format. Through integration with the [AWS Glue Data Catalog](../../../https/docs-aws-amazon-com/glue/latest/dg/catalog-and-crawler.md) you can interact with your tables using AWS analytics services, such as [Amazon Athena](../../../https/docs-aws-amazon-com/athena.md) and [Amazon Redshift](../../../https/docs-aws-amazon-com/redshift.md). Amazon S3 manages maintenance of your tables through automatic file compaction and snapshot management. For more information, see [Amazon S3 table buckets](../userguide/s3-tables-buckets.md).
 
-Requests to Amazon S3 can be authenticated or anonymous. Authenticated access requires credentials that AWS can use to authenticate your requests.
+## Amazon S3 Vectors
 
-_API call recommendations_
-
-Making REST API calls directly from your code can be cumbersome. It requires you to write
-the necessary code to calculate a valid signature to authenticate your requests. We recommend the
-following alternatives instead:
-
-- Use the [AWS SDKs](https://aws.amazon.com/developer/tools?nc1=f_dr) to send your requests.
-
-Also, see the [Sample Code and\
-Libraries](https://aws.amazon.com/code).
-
-If you use the SDKs, you don't need
-to write code to calculate a signature for request authentication because the SDK
-clients authenticate your requests by using access keys that you provide. Unless
-you have a good reason not to, you should always use the AWS SDKs.
-
-- Use the AWS CLI to make Amazon S3 API calls. For information about setting up the AWS
-CLI and example Amazon S3 commands see the following topics:
-
-[Set Up the AWS CLI](../userguide/setup-aws-cli.md) in the _Amazon Simple Storage Service User Guide_.
-
-[Using\
-Amazon S3 with the AWS Command Line Interface](../../../cli/latest/userguide/cli-s3.md) in the _AWS Command Line Interface User Guide_.
-
-_Making direct REST API calls_
-
-###### Note
-
-The `PUT` request header is limited to 8 KB in size. Within the PUT request header, the system-defined metadata is limited to 2 KB in size. The size of system-defined metadata is measured by taking the sum of the number of bytes in the US-ASCII encoding of each key and value.
-
-If you'd like to make your own REST API calls instead of using one of the above alternatives, there
-are some things to keep in mind.
-
-- To make direct REST API calls from your code, create a signature using valid credentials and include the
-signature in your request. For information about various authentication methods and signature calculations, see [Authenticating Requests (AWS Signature Version 4)](sig-v4-authenticating-requests.md).
-
-- The REST API uses standard HTTP headers and status codes, so
-standard browsers and toolkits work as expected. In some areas, we have added functionality to HTTP
-(for example, we added headers to support access control). In these cases, we have done our best to
-add the new functionality in a way that matches the style of standard HTTP usage. For more information
-about making requests, see [Making requests](makingrequests.md).
-
-_Permissions_
-
-You can have valid credentials to authenticate your requests, but unless you have S3 permissions from the account owner or bucket owner
-you cannot create or access Amazon S3 resources. These permissions are typically granted through an AWS Identity and Access Management (IAM) [policy](../userguide/security-iam.md#security_iam_access-manage), such as a bucket policy. For example, you must have permissions to create
-an S3 bucket or get an object in a bucket. For a complete list of S3 permissions, see [Actions, resources, and condition keys for Amazon S3](../../../service-authorization/latest/reference/list-amazons3.md).
-
-For more information about the permissions to S3 API operations by S3 resource types, see [Required permissions for Amazon S3 API operations](../userguide/using-with-s3-policy-actions.md) in the _Amazon Simple Storage Service User Guide_.
-
-If you use the root user credentials of your
-AWS account, you have all the permissions. However, using root user credentials is not
-recommended.
-Instead,
-we recommend that you create AWS Identity and Access Management (IAM) roles in your account and manage user permissions. For
-more information, see [Access Management](../userguide/access-management.md) in the _Amazon Simple Storage Service User Guide_.
+Amazon S3 vector buckets are a bucket type to store and search vectors with sub-second
+search times. They are designed to provide dedicated API operations for you to interact
+with vectors to do similarity search. Within a vector bucket, you use a vector index to
+organize and logically group your vector data. When you make a write or read request, you
+direct it to a single vector index. You store your vector data as vectors. A vector
+contains a key (a name that you assign), a multi-dimensional vector, and, optionally,
+metadata that describes a vector. The key uniquely identifies the vector in a vector
+index.
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-S3 API Reference
+Actions
 
 All content copied from https://docs.aws.amazon.com/.

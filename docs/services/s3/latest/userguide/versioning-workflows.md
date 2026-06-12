@@ -75,7 +75,7 @@ objects with the same key (object name) but different version IDs, such as
 `photo.gif` (version 111111) and `photo.gif`
 (version 121212).
 
-![Diagram depicting a versioning-enabled bucket that has two objects with the same key but different version IDs.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_Enabled.png)
+![A versioning-enabled bucket that has two objects with the same key but different version IDs.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_Enabled.png)
 
 Each object has a version ID, whether or not S3 Versioning is enabled. If S3 Versioning
 is not enabled, Amazon S3 sets the value of the version ID to `null`. If you
@@ -110,7 +110,7 @@ contains an object with the same name, the following behavior occurs:
 - Amazon S3 generates a new version ID (121212), and adds this newer version of the
 object to the bucket.
 
-![Diagram depicting how S3 Versioning works when you PUT an object in a versioning-enabled bucket.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_PUT_versionEnabled3.png)
+![How S3 Versioning works when you PUT an object in a versioning-enabled bucket.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_PUT_versionEnabled3.png)
 
 With this functionality, you can retrieve a previous version of an object if an object
 has been accidentally overwritten or deleted.
@@ -118,14 +118,14 @@ has been accidentally overwritten or deleted.
 When you `DELETE` an object, all versions remain in the bucket, and Amazon S3
 inserts a delete marker, as shown in the following figure.
 
-![Illustration that shows a delete marker insertion.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_DELETE_versioningEnabled.png)
+![A delete marker insertion.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_DELETE_versioningEnabled.png)
 
 The delete marker becomes the current version of the object. By default,
 `GET` requests retrieve the most recently stored version. Performing a
 `GET Object` request when the current version is a delete marker returns
 a `404 Not Found` error, as shown in the following figure.
 
-![Illustration that shows a GetObject call for a delete marker returning a 404 (Not Found) error.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_DELETE_NoObjectFound.png)
+![A GetObject call for a delete marker returning a 404 (Not Found) error.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_DELETE_NoObjectFound.png)
 
 However, you can `GET` a noncurrent version of an object by specifying its
 version ID. In the following figure, you `GET` a specific object version,
@@ -134,7 +134,7 @@ version.
 
 For more information, see [Retrieving object versions from a versioning-enabled bucket](retrievingobjectversions.md).
 
-![Diagram depicting how S3 Versioning works when you GET a noncurrent version in a versioning-enabled bucket.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_GET_Versioned3.png)
+![How S3 Versioning works when you GET a noncurrent version in a versioning-enabled bucket.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_GET_Versioned3.png)
 
 You can permanently delete an object by specifying the version that you want to
 delete. Only the owner of an Amazon S3 bucket or an authorized IAM user can permanently
@@ -142,7 +142,7 @@ delete a version. If your `DELETE` operation specifies the
 `versionId`, that object version is permanently deleted, and Amazon S3 doesn't
 insert a delete marker.
 
-![Diagram that shows how DELETE versionId permanently deletes a specific object version.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_DELETE_versioningEnabled2.png)
+![How DELETE versionId permanently deletes a specific object version.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_DELETE_versioningEnabled2.png)
 
 You can add more security by configuring a bucket to enable multi-factor
 authentication (MFA) delete. When you enable MFA delete for a bucket, the bucket owner

@@ -113,6 +113,12 @@ multipart uploads in the bucket and use the
 `AbortMultipartUpload` operation to abort all the
 in-progress multipart uploads.
 
+- **AWS Command Line Interface (CLI) `s3 sync`**
+**command** – The `s3 sync` command is not
+supported with directory buckets. Use `s3 cp --recursive`
+as an alternative to transfer files to or from
+directory buckets.
+
 - **AWS Local Zones** – Local Zones are only supported for directory buckets not general purpose buckets.
 
 - Appending data to existing objects isn’t supported for
@@ -145,8 +151,6 @@ The following Amazon S3 features are not supported by directory buckets:
 
 - S3 Access Grants
 
-- Amazon CloudWatch request metrics
-
 - S3 Event Notifications
 
 - S3 Lifecycle transition actions
@@ -156,8 +160,6 @@ The following Amazon S3 features are not supported by directory buckets:
 - S3 Object Lambda Access Points
 
 - S3 Versioning
-
-- S3 Inventory
 
 - S3 Replication
 

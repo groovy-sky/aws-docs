@@ -24,7 +24,7 @@ viewers globally with low latency, high throughput, and high transfer speeds. Fo
 information about CloudFront caching management, see [Optimizing caching\
 and availability](../../../amazoncloudfront/latest/developerguide/configuringcaching.md) in the _Amazon CloudFront Developer Guide_.
 
-![Diagram showing how the CloudFront caching mechanism works.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/cf-example-image-global.png)
+![How the CloudFront caching mechanism works.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/cf-example-image-global.png)
 
 ###### Objective
 

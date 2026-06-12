@@ -4,10 +4,6 @@ title: "PutBucketInventoryConfiguration"
 
 # PutBucketInventoryConfiguration
 
-###### Note
-
-This operation is not supported for directory buckets.
-
 This implementation of the `PUT` action adds an S3 Inventory configuration (identified by
 the inventory ID) to the bucket. You can have up to 1,000 inventory configurations per bucket.
 
@@ -30,6 +26,14 @@ permissions to Amazon S3 to write objects to the bucket in the defined location.
 [Granting\
 Permissions for Amazon S3 Inventory and Storage Class Analysis](../dev/example-bucket-policies.md#example-bucket-policies-use-case-9).
 
+###### Note
+
+**Directory buckets** \- For directory buckets, you must make requests for this API operation to the Regional endpoint. These endpoints support path-style requests in the format `https://s3express-control.region-code.amazonaws.com/bucket-name
+         `. Virtual-hosted-style requests aren't supported.
+For more information about endpoints in Availability Zones, see [Regional and Zonal endpoints for directory buckets in Availability Zones](../userguide/endpoint-directory-buckets-az.md) in the
+_Amazon S3 User Guide_. For more information about endpoints in Local Zones, see [Concepts for directory buckets in Local Zones](../userguide/s3-lzs-for-directory-buckets.md) in the
+_Amazon S3 User Guide_.
+
 Permissions
 
 To use this operation, you must have permission to perform the
@@ -41,12 +45,26 @@ report that includes all object metadata fields available and to specify the des
 store the inventory. A user with read access to objects in the destination bucket can also access
 all object metadata fields that are available in the inventory report.
 
-To restrict access to an inventory report, see [Restricting access to an Amazon S3 Inventory report](../userguide/example-bucket-policies.md#example-bucket-policies-use-case-10) in the
+- **General purpose bucket permissions** \- The
+`s3:PutInventoryConfiguration` permission is required in a policy. For more information
+about general purpose buckets permissions, see [Using Bucket Policies and User\
+Policies](../dev/using-iam-policies.md) in the _Amazon S3 User Guide_.
+
+- **Directory bucket permissions** \- To grant access to
+this API operation, you must have the `s3express:PutInventoryConfiguration` permission in
+an IAM identity-based policy instead of a bucket policy.
+For more information about directory bucket policies and permissions, see [AWS Identity and Access Management (IAM) for S3 Express One Zone](../userguide/s3-express-security-iam.md) in the _Amazon S3 User Guide_.
+
+To restrict access to an inventory report, see [Restricting access to an Amazon S3 Inventory report](../userguide/example-bucket-policies.md#example-bucket-policies-s3-inventory) in the
 _Amazon S3 User Guide_. For more information about the metadata fields available
 in S3 Inventory, see [Amazon S3 Inventory\
 lists](../userguide/storage-inventory.md#storage-inventory-contents) in the _Amazon S3 User Guide_. For more information about
 permissions, see [Permissions related to bucket subresource operations](../userguide/using-with-s3-actions.md#using-with-s3-actions-related-to-bucket-subresources) and [Identity and access management in\
 Amazon S3](../userguide/s3-access-control.md) in the _Amazon S3 User Guide_.
+
+HTTP Host header syntax
+
+**Directory buckets** \- The HTTP Host header syntax is `s3express-control.region-code.amazonaws.com`.
 
 `PutBucketInventoryConfiguration` has the following special errors:
 
@@ -128,6 +146,11 @@ The request uses the following URI parameters.
 
 The name of the bucket where the inventory configuration will be stored.
 
+**Directory buckets** \- When you use this operation with a directory bucket, you must use path-style requests in the format `https://s3express-control.region-code.amazonaws.com/bucket-name
+                  `. Virtual-hosted-style requests aren't supported. Directory bucket names must be unique in the chosen Zone (Availability Zone or Local Zone). Bucket names must also follow the format `
+                     bucket-base-name--zone-id--x-s3` (for example, `
+                     DOC-EXAMPLE-BUCKET--usw2-az1--x-s3`). For information about bucket naming restrictions, see [Directory bucket naming rules](../userguide/directory-bucket-naming-rules.md) in the _Amazon S3 User Guide_
+
 Required: Yes
 
 **[id](#API_PutBucketInventoryConfiguration_RequestSyntax)**
@@ -139,6 +162,11 @@ Required: Yes
 **[x-amz-expected-bucket-owner](#API_PutBucketInventoryConfiguration_RequestSyntax)**
 
 The account ID of the expected bucket owner. If the account ID that you provide does not match the actual owner of the bucket, the request fails with the HTTP status code `403 Forbidden` (access denied).
+
+###### Note
+
+For directory buckets, this header is not supported in this API operation. If you specify this header, the request fails with the HTTP status code
+`501 Not Implemented`.
 
 ## Request Body
 
@@ -200,6 +228,11 @@ Required: Yes
 **[OptionalFields](#API_PutBucketInventoryConfiguration_RequestSyntax)**
 
 Contains the optional fields that are included in the inventory results.
+
+###### Note
+
+The following optional fields are supported for directory buckets `Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded |
+      EncryptionStatus | BucketKeyStatus | ChecksumAlgorithm | LifecycleExpirationDate.` Throws MalformedXML error if unsupported optional field is provided.
 
 Type: Array of strings
 

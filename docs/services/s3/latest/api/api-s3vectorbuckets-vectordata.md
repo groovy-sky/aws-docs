@@ -36,6 +36,4 @@ For more information about using this API in one of the language-specific AWS SD
 
 VectorBucketSummary
 
-Developing with Amazon S3
-
 All content copied from https://docs.aws.amazon.com/.

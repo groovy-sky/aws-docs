@@ -65,7 +65,7 @@ integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Gui
 
 Type: String
 
-Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME`
+Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME | SHA512 | MD5 | XXHASH64 | XXHASH3 | XXHASH128`
 
 Required: No
 

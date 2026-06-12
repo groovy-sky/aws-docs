@@ -61,6 +61,12 @@ storing them in Amazon S3.
 are subject to the requests per second (RPS) quotas of AWS KMS. For more information about
 AWS KMS quotas and how to request a quota increase, see [Quotas](../../../kms/latest/developerguide/limits.md) in the _AWS Key Management Service Developer Guide_.
 
+- If this bucket is used as a destination for server access logging, the destination
+bucket must use Amazon S3 managed keys (SSE-S3). If the destination bucket uses SSE-KMS
+default encryption, Amazon S3 might deliver log objects that are encrypted with a key that you
+can't access. To resolve this, change the destination bucket's default encryption to SSE-S3.
+For more information about server access logging, see [Logging requests with server access logging](serverlogs.md).
+
 ###### Note
 
 Objects uploaded before default encryption was enabled will not be encrypted. For

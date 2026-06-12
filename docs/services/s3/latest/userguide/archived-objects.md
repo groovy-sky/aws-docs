@@ -23,6 +23,12 @@ in real time:
 
 - The S3 Intelligent-Tiering Deep Archive Access tier
 
+###### Note
+
+Objects stored in the S3 Glacier Instant Retrieval storage class are not archived. S3 Glacier Instant Retrieval provides
+real-time access with millisecond retrieval latency and does not require a restore
+operation. For more information about storage classes, see [Understanding and managing Amazon S3 storage classes](storage-class-intro.md).
+
 To restore archived objects, you must do the following:
 
 - For objects in the S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive

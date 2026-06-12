@@ -28,7 +28,7 @@ policy and other permissions using a user policy.
 The following steps summarize the
 walkthrough:
 
-![Diagram showing an AWS account granting permissions.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/access-policy-ex1.png)
+![An AWS account granting permissions.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/access-policy-ex1.png)
 
 1. Account administrator creates a bucket policy granting a set of permissions to the
     user.

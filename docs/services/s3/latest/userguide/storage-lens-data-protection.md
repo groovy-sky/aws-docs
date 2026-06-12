@@ -215,7 +215,7 @@ The **Buckets** list updates to display all the available
     **Data protection** metrics for the buckets shown.
 
 6. To filter the **Buckets** list to display only specific
-    data-protection metrics, choose the preferences icon (![A screenshot that shows the preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
+    data-protection metrics, choose the preferences icon (![The Preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
 
 7. Clear the toggles for all data-protection metrics until only the following
     metrics remain selected:
@@ -270,7 +270,7 @@ S3 Storage Lens **Advanced metrics and recommendations** and then select
 **protection**. Then clear **Summary**.
 
 6. To filter the **Buckets** list to display only
-    replication rule count metrics, choose the preferences icon (![A screenshot that shows the preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
+    replication rule count metrics, choose the preferences icon (![The Preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
 
 7. Clear the toggles for all data-protection metrics until only the
     replication rule count metrics remain selected:

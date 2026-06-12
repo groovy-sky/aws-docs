@@ -11,7 +11,7 @@ in the bucket.
 The following figure shows that Amazon S3 adds a unique version ID to an object when it is
 added to a versioning-enabled bucket.
 
-![Illustration that shows a unique version ID added to an object when it is put in a versioning-enabled bucket.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_PUT_versionEnabled.png)
+![A unique version ID added to an object when it is put in a versioning-enabled bucket.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_PUT_versionEnabled.png)
 
 ###### Note
 

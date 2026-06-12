@@ -103,7 +103,7 @@ For each of these errors, Amazon S3 returns a predefined HTML message. The follo
 is an example HTML message that is returned for a **403 Forbidden**
 response.
 
-![403 Forbidden error message example](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/WebsiteErrorExample403.png)
+![403 Forbidden error message example.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/WebsiteErrorExample403.png)
 
 ## Configuring a custom error document
 

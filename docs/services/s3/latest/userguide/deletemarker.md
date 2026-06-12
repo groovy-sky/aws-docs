@@ -70,14 +70,14 @@ The following figure shows how a `GetObject` API call on an
 object whose current version is a delete marker responds with a 404 (Not Found) error and
 the response header includes `x-amz-delete-marker: true`.
 
-![Illustration that shows a GetObject call for a delete marker returning a 404 (Not Found) error.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_DELETE_NoObjectFound.png)
+![A GetObject call for a delete marker returning a 404 (Not Found) error.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_DELETE_NoObjectFound.png)
 
 If you make a `GetObject` call on an object by specifying a
 `versionId` in your request, and if the specified version is a delete marker,
 Amazon S3 responds with a 405 (Method Not Allowed) error and the response headers include
 `x-amz-delete-marker: true` and `Last-Modified: timestamp`.
 
-![Illustration that shows a GetObject call for a delete marker returning a 405 (Method Not Allowed) error.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_DELETE_NoObjectFound_405.png)
+![A GetObject call for a delete marker returning a 405 (Method Not Allowed) error.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_DELETE_NoObjectFound_405.png)
 
 Even if overwritten, delete markers remain in your object versions. The only way to list
 delete markers (and other versions of an object) is by using a [ListObjectVersions](../api/api-listobjectversions.md) request. You can make this request in the
@@ -88,7 +88,7 @@ The following figure shows that a [ListObjectsV2](../api/api-listobjectsv2.md) o
 [ListObjects](../api/api-listobjects.md) request doesn't return objects whose current
 version is a delete marker.
 
-![Illustration that shows how a ListObjectsV2 or ListObjects call doesn't return any delete markers.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_GETBucketwithDeleteMarkers.png)
+![How a ListObjectsV2 or ListObjects call does not return any delete markers.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_GETBucketwithDeleteMarkers.png)
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

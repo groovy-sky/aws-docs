@@ -104,8 +104,6 @@ Console or using the AWS KMS `DescribeKey` API.
 To perform the `UpdateObjectEncryption` operation, you must have the following
 permissions:
 
-- `s3:PutObject`
-
 - `s3:UpdateObjectEncryption`
 
 - `kms:Encrypt`
@@ -134,7 +132,6 @@ your general purpose bucket, and replace the other `user input
             "Sid": "AllowUpdateObjectEncryption",
             "Effect": "Allow",
             "Action": [
-                "s3:PutObject",
                 "s3:UpdateObjectEncryption",
                 "kms:Encrypt",
                 "kms:Decrypt",

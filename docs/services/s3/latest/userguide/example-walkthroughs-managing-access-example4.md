@@ -85,11 +85,6 @@ bucket.
 
 For more information about IAM roles, see [IAM Roles](../../../iam/latest/userguide/id-roles.md) in the _IAM User Guide_.
 
-The following is a summary of the walkthrough
-steps:
-
-![Cross-account permissions using IAM roles.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/access-policy-ex4.png)
-
 1. Account A administrator user attaches a bucket policy granting Account B
     conditional permission to upload objects.
 
@@ -107,6 +102,11 @@ steps:
 5. User in Account C first assumes the role, which returns the user temporary
     security credentials. Using those temporary credentials, the user then accesses
     objects in the bucket.
+
+The following is a summary of the walkthrough
+steps:
+
+![Cross-account permissions using IAM roles.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/access-policy-ex4.png)
 
 For this example, you need three accounts. The following table shows how we refer to
 these accounts and the administrator users in these accounts. In accordance with the

@@ -74,6 +74,11 @@ x-amz-fwd-header-x-amz-checksum-crc32c: ChecksumCRC32C
 x-amz-fwd-header-x-amz-checksum-crc64nvme: ChecksumCRC64NVME
 x-amz-fwd-header-x-amz-checksum-sha1: ChecksumSHA1
 x-amz-fwd-header-x-amz-checksum-sha256: ChecksumSHA256
+x-amz-fwd-header-x-amz-checksum-sha512: ChecksumSHA512
+x-amz-fwd-header-x-amz-checksum-md5: ChecksumMD5
+x-amz-fwd-header-x-amz-checksum-xxhash64: ChecksumXXHASH64
+x-amz-fwd-header-x-amz-checksum-xxhash3: ChecksumXXHASH3
+x-amz-fwd-header-x-amz-checksum-xxhash128: ChecksumXXHASH128
 x-amz-fwd-header-x-amz-delete-marker: DeleteMarker
 x-amz-fwd-header-ETag: ETag
 x-amz-fwd-header-Expires: Expires
@@ -193,6 +198,13 @@ that was originally sent. This header specifies the Base64 encoded, 64-bit `CRC6
 checksum of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
 the _Amazon S3 User Guide_.
 
+**[x-amz-fwd-header-x-amz-checksum-md5](#API_WriteGetObjectResponse_RequestSyntax)**
+
+This header can be used as a data integrity check to verify that the data received is the same data
+that was originally sent. This header specifies the Base64 encoded, 128-bit `MD5`
+digest of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
 **[x-amz-fwd-header-x-amz-checksum-sha1](#API_WriteGetObjectResponse_RequestSyntax)**
 
 This header can be used as a data integrity check to verify that the data received is the same data
@@ -216,6 +228,34 @@ integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Gui
 
 Only one checksum header can be specified at a time. If you supply multiple checksum headers, this
 request will fail.
+
+**[x-amz-fwd-header-x-amz-checksum-sha512](#API_WriteGetObjectResponse_RequestSyntax)**
+
+This header can be used as a data integrity check to verify that the data received is the same data
+that was originally sent. This header specifies the Base64 encoded, 512-bit `SHA512`
+digest of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
+**[x-amz-fwd-header-x-amz-checksum-xxhash128](#API_WriteGetObjectResponse_RequestSyntax)**
+
+This header can be used as a data integrity check to verify that the data received is the same data
+that was originally sent. This header specifies the Base64 encoded, 128-bit `XXHASH128`
+checksum of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
+**[x-amz-fwd-header-x-amz-checksum-xxhash3](#API_WriteGetObjectResponse_RequestSyntax)**
+
+This header can be used as a data integrity check to verify that the data received is the same data
+that was originally sent. This header specifies the Base64 encoded, 64-bit `XXHASH3`
+checksum of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
+**[x-amz-fwd-header-x-amz-checksum-xxhash64](#API_WriteGetObjectResponse_RequestSyntax)**
+
+This header can be used as a data integrity check to verify that the data received is the same data
+that was originally sent. This header specifies the Base64 encoded, 64-bit `XXHASH64`
+checksum of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
 
 **[x-amz-fwd-header-x-amz-delete-marker](#API_WriteGetObjectResponse_RequestSyntax)**
 

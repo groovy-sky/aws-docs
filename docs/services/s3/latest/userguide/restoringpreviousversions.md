@@ -26,7 +26,7 @@ object. So, the bucket has both the original object version (111111) and its cop
 it to make it the current version, see [Retrieving object\
 versions from a versioning-enabled bucket](retrievingobjectversions.md) and [Uploading objects](upload-objects.md).
 
-![Illustration that shows copying a specific version of an object into the same bucket to make it the current version.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_COPY2.png)
+![Copying a specific version of an object into the same bucket to make it the current version.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_COPY2.png)
 
 A subsequent `GET` retrieves version 88778877.
 
@@ -35,7 +35,7 @@ leaves the previous version (111111) as the current object. For more information
 about deleting an object, see [Deleting a single\
 object](delete-objects.md).
 
-![Illustration that shows deleting the current version of an object leaves the previous version as the current object.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_COPY_delete2.png)
+![Deleting the current version of an object leaves the previous version as the current object.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/versioning_COPY_delete2.png)
 
 A subsequent `GET` retrieves version 111111.
 

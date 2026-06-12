@@ -507,6 +507,16 @@ SHA-1 ( `SHA1`)
 
 SHA-256 ( `SHA256`)
 
+MD5 ( `MD5`)
+
+XXHash64 ( `XXHASH64`)
+
+XXHash3 ( `XXHASH3`)
+
+XXHash128 ( `XXHASH128`)
+
+SHA-512 ( `SHA512`)
+
 Composite
 
 Required headers:
@@ -523,19 +533,39 @@ Required headers:
 
 `x-amz-checksum-sha256`
 
+`x-amz-checksum-md5`
+
+`x-amz-checksum-xxhash64`
+
+`x-amz-checksum-xxhash3`
+
+`x-amz-checksum-xxhash128`
+
+`x-amz-checksum-sha512`
+
 Required headers:
 
 All part-level checksums need to be included in the `CompleteMultiPartUpload` request.
 
 Optional headers:
 
-`x-amz-crc32`
+`x-amz-checksum-crc32`
 
-`x-amz-crc32c`
+`x-amz-checksum-crc32c`
 
-`x-amz-sha1`
+`x-amz-checksum-sha1`
 
-`x-amz-sha256`
+`x-amz-checksum-sha256`
+
+`x-amz-checksum-md5`
+
+`x-amz-checksum-xxhash64`
+
+`x-amz-checksum-xxhash3`
+
+`x-amz-checksum-xxhash128`
+
+`x-amz-checksum-sha512`
 
 ###### Topics
 

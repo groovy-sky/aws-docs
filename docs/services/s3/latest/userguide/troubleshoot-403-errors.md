@@ -16,7 +16,7 @@ statement.
 
 Because an AWS Identity and Access Management (IAM) policy implicitly denies an IAM principal by default, the
 policy must explicitly allow the principal to perform an action. Otherwise, the policy
-implicitly denies access. For more information, see [The difference between explicit and implicit denies](../../../iam/latest/userguide/reference-policies-evaluation-logic.md#AccessPolicyLanguage_Interplay) in the _IAM User Guide_. For information about the policy evaluation
+implicitly denies access. For more information, see [The difference between explicit and implicit denies](../../../iam/latest/userguide/reference-policies-evaluation-logic-accesspolicylanguage-interplay.md) in the _IAM User Guide_. For information about the policy evaluation
 logic that determines whether an access request is allowed or denied, see [Policy evaluation logic](../../../iam/latest/userguide/reference-policies-evaluation-logic.md) in the _IAM User Guide_.
 
 For more information about the permissions to S3 API operations by S3 resource types, see [Required permissions for Amazon S3 API operations](using-with-s3-policy-actions.md).
@@ -188,7 +188,7 @@ with an explicit deny in a resource control policy
     `s3:GetObject`.
 
 2. Update your SCP by adding the `Allow` statement. For more
-    information, see [Updating an SCP](../../../organizations/latest/userguide/orgs-manage-policies-scps-create.md#update_policy) in the
+    information, see [Updating an SCP](../../../organizations/latest/userguide/orgs-policies-update.md#update_policy) in the
     _AWS Organizations User Guide_.
 
 ```nohighlight
@@ -204,10 +204,8 @@ s3:GetObject because no service control policy allows the s3:GetObject action
     `s3:GetObject`.
 
 2. Update your SCP by changing the `Deny` statement to allow the
-    user the necessary access. For an example of how you can do this, see [Prevent IAM users and roles from making specified changes, with an\
-    exception for a specified admin role](../../../organizations/latest/userguide/orgs-manage-policies-scps-examples-general.md#example-scp-restricts-with-exception) in the
-    _AWS Organizations User Guide_. For more information about
-    updating your SCP, see [Updating an SCP](../../../organizations/latest/userguide/orgs-manage-policies-scps-create.md#update_policy) in the
+    user the necessary access. For an example of how you can do this, see [Service control policy examples](https://github.com/aws-samples/service-control-policy-examples) on GitHub. For more information about
+    updating your SCP, see [Updating an SCP](../../../organizations/latest/userguide/orgs-policies-update.md#update_policy) in the
     _AWS Organizations User Guide_.
 
 ```nohighlight
@@ -396,7 +394,7 @@ an explicit deny in a resource-based policy
 
 1. Check for a missing `Allow` statement for the action in
     identity-based policies attached to the identity. For the following example,
-    the action is `s3:GetObject` attached to the user
+    the action is `s3:GetObject` and the identity is the IAM user
     `MaryMajor`.
 
 2. Update your policy by adding the `Allow` statement. For more
@@ -413,7 +411,7 @@ s3:GetObject because no identity-based policy allows the s3:GetObject action
 
 1. Check for an explicit `Deny` statement for the action in
     identity-based policies attached to the identity. For the following example,
-    the action is `s3:GetObject` attached to the user
+    the action is `s3:GetObject` and the identity is the IAM user
     `MaryMajor`.
 
 2. Update your policy by changing the `Deny` statement to allow
@@ -590,7 +588,7 @@ implicitly denies requests from any other IAM identities from any other accounts
 and anonymous (unsigned) requests. However, if there is no IAM user policy in
 place, the requester (unless they're the AWS account root user) is implicitly denied
 from making any requests. For more information about this evaluation logic, see
-[Determining whether a request is denied or allowed within an account](../../../iam/latest/userguide/reference-policies-evaluation-logic.md#policy-eval-denyallow) in
+[Determining whether a request is denied or allowed within an account](../../../iam/latest/userguide/reference-policies-evaluation-logic-policy-eval-denyallow.md) in
 the _IAM User Guide_.
 
 ### Object-level operations
@@ -638,8 +636,9 @@ a bucket policy apply to all objects regardless of object ownership.
 
 ###### Note
 
-To view or edit a bucket policy, you must have the
-`s3:GetBucketPolicy` permission.
+To view a bucket policy, you must have the
+`s3:GetBucketPolicy` permission. To edit a bucket policy, you must have the
+`s3:PutBucketPolicy` permission.
 
 1. Sign in to the AWS Management Console and open the Amazon S3 console at
     [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3).
@@ -654,7 +653,7 @@ To view or edit a bucket policy, you must have the
 5. Under **Bucket policy**, choose **Edit**.
     The **Edit bucket policy** page appears.
 
-To review or edit your bucket policy by using the AWS Command Line Interface (AWS CLI), use the [get-bucket-policy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-policy.html) command.
+To review your bucket policy by using the AWS Command Line Interface (AWS CLI), use the [get-bucket-policy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-policy.html) command. To edit your bucket policy, use the [put-bucket-policy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-policy.html) command.
 
 ###### Note
 
@@ -904,7 +903,7 @@ Amazon S3 permissions to access the object.
 
 - **SSE-C (with a customer provided key)**
 – No additional permissions are required. You can configure the
-bucket policy to [require and restrict server-side encryption with customer-provided encryption keys](serversideencryptioncustomerkeys.md#ssec-require-condition-key) for objects in your bucket.
+bucket policy to [require and restrict server-side encryption with customer-provided encryption keys](specifying-s3-c-encryption.md#example-bucket-policy-to-enforce-sse-c-encryption) for objects in your bucket.
 
 If the object is encrypted with a customer managed key, make sure that the KMS key policy
 allows you to perform the `kms:GenerateDataKey` or
@@ -1070,7 +1069,7 @@ For more guidance on Access Denied (403 Forbidden) errors you can check the foll
 
 - [How do I troubleshoot 403 Access Denied errors from Amazon S3?](https://repost.aws/knowledge-center/s3-troubleshoot-403) in the AWS re:Post Knowledge Center.
 
-- [Why do I get a 403 Forbidden error when I try to access an Amazon S3 bucket or object?](https://repost.aws/knowledge-center/s3-403-forbidden-error) in the AWS re:Post Knowledge Center.
+- [Why am I getting a "403 Forbidden" error when I try to upload files in Amazon S3?](https://repost.aws/knowledge-center/s3-403-forbidden-error) in the AWS re:Post Knowledge Center.
 
 - [Why do I get an Access Denied error when I try to access an Amazon S3 resource in the same AWS account?](https://repost.aws/knowledge-center/s3-troubleshoot-403-resource-same-account) in the AWS re:Post Knowledge Center.
 

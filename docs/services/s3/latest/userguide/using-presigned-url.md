@@ -33,7 +33,7 @@ uploading, `HEAD` for reading object metadata, etc)
 When using presigned URLs to upload objects, you can verify object integrity using
 checksums. While presigned URLs created with AWS Signature Version 2 only support MD5
 checksums, presigned URLs created with AWS Signature Version 4 support additional checksum
-algorithms including CRC-64/NVME, CRC32, CRC32C, SHA-1, and SHA-256.
+algorithms including CRC-64/NVME, CRC32, CRC32C, SHA-1, SHA-256, MD5, XXHash64, XXHash3, XXHash128, and SHA-512.
 To use these additional
 checksum algorithms, ensure you're using AWS Signature Version 4 and include the appropriate
 checksum header in your upload request. For more information about object integrity, see
@@ -195,6 +195,13 @@ Presigned URLs remain valid only while their underlying credentials are valid. A
 ###### Q: Why am I getting a 403 Forbidden error when accessing a presigned URL?
 
 Before generating a presigned URL, verify that you have the correct permissions configured. The IAM user or role generating the URL must have the required permissions, such as `s3:GetObject`, for the specific operation. Additionally, check that the Amazon S3 bucket policy doesn't explicitly deny access to the object.
+
+###### Q: Why am I getting an `AccessDenied` error with `HeadersNotSigned: if-range`?
+
+When `Range` is included in `X-Amz-SignedHeaders`, Amazon S3
+requires that `If-Range` also be signed if present in the request. Add
+`If-Range` to `X-Amz-SignedHeaders` when you generate the
+presigned URL.
 
 ###### Q: I'm getting `SignatureDoesNotMatch` errors. How do I fix this?
 

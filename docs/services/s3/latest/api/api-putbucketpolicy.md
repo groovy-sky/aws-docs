@@ -141,9 +141,19 @@ For the `x-amz-checksum-algorithm
 
 - `CRC64NVME`
 
+- `MD5`
+
 - `SHA1`
 
 - `SHA256`
+
+- `SHA512`
+
+- `XXHASH3`
+
+- `XXHASH64`
+
+- `XXHASH128`
 
 For more
 information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
@@ -156,7 +166,7 @@ If the individual checksum value you provide through `x-amz-checksum-algorithm
 
 For directory buckets, when you use AWS SDKs, `CRC32` is the default checksum algorithm that's used for performance.
 
-Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME`
+Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME | SHA512 | MD5 | XXHASH64 | XXHASH3 | XXHASH128`
 
 ## Request Body
 

@@ -94,7 +94,7 @@ The expected owner of the general purpose bucket that corresponds to your metada
 
 The checksum algorithm to use with your metadata table configuration.
 
-Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME`
+Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME | SHA512 | MD5 | XXHASH64 | XXHASH3 | XXHASH128`
 
 ## Request Body
 

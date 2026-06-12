@@ -365,6 +365,11 @@ x-amz-checksum-crc32c: ChecksumCRC32C
 x-amz-checksum-crc64nvme: ChecksumCRC64NVME
 x-amz-checksum-sha1: ChecksumSHA1
 x-amz-checksum-sha256: ChecksumSHA256
+x-amz-checksum-sha512: ChecksumSHA512
+x-amz-checksum-md5: ChecksumMD5
+x-amz-checksum-xxhash64: ChecksumXXHASH64
+x-amz-checksum-xxhash3: ChecksumXXHASH3
+x-amz-checksum-xxhash128: ChecksumXXHASH128
 x-amz-checksum-type: ChecksumType
 ETag: ETag
 x-amz-missing-meta: MissingMeta
@@ -473,6 +478,12 @@ The Base64 encoded, 64-bit `CRC64NVME` checksum of the object. For more informat
 [Checking\
 object integrity in the Amazon S3 User Guide](../userguide/checking-object-integrity.md).
 
+**[x-amz-checksum-md5](#API_HeadObject_ResponseSyntax)**
+
+The Base64 encoded, 128-bit `MD5` digest of the object. For more information, see
+[Checking\
+object integrity in the Amazon S3 User Guide](../userguide/checking-object-integrity.md).
+
 **[x-amz-checksum-sha1](#API_HeadObject_ResponseSyntax)**
 
 The Base64 encoded, 160-bit `SHA1` digest of the object. This checksum is only present if the checksum was uploaded
@@ -485,6 +496,12 @@ The Base64 encoded, 256-bit `SHA256` digest of the object. This checksum is only
 with the object. When you use an API operation on an object that was uploaded using multipart uploads, this value may not be a direct checksum value of the full object. Instead, it's a calculation based on the checksum values of each individual part. For more information about how checksums are calculated
 with multipart uploads, see [Checking object integrity](../userguide/checking-object-integrity.md#large-object-checksums) in the _Amazon S3 User Guide_.
 
+**[x-amz-checksum-sha512](#API_HeadObject_ResponseSyntax)**
+
+The Base64 encoded, 512-bit `SHA512` digest of the object. For more information, see
+[Checking\
+object integrity in the Amazon S3 User Guide](../userguide/checking-object-integrity.md).
+
 **[x-amz-checksum-type](#API_HeadObject_ResponseSyntax)**
 
 The checksum type, which determines how part-level checksums are combined to create an object-level
@@ -494,6 +511,24 @@ For more information, see [Checking object integrity in the Amazon S3\
 User Guide](../userguide/checking-object-integrity.md).
 
 Valid Values: `COMPOSITE | FULL_OBJECT`
+
+**[x-amz-checksum-xxhash128](#API_HeadObject_ResponseSyntax)**
+
+The Base64 encoded, 128-bit `XXHASH128` checksum of the object. For more information, see
+[Checking\
+object integrity in the Amazon S3 User Guide](../userguide/checking-object-integrity.md).
+
+**[x-amz-checksum-xxhash3](#API_HeadObject_ResponseSyntax)**
+
+The Base64 encoded, 64-bit `XXHASH3` checksum of the object. For more information, see
+[Checking\
+object integrity in the Amazon S3 User Guide](../userguide/checking-object-integrity.md).
+
+**[x-amz-checksum-xxhash64](#API_HeadObject_ResponseSyntax)**
+
+The Base64 encoded, 64-bit `XXHASH64` checksum of the object. For more information, see
+[Checking\
+object integrity in the Amazon S3 User Guide](../userguide/checking-object-integrity.md).
 
 **[x-amz-delete-marker](#API_HeadObject_ResponseSyntax)**
 

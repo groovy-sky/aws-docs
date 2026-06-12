@@ -54,7 +54,7 @@ Amazon S3 will only share an S3 Bucket Key for objects encrypted by the same AWS
 S3 Bucket Keys are compatible with KMS keys created by AWS KMS, [imported key material](../../../kms/latest/developerguide/importing-keys.md), and [key material backed by custom key\
 stores](../../../kms/latest/developerguide/custom-key-store-overview.md).
 
-![Diagram showing AWS KMS generating a bucket key that creates data keys for objects in a bucket.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/S3-Bucket-Keys.png)
+![AWS KMS generating a bucket key that creates data keys for objects in a bucket.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/S3-Bucket-Keys.png)
 
 ## Configuring S3 Bucket Keys
 

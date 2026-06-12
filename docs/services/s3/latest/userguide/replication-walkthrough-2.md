@@ -72,16 +72,18 @@ To use the following example, replace the `user input
                                placeholders` with your own information. Replace
 `amzn-s3-demo-destination-bucket` with your destination bucket
 name. Replace
-`source-bucket-account-ID:role/service-role/source-account-IAM-role`
+`source-bucket-account-ID:role/source-account-IAM-role`
 in the IAM Amazon Resource Name (ARN) with the IAM role that you're using
 for this replication configuration.
 
-If you created the IAM service role manually, set the role path in the IAM
-ARN as `role/service-role/`, as shown in the following policy
-example. For more information, see [IAM\
+The role path in the IAM ARN depends on how you created the role. If you
+created the role with the AWS CLI (as shown in [Configuring replication for buckets in the same account](replication-walkthrough1.md)), the path is
+`role/role-name`. If you created the
+role with the IAM console as a service role, the path includes
+`service-role/` (that is,
+`role/service-role/role-name`). For
+more information, see [IAM\
 ARNs](../../../iam/latest/userguide/reference-identifiers.md#identifiers-arns) in the _IAM User Guide_.
-
-JSON
 
 ```json
 
@@ -93,7 +95,7 @@ JSON
                "Sid": "Set-permissions-for-objects",
                "Effect": "Allow",
                "Principal": {
-                   "AWS": "arn:aws:iam::111122223333:role/service-role/source-account-IAM-role"
+                   "AWS": "arn:aws:iam::source-bucket-account-ID:role/source-account-IAM-role"
                },
                "Action": [
                    "s3:ReplicateObject",
@@ -105,7 +107,7 @@ JSON
                "Sid": "Set-permissions-on-bucket",
                "Effect": "Allow",
                "Principal": {
-                   "AWS": "arn:aws:iam::111122223333:role/service-role/source-account-IAM-role"
+                   "AWS": "arn:aws:iam::source-bucket-account-ID:role/source-account-IAM-role"
                },
                "Action": [
                    "s3:GetBucketVersioning",
@@ -115,7 +117,6 @@ JSON
            }
        ]
 }
-
 ```
 
 4. (Optional) If you're replicating objects that are encrypted with SSE-KMS, the

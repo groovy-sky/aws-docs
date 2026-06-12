@@ -294,9 +294,14 @@ x-amz-request-charged: RequestCharged
       <ChecksumCRC32>string</ChecksumCRC32>
       <ChecksumCRC32C>string</ChecksumCRC32C>
       <ChecksumCRC64NVME>string</ChecksumCRC64NVME>
+      <ChecksumMD5>string</ChecksumMD5>
       <ChecksumSHA1>string</ChecksumSHA1>
       <ChecksumSHA256>string</ChecksumSHA256>
+      <ChecksumSHA512>string</ChecksumSHA512>
       <ChecksumType>string</ChecksumType>
+      <ChecksumXXHASH128>string</ChecksumXXHASH128>
+      <ChecksumXXHASH3>string</ChecksumXXHASH3>
+      <ChecksumXXHASH64>string</ChecksumXXHASH64>
    </Checksum>
    <ObjectParts>
       <IsTruncated>boolean</IsTruncated>
@@ -307,8 +312,13 @@ x-amz-request-charged: RequestCharged
          <ChecksumCRC32>string</ChecksumCRC32>
          <ChecksumCRC32C>string</ChecksumCRC32C>
          <ChecksumCRC64NVME>string</ChecksumCRC64NVME>
+         <ChecksumMD5>string</ChecksumMD5>
          <ChecksumSHA1>string</ChecksumSHA1>
          <ChecksumSHA256>string</ChecksumSHA256>
+         <ChecksumSHA512>string</ChecksumSHA512>
+         <ChecksumXXHASH128>string</ChecksumXXHASH128>
+         <ChecksumXXHASH3>string</ChecksumXXHASH3>
+         <ChecksumXXHASH64>string</ChecksumXXHASH64>
          <PartNumber>integer</PartNumber>
          <Size>long</Size>
       </Part>

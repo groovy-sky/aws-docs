@@ -83,7 +83,7 @@ The **Snapshot for _date_**
      object writer.
 
 07. To filter the **Buckets** list to display metrics only for a
-     specific Object Ownership setting, choose the preferences icon (![A screenshot that shows the preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
+     specific Object Ownership setting, choose the preferences icon (![The Preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
 
 08. Clear the metrics that you don't want to see.
 

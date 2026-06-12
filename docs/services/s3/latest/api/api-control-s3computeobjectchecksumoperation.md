@@ -14,7 +14,7 @@ Indicates the algorithm that you want Amazon S3 to use to create the checksum. F
 
 Type: String
 
-Valid Values: `CRC32 | CRC32C | CRC64NVME | MD5 | SHA1 | SHA256`
+Valid Values: `CRC32 | CRC32C | CRC64NVME | MD5 | SHA1 | SHA256 | SHA512 | XXHASH64 | XXHASH3 | XXHASH128`
 
 Required: No
 

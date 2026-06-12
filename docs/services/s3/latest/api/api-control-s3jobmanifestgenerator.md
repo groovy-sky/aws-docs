@@ -35,8 +35,8 @@ Required: Yes
 
 **ExpectedBucketOwner**
 
-The AWS account ID that owns the bucket the generated manifest is written to. If
-provided the generated manifest bucket's owner AWS account ID must match this value, else
+The AWS account ID that owns the source bucket specified in `SourceBucket`. If
+provided, the manifest source bucket owner's AWS account ID must match this value, else
 the job fails.
 
 Type: String

@@ -68,6 +68,11 @@ If you choose not to generate the manifest, you can supply an Amazon S3 Inventor
 report or CSV file that contains the objects that you want to replicate. For
 more information, see [Specifying a manifest for a Batch Replication job](#batch-replication-manifest).
 
+- If you recently added or updated the replication configuration on the source
+bucket, expect a delay of a few minutes before the change is fully propagated.
+We recommend waiting before creating a Batch Replication job with an
+S3-generated manifest.
+
 - Batch Replication doesn't support re-replicating objects that were deleted by
 specifying the version ID of the object from the destination bucket. To
 re-replicate these objects, you can copy the source objects in place with a
@@ -196,7 +201,7 @@ For information about troubleshooting Batch Replication, see [Batch Replication 
 
 ## Getting started with Batch Replication
 
-To learn more about how to use Batch Replication, see [Tutorial: Replicating existing objects in your Amazon S3 buckets with S3 Batch Replication](https://aws.amazon.com/getting-started/hands-on/replicate-existing-objects-with-amazon-s3-batch-replication).
+To learn more about how to use Batch Replication, see [Create a Batch Replication job for new replication rules or destinations](s3-batch-replication-new-config.md) and [Create a Batch Replication job for existing replication rules](s3-batch-replication-existing-config.md).
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

@@ -82,40 +82,40 @@ referenced item`object_lock_enabled_storage_bytes`DECIMAL(38,0)Number of bytes s
 referenced item`replicated_object_count`longNumber of objects replicated for the current referenced item`replicated_storage_bytes`DECIMAL(38,0)Number of bytes replicated for the current referenced item`replicated_object_source_count`longNumber of objects replicated as source stored for the current referenced
 item`replicated_storage_source_bytes`DECIMAL(38,0)Number of bytes replicated as source for the current referenced item`sse_kms_object_count`longNumber of objects encrypted with SSE key stored for the current referenced
 item`sse_kms_storage_bytes`DECIMAL(38,0)Number of bytes encrypted with SSE key stored for the current referenced
-item`object_0kb_count`longNumber of objects with sizes equal to 0KB, including current version,
-noncurrent versions, incomplete multipart uploads, and delete markers`object_0kb_to_128kb_count`longNumber of objects with sizes greater than 0KB and less than equal to 128KB,
+item`object_0kb_count`longNumber of objects with size equal to 0KB, including current version,
+noncurrent versions, incomplete multipart uploads, and delete markers`object_0kb_to_128kb_count`longNumber of objects with size greater than 0KB and less than or equal to 128KB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_128kb_to_256kb_count`longNumber of objects with sizes greater than 128KB and less than equal to 256KB,
+delete markers`object_128kb_to_256kb_count`longNumber of objects with size greater than 128KB and less than or equal to 256KB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_256kb_to_512kb_count`longNumber of objects with sizes greater than 256KB and less than equal to 512KB,
+delete markers`object_256kb_to_512kb_count`longNumber of objects with size greater than 256KB and less than or equal to 512KB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_512kb_to_1mb_count`longNumber of objects with sizes greater than 512KB and less than equal to 1MB,
+delete markers`object_512kb_to_1mb_count`longNumber of objects with size greater than 512KB and less than or equal to 1MB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_1mb_to_2mb_count`longNumber of objects with sizes greater than 1MB and less than equal to 2MB,
+delete markers`object_1mb_to_2mb_count`longNumber of objects with size greater than 1MB and less than or equal to 2MB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_2mb_to_4mb_count`longNumber of objects with sizes greater than 2MB and less than equal to 4MB,
+delete markers`object_2mb_to_4mb_count`longNumber of objects with size greater than 2MB and less than or equal to 4MB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_4mb_to_8mb_count`longNumber of objects with sizes greater than 4MB and less than equal to 8MB,
+delete markers`object_4mb_to_8mb_count`longNumber of objects with size greater than 4MB and less than or equal to 8MB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_8mb_to_16mb_count`longNumber of objects with sizes greater than 8MB and less than equal to 16MB,
+delete markers`object_8mb_to_16mb_count`longNumber of objects with size greater than 8MB and less than or equal to 16MB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_16mb_to_32mb_count`longNumber of objects with sizes greater than 16MB and less than equal to 32MB,
+delete markers`object_16mb_to_32mb_count`longNumber of objects with size greater than 16MB and less than or equal to 32MB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_32mb_to_64mb_count`longNumber of objects with sizes greater than 32MB and less than equal to 64MB,
+delete markers`object_32mb_to_64mb_count`longNumber of objects with size greater than 32MB and less than or equal to 64MB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_64mb_to_128mb_count`longNumber of objects with sizes greater than 64MB and less than equal to 128MB,
+delete markers`object_64mb_to_128mb_count`longNumber of objects with size greater than 64MB and less than or equal to 128MB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_128mb_to_256mb_count`longNumber of objects sizes greater than 128MB and less than equal to 256MB,
+delete markers`object_128mb_to_256mb_count`longNumber of objects with size greater than 128MB and less than or equal to 256MB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_256mb_to_512mb_count`longNumber of objects sizes greater than 256MB and less than equal to 512MB,
+delete markers`object_256mb_to_512mb_count`longNumber of objects with size greater than 256MB and less than or equal to 512MB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_512mb_to_1gb_count`longNumber of objects sizes greater than 512MB and less than equal to 1GB,
+delete markers`object_512mb_to_1gb_count`longNumber of objects with size greater than 512MB and less than or equal to 1GB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_1gb_to_2gb_count`longNumber of objects sizes greater than 1GB and less than equal to 2GB,
+delete markers`object_1gb_to_2gb_count`longNumber of objects with size greater than 1GB and less than or equal to 2GB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_2gb_to_4gb_count`longNumber of objects sizes greater than 2GB and less than equal to 4GB,
+delete markers`object_2gb_to_4gb_count`longNumber of objects with size greater than 2GB and less than or equal to 4GB,
 including current version, noncurrent versions, incomplete multipart uploads, and
-delete markers`object_larger_than_4gb_count`longNumber of objects sizes greater than 4GB, including current version,
+delete markers`object_larger_than_4gb_count`longNumber of objects with size greater than 4GB, including current version,
 noncurrent versions, incomplete multipart uploads, and delete markers
 
 ### Bucket property metrics table schema

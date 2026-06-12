@@ -46,7 +46,7 @@ The AWS account ID of the general purpose bucket's owner.
 Indicates the algorithm that you want Amazon S3 to use to create the checksum. For more
 information, see [Checking object integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Guide_.
 
-Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME`
+Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME | SHA512 | MD5 | XXHASH64 | XXHASH3 | XXHASH128`
 
 ## Request Body
 

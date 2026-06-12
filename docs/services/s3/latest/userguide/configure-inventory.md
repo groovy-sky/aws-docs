@@ -109,6 +109,16 @@ default encryption settings are being used, you won’t be able to access your S
 Inventory report. To access S3 Inventory reports again, either provide a KMS key ARN in the
 S3 Inventory configuration or in the destination bucket’s encryption settings.
 
+###### Directory buckets
+
+S3 Inventory is supported for directory buckets. When configuring S3 Inventory for a directory bucket, note the following differences:
+
+- **Permissions** – For directory buckets, you must use the `s3express:PutInventoryConfiguration` and `s3express:GetInventoryConfiguration` permissions in an IAM identity-based policy instead of a bucket policy. These permissions use the `s3express:` namespace rather than the `s3:` namespace used for general purpose buckets. For more information, see [Authorizing Regional endpoint API operations with IAM](s3-express-security-iam.md).
+
+- **Supported optional fields** – The following optional fields are supported for directory buckets: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `EncryptionStatus`, `BucketKeyStatus`, `ChecksumAlgorithm`, and `LifecycleExpirationDate`.
+
+- **Condition key** – For directory buckets, use the `s3express:InventoryAccessibleOptionalFields` condition key to control access to optional metadata fields in inventory reports.
+
 ## Creating a destination bucket policy
 
 If you create your inventory configuration through the Amazon S3 console, Amazon S3 automatically
@@ -153,6 +163,39 @@ JSON
 
 For more
 information, see [Grant permissions for S3 Inventory and S3 analytics](example-bucket-policies.md#example-bucket-policies-s3-inventory-1).
+
+###### Directory buckets
+
+For directory buckets, you must manually add a destination bucket policy. The destination bucket policy uses a different service principal and ARN format than general purpose buckets. Specify `s3express.amazonaws.com` as the service principal, and use the directory bucket ARN format for the source bucket. The following example shows a destination bucket policy for directory buckets.
+
+```json
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "InventoryExamplePolicy",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "s3express.amazonaws.com"
+            },
+            "Action": "s3:PutObject",
+            "Resource": [
+                "arn:aws:s3:::DOC-EXAMPLE-DESTINATION-BUCKET/*"
+            ],
+            "Condition": {
+                "ArnLike": {
+                    "aws:SourceARN": "arn:aws:s3express:region:source-account-id:bucket/DOC-EXAMPLE-SOURCE-BUCKET--zone-id--x-s3"
+                },
+                "StringEquals": {
+                    "aws:SourceAccount": "source-account-id",
+                    "s3:x-amz-acl": "bucket-owner-full-control"
+                }
+            }
+        }
+    ]
+}
+```
 
 If an error occurs when you try to create the bucket policy, you are given instructions on
 how to fix it. For example, if you choose a destination bucket in another AWS account and
@@ -226,6 +269,33 @@ see the following links in the _AWS Key Management Service Developer Guide_:
 
 - [Key policies in AWS KMS](../../../kms/latest/developerguide/key-policies.md)
 
+###### Directory buckets
+
+For directory buckets, the KMS key policy uses a different service principal and source ARN format than general purpose buckets. Specify `s3express.amazonaws.com` as the service principal, and use the directory bucket ARN format for the source ARN. The following example shows the key policy statement for directory buckets.
+
+```nohighlight
+
+{
+    "Sid": "Allow S3 Express use of the KMS key",
+    "Effect": "Allow",
+    "Principal": {
+        "Service": "s3express.amazonaws.com"
+    },
+    "Action": [
+        "kms:GenerateDataKey"
+    ],
+    "Resource": "*",
+    "Condition": {
+        "StringEquals": {
+            "aws:SourceAccount": "source-account-id"
+        },
+        "ArnLike": {
+            "aws:SourceARN": "arn:aws:s3express:region:source-account-id:bucket/DOC-EXAMPLE-SOURCE-BUCKET--zone-id--x-s3"
+        }
+    }
+}
+```
+
 ###### Note
 
 Ensure that there are no Deny statements added to the destination bucket policy that would prevent the delivery of inventory reports into this bucket. For more information, see [Why can't I generate an Amazon S3 Inventory Report?](https://repost.aws/knowledge-center/s3-inventory-report).
@@ -242,6 +312,10 @@ It might take up to 48 hours for Amazon S3 to deliver the first inventory report
      [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3).
 
 02. In the left navigation pane, choose **General purpose buckets**.
+
+    ###### Note
+
+    Configuring S3 Inventory for directory buckets is not supported in the Amazon Simple Storage Service console. To configure S3 Inventory for directory buckets, use the Amazon S3 REST API, AWS Command Line Interface (AWS CLI), or AWS SDKs.
 
 03. In the buckets list, choose the name of the bucket that you want to
      configure Amazon S3 Inventory for.
@@ -399,7 +473,10 @@ ETag might or might not be an MD5 digest of the object data. Whether it is depen
 how the object was created and how it is encrypted. For more information, see [Object](../api/api-object.md) in the _Amazon Simple Storage Service API Reference_.
 
 - **Checksum algorithm** – Indicates the
-algorithm that is used to create the checksum for the object. For more information, see [Using supported checksum algorithms](checking-object-integrity-upload.md#using-additional-checksums).
+algorithm that is used to create the checksum for the object. Supported values include
+`CRC64NVME`, `CRC32`, `CRC32C`, `SHA1`,
+`SHA256`, `MD5`, `XXHASH64`, `XXHASH3`,
+`XXHASH128`, and `SHA512`. For more information, see [Using supported checksum algorithms](checking-object-integrity-upload.md#using-additional-checksums).
 
 - **All Object Lock configurations** – The Object Lock
 status of the object, including the following settings:

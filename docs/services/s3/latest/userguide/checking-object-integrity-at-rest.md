@@ -51,8 +51,15 @@ types.
 - SHA-256 ( `SHA256`): Supports both full object and composite
 checksum types.
 
-- MD5 ( `MD5`): Supports both full object and composite checksum
-types.
+- MD5 ( `MD5`): Supports composite checksum type only (non-linearizable).
+
+- XXHash64 ( `XXHASH64`): Supports composite checksum type only (non-linearizable).
+
+- XXHash3 ( `XXHASH3`): Supports composite checksum type only (non-linearizable).
+
+- XXHash128 ( `XXHASH128`): Supports composite checksum type only (non-linearizable).
+
+- SHA-512 ( `SHA512`): Supports composite checksum type only (non-linearizable).
 
 ## Using **Compute checksum**
 

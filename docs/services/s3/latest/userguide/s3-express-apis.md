@@ -23,6 +23,8 @@ The following Regional endpoint API operations are supported for directory bucke
 
 - [DeleteBucket](../api/api-deletebucket.md)
 
+- [DeleteBucketInventoryConfiguration](../api/api-deletebucketinventoryconfiguration.md)
+
 - [DeleteBucketLifecycle](../api/api-deletebucketlifecycle.md)
 
 - [DeleteBucketPolicy](../api/api-deletebucketpolicy.md)
@@ -33,11 +35,15 @@ The following Regional endpoint API operations are supported for directory bucke
 
 - [GetAccessPointScope](../api/api-control-getaccesspointscope.md)
 
+- [GetBucketInventoryConfiguration](../api/api-getbucketinventoryconfiguration.md)
+
 - [GetBucketLifecycleConfiguration](../api/api-getbucketlifecycleconfiguration.md)
 
 - [GetBucketPolicy](../api/api-getbucketpolicy.md)
 
 - [ListAccessPointsForDirectoryBuckets](../api/api-control-listaccesspointsfordirectorybuckets.md)
+
+- [ListBucketInventoryConfigurations](../api/api-listbucketinventoryconfigurations.md)
 
 - [ListDirectoryBuckets](../api/api-listdirectorybuckets.md)
 
@@ -46,6 +52,8 @@ The following Regional endpoint API operations are supported for directory bucke
 - [PutAccessPointPolicy](../api/api-control-putaccesspointpolicy.md)
 
 - [PutAccessPointScope](../api/api-control-putaccesspointscope.md)
+
+- [PutBucketInventoryConfiguration](../api/api-putbucketinventoryconfiguration.md)
 
 - [PutBucketLifecycleConfiguration](../api/api-putbucketlifecycleconfiguration.md)
 

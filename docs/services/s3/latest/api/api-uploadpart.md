@@ -165,6 +165,11 @@ x-amz-checksum-crc32c: ChecksumCRC32C
 x-amz-checksum-crc64nvme: ChecksumCRC64NVME
 x-amz-checksum-sha1: ChecksumSHA1
 x-amz-checksum-sha256: ChecksumSHA256
+x-amz-checksum-sha512: ChecksumSHA512
+x-amz-checksum-md5: ChecksumMD5
+x-amz-checksum-xxhash64: ChecksumXXHASH64
+x-amz-checksum-xxhash3: ChecksumXXHASH3
+x-amz-checksum-xxhash128: ChecksumXXHASH128
 x-amz-server-side-encryption-customer-algorithm: SSECustomerAlgorithm
 x-amz-server-side-encryption-customer-key: SSECustomerKey
 x-amz-server-side-encryption-customer-key-MD5: SSECustomerKeyMD5
@@ -256,6 +261,13 @@ that was originally sent. This header specifies the Base64 encoded, 64-bit `CRC6
 checksum of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
 the _Amazon S3 User Guide_.
 
+**[x-amz-checksum-md5](#API_UploadPart_RequestSyntax)**
+
+This header can be used as a data integrity check to verify that the data received is the same data
+that was originally sent. This header specifies the Base64 encoded, 128-bit `MD5`
+digest of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
 **[x-amz-checksum-sha1](#API_UploadPart_RequestSyntax)**
 
 This header can be used as a data integrity check to verify that the data received is the same data that was originally sent.
@@ -269,6 +281,34 @@ This header can be used as a data integrity check to verify that the data receiv
 This header specifies the Base64 encoded, 256-bit `SHA256` digest of the object. For more information, see
 [Checking object integrity](../userguide/checking-object-integrity.md) in the
 _Amazon S3 User Guide_.
+
+**[x-amz-checksum-sha512](#API_UploadPart_RequestSyntax)**
+
+This header can be used as a data integrity check to verify that the data received is the same data
+that was originally sent. This header specifies the Base64 encoded, 512-bit `SHA512`
+digest of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
+**[x-amz-checksum-xxhash128](#API_UploadPart_RequestSyntax)**
+
+This header can be used as a data integrity check to verify that the data received is the same data
+that was originally sent. This header specifies the Base64 encoded, 128-bit `XXHASH128`
+checksum of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
+**[x-amz-checksum-xxhash3](#API_UploadPart_RequestSyntax)**
+
+This header can be used as a data integrity check to verify that the data received is the same data
+that was originally sent. This header specifies the Base64 encoded, 64-bit `XXHASH3`
+checksum of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
+**[x-amz-checksum-xxhash64](#API_UploadPart_RequestSyntax)**
+
+This header can be used as a data integrity check to verify that the data received is the same data
+that was originally sent. This header specifies the Base64 encoded, 64-bit `XXHASH64`
+checksum of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
 
 **[x-amz-expected-bucket-owner](#API_UploadPart_RequestSyntax)**
 
@@ -302,7 +342,7 @@ parameter.
 This checksum algorithm must be the same for all parts and it match the checksum value supplied in
 the `CreateMultipartUpload` request.
 
-Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME`
+Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME | SHA512 | MD5 | XXHASH64 | XXHASH3 | XXHASH128`
 
 **[x-amz-server-side-encryption-customer-algorithm](#API_UploadPart_RequestSyntax)**
 
@@ -351,6 +391,11 @@ x-amz-checksum-crc32c: ChecksumCRC32C
 x-amz-checksum-crc64nvme: ChecksumCRC64NVME
 x-amz-checksum-sha1: ChecksumSHA1
 x-amz-checksum-sha256: ChecksumSHA256
+x-amz-checksum-sha512: ChecksumSHA512
+x-amz-checksum-md5: ChecksumMD5
+x-amz-checksum-xxhash64: ChecksumXXHASH64
+x-amz-checksum-xxhash3: ChecksumXXHASH3
+x-amz-checksum-xxhash128: ChecksumXXHASH128
 x-amz-server-side-encryption-customer-algorithm: SSECustomerAlgorithm
 x-amz-server-side-encryption-customer-key-MD5: SSECustomerKeyMD5
 x-amz-server-side-encryption-aws-kms-key-id: SSEKMSKeyId
@@ -371,34 +416,73 @@ Entity tag for the uploaded object.
 
 **[x-amz-checksum-crc32](#API_UploadPart_ResponseSyntax)**
 
-The Base64 encoded, 32-bit `CRC32 checksum` of the object. This checksum is only present if the checksum was uploaded
-with the object. When you use an API operation on an object that was uploaded using multipart uploads, this value may not be a direct checksum value of the full object. Instead, it's a calculation based on the checksum values of each individual part. For more information about how checksums are calculated
-with multipart uploads, see [Checking object integrity](../userguide/checking-object-integrity.md#large-object-checksums) in the _Amazon S3 User Guide_.
+The Base64 encoded, 32-bit `CRC32` checksum of the part. This will only be present if
+the checksum was provided in the request. For more information, see
+[Checking\
+object integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Guide_.
 
 **[x-amz-checksum-crc32c](#API_UploadPart_ResponseSyntax)**
 
-The Base64 encoded, 32-bit `CRC32C` checksum of the object. This checksum is only present if the checksum was uploaded
-with the object. When you use an API operation on an object that was uploaded using multipart uploads, this value may not be a direct checksum value of the full object. Instead, it's a calculation based on the checksum values of each individual part. For more information about how checksums are calculated
-with multipart uploads, see [Checking object integrity](../userguide/checking-object-integrity.md#large-object-checksums) in the _Amazon S3 User Guide_.
+The Base64 encoded, 32-bit `CRC32C` checksum of the part. This will only be present if
+the checksum was provided in the request. For more information, see
+[Checking\
+object integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Guide_.
 
 **[x-amz-checksum-crc64nvme](#API_UploadPart_ResponseSyntax)**
 
-This header can be used as a data integrity check to verify that the data received is the same data
-that was originally sent. This header specifies the Base64 encoded, 64-bit `CRC64NVME`
-checksum of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
-the _Amazon S3 User Guide_.
+The Base64 encoded, 64-bit `CRC64NVME` checksum of the part. This will only be present if
+the checksum was provided in the request. For more information, see
+[Checking\
+object integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Guide_.
+
+**[x-amz-checksum-md5](#API_UploadPart_ResponseSyntax)**
+
+The Base64 encoded, 128-bit `MD5` checksum of the part. This will only be present if
+the checksum was provided in the request. For more information, see
+[Checking\
+object integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Guide_.
 
 **[x-amz-checksum-sha1](#API_UploadPart_ResponseSyntax)**
 
-The Base64 encoded, 160-bit `SHA1` digest of the object. This checksum is only present if the checksum was uploaded
-with the object. When you use the API operation on an object that was uploaded using multipart uploads, this value may not be a direct checksum value of the full object. Instead, it's a calculation based on the checksum values of each individual part. For more information about how checksums are calculated
-with multipart uploads, see [Checking object integrity](../userguide/checking-object-integrity.md#large-object-checksums) in the _Amazon S3 User Guide_.
+The Base64 encoded, 160-bit `SHA1` checksum of the part. This will only be present if
+the checksum was provided in the request. For more information, see
+[Checking\
+object integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Guide_.
 
 **[x-amz-checksum-sha256](#API_UploadPart_ResponseSyntax)**
 
-The Base64 encoded, 256-bit `SHA256` digest of the object. This checksum is only present if the checksum was uploaded
-with the object. When you use an API operation on an object that was uploaded using multipart uploads, this value may not be a direct checksum value of the full object. Instead, it's a calculation based on the checksum values of each individual part. For more information about how checksums are calculated
-with multipart uploads, see [Checking object integrity](../userguide/checking-object-integrity.md#large-object-checksums) in the _Amazon S3 User Guide_.
+The Base64 encoded, 256-bit `SHA256` checksum of the part. This will only be present if
+the checksum was provided in the request. For more information, see
+[Checking\
+object integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Guide_.
+
+**[x-amz-checksum-sha512](#API_UploadPart_ResponseSyntax)**
+
+The Base64 encoded, 512-bit `SHA512` checksum of the part. This will only be present if
+the checksum was provided in the request. For more information, see
+[Checking\
+object integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Guide_.
+
+**[x-amz-checksum-xxhash128](#API_UploadPart_ResponseSyntax)**
+
+The Base64 encoded, 128-bit `XXHASH128` checksum of the part. This will only be present if
+the checksum was provided in the request. For more information, see
+[Checking\
+object integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Guide_.
+
+**[x-amz-checksum-xxhash3](#API_UploadPart_ResponseSyntax)**
+
+The Base64 encoded, 64-bit `XXHASH3` checksum of the part. This will only be present if
+the checksum was provided in the request. For more information, see
+[Checking\
+object integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Guide_.
+
+**[x-amz-checksum-xxhash64](#API_UploadPart_ResponseSyntax)**
+
+The Base64 encoded, 64-bit `XXHASH64` checksum of the part. This will only be present if
+the checksum was provided in the request. For more information, see
+[Checking\
+object integrity](../userguide/checking-object-integrity.md) in the _Amazon S3 User Guide_.
 
 **[x-amz-request-charged](#API_UploadPart_ResponseSyntax)**
 

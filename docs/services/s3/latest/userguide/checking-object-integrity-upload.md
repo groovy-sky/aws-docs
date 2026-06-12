@@ -48,6 +48,14 @@ calculate the checksum value:
 
 - MD5 ( `MD5`)
 
+- XXHash64 ( `XXHASH64`)
+
+- XXHash3 ( `XXHASH3`)
+
+- XXHash128 ( `XXHASH128`)
+
+- SHA-512 ( `SHA512`)
+
 ###### Note
 
 The `content-MD5` header is only available using the S3 ETag
@@ -158,8 +166,15 @@ types.
 - SHA-256 ( `SHA256`): Supports both full object and composite
 checksum types.
 
-- MD5 ( `MD5`): Supports both full object and composite checksum
-types.
+- MD5 ( `MD5`): Supports composite checksum type only (non-linearizable).
+
+- XXHash64 ( `XXHASH64`): Supports composite checksum type only (non-linearizable).
+
+- XXHash3 ( `XXHASH3`): Supports composite checksum type only (non-linearizable).
+
+- XXHash128 ( `XXHASH128`): Supports composite checksum type only (non-linearizable).
+
+- SHA-512 ( `SHA512`): Supports composite checksum type only (non-linearizable).
 
 ### Single part uploads
 
@@ -179,7 +194,7 @@ composite).
 The following table indicates which checksum algorithm type is supported for each
 checksum algorithm in a multipart upload:
 
-Checksum algorithmFull objectCompositeCRC-64/NVME ( `CRC64NVME`)YesNoCRC-32 ( `CRC32`)YesYesCRC-32C ( `CRC32C`)YesYesSHA-1 ( `SHA1`)NoYesSHA-256 ( `SHA256`)NoYes
+Checksum algorithmFull objectCompositeCRC-64/NVME ( `CRC64NVME`)YesNoCRC-32 ( `CRC32`)YesYesCRC-32C ( `CRC32C`)YesYesSHA-1 ( `SHA1`)NoYesSHA-256 ( `SHA256`)NoYesMD5 ( `MD5`)NoYesXXHash64 ( `XXHASH64`)NoYesXXHash3 ( `XXHASH3`)NoYesXXHash128 ( `XXHASH128`)NoYesSHA-512 ( `SHA512`)NoYes
 
 ## Using full object checksums for multipart upload
 
@@ -213,6 +228,26 @@ To initiate the multipart upload, you can specify the checksum algorithm and the
 full object checksum type. After you specify the checksum algorithm and the full
 object checksum type, you can provide the full object checksum value for the
 multipart upload.
+
+###### Important
+
+When using multipart uploads with the new checksum algorithms (MD5, XXHash3, XXHash64,
+XXHash128, SHA-512), you must specify the checksum algorithm in the
+`CreateMultipartUpload` request using the
+`x-amz-checksum-algorithm` header. If you provide a checksum value in
+the `CompleteMultipartUpload` request (for example,
+`x-amz-checksum-sha512`) without having specified the algorithm in
+`CreateMultipartUpload`, the request will fail with an
+`InvalidRequest` error.
+
+###### Note
+
+For existing checksum algorithms (CRC32, CRC32C, SHA-1, SHA-256), if the algorithm
+is not specified in `CreateMultipartUpload`, any checksum header provided
+in `CompleteMultipartUpload` is currently accepted but not validated or
+stored with the object. We recommend always specifying the algorithm in
+`CreateMultipartUpload` to ensure your checksums are validated and
+stored.
 
 ## Using part-level checksums for multipart upload
 

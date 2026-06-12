@@ -317,7 +317,7 @@ Indicates the algorithm that you want Amazon S3 to use to create the checksum fo
 [Checking object integrity](../userguide/checking-object-integrity.md) in
 the _Amazon S3 User Guide_.
 
-Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME`
+Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME | SHA512 | MD5 | XXHASH64 | XXHASH3 | XXHASH128`
 
 **[x-amz-checksum-type](#API_CreateMultipartUpload_RequestSyntax)**
 
@@ -778,7 +778,7 @@ This functionality is not supported for directory buckets.
 
 The algorithm that was used to create a checksum of the object.
 
-Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME`
+Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME | SHA512 | MD5 | XXHASH64 | XXHASH3 | XXHASH128`
 
 **[x-amz-checksum-type](#API_CreateMultipartUpload_ResponseSyntax)**
 

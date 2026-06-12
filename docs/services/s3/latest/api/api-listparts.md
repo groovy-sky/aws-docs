@@ -205,8 +205,13 @@ x-amz-request-charged: RequestCharged
       <ChecksumCRC32>string</ChecksumCRC32>
       <ChecksumCRC32C>string</ChecksumCRC32C>
       <ChecksumCRC64NVME>string</ChecksumCRC64NVME>
+      <ChecksumMD5>string</ChecksumMD5>
       <ChecksumSHA1>string</ChecksumSHA1>
       <ChecksumSHA256>string</ChecksumSHA256>
+      <ChecksumSHA512>string</ChecksumSHA512>
+      <ChecksumXXHASH128>string</ChecksumXXHASH128>
+      <ChecksumXXHASH3>string</ChecksumXXHASH3>
+      <ChecksumXXHASH64>string</ChecksumXXHASH64>
       <ETag>string</ETag>
       <LastModified>timestamp</LastModified>
       <PartNumber>integer</PartNumber>
@@ -291,7 +296,7 @@ The algorithm that was used to create a checksum of the object.
 
 Type: String
 
-Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME`
+Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME | SHA512 | MD5 | XXHASH64 | XXHASH3 | XXHASH128`
 
 **[ChecksumType](#API_ListParts_ResponseSyntax)**
 

@@ -59,6 +59,14 @@ information, see [Replicating existing objects with Batch Replication](s3-batch-
 re-upload the failed objects to the source bucket, which will initiate replication for the
 new objects.
 
+###### Note
+
+If your replication rule uses the change object ownership to the destination bucket
+owner option and the object exists in the destination bucket but shows a
+`FAILED` replication status, S3 Batch Replication might not resolve this
+status. If you encounter this situation, contact AWS Support to verify the replication
+state of the affected objects.
+
 - In the replication configuration on the source bucket, verify the following:
 
 - The Amazon Resource Name (ARN) of the destination bucket is correct.

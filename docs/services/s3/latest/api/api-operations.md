@@ -622,7 +622,7 @@ The following actions are supported by Amazon S3 Vectors:
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
-S3 API Reference
+Welcome
 
 Amazon S3
 

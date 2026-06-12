@@ -900,7 +900,7 @@ Required if you want to filter the contents of an S3 object that's encrypted wit
 
 [UpdateObjectEncryption](../api/api-updateobjectencryption.md)
 
-(Required) `s3:UpdateObjectEncryption`, `s3:PutObject`,
+(Required) `s3:UpdateObjectEncryption`,
 `kms:Encrypt`, `kms:Decrypt`, `kms:GenerateDataKey`,
 `kms:ReEncrypt*`
 

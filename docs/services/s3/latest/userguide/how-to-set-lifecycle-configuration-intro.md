@@ -87,6 +87,12 @@ However, lifecycle transitions to the S3 Intelligent-Tiering storage class are t
 exception. Changes in billing don't happen until after the object has transitioned into the
 S3 Intelligent-Tiering storage class.
 
+For transitions to S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive, the per-object storage
+overhead (40 KB per object) and minimum storage duration charges (90 days for
+S3 Glacier Flexible Retrieval, 180 days for S3 Glacier Deep Archive) also begin when the lifecycle rule
+is satisfied, regardless of when the physical transition occurs. For more information about
+Glacier storage overhead, see [Cost considerations](archival-storage.md#before-deciding-to-archive-objects).
+
 ###### Multiple or conflicting rules
 
 When you have multiple rules in an S3 Lifecycle configuration, an object can become

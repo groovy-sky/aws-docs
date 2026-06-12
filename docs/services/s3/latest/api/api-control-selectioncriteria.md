@@ -28,15 +28,11 @@ Required: No
 
 **MinStorageBytesPercentage**
 
-The minimum number of storage bytes percentage whose metrics will be selected.
-
-###### Note
-
-You must choose a value greater than or equal to `1.0`.
+The minimum percentage of total bucket storage that a prefix must hold for its metrics to be included.
 
 Type: Double
 
-Valid Range: Minimum value of 0.1. Maximum value of 100.
+Valid Range: Minimum value of 1. Maximum value of 100.
 
 Required: No
 

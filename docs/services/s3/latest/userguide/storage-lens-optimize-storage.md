@@ -292,7 +292,7 @@ information, see [Using the S3 console](storage-lens-editing.md#storage_lens_con
      **Cost optimization** metrics for the buckets shown.
 
 08. To filter the **Buckets** list to display only specific
-     cost-optimization metrics, choose the preferences icon (![A screenshot that shows the preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
+     cost-optimization metrics, choose the preferences icon (![The Preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
 
 09. Clear the toggles for all cost-optimization metrics until only
      **Incomplete multipart upload bytes greater than 7 days**
@@ -422,7 +422,7 @@ The **Buckets** list updates to display all the available
     **Cost optimization** metrics for the buckets shown.
 
 6. To filter the **Buckets** list to display only specific
-    cost-optimization metrics, choose the preferences icon (![A screenshot that shows the preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
+    cost-optimization metrics, choose the preferences icon (![The Preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
 
 7. Clear the toggles for all cost-optimization metrics until only the
     following remain selected:
@@ -548,7 +548,7 @@ The **Buckets** list updates to display all the available
     **Cost optimization** metrics for the buckets shown.
 
 6. To filter the **Buckets** list to display only specific
-    cost-optimization metrics, choose the preferences icon (![A screenshot that shows the preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
+    cost-optimization metrics, choose the preferences icon (![The Preferences icon in the S3 Storage Lens dashboard.](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/preferences.png)).
 
 7. Clear the toggles for all cost-optimization metrics until only the
     following remain selected:

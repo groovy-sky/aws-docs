@@ -14,7 +14,7 @@ The algorithm that was used to create a checksum of the object.
 
 Type: Array of strings
 
-Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME`
+Valid Values: `CRC32 | CRC32C | SHA1 | SHA256 | CRC64NVME | SHA512 | MD5 | XXHASH64 | XXHASH3 | XXHASH128`
 
 Required: No
 

@@ -449,6 +449,11 @@ x-amz-request-charged: RequestCharged
    <ChecksumCRC64NVME>string</ChecksumCRC64NVME>
    <ChecksumSHA1>string</ChecksumSHA1>
    <ChecksumSHA256>string</ChecksumSHA256>
+   <ChecksumSHA512>string</ChecksumSHA512>
+   <ChecksumMD5>string</ChecksumMD5>
+   <ChecksumXXHASH64>string</ChecksumXXHASH64>
+   <ChecksumXXHASH3>string</ChecksumXXHASH3>
+   <ChecksumXXHASH128>string</ChecksumXXHASH128>
 </CopyPartResult>
 ```
 
@@ -528,18 +533,18 @@ Required: Yes
 
 **[ChecksumCRC32](#API_UploadPartCopy_ResponseSyntax)**
 
-This header can be used as a data integrity check to verify that the data received is the same data
-that was originally sent. This header specifies the Base64 encoded, 32-bit `CRC32` checksum
-of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+The Base64 encoded, 32-bit `CRC32` checksum of the part. This checksum is present if
+the multipart upload request was created with the `CRC32` checksum algorithm. For more
+information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
 the _Amazon S3 User Guide_.
 
 Type: String
 
 **[ChecksumCRC32C](#API_UploadPartCopy_ResponseSyntax)**
 
-This header can be used as a data integrity check to verify that the data received is the same data
-that was originally sent. This header specifies the Base64 encoded, 32-bit `CRC32C` checksum
-of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+The Base64 encoded, 32-bit `CRC32C` checksum of the part. This checksum is present if
+the multipart upload request was created with the `CRC32C` checksum algorithm. For more
+information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
 the _Amazon S3 User Guide_.
 
 Type: String
@@ -547,26 +552,71 @@ Type: String
 **[ChecksumCRC64NVME](#API_UploadPartCopy_ResponseSyntax)**
 
 The Base64 encoded, 64-bit `CRC64NVME` checksum of the part. This checksum is present if
-the multipart upload request was created with the `CRC64NVME` checksum algorithm to the
-uploaded object). For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the multipart upload request was created with the `CRC64NVME` checksum algorithm. For more
+information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
+Type: String
+
+**[ChecksumMD5](#API_UploadPartCopy_ResponseSyntax)**
+
+The Base64 encoded, 128-bit `MD5` digest of the part. This checksum is present if
+the multipart upload request was created with the `MD5` checksum algorithm. For more
+information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
 the _Amazon S3 User Guide_.
 
 Type: String
 
 **[ChecksumSHA1](#API_UploadPartCopy_ResponseSyntax)**
 
-This header can be used as a data integrity check to verify that the data received is the same data
-that was originally sent. This header specifies the Base64 encoded, 160-bit `SHA1` checksum
-of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+The Base64 encoded, 160-bit `SHA1` digest of the part. This checksum is present if
+the multipart upload request was created with the `SHA1` checksum algorithm. For more
+information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
 the _Amazon S3 User Guide_.
 
 Type: String
 
 **[ChecksumSHA256](#API_UploadPartCopy_ResponseSyntax)**
 
-This header can be used as a data integrity check to verify that the data received is the same data
-that was originally sent. This header specifies the Base64 encoded, 256-bit `SHA256` checksum
-of the part. For more information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+The Base64 encoded, 256-bit `SHA256` digest of the part. This checksum is present if
+the multipart upload request was created with the `SHA256` checksum algorithm. For more
+information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
+Type: String
+
+**[ChecksumSHA512](#API_UploadPartCopy_ResponseSyntax)**
+
+The Base64 encoded, 512-bit `SHA512` digest of the part. This checksum is present if
+the multipart upload request was created with the `SHA512` checksum algorithm. For more
+information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
+Type: String
+
+**[ChecksumXXHASH128](#API_UploadPartCopy_ResponseSyntax)**
+
+The Base64 encoded, 128-bit `XXHASH128` checksum of the part. This checksum is present if
+the multipart upload request was created with the `XXHASH128` checksum algorithm. For more
+information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
+Type: String
+
+**[ChecksumXXHASH3](#API_UploadPartCopy_ResponseSyntax)**
+
+The Base64 encoded, 64-bit `XXHASH3` checksum of the part. This checksum is present if
+the multipart upload request was created with the `XXHASH3` checksum algorithm. For more
+information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
+the _Amazon S3 User Guide_.
+
+Type: String
+
+**[ChecksumXXHASH64](#API_UploadPartCopy_ResponseSyntax)**
+
+The Base64 encoded, 64-bit `XXHASH64` checksum of the part. This checksum is present if
+the multipart upload request was created with the `XXHASH64` checksum algorithm. For more
+information, see [Checking object integrity](../userguide/checking-object-integrity.md) in
 the _Amazon S3 User Guide_.
 
 Type: String

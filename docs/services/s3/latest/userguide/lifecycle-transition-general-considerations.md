@@ -141,6 +141,26 @@ storage charges. For more information about cost considerations, see [Amazon S3 
 
 For more information about creating a S3 Lifecycle, see [Setting an S3 Lifecycle configuration on a bucket](how-to-set-lifecycle-configuration-intro.md).
 
+## Tag-based filters and eligibility evaluation
+
+S3 Lifecycle evaluates objects against tag-based filters daily. When an object
+matches a tag-based transition rule, Amazon S3 queues the action for asynchronous
+processing. At execution time, Amazon S3 re-evaluates the object's current tags. If the
+triggering tag is no longer present when the action executes, the transition does
+not proceed.
+
+Because the time between evaluation and execution is not deterministic, removing
+a tag does not guarantee an immediate cancellation — the action may execute before
+the tag removal is observed, or the tag removal may take effect before the next
+evaluation cycle.
+
+To reliably prevent a transition after tagging an object, wait for a
+[Lifecycle\
+Event Notification](lifecycle-event-notifications.md) confirming the action completed before removing the
+tag. If you need to prevent a transition before it executes, remove the tag rather
+than disabling the rule (rule policy updates can take up to 15 minutes to
+propagate).
+
 ## Transitioning to the S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive storage classes (object archival)
 
 By using an S3 Lifecycle configuration, you can transition objects to the
@@ -288,7 +308,7 @@ Amazon Glacier, see [Restoring an archived object](restoring-objects.md).
 
 ###### Note
 
-S3 Lifecycle transitions objects to S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive asynchronously. There might be a delay between the transition date in the S3 Lifecycle configuration rule and the date of the physical transition. In this case you are charged the default rate of the storage class you transitioned from based on the transition date specified in the rule.
+S3 Lifecycle transitions objects to S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive asynchronously. There might be a delay between the transition date in the S3 Lifecycle configuration rule and the date of the physical transition. You are charged at the destination storage class rate (S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive) starting from the date the lifecycle rule is satisfied, even if the physical transition has not yet occurred. The minimum storage duration charges (90 days for S3 Glacier Flexible Retrieval, 180 days for S3 Glacier Deep Archive) and the per-object storage overhead (40 KB total, of which 8 KB is charged at S3 Standard rates and 32 KB at the destination Glacier rate) also begin at this point. The only exception is transitions to S3 Intelligent-Tiering, where billing changes occur after the physical transition completes. For more information, see [Changes in billing](how-to-set-lifecycle-configuration-intro.md#lifecycle-billing).
 
 The Amazon S3 product detail page provides pricing information and example
 calculations for archiving Amazon S3 objects. For more information, see the following
