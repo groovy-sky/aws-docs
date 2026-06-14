@@ -460,7 +460,7 @@ On the **Jobs** page in the console, you can select
 
 AWS CLI
 
-Use [start-copy-job](https://amazonaws.com/aws-backup/latest/devguide/API_StartCopyJob.html) to copy an existing backup in a backup vault to a logically
+Use [start-copy-job](api-startcopyjob.md) to copy an existing backup in a backup vault to a logically
 air-gapped vault.
 
 Sample CLI input:
@@ -485,9 +485,10 @@ You can use AWS Resource Access Manager (RAM) to share a logically air-gapped va
 you designate. When sharing vaults, the encryption key type information (AWS-owned or
 customer-managed KMS key) is preserved and visible to accounts with which the vault is shared.
 
-A vault can be shared with an account in its organization or with an account in another
-organization. The vault cannot be shared with an entire organization, only with accounts within the
-organization.
+A vault can be shared with individual AWS account IDs only. You can share with an
+account in your organization or with an account in another organization. The vault cannot be
+shared with an entire organization or with organizational units (OUs) — only individual
+account IDs are supported as share principals.
 
 Only accounts with specific IAM privileges can share and manage the sharing of vaults.
 

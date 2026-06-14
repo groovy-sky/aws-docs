@@ -136,6 +136,20 @@ megabytes of the recovery point being restored
 - `snapshotPolicy` where the value is set to
 `none`
 
+###### Note
+
+For FSx for ONTAP resources, the Storage Virtual Machine (SVM) that you specify
+in `storageVirtualMachineId` determines the subnet and Availability
+Zone of the restored volume. If you specify the `SubnetIds` parameter
+in the console, AWS Backup accepts but ignores it during the restore
+operation.
+
+To restore to a different file system or Availability Zone, specify an SVM
+that belongs to the target file system in your
+`RestoreMetadataOverrides`. If you specify an SVM in the same file
+system, the volume is restored to that file system regardless of any subnet
+configuration that you specify in the console.
+
 `ontapConfiguration` has specific overrideable nested keys,
 including:
 

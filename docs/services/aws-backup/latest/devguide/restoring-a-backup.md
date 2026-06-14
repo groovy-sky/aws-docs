@@ -9,11 +9,11 @@ title: "Restore a backup by resource type"
 For console restore instructions and links to documentation for each AWS Backup-supported
 resource type, see the links at the bottom of this page.
 
-To restore a backup programmatically, use the [StartRestoreJob](api-startrestorejob.md) API operation.
+To restore a backup programmatically, use the [StartRestoreJob](../../../../reference/aws-backup/latest/apireference/api-startrestorejob.md) API operation.
 
 The configuration values ("restore metadata") that you need to restore your resource
 varies depending on the resource that you want to restore. To get the configuration metadata
-that your backup was created with, you can call [GetRecoveryPointRestoreMetadata](api-getrecoverypointrestoremetadata.md). Restore metadata examples are also
+that your backup was created with, you can call [GetRecoveryPointRestoreMetadata](../../../../reference/aws-backup/latest/apireference/api-getrecoverypointrestoremetadata.md). Restore metadata examples are also
 available in the links at the bottom of this page.
 
 Restoring from cold storage typically takes 4 hours more than restoring from warm
@@ -33,6 +33,20 @@ resources.
 When you use AWS Backup to restore a backup, it creates a new resource with the backup that
 you are restoring. This is to protect your existing resources from being destroyed by your
 restore activity.
+
+###### Important
+
+The following resource types perform destructive restores that overwrite existing
+data:
+
+- **Amazon Redshift Serverless** – Namespace restores overwrite
+all existing data in the target namespace. For more information, see [Amazon Redshift Serverless restore\
+considerations](redshift-serverless-restore.md#redshift-serverless-restore-considerations).
+
+- **SAP HANA on Amazon EC2** – Restores overwrite
+the database at the specified target restore location. For more information, see [Restore an SAP HANA database on an Amazon EC2 instance](saphana-restore.md).
+
+For all other resource types, AWS Backup creates a new resource during restore.
 
 ## Restore testing
 

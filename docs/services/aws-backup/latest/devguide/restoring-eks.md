@@ -49,39 +49,51 @@ Before you begin an EKS restore job, review the following. If you are restoring 
 been copied across account or region ensure you check these considerations ahead of restores to prevent
 restore failures.
 
-1. **IAM Roles**: when restoring onto a different cluster, the IAM Roles used in
-    the source cluster (such as Pod identity, IRSA. OIDC provider configs etc) must be present in the
-    account / region as the destination cluster.
+01. **IAM Roles**: when restoring onto a different cluster, the IAM Roles used in
+     the source cluster (such as Pod identity, IRSA. OIDC provider configs etc) must be present in the
+     account / region as the destination cluster.
 
-2. **Ensure EKS Version and Compatibility**: The API Versions of the objects that
-    you're wanting to restore should be the same version (or as close to as possible) and supported in
-    the new cluster. AWS Backup will perform a best effort restore between EKS versions, though
-    compatibility issues may arise when restoring between significantly different versions.
+02. **Ensure EKS Version and Compatibility**: The API Versions of the objects that
+     you're wanting to restore should be the same version (or as close to as possible) and supported in
+     the new cluster. AWS Backup will perform a best effort restore between EKS versions, though
+     compatibility issues may arise when restoring between significantly different versions.
 
-3. **Matching Storage Classes**: For restores to an existing EKS cluster, ensure
-    that the appropriate CSI Storage Driver add-ons are installed prior to restore
+03. **Matching Storage Classes**: For restores to an existing EKS cluster, ensure
+     that the appropriate CSI Storage Driver add-ons are installed prior to restore
 
-4. **S3 Buckets**: When restoring an EKS cluster with S3 Buckets, ensure your
-    S3 bucket are versioned and accessible in the destination account or region.
+04. **S3 Buckets**: When restoring an EKS cluster with S3 Buckets, ensure your
+     S3 bucket are versioned and accessible in the destination account or region.
 
-5. **Image Repository**: When restoring an EKS cluster ensure that the destination
-    EKS cluster's account or region have access to the images that are being referenced as part of the
-    restore. Check that your registry has the sufficient cross-region / account policy permissions.
+05. **Image Repository**: When restoring an EKS cluster ensure that the destination
+     EKS cluster's account or region have access to the images that are being referenced as part of the
+     restore. Check that your registry has the sufficient cross-region / account policy permissions.
 
-6. **Security Groups**: Security groups should be pre-created for ALB, Pod
-    Identities, EKS Node Groups etc. in the target account and region if creating a new EKS cluster
-    as part of your restore
+06. **Security Groups**: Security groups should be pre-created for ALB, Pod
+     Identities, EKS Node Groups etc. in the target account and region if creating a new EKS cluster
+     as part of your restore
 
-7. **EBS Availability Zones and Nodes**: The Availability Zones where you recover
-    your EBS volumes should be mapped to the Availability Zone of an existing EKS node
+07. **EBS Availability Zones and Nodes**: The Availability Zones where you recover
+     your EBS volumes should be mapped to the Availability Zone of an existing EKS node
 
-8. **Non-destructive restores**: All EKS restores will be non-destructive and not
-    overwrite Kubernetes objects of the target restore.
+08. **Non-destructive restores**: All EKS restores will be non-destructive and not
+     overwrite Kubernetes objects of the target restore.
 
-9. **Enable EKS Audit Logs**: Enable EKS Audit Logs for additional logging
-    and troubleshooting prior to restore. You can also subscribe to
-    [SNS\
-    notifications](backup-notifications.md) to notify of skipped or failed objects on restore.
+09. **Enable EKS Audit Logs**: Enable EKS Audit Logs for additional logging
+     and troubleshooting prior to restore. You can also subscribe to
+     [SNS\
+     notifications](backup-notifications.md) to notify of skipped or failed objects on restore.
+
+10. **New EKS Cluster Creation Restore Buffer**: When creating a new EKS cluster
+     during restore, AWS Backup introduces a 15-minute buffer after the EKS cluster reaches an available state
+     but before creating any additional EKS resources. This buffer ensures that all underlying EKS
+     components are fully initialized before dependent resources are created.
+
+11. **User data in launch template**: When creating a node group using a launch
+     template, do not specify `spec.cluster` in the user data section of the launch template.
+     Amazon EKS automatically injects the cluster identity parameters
+     ( `apiServerEndpoint`, `certificateAuthority`, and
+     `serviceIpv4Cidr`) and merges them with any additional configurations
+     defined in the user data.
 
 **EKS Configurations**
 
@@ -318,6 +330,36 @@ aws backup describe-restore-job --restore-job-id restore-job-id
 
 You can subscribe to **Notification Events** for failed and skipped objects for restore.
 For more information, see [Notification options with AWS Backup.](backup-notifications.md)
+
+**Amazon EKS restore status messages**
+
+When a restore job completes, you might see the following status messages.
+The table shows the possible scenarios and their corresponding job status values:
+
+ScenarioJob StatusExample messageAll objects restored successfullyCOMPLETED—One or more objects failed to be restoredCOMPLETED"One or more Kubernetes objects failed to restore. To get notified of these failures, enable SNS event notifications."Restore could not completeFAILED(error details)
+
+**Skipped objects during restore**
+
+The following Kubernetes objects are restored on a best-effort basis. If they fail to
+restore, they are moved to the skipped list. These objects are system-managed and
+recreated by Kubernetes or Amazon EKS:
+
+- FlowSchemas with the `apf.kubernetes.io/autoupdate-spec: "true"` annotation
+
+- PriorityLevelConfigurations with the `apf.kubernetes.io/autoupdate-spec: "true"` annotation
+
+- The `eks-exempt` FlowSchema (EKS-managed, references the protected exempt PriorityLevelConfiguration)
+
+- The `kubernetes` Service in the `default` namespace (API server endpoint)
+
+- The `kube-dns` Service in the `kube-system` namespace (CoreDNS)
+
+Objects that already exist on the target cluster are also skipped. EKS restores are
+non-destructive — existing objects are never overwritten or deleted.
+
+To receive notifications about skipped or failed objects during restore, subscribe to
+[SNS event notifications](backup-notifications.md).
+For more information, see [Notification options with AWS Backup](backup-notifications.md).
 
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 

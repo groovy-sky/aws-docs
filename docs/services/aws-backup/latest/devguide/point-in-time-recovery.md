@@ -70,8 +70,18 @@ requires a minimum transition period of 90 days, whereas continuous backups have
 maximum retention period of 35 days.
 
 - **Restoring recent activity** — Amazon RDS activity
-allows restores up until the most recent 5 minutes of activity; Amazon S3 allows restores up
+allows restores up until the most recent 5 minutes of activity; Aurora allows restores
+up until the most recent activity as indicated by `LatestRestorableTime`
+(typically less than 5 minutes); Amazon S3 allows restores up
 until the most recent 15 minutes of activity.
+
+- **Aurora continuous backup limitations** —
+Aurora continuous backup data remains within the Aurora service and is not copied into the
+AWS Backup data plane. AWS Backup invokes point-in-time recovery by calling Aurora APIs. As a
+result, Aurora continuous backups cannot be placed in a backup vault for immutability
+(vault lock) and do not support the logically air-gapped vault feature. To use vault
+lock or logically air-gapped vaults with Aurora, use periodic snapshot backups
+instead.
 
 ###### Important
 
@@ -130,16 +140,38 @@ restoring to a specified point in time.
 
 AWS Backup for S3 relies on receiving S3 events through Amazon EventBridge. If this setting is
 disabled in S3 bucket notification settings, continuous backups will stop for those
-buckets with the setting turned off. For more information, see [Using EventBridge](../../../s3/latest/userguide/eventbridge.md).
+buckets with the setting turned off. For more information, see
+[Amazon EventBridge dependency for S3 continuous backups](s3-backups.md#s3-eventbridge-dependency).
+
+Disabling AWS Backup's Amazon EventBridge rule will also result in your continuous backup stopping.
+If you have an active backup plan with a continuous backup rule, when that rule
+re-triggers, AWS Backup will recreate the Amazon EventBridge rule and a new continuous backup will be
+created.
 
 ### RDS
 
-**Backup schedules:** When an AWS Backup plan creates both Amazon RDS snapshots
-and continuous backups, AWS Backup will intelligently schedule your backup windows to
-coordinate with the Amazon RDS maintenance window to prevent conflicts. To further prevent
-conflicts, manual configuration of the Amazon RDS automated backup window is unavailable. RDS
-takes snapshots once per day, even if a backup plan has a frequency for snapshot
-backups other than once per day.
+AWS Backup supports continuous backups and point-in-time recovery for all Amazon RDS instances
+and Aurora that are supported by the native Amazon RDS service. AWS Backup does not support
+continuous backups or point-in-time recovery for Amazon RDS Multi-AZ clusters.
+
+**Backup schedules:** When you enable continuous backups for an
+Amazon RDS instance through AWS Backup, AWS Backup takes over the Amazon RDS automated backup window (the
+native daily snapshot that anchors point-in-time recovery). AWS Backup positions this automated
+backup window near the Amazon RDS maintenance window to prevent conflicts. You cannot directly
+configure the automated backup window while AWS Backup manages continuous backups, but you can
+influence its placement by adjusting your Amazon RDS maintenance window. The automated backup
+window repositions itself on the next backup cycle. RDS takes snapshots once per day, even
+if a backup plan has a frequency for snapshot backups other than once per day.
+
+###### Note
+
+AWS Backup does not modify or manage the Amazon RDS maintenance window. The maintenance window
+remains under your control and can be adjusted through Amazon RDS settings. Backup jobs
+initiated by a snapshot rule in your backup plan run on the schedule you define and can
+still fail if they overlap with the maintenance window. If this occurs, you receive an
+error similar to "Backup job could not start because it is either inside or too close to
+the weekly maintenance window configured in RDS instance." To avoid this error, schedule
+your snapshot backup rules outside of your configured Amazon RDS maintenance window.
 
 **Settings:** After you apply an AWS Backup continuous backup rule to an
 Amazon RDS instance, you can't create or modify continuous backup settings in Amazon RDS. You must
@@ -307,6 +339,26 @@ the steps to restore a snapshot of an aurora cluster](restoring-aur.md).
 When you conduct a point in time restore, the console displays a **restore**
 **time** section. See _Restoring a continuous backup_ further
 down on this page in [Working with Continuous backups](point-in-time-recovery.md#point-in-time-recovery-working-with).
+
+###### Important
+
+Aurora continuous backup data remains within the Aurora service (in Aurora-managed
+Amazon S3 buckets) and is not copied into the AWS Backup data plane. AWS Backup performs point-in-time
+recovery by calling Aurora APIs. Because of this architecture:
+
+- You cannot place Aurora continuous backups into a backup vault for
+immutability (AWS Backup Vault Lock).
+
+- You cannot use the logically air-gapped vault feature with Aurora
+continuous backups.
+
+- To use vault lock or logically air-gapped vaults with Aurora, use
+periodic (manual) snapshot backups, which are always full snapshots.
+
+The recovery point objective (RPO) for Aurora continuous backups is typically less
+than 5 minutes, as Aurora copies data to Amazon S3 continuously in the background. Use the
+`LatestRestorableTime` value to determine the most recent point to which you
+can restore.
 
 ### SAP HANA on Amazon EC2 instances
 

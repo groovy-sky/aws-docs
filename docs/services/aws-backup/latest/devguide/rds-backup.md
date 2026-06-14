@@ -41,9 +41,27 @@ your AWS Backup backup plan or Amazon RDS window do not coincide in their times.
 
 ### Considerations
 
-RDS Custom for SQL Server and RDS Custom for Oracle are not currently supported by AWS Backup.
+AWS Backup supports creating on-demand backups of RDS Custom for SQL Server instances.
+However, restoring RDS Custom for SQL Server through AWS Backup is not natively supported.
+To restore, use the `restore-db-instance-from-db-snapshot` operation in Amazon RDS
+with the AWS Backup-created snapshot. For more information, see [Restore an Amazon RDS Custom for SQL Server instance using a backup from\
+AWS Backup](https://aws.amazon.com/blogs/database/restore-an-amazon-rds-custom-for-sql-server-instance-using-a-backup-from-aws-backup).
 
-AWS Backup does not support backup and restore of RDS on Outposts.
+RDS Custom for Oracle is not currently supported by AWS Backup.
+
+AWS Backup does not support backup and restore of RDS on Outposts or in Local Zones,
+including Dedicated Local Zones. AWS Backup requires RDS instances to have
+`BackupTarget` set to `region` (the default).
+
+## Understanding backup overlap and costs
+
+AWS Backup periodic snapshots are classified as manual backups in Amazon RDS. While they
+share the same incremental snapshot chain as automated backups, they count toward your
+total backup storage alongside automated backups. Amazon RDS provides a free backup storage
+allocation equal to your provisioned DB instance storage — this covers both automated
+backups and manual snapshots combined. Storage beyond that allocation is billed. If you
+run both scheduled AWS Backup snapshots and Amazon RDS automated backups, both contribute to this
+total, and you should factor this into your cost planning.
 
 ## Amazon RDS continuous backups and point in time restore
 
@@ -53,6 +71,14 @@ granularity by rewinding to the point in time you desire to restore to instead o
 a previous snapshot taken at fixed time intervals.
 
 See [continuous backups and PITR supported services](point-in-time-recovery.md#point-in-time-recovery-supported-services) and [managing continuous backup settings](point-in-time-recovery.md#point-in-time-recovery-managing) for more information.
+
+###### Important
+
+Enabling continuous backups for Amazon RDS using AWS Backup when they were previously
+disabled (or disabling continuous backups when they were previously enabled) takes the
+Amazon RDS instance offline to make the changes. Plan this change during a maintenance window
+to minimize impact. If automated backups were enabled from Amazon RDS and that backup was
+simply moved to AWS Backup, then no downtime is required.
 
 ## Amazon RDS Multi-Availability Zone backups
 

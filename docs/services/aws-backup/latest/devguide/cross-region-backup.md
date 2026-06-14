@@ -15,9 +15,10 @@ in full. In general, if a service supports incremental backups, subsequent copie
 backup in the same AWS Region will be incremental. AWS Backup will re-encrypt your copy using
 the customer managed key of your destination vault.
 
-An exception is Amazon EBS, where changing the encryption status of a snapshot during a copy
-operation [results in\
-a full (not incremental) copy](../../../ebs/latest/userguide/ebs-copy-snapshot.md#creating-encrypted-snapshots).
+An exception is Amazon EBS, where copying a snapshot to a vault that uses a different AWS KMS
+encryption key [results in\
+a full (not incremental) copy](../../../ebs/latest/userguide/ebs-copy-snapshot.md#creating-encrypted-snapshots). If you consistently copy to the same vault with
+the same encryption key, subsequent copies remain incremental.
 
 ###### Requirements
 
@@ -44,6 +45,9 @@ group.
 If your custom option group uses persistent options, the cross-Region copy job fails
 unless the destination Region has the same option group as the source Region. In this
 case, AWS Backup still copies the default option group.
+
+You can't copy an option group to a different . You must manually create the
+same option group in the destination before performing the cross-Region copy.
 
 If you attempt a cross-Region copy without a matching option group in the target
 Region, the copy job fails with an error message such as "The snapshot requires a target

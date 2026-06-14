@@ -4,8 +4,8 @@ title: "Creating frameworks using the AWS Backup API"
 
 # Creating frameworks using the AWS Backup API
 
-The following table contains sample API requests to [CreateFramework](api-createframework.md) for each control, along with sample API responses to
-the corresponding [DescribeFramework](api-describeframework.md) requests. To work with AWS Backup Audit Manager
+The following table contains sample API requests to [CreateFramework](../../../../reference/aws-backup/latest/apireference/api-createframework.md) for each control, along with sample API responses to
+the corresponding [DescribeFramework](../../../../reference/aws-backup/latest/apireference/api-describeframework.md) requests. To work with AWS Backup Audit Manager
 programmatically, you can refer to these code snippets.
 
 Control`CreateFramework` request`DescribeFramework` response`Backup resources are included in at least one backup plan`

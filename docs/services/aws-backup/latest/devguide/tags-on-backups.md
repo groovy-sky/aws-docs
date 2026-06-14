@@ -39,6 +39,6 @@ backup to the destination AWS Region.
 
 Cross-account backup
 
-Backup deletion
+Add or remove tags on existing recovery points
 
 All content copied from https://docs.aws.amazon.com/.

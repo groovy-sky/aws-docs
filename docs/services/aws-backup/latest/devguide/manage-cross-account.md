@@ -160,6 +160,20 @@ enable backup policies for your organization so you can:
 See [AWS Backup quotas](aws-backup-limits.md) for
 AWS Backup-specific quotas on elements contained in a policy.
 
+###### Important
+
+Backup policies support resource selection by resource types
+(for example, `arn:aws:ec2:*:*:volume/*`) or by tags,
+but not by individual resource ARNs. Use backup policies for broad
+application across multiple accounts in an organization or OU,
+not for targeting individual resources.
+
+To back up individual resources by ARN, use a local backup plan
+resource assignment instead.
+
+For full details on the `selections` syntax, see [Backup policy syntax and examples](../../../organizations/latest/userguide/orgs-manage-policies-backup-syntax.md) in the AWS Organizations User
+Guide.
+
 ## Delegated administrator
 
 Delegated administration provides a convenient way for assigned users in a
@@ -203,8 +217,8 @@ as a delegated administrator, you must first configure the following:
 - [AWS Organizations must be enabled and configured](../../../organizations/latest/userguide/orgs-tutorials-basic.md) with at least one member
 account in addition to your default management account.
 
-- It is recommended that the Organization Management Account have the AWS Backup Backup Service-Linked Role
-(AWS BackupServiceRoleForBackup) present to automatically sync delegated administrator permissions with
+- It is recommended that the Organization Management Account have the AWS Backup Service-Linked Role
+(AWSServiceRoleForBackup) present to automatically sync delegated administrator permissions with
 Organizations. This ensures delegated administrators have proper access when you enable opt-in
 regions or change administrator assignment. If the Backup Service-Linked Role is not present or got
 deleted, customers have a few options to create it:
@@ -214,7 +228,7 @@ deleted, customers have a few options to create it:
 - Access the Backup Vaults Console page.
 
 - Manually create it following the documentation in
-[Creating the Default Service Role.](../../../iam/latest/userguide/id-roles-create-service-linked-role.md)
+[Create a service-linked role](../../../iam/latest/userguide/id-roles-create-service-linked-role.md).
 
 - In the AWS Backup console, ensure **backup policies**,
 **cross-account monitoring**,
@@ -233,7 +247,7 @@ which allows accounts in your organization
 to copy backups to other accounts (for Backup-supported
 cross-account resources).
 
-- _Optional:_ Delegated administrator, which allows AWS Backup Backup
+- _Optional:_ Delegated administrator, which allows AWS Backup
 to automatically create the Backup Service-Linked Role to sync delegated
 administrator permissions with Organizations.
 
@@ -262,11 +276,24 @@ account jobs. To delegate AWS Backup policies, you will use the Organizations co
     account you want to register, and then choose **Register account**.
 
 This designated account will now be registered as a delegated administrator, with administrative privileges
-to monitor jobs across accounts within the organization and can view and edit policies (policy delegation).
+to monitor jobs across accounts within the organization.
 This member account cannot register or deregister other delegated administrator accounts. You can use the
 console to register up to 5 accounts as delegated administrators.
 
-Ensure that the delegated administrator has the permissions granted by [AWSBackupOrganizationAdminAccess](security-iam-awsmanpol.md#AWSBackupOrganizationAdminAccess).
+###### Important
+
+Registering an account as a delegated administrator alone does not enable
+backup policy management. To allow the delegated administrator account to view
+and edit backup policies, you must also complete the following steps:
+
+- Attach the [AWSBackupOrganizationAdminAccess](security-iam-awsmanpol.md#AWSBackupOrganizationAdminAccess) managed
+policy to the IAM roles or users in the delegated administrator account
+that need to perform organization-level tasks. This policy is not
+attached automatically.
+
+- Delegate backup policy management through AWS Organizations by creating a
+resource-based delegation policy in the management account. For steps,
+see [Delegate AWS Backup policies through AWS Organizations](#policydelegation).
 
 **To register a member account using programmatically:**
 

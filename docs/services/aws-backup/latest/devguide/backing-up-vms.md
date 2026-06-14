@@ -70,6 +70,13 @@ For CBT to function correctly, the following must be true:
 
 - CBT must be enabled for the virtual machine (it is enabled by default)
 
+###### Note
+
+The ESXi and hardware version requirements listed above are VMware's minimum
+requirements for the CBT feature to function. They do not represent the vSphere
+versions supported by AWS Backup. For the list of vSphere versions supported by AWS Backup,
+see [Supported VMs](vm-backups.md#supported-vms).
+
 To verify if a virtual disk has CBT enabled:
 
 1. Open the vSphere Client and select a powered-off virtual machine.

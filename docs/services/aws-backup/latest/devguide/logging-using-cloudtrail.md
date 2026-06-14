@@ -76,6 +76,8 @@ events](../../../awscloudtrail/latest/userguide/non-api-aws-service-events.md) i
 
 - `PutBackupVaultNotifications`
 
+- `ProcessBackupPlanSelection`
+
 - `RecoveryPointCreated`
 
 - `ReportJobCompleted`

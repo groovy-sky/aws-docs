@@ -14,6 +14,16 @@ backup plan rule in the destination account and/or Region.
 
 AWS Backup does not support on-demand copies of continuous backups.
 
+###### Note
+
+For database resources, ensure that your IAM role has the
+`rds:DeleteDBSnapshot` permission. AWS Backup temporarily creates a source snapshot
+during a point-in-time recovery (PITR) copy. After the copy completes, the service removes
+the snapshot. If the role lacks this permission, AWS Backup cannot remove the temporary
+snapshot. Instead, it creates an expired recovery point to prevent a snapshot leak. You
+must manually delete any expired recovery points that result from insufficient
+permissions.
+
 [Document Conventions](../../../../general/latest/gr/docconventions.md)
 
 Stopping or deleting continuous backups

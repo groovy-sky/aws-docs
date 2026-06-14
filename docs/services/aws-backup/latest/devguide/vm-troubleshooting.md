@@ -30,6 +30,12 @@ If it is turned on, ensure you are using up-to-date VMware features. The host mu
 4.0 or later and the virtual machine owning the disks to be tracked must be hardware version
 7 or later.
 
+###### Note
+
+The ESXi and hardware version requirements above are VMware's minimum requirements
+for the CBT feature to function. They do not represent the vSphere versions supported
+by AWS Backup. For the list of vSphere versions supported by AWS Backup, see [Supported VMs](vm-backups.md#supported-vms).
+
 If CBT is turned on (enabled) and the software and hardware are up to date, turn off the virtual
 machine and then turn it back on again. Ensure that CBT is turned on. Then, perform the backup again.
 
@@ -107,9 +113,13 @@ Required network bandwidth depends on several factors, including the size of the
 the incremental data generated for each VM backup, the backup window, and restore
 requirements.
 
-**Remedy:** Best practices and recommendations include having a minimum bandwidth of
-1000 Mbps upload bandwidth for on-premises VMs connected to AWS Backup. Once the bandwidth is
-confirmed, retry the backup job.
+**Remedy:** Best practices and recommendations include having a minimum
+bandwidth of 100 Mbps upload bandwidth for on-premises VMs connected to AWS Backup. This
+is the minimum required for the gateway to function. Bandwidth below 100 Mbps prevents
+the gateway from completing any backup or restore job. With a large number of VMs,
+backup jobs might still fail due to timeout even with bandwidth above 100 Mbps.
+Consider increasing bandwidth based on the number of VMs and the size of data being
+backed up. Once the bandwidth is confirmed, retry the backup job.
 
 ## Aborted backup job
 
@@ -152,11 +162,13 @@ short or the number of backup gateways are not enough.
 
 **Remedies:**
 
-**Increase bandwidth:** Consider increasing the network capacity
+**Increase bandwidth:** Consider increasing the network bandwidth
 between AWS and the on-premises environment. This step will provide more bandwidth for
-the backup process, allowing data to transfer smoothly without triggering the error. It
-is recommended you have at least 100-Mbps bandwidth to AWS to backup on-premises
-VMware VMs using AWS Backup.
+the backup process, allowing data to transfer smoothly without triggering the error. You
+must have at least 100 Mbps bandwidth to AWS to back up on-premises
+VMware VMs using AWS Backup. This is the minimum required for the gateway to complete any
+backup or restore job. If you have a large number of VMs, consider increasing bandwidth
+beyond 100 Mbps, as jobs might still time out with insufficient bandwidth.
 
 If a bandwidth rate limit is configured for the backup gateway, it can restrict the
 flow of data and lead to backup failures. Increasing the bandwidth rate limit to ensure
@@ -173,6 +185,28 @@ number of failed jobs. See [Working with gateways](working-with-gateways.md) for
 **Increase backup plan window time:** You can increase the
 **complete within duration** of the backup window in your backup
 plan. See [Backup plan options and configuration](plan-options-and-configuration.md) for more detail.
+
+## Restore to EC2 fails due to missing ENA drivers
+
+**Failure message:** `"Restore failed because the instance type
+              selected for restore requires that the VirtualMachine image have Elastic Network
+              Adapter (ENA) drivers installed, but no ENA drivers were present in the backed up
+              VM."`
+
+**Possible cause:** Your restore job failed because you are
+attempting to restore a VMware backup that does not have ENA drivers installed to an
+Amazon EC2 instance type that requires Elastic Network Adapters (ENA).
+
+**Remedies:**
+
+**Restore to an instance type that does not require ENA:** Restore
+this recovery point to an instance type that does not require ENA. For a list of instance
+types and their requirements, see [Amazon EC2 instance types](../../../ec2/latest/instancetypes/pg.md).
+
+**Install ENA drivers and take a new backup:** To restore to
+instance types that require ENA, install ENA drivers on the virtual machine first, take a
+new backup, and then restore from that backup. For more information about driver
+requirements, see [VM Import/Export requirements](../../../vm-import/latest/userguide/limitations-image-importing.md#limitations-image-importing-linux).
 
 For help resolving these issues, see [AWS\
 Knowledge Center](https://repost.aws/knowledge-center/backup-troubleshoot-vmware-backups).

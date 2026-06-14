@@ -127,14 +127,17 @@ If you choose to create a new backup plan, you will have three options:
 
 4. Specify a backup window.
 
-      _Note transition to cold storage is currently_
-      _unsupported_.
-
 5. Specify the retention period.
 
-      _Copy to destination is currently unsupported_
+6. ( _Optional_) Configure transition to cold storage and
+       copy to destination settings.
 
-6. ( _Optional_) Specify tags to add to recovery
+      ###### Note
+
+      Continuous backups (transaction logs) cannot be copied to other Regions
+      or accounts. Snapshot backups can be copied from full backups.
+
+7. ( _Optional_) Specify tags to add to recovery
        points.
 4. Click **Create plan**.
 

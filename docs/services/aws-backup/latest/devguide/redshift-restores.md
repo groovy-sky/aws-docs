@@ -155,11 +155,11 @@ Here is an example template:
 ```json
 
 aws backup start-restore-job \
--\-recovery-point-arn "arn:aws:backup:region:account:snapshot:name
--\-iam-role-arn "arn:aws:iam:account:role/role-name" \
--\-metadata
+-\-recovery-point-arn "arn:aws:redshift:region:account-id:snapshot:cluster-name/snapshot-name" \
+-\-iam-role-arn "arn:aws:iam::account:role/role-name" \
+-\-metadata 'metadata' \
 -\-resource-type Redshift \
--\-region AWS Region
+-\-region AWS Region \
 -\-endpoint-url URL
 ```
 
@@ -189,7 +189,7 @@ Here is an example template:
 
 ```json
 
-aws backup describe-restore-job —restore-job-id restore job ID
+aws backup describe-restore-job -\-restore-job-id restore job ID \
 -\-region AWS Region
 ```
 

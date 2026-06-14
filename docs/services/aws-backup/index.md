@@ -8,7 +8,11 @@ AWS Backup is a fully managed backup service that makes it easy to centralize an
 
 ## Links
 
-- [/aws-backup/latest/devguide/](latest/devguide.md)
+- [/aws-backup/latest/devguide/whatisbackup.html](latest/devguide/whatisbackup.md)
+- [/aws-backup/latest/APIReference/Welcome.html](../../reference/aws-backup/latest/apireference/welcome.md)
+- [/cli/latest/reference/backup/](../cli/latest/reference/backup.md)
+- [/aws-backup/latest/devguide/AWSBackup-dg.pdf](https://docs.aws.amazon.com/aws-backup/latest/devguide/AWSBackup-dg.pdf)
+- [/aws-backup/latest/APIReference/backup-api.pdf](https://docs.aws.amazon.com/aws-backup/latest/APIReference/backup-api.pdf)
 - [http://docs.aws.amazon.com/general/latest/gr/glos-chap.html](../../general/latest/gr/glos-chap.md)
 - [https://aws.amazon.com/documentation/gettingstarted/](https://aws.amazon.com/documentation/gettingstarted)
 - [https://aws.amazon.com/tools/](https://aws.amazon.com/tools)

@@ -95,7 +95,7 @@ and specify the following metadata:
 ```java
 
 TableName: string;
-DestinationDatabase: string;
+DatabaseName: string;
 MemoryStoreRetentionPeriodInHours: value: number unit: 'hours' | 'days' | 'weeks' | 'months'
 MagneticStoreRetentionPeriodInDays: value: number unit: 'days' | 'weeks' | 'months' | 'years'
 EnableMagneticStoreWrites?: boolean;
@@ -114,15 +114,15 @@ aws backup start-restore-job \
 --endpoint-url url
 ```
 
-You can also use [`DescribeRestoreJob`](api-describerestorejob.md) to assist with restore information.
+You can also use [`GetRecoveryPointRestoreMetadata`](api-getrecoverypointrestoremetadata.md) to assist with restore information.
 
-In the AWS CLI, use the operation `describe-restore-job` and use the
+In the AWS CLI, use the operation `get-recovery-point-restore-metadata` and use the
 following metadata:
 
 ```java
 
 TableName: string;
-DestinationDatabase: string;
+DatabaseName: string;
 MemoryStoreRetentionPeriodInHours: value: number unit: 'hours' | 'days' | 'weeks' | 'months'
 MagneticStoreRetentionPeriodInDays: value: number unit: 'days' | 'weeks' | 'months' | 'years'
 EnableMagneticStoreWrites?: boolean;

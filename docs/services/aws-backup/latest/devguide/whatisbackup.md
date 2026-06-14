@@ -108,11 +108,16 @@ automatically import AWS Backup Audit Manager findings into AWS Audit Manager.
 
 ### Incremental backups
 
-AWS Backup efficiently stores your periodic backups incrementally. The first backup of an
-AWS resource backs up a full copy of your data. For each successive incremental backup,
-only the changes to your AWS resources are backed up. Incremental backups enable you to
-benefit from the data protection of frequent backups while minimizing storage costs.
+AWS Backup efficiently stores your periodic backups incrementally for supported resource
+types. The first backup of an AWS resource backs up a full copy of your data. For each
+successive incremental backup, only the changes to your AWS resources are backed up.
+Incremental backups enable you to benefit from the data protection of frequent backups
+while minimizing storage costs.
 
+###### Important
+
+Not all resource types support incremental backups. For resources that do not support
+incremental backups, each backup is a full copy, which can result in higher storage costs.
 For a list of which resources support incremental backups, see [Feature availability by resource](backup-feature-availability.md#features-by-resource).
 
 For more information on behaviors in vaults, see [Incremental backups](creating-a-backup.md#incremental-backup-works).
@@ -178,6 +183,15 @@ altering their retention period. AWS Backup Vault Lock helps you enforce a
 _write-once-read-many_ (WORM) model and add another layer of defense to
 your defense in depth. To get started, see [AWS Backup Vault Lock](vault-lock.md).
 
+## AWS Backup and native service backups
+
+The relationship between AWS Backup and native service backup mechanisms varies by service.
+In some cases, AWS Backup uses the same underlying backup infrastructure as the native service
+(for example, Amazon RDS continuous backups). In other cases, AWS Backup operates as a separate backup
+layer (for example, DynamoDB). Understanding this relationship helps you avoid unintended
+duplicate costs. Consult the service-specific pages in this guide for details on how AWS Backup
+interacts with each service's native backup capabilities.
+
 ## Getting started
 
 To learn more about AWS Backup, we recommend that you start with [Getting started with AWS Backup](getting-started.md).
@@ -188,7 +202,7 @@ The following are AWS resources and third-party applications that you can back u
 restore using AWS Backup. For more information, see [AWS Backup feature availability](backup-feature-availability.md).
 
 ServiceSupported resource types[Amazon Elastic Compute Cloud (Amazon EC2)](../../../ec2/latest/userguide.md)Amazon EC2 instances backed by Amazon EBS volumes[Amazon Simple Storage Service (Amazon S3)](../../../s3/latest/userguide.md)Amazon S3 data [Amazon Elastic Block Store (Amazon EBS)](../../../ebs/latest/userguide/what-is-ebs.md)Amazon EBS volumes[Amazon DynamoDB](../../../dynamodb/latest/developerguide/gettingstarteddynamodb.md)Amazon DynamoDB tables[Amazon Relational Database Service (Amazon RDS)](../../../amazonrds/latest/userguide.md)Amazon RDS database instances (including all database engines);
-Multi-Availability Zone clusters[Amazon Aurora DSQL](../../../aurora-dsql/latest/userguide/what-is-aurora-dsql.md)Single-Region clusters and multi-Region clusters[Amazon Aurora](../../../amazonrds/latest/aurorauserguide.md)Aurora clusters[Amazon Elastic File System (Amazon EFS)](../../../efs/latest/ug.md)Amazon EFS file systems[FSx for Lustre](../../../fsx/latest/lustreguide.md)FSx for Lustre file systems[FSx for Windows File Server](../../../fsx/latest/windowsguide/what-is.md)FSx for Windows File Server file systems[Amazon FSx for NetApp ONTAP](../../../fsx/latest/ontapguide/what-is-fsx-ontap.md)FSx for ONTAP file systems[Amazon FSx for OpenZFS](../../../fsx/latest/openzfsguide/what-is-fsx.md)FSx for OpenZFS file systems[AWS Storage Gateway (Volume Gateway)](../../../storagegateway/latest/vgw/whatisstoragegateway.md)AWS Storage Gateway volumes[Amazon DocumentDB](../../../documentdb/latest/developerguide.md)Amazon DocumentDB instance-based clusters[Amazon Neptune](../../../neptune/latest/userguide.md)Amazon Neptune clusters[Amazon Redshift](../../../redshift/latest/dg/welcome.md)Amazon Redshift clusters[Amazon Redshift Serverless](../../../redshift/latest/mgmt/working-with-serverless.md)Amazon Redshift namespaces[Amazon Timestream](../../../timestream/latest/developerguide/what-is-timestream.md)Amazon Timestream tables[VMware Cloud™ on AWS](https://aws.amazon.com/vmware)VMware Cloud™ virtual machines on AWS[VMware Cloud™ on AWS Outposts](https://aws.amazon.com/vmware/aws-services)VMware Cloud™ virtual machines on AWS Outposts[CloudFormation](../../../cloudformation/latest/userguide/stacks.md)CloudFormation stacks[SAP HANA databases](backup-saphana.md)SAP HANA databases on Amazon EC2 instances[Amazon Elastic Kubernetes Service (Amazon EKS)](../../../eks/latest/userguide/what-is-eks.md)Amazon EKS clusters and persistent storage backups
+Multi-Availability Zone clusters[Amazon Aurora DSQL](../../../aurora-dsql/latest/userguide/what-is-aurora-dsql.md)Single-Region clusters and multi-Region clusters[Amazon Aurora](../../../amazonrds/latest/aurorauserguide.md)Aurora clusters[Amazon Elastic File System (Amazon EFS)](../../../efs/latest/ug.md)Amazon EFS file systems[FSx for Lustre](../../../fsx/latest/lustreguide.md)FSx for Lustre file systems[FSx for Windows File Server](../../../fsx/latest/windowsguide/what-is.md)FSx for Windows File Server file systems[Amazon FSx for NetApp ONTAP](../../../fsx/latest/ontapguide/what-is-fsx-ontap.md)FSx for ONTAP file systems[Amazon FSx for OpenZFS](../../../fsx/latest/openzfsguide/what-is-fsx.md)FSx for OpenZFS file systems[AWS Storage Gateway (Volume Gateway)](../../../storagegateway/latest/vgw/whatisstoragegateway.md)AWS Storage Gateway volumes[Amazon DocumentDB](../../../documentdb/latest/developerguide.md)Amazon DocumentDB instance-based clusters[Amazon Neptune](../../../neptune/latest/userguide.md)Amazon Neptune clusters[Amazon Redshift](../../../redshift/latest/dg/welcome.md)Amazon Redshift clusters[Amazon Redshift Serverless](../../../redshift/latest/mgmt/working-with-serverless.md)Amazon Redshift namespaces[Amazon Timestream for LiveAnalytics](../../../timestream/latest/developerguide/what-is-timestream.md)Amazon Timestream for LiveAnalytics tables. (AWS Backup does not support Amazon Timestream for InfluxDB. For more information, see [Amazon Timestream backups](timestream-backup.md).)[VMware Cloud™ on AWS](https://aws.amazon.com/vmware)VMware Cloud™ virtual machines on AWS[VMware Cloud™ on AWS Outposts](https://aws.amazon.com/vmware/aws-services)VMware Cloud™ virtual machines on AWS Outposts[CloudFormation](../../../cloudformation/latest/userguide/stacks.md)CloudFormation stacks[SAP HANA databases](backup-saphana.md)SAP HANA databases on Amazon EC2 instances[Amazon Elastic Kubernetes Service (Amazon EKS)](../../../eks/latest/userguide/what-is-eks.md)Amazon EKS clusters and persistent storage backups
 
 ## Pricing
 

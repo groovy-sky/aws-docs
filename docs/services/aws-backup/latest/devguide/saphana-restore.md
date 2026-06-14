@@ -9,11 +9,11 @@ or using AWS CLI.
 
 ###### Topics
 
-- [Restore an SAP HANA database with the AWS Backup console](#w2aac17c31c43b9)
+- [Restore an SAP HANA database with the AWS Backup console](#w2aac17c33c43b9)
 
-- [StartRestoreJob API for SAP HANA on EC2](#w2aac17c31c43c11)
+- [StartRestoreJob API for SAP HANA on EC2](#w2aac17c33c43c11)
 
-- [CLI for SAP HANA on EC2](#w2aac17c31c43c13)
+- [CLI for SAP HANA on EC2](#w2aac17c33c43c13)
 
 - [SAP HANA High Availability (HA) restore](#saphanarestoreha)
 

@@ -22,14 +22,14 @@ If you encrypt your bucket using a custom KMS key, the KMS key policy must meet 
 following requirements:
 
 - The `Principal` attribute must include the Backup Audit Manager
-service-linked role [`AWSServiceRolePolicyForBackupReports`](https://console.aws.amazon.com/iam/home) ARN.
+service-linked role [`AWSServiceRoleForBackupReports`](https://console.aws.amazon.com/iam/home) ARN.
 
-- The `Action` attribute must include `kms:GenerateDataKey` and
-`kms:Decrypt` at minimum.
+- The `Action` attribute must include `kms:GenerateDataKey`
+at minimum.
 
 The policy [AWSServiceRolePolicyForBackupReports](https://console.aws.amazon.com/iam/home) has these permissions.
 
-For single-account, single-Region reports, use the following syntax to call [CreateReportPlan](api-createreportplan.md).
+For single-account, single-Region reports, use the following syntax to call [CreateReportPlan](../../../../reference/aws-backup/latest/apireference/api-createreportplan.md).
 
 ```JSON
 
@@ -50,7 +50,7 @@ For single-account, single-Region reports, use the following syntax to call [Cre
 }
 ```
 
-When you call [DescribeReportPlan](api-describereportplan.md) with the unique name of a report plan, the AWS Backup
+When you call [DescribeReportPlan](../../../../reference/aws-backup/latest/apireference/api-describereportplan.md) with the unique name of a report plan, the AWS Backup
 API responds with the following information.
 
 ```JSON
@@ -74,7 +74,7 @@ API responds with the following information.
 }
 ```
 
-For multi-account, multi-Region reports, use the following syntax to call [CreateReportPlan](api-createreportplan.md).
+For multi-account, multi-Region reports, use the following syntax to call [CreateReportPlan](../../../../reference/aws-backup/latest/apireference/api-createreportplan.md).
 
 ```JSON
 
@@ -101,7 +101,7 @@ For multi-account, multi-Region reports, use the following syntax to call [Creat
 }
 ```
 
-When you call [DescribeReportPlan](api-describereportplan.md) with the unique name of a report plan, the AWS Backup
+When you call [DescribeReportPlan](../../../../reference/aws-backup/latest/apireference/api-describereportplan.md) with the unique name of a report plan, the AWS Backup
 API responds with the following information for multi-account, multi-Region plans:
 
 ```JSON

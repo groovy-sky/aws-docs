@@ -1,0 +1,52 @@
+---
+title: "SearchScopeSummary"
+---
+
+# SearchScopeSummary
+
+The summary of the specified search job scope,
+including:
+
+- TotalBackupsToScanCount, the number of
+recovery points returned by the search.
+
+- TotalItemsToScanCount, the number of
+items returned by the search.
+
+## Contents
+
+**TotalItemsToScanCount**
+
+This is the count of the total number of items
+that will be scanned in a search.
+
+Type: Long
+
+Required: No
+
+**TotalRecoveryPointsToScanCount**
+
+This is the count of the total number of backups
+that will be scanned in a search.
+
+Type: Integer
+
+Required: No
+
+## See Also
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
+
+- [AWS SDK for C++](https://docs.aws.amazon.com/goto/SdkForCpp/backupsearch-2018-05-10/SearchScopeSummary)
+
+- [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backupsearch-2018-05-10/SearchScopeSummary)
+
+- [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backupsearch-2018-05-10/SearchScopeSummary)
+
+[Document Conventions](../../../../general/latest/gr/docconventions.md)
+
+SearchScope
+
+StringCondition
+
+All content copied from https://docs.aws.amazon.com/.
