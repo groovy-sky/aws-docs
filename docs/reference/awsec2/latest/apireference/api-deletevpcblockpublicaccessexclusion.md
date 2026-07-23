@@ -3,79 +3,56 @@ title: "DeleteVpcBlockPublicAccessExclusion"
 ---
 
 # DeleteVpcBlockPublicAccessExclusion
+<a name="API_DeleteVpcBlockPublicAccessExclusion"></a>
 
-Delete a VPC Block Public Access (BPA) exclusion. A VPC BPA exclusion is a mode that can be applied to a single VPC or subnet that exempts it from the account’s BPA mode and will allow bidirectional or egress-only access. You can create BPA exclusions for VPCs and subnets even when BPA is not enabled on the account to ensure that there is no traffic disruption to the exclusions when VPC BPA is turned on. To learn more about VPC BPA, see [Block public access to VPCs and subnets](../../../../services/vpc/latest/userguide/security-vpc-bpa.md) in the _Amazon VPC User Guide_.
+Delete a VPC Block Public Access (BPA) exclusion. A VPC BPA exclusion is a mode that can be applied to a single VPC or subnet that exempts it from the account’s BPA mode and will allow bidirectional or egress-only access. You can create BPA exclusions for VPCs and subnets even when BPA is not enabled on the account to ensure that there is no traffic disruption to the exclusions when VPC BPA is turned on. To learn more about VPC BPA, see [Block public access to VPCs and subnets](https://docs.aws.amazon.com/vpc/latest/userguide/security-vpc-bpa.html) in the *Amazon VPC User Guide*.
 
 ## Request Parameters
+<a name="API_DeleteVpcBlockPublicAccessExclusion_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
-Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**ExclusionId**
-
+ **ExclusionId**
 The ID of the exclusion.
-
 Type: String
-
 Required: Yes
 
 ## Response Elements
+<a name="API_DeleteVpcBlockPublicAccessExclusion_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**vpcBlockPublicAccessExclusion**
-
+ **vpcBlockPublicAccessExclusion**
 Details about an exclusion.
-
-Type: [VpcBlockPublicAccessExclusion](api-vpcblockpublicaccessexclusion.md) object
+Type: [VpcBlockPublicAccessExclusion](API_VpcBlockPublicAccessExclusion.md) object
 
 ## Errors
+<a name="API_DeleteVpcBlockPublicAccessExclusion_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## See Also
+<a name="API_DeleteVpcBlockPublicAccessExclusion_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/deletevpcblockpublicaccessexclusion.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/deletevpcblockpublicaccessexclusion.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deletevpcblockpublicaccessexclusion.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/deletevpcblockpublicaccessexclusion.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deletevpcblockpublicaccessexclusion.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/deletevpcblockpublicaccessexclusion.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/deletevpcblockpublicaccessexclusion.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/deletevpcblockpublicaccessexclusion.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/deletevpcblockpublicaccessexclusion.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletevpcblockpublicaccessexclusion.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeleteVpc
-
-DeleteVpcEncryptionControl
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/DeleteVpcBlockPublicAccessExclusion)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DeleteVpcBlockPublicAccessExclusion)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DeleteVpcBlockPublicAccessExclusion)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DeleteVpcBlockPublicAccessExclusion)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DeleteVpcBlockPublicAccessExclusion)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DeleteVpcBlockPublicAccessExclusion)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DeleteVpcBlockPublicAccessExclusion)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DeleteVpcBlockPublicAccessExclusion)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DeleteVpcBlockPublicAccessExclusion)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DeleteVpcBlockPublicAccessExclusion)
 
 All content copied from https://docs.aws.amazon.com/.

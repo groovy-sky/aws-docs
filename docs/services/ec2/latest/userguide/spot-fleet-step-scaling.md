@@ -3,185 +3,100 @@ title: "Step scaling: Scale Spot Fleet using step scaling policies"
 ---
 
 # Step scaling: Scale Spot Fleet using step scaling policies
+<a name="spot-fleet-step-scaling"></a>
 
-With step scaling policies, you specify CloudWatch alarms to trigger the scaling
-process. For example, if you want to scale out when CPU utilization reaches a
-certain level, create an alarm using the `CPUUtilization` metric provided
-by Amazon EC2.
+With step scaling policies, you specify CloudWatch alarms to trigger the scaling process. For example, if you want to scale out when CPU utilization reaches a certain level, create an alarm using the `CPUUtilization` metric provided by Amazon EC2.
 
-When you create a step scaling policy, you must specify one of the following
-scaling adjustment types:
+When you create a step scaling policy, you must specify one of the following scaling adjustment types:
++ **Add** – Increase the target capacity of the fleet by a specified number of capacity units or a specified percentage of the current capacity.
++ **Remove** – Decrease the target capacity of the fleet by a specified number of capacity units or a specified percentage of the current capacity.
++ **Set to** – Set the target capacity of the fleet to the specified number of capacity units.
 
-- **Add** – Increase the target capacity of the fleet
-by a specified number of capacity units or a specified percentage of the
-current capacity.
+When an alarm is triggered, the automatic scaling process calculates the new target capacity using the fulfilled capacity and the scaling policy, and then updates the target capacity accordingly. For example, suppose that the target capacity and fulfilled capacity are 10 and the scaling policy adds 1. When the alarm is triggered, the automatic scaling process adds 1 to 10 to get 11, so Spot Fleet launches 1 instance.
 
-- **Remove** – Decrease the target capacity of the
-fleet by a specified number of capacity units or a specified percentage of
-the current capacity.
+When a Spot Fleet terminates a Spot Instance because the target capacity was decreased, the instance receives a Spot Instance interruption notice.
 
-- **Set to** – Set the target capacity of the fleet
-to the specified number of capacity units.
+**Prerequisites**
++ The Spot Fleet request must have a request type of `maintain`. Automatic scaling is not supported for requests of type `request`.
++ Configure the [IAM permissions required for Spot Fleet automatic scaling](spot-fleet-auto-scaling-IAM.md).
++ Consider which CloudWatch metrics are important to your application. You can create CloudWatch alarms based on metrics provided by AWS or your own custom metrics.
++ For the AWS metrics that you will use in your scaling policies, enable CloudWatch metrics collection if the service that provides the metrics does not enable it by default.
++ Review the [Considerations](spot-fleet-automatic-scaling.md#considerations-for-spot-fleet-automatic-scaling).
 
-When an alarm is triggered, the automatic scaling process calculates the new
-target capacity using the fulfilled capacity and the scaling policy, and then
-updates the target capacity accordingly. For example, suppose that the target
-capacity and fulfilled capacity are 10 and the scaling policy adds 1. When the alarm
-is triggered, the automatic scaling process adds 1 to 10 to get 11, so Spot Fleet launches
-1 instance.
+**To create a CloudWatch alarm**
 
-When a Spot Fleet terminates a Spot Instance because the target capacity was decreased, the
-instance receives a Spot Instance interruption notice.
+1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/).
 
-###### Prerequisites
+1. In the navigation pane, expand **Alarms** and choose **All alarms**.
 
-- The Spot Fleet request must have a request type of `maintain`.
-Automatic scaling is not supported for requests of type
-`request`.
+1. Choose **Create alarm**.
 
-- Configure the [IAM permissions required for Spot Fleet automatic scaling](spot-fleet-auto-scaling-iam.md).
+1. On the **Specify metric and conditions** page, choose **Select metric**.
 
-- Consider which CloudWatch metrics are important to your application. You can
-create CloudWatch alarms based on metrics provided by AWS or your own custom
-metrics.
+1. Choose **EC2 Spot**, then **Fleet Request Metrics**, and then select a metric (for example, **TargetCapacity**), and then choose **Select metric**.
 
-- For the AWS metrics that you will use in your scaling policies, enable
-CloudWatch metrics collection if the service that provides the metrics does not
-enable it by default.
+   The **Specify metric and conditions** page appears, showing a graph and other information about the metric you selected.
 
-- Review the [Considerations](spot-fleet-automatic-scaling.md#considerations-for-spot-fleet-automatic-scaling).
+1. For **Period**, choose the evaluation period for the alarm, for example, **1 minute**. When evaluating the alarm, each period is aggregated into one data point.
+**Note**
+A shorter period creates a more sensitive alarm.
 
-###### To create a CloudWatch alarm
+1. For **Conditions**, define the alarm by defining the threshold condition. For example, you can define a threshold to trigger the alarm whenever the value of the metric is greater than or equal to 80 percent.
 
-01. Open the CloudWatch console at
-     [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch).
+1. Under **Additional configuration**, for **Datapoints to alarm**, specify how many datapoints (evaluation periods) must be in the ALARM state to trigger the alarm, for example, 1 evaluation period or 2 out of 3 evaluation periods. This creates an alarm that goes to ALARM state if that many consecutive periods are breaching. For more information, see [Evaluating an alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#alarm-evaluation) in the *Amazon CloudWatch User Guide*.
 
-02. In the navigation pane, expand **Alarms** and choose
-     **All alarms**.
+1. For **Missing data treatment**, choose one of the options (or leave the default of **Treat missing data as missing**). For more information, see [Configuring how CloudWatch alarms treat missing data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#alarms-and-missing-data) in the *Amazon CloudWatch User Guide*.
 
-03. Choose **Create alarm**.
+1. Choose **Next**.
 
-04. On the **Specify metric and conditions** page, choose
-     **Select metric**.
+1. (Optional) To receive notification of a scaling event, for **Notification**, you can choose or create the Amazon SNS topic you want to use to receive notifications. Otherwise, you can delete the notification now and add one later as needed.
 
-05. Choose **EC2 Spot**, then **Fleet Request**
-    **Metrics**, and then select a metric (for example,
-     **TargetCapacity**), and then choose **Select**
-    **metric**.
+1. Choose **Next**.
 
-    The **Specify metric and conditions** page appears,
-     showing a graph and other information about the metric you selected.
+1. Under **Add name and description**, enter a name and description for the alarm and choose **Next**.
 
-06. For **Period**, choose the evaluation period for the
-     alarm, for example, **1 minute**. When evaluating the
-     alarm, each period is aggregated into one data point.
+1. Choose **Create alarm**.
 
-    ###### Note
+**To configure a step scaling policy for your Spot Fleet**
 
-    A shorter period creates a more sensitive alarm.
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-07. For **Conditions**, define the alarm by defining the
-     threshold condition. For example, you can define a threshold to trigger the
-     alarm whenever the value of the metric is greater than or equal to 80
-     percent.
+1. In the navigation pane, choose **Spot Requests**.
 
-08. Under **Additional configuration**, for
-     **Datapoints to alarm**, specify how many datapoints
-     (evaluation periods) must be in the ALARM state to trigger the alarm, for
-     example, 1 evaluation period or 2 out of 3 evaluation periods. This creates
-     an alarm that goes to ALARM state if that many consecutive periods are
-     breaching. For more information, see [Evaluating\
-     an alarm](../../../amazoncloudwatch/latest/monitoring/alarmthatsendsemail.md#alarm-evaluation) in the _Amazon CloudWatch User Guide_.
+1. Select your Spot Fleet request.
 
-09. For **Missing data treatment**, choose one of the options
-     (or leave the default of **Treat missing data as**
-    **missing**). For more information, see [Configuring how CloudWatch alarms treat missing data](../../../amazoncloudwatch/latest/monitoring/alarmthatsendsemail.md#alarms-and-missing-data) in the
-     _Amazon CloudWatch User Guide_.
+1. Choose the **Auto Scaling** tab near the bottom of the screen. If you selected the link for your Spot Fleet, there is no tab; instead, scroll down to the **Auto Scaling** section.
 
-10. Choose **Next**.
+1. If automatic scaling is not configured, choose **Configure**.
 
-11. (Optional) To receive notification of a scaling event, for
-     **Notification**, you can choose or create the Amazon SNS
-     topic you want to use to receive notifications. Otherwise, you can delete
-     the notification now and add one later as needed.
+1. Use **Scale capacity between** to set the minimum and maximum capacity for your fleet. Scaling policies do not scale your fleet below the minimum capacity or above the maximum capacity.
 
-12. Choose **Next**.
+1. Under **Scaling policies**, for **Policy type**, choose **Step scaling policy**.
 
-13. Under **Add name and description**, enter a name and
-     description for the alarm and choose **Next**.
+1. Initially, **Scaling policies** contain step scaling policies named **ScaleUp** and **ScaleDown**. You can complete these policies, or choose **Remove policy** to delete them. You can also choose **Add policy**.
 
-14. Choose **Create alarm**.
+1. To define a policy, do the following:
 
-###### To configure a step scaling policy for your Spot Fleet
+   1. For **Policy name**, enter a name for the policy.
 
-01. Open the Amazon EC2 console at
-     [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+   1. For **Policy trigger**, select an existing alarm, or choose **Create alarm** to open the Amazon CloudWatch console and create an alarm.
 
-02. In the navigation pane, choose **Spot Requests**.
+   1. For **Modify capacity**, define the amount by which to scale and the lower and upper bound of the step adjustment. You can add or remove a specific number of instances or a percentage of the existing fleet size, or set the fleet to an exact size.
 
-03. Select your Spot Fleet request.
+      For example, to create a step scaling policy that increases the capacity of the fleet by 30 percent, choose **Add**, enter **30** in the next field, and then choose **percent**. By default, the lower bound for an add policy is the alarm threshold and the upper bound is positive (\+) infinity. By default, the upper bound for a remove policy is the alarm threshold and the lower bound is negative (-) infinity.
 
-04. Choose the **Auto Scaling** tab near the bottom of the
-     screen. If you selected the link for your Spot Fleet, there is no tab; instead,
-     scroll down to the **Auto Scaling** section.
+   1. (Optional) To add another step, choose **Add step**.
 
-05. If automatic scaling is not configured, choose
-     **Configure**.
+   1. For **Cooldown period**, specify a new value (in seconds) or keep the default.
 
-06. Use **Scale capacity between** to set the minimum and
-     maximum capacity for your fleet. Scaling policies do not scale your fleet
-     below the minimum capacity or above the maximum capacity.
+1. Choose **Save**.
 
-07. Under **Scaling policies**, for **Policy**
-    **type**, choose **Step scaling policy**.
+**To configure step scaling policies for your Spot Fleet using the AWS CLI**
 
-08. Initially, **Scaling policies** contain step scaling
-     policies named **ScaleUp** and
-     **ScaleDown**. You can complete
-     these policies, or choose **Remove policy** to delete them.
-     You can also choose **Add policy**.
+1. Register the Spot Fleet request as a scalable target using the [register-scalable-target](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/register-scalable-target.html) command.
 
-09. To define a policy, do the following:
-    1. For **Policy name**, enter a name for the
-        policy.
+1. Create a scaling policy using the [put-scaling-policy](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/put-scaling-policy.html) command.
 
-    2. For **Policy trigger**, select an existing alarm,
-        or choose **Create alarm** to open the Amazon CloudWatch
-        console and create an alarm.
-
-    3. For **Modify capacity**, define the amount by
-        which to scale and the lower and upper bound of the step adjustment.
-        You can add or remove a specific number of instances or a percentage
-        of the existing fleet size, or set the fleet to an exact size.
-
-       For example, to create a step scaling policy that increases the
-        capacity of the fleet by 30 percent, choose
-        **Add**, enter **30** in the next
-        field, and then choose **percent**. By default, the
-        lower bound for an add policy is the alarm threshold and the upper
-        bound is positive (+) infinity. By default, the upper bound for a
-        remove policy is the alarm threshold and the lower bound is negative
-        (-) infinity.
-
-    4. (Optional) To add another step, choose **Add**
-       **step**.
-
-    5. For **Cooldown period**, specify a new value (in
-        seconds) or keep the default.
-10. Choose **Save**.
-
-###### To configure step scaling policies for your Spot Fleet using the AWS CLI
-
-1. Register the Spot Fleet request as a scalable target using the [register-scalable-target](../../../cli/latest/reference/application-autoscaling/register-scalable-target.md) command.
-
-2. Create a scaling policy using the [put-scaling-policy](../../../cli/latest/reference/application-autoscaling/put-scaling-policy.md) command.
-
-3. Create an alarm that triggers the scaling policy using the [put-metric-alarm](../../../cli/latest/reference/cloudwatch/put-metric-alarm.md) command.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Target tracking scaling
-
-Scheduled scaling
+1. Create an alarm that triggers the scaling policy using the [put-metric-alarm](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html) command.
 
 All content copied from https://docs.aws.amazon.com/.

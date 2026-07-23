@@ -3,41 +3,29 @@ title: "FailedCapacityReservationFleetCancellationResult"
 ---
 
 # FailedCapacityReservationFleetCancellationResult
+<a name="API_FailedCapacityReservationFleetCancellationResult"></a>
 
 Describes a Capacity Reservation Fleet that could not be cancelled.
 
 ## Contents
+<a name="API_FailedCapacityReservationFleetCancellationResult_Contents"></a>
 
-**cancelCapacityReservationFleetError**
-
+ ** cancelCapacityReservationFleetError **
 Information about the Capacity Reservation Fleet cancellation error.
-
-Type: [CancelCapacityReservationFleetError](api-cancelcapacityreservationfleeterror.md) object
-
+Type: [CancelCapacityReservationFleetError](API_CancelCapacityReservationFleetError.md) object
 Required: No
 
-**capacityReservationFleetId**
-
+ ** capacityReservationFleetId **
 The ID of the Capacity Reservation Fleet that could not be cancelled.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_FailedCapacityReservationFleetCancellationResult_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/failedcapacityreservationfleetcancellationresult.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/failedcapacityreservationfleetcancellationresult.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/failedcapacityreservationfleetcancellationresult.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExternalAuthorityConfiguration
-
-FailedQueuedPurchaseDeletion
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/FailedCapacityReservationFleetCancellationResult)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/FailedCapacityReservationFleetCancellationResult)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/FailedCapacityReservationFleetCancellationResult)
 
 All content copied from https://docs.aws.amazon.com/.

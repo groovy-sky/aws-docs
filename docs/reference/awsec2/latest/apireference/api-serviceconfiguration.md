@@ -3,183 +3,115 @@ title: "ServiceConfiguration"
 ---
 
 # ServiceConfiguration
+<a name="API_ServiceConfiguration"></a>
 
 Describes a service configuration for a VPC endpoint service.
 
 ## Contents
+<a name="API_ServiceConfiguration_Contents"></a>
 
-**acceptanceRequired**
-
+ ** acceptanceRequired **
 Indicates whether requests from other AWS accounts to create an endpoint to the service must first be accepted.
-
 Type: Boolean
-
 Required: No
 
-**AvailabilityZoneIdSet.N**
-
+ ** AvailabilityZoneIdSet.N **
 The IDs of the Availability Zones in which the service is available.
-
 Either `AvailabilityZone` or `AvailabilityZoneId` can be specified, but not both
-
 Type: Array of strings
-
 Required: No
 
-**AvailabilityZoneSet.N**
-
+ ** AvailabilityZoneSet.N **
 The Availability Zones in which the service is available.
-
 Either `AvailabilityZone` or `AvailabilityZoneId` can be specified, but not both
-
 Type: Array of strings
-
 Required: No
 
-**BaseEndpointDnsNameSet.N**
-
+ ** BaseEndpointDnsNameSet.N **
 The DNS names for the service.
-
 Type: Array of strings
-
 Required: No
 
-**GatewayLoadBalancerArnSet.N**
-
+ ** GatewayLoadBalancerArnSet.N **
 The Amazon Resource Names (ARNs) of the Gateway Load Balancers for the service.
-
 Type: Array of strings
-
 Required: No
 
-**managesVpcEndpoints**
-
-Indicates whether the service manages its VPC endpoints. Management of the service VPC
-endpoints using the VPC endpoint API is restricted.
-
+ ** managesVpcEndpoints **
+Indicates whether the service manages its VPC endpoints. Management of the service VPC endpoints using the VPC endpoint API is restricted.
 Type: Boolean
-
 Required: No
 
-**NetworkLoadBalancerArnSet.N**
-
+ ** NetworkLoadBalancerArnSet.N **
 The Amazon Resource Names (ARNs) of the Network Load Balancers for the service.
-
 Type: Array of strings
-
 Required: No
 
-**payerResponsibility**
-
+ ** payerResponsibility **
 The payer responsibility.
-
 Type: String
-
 Valid Values: `ServiceOwner`
-
 Required: No
 
-**privateDnsName**
-
+ ** privateDnsName **
 The private DNS name for the service.
-
 Type: String
-
 Required: No
 
-**privateDnsNameConfiguration**
-
+ ** privateDnsNameConfiguration **
 Information about the endpoint service private DNS name configuration.
-
-Type: [PrivateDnsNameConfiguration](api-privatednsnameconfiguration.md) object
-
+Type: [PrivateDnsNameConfiguration](API_PrivateDnsNameConfiguration.md) object
 Required: No
 
-**remoteAccessEnabled**
-
-Indicates whether consumers can access the service from a Region other than the
-Region where the service is hosted.
-
+ ** remoteAccessEnabled **
+Indicates whether consumers can access the service from a Region other than the Region where the service is hosted.
 Type: Boolean
-
 Required: No
 
-**serviceId**
-
+ ** serviceId **
 The ID of the service.
-
 Type: String
-
 Required: No
 
-**serviceName**
-
+ ** serviceName **
 The name of the service.
-
 Type: String
-
 Required: No
 
-**serviceState**
-
+ ** serviceState **
 The service state.
-
 Type: String
-
 Valid Values: `Pending | Available | Deleting | Deleted | Failed`
-
 Required: No
 
-**ServiceType.N**
-
+ ** ServiceType.N **
 The type of service.
-
-Type: Array of [ServiceTypeDetail](api-servicetypedetail.md) objects
-
+Type: Array of [ServiceTypeDetail](API_ServiceTypeDetail.md) objects
 Required: No
 
-**SupportedIpAddressTypeSet.N**
-
+ ** SupportedIpAddressTypeSet.N **
 The supported IP address types.
-
 Type: Array of strings
-
 Array Members: Minimum number of 0 items. Maximum number of 2 items.
-
 Valid Values: `ipv4 | ipv6`
-
 Required: No
 
-**SupportedRegionSet.N**
-
+ ** SupportedRegionSet.N **
 The supported Regions.
-
-Type: Array of [SupportedRegionDetail](api-supportedregiondetail.md) objects
-
+Type: Array of [SupportedRegionDetail](API_SupportedRegionDetail.md) objects
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 The tags assigned to the service.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
 ## See Also
+<a name="API_ServiceConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/serviceconfiguration.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/serviceconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/serviceconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SecurityGroupVpcAssociation
-
-ServiceDetail
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ServiceConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ServiceConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ServiceConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,87 +3,68 @@ title: "BundleInstance"
 ---
 
 # BundleInstance
+<a name="API_BundleInstance"></a>
 
 Bundles an Amazon instance store-backed Windows instance.
 
-During bundling, only the root device volume (C:\\) is bundled. Data on other instance
-store volumes is not preserved.
+During bundling, only the root device volume (C:\\) is bundled. Data on other instance store volumes is not preserved.
 
-###### Note
-
-This action is no longer supported. To create an AMI, use
-[CreateImage](api-createimage.md).
-For more information, see [Create an Amazon EBS-backed AMI](../../../../services/ec2/latest/userguide/creating-an-ami-ebs.md) in the _Amazon EC2 User Guide_.
+**Note**
+BundleInstance is no longer supported. To create an AMI, use [CreateImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateImage.html) instead. For more information about creating an Amazon EBS-backed AMI, see [ Create an Amazon EBS-backed AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html) in the *Amazon EC2 User Guide*.
 
 ## Request Parameters
+<a name="API_BundleInstance_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is
-`DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**InstanceId**
-
+ **InstanceId**
 The ID of the instance to bundle.
-
 Default: None
-
 Type: String
-
 Required: Yes
 
-**Storage**
-
-The bucket in which to store the AMI. You can specify a bucket that you already own or a
-new bucket that Amazon EC2 creates on your behalf. If you specify a bucket that belongs to someone
-else, Amazon EC2 returns an error.
-
-Type: [Storage](api-storage.md) object
-
+ **Storage**
+The bucket in which to store the AMI. You can specify a bucket that you already own or a new bucket that Amazon EC2 creates on your behalf. If you specify a bucket that belongs to someone else, Amazon EC2 returns an error.
+Type: [Storage](API_Storage.md) object
 Required: Yes
 
 ## Response Elements
+<a name="API_BundleInstance_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**bundleInstanceTask**
-
+ **bundleInstanceTask**
 Information about the bundle task.
+Type: [BundleTask](API_BundleTask.md) object
 
-Type: [BundleTask](api-bundletask.md) object
-
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
 ## Errors
+<a name="API_BundleInstance_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_BundleInstance_Examples"></a>
 
 ### Example
+<a name="API_BundleInstance_Example_1"></a>
 
 This example request bundles the specified instance.
 
-Before you specify a value for your access key ID, review and follow the guidance in
-[Best\
-Practices for AWS accounts](../../../../services/accounts/latest/reference/best-practices.md) in the _AWS Account Management Reference_
-_Guide_.
+Before you specify a value for your access key ID, review and follow the guidance in [Best Practices for AWS accounts](https://docs.aws.amazon.com/accounts/latest/reference/best-practices.html) in the * AWS Account Management Reference Guide*.
 
 #### Sample Request
+<a name="API_BundleInstance_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=BundleInstance
 &InstanceId=i-1234567890abcdef0
 &Storage.S3.AWSAccessKeyId='AWS_ACCESS_KEY_ID_REDACTED'
@@ -97,9 +78,9 @@ iRrZXkiLCAibXktbmV3LWltYWdlIl0seyJhY2wiOiAiZWMyLWJ1bmRsZS1yZWFkIn1dfEXAMPLE
 ```
 
 #### Sample Response
+<a name="API_BundleInstance_Example_1_Response"></a>
 
 ```
-
 <BundleInstanceResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
   <requestId>59dbff89-35bd-4eac-99ed-be587EXAMPLE</requestId>
   <bundleInstanceTask>
@@ -120,33 +101,18 @@ iRrZXkiLCAibXktbmV3LWltYWdlIl0seyJhY2wiOiAiZWMyLWJ1bmRsZS1yZWFkIn1dfEXAMPLE
 ```
 
 ## See Also
+<a name="API_BundleInstance_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/bundleinstance.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/bundleinstance.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/bundleinstance.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/bundleinstance.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/bundleinstance.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/bundleinstance.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/bundleinstance.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/bundleinstance.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/bundleinstance.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/bundleinstance.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AuthorizeSecurityGroupIngress
-
-CancelBundleTask
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/BundleInstance)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/BundleInstance)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/BundleInstance)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/BundleInstance)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/BundleInstance)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/BundleInstance)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/BundleInstance)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/BundleInstance)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/BundleInstance)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/BundleInstance)
 
 All content copied from https://docs.aws.amazon.com/.

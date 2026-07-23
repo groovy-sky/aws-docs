@@ -3,34 +3,25 @@ title: "Spot Instance request example launch specifications"
 ---
 
 # Spot Instance request example launch specifications
+<a name="spot-request-examples"></a>
 
-The following examples show launch configurations that you can use with the [request-spot-instances](../../../cli/latest/reference/ec2/request-spot-instances.md) command to create a Spot Instance request. For more
-information, see [Manage your Spot Instances](using-spot-instances-request.md).
+The following examples show launch configurations that you can use with the [request-spot-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/request-spot-instances.html) command to create a Spot Instance request. For more information, see [Manage your Spot Instances](using-spot-instances-request.md).
 
-###### Important
+**Important**
+We strongly discourage using the [request-spot-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/request-spot-instances.html) command to request a Spot Instance because it is a legacy API with no planned investment. For more information, see [Which is the best Spot request method to use?](spot-best-practices.md#which-spot-request-method-to-use)
 
-We strongly discourage using the [request-spot-instances](../../../cli/latest/reference/ec2/request-spot-instances.md) command to request a Spot Instance because it
-is a legacy API with no planned investment. For more information, see
-[Which is the best Spot request method to use?](spot-best-practices.md#which-spot-request-method-to-use)
-
-###### Examples
-
-- [Example 1: Launch Spot Instances](#spot-launch-specification1)
-
-- [Example 2: Launch Spot Instances in the specified Availability Zone](#spot-launch-specification2)
-
-- [Example 3: Launch Spot Instances in the specified subnet](#spot-launch-specification3)
-
-- [Example 4: Launch a Dedicated Spot Instance](#spot-launch-specification4)
+**Topics**
++ [Example 1: Launch Spot Instances](#spot-launch-specification1)
++ [Example 2: Launch Spot Instances in the specified Availability Zone](#spot-launch-specification2)
++ [Example 3: Launch Spot Instances in the specified subnet](#spot-launch-specification3)
++ [Example 4: Launch a Dedicated Spot Instance](#spot-launch-specification4)
 
 ## Example 1: Launch Spot Instances
+<a name="spot-launch-specification1"></a>
 
-The following example does not include an Availability Zone or subnet. Amazon EC2
-selects an Availability Zone for you. Amazon EC2 launches the instances in the
-default subnet of the selected Availability Zone.
+The following example does not include an Availability Zone or subnet. Amazon EC2 selects an Availability Zone for you. Amazon EC2 launches the instances in the default subnet of the selected Availability Zone.
 
-```json
-
+```
 {
   "ImageId": "ami-0abcdef1234567890",
   "KeyName": "my-key-pair",
@@ -43,12 +34,11 @@ default subnet of the selected Availability Zone.
 ```
 
 ## Example 2: Launch Spot Instances in the specified Availability Zone
+<a name="spot-launch-specification2"></a>
 
-The following example includes an Availability Zone. Amazon EC2 launches the
-instances in the default subnet of the specified Availability Zone.
+The following example includes an Availability Zone. Amazon EC2 launches the instances in the default subnet of the specified Availability Zone.
 
-```json
-
+```
 {
   "ImageId": "ami-0abcdef1234567890",
   "KeyName": "my-key-pair",
@@ -64,13 +54,11 @@ instances in the default subnet of the specified Availability Zone.
 ```
 
 ## Example 3: Launch Spot Instances in the specified subnet
+<a name="spot-launch-specification3"></a>
 
-The following example includes a subnet. Amazon EC2 launches the instances in the
-specified subnet. If the VPC is a nondefault VPC, the instance does not receive
-a public IPv4 address by default.
+The following example includes a subnet. Amazon EC2 launches the instances in the specified subnet. If the VPC is a nondefault VPC, the instance does not receive a public IPv4 address by default.
 
-```json
-
+```
 {
   "ImageId": "ami-0abcdef1234567890",
   "SecurityGroupIds": [ "sg-1a2b3c4d5e6f7g8h9" ],
@@ -82,15 +70,9 @@ a public IPv4 address by default.
 }
 ```
 
-To assign a public IPv4 address to an instance in a nondefault VPC, specify the
-`AssociatePublicIpAddress` field as shown in the following
-example. When you specify a network interface, you must include the subnet ID
-and security group ID using the network interface, rather than using the
-`SubnetId` and `SecurityGroupIds` fields shown in the
-previous code block.
+To assign a public IPv4 address to an instance in a nondefault VPC, specify the `AssociatePublicIpAddress` field as shown in the following example. When you specify a network interface, you must include the subnet ID and security group ID using the network interface, rather than using the `SubnetId` and `SecurityGroupIds` fields shown in the previous code block.
 
-```json
-
+```
 {
   "ImageId": "ami-0abcdef1234567890",
   "KeyName": "my-key-pair",
@@ -110,12 +92,11 @@ previous code block.
 ```
 
 ## Example 4: Launch a Dedicated Spot Instance
+<a name="spot-launch-specification4"></a>
 
-The following example requests Spot Instance with a tenancy of `dedicated`.
-A Dedicated Spot Instance must be launched in a VPC.
+The following example requests Spot Instance with a tenancy of `dedicated`. A Dedicated Spot Instance must be launched in a VPC.
 
-```json
-
+```
 {
   "ImageId": "ami-0abcdef1234567890",
   "KeyName": "my-key-pair",
@@ -127,11 +108,5 @@ A Dedicated Spot Instance must be launched in a VPC.
   }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Create a Spot Instance request
-
-Get the status of a Spot Instance request
 
 All content copied from https://docs.aws.amazon.com/.

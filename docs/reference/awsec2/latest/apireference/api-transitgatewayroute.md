@@ -3,77 +3,51 @@ title: "TransitGatewayRoute"
 ---
 
 # TransitGatewayRoute
+<a name="API_TransitGatewayRoute"></a>
 
 Describes a route for a transit gateway route table.
 
 ## Contents
+<a name="API_TransitGatewayRoute_Contents"></a>
 
-**destinationCidrBlock**
-
+ ** destinationCidrBlock **
 The CIDR block used for destination matches.
-
 Type: String
-
 Required: No
 
-**prefixListId**
-
+ ** prefixListId **
 The ID of the prefix list used for destination matches.
-
 Type: String
-
 Required: No
 
-**state**
-
+ ** state **
 The state of the route.
-
 Type: String
-
 Valid Values: `pending | active | blackhole | deleting | deleted`
-
 Required: No
 
-**TransitGatewayAttachments.N**
-
+ ** TransitGatewayAttachments.N **
 The attachments.
-
-Type: Array of [TransitGatewayRouteAttachment](api-transitgatewayrouteattachment.md) objects
-
+Type: Array of [TransitGatewayRouteAttachment](API_TransitGatewayRouteAttachment.md) objects
 Required: No
 
-**transitGatewayRouteTableAnnouncementId**
-
+ ** transitGatewayRouteTableAnnouncementId **
 The ID of the transit gateway route table announcement.
-
 Type: String
-
 Required: No
 
-**type**
-
+ ** type **
 The route type.
-
 Type: String
-
 Valid Values: `static | propagated`
-
 Required: No
 
 ## See Also
+<a name="API_TransitGatewayRoute_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/transitgatewayroute.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/transitgatewayroute.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/transitgatewayroute.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitGatewayRequestOptions
-
-TransitGatewayRouteAttachment
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TransitGatewayRoute)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TransitGatewayRoute)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TransitGatewayRoute)
 
 All content copied from https://docs.aws.amazon.com/.

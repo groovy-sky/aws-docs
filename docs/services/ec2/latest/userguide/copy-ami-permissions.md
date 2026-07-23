@@ -3,63 +3,38 @@ title: "Grant permissions to copy Amazon EC2 AMIs"
 ---
 
 # Grant permissions to copy Amazon EC2 AMIs
+<a name="copy-ami-permissions"></a>
 
 To copy an EBS-backed or Amazon S3-backed AMI, you need the following IAM permissions:
++ `ec2:CopyImage` – To copy the AMI. For EBS-backed AMIs, it also grants permission to copy the AMI's backing snapshots.
++ `ec2:CreateTags` – To tag the target AMI. For EBS-backed AMIs, it also grants permission to tag the target AMI’s backing snapshots.
 
-- `ec2:CopyImage` – To copy the AMI. For EBS-backed AMIs, it
-also grants permission to copy the AMI's backing snapshots.
+If you're copying an instance stored-backed AMI, you need the following *additional* IAM permissions:
++ `s3:CreateBucket` – To create the S3 bucket in the target Region for the new AMI
++ `s3:PutBucketOwnershipControls` – To enable ACLs for the newly created S3 bucket so that objects can be written with the `aws-exec-read` [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html#canned-acl)
++ `s3:GetBucketAcl` – To read the ACLs for the source bucket
++ `s3:ListAllMyBuckets` – To find an existing S3 bucket for AMIs in the target Region
++ `s3:GetObject` – To read the objects in the source bucket
++ `s3:PutObject` – To write the objects in the target bucket
++ `s3:PutObjectAcl` – To write the permissions for the new objects in the target bucket
 
-- `ec2:CreateTags` – To tag the target AMI. For EBS-backed
-AMIs, it also grants permission to tag the target AMI’s backing
-snapshots.
-
-If you're copying an instance stored-backed AMI, you need the following _additional_ IAM permissions:
-
-- `s3:CreateBucket` – To create the S3 bucket in the target
-Region for the new AMI
-
-- `s3:PutBucketOwnershipControls` – To enable ACLs for the
-newly created S3 bucket so that objects can be written with the `aws-exec-read` [canned ACL](../../../s3/latest/userguide/acl-overview.md#canned-acl)
-
-- `s3:GetBucketAcl` – To read the ACLs for the
-source bucket
-
-- `s3:ListAllMyBuckets` – To find an existing S3 bucket for
-AMIs in the target Region
-
-- `s3:GetObject` – To read the objects in the source
-bucket
-
-- `s3:PutObject` – To write the objects in the target
-bucket
-
-- `s3:PutObjectAcl` – To write the permissions for the new
-objects in the target bucket
-
-###### Note
-
-Starting October 28, 2024, you can specify resource-level permissions for the
-`CopyImage` action on the source AMI. Resource-level permissions for
-the target AMI are available as before. For more information, see
-**CopyImage** in the table under [Actions defined by Amazon EC2](../../../service-authorization/latest/reference/list-amazonec2.md#amazonec2-actions-as-permissions) in the _Service_
-_Authorization Reference_.
+**Note**
+Starting October 28, 2024, you can specify resource-level permissions for the `CopyImage` action on the source AMI. Resource-level permissions for the target AMI are available as before. For more information, see **CopyImage** in the table under [Actions defined by Amazon EC2](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html#amazonec2-actions-as-permissions) in the *Service Authorization Reference*.
 
 ## Example IAM policy for copying an EBS-backed AMI and tagging the target AMI and snapshots
+<a name="permissions-to-copy-ebs-backed-ami"></a>
 
-The following example policy grants you permission to copy any EBS-backed AMI and
-tag the target AMI and its backing snapshots.
+The following example policy grants you permission to copy any EBS-backed AMI and tag the target AMI and its backing snapshots.
 
-###### Note
+**Note**
+Starting October 28, 2024, you can specify snapshots in the `Resource` element. For more information, see **CopyImage** in the table under [Actions defined by Amazon EC2](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html#amazonec2-actions-as-permissions) in the *Service Authorization Reference*.
 
-Starting October 28, 2024, you can specify snapshots in the
-`Resource` element. For more information, see
-**CopyImage** in the table under [Actions defined by Amazon EC2](../../../service-authorization/latest/reference/list-amazonec2.md#amazonec2-actions-as-permissions) in the _Service_
-_Authorization Reference_.
+------
+#### [ JSON ]
 
-JSON
+****
 
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -75,23 +50,23 @@ JSON
         ]
     }]
 }
-
 ```
 
+------
+
 ## Example IAM policy for copying an EBS-backed AMI but denying tagging the new snapshots
+<a name="permissions-to-copy-ebs-backed-ami-but-deny-tagging-new-snapshots"></a>
 
-The `ec2:CopySnapshot` permission is automatically granted when you get the
-`ec2:CopyImage` permission. Permission to tag the new backing
-snapshots can be explicitly denied, overriding the `Allow` effect for the
-`ec2:CreateTags` action.
+The `ec2:CopySnapshot` permission is automatically granted when you get the `ec2:CopyImage` permission. Permission to tag the new backing snapshots can be explicitly denied, overriding the `Allow` effect for the `ec2:CreateTags` action.
 
-The following example policy grants you permission to copy any EBS-backed AMI, but
-denies you from tagging the new backing snapshots of the target AMI.
+The following example policy grants you permission to copy any EBS-backed AMI, but denies you from tagging the new backing snapshots of the target AMI.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -112,18 +87,21 @@ JSON
         }
     ]
 }
-
 ```
 
+------
+
 ## Example IAM policy for copying an Amazon S3-backed AMI and tagging the target AMI
+<a name="permissions-to-copy-instance-store-backed-ami"></a>
 
-The following example policy grants you permission to copy any Amazon S3-backed AMI in the
-specified source bucket to the specified Region, and tag the target AMI.
+The following example policy grants you permission to copy any Amazon S3-backed AMI in the specified source bucket to the specified Region, and tag the target AMI.
 
-JSON
+------
+#### [ JSON ]
 
-```json
+****
 
+```
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -158,30 +136,18 @@ JSON
                 "s3:PutObject"
             ],
             "Resource": [
-                "arn:aws:s3:::amis-for-111122223333-in-us-east-2-hash"
+                "arn:aws:s3:::amis-for-{{111122223333}}-in-{{us-east-2}}-{{hash}}"
             ]
         }
     ]
 }
-
 ```
 
-To find the Amazon Resource Name (ARN) of the AMI source bucket, open the Amazon EC2
-console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2), in the navigation pane choose
-**AMIs**, and locate the bucket name in the
-**Source** column.
+------
 
-###### Note
+To find the Amazon Resource Name (ARN) of the AMI source bucket, open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/), in the navigation pane choose **AMIs**, and locate the bucket name in the **Source** column.
 
-The `s3:CreateBucket` permission is only needed the first time that you copy an
-Amazon S3-backed AMI to an individual Region. After that, the Amazon S3 bucket that is
-already created in the Region is used to store all future AMIs that you copy
-to that Region.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Copy an AMI
-
-How AMI copy works
+**Note**
+The `s3:CreateBucket` permission is only needed the first time that you copy an Amazon S3-backed AMI to an individual Region. After that, the Amazon S3 bucket that is already created in the Region is used to store all future AMIs that you copy to that Region.
 
 All content copied from https://docs.aws.amazon.com/.

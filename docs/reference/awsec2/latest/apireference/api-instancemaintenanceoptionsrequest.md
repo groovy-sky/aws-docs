@@ -3,36 +3,25 @@ title: "InstanceMaintenanceOptionsRequest"
 ---
 
 # InstanceMaintenanceOptionsRequest
+<a name="API_InstanceMaintenanceOptionsRequest"></a>
 
 The maintenance options for the instance.
 
 ## Contents
+<a name="API_InstanceMaintenanceOptionsRequest_Contents"></a>
 
-**AutoRecovery**
-
-Disables the automatic recovery behavior of your instance or sets it to default. For
-more information, see [Simplified automatic recovery](../../../../services/ec2/latest/userguide/ec2-instance-recover.md#instance-configuration-recovery).
-
+ ** AutoRecovery **
+Disables the automatic recovery behavior of your instance or sets it to default. For more information, see [Simplified automatic recovery](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html#instance-configuration-recovery).
 Type: String
-
 Valid Values: `disabled | default`
-
 Required: No
 
 ## See Also
+<a name="API_InstanceMaintenanceOptionsRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instancemaintenanceoptionsrequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instancemaintenanceoptionsrequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancemaintenanceoptionsrequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstanceMaintenanceOptions
-
-InstanceMarketOptionsRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceMaintenanceOptionsRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceMaintenanceOptionsRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceMaintenanceOptionsRequest)
 
 All content copied from https://docs.aws.amazon.com/.

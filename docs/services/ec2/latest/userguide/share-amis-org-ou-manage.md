@@ -3,46 +3,43 @@ title: "Manage AMI sharing with an organization or OU"
 ---
 
 # Manage AMI sharing with an organization or OU
+<a name="share-amis-org-ou-manage"></a>
 
-You can manage AMI sharing with organizations and organization units (OU) to control whether
-they can launch Amazon EC2 instances.
+You can manage AMI sharing with organizations and organization units (OU) to control whether they can launch Amazon EC2 instances.
 
 ## View the organizations and OUs with which an AMI is shared
+<a name="decribe-ami-launch-permissions"></a>
 
 You can find the organizations and OUs with which you've shared your AMI.
 
-Console
+------
+#### [ Console ]
 
-###### To check with which organizations and OUs you've shared your AMI
+**To check with which organizations and OUs you've shared your AMI**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose **AMIs**.
+1. In the navigation pane, choose **AMIs**.
 
-3. Select your AMI in the list, choose the **Permissions** tab, and scroll
-    down to **Shared organizations/OUs**.
+1. Select your AMI in the list, choose the **Permissions** tab, and scroll down to **Shared organizations/OUs**.
 
-To find AMIs that are shared with you, see [Find shared AMIs to use for Amazon EC2 instances](usingsharedamis-finding.md).
+   To find AMIs that are shared with you, see [Find shared AMIs to use for Amazon EC2 instances](usingsharedamis-finding.md).
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To check with which organizations and OUs you've shared your AMI
+**To check with which organizations and OUs you've shared your AMI**
+Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-image-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-image-attribute.html) command with the `launchPermission` attribute.
 
-Use the [describe-image-attribute](../../../cli/latest/reference/ec2/describe-image-attribute.md) command with
-the `launchPermission` attribute.
-
-```nohighlight
-
+```
 aws ec2 describe-image-attribute \
-    --image-id ami-0abcdef1234567890 \
+    --image-id {{ami-0abcdef1234567890}} \
     --attribute launchPermission
 ```
 
 The following is an example response.
 
-```json
-
+```
 {
     "ImageId": "ami-0abcdef1234567890",
     "LaunchPermissions": [
@@ -53,233 +50,179 @@ The following is an example response.
 }
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To check with which organizations and OUs you've shared your AMI
+**To check with which organizations and OUs you've shared your AMI**
+Use the [Get-EC2ImageAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2ImageAttribute.html) cmdlet.
 
-Use the [Get-EC2ImageAttribute](../../../powershell/latest/reference/items/get-ec2imageattribute.md) cmdlet.
-
-```powershell
-
+```
 Get-EC2ImageAttribute `
-    -ImageId ami-0abcdef1234567890 `
+    -ImageId {{ami-0abcdef1234567890}} `
     -Attribute launchPermission
 ```
 
+------
+
 ## Share an AMI with an organization or OU
+<a name="share-amis-org-ou"></a>
 
 You can share an AMI with an organization or OU.
 
-###### Note
+**Note**
+You do not need to share the Amazon EBS snapshots that an AMI references in order to share the AMI. Only the AMI itself needs to be shared, and the system automatically provides the instance with access to the referenced EBS snapshots for the launch. However, you do need to share the KMS keys used to encrypt snapshots that the AMI references. For more information, see [Allow organizations and OUs to use a KMS key](allow-org-ou-to-use-key.md).
 
-You do not need to share the Amazon EBS snapshots that an AMI references in order to share the
-AMI. Only the AMI itself needs to be shared, and the system automatically
-provides the instance with access to the referenced EBS snapshots for the
-launch. However, you do need to share the KMS keys used to encrypt snapshots
-that the AMI references. For more information, see [Allow organizations and OUs to use a KMS key](allow-org-ou-to-use-key.md).
+------
+#### [ Console ]
 
-Console
+**To share an AMI with an organization or an OU**
 
-###### To share an AMI with an organization or an OU
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. In the navigation pane, choose **AMIs**.
 
-2. In the navigation pane, choose **AMIs**.
+1. Select your AMI in the list, and then choose **Actions**, **Edit AMI permissions**.
 
-3. Select your AMI in the list, and then choose **Actions**, **Edit**
-**AMI permissions**.
+1. Under **AMI availability**, choose **Private**.
 
-4. Under **AMI availability**, choose
-    **Private**.
+1. Next to **Shared organizations/OUs**, choose **Add organization/OU ARN**.
 
-5. Next to **Shared organizations/OUs**, choose
-    **Add organization/OU ARN**.
+1. For **Organization/OU ARN**, enter the organization ARN or OU ARN with which you want to share the AMI, and then choose **Share AMI**. Note that you must specify the full ARN, not just the ID.
 
-6. For **Organization/OU ARN**, enter the organization ARN or OU ARN with
-    which you want to share the AMI, and then choose **Share**
-**AMI**. Note that you must specify the full ARN, not
-    just the ID.
+   To share this AMI with multiple organizations or OUs, repeat this step until you have added all of the required organizations or OUs.
 
-To share this AMI with multiple organizations or OUs, repeat this step until you have
-    added all of the required organizations or OUs.
+1. Choose **Save changes** when you're done.
 
-7. Choose **Save changes** when you're done.
+1. (Optional) To view the organizations or OUs with which you have shared the AMI, select the AMI in the list, choose the **Permissions** tab, and scroll down to **Shared organizations/OUs**. To find AMIs that are shared with you, see [Find shared AMIs to use for Amazon EC2 instances](usingsharedamis-finding.md).
 
-8. (Optional) To view the organizations or OUs with which you have shared the AMI, select
-    the AMI in the list, choose the **Permissions** tab,
-    and scroll down to **Shared organizations/OUs**. To
-    find AMIs that are shared with you, see [Find shared AMIs to use for Amazon EC2 instances](usingsharedamis-finding.md).
+------
+#### [ AWS CLI ]
 
-AWS CLI
+**To share an AMI with an organization**
+Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html) command to grant launch permissions for the specified AMI to the specified organization.
 
-###### To share an AMI with an organization
-
-Use the [modify-image-attribute](../../../cli/latest/reference/ec2/modify-image-attribute.md) command to grant launch
-permissions for the specified AMI to the specified organization.
-
-```nohighlight
-
+```
 aws ec2 modify-image-attribute \
-    --image-id ami-0abcdef1234567890 \
-    --launch-permission "Add=[{OrganizationArn=arn:aws:organizations::123456789012:organization/o-123example}]"
+    --image-id {{ami-0abcdef1234567890}} \
+    --launch-permission "Add=[{OrganizationArn=arn:aws:organizations::{{123456789012}}:organization/{{o-123example}}}]"
 ```
 
-###### To share an AMI with an OU
+**To share an AMI with an OU**
+The [modify-image-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html) command grants launch permissions for the specified AMI to the specified OU. Note that you must specify the full ARN, not just the ID.
 
-The [modify-image-attribute](../../../cli/latest/reference/ec2/modify-image-attribute.md) command grants launch permissions for the
-specified AMI to the specified OU. Note that you must specify the full ARN, not
-just the ID.
-
-```nohighlight
-
+```
 aws ec2 modify-image-attribute \
-    --image-id ami-0abcdef1234567890 \
-    --launch-permission "Add=[{OrganizationalUnitArn=arn:aws:organizations::123456789012:ou/o-123example/ou-1234-5example}]"
+    --image-id {{ami-0abcdef1234567890}} \
+    --launch-permission "Add=[{OrganizationalUnitArn=arn:aws:organizations::{{123456789012}}:ou/{{o-123example}}/{{ou-1234-5example}}}]"
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-Use the [Edit-EC2ImageAttribute](../../../powershell/latest/reference/items/edit-ec2imageattribute.md) command (Tools for Windows PowerShell) to share
-an AMI as shown in the following examples.
+Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2ImageAttribute.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2ImageAttribute.html) command (Tools for Windows PowerShell) to share an AMI as shown in the following examples.
 
-###### To share an AMI with an organization or an OU
+**To share an AMI with an organization or an OU**
+The following command grants launch permissions for the specified AMI to the specified organization.
 
-The following command grants launch permissions for the specified AMI to the specified
-organization.
-
-```powershell
-
+```
 Edit-EC2ImageAttribute `
-    -ImageId ami-0abcdef1234567890 `
+    -ImageId {{ami-0abcdef1234567890}} `
     -Attribute launchPermission `
     -OperationType add `
-    -OrganizationArn "arn:aws:organizations::123456789012:organization/o-123example"
+    -OrganizationArn "arn:aws:organizations::{{123456789012}}:organization/{{o-123example}}"
 ```
 
-###### To stop sharing an AMI with an organization or OU
+**To stop sharing an AMI with an organization or OU**
+The following command removes launch permissions for the specified AMI from the specified organization:
 
-The following command removes launch permissions for the specified AMI from the specified
-organization:
-
-```powershell
-
+```
 Edit-EC2ImageAttribute `
-    -ImageId ami-0abcdef1234567890 `
+    -ImageId {{ami-0abcdef1234567890}} `
     -Attribute launchPermission `
     -OperationType remove `
-    -OrganizationArn "arn:aws:organizations::123456789012:organization/o-123example"
+    -OrganizationArn "arn:aws:organizations::{{123456789012}}:organization/{{o-123example}}"
 ```
 
-###### To stop sharing an AMI with all organizations, OUs, and AWS accounts
+**To stop sharing an AMI with all organizations, OUs, and AWS accounts**
+The following command removes all public and explicit launch permissions from the specified AMI. Note that the owner of the AMI always has launch permissions and is therefore unaffected by this command.
 
-The following command removes all public and explicit launch permissions from
-the specified AMI. Note that the owner of the AMI always has launch permissions
-and is therefore unaffected by this command.
-
-```powershell
-
+```
 Reset-EC2ImageAttribute `
-    -ImageId ami-0abcdef1234567890 `
+    -ImageId {{ami-0abcdef1234567890}} `
     -Attribute launchPermission
 ```
 
+------
+
 ## Stop sharing an AMI with an organization or OU
+<a name="stop-sharing-amis-org-ou"></a>
 
 You can stop sharing an AMI with an organization or OU.
 
-###### Note
+**Note**
+You can't stop sharing an AMI with a specific account if it's in an organization or OU with which an AMI is shared. If you try to stop sharing the AMI by removing launch permissions for the account, Amazon EC2 returns a success message. However, the AMI continues to be shared with the account.
 
-You can't stop sharing an AMI with a specific account if it's in an organization or OU
-with which an AMI is shared. If you try to stop sharing the AMI by removing
-launch permissions for the account, Amazon EC2 returns a success message. However,
-the AMI continues to be shared with the account.
+------
+#### [ Console ]
 
-Console
+**To stop sharing an AMI with an organization or OU**
 
-###### To stop sharing an AMI with an organization or OU
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. In the navigation pane, choose **AMIs**.
 
-2. In the navigation pane, choose **AMIs**.
+1. Select your AMI in the list, and then choose **Actions**, **Edit AMI permissions**.
 
-3. Select your AMI in the list, and then choose **Actions**, **Edit**
-**AMI permissions**.
+1. Under **Shared organizations/OUs**, select the organizations or OUs with which you want to stop sharing the AMI, and then choose **Remove selected**.
 
-4. Under **Shared organizations/OUs**, select the organizations or OUs with which you want to stop sharing the AMI, and then choose
-    **Remove selected**.
+1. Choose **Save changes** when you're done.
 
-5. Choose **Save changes** when you're done.
+1. (Optional) To confirm that you have stopped sharing the AMI with the organizations or OUs, select the AMI in the list, choose the **Permissions** tab, and scroll down to **Shared organizations/OUs**.
 
-6. (Optional) To confirm that you have stopped sharing the AMI with the organizations or
-    OUs, select the AMI in the list, choose the
-    **Permissions** tab, and scroll down to
-    **Shared organizations/OUs**.
+------
+#### [ AWS CLI ]
 
-AWS CLI
+**To stop sharing an AMI with an organization or OU**
+Use the [modify-image-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html) command. This example removes launch permissions for the specified AMI from the specified organization.
 
-###### To stop sharing an AMI with an organization or OU
-
-Use the [modify-image-attribute](../../../cli/latest/reference/ec2/modify-image-attribute.md) command. This example removes launch
-permissions for the specified AMI from the specified organization.
-
-```nohighlight
-
+```
 aws ec2 modify-image-attribute \
-    --image-id ami-0abcdef1234567890 \
-    --launch-permission "Remove=[{OrganizationArn=arn:aws:organizations::123456789012:organization/o-123example}]"
+    --image-id {{ami-0abcdef1234567890}} \
+    --launch-permission "Remove=[{OrganizationArn=arn:aws:organizations::{{123456789012}}:organization/{{o-123example}}}]"
 ```
 
-###### To stop sharing an AMI with all organizations, OUs, and AWS accounts
+**To stop sharing an AMI with all organizations, OUs, and AWS accounts**
+Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/reset-image-attribute.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/reset-image-attribute.html) command. This example removes all public and explicit launch permissions from the specified AMI. Note that the owner of the AMI always has launch permissions and is therefore unaffected by this command.
 
-Use the [reset-image-attribute](../../../cli/latest/reference/ec2/reset-image-attribute.md) command. This example removes all
-public and explicit launch permissions from the specified AMI. Note that the
-owner of the AMI always has launch permissions and is therefore unaffected
-by this command.
-
-```nohighlight
-
+```
 aws ec2 reset-image-attribute \
-    --image-id ami-0abcdef1234567890 \
+    --image-id {{ami-0abcdef1234567890}} \
     --attribute launchPermission
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To stop sharing an AMI with an organization or OU
+**To stop sharing an AMI with an organization or OU**
+Use the [Edit-EC2ImageAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2ImageAttribute.html) cmdlet. This example removes launch permissions for the specified AMI from the specified organization.
 
-Use the [Edit-EC2ImageAttribute](../../../powershell/latest/reference/items/edit-ec2imageattribute.md)
-cmdlet. This example removes launch permissions for the specified
-AMI from the specified organization.
-
-```powershell
-
+```
 Edit-EC2ImageAttribute `
-    -ImageId ami-0abcdef1234567890 `
+    -ImageId {{ami-0abcdef1234567890}} `
     -Attribute launchPermission `
     -OperationType remove `
-    -OrganizationArn "arn:aws:organizations::123456789012:organization/o-123example"
+    -OrganizationArn "arn:aws:organizations::{{123456789012}}:organization/{{o-123example}}"
 ```
 
-###### To stop sharing an AMI with all organizations, OUs, and AWS accounts
+**To stop sharing an AMI with all organizations, OUs, and AWS accounts**
+Use the [Reset-EC2ImageAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Reset-EC2ImageAttribute.html) cmdlet. This example removes all public and explicit launch permissions from the specified AMI. Note that the owner of the AMI always has launch permissions and is therefore unaffected by this command.
 
-Use the [Reset-EC2ImageAttribute](../../../powershell/latest/reference/items/reset-ec2imageattribute.md)
-cmdlet. This example removes all public and explicit launch permissions from
-the specified AMI. Note that the owner of the AMI always has launch
-permissions and is therefore unaffected by this command.
-
-```powershell
-
+```
 Reset-EC2ImageAttribute `
-    -ImageId ami-0abcdef1234567890 `
+    -ImageId {{ami-0abcdef1234567890}} `
     -Attribute LaunchPermission
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Allow organizations and OUs to use a KMS key
-
-Share an AMI with specific AWS accounts
+------
 
 All content copied from https://docs.aws.amazon.com/.

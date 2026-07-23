@@ -3,56 +3,35 @@ title: "LaunchTemplatePrivateDnsNameOptionsRequest"
 ---
 
 # LaunchTemplatePrivateDnsNameOptionsRequest
+<a name="API_LaunchTemplatePrivateDnsNameOptionsRequest"></a>
 
 Describes the options for instance hostnames.
 
 ## Contents
+<a name="API_LaunchTemplatePrivateDnsNameOptionsRequest_Contents"></a>
 
-**EnableResourceNameDnsAAAARecord**
-
-Indicates whether to respond to DNS queries for instance hostnames with DNS AAAA
-records.
-
+ ** EnableResourceNameDnsAAAARecord **
+Indicates whether to respond to DNS queries for instance hostnames with DNS AAAA records.
 Type: Boolean
-
 Required: No
 
-**EnableResourceNameDnsARecord**
-
-Indicates whether to respond to DNS queries for instance hostnames with DNS A
-records.
-
+ ** EnableResourceNameDnsARecord **
+Indicates whether to respond to DNS queries for instance hostnames with DNS A records.
 Type: Boolean
-
 Required: No
 
-**HostnameType**
-
-The type of hostname for Amazon EC2 instances. For IPv4 only subnets, an instance DNS name
-must be based on the instance IPv4 address. For IPv6 native subnets, an instance DNS
-name must be based on the instance ID. For dual-stack subnets, you can specify whether
-DNS names use the instance IPv4 address or the instance ID.
-
+ ** HostnameType **
+The type of hostname for Amazon EC2 instances. For IPv4 only subnets, an instance DNS name must be based on the instance IPv4 address. For IPv6 native subnets, an instance DNS name must be based on the instance ID. For dual-stack subnets, you can specify whether DNS names use the instance IPv4 address or the instance ID.
 Type: String
-
 Valid Values: `ip-name | resource-name`
-
 Required: No
 
 ## See Also
+<a name="API_LaunchTemplatePrivateDnsNameOptionsRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/launchtemplateprivatednsnameoptionsrequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/launchtemplateprivatednsnameoptionsrequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/launchtemplateprivatednsnameoptionsrequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LaunchTemplatePrivateDnsNameOptions
-
-LaunchTemplatesMonitoring
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/LaunchTemplatePrivateDnsNameOptionsRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/LaunchTemplatePrivateDnsNameOptionsRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/LaunchTemplatePrivateDnsNameOptionsRequest)
 
 All content copied from https://docs.aws.amazon.com/.

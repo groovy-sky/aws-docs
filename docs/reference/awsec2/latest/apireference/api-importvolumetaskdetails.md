@@ -3,73 +3,49 @@ title: "ImportVolumeTaskDetails"
 ---
 
 # ImportVolumeTaskDetails
+<a name="API_ImportVolumeTaskDetails"></a>
 
 Describes an import volume task.
 
 ## Contents
+<a name="API_ImportVolumeTaskDetails_Contents"></a>
 
-**availabilityZone**
-
+ ** availabilityZone **
 The Availability Zone where the resulting volume will reside.
-
 Type: String
-
 Required: No
 
-**availabilityZoneId**
-
+ ** availabilityZoneId **
 The ID of the Availability Zone where the resulting volume will reside.
-
 Type: String
-
 Required: No
 
-**bytesConverted**
-
+ ** bytesConverted **
 The number of bytes converted so far.
-
 Type: Long
-
 Required: No
 
-**description**
-
+ ** description **
 The description you provided when starting the import volume task.
-
 Type: String
-
 Required: No
 
-**image**
-
+ ** image **
 The image.
-
-Type: [DiskImageDescription](api-diskimagedescription.md) object
-
+Type: [DiskImageDescription](API_DiskImageDescription.md) object
 Required: No
 
-**volume**
-
+ ** volume **
 The volume.
-
-Type: [DiskImageVolumeDescription](api-diskimagevolumedescription.md) object
-
+Type: [DiskImageVolumeDescription](API_DiskImageVolumeDescription.md) object
 Required: No
 
 ## See Also
+<a name="API_ImportVolumeTaskDetails_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/importvolumetaskdetails.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/importvolumetaskdetails.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/importvolumetaskdetails.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImportSnapshotTask
-
-InferenceAcceleratorInfo
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ImportVolumeTaskDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ImportVolumeTaskDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ImportVolumeTaskDetails)
 
 All content copied from https://docs.aws.amazon.com/.

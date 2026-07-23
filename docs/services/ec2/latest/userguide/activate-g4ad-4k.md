@@ -3,62 +3,54 @@ title: "Set up Dual 4K displays on G4ad Linux instances"
 ---
 
 # Set up Dual 4K displays on G4ad Linux instances
+<a name="activate_g4ad_4k"></a>
 
 After you launch a G4ad instance, you can set up dual 4K displays.
 
-###### To install the AMD drivers and configure dual screens
+**To install the AMD drivers and configure dual screens**
 
-1. Connect to your Linux instance to get the PCI Bus address of the GPU you want
-    to target for dual 4K (2x4k):
+1. Connect to your Linux instance to get the PCI Bus address of the GPU you want to target for dual 4K (2x4k):
 
-```nohighlight
+   ```
+   lspci -vv | grep -i amd
+   ```
 
-lspci -vv | grep -i amd
-```
+   You will get output similar to the following:
 
-You will get output similar to the following:
+   ```
+   00:1e.0 Display controller: Advanced Micro Devices, Inc. [*AMD*/ATI] Device 7362 (rev c3)
+   Subsystem: Advanced Micro Devices, Inc. [AMD/ATI] Device 0a34
+   ```
 
-```nohighlight
+1. Note the PCI bus address is 00:1e.0 in the above output. Create a file named `/etc/modprobe.d/amdgpu.conf` and add:
 
-00:1e.0 Display controller: Advanced Micro Devices, Inc. [*AMD*/ATI] Device 7362 (rev c3)
-Subsystem: Advanced Micro Devices, Inc. [AMD/ATI] Device 0a34
-```
+   ```
+   options amdgpu virtual_display=0000:00:1e.0,2
+   ```
 
-2. Note the PCI bus address is 00:1e.0 in the above output. Create a file named
-    `/etc/modprobe.d/amdgpu.conf` and add:
+1. To install the AMD drivers on Linux, see [AMD drivers for your EC2 instance](install-amd-driver.md). If you already have the AMD GPU driver installed, you will need to rebuild the amdgpu kernel modules through dkms.
 
-```nohighlight
+1. Use the below xorg.conf file to define the dual (2x4K) screen topology and save the file in `/etc/X11/xorg.conf:`
 
-options amdgpu virtual_display=0000:00:1e.0,2
-```
-
-3. To install the AMD drivers on Linux, see [AMD drivers for your EC2 instance](install-amd-driver.md). If you already have the AMD GPU driver
-    installed, you will need to rebuild the amdgpu kernel modules through
-    dkms.
-
-4. Use the below xorg.conf file to define the dual (2x4K) screen topology and
-    save the file in `/etc/X11/xorg.conf:`
-
-```nohighlight
-
-~$ cat /etc/X11/xorg.conf
-Section "ServerLayout"
+   ```
+   ~$ cat /etc/X11/xorg.conf
+   Section "ServerLayout"
        Identifier     "Layout0"
        Screen          0 "Screen0"
        Screen        1 "Screen1"
        InputDevice     "Keyboard0" "CoreKeyboard"
        InputDevice     "Mouse0" "CorePointer"
        Option          "Xinerama" "1"
-EndSection
-Section "Files"
+   EndSection
+   Section "Files"
        ModulePath "/opt/amdgpu/lib64/xorg/modules/drivers"
        ModulePath "/opt/amdgpu/lib/xorg/modules"
        ModulePath "/opt/amdgpu-pro/lib/xorg/modules/extensions"
        ModulePath "/opt/amdgpu-pro/lib64/xorg/modules/extensions"
        ModulePath "/usr/lib64/xorg/modules"
        ModulePath "/usr/lib/xorg/modules"
-EndSection
-Section "InputDevice"
+   EndSection
+   Section "InputDevice"
        # generated from default
        Identifier     "Mouse0"
        Driver         "mouse"
@@ -66,48 +58,48 @@ Section "InputDevice"
        Option         "Device" "/dev/psaux"
        Option         "Emulate3Buttons" "no"
        Option         "ZAxisMapping" "4 5"
-EndSection
-Section "InputDevice"
+   EndSection
+   Section "InputDevice"
        # generated from default
        Identifier     "Keyboard0"
        Driver         "kbd"
-EndSection
+   EndSection
 
-Section "Monitor"
+   Section "Monitor"
        Identifier     "Virtual"
        VendorName     "Unknown"
        ModelName      "Unknown"
        Option         "Primary" "true"
-EndSection
+   EndSection
 
-Section "Monitor"
+   Section "Monitor"
        Identifier     "Virtual-1"
        VendorName     "Unknown"
        ModelName      "Unknown"
        Option         "RightOf" "Virtual"
-EndSection
+   EndSection
 
-Section "Device"
+   Section "Device"
        Identifier     "Device0"
        Driver         "amdgpu"
        VendorName     "AMD"
        BoardName      "Radeon MxGPU V520"
        BusID          "PCI:0:30:0"
-EndSection
+   EndSection
 
-Section "Device"
+   Section "Device"
        Identifier     "Device1"
        Driver         "amdgpu"
        VendorName     "AMD"
        BoardName      "Radeon MxGPU V520"
        BusID          "PCI:0:30:0"
-EndSection
+   EndSection
 
-Section "Extensions"
+   Section "Extensions"
        Option         "DPMS" "Disable"
-EndSection
+   EndSection
 
-Section "Screen"
+   Section "Screen"
        Identifier     "Screen0"
        Device         "Device0"
        Monitor        "Virtual"
@@ -117,9 +109,9 @@ Section "Screen"
            Virtual    3840 2160
            Depth      32
        EndSubSection
-EndSection
+   EndSection
 
-Section "Screen"
+   Section "Screen"
        Identifier     "Screen1"
        Device         "Device1"
        Monitor        "Virtual"
@@ -129,35 +121,31 @@ Section "Screen"
            Virtual    3840 2160
            Depth      32
        EndSubSection
-EndSection
-```
+   EndSection
+   ```
 
-5. Set up DCV by following the instructions in setting up an [interactive desktop](#amd-interactive-desktop).
+1. Set up DCV by following the instructions in setting up an [interactive desktop](#amd-interactive-desktop).
 
-6. After the DCV set up is complete, reboot.
+1. After the DCV set up is complete, reboot.
 
-7. Confirm that the driver is functional:
+1. Confirm that the driver is functional:
 
-```nohighlight
+   ```
+   dmesg | grep amdgpu
+   ```
 
-dmesg | grep amdgpu
-```
+   The response should look like the following:
 
-The response should look like the following:
+   ```
+   Initialized amdgpu
+   ```
 
-```nohighlight
+1. You should see in the output for `DISPLAY=:0 xrandr -q` that you have 2 virtual displays connected:
 
-Initialized amdgpu
-```
-
-8. You should see in the output for `DISPLAY=:0 xrandr -q` that you
-    have 2 virtual displays connected:
-
-```nohighlight
-
-~$ DISPLAY=:0 xrandr -q
-Screen 0: minimum 320 x 200, current 3840 x 1080, maximum 16384 x 16384
-Virtual connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 0mm x 0mm
+   ```
+   ~$ DISPLAY=:0 xrandr -q
+   Screen 0: minimum 320 x 200, current 3840 x 1080, maximum 16384 x 16384
+   Virtual connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 0mm x 0mm
     4096x3112  60.00
     3656x2664  59.99
     4096x2160  60.00
@@ -179,7 +167,7 @@ Virtual connected primary 1920x1080+0+0 (normal left inverted right x axis y axi
     848x480  60.00 59.94
     720x480  59.94
     640x480  59.94 59.94
-Virtual-1 connected 1920x1080+1920+0 (normal left inverted right x axis y axis) 0mm x 0mm
+   Virtual-1 connected 1920x1080+1920+0 (normal left inverted right x axis y axis) 0mm x 0mm
     4096x3112  60.00
     3656x2664  59.99
     4096x2160  60.00
@@ -200,28 +188,21 @@ Virtual-1 connected 1920x1080+1920+0 (normal left inverted right x axis y axis) 
     800x600  60.32 59.96 56.25
     848x480  60.00 59.94
     720x480  59.94
-640x480  59.94 59.94
-```
+   640x480  59.94 59.94
+   ```
 
-9. When you connect into DCV, change the resolution to 2x4K, confirming the dual
-    monitor support is registered by DCV.
-
-![DCV resolution changes](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/dm-dcv-example.png)
+1. When you connect into DCV, change the resolution to 2x4K, confirming the dual monitor support is registered by DCV.
+![DCV resolution changes.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/dm-dcv-example.png)
 
 ## Set up an interactive desktop for Linux
+<a name="amd-interactive-desktop"></a>
 
-After you confirm that your Linux instance has the AMD GPU driver installed and amdgpu
-is in use, you can install an interactive desktop manager. We recommend the MATE
-desktop environment for the best compatibility and performance.
+After you confirm that your Linux instance has the AMD GPU driver installed and amdgpu is in use, you can install an interactive desktop manager. We recommend the MATE desktop environment for the best compatibility and performance.
 
-###### Prerequisite
+**Prerequisite**
+Open a text editor and save the following as a file named `xorg.conf`. You'll need this file on your instance.
 
-Open a text editor and save the following as a file named
-`xorg.conf`. You'll need this file on your
-instance.
-
-```nohighlight
-
+```
 Section "ServerLayout"
 Identifier     "Layout0"
 Screen          0 "Screen0"
@@ -278,114 +259,87 @@ EndSubSection
 EndSection
 ```
 
-###### To set up an interactive desktop on Amazon Linux 2
+**To set up an interactive desktop on Amazon Linux 2**
 
 1. Install the EPEL repository.
 
-```nohighlight
-
-[ec2-user ~]$ sudo amazon-linux-extras install epel -y
-```
-
-2. Install the MATE desktop.
-
-```nohighlight
-
-[ec2-user ~]$ sudo amazon-linux-extras install mate-desktop1.x -y
-[ec2-user ~]$ sudo yum groupinstall "MATE Desktop" -y
-[ec2-user ~]$ sudo systemctl disable firewalld
-```
-
-3. Copy the `xorg.conf` file to
-    `/etc/X11/xorg.conf`.
-
-4. Reboot the instance.
-
-```nohighlight
-
-[ec2-user ~]$ sudo reboot
-```
-
-5. (Optional) [Install the Amazon DCV server](../../../dcv/latest/adminguide/setting-up-installing.md) to use Amazon DCV as a high-performance display
-    protocol, and then [connect to a Amazon DCV\
-    session](../../../dcv/latest/userguide/using-connecting.md) using your preferred client.
-
-###### To set up an interactive desktop on Ubuntu
+   ```
+   [ec2-user ~]$ sudo amazon-linux-extras install epel -y
+   ```
 
 1. Install the MATE desktop.
 
-```nohighlight
+   ```
+   [ec2-user ~]$ sudo amazon-linux-extras install mate-desktop1.x -y
+   [ec2-user ~]$ sudo yum groupinstall "MATE Desktop" -y
+   [ec2-user ~]$ sudo systemctl disable firewalld
+   ```
 
-$ sudo apt install xorg-dev ubuntu-mate-desktop -y
-$ sudo apt purge ifupdown -y
-```
+1. Copy the `xorg.conf` file to `/etc/X11/xorg.conf`.
 
-2. Copy the `xorg.conf` file to
-    `/etc/X11/xorg.conf`.
+1. Reboot the instance.
 
-3. Reboot the instance.
+   ```
+   [ec2-user ~]$ sudo reboot
+   ```
 
-```nohighlight
+1. (Optional) [Install the Amazon DCV server](https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-installing.html) to use Amazon DCV as a high-performance display protocol, and then [connect to a Amazon DCV session](https://docs.aws.amazon.com/dcv/latest/userguide/using-connecting.html) using your preferred client.
 
-$ sudo reboot
-```
+**To set up an interactive desktop on Ubuntu**
 
-4. Install the AMF encoder for the appropriate version of Ubuntu.
+1. Install the MATE desktop.
 
-```nohighlight
+   ```
+   $ sudo apt install xorg-dev ubuntu-mate-desktop -y
+   $ sudo apt purge ifupdown -y
+   ```
 
-$ sudo apt install ./amdgpu-pro-20.20-*/amf-amdgpu-pro_20.20-*_amd64.deb
-```
+1. Copy the `xorg.conf` file to `/etc/X11/xorg.conf`.
 
-5. (Optional) [Install the Amazon DCV \
-    server](../../../dcv/latest/adminguide/setting-up-installing.md) to use Amazon DCV as a high-performance display
-    protocol, and then [connect to a Amazon DCV\
-    session](../../../dcv/latest/userguide/using-connecting.md) using your preferred client.
+1. Reboot the instance.
 
-6. After the DCV installation give the DCV User video permissions:
+   ```
+   $ sudo reboot
+   ```
 
-```nohighlight
+1. Install the AMF encoder for the appropriate version of Ubuntu.
 
-$ sudo usermod -aG video dcv
-```
+   ```
+   $ sudo apt install ./amdgpu-pro-20.20-*/amf-amdgpu-pro_20.20-*_amd64.deb
+   ```
 
-###### To set up an interactive desktop on CentOS
+1. (Optional) [Install the Amazon DCV server](https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-installing.html) to use Amazon DCV as a high-performance display protocol, and then [connect to a Amazon DCV session](https://docs.aws.amazon.com/dcv/latest/userguide/using-connecting.html) using your preferred client.
+
+1. After the DCV installation give the DCV User video permissions:
+
+   ```
+   $ sudo usermod -aG video dcv
+   ```
+
+**To set up an interactive desktop on CentOS**
 
 1. Install the EPEL repository.
 
-```nohighlight
+   ```
+   $ sudo yum update -y
+   $ sudo yum install epel-release -y
+   ```
 
-$ sudo yum update -y
-$ sudo yum install epel-release -y
-```
+1. Install the MATE desktop.
 
-2. Install the MATE desktop.
+   ```
+   $ sudo yum groupinstall "MATE Desktop" -y
+   $ sudo systemctl disable firewalld
+   ```
 
-```nohighlight
+1. Copy the `xorg.conf` file to `/etc/X11/xorg.conf`.
 
-$ sudo yum groupinstall "MATE Desktop" -y
-$ sudo systemctl disable firewalld
-```
+1. Reboot the instance.
 
-3. Copy the `xorg.conf` file to
-    `/etc/X11/xorg.conf`.
+   ```
+   $ sudo reboot
+   ```
 
-4. Reboot the instance.
-
-```nohighlight
-
-$ sudo reboot
-```
-
-5. (Optional) [Install the Amazon DCV \
-    server](../../../dcv/latest/adminguide/setting-up-installing.md) to use Amazon DCV as a high-performance display
-    protocol, and then [connect to a Amazon DCV\
-    session](../../../dcv/latest/userguide/using-connecting.md) using your preferred client.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Optimize GPU settings
-
-Get started with GPU accelerated instances
+1. (Optional) [Install the Amazon DCV server](https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-installing.html) to use Amazon DCV as a high-performance display protocol, and then [connect to a Amazon DCV session](https://docs.aws.amazon.com/dcv/latest/userguide/using-connecting.html) using your preferred client.
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,33 +3,24 @@ title: "Phase1EncryptionAlgorithmsListValue"
 ---
 
 # Phase1EncryptionAlgorithmsListValue
+<a name="API_Phase1EncryptionAlgorithmsListValue"></a>
 
 The encryption algorithm for phase 1 IKE negotiations.
 
 ## Contents
+<a name="API_Phase1EncryptionAlgorithmsListValue_Contents"></a>
 
-**value**
-
+ ** value **
 The value for the encryption algorithm.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_Phase1EncryptionAlgorithmsListValue_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/phase1encryptionalgorithmslistvalue.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/phase1encryptionalgorithmslistvalue.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/phase1encryptionalgorithmslistvalue.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Phase1DHGroupNumbersRequestListValue
-
-Phase1EncryptionAlgorithmsRequestListValue
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Phase1EncryptionAlgorithmsListValue)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Phase1EncryptionAlgorithmsListValue)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Phase1EncryptionAlgorithmsListValue)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,42 +3,29 @@ title: "MediaAcceleratorInfo"
 ---
 
 # MediaAcceleratorInfo
+<a name="API_MediaAcceleratorInfo"></a>
 
 Describes the media accelerators for the instance type.
 
 ## Contents
+<a name="API_MediaAcceleratorInfo_Contents"></a>
 
-**Accelerators.N**
-
+ ** Accelerators.N **
 Describes the media accelerators for the instance type.
-
-Type: Array of [MediaDeviceInfo](api-mediadeviceinfo.md) objects
-
+Type: Array of [MediaDeviceInfo](API_MediaDeviceInfo.md) objects
 Required: No
 
-**totalMediaMemoryInMiB**
-
-The total size of the memory for the media accelerators for the instance type, in
-MiB.
-
+ ** totalMediaMemoryInMiB **
+The total size of the memory for the media accelerators for the instance type, in MiB.
 Type: Integer
-
 Required: No
 
 ## See Also
+<a name="API_MediaAcceleratorInfo_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/mediaacceleratorinfo.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/mediaacceleratorinfo.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/mediaacceleratorinfo.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ManagedPrefixList
-
-MediaDeviceInfo
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/MediaAcceleratorInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/MediaAcceleratorInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/MediaAcceleratorInfo)
 
 All content copied from https://docs.aws.amazon.com/.

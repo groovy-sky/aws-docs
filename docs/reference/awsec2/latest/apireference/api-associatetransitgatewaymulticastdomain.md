@@ -3,82 +3,67 @@ title: "AssociateTransitGatewayMulticastDomain"
 ---
 
 # AssociateTransitGatewayMulticastDomain
+<a name="API_AssociateTransitGatewayMulticastDomain"></a>
 
 Associates the specified subnets and transit gateway attachments with the specified transit gateway multicast domain.
 
-The transit gateway attachment must be in the available state before you can add a resource. Use [DescribeTransitGatewayAttachments](api-describetransitgatewayattachments.md)
-to see the state of the attachment.
+The transit gateway attachment must be in the available state before you can add a resource. Use [DescribeTransitGatewayAttachments](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeTransitGatewayAttachments.html) to see the state of the attachment.
 
 ## Request Parameters
+<a name="API_AssociateTransitGatewayMulticastDomain_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
-Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**SubnetIds.N**
-
+ **SubnetIds.N**
 The IDs of the subnets to associate with the transit gateway multicast domain.
-
 Type: Array of strings
-
 Required: Yes
 
-**TransitGatewayAttachmentId**
-
+ **TransitGatewayAttachmentId**
 The ID of the transit gateway attachment to associate with the transit gateway multicast domain.
-
 Type: String
-
 Required: Yes
 
-**TransitGatewayMulticastDomainId**
-
+ **TransitGatewayMulticastDomainId**
 The ID of the transit gateway multicast domain.
-
 Type: String
-
 Required: Yes
 
 ## Response Elements
+<a name="API_AssociateTransitGatewayMulticastDomain_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**associations**
-
+ **associations**
 Information about the transit gateway multicast domain associations.
+Type: [TransitGatewayMulticastDomainAssociations](API_TransitGatewayMulticastDomainAssociations.md) object
 
-Type: [TransitGatewayMulticastDomainAssociations](api-transitgatewaymulticastdomainassociations.md) object
-
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
 ## Errors
+<a name="API_AssociateTransitGatewayMulticastDomain_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_AssociateTransitGatewayMulticastDomain_Examples"></a>
 
 ### Example 1
+<a name="API_AssociateTransitGatewayMulticastDomain_Example_1"></a>
 
-This example associates the transit gateway attachment
-`tgw-attach-028c1dd0f8EXAMPLE` with the multicast domain
-`tgw-mcast-domain-0c4905cef7EXAMPLE`.
+This example associates the transit gateway attachment `tgw-attach-028c1dd0f8EXAMPLE` with the multicast domain `tgw-mcast-domain-0c4905cef7EXAMPLE`.
 
 #### Sample Request
+<a name="API_AssociateTransitGatewayMulticastDomain_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=AssociateTransitGatewayMulticastDomain
 &TransitGatewayAttachmentId=tgw-attach-028c1dd0f8EXAMPLE
 &TransitGatewayMulticastDomainId=tgw-mcast-domain-0c4905cef7EXAMPLE
@@ -86,9 +71,9 @@ https://ec2.amazonaws.com/?Action=AssociateTransitGatewayMulticastDomain
 ```
 
 #### Sample Response
+<a name="API_AssociateTransitGatewayMulticastDomain_Example_1_Response"></a>
 
 ```
-
 <AssociateTransitGatewayMulticastDomainResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
     <requestId>fa968e66-0290-4479-a8ca-e5c83EXAMPLE</requestId>
     <associations>
@@ -107,33 +92,18 @@ https://ec2.amazonaws.com/?Action=AssociateTransitGatewayMulticastDomain
 ```
 
 ## See Also
+<a name="API_AssociateTransitGatewayMulticastDomain_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/associatetransitgatewaymulticastdomain.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/associatetransitgatewaymulticastdomain.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/associatetransitgatewaymulticastdomain.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/associatetransitgatewaymulticastdomain.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/associatetransitgatewaymulticastdomain.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/associatetransitgatewaymulticastdomain.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/associatetransitgatewaymulticastdomain.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/associatetransitgatewaymulticastdomain.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/associatetransitgatewaymulticastdomain.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/associatetransitgatewaymulticastdomain.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssociateSubnetCidrBlock
-
-AssociateTransitGatewayPolicyTable
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/AssociateTransitGatewayMulticastDomain)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/AssociateTransitGatewayMulticastDomain)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AssociateTransitGatewayMulticastDomain)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/AssociateTransitGatewayMulticastDomain)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AssociateTransitGatewayMulticastDomain)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/AssociateTransitGatewayMulticastDomain)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/AssociateTransitGatewayMulticastDomain)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/AssociateTransitGatewayMulticastDomain)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/AssociateTransitGatewayMulticastDomain)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AssociateTransitGatewayMulticastDomain)
 
 All content copied from https://docs.aws.amazon.com/.

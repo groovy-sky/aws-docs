@@ -3,83 +3,55 @@ title: "PacketHeaderStatement"
 ---
 
 # PacketHeaderStatement
+<a name="API_PacketHeaderStatement"></a>
 
 Describes a packet header statement.
 
 ## Contents
+<a name="API_PacketHeaderStatement_Contents"></a>
 
-**DestinationAddressSet.N**
-
+ ** DestinationAddressSet.N **
 The destination addresses.
-
 Type: Array of strings
-
 Required: No
 
-**DestinationPortSet.N**
-
+ ** DestinationPortSet.N **
 The destination ports.
-
 Type: Array of strings
-
 Required: No
 
-**DestinationPrefixListSet.N**
-
+ ** DestinationPrefixListSet.N **
 The destination prefix lists.
-
 Type: Array of strings
-
 Required: No
 
-**ProtocolSet.N**
-
+ ** ProtocolSet.N **
 The protocols.
-
 Type: Array of strings
-
 Valid Values: `tcp | udp`
-
 Required: No
 
-**SourceAddressSet.N**
-
+ ** SourceAddressSet.N **
 The source addresses.
-
 Type: Array of strings
-
 Required: No
 
-**SourcePortSet.N**
-
+ ** SourcePortSet.N **
 The source ports.
-
 Type: Array of strings
-
 Required: No
 
-**SourcePrefixListSet.N**
-
+ ** SourcePrefixListSet.N **
 The source prefix lists.
-
 Type: Array of strings
-
 Required: No
 
 ## See Also
+<a name="API_PacketHeaderStatement_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/packetheaderstatement.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/packetheaderstatement.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/packetheaderstatement.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-OutpostLag
-
-PacketHeaderStatementRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/PacketHeaderStatement)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/PacketHeaderStatement)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/PacketHeaderStatement)
 
 All content copied from https://docs.aws.amazon.com/.

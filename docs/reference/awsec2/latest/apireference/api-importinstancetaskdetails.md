@@ -3,59 +3,40 @@ title: "ImportInstanceTaskDetails"
 ---
 
 # ImportInstanceTaskDetails
+<a name="API_ImportInstanceTaskDetails"></a>
 
 Describes an import instance task.
 
 ## Contents
+<a name="API_ImportInstanceTaskDetails_Contents"></a>
 
-**description**
-
+ ** description **
 A description of the task.
-
 Type: String
-
 Required: No
 
-**instanceId**
-
+ ** instanceId **
 The ID of the instance.
-
 Type: String
-
 Required: No
 
-**platform**
-
+ ** platform **
 The instance operating system.
-
 Type: String
-
 Valid Values: `Windows`
-
 Required: No
 
-**Volumes.N**
-
+ ** Volumes.N **
 The volumes.
-
-Type: Array of [ImportInstanceVolumeDetailItem](api-importinstancevolumedetailitem.md) objects
-
+Type: Array of [ImportInstanceVolumeDetailItem](API_ImportInstanceVolumeDetailItem.md) objects
 Required: No
 
 ## See Also
+<a name="API_ImportInstanceTaskDetails_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/importinstancetaskdetails.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/importinstancetaskdetails.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/importinstancetaskdetails.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImportInstanceLaunchSpecification
-
-ImportInstanceVolumeDetailItem
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ImportInstanceTaskDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ImportInstanceTaskDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ImportInstanceTaskDetails)
 
 All content copied from https://docs.aws.amazon.com/.

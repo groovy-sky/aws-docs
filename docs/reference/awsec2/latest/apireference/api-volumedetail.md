@@ -3,33 +3,24 @@ title: "VolumeDetail"
 ---
 
 # VolumeDetail
+<a name="API_VolumeDetail"></a>
 
 Describes an EBS volume.
 
 ## Contents
+<a name="API_VolumeDetail_Contents"></a>
 
-**Size**
-
+ ** Size **
 The size of the volume, in GiB.
-
 Type: Long
-
 Required: Yes
 
 ## See Also
+<a name="API_VolumeDetail_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/volumedetail.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/volumedetail.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/volumedetail.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VolumeAttachment
-
-VolumeModification
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VolumeDetail)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VolumeDetail)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VolumeDetail)
 
 All content copied from https://docs.aws.amazon.com/.

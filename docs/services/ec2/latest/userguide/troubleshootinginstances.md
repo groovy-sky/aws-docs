@@ -3,239 +3,145 @@ title: "Troubleshoot Amazon EC2 Linux instances with failed status checks"
 ---
 
 # Troubleshoot Amazon EC2 Linux instances with failed status checks
+<a name="TroubleshootingInstances"></a>
 
-The following information can help you troubleshoot issues if your Linux instance fails a status
-check. First determine whether your applications are exhibiting any problems. If you verify that
-the instance is not running your applications as expected, review the status check information
-and the system logs.
+The following information can help you troubleshoot issues if your Linux instance fails a status check. First determine whether your applications are exhibiting any problems. If you verify that the instance is not running your applications as expected, review the status check information and the system logs.
 
 For examples of problems that can cause status checks to fail, see [Status checks for Amazon EC2 instances](monitoring-system-instance-status-check.md).
 
-###### Contents
-
-- [Review status check information](#InitialSteps)
-
-- [Retrieve the system logs](#troubleshooting-retrieve-system-logs)
-
-- [Troubleshoot system log errors for Linux instances](#system-log-errors-linux)
-
-- [Out of memory: kill process](#MemoryOOM)
-
-- [ERROR: mmu\_update failed (Memory management update failed)](#MemoryMMU)
-
-- [I/O error (block device failure)](#DeviceBlock)
-
-- [I/O ERROR: neither local nor remote disk (Broken distributed block device)](#DeviceDistributed)
-
-- [request\_module: runaway loop modprobe (Looping legacy kernel modprobe on older Linux versions)](#KernelLoop)
-
-- ["FATAL: kernel too old" and "fsck: No such file or directory while trying to open /dev" (Kernel and AMI mismatch)](#KernelOld)
-
-- ["FATAL: Could not load /lib/modules" or "BusyBox" (Missing kernel modules)](#KernelMissing)
-
-- [ERROR Invalid kernel (EC2 incompatible kernel)](#KernelInvalid)
-
-- [fsck: No such file or directory while trying to open... (File system not found)](#FilesystemFschk)
-
-- [General error mounting filesystems (failed mount)](#FilesystemGeneral)
-
-- [VFS: Unable to mount root fs on unknown-block (Root filesystem mismatch)](#FilesystemKernel)
-
-- [Error: Unable to determine major/minor number of root device... (Root file system/device mismatch)](#FilesystemError)
-
-- [XENBUS: Device with no driver...](#FilesystemXenbus)
-
-- [... days without being checked, check forced (File system check required)](#FilesystemCheck)
-
-- [fsck died with exit status... (Missing device)](#FilesystemFschkDied)
-
-- [GRUB prompt (grubdom>)](#OpSystemGrub)
-
-- [Bringing up interface eth0: Device eth0 has different MAC address than expected, ignoring. (Hard-coded MAC address)](#OpSystemBringing)
-
-- [Unable to load SELinux Policy. Machine is in enforcing mode. Halting now. (SELinux misconfiguration)](#OpSystemUnable)
-
-- [XENBUS: Timeout connecting to devices (Xenbus timeout)](#OpSystemXenbus)
+**Topics**
++ [Review status check information](#InitialSteps)
++ [Retrieve the system logs](#troubleshooting-retrieve-system-logs)
++ [Troubleshoot system log errors for Linux instances](#system-log-errors-linux)
++ [Out of memory: kill process](#MemoryOOM)
++ [ERROR: mmu\_update failed (Memory management update failed)](#MemoryMMU)
++ [I/O error (block device failure)](#DeviceBlock)
++ [I/O ERROR: neither local nor remote disk (Broken distributed block device)](#DeviceDistributed)
++ [request\_module: runaway loop modprobe (Looping legacy kernel modprobe on older Linux versions)](#KernelLoop)
++ ["FATAL: kernel too old" and "fsck: No such file or directory while trying to open /dev" (Kernel and AMI mismatch)](#KernelOld)
++ ["FATAL: Could not load /lib/modules" or "BusyBox" (Missing kernel modules)](#KernelMissing)
++ [ERROR Invalid kernel (EC2 incompatible kernel)](#KernelInvalid)
++ [fsck: No such file or directory while trying to open... (File system not found)](#FilesystemFschk)
++ [General error mounting filesystems (failed mount)](#FilesystemGeneral)
++ [VFS: Unable to mount root fs on unknown-block (Root filesystem mismatch)](#FilesystemKernel)
++ [Error: Unable to determine major/minor number of root device... (Root file system/device mismatch)](#FilesystemError)
++ [XENBUS: Device with no driver...](#FilesystemXenbus)
++ [... days without being checked, check forced (File system check required)](#FilesystemCheck)
++ [fsck died with exit status... (Missing device)](#FilesystemFschkDied)
++ [GRUB prompt (grubdom>)](#OpSystemGrub)
++ [Bringing up interface eth0: Device eth0 has different MAC address than expected, ignoring. (Hard-coded MAC address)](#OpSystemBringing)
++ [Unable to load SELinux Policy. Machine is in enforcing mode. Halting now. (SELinux misconfiguration)](#OpSystemUnable)
++ [XENBUS: Timeout connecting to devices (Xenbus timeout)](#OpSystemXenbus)
 
 ## Review status check information
+<a name="InitialSteps"></a>
 
-###### To investigate impaired instances using the Amazon EC2 console
+**To investigate impaired instances using the Amazon EC2 console**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose **Instances**, and then select your
-    instance.
+1. In the navigation pane, choose **Instances**, and then select your instance.
 
-3. Select the **Status and alarms** tab to see the individual
-    results for all **System status checks**, **Instance status**
-**checks**, and **Attached EBS status checks**.
+1. Select the **Status and alarms** tab to see the individual results for all **System status checks**, **Instance status checks**, and **Attached EBS status checks**.
 
 If a status check has failed, you can try one of the following options:
-
-- Create an alarm to recover the instance in response to the failed status check. For more
-information, see [Create alarms that stop, terminate, reboot, or recover an instance](usingalarmactions.md).
-
-- (Instance status checks) If you changed the instance type to a [Nitro-based instance](instance-types.md#instance-hypervisor-type),
-status checks fail if you migrated from an
-instance that does not have the required ENA and NVMe drivers. For more information, see [Compatibility for changing the instance type](resize-limitations.md).
-
-- For an instance with an EBS root volume, stop and restart the instance. For more
-information, see [Stop and start Amazon EC2 instances](stop-start.md).
-
-- For an instance with an instance store root volume, terminate the instance and launch a
-replacement instance. For more information, see [Terminate Amazon EC2 instances](terminating-instances.md).
-
-- Wait for Amazon EC2 to resolve the issue.
-
-- Contact Support or post your issue to [AWS re:Post](https://repost.aws/).
-
-- If your instance is in an Auto Scaling group:
-
-- (System status checks and instance status checks) By default, Amazon EC2 Auto Scaling automatically launches
-a replacement instance. For more information, see [Health \
-checks for instances in an Auto Scaling group](../../../autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.md) in the _Amazon EC2 Auto Scaling User Guide_.
-
-- (Attached EBS status checks) You must configure Amazon EC2 Auto Scaling to automatically launch a replacement
-instance. For more information, see [Monitor and replace Auto Scaling instances with impaired Amazon EBS volumes](../../../autoscaling/ec2/userguide/monitor-and-replace-instances-with-impaired-ebs-volumes.md) in the
-_Amazon EC2 Auto Scaling User Guide_.
-
-- Retrieve the system log and look for errors. For more information, see
-[Retrieve the system logs](#troubleshooting-retrieve-system-logs).
++ Create an alarm to recover the instance in response to the failed status check. For more information, see [Create alarms that stop, terminate, reboot, or recover an instance](UsingAlarmActions.md).
++ (Instance status checks) If you changed the instance type to a [Nitro-based instance](instance-types.md#instance-hypervisor-type), status checks fail if you migrated from an instance that does not have the required ENA and NVMe drivers. For more information, see [Compatibility for changing the instance type](resize-limitations.md).
++ For an instance with an EBS root volume, stop and restart the instance. For more information, see [Stop and start Amazon EC2 instances](Stop_Start.md).
++ For an instance with an instance store root volume, terminate the instance and launch a replacement instance. For more information, see [Terminate Amazon EC2 instances](terminating-instances.md).
++ Wait for Amazon EC2 to resolve the issue.
++ Contact Support or post your issue to [AWS re:Post](https://repost.aws/).
++ If your instance is in an Auto Scaling group:
+  + (System status checks and instance status checks) By default, Amazon EC2 Auto Scaling automatically launches a replacement instance. For more information, see [Health checks for instances in an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html) in the *Amazon EC2 Auto Scaling User Guide*.
+  + (Attached EBS status checks) You must configure Amazon EC2 Auto Scaling to automatically launch a replacement instance. For more information, see [ Monitor and replace Auto Scaling instances with impaired Amazon EBS volumes](https://docs.aws.amazon.com/autoscaling/ec2/userguide/monitor-and-replace-instances-with-impaired-ebs-volumes.html) in the *Amazon EC2 Auto Scaling User Guide*.
++ Retrieve the system log and look for errors. For more information, see [Retrieve the system logs](#troubleshooting-retrieve-system-logs).
 
 ## Retrieve the system logs
+<a name="troubleshooting-retrieve-system-logs"></a>
 
-If an instance status check fails, you can reboot the instance and retrieve the system
-logs. The logs may reveal an error that can help you troubleshoot the issue. Rebooting clears
-unnecessary information from the logs.
+If an instance status check fails, you can reboot the instance and retrieve the system logs. The logs may reveal an error that can help you troubleshoot the issue. Rebooting clears unnecessary information from the logs.
 
-###### To reboot an instance and retrieve the system log
+**To reboot an instance and retrieve the system log**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose **Instances**, and select your
-    instance.
+1. In the navigation pane, choose **Instances**, and select your instance.
 
-3. Choose **Instance state**, **Reboot instance**. It
-    might take a few minutes for your instance to reboot.
+1. Choose **Instance state**, **Reboot instance**. It might take a few minutes for your instance to reboot.
 
-4. Verify that the problem still exists; in some cases, rebooting may resolve the
-    problem.
+1. Verify that the problem still exists; in some cases, rebooting may resolve the problem.
 
-5. When the instance is in the `running` state, choose
-    **Actions**, **Monitor and troubleshoot**, **Get**
-**system log**.
+1. When the instance is in the `running` state, choose **Actions**, **Monitor and troubleshoot**, **Get system log**.
 
-6. Review the log that appears on the screen, and use the list of known system log error
-    statements below to troubleshoot your issue.
+1. Review the log that appears on the screen, and use the list of known system log error statements below to troubleshoot your issue.
 
-7. If your issue is not resolved, you can post your issue to [AWS re:Post](https://repost.aws/).
+1. If your issue is not resolved, you can post your issue to [AWS re:Post](https://repost.aws/).
 
 ## Troubleshoot system log errors for Linux instances
+<a name="system-log-errors-linux"></a>
 
-For Linux instances that have failed an instance status check, such as the instance
-reachability check, verify that you followed the steps above to retrieve the system log. The
-following list contains some common system log errors and suggested actions you can take to
-resolve the issue for each error.
+For Linux instances that have failed an instance status check, such as the instance reachability check, verify that you followed the steps above to retrieve the system log. The following list contains some common system log errors and suggested actions you can take to resolve the issue for each error.
 
 **Memory Errors**
-
-- [Out of memory: kill process](#MemoryOOM)
-
-- [ERROR: mmu\_update failed (Memory management update failed)](#MemoryMMU)
++ [Out of memory: kill process](#MemoryOOM)
++ [ERROR: mmu\_update failed (Memory management update failed)](#MemoryMMU)
 
 **Device Errors**
-
-- [I/O error (block device failure)](#DeviceBlock)
-
-- [I/O ERROR: neither local nor remote disk (Broken distributed block device)](#DeviceDistributed)
++ [I/O error (block device failure)](#DeviceBlock)
++ [I/O ERROR: neither local nor remote disk (Broken distributed block device)](#DeviceDistributed)
 
 **Kernel Errors**
-
-- [request\_module: runaway loop modprobe (Looping legacy kernel modprobe on older Linux versions)](#KernelLoop)
-
-- ["FATAL: kernel too old" and "fsck: No such file or directory while trying to open /dev" (Kernel and AMI mismatch)](#KernelOld)
-
-- ["FATAL: Could not load /lib/modules" or "BusyBox" (Missing kernel modules)](#KernelMissing)
-
-- [ERROR Invalid kernel (EC2 incompatible kernel)](#KernelInvalid)
++ [request\_module: runaway loop modprobe (Looping legacy kernel modprobe on older Linux versions)](#KernelLoop)
++ ["FATAL: kernel too old" and "fsck: No such file or directory while trying to open /dev" (Kernel and AMI mismatch)](#KernelOld)
++ ["FATAL: Could not load /lib/modules" or "BusyBox" (Missing kernel modules)](#KernelMissing)
++ [ERROR Invalid kernel (EC2 incompatible kernel)](#KernelInvalid)
 
 **File System Errors**
-
-- [fsck: No such file or directory while trying to open... (File system not found)](#FilesystemFschk)
-
-- [General error mounting filesystems (failed mount)](#FilesystemGeneral)
-
-- [VFS: Unable to mount root fs on unknown-block (Root filesystem mismatch)](#FilesystemKernel)
-
-- [Error: Unable to determine major/minor number of root device... (Root file system/device mismatch)](#FilesystemError)
-
-- [XENBUS: Device with no driver...](#FilesystemXenbus)
-
-- [... days without being checked, check forced (File system check required)](#FilesystemCheck)
-
-- [fsck died with exit status... (Missing device)](#FilesystemFschkDied)
++ [fsck: No such file or directory while trying to open... (File system not found)](#FilesystemFschk)
++ [General error mounting filesystems (failed mount)](#FilesystemGeneral)
++ [VFS: Unable to mount root fs on unknown-block (Root filesystem mismatch)](#FilesystemKernel)
++ [Error: Unable to determine major/minor number of root device... (Root file system/device mismatch)](#FilesystemError)
++ [XENBUS: Device with no driver...](#FilesystemXenbus)
++ [... days without being checked, check forced (File system check required)](#FilesystemCheck)
++ [fsck died with exit status... (Missing device)](#FilesystemFschkDied)
 
 **Operating System Errors**
-
-- [GRUB prompt (grubdom>)](#OpSystemGrub)
-
-- [Bringing up interface eth0: Device eth0 has different MAC address than expected, ignoring. (Hard-coded MAC address)](#OpSystemBringing)
-
-- [Unable to load SELinux Policy. Machine is in enforcing mode. Halting now. (SELinux misconfiguration)](#OpSystemUnable)
-
-- [XENBUS: Timeout connecting to devices (Xenbus timeout)](#OpSystemXenbus)
++ [GRUB prompt (grubdom>)](#OpSystemGrub)
++ [Bringing up interface eth0: Device eth0 has different MAC address than expected, ignoring. (Hard-coded MAC address)](#OpSystemBringing)
++ [Unable to load SELinux Policy. Machine is in enforcing mode. Halting now. (SELinux misconfiguration)](#OpSystemUnable)
++ [XENBUS: Timeout connecting to devices (Xenbus timeout)](#OpSystemXenbus)
 
 ## Out of memory: kill process
+<a name="MemoryOOM"></a>
 
-An out-of-memory error is indicated by a system log entry similar to the one shown
-below.
+An out-of-memory error is indicated by a system log entry similar to the one shown below.
 
-```nohighlight
-
-[115879.769795] Out of memory: kill process 20273 (httpd) score 1285879
+```
+[115879.769795] {{Out of memory: kill process}} 20273 (httpd) score 1285879
 or a child
 [115879.769795] Killed process 1917 (php-cgi) vsz:467184kB, anon-
 rss:101196kB, file-rss:204kB
 ```
 
 ### Potential cause
+<a name="MemoryOOM-potential-cause"></a>
 
 Exhausted memory
 
 ### Suggested actions
+<a name="MemoryOOM-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Do one of the following:
-
-- Stop the instance, and modify the instance to use a different instance type, and
-start the instance again. For example, a larger or a memory-optimized instance
-type.
-
-- Reboot the instance to return it to a non-impaired status. The problem will
-probably occur again unless you change the instance type.
-
-Instance store-backed
-
-Do one of the following:
-
-- Terminate the instance and launch a new instance, specifying a different instance
-type. For example, a larger or a memory-optimized instance type.
-
-- Reboot the instance to return it to an unimpaired status. The problem will
-probably occur again unless you change the instance type.
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Do one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Do one of the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ## ERROR: mmu\_update failed (Memory management update failed)
+<a name="MemoryMMU"></a>
 
-Memory management update failures are indicated by a system log entry similar to the
-following:
+Memory management update failures are indicated by a system log entry similar to the following:
 
-```nohighlight
-
+```
 ...
 Press `ESC' to enter the menu... 0   [H[J  Booting 'Amazon Linux 2011.09 (2.6.35.14-95.38.amzn1.i686)'
 
@@ -249,25 +155,26 @@ en_US.UTF-8 KEYTABLE=us
 
 initrd /boot/initramfs-2.6.35.14-95.38.amzn1.i686.img
 
-ERROR: mmu_update failed with rc=-22
+{{ERROR: mmu_update failed with rc=-22}}
 ```
 
 ### Potential cause
+<a name="MemoryMMU-potential-cause"></a>
 
 Issue with Amazon Linux
 
 ### Suggested action
+<a name="MemoryMMU-suggested-actions"></a>
 
-Post your issue to [AWS re:Post](https://repost.aws/) or contact [Support](https://aws.amazon.com/premiumsupport).
+Post your issue to [AWS re:Post](https://repost.aws/) or contact [Support](https://aws.amazon.com/premiumsupport/).
 
 ## I/O error (block device failure)
+<a name="DeviceBlock"></a>
 
-An input/output error is indicated by a system log entry similar to the following
-example:
+An input/output error is indicated by a system log entry similar to the following example:
 
-```nohighlight
-
-[9943662.053217] end_request: I/O error, dev sde, sector 52428288
+```
+[9943662.053217] end_request: {{I/O error}}, dev sde, {{sector 52428288}}
 [9943664.191262] end_request: I/O error, dev sde, sector 52428168
 [9943664.191285] Buffer I/O error on device md0, logical block 209713024
 [9943664.191297] Buffer I/O error on device md0, logical block 209713025
@@ -290,66 +197,33 @@ example:
 ```
 
 ### Potential causes
+<a name="DeviceBlock-potential-cause"></a>
 
-Instance type Potential cause
-
-Amazon EBS-backed
-
-A failed Amazon EBS volume
-
-Instance store-backed
-
-A failed physical drive
+| Instance type  | Potential cause |
+| --- | --- |
+| Amazon EBS-backed | A failed Amazon EBS volume  |
+| Instance store-backed | A failed physical drive  |
 
 ### Suggested actions
+<a name="DeviceBlock-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Use the following procedure:
-
-1. Stop the instance.
-
-2. Detach the volume.
-
-3. Attempt to recover the volume.
-
-###### Note
-
-It's good practice to snapshot your Amazon EBS volumes often. This dramatically
-decreases the risk of data loss as a result of failure.
-
-4. Re-attach the volume to the instance.
-
-5. Start the instance.
-
-Instance store-backed
-
-Terminate the instance and launch a new instance.
-
-###### Note
-
-Data cannot be recovered. Recover from backups.
-
-###### Note
-
-It's a good practice to use either Amazon S3 or Amazon EBS for backups. Instance store volumes
-are directly tied to single host and single disk failures.
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed |  Terminate the instance and launch a new instance. Data cannot be recovered. Recover from backups.  It's a good practice to use either Amazon S3 or Amazon EBS for backups. Instance store volumes are directly tied to single host and single disk failures.  |
 
 ## I/O ERROR: neither local nor remote disk (Broken distributed block device)
+<a name="DeviceDistributed"></a>
 
-An input/output error on the device is indicated by a system log entry similar to the
-following example:
+An input/output error on the device is indicated by a system log entry similar to the following example:
 
-```nohighlight
-
+```
 ...
 block drbd1: Local IO failed in request_timer_fn. Detaching...
 
 Aborting journal on device drbd1-8.
 
-block drbd1: IO ERROR: neither local nor remote disk
+block drbd1: {{IO ERROR: neither local nor remote disk}}
 
 Buffer I/O error on device drbd1, logical block 557056
 
@@ -359,33 +233,27 @@ JBD2: I/O error detected when updating journal superblock for drbd1-8.
 ```
 
 ### Potential causes
+<a name="DeviceDistributed-potential-cause"></a>
 
-Instance type Potential cause
-
-Amazon EBS-backed
-
-A failed Amazon EBS volume
-
-Instance store-backed
-
-A failed physical drive
+| Instance type  | Potential cause |
+| --- | --- |
+| Amazon EBS-backed | A failed Amazon EBS volume  |
+| Instance store-backed | A failed physical drive  |
 
 ### Suggested action
+<a name="DeviceDistributed-suggested-actions"></a>
 
 Terminate the instance and launch a new instance.
 
-For an Amazon EBS-backed instance you can recover data from a recent snapshot by creating an
-image from it. Any data added after the snapshot cannot be recovered.
+For an Amazon EBS-backed instance you can recover data from a recent snapshot by creating an image from it. Any data added after the snapshot cannot be recovered.
 
 ## request\_module: runaway loop modprobe (Looping legacy kernel modprobe on older Linux versions)
+<a name="KernelLoop"></a>
 
-This condition is indicated by a system log similar to the one shown below. Using an
-unstable or old Linux kernel (for example, 2.6.16-xenU) can cause an interminable loop condition
-at startup.
+This condition is indicated by a system log similar to the one shown below. Using an unstable or old Linux kernel (for example, 2.6.16-xenU) can cause an interminable loop condition at startup.
 
-```nohighlight
-
-Linux version 2.6.16-xenU (builder@xenbat.amazonsa) (gcc version 4.0.1
+```
+Linux version {{2.6.16-xenU}} (builder@xenbat.amazonsa) (gcc version 4.0.1
 20050727 (Red Hat 4.0.1-5)) #1 SMP Mon May 28 03:41:49 SAST 2007
 
 BIOS-provided physical RAM map:
@@ -395,7 +263,7 @@ BIOS-provided physical RAM map:
 0MB HIGHMEM available.
 ...
 
-request_module: runaway loop modprobe binfmt-464c
+{{request_module: runaway loop modprobe binfmt-464c}}
 
 request_module: runaway loop modprobe binfmt-464c
 
@@ -407,77 +275,45 @@ request_module: runaway loop modprobe binfmt-464c
 ```
 
 ### Suggested actions
+<a name="KernelLoop-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Use a newer kernel, either GRUB-based or static, using one of the following
-options:
-
-Option 1: Terminate the instance and launch a new instance, specifying the
-`-kernel` and `-ramdisk` parameters.
-
-Option 2:
-
-1. Stop the instance.
-
-2. Modify the kernel and ramdisk attributes to use a newer kernel.
-
-3. Start the instance.
-
-Instance store-backed
-
-Terminate the instance and launch a new instance, specifying the `-kernel`
-and `-ramdisk` parameters.
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Use a newer kernel, either GRUB-based or static, using one of the following options:<br />Option 1: Terminate the instance and launch a new instance, specifying the `-kernel` and `-ramdisk` parameters.<br />Option 2:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Terminate the instance and launch a new instance, specifying the `-kernel` and `-ramdisk` parameters.  |
 
 ## "FATAL: kernel too old" and "fsck: No such file or directory while trying to open /dev" (Kernel and AMI mismatch)
+<a name="KernelOld"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 Linux version 2.6.16.33-xenU (root@dom0-0-50-45-1-a4-ee.z-2.aes0.internal)
 (gcc version 4.1.1 20070105 (Red Hat 4.1.1-52)) #2 SMP Wed Aug 15 17:27:36 SAST 2007
 ...
-FATAL: kernel too old
+{{FATAL: kernel too old}}
 Kernel panic - not syncing: Attempted to kill init!
 ```
 
 ### Potential causes
+<a name="KernelOld-potential-cause"></a>
 
 Incompatible kernel and userland
 
 ### Suggested actions
+<a name="KernelOld-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Use the following procedure:
-
-1. Stop the instance.
-
-2. Modify the configuration to use a newer kernel.
-
-3. Start the instance.
-
-Instance store-backed
-
-Use the following procedure:
-
-1. Create an AMI that uses a newer kernel.
-
-2. Terminate the instance.
-
-3. Start a new instance from the AMI you created.
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ## "FATAL: Could not load /lib/modules" or "BusyBox" (Missing kernel modules)
+<a name="KernelMissing"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 [    0.370415] Freeing unused kernel memory: 1716k freed
 Loading, please wait...
 WARNING: Couldn't open directory /lib/modules/2.6.34-4-virtual: No such file or directory
@@ -501,59 +337,37 @@ Gave up waiting for root device.  Common problems:
    - Check root= (did the system wait for the right device?)
  - Missing modules (cat /proc/modules; ls /dev)
 FATAL: Could not load /lib/modules/2.6.34-4-virtual/modules.dep: No such file or directory
-FATAL: Could not load /lib/modules/2.6.34-4-virtual/modules.dep: No such file or directory
+{{FATAL: Could not load /lib/modules/}}2.6.34-4-virtual/modules.dep: No such file or directory
 ALERT! /dev/sda1 does not exist. Dropping to a shell!
 
-BusyBox v1.13.3 (Ubuntu 1:1.13.3-1ubuntu5) built-in shell (ash)
+{{BusyBox}} v1.13.3 (Ubuntu 1:1.13.3-1ubuntu5) built-in shell (ash)
 Enter 'help' for a list of built-in commands.
 
 (initramfs)
 ```
 
 ### Potential causes
+<a name="KernelMissing-potential-cause"></a>
 
 One or more of the following conditions can cause this problem:
-
-- Missing ramdisk
-
-- Missing correct modules from ramdisk
-
-- Amazon EBS root volume not correctly attached as `/dev/sda1`
++ Missing ramdisk
++ Missing correct modules from ramdisk
++ Amazon EBS root volume not correctly attached as `/dev/sda1`
 
 ### Suggested actions
+<a name="KernelMissing-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Use the following procedure:
-
-1. Select corrected ramdisk for the Amazon EBS volume.
-
-2. Stop the instance.
-
-3. Detach the volume and repair it.
-
-4. Attach the volume to the instance.
-
-5. Start the instance.
-
-6. Modify the AMI to use the corrected ramdisk.
-
-Instance store-backed
-
-Use the following procedure:
-
-1. Terminate the instance and launch a new instance with the correct ramdisk.
-
-2. Create a new AMI with the correct ramdisk.
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ## ERROR Invalid kernel (EC2 incompatible kernel)
+<a name="KernelInvalid"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 ...
 root (hd0)
 
@@ -563,9 +377,9 @@ kernel /vmlinuz root=/dev/sda1 ro
 
 initrd /initrd.img
 
-ERROR Invalid kernel: elf_xen_note_check: ERROR: Will only load images
+{{ERROR Invalid kernel: elf_xen_note_check: ERROR: Will only load images
 built for the generic loader or Linux images
-xc_dom_parse_image returned -1
+xc_dom_parse_image returned -1}}
 
 Error 9: Unknown boot failure
 
@@ -581,45 +395,26 @@ Error 15: File not found
 ```
 
 ### Potential causes
+<a name="KernelInvalid-potential-cause"></a>
 
 One or both of the following conditions can cause this problem:
-
-- Supplied kernel is not supported by GRUB
-
-- Fallback kernel does not exist
++ Supplied kernel is not supported by GRUB
++ Fallback kernel does not exist
 
 ### Suggested actions
+<a name="KernelInvalid-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Use the following procedure:
-
-1. Stop the instance.
-
-2. Replace with working kernel.
-
-3. Install a fallback kernel.
-
-4. Modify the AMI by correcting the kernel.
-
-Instance store-backed
-
-Use the following procedure:
-
-1. Terminate the instance and launch a new instance with the correct kernel.
-
-2. Create an AMI with the correct kernel.
-
-3. (Optional) Seek technical assistance for data recovery using [Support](https://aws.amazon.com/premiumsupport).
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ## fsck: No such file or directory while trying to open... (File system not found)
+<a name="FilesystemFschk"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 		Welcome to Fedora
 		Press 'I' to enter interactive startup.
 Setting clock : Wed Oct 26 05:52:05 EDT 2011 [  OK  ]
@@ -638,7 +433,7 @@ Checking all file systems.
 [/sbin/fsck.ext3 (1) -- /] fsck.ext3 -a /dev/sda1
 /dev/sda1: clean, 82081/1310720 files, 2141116/2621440 blocks
 [/sbin/fsck.ext3 (1) -- /mnt/dbbackups] fsck.ext3 -a /dev/sdh
-fsck.ext3: No such file or directory while trying to open /dev/sdh
+{{fsck}}.ext3: {{No such file or directory}} while trying to open /dev/sdh
 
 /dev/sdh:
 The superblock could not be read or does not describe a correct ext2
@@ -657,50 +452,25 @@ Give root password for maintenance
 ```
 
 ### Potential causes
-
-- A bug exists in ramdisk filesystem definitions /etc/fstab
-
-- Misconfigured filesystem definitions in /etc/fstab
-
-- Missing/failed drive
+<a name="FilesystemFschk-potential-cause"></a>
++ A bug exists in ramdisk filesystem definitions /etc/fstab
++ Misconfigured filesystem definitions in /etc/fstab
++ Missing/failed drive
 
 ### Suggested actions
+<a name="FilesystemFschk-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Use the following procedure:
-
-1. Stop the instance, detach the root volume, repair/modify /etc/fstab the volume,
-    attach the volume to the instance, and start the instance.
-
-2. Fix ramdisk to include modified /etc/fstab (if applicable).
-
-3. Modify the AMI to use a newer ramdisk.
-
-The sixth field in the fstab defines availability requirements of the mount – a
-nonzero value implies that an fsck will be done on that volume and
-_must_ succeed. Using this field can be problematic in Amazon EC2 because a
-failure typically results in an interactive console prompt that is not currently available
-in Amazon EC2. Use care with this feature and read the Linux man page for fstab.
-
-Instance store-backed
-
-Use the following procedure:
-
-1. Terminate the instance and launch a new instance.
-
-2. Detach any errant Amazon EBS volumes and the reboot instance.
-
-3. (Optional) Seek technical assistance for data recovery using [Support](https://aws.amazon.com/premiumsupport).
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html)<br />The sixth field in the fstab defines availability requirements of the mount – a nonzero value implies that an fsck will be done on that volume and *must* succeed. Using this field can be problematic in Amazon EC2 because a failure typically results in an interactive console prompt that is not currently available in Amazon EC2. Use care with this feature and read the Linux man page for fstab. |
+| Instance store-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ## General error mounting filesystems (failed mount)
+<a name="FilesystemGeneral"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 Loading xenblk.ko module
 xen-vbd: registered block device major 8
 
@@ -730,7 +500,7 @@ mountall:/proc/self/mountinfo: No such file or directory
 mountall: root filesystem isn't mounted
 init: mountall main process (221) terminated with status 1
 
-General error mounting filesystems.
+{{General error mounting filesystems}}.
 A maintenance shell will now be started.
 CONTROL-D will terminate this shell and re-try.
 Press enter for maintenance
@@ -738,66 +508,27 @@ Press enter for maintenance
 ```
 
 ### Potential causes
+<a name="FilesystemGeneral-potential-cause"></a>
 
-Instance type Potential cause
-
-Amazon EBS-backed
-
-- Detached or failed Amazon EBS volume.
-
-- Corrupted filesystem.
-
-- Mismatched ramdisk and AMI combination (such as Debian ramdisk with a SUSE AMI).
-
-Instance store-backed
-
-- A failed drive.
-
-- A corrupted file system.
-
-- A mismatched ramdisk and combination (for example, a Debian ramdisk with a SUSE
-AMI).
+| Instance type  | Potential cause |
+| --- | --- |
+| Amazon EBS-backed |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ### Suggested actions
+<a name="FilesystemGeneral-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Use the following procedure:
-
-1. Stop the instance.
-
-2. Detach the root volume.
-
-3. Attach the root volume to a known working instance.
-
-4. Run filesystem check (fsck -a /dev/...).
-
-5. Fix any errors.
-
-6. Detach the volume from the known working instance.
-
-7. Attach the volume to the stopped instance.
-
-8. Start the instance.
-
-9. Recheck the instance status.
-
-Instance store-backed
-
-Try one of the following:
-
-- Start a new instance.
-
-- (Optional) Seek technical assistance for data recovery using [Support](https://aws.amazon.com/premiumsupport).
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Try one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ## VFS: Unable to mount root fs on unknown-block (Root filesystem mismatch)
+<a name="FilesystemKernel"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 Linux version 2.6.16-xenU (builder@xenbat.amazonsa) (gcc version 4.0.1
  20050727 (Red Hat 4.0.1-5)) #1 SMP Mon May 28 03:41:49 SAST 2007
 ...
@@ -805,57 +536,31 @@ Kernel command line:  root=/dev/sda1 ro 4
 ...
 Registering block device major 8
 ...
-Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(8,1)
+{{Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(8,1)}}
 ```
 
 ### Potential causes
+<a name="FilesystemKernel-potential-cause"></a>
 
-Instance type Potential cause
-
-Amazon EBS-backed
-
-- Device not attached correctly.
-
-- Root device not attached at correct device point.
-
-- Filesystem not in expected format.
-
-- Use of legacy kernel (such as 2.6.16-XenU).
-
-- A recent kernel update on your instance (faulty update, or an update bug)
-
-Instance store-backed
-
-Hardware device failure.
+| Instance type  | Potential cause |
+| --- | --- |
+| Amazon EBS-backed |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html)  |
+| Instance store-backed | Hardware device failure. |
 
 ### Suggested actions
+<a name="FilesystemKernel-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Do one of the following:
-
-- Stop and then restart the instance.
-
-- Modify root volume to attach at the correct device point, possible /dev/sda1
-instead of /dev/sda.
-
-- Stop and modify to use modern kernel.
-
-- Refer to the documentation for your Linux distribution to check for known update
-bugs. Change or reinstall the kernel.
-
-Instance store-backed
-
-Terminate the instance and launch a new instance using a modern kernel.
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Do one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Terminate the instance and launch a new instance using a modern kernel.  |
 
 ## Error: Unable to determine major/minor number of root device... (Root file system/device mismatch)
+<a name="FilesystemError"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 ...
 XENBUS: Device with no driver: device/vif/0
 XENBUS: Device with no driver: device/vbd/2048
@@ -869,53 +574,33 @@ done.
 done.
 Waiting 10 seconds for device /dev/xvda1 ...
 Root device '/dev/xvda1' doesn't exist. Attempting to create it.
-ERROR: Unable to determine major/minor number of root device '/dev/xvda1'.
+{{ERROR: Unable to determine major/minor number of root device '/dev/xvda1'}}.
 You are being dropped to a recovery shell
     Type 'exit' to try and continue booting
 sh: can't access tty; job control turned off
-[ramfs /]#
+{{[ramfs /]#}}
 ```
 
 ### Potential causes
-
-- Missing or incorrectly configured virtual block device driver
-
-- Device enumeration clash (sda versus xvda or sda instead of sda1)
-
-- Incorrect choice of instance kernel
+<a name="FilesystemError-potential-cause"></a>
++ Missing or incorrectly configured virtual block device driver
++ Device enumeration clash (sda versus xvda or sda instead of sda1)
++ Incorrect choice of instance kernel
 
 ### Suggested actions
+<a name="FilesystemError-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Use the following procedure:
-
-1. Stop the instance.
-
-2. Detach the volume.
-
-3. Fix the device mapping problem.
-
-4. Start the instance.
-
-5. Modify the AMI to address device mapping issues.
-
-Instance store-backed
-
-Use the following procedure:
-
-1. Create a new AMI with the appropriate fix (map block device correctly).
-
-2. Terminate the instance and launch a new instance from the AMI you created.
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ## XENBUS: Device with no driver...
+<a name="FilesystemXenbus"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 XENBUS: Device with no driver: device/vbd/2048
 drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
 Initializing network drop monitor service
@@ -927,132 +612,86 @@ done.
 done.
 Waiting 10 seconds for device /dev/xvda1 ...
 Root device '/dev/xvda1' doesn't exist. Attempting to create it.
-ERROR: Unable to determine major/minor number of root device '/dev/xvda1'.
+{{ERROR: Unable to determine major/minor number of root device '/dev/xvda1'.}}
 You are being dropped to a recovery shell
     Type 'exit' to try and continue booting
 sh: can't access tty; job control turned off
-[ramfs /]#
+{{[ramfs /]#}}
 ```
 
 ### Potential causes
-
-- Missing or incorrectly configured virtual block device driver
-
-- Device enumeration clash (sda versus xvda)
-
-- Incorrect choice of instance kernel
+<a name="FilesystemXenbus-potential-cause"></a>
++ Missing or incorrectly configured virtual block device driver
++ Device enumeration clash (sda versus xvda)
++ Incorrect choice of instance kernel
 
 ### Suggested actions
+<a name="FilesystemXenbus-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Use the following procedure:
-
-1. Stop the instance.
-
-2. Detach the volume.
-
-3. Fix the device mapping problem.
-
-4. Start the instance.
-
-5. Modify the AMI to address device mapping issues.
-
-Instance store-backed
-
-Use the following procedure:
-
-1. Create an AMI with the appropriate fix (map block device correctly).
-
-2. Terminate the instance and launch a new instance using the AMI you created.
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ## ... days without being checked, check forced (File system check required)
+<a name="FilesystemCheck"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 ...
 Checking filesystems
 Checking all file systems.
 [/sbin/fsck.ext3 (1) -- /] fsck.ext3 -a /dev/sda1
-/dev/sda1 has gone 361 days without being checked, check forced
+/dev/sda1 has gone 361 {{days without being checked, check forced}}
 ```
 
 ### Potential causes
+<a name="FilesystemCheck-potential-cause"></a>
 
 Filesystem check time passed; a filesystem check is being forced.
 
 ### Suggested actions
-
-- Wait until the filesystem check completes. A filesystem check can take a long time
-depending on the size of the root filesystem.
-
-- Modify your filesystems to remove the filesystem check (fsck) enforcement using tune2fs
-or tools appropriate for your filesystem.
+<a name="FilesystemCheck-suggested-actions"></a>
++ Wait until the filesystem check completes. A filesystem check can take a long time depending on the size of the root filesystem.
++  Modify your filesystems to remove the filesystem check (fsck) enforcement using tune2fs or tools appropriate for your filesystem.
 
 ## fsck died with exit status... (Missing device)
+<a name="FilesystemFschkDied"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 Cleaning up ifupdown....
 Loading kernel modules...done.
 ...
 Activating lvm and md swap...done.
 Checking file systems...fsck from util-linux-ng 2.16.2
 /sbin/fsck.xfs: /dev/sdh does not exist
-fsck died with exit status 8
+{{fsck died with exit status}} 8
 [31mfailed (code 8).[39;49m
 ```
 
 ### Potential causes
-
-- Ramdisk looking for missing drive
-
-- Filesystem consistency check forced
-
-- Drive failed or detached
+<a name="FilesystemFschkDied-potential-cause"></a>
++ Ramdisk looking for missing drive
++ Filesystem consistency check forced
++ Drive failed or detached
 
 ### Suggested actions
+<a name="FilesystemFschkDied-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Try one or more of the following to resolve the issue:
-
-- Stop the instance, attach the volume to an existing running instance.
-
-- Manually run consistency checks.
-
-- Fix ramdisk to include relevant utilities.
-
-- Modify filesystem tuning parameters to remove consistency requirements (not
-recommended).
-
-Instance store-backed
-
-Try one or more of the following to resolve the issue:
-
-- Rebundle ramdisk with correct tooling.
-
-- Modify file system tuning parameters to remove consistency requirements (not
-recommended).
-
-- Terminate the instance and launch a new instance.
-
-- (Optional) Seek technical assistance for data recovery using [Support](https://aws.amazon.com/premiumsupport).
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Try one or more of the following to resolve the issue:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Try one or more of the following to resolve the issue:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ## GRUB prompt (grubdom>)
+<a name="OpSystemGrub"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
     GNU GRUB  version 0.97  (629760K lower / 0K upper memory)
 
        [ Minimal BASH-like line editing is supported.   For
@@ -1063,260 +702,104 @@ This condition is indicated by a system log similar to the one shown below.
 
          completions of a device/filename. ]
 
-grubdom>
+{{grubdom> }}
 ```
 
 ### Potential causes
+<a name="OpSystem-potential-cause"></a>
 
-Instance type Potential causes
-
-Amazon EBS-backed
-
-- Missing GRUB configuration file.
-
-- Incorrect GRUB image used, expecting GRUB configuration file at a different
-location.
-
-- Unsupported filesystem used to store your GRUB configuration file (for example,
-converting your root file system to a type that is not supported by an earlier version
-of GRUB).
-
-Instance store-backed
-
-- Missing GRUB configuration file.
-
-- Incorrect GRUB image used, expecting GRUB configuration file at a different
-location.
-
-- Unsupported filesystem used to store your GRUB configuration file (for example,
-converting your root file system to a type that is not supported by an earlier version
-of GRUB).
+| Instance type  | Potential causes |
+| --- | --- |
+| Amazon EBS-backed |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html)  |
+| Instance store-backed |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html)  |
 
 ### Suggested actions
+<a name="OpSystem-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Option 1: Modify the AMI and relaunch the instance:
-
-1. Modify the source AMI to create a GRUB configuration file at the standard location
-    (/boot/grub/menu.lst).
-
-2. Verify that your version of GRUB supports the underlying file system type and
-    upgrade GRUB if necessary.
-
-3. Pick the appropriate GRUB image, (hd0-1st drive or hd00 – 1st drive, 1st
-    partition).
-
-4. Terminate the instance and launch a new one using the AMI that you created.
-
-Option 2: Fix the existing instance:
-
-01. Stop the instance.
-
-02. Detach the root filesystem.
-
-03. Attach the root filesystem to a known working instance.
-
-04. Mount filesystem.
-
-05. Create a GRUB configuration file.
-
-06. Verify that your version of GRUB supports the underlying file system type and
-     upgrade GRUB if necessary.
-
-07. Detach filesystem.
-
-08. Attach to the original instance.
-
-09. Modify kernel attribute to use the appropriate GRUB image (1st disk or 1st
-     partition on 1st disk).
-
-10. Start the instance.
-
-Instance store-backed
-
-Option 1: Modify the AMI and relaunch the instance:
-
-1. Create the new AMI with a GRUB configuration file at the standard location
-    (/boot/grub/menu.lst).
-
-2. Pick the appropriate GRUB image, (hd0-1st drive or hd00 – 1st drive, 1st
-    partition).
-
-3. Verify that your version of GRUB supports the underlying file system type and
-    upgrade GRUB if necessary.
-
-4. Terminate the instance and launch a new instance using the AMI you created.
-
-Option 2: Terminate the instance and launch a new instance, specifying the correct
-kernel.
-
-###### Note
-
-To recover data from the existing instance, contact [Support](https://aws.amazon.com/premiumsupport).
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Option 1: Modify the AMI and relaunch the instance:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html)<br />Option 2: Fix the existing instance:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Option 1: Modify the AMI and relaunch the instance:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html)<br />Option 2: Terminate the instance and launch a new instance, specifying the correct kernel. To recover data from the existing instance, contact [Support](https://aws.amazon.com/premiumsupport/).  |
 
 ## Bringing up interface eth0: Device eth0 has different MAC address than expected, ignoring. (Hard-coded MAC address)
+<a name="OpSystemBringing"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 ...
 Bringing up loopback interface:  [  OK  ]
 
-Bringing up interface eth0:  Device eth0 has different MAC address than expected, ignoring.
-[FAILED]
+{{Bringing up interface eth0:  Device eth0 has different MAC address than expected, ignoring.
+[FAILED]}}
 
 Starting auditd: [  OK  ]
 ```
 
 ### Potential causes
+<a name="OpSystemBringing-potential-cause"></a>
 
 There is a hardcoded interface MAC in the AMI configuration
 
 ### Suggested actions
+<a name="OpSystemBringing-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Do one of the following:
-
-- Modify the AMI to remove the hardcoding and relaunch the instance.
-
-- Modify the instance to remove the hardcoded MAC address.
-
-OR
-
-Use the following procedure:
-
-1. Stop the instance.
-
-2. Detach the root volume.
-
-3. Attach the volume to another instance and modify the volume to remove the hardcoded
-    MAC address.
-
-4. Attach the volume to the original instance.
-
-5. Start the instance.
-
-Instance store-backed
-
-Do one of the following:
-
-- Modify the instance to remove the hardcoded MAC address.
-
-- Terminate the instance and launch a new instance.
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Do one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html)<br />OR<br />Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Do one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ## Unable to load SELinux Policy. Machine is in enforcing mode. Halting now. (SELinux misconfiguration)
+<a name="OpSystemUnable"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 audit(1313445102.626:2): enforcing=1 old_enforcing=0 auid=4294967295
-Unable to load SELinux Policy. Machine is in enforcing mode. Halting now.
-Kernel panic - not syncing: Attempted to kill init!
+{{Unable to load SELinux Policy. Machine is in enforcing mode. Halting now.
+Kernel panic - not syncing: Attempted to kill init!}}
 ```
 
 ### Potential causes
+<a name="OpSystemUnable-potential-cause"></a>
 
 SELinux has been enabled in error:
-
-- Supplied kernel is not supported by GRUB
-
-- Fallback kernel does not exist
++ Supplied kernel is not supported by GRUB
++ Fallback kernel does not exist
 
 ### Suggested actions
+<a name="OpSystemUnable-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Use the following procedure:
-
-1. Stop the failed instance.
-
-2. Detach the failed instance's root volume.
-
-3. Attach the root volume to another running Linux instance (later referred to as a
-    recovery instance).
-
-4. Connect to the recovery instance and mount the failed instance's root
-    volume.
-
-5. Disable SELinux on the mounted root volume. This process varies across Linux
-    distributions; for more information, consult your OS-specific documentation.
-
-###### Note
-
-On some systems, you disable SELinux by setting `SELINUX=disabled` in
-the `/mount_point/etc/sysconfig/selinux`
-file, where `mount_point` is the location
-that you mounted the volume on your recovery instance.
-
-6. Unmount and detach the root volume from the recovery instance and reattach it to
-    the original instance.
-
-7. Start the instance.
-
-Instance store-backed
-
-Use the following procedure:
-
-1. Terminate the instance and launch a new instance.
-
-2. (Optional) Seek technical assistance for data recovery using [Support](https://aws.amazon.com/premiumsupport).
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Use the following procedure:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 ## XENBUS: Timeout connecting to devices (Xenbus timeout)
+<a name="OpSystemXenbus"></a>
 
 This condition is indicated by a system log similar to the one shown below.
 
-```nohighlight
-
+```
 Linux version 2.6.16-xenU (builder@xenbat.amazonsa) (gcc version 4.0.1
 20050727 (Red Hat 4.0.1-5)) #1 SMP Mon May 28 03:41:49 SAST 2007
 ...
-XENBUS: Timeout connecting to devices!
+{{XENBUS: Timeout connecting to devices!}}
 ...
 Kernel panic - not syncing: No init found.  Try passing init= option to kernel.
 ```
 
 ### Potential causes
-
-- The block device is not connected to the instance
-
-- This instance is using an old instance kernel
+<a name="OpSystemXenbus-potential-cause"></a>
++ The block device is not connected to the instance
++ This instance is using an old instance kernel
 
 ### Suggested actions
+<a name="OpSystemXenbus-suggested-actions"></a>
 
-For this instance type Do this
-
-Amazon EBS-backed
-
-Do one of the following:
-
-- Modify the AMI and instance to use a modern kernel and relaunch the
-instance.
-
-- Reboot the instance.
-
-Instance store-backed
-
-Do one of the following:
-
-- Terminate the instance.
-
-- Modify the AMI to use a modern kernel, and launch a new instance using this
-AMI.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Linux instance SSH issues
-
-Linux instance boots from wrong volume
+| For this instance type  | Do this |
+| --- | --- |
+| Amazon EBS-backed | Do one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
+| Instance store-backed | Do one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) |
 
 All content copied from https://docs.aws.amazon.com/.

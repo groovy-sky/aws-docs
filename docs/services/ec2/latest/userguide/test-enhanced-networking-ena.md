@@ -3,105 +3,95 @@ title: "Test whether enhanced networking is enabled"
 ---
 
 # Test whether enhanced networking is enabled
+<a name="test-enhanced-networking-ena"></a>
 
 You can test whether enhanced networking is enabled in your instances or your AMIs.
 
-###### Instance attribute
-
+**Instance attribute**
 Check the value of the `enaSupport` instance attribute.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-Use the [describe-instances](../../../cli/latest/reference/ec2/describe-instances.md) command.
+Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
-```nohighlight
-
+```
 aws ec2 describe-instances \
-    --instance-ids i-1234567890abcdef0 \
+    --instance-ids {{i-1234567890abcdef0}} \
     --query "Reservations[].Instances[].EnaSupport"
 ```
 
 If enhanced networking is enabled, the output is as follows.
 
-```nohighlight
-
+```
 [
     true
 ]
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-Use the [Get-EC2Instance](../../../powershell/latest/reference/items/get-ec2instance.md) cmdlet.
+Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```powershell
-
-(Get-EC2Instance -InstanceId i-1234567890abcdef0).Instances.EnaSupport
+```
+(Get-EC2Instance -InstanceId {{i-1234567890abcdef0}}).Instances.EnaSupport
 ```
 
 If enhanced networking is enabled, the output is as follows.
 
-```nohighlight
-
+```
 True
 ```
 
-###### Image attribute
+------
 
+**Image attribute**
 Check the value of the `enaSupport` image attribute.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-Use the [describe-images](../../../cli/latest/reference/ec2/describe-images.md) command.
+Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
-```nohighlight
-
+```
 aws ec2 describe-images \
-    --image-id ami-0abcdef1234567890 \
+    --image-id {{ami-0abcdef1234567890}} \
     --query "Images[].EnaSupport"
 ```
 
 If enhanced networking is enabled, the output is as follows.
 
-```nohighlight
-
+```
 [
     true
 ]
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-Use the [Get-EC2Image](../../../powershell/latest/reference/items/get-ec2image.md) cmdlet.
+Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet.
 
-```powershell
-
-(Get-EC2Image -ImageId ami-0abcdef1234567890).EnaSupport
+```
+(Get-EC2Image -ImageId {{ami-0abcdef1234567890}}).EnaSupport
 ```
 
 If enhanced networking is enabled, the output is as follows.
 
-```nohighlight
-
+```
 True
 ```
 
-###### Linux network interface driver
+------
 
-Use the following command to verify that the `ena` kernel driver
-is being used on a particular interface, substituting the interface name that
-you want to check. If you are using a single interface (default), this is
-`eth0`. If your Linux distribution supports predictable network names,
-this could be a name like `ens5`. For more information, expand the section
-for RHEL, SUSE, and CentOS in
-[Enable enhanced networking on your instance](enabling-enhanced-networking.md).
+**Linux network interface driver**
+Use the following command to verify that the `ena` kernel driver is being used on a particular interface, substituting the interface name that you want to check. If you are using a single interface (default), this is `eth0`. If your Linux distribution supports predictable network names, this could be a name like `ens5`. For more information, expand the section for RHEL, SUSE, and CentOS in [Enable enhanced networking on your instance](enabling_enhanced_networking.md).
 
-In the following example, the `ena` kernel driver is not
-loaded, because the listed driver is `vif`.
+In the following example, the `ena` kernel driver is not loaded, because the listed driver is `vif`.
 
-```nohighlight
-
-[ec2-user ~]$ ethtool -i eth0
+```
+[ec2-user ~]$ ethtool -i {{eth0}}
 driver: vif
 version:
 firmware-version:
@@ -113,13 +103,10 @@ supports-register-dump: no
 supports-priv-flags: no
 ```
 
-In this example, the `ena` kernel driver is loaded and at
-the minimum recommended version. This instance has enhanced networking properly
-configured.
+In this example, the `ena` kernel driver is loaded and at the minimum recommended version. This instance has enhanced networking properly configured.
 
-```nohighlight
-
-[ec2-user ~]$ ethtool -i eth0
+```
+[ec2-user ~]$ ethtool -i {{eth0}}
 driver: ena
 version: 1.5.0g
 firmware-version:
@@ -131,11 +118,5 @@ supports-eeprom-access: no
 supports-register-dump: no
 supports-priv-flags: no
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Elastic Network Adapter (ENA)
-
-Enable ENA for an instance
 
 All content copied from https://docs.aws.amazon.com/.

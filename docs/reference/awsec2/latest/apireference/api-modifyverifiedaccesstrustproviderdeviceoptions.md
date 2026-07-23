@@ -3,33 +3,24 @@ title: "ModifyVerifiedAccessTrustProviderDeviceOptions"
 ---
 
 # ModifyVerifiedAccessTrustProviderDeviceOptions
+<a name="API_ModifyVerifiedAccessTrustProviderDeviceOptions"></a>
 
 Modifies the configuration of the specified device-based AWS Verified Access trust provider.
 
 ## Contents
+<a name="API_ModifyVerifiedAccessTrustProviderDeviceOptions_Contents"></a>
 
-**PublicSigningKeyUrl**
-
-The URL AWS Verified Access will use to verify the authenticity of the device tokens.
-
+ ** PublicSigningKeyUrl **
+ The URL AWS Verified Access will use to verify the authenticity of the device tokens.
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_ModifyVerifiedAccessTrustProviderDeviceOptions_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyverifiedaccesstrustproviderdeviceoptions.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyverifiedaccesstrustproviderdeviceoptions.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyverifiedaccesstrustproviderdeviceoptions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModifyVerifiedAccessNativeApplicationOidcOptions
-
-ModifyVerifiedAccessTrustProviderOidcOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyVerifiedAccessTrustProviderDeviceOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyVerifiedAccessTrustProviderDeviceOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyVerifiedAccessTrustProviderDeviceOptions)
 
 All content copied from https://docs.aws.amazon.com/.

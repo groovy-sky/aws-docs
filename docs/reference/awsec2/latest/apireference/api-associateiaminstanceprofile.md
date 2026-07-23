@@ -3,61 +3,55 @@ title: "AssociateIamInstanceProfile"
 ---
 
 # AssociateIamInstanceProfile
+<a name="API_AssociateIamInstanceProfile"></a>
 
-Associates an IAM instance profile with a running or stopped instance. You cannot
-associate more than one IAM instance profile with an instance.
+Associates an IAM instance profile with a running or stopped instance. You cannot associate more than one IAM instance profile with an instance.
 
 ## Request Parameters
+<a name="API_AssociateIamInstanceProfile_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**IamInstanceProfile**
-
+ **IamInstanceProfile**
 The IAM instance profile.
-
-Type: [IamInstanceProfileSpecification](api-iaminstanceprofilespecification.md) object
-
+Type: [IamInstanceProfileSpecification](API_IamInstanceProfileSpecification.md) object
 Required: Yes
 
-**InstanceId**
-
+ **InstanceId**
 The ID of the instance.
-
 Type: String
-
 Required: Yes
 
 ## Response Elements
+<a name="API_AssociateIamInstanceProfile_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**iamInstanceProfileAssociation**
-
+ **iamInstanceProfileAssociation**
 Information about the IAM instance profile association.
+Type: [IamInstanceProfileAssociation](API_IamInstanceProfileAssociation.md) object
 
-Type: [IamInstanceProfileAssociation](api-iaminstanceprofileassociation.md) object
-
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
 ## Errors
+<a name="API_AssociateIamInstanceProfile_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_AssociateIamInstanceProfile_Examples"></a>
 
 ### Example
+<a name="API_AssociateIamInstanceProfile_Example_1"></a>
 
-This example associates the IAM instance profile with the specified
-instance.
+This example associates the IAM instance profile with the specified instance.
 
 #### Sample Request
+<a name="API_AssociateIamInstanceProfile_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=AssociateIamInstanceProfile
 &InstanceId=i-1234567890abcdef0
 &IamInstanceProfile.Name=AdminProfile
@@ -65,9 +59,9 @@ https://ec2.amazonaws.com/?Action=AssociateIamInstanceProfile
 ```
 
 #### Sample Response
+<a name="API_AssociateIamInstanceProfile_Example_1_Response"></a>
 
 ```
-
 <AssociateIamInstanceProfileResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
     <requestId>e10deeaf-7cda-48e7-950b-example</requestId>
     <iamInstanceProfileAssociation>
@@ -83,33 +77,18 @@ https://ec2.amazonaws.com/?Action=AssociateIamInstanceProfile
 ```
 
 ## See Also
+<a name="API_AssociateIamInstanceProfile_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/associateiaminstanceprofile.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/associateiaminstanceprofile.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/associateiaminstanceprofile.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/associateiaminstanceprofile.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/associateiaminstanceprofile.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/associateiaminstanceprofile.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/associateiaminstanceprofile.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/associateiaminstanceprofile.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/associateiaminstanceprofile.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/associateiaminstanceprofile.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AssociateEnclaveCertificateIamRole
-
-AssociateInstanceEventWindow
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/AssociateIamInstanceProfile)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/AssociateIamInstanceProfile)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AssociateIamInstanceProfile)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/AssociateIamInstanceProfile)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AssociateIamInstanceProfile)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/AssociateIamInstanceProfile)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/AssociateIamInstanceProfile)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/AssociateIamInstanceProfile)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/AssociateIamInstanceProfile)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AssociateIamInstanceProfile)
 
 All content copied from https://docs.aws.amazon.com/.

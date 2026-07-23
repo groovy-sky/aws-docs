@@ -3,42 +3,29 @@ title: "AsnAuthorizationContext"
 ---
 
 # AsnAuthorizationContext
+<a name="API_AsnAuthorizationContext"></a>
 
-Provides authorization for Amazon to bring an Autonomous System Number (ASN) to a specific AWS account using bring your own ASN (BYOASN).
-For details on the format of the message and signature, see [Tutorial: Bring your ASN to IPAM](../../../../services/vpc/latest/ipam/tutorials-byoasn.md) in the _Amazon VPC IPAM guide_.
+Provides authorization for Amazon to bring an Autonomous System Number (ASN) to a specific AWS account using bring your own ASN (BYOASN). For details on the format of the message and signature, see [Tutorial: Bring your ASN to IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoasn.html) in the *Amazon VPC IPAM guide*.
 
 ## Contents
+<a name="API_AsnAuthorizationContext_Contents"></a>
 
-**Message**
-
+ ** Message **
 The authorization context's message.
-
 Type: String
-
 Required: Yes
 
-**Signature**
-
+ ** Signature **
 The authorization context's signature.
-
 Type: String
-
 Required: Yes
 
 ## See Also
+<a name="API_AsnAuthorizationContext_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/asnauthorizationcontext.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/asnauthorizationcontext.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/asnauthorizationcontext.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AsnAssociation
-
-AssignedPrivateIpAddress
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AsnAuthorizationContext)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AsnAuthorizationContext)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AsnAuthorizationContext)
 
 All content copied from https://docs.aws.amazon.com/.

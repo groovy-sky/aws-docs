@@ -3,59 +3,40 @@ title: "CapacityReservationInfo"
 ---
 
 # CapacityReservationInfo
+<a name="API_CapacityReservationInfo"></a>
 
 Information about a Capacity Reservation.
 
 ## Contents
+<a name="API_CapacityReservationInfo_Contents"></a>
 
-**availabilityZone**
-
+ ** availabilityZone **
 The Availability Zone for the Capacity Reservation.
-
 Type: String
-
 Required: No
 
-**availabilityZoneId**
-
+ ** availabilityZoneId **
 The ID of the Availability Zone.
-
 Type: String
-
 Required: No
 
-**instanceType**
-
+ ** instanceType **
 The instance type for the Capacity Reservation.
-
 Type: String
-
 Required: No
 
-**tenancy**
-
+ ** tenancy **
 The tenancy of the Capacity Reservation.
-
 Type: String
-
 Valid Values: `default | dedicated`
-
 Required: No
 
 ## See Also
+<a name="API_CapacityReservationInfo_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/capacityreservationinfo.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/capacityreservationinfo.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/capacityreservationinfo.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CapacityReservationGroup
-
-CapacityReservationOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CapacityReservationInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CapacityReservationInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CapacityReservationInfo)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,75 +3,50 @@ title: "NetworkInterfacePermission"
 ---
 
 # NetworkInterfacePermission
+<a name="API_NetworkInterfacePermission"></a>
 
 Describes a permission for a network interface.
 
 ## Contents
+<a name="API_NetworkInterfacePermission_Contents"></a>
 
-**awsAccountId**
-
+ ** awsAccountId **
 The AWS account ID.
-
 Type: String
-
 Required: No
 
-**awsService**
-
+ ** awsService **
 The AWS service.
-
 Type: String
-
 Required: No
 
-**networkInterfaceId**
-
+ ** networkInterfaceId **
 The ID of the network interface.
-
 Type: String
-
 Required: No
 
-**networkInterfacePermissionId**
-
+ ** networkInterfacePermissionId **
 The ID of the network interface permission.
-
 Type: String
-
 Required: No
 
-**permission**
-
+ ** permission **
 The type of permission.
-
 Type: String
-
 Valid Values: `INSTANCE-ATTACH | EIP-ASSOCIATE`
-
 Required: No
 
-**permissionState**
-
+ ** permissionState **
 Information about the state of the permission.
-
-Type: [NetworkInterfacePermissionState](api-networkinterfacepermissionstate.md) object
-
+Type: [NetworkInterfacePermissionState](API_NetworkInterfacePermissionState.md) object
 Required: No
 
 ## See Also
+<a name="API_NetworkInterfacePermission_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/networkinterfacepermission.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/networkinterfacepermission.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/networkinterfacepermission.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NetworkInterfaceIpv6Address
-
-NetworkInterfacePermissionState
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/NetworkInterfacePermission)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/NetworkInterfacePermission)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/NetworkInterfacePermission)
 
 All content copied from https://docs.aws.amazon.com/.

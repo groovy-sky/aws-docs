@@ -3,140 +3,97 @@ title: "ReplaceNetworkAclEntry"
 ---
 
 # ReplaceNetworkAclEntry
+<a name="API_ReplaceNetworkAclEntry"></a>
 
-Replaces an entry (rule) in a network ACL. For more information, see [Network ACLs](../../../../services/vpc/latest/userguide/vpc-network-acls.md) in the
-_Amazon VPC User Guide_.
+Replaces an entry (rule) in a network ACL. For more information, see [Network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html) in the *Amazon VPC User Guide*.
 
 ## Request Parameters
+<a name="API_ReplaceNetworkAclEntry_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**CidrBlock**
-
-The IPv4 network range to allow or deny, in CIDR notation (for example
-`172.16.0.0/24`).
-
+ **CidrBlock**
+The IPv4 network range to allow or deny, in CIDR notation (for example `172.16.0.0/24`).
 Type: String
-
 Required: No
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
-Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**Egress**
-
+ **Egress**
 Indicates whether to replace the egress rule.
-
 Default: If no value is specified, we replace the ingress rule.
-
 Type: Boolean
-
 Required: Yes
 
-**Icmp**
-
-ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying protocol
-1 (ICMP) or protocol 58 (ICMPv6) with an IPv6 CIDR block.
-
-Type: [IcmpTypeCode](api-icmptypecode.md) object
-
+ **Icmp**
+ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying protocol 1 (ICMP) or protocol 58 (ICMPv6) with an IPv6 CIDR block.
+Type: [IcmpTypeCode](API_IcmpTypeCode.md) object
 Required: No
 
-**Ipv6CidrBlock**
-
-The IPv6 network range to allow or deny, in CIDR notation (for example
-`2001:bd8:1234:1a00::/64`).
-
+ **Ipv6CidrBlock**
+The IPv6 network range to allow or deny, in CIDR notation (for example `2001:bd8:1234:1a00::/64`).
 Type: String
-
 Required: No
 
-**NetworkAclId**
-
+ **NetworkAclId**
 The ID of the ACL.
-
 Type: String
-
 Required: Yes
 
-**PortRange**
-
-TCP or UDP protocols: The range of ports the rule applies to.
-Required if specifying protocol 6 (TCP) or 17 (UDP).
-
-Type: [PortRange](api-portrange.md) object
-
+ **PortRange**
+TCP or UDP protocols: The range of ports the rule applies to. Required if specifying protocol 6 (TCP) or 17 (UDP).
+Type: [PortRange](API_PortRange.md) object
 Required: No
 
-**Protocol**
-
-The protocol number. A value of "-1" means all protocols. If you specify "-1" or a
-protocol number other than "6" (TCP), "17" (UDP), or "1" (ICMP), traffic on all ports is
-allowed, regardless of any ports or ICMP types or codes that you specify. If you specify
-protocol "58" (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and
-codes allowed, regardless of any that you specify. If you specify protocol "58" (ICMPv6)
-and specify an IPv6 CIDR block, you must specify an ICMP type and code.
-
+ **Protocol**
+The protocol number. A value of "-1" means all protocols. If you specify "-1" or a protocol number other than "6" (TCP), "17" (UDP), or "1" (ICMP), traffic on all ports is allowed, regardless of any ports or ICMP types or codes that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and codes allowed, regardless of any that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv6 CIDR block, you must specify an ICMP type and code.
 Type: String
-
 Required: Yes
 
-**RuleAction**
-
+ **RuleAction**
 Indicates whether to allow or deny the traffic that matches the rule.
-
 Type: String
-
 Valid Values: `allow | deny`
-
 Required: Yes
 
-**RuleNumber**
-
+ **RuleNumber**
 The rule number of the entry to replace.
-
 Type: Integer
-
 Required: Yes
 
 ## Response Elements
+<a name="API_ReplaceNetworkAclEntry_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**return**
-
+ **return**
 Is `true` if the request succeeds, and an error otherwise.
-
 Type: Boolean
 
 ## Errors
+<a name="API_ReplaceNetworkAclEntry_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_ReplaceNetworkAclEntry_Examples"></a>
 
 ### Example
+<a name="API_ReplaceNetworkAclEntry_Example_1"></a>
 
-This example replaces the egress entry numbered `110` in the specified network ACL.
-The new rule denies egress traffic destined for any IPv4 address ( `0.0.0.0/0`) on TCP port 139.
+This example replaces the egress entry numbered `110` in the specified network ACL. The new rule denies egress traffic destined for any IPv4 address (`0.0.0.0/0`) on TCP port 139.
 
 #### Sample Request
+<a name="API_ReplaceNetworkAclEntry_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=ReplaceNetworkAclEntry
 &NetworkAclId=acl-2cb85d45
 &RuleNumber=110
@@ -150,9 +107,9 @@ https://ec2.amazonaws.com/?Action=ReplaceNetworkAclEntry
 ```
 
 #### Sample Response
+<a name="API_ReplaceNetworkAclEntry_Example_1_Response"></a>
 
 ```
-
 <ReplaceNetworkAclEntryResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
    <requestId>59dbff89-35bd-4eac-99ed-be587EXAMPLE</requestId>
    <return>true</return>
@@ -160,33 +117,18 @@ https://ec2.amazonaws.com/?Action=ReplaceNetworkAclEntry
 ```
 
 ## See Also
+<a name="API_ReplaceNetworkAclEntry_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/replacenetworkaclentry.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/replacenetworkaclentry.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/replacenetworkaclentry.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/replacenetworkaclentry.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/replacenetworkaclentry.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/replacenetworkaclentry.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/replacenetworkaclentry.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/replacenetworkaclentry.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/replacenetworkaclentry.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/replacenetworkaclentry.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReplaceNetworkAclAssociation
-
-ReplaceRoute
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/ReplaceNetworkAclEntry)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ReplaceNetworkAclEntry)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ReplaceNetworkAclEntry)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ReplaceNetworkAclEntry)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ReplaceNetworkAclEntry)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ReplaceNetworkAclEntry)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ReplaceNetworkAclEntry)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ReplaceNetworkAclEntry)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ReplaceNetworkAclEntry)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ReplaceNetworkAclEntry)
 
 All content copied from https://docs.aws.amazon.com/.

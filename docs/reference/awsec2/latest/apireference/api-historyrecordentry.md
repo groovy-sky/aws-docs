@@ -3,52 +3,35 @@ title: "HistoryRecordEntry"
 ---
 
 # HistoryRecordEntry
+<a name="API_HistoryRecordEntry"></a>
 
 Describes an event in the history of an EC2 Fleet.
 
 ## Contents
+<a name="API_HistoryRecordEntry_Contents"></a>
 
-**eventInformation**
-
+ ** eventInformation **
 Information about the event.
-
-Type: [EventInformation](api-eventinformation.md) object
-
+Type: [EventInformation](API_EventInformation.md) object
 Required: No
 
-**eventType**
-
+ ** eventType **
 The event type.
-
 Type: String
-
 Valid Values: `instance-change | fleet-change | service-error`
-
 Required: No
 
-**timestamp**
-
-The date and time of the event, in UTC format (for example,
-_YYYY_- _MM_- _DD_ T _HH_: _MM_: _SS_ Z).
-
+ ** timestamp **
+The date and time of the event, in UTC format (for example, *YYYY*-*MM*-*DD*T*HH*:*MM*:*SS*Z).
 Type: Timestamp
-
 Required: No
 
 ## See Also
+<a name="API_HistoryRecordEntry_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/historyrecordentry.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/historyrecordentry.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/historyrecordentry.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-HistoryRecord
-
-Host
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/HistoryRecordEntry)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/HistoryRecordEntry)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/HistoryRecordEntry)
 
 All content copied from https://docs.aws.amazon.com/.

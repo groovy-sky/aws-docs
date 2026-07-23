@@ -3,73 +3,49 @@ title: "AuthorizationRule"
 ---
 
 # AuthorizationRule
+<a name="API_AuthorizationRule"></a>
 
 Information about an authorization rule.
 
 ## Contents
+<a name="API_AuthorizationRule_Contents"></a>
 
-**accessAll**
-
+ ** accessAll **
 Indicates whether the authorization rule grants access to all clients.
-
 Type: Boolean
-
 Required: No
 
-**clientVpnEndpointId**
-
+ ** clientVpnEndpointId **
 The ID of the Client VPN endpoint with which the authorization rule is associated.
-
 Type: String
-
 Required: No
 
-**description**
-
+ ** description **
 A brief description of the authorization rule.
-
 Type: String
-
 Required: No
 
-**destinationCidr**
-
+ ** destinationCidr **
 The IPv4 address range, in CIDR notation, of the network to which the authorization rule applies.
-
 Type: String
-
 Required: No
 
-**groupId**
-
+ ** groupId **
 The ID of the Active Directory group to which the authorization rule grants access.
-
 Type: String
-
 Required: No
 
-**status**
-
+ ** status **
 The current state of the authorization rule.
-
-Type: [ClientVpnAuthorizationRuleStatus](api-clientvpnauthorizationrulestatus.md) object
-
+Type: [ClientVpnAuthorizationRuleStatus](API_ClientVpnAuthorizationRuleStatus.md) object
 Required: No
 
 ## See Also
+<a name="API_AuthorizationRule_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/authorizationrule.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/authorizationrule.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/authorizationrule.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AttributeValue
-
-AvailabilityZone
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AuthorizationRule)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AuthorizationRule)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AuthorizationRule)
 
 All content copied from https://docs.aws.amazon.com/.

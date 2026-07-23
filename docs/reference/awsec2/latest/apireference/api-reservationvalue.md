@@ -3,50 +3,34 @@ title: "ReservationValue"
 ---
 
 # ReservationValue
+<a name="API_ReservationValue"></a>
 
 The cost associated with the Reserved Instance.
 
 ## Contents
+<a name="API_ReservationValue_Contents"></a>
 
-**hourlyPrice**
-
+ ** hourlyPrice **
 The hourly rate of the reservation.
-
 Type: String
-
 Required: No
 
-**remainingTotalValue**
-
-The balance of the total value (the sum of remainingUpfrontValue + hourlyPrice \* number of
-hours remaining).
-
+ ** remainingTotalValue **
+The balance of the total value (the sum of remainingUpfrontValue \+ hourlyPrice \* number of hours remaining).
 Type: String
-
 Required: No
 
-**remainingUpfrontValue**
-
+ ** remainingUpfrontValue **
 The remaining upfront cost of the reservation.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_ReservationValue_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/reservationvalue.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/reservationvalue.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/reservationvalue.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReservationFleetInstanceSpecification
-
-ReservedCapacityOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ReservationValue)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ReservationValue)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ReservationValue)
 
 All content copied from https://docs.aws.amazon.com/.

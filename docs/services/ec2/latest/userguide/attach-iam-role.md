@@ -3,262 +3,206 @@ title: "Attach an IAM role to an instance"
 ---
 
 # Attach an IAM role to an instance
+<a name="attach-iam-role"></a>
 
-You can create an IAM role and attach it to an instance during or after launch.
-You can also replace or detach IAM roles.
+You can create an IAM role and attach it to an instance during or after launch. You can also replace or detach IAM roles.
 
-###### Creating and attaching an IAM role during instance launch (Recommended)
+**Creating and attaching an IAM role during instance launch (Recommended)**
 
 1. During EC2 instance launch, expand **Advanced details**.
 
-2. In the **IAM instance profile** section, choose
-    **Create new IAM role**.
+1. In the **IAM instance profile** section, choose **Create new IAM role**.
 
-3. An inline role creation form opens, allowing you to:
+1. An inline role creation form opens, allowing you to:
+   + Specify **Role name** (for example, `EC2-S3-Access-Role`)
+   + Define permissions by selecting AWS managed policies or creating custom policies for your instance
 
-- Specify **Role name** (for example, `EC2-S3-Access-Role`)
+     For example, to grant S3 access, select the `AmazonS3ReadOnlyAccess` managed policy
+   + Review the trust policy that allows `ec2.amazonaws.com` to assume the role
+   + Add optional tags for metadata
 
-- Define permissions by selecting AWS managed policies or creating custom
-policies for your instance
+1. Choose **Create role**.
 
-For example, to grant S3 access, select the `AmazonS3ReadOnlyAccess`
-managed policy
+   The newly created role is automatically selected and will be attached to your instance via an instance profile when the instance launches.
 
-- Review the trust policy that allows `ec2.amazonaws.com` to assume the role
+**Note**
+When you create a role using the console during instance launch, an instance profile with the same name as the role is automatically created. The instance profile is a container that passes IAM role information to the instance at launch.
 
-- Add optional tags for metadata
+**Important**
+You can only attach one IAM role to an instance, but you can attach the same role to many instances.
+Associate least privilege IAM policies that restrict access to the specific API calls the application requires.
 
-4. Choose **Create role**.
+For more information about creating and using IAM roles, see [Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) in the *IAM User Guide*.
 
-The newly created role is automatically selected and will be attached to your
-    instance via an instance profile when the instance launches.
+**Attaching an existing IAM role during instance launch**
+To attach an existing IAM role to an instance at launch using the Amazon EC2 console, expand **Advanced details**. For **IAM instance profile**, select the IAM role from the dropdown list.
 
-###### Note
+**Note**
+If you created your IAM role using the IAM console, the instance profile was created for you and given the same name as the role. If you created your IAM role using the AWS CLI, API, or an AWS SDK, you might have given your instance profile a different name than the role.
 
-When you create a role using the console during instance launch, an instance
-profile with the same name as the role is automatically created. The instance
-profile is a container that passes IAM role information to the instance at launch.
+You can attach an IAM role to an instance that is running or stopped. If the instance already has an IAM role attached, you must replace it with the new IAM role.
 
-###### Important
+------
+#### [ Console ]<a name="attach-iam-role-console"></a>
 
-- You can only attach one IAM role to an instance, but you can attach the
-same role to many instances.
+**To attach an IAM role to an instance**
 
-- Associate least privilege IAM policies that restrict access to the specific
-API calls the application requires.
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-For more information about creating and using IAM roles, see
-[Roles](../../../iam/latest/userguide/id-roles.md)
-in the _IAM User Guide_.
+1. In the navigation pane, choose **Instances**.
 
-###### Attaching an existing IAM role during instance launch
+1. Select the instance.
 
-To attach an existing IAM role to an instance at launch using the Amazon EC2 console,
-expand **Advanced details**. For **IAM instance profile**,
-select the IAM role from the dropdown list.
+1. Choose **Actions**, **Security**, **Modify IAM role**.
 
-###### Note
+1. For **IAM role**, select the IAM instance profile.
 
-If you created your IAM role using the IAM console, the instance
-profile was created for you and given the same name as the role. If
-you created your IAM role using the AWS CLI, API, or an AWS SDK,
-you might have given your instance profile a different name than
-the role.
+1. Choose **Update IAM role**.
 
-You can attach an IAM role to an instance that is running or stopped. If the
-instance already has an IAM role attached, you must replace it with the new
-IAM role.
+------
+#### [ AWS CLI ]
+<a name="attach-iam-role-instance-cli"></a>
+**To attach an IAM role to an instance**
+Use the [associate-iam-instance-profile](https://docs.aws.amazon.com/cli/latest/reference/ec2/associate-iam-instance-profile.html) command to attach the IAM role to the instance. When you specify the instance profile, you can use either the Amazon Resource Name (ARN) of the instance profile, or you can use its name.
 
-Console
-
-###### To attach an IAM role to an instance
-
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
-
-2. In the navigation pane, choose
-    **Instances**.
-
-3. Select the instance.
-
-4. Choose **Actions**, **Security**,
-    **Modify IAM role**.
-
-5. For **IAM role**, select the IAM instance
-    profile.
-
-6. Choose **Update IAM role**.
-
-AWS CLI
-
-###### To attach an IAM role to an instance
-
-Use the [associate-iam-instance-profile](../../../cli/latest/reference/ec2/associate-iam-instance-profile.md) command to attach the IAM
-role to the instance. When you specify the instance profile, you can use
-either the Amazon Resource Name (ARN) of the instance profile, or you
-can use its name.
-
-```nohighlight
-
+```
 aws ec2 associate-iam-instance-profile \
-    --instance-id i-1234567890abcdef0 \
-    --iam-instance-profile Name="TestRole-1"
+    --instance-id {{i-1234567890abcdef0}} \
+    --iam-instance-profile Name="{{TestRole-1}}"
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To attach an IAM role to an instance
+**To attach an IAM role to an instance**
+Use the [Register-EC2IamInstanceProfile](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2IamInstanceProfile.html) cmdlet.
 
-Use the [Register-EC2IamInstanceProfile](../../../powershell/latest/reference/items/register-ec2iaminstanceprofile.md) cmdlet.
-
-```powershell
-
+```
 Register-EC2IamInstanceProfile `
-    -InstanceId i-1234567890abcdef0 `
-    -IamInstanceProfile_Name TestRole-1
+    -InstanceId {{i-1234567890abcdef0}} `
+    -IamInstanceProfile_Name {{TestRole-1}}
 ```
 
-To replace the IAM role on an instance that already has an attached IAM role, the
-instance must be running. You can do this if you want to change the IAM role for
-an instance without detaching the existing one first. For example, you can do this
-to ensure that API actions performed by applications running on the instance are not
-interrupted.
+------
 
-Console
+To replace the IAM role on an instance that already has an attached IAM role, the instance must be running. You can do this if you want to change the IAM role for an instance without detaching the existing one first. For example, you can do this to ensure that API actions performed by applications running on the instance are not interrupted.
 
-###### To replace an IAM role for an instance
+------
+#### [ Console ]<a name="replace-iam-role-console"></a>
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+**To replace an IAM role for an instance**
 
-2. In the navigation pane, choose
-    **Instances**.
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-3. Select the instance.
+1. In the navigation pane, choose **Instances**.
 
-4. Choose **Actions**, **Security**,
-    **Modify IAM role**.
+1. Select the instance.
 
-5. For **IAM role**, select the IAM instance
-    profile.
+1. Choose **Actions**, **Security**, **Modify IAM role**.
 
-6. Choose **Update IAM role**.
+1. For **IAM role**, select the IAM instance profile.
 
-AWS CLI
+1. Choose **Update IAM role**.
 
-###### To replace an IAM role for an instance
+------
+#### [ AWS CLI ]<a name="replace-iam-role-cli"></a>
 
-1. If required, use the [describe-iam-instance-profile-associations](../../../cli/latest/reference/ec2/describe-iam-instance-profile-associations.md) command to get the association ID.
+**To replace an IAM role for an instance**
 
-```nohighlight
+1. If required, use the [describe-iam-instance-profile-associations](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-iam-instance-profile-associations.html) command to get the association ID.
 
-aws ec2 describe-iam-instance-profile-associations \
-       --filters Name=instance-id,Values=i-1234567890abcdef0 \
+   ```
+   aws ec2 describe-iam-instance-profile-associations \
+       --filters Name=instance-id,Values={{i-1234567890abcdef0}} \
        --query IamInstanceProfileAssociations.AssociationId
-```
+   ```
 
-2. Use the [replace-iam-instance-profile-association](../../../cli/latest/reference/ec2/replace-iam-instance-profile-association.md) command. Specify the
-    association ID for the existing instance profile and the ARN or name
-    of the new instance profile.
+1. Use the [replace-iam-instance-profile-association](https://docs.aws.amazon.com/cli/latest/reference/ec2/replace-iam-instance-profile-association.html) command. Specify the association ID for the existing instance profile and the ARN or name of the new instance profile.
 
-```nohighlight
+   ```
+   aws ec2 replace-iam-instance-profile-association \
+       --association-id {{iip-assoc-0044d817db6c0a4ba}} \
+       --iam-instance-profile Name="{{TestRole-2}}"
+   ```
 
-aws ec2 replace-iam-instance-profile-association \
-       --association-id iip-assoc-0044d817db6c0a4ba \
-       --iam-instance-profile Name="TestRole-2"
-```
+------
+#### [ PowerShell ]
 
-PowerShell
+**To replace an IAM role for an instance**
 
-###### To replace an IAM role for an instance
+1. If required, use the [Get-EC2IamInstanceProfileAssociation](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IamInstanceProfileAssociation.html) cmdlet to get the association ID.
 
-1. If required, use the [Get-EC2IamInstanceProfileAssociation](../../../powershell/latest/reference/items/get-ec2iaminstanceprofileassociation.md) cmdlet to get the association ID.
+   ```
+   (Get-EC2IamInstanceProfileAssociation -Filter @{Name="instance-id"; Values="{{i-0636508011d8e966a}}"}).AssociationId
+   ```
 
-```powershell
+1. Use the [Set-EC2IamInstanceProfileAssociation](https://docs.aws.amazon.com/powershell/latest/reference/items/Set-EC2IamInstanceProfileAssociation.html) cmdlet. Specify the association ID for the existing instance profile and the ARN or name of the new instance profile.
 
-(Get-EC2IamInstanceProfileAssociation -Filter @{Name="instance-id"; Values="i-0636508011d8e966a"}).AssociationId
-```
+   ```
+   Set-EC2IamInstanceProfileAssociation `
+       -AssociationId {{iip-assoc-0044d817db6c0a4ba}} `
+       -IamInstanceProfile_Name {{TestRole-2}}
+   ```
 
-2. Use the [Set-EC2IamInstanceProfileAssociation](../../../powershell/latest/reference/items/set-ec2iaminstanceprofileassociation.md) cmdlet. Specify the
-    association ID for the existing instance profile and the ARN or name
-    of the new instance profile.
-
-```powershell
-
-Set-EC2IamInstanceProfileAssociation `
-       -AssociationId iip-assoc-0044d817db6c0a4ba `
-       -IamInstanceProfile_Name TestRole-2
-```
+------
 
 You can detach an IAM role from an instance that is running or stopped.
 
-Console
+------
+#### [ Console ]<a name="detach-iam-role-console"></a>
 
-###### To detach an IAM role from an instance
+**To detach an IAM role from an instance**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose
-    **Instances**.
+1. In the navigation pane, choose **Instances**.
 
-3. Select the instance.
+1. Select the instance.
 
-4. Choose **Actions**, **Security**,
-    **Modify IAM role**.
+1. Choose **Actions**, **Security**, **Modify IAM role**.
 
-5. For **IAM role**, choose **No IAM**
-**Role**.
+1. For **IAM role**, choose **No IAM Role**.
 
-6. Choose **Update IAM role**.
+1. Choose **Update IAM role**.
 
-7. When promoted for confirmation, enter **Detach**,
-    and then choose **Detach**.
+1. When promoted for confirmation, enter **Detach**, and then choose **Detach**.
 
-AWS CLI
+------
+#### [ AWS CLI ]<a name="detach-iam-role-cli"></a>
 
-###### To detach an IAM role from an instance
+**To detach an IAM role from an instance**
 
-1. If required, use [describe-iam-instance-profile-associations](../../../cli/latest/reference/ec2/describe-iam-instance-profile-associations.md) to get the
-    association ID for the IAM instance profile to detach.
+1. If required, use [describe-iam-instance-profile-associations](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-iam-instance-profile-associations.html) to get the association ID for the IAM instance profile to detach.
 
-```nohighlight
-
-aws ec2 describe-iam-instance-profile-associations \
-       --filters Name=instance-id,Values=i-1234567890abcdef0 \
+   ```
+   aws ec2 describe-iam-instance-profile-associations \
+       --filters Name=instance-id,Values={{i-1234567890abcdef0}} \
        --query IamInstanceProfileAssociations.AssociationId
-```
+   ```
 
-2. Use the [disassociate-iam-instance-profile](../../../cli/latest/reference/ec2/disassociate-iam-instance-profile.md) command.
+1. Use the [disassociate-iam-instance-profile](https://docs.aws.amazon.com/cli/latest/reference/ec2/disassociate-iam-instance-profile.html) command.
 
-```nohighlight
+   ```
+   aws ec2 disassociate-iam-instance-profile --association-id {{iip-assoc-0044d817db6c0a4ba}}
+   ```
 
-aws ec2 disassociate-iam-instance-profile --association-id iip-assoc-0044d817db6c0a4ba
-```
+------
+#### [ PowerShell ]
 
-PowerShell
+**To detach an IAM role from an instance**
 
-###### To detach an IAM role from an instance
+1. If required, use [Get-EC2IamInstanceProfileAssociation](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IamInstanceProfileAssociation.html) to get the association ID for the IAM instance profile to detach.
 
-1. If required, use [Get-EC2IamInstanceProfileAssociation](../../../powershell/latest/reference/items/get-ec2iaminstanceprofileassociation.md) to get the association
-    ID for the IAM instance profile to detach.
+   ```
+   (Get-EC2IamInstanceProfileAssociation -Filter @{Name="instance-id"; Values="i-0636508011d8e966a"}).AssociationId
+   ```
 
-```powershell
+1. Use the [Unregister-EC2IamInstanceProfile](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2IamInstanceProfile.html) cmdlet.
 
-(Get-EC2IamInstanceProfileAssociation -Filter @{Name="instance-id"; Values="i-0636508011d8e966a"}).AssociationId
-```
+   ```
+   Unregister-EC2IamInstanceProfile -AssociationId {{iip-assoc-0044d817db6c0a4ba}}
+   ```
 
-2. Use the [Unregister-EC2IamInstanceProfile](../../../powershell/latest/reference/items/unregister-ec2iaminstanceprofile.md) cmdlet.
-
-```powershell
-
-Unregister-EC2IamInstanceProfile -AssociationId iip-assoc-0044d817db6c0a4ba
-```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Permissions to attach a role to an instance
-
-Update management
+------
 
 All content copied from https://docs.aws.amazon.com/.

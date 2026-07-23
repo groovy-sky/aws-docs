@@ -3,34 +3,24 @@ title: "Phase1IntegrityAlgorithmsRequestListValue"
 ---
 
 # Phase1IntegrityAlgorithmsRequestListValue
+<a name="API_Phase1IntegrityAlgorithmsRequestListValue"></a>
 
-Specifies the integrity algorithm for the VPN tunnel for phase 1 IKE
-negotiations.
+Specifies the integrity algorithm for the VPN tunnel for phase 1 IKE negotiations.
 
 ## Contents
+<a name="API_Phase1IntegrityAlgorithmsRequestListValue_Contents"></a>
 
-**Value**
-
+ ** Value **
 The value for the integrity algorithm.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_Phase1IntegrityAlgorithmsRequestListValue_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/phase1integrityalgorithmsrequestlistvalue.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/phase1integrityalgorithmsrequestlistvalue.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/phase1integrityalgorithmsrequestlistvalue.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Phase1IntegrityAlgorithmsListValue
-
-Phase2DHGroupNumbersListValue
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Phase1IntegrityAlgorithmsRequestListValue)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Phase1IntegrityAlgorithmsRequestListValue)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Phase1IntegrityAlgorithmsRequestListValue)
 
 All content copied from https://docs.aws.amazon.com/.

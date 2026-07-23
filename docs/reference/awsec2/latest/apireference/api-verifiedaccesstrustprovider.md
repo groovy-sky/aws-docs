@@ -3,135 +3,87 @@ title: "VerifiedAccessTrustProvider"
 ---
 
 # VerifiedAccessTrustProvider
+<a name="API_VerifiedAccessTrustProvider"></a>
 
 Describes a Verified Access trust provider.
 
 ## Contents
+<a name="API_VerifiedAccessTrustProvider_Contents"></a>
 
-**creationTime**
-
+ ** creationTime **
 The creation time.
-
 Type: String
-
 Required: No
 
-**description**
-
+ ** description **
 A description for the AWS Verified Access trust provider.
-
 Type: String
-
 Required: No
 
-**deviceOptions**
-
+ ** deviceOptions **
 The options for device-identity trust provider.
-
-Type: [DeviceOptions](api-deviceoptions.md) object
-
+Type: [DeviceOptions](API_DeviceOptions.md) object
 Required: No
 
-**deviceTrustProviderType**
-
+ ** deviceTrustProviderType **
 The type of device-based trust provider.
-
 Type: String
-
 Valid Values: `jamf | crowdstrike | jumpcloud`
-
 Required: No
 
-**lastUpdatedTime**
-
+ ** lastUpdatedTime **
 The last updated time.
-
 Type: String
-
 Required: No
 
-**nativeApplicationOidcOptions**
-
+ ** nativeApplicationOidcOptions **
 The OpenID Connect (OIDC) options.
-
-Type: [NativeApplicationOidcOptions](api-nativeapplicationoidcoptions.md) object
-
+Type: [NativeApplicationOidcOptions](API_NativeApplicationOidcOptions.md) object
 Required: No
 
-**oidcOptions**
-
+ ** oidcOptions **
 The options for an OpenID Connect-compatible user-identity trust provider.
-
-Type: [OidcOptions](api-oidcoptions.md) object
-
+Type: [OidcOptions](API_OidcOptions.md) object
 Required: No
 
-**policyReferenceName**
-
+ ** policyReferenceName **
 The identifier to be used when working with policy rules.
-
 Type: String
-
 Required: No
 
-**sseSpecification**
-
+ ** sseSpecification **
 The options in use for server side encryption.
-
-Type: [VerifiedAccessSseSpecificationResponse](api-verifiedaccessssespecificationresponse.md) object
-
+Type: [VerifiedAccessSseSpecificationResponse](API_VerifiedAccessSseSpecificationResponse.md) object
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 The tags.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
-**trustProviderType**
-
+ ** trustProviderType **
 The type of Verified Access trust provider.
-
 Type: String
-
 Valid Values: `user | device`
-
 Required: No
 
-**userTrustProviderType**
-
+ ** userTrustProviderType **
 The type of user-based trust provider.
-
 Type: String
-
 Valid Values: `iam-identity-center | oidc`
-
 Required: No
 
-**verifiedAccessTrustProviderId**
-
+ ** verifiedAccessTrustProviderId **
 The ID of the AWS Verified Access trust provider.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_VerifiedAccessTrustProvider_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/verifiedaccesstrustprovider.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/verifiedaccesstrustprovider.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccesstrustprovider.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VerifiedAccessSseSpecificationResponse
-
-VerifiedAccessTrustProviderCondensed
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VerifiedAccessTrustProvider)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VerifiedAccessTrustProvider)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VerifiedAccessTrustProvider)
 
 All content copied from https://docs.aws.amazon.com/.

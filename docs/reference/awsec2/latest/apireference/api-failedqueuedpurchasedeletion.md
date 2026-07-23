@@ -3,41 +3,29 @@ title: "FailedQueuedPurchaseDeletion"
 ---
 
 # FailedQueuedPurchaseDeletion
+<a name="API_FailedQueuedPurchaseDeletion"></a>
 
 Describes a Reserved Instance whose queued purchase was not deleted.
 
 ## Contents
+<a name="API_FailedQueuedPurchaseDeletion_Contents"></a>
 
-**error**
-
+ ** error **
 The error.
-
-Type: [DeleteQueuedReservedInstancesError](api-deletequeuedreservedinstanceserror.md) object
-
+Type: [DeleteQueuedReservedInstancesError](API_DeleteQueuedReservedInstancesError.md) object
 Required: No
 
-**reservedInstancesId**
-
+ ** reservedInstancesId **
 The ID of the Reserved Instance.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_FailedQueuedPurchaseDeletion_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/failedqueuedpurchasedeletion.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/failedqueuedpurchasedeletion.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/failedqueuedpurchasedeletion.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FailedCapacityReservationFleetCancellationResult
-
-FastLaunchLaunchTemplateSpecificationRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/FailedQueuedPurchaseDeletion)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/FailedQueuedPurchaseDeletion)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/FailedQueuedPurchaseDeletion)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,171 +3,112 @@ title: "ModifyVpcEncryptionControl"
 ---
 
 # ModifyVpcEncryptionControl
+<a name="API_ModifyVpcEncryptionControl"></a>
 
 Modifies the encryption control configuration for a VPC. You can update the encryption mode and exclusion settings for various gateway types and peering connections.
 
-For more information, see [Enforce VPC encryption in transit](../../../../services/vpc/latest/userguide/vpc-encryption-controls.md) in the _Amazon VPC User Guide_.
+For more information, see [Enforce VPC encryption in transit](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html) in the *Amazon VPC User Guide*.
 
 ## Request Parameters
+<a name="API_ModifyVpcEncryptionControl_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
-Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**EgressOnlyInternetGatewayExclusion**
-
+ **EgressOnlyInternetGatewayExclusion**
 Specifies whether to exclude egress-only internet gateway traffic from encryption enforcement.
-
 Type: String
-
 Valid Values: `enable | disable`
-
 Required: No
 
-**ElasticFileSystemExclusion**
-
+ **ElasticFileSystemExclusion**
 Specifies whether to exclude Elastic File System traffic from encryption enforcement.
-
 Type: String
-
 Valid Values: `enable | disable`
-
 Required: No
 
-**InternetGatewayExclusion**
-
+ **InternetGatewayExclusion**
 Specifies whether to exclude internet gateway traffic from encryption enforcement.
-
 Type: String
-
 Valid Values: `enable | disable`
-
 Required: No
 
-**LambdaExclusion**
-
+ **LambdaExclusion**
 Specifies whether to exclude Lambda function traffic from encryption enforcement.
-
 Type: String
-
 Valid Values: `enable | disable`
-
 Required: No
 
-**Mode**
-
+ **Mode**
 The encryption mode for the VPC Encryption Control configuration.
-
 Type: String
-
 Valid Values: `monitor | enforce`
-
 Required: No
 
-**NatGatewayExclusion**
-
+ **NatGatewayExclusion**
 Specifies whether to exclude NAT gateway traffic from encryption enforcement.
-
 Type: String
-
 Valid Values: `enable | disable`
-
 Required: No
 
-**VirtualPrivateGatewayExclusion**
-
+ **VirtualPrivateGatewayExclusion**
 Specifies whether to exclude virtual private gateway traffic from encryption enforcement.
-
 Type: String
-
 Valid Values: `enable | disable`
-
 Required: No
 
-**VpcEncryptionControlId**
-
+ **VpcEncryptionControlId**
 The ID of the VPC Encryption Control resource to modify.
-
 Type: String
-
 Required: Yes
 
-**VpcLatticeExclusion**
-
+ **VpcLatticeExclusion**
 Specifies whether to exclude VPC Lattice traffic from encryption enforcement.
-
 Type: String
-
 Valid Values: `enable | disable`
-
 Required: No
 
-**VpcPeeringExclusion**
-
+ **VpcPeeringExclusion**
 Specifies whether to exclude VPC peering connection traffic from encryption enforcement.
-
 Type: String
-
 Valid Values: `enable | disable`
-
 Required: No
 
 ## Response Elements
+<a name="API_ModifyVpcEncryptionControl_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**vpcEncryptionControl**
-
+ **vpcEncryptionControl**
 Information about the VPC Encryption Control configuration.
-
-Type: [VpcEncryptionControl](api-vpcencryptioncontrol.md) object
+Type: [VpcEncryptionControl](API_VpcEncryptionControl.md) object
 
 ## Errors
+<a name="API_ModifyVpcEncryptionControl_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## See Also
+<a name="API_ModifyVpcEncryptionControl_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/modifyvpcencryptioncontrol.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/modifyvpcencryptioncontrol.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyvpcencryptioncontrol.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyvpcencryptioncontrol.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyvpcencryptioncontrol.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyvpcencryptioncontrol.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyvpcencryptioncontrol.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyvpcencryptioncontrol.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/modifyvpcencryptioncontrol.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyvpcencryptioncontrol.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModifyVpcBlockPublicAccessOptions
-
-ModifyVpcEndpoint
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/ModifyVpcEncryptionControl)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyVpcEncryptionControl)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyVpcEncryptionControl)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyVpcEncryptionControl)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyVpcEncryptionControl)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyVpcEncryptionControl)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyVpcEncryptionControl)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyVpcEncryptionControl)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyVpcEncryptionControl)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyVpcEncryptionControl)
 
 All content copied from https://docs.aws.amazon.com/.

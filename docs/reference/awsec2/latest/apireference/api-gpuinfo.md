@@ -3,41 +3,29 @@ title: "GpuInfo"
 ---
 
 # GpuInfo
+<a name="API_GpuInfo"></a>
 
 Describes the GPU accelerators for the instance type.
 
 ## Contents
+<a name="API_GpuInfo_Contents"></a>
 
-**Gpus.N**
-
+ ** Gpus.N **
 Describes the GPU accelerators for the instance type.
-
-Type: Array of [GpuDeviceInfo](api-gpudeviceinfo.md) objects
-
+Type: Array of [GpuDeviceInfo](API_GpuDeviceInfo.md) objects
 Required: No
 
-**totalGpuMemoryInMiB**
-
+ ** totalGpuMemoryInMiB **
 The total size of the memory for the GPU accelerators for the instance type, in MiB.
-
 Type: Integer
-
 Required: No
 
 ## See Also
+<a name="API_GpuInfo_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/gpuinfo.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/gpuinfo.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/gpuinfo.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-GpuDeviceMemoryInfo
-
-GroupIdentifier
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/GpuInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/GpuInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/GpuInfo)
 
 All content copied from https://docs.aws.amazon.com/.

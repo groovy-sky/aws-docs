@@ -3,46 +3,32 @@ title: "InferenceAcceleratorInfo"
 ---
 
 # InferenceAcceleratorInfo
+<a name="API_InferenceAcceleratorInfo"></a>
 
-###### Note
-
+**Note**
 Amazon Elastic Inference is no longer available.
 
 Describes the Inference accelerators for the instance type.
 
 ## Contents
+<a name="API_InferenceAcceleratorInfo_Contents"></a>
 
-**Accelerators.N**
-
+ ** Accelerators.N **
 Describes the Inference accelerators for the instance type.
-
-Type: Array of [InferenceDeviceInfo](api-inferencedeviceinfo.md) objects
-
+Type: Array of [InferenceDeviceInfo](API_InferenceDeviceInfo.md) objects
 Required: No
 
-**totalInferenceMemoryInMiB**
-
-The total size of the memory for the inference accelerators for the instance type, in
-MiB.
-
+ ** totalInferenceMemoryInMiB **
+The total size of the memory for the inference accelerators for the instance type, in MiB.
 Type: Integer
-
 Required: No
 
 ## See Also
+<a name="API_InferenceAcceleratorInfo_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/inferenceacceleratorinfo.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/inferenceacceleratorinfo.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/inferenceacceleratorinfo.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImportVolumeTaskDetails
-
-InferenceDeviceInfo
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InferenceAcceleratorInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InferenceAcceleratorInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InferenceAcceleratorInfo)
 
 All content copied from https://docs.aws.amazon.com/.

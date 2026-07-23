@@ -3,131 +3,97 @@ title: "DescribeVpcEndpoints"
 ---
 
 # DescribeVpcEndpoints
+<a name="API_DescribeVpcEndpoints"></a>
 
-Describes your VPC endpoints. The default is to describe all your VPC endpoints.
-Alternatively, you can specify specific VPC endpoint IDs or filter the results to
-include only the VPC endpoints that match specific criteria.
+Describes your VPC endpoints. The default is to describe all your VPC endpoints. Alternatively, you can specify specific VPC endpoint IDs or filter the results to include only the VPC endpoints that match specific criteria.
 
 ## Request Parameters
+<a name="API_DescribeVpcEndpoints_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
-Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**Filter.N**
-
+ **Filter.N**
 The filters.
-
-- `ip-address-type` \- The IP address type ( `ipv4` \| `ipv6`).
-
-- `service-name` \- The name of the service.
-
-- `service-region` \- The Region of the service.
-
-- `tag`:<key> - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key `Owner` and the value `TeamA`, specify `tag:Owner` for the filter name and `TeamA` for the filter value.
-
-- `tag-key` \- The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.
-
-- `vpc-id` \- The ID of the VPC in which the endpoint resides.
-
-- `vpc-endpoint-id` \- The ID of the endpoint.
-
-- `vpc-endpoint-state` \- The state of the endpoint
-( `pendingAcceptance` \| `pending` \|
-`available` \| `deleting` \| `deleted` \|
-`rejected` \| `failed`).
-
-- `vpc-endpoint-type` \- The type of VPC endpoint ( `Interface` \|
-`Gateway` \| `GatewayLoadBalancer` \| `Resource` \|
-`ServiceNetwork`).
-
-Type: Array of [Filter](api-filter.md) objects
-
++  `ip-address-type` - The IP address type (`ipv4` \| `ipv6`).
++  `service-name` - The name of the service.
++  `service-region` - The Region of the service.
++  `tag`:<key> - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key `Owner` and the value `TeamA`, specify `tag:Owner` for the filter name and `TeamA` for the filter value.
++  `tag-key` - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.
++  `vpc-id` - The ID of the VPC in which the endpoint resides.
++  `vpc-endpoint-id` - The ID of the endpoint.
++  `vpc-endpoint-state` - The state of the endpoint (`pendingAcceptance` \| `pending` \| `available` \| `deleting` \| `deleted` \| `rejected` \| `failed`).
++  `vpc-endpoint-type` - The type of VPC endpoint (`Interface` \| `Gateway` \| `GatewayLoadBalancer` \| `Resource` \| `ServiceNetwork`).
+Type: Array of [Filter](API_Filter.md) objects
 Required: No
 
-**MaxResults**
-
+ **MaxResults**
 The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.
-
 Constraint: If the value is greater than 1,000, we return only 1,000 items.
-
 Type: Integer
-
 Required: No
 
-**NextToken**
-
+ **NextToken**
 The token for the next set of items to return. (You received this token from a prior call.)
-
 Type: String
-
 Required: No
 
-**VpcEndpointId.N**
-
+ **VpcEndpointId.N**
 The IDs of the VPC endpoints.
-
 Type: Array of strings
-
 Required: No
 
 ## Response Elements
+<a name="API_DescribeVpcEndpoints_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**nextToken**
-
+ **nextToken**
 The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
-
 Type: String
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**vpcEndpointSet**
-
+ **vpcEndpointSet**
 Information about the VPC endpoints.
-
-Type: Array of [VpcEndpoint](api-vpcendpoint.md) objects
+Type: Array of [VpcEndpoint](API_VpcEndpoint.md) objects
 
 ## Errors
+<a name="API_DescribeVpcEndpoints_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_DescribeVpcEndpoints_Examples"></a>
 
 ### Example
+<a name="API_DescribeVpcEndpoints_Example_1"></a>
 
 This example describes all of your endpoints.
 
 #### Sample Request
+<a name="API_DescribeVpcEndpoints_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=DescribeVpcEndpoints
 &AUTHPARAMS
 ```
 
 #### Sample Response
+<a name="API_DescribeVpcEndpoints_Example_1_Response"></a>
 
 ```
-
 <DescribeVpcEndpointsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
     <requestId>8d3e7656-3328-451d-8c86-7156example</requestId>
     <vpcEndpointSet>
         <item>
-            <policyDocument>{"Version":"2008-10-17","Statement":[{"Effect":"Allow","Principal":"*","Action":"*","Resource":"*"}]}</policyDocument>
+            <policyDocument>{"Version":"2008-10-17",		 	 	 "Statement":[{"Effect":"Allow","Principal":"*","Action":"*","Resource":"*"}]}</policyDocument>
             <routeTableIdSet>
                 <item>rtb-3d560345</item>
             </routeTableIdSet>
@@ -216,33 +182,18 @@ https://ec2.amazonaws.com/?Action=DescribeVpcEndpoints
 ```
 
 ## See Also
+<a name="API_DescribeVpcEndpoints_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/describevpcendpoints.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/describevpcendpoints.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describevpcendpoints.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describevpcendpoints.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describevpcendpoints.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describevpcendpoints.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describevpcendpoints.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describevpcendpoints.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/describevpcendpoints.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describevpcendpoints.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeVpcEndpointConnections
-
-DescribeVpcEndpointServiceConfigurations
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/DescribeVpcEndpoints)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeVpcEndpoints)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeVpcEndpoints)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeVpcEndpoints)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeVpcEndpoints)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeVpcEndpoints)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeVpcEndpoints)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeVpcEndpoints)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeVpcEndpoints)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeVpcEndpoints)
 
 All content copied from https://docs.aws.amazon.com/.

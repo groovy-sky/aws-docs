@@ -3,35 +3,25 @@ title: "CreditSpecificationRequest"
 ---
 
 # CreditSpecificationRequest
+<a name="API_CreditSpecificationRequest"></a>
 
 The credit option for CPU usage of a T instance.
 
 ## Contents
+<a name="API_CreditSpecificationRequest_Contents"></a>
 
-**CpuCredits**
-
+ ** CpuCredits **
 The credit option for CPU usage of a T instance.
-
 Valid values: `standard` \| `unlimited`
-
 Type: String
-
 Required: Yes
 
 ## See Also
+<a name="API_CreditSpecificationRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/creditspecificationrequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/creditspecificationrequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/creditspecificationrequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CreditSpecification
-
-CustomerGateway
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreditSpecificationRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreditSpecificationRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreditSpecificationRequest)
 
 All content copied from https://docs.aws.amazon.com/.

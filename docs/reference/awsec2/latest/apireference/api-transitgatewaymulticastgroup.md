@@ -3,119 +3,77 @@ title: "TransitGatewayMulticastGroup"
 ---
 
 # TransitGatewayMulticastGroup
+<a name="API_TransitGatewayMulticastGroup"></a>
 
 Describes the transit gateway multicast group resources.
 
 ## Contents
+<a name="API_TransitGatewayMulticastGroup_Contents"></a>
 
-**groupIpAddress**
-
+ ** groupIpAddress **
 The IP address assigned to the transit gateway multicast group.
-
 Type: String
-
 Required: No
 
-**groupMember**
-
+ ** groupMember **
 Indicates that the resource is a transit gateway multicast group member.
-
 Type: Boolean
-
 Required: No
 
-**groupSource**
-
+ ** groupSource **
 Indicates that the resource is a transit gateway multicast group member.
-
 Type: Boolean
-
 Required: No
 
-**memberType**
-
+ ** memberType **
 The member type (for example, `static`).
-
 Type: String
-
 Valid Values: `static | igmp`
-
 Required: No
 
-**networkInterfaceId**
-
+ ** networkInterfaceId **
 The ID of the transit gateway attachment.
-
 Type: String
-
 Required: No
 
-**resourceId**
-
+ ** resourceId **
 The ID of the resource.
-
 Type: String
-
 Required: No
 
-**resourceOwnerId**
-
-The ID of the AWS account that owns the transit gateway multicast domain group resource.
-
+ ** resourceOwnerId **
+ The ID of the AWS account that owns the transit gateway multicast domain group resource.
 Type: String
-
 Required: No
 
-**resourceType**
-
+ ** resourceType **
 The type of resource, for example a VPC attachment.
-
 Type: String
-
-Valid Values: `vpc | vpn | vpn-concentrator | direct-connect-gateway | connect | peering | tgw-peering`
-
+Valid Values: `vpc | vpn | vpn-concentrator | direct-connect-gateway | connect | peering | tgw-peering | client-vpn`
 Required: No
 
-**sourceType**
-
+ ** sourceType **
 The source type.
-
 Type: String
-
 Valid Values: `static | igmp`
-
 Required: No
 
-**subnetId**
-
+ ** subnetId **
 The ID of the subnet.
-
 Type: String
-
 Required: No
 
-**transitGatewayAttachmentId**
-
+ ** transitGatewayAttachmentId **
 The ID of the transit gateway attachment.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_TransitGatewayMulticastGroup_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/transitgatewaymulticastgroup.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/transitgatewaymulticastgroup.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/transitgatewaymulticastgroup.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitGatewayMulticastDomainOptions
-
-TransitGatewayMulticastRegisteredGroupMembers
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TransitGatewayMulticastGroup)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TransitGatewayMulticastGroup)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TransitGatewayMulticastGroup)
 
 All content copied from https://docs.aws.amazon.com/.

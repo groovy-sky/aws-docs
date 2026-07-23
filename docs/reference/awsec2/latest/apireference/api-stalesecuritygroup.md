@@ -3,73 +3,49 @@ title: "StaleSecurityGroup"
 ---
 
 # StaleSecurityGroup
+<a name="API_StaleSecurityGroup"></a>
 
 Describes a stale security group (a security group that contains stale rules).
 
 ## Contents
+<a name="API_StaleSecurityGroup_Contents"></a>
 
-**description**
-
+ ** description **
 The description of the security group.
-
 Type: String
-
 Required: No
 
-**groupId**
-
+ ** groupId **
 The ID of the security group.
-
 Type: String
-
 Required: No
 
-**groupName**
-
+ ** groupName **
 The name of the security group.
-
 Type: String
-
 Required: No
 
-**StaleIpPermissions.N**
-
+ ** StaleIpPermissions.N **
 Information about the stale inbound rules in the security group.
-
-Type: Array of [StaleIpPermission](api-staleippermission.md) objects
-
+Type: Array of [StaleIpPermission](API_StaleIpPermission.md) objects
 Required: No
 
-**StaleIpPermissionsEgress.N**
-
+ ** StaleIpPermissionsEgress.N **
 Information about the stale outbound rules in the security group.
-
-Type: Array of [StaleIpPermission](api-staleippermission.md) objects
-
+Type: Array of [StaleIpPermission](API_StaleIpPermission.md) objects
 Required: No
 
-**vpcId**
-
+ ** vpcId **
 The ID of the VPC for the security group.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_StaleSecurityGroup_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/stalesecuritygroup.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/stalesecuritygroup.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/stalesecuritygroup.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StaleIpPermission
-
-StateReason
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/StaleSecurityGroup)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/StaleSecurityGroup)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/StaleSecurityGroup)
 
 All content copied from https://docs.aws.amazon.com/.

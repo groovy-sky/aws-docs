@@ -3,42 +3,29 @@ title: "CapacityReservationTarget"
 ---
 
 # CapacityReservationTarget
+<a name="API_CapacityReservationTarget"></a>
 
 Describes a target Capacity Reservation or Capacity Reservation group.
 
 ## Contents
+<a name="API_CapacityReservationTarget_Contents"></a>
 
-**CapacityReservationId**
-
+ ** CapacityReservationId **
 The ID of the Capacity Reservation in which to run the instance.
-
 Type: String
-
 Required: No
 
-**CapacityReservationResourceGroupArn**
-
-The ARN of the Capacity Reservation resource group in which to run the
-instance.
-
+ ** CapacityReservationResourceGroupArn **
+The ARN of the Capacity Reservation resource group in which to run the instance.
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_CapacityReservationTarget_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/capacityreservationtarget.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/capacityreservationtarget.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/capacityreservationtarget.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CapacityReservationStatus
-
-CapacityReservationTargetResponse
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CapacityReservationTarget)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CapacityReservationTarget)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CapacityReservationTarget)
 
 All content copied from https://docs.aws.amazon.com/.

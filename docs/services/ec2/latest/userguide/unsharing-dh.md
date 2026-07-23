@@ -3,74 +3,54 @@ title: "Unshare a Dedicated Host that is shared with other AWS accounts"
 ---
 
 # Unshare a Dedicated Host that is shared with other AWS accounts
+<a name="unsharing-dh"></a>
 
-The Dedicated Host owner can unshare a shared Dedicated Host at any time. When you unshare a shared
-Dedicated Host, the following rules apply:
-
-- Consumers with whom the Dedicated Host was shared can no longer launch new instances
-onto it.
-
-- Instances owned by consumers that were running on the Dedicated Host at the time of
-unsharing continue to run but are scheduled for [retirement](schedevents-actions-retire.md).
-Consumers receive retirement notifications for the
-instances and they have two weeks to take action on the notifications.
-However, if the Dedicated Host is reshared with the consumer within the retirement
-notice period, the instance retirements are cancelled.
+The Dedicated Host owner can unshare a shared Dedicated Host at any time. When you unshare a shared Dedicated Host, the following rules apply:
++ Consumers with whom the Dedicated Host was shared can no longer launch new instances onto it.
++ Instances owned by consumers that were running on the Dedicated Host at the time of unsharing continue to run but are scheduled for [retirement](schedevents_actions_retire.md). Consumers receive retirement notifications for the instances and they have two weeks to take action on the notifications. However, if the Dedicated Host is reshared with the consumer within the retirement notice period, the instance retirements are cancelled.
 
 To unshare a shared Dedicated Host that you own, you must remove it from the resource share.
 
-Console
+------
+#### [ Console ]
 
-###### To unshare a shared Dedicated Host that you own
+**To unshare a shared Dedicated Host that you own**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose
-    **Dedicated Hosts**.
+1. In the navigation pane, choose **Dedicated Hosts**.
 
-3. Choose the Dedicated Host to unshare and choose the
-    **Sharing** tab.
+1. Choose the Dedicated Host to unshare and choose the **Sharing** tab.
 
-4. The **Sharing** tab lists the resource shares
-    to which the Dedicated Host has been added. Select the resource share from
-    which to remove the Dedicated Host and choose **Remove host from**
-**resource share**.
+1. The **Sharing** tab lists the resource shares to which the Dedicated Host has been added. Select the resource share from which to remove the Dedicated Host and choose **Remove host from resource share**.
 
-###### To unshare a shared Dedicated Host that you own using the AWS RAM console
+**To unshare a shared Dedicated Host that you own using the AWS RAM console**
+See [Update a resource share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-update.html) in the *AWS RAM User Guide*.
 
-See [Update a resource share](../../../ram/latest/userguide/working-with-sharing-update.md) in the _AWS RAM User Guide_.
+------
+#### [ AWS CLI ]
 
-AWS CLI
+**To unshare a shared Dedicated Host that you own**
+Use the [disassociate-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/disassociate-resource-share.html) command.
 
-###### To unshare a shared Dedicated Host that you own
-
-Use the [disassociate-resource-share](../../../cli/latest/reference/ram/disassociate-resource-share.md) command.
-
-```nohighlight
-
+```
 aws ram disassociate-resource-share \
-    --resource-share-arn arn:aws:ram:us-east-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE \
-	--resource-arns arn:aws:ec2:us-east-2:123456789012:dedicated-host/h-07879acf49EXAMPLE
+    --resource-share-arn arn:aws:ram:{{us-east-2}}:{{123456789012}}:resource-share/{{7ab63972-b505-7e2a-420d-6f5d3EXAMPLE}} \
+	--resource-arns arn:aws:ec2:{{us-east-2}}:{{123456789012}}:dedicated-host/{{h-07879acf49EXAMPLE}}
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To unshare a shared Dedicated Host that you own
+**To unshare a shared Dedicated Host that you own**
+Use the [Disconnect-RAMResourceShare](https://docs.aws.amazon.com/powershell/latest/reference/items/Disconnect-RAMResourceShare.html) cmdlet.
 
-Use the [Disconnect-RAMResourceShare](../../../powershell/latest/reference/items/disconnect-ramresourceshare.md) cmdlet.
-
-```powershell
-
+```
 Disconnect-RAMResourceShare `
-    -ResourceShareArn "arn:aws:ram:us-east-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE" `
-    -ResourceArn "arn:aws:ec2:us-east-2:123456789012:dedicated-host/h-07879acf49EXAMPLE"
+    -ResourceShareArn "arn:aws:ram:{{us-east-2}}:{{123456789012}}:resource-share/{{7ab63972-b505-7e2a-420d-6f5d3EXAMPLE}}" `
+    -ResourceArn "arn:aws:ec2:{{us-east-2}}:{{123456789012}}:dedicated-host/{{h-07879acf49EXAMPLE}}"
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Share a Dedicated Host
-
-View shared Dedicated Hosts
+------
 
 All content copied from https://docs.aws.amazon.com/.

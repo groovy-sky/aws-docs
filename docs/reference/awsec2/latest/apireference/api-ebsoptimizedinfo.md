@@ -3,75 +3,49 @@ title: "EbsOptimizedInfo"
 ---
 
 # EbsOptimizedInfo
+<a name="API_EbsOptimizedInfo"></a>
 
 Describes the optimized EBS performance for supported instance types.
 
 ## Contents
+<a name="API_EbsOptimizedInfo_Contents"></a>
 
-**baselineBandwidthInMbps**
-
+ ** baselineBandwidthInMbps **
 The baseline bandwidth performance for an EBS-optimized instance type, in Mbps.
-
 Type: Integer
-
 Required: No
 
-**baselineIops**
-
-The baseline input/output storage operations per seconds for an EBS-optimized instance
-type.
-
+ ** baselineIops **
+The baseline input/output storage operations per seconds for an EBS-optimized instance type.
 Type: Integer
-
 Required: No
 
-**baselineThroughputInMBps**
-
+ ** baselineThroughputInMBps **
 The baseline throughput performance for an EBS-optimized instance type, in MB/s.
-
 Type: Double
-
 Required: No
 
-**maximumBandwidthInMbps**
-
+ ** maximumBandwidthInMbps **
 The maximum bandwidth performance for an EBS-optimized instance type, in Mbps.
-
 Type: Integer
-
 Required: No
 
-**maximumIops**
-
-The maximum input/output storage operations per second for an EBS-optimized instance
-type.
-
+ ** maximumIops **
+The maximum input/output storage operations per second for an EBS-optimized instance type.
 Type: Integer
-
 Required: No
 
-**maximumThroughputInMBps**
-
+ ** maximumThroughputInMBps **
 The maximum throughput performance for an EBS-optimized instance type, in MB/s.
-
 Type: Double
-
 Required: No
 
 ## See Also
+<a name="API_EbsOptimizedInfo_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ebsoptimizedinfo.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ebsoptimizedinfo.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ebsoptimizedinfo.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EbsInstanceBlockDeviceSpecification
-
-EbsStatusDetails
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/EbsOptimizedInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/EbsOptimizedInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/EbsOptimizedInfo)
 
 All content copied from https://docs.aws.amazon.com/.

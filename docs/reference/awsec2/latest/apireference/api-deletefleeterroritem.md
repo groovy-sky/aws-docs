@@ -3,41 +3,29 @@ title: "DeleteFleetErrorItem"
 ---
 
 # DeleteFleetErrorItem
+<a name="API_DeleteFleetErrorItem"></a>
 
 Describes an EC2 Fleet that was not successfully deleted.
 
 ## Contents
+<a name="API_DeleteFleetErrorItem_Contents"></a>
 
-**error**
-
+ ** error **
 The error.
-
-Type: [DeleteFleetError](api-deletefleeterror.md) object
-
+Type: [DeleteFleetError](API_DeleteFleetError.md) object
 Required: No
 
-**fleetId**
-
+ ** fleetId **
 The ID of the EC2 Fleet.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_DeleteFleetErrorItem_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deletefleeterroritem.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deletefleeterroritem.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletefleeterroritem.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeleteFleetError
-
-DeleteFleetSuccessItem
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DeleteFleetErrorItem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DeleteFleetErrorItem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DeleteFleetErrorItem)
 
 All content copied from https://docs.aws.amazon.com/.

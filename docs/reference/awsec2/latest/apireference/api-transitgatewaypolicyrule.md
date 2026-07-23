@@ -3,73 +3,49 @@ title: "TransitGatewayPolicyRule"
 ---
 
 # TransitGatewayPolicyRule
+<a name="API_TransitGatewayPolicyRule"></a>
 
 Describes a rule associated with a transit gateway policy.
 
 ## Contents
+<a name="API_TransitGatewayPolicyRule_Contents"></a>
 
-**destinationCidrBlock**
-
+ ** destinationCidrBlock **
 The destination CIDR block for the transit gateway policy rule.
-
 Type: String
-
 Required: No
 
-**destinationPortRange**
-
+ ** destinationPortRange **
 The port range for the transit gateway policy rule. Currently this is set to \* (all).
-
 Type: String
-
 Required: No
 
-**metaData**
-
+ ** metaData **
 The meta data tags used for the transit gateway policy rule.
-
-Type: [TransitGatewayPolicyRuleMetaData](api-transitgatewaypolicyrulemetadata.md) object
-
+Type: [TransitGatewayPolicyRuleMetaData](API_TransitGatewayPolicyRuleMetaData.md) object
 Required: No
 
-**protocol**
-
+ ** protocol **
 The protocol used by the transit gateway policy rule.
-
 Type: String
-
 Required: No
 
-**sourceCidrBlock**
-
+ ** sourceCidrBlock **
 The source CIDR block for the transit gateway policy rule.
-
 Type: String
-
 Required: No
 
-**sourcePortRange**
-
+ ** sourcePortRange **
 The port range for the transit gateway policy rule. Currently this is set to \* (all).
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_TransitGatewayPolicyRule_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/transitgatewaypolicyrule.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/transitgatewaypolicyrule.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/transitgatewaypolicyrule.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitGatewayPeeringAttachmentOptions
-
-TransitGatewayPolicyRuleMetaData
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TransitGatewayPolicyRule)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TransitGatewayPolicyRule)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TransitGatewayPolicyRule)
 
 All content copied from https://docs.aws.amazon.com/.

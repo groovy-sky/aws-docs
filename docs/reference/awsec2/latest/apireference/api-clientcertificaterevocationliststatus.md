@@ -3,43 +3,30 @@ title: "ClientCertificateRevocationListStatus"
 ---
 
 # ClientCertificateRevocationListStatus
+<a name="API_ClientCertificateRevocationListStatus"></a>
 
 Describes the state of a client certificate revocation list.
 
 ## Contents
+<a name="API_ClientCertificateRevocationListStatus_Contents"></a>
 
-**code**
-
+ ** code **
 The state of the client certificate revocation list.
-
 Type: String
-
 Valid Values: `pending | active`
-
 Required: No
 
-**message**
-
+ ** message **
 A message about the status of the client certificate revocation list, if applicable.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_ClientCertificateRevocationListStatus_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/clientcertificaterevocationliststatus.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/clientcertificaterevocationliststatus.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/clientcertificaterevocationliststatus.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ClassicLoadBalancersConfig
-
-ClientConnectOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ClientCertificateRevocationListStatus)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ClientCertificateRevocationListStatus)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ClientCertificateRevocationListStatus)
 
 All content copied from https://docs.aws.amazon.com/.

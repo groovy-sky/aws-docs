@@ -3,83 +3,55 @@ title: "TransitGatewayConnect"
 ---
 
 # TransitGatewayConnect
+<a name="API_TransitGatewayConnect"></a>
 
 Describes a transit gateway Connect attachment.
 
 ## Contents
+<a name="API_TransitGatewayConnect_Contents"></a>
 
-**creationTime**
-
+ ** creationTime **
 The creation time.
-
 Type: Timestamp
-
 Required: No
 
-**options**
-
+ ** options **
 The Connect attachment options.
-
-Type: [TransitGatewayConnectOptions](api-transitgatewayconnectoptions.md) object
-
+Type: [TransitGatewayConnectOptions](API_TransitGatewayConnectOptions.md) object
 Required: No
 
-**state**
-
+ ** state **
 The state of the attachment.
-
 Type: String
-
 Valid Values: `initiating | initiatingRequest | pendingAcceptance | rollingBack | pending | available | modifying | deleting | deleted | failed | rejected | rejecting | failing`
-
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 The tags for the attachment.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
-**transitGatewayAttachmentId**
-
+ ** transitGatewayAttachmentId **
 The ID of the Connect attachment.
-
 Type: String
-
 Required: No
 
-**transitGatewayId**
-
+ ** transitGatewayId **
 The ID of the transit gateway.
-
 Type: String
-
 Required: No
 
-**transportTransitGatewayAttachmentId**
-
+ ** transportTransitGatewayAttachmentId **
 The ID of the attachment from which the Connect attachment was created.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_TransitGatewayConnect_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/transitgatewayconnect.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/transitgatewayconnect.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/transitgatewayconnect.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitGatewayAttachmentPropagation
-
-TransitGatewayConnectOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TransitGatewayConnect)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TransitGatewayConnect)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TransitGatewayConnect)
 
 All content copied from https://docs.aws.amazon.com/.

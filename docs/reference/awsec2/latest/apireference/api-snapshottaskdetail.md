@@ -3,113 +3,74 @@ title: "SnapshotTaskDetail"
 ---
 
 # SnapshotTaskDetail
+<a name="API_SnapshotTaskDetail"></a>
 
 Details about the import snapshot task.
 
 ## Contents
+<a name="API_SnapshotTaskDetail_Contents"></a>
 
-**description**
-
+ ** description **
 The description of the disk image being imported.
-
 Type: String
-
 Required: No
 
-**diskImageSize**
-
+ ** diskImageSize **
 The size of the disk in the snapshot, in GiB.
-
 Type: Double
-
 Required: No
 
-**encrypted**
-
+ ** encrypted **
 Indicates whether the snapshot is encrypted.
-
 Type: Boolean
-
 Required: No
 
-**format**
-
+ ** format **
 The format of the disk image from which the snapshot is created.
-
 Type: String
-
 Required: No
 
-**kmsKeyId**
-
+ ** kmsKeyId **
 The identifier for the KMS key that was used to create the encrypted snapshot.
-
 Type: String
-
 Required: No
 
-**progress**
-
+ ** progress **
 The percentage of completion for the import snapshot task.
-
 Type: String
-
 Required: No
 
-**snapshotId**
-
+ ** snapshotId **
 The snapshot ID of the disk being imported.
-
 Type: String
-
 Required: No
 
-**status**
-
+ ** status **
 A brief status for the import snapshot task.
-
 Type: String
-
 Required: No
 
-**statusMessage**
-
+ ** statusMessage **
 A detailed status message for the import snapshot task.
-
 Type: String
-
 Required: No
 
-**url**
-
+ ** url **
 The URL of the disk image from which the snapshot is created.
-
 Type: String
-
 Required: No
 
-**userBucket**
-
+ ** userBucket **
 The Amazon S3 bucket for the disk image.
-
-Type: [UserBucketDetails](api-userbucketdetails.md) object
-
+Type: [UserBucketDetails](API_UserBucketDetails.md) object
 Required: No
 
 ## See Also
+<a name="API_SnapshotTaskDetail_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/snapshottaskdetail.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/snapshottaskdetail.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/snapshottaskdetail.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SnapshotRecycleBinInfo
-
-SnapshotTierStatus
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/SnapshotTaskDetail)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/SnapshotTaskDetail)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/SnapshotTaskDetail)
 
 All content copied from https://docs.aws.amazon.com/.

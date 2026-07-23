@@ -3,49 +3,34 @@ title: "AccessScopePathRequest"
 ---
 
 # AccessScopePathRequest
+<a name="API_AccessScopePathRequest"></a>
 
 Describes a path.
 
 ## Contents
+<a name="API_AccessScopePathRequest_Contents"></a>
 
-**Destination**
-
+ ** Destination **
 The destination.
-
-Type: [PathStatementRequest](api-pathstatementrequest.md) object
-
+Type: [PathStatementRequest](API_PathStatementRequest.md) object
 Required: No
 
-**Source**
-
+ ** Source **
 The source.
-
-Type: [PathStatementRequest](api-pathstatementrequest.md) object
-
+Type: [PathStatementRequest](API_PathStatementRequest.md) object
 Required: No
 
-**ThroughResource.N**
-
+ ** ThroughResource.N **
 The through resources.
-
-Type: Array of [ThroughResourcesStatementRequest](api-throughresourcesstatementrequest.md) objects
-
+Type: Array of [ThroughResourcesStatementRequest](API_ThroughResourcesStatementRequest.md) objects
 Required: No
 
 ## See Also
+<a name="API_AccessScopePathRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/accessscopepathrequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/accessscopepathrequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/accessscopepathrequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AccessScopePath
-
-AccountAttribute
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AccessScopePathRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AccessScopePathRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AccessScopePathRequest)
 
 All content copied from https://docs.aws.amazon.com/.

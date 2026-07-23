@@ -3,53 +3,37 @@ title: "RouteServerAssociation"
 ---
 
 # RouteServerAssociation
+<a name="API_RouteServerAssociation"></a>
 
 Describes the association between a route server and a VPC.
 
 A route server association is the connection established between a route server and a VPC.
 
 ## Contents
+<a name="API_RouteServerAssociation_Contents"></a>
 
-**routeServerId**
-
+ ** routeServerId **
 The ID of the associated route server.
-
 Type: String
-
 Required: No
 
-**state**
-
+ ** state **
 The current state of the association.
-
 Type: String
-
 Valid Values: `associating | associated | disassociating`
-
 Required: No
 
-**vpcId**
-
+ ** vpcId **
 The ID of the associated VPC.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_RouteServerAssociation_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/routeserverassociation.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/routeserverassociation.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/routeserverassociation.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RouteServer
-
-RouteServerBfdStatus
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/RouteServerAssociation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/RouteServerAssociation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/RouteServerAssociation)
 
 All content copied from https://docs.aws.amazon.com/.

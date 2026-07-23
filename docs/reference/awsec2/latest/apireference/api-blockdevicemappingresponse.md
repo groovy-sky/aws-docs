@@ -3,59 +3,39 @@ title: "BlockDeviceMappingResponse"
 ---
 
 # BlockDeviceMappingResponse
+<a name="API_BlockDeviceMappingResponse"></a>
 
-Describes a block device mapping, which defines the EBS volumes and instance store
-volumes to attach to an instance at launch.
+Describes a block device mapping, which defines the EBS volumes and instance store volumes to attach to an instance at launch.
 
 ## Contents
+<a name="API_BlockDeviceMappingResponse_Contents"></a>
 
-**deviceName**
-
+ ** deviceName **
 The device name (for example, `/dev/sdh` or `xvdh`).
-
 Type: String
-
 Required: No
 
-**ebs**
-
-Parameters used to automatically set up EBS volumes when the instance is
-launched.
-
-Type: [EbsBlockDeviceResponse](api-ebsblockdeviceresponse.md) object
-
+ ** ebs **
+Parameters used to automatically set up EBS volumes when the instance is launched.
+Type: [EbsBlockDeviceResponse](API_EbsBlockDeviceResponse.md) object
 Required: No
 
-**noDevice**
-
+ ** noDevice **
 Suppresses the specified device included in the block device mapping.
-
 Type: String
-
 Required: No
 
-**virtualName**
-
+ ** virtualName **
 The virtual device name.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_BlockDeviceMappingResponse_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/blockdevicemappingresponse.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/blockdevicemappingresponse.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/blockdevicemappingresponse.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BlockDeviceMapping
-
-BlockPublicAccessStates
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/BlockDeviceMappingResponse)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/BlockDeviceMappingResponse)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/BlockDeviceMappingResponse)
 
 All content copied from https://docs.aws.amazon.com/.

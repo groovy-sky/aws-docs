@@ -1,201 +1,58 @@
 ---
-title: "Common query parameters"
+title: "Common Parameters"
 ---
 
-# Common query parameters
-
-Most Amazon EC2 API actions support the parameters described in the following tables. The common
-parameters vary depending on whether you're using Signature Version 2 or Signature Version 4 to
-sign your requests. For more information, see [Signing AWS API requests](../../../../services/iam/latest/userguide/reference-aws-signing.md) in the _IAM User Guide_.
-
-###### Contents
-
-- [Parameters for Signature Version 4](#common-parameters-sigv4)
-
-- [Parameters for Signature Version 2](#common-parameters-sigv2)
-
-## Parameters for Signature Version 4
-
-NameDescriptionRequired
-
-`Action`
-
-The action to perform.
-
-Example: `RunInstances`
-
-Yes
-
-`Version`
-
-The API version to use.
-
-Yes
-
-`X-Amz-Algorithm`
-
-The hash algorithm you use to create the request signature.
-
-Example: `AWS4-HMAC-SHA256`
-
-Yes
-
-`X-Amz-Credential`
-
-The credential scope for the request, in the format
-`access-key-ID`/ `YYYYMMDD`/ `region`/ `service`/ `aws4_request`
-
-Example: `AKIDEXAMPLE/20140707/us-east-1/ec2/aws4_request`
-
-Yes
-
-`X-Amz-Date`
-
-The date and time at which the request is signed, in the format YYYYMMDDThhmmssZ. The
-date must match the date that's included in the credential scope for the
-`X-Amz-Credential` parameter, or the date used in an
-`Authorization` header (see the note below the table).
-
-Example: `20140707T150456Z`
-
-Yes`X-Amz-SignedHeaders`
-
-The headers you are including as part of the request. At a minimum, you must include the
-`host` header. If you include an `x-amz-date` header in your
-request, you must include it in the list of signed headers.
-
-Example: `content-type;host;user-agent`
-
-Yes
-
-`X-Amz-Signature`
-
-A signature derived from your secret access key.
-
-Example: `ced6826de92d2bdeed8f846f0bf508e8559example`
-
-Yes
-
-`X-Amz-Security-Token`
-
-The temporary security token obtained through a call to AWS Security Token Service.
-
-Example: `AQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/L`
-
-No
-
-`DryRun`
-
-Checks whether you have the required permissions for the action, without actually making the request.
-If you have the required permissions, the request returns `DryRunOperation`; otherwise, it
-returns `UnauthorizedOperation`.
-
-No
-
-The `X-Amz-Algorithm`, `X-Amz-Credential`,
-`X-Amz-SignedHeaders`, and `X-Amz-Signature` parameters can either
-be specified as separate parameters in the query string, or their values can be included in
-a single `Authorization` header. For more information, see [Signing AWS API requests](../../../../services/iam/latest/userguide/reference-aws-signing.md) in the _IAM User Guide_.
-
-## Parameters for Signature Version 2
-
-NameDescriptionRequired
-
-`Action`
-
-The action to perform.
-
-Example: `RunInstances`
-
-Yes
-
-`Version`
-
-The API version to use.
-
-Yes
-
-`AWSAccessKeyId`
-
-The access key ID for the request sender. This identifies the account which will be
-charged for usage of the service. The account that's associated with the access key
-ID must be signed up for Amazon EC2, or the request isn't accepted.
-
-Example: `AWS_ACCESS_KEY_ID_REDACTED`
-
-Yes
-
-`Expires`
-
-The date and time at which the signature included in the request expires, in the
-format YYYY-MM-DDThh:mm:ssZ. For more information, see [ISO 8601](http://www.w3.org/TR/NOTE-datetime).
-
-Example: `2006-07-07T15:04:56Z`
-
-Conditional. Requests must include either `Timestamp` or
-`Expires`, but cannot contain both.
-
-`Timestamp`
-
-The date and time at which the request is signed,
-in the format YYYY-MM-DDThh:mm:ssZ. For more information, see
-[ISO 8601](http://www.w3.org/TR/NOTE-datetime).
-
-Example: `2006-07-07T15:04:56Z`
-
-Conditional. Requests must include either `Timestamp` or
-`Expires`, but cannot contain both.
-
-`Signature`
-
-The request signature.
-
-Example: `Qnpl4Qk/7tINHzfXCiT7VEXAMPLE`
-
-Yes
-
-`SignatureMethod`
-
-The hash algorithm you use to create the request signature. Valid values:
-`HmacSHA256` \| `HmacSHA1`.
-
-Example: `HmacSHA256`
-
-Yes
-
-`SignatureVersion`
-
-The signature version you use to sign the request. Set this value to `2`.
-
-Example: `2`
-
-Yes
-
-`DryRun`
-
-Checks whether you have the required permissions for the action, without
-actually making the request. If you have the required permissions, the request
-returns `DryRunOperation`; otherwise, it returns
-`UnauthorizedOperation`.
-
-No
-
-`SecurityToken`
-
-The temporary security token obtained through a call to AWS Security Token Service.
-
-Example: `AQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/L`
-
-No
-
-Parameter values must be URL-encoded. This is true for any Query parameter passed to Amazon EC2
-and is typically necessary in the `Signature` parameter. Some clients do
-this automatically, but this is not the norm.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VM Import Manifest
-
-Permissions
+# Common Parameters
+<a name="CommonParameters"></a>
+
+The following list contains the parameters that all actions use for signing Signature Version 4 requests with a query string. Any action-specific parameters are listed in the topic for that action. For more information about Signature Version 4, see [Signing AWS API requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html) in the *IAM User Guide*.
+
+ **Action**   <a name="CommonParameters-Action"></a>
+The action to be performed.
+Type: string
+Required: Yes
+
+ **Version**   <a name="CommonParameters-Version"></a>
+The API version that the request is written for, expressed in the format YYYY-MM-DD.
+Type: string
+Required: Yes
+
+ **X-Amz-Algorithm**   <a name="CommonParameters-X-Amz-Algorithm"></a>
+The hash algorithm that you used to create the request signature.
+Condition: Specify this parameter when you include authentication information in a query string instead of in the HTTP authorization header.
+Type: string
+Valid Values: `AWS4-HMAC-SHA256`
+Required: Conditional
+
+ **X-Amz-Credential**   <a name="CommonParameters-X-Amz-Credential"></a>
+The credential scope value, which is a string that includes your access key, the date, the region you are targeting, the service you are requesting, and a termination string ("aws4\_request"). The value is expressed in the following format: *access\_key*/*YYYYMMDD*/*region*/*service*/aws4\_request.
+For more information, see [Create a signed AWS API request](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv-create-signed-request.html) in the *IAM User Guide*.
+Condition: Specify this parameter when you include authentication information in a query string instead of in the HTTP authorization header.
+Type: string
+Required: Conditional
+
+ **X-Amz-Date**   <a name="CommonParameters-X-Amz-Date"></a>
+The date that is used to create the signature. The format must be ISO 8601 basic format (YYYYMMDD'T'HHMMSS'Z'). For example, the following date time is a valid X-Amz-Date value: `20120325T120000Z`.
+Condition: X-Amz-Date is optional for all requests; it can be used to override the date used for signing requests. If the Date header is specified in the ISO 8601 basic format, X-Amz-Date is not required. When X-Amz-Date is used, it always overrides the value of the Date header. For more information, see [Elements of an AWS API request signature](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv-signing-elements.html) in the *IAM User Guide*.
+Type: string
+Required: Conditional
+
+ **X-Amz-Security-Token**   <a name="CommonParameters-X-Amz-Security-Token"></a>
+The temporary security token that was obtained through a call to AWS Security Token Service (AWS STS). For a list of services that support temporary security credentials from AWS STS, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.
+Condition: If you're using temporary security credentials from AWS STS, you must include the security token.
+Type: string
+Required: Conditional
+
+ **X-Amz-Signature**   <a name="CommonParameters-X-Amz-Signature"></a>
+Specifies the hex-encoded signature that was calculated from the string to sign and the derived signing key.
+Condition: Specify this parameter when you include authentication information in a query string instead of in the HTTP authorization header.
+Type: string
+Required: Conditional
+
+ **X-Amz-SignedHeaders**   <a name="CommonParameters-X-Amz-SignedHeaders"></a>
+Specifies all the HTTP headers that were included as part of the canonical request. For more information about specifying signed headers, see [Create a signed AWS API request](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv-create-signed-request.html) in the *IAM User Guide*.
+Condition: Specify this parameter when you include authentication information in a query string instead of in the HTTP authorization header.
+Type: string
+Required: Conditional
 
 All content copied from https://docs.aws.amazon.com/.

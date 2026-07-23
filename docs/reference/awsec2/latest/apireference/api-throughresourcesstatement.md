@@ -3,33 +3,24 @@ title: "ThroughResourcesStatement"
 ---
 
 # ThroughResourcesStatement
+<a name="API_ThroughResourcesStatement"></a>
 
 Describes a through resource statement.
 
 ## Contents
+<a name="API_ThroughResourcesStatement_Contents"></a>
 
-**resourceStatement**
-
+ ** resourceStatement **
 The resource statement.
-
-Type: [ResourceStatement](api-resourcestatement.md) object
-
+Type: [ResourceStatement](API_ResourceStatement.md) object
 Required: No
 
 ## See Also
+<a name="API_ThroughResourcesStatement_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/throughresourcesstatement.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/throughresourcesstatement.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/throughresourcesstatement.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TerminateConnectionStatus
-
-ThroughResourcesStatementRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ThroughResourcesStatement)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ThroughResourcesStatement)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ThroughResourcesStatement)
 
 All content copied from https://docs.aws.amazon.com/.

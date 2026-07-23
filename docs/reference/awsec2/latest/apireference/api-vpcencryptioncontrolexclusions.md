@@ -3,91 +3,61 @@ title: "VpcEncryptionControlExclusions"
 ---
 
 # VpcEncryptionControlExclusions
+<a name="API_VpcEncryptionControlExclusions"></a>
 
 Describes the exclusion configurations for various resource types in VPC Encryption Control.
 
-For more information, see [Enforce VPC encryption in transit](../../../../services/vpc/latest/userguide/vpc-encryption-controls.md) in the _Amazon VPC User Guide_.
+For more information, see [Enforce VPC encryption in transit](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html) in the *Amazon VPC User Guide*.
 
 ## Contents
+<a name="API_VpcEncryptionControlExclusions_Contents"></a>
 
-**egressOnlyInternetGateway**
-
+ ** egressOnlyInternetGateway **
 The exclusion configuration for egress-only internet gateway traffic.
-
-Type: [VpcEncryptionControlExclusion](api-vpcencryptioncontrolexclusion.md) object
-
+Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
 Required: No
 
-**elasticFileSystem**
-
+ ** elasticFileSystem **
 The exclusion configuration for Elastic File System traffic.
-
-Type: [VpcEncryptionControlExclusion](api-vpcencryptioncontrolexclusion.md) object
-
+Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
 Required: No
 
-**internetGateway**
-
+ ** internetGateway **
 The exclusion configuration for internet gateway traffic.
-
-Type: [VpcEncryptionControlExclusion](api-vpcencryptioncontrolexclusion.md) object
-
+Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
 Required: No
 
-**lambda**
-
+ ** lambda **
 The exclusion configuration for Lambda function traffic.
-
-Type: [VpcEncryptionControlExclusion](api-vpcencryptioncontrolexclusion.md) object
-
+Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
 Required: No
 
-**natGateway**
-
+ ** natGateway **
 The exclusion configuration for NAT gateway traffic.
-
-Type: [VpcEncryptionControlExclusion](api-vpcencryptioncontrolexclusion.md) object
-
+Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
 Required: No
 
-**virtualPrivateGateway**
-
+ ** virtualPrivateGateway **
 The exclusion configuration for virtual private gateway traffic.
-
-Type: [VpcEncryptionControlExclusion](api-vpcencryptioncontrolexclusion.md) object
-
+Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
 Required: No
 
-**vpcLattice**
-
+ ** vpcLattice **
 The exclusion configuration for VPC Lattice traffic.
-
-Type: [VpcEncryptionControlExclusion](api-vpcencryptioncontrolexclusion.md) object
-
+Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
 Required: No
 
-**vpcPeering**
-
+ ** vpcPeering **
 The exclusion configuration for VPC peering connection traffic.
-
-Type: [VpcEncryptionControlExclusion](api-vpcencryptioncontrolexclusion.md) object
-
+Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
 Required: No
 
 ## See Also
+<a name="API_VpcEncryptionControlExclusions_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/vpcencryptioncontrolexclusions.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/vpcencryptioncontrolexclusions.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/vpcencryptioncontrolexclusions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcEncryptionControlExclusion
-
-VpcEncryptionNonCompliantResource
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VpcEncryptionControlExclusions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VpcEncryptionControlExclusions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VpcEncryptionControlExclusions)
 
 All content copied from https://docs.aws.amazon.com/.

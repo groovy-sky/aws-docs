@@ -3,56 +3,28 @@ title: "EC2 Fleet request states"
 ---
 
 # EC2 Fleet request states
+<a name="EC2-fleet-states"></a>
 
-An EC2 Fleet request can be one of various states, with each state indicating a different
-stage of the request's lifecycle and its management of instances.
+An EC2 Fleet request can be one of various states, with each state indicating a different stage of the request's lifecycle and its management of instances.
 
 An EC2 Fleet request can be in one of the following states:
 
 `submitted`
-
-The EC2 Fleet request is being evaluated and Amazon EC2 is preparing to launch the target number of
-instances. If a request would exceed your fleet limits, it is deleted
-immediately.
+The EC2 Fleet request is being evaluated and Amazon EC2 is preparing to launch the target number of instances. If a request would exceed your fleet limits, it is deleted immediately.
 
 `active`
-
-The EC2 Fleet request has been validated and Amazon EC2 is attempting to maintain
-the target number of running instances. The request remains in this state
-until it is modified or deleted.
+The EC2 Fleet request has been validated and Amazon EC2 is attempting to maintain the target number of running instances. The request remains in this state until it is modified or deleted.
 
 `modifying`
-
-The EC2 Fleet request is being modified. The request remains in this state
-until the modification is fully processed or the request is deleted. Only a
-`maintain` fleet type can be modified. This state does not
-apply to other request types.
+The EC2 Fleet request is being modified. The request remains in this state until the modification is fully processed or the request is deleted. Only a `maintain` fleet type can be modified. This state does not apply to other request types.
 
 `deleted_running`
-
-The EC2 Fleet request is deleted and does not launch additional Spot Instances. Its existing instances
-continue to run until they are interrupted or terminated manually. The
-request remains in this state until all instances are interrupted or
-terminated. Only an EC2 Fleet of type `maintain` or
-`request` can have running instances after the EC2 Fleet request
-is deleted. A deleted `instant` fleet with running instances is
-not supported. This state does not apply to `instant`
-fleets.
+The EC2 Fleet request is deleted and does not launch additional Spot Instances. Its existing instances continue to run until they are interrupted or terminated manually. The request remains in this state until all instances are interrupted or terminated. Only an EC2 Fleet of type `maintain` or `request` can have running instances after the EC2 Fleet request is deleted. A deleted `instant` fleet with running instances is not supported. This state does not apply to `instant` fleets.
 
 `deleted_terminating`
-
-The EC2 Fleet request is deleted and its instances are terminating. The request
-remains in this state until all instances are terminated.
+The EC2 Fleet request is deleted and its instances are terminating. The request remains in this state until all instances are terminated.
 
 `deleted`
-
-The EC2 Fleet request is deleted and has no running instances. The request is deleted two days
-after its instances are terminated.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Work with EC2 Fleet
-
-EC2 Fleet prerequisites
+The EC2 Fleet request is deleted and has no running instances. The request is deleted two days after its instances are terminated.
 
 All content copied from https://docs.aws.amazon.com/.

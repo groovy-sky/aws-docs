@@ -3,41 +3,29 @@ title: "VerifiedAccessInstanceCustomSubDomain"
 ---
 
 # VerifiedAccessInstanceCustomSubDomain
+<a name="API_VerifiedAccessInstanceCustomSubDomain"></a>
 
 Describes a custom subdomain for a network CIDR endpoint for Verified Access.
 
 ## Contents
+<a name="API_VerifiedAccessInstanceCustomSubDomain_Contents"></a>
 
-**NameserverSet.N**
-
+ ** NameserverSet.N **
 The name servers.
-
 Type: Array of strings
-
 Required: No
 
-**subDomain**
-
+ ** subDomain **
 The subdomain.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_VerifiedAccessInstanceCustomSubDomain_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/verifiedaccessinstancecustomsubdomain.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/verifiedaccessinstancecustomsubdomain.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccessinstancecustomsubdomain.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VerifiedAccessInstance
-
-VerifiedAccessInstanceLoggingConfiguration
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VerifiedAccessInstanceCustomSubDomain)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VerifiedAccessInstanceCustomSubDomain)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VerifiedAccessInstanceCustomSubDomain)
 
 All content copied from https://docs.aws.amazon.com/.

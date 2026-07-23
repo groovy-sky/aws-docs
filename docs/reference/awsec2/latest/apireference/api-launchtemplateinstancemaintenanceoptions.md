@@ -3,36 +3,25 @@ title: "LaunchTemplateInstanceMaintenanceOptions"
 ---
 
 # LaunchTemplateInstanceMaintenanceOptions
+<a name="API_LaunchTemplateInstanceMaintenanceOptions"></a>
 
 The maintenance options of your instance.
 
 ## Contents
+<a name="API_LaunchTemplateInstanceMaintenanceOptions_Contents"></a>
 
-**autoRecovery**
-
-Disables the automatic recovery behavior of your instance or sets it to
-default.
-
+ ** autoRecovery **
+Disables the automatic recovery behavior of your instance or sets it to default.
 Type: String
-
 Valid Values: `default | disabled`
-
 Required: No
 
 ## See Also
+<a name="API_LaunchTemplateInstanceMaintenanceOptions_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/launchtemplateinstancemaintenanceoptions.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/launchtemplateinstancemaintenanceoptions.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/launchtemplateinstancemaintenanceoptions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LaunchTemplateIamInstanceProfileSpecificationRequest
-
-LaunchTemplateInstanceMaintenanceOptionsRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/LaunchTemplateInstanceMaintenanceOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/LaunchTemplateInstanceMaintenanceOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/LaunchTemplateInstanceMaintenanceOptions)
 
 All content copied from https://docs.aws.amazon.com/.

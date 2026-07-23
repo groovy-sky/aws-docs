@@ -3,73 +3,49 @@ title: "VolumeStatusEvent"
 ---
 
 # VolumeStatusEvent
+<a name="API_VolumeStatusEvent"></a>
 
 Describes a volume status event.
 
 ## Contents
+<a name="API_VolumeStatusEvent_Contents"></a>
 
-**description**
-
+ ** description **
 A description of the event.
-
 Type: String
-
 Required: No
 
-**eventId**
-
+ ** eventId **
 The ID of this event.
-
 Type: String
-
 Required: No
 
-**eventType**
-
+ ** eventType **
 The type of this event.
-
 Type: String
-
 Required: No
 
-**instanceId**
-
+ ** instanceId **
 The ID of the instance associated with the event.
-
 Type: String
-
 Required: No
 
-**notAfter**
-
+ ** notAfter **
 The latest end time of the event.
-
 Type: Timestamp
-
 Required: No
 
-**notBefore**
-
+ ** notBefore **
 The earliest start time of the event.
-
 Type: Timestamp
-
 Required: No
 
 ## See Also
+<a name="API_VolumeStatusEvent_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/volumestatusevent.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/volumestatusevent.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/volumestatusevent.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VolumeStatusDetails
-
-VolumeStatusInfo
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VolumeStatusEvent)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VolumeStatusEvent)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VolumeStatusEvent)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,99 +3,83 @@ title: "Describe a Spot Fleet request, its instances, and event history"
 ---
 
 # Describe a Spot Fleet request, its instances, and event history
+<a name="manage-spot-fleet"></a>
 
-You can describe your Spot Fleet configuration, the instances in your Spot Fleet, and the event
-history of your Spot Fleet.
+**Important**
+Spot Fleet uses a legacy API with no planned investment. We recommend using EC2 Fleet or an Auto Scaling group instead. For more information, see [Which is the best fleet method to use?](which-fleet-method-to-use.md).
 
-Console
+You can describe your Spot Fleet configuration, the instances in your Spot Fleet, and the event history of your Spot Fleet.
 
-###### To describe your Spot Fleet
+------
+#### [ Console ]
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+**To describe your Spot Fleet**
 
-2. In the navigation pane, choose **Spot**
-**Requests**.
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-3. Select your Spot Fleet request. The ID begins with
-    **sfr-**. To see the configuration details,
-    choose **Description**.
+1. In the navigation pane, choose **Spot Requests**.
 
-4. To list the Spot Instances for the Spot Fleet, choose
-    **Instances**.
+1. Select your Spot Fleet request. The ID begins with **sfr-**. To see the configuration details, choose **Description**.
 
-5. To view the history for the Spot Fleet, choose
-    **History**.
+1. To list the Spot Instances for the Spot Fleet, choose **Instances**.
 
-AWS CLI
+1. To view the history for the Spot Fleet, choose **History**.
 
-###### To describe your Spot Fleet request
+------
+#### [ AWS CLI ]
 
-Use the [describe-spot-fleet-requests](../../../cli/latest/reference/ec2/describe-spot-fleet-requests.md) command.
+**To describe your Spot Fleet request**
+Use the [describe-spot-fleet-requests](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-spot-fleet-requests.html) command.
 
-```nohighlight
-
+```
 aws ec2 describe-spot-fleet-requests \
-    --spot-fleet-request-ids sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE
+    --spot-fleet-request-ids {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 
-###### To describe the running instances for the specified Spot Fleet request
+**To describe the running instances for the specified Spot Fleet request**
+Use the [describe-spot-fleet-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-spot-fleet-instances.html) command.
 
-Use the [describe-spot-fleet-instances](../../../cli/latest/reference/ec2/describe-spot-fleet-instances.md) command.
-
-```nohighlight
-
+```
 aws ec2 describe-spot-fleet-instances \
-    --spot-fleet-request-id sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE
+    --spot-fleet-request-id {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 
-###### To describe the event history for the specified Spot Fleet request
+**To describe the event history for the specified Spot Fleet request**
+Use the [describe-spot-fleet-request-history](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-spot-fleet-request-history.html) command.
 
-Use the [describe-spot-fleet-request-history](../../../cli/latest/reference/ec2/describe-spot-fleet-request-history.md) command.
-
-```nohighlight
-
+```
 aws ec2 describe-spot-fleet-request-history \
-    --spot-fleet-request-id sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE \
-    --start-time 2024-05-18T00:00:00Z
+    --spot-fleet-request-id {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}} \
+    --start-time {{2024-05-18T00:00:00Z}}
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To describe your Spot Fleet request
+**To describe your Spot Fleet request**
+Use the [Get-EC2SpotFleetRequest](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2SpotFleetRequest.html) cmdlet.
 
-Use the [Get-EC2SpotFleetRequest](../../../powershell/latest/reference/items/get-ec2spotfleetrequest.md) cmdlet.
-
-```powershell
-
+```
 Get-EC2SpotFleetRequest
 ```
 
-###### To describe the running instances for the specified Spot Fleet request
+**To describe the running instances for the specified Spot Fleet request**
+Use the [Get-EC2SpotFleetInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2SpotFleetInstance.html) cmdlet.
 
-Use the [Get-EC2SpotFleetInstance](../../../powershell/latest/reference/items/get-ec2spotfleetinstance.md) cmdlet.
-
-```powershell
-
+```
 Get-EC2SpotFleetInstance `
-    -SpotFleetRequestId "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE"
+    -SpotFleetRequestId "{{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}"
 ```
 
-###### To describe the event history for the specified Spot Fleet request
+**To describe the event history for the specified Spot Fleet request**
+Use the [Get-EC2SpotFleetRequestHistory](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2SpotFleetRequestHistory.html) cmdlet.
 
-Use the [Get-EC2SpotFleetRequestHistory](../../../powershell/latest/reference/items/get-ec2spotfleetrequesthistory.md) cmdlet.
-
-```powershell
-
+```
 Get-EC2SpotFleetRequestHistory `
-    -SpotFleetRequestId "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE" `
-    -UtcStartTime 2024-05-18T00:00:00Z
+    -SpotFleetRequestId "{{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE"}} `
+    -UtcStartTime {{2024-05-18T00:00:00Z}}
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag a Spot Fleet
-
-Modify a Spot Fleet request
+------
 
 All content copied from https://docs.aws.amazon.com/.

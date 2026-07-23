@@ -3,66 +3,57 @@ title: "View the host recovery setting for your Amazon EC2 Dedicated Host"
 ---
 
 # View the host recovery setting for your Amazon EC2 Dedicated Host
+<a name="dedicated-hosts-recovery-view"></a>
 
 You can view the host recovery configuration for a Dedicated Host at any time.
 
-Console
+------
+#### [ Console ]
 
-###### To view the host recovery configuration for a Dedicated Host
+**To view the host recovery configuration for a Dedicated Host**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose **Dedicated Hosts**.
+1. In the navigation pane, choose **Dedicated Hosts**.
 
-3. Select the Dedicated Host, and in the **Description** tab,
-    review the **Host Recovery** field.
+1. Select the Dedicated Host, and in the **Description** tab, review the **Host Recovery** field.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To view the host recovery configuration for a Dedicated Host
+**To view the host recovery configuration for a Dedicated Host**
+Use the [describe-hosts](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-hosts.html) command.
 
-Use the [describe-hosts](../../../cli/latest/reference/ec2/describe-hosts.md) command.
-
-```nohighlight
-
+```
 aws ec2 describe-hosts \
-    --host-ids h-012a3456b7890cdef \
+    --host-ids {{h-012a3456b7890cdef}} \
     --query Hosts[].HostRecovery
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 on
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To view the host recovery configuration for a Dedicated Host
+**To view the host recovery configuration for a Dedicated Host**
+Use the [Get-EC2Host](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Host.html) cmdlet.
 
-Use the [Get-EC2Host](../../../powershell/latest/reference/items/get-ec2host.md)
-cmdlet.
-
-```powershell
-
-(Get-EC2Host -HostId h-012a3456b7890cdef).Hosts | Select HostRecovery
+```
+(Get-EC2Host -HostId {{h-012a3456b7890cdef}}).Hosts | Select HostRecovery
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 HostRecovery
 ------------
 on
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Manage host recovery
-
-Manually recovery unsupported instances
+------
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,15 +3,13 @@ title: "State change events for Amazon EC2 instances"
 ---
 
 # State change events for Amazon EC2 instances
+<a name="monitoring-instance-state-changes"></a>
 
-Amazon EC2 sends an `EC2 Instance State-change Notification` event to Amazon EventBridge
-when the state of an instance changes.
+Amazon EC2 sends an `EC2 Instance State-change Notification` event to Amazon EventBridge when the state of an instance changes.
 
-The following is example data for this event. In this example, the instance entered
-the `pending` state.
+The following is example data for this event. In this example, the instance entered the `pending` state.
 
-```json
-
+```
 {
    "id":"7bf73129-1428-4cd3-a780-95db273d1602",
    "detail-type":"EC2 Instance State-change Notification",
@@ -27,33 +25,16 @@ the `pending` state.
       "state":"pending"
    }
 }
-
 ```
 
 The possible values for `state` are:
++ `pending`
++ `running`
++ `stopping`
++ `stopped`
++ `shutting-down`
++ `terminated`
 
-- `pending`
-
-- `running`
-
-- `stopping`
-
-- `stopped`
-
-- `shutting-down`
-
-- `terminated`
-
-When you launch or start an instance, it enters the `pending` state and
-then the `running` state. When you stop an instance, it enters the
-`stopping` state and then the `stopped` state. When you
-terminate an instance, it enters the `shutting-down` state and then the
-`terminated` state. For more information, see [Amazon EC2 instance state changes](ec2-instance-lifecycle.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Create status check alarms
-
-Create alarm for instance state changes
+When you launch or start an instance, it enters the `pending` state and then the `running` state. When you stop an instance, it enters the `stopping` state and then the `stopped` state. When you terminate an instance, it enters the `shutting-down` state and then the `terminated` state. For more information, see [Amazon EC2 instance state changes](ec2-instance-lifecycle.md).
 
 All content copied from https://docs.aws.amazon.com/.

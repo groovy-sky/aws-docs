@@ -3,145 +3,94 @@ title: "ScheduledInstance"
 ---
 
 # ScheduledInstance
+<a name="API_ScheduledInstance"></a>
 
 Describes a Scheduled Instance.
 
 ## Contents
+<a name="API_ScheduledInstance_Contents"></a>
 
-**availabilityZone**
-
+ ** availabilityZone **
 The Availability Zone.
-
 Type: String
-
 Required: No
 
-**createDate**
-
+ ** createDate **
 The date when the Scheduled Instance was purchased.
-
 Type: Timestamp
-
 Required: No
 
-**hourlyPrice**
-
+ ** hourlyPrice **
 The hourly price for a single instance.
-
 Type: String
-
 Required: No
 
-**instanceCount**
-
+ ** instanceCount **
 The number of instances.
-
 Type: Integer
-
 Required: No
 
-**instanceType**
-
+ ** instanceType **
 The instance type.
-
 Type: String
-
 Required: No
 
-**networkPlatform**
-
+ ** networkPlatform **
 The network platform.
-
 Type: String
-
 Required: No
 
-**nextSlotStartTime**
-
+ ** nextSlotStartTime **
 The time for the next schedule to start.
-
 Type: Timestamp
-
 Required: No
 
-**platform**
-
-The platform ( `Linux/UNIX` or `Windows`).
-
+ ** platform **
+The platform (`Linux/UNIX` or `Windows`).
 Type: String
-
 Required: No
 
-**previousSlotEndTime**
-
+ ** previousSlotEndTime **
 The time that the previous schedule ended or will end.
-
 Type: Timestamp
-
 Required: No
 
-**recurrence**
-
+ ** recurrence **
 The schedule recurrence.
-
-Type: [ScheduledInstanceRecurrence](api-scheduledinstancerecurrence.md) object
-
+Type: [ScheduledInstanceRecurrence](API_ScheduledInstanceRecurrence.md) object
 Required: No
 
-**scheduledInstanceId**
-
+ ** scheduledInstanceId **
 The Scheduled Instance ID.
-
 Type: String
-
 Required: No
 
-**slotDurationInHours**
-
+ ** slotDurationInHours **
 The number of hours in the schedule.
-
 Type: Integer
-
 Required: No
 
-**termEndDate**
-
+ ** termEndDate **
 The end date for the Scheduled Instance.
-
 Type: Timestamp
-
 Required: No
 
-**termStartDate**
-
+ ** termStartDate **
 The start date for the Scheduled Instance.
-
 Type: Timestamp
-
 Required: No
 
-**totalScheduledInstanceHours**
-
+ ** totalScheduledInstanceHours **
 The total number of hours for a single instance for the entire term.
-
 Type: Integer
-
 Required: No
 
 ## See Also
+<a name="API_ScheduledInstance_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/scheduledinstance.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/scheduledinstance.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/scheduledinstance.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-S3Storage
-
-ScheduledInstanceAvailability
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ScheduledInstance)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ScheduledInstance)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ScheduledInstance)
 
 All content copied from https://docs.aws.amazon.com/.

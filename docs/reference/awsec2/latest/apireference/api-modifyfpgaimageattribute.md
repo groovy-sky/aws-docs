@@ -3,131 +3,97 @@ title: "ModifyFpgaImageAttribute"
 ---
 
 # ModifyFpgaImageAttribute
+<a name="API_ModifyFpgaImageAttribute"></a>
 
 Modifies the specified attribute of the specified Amazon FPGA Image (AFI).
 
 ## Request Parameters
+<a name="API_ModifyFpgaImageAttribute_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**Attribute**
-
+ **Attribute**
 The name of the attribute.
-
 Type: String
-
 Valid Values: `description | name | loadPermission | productCodes`
-
 Required: No
 
-**Description**
-
+ **Description**
 A description for the AFI.
-
 Type: String
-
 Required: No
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
-Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**FpgaImageId**
-
+ **FpgaImageId**
 The ID of the AFI.
-
 Type: String
-
 Required: Yes
 
-**LoadPermission**
-
+ **LoadPermission**
 The load permission for the AFI.
-
-Type: [LoadPermissionModifications](api-loadpermissionmodifications.md) object
-
+Type: [LoadPermissionModifications](API_LoadPermissionModifications.md) object
 Required: No
 
-**Name**
-
+ **Name**
 A name for the AFI.
-
 Type: String
-
 Required: No
 
-**OperationType**
-
+ **OperationType**
 The operation type.
-
 Type: String
-
 Valid Values: `add | remove`
-
 Required: No
 
-**ProductCode.N**
-
-The product codes. After you add a product code to an AFI, it can't be removed.
-This parameter is valid only when modifying the `productCodes` attribute.
-
+ **ProductCode.N**
+The product codes. After you add a product code to an AFI, it can't be removed. This parameter is valid only when modifying the `productCodes` attribute.
 Type: Array of strings
-
 Required: No
 
-**UserGroup.N**
-
+ **UserGroup.N**
 The user groups. This parameter is valid only when modifying the `loadPermission` attribute.
-
 Type: Array of strings
-
 Required: No
 
-**UserId.N**
-
+ **UserId.N**
 The AWS account IDs. This parameter is valid only when modifying the `loadPermission` attribute.
-
 Type: Array of strings
-
 Required: No
 
 ## Response Elements
+<a name="API_ModifyFpgaImageAttribute_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**fpgaImageAttribute**
-
+ **fpgaImageAttribute**
 Information about the attribute.
+Type: [FpgaImageAttribute](API_FpgaImageAttribute.md) object
 
-Type: [FpgaImageAttribute](api-fpgaimageattribute.md) object
-
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
 ## Errors
+<a name="API_ModifyFpgaImageAttribute_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_ModifyFpgaImageAttribute_Examples"></a>
 
 ### Example
+<a name="API_ModifyFpgaImageAttribute_Example_1"></a>
 
-This example adds load permissions for account ID
-`123456789012`.
+This example adds load permissions for account ID `123456789012`.
 
 #### Sample Request
+<a name="API_ModifyFpgaImageAttribute_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=ModifyFpgaImageAttribute
 &FpgaImageId=afi-0d123e21abcc85abc
 &Attribute=loadPermission
@@ -136,9 +102,9 @@ https://ec2.amazonaws.com/?Action=ModifyFpgaImageAttribute
 ```
 
 #### Sample Response
+<a name="API_ModifyFpgaImageAttribute_Example_1_Response"></a>
 
 ```
-
 <ModifyFpgaImageAttributeResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
     <requestId>75837959-edf9-4183-ad01-6cb1example</requestId>
     <fpgaImageAttribute>
@@ -153,33 +119,18 @@ https://ec2.amazonaws.com/?Action=ModifyFpgaImageAttribute
 ```
 
 ## See Also
+<a name="API_ModifyFpgaImageAttribute_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/modifyfpgaimageattribute.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/modifyfpgaimageattribute.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/modifyfpgaimageattribute.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/modifyfpgaimageattribute.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/modifyfpgaimageattribute.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/modifyfpgaimageattribute.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/modifyfpgaimageattribute.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/modifyfpgaimageattribute.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/modifyfpgaimageattribute.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/modifyfpgaimageattribute.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ModifyFleet
-
-ModifyHosts
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/ModifyFpgaImageAttribute)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyFpgaImageAttribute)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyFpgaImageAttribute)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyFpgaImageAttribute)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyFpgaImageAttribute)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyFpgaImageAttribute)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyFpgaImageAttribute)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyFpgaImageAttribute)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyFpgaImageAttribute)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyFpgaImageAttribute)
 
 All content copied from https://docs.aws.amazon.com/.

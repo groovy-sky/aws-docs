@@ -3,63 +3,47 @@ title: "Map NVMe disks on Amazon EC2 Windows instance to volumes"
 ---
 
 # Map NVMe disks on Amazon EC2 Windows instance to volumes
+<a name="windows-list-disks-nvme"></a>
 
-With [Nitro-based instances](instance-types.md#instance-hypervisor-type), EBS volumes are exposed as NVMe devices. This topic
-explains how to view the **NVMe disks** that are available
-to the Windows operating system on your instance. It also shows how to map those NVMe
-disks to the underlying Amazon EBS volumes and the device names specified for the block
-device mappings used by Amazon EC2.
+With [Nitro-based instances](instance-types.md#instance-hypervisor-type), EBS volumes are exposed as NVMe devices. This topic explains how to view the **NVMe disks** that are available to the Windows operating system on your instance. It also shows how to map those NVMe disks to the underlying Amazon EBS volumes and the device names specified for the block device mappings used by Amazon EC2.
 
-###### Topics
-
-- [List NVMe disks](#windows-disks-nvme)
-
-- [Map NVMe disks to volumes](#ebs-nvme-volume-map)
+**Topics**
++ [List NVMe disks](#windows-disks-nvme)
++ [Map NVMe disks to volumes](#ebs-nvme-volume-map)
 
 ## List NVMe disks
+<a name="windows-disks-nvme"></a>
 
-You can find the disks on your Windows instance using Disk Management or
-Powershell.
+You can find the disks on your Windows instance using Disk Management or Powershell.
 
-Disk Management
+------
+#### [ Disk Management ]
 
-###### To find the disks on your Windows instance
+**To find the disks on your Windows instance**
 
-1. Log in to your Windows instance using Remote Desktop. For more
-    information, see [Connect to your Windows instance using RDP](connecting-to-windows-instance.md).
+1. Log in to your Windows instance using Remote Desktop. For more information, see [Connect to your Windows instance using RDP](connecting_to_windows_instance.md).
 
-2. Start the Disk Management utility.
+1. Start the Disk Management utility.
 
-3. Review the disks. The root volume is an EBS volume mounted as
-    `C:\`. If there are no other disks shown, then you
-    didn't specify additional volumes when you created the AMI or launched the
-    instance.
+1. Review the disks. The root volume is an EBS volume mounted as `C:\`. If there are no other disks shown, then you didn't specify additional volumes when you created the AMI or launched the instance.
 
-The following is an example that shows the disks that are available if you
-    launch an `r5d.4xlarge` instance with two additional EBS
-    volumes.
+   The following is an example that shows the disks that are available if you launch an `r5d.4xlarge` instance with two additional EBS volumes.
+![Disk Management with a root volume, two instance store volumes, and two EBS volumes.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/disk_management_nvme.png)
 
-![Disk Management with a root volume, two instance store volumes, and two EBS volumes.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/disk_management_nvme.png)
+------
+#### [ PowerShell ]
 
-PowerShell
+The following PowerShell script lists each disk and its corresponding device name and volume. It is intended for use with [Nitro-based instances](instance-types.md#instance-hypervisor-type), which use NVMe EBS and instance store volumes.
 
-The following PowerShell script lists each disk and its corresponding device name
-and volume. It is intended for use with [Nitro-based instances](instance-types.md#instance-hypervisor-type), which use NVMe EBS and
-instance store volumes.
+Connect to your Windows instance and run the following command to enable PowerShell script execution.
 
-Connect to your Windows instance and run the following command to enable
-PowerShell script execution.
-
-```nohighlight
-
+```
 Set-ExecutionPolicy RemoteSigned
 ```
 
-Copy the following script and save it as `mapping.ps1` on your
-Windows instance.
+Copy the following script and save it as `mapping.ps1` on your Windows instance.
 
-```powershell
-
+```
 # List the disks for NVMe volumes
 
 function Get-EC2InstanceMetadata {
@@ -142,16 +126,13 @@ $Report | Sort-Object Disk | Format-Table -AutoSize -Property Disk, Partitions, 
 
 Run the script as follows:
 
-```nohighlight
-
+```
 PS C:\> .\mapping.ps1
 ```
 
-The following is example output for an instance with a root volume, two EBS
-volumes, and two instance store volumes.
+The following is example output for an instance with a root volume, two EBS volumes, and two instance store volumes.
 
-```nohighlight
-
+```
 Disk Partitions DriveLetter EbsVolumeId           Device    VirtualDevice VolumeName
 ---- ---------- ----------- -----------           ------    ------------- ----------
    0          1 C           vol-03683f1d861744bc7 /dev/sda1 root
@@ -161,15 +142,16 @@ Disk Partitions DriveLetter EbsVolumeId           Device    VirtualDevice Volume
    4          1 G           AWS-13E7299C2BD031A28 Ephemeral N/A           Temporary Storage
 ```
 
-If you did not configure your credentials for Tools for Windows PowerShell on the Windows instance, the script cannot
-get the EBS volume ID and uses N/A in the `EbsVolumeId` column.
+If you did not configure your credentials for Tools for Windows PowerShell on the Windows instance, the script cannot get the EBS volume ID and uses N/A in the `EbsVolumeId` column.
+
+------
 
 ## Map NVMe disks to volumes
+<a name="ebs-nvme-volume-map"></a>
 
-You can use the [Get-Disk](https://learn.microsoft.com/en-us/powershell/module/storage/get-disk) command to map Windows disk numbers to Amazon EBS volumes and Amazon EC2 instance store volumes.
+You can use the [ Get-Disk](https://learn.microsoft.com/en-us/powershell/module/storage/get-disk) command to map Windows disk numbers to Amazon EBS volumes and Amazon EC2 instance store volumes.
 
-```nohighlight
-
+```
 PS C:\> Get-Disk
 Number Friendly Name Serial Number                    HealthStatus         OperationalStatus      Total Size Partition
                                                                                                              Style
@@ -181,11 +163,9 @@ Number Friendly Name Serial Number                    HealthStatus         Opera
 1      NVMe Amazo... vol082b07051043174b9_00000001.   Healthy              Online                       8 GB MBR
 ```
 
-You can also run the **ebsnvme-id** command to map NVMe disk
-numbers to EBS volume IDs and device names.
+You can also run the **ebsnvme-id** command to map NVMe disk numbers to EBS volume IDs and device names.
 
-```nohighlight
-
+```
 PS C:\> C:\PROGRAMDATA\Amazon\Tools\ebsnvme-id.exe
 Disk Number: 0
 Volume ID: vol-03683f1d861744bc7
@@ -199,12 +179,5 @@ Disk Number: 2
 Volume ID: vol-0a4064b39e5f534a2
 Device Name: xvdc
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-How volumes are attached and mapped for Windows
-instances
-
-Map non-NVME disks to volumes
 
 All content copied from https://docs.aws.amazon.com/.

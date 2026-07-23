@@ -3,63 +3,41 @@ title: "DiskImageDescription"
 ---
 
 # DiskImageDescription
+<a name="API_DiskImageDescription"></a>
 
 Describes a disk image.
 
 ## Contents
+<a name="API_DiskImageDescription_Contents"></a>
 
-**checksum**
-
+ ** checksum **
 The checksum computed for the disk image.
-
 Type: String
-
 Required: No
 
-**format**
-
+ ** format **
 The disk image format.
-
 Type: String
-
 Valid Values: `VMDK | RAW | VHD`
-
 Required: No
 
-**importManifestUrl**
-
-A presigned URL for the import manifest stored in Amazon S3. For information about creating a presigned URL for
-an Amazon S3 object, read the "Query String Request Authentication Alternative" section of the [Authenticating REST Requests](../../../../services/s3/latest/dev/restauthentication.md) topic in
-the _Amazon Simple Storage Service Developer Guide_.
-
-For information about the import manifest referenced by this API action, see [VM Import Manifest](manifest.md).
-
+ ** importManifestUrl **
+A presigned URL for the import manifest stored in Amazon S3. For information about creating a presigned URL for an Amazon S3 object, read the "Query String Request Authentication Alternative" section of the [Authenticating REST Requests](https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html) topic in the *Amazon Simple Storage Service Developer Guide*.
+For information about the import manifest referenced by this API action, see [VM Import Manifest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/manifest.html).
 Type: String
-
 Required: No
 
-**size**
-
+ ** size **
 The size of the disk image, in GiB.
-
 Type: Long
-
 Required: No
 
 ## See Also
+<a name="API_DiskImageDescription_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/diskimagedescription.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/diskimagedescription.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/diskimagedescription.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DiskImage
-
-DiskImageDetail
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DiskImageDescription)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DiskImageDescription)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DiskImageDescription)
 
 All content copied from https://docs.aws.amazon.com/.

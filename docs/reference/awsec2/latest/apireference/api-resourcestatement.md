@@ -3,41 +3,29 @@ title: "ResourceStatement"
 ---
 
 # ResourceStatement
+<a name="API_ResourceStatement"></a>
 
 Describes a resource statement.
 
 ## Contents
+<a name="API_ResourceStatement_Contents"></a>
 
-**ResourceSet.N**
-
+ ** ResourceSet.N **
 The resources.
-
 Type: Array of strings
-
 Required: No
 
-**ResourceTypeSet.N**
-
+ ** ResourceTypeSet.N **
 The resource types.
-
 Type: Array of strings
-
 Required: No
 
 ## See Also
+<a name="API_ResourceStatement_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/resourcestatement.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/resourcestatement.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/resourcestatement.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReservedInstancesOffering
-
-ResourceStatementRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ResourceStatement)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ResourceStatement)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ResourceStatement)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,76 +3,66 @@ title: "DisassociateRouteTable"
 ---
 
 # DisassociateRouteTable
+<a name="API_DisassociateRouteTable"></a>
 
 Disassociates a subnet or gateway from a route table.
 
-After you perform this action, the subnet no longer uses the routes in the route table.
-Instead, it uses the routes in the VPC's main route table. For more information
-about route tables, see [Route\
-tables](../../../../services/vpc/latest/userguide/vpc-route-tables.md) in the _Amazon VPC User Guide_.
+After you perform this action, the subnet no longer uses the routes in the route table. Instead, it uses the routes in the VPC's main route table. For more information about route tables, see [Route tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html) in the *Amazon VPC User Guide*.
 
 ## Request Parameters
+<a name="API_DisassociateRouteTable_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**AssociationId**
-
+ **AssociationId**
 The association ID representing the current association between the route table and subnet or gateway.
-
 Type: String
-
 Required: Yes
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
-Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
 ## Response Elements
+<a name="API_DisassociateRouteTable_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**return**
-
+ **return**
 Is `true` if the request succeeds, and an error otherwise.
-
 Type: Boolean
 
 ## Errors
+<a name="API_DisassociateRouteTable_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_DisassociateRouteTable_Examples"></a>
 
 ### Example
+<a name="API_DisassociateRouteTable_Example_1"></a>
 
-This example disassociates the specified route table from the subnet it's
-associated to.
+This example disassociates the specified route table from the subnet it's associated to.
 
 #### Sample Request
+<a name="API_DisassociateRouteTable_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=DisassociateRouteTable
 &AssociationId=rtbassoc-0531ae3257956bdfb
 &AUTHPARAMS
 ```
 
 #### Sample Response
+<a name="API_DisassociateRouteTable_Example_1_Response"></a>
 
 ```
-
 <DisassociateRouteTableResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
    <requestId>59dbff89-35bd-4eac-99ed-be587EXAMPLE</requestId>
    <return>true</return>
@@ -80,33 +70,18 @@ https://ec2.amazonaws.com/?Action=DisassociateRouteTable
 ```
 
 ## See Also
+<a name="API_DisassociateRouteTable_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/disassociateroutetable.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/disassociateroutetable.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/disassociateroutetable.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/disassociateroutetable.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/disassociateroutetable.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/disassociateroutetable.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/disassociateroutetable.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/disassociateroutetable.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/disassociateroutetable.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/disassociateroutetable.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DisassociateRouteServer
-
-DisassociateSecurityGroupVpc
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/DisassociateRouteTable)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DisassociateRouteTable)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DisassociateRouteTable)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DisassociateRouteTable)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DisassociateRouteTable)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DisassociateRouteTable)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DisassociateRouteTable)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DisassociateRouteTable)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DisassociateRouteTable)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DisassociateRouteTable)
 
 All content copied from https://docs.aws.amazon.com/.

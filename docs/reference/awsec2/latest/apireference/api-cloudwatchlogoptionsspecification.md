@@ -3,81 +3,53 @@ title: "CloudWatchLogOptionsSpecification"
 ---
 
 # CloudWatchLogOptionsSpecification
+<a name="API_CloudWatchLogOptionsSpecification"></a>
 
 Options for sending VPN tunnel logs to CloudWatch.
 
 ## Contents
+<a name="API_CloudWatchLogOptionsSpecification_Contents"></a>
 
-**BgpLogEnabled**
-
+ ** BgpLogEnabled **
 Specifies whether to enable BGP logging for the VPN connection. Default value is `False`.
-
 Valid values: `True` \| `False`
-
 Type: Boolean
-
 Required: No
 
-**BgpLogGroupArn**
-
+ ** BgpLogGroupArn **
 The Amazon Resource Name (ARN) of the CloudWatch log group where BGP logs will be sent.
-
 Type: String
-
 Required: No
 
-**BgpLogOutputFormat**
-
+ ** BgpLogOutputFormat **
 The desired output format for BGP logs to be sent to CloudWatch. Default format is `json`.
-
 Valid values: `json` \| `text`
-
 Type: String
-
 Required: No
 
-**LogEnabled**
-
+ ** LogEnabled **
 Enable or disable VPN tunnel logging feature. Default value is `False`.
-
 Valid values: `True` \| `False`
-
 Type: Boolean
-
 Required: No
 
-**LogGroupArn**
-
+ ** LogGroupArn **
 The Amazon Resource Name (ARN) of the CloudWatch log group to send logs to.
-
 Type: String
-
 Required: No
 
-**LogOutputFormat**
-
+ ** LogOutputFormat **
 Set log format. Default format is `json`.
-
 Valid values: `json` \| `text`
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_CloudWatchLogOptionsSpecification_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/cloudwatchlogoptionsspecification.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/cloudwatchlogoptionsspecification.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/cloudwatchlogoptionsspecification.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CloudWatchLogOptions
-
-CoipAddressUsage
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CloudWatchLogOptionsSpecification)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CloudWatchLogOptionsSpecification)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CloudWatchLogOptionsSpecification)
 
 All content copied from https://docs.aws.amazon.com/.

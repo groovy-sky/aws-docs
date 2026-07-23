@@ -3,97 +3,64 @@ title: "SecurityGroup"
 ---
 
 # SecurityGroup
+<a name="API_SecurityGroup"></a>
 
 Describes a security group.
 
 ## Contents
+<a name="API_SecurityGroup_Contents"></a>
 
-**groupDescription**
-
+ ** groupDescription **
 A description of the security group.
-
 Type: String
-
 Required: No
 
-**groupId**
-
+ ** groupId **
 The ID of the security group.
-
 Type: String
-
 Required: No
 
-**groupName**
-
+ ** groupName **
 The name of the security group.
-
 Type: String
-
 Required: No
 
-**IpPermissions.N**
-
+ ** IpPermissions.N **
 The inbound rules associated with the security group.
-
-Type: Array of [IpPermission](api-ippermission.md) objects
-
+Type: Array of [IpPermission](API_IpPermission.md) objects
 Required: No
 
-**IpPermissionsEgress.N**
-
+ ** IpPermissionsEgress.N **
 The outbound rules associated with the security group.
-
-Type: Array of [IpPermission](api-ippermission.md) objects
-
+Type: Array of [IpPermission](API_IpPermission.md) objects
 Required: No
 
-**ownerId**
-
+ ** ownerId **
 The AWS account ID of the owner of the security group.
-
 Type: String
-
 Required: No
 
-**securityGroupArn**
-
+ ** securityGroupArn **
 The ARN of the security group.
-
 Type: String
-
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 Any tags assigned to the security group.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
-**vpcId**
-
+ ** vpcId **
 The ID of the VPC for the security group.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_SecurityGroup_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/securitygroup.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/securitygroup.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/securitygroup.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SecondarySubnetIpv4CidrBlockAssociation
-
-SecurityGroupForVpc
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/SecurityGroup)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/SecurityGroup)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/SecurityGroup)
 
 All content copied from https://docs.aws.amazon.com/.

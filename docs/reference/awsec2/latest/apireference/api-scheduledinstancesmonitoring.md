@@ -3,33 +3,24 @@ title: "ScheduledInstancesMonitoring"
 ---
 
 # ScheduledInstancesMonitoring
+<a name="API_ScheduledInstancesMonitoring"></a>
 
 Describes whether monitoring is enabled for a Scheduled Instance.
 
 ## Contents
+<a name="API_ScheduledInstancesMonitoring_Contents"></a>
 
-**Enabled**
-
+ ** Enabled **
 Indicates whether monitoring is enabled.
-
 Type: Boolean
-
 Required: No
 
 ## See Also
+<a name="API_ScheduledInstancesMonitoring_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/scheduledinstancesmonitoring.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/scheduledinstancesmonitoring.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/scheduledinstancesmonitoring.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScheduledInstancesLaunchSpecification
-
-ScheduledInstancesNetworkInterface
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ScheduledInstancesMonitoring)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ScheduledInstancesMonitoring)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ScheduledInstancesMonitoring)
 
 All content copied from https://docs.aws.amazon.com/.

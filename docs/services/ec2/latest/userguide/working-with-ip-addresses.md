@@ -3,312 +3,248 @@ title: "Manage the IPv4 addresses for your EC2 instances"
 ---
 
 # Manage the IPv4 addresses for your EC2 instances
+<a name="working-with-ip-addresses"></a>
 
-You can assign a public IPv4 address to your instance when you launch it. You can view
-the IPv4 addresses for your instance in the console through either the
-**Instances** page or the **Network Interfaces**
-page.
+You can assign a public IPv4 address to your instance when you launch it. You can view the IPv4 addresses for your instance in the console through either the **Instances** page or the **Network Interfaces** page.
 
-###### Tasks
-
-- [Assign a public IPv4 address at launch](#public-ip-addresses)
-
-- [Assign a private IPv4 address at launch](#assign-private-ipv4-address)
-
-- [View the primary IPv4 address](#view-instance-ipv4-addresses)
-
-- [View the IPv4 addresses using instance metadata](#view-instance-ipv4-addresses-imds)
+**Topics**
++ [Assign a public IPv4 address at launch](#public-ip-addresses)
++ [Assign a private IPv4 address at launch](#assign-private-ipv4-address)
++ [View the primary IPv4 address](#view-instance-ipv4-addresses)
++ [View the IPv4 addresses using instance metadata](#view-instance-ipv4-addresses-imds)
 
 ## Assign a public IPv4 address at launch
+<a name="public-ip-addresses"></a>
 
-Each subnet has an attribute that determines whether instances launched into that
-subnet are assigned a public IP address. By default, nondefault subnets have this
-attribute set to false, and default subnets have this attribute set to true. When
-you launch an instance, a public IPv4 addressing feature is also available for you
-to control whether your instance is assigned a public IPv4 address; you can override
-the default behavior of the subnet's IP addressing attribute. The public IPv4
-address is assigned from Amazon's pool of public IPv4 addresses, and is assigned to
-the network interface with the device index of 0. This feature depends on certain
-conditions at the time you launch your instance.
+Each subnet has an attribute that determines whether instances launched into that subnet are assigned a public IP address. By default, nondefault subnets have this attribute set to false, and default subnets have this attribute set to true. When you launch an instance, a public IPv4 addressing feature is also available for you to control whether your instance is assigned a public IPv4 address; you can override the default behavior of the subnet's IP addressing attribute. The public IPv4 address is assigned from Amazon's pool of public IPv4 addresses, and is assigned to the network interface with the device index of 0. This feature depends on certain conditions at the time you launch your instance.
 
-###### Considerations
+**Considerations**
++ You can unassign the public IP address from your instance after launch by [managing the IP addresses associated with a network interface](managing-network-interface-ip-addresses.md). For more information about public IPv4 addresses, see [Public IPv4 addresses](using-instance-addressing.md#concepts-public-addresses).
++ You can't auto-assign a public IP address if you specify more than one network interface. Additionally, you cannot override the subnet setting using the auto-assign public IP feature if you specify an existing network interface for device index 0.
++ Whether you assign a public IP address to your instance during launch or not, you can associate an Elastic IP address with your instance after it's launched. For more information, see [Elastic IP addresses](elastic-ip-addresses-eip.md). You can also modify your subnet's public IPv4 addressing behavior. For more information, see [Modify the public IPv4 addressing attribute for your subnet](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-public-ip.html).
 
-- You can unassign the public IP address from your instance after launch by
-[managing the IP\
-addresses associated with a network interface](managing-network-interface-ip-addresses.md). For more
-information about public IPv4 addresses, see [Public IPv4 addresses](using-instance-addressing.md#concepts-public-addresses).
+------
+#### [ Console ]
 
-- You can't auto-assign a public IP address if you specify more than one
-network interface. Additionally, you cannot override the subnet setting
-using the auto-assign public IP feature if you specify an existing network
-interface for device index 0.
+**To assign a public IPv4 address at launch**
+Follow the procedure to [launch an instance](ec2-launch-instance-wizard.md), and when you configure [Network Settings](ec2-instance-launch-parameters.md#liw-network-settings), choose the option to **Auto-assign Public IP**.
 
-- Whether you assign a public IP address to your instance during launch or
-not, you can associate an Elastic IP address with your instance after it's
-launched. For more information, see [Elastic IP addresses](elastic-ip-addresses-eip.md). You can also modify your
-subnet's public IPv4 addressing behavior. For more information, see [Modify the public IPv4\
-addressing attribute for your subnet](../../../vpc/latest/userguide/subnet-public-ip.md).
+------
+#### [ AWS CLI ]
 
-Console
+**To assign a public IPv4 address at launch**
+Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--associate-public-ip-address` option.
 
-###### To assign a public IPv4 address at launch
-
-Follow the procedure to [launch an instance](ec2-launch-instance-wizard.md), and when you configure [Network Settings](ec2-instance-launch-parameters.md#liw-network-settings), choose
-the option to **Auto-assign Public IP**.
-
-AWS CLI
-
-###### To assign a public IPv4 address at launch
-
-Use the [run-instances](../../../cli/latest/reference/ec2/run-instances.md) command with the
-`--associate-public-ip-address` option.
-
-```nohighlight
-
+```
 --associate-public-ip-address
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To assign a public IPv4 address at launch
+**To assign a public IPv4 address at launch**
+Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the `-AssociatePublicIp` parameter.
 
-Use the [New-EC2Instance](../../../powershell/latest/reference/items/new-ec2instance.md) cmdlet with the
-`-AssociatePublicIp` parameter.
-
-```powershell
-
+```
 -AssociatePublicIp $true
 ```
 
-## Assign a private IPv4 address at launch
+------
 
-You can specify a private IPv4 address from the IPv4 address range of the subnet,
-or let Amazon EC2 chose one for you. This address is assigned to the primary network
-interface.
+## Assign a private IPv4 address at launch
+<a name="assign-private-ipv4-address"></a>
+
+You can specify a private IPv4 address from the IPv4 address range of the subnet, or let Amazon EC2 chose one for you. This address is assigned to the primary network interface.
 
 To assign IPv4 addresses after launch, see [Assign secondary IP addresses to an instance](instance-secondary-ip-addresses.md#assign-secondary-ip-address).
 
-Console
+------
+#### [ Console ]
 
-###### To assign a private IPv4 address at launch
+**To assign a private IPv4 address at launch**
+Follow the procedure to [launch an instance](ec2-launch-instance-wizard.md). When you configure [Network Settings](ec2-instance-launch-parameters.md#liw-network-settings), expand **Advanced network configuration** and enter a value for **Primary IP**.
 
-Follow the procedure to [launch an instance](ec2-launch-instance-wizard.md). When you configure [Network Settings](ec2-instance-launch-parameters.md#liw-network-settings), expand
-**Advanced network configuration** and enter a
-value for **Primary IP**.
+------
+#### [ AWS CLI ]
 
-AWS CLI
+**To assign a private IPv4 address at launch**
+Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--private-ip-address` option.
 
-###### To assign a private IPv4 address at launch
-
-Use the [run-instances](../../../cli/latest/reference/ec2/run-instances.md) command with the
-`--private-ip-address` option.
-
-```nohighlight
-
---private-ip-addresses 10.251.50.12
+```
+--private-ip-addresses {{10.251.50.12}}
 ```
 
 To let Amazon EC2 choose the IP address, omit this option.
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To assign a private IPv4 address at launch
+**To assign a private IPv4 address at launch**
+Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the `-PrivateIpAddress` parameter.
 
-Use the [New-EC2Instance](../../../powershell/latest/reference/items/new-ec2instance.md) cmdlet with the
-`-PrivateIpAddress` parameter.
-
-```powershell
-
--PrivateIpAddress 10.251.50.12
+```
+-PrivateIpAddress {{10.251.50.12}}
 ```
 
 To let Amazon EC2 choose the IP address, omit this parameter.
 
+------
+
 ## View the primary IPv4 address
+<a name="view-instance-ipv4-addresses"></a>
 
-The public IPv4 address is displayed as a property of the network interface in the
-console, but it's mapped to the primary private IPv4 address through NAT. Therefore,
-if you inspect the properties of your network interface on your instance, for
-example, through `ifconfig` (Linux) or `ipconfig` (Windows),
-the public IPv4 address is not displayed.
+The public IPv4 address is displayed as a property of the network interface in the console, but it's mapped to the primary private IPv4 address through NAT. Therefore, if you inspect the properties of your network interface on your instance, for example, through `ifconfig` (Linux) or `ipconfig` (Windows), the public IPv4 address is not displayed.
 
-Console
+------
+#### [ Console ]
 
-###### To view the IPv4 addresses for an instance
+**To view the IPv4 addresses for an instance**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose
-    **Instances**.
+1. In the navigation pane, choose **Instances**.
 
-3. Select the instance.
+1. Select the instance.
 
-4. On the **Networking** tab, find
-    **Public IPv4 address** and
-    **Private IPv4 addresses**.
+1. On the **Networking** tab, find **Public IPv4 address** and **Private IPv4 addresses**.
 
-5. (Optional) The **Networking** tab also
-    contains the network interfaces and Elastic IP addresses for the
-    instance.
+1. (Optional) The **Networking** tab also contains the network interfaces and Elastic IP addresses for the instance.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To view the primary IPv4 address for an instance
+**To view the primary IPv4 address for an instance**
+Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
-Use the [describe-instances](../../../cli/latest/reference/ec2/describe-instances.md) command.
-
-```nohighlight
-
+```
 aws ec2 describe-instances \
-    --instance-ids i-1234567890abcdef0 \
+    --instance-ids {{i-1234567890abcdef0}} \
     --query "Reservations[].Instances[].PrivateIpAddress" \
     --output text
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 10.251.50.12
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To view the primary IPv4 address for an instance
+**To view the primary IPv4 address for an instance**
+Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-Use the [Get-EC2Instance](../../../powershell/latest/reference/items/get-ec2instance.md) cmdlet.
-
-```powershell
-
+```
 (Get-EC2Instance `
-    -InstanceId i-1234567890abcdef0).Instances.PrivateIpAddress
+    -InstanceId {{i-1234567890abcdef0}}).Instances.PrivateIpAddress
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 10.251.50.12
 ```
 
+------
+
 ## View the IPv4 addresses using instance metadata
+<a name="view-instance-ipv4-addresses-imds"></a>
 
-You can get the IPv4 addresses for your instance by retrieving instance metadata.
-For more information, see [Use instance metadata to manage your EC2 instance](ec2-instance-metadata.md).
+You can get the IPv4 addresses for your instance by retrieving instance metadata. For more information, see [Use instance metadata to manage your EC2 instance](ec2-instance-metadata.md).
 
-###### To view the IPv4 addresses using instance metadata
+**To view the IPv4 addresses using instance metadata**
 
 1. Connect to your instance. For more information, see [Connect to your EC2 instance](connect.md).
 
-2. Run one of the following commands.
-IMDSv2
+1. Run one of the following commands.
 
-###### Linux
+------
+#### [ IMDSv2 ]
 
+**Linux**
 Run the following command from your Linux instance.
 
-```nohighlight
+   ```
+   TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
+   && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/local-ipv4
+   ```
 
-TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
-&& curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/local-ipv4
-```
+**Windows**
+Run the following command from your Windows instance.
 
-###### Windows
-
-Run the following command from your Windows
-instance.
-
-```powershell
-
-[string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
+   ```
+   [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
        -Method PUT -Uri http://169.254.169.254/latest/api/token
-```
+   ```
 
-```powershell
-
-Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
+   ```
+   Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
        -Method GET -Uri http://169.254.169.254/latest/meta-data/local-ipv4
-```
+   ```
 
-IMDSv1
+------
+#### [ IMDSv1 ]
 
-###### Linux
-
+**Linux**
 Run the following command from your Linux instance.
 
-```nohighlight
+   ```
+   curl http://169.254.169.254/latest/meta-data/local-ipv4
+   ```
 
-curl http://169.254.169.254/latest/meta-data/local-ipv4
-```
+**Windows**
+Run the following command from your Windows instance.
 
-###### Windows
+   ```
+   Invoke-RestMethod http://169.254.169.254/latest/meta-data/local-ipv4
+   ```
 
-Run the following command from your Windows
-instance.
+------
 
-```powershell
+1. Use one of the following commands to access the public IP address. If there is an Elastic IP address associated with the instance, the command returns the Elastic IP address.
 
-Invoke-RestMethod http://169.254.169.254/latest/meta-data/local-ipv4
-```
+------
+#### [ IMDSv2 ]
 
-3. Use one of the following commands to access the public IP address. If
-    there is an Elastic IP address associated with the instance, the command
-    returns the Elastic IP address.
-IMDSv2
-
-###### Linux
-
+**Linux**
 Run the following command from your Linux instance.
 
-```nohighlight
+   ```
+   [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
+   && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/public-ipv4
+   ```
 
-[ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
-&& curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/public-ipv4
-```
+**Windows**
+Run the following command from your Windows instance.
 
-###### Windows
-
-Run the following command from your Windows
-instance.
-
-```powershell
-
-[string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
+   ```
+   [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
        -Method PUT -Uri http://169.254.169.254/latest/api/token
-```
+   ```
 
-```powershell
-
-Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
+   ```
+   Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
        -Method GET -Uri http://169.254.169.254/latest/meta-data/public-ipv4
-```
+   ```
 
-IMDSv1
+------
+#### [ IMDSv1 ]
 
-###### Linux
-
+**Linux**
 Run the following command from your Linux instance.
 
-```nohighlight
+   ```
+   curl http://169.254.169.254/latest/meta-data/public-ipv4
+   ```
 
-curl http://169.254.169.254/latest/meta-data/public-ipv4
-```
+**Windows**
+Run the following command from your Windows instance.
 
-###### Windows
+   ```
+   Invoke-RestMethod http://169.254.169.254/latest/meta-data/public-ipv4
+   ```
 
-Run the following command from your Windows
-instance.
-
-```powershell
-
-Invoke-RestMethod http://169.254.169.254/latest/meta-data/public-ipv4
-```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Instance IP addressing
-
-IPv6 addresses
+------
 
 All content copied from https://docs.aws.amazon.com/.

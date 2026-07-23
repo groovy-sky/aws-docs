@@ -3,65 +3,44 @@ title: "VerifiedAccessLogS3Destination"
 ---
 
 # VerifiedAccessLogS3Destination
+<a name="API_VerifiedAccessLogS3Destination"></a>
 
 Options for Amazon S3 as a logging destination.
 
 ## Contents
+<a name="API_VerifiedAccessLogS3Destination_Contents"></a>
 
-**bucketName**
-
+ ** bucketName **
 The bucket name.
-
 Type: String
-
 Required: No
 
-**bucketOwner**
-
+ ** bucketOwner **
 The AWS account number that owns the bucket.
-
 Type: String
-
 Required: No
 
-**deliveryStatus**
-
+ ** deliveryStatus **
 The delivery status.
-
-Type: [VerifiedAccessLogDeliveryStatus](api-verifiedaccesslogdeliverystatus.md) object
-
+Type: [VerifiedAccessLogDeliveryStatus](API_VerifiedAccessLogDeliveryStatus.md) object
 Required: No
 
-**enabled**
-
+ ** enabled **
 Indicates whether logging is enabled.
-
 Type: Boolean
-
 Required: No
 
-**prefix**
-
+ ** prefix **
 The bucket prefix.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_VerifiedAccessLogS3Destination_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/verifiedaccesslogs3destination.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/verifiedaccesslogs3destination.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccesslogs3destination.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VerifiedAccessLogs
-
-VerifiedAccessLogS3DestinationOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VerifiedAccessLogS3Destination)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VerifiedAccessLogS3Destination)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VerifiedAccessLogS3Destination)
 
 All content copied from https://docs.aws.amazon.com/.

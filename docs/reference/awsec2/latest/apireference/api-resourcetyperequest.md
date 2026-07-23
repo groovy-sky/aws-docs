@@ -3,46 +3,30 @@ title: "ResourceTypeRequest"
 ---
 
 # ResourceTypeRequest
+<a name="API_ResourceTypeRequest"></a>
 
-A resource type to check for image references. Associated options can also be specified if the
-resource type is an EC2 instance or launch template.
+A resource type to check for image references. Associated options can also be specified if the resource type is an EC2 instance or launch template.
 
 ## Contents
+<a name="API_ResourceTypeRequest_Contents"></a>
 
-**ResourceType**
-
+ ** ResourceType **
 The resource type.
-
 Type: String
-
 Valid Values: `ec2:Instance | ec2:LaunchTemplate | ssm:Parameter | imagebuilder:ImageRecipe | imagebuilder:ContainerRecipe`
-
 Required: No
 
-**ResourceTypeOption.N**
-
-The options that affect the scope of the response. Valid only when
-`ResourceType` is `ec2:Instance` or
-`ec2:LaunchTemplate`.
-
-Type: Array of [ResourceTypeOption](api-resourcetypeoption.md) objects
-
+ ** ResourceTypeOption.N **
+The options that affect the scope of the response. Valid only when `ResourceType` is `ec2:Instance` or `ec2:LaunchTemplate`.
+Type: Array of [ResourceTypeOption](API_ResourceTypeOption.md) objects
 Required: No
 
 ## See Also
+<a name="API_ResourceTypeRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/resourcetyperequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/resourcetyperequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/resourcetyperequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ResourceTypeOption
-
-ResponseError
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ResourceTypeRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ResourceTypeRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ResourceTypeRequest)
 
 All content copied from https://docs.aws.amazon.com/.

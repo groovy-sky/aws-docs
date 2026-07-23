@@ -3,85 +3,56 @@ title: "TransitGatewayRouteTableRoute"
 ---
 
 # TransitGatewayRouteTableRoute
+<a name="API_TransitGatewayRouteTableRoute"></a>
 
 Describes a route in a transit gateway route table.
 
 ## Contents
+<a name="API_TransitGatewayRouteTableRoute_Contents"></a>
 
-**attachmentId**
-
+ ** attachmentId **
 The ID of the route attachment.
-
 Type: String
-
 Required: No
 
-**destinationCidr**
-
+ ** destinationCidr **
 The CIDR block used for destination matches.
-
 Type: String
-
 Required: No
 
-**prefixListId**
-
+ ** prefixListId **
 The ID of the prefix list.
-
 Type: String
-
 Required: No
 
-**resourceId**
-
+ ** resourceId **
 The ID of the resource for the route attachment.
-
 Type: String
-
 Required: No
 
-**resourceType**
-
+ ** resourceType **
 The resource type for the route attachment.
-
 Type: String
-
 Required: No
 
-**routeOrigin**
-
+ ** routeOrigin **
 The route origin. The following are the possible values:
-
-- static
-
-- propagated
-
++ static
++ propagated
 Type: String
-
 Required: No
 
-**state**
-
+ ** state **
 The state of the route.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_TransitGatewayRouteTableRoute_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/transitgatewayroutetableroute.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/transitgatewayroutetableroute.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/transitgatewayroutetableroute.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitGatewayRouteTablePropagation
-
-TransitGatewayVpcAttachment
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TransitGatewayRouteTableRoute)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TransitGatewayRouteTableRoute)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TransitGatewayRouteTableRoute)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,57 +3,39 @@ title: "DeleteLaunchTemplateVersionsResponseErrorItem"
 ---
 
 # DeleteLaunchTemplateVersionsResponseErrorItem
+<a name="API_DeleteLaunchTemplateVersionsResponseErrorItem"></a>
 
 Describes a launch template version that could not be deleted.
 
 ## Contents
+<a name="API_DeleteLaunchTemplateVersionsResponseErrorItem_Contents"></a>
 
-**launchTemplateId**
-
+ ** launchTemplateId **
 The ID of the launch template.
-
 Type: String
-
 Required: No
 
-**launchTemplateName**
-
+ ** launchTemplateName **
 The name of the launch template.
-
 Type: String
-
 Required: No
 
-**responseError**
-
+ ** responseError **
 Information about the error.
-
-Type: [ResponseError](api-responseerror.md) object
-
+Type: [ResponseError](API_ResponseError.md) object
 Required: No
 
-**versionNumber**
-
+ ** versionNumber **
 The version number of the launch template.
-
 Type: Long
-
 Required: No
 
 ## See Also
+<a name="API_DeleteLaunchTemplateVersionsResponseErrorItem_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deletelaunchtemplateversionsresponseerroritem.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deletelaunchtemplateversionsresponseerroritem.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletelaunchtemplateversionsresponseerroritem.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DeleteFleetSuccessItem
-
-DeleteLaunchTemplateVersionsResponseSuccessItem
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DeleteLaunchTemplateVersionsResponseErrorItem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DeleteLaunchTemplateVersionsResponseErrorItem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DeleteLaunchTemplateVersionsResponseErrorItem)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,95 +3,61 @@ title: "MacSystemIntegrityProtectionConfigurationRequest"
 ---
 
 # MacSystemIntegrityProtectionConfigurationRequest
+<a name="API_MacSystemIntegrityProtectionConfigurationRequest"></a>
 
 Describes a custom configuration for a System Integrity Protection (SIP) modification task.
 
 ## Contents
+<a name="API_MacSystemIntegrityProtectionConfigurationRequest_Contents"></a>
 
-**AppleInternal**
-
+ ** AppleInternal **
 Enables or disables Apple Internal.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**BaseSystem**
-
+ ** BaseSystem **
 Enables or disables Base System.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**DebuggingRestrictions**
-
+ ** DebuggingRestrictions **
 Enables or disables Debugging Restrictions.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**DTraceRestrictions**
-
+ ** DTraceRestrictions **
 Enables or disables Dtrace Restrictions.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**FilesystemProtections**
-
+ ** FilesystemProtections **
 Enables or disables Filesystem Protections.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**KextSigning**
-
+ ** KextSigning **
 Enables or disables Kext Signing.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**NvramProtections**
-
+ ** NvramProtections **
 Enables or disables Nvram Protections.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
 ## See Also
+<a name="API_MacSystemIntegrityProtectionConfigurationRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/macsystemintegrityprotectionconfigurationrequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/macsystemintegrityprotectionconfigurationrequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/macsystemintegrityprotectionconfigurationrequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MacSystemIntegrityProtectionConfiguration
-
-MaintenanceDetails
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/MacSystemIntegrityProtectionConfigurationRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/MacSystemIntegrityProtectionConfigurationRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/MacSystemIntegrityProtectionConfigurationRequest)
 
 All content copied from https://docs.aws.amazon.com/.

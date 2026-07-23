@@ -3,37 +3,32 @@ title: "Describe an EC2 Fleet, its instances, and its events"
 ---
 
 # Describe an EC2 Fleet, its instances, and its events
+<a name="describe-ec2-fleet"></a>
 
-You can describe your EC2 Fleet configuration, the instances in your EC2 Fleet, and the event
-history of your EC2 Fleet.
+You can describe your EC2 Fleet configuration, the instances in your EC2 Fleet, and the event history of your EC2 Fleet.
 
-###### Tasks
-
-- [Describe your EC2 Fleet](#describe-all-ec2-fleets)
-
-- [Describe all instances in your EC2 Fleet](#describe-instances-in-ec2-fleet)
-
-- [Describe the event history for your EC2 Fleet](#describe-ec2-fleet-event-history)
+**Topics**
++ [Describe your EC2 Fleet](#describe-all-ec2-fleets)
++ [Describe all instances in your EC2 Fleet](#describe-instances-in-ec2-fleet)
++ [Describe the event history for your EC2 Fleet](#describe-ec2-fleet-event-history)
 
 ## Describe your EC2 Fleet
+<a name="describe-all-ec2-fleets"></a>
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To describe your EC2 Fleet
+**To describe your EC2 Fleet**
+Use the [describe-fleets](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-fleets.html) command.
 
-Use the [describe-fleets](../../../cli/latest/reference/ec2/describe-fleets.md)
-command.
-
-```nohighlight
-
+```
 aws ec2 describe-fleets \
-    --fleet-ids fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE
+    --fleet-ids {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 
 The following is example output.
 
-```json
-
+```
 {
     "Fleets": [
         {
@@ -73,40 +68,38 @@ The following is example output.
 }
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To describe your EC2 Fleet
+**To describe your EC2 Fleet**
+Use the [Get-EC2FleetList](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2FleetList.html) cmdlet.
 
-Use the [Get-EC2FleetList](../../../powershell/latest/reference/items/get-ec2fleetlist.md)
-cmdlet.
-
-```powershell
-
+```
 Get-EC2FleetList `
-    -FleetId fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE
+    -FleetId {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 
+------
+
 ## Describe all instances in your EC2 Fleet
+<a name="describe-instances-in-ec2-fleet"></a>
 
-The returned list of running instances is refreshed periodically and
-might be out of date.
+The returned list of running instances is refreshed periodically and might be out of date.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To describe the instances for the specified EC2 Fleet
+**To describe the instances for the specified EC2 Fleet**
+Use the [describe-fleet-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-fleet-instances.html) command.
 
-Use the [describe-fleet-instances](../../../cli/latest/reference/ec2/describe-fleet-instances.md) command.
-
-```nohighlight
-
+```
 aws ec2 describe-fleet-instances \
-    --fleet-id fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE
+    --fleet-id {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 
 The following is example output.
 
-```json
-
+```
 {
     "ActiveInstances": [
         {
@@ -126,39 +119,39 @@ The following is example output.
 }
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To describe the instances for the specified EC2 Fleet
+**To describe the instances for the specified EC2 Fleet**
+Use the [Get-EC2FleetInstanceList](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2FleetInstanceList.html) cmdlet.
 
-Use the [Get-EC2FleetInstanceList](../../../powershell/latest/reference/items/get-ec2fleetinstancelist.md) cmdlet.
-
-```powershell
-
+```
 Get-EC2FleetInstanceList `
-    -FleetId fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE
+    -FleetId {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 
+------
+
 ## Describe the event history for your EC2 Fleet
+<a name="describe-ec2-fleet-event-history"></a>
 
 For more information about the events in the event history, see [EC2 Fleet event types](monitor-ec2-fleet-using-eventbridge.md#ec2-fleet-event-types).
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To describe the events for the specified EC2 Fleet
+**To describe the events for the specified EC2 Fleet**
+Use the [describe-fleet-history](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-fleet-history.html) command.
 
-Use the [describe-fleet-history](../../../cli/latest/reference/ec2/describe-fleet-history.md) command.
-
-```nohighlight
-
+```
 aws ec2 describe-fleet-history \
-    --fleet-id fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE \
-    --start-time 2020-06-01T00:00:00Z
+    --fleet-id {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}} \
+    --start-time {{2020-06-01T00:00:00Z}}
 ```
 
 The following is example output.
 
-```json
-
+```
 {
     "HistoryRecords": [
         {
@@ -208,24 +201,18 @@ The following is example output.
 }
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To describe the events for the specified EC2 Fleet
+**To describe the events for the specified EC2 Fleet**
+Use the [Get-EC2FleetHistory](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2FleetHistory.html) cmdlet.
 
-Use the [Get-EC2FleetHistory](../../../powershell/latest/reference/items/get-ec2fleethistory.md)
-cmdlet.
-
-```powershell
-
+```
 Get-EC2FleetHistory `
-    -FleetId fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE `
-    -UtcStartTime 2020-06-01T00:00:00Z
+    -FleetId {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}} `
+    -UtcStartTime {{2020-06-01T00:00:00Z}}
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Tag an EC2 Fleet
-
-Modify an EC2 Fleet
+------
 
 All content copied from https://docs.aws.amazon.com/.

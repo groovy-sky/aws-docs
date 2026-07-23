@@ -3,91 +3,60 @@ title: "BundleTask"
 ---
 
 # BundleTask
+<a name="API_BundleTask"></a>
 
 Describes a bundle task.
 
 ## Contents
+<a name="API_BundleTask_Contents"></a>
 
-**bundleId**
-
+ ** bundleId **
 The ID of the bundle task.
-
 Type: String
-
 Required: No
 
-**error**
-
+ ** error **
 If the task fails, a description of the error.
-
-Type: [BundleTaskError](api-bundletaskerror.md) object
-
+Type: [BundleTaskError](API_BundleTaskError.md) object
 Required: No
 
-**instanceId**
-
+ ** instanceId **
 The ID of the instance associated with this bundle task.
-
 Type: String
-
 Required: No
 
-**progress**
-
+ ** progress **
 The level of task completion, as a percent (for example, 20%).
-
 Type: String
-
 Required: No
 
-**startTime**
-
+ ** startTime **
 The time this task started.
-
 Type: Timestamp
-
 Required: No
 
-**state**
-
+ ** state **
 The state of the task.
-
 Type: String
-
 Valid Values: `pending | waiting-for-shutdown | bundling | storing | cancelling | complete | failed`
-
 Required: No
 
-**storage**
-
+ ** storage **
 The Amazon S3 storage locations.
-
-Type: [Storage](api-storage.md) object
-
+Type: [Storage](API_Storage.md) object
 Required: No
 
-**updateTime**
-
+ ** updateTime **
 The time of the most recent update for the task.
-
 Type: Timestamp
-
 Required: No
 
 ## See Also
+<a name="API_BundleTask_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/bundletask.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/bundletask.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/bundletask.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BlockPublicAccessStates
-
-BundleTaskError
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/BundleTask)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/BundleTask)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/BundleTask)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,41 +3,29 @@ title: "PortRange"
 ---
 
 # PortRange
+<a name="API_PortRange"></a>
 
 Describes a range of ports.
 
 ## Contents
+<a name="API_PortRange_Contents"></a>
 
-**From** (request), **from** (response)
-
+ ** From ** (request), ** from ** (response)
 The first port in the range.
-
 Type: Integer
-
 Required: No
 
-**To** (request), **to** (response)
-
+ ** To ** (request), ** to ** (response)
 The last port in the range.
-
 Type: Integer
-
 Required: No
 
 ## See Also
+<a name="API_PortRange_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/portrange.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/portrange.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/portrange.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PoolCidrBlock
-
-PrefixList
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/PortRange)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/PortRange)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/PortRange)
 
 All content copied from https://docs.aws.amazon.com/.

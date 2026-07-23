@@ -3,33 +3,24 @@ title: "InstanceIpv6Prefix"
 ---
 
 # InstanceIpv6Prefix
+<a name="API_InstanceIpv6Prefix"></a>
 
 Information about an IPv6 prefix.
 
 ## Contents
+<a name="API_InstanceIpv6Prefix_Contents"></a>
 
-**ipv6Prefix**
-
+ ** ipv6Prefix **
 One or more IPv6 prefixes assigned to the network interface.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_InstanceIpv6Prefix_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instanceipv6prefix.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instanceipv6prefix.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instanceipv6prefix.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstanceIpv6AddressRequest
-
-InstanceMaintenanceOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceIpv6Prefix)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceIpv6Prefix)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceIpv6Prefix)
 
 All content copied from https://docs.aws.amazon.com/.

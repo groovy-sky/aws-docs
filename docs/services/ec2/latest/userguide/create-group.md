@@ -3,55 +3,42 @@ title: "Create a Capacity Reservation group"
 ---
 
 # Create a Capacity Reservation group
+<a name="create-group"></a>
 
-You can use the following examples to create a resource group for Capacity Reservations with the following
-request parameters.
+You can use the following examples to create a resource group for Capacity Reservations with the following request parameters.
++ `AWS::EC2::CapacityReservationPool` – Ensures that the resource group can be targeted for instance launches.
++ `AWS::ResourceGroups::Generic` with `allowed-resource-types` set to `AWS::EC2::CapacityReservation` – Ensures that the resource group accepts Capacity Reservations only.
 
-- `AWS::EC2::CapacityReservationPool` – Ensures that the resource
-group can be targeted for instance launches.
+After you create a group, you can [add Capacity Reservations](add-to-group.md) to the group.
 
-- `AWS::ResourceGroups::Generic` with `allowed-resource-types`
-set to `AWS::EC2::CapacityReservation` – Ensures that the resource
-group accepts Capacity Reservations only.
+------
+#### [ AWS CLI ]
 
-After you create a group, you can [add Capacity Reservations](add-to-group.md)
-to the group.
+**To create a group for Capacity Reservations**
+Use the [create-group](https://docs.aws.amazon.com/cli/latest/reference/resource-groups/create-group.html) AWS CLI command.
 
-AWS CLI
-
-###### To create a group for Capacity Reservations
-
-Use the [create-group](../../../cli/latest/reference/resource-groups/create-group.md) AWS CLI command.
-
-```nohighlight
-
+```
 aws resource-groups create-group \
-    --name MyCRGroup \
+    --name {{MyCRGroup}} \
     --configuration \
         '{"Type": "AWS::EC2::CapacityReservationPool"}' \
         '{"Type": "AWS::ResourceGroups::Generic", "Parameters": [{"Name": "allowed-resource-types", "Values": ["AWS::EC2::CapacityReservation"]}]}'
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To create a group for Capacity Reservations
+**To create a group for Capacity Reservations**
+Use the [New-RGGroup](https://docs.aws.amazon.com/powershell/latest/reference/items/New-RGGroup.html) cmdlet.
 
-Use the [New-RGGroup](../../../powershell/latest/reference/items/new-rggroup.md)
-cmdlet.
-
-```powershell
-
+```
 New-RGGroup `
-    -Name MyCRGroup `
+    -Name {{MyCRGroup}} `
     -Configuration `
         @{"Type"="AWS::EC2::CapacityReserationPool"} `
         @{"Type"="AWS::ResourceGroups::Generic"; "Parameters"=@{"allowed-resource-types"=@{"Values"="AWS::EC2::CapacityReservations"}}}
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Capacity Reservation groups
-
-Add Capacity Reservation to group
+------
 
 All content copied from https://docs.aws.amazon.com/.

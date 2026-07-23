@@ -3,36 +3,25 @@ title: "ClassicLoadBalancersConfig"
 ---
 
 # ClassicLoadBalancersConfig
+<a name="API_ClassicLoadBalancersConfig"></a>
 
-Describes the Classic Load Balancers to attach to a Spot Fleet. Spot Fleet registers
-the running Spot Instances with these Classic Load Balancers.
+Describes the Classic Load Balancers to attach to a Spot Fleet. Spot Fleet registers the running Spot Instances with these Classic Load Balancers.
 
 ## Contents
+<a name="API_ClassicLoadBalancersConfig_Contents"></a>
 
-**ClassicLoadBalancers.N**
-
+ ** ClassicLoadBalancers.N **
 One or more Classic Load Balancers.
-
-Type: Array of [ClassicLoadBalancer](api-classicloadbalancer.md) objects
-
+Type: Array of [ClassicLoadBalancer](API_ClassicLoadBalancer.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
-
 Required: No
 
 ## See Also
+<a name="API_ClassicLoadBalancersConfig_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/classicloadbalancersconfig.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/classicloadbalancersconfig.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/classicloadbalancersconfig.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ClassicLoadBalancer
-
-ClientCertificateRevocationListStatus
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ClassicLoadBalancersConfig)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ClassicLoadBalancersConfig)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ClassicLoadBalancersConfig)
 
 All content copied from https://docs.aws.amazon.com/.

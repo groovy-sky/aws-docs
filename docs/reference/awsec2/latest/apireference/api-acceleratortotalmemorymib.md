@@ -3,43 +3,29 @@ title: "AcceleratorTotalMemoryMiB"
 ---
 
 # AcceleratorTotalMemoryMiB
+<a name="API_AcceleratorTotalMemoryMiB"></a>
 
 The minimum and maximum amount of total accelerator memory, in MiB.
 
 ## Contents
+<a name="API_AcceleratorTotalMemoryMiB_Contents"></a>
 
-**Max** (request), **max** (response)
-
-The maximum amount of accelerator memory, in MiB. If this parameter is not specified,
-there is no maximum limit.
-
+ ** Max ** (request), ** max ** (response)
+The maximum amount of accelerator memory, in MiB. If this parameter is not specified, there is no maximum limit.
 Type: Integer
-
 Required: No
 
-**Min** (request), **min** (response)
-
-The minimum amount of accelerator memory, in MiB. If this parameter is not specified,
-there is no minimum limit.
-
+ ** Min ** (request), ** min ** (response)
+The minimum amount of accelerator memory, in MiB. If this parameter is not specified, there is no minimum limit.
 Type: Integer
-
 Required: No
 
 ## See Also
+<a name="API_AcceleratorTotalMemoryMiB_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/acceleratortotalmemorymib.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/acceleratortotalmemorymib.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/acceleratortotalmemorymib.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AcceleratorCountRequest
-
-AcceleratorTotalMemoryMiBRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AcceleratorTotalMemoryMiB)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AcceleratorTotalMemoryMiB)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AcceleratorTotalMemoryMiB)
 
 All content copied from https://docs.aws.amazon.com/.

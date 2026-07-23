@@ -3,380 +3,825 @@ title: "EC2 instance bandwidth weighting configuration"
 ---
 
 # EC2 instance bandwidth weighting configuration
+<a name="configure-bandwidth-weighting"></a>
 
-Some instance types support configurable bandwidth weighting, where you can select
-baseline bandwidth weighting that favors either network processing or EBS operations. Default
-settings for baseline bandwidth are determined by your instance type. You can configure the
-bandwidth weighting during launch, or modify your instance settings with the following
-weighting preferences:
-
-- **default** – This option uses the standard
-bandwidth configuration for your instance type.
-
-- **vpc-1** – This option increases the baseline
-bandwidth available for networking and decreases the baseline bandwidth for EBS operations.
-
-- **ebs-1** – This option increases the baseline
-bandwidth available for EBS operations, and decreases the baseline bandwidth for
-networking.
+Some instance types support configurable bandwidth weighting, where you can select baseline bandwidth weighting that favors either network processing or EBS operations. Default settings for baseline bandwidth are determined by your instance type. You can configure the bandwidth weighting during launch, or modify your instance settings with the following weighting preferences:
++ **default** – This option uses the standard bandwidth configuration for your instance type.
++ **vpc-1** – This option increases the baseline bandwidth available for networking and decreases the baseline bandwidth for EBS operations.
++ **ebs-1** – This option increases the baseline bandwidth available for EBS operations, and decreases the baseline bandwidth for networking.
 
 ## Bandwidth weighting considerations
+<a name="config-bw-considerations"></a>
 
 The following are some considerations that might affect your bandwidth weighting strategy.
++ Setting bandwidth weighting preferences only affects bandwidth specifications. The network packets per second (PPS) and EBS input/output operations per second (IOPS) specifications don't change.
++ The combined bandwidth specification between networking and EBS does not change. When you select a bandwidth weighting configuration, the baseline bandwidth available for the selected option increases, and the baseline bandwidth for the remaining option is reduced by the same absolute amount. For all instances except Flex instances, the available burst bandwidth remains the same for your selected option, and is reduced for the remaining option. For Flex instances up to 4xlarge, burst bandwidth remains unchanged. For Flex instances 8xlarge and larger, burst bandwidth increases by the same amount as the baseline bandwidth.
++ It's important to understand how changes in bandwidth allocation can affect I/O performance for EBS. For EC2 instances that have `vpc-1` configuration (increased networking bandwidth), you might experience lower IOPS for EBS volumes if you reach the EBS bandwidth limit before you've reached the IOPS limit. This is more noticeable with larger I/O sizes.
 
-- Setting bandwidth weighting preferences only affects bandwidth specifications. The
-network packets per second (PPS) and EBS input/output operations per second (IOPS)
-specifications don't change.
+  For example, on an instance type that normally supports 240,000 IOPS with 16 KiB I/O size, if you select `vpc-1` weighting, that might reduce the achievable IOPS due to the adjusted EBS baseline bandwidth limit.
 
-- The combined bandwidth specification
-between networking and EBS does not change. When you select a bandwidth weighting
-configuration, the baseline bandwidth available for the selected option increases, and
-the baseline bandwidth for the remaining option is reduced by the same absolute amount.
-For all instances except Flex instances, the available burst bandwidth remains the same for your selected option, and is reduced for the remaining option. For Flex instances up to 4xlarge, burst bandwidth remains unchanged. For Flex instances 8xlarge and larger, burst bandwidth increases by the same amount as the baseline bandwidth.
+  When planning your workload, consider your I/O size and patterns. Smaller I/O sizes are less likely to be affected by bandwidth limitations, while larger I/O sizes or sequential workloads might see more impact from bandwidth changes. Always test your specific workload to ensure optimal performance with your chosen configuration.
++ The networking multi-flow bandwidth specification for traffic that goes through an internet gateway or a local gateway is adjusted to 50% of the baseline bandwidth of the configured option or 5 Gbps, where applicable. For more information, see [Amazon EC2 instance network bandwidth](ec2-instance-network-bandwidth.md).
 
-- It's important to understand how changes in bandwidth allocation can affect I/O
-performance for EBS. For EC2 instances that have `vpc-1` configuration
-(increased networking bandwidth), you might experience lower IOPS for EBS volumes
-if you reach the EBS bandwidth limit before you've reached the IOPS limit. This is
-more noticeable with larger I/O sizes.
-
-For example, on an instance type that normally supports 240,000 IOPS with 16 KiB I/O size,
-if you select `vpc-1` weighting, that might reduce the achievable IOPS due to the
-adjusted EBS baseline bandwidth limit.
-
-When planning your workload, consider your I/O size and patterns. Smaller I/O sizes are less
-likely to be affected by bandwidth limitations, while larger I/O sizes or sequential workloads
-might see more impact from bandwidth changes. Always test your specific workload to ensure
-optimal performance with your chosen configuration.
-
-- The networking multi-flow bandwidth specification for traffic that goes through an internet
-gateway or a local gateway is adjusted to 50% of the baseline bandwidth of the configured
-option or 5 Gbps, where applicable. For more information, see [Amazon EC2 instance network bandwidth](ec2-instance-network-bandwidth.md).
-
-The following example is based on an instance type that has a default baseline bandwidth of
-40 Gbps, and a default border bandwidth of 20 Gbps. If you choose `vpc-1`
-bandwidth weighting for this instance, the weighted baseline bandwidth changes to 50 Gbps,
-and the border bandwidth changes to 25 Gbps.
-
-- This feature is available in all commercial regions, aligned with EC2 instance availablilty and
-support.
-
-- This feature adds no additional cost to your EC2 instance.
+  The following example is based on an instance type that has a default baseline bandwidth of 40 Gbps, and a default border bandwidth of 20 Gbps. If you choose `vpc-1` bandwidth weighting for this instance, the weighted baseline bandwidth changes to 50 Gbps, and the border bandwidth changes to 25 Gbps.
++ This feature is available in all commercial regions, aligned with EC2 instance availablilty and support.
++ This feature adds no additional cost to your EC2 instance.
 
 ## Supported instance types for bandwidth weighting
+<a name="config-bw-support"></a>
 
 Instance types in the following instance families support configurable bandwidth weighting.
-
-- **General purpose:** M8a, M8g, M8gd, M8i, M8id, M8i-flex
-
-- **Compute optimized:** C8a, C8g, C8gd, C8i, C8id, C8i-flex
-
-- **Memory optimized:** R8a, R8g, R8gd, R8i, R8id, R8i-flex, X8g, X8aedz, X8i
++ **General purpose:** M8a, M8g, M8gd, M8i, M8id, M8i-flex, M9g, M9gd
++ **Compute optimized:** C8a, C8g, C8gd, C8i, C8id, C8i-flex, C9g, C9gd
++ **Memory optimized:** R8a, R8g, R8gd, R8i, R8id, R8i-flex, X8g, X8aedz, X8i
 
 ## Check current bandwidth settings
+<a name="config-bw-check-settings"></a>
 
-To see the current bandwidth settings for your instance, select one of the tabs for
-instructions.
+To see the current bandwidth settings for your instance, select one of the tabs for instructions.
 
-Console
+------
+#### [ Console ]
 
-###### To get the bandwidth setting for an instance
+**To get the bandwidth setting for an instance**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose **Instances**.
+1. In the navigation pane, choose **Instances**.
 
-3. Select the instance that you want to check from the list, and navigate
-    to the **Networking** tab. Your current setting is shown in
-    the **Configured bandwidth** field. Amazon EC2 uses default
-    settings for your instance type if the bandwidth is not set to a specific
-    value.
+1. Select the instance that you want to check from the list, and navigate to the **Networking** tab. Your current setting is shown in the **Configured bandwidth** field. Amazon EC2 uses default settings for your instance type if the bandwidth is not set to a specific value.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To get the bandwidth setting for an instance
+**To get the bandwidth setting for an instance**
+Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
-Use the [describe-instances](../../../cli/latest/reference/ec2/describe-instances.md) command.
-
-```nohighlight
-
+```
 aws ec2 describe-instances \
-    --instance-ids i-1234567890abcdef0 \
+    --instance-ids {{i-1234567890abcdef0}} \
     --query Reservations[].Instances[].NetworkPerformanceOptions.BandwidthWeighting \
     --output text
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 default
 ```
 
-This example lists all of your instances that have the
-bandwidth weighting preference set to `vpc-1`, for higher
-networking bandwidth.
+This example lists all of your instances that have the bandwidth weighting preference set to `vpc-1`, for higher networking bandwidth.
 
-```nohighlight
-
+```
 aws ec2 describe-instances \
     --filters "Name=network-performance-options.bandwidth-weighting,Values=vpc-1" \
     --query Reservations[].Instances[].InstanceId \
     --output text
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To get the bandwidth setting for an instance
+**To get the bandwidth setting for an instance**
+Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-Use the [Get-EC2Instance](../../../powershell/latest/reference/items/get-ec2instance.md)
-cmdlet.
-
-```powershell
-
+```
 (Get-EC2Instance `
-    -InstanceId i-1234567890abcdef0).Instances.NetworkPerformanceOptions.BandwidthWeighting.Value
+    -InstanceId {{i-1234567890abcdef0}}).Instances.NetworkPerformanceOptions.BandwidthWeighting.Value
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 default
 ```
 
-This example lists all of your instances that have the
-bandwidth weighting preference set to `vpc-1`, for higher
-networking bandwidth.
+This example lists all of your instances that have the bandwidth weighting preference set to `vpc-1`, for higher networking bandwidth.
 
-```powershell
-
+```
 (Get-EC2Instance `
     -Filter @{Name="network-performance-options.bandwidth-weighting";Values="vpc-1"}).Instances.InstanceId
 ```
 
-## Configure bandwidth weighting for your instance
+------
 
-You can configure bandwidth weighting either at launch or by modifying existing instances
-from the EC2 console, API/SDKs or CLI.
+## Configure bandwidth weighting for your instance
+<a name="config-bw-how-to"></a>
+
+You can configure bandwidth weighting either at launch or by modifying existing instances from the EC2 console, API/SDKs or CLI.
 
 ### Configure bandwidth weighting when you launch an instance
+<a name="config-bw-launch-instance"></a>
 
-To configure bandwidth settings when you launch an instance, select one of the tabs for
-instructions.
+To configure bandwidth settings when you launch an instance, select one of the tabs for instructions.
 
-You can also specify bandwidth weighting in a launch template. To create a
-launch template, see [Create an Amazon EC2 launch template](create-launch-template.md). The parameter to set is in the same
-location as it is for launching an instance directly from the console. Expand
-the **Advanced details** section, and set the **Instance**
-**bandwidth configuration**.
+You can also specify bandwidth weighting in a launch template. To create a launch template, see [Create an Amazon EC2 launch template](create-launch-template.md). The parameter to set is in the same location as it is for launching an instance directly from the console. Expand the **Advanced details** section, and set the **Instance bandwidth configuration**.
 
-To launch an instance with your launch template, see
-[Launch EC2 instances using a launch template](launch-instances-from-launch-template.md).
+To launch an instance with your launch template, see [Launch EC2 instances using a launch template](launch-instances-from-launch-template.md).
 
-Console
+------
+#### [ Console ]
 
-###### To launch an instance with configurable bandwidth weighting
+**To launch an instance with configurable bandwidth weighting**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose **Instances**.
+1. In the navigation pane, choose **Instances**.
 
-3. Choose **Launch instances**. This opens the
-    **Launch an instance** dialog. There are several
-    additional ways that you can get to the launch dialog, depending
-    on your preference. For example, you can launch an instance directly
-    from an AMI or from the Amazon EC2 dashboard itself.
+1. Choose **Launch instances**. This opens the **Launch an instance** dialog. There are several additional ways that you can get to the launch dialog, depending on your preference. For example, you can launch an instance directly from an AMI or from the Amazon EC2 dashboard itself.
 
-4. The Amazon Machine Image (AMI) that you launch from must be based
-    on `Arm` architecture. Many **Quick Start**
-    images support both `x86` and `Arm` architectures,
-    After you choose the operating system for your instance, select the
-    `Arm` option from the **Architecture** list.
+1. The Amazon Machine Image (AMI) that you launch from must be based on `Arm` architecture. Many **Quick Start** images support both `x86` and `Arm` architectures, After you choose the operating system for your instance, select the `Arm` option from the **Architecture** list.
 
-5. The instance type must be one of the [Supported instance types](#config-bw-support) for
-    this feature.
+1. The instance type must be one of the [Supported instance types](#config-bw-support) for this feature.
 
-6. When you expand the **Advanced details** section,
-    you can scroll down to find the **Instance bandwidth configuration**
-    settings. Select the bandwidth configuration option for your instance.
+1. When you expand the **Advanced details** section, you can scroll down to find the **Instance bandwidth configuration** settings. Select the bandwidth configuration option for your instance.
 
-7. Configure all of the other settings for your instance as you
-    normally would, and choose **Launch instance**.
+1. Configure all of the other settings for your instance as you normally would, and choose **Launch instance**.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To launch an instance with configurable bandwidth weighting
+**To launch an instance with configurable bandwidth weighting**
+Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the following option to launch instances that are configured for higher network bandwidth weighting.
 
-Use the [run-instances](../../../cli/latest/reference/ec2/run-instances.md)
-command with the following option to launch instances that are configured for
-higher network bandwidth weighting.
-
-```nohighlight
-
+```
 --network-performance-options BandwidthWeighting=vpc-1
 ```
 
-Use the [run-instances](../../../cli/latest/reference/ec2/run-instances.md)
-command with the following option to launch instances that are configured for
-higher EBS bandwidth weighting.
+Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the following option to launch instances that are configured for higher EBS bandwidth weighting.
 
-```nohighlight
-
+```
 --network-performance-options BandwidthWeighting=ebs-1
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To launch an instance with configurable bandwidth weighting
+**To launch an instance with configurable bandwidth weighting**
+Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the following parameter to launch instances that are configured for higher network bandwidth weighting.
 
-Use the [New-EC2Instance](../../../powershell/latest/reference/items/new-ec2instance.md)
-cmdlet with the following parameter to launch instances that are configured
-for higher network bandwidth weighting.
-
-```powershell
-
+```
 -NetworkPerformanceOptions_BandwidthWeighting vpc-1
 ```
 
-Use the [New-EC2Instance](../../../powershell/latest/reference/items/new-ec2instance.md)
-cmdlet with the following parameter to launch instances that are configured
-for higher EBS bandwidth weighting.
+Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the following parameter to launch instances that are configured for higher EBS bandwidth weighting.
 
-```powershell
-
+```
 -NetworkPerformanceOptions_BandwidthWeighting ebs-1
 ```
 
+------
+
 ### Update bandwidth weighting for an existing instance
+<a name="config-bw-update-existing"></a>
 
-To update bandwidth weighting for an existing instance, your instance must be in the
-`Stopped` state.
+To update bandwidth weighting for an existing instance, your instance must be in the `Stopped` state.
 
-Console
+------
+#### [ Console ]
 
-###### To update bandwidth weighting
+**To update bandwidth weighting**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose **Instances**.
+1. In the navigation pane, choose **Instances**.
 
-3. Select the instance that you want to update from the list.
+1. Select the instance that you want to update from the list.
 
-4. Before you change the bandwidth configuration, your instance must be
-    in a `Stopped` state. If your instance is running, select
-    **Stop instance** from the **Instance**
-**state** menu.
+1. Before you change the bandwidth configuration, your instance must be in a `Stopped` state. If your instance is running, select **Stop instance** from the **Instance state** menu.
 
-5. Choose **Manage bandwidth** from the
-    **Actions > Networking** menu. This opens the
-    **Manage bandwidth** dialog.
+1. Choose **Manage bandwidth** from the **Actions > Networking** menu. This opens the **Manage bandwidth** dialog.
+**Note**
+If your instance type doesn't support configuration for bandwidth weighting, that menu item is disabled.
 
-###### Note
+1. Select the option to update your instance, and choose **Change** to save your settings.
 
-If your instance type doesn't support configuration for bandwidth
-weighting, that menu item is disabled.
+------
+#### [ AWS CLI ]
 
-6. Select the option to update your instance, and choose **Change**
-    to save your settings.
+**To update bandwidth weighting**
+Use the [modify-instance-network-performance-options](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-network-performance-options.html) command to configure higher network bandwidth weighting for the specified instance.
 
-AWS CLI
-
-###### To update bandwidth weighting
-
-Use the [modify-instance-network-performance-options](../../../cli/latest/reference/ec2/modify-instance-network-performance-options.md) command to configure
-higher network bandwidth weighting for the specified instance.
-
-```nohighlight
-
+```
 aws ec2 modify-instance-network-performance-options \
-    --instance-id i-1234567890abcdef0 \
+    --instance-id {{i-1234567890abcdef0}} \
     --bandwidth-weighting=vpc-1
 ```
 
-The following example configures higher EBS bandwidth weighting
-for the specified instance.
+The following example configures higher EBS bandwidth weighting for the specified instance.
 
-```nohighlight
-
+```
 aws ec2 modify-instance-network-performance-options \
-    --instance-id i-1234567890abcdef0 \
+    --instance-id {{i-1234567890abcdef0}} \
     --bandwidth-weighting=ebs-1
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To update bandwidth weighting
+**To update bandwidth weighting**
+Use the [Edit-EC2InstanceNetworkPerformanceOption](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceNetworkPerformanceOption.html) cmdlet to configure higher network bandwidth weighting for the specified instance.
 
-Use the [Edit-EC2InstanceNetworkPerformanceOption](../../../powershell/latest/reference/items/edit-ec2instancenetworkperformanceoption.md)
-cmdlet to configure higher network bandwidth weighting for the specified instance.
-
-```powershell
-
+```
 Edit-EC2InstanceNetworkPerformanceOption `
-    -InstanceId i-1234567890abcdef0 `
+    -InstanceId {{i-1234567890abcdef0}} `
     -BandwidthWeighting vpc-1
 ```
 
-The following example configures higher EBS bandwidth weighting
-for the specified instance.
+The following example configures higher EBS bandwidth weighting for the specified instance.
 
-```powershell
-
+```
 Edit-EC2InstanceNetworkPerformanceOption `
-    -InstanceId i-1234567890abcdef0 `
+    -InstanceId {{i-1234567890abcdef0}} `
     -BandwidthWeighting ebs-1
 ```
 
+------
+
 ## Networking performance
+<a name="config-bw-network-impact"></a>
 
-The following table shows the networking performance, in Gbps, that can be achieved with
-the `default`, `vpc-1`, and `ebs-1` configurations.
+The following table shows the networking performance, in Gbps, that can be achieved with the `default`, `vpc-1`, and `ebs-1` configurations.
 
-Instance type
-
-**`default`**
-
-(Baseline / Burst)
-
-**`vpc-1`**
-
-(Baseline / Burst)
-
-**`ebs-1`**
-
-(Baseline / Burst)
-
-c8a.medium0.52 / 12.50.65 / 12.50.438 / 10.0c8a.large0.937 / 12.51.172 / 12.50.774 / 10.0c8a.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0c8a.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5c8a.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5c8a.8xlarge15.018.7512.5c8a.12xlarge22.528.12518.75c8a.16xlarge30.037.525.0c8a.24xlarge40.050.032.5c8a.48xlarge75.093.7560.0c8a.metal-24xl40.050.032.5c8a.metal-48xl75.093.7560.0c8g.medium0.52 / 12.50.65 / 12.50.441 / 10.0c8g.large0.937 / 12.51.171 / 12.50.779 / 10.0c8g.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0c8g.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5c8g.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5c8g.8xlarge15.018.7512.5c8g.12xlarge22.528.12518.75c8g.16xlarge30.037.525.0c8g.24xlarge40.050.032.5c8g.48xlarge50.062.540.0c8g.metal-24xl40.050.032.5c8g.metal-48xl50.062.540.0c8gd.medium0.52 / 12.50.65 / 12.50.441 / 10.0c8gd.large0.937 / 12.51.171 / 12.50.779 / 10.0c8gd.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0c8gd.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5c8gd.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5c8gd.8xlarge15.018.7512.5c8gd.12xlarge22.528.12518.75c8gd.16xlarge30.037.525.0c8gd.24xlarge40.050.032.5c8gd.48xlarge50.062.540.0c8gd.metal-24xl40.050.032.5c8gd.metal-48xl50.062.540.0c8i.large0.937 / 12.51.172 / 12.50.774 / 10.0c8i.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0c8i.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5c8i.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5c8i.8xlarge15.018.7512.5c8i.12xlarge22.528.12518.75c8i.16xlarge30.037.525.0c8i.24xlarge40.050.032.5c8i.32xlarge50.062.540.0c8i.48xlarge75.093.7560.0c8i.96xlarge100.0125.080.0c8i.metal-48xl75.093.7560.0c8i.metal-96xl100.0125.080.0c8id.large0.937 / 12.51.172 / 12.50.774 / 10.0c8id.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0c8id.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5c8id.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5c8id.8xlarge15.018.7512.5c8id.12xlarge22.528.12518.75c8id.16xlarge30.037.525.0c8id.24xlarge40.050.032.5c8id.32xlarge50.062.540.0c8id.48xlarge75.093.7560.0c8id.96xlarge100.0125.080.0c8id.metal-48xl75.093.7560.0c8id.metal-96xl100.0125.080.0c8i-flex.large0.468 / 12.50.585 / 12.50.389 / 10.0c8i-flex.xlarge0.937 / 12.51.172 / 12.50.779 / 10.0c8i-flex.2xlarge1.875 / 15.02.344 / 15.01.562 / 12.5c8i-flex.4xlarge3.75 / 15.04.688 / 15.03.125 / 12.5c8i-flex.8xlarge7.5 / 15.09.375 / 18.756.25 / 12.5c8i-flex.12xlarge11.25 / 22.514.063 / 28.1259.375 / 18.75c8i-flex.16xlarge15.0 / 30.018.75 / 37.512.5 / 25.0m8a.medium0.52 / 12.50.65 / 12.50.438 / 10.0m8a.large0.937 / 12.51.172 / 12.50.774 / 10.0m8a.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0m8a.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5m8a.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5m8a.8xlarge15.018.7512.5m8a.12xlarge22.528.12518.75m8a.16xlarge30.037.525.0m8a.24xlarge40.050.032.5m8a.48xlarge75.093.7560.0m8a.metal-24xl40.050.032.5m8a.metal-48xl75.093.7560.0m8g.medium0.52 / 12.50.65 / 12.50.441 / 10.0m8g.large0.937 / 12.51.171 / 12.50.779 / 10.0m8g.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0m8g.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5m8g.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5m8g.8xlarge15.018.7512.5m8g.12xlarge22.528.12518.75m8g.16xlarge30.037.525.0m8g.24xlarge40.050.032.5m8g.48xlarge50.062.540.0m8g.metal-24xl40.050.032.5m8g.metal-48xl50.062.540.0m8gd.medium0.52 / 12.50.65 / 12.50.441 / 10.0m8gd.large0.937 / 12.51.171 / 12.50.779 / 10.0m8gd.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0m8gd.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5m8gd.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5m8gd.8xlarge15.018.7512.5m8gd.12xlarge22.528.12518.75m8gd.16xlarge30.037.525.0m8gd.24xlarge40.050.032.5m8gd.48xlarge50.062.540.0m8gd.metal-24xl40.050.032.5m8gd.metal-48xl50.062.540.0m8i.large0.937 / 12.51.172 / 12.50.774 / 10.0m8i.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0m8i.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5m8i.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5m8i.8xlarge15.018.7512.5m8i.12xlarge22.528.12518.75m8i.16xlarge30.037.525.0m8i.24xlarge40.050.032.5m8i.32xlarge50.062.540.0m8i.48xlarge75.093.7560.0m8i.96xlarge100.0125.080.0m8i.metal-48xl75.093.7560.0m8i.metal-96xl100.0125.080.0m8id.large0.937 / 12.51.172 / 12.50.774 / 10.0m8id.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0m8id.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5m8id.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5m8id.8xlarge15.018.7512.5m8id.12xlarge22.528.12518.75m8id.16xlarge30.037.525.0m8id.24xlarge40.050.032.5m8id.32xlarge50.062.540.0m8id.48xlarge75.093.7560.0m8id.96xlarge100.0125.080.0m8id.metal-48xl75.093.7560.0m8id.metal-96xl100.0125.080.0m8i-flex.large0.468 / 12.50.585 / 12.50.389 / 10.0m8i-flex.xlarge0.937 / 12.51.172 / 12.50.779 / 10.0m8i-flex.2xlarge1.875 / 15.02.344 / 15.01.562 / 12.5m8i-flex.4xlarge3.75 / 15.04.688 / 15.03.125 / 12.5m8i-flex.8xlarge7.5 / 15.09.375 / 18.756.25 / 12.5m8i-flex.12xlarge11.25 / 22.514.063 / 28.1259.375 / 18.75m8i-flex.16xlarge15.0 / 30.018.75 / 37.512.5 / 25.0r8a.medium0.52 / 12.50.65 / 12.50.438 / 10.0r8a.large0.937 / 12.51.172 / 12.50.774 / 10.0r8a.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0r8a.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5r8a.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5r8a.8xlarge15.018.7512.5r8a.12xlarge22.528.12518.75r8a.16xlarge30.037.525.0r8a.24xlarge40.050.032.5r8a.48xlarge75.093.7560.0r8a.metal-24xl40.050.032.5r8a.metal-48xl75.093.7560.0r8g.medium0.52 / 12.50.65 / 12.50.441 / 10.0r8g.large0.937 / 12.51.171 / 12.50.779 / 10.0r8g.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0r8g.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5r8g.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5r8g.8xlarge15.018.7512.5r8g.12xlarge22.528.12518.75r8g.16xlarge30.037.525.0r8g.24xlarge40.050.032.5r8g.48xlarge50.062.540.0r8g.metal-24xl40.050.032.5r8g.metal-48xl50.062.540.0r8gd.medium0.52 / 12.50.65 / 12.50.441 / 10.0r8gd.large0.937 / 12.51.171 / 12.50.779 / 10.0r8gd.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0r8gd.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5r8gd.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5r8gd.8xlarge15.018.7512.5r8gd.12xlarge22.528.12518.75r8gd.16xlarge30.037.525.0r8gd.24xlarge40.050.032.5r8gd.48xlarge50.062.540.0r8gd.metal-24xl40.050.032.5r8gd.metal-48xl50.062.540.0r8i.large0.937 / 12.51.172 / 12.50.774 / 10.0r8i.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0r8i.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5r8i.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5r8i.8xlarge15.018.7512.5r8i.12xlarge22.528.12518.75r8i.16xlarge30.037.525.0r8i.24xlarge40.050.032.5r8i.32xlarge50.062.540.0r8i.48xlarge75.093.7560.0r8i.96xlarge100.0125.080.0r8i.metal-48xl75.093.7560.0r8i.metal-96xl100.0125.080.0r8id.large0.937 / 12.51.172 / 12.50.774 / 10.0r8id.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0r8id.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5r8id.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5r8id.8xlarge15.018.7512.5r8id.12xlarge22.528.12518.75r8id.16xlarge30.037.525.0r8id.24xlarge40.050.032.5r8id.32xlarge50.062.540.0r8id.48xlarge75.093.7560.0r8id.96xlarge100.0125.080.0r8id.metal-48xl75.093.7560.0r8id.metal-96xl100.0125.080.0r8i-flex.large0.468 / 12.50.585 / 12.50.389 / 10.0r8i-flex.xlarge0.937 / 12.51.172 / 12.50.779 / 10.0r8i-flex.2xlarge1.875 / 15.02.344 / 15.01.562 / 12.5r8i-flex.4xlarge3.75 / 15.04.688 / 15.03.125 / 12.5r8i-flex.8xlarge7.5 / 15.09.375 / 18.756.25 / 12.5r8i-flex.12xlarge11.25 / 22.514.063 / 28.1259.375 / 18.75r8i-flex.16xlarge15.0 / 30.018.75 / 37.512.5 / 25.0x8g.medium0.52 / 12.50.65 / 12.50.441 / 10.0x8g.large0.937 / 12.51.171 / 12.50.779 / 10.0x8g.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0x8g.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5x8g.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5x8g.8xlarge15.018.7512.5x8g.12xlarge22.528.12518.75x8g.16xlarge30.037.525.0x8g.24xlarge40.050.032.5x8g.48xlarge50.062.540.0x8g.metal-24xl40.050.032.5x8g.metal-48xl50.062.540.0x8aedz.large1.562 / 18.751.953 / 18.751.249 / 15.0x8aedz.xlarge3.125 / 18.753.907 / 18.752.5 / 15.0x8aedz.3xlarge9.375 / 18.7511.719 / 18.757.5 / 15.0x8aedz.6xlarge18.7523.43815.0x8aedz.12xlarge37.546.87530.0x8aedz.24xlarge75.093.7560.0x8aedz.metal-12xl37.546.87530.0x8aedz.metal-24xl75.093.7560.0x8i.large0.937 / 12.51.172 / 12.50.774 / 10.0x8i.xlarge1.875 / 12.52.344 / 12.51.562 / 10.0x8i.2xlarge3.75 / 15.04.688 / 15.03.125 / 12.5x8i.4xlarge7.5 / 15.09.375 / 15.06.25 / 12.5x8i.8xlarge15.018.7512.5x8i.12xlarge22.528.12518.75x8i.16xlarge30.037.525.0x8i.24xlarge40.050.032.5x8i.32xlarge50.062.540.0x8i.48xlarge75.093.7560.0x8i.64xlarge80.0100.062.5x8i.96xlarge100.0125.080.0x8i.metal-48xl75.093.7560.0x8i.metal-96xl100.0125.080.0
+| Instance type |  **`default`**(Baseline / Burst)  |  **`vpc-1`**(Baseline / Burst)  |  **`ebs-1`**(Baseline / Burst)  |
+| --- | --- | --- | --- |
+| c8a.medium | 0.52 / 12.5 | 0.65 / 12.5 | 0.438 / 10.0 |
+| c8a.large | 0.937 / 12.5 | 1.172 / 12.5 | 0.774 / 10.0 |
+| c8a.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| c8a.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| c8a.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| c8a.8xlarge | 15.0 | 18.75 | 12.5 |
+| c8a.12xlarge | 22.5 | 28.125 | 18.75 |
+| c8a.16xlarge | 30.0 | 37.5 | 25.0 |
+| c8a.24xlarge | 40.0 | 50.0 | 32.5 |
+| c8a.48xlarge | 75.0 | 93.75 | 60.0 |
+| c8a.metal-24xl | 40.0 | 50.0 | 32.5 |
+| c8a.metal-48xl | 75.0 | 93.75 | 60.0 |
+| c8g.medium | 0.52 / 12.5 | 0.65 / 12.5 | 0.441 / 10.0 |
+| c8g.large | 0.937 / 12.5 | 1.171 / 12.5 | 0.779 / 10.0 |
+| c8g.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| c8g.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| c8g.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| c8g.8xlarge | 15.0 | 18.75 | 12.5 |
+| c8g.12xlarge | 22.5 | 28.125 | 18.75 |
+| c8g.16xlarge | 30.0 | 37.5 | 25.0 |
+| c8g.24xlarge | 40.0 | 50.0 | 32.5 |
+| c8g.48xlarge | 50.0 | 62.5 | 40.0 |
+| c8g.metal-24xl | 40.0 | 50.0 | 32.5 |
+| c8g.metal-48xl | 50.0 | 62.5 | 40.0 |
+| c8gd.medium | 0.52 / 12.5 | 0.65 / 12.5 | 0.441 / 10.0 |
+| c8gd.large | 0.937 / 12.5 | 1.171 / 12.5 | 0.779 / 10.0 |
+| c8gd.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| c8gd.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| c8gd.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| c8gd.8xlarge | 15.0 | 18.75 | 12.5 |
+| c8gd.12xlarge | 22.5 | 28.125 | 18.75 |
+| c8gd.16xlarge | 30.0 | 37.5 | 25.0 |
+| c8gd.24xlarge | 40.0 | 50.0 | 32.5 |
+| c8gd.48xlarge | 50.0 | 62.5 | 40.0 |
+| c8gd.metal-24xl | 40.0 | 50.0 | 32.5 |
+| c8gd.metal-48xl | 50.0 | 62.5 | 40.0 |
+| c8i.large | 0.937 / 12.5 | 1.172 / 12.5 | 0.774 / 10.0 |
+| c8i.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| c8i.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| c8i.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| c8i.8xlarge | 15.0 | 18.75 | 12.5 |
+| c8i.12xlarge | 22.5 | 28.125 | 18.75 |
+| c8i.16xlarge | 30.0 | 37.5 | 25.0 |
+| c8i.24xlarge | 40.0 | 50.0 | 32.5 |
+| c8i.32xlarge | 50.0 | 62.5 | 40.0 |
+| c8i.48xlarge | 75.0 | 93.75 | 60.0 |
+| c8i.96xlarge | 100.0 | 125.0 | 80.0 |
+| c8i.metal-48xl | 75.0 | 93.75 | 60.0 |
+| c8i.metal-96xl | 100.0 | 125.0 | 80.0 |
+| c8id.large | 0.937 / 12.5 | 1.172 / 12.5 | 0.774 / 10.0 |
+| c8id.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| c8id.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| c8id.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| c8id.8xlarge | 15.0 | 18.75 | 12.5 |
+| c8id.12xlarge | 22.5 | 28.125 | 18.75 |
+| c8id.16xlarge | 30.0 | 37.5 | 25.0 |
+| c8id.24xlarge | 40.0 | 50.0 | 32.5 |
+| c8id.32xlarge | 50.0 | 62.5 | 40.0 |
+| c8id.48xlarge | 75.0 | 93.75 | 60.0 |
+| c8id.96xlarge | 100.0 | 125.0 | 80.0 |
+| c8id.metal-48xl | 75.0 | 93.75 | 60.0 |
+| c8id.metal-96xl | 100.0 | 125.0 | 80.0 |
+| c8i-flex.large | 0.468 / 12.5 | 0.585 / 12.5 | 0.389 / 10.0 |
+| c8i-flex.xlarge | 0.937 / 12.5 | 1.172 / 12.5 | 0.779 / 10.0 |
+| c8i-flex.2xlarge | 1.875 / 15.0 | 2.344 / 15.0 | 1.562 / 12.5 |
+| c8i-flex.4xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| c8i-flex.8xlarge | 7.5 / 15.0 | 9.375 / 18.75 | 6.25 / 12.5 |
+| c8i-flex.12xlarge | 11.25 / 22.5 | 14.063 / 28.125 | 9.375 / 18.75 |
+| c8i-flex.16xlarge | 15.0 / 30.0 | 18.75 / 37.5 | 12.5 / 25.0 |
+| c9g.medium | 0.55 / 15.0 | 0.688 / 15.0 | 0.455 / 12.0 |
+| c9g.large | 1.0 / 15.0 | 1.25 / 15.0 | 0.81 / 12.0 |
+| c9g.xlarge | 2.1 / 15.0 | 2.625 / 15.0 | 1.725 / 12.0 |
+| c9g.2xlarge | 4.25 / 17.0 | 5.313 / 17.0 | 3.5 / 14.0 |
+| c9g.4xlarge | 8.5 / 17.0 | 10.625 / 17.0 | 7.0 / 14.0 |
+| c9g.8xlarge | 17.0 | 21.25 | 14.0 |
+| c9g.12xlarge | 25.0 | 31.25 | 20.5 |
+| c9g.16xlarge | 34.0 | 42.5 | 28.0 |
+| c9g.24xlarge | 50.0 | 62.5 | 41.0 |
+| c9g.48xlarge | 100.0 | 125.0 | 82.0 |
+| c9g.metal-48xl | 100.0 | 125.0 | 82.0 |
+| c9gd.medium | 0.55 / 15.0 | 0.688 / 15.0 | 0.455 / 12.0 |
+| c9gd.large | 1.0 / 15.0 | 1.25 / 15.0 | 0.81 / 12.0 |
+| c9gd.xlarge | 2.1 / 15.0 | 2.625 / 15.0 | 1.725 / 12.0 |
+| c9gd.2xlarge | 4.25 / 17.0 | 5.313 / 17.0 | 3.5 / 14.0 |
+| c9gd.4xlarge | 8.5 / 17.0 | 10.625 / 17.0 | 7.0 / 14.0 |
+| c9gd.8xlarge | 17.0 | 21.25 | 14.0 |
+| c9gd.12xlarge | 25.0 | 31.25 | 20.5 |
+| c9gd.16xlarge | 34.0 | 42.5 | 28.0 |
+| c9gd.24xlarge | 50.0 | 62.5 | 41.0 |
+| c9gd.48xlarge | 100.0 | 125.0 | 82.0 |
+| c9gd.metal-48xl | 100.0 | 125.0 | 82.0 |
+| m8a.medium | 0.52 / 12.5 | 0.65 / 12.5 | 0.438 / 10.0 |
+| m8a.large | 0.937 / 12.5 | 1.172 / 12.5 | 0.774 / 10.0 |
+| m8a.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| m8a.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| m8a.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| m8a.8xlarge | 15.0 | 18.75 | 12.5 |
+| m8a.12xlarge | 22.5 | 28.125 | 18.75 |
+| m8a.16xlarge | 30.0 | 37.5 | 25.0 |
+| m8a.24xlarge | 40.0 | 50.0 | 32.5 |
+| m8a.48xlarge | 75.0 | 93.75 | 60.0 |
+| m8a.metal-24xl | 40.0 | 50.0 | 32.5 |
+| m8a.metal-48xl | 75.0 | 93.75 | 60.0 |
+| m8g.medium | 0.52 / 12.5 | 0.65 / 12.5 | 0.441 / 10.0 |
+| m8g.large | 0.937 / 12.5 | 1.171 / 12.5 | 0.779 / 10.0 |
+| m8g.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| m8g.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| m8g.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| m8g.8xlarge | 15.0 | 18.75 | 12.5 |
+| m8g.12xlarge | 22.5 | 28.125 | 18.75 |
+| m8g.16xlarge | 30.0 | 37.5 | 25.0 |
+| m8g.24xlarge | 40.0 | 50.0 | 32.5 |
+| m8g.48xlarge | 50.0 | 62.5 | 40.0 |
+| m8g.metal-24xl | 40.0 | 50.0 | 32.5 |
+| m8g.metal-48xl | 50.0 | 62.5 | 40.0 |
+| m8gd.medium | 0.52 / 12.5 | 0.65 / 12.5 | 0.441 / 10.0 |
+| m8gd.large | 0.937 / 12.5 | 1.171 / 12.5 | 0.779 / 10.0 |
+| m8gd.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| m8gd.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| m8gd.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| m8gd.8xlarge | 15.0 | 18.75 | 12.5 |
+| m8gd.12xlarge | 22.5 | 28.125 | 18.75 |
+| m8gd.16xlarge | 30.0 | 37.5 | 25.0 |
+| m8gd.24xlarge | 40.0 | 50.0 | 32.5 |
+| m8gd.48xlarge | 50.0 | 62.5 | 40.0 |
+| m8gd.metal-24xl | 40.0 | 50.0 | 32.5 |
+| m8gd.metal-48xl | 50.0 | 62.5 | 40.0 |
+| m8i.large | 0.937 / 12.5 | 1.172 / 12.5 | 0.774 / 10.0 |
+| m8i.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| m8i.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| m8i.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| m8i.8xlarge | 15.0 | 18.75 | 12.5 |
+| m8i.12xlarge | 22.5 | 28.125 | 18.75 |
+| m8i.16xlarge | 30.0 | 37.5 | 25.0 |
+| m8i.24xlarge | 40.0 | 50.0 | 32.5 |
+| m8i.32xlarge | 50.0 | 62.5 | 40.0 |
+| m8i.48xlarge | 75.0 | 93.75 | 60.0 |
+| m8i.96xlarge | 100.0 | 125.0 | 80.0 |
+| m8i.metal-48xl | 75.0 | 93.75 | 60.0 |
+| m8i.metal-96xl | 100.0 | 125.0 | 80.0 |
+| m8id.large | 0.937 / 12.5 | 1.172 / 12.5 | 0.774 / 10.0 |
+| m8id.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| m8id.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| m8id.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| m8id.8xlarge | 15.0 | 18.75 | 12.5 |
+| m8id.12xlarge | 22.5 | 28.125 | 18.75 |
+| m8id.16xlarge | 30.0 | 37.5 | 25.0 |
+| m8id.24xlarge | 40.0 | 50.0 | 32.5 |
+| m8id.32xlarge | 50.0 | 62.5 | 40.0 |
+| m8id.48xlarge | 75.0 | 93.75 | 60.0 |
+| m8id.96xlarge | 100.0 | 125.0 | 80.0 |
+| m8id.metal-48xl | 75.0 | 93.75 | 60.0 |
+| m8id.metal-96xl | 100.0 | 125.0 | 80.0 |
+| m8i-flex.large | 0.468 / 12.5 | 0.585 / 12.5 | 0.389 / 10.0 |
+| m8i-flex.xlarge | 0.937 / 12.5 | 1.172 / 12.5 | 0.779 / 10.0 |
+| m8i-flex.2xlarge | 1.875 / 15.0 | 2.344 / 15.0 | 1.562 / 12.5 |
+| m8i-flex.4xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| m8i-flex.8xlarge | 7.5 / 15.0 | 9.375 / 18.75 | 6.25 / 12.5 |
+| m8i-flex.12xlarge | 11.25 / 22.5 | 14.063 / 28.125 | 9.375 / 18.75 |
+| m8i-flex.16xlarge | 15.0 / 30.0 | 18.75 / 37.5 | 12.5 / 25.0 |
+| m9g.medium | 0.55 / 15.0 | 0.688 / 15.0 | 0.455 / 12.0 |
+| m9g.large | 1.0 / 15.0 | 1.25 / 15.0 | 0.81 / 12.0 |
+| m9g.xlarge | 2.1 / 15.0 | 2.625 / 15.0 | 1.725 / 12.0 |
+| m9g.2xlarge | 4.25 / 17.0 | 5.313 / 17.0 | 3.5 / 14.0 |
+| m9g.4xlarge | 8.5 / 17.0 | 10.625 / 17.0 | 7.0 / 14.0 |
+| m9g.8xlarge | 17.0 | 21.25 | 14.0 |
+| m9g.12xlarge | 25.0 | 31.25 | 20.5 |
+| m9g.16xlarge | 34.0 | 42.5 | 28.0 |
+| m9g.24xlarge | 50.0 | 62.5 | 41.0 |
+| m9g.48xlarge | 100.0 | 125.0 | 82.0 |
+| m9g.metal-48xl | 100.0 | 125.0 | 82.0 |
+| m9gd.medium | 0.55 / 15.0 | 0.688 / 15.0 | 0.455 / 12.0 |
+| m9gd.large | 1.0 / 15.0 | 1.25 / 15.0 | 0.81 / 12.0 |
+| m9gd.xlarge | 2.1 / 15.0 | 2.625 / 15.0 | 1.725 / 12.0 |
+| m9gd.2xlarge | 4.25 / 17.0 | 5.313 / 17.0 | 3.5 / 14.0 |
+| m9gd.4xlarge | 8.5 / 17.0 | 10.625 / 17.0 | 7.0 / 14.0 |
+| m9gd.8xlarge | 17.0 | 21.25 | 14.0 |
+| m9gd.12xlarge | 25.0 | 31.25 | 20.5 |
+| m9gd.16xlarge | 34.0 | 42.5 | 28.0 |
+| m9gd.24xlarge | 50.0 | 62.5 | 41.0 |
+| m9gd.48xlarge | 100.0 | 125.0 | 82.0 |
+| m9gd.metal-48xl | 100.0 | 125.0 | 82.0 |
+| r8a.medium | 0.52 / 12.5 | 0.65 / 12.5 | 0.438 / 10.0 |
+| r8a.large | 0.937 / 12.5 | 1.172 / 12.5 | 0.774 / 10.0 |
+| r8a.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| r8a.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| r8a.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| r8a.8xlarge | 15.0 | 18.75 | 12.5 |
+| r8a.12xlarge | 22.5 | 28.125 | 18.75 |
+| r8a.16xlarge | 30.0 | 37.5 | 25.0 |
+| r8a.24xlarge | 40.0 | 50.0 | 32.5 |
+| r8a.48xlarge | 75.0 | 93.75 | 60.0 |
+| r8a.metal-24xl | 40.0 | 50.0 | 32.5 |
+| r8a.metal-48xl | 75.0 | 93.75 | 60.0 |
+| r8g.medium | 0.52 / 12.5 | 0.65 / 12.5 | 0.441 / 10.0 |
+| r8g.large | 0.937 / 12.5 | 1.171 / 12.5 | 0.779 / 10.0 |
+| r8g.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| r8g.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| r8g.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| r8g.8xlarge | 15.0 | 18.75 | 12.5 |
+| r8g.12xlarge | 22.5 | 28.125 | 18.75 |
+| r8g.16xlarge | 30.0 | 37.5 | 25.0 |
+| r8g.24xlarge | 40.0 | 50.0 | 32.5 |
+| r8g.48xlarge | 50.0 | 62.5 | 40.0 |
+| r8g.metal-24xl | 40.0 | 50.0 | 32.5 |
+| r8g.metal-48xl | 50.0 | 62.5 | 40.0 |
+| r8gd.medium | 0.52 / 12.5 | 0.65 / 12.5 | 0.441 / 10.0 |
+| r8gd.large | 0.937 / 12.5 | 1.171 / 12.5 | 0.779 / 10.0 |
+| r8gd.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| r8gd.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| r8gd.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| r8gd.8xlarge | 15.0 | 18.75 | 12.5 |
+| r8gd.12xlarge | 22.5 | 28.125 | 18.75 |
+| r8gd.16xlarge | 30.0 | 37.5 | 25.0 |
+| r8gd.24xlarge | 40.0 | 50.0 | 32.5 |
+| r8gd.48xlarge | 50.0 | 62.5 | 40.0 |
+| r8gd.metal-24xl | 40.0 | 50.0 | 32.5 |
+| r8gd.metal-48xl | 50.0 | 62.5 | 40.0 |
+| r8i.large | 0.937 / 12.5 | 1.172 / 12.5 | 0.774 / 10.0 |
+| r8i.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| r8i.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| r8i.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| r8i.8xlarge | 15.0 | 18.75 | 12.5 |
+| r8i.12xlarge | 22.5 | 28.125 | 18.75 |
+| r8i.16xlarge | 30.0 | 37.5 | 25.0 |
+| r8i.24xlarge | 40.0 | 50.0 | 32.5 |
+| r8i.32xlarge | 50.0 | 62.5 | 40.0 |
+| r8i.48xlarge | 75.0 | 93.75 | 60.0 |
+| r8i.96xlarge | 100.0 | 125.0 | 80.0 |
+| r8i.metal-48xl | 75.0 | 93.75 | 60.0 |
+| r8i.metal-96xl | 100.0 | 125.0 | 80.0 |
+| r8id.large | 0.937 / 12.5 | 1.172 / 12.5 | 0.774 / 10.0 |
+| r8id.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| r8id.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| r8id.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| r8id.8xlarge | 15.0 | 18.75 | 12.5 |
+| r8id.12xlarge | 22.5 | 28.125 | 18.75 |
+| r8id.16xlarge | 30.0 | 37.5 | 25.0 |
+| r8id.24xlarge | 40.0 | 50.0 | 32.5 |
+| r8id.32xlarge | 50.0 | 62.5 | 40.0 |
+| r8id.48xlarge | 75.0 | 93.75 | 60.0 |
+| r8id.96xlarge | 100.0 | 125.0 | 80.0 |
+| r8id.metal-48xl | 75.0 | 93.75 | 60.0 |
+| r8id.metal-96xl | 100.0 | 125.0 | 80.0 |
+| r8i-flex.large | 0.468 / 12.5 | 0.585 / 12.5 | 0.389 / 10.0 |
+| r8i-flex.xlarge | 0.937 / 12.5 | 1.172 / 12.5 | 0.779 / 10.0 |
+| r8i-flex.2xlarge | 1.875 / 15.0 | 2.344 / 15.0 | 1.562 / 12.5 |
+| r8i-flex.4xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| r8i-flex.8xlarge | 7.5 / 15.0 | 9.375 / 18.75 | 6.25 / 12.5 |
+| r8i-flex.12xlarge | 11.25 / 22.5 | 14.063 / 28.125 | 9.375 / 18.75 |
+| r8i-flex.16xlarge | 15.0 / 30.0 | 18.75 / 37.5 | 12.5 / 25.0 |
+| x8g.medium | 0.52 / 12.5 | 0.65 / 12.5 | 0.441 / 10.0 |
+| x8g.large | 0.937 / 12.5 | 1.171 / 12.5 | 0.779 / 10.0 |
+| x8g.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| x8g.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| x8g.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| x8g.8xlarge | 15.0 | 18.75 | 12.5 |
+| x8g.12xlarge | 22.5 | 28.125 | 18.75 |
+| x8g.16xlarge | 30.0 | 37.5 | 25.0 |
+| x8g.24xlarge | 40.0 | 50.0 | 32.5 |
+| x8g.48xlarge | 50.0 | 62.5 | 40.0 |
+| x8g.metal-24xl | 40.0 | 50.0 | 32.5 |
+| x8g.metal-48xl | 50.0 | 62.5 | 40.0 |
+| x8aedz.large | 1.562 / 18.75 | 1.953 / 18.75 | 1.249 / 15.0 |
+| x8aedz.xlarge | 3.125 / 18.75 | 3.907 / 18.75 | 2.5 / 15.0 |
+| x8aedz.3xlarge | 9.375 / 18.75 | 11.719 / 18.75 | 7.5 / 15.0 |
+| x8aedz.6xlarge | 18.75 | 23.438 | 15.0 |
+| x8aedz.12xlarge | 37.5 | 46.875 | 30.0 |
+| x8aedz.24xlarge | 75.0 | 93.75 | 60.0 |
+| x8aedz.metal-12xl | 37.5 | 46.875 | 30.0 |
+| x8aedz.metal-24xl | 75.0 | 93.75 | 60.0 |
+| x8i.large | 0.937 / 12.5 | 1.172 / 12.5 | 0.774 / 10.0 |
+| x8i.xlarge | 1.875 / 12.5 | 2.344 / 12.5 | 1.562 / 10.0 |
+| x8i.2xlarge | 3.75 / 15.0 | 4.688 / 15.0 | 3.125 / 12.5 |
+| x8i.4xlarge | 7.5 / 15.0 | 9.375 / 15.0 | 6.25 / 12.5 |
+| x8i.8xlarge | 15.0 | 18.75 | 12.5 |
+| x8i.12xlarge | 22.5 | 28.125 | 18.75 |
+| x8i.16xlarge | 30.0 | 37.5 | 25.0 |
+| x8i.24xlarge | 40.0 | 50.0 | 32.5 |
+| x8i.32xlarge | 50.0 | 62.5 | 40.0 |
+| x8i.48xlarge | 75.0 | 93.75 | 60.0 |
+| x8i.64xlarge | 80.0 | 100.0 | 62.5 |
+| x8i.96xlarge | 100.0 | 125.0 | 80.0 |
+| x8i.metal-48xl | 75.0 | 93.75 | 60.0 |
+| x8i.metal-96xl | 100.0 | 125.0 | 80.0 |
 
 ## Amazon EBS performance
+<a name="config-bw-ebs-impact"></a>
 
-The following table shows the Amazon EBS performance, in Gbps, that can be achieved with
-the `default`, `vpc-1`, and `ebs-1` configurations.
+The following table shows the Amazon EBS performance, in Gbps, that can be achieved with the `default`, `vpc-1`, and `ebs-1` configurations.
 
-Instance type
-
-**`default`**
-
-(Baseline / Burst)
-
-**`vpc-1`**
-
-(Baseline / Burst)
-
-**`ebs-1`**
-
-(Baseline / Burst)
-
-c8a.medium0.325 / 10.00.195 / 6.250.407 / 10.0c8a.large0.65 / 10.00.415 / 6.250.813 / 10.0c8a.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0c8a.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0c8a.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0c8a.8xlarge10.06.2512.5c8a.12xlarge15.09.37518.75c8a.16xlarge20.012.525.0c8a.24xlarge30.020.037.5c8a.48xlarge60.041.2575.0c8a.metal-24xl30.020.037.5c8a.metal-48xl60.041.2575.0c8g.medium0.315 / 10.00.185 / 6.250.394 / 10.0c8g.large0.63 / 10.00.396 / 6.250.788 / 10.0c8g.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0c8g.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0c8g.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0c8g.8xlarge10.06.2512.5c8g.12xlarge15.09.37518.75c8g.16xlarge20.012.525.0c8g.24xlarge30.020.037.5c8g.48xlarge40.027.550.0c8g.metal-24xl30.020.037.5c8g.metal-48xl40.027.550.0c8gd.medium0.315 / 10.00.185 / 6.250.394 / 10.0c8gd.large0.63 / 10.00.396 / 6.250.788 / 10.0c8gd.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0c8gd.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0c8gd.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0c8gd.8xlarge10.06.2512.5c8gd.12xlarge15.09.37518.75c8gd.16xlarge20.012.525.0c8gd.24xlarge30.020.037.5c8gd.48xlarge40.027.550.0c8gd.metal-24xl30.020.037.5c8gd.metal-48xl40.027.550.0c8i.large0.65 / 10.00.415 / 6.250.813 / 10.0c8i.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0c8i.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0c8i.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0c8i.8xlarge10.06.2512.5c8i.12xlarge15.09.37518.75c8i.16xlarge20.012.525.0c8i.24xlarge30.020.037.5c8i.32xlarge40.027.550.0c8i.48xlarge60.041.2575.0c8i.96xlarge80.055.0100.0c8i.metal-48xl60.041.2575.0c8i.metal-96xl80.055.0100.0c8id.large0.65 / 10.00.415 / 6.250.813 / 10.0c8id.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0c8id.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0c8id.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0c8id.8xlarge10.06.2512.5c8id.12xlarge15.09.37518.75c8id.16xlarge20.012.525.0c8id.24xlarge30.020.037.5c8id.32xlarge40.027.550.0c8id.48xlarge60.041.2575.0c8id.96xlarge80.055.0100.0c8id.metal-48xl60.041.2575.0c8id.metal-96xl80.055.0100.0c8i-flex.large0.315 / 10.00.198 / 6.250.394 / 10.0c8i-flex.xlarge0.63 / 10.00.395 / 6.250.788 / 10.0c8i-flex.2xlarge1.25 / 10.00.781 / 6.251.563 / 10.0c8i-flex.4xlarge2.5 / 10.01.562 / 6.253.125 / 10.0c8i-flex.8xlarge5.0 / 10.03.125 / 6.256.25 / 12.5c8i-flex.12xlarge7.5 / 15.04.687 / 9.3759.375 / 18.75c8i-flex.16xlarge10.0 / 20.06.25 / 12.512.5 / 25.0m8a.medium0.325 / 10.00.195 / 6.250.407 / 10.0m8a.large0.65 / 10.00.415 / 6.250.813 / 10.0m8a.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0m8a.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0m8a.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0m8a.8xlarge10.06.2512.5m8a.12xlarge15.09.37518.75m8a.16xlarge20.012.525.0m8a.24xlarge30.020.037.5m8a.48xlarge60.041.2575.0m8a.metal-24xl30.020.037.5m8a.metal-48xl60.041.2575.0m8g.medium0.315 / 10.00.185 / 6.250.394 / 10.0m8g.large0.63 / 10.00.396 / 6.250.788 / 10.0m8g.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0m8g.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0m8g.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0m8g.8xlarge10.06.2512.5m8g.12xlarge15.09.37518.75m8g.16xlarge20.012.525.0m8g.24xlarge30.020.037.5m8g.48xlarge40.027.550.0m8g.metal-24xl30.020.037.5m8g.metal-48xl40.027.550.0m8gd.medium0.315 / 10.00.185 / 6.250.394 / 10.0m8gd.large0.63 / 10.00.396 / 6.250.788 / 10.0m8gd.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0m8gd.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0m8gd.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0m8gd.8xlarge10.06.2512.5m8gd.12xlarge15.09.37518.75m8gd.16xlarge20.012.525.0m8gd.24xlarge30.020.037.5m8gd.48xlarge40.027.550.0m8gd.metal-24xl30.020.037.5m8gd.metal-48xl40.027.550.0m8i.large0.65 / 10.00.415 / 6.250.813 / 10.0m8i.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0m8i.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0m8i.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0m8i.8xlarge10.06.2512.5m8i.12xlarge15.09.37518.75m8i.16xlarge20.012.525.0m8i.24xlarge30.020.037.5m8i.32xlarge40.027.550.0m8i.48xlarge60.041.2575.0m8i.96xlarge80.055.0100.0m8i.metal-48xl60.041.2575.0m8i.metal-96xl80.055.0100.0m8id.large0.65 / 10.00.415 / 6.250.813 / 10.0m8id.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0m8id.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0m8id.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0m8id.8xlarge10.06.2512.5m8id.12xlarge15.09.37518.75m8id.16xlarge20.012.525.0m8id.24xlarge30.020.037.5m8id.32xlarge40.027.550.0m8id.48xlarge60.041.2575.0m8id.96xlarge80.055.0100.0m8id.metal-48xl60.041.2575.0m8id.metal-96xl80.055.0100.0m8i-flex.large0.315 / 10.00.198 / 6.250.394 / 10.0m8i-flex.xlarge0.63 / 10.00.395 / 6.250.788 / 10.0m8i-flex.2xlarge1.25 / 10.00.781 / 6.251.563 / 10.0m8i-flex.4xlarge2.5 / 10.01.562 / 6.253.125 / 10.0m8i-flex.8xlarge5.0 / 10.03.125 / 6.256.25 / 12.5m8i-flex.12xlarge7.5 / 15.04.687 / 9.3759.375 / 18.75m8i-flex.16xlarge10.0 / 20.06.25 / 12.512.5 / 25.0r8a.medium0.325 / 10.00.195 / 6.250.407 / 10.0r8a.large0.65 / 10.00.415 / 6.250.813 / 10.0r8a.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0r8a.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0r8a.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0r8a.8xlarge10.06.2512.5r8a.12xlarge15.09.37518.75r8a.16xlarge20.012.525.0r8a.24xlarge30.020.037.5r8a.48xlarge60.041.2575.0r8a.metal-24xl30.020.037.5r8a.metal-48xl60.041.2575.0r8g.medium0.315 / 10.00.185 / 6.250.394 / 10.0r8g.large0.63 / 10.00.396 / 6.250.788 / 10.0r8g.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0r8g.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0r8g.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0r8g.8xlarge10.06.2512.5r8g.12xlarge15.09.37518.75r8g.16xlarge20.012.525.0r8g.24xlarge30.020.037.5r8g.48xlarge40.027.550.0r8g.metal-24xl30.020.037.5r8g.metal-48xl40.027.550.0r8gd.medium0.315 / 10.00.185 / 6.250.394 / 10.0r8gd.large0.63 / 10.00.396 / 6.250.788 / 10.0r8gd.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0r8gd.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0r8gd.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0r8gd.8xlarge10.06.2512.5r8gd.12xlarge15.09.37518.75r8gd.16xlarge20.012.525.0r8gd.24xlarge30.020.037.5r8gd.48xlarge40.027.550.0r8gd.metal-24xl30.020.037.5r8gd.metal-48xl40.027.550.0r8i.large0.65 / 10.00.415 / 6.250.813 / 10.0r8i.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0r8i.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0r8i.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0r8i.8xlarge10.06.2512.5r8i.12xlarge15.09.37518.75r8i.16xlarge20.012.525.0r8i.24xlarge30.020.037.5r8i.32xlarge40.027.550.0r8i.48xlarge60.041.2575.0r8i.96xlarge80.055.0100.0r8i.metal-48xl60.041.2575.0r8i.metal-96xl80.055.0100.0r8id.large0.65 / 10.00.415 / 6.250.813 / 10.0r8id.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0r8id.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0r8id.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0r8id.8xlarge10.06.2512.5r8id.12xlarge15.09.37518.75r8id.16xlarge20.012.525.0r8id.24xlarge30.020.037.5r8id.32xlarge40.027.550.0r8id.48xlarge60.041.2575.0r8id.96xlarge80.055.0100.0r8id.metal-48xl60.041.2575.0r8id.metal-96xl80.055.0100.0r8i-flex.large0.315 / 10.00.198 / 6.250.394 / 10.0r8i-flex.xlarge0.63 / 10.00.395 / 6.250.788 / 10.0r8i-flex.2xlarge1.25 / 10.00.781 / 6.251.563 / 10.0r8i-flex.4xlarge2.5 / 10.01.562 / 6.253.125 / 10.0r8i-flex.8xlarge5.0 / 10.03.125 / 6.256.25 / 12.5r8i-flex.12xlarge7.5 / 15.04.687 / 9.3759.375 / 18.75r8i-flex.16xlarge10.0 / 20.06.25 / 12.512.5 / 25.0x8g.medium0.315 / 10.00.185 / 6.250.394 / 10.0x8g.large0.63 / 10.00.396 / 6.250.788 / 10.0x8g.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0x8g.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0x8g.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0x8g.8xlarge10.06.2512.5x8g.12xlarge15.09.37518.75x8g.16xlarge20.012.525.0x8g.24xlarge30.020.037.5x8g.48xlarge40.027.550.0x8g.metal-24xl30.020.037.5x8g.metal-48xl40.027.550.0x8aedz.large1.25 / 15.00.859 / 10.3121.563 / 15.0x8aedz.xlarge2.5 / 15.01.718 / 10.3123.125 / 15.0x8aedz.3xlarge7.5 / 15.05.156 / 10.3129.375 / 15.0x8aedz.6xlarge15.010.31218.75x8aedz.12xlarge30.020.62537.5x8aedz.24xlarge60.041.2575.0x8aedz.metal-12xl30.020.62537.5x8aedz.metal-24xl60.041.2575.0x8i.large0.65 / 10.00.415 / 6.250.813 / 10.0x8i.xlarge1.25 / 10.00.781 / 6.251.563 / 10.0x8i.2xlarge2.5 / 10.01.562 / 6.253.125 / 10.0x8i.4xlarge5.0 / 10.03.125 / 6.256.25 / 10.0x8i.8xlarge10.06.2512.5x8i.12xlarge15.09.37518.75x8i.16xlarge20.012.525.0x8i.24xlarge30.020.037.5x8i.32xlarge40.027.550.0x8i.48xlarge60.041.2575.0x8i.64xlarge70.050.087.5x8i.96xlarge80.055.0100.0x8i.metal-48xl60.041.2575.0x8i.metal-96xl80.055.0100.0
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Network bandwidth
-
-Enhanced networking
+| Instance type |  **`default`**(Baseline / Burst)  |  **`vpc-1`**(Baseline / Burst)  |  **`ebs-1`**(Baseline / Burst)  |
+| --- | --- | --- | --- |
+| c8a.medium | 0.325 / 10.0 | 0.195 / 6.25 | 0.407 / 10.0 |
+| c8a.large | 0.65 / 10.0 | 0.415 / 6.25 | 0.813 / 10.0 |
+| c8a.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| c8a.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| c8a.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| c8a.8xlarge | 10.0 | 6.25 | 12.5 |
+| c8a.12xlarge | 15.0 | 9.375 | 18.75 |
+| c8a.16xlarge | 20.0 | 12.5 | 25.0 |
+| c8a.24xlarge | 30.0 | 20.0 | 37.5 |
+| c8a.48xlarge | 60.0 | 41.25 | 75.0 |
+| c8a.metal-24xl | 30.0 | 20.0 | 37.5 |
+| c8a.metal-48xl | 60.0 | 41.25 | 75.0 |
+| c8g.medium | 0.315 / 10.0 | 0.185 / 6.25 | 0.394 / 10.0 |
+| c8g.large | 0.63 / 10.0 | 0.396 / 6.25 | 0.788 / 10.0 |
+| c8g.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| c8g.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| c8g.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| c8g.8xlarge | 10.0 | 6.25 | 12.5 |
+| c8g.12xlarge | 15.0 | 9.375 | 18.75 |
+| c8g.16xlarge | 20.0 | 12.5 | 25.0 |
+| c8g.24xlarge | 30.0 | 20.0 | 37.5 |
+| c8g.48xlarge | 40.0 | 27.5 | 50.0 |
+| c8g.metal-24xl | 30.0 | 20.0 | 37.5 |
+| c8g.metal-48xl | 40.0 | 27.5 | 50.0 |
+| c8gd.medium | 0.315 / 10.0 | 0.185 / 6.25 | 0.394 / 10.0 |
+| c8gd.large | 0.63 / 10.0 | 0.396 / 6.25 | 0.788 / 10.0 |
+| c8gd.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| c8gd.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| c8gd.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| c8gd.8xlarge | 10.0 | 6.25 | 12.5 |
+| c8gd.12xlarge | 15.0 | 9.375 | 18.75 |
+| c8gd.16xlarge | 20.0 | 12.5 | 25.0 |
+| c8gd.24xlarge | 30.0 | 20.0 | 37.5 |
+| c8gd.48xlarge | 40.0 | 27.5 | 50.0 |
+| c8gd.metal-24xl | 30.0 | 20.0 | 37.5 |
+| c8gd.metal-48xl | 40.0 | 27.5 | 50.0 |
+| c8i.large | 0.65 / 10.0 | 0.415 / 6.25 | 0.813 / 10.0 |
+| c8i.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| c8i.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| c8i.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| c8i.8xlarge | 10.0 | 6.25 | 12.5 |
+| c8i.12xlarge | 15.0 | 9.375 | 18.75 |
+| c8i.16xlarge | 20.0 | 12.5 | 25.0 |
+| c8i.24xlarge | 30.0 | 20.0 | 37.5 |
+| c8i.32xlarge | 40.0 | 27.5 | 50.0 |
+| c8i.48xlarge | 60.0 | 41.25 | 75.0 |
+| c8i.96xlarge | 80.0 | 55.0 | 100.0 |
+| c8i.metal-48xl | 60.0 | 41.25 | 75.0 |
+| c8i.metal-96xl | 80.0 | 55.0 | 100.0 |
+| c8id.large | 0.65 / 10.0 | 0.415 / 6.25 | 0.813 / 10.0 |
+| c8id.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| c8id.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| c8id.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| c8id.8xlarge | 10.0 | 6.25 | 12.5 |
+| c8id.12xlarge | 15.0 | 9.375 | 18.75 |
+| c8id.16xlarge | 20.0 | 12.5 | 25.0 |
+| c8id.24xlarge | 30.0 | 20.0 | 37.5 |
+| c8id.32xlarge | 40.0 | 27.5 | 50.0 |
+| c8id.48xlarge | 60.0 | 41.25 | 75.0 |
+| c8id.96xlarge | 80.0 | 55.0 | 100.0 |
+| c8id.metal-48xl | 60.0 | 41.25 | 75.0 |
+| c8id.metal-96xl | 80.0 | 55.0 | 100.0 |
+| c8i-flex.large | 0.315 / 10.0 | 0.198 / 6.25 | 0.394 / 10.0 |
+| c8i-flex.xlarge | 0.63 / 10.0 | 0.395 / 6.25 | 0.788 / 10.0 |
+| c8i-flex.2xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| c8i-flex.4xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| c8i-flex.8xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 12.5 |
+| c8i-flex.12xlarge | 7.5 / 15.0 | 4.687 / 9.375 | 9.375 / 18.75 |
+| c8i-flex.16xlarge | 10.0 / 20.0 | 6.25 / 12.5 | 12.5 / 25.0 |
+| c9g.medium | 0.38 / 12.0 | 0.242 / 7.75 | 0.475 / 12.0 |
+| c9g.large | 0.76 / 12.0 | 0.51 / 7.75 | 0.95 / 12.0 |
+| c9g.xlarge | 1.5 / 12.0 | 0.975 / 7.75 | 1.875 / 12.0 |
+| c9g.2xlarge | 3.0 / 12.0 | 1.937 / 7.75 | 3.75 / 12.0 |
+| c9g.4xlarge | 6.0 / 12.0 | 3.875 / 7.75 | 7.5 / 12.0 |
+| c9g.8xlarge | 12.0 | 7.75 | 15.0 |
+| c9g.12xlarge | 18.0 | 11.75 | 22.5 |
+| c9g.16xlarge | 24.0 | 15.5 | 30.0 |
+| c9g.24xlarge | 36.0 | 23.5 | 45.0 |
+| c9g.48xlarge | 72.0 | 47.0 | 90.0 |
+| c9g.metal-48xl | 72.0 | 47.0 | 90.0 |
+| c9gd.medium | 0.38 / 12.0 | 0.242 / 7.75 | 0.475 / 12.0 |
+| c9gd.large | 0.76 / 12.0 | 0.51 / 7.75 | 0.95 / 12.0 |
+| c9gd.xlarge | 1.5 / 12.0 | 0.975 / 7.75 | 1.875 / 12.0 |
+| c9gd.2xlarge | 3.0 / 12.0 | 1.937 / 7.75 | 3.75 / 12.0 |
+| c9gd.4xlarge | 6.0 / 12.0 | 3.875 / 7.75 | 7.5 / 12.0 |
+| c9gd.8xlarge | 12.0 | 7.75 | 15.0 |
+| c9gd.12xlarge | 18.0 | 11.75 | 22.5 |
+| c9gd.16xlarge | 24.0 | 15.5 | 30.0 |
+| c9gd.24xlarge | 36.0 | 23.5 | 45.0 |
+| c9gd.48xlarge | 72.0 | 47.0 | 90.0 |
+| c9gd.metal-48xl | 72.0 | 47.0 | 90.0 |
+| m8a.medium | 0.325 / 10.0 | 0.195 / 6.25 | 0.407 / 10.0 |
+| m8a.large | 0.65 / 10.0 | 0.415 / 6.25 | 0.813 / 10.0 |
+| m8a.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| m8a.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| m8a.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| m8a.8xlarge | 10.0 | 6.25 | 12.5 |
+| m8a.12xlarge | 15.0 | 9.375 | 18.75 |
+| m8a.16xlarge | 20.0 | 12.5 | 25.0 |
+| m8a.24xlarge | 30.0 | 20.0 | 37.5 |
+| m8a.48xlarge | 60.0 | 41.25 | 75.0 |
+| m8a.metal-24xl | 30.0 | 20.0 | 37.5 |
+| m8a.metal-48xl | 60.0 | 41.25 | 75.0 |
+| m8g.medium | 0.315 / 10.0 | 0.185 / 6.25 | 0.394 / 10.0 |
+| m8g.large | 0.63 / 10.0 | 0.396 / 6.25 | 0.788 / 10.0 |
+| m8g.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| m8g.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| m8g.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| m8g.8xlarge | 10.0 | 6.25 | 12.5 |
+| m8g.12xlarge | 15.0 | 9.375 | 18.75 |
+| m8g.16xlarge | 20.0 | 12.5 | 25.0 |
+| m8g.24xlarge | 30.0 | 20.0 | 37.5 |
+| m8g.48xlarge | 40.0 | 27.5 | 50.0 |
+| m8g.metal-24xl | 30.0 | 20.0 | 37.5 |
+| m8g.metal-48xl | 40.0 | 27.5 | 50.0 |
+| m8gd.medium | 0.315 / 10.0 | 0.185 / 6.25 | 0.394 / 10.0 |
+| m8gd.large | 0.63 / 10.0 | 0.396 / 6.25 | 0.788 / 10.0 |
+| m8gd.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| m8gd.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| m8gd.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| m8gd.8xlarge | 10.0 | 6.25 | 12.5 |
+| m8gd.12xlarge | 15.0 | 9.375 | 18.75 |
+| m8gd.16xlarge | 20.0 | 12.5 | 25.0 |
+| m8gd.24xlarge | 30.0 | 20.0 | 37.5 |
+| m8gd.48xlarge | 40.0 | 27.5 | 50.0 |
+| m8gd.metal-24xl | 30.0 | 20.0 | 37.5 |
+| m8gd.metal-48xl | 40.0 | 27.5 | 50.0 |
+| m8i.large | 0.65 / 10.0 | 0.415 / 6.25 | 0.813 / 10.0 |
+| m8i.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| m8i.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| m8i.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| m8i.8xlarge | 10.0 | 6.25 | 12.5 |
+| m8i.12xlarge | 15.0 | 9.375 | 18.75 |
+| m8i.16xlarge | 20.0 | 12.5 | 25.0 |
+| m8i.24xlarge | 30.0 | 20.0 | 37.5 |
+| m8i.32xlarge | 40.0 | 27.5 | 50.0 |
+| m8i.48xlarge | 60.0 | 41.25 | 75.0 |
+| m8i.96xlarge | 80.0 | 55.0 | 100.0 |
+| m8i.metal-48xl | 60.0 | 41.25 | 75.0 |
+| m8i.metal-96xl | 80.0 | 55.0 | 100.0 |
+| m8id.large | 0.65 / 10.0 | 0.415 / 6.25 | 0.813 / 10.0 |
+| m8id.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| m8id.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| m8id.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| m8id.8xlarge | 10.0 | 6.25 | 12.5 |
+| m8id.12xlarge | 15.0 | 9.375 | 18.75 |
+| m8id.16xlarge | 20.0 | 12.5 | 25.0 |
+| m8id.24xlarge | 30.0 | 20.0 | 37.5 |
+| m8id.32xlarge | 40.0 | 27.5 | 50.0 |
+| m8id.48xlarge | 60.0 | 41.25 | 75.0 |
+| m8id.96xlarge | 80.0 | 55.0 | 100.0 |
+| m8id.metal-48xl | 60.0 | 41.25 | 75.0 |
+| m8id.metal-96xl | 80.0 | 55.0 | 100.0 |
+| m8i-flex.large | 0.315 / 10.0 | 0.198 / 6.25 | 0.394 / 10.0 |
+| m8i-flex.xlarge | 0.63 / 10.0 | 0.395 / 6.25 | 0.788 / 10.0 |
+| m8i-flex.2xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| m8i-flex.4xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| m8i-flex.8xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 12.5 |
+| m8i-flex.12xlarge | 7.5 / 15.0 | 4.687 / 9.375 | 9.375 / 18.75 |
+| m8i-flex.16xlarge | 10.0 / 20.0 | 6.25 / 12.5 | 12.5 / 25.0 |
+| m9g.medium | 0.38 / 12.0 | 0.242 / 7.75 | 0.475 / 12.0 |
+| m9g.large | 0.76 / 12.0 | 0.51 / 7.75 | 0.95 / 12.0 |
+| m9g.xlarge | 1.5 / 12.0 | 0.975 / 7.75 | 1.875 / 12.0 |
+| m9g.2xlarge | 3.0 / 12.0 | 1.937 / 7.75 | 3.75 / 12.0 |
+| m9g.4xlarge | 6.0 / 12.0 | 3.875 / 7.75 | 7.5 / 12.0 |
+| m9g.8xlarge | 12.0 | 7.75 | 15.0 |
+| m9g.12xlarge | 18.0 | 11.75 | 22.5 |
+| m9g.16xlarge | 24.0 | 15.5 | 30.0 |
+| m9g.24xlarge | 36.0 | 23.5 | 45.0 |
+| m9g.48xlarge | 72.0 | 47.0 | 90.0 |
+| m9g.metal-48xl | 72.0 | 47.0 | 90.0 |
+| m9gd.medium | 0.38 / 12.0 | 0.242 / 7.75 | 0.475 / 12.0 |
+| m9gd.large | 0.76 / 12.0 | 0.51 / 7.75 | 0.95 / 12.0 |
+| m9gd.xlarge | 1.5 / 12.0 | 0.975 / 7.75 | 1.875 / 12.0 |
+| m9gd.2xlarge | 3.0 / 12.0 | 1.937 / 7.75 | 3.75 / 12.0 |
+| m9gd.4xlarge | 6.0 / 12.0 | 3.875 / 7.75 | 7.5 / 12.0 |
+| m9gd.8xlarge | 12.0 | 7.75 | 15.0 |
+| m9gd.12xlarge | 18.0 | 11.75 | 22.5 |
+| m9gd.16xlarge | 24.0 | 15.5 | 30.0 |
+| m9gd.24xlarge | 36.0 | 23.5 | 45.0 |
+| m9gd.48xlarge | 72.0 | 47.0 | 90.0 |
+| m9gd.metal-48xl | 72.0 | 47.0 | 90.0 |
+| r8a.medium | 0.325 / 10.0 | 0.195 / 6.25 | 0.407 / 10.0 |
+| r8a.large | 0.65 / 10.0 | 0.415 / 6.25 | 0.813 / 10.0 |
+| r8a.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| r8a.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| r8a.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| r8a.8xlarge | 10.0 | 6.25 | 12.5 |
+| r8a.12xlarge | 15.0 | 9.375 | 18.75 |
+| r8a.16xlarge | 20.0 | 12.5 | 25.0 |
+| r8a.24xlarge | 30.0 | 20.0 | 37.5 |
+| r8a.48xlarge | 60.0 | 41.25 | 75.0 |
+| r8a.metal-24xl | 30.0 | 20.0 | 37.5 |
+| r8a.metal-48xl | 60.0 | 41.25 | 75.0 |
+| r8g.medium | 0.315 / 10.0 | 0.185 / 6.25 | 0.394 / 10.0 |
+| r8g.large | 0.63 / 10.0 | 0.396 / 6.25 | 0.788 / 10.0 |
+| r8g.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| r8g.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| r8g.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| r8g.8xlarge | 10.0 | 6.25 | 12.5 |
+| r8g.12xlarge | 15.0 | 9.375 | 18.75 |
+| r8g.16xlarge | 20.0 | 12.5 | 25.0 |
+| r8g.24xlarge | 30.0 | 20.0 | 37.5 |
+| r8g.48xlarge | 40.0 | 27.5 | 50.0 |
+| r8g.metal-24xl | 30.0 | 20.0 | 37.5 |
+| r8g.metal-48xl | 40.0 | 27.5 | 50.0 |
+| r8gd.medium | 0.315 / 10.0 | 0.185 / 6.25 | 0.394 / 10.0 |
+| r8gd.large | 0.63 / 10.0 | 0.396 / 6.25 | 0.788 / 10.0 |
+| r8gd.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| r8gd.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| r8gd.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| r8gd.8xlarge | 10.0 | 6.25 | 12.5 |
+| r8gd.12xlarge | 15.0 | 9.375 | 18.75 |
+| r8gd.16xlarge | 20.0 | 12.5 | 25.0 |
+| r8gd.24xlarge | 30.0 | 20.0 | 37.5 |
+| r8gd.48xlarge | 40.0 | 27.5 | 50.0 |
+| r8gd.metal-24xl | 30.0 | 20.0 | 37.5 |
+| r8gd.metal-48xl | 40.0 | 27.5 | 50.0 |
+| r8i.large | 0.65 / 10.0 | 0.415 / 6.25 | 0.813 / 10.0 |
+| r8i.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| r8i.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| r8i.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| r8i.8xlarge | 10.0 | 6.25 | 12.5 |
+| r8i.12xlarge | 15.0 | 9.375 | 18.75 |
+| r8i.16xlarge | 20.0 | 12.5 | 25.0 |
+| r8i.24xlarge | 30.0 | 20.0 | 37.5 |
+| r8i.32xlarge | 40.0 | 27.5 | 50.0 |
+| r8i.48xlarge | 60.0 | 41.25 | 75.0 |
+| r8i.96xlarge | 80.0 | 55.0 | 100.0 |
+| r8i.metal-48xl | 60.0 | 41.25 | 75.0 |
+| r8i.metal-96xl | 80.0 | 55.0 | 100.0 |
+| r8id.large | 0.65 / 10.0 | 0.415 / 6.25 | 0.813 / 10.0 |
+| r8id.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| r8id.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| r8id.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| r8id.8xlarge | 10.0 | 6.25 | 12.5 |
+| r8id.12xlarge | 15.0 | 9.375 | 18.75 |
+| r8id.16xlarge | 20.0 | 12.5 | 25.0 |
+| r8id.24xlarge | 30.0 | 20.0 | 37.5 |
+| r8id.32xlarge | 40.0 | 27.5 | 50.0 |
+| r8id.48xlarge | 60.0 | 41.25 | 75.0 |
+| r8id.96xlarge | 80.0 | 55.0 | 100.0 |
+| r8id.metal-48xl | 60.0 | 41.25 | 75.0 |
+| r8id.metal-96xl | 80.0 | 55.0 | 100.0 |
+| r8i-flex.large | 0.315 / 10.0 | 0.198 / 6.25 | 0.394 / 10.0 |
+| r8i-flex.xlarge | 0.63 / 10.0 | 0.395 / 6.25 | 0.788 / 10.0 |
+| r8i-flex.2xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| r8i-flex.4xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| r8i-flex.8xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 12.5 |
+| r8i-flex.12xlarge | 7.5 / 15.0 | 4.687 / 9.375 | 9.375 / 18.75 |
+| r8i-flex.16xlarge | 10.0 / 20.0 | 6.25 / 12.5 | 12.5 / 25.0 |
+| x8g.medium | 0.315 / 10.0 | 0.185 / 6.25 | 0.394 / 10.0 |
+| x8g.large | 0.63 / 10.0 | 0.396 / 6.25 | 0.788 / 10.0 |
+| x8g.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| x8g.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| x8g.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| x8g.8xlarge | 10.0 | 6.25 | 12.5 |
+| x8g.12xlarge | 15.0 | 9.375 | 18.75 |
+| x8g.16xlarge | 20.0 | 12.5 | 25.0 |
+| x8g.24xlarge | 30.0 | 20.0 | 37.5 |
+| x8g.48xlarge | 40.0 | 27.5 | 50.0 |
+| x8g.metal-24xl | 30.0 | 20.0 | 37.5 |
+| x8g.metal-48xl | 40.0 | 27.5 | 50.0 |
+| x8aedz.large | 1.25 / 15.0 | 0.859 / 10.312 | 1.563 / 15.0 |
+| x8aedz.xlarge | 2.5 / 15.0 | 1.718 / 10.312 | 3.125 / 15.0 |
+| x8aedz.3xlarge | 7.5 / 15.0 | 5.156 / 10.312 | 9.375 / 15.0 |
+| x8aedz.6xlarge | 15.0 | 10.312 | 18.75 |
+| x8aedz.12xlarge | 30.0 | 20.625 | 37.5 |
+| x8aedz.24xlarge | 60.0 | 41.25 | 75.0 |
+| x8aedz.metal-12xl | 30.0 | 20.625 | 37.5 |
+| x8aedz.metal-24xl | 60.0 | 41.25 | 75.0 |
+| x8i.large | 0.65 / 10.0 | 0.415 / 6.25 | 0.813 / 10.0 |
+| x8i.xlarge | 1.25 / 10.0 | 0.781 / 6.25 | 1.563 / 10.0 |
+| x8i.2xlarge | 2.5 / 10.0 | 1.562 / 6.25 | 3.125 / 10.0 |
+| x8i.4xlarge | 5.0 / 10.0 | 3.125 / 6.25 | 6.25 / 10.0 |
+| x8i.8xlarge | 10.0 | 6.25 | 12.5 |
+| x8i.12xlarge | 15.0 | 9.375 | 18.75 |
+| x8i.16xlarge | 20.0 | 12.5 | 25.0 |
+| x8i.24xlarge | 30.0 | 20.0 | 37.5 |
+| x8i.32xlarge | 40.0 | 27.5 | 50.0 |
+| x8i.48xlarge | 60.0 | 41.25 | 75.0 |
+| x8i.64xlarge | 70.0 | 50.0 | 87.5 |
+| x8i.96xlarge | 80.0 | 55.0 | 100.0 |
+| x8i.metal-48xl | 60.0 | 41.25 | 75.0 |
+| x8i.metal-96xl | 80.0 | 55.0 | 100.0 |
 
 All content copied from https://docs.aws.amazon.com/.

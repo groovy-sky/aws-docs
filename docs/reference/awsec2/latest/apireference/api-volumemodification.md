@@ -3,159 +3,102 @@ title: "VolumeModification"
 ---
 
 # VolumeModification
+<a name="API_VolumeModification"></a>
 
 Describes the modification status of an EBS volume.
 
 ## Contents
+<a name="API_VolumeModification_Contents"></a>
 
-**endTime**
-
+ ** endTime **
 The modification completion or failure time.
-
 Type: Timestamp
-
 Required: No
 
-**modificationState**
-
+ ** modificationState **
 The current modification state.
-
 Type: String
-
 Valid Values: `modifying | optimizing | completed | failed`
-
 Required: No
 
-**originalIops**
-
+ ** originalIops **
 The original IOPS rate of the volume.
-
 Type: Integer
-
 Required: No
 
-**originalMultiAttachEnabled**
-
+ ** originalMultiAttachEnabled **
 The original setting for Amazon EBS Multi-Attach.
-
 Type: Boolean
-
 Required: No
 
-**originalSize**
-
+ ** originalSize **
 The original size of the volume, in GiB.
-
 Type: Integer
-
 Required: No
 
-**originalThroughput**
-
+ ** originalThroughput **
 The original throughput of the volume, in MiB/s.
-
 Type: Integer
-
 Required: No
 
-**originalVolumeType**
-
+ ** originalVolumeType **
 The original EBS volume type of the volume.
-
 Type: String
-
 Valid Values: `standard | io1 | io2 | gp2 | sc1 | st1 | gp3`
-
 Required: No
 
-**progress**
-
+ ** progress **
 The modification progress, from 0 to 100 percent complete.
-
 Type: Long
-
 Required: No
 
-**startTime**
-
+ ** startTime **
 The modification start time.
-
 Type: Timestamp
-
 Required: No
 
-**statusMessage**
-
+ ** statusMessage **
 A status message about the modification progress or failure.
-
 Type: String
-
 Required: No
 
-**targetIops**
-
+ ** targetIops **
 The target IOPS rate of the volume.
-
 Type: Integer
-
 Required: No
 
-**targetMultiAttachEnabled**
-
+ ** targetMultiAttachEnabled **
 The target setting for Amazon EBS Multi-Attach.
-
 Type: Boolean
-
 Required: No
 
-**targetSize**
-
+ ** targetSize **
 The target size of the volume, in GiB.
-
 Type: Integer
-
 Required: No
 
-**targetThroughput**
-
+ ** targetThroughput **
 The target throughput of the volume, in MiB/s.
-
 Type: Integer
-
 Required: No
 
-**targetVolumeType**
-
+ ** targetVolumeType **
 The target EBS volume type of the volume.
-
 Type: String
-
 Valid Values: `standard | io1 | io2 | gp2 | sc1 | st1 | gp3`
-
 Required: No
 
-**volumeId**
-
+ ** volumeId **
 The ID of the volume.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_VolumeModification_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/volumemodification.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/volumemodification.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/volumemodification.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VolumeDetail
-
-VolumeRecycleBinInfo
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VolumeModification)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VolumeModification)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VolumeModification)
 
 All content copied from https://docs.aws.amazon.com/.

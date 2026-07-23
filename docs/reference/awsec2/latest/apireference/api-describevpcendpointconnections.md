@@ -3,114 +3,83 @@ title: "DescribeVpcEndpointConnections"
 ---
 
 # DescribeVpcEndpointConnections
+<a name="API_DescribeVpcEndpointConnections"></a>
 
-Describes the VPC endpoint connections to your VPC endpoint services, including any
-endpoints that are pending your acceptance.
+Describes the VPC endpoint connections to your VPC endpoint services, including any endpoints that are pending your acceptance.
 
 ## Request Parameters
+<a name="API_DescribeVpcEndpointConnections_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
-Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**Filter.N**
-
+ **Filter.N**
 The filters.
-
-- `ip-address-type` \- The IP address type ( `ipv4` \| `ipv6`).
-
-- `service-id` \- The ID of the service.
-
-- `vpc-endpoint-owner` \- The ID of the AWS account ID
-that owns the endpoint.
-
-- `vpc-endpoint-region` \- The Region of the endpoint or `cross-region`
-to find endpoints for other Regions.
-
-- `vpc-endpoint-state` \- The state of the endpoint
-( `pendingAcceptance` \| `pending` \|
-`available` \| `deleting` \| `deleted` \|
-`rejected` \| `failed`).
-
-- `vpc-endpoint-id` \- The ID of the endpoint.
-
-Type: Array of [Filter](api-filter.md) objects
-
++  `ip-address-type` - The IP address type (`ipv4` \| `ipv6`).
++  `service-id` - The ID of the service.
++  `vpc-endpoint-owner` - The ID of the AWS account ID that owns the endpoint.
++  `vpc-endpoint-region` - The Region of the endpoint or `cross-region` to find endpoints for other Regions.
++  `vpc-endpoint-state` - The state of the endpoint (`pendingAcceptance` \| `pending` \| `available` \| `deleting` \| `deleted` \| `rejected` \| `failed`).
++  `vpc-endpoint-id` - The ID of the endpoint.
+Type: Array of [Filter](API_Filter.md) objects
 Required: No
 
-**MaxResults**
-
-The maximum number of results to return for the request in a single page. The remaining
-results of the initial request can be seen by sending another request with the returned
-`NextToken` value. This value can be between 5 and 1,000; if
-`MaxResults` is given a value larger than 1,000, only 1,000 results are
-returned.
-
+ **MaxResults**
+The maximum number of results to return for the request in a single page. The remaining results of the initial request can be seen by sending another request with the returned `NextToken` value. This value can be between 5 and 1,000; if `MaxResults` is given a value larger than 1,000, only 1,000 results are returned.
 Type: Integer
-
 Required: No
 
-**NextToken**
-
+ **NextToken**
 The token to retrieve the next page of results.
-
 Type: String
-
 Required: No
 
 ## Response Elements
+<a name="API_DescribeVpcEndpointConnections_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**nextToken**
-
+ **nextToken**
 The token to use to retrieve the next page of results. This value is `null` when there are no more results to return.
-
 Type: String
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**vpcEndpointConnectionSet**
-
+ **vpcEndpointConnectionSet**
 Information about the VPC endpoint connections.
-
-Type: Array of [VpcEndpointConnection](api-vpcendpointconnection.md) objects
+Type: Array of [VpcEndpointConnection](API_VpcEndpointConnection.md) objects
 
 ## Errors
+<a name="API_DescribeVpcEndpointConnections_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_DescribeVpcEndpointConnections_Examples"></a>
 
 ### Example
+<a name="API_DescribeVpcEndpointConnections_Example_1"></a>
 
-This example describes all of the VPC endpoint connections for all of your
-services.
+This example describes all of the VPC endpoint connections for all of your services.
 
 #### Sample Request
+<a name="API_DescribeVpcEndpointConnections_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=DescribeVpcEndpointConnections
 &AUTHPARAMS
 ```
 
 #### Sample Response
+<a name="API_DescribeVpcEndpointConnections_Example_1_Response"></a>
 
 ```
-
 <DescribeVpcEndpointConnectionsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
     <requestId>ed2d237f-426b-4927-981b-980example</requestId>
     <vpcEndpointConnectionSet>
@@ -140,33 +109,18 @@ https://ec2.amazonaws.com/?Action=DescribeVpcEndpointConnections
 ```
 
 ## See Also
+<a name="API_DescribeVpcEndpointConnections_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/describevpcendpointconnections.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/describevpcendpointconnections.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describevpcendpointconnections.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describevpcendpointconnections.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describevpcendpointconnections.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describevpcendpointconnections.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describevpcendpointconnections.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describevpcendpointconnections.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/describevpcendpointconnections.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describevpcendpointconnections.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeVpcEndpointConnectionNotifications
-
-DescribeVpcEndpoints
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/DescribeVpcEndpointConnections)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeVpcEndpointConnections)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeVpcEndpointConnections)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeVpcEndpointConnections)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeVpcEndpointConnections)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeVpcEndpointConnections)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeVpcEndpointConnections)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeVpcEndpointConnections)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeVpcEndpointConnections)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeVpcEndpointConnections)
 
 All content copied from https://docs.aws.amazon.com/.

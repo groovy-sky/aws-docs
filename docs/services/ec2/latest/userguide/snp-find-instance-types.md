@@ -3,18 +3,17 @@ title: "Find EC2 instance types that support AMD SEV-SNP"
 ---
 
 # Find EC2 instance types that support AMD SEV-SNP
+<a name="snp-find-instance-types"></a>
 
-You can find instance types that support AMD SEV-SNP. The Amazon EC2 console
-does not display this information for an instance type.
+You can find instance types that support AMD SEV-SNP. The Amazon EC2 console does not display this information for an instance type.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To find the instance types that support AMD SEV-SNP
+**To find the instance types that support AMD SEV-SNP**
+Use the following [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command.
 
-Use the following [describe-instance-types](../../../cli/latest/reference/ec2/describe-instance-types.md) command.
-
-```nohighlight
-
+```
 aws ec2 describe-instance-types \
     --filters Name=processor-info.supported-features,Values=amd-sev-snp \
     --query 'InstanceTypes[*].[InstanceType]' \
@@ -23,8 +22,7 @@ aws ec2 describe-instance-types \
 
 The following is example output.
 
-```nohighlight
-
+```
 c6a.12xlarge
 c6a.16xlarge
 c6a.2xlarge
@@ -43,23 +41,20 @@ r6a.large
 r6a.xlarge
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To find the instance types that support AMD SEV-SNP
+**To find the instance types that support AMD SEV-SNP**
+Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) cmdlet.
 
-Use the [Get-EC2InstanceType](../../../powershell/latest/reference/items/get-ec2instancetype.md)
-cmdlet.
-
-```powershell
-
+```
 (Get-EC2InstanceType `
     -Filter @{Name="processor-info.supported-features"; Values="amd-sev-snp"}).InstanceType.Value | Sort-Object
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 c6a.12xlarge
 c6a.16xlarge
 c6a.2xlarge
@@ -78,10 +73,6 @@ r6a.large
 r6a.xlarge
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AMD SEV-SNP
-
-Enable AMD SEV-SNP
+------
 
 All content copied from https://docs.aws.amazon.com/.

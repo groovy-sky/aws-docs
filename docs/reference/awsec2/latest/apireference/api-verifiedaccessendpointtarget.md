@@ -3,49 +3,34 @@ title: "VerifiedAccessEndpointTarget"
 ---
 
 # VerifiedAccessEndpointTarget
+<a name="API_VerifiedAccessEndpointTarget"></a>
 
 Describes the targets for the specified Verified Access endpoint.
 
 ## Contents
+<a name="API_VerifiedAccessEndpointTarget_Contents"></a>
 
-**verifiedAccessEndpointId**
-
+ ** verifiedAccessEndpointId **
 The ID of the Verified Access endpoint.
-
 Type: String
-
 Required: No
 
-**verifiedAccessEndpointTargetDns**
-
+ ** verifiedAccessEndpointTargetDns **
 The DNS name of the target.
-
 Type: String
-
 Required: No
 
-**verifiedAccessEndpointTargetIpAddress**
-
+ ** verifiedAccessEndpointTargetIpAddress **
 The IP address of the target.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_VerifiedAccessEndpointTarget_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/verifiedaccessendpointtarget.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/verifiedaccessendpointtarget.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccessendpointtarget.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VerifiedAccessEndpointStatus
-
-VerifiedAccessGroup
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VerifiedAccessEndpointTarget)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VerifiedAccessEndpointTarget)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VerifiedAccessEndpointTarget)
 
 All content copied from https://docs.aws.amazon.com/.

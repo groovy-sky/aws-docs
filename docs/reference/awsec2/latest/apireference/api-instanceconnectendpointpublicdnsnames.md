@@ -3,42 +3,29 @@ title: "InstanceConnectEndpointPublicDnsNames"
 ---
 
 # InstanceConnectEndpointPublicDnsNames
+<a name="API_InstanceConnectEndpointPublicDnsNames"></a>
 
-The public DNS names of the endpoint, including IPv4-only and dualstack DNS
-names.
+The public DNS names of the endpoint, including IPv4-only and dualstack DNS names.
 
 ## Contents
+<a name="API_InstanceConnectEndpointPublicDnsNames_Contents"></a>
 
-**dualstack**
-
+ ** dualstack **
 The dualstack DNS name of the EC2 Instance Connect Endpoint. A dualstack DNS name supports connections from both IPv4 and IPv6 clients.
-
-Type: [InstanceConnectEndpointDnsNames](api-instanceconnectendpointdnsnames.md) object
-
+Type: [InstanceConnectEndpointDnsNames](API_InstanceConnectEndpointDnsNames.md) object
 Required: No
 
-**ipv4**
-
+ ** ipv4 **
 The IPv4-only DNS name of the EC2 Instance Connect Endpoint.
-
-Type: [InstanceConnectEndpointDnsNames](api-instanceconnectendpointdnsnames.md) object
-
+Type: [InstanceConnectEndpointDnsNames](API_InstanceConnectEndpointDnsNames.md) object
 Required: No
 
 ## See Also
+<a name="API_InstanceConnectEndpointPublicDnsNames_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instanceconnectendpointpublicdnsnames.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instanceconnectendpointpublicdnsnames.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instanceconnectendpointpublicdnsnames.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstanceConnectEndpointDnsNames
-
-InstanceCount
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceConnectEndpointPublicDnsNames)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceConnectEndpointPublicDnsNames)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceConnectEndpointPublicDnsNames)
 
 All content copied from https://docs.aws.amazon.com/.

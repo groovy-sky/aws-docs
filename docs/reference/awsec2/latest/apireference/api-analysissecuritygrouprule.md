@@ -3,77 +3,51 @@ title: "AnalysisSecurityGroupRule"
 ---
 
 # AnalysisSecurityGroupRule
+<a name="API_AnalysisSecurityGroupRule"></a>
 
 Describes a security group rule.
 
 ## Contents
+<a name="API_AnalysisSecurityGroupRule_Contents"></a>
 
-**cidr**
-
+ ** cidr **
 The IPv4 address range, in CIDR notation.
-
 Type: String
-
 Required: No
 
-**direction**
-
+ ** direction **
 The direction. The following are the possible values:
-
-- egress
-
-- ingress
-
++ egress
++ ingress
 Type: String
-
 Required: No
 
-**portRange**
-
+ ** portRange **
 The port range.
-
-Type: [PortRange](api-portrange.md) object
-
+Type: [PortRange](API_PortRange.md) object
 Required: No
 
-**prefixListId**
-
+ ** prefixListId **
 The prefix list ID.
-
 Type: String
-
 Required: No
 
-**protocol**
-
+ ** protocol **
 The protocol name.
-
 Type: String
-
 Required: No
 
-**securityGroupId**
-
+ ** securityGroupId **
 The security group ID.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_AnalysisSecurityGroupRule_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/analysissecuritygrouprule.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/analysissecuritygrouprule.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/analysissecuritygrouprule.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnalysisRouteTableRoute
-
-AsnAssociation
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AnalysisSecurityGroupRule)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AnalysisSecurityGroupRule)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AnalysisSecurityGroupRule)
 
 All content copied from https://docs.aws.amazon.com/.

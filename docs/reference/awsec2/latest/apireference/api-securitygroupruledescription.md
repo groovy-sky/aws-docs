@@ -3,43 +3,31 @@ title: "SecurityGroupRuleDescription"
 ---
 
 # SecurityGroupRuleDescription
+<a name="API_SecurityGroupRuleDescription"></a>
 
 Describes the description of a security group rule.
 
 You can use this when you want to update the security group rule description for either an inbound or outbound rule.
 
 ## Contents
+<a name="API_SecurityGroupRuleDescription_Contents"></a>
 
-**Description**
-
+ ** Description **
 The description of the security group rule.
-
 Type: String
-
 Required: No
 
-**SecurityGroupRuleId**
-
+ ** SecurityGroupRuleId **
 The ID of the security group rule.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_SecurityGroupRuleDescription_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/securitygroupruledescription.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/securitygroupruledescription.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/securitygroupruledescription.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-SecurityGroupRule
-
-SecurityGroupRuleRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/SecurityGroupRuleDescription)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/SecurityGroupRuleDescription)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/SecurityGroupRuleDescription)
 
 All content copied from https://docs.aws.amazon.com/.

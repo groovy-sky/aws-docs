@@ -3,53 +3,36 @@ title: "CancelSpotFleetRequestsSuccessItem"
 ---
 
 # CancelSpotFleetRequestsSuccessItem
+<a name="API_CancelSpotFleetRequestsSuccessItem"></a>
 
 Describes a Spot Fleet request that was successfully canceled.
 
 ## Contents
+<a name="API_CancelSpotFleetRequestsSuccessItem_Contents"></a>
 
-**currentSpotFleetRequestState**
-
+ ** currentSpotFleetRequestState **
 The current state of the Spot Fleet request.
-
 Type: String
-
 Valid Values: `submitted | active | cancelled | failed | cancelled_running | cancelled_terminating | modifying`
-
 Required: No
 
-**previousSpotFleetRequestState**
-
+ ** previousSpotFleetRequestState **
 The previous state of the Spot Fleet request.
-
 Type: String
-
 Valid Values: `submitted | active | cancelled | failed | cancelled_running | cancelled_terminating | modifying`
-
 Required: No
 
-**spotFleetRequestId**
-
+ ** spotFleetRequestId **
 The ID of the Spot Fleet request.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_CancelSpotFleetRequestsSuccessItem_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/cancelspotfleetrequestssuccessitem.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/cancelspotfleetrequestssuccessitem.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/cancelspotfleetrequestssuccessitem.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CancelSpotFleetRequestsErrorItem
-
-CapacityAllocation
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CancelSpotFleetRequestsSuccessItem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CancelSpotFleetRequestsSuccessItem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CancelSpotFleetRequestsSuccessItem)
 
 All content copied from https://docs.aws.amazon.com/.

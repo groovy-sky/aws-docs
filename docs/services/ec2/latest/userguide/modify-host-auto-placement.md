@@ -3,60 +3,49 @@ title: "Modify the auto-placement setting for an existing Amazon EC2 Dedicated H
 ---
 
 # Modify the auto-placement setting for an existing Amazon EC2 Dedicated Host
+<a name="modify-host-auto-placement"></a>
 
-You can modify the auto-placement settings of a Dedicated Host after you have allocated it
-to your AWS account.
+You can modify the auto-placement settings of a Dedicated Host after you have allocated it to your AWS account.
 
-Console
+------
+#### [ Console ]
 
-###### To modify the auto-placement of a Dedicated Host
+**To modify the auto-placement of a Dedicated Host**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose
-    **Dedicated Hosts**.
+1. In the navigation pane, choose **Dedicated Hosts**.
 
-3. Select a host and choose **Actions**,
-    **Modify host**.
+1. Select a host and choose **Actions**, **Modify host**.
 
-4. For **Instance auto-placement**, choose
-    **Enable** to enable auto-placement, or
-    clear **Enable** to disable auto-placement. For
-    more information, see [Amazon EC2 Dedicated Host auto-placement and host affinity](dedicated-hosts-understanding.md).
+1. For **Instance auto-placement**, choose **Enable** to enable auto-placement, or clear **Enable** to disable auto-placement. For more information, see [Amazon EC2 Dedicated Host auto-placement and host affinity](dedicated-hosts-understanding.md).
 
-5. Choose **Save**.
+1. Choose **Save**.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To modify the auto-placement of a Dedicated Host
+**To modify the auto-placement of a Dedicated Host**
+Use the [modify-hosts](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-hosts.html) command.
 
-Use the [modify-hosts](../../../cli/latest/reference/ec2/modify-hosts.md) command.
-
-```nohighlight
-
+```
 aws ec2 modify-hosts \
-    --auto-placement on \
-    --host-ids h-012a3456b7890cdef
+    --auto-placement {{on}} \
+    --host-ids {{h-012a3456b7890cdef}}
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To modify the auto-placement of a Dedicated Host
+**To modify the auto-placement of a Dedicated Host**
+Use the [Edit-EC2Host](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2Host.html) cmdlet.
 
-Use the [Edit-EC2Host](../../../powershell/latest/reference/items/edit-ec2host.md) cmdlet.
-
-```powershell
-
+```
 Edit-EC2Host `
-    -AutoPlacement 1 `
-    -HostId h-012a3456b7890cdef
+    -AutoPlacement {{1}} `
+    -HostId {{h-012a3456b7890cdef}}
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Launch instances into a host resource group
-
-Modify supported instance types
+------
 
 All content copied from https://docs.aws.amazon.com/.

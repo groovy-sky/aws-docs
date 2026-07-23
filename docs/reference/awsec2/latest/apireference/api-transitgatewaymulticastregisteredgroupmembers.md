@@ -3,49 +3,34 @@ title: "TransitGatewayMulticastRegisteredGroupMembers"
 ---
 
 # TransitGatewayMulticastRegisteredGroupMembers
+<a name="API_TransitGatewayMulticastRegisteredGroupMembers"></a>
 
 Describes the registered transit gateway multicast group members.
 
 ## Contents
+<a name="API_TransitGatewayMulticastRegisteredGroupMembers_Contents"></a>
 
-**groupIpAddress**
-
+ ** groupIpAddress **
 The IP address assigned to the transit gateway multicast group.
-
 Type: String
-
 Required: No
 
-**RegisteredNetworkInterfaceIds.N**
-
+ ** RegisteredNetworkInterfaceIds.N **
 The ID of the registered network interfaces.
-
 Type: Array of strings
-
 Required: No
 
-**transitGatewayMulticastDomainId**
-
+ ** transitGatewayMulticastDomainId **
 The ID of the transit gateway multicast domain.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_TransitGatewayMulticastRegisteredGroupMembers_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/transitgatewaymulticastregisteredgroupmembers.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/transitgatewaymulticastregisteredgroupmembers.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/transitgatewaymulticastregisteredgroupmembers.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitGatewayMulticastGroup
-
-TransitGatewayMulticastRegisteredGroupSources
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TransitGatewayMulticastRegisteredGroupMembers)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TransitGatewayMulticastRegisteredGroupMembers)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TransitGatewayMulticastRegisteredGroupMembers)
 
 All content copied from https://docs.aws.amazon.com/.

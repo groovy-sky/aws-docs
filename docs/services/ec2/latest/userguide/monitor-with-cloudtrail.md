@@ -3,66 +3,43 @@ title: "Log Amazon EC2 API calls using AWS CloudTrail"
 ---
 
 # Log Amazon EC2 API calls using AWS CloudTrail
+<a name="monitor-with-cloudtrail"></a>
 
-The Amazon EC2 API is integrated with [AWS CloudTrail](../../../awscloudtrail/latest/userguide.md), a service that
-provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all Amazon EC2 API
-calls as events. The calls captured include calls made by the console. Using the information
-collected by CloudTrail, you can determine the request that was made to the Amazon EC2 API, the IP address
-from which the request was made, and when it was made.
+The Amazon EC2 API is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all Amazon EC2 API calls as events. The calls captured include calls made by the console. Using the information collected by CloudTrail, you can determine the request that was made to the Amazon EC2 API, the IP address from which the request was made, and when it was made.
 
-Every event or log entry contains information about who generated the request. The identity
-information helps you determine the following:
+Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
++ Whether the request was made with root user or user credentials.
++ Whether the request was made on behalf of an IAM Identity Center user.
++ Whether the request was made with temporary security credentials for a role or federated user.
++ Whether the request was made by another AWS service.
 
-- Whether the request was made with root user or user credentials.
+CloudTrail is active in your AWS account when you create the account and you automatically have access to the CloudTrail **Event history**. The CloudTrail **Event history** provides a viewable, searchable, downloadable, and immutable record of the past 90 days of recorded management events in an AWS Region. For more information, see [Working with CloudTrail Event history](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html) in the *AWS CloudTrail User Guide*. There are no CloudTrail charges for viewing the **Event history**.
 
-- Whether the request was made on behalf of an IAM Identity Center user.
-
-- Whether the request was made with temporary security credentials for a role or federated
-user.
-
-- Whether the request was made by another AWS service.
-
-CloudTrail is active in your AWS account when you create the account and you automatically have
-access to the CloudTrail **Event history**. The CloudTrail **Event**
-**history** provides a viewable, searchable, downloadable, and immutable record of the
-past 90 days of recorded management events in an AWS Region. For more information, see [Working\
-with CloudTrail Event history](../../../awscloudtrail/latest/userguide/view-cloudtrail-events.md) in the _AWS CloudTrail User Guide_. There are no CloudTrail
-charges for viewing the **Event history**.
-
-For an ongoing record of events in your AWS account past 90 days, create a trail or a
-[CloudTrail\
-Lake](../../../awscloudtrail/latest/userguide/cloudtrail-lake.md) event data store.
+For an ongoing record of events in your AWS account past 90 days, create a trail or a [CloudTrail Lake](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html) event data store.
 
 **CloudTrail trails**
-
-A _trail_ enables CloudTrail to deliver log files to an Amazon S3 bucket. All trails created using the AWS Management Console are multi-Region. You can create a single-Region or a multi-Region trail by using the AWS CLI. Creating a multi-Region trail is recommended because you capture activity in all AWS Regions in your account. If you create a single-Region trail, you can view only the events logged in the trail's AWS Region. For more information about trails, see [Creating a trail for your AWS account](../../../awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.md) and [Creating a trail for an organization](../../../awscloudtrail/latest/userguide/creating-trail-organization.md) in the _AWS CloudTrail User Guide_.
-
-You can deliver one copy of your ongoing management events to your Amazon S3 bucket at no charge from CloudTrail by creating a trail, however, there are Amazon S3 storage charges. For more information about CloudTrail pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing). For information about Amazon S3 pricing, see [Amazon S3 Pricing](https://aws.amazon.com/s3/pricing).
+A *trail* enables CloudTrail to deliver log files to an Amazon S3 bucket. All trails created using the AWS Management Console are multi-Region. You can create a single-Region or a multi-Region trail by using the AWS CLI. Creating a multi-Region trail is recommended because you capture activity in all AWS Regions in your account. If you create a single-Region trail, you can view only the events logged in the trail's AWS Region. For more information about trails, see [Creating a trail for your AWS account](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html) and [Creating a trail for an organization](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-trail-organization.html) in the *AWS CloudTrail User Guide*.
+You can deliver one copy of your ongoing management events to your Amazon S3 bucket at no charge from CloudTrail by creating a trail, however, there are Amazon S3 storage charges. For more information about CloudTrail pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/). For information about Amazon S3 pricing, see [Amazon S3 Pricing](https://aws.amazon.com/s3/pricing/).
 
 **CloudTrail Lake event data stores**
-
-_CloudTrail Lake_ lets you run SQL-based queries on your events. CloudTrail Lake converts existing events in row-based JSON format to [Apache ORC](https://orc.apache.org/) format. ORC is a columnar storage format that is optimized for fast retrieval of data. Events are aggregated into _event data stores_, which are immutable collections of events based on criteria that you select by applying [advanced event selectors](../../../awscloudtrail/latest/userguide/cloudtrail-lake-concepts.md#adv-event-selectors). The selectors that you apply to an event data store control which events persist and are available for you to query. For more information about CloudTrail Lake, see [Working with AWS CloudTrail Lake](../../../awscloudtrail/latest/userguide/cloudtrail-lake.md) in the _AWS CloudTrail User Guide_.
-
-CloudTrail Lake event data stores and queries incur costs. When you create an event data store, you choose the [pricing option](../../../awscloudtrail/latest/userguide/cloudtrail-lake-manage-costs.md#cloudtrail-lake-manage-costs-pricing-option) you want to use for the event data store. The pricing option determines the cost for ingesting and storing events, and the default and maximum retention period for the event data store. For more information about CloudTrail pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing).
+*CloudTrail Lake* lets you run SQL-based queries on your events. CloudTrail Lake converts existing events in row-based JSON format to [ Apache ORC](https://orc.apache.org/) format. ORC is a columnar storage format that is optimized for fast retrieval of data. Events are aggregated into *event data stores*, which are immutable collections of events based on criteria that you select by applying [advanced event selectors](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-concepts.html#adv-event-selectors). The selectors that you apply to an event data store control which events persist and are available for you to query. For more information about CloudTrail Lake, see [Working with AWS CloudTrail Lake](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html) in the *AWS CloudTrail User Guide*.
+CloudTrail Lake event data stores and queries incur costs. When you create an event data store, you choose the [pricing option](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-manage-costs.html#cloudtrail-lake-manage-costs-pricing-option) you want to use for the event data store. The pricing option determines the cost for ingesting and storing events, and the default and maximum retention period for the event data store. For more information about CloudTrail pricing, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/).
 
 ## Amazon EC2 API management events in CloudTrail
+<a name="cloudtrail-management-events"></a>
 
-[Management events](../../../awscloudtrail/latest/userguide/logging-management-events-with-cloudtrail.md#logging-management-events) provide information about management operations that are performed on resources in your AWS account. These are also known as control plane operations. By default, CloudTrail logs management events.
+[Management events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-management-events-with-cloudtrail.html#logging-management-events) provide information about management operations that are performed on resources in your AWS account. These are also known as control plane operations. By default, CloudTrail logs management events.
 
-All Amazon EC2 API actions are logged as management events. For a list of the API actions
-that are logged to CloudTrail, see the [Amazon EC2 API Reference](../../../../reference/awsec2/latest/apireference.md). For example, calls to the [RunInstances](../../../../reference/awsec2/latest/apireference/api-runinstances.md),
-[DescribeInstances](../../../../reference/awsec2/latest/apireference/api-describeinstances.md),
-and [StopInstances](../../../../reference/awsec2/latest/apireference/api-stopinstances.md)
-actions are logged as management events.
+All Amazon EC2 API actions are logged as management events. For a list of the API actions that are logged to CloudTrail, see the [Amazon EC2 API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/). For example, calls to the [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstances.html), [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html), and [https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html) actions are logged as management events.
 
 ## Amazon EC2 API event examples
+<a name="cloudtrail-event-examples"></a>
 
 An event represents a single request from any source and includes information about the requested API operation, the date and time of the operation, request parameters, and so on. CloudTrail log files aren't an ordered stack trace of the public API calls, so events don't appear in any specific order.
 
 The following log file record shows that a user terminated an instance.
 
-```json
-
+```
 {
    "Records":[
       {
@@ -112,44 +89,33 @@ The following log file record shows that a user terminated an instance.
 }
 ```
 
-For information about CloudTrail record contents, see [CloudTrail\
-record contents](../../../awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.md) in the _AWS CloudTrail User Guide_.
+For information about CloudTrail record contents, see [CloudTrail record contents](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html) in the *AWS CloudTrail User Guide*.
 
 ## Audit connections made using EC2 Instance Connect
+<a name="ec2-instance-connect-cloudtrail"></a>
 
 You can use AWS CloudTrail to audit the users that connect to your instances using EC2 Instance Connect.
 
-###### To audit SSH activity via EC2 Instance Connect using the AWS CloudTrail console
+**To audit SSH activity via EC2 Instance Connect using the AWS CloudTrail console**
 
-1. Open the CloudTrail console at
-    [https://console.aws.amazon.com/cloudtrail/](https://console.aws.amazon.com/cloudtrail).
+1. Open the CloudTrail console at [https://console.aws.amazon.com/cloudtrail/](https://console.aws.amazon.com/cloudtrail/).
 
-2. Verify that you are in the correct Region.
+1. Verify that you are in the correct Region.
 
-3. In the navigation pane, choose **Event history**.
+1. In the navigation pane, choose **Event history**.
 
-4. For **Filter**, choose **Event source**,
-    **ec2-instance-connect.amazonaws.com**.
+1. For **Filter**, choose **Event source**, **ec2-instance-connect.amazonaws.com**.
 
-5. (Optional) For **Time range**, select a time
-    range.
+1. (Optional) For **Time range**, select a time range.
 
-6. Choose the **Refresh events** icon.
+1. Choose the **Refresh events** icon.
 
-7. The page displays the events that correspond to the [SendSSHPublicKey](../../../../reference/ec2-instance-connect/latest/apireference/api-sendsshpublickey.md)
-    API calls. Expand an event using the arrow to view additional details, such as the user
-    name and AWS access key that was used to make the SSH connection, and the source IP
-    address.
+1. The page displays the events that correspond to the [https://docs.aws.amazon.com/ec2-instance-connect/latest/APIReference/API_SendSSHPublicKey.html](https://docs.aws.amazon.com/ec2-instance-connect/latest/APIReference/API_SendSSHPublicKey.html) API calls. Expand an event using the arrow to view additional details, such as the user name and AWS access key that was used to make the SSH connection, and the source IP address.
 
-8. To display the full event information in JSON format, choose
-    **View event**. The
-    **requestParameters** field contains the destination
-    instance ID, OS username, and public key that were used to make the SSH
-    connection.
+1. To display the full event information in JSON format, choose **View event**. The **requestParameters** field contains the destination instance ID, OS username, and public key that were used to make the SSH connection.
 
-```JSON
-
-{
+   ```
+   {
        "eventVersion": "1.05",
        "userIdentity": {
            "type": "IAMUser",
@@ -182,18 +148,9 @@ You can use AWS CloudTrail to audit the users that connect to your instances usi
        "eventID": "1a2w3d4r5-a88f-4e28-b3bf-30161f75be34",
        "eventType": "AwsApiCall",
        "recipientAccountId": "0987654321"
-}
-```
+   }
+   ```
 
-If you have configured your AWS account to collect CloudTrail events in an
-    S3 bucket, you can download and audit the information programmatically. For
-    more information, see [Getting and\
-    viewing your CloudTrail log files](../../../awscloudtrail/latest/userguide/get-and-view-cloudtrail-log-files.md) in the _AWS CloudTrail User Guide_.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Automate using EventBridge
-
-Monitor .NET and SQL Server applications
+   If you have configured your AWS account to collect CloudTrail events in an S3 bucket, you can download and audit the information programmatically. For more information, see [Getting and viewing your CloudTrail log files](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/get-and-view-cloudtrail-log-files.html) in the *AWS CloudTrail User Guide*.
 
 All content copied from https://docs.aws.amazon.com/.

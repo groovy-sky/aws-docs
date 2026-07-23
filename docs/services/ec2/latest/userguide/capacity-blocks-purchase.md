@@ -3,203 +3,137 @@ title: "Find and purchase Capacity Blocks"
 ---
 
 # Find and purchase Capacity Blocks
+<a name="capacity-blocks-purchase"></a>
 
-To reserve a Capacity Block, you first need to find a block of time when capacity is
-available that matches your needs. To find a Capacity Block that is available to reserve,
-you specify the following.
+To reserve a Capacity Block, you first need to find a block of time when capacity is available that matches your needs. To find a Capacity Block that is available to reserve, you specify the following.
++ The number of instances that you need
++ The duration of time you that you need the instances
++ The date range that you need your reservation
 
-- The number of instances that you need
+To search for an available Capacity Block offering, you specify a reservation duration and instance count. You must specify reservation durations in ** 1-day increments up to 14 days, and in 7-day increments up to 182 days**. Each Capacity Block can have up to 64 instances, and you can have up to 256 instances across Capacity Blocks.
 
-- The duration of time you that you need the instances
+When you request a Capacity Block that matches your specifications, we provide the details of up to 6 available blocks. All Capacity Blocks end at 11:30AM UTC, so the blocks starting on the same day will have durations that are the closest match to your desired duration. One block will have a duration that is slightly less than your desired duration, while the other will have a duration slightly greater than your desired duration.
 
-- The date range that you need your reservation
+The offering details include the start time of the reservation, the Availability Zone for the reservation, and the price of the reservation. For more information, see [Capacity Blocks pricing and billing](capacity-blocks-pricing-billing.md).
 
-To search for an available Capacity Block offering, you specify a reservation duration
-and instance count. You must specify reservation durations in **1-day increments up to 14 days, and in 7-day increments up to 182 days**.
-Each Capacity Block can have up to 64 instances, and you can have up to 256 instances
-across Capacity Blocks.
+You can purchase the Capacity Block offering you are shown, or you can modify your search criteria to see the other options that are available. There is no predefined expiration time for the offering, but offerings are only available on a first-come, first-served basis.
 
-When you request a Capacity Block that matches your specifications, we provide the
-details of up to 6 available blocks. All Capacity Blocks end at 11:30AM UTC, so the
-blocks starting on the same day will have durations that are the closest match to
-your desired duration. One block will have a duration that is slightly less than
-your desired duration, while the other will have a duration slightly greater than
-your desired duration.
+When you purchase a Capacity Block offering, you get an immediate response confirming that your Capacity Block was reserved. After confirmation, you will see a new Capacity Reservation in your account with a reservation type of `capacity-block` and a `start-date` set to the start time of the offering that you purchased. Your Capacity Block reservation is created with a state of `payment-pending`. After the upfront payment is successfully processed, the reservation state changes to `scheduled`. For more information, see [Billing](capacity-blocks-pricing-billing.md#capacity-blocks-billing).
 
-The offering details include the start time of the reservation, the Availability
-Zone for the reservation, and the price of the reservation. For more information,
-see [Capacity Blocks pricing and billing](capacity-blocks-pricing-billing.md).
+**Note**
+ To purchase and use Capacity Blocks in Local Zones, you must be opted in to the Local Zone.
 
-You can purchase the Capacity Block offering you are shown, or you can modify your
-search criteria to see the other options that are available. There is no predefined
-expiration time for the offering, but offerings are only available on a first-come,
-first-served basis.
+------
+#### [ Console ]
 
-When you purchase a Capacity Block offering, you get an immediate response confirming
-that your Capacity Block was reserved. After confirmation, you will see a new Capacity Reservation in your
-account with a reservation type of `capacity-block` and a
-`start-date` set to the start time of the offering that you
-purchased. Your Capacity Block reservation is created with a state of
-`payment-pending`. After the upfront payment is successfully
-processed, the reservation state changes to `scheduled`. For more
-information, see [Billing](capacity-blocks-pricing-billing.md#capacity-blocks-billing).
+**To find and purchase a Capacity Block**
 
-###### Note
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-To purchase and use Capacity Blocks in Local Zones, you must be opted in to the Local Zone.
+1. In the navigation bar at the top of the screen, select an AWS Region. This choice is important because Capacity Block sizes of 64 instances are not supported for all instance types in all Regions.
 
-Console
+1. In the navigation pane, choose **Capacity Reservations**, **Create Capacity Block**.
 
-###### To find and purchase a Capacity Block
+1. Under **Capacity Block types**, choose either **Instances** or ** UltraServers**.
 
-01. Open the Amazon EC2 console at
-     [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Under **Capacity attributes**, you can define your Capacity Block search parameters. By default, the platform is Linux. If you want to select a different operating system, use the AWS CLI. For more information, see [Supported platforms](ec2-capacity-blocks.md#capacity-blocks-platforms).
 
-02. In the navigation bar at the top of the screen, select an
-     AWS Region. This choice is important because Capacity Block sizes of
-     64 instances are not supported for all instance types in all
-     Regions.
+1. Under **Total capacity** (for Instances) or **UltraServer count** (for UltraServers), specify the number of instances or UltraServers you want to reserve.
 
-03. In the navigation pane, choose **Capacity Reservations**,
-     **Create Capacity Block**.
+1. Under **Duration**, enter the number of days or weeks you need the reservation for.
 
-04. Under **Capacity Block types**, choose
-     either **Instances** or **UltraServers**.
+1. Under **Date range to search for Capacity Blocks**, enter the earliest date that you want your reservation to start.
 
-05. Under **Capacity attributes**, you can define
-     your Capacity Block search parameters. By default, the platform is
-     Linux. If you want to select a different operating system, use
-     the AWS CLI. For more information, see [Supported platforms](ec2-capacity-blocks.md#capacity-blocks-platforms).
+1. Choose **Find Capacity Blocks**.
 
-06. Under **Total capacity** (for Instances) or
-     **UltraServer count** (for UltraServers),
-     specify the number of instances or UltraServers you want to reserve.
+1. If a Capacity Block is available that meets your specifications, you see an offering under **Recommended Capacity Blocks**. If there are multiple offerings that meet your specifications, the earliest available Capacity Block offering is shown. To view other Capacity Block offerings, adjust your search inputs and choose **Find Capacity Blocks** again.
 
-07. Under **Duration**, enter the number of days
-     or weeks you need the reservation for.
+1. When you find a Capacity Block offering that you want to purchase, choose **Next**.
 
-08. Under **Date range to search for Capacity Blocks**,
-     enter the earliest date that you want your reservation to
-     start.
+1. (Optional) On the **Add tags** page, choose **Add new tag**.
 
-09. Choose **Find Capacity Blocks**.
+1. The **Review and purchase** page lists the start and end date, duration, total number of instances, and price.
+**Note**
+Capacity Blocks can't be canceled after you reserve them.
 
-10. If a Capacity Block is available that meets your specifications, you
-     see an offering under **Recommended**
-    **Capacity Blocks**. If there are multiple offerings that meet
-     your specifications, the earliest available Capacity Block offering is
-     shown. To view other Capacity Block offerings, adjust your search
-     inputs and choose **Find Capacity Blocks**
-     again.
+1. In the popup window **Purchase a Capacity Block**, type confirm, then choose **Purchase**.
 
-11. When you find a Capacity Block offering that you want to purchase,
-     choose **Next**.
+------
+#### [ AWS CLI ]
 
-12. (Optional) On the **Add tags** page, choose
-     **Add new tag**.
-
-13. The **Review and purchase** page lists the
-     start and end date, duration, total number of instances, and
-     price.
-
-    ###### Note
-
-    Capacity Blocks can't be canceled after you reserve them.
-
-14. In the popup window **Purchase a Capacity Block**,
-     type confirm, then choose **Purchase**.
-
-AWS CLI
-
-###### To find an instance Capacity Block
-
-Use the [describe-capacity-block-offerings](../../../cli/latest/reference/ec2/describe-capacity-block-offerings.md) command.
+**To find an instance Capacity Block**
+Use the [ describe-capacity-block-offerings](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-block-offerings.html) command.
 
 The following example finds instance Capacity Blocks.
 
-```nohighlight
-
+```
 aws ec2 describe-capacity-block-offerings \
---instance-type p5.48xlarge \
---instance-count 16 \
---start-date-range 2023-08-14T00:00:00Z \
---end-date-range 2023-10-22-T00:00:00Z \
---capacity-duration-hours 48 \
+--instance-type {{p5.48xlarge}} \
+--instance-count {{16}} \
+--start-date-range {{2023-08-14T00:00:00Z}} \
+--end-date-range {{2023-10-22-T00:00:00Z}} \
+--capacity-duration-hours {{48}} \
 --all-availability-zones
 ```
 
 The following example finds UltraServer Capacity Blocks.
 
-```nohighlight
-
+```
 aws ec2 describe-capacity-block-offerings \
---ultraserver-type u-p6e-gb200x72 \
---ultraserver-count 1 \
---start-date-range 2023-08-14T00:00:00Z \
---end-date-range 2023-10-22-T00:00:00Z \
---capacity-duration-hours 48
+--ultraserver-type {{u-p6e-gb200x72}} \
+--ultraserver-count {{1}} \
+--start-date-range {{2023-08-14T00:00:00Z}} \
+--end-date-range {{2023-10-22-T00:00:00Z}} \
+--capacity-duration-hours {{48}}
 ```
 
-###### To purchase a Capacity Block
+**To purchase a Capacity Block**
+Use the [ purchase-capacity-block](https://docs.aws.amazon.com/cli/latest/reference/ec2/purchase-capacity-block.html) command with the offering ID of the Capacity Block from the output of the previous example.
 
-Use the [purchase-capacity-block](../../../cli/latest/reference/ec2/purchase-capacity-block.md) command with the offering ID of the Capacity Block
-from the output of the previous example.
-
-```nohighlight
-
+```
 aws ec2 purchase-capacity-block \
---capacity-block-offering-id cb-0123456789abcdefg \
---instance-platform Linux/UNIX
+--capacity-block-offering-id {{cb-0123456789abcdefg}} \
+--instance-platform {{Linux/UNIX}}
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To find Capacity Blocks
-
-Use the [Get-EC2CapacityBlockOffering](../../../powershell/latest/reference/items/get-ec2capacityblockoffering.md) cmdlet.
+**To find Capacity Blocks**
+Use the [Get-EC2CapacityBlockOffering](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2CapacityBlockOffering.html) cmdlet.
 
 The following example finds instance Capacity Blocks.
 
-```powershell
-
+```
 Get-EC2CapacityBlockOffering `
--InstanceType p5.48xlarge `
--InstanceCount 16 `
--CapacityDurationHour 48 `
--StartDateRange 2023-08-14T00:00:00Z `
--EndDateRange 2023-10-22-T00:00:00Z `
--AllAvailabilityZones $true
+-InstanceType {{p5.48xlarge}} `
+-InstanceCount {{16}} `
+-CapacityDurationHour {{48}} `
+-StartDateRange {{2023-08-14T00:00:00Z}} `
+-EndDateRange {{2023-10-22-T00:00:00Z}} `
+-AllAvailabilityZones {{$true}}
 ```
 
 The following example finds UltraServer Capacity Blocks.
 
-```powershell
-
+```
 Get-EC2CapacityBlockOffering `
--UltraserverType u-p6e-gb200x72 `
--UltraserverCount  1 `
--CapacityDurationHour 48 `
--StartDateRange 2023-08-14T00:00:00Z `
--EndDateRange 2023-10-22-T00:00:00Z
+-UltraserverType {{u-p6e-gb200x72}} `
+-UltraserverCount  {{1}} `
+-CapacityDurationHour {{48}} `
+-StartDateRange {{2023-08-14T00:00:00Z}} `
+-EndDateRange {{2023-10-22-T00:00:00Z}}
 ```
 
-###### To purchase a Capacity Block
+**To purchase a Capacity Block**
+Use the [New-EC2EC2CapacityBlock](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2EC2CapacityBlock.html) cmdlet with the offering ID of the Capacity Block from the output of the previous example.
 
-Use the [New-EC2EC2CapacityBlock](../../../powershell/latest/reference/items/new-ec2ec2capacityblock.md) cmdlet with the offering ID
-of the Capacity Block from the output of the previous example.
-
-```powershell
-
+```
 New-EC2EC2CapacityBlock `
--CapacityBlockOfferingId cb-0123456789abcdefg `
--InstancePlatform Linux/UNIX
+-CapacityBlockOfferingId {{cb-0123456789abcdefg}} `
+-InstancePlatform {{Linux/UNIX}}
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Pricing and
-billing
-
-Launch instances
+------
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,65 +3,44 @@ title: "VerifiedAccessLogs"
 ---
 
 # VerifiedAccessLogs
+<a name="API_VerifiedAccessLogs"></a>
 
 Describes the options for Verified Access logs.
 
 ## Contents
+<a name="API_VerifiedAccessLogs_Contents"></a>
 
-**cloudWatchLogs**
-
+ ** cloudWatchLogs **
 CloudWatch Logs logging destination.
-
-Type: [VerifiedAccessLogCloudWatchLogsDestination](api-verifiedaccesslogcloudwatchlogsdestination.md) object
-
+Type: [VerifiedAccessLogCloudWatchLogsDestination](API_VerifiedAccessLogCloudWatchLogsDestination.md) object
 Required: No
 
-**includeTrustContext**
-
+ ** includeTrustContext **
 Indicates whether trust data is included in the logs.
-
 Type: Boolean
-
 Required: No
 
-**kinesisDataFirehose**
-
+ ** kinesisDataFirehose **
 Kinesis logging destination.
-
-Type: [VerifiedAccessLogKinesisDataFirehoseDestination](api-verifiedaccesslogkinesisdatafirehosedestination.md) object
-
+Type: [VerifiedAccessLogKinesisDataFirehoseDestination](API_VerifiedAccessLogKinesisDataFirehoseDestination.md) object
 Required: No
 
-**logVersion**
-
+ ** logVersion **
 The log version.
-
 Type: String
-
 Required: No
 
-**s3**
-
+ ** s3 **
 Amazon S3 logging options.
-
-Type: [VerifiedAccessLogS3Destination](api-verifiedaccesslogs3destination.md) object
-
+Type: [VerifiedAccessLogS3Destination](API_VerifiedAccessLogS3Destination.md) object
 Required: No
 
 ## See Also
+<a name="API_VerifiedAccessLogs_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/verifiedaccesslogs.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/verifiedaccesslogs.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccesslogs.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VerifiedAccessLogOptions
-
-VerifiedAccessLogS3Destination
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VerifiedAccessLogs)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VerifiedAccessLogs)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VerifiedAccessLogs)
 
 All content copied from https://docs.aws.amazon.com/.

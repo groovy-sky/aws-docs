@@ -3,142 +3,92 @@ title: "ScheduledInstancesLaunchSpecification"
 ---
 
 # ScheduledInstancesLaunchSpecification
+<a name="API_ScheduledInstancesLaunchSpecification"></a>
 
 Describes the launch specification for a Scheduled Instance.
 
-If you are launching the Scheduled Instance in EC2-VPC, you must specify the ID of the subnet.
-You can specify the subnet using either `SubnetId` or `NetworkInterface`.
+If you are launching the Scheduled Instance in EC2-VPC, you must specify the ID of the subnet. You can specify the subnet using either `SubnetId` or `NetworkInterface`.
 
 ## Contents
+<a name="API_ScheduledInstancesLaunchSpecification_Contents"></a>
 
-**ImageId**
-
+ ** ImageId **
 The ID of the Amazon Machine Image (AMI).
-
 Type: String
-
 Required: Yes
 
-**BlockDeviceMapping.N**
-
+ ** BlockDeviceMapping.N **
 The block device mapping entries.
-
-Type: Array of [ScheduledInstancesBlockDeviceMapping](api-scheduledinstancesblockdevicemapping.md) objects
-
+Type: Array of [ScheduledInstancesBlockDeviceMapping](API_ScheduledInstancesBlockDeviceMapping.md) objects
 Required: No
 
-**EbsOptimized**
-
+ ** EbsOptimized **
 Indicates whether the instances are optimized for EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS-optimized instance.
-
 Default: `false`
-
 Type: Boolean
-
 Required: No
 
-**IamInstanceProfile**
-
+ ** IamInstanceProfile **
 The IAM instance profile.
-
-Type: [ScheduledInstancesIamInstanceProfile](api-scheduledinstancesiaminstanceprofile.md) object
-
+Type: [ScheduledInstancesIamInstanceProfile](API_ScheduledInstancesIamInstanceProfile.md) object
 Required: No
 
-**InstanceType**
-
+ ** InstanceType **
 The instance type.
-
 Type: String
-
 Required: No
 
-**KernelId**
-
+ ** KernelId **
 The ID of the kernel.
-
 Type: String
-
 Required: No
 
-**KeyName**
-
+ ** KeyName **
 The name of the key pair.
-
 Type: String
-
 Required: No
 
-**Monitoring**
-
+ ** Monitoring **
 Enable or disable monitoring for the instances.
-
-Type: [ScheduledInstancesMonitoring](api-scheduledinstancesmonitoring.md) object
-
+Type: [ScheduledInstancesMonitoring](API_ScheduledInstancesMonitoring.md) object
 Required: No
 
-**NetworkInterface.N**
-
+ ** NetworkInterface.N **
 The network interfaces.
-
-Type: Array of [ScheduledInstancesNetworkInterface](api-scheduledinstancesnetworkinterface.md) objects
-
+Type: Array of [ScheduledInstancesNetworkInterface](API_ScheduledInstancesNetworkInterface.md) objects
 Required: No
 
-**Placement**
-
+ ** Placement **
 The placement information.
-
-Type: [ScheduledInstancesPlacement](api-scheduledinstancesplacement.md) object
-
+Type: [ScheduledInstancesPlacement](API_ScheduledInstancesPlacement.md) object
 Required: No
 
-**RamdiskId**
-
+ ** RamdiskId **
 The ID of the RAM disk.
-
 Type: String
-
 Required: No
 
-**SecurityGroupId.N**
-
+ ** SecurityGroupId.N **
 The IDs of the security groups.
-
 Type: Array of strings
-
 Required: No
 
-**SubnetId**
-
+ ** SubnetId **
 The ID of the subnet in which to launch the instances.
-
 Type: String
-
 Required: No
 
-**UserData**
-
+ ** UserData **
 The base64-encoded MIME user data.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_ScheduledInstancesLaunchSpecification_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/scheduledinstanceslaunchspecification.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/scheduledinstanceslaunchspecification.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/scheduledinstanceslaunchspecification.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ScheduledInstancesIpv6Address
-
-ScheduledInstancesMonitoring
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ScheduledInstancesLaunchSpecification)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ScheduledInstancesLaunchSpecification)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ScheduledInstancesLaunchSpecification)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,49 +3,34 @@ title: "IdFormat"
 ---
 
 # IdFormat
+<a name="API_IdFormat"></a>
 
 Describes the ID format for a resource.
 
 ## Contents
+<a name="API_IdFormat_Contents"></a>
 
-**deadline**
-
+ ** deadline **
 The date in UTC at which you are permanently switched over to using longer IDs. If a deadline is not yet available for this resource type, this field is not returned.
-
 Type: Timestamp
-
 Required: No
 
-**resource**
-
+ ** resource **
 The type of resource.
-
 Type: String
-
 Required: No
 
-**useLongIds**
-
+ ** useLongIds **
 Indicates whether longer IDs (17-character IDs) are enabled for the resource.
-
 Type: Boolean
-
 Required: No
 
 ## See Also
+<a name="API_IdFormat_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/idformat.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/idformat.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/idformat.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IcmpTypeCode
-
-IKEVersionsListValue
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/IdFormat)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/IdFormat)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/IdFormat)
 
 All content copied from https://docs.aws.amazon.com/.

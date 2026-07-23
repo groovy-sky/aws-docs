@@ -3,81 +3,54 @@ title: "EbsCardInfo"
 ---
 
 # EbsCardInfo
+<a name="API_EbsCardInfo"></a>
 
 Describes the performance characteristics of an EBS card on the instance type.
 
 ## Contents
+<a name="API_EbsCardInfo_Contents"></a>
 
-**baselineBandwidthInMbps**
-
+ ** baselineBandwidthInMbps **
 The baseline bandwidth performance for the EBS card, in Mbps.
-
 Type: Integer
-
 Required: No
 
-**baselineIops**
-
+ ** baselineIops **
 The baseline IOPS performance for the EBS card.
-
 Type: Integer
-
 Required: No
 
-**baselineThroughputInMBps**
-
+ ** baselineThroughputInMBps **
 The baseline throughput performance for the EBS card, in MBps.
-
 Type: Double
-
 Required: No
 
-**ebsCardIndex**
-
+ ** ebsCardIndex **
 The index of the EBS card.
-
 Type: Integer
-
 Required: No
 
-**maximumBandwidthInMbps**
-
+ ** maximumBandwidthInMbps **
 The maximum bandwidth performance for the EBS card, in Mbps.
-
 Type: Integer
-
 Required: No
 
-**maximumIops**
-
+ ** maximumIops **
 The maximum IOPS performance for the EBS card.
-
 Type: Integer
-
 Required: No
 
-**maximumThroughputInMBps**
-
+ ** maximumThroughputInMBps **
 The maximum throughput performance for the EBS card, in MBps.
-
 Type: Double
-
 Required: No
 
 ## See Also
+<a name="API_EbsCardInfo_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ebscardinfo.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ebscardinfo.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ebscardinfo.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EbsBlockDeviceResponse
-
-EbsInfo
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/EbsCardInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/EbsCardInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/EbsCardInfo)
 
 All content copied from https://docs.aws.amazon.com/.

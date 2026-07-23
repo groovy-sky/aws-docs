@@ -3,117 +3,76 @@ title: "TransitGatewayRouteTableAnnouncement"
 ---
 
 # TransitGatewayRouteTableAnnouncement
+<a name="API_TransitGatewayRouteTableAnnouncement"></a>
 
 Describes a transit gateway route table announcement.
 
 ## Contents
+<a name="API_TransitGatewayRouteTableAnnouncement_Contents"></a>
 
-**announcementDirection**
-
+ ** announcementDirection **
 The direction for the route table announcement.
-
 Type: String
-
 Valid Values: `outgoing | incoming`
-
 Required: No
 
-**coreNetworkId**
-
+ ** coreNetworkId **
 The ID of the core network for the transit gateway route table announcement.
-
 Type: String
-
 Required: No
 
-**creationTime**
-
+ ** creationTime **
 The timestamp when the transit gateway route table announcement was created.
-
 Type: Timestamp
-
 Required: No
 
-**peerCoreNetworkId**
-
+ ** peerCoreNetworkId **
 The ID of the core network ID for the peer.
-
 Type: String
-
 Required: No
 
-**peeringAttachmentId**
-
+ ** peeringAttachmentId **
 The ID of the peering attachment.
-
 Type: String
-
 Required: No
 
-**peerTransitGatewayId**
-
+ ** peerTransitGatewayId **
 The ID of the peer transit gateway.
-
 Type: String
-
 Required: No
 
-**state**
-
+ ** state **
 The state of the transit gateway announcement.
-
 Type: String
-
 Valid Values: `available | pending | failing | failed | deleting | deleted`
-
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 The key-value pairs associated with the route table announcement.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
-**transitGatewayId**
-
+ ** transitGatewayId **
 The ID of the transit gateway.
-
 Type: String
-
 Required: No
 
-**transitGatewayRouteTableAnnouncementId**
-
+ ** transitGatewayRouteTableAnnouncementId **
 The ID of the transit gateway route table announcement.
-
 Type: String
-
 Required: No
 
-**transitGatewayRouteTableId**
-
+ ** transitGatewayRouteTableId **
 The ID of the transit gateway route table.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_TransitGatewayRouteTableAnnouncement_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/transitgatewayroutetableannouncement.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/transitgatewayroutetableannouncement.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/transitgatewayroutetableannouncement.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitGatewayRouteTable
-
-TransitGatewayRouteTableAssociation
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TransitGatewayRouteTableAnnouncement)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TransitGatewayRouteTableAnnouncement)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TransitGatewayRouteTableAnnouncement)
 
 All content copied from https://docs.aws.amazon.com/.

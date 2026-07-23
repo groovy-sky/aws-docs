@@ -3,71 +3,45 @@ title: "Prepare to use shared AMIs for Linux"
 ---
 
 # Prepare to use shared AMIs for Linux
+<a name="usingsharedamis-confirm"></a>
 
-Before you use a shared AMI for Linux, take the following steps to confirm that there are no
-pre-installed credentials that would allow unwanted access to your instance by a
-third party and no pre-configured remote logging that could transmit sensitive data
-to a third party. Check the documentation for the Linux distribution used by the AMI
-for information about improving the security of the system.
+Before you use a shared AMI for Linux, take the following steps to confirm that there are no pre-installed credentials that would allow unwanted access to your instance by a third party and no pre-configured remote logging that could transmit sensitive data to a third party. Check the documentation for the Linux distribution used by the AMI for information about improving the security of the system.
 
-To ensure that you don't accidentally lose access to your instance, we recommend
-that you initiate two SSH sessions and keep the second session open until you've
-removed credentials that you don't recognize and confirmed that you can still log
-into your instance using SSH.
+To ensure that you don't accidentally lose access to your instance, we recommend that you initiate two SSH sessions and keep the second session open until you've removed credentials that you don't recognize and confirmed that you can still log into your instance using SSH.
 
-1. Identify and disable any unauthorized public SSH keys. The only key in the
-    file should be the key you used to launch the AMI. The following command
-    locates `authorized_keys` files:
+1. Identify and disable any unauthorized public SSH keys. The only key in the file should be the key you used to launch the AMI. The following command locates `authorized_keys` files:
 
-```nohighlight
+   ```
+   [ec2-user ~]$ sudo find / -name "authorized_keys" -print -exec cat {} \;
+   ```
 
-[ec2-user ~]$ sudo find / -name "authorized_keys" -print -exec cat {} \;
-```
+1. Disable password-based authentication for the root user. Open the `sshd_config` file and edit the `PermitRootLogin` line as follows:
 
-2. Disable password-based authentication for the root user. Open the
-    `sshd_config` file and edit the
-    `PermitRootLogin` line as follows:
+   ```
+   PermitRootLogin without-password
+   ```
 
-```nohighlight
+   Alternatively, you can disable the ability to log into the instance as the root user:
 
-PermitRootLogin without-password
-```
+   ```
+   PermitRootLogin No
+   ```
 
-Alternatively, you can disable the ability to log into the instance as the root
-    user:
+   Restart the sshd service.
 
-```nohighlight
+1. Check whether there are any other users that are able to log in to your instance. Users with superuser privileges are particularly dangerous. Remove or lock the password of any unknown accounts.
 
-PermitRootLogin No
-```
+1. Check for open ports that you aren't using and running network services listening for incoming connections.
 
-Restart the sshd service.
+1. To prevent preconfigured remote logging, you should delete the existing configuration file and restart the `rsyslog` service. For example:
 
-3. Check whether there are any other users that are able to log in to
-    your instance. Users with superuser privileges are particularly
-    dangerous. Remove or lock the password of any unknown accounts.
+   ```
+   [ec2-user ~]$ sudo rm /etc/rsyslog.conf
+   [ec2-user ~]$ sudo service rsyslog restart
+   ```
 
-4. Check for open ports that you aren't using and running network services
-    listening for incoming connections.
+1. Verify that all cron jobs are legitimate.
 
-5. To prevent preconfigured remote logging, you should delete the existing configuration
-    file and restart the `rsyslog` service. For example:
-
-```nohighlight
-
-[ec2-user ~]$ sudo rm /etc/rsyslog.conf
-[ec2-user ~]$ sudo service rsyslog restart
-```
-
-6. Verify that all cron jobs are legitimate.
-
-If you discover a public AMI that you feel presents a security risk, contact the
-AWS security team. For more information, see the [AWS Security Center](https://aws.amazon.com/security).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Find shared AMIs
-
-Allowed AMIs
+If you discover a public AMI that you feel presents a security risk, contact the AWS security team. For more information, see the [AWS Security Center](https://aws.amazon.com/security/).
 
 All content copied from https://docs.aws.amazon.com/.

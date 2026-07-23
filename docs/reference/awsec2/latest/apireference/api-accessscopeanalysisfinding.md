@@ -3,57 +3,39 @@ title: "AccessScopeAnalysisFinding"
 ---
 
 # AccessScopeAnalysisFinding
+<a name="API_AccessScopeAnalysisFinding"></a>
 
 Describes a finding for a Network Access Scope.
 
 ## Contents
+<a name="API_AccessScopeAnalysisFinding_Contents"></a>
 
-**FindingComponentSet.N**
-
+ ** FindingComponentSet.N **
 The finding components.
-
-Type: Array of [PathComponent](api-pathcomponent.md) objects
-
+Type: Array of [PathComponent](API_PathComponent.md) objects
 Required: No
 
-**findingId**
-
+ ** findingId **
 The ID of the finding.
-
 Type: String
-
 Required: No
 
-**networkInsightsAccessScopeAnalysisId**
-
+ ** networkInsightsAccessScopeAnalysisId **
 The ID of the Network Access Scope analysis.
-
 Type: String
-
 Required: No
 
-**networkInsightsAccessScopeId**
-
+ ** networkInsightsAccessScopeId **
 The ID of the Network Access Scope.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_AccessScopeAnalysisFinding_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/accessscopeanalysisfinding.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/accessscopeanalysisfinding.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/accessscopeanalysisfinding.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AcceleratorTotalMemoryMiBRequest
-
-AccessScopePath
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AccessScopeAnalysisFinding)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AccessScopeAnalysisFinding)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AccessScopeAnalysisFinding)
 
 All content copied from https://docs.aws.amazon.com/.

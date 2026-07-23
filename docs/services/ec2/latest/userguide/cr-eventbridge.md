@@ -3,47 +3,35 @@ title: "Monitor Capacity Reservation underutilization"
 ---
 
 # Monitor Capacity Reservation underutilization
+<a name="cr-eventbridge"></a>
 
 You can monitor Capacity Reservation underutilization using the following:
 
-###### Topics
-
-- [Amazon EventBridge events](#cr-underutilization-events)
-
-- [Email and AWS Health Dashboard notifications](#monitor-cr-utilization)
+**Topics**
++ [Amazon EventBridge events](#cr-underutilization-events)
++ [Email and AWS Health Dashboard notifications](#monitor-cr-utilization)
 
 ## Amazon EventBridge events
+<a name="cr-underutilization-events"></a>
 
-AWS Health sends events to Amazon EventBridge when a Capacity Reservation in your account is below 20
-percent usage over certain periods. With EventBridge, you can establish rules that trigger
-programmatic actions in response to such events. For example, you can create a rule
-that automatically cancels a Capacity Reservation when its utilization drops below 20 percent
-utilization over a 7-day period.
+AWS Health sends events to Amazon EventBridge when a Capacity Reservation in your account is below 20 percent usage over certain periods. With EventBridge, you can establish rules that trigger programmatic actions in response to such events. For example, you can create a rule that automatically cancels a Capacity Reservation when its utilization drops below 20 percent utilization over a 7-day period.
 
-Events in EventBridge are represented as JSON objects. The fields that are unique to the
-event are contained in the "detail" section of the JSON object. The "event" field
-contains the event name. The "result" field contains the completed status of the
-action that triggered the event. For more information, see [Amazon EventBridge event patterns](../../../eventbridge/latest/userguide/eb-event-patterns.md) in the
-_Amazon EventBridge User Guide_.
+Events in EventBridge are represented as JSON objects. The fields that are unique to the event are contained in the "detail" section of the JSON object. The "event" field contains the event name. The "result" field contains the completed status of the action that triggered the event. For more information, see [Amazon EventBridge event patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html) in the *Amazon EventBridge User Guide*.
 
-For more information, see the [Amazon EventBridge User Guide](../../../eventbridge/latest/userguide.md).
+For more information, see the [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/).
 
 This feature is not supported in AWS GovCloud (US).
 
 ### Events
+<a name="cr-eventbridge-events"></a>
 
-AWS Health sends the following events when capacity usage for a Capacity Reservation is below
-20 percent.
+AWS Health sends the following events when capacity usage for a Capacity Reservation is below 20 percent.
++ `AWS_EC2_ODCR_UNDERUTILIZATION_NOTIFICATION`
 
-- `AWS_EC2_ODCR_UNDERUTILIZATION_NOTIFICATION`
+  The following is an example of an event that is generated when a newly created Capacity Reservation is below 20 percent capacity usage over a 24-hour period.
 
-The following is an example of an event that is generated when a newly
-created Capacity Reservation is below 20 percent capacity usage over a 24-hour
-period.
-
-```json
-
-{
+  ```
+  {
       "version": "0",
       "id": "b3e00086-f271-12a1-a36c-55e8ddaa130a",
       "detail-type": "AWS Health Event",
@@ -64,7 +52,7 @@ period.
           "eventDescription": [
               {
                   "language": "en_US",
-                  "latestDescription": "A description of the event will be provided here"
+                  "latestDescription": "{{A description of the event will be provided here}}"
               }
           ],
           "affectedEntities": [
@@ -74,16 +62,13 @@ period.
           ]
       }
       }
-```
+  ```
++ `AWS_EC2_ODCR_UNDERUTILIZATION_NOTIFICATION_SUMMARY`
 
-- `AWS_EC2_ODCR_UNDERUTILIZATION_NOTIFICATION_SUMMARY`
+  The following is an example of an event that is generated when one or more Capacity Reservation is below 20 percent capacity usage over a 7-day period.
 
-The following is an example of an event that is generated when one or
-more Capacity Reservation is below 20 percent capacity usage over a 7-day period.
-
-```json
-
-{
+  ```
+  {
       "version": "0", "id":"7439d42b-3c7f-ad50-6a88-25e2a70977e2",
       "detail-type": "AWS Health Event",
       "source": "aws.health",
@@ -104,7 +89,7 @@ more Capacity Reservation is below 20 percent capacity usage over a 7-day period
           "eventDescription": [
               {
                   "language": "en_US",
-                  "latestDescription": "A description of the event will be provided here"
+                  "latestDescription": "{{A description of the event will be provided here}}"
               }
           ],
           "affectedEntities": [
@@ -116,116 +101,81 @@ more Capacity Reservation is below 20 percent capacity usage over a 7-day period
               }
           ]
       }
-}
-```
+  }
+  ```
 
 ### Create an EventBridge rule
+<a name="cr-eventbridge-use"></a>
 
-To receive email notifications when your Capacity Reservation utilization drops below 20
-percent, create an Amazon SNS topic, and then create an EventBridge rule for the
-`AWS_EC2_ODCR_UNDERUTILIZATION_NOTIFICATION` event.
+To receive email notifications when your Capacity Reservation utilization drops below 20 percent, create an Amazon SNS topic, and then create an EventBridge rule for the `AWS_EC2_ODCR_UNDERUTILIZATION_NOTIFICATION` event.
 
-###### To create the Amazon SNS topic
+**To create the Amazon SNS topic**
 
-1. Open the Amazon SNS console at
-    [https://console.aws.amazon.com/sns/v3/home](https://console.aws.amazon.com/sns/v3/home).
+1. Open the Amazon SNS console at [https://console.aws.amazon.com/sns/v3/home](https://console.aws.amazon.com/sns/v3/home).
 
-2. In the navigation pane, choose **Topics**, and then
-    choose **Create topic**.
+1. In the navigation pane, choose **Topics**, and then choose **Create topic**.
 
-3. For **Type**, choose
-    **Standard**.
+1. For **Type**, choose **Standard**.
 
-4. For **Name**, enter a name for the new topic.
+1. For **Name**, enter a name for the new topic.
 
-5. Choose **Create topic**.
+1. Choose **Create topic**.
 
-6. Choose **Create subscription**.
+1. Choose **Create subscription**.
 
-7. For **Protocol**, choose **Email**,
-    and then for **Endpoint**, enter the email address that
-    receives the notifications.
+1. For **Protocol**, choose **Email**, and then for **Endpoint**, enter the email address that receives the notifications.
 
-8. Choose **Create subscription**.
+1. Choose **Create subscription**.
 
-9. The email address entered above will receive email message with the
-    following subject line: `AWS Notification - Subscription
-   								Confirmation`. Follow the directions to confirm your
-    subscription.
+1. The email address entered above will receive email message with the following subject line: `AWS Notification - Subscription Confirmation`. Follow the directions to confirm your subscription.
 
-###### To create the EventBridge rule
+**To create the EventBridge rule**
 
-01. Open the Amazon EventBridge console at [https://console.aws.amazon.com/events/](https://console.aws.amazon.com/events).
+1. Open the Amazon EventBridge console at [https://console.aws.amazon.com/events/](https://console.aws.amazon.com/events/).
 
-02. In the navigation pane, choose **Rules**, and then
-     choose **Create rule**.
+1. In the navigation pane, choose **Rules**, and then choose **Create rule**.
 
-03. For **Name**, enter a name for the new rule.
+1. For **Name**, enter a name for the new rule.
 
-04. For **Rule type**, choose **Rule with an**
-    **event pattern**.
+1. For **Rule type**, choose **Rule with an event pattern**.
 
-05. Choose **Next**.
+1. Choose **Next**.
 
-06. In the **Event pattern**, do the following:
-    1. For **Event source**, choose **AWS**
-       **services**.
+1. In the **Event pattern**, do the following:
 
-    2. For **AWS service**, choose
-        **AWS Health**.
+   1. For **Event source**, choose **AWS services**.
 
-    3. For **Event type**, choose **EC2 ODCR**
-       **Underutilization Notification**.
-07. Choose **Next**.
+   1. For **AWS service**, choose **AWS Health**.
 
-08. For **Target 1**, do the following:
-    1. For **Target types**, choose **AWS**
-       **service**.
+   1. For **Event type**, choose **EC2 ODCR Underutilization Notification**.
 
-    2. For **Select a target**, choose **SNS**
-       **topic**.
+1. Choose **Next**.
 
-    3. For **Topic**, choose the topic that you
-        created earlier.
-09. Choose **Next** and then **Next**
-     again.
+1. For **Target 1**, do the following:
 
-10. Choose **Create rule**.
+   1. For **Target types**, choose **AWS service**.
+
+   1. For **Select a target**, choose **SNS topic**.
+
+   1. For **Topic**, choose the topic that you created earlier.
+
+1. Choose **Next** and then **Next** again.
+
+1. Choose **Create rule**.
 
 ## Email and AWS Health Dashboard notifications
+<a name="monitor-cr-utilization"></a>
 
-AWS Health sends the following email and Health Dashboard notifications when capacity
-utilization for Capacity Reservations in your account drops below 20 percent.
+AWS Health sends the following email and Health Dashboard notifications when capacity utilization for Capacity Reservations in your account drops below 20 percent.
++ Individual notifications for each newly created Capacity Reservation that has been below 20 percent utilization over the last 24-hour period.
++ A summary notification for all Capacity Reservations that have been below 20 percent utilization over the last 7-day period.
 
-- Individual notifications for each newly created Capacity Reservation that has been below
-20 percent utilization over the last 24-hour period.
+The email notifications and Health Dashboard notifications are sent to the email address associated with the AWS account that owns the Capacity Reservations. The notifications include the following information:
++ The ID of the Capacity Reservation.
++ The Availability Zone of the Capacity Reservation.
++ The average utilization rate for the Capacity Reservation.
++ The instance type and platform (operating system) of the Capacity Reservation.
 
-- A summary notification for all Capacity Reservations that have been below 20 percent
-utilization over the last 7-day period.
-
-The email notifications and Health Dashboard notifications are sent to the email address
-associated with the AWS account that owns the Capacity Reservations. The notifications include the
-following information:
-
-- The ID of the Capacity Reservation.
-
-- The Availability Zone of the Capacity Reservation.
-
-- The average utilization rate for the Capacity Reservation.
-
-- The instance type and platform (operating system) of the Capacity Reservation.
-
-Additionally, when capacity utilization for a Capacity Reservation in your account drops below 20
-percent over a 24-hour and 7-day period, AWS Health sends events to EventBridge. With
-EventBridge, you can create rules that activate automatic actions, such as sending email
-notifications or triggering AWS Lambda functions, in response to such events. For
-more information, see [Monitor Capacity Reservation underutilization](cr-eventbridge.md).
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Monitor with CloudWatch
-metrics
-
-Monitor state changes
+Additionally, when capacity utilization for a Capacity Reservation in your account drops below 20 percent over a 24-hour and 7-day period, AWS Health sends events to EventBridge. With EventBridge, you can create rules that activate automatic actions, such as sending email notifications or triggering AWS Lambda functions, in response to such events. For more information, see [Monitor Capacity Reservation underutilization](#cr-eventbridge).
 
 All content copied from https://docs.aws.amazon.com/.

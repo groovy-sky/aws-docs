@@ -3,109 +3,70 @@ title: "NetworkInterfaceAttachment"
 ---
 
 # NetworkInterfaceAttachment
+<a name="API_NetworkInterfaceAttachment"></a>
 
 Describes a network interface attachment.
 
 ## Contents
+<a name="API_NetworkInterfaceAttachment_Contents"></a>
 
-**attachmentId**
-
+ ** attachmentId **
 The ID of the network interface attachment.
-
 Type: String
-
 Required: No
 
-**attachTime**
-
+ ** attachTime **
 The timestamp indicating when the attachment initiated.
-
 Type: Timestamp
-
 Required: No
 
-**deleteOnTermination**
-
-Indicates whether the network interface is deleted when the instance is
-terminated.
-
+ ** deleteOnTermination **
+Indicates whether the network interface is deleted when the instance is terminated.
 Type: Boolean
-
 Required: No
 
-**deviceIndex**
-
+ ** deviceIndex **
 The device index of the network interface attachment on the instance.
-
 Type: Integer
-
 Required: No
 
-**enaQueueCount**
-
+ ** enaQueueCount **
 The number of ENA queues created with the instance.
-
 Type: Integer
-
 Required: No
 
-**enaSrdSpecification**
-
-Configures ENA Express for the network interface that this action attaches to the
-instance.
-
-Type: [AttachmentEnaSrdSpecification](api-attachmentenasrdspecification.md) object
-
+ ** enaSrdSpecification **
+Configures ENA Express for the network interface that this action attaches to the instance.
+Type: [AttachmentEnaSrdSpecification](API_AttachmentEnaSrdSpecification.md) object
 Required: No
 
-**instanceId**
-
+ ** instanceId **
 The ID of the instance.
-
 Type: String
-
 Required: No
 
-**instanceOwnerId**
-
+ ** instanceOwnerId **
 The AWS account ID of the owner of the instance.
-
 Type: String
-
 Required: No
 
-**networkCardIndex**
-
+ ** networkCardIndex **
 The index of the network card.
-
 Type: Integer
-
 Required: No
 
-**status**
-
+ ** status **
 The attachment state.
-
 Type: String
-
 Valid Values: `attaching | attached | detaching | detached`
-
 Required: No
 
 ## See Also
+<a name="API_NetworkInterfaceAttachment_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/networkinterfaceattachment.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/networkinterfaceattachment.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/networkinterfaceattachment.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NetworkInterfaceAssociation
-
-NetworkInterfaceAttachmentChanges
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/NetworkInterfaceAttachment)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/NetworkInterfaceAttachment)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/NetworkInterfaceAttachment)
 
 All content copied from https://docs.aws.amazon.com/.

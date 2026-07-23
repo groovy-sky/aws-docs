@@ -3,119 +3,77 @@ title: "IpamAddressHistoryRecord"
 ---
 
 # IpamAddressHistoryRecord
+<a name="API_IpamAddressHistoryRecord"></a>
 
-The historical record of a CIDR within an IPAM scope. For more information, see [View the history of IP addresses](../../../../services/vpc/latest/ipam/view-history-cidr-ipam.md) in the _Amazon VPC IPAM User Guide_.
+The historical record of a CIDR within an IPAM scope. For more information, see [View the history of IP addresses](https://docs.aws.amazon.com/vpc/latest/ipam/view-history-cidr-ipam.html) in the *Amazon VPC IPAM User Guide*.
 
 ## Contents
+<a name="API_IpamAddressHistoryRecord_Contents"></a>
 
-**resourceCidr**
-
+ ** resourceCidr **
 The CIDR of the resource.
-
 Type: String
-
 Required: No
 
-**resourceComplianceStatus**
-
-The compliance status of a resource. For more information on compliance statuses, see [Monitor CIDR usage by resource](../../../../services/vpc/latest/ipam/monitor-cidr-compliance-ipam.md) in the _Amazon VPC IPAM User Guide_.
-
+ ** resourceComplianceStatus **
+The compliance status of a resource. For more information on compliance statuses, see [Monitor CIDR usage by resource](https://docs.aws.amazon.com/vpc/latest/ipam/monitor-cidr-compliance-ipam.html) in the *Amazon VPC IPAM User Guide*.
 Type: String
-
 Valid Values: `compliant | noncompliant | unmanaged | ignored`
-
 Required: No
 
-**resourceId**
-
+ ** resourceId **
 The ID of the resource.
-
 Type: String
-
 Required: No
 
-**resourceName**
-
+ ** resourceName **
 The name of the resource.
-
 Type: String
-
 Required: No
 
-**resourceOverlapStatus**
-
-The overlap status of an IPAM resource. The overlap status tells you if the CIDR for a resource overlaps with another CIDR in the scope. For more information on overlap statuses, see [Monitor CIDR usage by resource](../../../../services/vpc/latest/ipam/monitor-cidr-compliance-ipam.md) in the _Amazon VPC IPAM User Guide_.
-
+ ** resourceOverlapStatus **
+The overlap status of an IPAM resource. The overlap status tells you if the CIDR for a resource overlaps with another CIDR in the scope. For more information on overlap statuses, see [Monitor CIDR usage by resource](https://docs.aws.amazon.com/vpc/latest/ipam/monitor-cidr-compliance-ipam.html) in the *Amazon VPC IPAM User Guide*.
 Type: String
-
 Valid Values: `overlapping | nonoverlapping | ignored`
-
 Required: No
 
-**resourceOwnerId**
-
+ ** resourceOwnerId **
 The ID of the resource owner.
-
 Type: String
-
 Required: No
 
-**resourceRegion**
-
+ ** resourceRegion **
 The AWS Region of the resource.
-
 Type: String
-
 Required: No
 
-**resourceType**
-
+ ** resourceType **
 The type of the resource.
-
 Type: String
-
 Valid Values: `eip | vpc | subnet | network-interface | instance`
-
 Required: No
 
-**sampledEndTime**
-
+ ** sampledEndTime **
 Sampled end time of the resource-to-CIDR association within the IPAM scope. Changes are picked up in periodic snapshots, so the end time may have occurred before this specific time.
-
 Type: Timestamp
-
 Required: No
 
-**sampledStartTime**
-
+ ** sampledStartTime **
 Sampled start time of the resource-to-CIDR association within the IPAM scope. Changes are picked up in periodic snapshots, so the start time may have occurred before this specific time.
-
 Type: Timestamp
-
 Required: No
 
-**vpcId**
-
+ ** vpcId **
 The VPC ID of the resource.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_IpamAddressHistoryRecord_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ipamaddresshistoryrecord.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ipamaddresshistoryrecord.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipamaddresshistoryrecord.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Ipam
-
-IpamCidrAuthorizationContext
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/IpamAddressHistoryRecord)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/IpamAddressHistoryRecord)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/IpamAddressHistoryRecord)
 
 All content copied from https://docs.aws.amazon.com/.

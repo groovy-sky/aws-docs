@@ -3,77 +3,59 @@ title: "Delete an Amazon EC2 security group"
 ---
 
 # Delete an Amazon EC2 security group
+<a name="deleting-security-group"></a>
 
-When you are finished with a security group that you created for use with your
-Amazon EC2 instances, you can delete it.
+When you are finished with a security group that you created for use with your Amazon EC2 instances, you can delete it.
 
-###### Requirements
+**Requirements**
++ The security group can't be associated with an instance or network interface.
++ The security group can't be referenced by a rule in another security group.
 
-- The security group can't be associated with an instance or network
-interface.
+------
+#### [ Console ]
 
-- The security group can't be referenced by a rule in another
-security group.
+**To delete a security group**
 
-Console
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-###### To delete a security group
+1. (Optional) To verify that your security group is not associated with an instance, do the following:
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+   1. In the navigation pane, choose **Security Groups**.
 
-2. (Optional) To verify that your security group is not associated with an
-    instance, do the following:
+   1. Copy the ID of the security group to delete.
+
+   1. In the navigation pane, choose **Instances**.
+
+   1. In the search bar, add **Security group IDs equals** filter and paste the ID of the security group. If there are no results, then the security group is not associated with an instance. Otherwise, you must disassociate the security group before you can delete it.
+
 1. In the navigation pane, choose **Security Groups**.
 
-2. Copy the ID of the security group to delete.
+1. Select the security group and choose **Actions**, **Delete security groups**.
 
-3. In the navigation pane, choose **Instances**.
+1. If you selected more than one security group, you are prompted for confirmation. If some of the security groups can't be deleted, we display the status of each security group, which indicates whether it will be deleted. To confirm deletion, enter **Delete**.
 
-4. In the search bar, add **Security group IDs equals**
-       filter and paste the ID of the security group. If there are no results,
-       then the security group is not associated with an instance. Otherwise,
-       you must disassociate the security group before you can delete it.
-3. In the navigation pane, choose **Security Groups**.
+1. Choose **Delete**.
 
-4. Select the security group and choose **Actions**, **Delete**
-**security groups**.
+------
+#### [ AWS CLI ]
 
-5. If you selected more than one security group, you are prompted for
-    confirmation. If some of the security groups can't be deleted, we display
-    the status of each security group, which indicates whether it will be
-    deleted. To confirm deletion, enter **Delete**.
+**To delete a security group**
+Use the following [delete-security-group](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-security-group.html) command.
 
-6. Choose **Delete**.
-
-AWS CLI
-
-###### To delete a security group
-
-Use the following [delete-security-group](../../../cli/latest/reference/ec2/delete-security-group.md)
-command.
-
-```nohighlight
-
-aws ec2 delete-security-group --group-id sg-1234567890abcdef0
+```
+aws ec2 delete-security-group --group-id {{sg-1234567890abcdef0}}
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To delete a security group
+**To delete a security group**
+Use the [Remove-EC2SecurityGroup](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2SecurityGroup.html) cmdlet.
 
-Use the [Remove-EC2SecurityGroup](../../../powershell/latest/reference/items/remove-ec2securitygroup.md)
-cmdlet.
-
-```powershell
-
-Remove-EC2SecurityGroup -GroupId sg-1234567890abcdef0
+```
+Remove-EC2SecurityGroup -GroupId {{sg-1234567890abcdef0}}
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Change security groups for your instance
-
-Connection tracking
+------
 
 All content copied from https://docs.aws.amazon.com/.

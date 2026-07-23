@@ -3,73 +3,51 @@ title: "EnableSerialConsoleAccess"
 ---
 
 # EnableSerialConsoleAccess
+<a name="API_EnableSerialConsoleAccess"></a>
 
-Enables access to the EC2 serial console of all instances for your account. By default,
-access to the EC2 serial console is disabled for your account. For more information, see [Manage account access to the EC2 serial console](../../../../services/ec2/latest/userguide/configure-access-to-serial-console.md#serial-console-account-access)
-in the _Amazon EC2 User Guide_.
+Enables access to the EC2 serial console of all instances for your account. By default, access to the EC2 serial console is disabled for your account. For more information, see [Manage account access to the EC2 serial console](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-access-to-serial-console.html#serial-console-account-access) in the *Amazon EC2 User Guide*.
 
 ## Request Parameters
+<a name="API_EnableSerialConsoleAccess_RequestParameters"></a>
 
-For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**DryRun**
-
+ **DryRun**
 Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
-
 Type: Boolean
-
 Required: No
 
 ## Response Elements
+<a name="API_EnableSerialConsoleAccess_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**serialConsoleAccessEnabled**
-
-If `true`, access to the EC2 serial console of all instances is enabled for
-your account. If `false`, access to the EC2 serial console of all instances
-is disabled for your account.
-
+ **serialConsoleAccessEnabled**
+If `true`, access to the EC2 serial console of all instances is enabled for your account. If `false`, access to the EC2 serial console of all instances is disabled for your account.
 Type: Boolean
 
 ## Errors
+<a name="API_EnableSerialConsoleAccess_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## See Also
+<a name="API_EnableSerialConsoleAccess_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/enableserialconsoleaccess.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/enableserialconsoleaccess.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/enableserialconsoleaccess.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/enableserialconsoleaccess.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/enableserialconsoleaccess.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/enableserialconsoleaccess.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/enableserialconsoleaccess.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/enableserialconsoleaccess.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/enableserialconsoleaccess.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/enableserialconsoleaccess.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EnableRouteServerPropagation
-
-EnableSnapshotBlockPublicAccess
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/EnableSerialConsoleAccess)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/EnableSerialConsoleAccess)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/EnableSerialConsoleAccess)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/EnableSerialConsoleAccess)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/EnableSerialConsoleAccess)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/EnableSerialConsoleAccess)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/EnableSerialConsoleAccess)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/EnableSerialConsoleAccess)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/EnableSerialConsoleAccess)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/EnableSerialConsoleAccess)
 
 All content copied from https://docs.aws.amazon.com/.

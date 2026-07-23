@@ -3,33 +3,24 @@ title: "ReservedInstancesId"
 ---
 
 # ReservedInstancesId
+<a name="API_ReservedInstancesId"></a>
 
 Describes the ID of a Reserved Instance.
 
 ## Contents
+<a name="API_ReservedInstancesId_Contents"></a>
 
-**reservedInstancesId**
-
+ ** reservedInstancesId **
 The ID of the Reserved Instance.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_ReservedInstancesId_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/reservedinstancesid.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/reservedinstancesid.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/reservedinstancesid.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ReservedInstancesConfiguration
-
-ReservedInstancesListing
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ReservedInstancesId)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ReservedInstancesId)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ReservedInstancesId)
 
 All content copied from https://docs.aws.amazon.com/.

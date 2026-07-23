@@ -3,40 +3,26 @@ title: "BaselinePerformanceFactors"
 ---
 
 # BaselinePerformanceFactors
+<a name="API_BaselinePerformanceFactors"></a>
 
-The baseline performance to consider, using an instance family as a baseline reference.
-The instance family establishes the lowest acceptable level of performance. Amazon EC2 uses this
-baseline to guide instance type selection, but there is no guarantee that the selected
-instance types will always exceed the baseline for every application.
+The baseline performance to consider, using an instance family as a baseline reference. The instance family establishes the lowest acceptable level of performance. Amazon EC2 uses this baseline to guide instance type selection, but there is no guarantee that the selected instance types will always exceed the baseline for every application.
 
-Currently, this parameter only supports CPU performance as a baseline performance
-factor. For example, specifying `c6i` would use the CPU performance of the
-`c6i` family as the baseline reference.
+Currently, this parameter only supports CPU performance as a baseline performance factor. For example, specifying `c6i` would use the CPU performance of the `c6i` family as the baseline reference.
 
 ## Contents
+<a name="API_BaselinePerformanceFactors_Contents"></a>
 
-**Cpu** (request), **cpu** (response)
-
+ ** Cpu ** (request), ** cpu ** (response)
 The CPU performance to consider, using an instance family as the baseline reference.
-
-Type: [CpuPerformanceFactor](api-cpuperformancefactor.md) object
-
+Type: [CpuPerformanceFactor](API_CpuPerformanceFactor.md) object
 Required: No
 
 ## See Also
+<a name="API_BaselinePerformanceFactors_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/baselineperformancefactors.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/baselineperformancefactors.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/baselineperformancefactors.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-BaselineEbsBandwidthMbpsRequest
-
-BaselinePerformanceFactorsRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/BaselinePerformanceFactors)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/BaselinePerformanceFactors)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/BaselinePerformanceFactors)
 
 All content copied from https://docs.aws.amazon.com/.

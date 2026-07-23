@@ -3,91 +3,60 @@ title: "TransitGateway"
 ---
 
 # TransitGateway
+<a name="API_TransitGateway"></a>
 
 Describes a transit gateway.
 
 ## Contents
+<a name="API_TransitGateway_Contents"></a>
 
-**creationTime**
-
+ ** creationTime **
 The creation time.
-
 Type: Timestamp
-
 Required: No
 
-**description**
-
+ ** description **
 The description of the transit gateway.
-
 Type: String
-
 Required: No
 
-**options**
-
+ ** options **
 The transit gateway options.
-
-Type: [TransitGatewayOptions](api-transitgatewayoptions.md) object
-
+Type: [TransitGatewayOptions](API_TransitGatewayOptions.md) object
 Required: No
 
-**ownerId**
-
+ ** ownerId **
 The ID of the AWS account that owns the transit gateway.
-
 Type: String
-
 Required: No
 
-**state**
-
+ ** state **
 The state of the transit gateway.
-
 Type: String
-
 Valid Values: `pending | available | modifying | deleting | deleted`
-
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 The tags for the transit gateway.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
-**transitGatewayArn**
-
+ ** transitGatewayArn **
 The Amazon Resource Name (ARN) of the transit gateway.
-
 Type: String
-
 Required: No
 
-**transitGatewayId**
-
+ ** transitGatewayId **
 The ID of the transit gateway.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_TransitGateway_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/transitgateway.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/transitgateway.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/transitgateway.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TrafficMirrorTarget
-
-TransitGatewayAssociation
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TransitGateway)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TransitGateway)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TransitGateway)
 
 All content copied from https://docs.aws.amazon.com/.

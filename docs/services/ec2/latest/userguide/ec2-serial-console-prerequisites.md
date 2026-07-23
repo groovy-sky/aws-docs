@@ -3,245 +3,213 @@ title: "Prerequisites for the EC2 Serial Console"
 ---
 
 # Prerequisites for the EC2 Serial Console
+<a name="ec2-serial-console-prerequisites"></a>
 
-###### To connect to the EC2 Serial Console and use your chosen tool for  troubleshooting, the following prerequisites must be met:
-
-- [AWS Regions](#sc-prereqs-regions)
-
-- [Wavelength Zones and AWS Outposts](#sc-prereqs-wavelength-zones-outposts)
-
-- [Local Zones](#sc-prereqs-local-zones)
-
-- [Instance types](#sc-prereqs-instance-types)
-
-- [Grant access](#sc-prereqs-configure-ec2-serial-console)
-
-- [Support for browser-based client](#sc-prereqs-for-browser-based-connection)
-
-- [Instance state](#sc-prereqs-instance-state)
-
-- [Amazon EC2 Systems Manager](#sc-prereqs-ssm)
-
-- [Configure your chosen troubleshooting tool](#sc-prereqs-configure-troubleshooting-tool)
+**Topics**
++ [AWS Regions](#sc-prereqs-regions)
++ [Wavelength Zones and AWS Outposts](#sc-prereqs-wavelength-zones-outposts)
++ [Local Zones](#sc-prereqs-local-zones)
++ [Instance types](#sc-prereqs-instance-types)
++ [Grant access](#sc-prereqs-configure-ec2-serial-console)
++ [Support for browser-based client](#sc-prereqs-for-browser-based-connection)
++ [Instance state](#sc-prereqs-instance-state)
++ [Amazon EC2 Systems Manager](#sc-prereqs-ssm)
++ [Configure your chosen troubleshooting tool](#sc-prereqs-configure-troubleshooting-tool)
 
 ## AWS Regions
+<a name="sc-prereqs-regions"></a>
 
 Supported in all AWS Regions.
 
 ## Wavelength Zones and AWS Outposts
+<a name="sc-prereqs-wavelength-zones-outposts"></a>
 
 Not supported.
 
 ## Local Zones
+<a name="sc-prereqs-local-zones"></a>
 
 Supported in all Local Zones.
 
 ## Instance types
+<a name="sc-prereqs-instance-types"></a>
 
 Supported instance types:
-
-- **Linux**
-
-- All virtualized instances built on the Nitro System.
-
-- All bare metal instances except:
-
-- General purpose: `a1.metal`, `mac1.metal`,
-`mac2.metal`
-
-- Accelerated computing: `g5g.metal`
-
-- Memory optimized: `u-6tb1.metal`, `u-9tb1.metal`,
-`u-12tb1.metal`, `u-18tb1.metal`,
-`u-24tb1.metal`
-
-- **Windows**
-
-All virtualized instances built on the Nitro System. Not supported on bare metal
-instances.
++ **Linux**
+  + All virtualized instances built on the Nitro System.
+  + All bare metal instances except:
+    + General purpose: `a1.metal`, `mac1.metal`, `mac2.metal`, `mac2-m1ultra.metal`, `mac2-m2.metal`, `mac2-m2pro.metal`, `mac-m3ultra.metal`, `mac-m4.metal`, `mac-m4max.metal`, and `mac-m4pro.metal`
+    + Accelerated computing: `g5g.metal`
+    + Memory optimized: `u-6tb1.metal`, `u-9tb1.metal`, `u-12tb1.metal`, `u-18tb1.metal`, and `u-24tb1.metal`
++ **Windows**
+  + All virtualized instances built on the Nitro System.
+  + All bare metal instances except:
+    + General purpose: `a1.metal`, `mac1.metal`, `mac2.metal`, `mac2-m1ultra.metal`, `mac2-m2.metal`, `mac2-m2pro.metal`, `mac-m3ultra.metal`, `mac-m4.metal`, `mac-m4max.metal`, and `mac-m4pro.metal`
+    + Accelerated computing: `g5g.metal`
+    + Memory optimized: `u-6tb1.metal`, `u-9tb1.metal`, `u-12tb1.metal`, `u-18tb1.metal`, and `u-24tb1.metal`
 
 ## Grant access
+<a name="sc-prereqs-configure-ec2-serial-console"></a>
 
-You must complete the configuration tasks to grant access to the EC2 Serial Console. For
-more information, see [Configure access to the EC2 Serial Console](configure-access-to-serial-console.md).
+You must complete the configuration tasks to grant access to the EC2 Serial Console. For more information, see [Configure access to the EC2 Serial Console](configure-access-to-serial-console.md).
 
 ## Support for browser-based client
+<a name="sc-prereqs-for-browser-based-connection"></a>
 
-To connect to the serial console [using\
-the browser-based client](connect-to-serial-console.md#sc-connect-browser-based-client), your browser must support WebSocket. If your browser does
-not support WebSocket, connect to the serial console [using\
-your own key and an SSH client.](connect-to-serial-console.md#sc-connect-SSH)
+To connect to the serial console [using the browser-based client](connect-to-serial-console.md#sc-connect-browser-based-client), your browser must support WebSocket. If your browser does not support WebSocket, connect to the serial console [using your own key and an SSH client.](connect-to-serial-console.md#sc-connect-SSH)
+
+The browser-based client connects on port 443 to the EC2 Instance Connect proxy endpoint for your Region. The endpoint format depends on the [partition](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#partition):
++ Commercial AWS Regions and AWS GovCloud (US) Regions use the endpoint format: `prod.{{region}}.oneclickv2-proxy.ec2.aws.dev`.
++ China Regions use the endpoint format: `prod.{{region}}.oneclickv2-proxy.ec2.a2z.org.cn`.
+
+The following examples show the endpoint for each partition:
++ For the US East (N. Virginia) Region, the endpoint is `prod.us-east-1.oneclickv2-proxy.ec2.aws.dev`.
++ For the China (Beijing) Region, the endpoint is `prod.cn-north-1.oneclickv2-proxy.ec2.a2z.org.cn`.
+
+**Note**
+Your browser must be able to reach this endpoint. If a firewall or VPN blocks the connection, the connection fails.
 
 ## Instance state
+<a name="sc-prereqs-instance-state"></a>
 
 Must be `running`.
 
-You can't connect to the serial console if the instance is in the `pending`,
-`stopping`, `stopped`, `shutting-down`, or
-`terminated` state.
+You can't connect to the serial console if the instance is in the `pending`, `stopping`, `stopped`, `shutting-down`, or `terminated` state.
 
 For more information about the instance states, see [Amazon EC2 instance state changes](ec2-instance-lifecycle.md).
 
 ## Amazon EC2 Systems Manager
+<a name="sc-prereqs-ssm"></a>
 
-If the instance uses Amazon EC2 Systems Manager, then SSM Agent version 3.0.854.0 or later must be
-installed on the instance. For information about SSM Agent, see [Working with SSM Agent](../../../systems-manager/latest/userguide/ssm-agent.md) in
-the _AWS Systems Manager User Guide_.
+If the instance uses Amazon EC2 Systems Manager, then SSM Agent version 3.0.854.0 or later must be installed on the instance. For information about SSM Agent, see [Working with SSM Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html) in the *AWS Systems Manager User Guide*.
 
 ## Configure your chosen troubleshooting tool
+<a name="sc-prereqs-configure-troubleshooting-tool"></a>
 
-To troubleshoot your instance using the serial console, you can use GRUB or SysRq on Linux
-instances, and Special Admin Console (SAC) on Windows instances. Before you can use these
-tools, you must first perform configuration steps on every instance on which you'll use
-them.
+To troubleshoot your instance using the serial console, you can use GRUB or SysRq on Linux instances, and Special Admin Console (SAC) on Windows instances. Before you can use these tools, you must first perform configuration steps on every instance on which you'll use them.
 
-Use the instructions for your instance's operating system to configure your chosen
-troubleshooting tool.
+Use the instructions for your instance's operating system to configure your chosen troubleshooting tool.
 
-To configure GRUB, choose one of the following procedures based on the AMI that was
-used to launch the instance.
+### (Linux instances) Configure GRUB
+<a name="configure-grub"></a>
 
-Amazon Linux 2
+To configure GRUB, choose one of the following procedures based on the AMI that was used to launch the instance.
 
-###### To configure GRUB on an Amazon Linux 2 instance
+------
+#### [ Amazon Linux 2 ]
+
+**To configure GRUB on an Amazon Linux 2 instance**
 
 1. [Connect to your Linux instance using SSH](connect-to-linux-instance.md)
 
-2. Add or change the following options in
-    `/etc/default/grub`:
+1. Add or change the following options in `/etc/default/grub`:
+   + Set `GRUB_TIMEOUT=1`.
+   + Add `GRUB_TERMINAL="console serial"`.
+   + Add `GRUB_SERIAL_COMMAND="serial --speed=115200"`.
 
-- Set `GRUB_TIMEOUT=1`.
+   The following is an example of `/etc/default/grub`. You might need to change the configuration based on your system setup.
 
-- Add `GRUB_TERMINAL="console serial"`.
+   ```
+   GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdevname=0 nvme_core.io_timeout=4294967295 rd.emergency=poweroff rd.shell=0"
+   GRUB_TIMEOUT=1
+   GRUB_DISABLE_RECOVERY="true"
+   GRUB_TERMINAL="console serial"
+   GRUB_SERIAL_COMMAND="serial --speed=115200"
+   ```
 
-- Add `GRUB_SERIAL_COMMAND="serial --speed=115200"`.
+1. Apply the updated configuration by running the following command.
 
-The following is an example of `/etc/default/grub`. You might
-need to change the configuration based on your system setup.
+   ```
+   [ec2-user ~]$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+   ```
 
-```nohighlight
+------
+#### [ Ubuntu ]
 
-GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdevname=0 nvme_core.io_timeout=4294967295 rd.emergency=poweroff rd.shell=0"
-GRUB_TIMEOUT=1
-GRUB_DISABLE_RECOVERY="true"
-GRUB_TERMINAL="console serial"
-GRUB_SERIAL_COMMAND="serial --speed=115200"
+**To configure GRUB on an Ubuntu instance**
+
+1. [Connect](connect-to-linux-instance.md) to your instance.
+
+1. Add or change the following options in `/etc/default/grub.d/50-cloudimg-settings.cfg`:
+   + Set `GRUB_TIMEOUT=1`.
+   + Add `GRUB_TIMEOUT_STYLE=menu`.
+   + Add `GRUB_TERMINAL="console serial"`.
+   + Remove `GRUB_HIDDEN_TIMEOUT`.
+   + Add `GRUB_SERIAL_COMMAND="serial --speed=115200"`.
+
+   The following is an example of `/etc/default/grub.d/50-cloudimg-settings.cfg`. You might need to change the configuration based on your system setup.
+
+   ```
+   # Cloud Image specific Grub settings for Generic Cloud Images
+   # CLOUD_IMG: This file was created/modified by the Cloud Image build process
+
+   # Set the recordfail timeout
+   GRUB_RECORDFAIL_TIMEOUT=0
+
+   # Do not wait on grub prompt
+   GRUB_TIMEOUT=1
+   GRUB_TIMEOUT_STYLE=menu
+
+   # Set the default commandline
+   GRUB_CMDLINE_LINUX_DEFAULT="console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295"
+
+   # Set the grub console type
+   GRUB_TERMINAL="console serial"
+   GRUB_SERIAL_COMMAND="serial --speed 115200"
+   ```
+
+1. Apply the updated configuration by running the following command.
+
+   ```
+   [ec2-user ~]$ sudo update-grub
+   ```
+
+------
+#### [ RHEL ]
+
+**To configure GRUB on a RHEL instance**
+
+1. [Connect](connect-to-linux-instance.md) to your instance.
+
+1. Add or change the following options in `/etc/default/grub`:
+   + Remove `GRUB_TERMINAL_OUTPUT`.
+   + Add `GRUB_TERMINAL="console serial"`.
+   + Add `GRUB_SERIAL_COMMAND="serial --speed=115200"`.
+
+   The following is an example of `/etc/default/grub`. You might need to change the configuration based on your system setup.
+
+   ```
+   GRUB_TIMEOUT=1
+   GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+   GRUB_DEFAULT=saved
+   GRUB_DISABLE_SUBMENU=true
+   GRUB_CMDLINE_LINUX="console=tty0 console=ttyS0,115200n8 net.ifnames=0 rd.blacklist=nouveau nvme_core.io_timeout=4294967295 crashkernel=auto"
+   GRUB_DISABLE_RECOVERY="true"
+   GRUB_ENABLE_BLSCFG=true
+   GRUB_TERMINAL="console serial"
+   GRUB_SERIAL_COMMAND="serial --speed=115200"
+   ```
+
+1. Apply the updated configuration by running the following command.
+
+   ```
+   [ec2-user ~]$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg --update-bls-cmdline
+   ```
+
+   For RHEL 9.2 and earlier, use the following command.
+
+   ```
+   [ec2-user ~]$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+   ```
+
+------
+#### [ CentOS ]
+
+For instances that are launched using a CentOS AMI, GRUB is configured for the serial console by default.
+
+The following is an example of `/etc/default/grub`. Your configuration might be different based on your system setup.
+
 ```
-
-3. Apply the updated configuration by running the following command.
-
-```nohighlight
-
-[ec2-user ~]$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
-```
-
-Ubuntu
-
-###### To configure GRUB on an Ubuntu instance
-
-1. [Connect](connect-to-linux-instance.md) to your
-    instance.
-
-2. Add or change the following options in
-    `/etc/default/grub.d/50-cloudimg-settings.cfg`:
-
-- Set `GRUB_TIMEOUT=1`.
-
-- Add `GRUB_TIMEOUT_STYLE=menu`.
-
-- Add `GRUB_TERMINAL="console serial"`.
-
-- Remove `GRUB_HIDDEN_TIMEOUT`.
-
-- Add `GRUB_SERIAL_COMMAND="serial --speed=115200"`.
-
-The following is an example of
-`/etc/default/grub.d/50-cloudimg-settings.cfg`. You might need to
-change the configuration based on your system setup.
-
-```nohighlight
-
-# Cloud Image specific Grub settings for Generic Cloud Images
-# CLOUD_IMG: This file was created/modified by the Cloud Image build process
-
-# Set the recordfail timeout
-GRUB_RECORDFAIL_TIMEOUT=0
-
-# Do not wait on grub prompt
-GRUB_TIMEOUT=1
-GRUB_TIMEOUT_STYLE=menu
-
-# Set the default commandline
-GRUB_CMDLINE_LINUX_DEFAULT="console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295"
-
-# Set the grub console type
-GRUB_TERMINAL="console serial"
-GRUB_SERIAL_COMMAND="serial --speed 115200"
-```
-
-3. Apply the updated configuration by running the following command.
-
-```nohighlight
-
-[ec2-user ~]$ sudo update-grub
-```
-
-RHEL
-
-###### To configure GRUB on a RHEL instance
-
-1. [Connect](connect-to-linux-instance.md) to your
-    instance.
-
-2. Add or change the following options in
-    `/etc/default/grub`:
-
-- Remove `GRUB_TERMINAL_OUTPUT`.
-
-- Add `GRUB_TERMINAL="console serial"`.
-
-- Add `GRUB_SERIAL_COMMAND="serial --speed=115200"`.
-
-The following is an example of `/etc/default/grub`. You might
-need to change the configuration based on your system setup.
-
-```nohighlight
-
-GRUB_TIMEOUT=1
-GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
-GRUB_DEFAULT=saved
-GRUB_DISABLE_SUBMENU=true
-GRUB_CMDLINE_LINUX="console=tty0 console=ttyS0,115200n8 net.ifnames=0 rd.blacklist=nouveau nvme_core.io_timeout=4294967295 crashkernel=auto"
-GRUB_DISABLE_RECOVERY="true"
-GRUB_ENABLE_BLSCFG=true
-GRUB_TERMINAL="console serial"
-GRUB_SERIAL_COMMAND="serial --speed=115200"
-```
-
-3. Apply the updated configuration by running the following command.
-
-```nohighlight
-
-[ec2-user ~]$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg --update-bls-cmdline
-```
-
-For RHEL 9.2 and earlier, use the following command.
-
-```nohighlight
-
-[ec2-user ~]$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
-```
-
-CentOS
-
-For instances that are launched using a CentOS AMI, GRUB is configured for the
-serial console by default.
-
-The following is an example of `/etc/default/grub`. Your
-configuration might be different based on your system setup.
-
-```nohighlight
-
 GRUB_TIMEOUT=1
 GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
 GRUB_DEFAULT=saved
@@ -252,135 +220,113 @@ GRUB_CMDLINE_LINUX="console=tty0 crashkernel=auto console=ttyS0,115200"
 GRUB_DISABLE_RECOVERY="true"
 ```
 
-To configure SysRq, you enable the SysRq commands for the current boot cycle. To
-make the configuration persistent, you can also enable the SysRq commands for subsequent
-boots.
+------
 
-###### To enable all SysRq commands for the current boot cycle
+### (Linux instances) Configure SysRq
+<a name="configure-sysrq"></a>
 
-1. [Connect](connect-to-linux-instance.md) to your
-    instance.
+To configure SysRq, you enable the SysRq commands for the current boot cycle. To make the configuration persistent, you can also enable the SysRq commands for subsequent boots.
 
-2. Run the following command.
+**To enable all SysRq commands for the current boot cycle**
 
-```nohighlight
+1. [Connect](connect-to-linux-instance.md) to your instance.
 
-[ec2-user ~]$ sudo sysctl -w kernel.sysrq=1
-```
+1. Run the following command.
 
-This setting will clear on the next reboot.
+   ```
+   [ec2-user ~]$ sudo sysctl -w kernel.sysrq=1
+   ```
 
-###### To enable all SysRq commands for subsequent boots
+   This setting will clear on the next reboot.
 
-1. Create the file `/etc/sysctl.d/99-sysrq.conf` and open it in your
-    favorite editor.
+**To enable all SysRq commands for subsequent boots**
 
-```nohighlight
+1. Create the file `/etc/sysctl.d/99-sysrq.conf` and open it in your favorite editor.
 
-[ec2-user ~]$ sudo vi /etc/sysctl.d/99-sysrq.conf
-```
+   ```
+   [ec2-user ~]$ sudo vi /etc/sysctl.d/99-sysrq.conf
+   ```
 
-2. Add the following line.
+1. Add the following line.
 
-```nohighlight
+   ```
+   kernel.sysrq=1
+   ```
 
-kernel.sysrq=1
-```
+1. Reboot the instance to apply the changes.
 
-3. Reboot the instance to apply the changes.
+   ```
+   [ec2-user ~]$ sudo reboot
+   ```
 
-```nohighlight
+1. At the `login` prompt, enter the username of the password-based user that you [set up previously](configure-access-to-serial-console.md#set-user-password), and then press **Enter**.
 
-[ec2-user ~]$ sudo reboot
-```
+1. At the `Password` prompt, enter the password, and then press **Enter**.
 
-4. At the `login` prompt, enter the username of the password-based user
-    that you [set up previously](configure-access-to-serial-console.md#set-user-password), and then press
-    **Enter**.
+### (Windows instances) Enable SAC and the boot menu
+<a name="configure-sac-bootmenu"></a>
 
-5. At the `Password` prompt, enter the password, and then press
-    **Enter**.
+**Note**
+If you enable SAC on an instance, the EC2 services that rely on password retrieval will not work from the Amazon EC2 console. Windows on Amazon EC2 launch agents (EC2Config, EC2Launch v1, and EC2Launch v2) rely on the serial console to execute various tasks. These tasks do not perform successfully when you enable SAC on an instance. For more information about Windows on Amazon EC2 launch agents, see [Configure your Amazon EC2 Windows instance](ec2-windows-instances.md). If you enable SAC, you can disable it later. For more information, see [Disable SAC and the boot menu](troubleshoot-using-serial-console.md#disable-sac-bootmenu).
 
-###### Note
+Use one of the following methods to enable SAC and the boot menu on an instance.
 
-If you enable SAC on an instance, the EC2 services that rely on password retrieval
-will not work from the Amazon EC2 console. Windows on Amazon EC2 launch agents (EC2Config,
-EC2Launch v1, and EC2Launch v2) rely on the serial console to execute various tasks.
-These tasks do not perform successfully when you enable SAC on an instance. For more
-information about Windows on Amazon EC2 launch agents, see [Configure your Amazon EC2 Windows instance](ec2-windows-instances.md). If you enable SAC, you can disable it later. For
-more information, see [Disable SAC and the boot menu](troubleshoot-using-serial-console.md#disable-sac-bootmenu).
+------
+#### [ PowerShell ]
 
-Use one of the following methods to enable SAC and the boot menu on an
-instance.
+**To enable SAC and the boot menu on a Windows instance**
 
-PowerShell
+1. [Connect](connecting_to_windows_instance.md) to your instance and perform the following steps from an elevated PowerShell command line.
 
-###### To enable SAC and the boot menu on a Windows instance
+1. Enable SAC.
 
-1. [Connect](connecting-to-windows-instance.md) to your
-    instance and perform the following steps from an elevated PowerShell command
-    line.
+   ```
+   bcdedit /ems '{current}' on
+   bcdedit /emssettings EMSPORT:1 EMSBAUDRATE:115200
+   ```
 
-2. Enable SAC.
+1. Enable the boot menu.
 
-```nohighlight
+   ```
+   bcdedit /set '{bootmgr}' displaybootmenu yes
+   bcdedit /set '{bootmgr}' timeout 15
+   bcdedit /set '{bootmgr}' bootems yes
+   ```
 
-bcdedit /ems '{current}' on
-bcdedit /emssettings EMSPORT:1 EMSBAUDRATE:115200
-```
+1. Apply the updated configuration by rebooting the instance.
 
-3. Enable the boot menu.
+   ```
+   shutdown -r -t 0
+   ```
 
-```nohighlight
+------
+#### [ Command prompt ]
 
-bcdedit /set '{bootmgr}' displaybootmenu yes
-bcdedit /set '{bootmgr}' timeout 15
-bcdedit /set '{bootmgr}' bootems yes
-```
+**To enable SAC and the boot menu on a Windows instance**
 
-4. Apply the updated configuration by rebooting the instance.
+1. [Connect](connecting_to_windows_instance.md) to your instance and perform the following steps from the command prompt.
 
-```nohighlight
+1. Enable SAC.
 
-shutdown -r -t 0
-```
+   ```
+   bcdedit /ems {current} on
+   bcdedit /emssettings EMSPORT:1 EMSBAUDRATE:115200
+   ```
 
-Command prompt
+1. Enable the boot menu.
 
-###### To enable SAC and the boot menu on a Windows instance
+   ```
+   bcdedit /set {bootmgr} displaybootmenu yes
+   bcdedit /set {bootmgr} timeout 15
+   bcdedit /set {bootmgr} bootems yes
+   ```
 
-1. [Connect](connecting-to-windows-instance.md) to your
-    instance and perform the following steps from the command prompt.
+1. Apply the updated configuration by rebooting the instance.
 
-2. Enable SAC.
+   ```
+   shutdown -r -t 0
+   ```
 
-```nohighlight
-
-bcdedit /ems {current} on
-bcdedit /emssettings EMSPORT:1 EMSBAUDRATE:115200
-```
-
-3. Enable the boot menu.
-
-```nohighlight
-
-bcdedit /set {bootmgr} displaybootmenu yes
-bcdedit /set {bootmgr} timeout 15
-bcdedit /set {bootmgr} bootems yes
-
-```
-
-4. Apply the updated configuration by rebooting the instance.
-
-```nohighlight
-
-shutdown -r -t 0
-```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EC2 Serial Console
-
-Configure access to the EC2 Serial Console
+------
 
 All content copied from https://docs.aws.amazon.com/.

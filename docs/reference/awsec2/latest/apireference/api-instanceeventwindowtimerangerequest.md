@@ -3,65 +3,43 @@ title: "InstanceEventWindowTimeRangeRequest"
 ---
 
 # InstanceEventWindowTimeRangeRequest
+<a name="API_InstanceEventWindowTimeRangeRequest"></a>
 
 The start day and time and the end day and time of the time range, in UTC.
 
 ## Contents
+<a name="API_InstanceEventWindowTimeRangeRequest_Contents"></a>
 
-**EndHour**
-
+ ** EndHour **
 The hour when the time range ends.
-
 Type: Integer
-
 Valid Range: Minimum value of 0. Maximum value of 23.
-
 Required: No
 
-**EndWeekDay**
-
+ ** EndWeekDay **
 The day on which the time range ends.
-
 Type: String
-
 Valid Values: `sunday | monday | tuesday | wednesday | thursday | friday | saturday`
-
 Required: No
 
-**StartHour**
-
+ ** StartHour **
 The hour when the time range begins.
-
 Type: Integer
-
 Valid Range: Minimum value of 0. Maximum value of 23.
-
 Required: No
 
-**StartWeekDay**
-
+ ** StartWeekDay **
 The day on which the time range begins.
-
 Type: String
-
 Valid Values: `sunday | monday | tuesday | wednesday | thursday | friday | saturday`
-
 Required: No
 
 ## See Also
+<a name="API_InstanceEventWindowTimeRangeRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instanceeventwindowtimerangerequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instanceeventwindowtimerangerequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instanceeventwindowtimerangerequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstanceEventWindowTimeRange
-
-InstanceExportDetails
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceEventWindowTimeRangeRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceEventWindowTimeRangeRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceEventWindowTimeRangeRequest)
 
 All content copied from https://docs.aws.amazon.com/.

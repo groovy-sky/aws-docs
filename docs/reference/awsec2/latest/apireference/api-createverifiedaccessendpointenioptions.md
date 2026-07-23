@@ -3,62 +3,41 @@ title: "CreateVerifiedAccessEndpointEniOptions"
 ---
 
 # CreateVerifiedAccessEndpointEniOptions
+<a name="API_CreateVerifiedAccessEndpointEniOptions"></a>
 
-Describes the network interface options when creating an AWS Verified Access endpoint using the
-`network-interface` type.
+Describes the network interface options when creating an AWS Verified Access endpoint using the `network-interface` type.
 
 ## Contents
+<a name="API_CreateVerifiedAccessEndpointEniOptions_Contents"></a>
 
-**NetworkInterfaceId**
-
+ ** NetworkInterfaceId **
 The ID of the network interface.
-
 Type: String
-
 Required: No
 
-**Port**
-
+ ** Port **
 The IP port number.
-
 Type: Integer
-
 Valid Range: Minimum value of 1. Maximum value of 65535.
-
 Required: No
 
-**PortRange.N**
-
+ ** PortRange.N **
 The port ranges.
-
-Type: Array of [CreateVerifiedAccessEndpointPortRange](api-createverifiedaccessendpointportrange.md) objects
-
+Type: Array of [CreateVerifiedAccessEndpointPortRange](API_CreateVerifiedAccessEndpointPortRange.md) objects
 Required: No
 
-**Protocol**
-
+ ** Protocol **
 The IP protocol.
-
 Type: String
-
 Valid Values: `http | https | tcp`
-
 Required: No
 
 ## See Also
+<a name="API_CreateVerifiedAccessEndpointEniOptions_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createverifiedaccessendpointenioptions.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createverifiedaccessendpointenioptions.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createverifiedaccessendpointenioptions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CreateVerifiedAccessEndpointCidrOptions
-
-CreateVerifiedAccessEndpointLoadBalancerOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateVerifiedAccessEndpointEniOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateVerifiedAccessEndpointEniOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateVerifiedAccessEndpointEniOptions)
 
 All content copied from https://docs.aws.amazon.com/.

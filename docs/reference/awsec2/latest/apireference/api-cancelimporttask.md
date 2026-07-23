@@ -3,99 +3,69 @@ title: "CancelImportTask"
 ---
 
 # CancelImportTask
+<a name="API_CancelImportTask"></a>
 
 Cancels an in-process import virtual machine or import snapshot task.
 
 ## Request Parameters
+<a name="API_CancelImportTask_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**CancelReason**
-
+ **CancelReason**
 The reason for canceling the task.
-
 Type: String
-
 Required: No
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
-Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**ImportTaskId**
-
+ **ImportTaskId**
 The ID of the import image or import snapshot task to be canceled.
-
 Type: String
-
 Required: No
 
 ## Response Elements
+<a name="API_CancelImportTask_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**importTaskId**
-
+ **importTaskId**
 The ID of the task being canceled.
-
 Type: String
 
-**previousState**
-
+ **previousState**
 The current state of the task being canceled.
-
 Type: String
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**state**
-
+ **state**
 The current state of the task being canceled.
-
 Type: String
 
 ## Errors
+<a name="API_CancelImportTask_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## See Also
+<a name="API_CancelImportTask_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/cancelimporttask.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/cancelimporttask.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/cancelimporttask.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/cancelimporttask.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/cancelimporttask.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/cancelimporttask.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/cancelimporttask.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/cancelimporttask.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/cancelimporttask.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/cancelimporttask.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CancelImageLaunchPermission
-
-CancelReservedInstancesListing
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/CancelImportTask)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CancelImportTask)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CancelImportTask)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CancelImportTask)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CancelImportTask)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CancelImportTask)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CancelImportTask)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CancelImportTask)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CancelImportTask)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CancelImportTask)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,41 +3,29 @@ title: "VerifiedAccessInstanceOpenVpnClientConfiguration"
 ---
 
 # VerifiedAccessInstanceOpenVpnClientConfiguration
+<a name="API_VerifiedAccessInstanceOpenVpnClientConfiguration"></a>
 
 Describes a set of routes.
 
 ## Contents
+<a name="API_VerifiedAccessInstanceOpenVpnClientConfiguration_Contents"></a>
 
-**config**
-
+ ** config **
 The base64-encoded Open VPN client configuration.
-
 Type: String
-
 Required: No
 
-**RouteSet.N**
-
+ ** RouteSet.N **
 The routes.
-
-Type: Array of [VerifiedAccessInstanceOpenVpnClientConfigurationRoute](api-verifiedaccessinstanceopenvpnclientconfigurationroute.md) objects
-
+Type: Array of [VerifiedAccessInstanceOpenVpnClientConfigurationRoute](API_VerifiedAccessInstanceOpenVpnClientConfigurationRoute.md) objects
 Required: No
 
 ## See Also
+<a name="API_VerifiedAccessInstanceOpenVpnClientConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/verifiedaccessinstanceopenvpnclientconfiguration.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/verifiedaccessinstanceopenvpnclientconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccessinstanceopenvpnclientconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VerifiedAccessInstanceLoggingConfiguration
-
-VerifiedAccessInstanceOpenVpnClientConfigurationRoute
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VerifiedAccessInstanceOpenVpnClientConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VerifiedAccessInstanceOpenVpnClientConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VerifiedAccessInstanceOpenVpnClientConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

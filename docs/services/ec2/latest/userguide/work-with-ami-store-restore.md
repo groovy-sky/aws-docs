@@ -3,64 +3,47 @@ title: "Create a store image task"
 ---
 
 # Create a store image task
+<a name="work-with-ami-store-restore"></a>
 
-When you store an AMI in an S3 bucket, a store image task is created. You can use the
-store image task to monitor the progress and outcome of the process.
+When you store an AMI in an S3 bucket, a store image task is created. You can use the store image task to monitor the progress and outcome of the process.
 
-###### Contents
-
-- [Securing your AMIs](#securing-amis)
-
-- [Permissions for storing and restoring AMIs using S3](#ami-s3-permissions)
-
-- [Create a store image task](#create-store-image-task)
-
-- [Create a restore image task](#create-restore-image-task)
+**Topics**
++ [Securing your AMIs](#securing-amis)
++ [Permissions for storing and restoring AMIs using S3](#ami-s3-permissions)
++ [Create a store image task](#create-store-image-task)
++ [Create a restore image task](#create-restore-image-task)
 
 ## Securing your AMIs
+<a name="securing-amis"></a>
 
-It is important to ensure that the S3 bucket is configured with sufficient security to
-secure the content of the AMI and that the security is maintained for as long as the AMI
-objects remain in the bucket. If this can't be done, use of these APIs is not
-recommended. Ensure that public access to the S3 bucket is not allowed. We recommend
-enabling [Server-side encryption](../../../s3/latest/userguide/serv-side-encryption.md)
-for the S3 buckets in which you store the AMIs, although it’s not required.
+It is important to ensure that the S3 bucket is configured with sufficient security to secure the content of the AMI and that the security is maintained for as long as the AMI objects remain in the bucket. If this can't be done, use of these APIs is not recommended. Ensure that public access to the S3 bucket is not allowed. We recommend enabling [Server-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html) for the S3 buckets in which you store the AMIs, although it’s not required.
 
-For information about how to set the appropriate security settings for your S3
-buckets, review the following security topics:
+For information about how to set the appropriate security settings for your S3 buckets, review the following security topics:
++ [Blocking public access to your Amazon S3 storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html)
++ [Setting default server-side encryption behavior for Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html)
++ [What S3 bucket policy can I use to comply with the AWS Config rule s3-bucket-ssl-requests-only?](https://repost.aws/knowledge-center/s3-bucket-policy-for-config-rule)
++ [Enabling Amazon S3 server access logging](https://docs.aws.amazon.com/AmazonS3/latest/userguide/enable-server-access-logging.html)
 
-- [Blocking public access to your Amazon S3 storage](../../../s3/latest/userguide/access-control-block-public-access.md)
-
-- [Setting default server-side encryption behavior for Amazon S3 buckets](../../../s3/latest/userguide/bucket-encryption.md)
-
-- [What S3 bucket policy can I use to comply with the AWS Config rule s3-bucket-ssl-requests-only?](https://repost.aws/knowledge-center/s3-bucket-policy-for-config-rule)
-
-- [Enabling Amazon S3 server access logging](../../../s3/latest/userguide/enable-server-access-logging.md)
-
-When the AMI snapshots are copied to the S3 object, the data is then copied over TLS
-connections. You can store AMIs with encrypted snapshots, but the snapshots are
-decrypted as part of the store process.
+When the AMI snapshots are copied to the S3 object, the data is then copied over TLS connections. You can store AMIs with encrypted snapshots, but the snapshots are decrypted as part of the store process.
 
 ## Permissions for storing and restoring AMIs using S3
+<a name="ami-s3-permissions"></a>
 
-If your IAM principals will store or restore AMIs using Amazon S3, you need to grant them the
-required permissions.
+If your IAM principals will store or restore AMIs using Amazon S3, you need to grant them the required permissions.
 
-The following example policy includes all of the actions that are required to allow an IAM
-principal to carry out the store and restore tasks.
+The following example policy includes all of the actions that are required to allow an IAM principal to carry out the store and restore tasks.
 
-You can also create IAM policies that grant principals access to specific resources only.
-For more example policies, see [Access management for AWS resources](../../../iam/latest/userguide/access.md) in the _IAM User Guide_.
+You can also create IAM policies that grant principals access to specific resources only. For more example policies, see [ Access management for AWS resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html) in the *IAM User Guide*.
 
-###### Note
+**Note**
+If the snapshots that make up the AMI are encrypted, or if your account is enabled for encryption by default, your IAM principal must have permission to use the KMS key.
 
-If the snapshots that make up the AMI are encrypted, or if your account is enabled for
-encryption by default, your IAM principal must have permission to use the KMS key.
+------
+#### [ JSON ]
 
-JSON
+****
 
-```json
-
+```
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -90,148 +73,129 @@ JSON
         }
     ]
 }
-
 ```
 
+------
+
 ## Create a store image task
+<a name="create-store-image-task"></a>
 
-To store an AMI in an S3 bucket, start by creating a store image task. The time it takes
-to complete the task depends on the size of the AMI. You can track the progress of the task
-until it either succeeds or fails.
+To store an AMI in an S3 bucket, start by creating a store image task. The time it takes to complete the task depends on the size of the AMI. You can track the progress of the task until it either succeeds or fails.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To create the store image task
+**To create the store image task**
+Use the [create-store-image-task](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-store-image-task.html) command.
 
-Use the [create-store-image-task](../../../cli/latest/reference/ec2/create-store-image-task.md) command.
-
-```nohighlight
-
+```
 aws ec2 create-store-image-task \
-    --image-id ami-0abcdef1234567890 \
-    --bucket amzn-s3-demo-bucket
+    --image-id {{ami-0abcdef1234567890}} \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 
 The following is example output.
 
-```json
-
+```
 {
   "ObjectKey": "ami-0abcdef1234567890.bin"
 }
 ```
 
-###### To describe the progress of the store image task
+**To describe the progress of the store image task**
+Use the [describe-store-image-tasks](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-store-image-tasks.html) command.
 
-Use the [describe-store-image-tasks](../../../cli/latest/reference/ec2/describe-store-image-tasks.md) command.
-
-```nohighlight
-
+```
 aws ec2 describe-store-image-tasks \
-    --image-ids ami-0abcdef1234567890 \
+    --image-ids{{ ami-0abcdef1234567890}} \
     --query StoreImageTaskResults[].StoreTaskState \
     --output text
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 InProgress
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To create the store image task
+**To create the store image task**
+Use the [New-EC2StoreImageTask](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2StoreImageTask.html) cmdlet.
 
-Use the [New-EC2StoreImageTask](../../../powershell/latest/reference/items/new-ec2storeimagetask.md)
-cmdlet.
-
-```powershell
-
+```
 New-EC2StoreImageTask `
-    -ImageId ami-0abcdef1234567890 `
-    -Bucket amzn-s3-demo-bucket
+    -ImageId {{ami-0abcdef1234567890}} `
+    -Bucket {{amzn-s3-demo-bucket}}
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 ObjectKey         : ami-0abcdef1234567890.bin
 ```
 
-###### To describe the progress of the store image task
+**To describe the progress of the store image task**
+Use the [Get-EC2StoreImageTask](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2StoreImageTask.html) cmdlet.
 
-Use the [Get-EC2StoreImageTask](../../../powershell/latest/reference/items/get-ec2storeimagetask.md)
-cmdlet.
-
-```powershell
-
-(Get-EC2StoreImageTask -ImageId ami-0abcdef1234567890).StoreTaskState
+```
+(Get-EC2StoreImageTask -ImageId {{ami-0abcdef1234567890}}).StoreTaskState
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 InProgress
 ```
 
+------
+
 ## Create a restore image task
+<a name="create-restore-image-task"></a>
 
-You must specify a name for the restored AMI. The name must be unique for
-AMIs in the Region for this account. The restored AMI gets a new AMI ID.
+You must specify a name for the restored AMI. The name must be unique for AMIs in the Region for this account. The restored AMI gets a new AMI ID.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To create a restore image task
+**To create a restore image task**
+Use the [create-restore-image-task](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-restore-image-task.html) command.
 
-Use the [create-restore-image-task](../../../cli/latest/reference/ec2/create-restore-image-task.md) command.
-
-```nohighlight
-
+```
 aws ec2 create-restore-image-task \
-    --object-key ami-0abcdef1234567890.bin \
-    --bucket amzn-s3-demo-bucket \
-    --name "my-restored-ami"
+    --object-key {{ami-0abcdef1234567890}}.bin \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --name "{{my-restored-ami}}"
 ```
 
 The following is example output.
 
-```json
-
+```
 {
    "ImageId": "ami-1234567890abcdef0"
 }
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To create a restore image task
+**To create a restore image task**
+Use the [New-EC2RestoreImageTask](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2RestoreImageTask.html) cmdlet.
 
-Use the [New-EC2RestoreImageTask](../../../powershell/latest/reference/items/new-ec2restoreimagetask.md)
-cmdlet.
-
-```powershell
-
+```
 New-EC2RestoreImageTask `
-    -ObjectKey ami-0abcdef1234567890.bin `
-    -Bucket amzn-s3-demo-bucket `
-    -Name "my-restored-ami"
+    -ObjectKey {{ami-0abcdef1234567890}}.bin `
+    -Bucket {{amzn-s3-demo-bucket}} `
+    -Name "{{my-restored-ami}}"
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 ImageId         : ami-1234567890abcdef0
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-How AMI store and restore works
-
-AMI ancestry
+------
 
 All content copied from https://docs.aws.amazon.com/.

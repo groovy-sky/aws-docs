@@ -3,96 +3,61 @@ title: "Purchase"
 ---
 
 # Purchase
+<a name="API_Purchase"></a>
 
 Describes the result of the purchase.
 
 ## Contents
+<a name="API_Purchase_Contents"></a>
 
-**currencyCode**
-
-The currency in which the `UpfrontPrice` and `HourlyPrice`
-amounts are specified. At this time, the only supported currency is
-`USD`.
-
+ ** currencyCode **
+The currency in which the `UpfrontPrice` and `HourlyPrice` amounts are specified. At this time, the only supported currency is `USD`.
 Type: String
-
 Valid Values: `USD`
-
 Required: No
 
-**duration**
-
+ ** duration **
 The duration of the reservation's term in seconds.
-
 Type: Integer
-
 Required: No
 
-**HostIdSet.N**
-
+ ** HostIdSet.N **
 The IDs of the Dedicated Hosts associated with the reservation.
-
 Type: Array of strings
-
 Required: No
 
-**hostReservationId**
-
+ ** hostReservationId **
 The ID of the reservation.
-
 Type: String
-
 Required: No
 
-**hourlyPrice**
-
+ ** hourlyPrice **
 The hourly price of the reservation per hour.
-
 Type: String
-
 Required: No
 
-**instanceFamily**
-
-The instance family on the Dedicated Host that the reservation can be associated
-with.
-
+ ** instanceFamily **
+The instance family on the Dedicated Host that the reservation can be associated with.
 Type: String
-
 Required: No
 
-**paymentOption**
-
+ ** paymentOption **
 The payment option for the reservation.
-
 Type: String
-
 Valid Values: `AllUpfront | PartialUpfront | NoUpfront`
-
 Required: No
 
-**upfrontPrice**
-
+ ** upfrontPrice **
 The upfront price of the reservation.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_Purchase_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/purchase.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/purchase.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/purchase.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PublicIpv4PoolRange
-
-PurchaseRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Purchase)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Purchase)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Purchase)
 
 All content copied from https://docs.aws.amazon.com/.

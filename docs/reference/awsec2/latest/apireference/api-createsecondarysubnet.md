@@ -3,6 +3,7 @@ title: "CreateSecondarySubnet"
 ---
 
 # CreateSecondarySubnet
+<a name="API_CreateSecondarySubnet"></a>
 
 Creates a secondary subnet in a secondary network.
 
@@ -11,101 +12,79 @@ A secondary subnet CIDR block must not overlap with the CIDR block of an existin
 The allowed size for a secondary subnet CIDR block is between /28 netmask (16 IP addresses) and /12 netmask (1,048,576 IP addresses). Amazon reserves the first four IP addresses and the last IP address in each secondary subnet for internal use.
 
 ## Request Parameters
+<a name="API_CreateSecondarySubnet_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**AvailabilityZone**
-
+ **AvailabilityZone**
 The Availability Zone for the secondary subnet. You cannot specify both `AvailabilityZone` and `AvailabilityZoneId` in the same request.
-
 Type: String
-
 Required: No
 
-**AvailabilityZoneId**
-
+ **AvailabilityZoneId**
 The ID of the Availability Zone for the secondary subnet. This option is preferred over `AvailabilityZone` as it provides a consistent identifier across AWS accounts. You cannot specify both `AvailabilityZone` and `AvailabilityZoneId` in the same request.
-
 Type: String
-
 Required: No
 
-**ClientToken**
-
-Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensure Idempotency](../../../../services/ec2/latest/devguide/ec2-api-idempotency.md).
-
+ **ClientToken**
+Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensure Idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
 Type: String
-
 Required: No
 
-**DryRun**
-
+ **DryRun**
 Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
-
 Type: Boolean
-
 Required: No
 
-**Ipv4CidrBlock**
-
+ **Ipv4CidrBlock**
 The IPv4 CIDR block for the secondary subnet. The CIDR block size must be between /12 and /28.
-
 Type: String
-
 Required: Yes
 
-**SecondaryNetworkId**
-
+ **SecondaryNetworkId**
 The ID of the secondary network in which to create the secondary subnet.
-
 Type: String
-
 Required: Yes
 
-**TagSpecification.N**
-
+ **TagSpecification.N**
 The tags to assign to the secondary subnet.
-
-Type: Array of [TagSpecification](api-tagspecification.md) objects
-
+Type: Array of [TagSpecification](API_TagSpecification.md) objects
 Required: No
 
 ## Response Elements
+<a name="API_CreateSecondarySubnet_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**clientToken**
-
+ **clientToken**
 Unique, case-sensitive identifier to ensure the idempotency of the request. Only returned if a client token was provided in the request.
-
 Type: String
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**secondarySubnet**
-
+ **secondarySubnet**
 Information about the secondary subnet.
-
-Type: [SecondarySubnet](api-secondarysubnet.md) object
+Type: [SecondarySubnet](API_SecondarySubnet.md) object
 
 ## Errors
+<a name="API_CreateSecondarySubnet_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_CreateSecondarySubnet_Examples"></a>
 
 ### Example
+<a name="API_CreateSecondarySubnet_Example_1"></a>
 
 This example creates a secondary subnet with a /24 CIDR block in the specified secondary network and Availability Zone.
 
 #### Sample Request
+<a name="API_CreateSecondarySubnet_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=CreateSecondarySubnet
    &SecondaryNetworkId=sn-0123456789abcdef0
    &Ipv4CidrBlock=10.0.0.0/24
@@ -120,9 +99,9 @@ https://ec2.amazonaws.com/?Action=CreateSecondarySubnet
 ```
 
 #### Sample Response
+<a name="API_CreateSecondarySubnet_Example_1_Response"></a>
 
 ```
-
 <CreateSecondarySubnetResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
    <requestId>59dbff89-35bd-4eac-99ed-be587EXAMPLE</requestId>
    <secondarySubnet>
@@ -157,33 +136,18 @@ https://ec2.amazonaws.com/?Action=CreateSecondarySubnet
 ```
 
 ## See Also
+<a name="API_CreateSecondarySubnet_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/createsecondarysubnet.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/createsecondarysubnet.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createsecondarysubnet.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createsecondarysubnet.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createsecondarysubnet.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createsecondarysubnet.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createsecondarysubnet.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createsecondarysubnet.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/createsecondarysubnet.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createsecondarysubnet.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CreateSecondaryNetwork
-
-CreateSecurityGroup
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/CreateSecondarySubnet)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateSecondarySubnet)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateSecondarySubnet)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateSecondarySubnet)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateSecondarySubnet)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateSecondarySubnet)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateSecondarySubnet)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateSecondarySubnet)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateSecondarySubnet)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateSecondarySubnet)
 
 All content copied from https://docs.aws.amazon.com/.

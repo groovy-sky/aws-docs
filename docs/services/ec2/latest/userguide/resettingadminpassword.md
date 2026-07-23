@@ -3,50 +3,26 @@ title: "Reset the Windows administrator password for an Amazon EC2 Windows insta
 ---
 
 # Reset the Windows administrator password for an Amazon EC2 Windows instance
+<a name="ResettingAdminPassword"></a>
 
-If you are no longer able to connect to your Amazon EC2 Windows instance because the Windows
-administrator password is lost or expired, you can reset the password.
+If you are no longer able to connect to your Amazon EC2 Windows instance because the Windows administrator password is lost or expired, you can reset the password.
 
-###### Note
-
-There is an AWS Systems Manager Automation document that automatically applies the manual steps
-necessary to reset the local administrator password. For more information, see [Reset passwords and SSH keys on EC2 instances](../../../systems-manager/latest/userguide/automation-ec2reset.md)
-in the _AWS Systems Manager User Guide_.
+**Note**
+There is an AWS Systems Manager Automation document that automatically applies the manual steps necessary to reset the local administrator password. For more information, see [Reset passwords and SSH keys on EC2 instances](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset.html) in the *AWS Systems Manager User Guide*.
 
 The manual methods to reset the administrator password use EC2Launch v2, EC2Config, or EC2Launch.
++ For all supported Windows AMIs that include the EC2Launch v2 agent, use EC2Launch v2.
++ For Windows AMIs before Windows Server 2016, use the EC2Config service.
++ For Windows Server 2016 and later AMIs, use the EC2Launch service.
 
-- For all supported Windows AMIs that include the EC2Launch v2 agent, use
-EC2Launch v2.
+These procedures also describe how to connect to an instance if you lost the key pair that was used to create the instance. Amazon EC2 uses a public key to encrypt a piece of data, such as a password, and a private key to decrypt the data. The public and private keys are known as a *key pair*. With Windows instances, you use a key pair to obtain the administrator password and then log in using RDP.
 
-- For Windows AMIs before Windows Server 2016, use the EC2Config service.
+**Note**
+If you have disabled the local administrator account on the instance and your instance is configured for Systems Manager, you can also re-enable and reset your local administrator password by using EC2Rescue and Run Command. For more information, see [Use EC2Rescue for Windows Server with Systems Manager Run Command](ec2rw-ssm.md).
 
-- For Windows Server 2016 and later AMIs, use the EC2Launch service.
-
-These procedures also describe how to connect to an instance if you lost the key pair that
-was used to create the instance. Amazon EC2 uses a public key to encrypt a piece of data, such as
-a password, and a private key to decrypt the data. The public and private keys are known as
-a _key pair_. With Windows instances, you use a key pair to obtain the
-administrator password and then log in using RDP.
-
-###### Note
-
-If you have disabled the local administrator account on the instance and your instance
-is configured for Systems Manager, you can also re-enable and reset your local administrator
-password by using EC2Rescue and Run Command. For more information, see [Use EC2Rescue for Windows Server with\
-Systems Manager Run Command](ec2rw-ssm.md).
-
-###### Contents
-
-- [Reset Windows admin password for EC2 instance using EC2Launch v2](resettingadminpassword-ec2launchv2.md)
-
-- [Reset Windows admin password for EC2 instance using EC2Launch](resettingadminpassword-ec2launch.md)
-
-- [Reset Windows admin password for EC2 instance using EC2Config](resettingadminpassword-ec2config.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Windows instance issues
-
-Reset password using EC2Launch v2
+**Topics**
++ [Reset Windows admin password for EC2 instance using EC2Launch v2](ResettingAdminPassword_EC2Launchv2.md)
++ [Reset Windows admin password for EC2 instance using EC2Launch](ResettingAdminPassword_EC2Launch.md)
++ [Reset Windows admin password for EC2 instance using EC2Config](ResettingAdminPassword_EC2Config.md)
 
 All content copied from https://docs.aws.amazon.com/.

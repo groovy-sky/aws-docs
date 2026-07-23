@@ -3,61 +3,43 @@ title: "Maximum IP addresses per network interface"
 ---
 
 # Maximum IP addresses per network interface
+<a name="AvailableIpPerENI"></a>
 
-Each instance type supports a maximum number of network interfaces, maximum number of private IPv4
-addresses per network interface, and maximum number of IPv6 addresses per network interface.
-The limit for IPv6 addresses is separate from the limit for private IPv4 addresses per
-network interface. Note that all instance types support IPv6 addressing except for the
-following: C1, M1, M2, M3, and T1.
+Each instance type supports a maximum number of network interfaces, maximum number of private IPv4 addresses per network interface, and maximum number of IPv6 addresses per network interface. The limit for IPv6 addresses is separate from the limit for private IPv4 addresses per network interface. Note that all instance types support IPv6 addressing except for the following: C1, M1, M2, M3, and T1.
 
-###### Available network interfaces
+**Available network interfaces**
 
-The _Amazon EC2 Instance Types Guide_ provides the information about the network interfaces
-available for each instance type. For more information, see the following:
+The *Amazon EC2 Instance Types Guide* provides the information about the network interfaces available for each instance type. For more information, see the following:
++ [Network specifications – General purpose](https://docs.aws.amazon.com/ec2/latest/instancetypes/gp.html#gp_network)
++ [Network specifications – Compute optimized](https://docs.aws.amazon.com/ec2/latest/instancetypes/co.html#co_network)
++ [Network specifications – Memory optimized](https://docs.aws.amazon.com/ec2/latest/instancetypes/mo.html#mo_network)
++ [Network specifications – Storage optimized](https://docs.aws.amazon.com/ec2/latest/instancetypes/so.html#so_network)
++ [Network specifications – Accelerated computing](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html#ac_network)
++ [Network specifications – High-performance computing](https://docs.aws.amazon.com/ec2/latest/instancetypes/hpc.html#hpc_network)
++ [Network specifications – Previous generation](https://docs.aws.amazon.com/ec2/latest/instancetypes/pg.html#pg_network)
 
-- [Network specifications – General purpose](../instancetypes/gp.md#gp_network)
+------
+#### [ Console ]
 
-- [Network specifications – Compute optimized](../instancetypes/co.md#co_network)
+**To retrieve the maximum network interfaces**
 
-- [Network specifications – Memory optimized](../instancetypes/mo.md#mo_network)
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-- [Network specifications – Storage optimized](../instancetypes/so.md#so_network)
+1. In the navigation pane, choose **Instance Types**.
 
-- [Network specifications – Accelerated computing](../instancetypes/ac.md#ac_network)
+1. Add a filter to specify the instance type (**Instance type=c5.12xlarge**) or instance family (**Instance family=c5**).
 
-- [Network specifications – High-performance computing](../instancetypes/hpc.md#hpc_network)
+1. (Optional) Click the **Preferences** icon and then turn on **Maximum number of network interfaces**. This column indicates the maximum number of network interfaces for each instance type.
 
-- [Network specifications – Previous generation](../instancetypes/pg.md#pg_network)
+1. (Optional) Select the instance type. On the **Networking** tab, find **Maximum number of network interfaces**.
 
-Console
+------
+#### [ AWS CLI ]
 
-###### To retrieve the maximum network interfaces
+**To retrieve the maximum network interfaces**
+You can use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command to display information about an instance type, such as its supported network interfaces and IP addresses per interface. The following example displays this information for all C8i instances.
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
-
-2. In the navigation pane, choose **Instance Types**.
-
-3. Add a filter to specify the instance type ( **Instance type=c5.12xlarge**)
-    or instance family ( **Instance family=c5**).
-
-4. (Optional) Click the **Preferences** icon and then turn on
-    **Maximum number of network interfaces**. This column indicates
-    the maximum number of network interfaces for each instance type.
-
-5. (Optional) Select the instance type. On the **Networking**
-    tab, find **Maximum number of network interfaces**.
-
-AWS CLI
-
-###### To retrieve the maximum network interfaces
-
-You can use the [describe-instance-types](../../../cli/latest/reference/ec2/describe-instance-types.md) command to display information about an
-instance type, such as its supported network interfaces and IP addresses per interface.
-The following example displays this information for all C8i instances.
-
-```nohighlight
-
+```
 { echo -e "InstanceType\tMaximumNetworkInterfaces\tIpv4AddressesPerInterface"; \
 aws ec2 describe-instance-types \
     --filters "Name=instance-type,Values=c8i.*" \
@@ -67,8 +49,7 @@ aws ec2 describe-instance-types \
 
 The following is example output.
 
-```nohighlight
-
+```
 InstanceType    MaximumNetworkInterfaces  Ipv4AddressesPerInterface
 c8i.large       3                         20
 c8i.2xlarge     4                         30
@@ -85,16 +66,13 @@ c8i.metal-48xl  24                        64
 c8i.metal-96xl  24                        64
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To retrieve the maximum network interfaces
+**To retrieve the maximum network interfaces**
+You can use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) PowerShell command to display information about an instance type, such as its supported network interfaces and IP addresses per interface. The following example displays this information for all C8i instances.
 
-You can use the [Get-EC2InstanceType](../../../powershell/latest/reference/items/get-ec2instancetype.md) PowerShell command to display information about an
-instance type, such as its supported network interfaces and IP addresses per interface.
-The following example displays this information for all C8i instances.
-
-```powershell
-
+```
 Get-EC2InstanceType -Filter @{Name="instance-type"; Values="c8i.*"} |
 Select-Object `
     InstanceType,
@@ -106,8 +84,7 @@ Format-Table -AutoSize
 
 The following is example output.
 
-```nohighlight
-
+```
 InstanceType   MaximumNetworkInterfaces Ipv4AddressesPerInterface
 ------------   ------------------------ -------------------------
 c8i.large                             3                        20
@@ -125,10 +102,6 @@ c8i.32xlarge                         24                        64
 c8i.metal-48xl                       24                        64
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Network interfaces
-
-Create a network interface
+------
 
 All content copied from https://docs.aws.amazon.com/.

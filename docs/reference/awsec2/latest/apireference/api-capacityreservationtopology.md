@@ -3,102 +3,62 @@ title: "CapacityReservationTopology"
 ---
 
 # CapacityReservationTopology
+<a name="API_CapacityReservationTopology"></a>
 
 Information about the Capacity Reservation topology.
 
 ## Contents
+<a name="API_CapacityReservationTopology_Contents"></a>
 
-**availabilityZone**
-
-The name of the Availability Zone or Local Zone that the Capacity Reservation is
-in.
-
+ ** availabilityZone **
+The name of the Availability Zone or Local Zone that the Capacity Reservation is in.
 Type: String
-
 Required: No
 
-**availabilityZoneId**
-
-The ID of the Availability Zone or Local Zone that the Capacity Reservation is
-in.
-
+ ** availabilityZoneId **
+The ID of the Availability Zone or Local Zone that the Capacity Reservation is in.
 Type: String
-
 Required: No
 
-**capacityBlockId**
-
-The ID of the Capacity Block. This parameter is only supported for UltraServer
-instances and identifies instances within the UltraServer domain.
-
+ ** capacityBlockId **
+The ID of the Capacity Block. This parameter is only supported for UltraServer instances and identifies instances within the UltraServer domain.
 Type: String
-
 Required: No
 
-**capacityReservationId**
-
+ ** capacityReservationId **
 The ID of the Capacity Reservation.
-
 Type: String
-
 Required: No
 
-**groupName**
-
+ ** groupName **
 The name of the placement group that the Capacity Reservation is in.
-
 Type: String
-
 Required: No
 
-**instanceType**
-
+ ** instanceType **
 The instance type.
-
 Type: String
-
 Required: No
 
-**NetworkNodeSet.N**
-
-The network nodes. The nodes are hashed based on your account. Capacity Reservations
-from different accounts running under the same server will return a different hashed
-list of strings.
-
+ ** NetworkNodeSet.N **
+The network nodes. The nodes are hashed based on your account. Capacity Reservations from different accounts running under the same server will return a different hashed list of strings.
 The value is `null` or empty if:
-
-- The instance type is not supported.
-
-- The Capacity Reservation is in a state other than `active` or
-`pending`.
-
++ The instance type is not supported.
++ The Capacity Reservation is in a state other than `active` or `pending`.
 Type: Array of strings
-
 Required: No
 
-**state**
-
-The current state of the Capacity Reservation. For the list of possible states, see
-[DescribeCapacityReservations](api-describecapacityreservations.md).
-
+ ** state **
+The current state of the Capacity Reservation. For the list of possible states, see [DescribeCapacityReservations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCapacityReservations.html).
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_CapacityReservationTopology_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/capacityreservationtopology.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/capacityreservationtopology.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/capacityreservationtopology.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CapacityReservationTargetResponse
-
-CarrierGateway
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CapacityReservationTopology)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CapacityReservationTopology)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CapacityReservationTopology)
 
 All content copied from https://docs.aws.amazon.com/.

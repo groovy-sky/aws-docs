@@ -3,93 +3,73 @@ title: "CreateNetworkInterfacePermission"
 ---
 
 # CreateNetworkInterfacePermission
+<a name="API_CreateNetworkInterfacePermission"></a>
 
-Grants an AWS-authorized account permission to attach the specified
-network interface to an instance in their account.
+Grants an AWS-authorized account permission to attach the specified network interface to an instance in their account.
 
-You can grant permission to a single AWS account only, and only one
-account at a time.
+You can grant permission to a single AWS account only, and only one account at a time.
 
 ## Request Parameters
+<a name="API_CreateNetworkInterfacePermission_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**AwsAccountId**
-
+ **AwsAccountId**
 The AWS account ID.
-
 Type: String
-
 Required: No
 
-**AwsService**
-
+ **AwsService**
 The AWS service. Currently not supported.
-
 Type: String
-
 Required: No
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually
-making the request, and provides an error response. If you have the required
-permissions, the error response is `DryRunOperation`. Otherwise, it is
-`UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**NetworkInterfaceId**
-
+ **NetworkInterfaceId**
 The ID of the network interface.
-
 Type: String
-
 Required: Yes
 
-**Permission**
-
+ **Permission**
 The type of permission to grant.
-
 Type: String
-
 Valid Values: `INSTANCE-ATTACH | EIP-ASSOCIATE`
-
 Required: Yes
 
 ## Response Elements
+<a name="API_CreateNetworkInterfacePermission_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**interfacePermission**
-
+ **interfacePermission**
 Information about the permission for the network interface.
+Type: [NetworkInterfacePermission](API_NetworkInterfacePermission.md) object
 
-Type: [NetworkInterfacePermission](api-networkinterfacepermission.md) object
-
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
 ## Errors
+<a name="API_CreateNetworkInterfacePermission_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_CreateNetworkInterfacePermission_Examples"></a>
 
 ### Example 1
+<a name="API_CreateNetworkInterfacePermission_Example_1"></a>
 
-This example grants permission to account `123456789012` to attach
-network interface `eni-1a2b3c4d` to an instance.
+This example grants permission to account `123456789012` to attach network interface `eni-1a2b3c4d` to an instance.
 
 #### Sample Request
+<a name="API_CreateNetworkInterfacePermission_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=CreateNetworkInterfacePermission
 &NetworkInterfaceId=eni-1a2b3c4d
 &AwsAccountId=123456789012
@@ -98,9 +78,9 @@ https://ec2.amazonaws.com/?Action=CreateNetworkInterfacePermission
 ```
 
 #### Sample Response
+<a name="API_CreateNetworkInterfacePermission_Example_1_Response"></a>
 
 ```
-
 <CreateNetworkInterfacePermissionResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
     <requestId>e9633d41-093e-4944-981b-ca7example</requestId>
     <interfacePermission>
@@ -116,33 +96,18 @@ https://ec2.amazonaws.com/?Action=CreateNetworkInterfacePermission
 ```
 
 ## See Also
+<a name="API_CreateNetworkInterfacePermission_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/createnetworkinterfacepermission.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/createnetworkinterfacepermission.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createnetworkinterfacepermission.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createnetworkinterfacepermission.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createnetworkinterfacepermission.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createnetworkinterfacepermission.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createnetworkinterfacepermission.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createnetworkinterfacepermission.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/createnetworkinterfacepermission.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createnetworkinterfacepermission.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CreateNetworkInterface
-
-CreatePlacementGroup
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/CreateNetworkInterfacePermission)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateNetworkInterfacePermission)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateNetworkInterfacePermission)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateNetworkInterfacePermission)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateNetworkInterfacePermission)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateNetworkInterfacePermission)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateNetworkInterfacePermission)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateNetworkInterfacePermission)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateNetworkInterfacePermission)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateNetworkInterfacePermission)
 
 All content copied from https://docs.aws.amazon.com/.

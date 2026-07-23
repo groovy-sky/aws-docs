@@ -3,36 +3,18 @@ title: "Performance acceleration with GPU instances"
 ---
 
 # Performance acceleration with GPU instances
+<a name="configure-gpu-instances"></a>
 
-GPU-based instances provide access to NVIDIA GPUs with thousands of compute cores. You
-can use these instances to accelerate scientific, engineering, and rendering
-applications by leveraging the CUDA or Open Computing Language (OpenCL) parallel
-computing frameworks. You can also use them for graphics applications, including game
-streaming, 3-D application streaming, and other graphics workloads.
+GPU-based instances provide access to NVIDIA GPUs with thousands of compute cores. You can use these instances to accelerate scientific, engineering, and rendering applications by leveraging the CUDA or Open Computing Language (OpenCL) parallel computing frameworks. You can also use them for graphics applications, including game streaming, 3-D application streaming, and other graphics workloads.
 
-Before you can activate or optimize a GPU-based instance, you must install the
-appropriate drivers, as follows:
+Before you can activate or optimize a GPU-based instance, you must install the appropriate drivers, as follows:
++ To install NVIDIA drivers on an instance with an attached NVIDIA GPU, such as a P3 or G4dn instance, see [NVIDIA drivers](install-nvidia-driver.md).
++ To install AMD drivers on an instance with an attached AMD GPU, such as a G4ad instance, see [AMD drivers](install-amd-driver.md).
 
-- To install NVIDIA drivers on an instance with an attached NVIDIA GPU, such as
-a P3 or G4dn instance, see [NVIDIA drivers](install-nvidia-driver.md).
-
-- To install AMD drivers on an instance with an attached AMD GPU, such as a G4ad
-instance, see [AMD drivers](install-amd-driver.md).
-
-###### Contents
-
-- [Activate NVIDIA GRID Virtual Applications](activate-grid.md)
-
-- [Optimize GPU settings](optimize-gpu.md)
-
-- [Set up dual 4K displays on G4ad](activate-g4ad-4k.md)
-
-- [Get started with GPU accelerated instances](gpu-instances-started.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Monitor your CPU credits
-
-Activate NVIDIA GRID Virtual Applications
+**Topics**
++ [Activate NVIDIA GRID Virtual Applications](activate_grid.md)
++ [Optimize GPU settings](optimize_gpu.md)
++ [Set up dual 4K displays on G4ad](activate_g4ad_4k.md)
++ [Get started with GPU accelerated instances](gpu-instances-started.md)
 
 All content copied from https://docs.aws.amazon.com/.

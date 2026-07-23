@@ -3,33 +3,24 @@ title: "AvailabilityZoneGeography"
 ---
 
 # AvailabilityZoneGeography
+<a name="API_AvailabilityZoneGeography"></a>
 
 Describes the geography information for an Availability Zone or Local Zone.
 
 ## Contents
+<a name="API_AvailabilityZoneGeography_Contents"></a>
 
-**name**
-
+ ** name **
 The name of the geography, for example, `United States of America`.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_AvailabilityZoneGeography_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/availabilityzonegeography.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/availabilityzonegeography.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/availabilityzonegeography.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AvailabilityZoneAddress
-
-AvailabilityZoneMessage
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AvailabilityZoneGeography)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AvailabilityZoneGeography)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AvailabilityZoneGeography)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,41 +3,29 @@ title: "PrefixListEntry"
 ---
 
 # PrefixListEntry
+<a name="API_PrefixListEntry"></a>
 
 Describes a prefix list entry.
 
 ## Contents
+<a name="API_PrefixListEntry_Contents"></a>
 
-**cidr**
-
+ ** cidr **
 The CIDR block.
-
 Type: String
-
 Required: No
 
-**description**
-
+ ** description **
 The description.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_PrefixListEntry_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/prefixlistentry.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/prefixlistentry.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/prefixlistentry.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PrefixListAssociation
-
-PrefixListId
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/PrefixListEntry)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/PrefixListEntry)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/PrefixListEntry)
 
 All content copied from https://docs.aws.amazon.com/.

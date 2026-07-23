@@ -3,45 +3,31 @@ title: "FilterPortRange"
 ---
 
 # FilterPortRange
+<a name="API_FilterPortRange"></a>
 
 Describes a port range.
 
 ## Contents
+<a name="API_FilterPortRange_Contents"></a>
 
-**fromPort**
-
+ ** fromPort **
 The first port in the range.
-
 Type: Integer
-
 Valid Range: Minimum value of 0. Maximum value of 65535.
-
 Required: No
 
-**toPort**
-
+ ** toPort **
 The last port in the range.
-
 Type: Integer
-
 Valid Range: Minimum value of 0. Maximum value of 65535.
-
 Required: No
 
 ## See Also
+<a name="API_FilterPortRange_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/filterportrange.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/filterportrange.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/filterportrange.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Filter
-
-FirewallStatefulRule
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/FilterPortRange)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/FilterPortRange)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/FilterPortRange)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,73 +3,49 @@ title: "AnalysisAclRule"
 ---
 
 # AnalysisAclRule
+<a name="API_AnalysisAclRule"></a>
 
 Describes a network access control (ACL) rule.
 
 ## Contents
+<a name="API_AnalysisAclRule_Contents"></a>
 
-**cidr**
-
+ ** cidr **
 The IPv4 address range, in CIDR notation.
-
 Type: String
-
 Required: No
 
-**egress**
-
+ ** egress **
 Indicates whether the rule is an outbound rule.
-
 Type: Boolean
-
 Required: No
 
-**portRange**
-
+ ** portRange **
 The range of ports.
-
-Type: [PortRange](api-portrange.md) object
-
+Type: [PortRange](API_PortRange.md) object
 Required: No
 
-**protocol**
-
+ ** protocol **
 The protocol.
-
 Type: String
-
 Required: No
 
-**ruleAction**
-
+ ** ruleAction **
 Indicates whether to allow or deny traffic that matches the rule.
-
 Type: String
-
 Required: No
 
-**ruleNumber**
-
+ ** ruleNumber **
 The rule number.
-
 Type: Integer
-
 Required: No
 
 ## See Also
+<a name="API_AnalysisAclRule_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/analysisaclrule.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/analysisaclrule.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/analysisaclrule.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AlternatePathHint
-
-AnalysisComponent
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AnalysisAclRule)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AnalysisAclRule)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AnalysisAclRule)
 
 All content copied from https://docs.aws.amazon.com/.

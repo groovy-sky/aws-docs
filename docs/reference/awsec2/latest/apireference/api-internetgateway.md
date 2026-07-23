@@ -3,57 +3,39 @@ title: "InternetGateway"
 ---
 
 # InternetGateway
+<a name="API_InternetGateway"></a>
 
 Describes an internet gateway.
 
 ## Contents
+<a name="API_InternetGateway_Contents"></a>
 
-**AttachmentSet.N**
-
+ ** AttachmentSet.N **
 Any VPCs attached to the internet gateway.
-
-Type: Array of [InternetGatewayAttachment](api-internetgatewayattachment.md) objects
-
+Type: Array of [InternetGatewayAttachment](API_InternetGatewayAttachment.md) objects
 Required: No
 
-**internetGatewayId**
-
+ ** internetGatewayId **
 The ID of the internet gateway.
-
 Type: String
-
 Required: No
 
-**ownerId**
-
+ ** ownerId **
 The ID of the AWS account that owns the internet gateway.
-
 Type: String
-
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 Any tags assigned to the internet gateway.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
 ## See Also
+<a name="API_InternetGateway_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/internetgateway.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/internetgateway.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/internetgateway.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IntegrateServices
-
-InternetGatewayAttachment
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InternetGateway)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InternetGateway)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InternetGateway)
 
 All content copied from https://docs.aws.amazon.com/.

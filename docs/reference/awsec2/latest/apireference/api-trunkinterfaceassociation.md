@@ -3,83 +3,55 @@ title: "TrunkInterfaceAssociation"
 ---
 
 # TrunkInterfaceAssociation
+<a name="API_TrunkInterfaceAssociation"></a>
 
 Information about an association between a branch network interface with a trunk network interface.
 
 ## Contents
+<a name="API_TrunkInterfaceAssociation_Contents"></a>
 
-**associationId**
-
+ ** associationId **
 The ID of the association.
-
 Type: String
-
 Required: No
 
-**branchInterfaceId**
-
+ ** branchInterfaceId **
 The ID of the branch network interface.
-
 Type: String
-
 Required: No
 
-**greKey**
-
+ ** greKey **
 The application key when you use the GRE protocol.
-
 Type: Integer
-
 Required: No
 
-**interfaceProtocol**
-
+ ** interfaceProtocol **
 The interface protocol. Valid values are `VLAN` and `GRE`.
-
 Type: String
-
 Valid Values: `VLAN | GRE`
-
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 The tags for the trunk interface association.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
-**trunkInterfaceId**
-
+ ** trunkInterfaceId **
 The ID of the trunk network interface.
-
 Type: String
-
 Required: No
 
-**vlanId**
-
+ ** vlanId **
 The ID of the VLAN when you use the VLAN protocol.
-
 Type: Integer
-
 Required: No
 
 ## See Also
+<a name="API_TrunkInterfaceAssociation_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/trunkinterfaceassociation.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/trunkinterfaceassociation.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/trunkinterfaceassociation.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitGatewayVpcAttachmentOptions
-
-TunnelOption
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TrunkInterfaceAssociation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TrunkInterfaceAssociation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TrunkInterfaceAssociation)
 
 All content copied from https://docs.aws.amazon.com/.

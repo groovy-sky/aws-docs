@@ -3,57 +3,39 @@ title: "FpgaDeviceInfo"
 ---
 
 # FpgaDeviceInfo
+<a name="API_FpgaDeviceInfo"></a>
 
 Describes the FPGA accelerator for the instance type.
 
 ## Contents
+<a name="API_FpgaDeviceInfo_Contents"></a>
 
-**count**
-
+ ** count **
 The count of FPGA accelerators for the instance type.
-
 Type: Integer
-
 Required: No
 
-**manufacturer**
-
+ ** manufacturer **
 The manufacturer of the FPGA accelerator.
-
 Type: String
-
 Required: No
 
-**memoryInfo**
-
+ ** memoryInfo **
 Describes the memory for the FPGA accelerator for the instance type.
-
-Type: [FpgaDeviceMemoryInfo](api-fpgadevicememoryinfo.md) object
-
+Type: [FpgaDeviceMemoryInfo](API_FpgaDeviceMemoryInfo.md) object
 Required: No
 
-**name**
-
+ ** name **
 The name of the FPGA accelerator.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_FpgaDeviceInfo_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/fpgadeviceinfo.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/fpgadeviceinfo.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/fpgadeviceinfo.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FlowLog
-
-FpgaDeviceMemoryInfo
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/FpgaDeviceInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/FpgaDeviceInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/FpgaDeviceInfo)
 
 All content copied from https://docs.aws.amazon.com/.

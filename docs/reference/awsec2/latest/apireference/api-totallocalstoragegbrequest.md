@@ -3,43 +3,29 @@ title: "TotalLocalStorageGBRequest"
 ---
 
 # TotalLocalStorageGBRequest
+<a name="API_TotalLocalStorageGBRequest"></a>
 
 The minimum and maximum amount of total local storage, in GB.
 
 ## Contents
+<a name="API_TotalLocalStorageGBRequest_Contents"></a>
 
-**Max**
-
-The maximum amount of total local storage, in GB. To specify no maximum limit, omit this
-parameter.
-
+ ** Max **
+The maximum amount of total local storage, in GB. To specify no maximum limit, omit this parameter.
 Type: Double
-
 Required: No
 
-**Min**
-
-The minimum amount of total local storage, in GB. To specify no minimum limit, omit this
-parameter.
-
+ ** Min **
+The minimum amount of total local storage, in GB. To specify no minimum limit, omit this parameter.
 Type: Double
-
 Required: No
 
 ## See Also
+<a name="API_TotalLocalStorageGBRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/totallocalstoragegbrequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/totallocalstoragegbrequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/totallocalstoragegbrequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TotalLocalStorageGB
-
-TrafficMirrorFilter
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TotalLocalStorageGBRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TotalLocalStorageGBRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TotalLocalStorageGBRequest)
 
 All content copied from https://docs.aws.amazon.com/.

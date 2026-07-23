@@ -3,33 +3,24 @@ title: "Phase2IntegrityAlgorithmsListValue"
 ---
 
 # Phase2IntegrityAlgorithmsListValue
+<a name="API_Phase2IntegrityAlgorithmsListValue"></a>
 
 The integrity algorithm for phase 2 IKE negotiations.
 
 ## Contents
+<a name="API_Phase2IntegrityAlgorithmsListValue_Contents"></a>
 
-**value**
-
+ ** value **
 The integrity algorithm.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_Phase2IntegrityAlgorithmsListValue_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/phase2integrityalgorithmslistvalue.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/phase2integrityalgorithmslistvalue.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/phase2integrityalgorithmslistvalue.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Phase2EncryptionAlgorithmsRequestListValue
-
-Phase2IntegrityAlgorithmsRequestListValue
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Phase2IntegrityAlgorithmsListValue)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Phase2IntegrityAlgorithmsListValue)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Phase2IntegrityAlgorithmsListValue)
 
 All content copied from https://docs.aws.amazon.com/.

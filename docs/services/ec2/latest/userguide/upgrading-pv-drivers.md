@@ -3,512 +3,284 @@ title: "Upgrade PV drivers on EC2 Windows instances"
 ---
 
 # Upgrade PV drivers on EC2 Windows instances
+<a name="Upgrading_PV_drivers"></a>
 
-We recommend that you install the latest PV drivers to improve the stability and
-performance of your EC2 Windows instances. The directions on this page help you download
-the driver package and run the install program.
+We recommend that you install the latest PV drivers to improve the stability and performance of your EC2 Windows instances. The directions on this page help you download the driver package and run the install program.
 
-###### To verify which driver your Windows instance uses
+**To verify which driver your Windows instance uses**
 
-Open **Device Manager** and view **Network**
-**Adapters**. Check whether the PV driver is one of the following:
+Open **Device Manager** and view **Network Adapters**. Check whether the PV driver is one of the following:
++ AWS PV Network Device
++ Citrix PV Ethernet Adapter
++ Red Hat PV NIC Driver
 
-- AWS PV Network Device
+**System requirements**
+Be sure to check the `readme.txt` file in the download for system requirements.
 
-- Citrix PV Ethernet Adapter
-
-- Red Hat PV NIC Driver
-
-###### System requirements
-
-Be sure to check the `readme.txt` file in the download for
-system requirements.
-
-###### Contents
-
-- [Upgrade Windows Server instances (AWS PV upgrade) with Distributor](#aws-pv-upgrade-distributor)
-
-- [Upgrade Windows Server instances (AWS PV upgrade) manually](#aws-pv-upgrade)
-
-- [Upgrade a domain controller (AWS PV upgrade)](#aws-pv-upgrade-dc)
-
-- [Upgrade Windows Server 2008 and 2008 R2 instances (Red Hat to Citrix PV upgrade)](#win2008-citrix-upgrade)
-
-- [Upgrade your Citrix Xen guest agent service](#citrix-pv-guest-agent-upgrade)
+**Topics**
++ [Upgrade Windows Server instances (AWS PV upgrade) with Distributor](#aws-pv-upgrade-distributor)
++ [Upgrade Windows Server instances (AWS PV upgrade) manually](#aws-pv-upgrade)
++ [Upgrade a domain controller (AWS PV upgrade)](#aws-pv-upgrade-dc)
++ [Upgrade Windows Server 2008 and 2008 R2 instances (Red Hat to Citrix PV upgrade)](#win2008-citrix-upgrade)
++ [Upgrade your Citrix Xen guest agent service](#citrix-pv-guest-agent-upgrade)
 
 ## Upgrade Windows Server instances (AWS PV upgrade) with Distributor
+<a name="aws-pv-upgrade-distributor"></a>
 
-You can use Distributor, a capability of AWS Systems Manager, to install or upgrade the
-AWS PV driver package. The installation or upgrade can be performed one time, or
-you can install or update it on a schedule. The `In-place update` option
-for **Installation Type** isn't supported for this Distributor
-package.
+You can use Distributor, a capability of AWS Systems Manager, to install or upgrade the AWS PV driver package. The installation or upgrade can be performed one time, or you can install or update it on a schedule. The `In-place update` option for **Installation Type** isn't supported for this Distributor package.
 
-###### Important
+**Important**
+If your instance is a domain controller, see [Upgrade a domain controller (AWS PV upgrade)](#aws-pv-upgrade-dc). The upgrade process for domain controller instances is different than standard editions of Windows.
 
-If your instance is a domain controller, see [Upgrade a domain controller (AWS PV upgrade)](#aws-pv-upgrade-dc). The upgrade process for domain
-controller instances is different than standard editions of Windows.
+1. We recommend that you create a backup in case you need to roll back your changes.
+**Tip**
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
-01. We recommend that you create a backup in case you need to roll back your
-     changes.
+   1. When you stop an instance, the data on any instance store volumes is erased. Before you stop an instance, verify that you've copied any data that you need from your instance store volumes to persistent storage, such as Amazon EBS or Amazon S3.
 
-    ###### Tip
+   1. In the navigation pane, choose **Instances**.
 
-    Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager
-    Automation to create the AMI using the `AWS-CreateImage`
-    runbook. For more information, see [AWS-CreateImage](../../../systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.md) in the
-    _AWS Systems Manager Automation runbook reference User_
-    _Guide_.
+   1. Select the instance that requires the driver upgrade, and choose **Instance state**, **Stop instance**.
 
-    1. When you stop an instance, the data on any instance store volumes
-        is erased. Before you stop an instance, verify that you've copied
-        any data that you need from your instance store volumes to
-        persistent storage, such as Amazon EBS or Amazon S3.
+   1. After the instance is stopped, select the instance, choose **Actions**, then **Image and templates**, and then choose **Create image**.
 
-    2. In the navigation pane, choose
-        **Instances**.
+   1. Choose **Instance state**, **Start instance**.
 
-    3. Select the instance that requires the driver upgrade, and choose
-        **Instance state**, **Stop**
-       **instance**.
+1. Connect to the instance using Remote Desktop. For more information, see [Connect to your Windows instance using an RDP client](connect-rdp.md).
 
-    4. After the instance is stopped, select the instance, choose
-        **Actions**, then **Image and**
-       **templates**, and then choose **Create**
-       **image**.
+1. <a name="secondary-disks-step-distributor"></a>We recommend that you take all non-system disks offline and note any drive letter mappings to the secondary disks in Disk Management before you perform this upgrade. This step is not required if you are performing an in-place update of AWS PV drivers. We also recommend setting non-essential services to **Manual** start-up in the Services console.
 
-    5. Choose **Instance state**, **Start**
-       **instance**.
-02. Connect to the instance using Remote Desktop. For more information, see
-     [Connect to your Windows instance using an RDP client](connect-rdp.md).
+1. <a name="distributor-procedure-awspv"></a>For the instructions for how to install or upgrade the AWS PV driver package using Distributor, see the procedures in [Install or update packages](https://docs.aws.amazon.com/systems-manager/latest/userguide/distributor-working-with-packages-deploy.html) in the *AWS Systems Manager User Guide*.
 
-03. We recommend that you take all non-system disks offline and note any drive
-     letter mappings to the secondary disks in Disk Management before you perform
-     this upgrade. This step is not required if you are performing an in-place
-     update of AWS PV drivers. We also recommend setting non-essential services
-     to **Manual** start-up in the Services console.
+1. For **Name**, choose **AWSPVDriver**.
 
-04. For the instructions for how to install or upgrade the AWS PV driver
-     package using Distributor, see the procedures in [Install or update packages](../../../systems-manager/latest/userguide/distributor-working-with-packages-deploy.md) in the _AWS Systems Manager User_
-    _Guide_.
+1. For **Installation type**, select **Uninstall and reinstall**.
 
-05. For **Name**, choose
-     **AWSPVDriver**.
+1. Configure the other parameters for the package as necessary and run installation or upgrade using the referenced procedure in [Step 4](#distributor-procedure-awspv).
 
-06. For **Installation type**, select **Uninstall and**
-    **reinstall**.
+   After running the Distributor package, the instance automatically reboots and then upgrades the driver. The instance will not be available for up to 15 minutes.
 
-07. Configure the other parameters for the package as necessary and run
-     installation or upgrade using the referenced procedure in [Step 4](#distributor-procedure-awspv).
+1. After the upgrade is complete, and the instance passes both health checks in the Amazon EC2 console, verify that the new driver was installed by connecting to the instance using Remote Desktop.
 
-    After running the Distributor package, the instance automatically reboots
-     and then upgrades the driver. The instance will not be available for up to
-     15 minutes.
+1. After you are connected, run the following PowerShell command:
 
-08. After the upgrade is complete, and the instance passes both health checks
-     in the Amazon EC2 console, verify that the new driver was installed by connecting
-     to the instance using Remote Desktop.
+   ```
+   Get-ItemProperty HKLM:\SOFTWARE\Amazon\PVDriver
+   ```
 
-09. After you are connected, run the following PowerShell command:
+1. Verify that the driver version is the same as the latest version listed in the Driver Version History table. For more information, see [AWS PV driver package history](xen-drivers-overview.md#pv-driver-history) Open Disk Management to review any offline secondary volumes and bring them online corresponding to the drive letters noted in [Step 3](#secondary-disks-step-distributor).
 
-    ```powershell
+If you previously disabled [TCP offloading](pvdrivers-troubleshooting.md#citrix-tcp-offloading) using Netsh for Citrix PV drivers we recommend that you re-enable this feature after upgrading to AWS PV drivers. TCP Offloading issues with Citrix drivers are not present in the AWS PV drivers. As a result, TCP Offloading provides better performance with AWS PV drivers.
 
-    Get-ItemProperty HKLM:\SOFTWARE\Amazon\PVDriver
-    ```
-
-10. Verify that the driver version is the same as the latest version listed in
-     the Driver Version History table. For more information, see [AWS PV driver package history](xen-drivers-overview.md#pv-driver-history) Open
-     Disk Management to review any offline secondary volumes and bring them
-     online corresponding to the drive letters noted in [Step 3](#secondary-disks-step-distributor).
-
-If you previously disabled [TCP offloading](pvdrivers-troubleshooting.md#citrix-tcp-offloading) using Netsh for Citrix PV drivers we
-recommend that you re-enable this feature after upgrading to AWS PV drivers. TCP
-Offloading issues with Citrix drivers are not present in the AWS PV drivers. As a
-result, TCP Offloading provides better performance with AWS PV drivers.
-
-If you previously applied a static IP address or DNS configuration to the network
-interface, you might need to reapply the static IP address or DNS configuration
-after upgrading AWS PV drivers.
+If you previously applied a static IP address or DNS configuration to the network interface, you might need to reapply the static IP address or DNS configuration after upgrading AWS PV drivers.
 
 ## Upgrade Windows Server instances (AWS PV upgrade) manually
+<a name="aws-pv-upgrade"></a>
 
-Use the following procedure to perform an in-place upgrade of AWS PV drivers, or
-to upgrade from Citrix PV drivers to AWS PV drivers on Windows Server 2008 R2,
-Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server
-2019, or Windows Server 2022. This upgrade is not available for Red Hat drivers, or
-for other versions of Windows Server.
+Use the following procedure to perform an in-place upgrade of AWS PV drivers, or to upgrade from Citrix PV drivers to AWS PV drivers on Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, or Windows Server 2022. This upgrade is not available for Red Hat drivers, or for other versions of Windows Server.
 
-Some older versions of Windows Server can't use the latest drivers. To verify
-which driver version to use for your operating system, see the driver version table
-in the [Paravirtual drivers for Windows instances](xen-drivers-overview.md)
-page.
+Some older versions of Windows Server can't use the latest drivers. To verify which driver version to use for your operating system, see the driver version table in the [Paravirtual drivers for Windows instances](xen-drivers-overview.md) page.
 
-###### Important
+**Important**
+If your instance is a domain controller, see [Upgrade a domain controller (AWS PV upgrade)](#aws-pv-upgrade-dc). The upgrade process for domain controller instances is different than standard editions of Windows.
 
-If your instance is a domain controller, see [Upgrade a domain controller (AWS PV upgrade)](#aws-pv-upgrade-dc). The upgrade process for domain
-controller instances is different than standard editions of Windows.
+**To upgrade AWS PV drivers manually**
 
-###### To upgrade AWS PV drivers manually
+1. We recommend that you create a backup in case you need to roll back your changes.
+**Tip**
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
-1. We recommend that you create a backup in case you need to roll back your
-    changes.
+   1. When you stop an instance, the data on any instance store volumes is erased. Before you stop an instance, verify that you've copied any data that you need from your instance store volumes to persistent storage, such as Amazon EBS or Amazon S3.
 
-###### Tip
+   1. In the navigation pane, choose **Instances**.
 
-Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager
-Automation to create the AMI using the `AWS-CreateImage`
-runbook. For more information, see [AWS-CreateImage](../../../systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.md) in the
-_AWS Systems Manager Automation runbook reference User_
-_Guide_.
+   1. Select the instance that requires the driver upgrade, and choose **Instance state**, **Stop instance**.
 
-1. When you stop an instance, the data on any instance store volumes
-       is erased. Before you stop an instance, verify that you've copied
-       any data that you need from your instance store volumes to
-       persistent storage, such as Amazon EBS or Amazon S3.
+   1. After the instance is stopped, select the instance, choose **Actions**, then **Image and templates**, and then choose **Create image**.
 
-2. In the navigation pane, choose
-       **Instances**.
+   1. Choose **Instance state**, **Start instance**.
 
-3. Select the instance that requires the driver upgrade, and choose
-       **Instance state**, **Stop**
-      **instance**.
+1. Connect to the instance using Remote Desktop.
 
-4. After the instance is stopped, select the instance, choose
-       **Actions**, then **Image and**
-      **templates**, and then choose **Create**
-      **image**.
+1. <a name="secondary-disks-step-manual"></a>We recommend that you take all non-system disks offline and note any drive letter mappings to the secondary disks in Disk Management before you perform this upgrade. This step is not required if you are performing an in-place update of AWS PV drivers. We also recommend setting non-essential services to **Manual** start-up in the Services console.
 
-5. Choose **Instance state**, **Start**
-      **instance**.
-2. Connect to the instance using Remote Desktop.
+1. Download the drivers to your instance using one of the following options:
+   + **Browser** – [Download](https://s3.amazonaws.com/ec2-windows-drivers-downloads/AWSPV/Latest/AWSPVDriver.zip) the latest driver package to the instance and extract the zip archive.
+   + **PowerShell** – Run the following commands:
 
-3. We recommend that you take all non-system disks offline and note any drive
-    letter mappings to the secondary disks in Disk Management before you perform
-    this upgrade. This step is not required if you are performing an in-place
-    update of AWS PV drivers. We also recommend setting non-essential services
-    to **Manual** start-up in the Services console.
-
-4. Download the drivers to your instance using one of the following
-    options:
-   - Browser – [Download](https://s3.amazonaws.com/ec2-windows-drivers-downloads/AWSPV/Latest/AWSPVDriver.zip)
-
-      the latest driver package to the instance and
-      extract the zip archive.
-
-   - PowerShell – Run the
-      following commands:
-
-     ```powershell
-
+     ```
      Invoke-WebRequest https://s3.amazonaws.com/ec2-windows-drivers-downloads/AWSPV/Latest/AWSPVDriver.zip -outfile $env:USERPROFILE\pv_driver.zip
      Expand-Archive $env:userprofile\pv_driver.zip -DestinationPath $env:userprofile\pv_drivers
      ```
 
-     If you receive an error when downloading the file, and you
-      are using Windows Server 2016 or earlier, TLS 1.2 might need
-      to be enabled for your PowerShell terminal. You can enable
-      TLS 1.2 for the current PowerShell session with the
-      following command and then try again:
+     If you receive an error when downloading the file, and you are using Windows Server 2016 or earlier, TLS 1.2 might need to be enabled for your PowerShell terminal. You can enable TLS 1.2 for the current PowerShell session with the following command and then try again:
 
-     ```powershell
-
+     ```
      [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
      ```
-5. Run `AWSPVDriverSetup.msi`.
 
-After running the MSI, the instance automatically reboots and then upgrades the
-driver. The instance will not be available for up to 15 minutes. After the upgrade
-is complete and the instance passes both health checks in the Amazon EC2 console, you can
-verify that the new driver was installed by connecting to the instance using Remote
-Desktop and then running the following PowerShell command:
+1. Run `AWSPVDriverSetup.msi`.
 
-```powershell
+After running the MSI, the instance automatically reboots and then upgrades the driver. The instance will not be available for up to 15 minutes. After the upgrade is complete and the instance passes both health checks in the Amazon EC2 console, you can verify that the new driver was installed by connecting to the instance using Remote Desktop and then running the following PowerShell command:
 
+```
 Get-ItemProperty HKLM:\SOFTWARE\Amazon\PVDriver
 ```
 
-Verify that the driver version is the same as the latest version listed in the
-Driver Version History table. For more information, see [AWS PV driver package history](xen-drivers-overview.md#pv-driver-history) Open Disk
-Management to review any offline secondary volumes and bring them online
-corresponding to the drive letters noted in [Step 3](#secondary-disks-step-manual).
+Verify that the driver version is the same as the latest version listed in the Driver Version History table. For more information, see [AWS PV driver package history](xen-drivers-overview.md#pv-driver-history) Open Disk Management to review any offline secondary volumes and bring them online corresponding to the drive letters noted in [Step 3](#secondary-disks-step-manual).
 
-If you previously disabled [TCP offloading](pvdrivers-troubleshooting.md#citrix-tcp-offloading) using Netsh for Citrix PV drivers we
-recommend that you re-enable this feature after upgrading to AWS PV drivers. TCP
-Offloading issues with Citrix drivers are not present in the AWS PV drivers. As a
-result, TCP Offloading provides better performance with AWS PV drivers.
+If you previously disabled [TCP offloading](pvdrivers-troubleshooting.md#citrix-tcp-offloading) using Netsh for Citrix PV drivers we recommend that you re-enable this feature after upgrading to AWS PV drivers. TCP Offloading issues with Citrix drivers are not present in the AWS PV drivers. As a result, TCP Offloading provides better performance with AWS PV drivers.
 
-If you previously applied a static IP address or DNS configuration to the network
-interface, you might need to reapply the static IP address or DNS configuration
-after upgrading AWS PV drivers.
+If you previously applied a static IP address or DNS configuration to the network interface, you might need to reapply the static IP address or DNS configuration after upgrading AWS PV drivers.
 
 ## Upgrade a domain controller (AWS PV upgrade)
+<a name="aws-pv-upgrade-dc"></a>
 
-Use the following procedure on a domain controller to perform either an in-place
-upgrade of AWS PV drivers, or to upgrade from Citrix PV drivers to AWS PV
-drivers. To ensure that your FSMO roles remain operational during the upgrade, we
-recommend that you transfer those roles to other domain controllers before you start
-the upgrade. For more information, see [How to view and transfer FSMO roles](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/view-transfer-fsmo-roles) on the _Microsoft_
-_Learn_ website.
+Use the following procedure on a domain controller to perform either an in-place upgrade of AWS PV drivers, or to upgrade from Citrix PV drivers to AWS PV drivers. To ensure that your FSMO roles remain operational during the upgrade, we recommend that you transfer those roles to other domain controllers before you start the upgrade. For more information, see [How to view and transfer FSMO roles](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/view-transfer-fsmo-roles) on the *Microsoft Learn* website.
 
-###### To upgrade a domain controller
+**To upgrade a domain controller**
 
-01. We recommend that you create a backup of your domain controller in case
-     you need to roll back your changes. Using an AMI as a backup is not
-     supported. For more information, see [Backup and restore considerations](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/virtualized-domain-controllers-hyper-v) in the Microsoft
-     documentation.
+1. We recommend that you create a backup of your domain controller in case you need to roll back your changes. Using an AMI as a backup is not supported. For more information, see [Backup and restore considerations](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/virtualized-domain-controllers-hyper-v#backup-and-restore-considerations) in the Microsoft documentation.
 
-02. Run the following command to configure Windows to boot into Directory
-     Services Restore Mode (DSRM).
+1. Run the following command to configure Windows to boot into Directory Services Restore Mode (DSRM).
+**Warning**
+Before running this command, confirm that you know the DSRM password. You'll need this information so that you can log in to your instance after the upgrade is complete and the instance automatically reboots.
 
-    ###### Warning
+   ```
+   bcdedit /set {default} safeboot dsrepair
+   ```
 
-    Before running this command, confirm that you know the DSRM password.
-    You'll need this information so that you can log in to your instance
-    after the upgrade is complete and the instance automatically
-    reboots.
+   PowerShell:
 
-    ```nohighlight
+   ```
+   PS C:\> bcdedit /set "{default}" safeboot dsrepair
+   ```
 
-    bcdedit /set {default} safeboot dsrepair
-    ```
+   The system must boot into DSRM because the upgrade utility removes Citrix PV storage drivers so it can install AWS PV drivers. Therefore we recommend noting any drive letter and folder mappings to the secondary disks in Disk Management. When Citrix PV storage drivers are not present, secondary drives are not detected. Domain controllers that use an NTDS folder on secondary drives will not boot because the secondary disk is not detected.
+**Warning**
+After you run this command do not manually reboot the system. The system will be unreachable because Citrix PV drivers do not support DSRM.
 
-    PowerShell:
+1. Run the following command to add **DisableDCCheck** to the registry:
 
-    ```powershell
+   ```
+   reg add HKLM\SOFTWARE\Wow6432Node\Amazon\AWSPVDriverSetup /v DisableDCCheck /t REG_SZ /d true
+   ```
 
-    PS C:\> bcdedit /set "{default}" safeboot dsrepair
-    ```
+1.  [Download](https://s3.amazonaws.com/ec2-windows-drivers-downloads/AWSPV/Latest/AWSPVDriver.zip) the latest driver package to the instance and extract the zip archive.
 
-    The system must boot into DSRM because the upgrade utility removes Citrix
-     PV storage drivers so it can install AWS PV drivers. Therefore we
-     recommend noting any drive letter and folder mappings to the secondary disks
-     in Disk Management. When Citrix PV storage drivers are not present,
-     secondary drives are not detected. Domain controllers that use an NTDS
-     folder on secondary drives will not boot because the secondary disk is not
-     detected.
+1. Run `AWSPVDriverSetup.msi`.
 
-    ###### Warning
+   After running the MSI, the instance automatically reboots and then upgrades the driver. The instance will not be available for up to 15 minutes.
 
-    After you run this command do not manually reboot the system. The
-    system will be unreachable because Citrix PV drivers do not support
-    DSRM.
+1. After the upgrade is complete and the instance passes both health checks in the Amazon EC2 console, connect to the instance using Remote Desktop. Open Disk Management to review any offline secondary volumes and bring them online corresponding to the drive letters and folder mappings noted earlier.
 
-03. Run the following command to add `DisableDCCheck` to
-     the registry:
+   You must connect to the instance by specifying the username in the following format *hostname*\\administrator. For example, Win2k12TestBox\\administrator.
 
-    ```nohighlight
+1. Run the following command to remove the DSRM boot configuration:
 
-    reg add HKLM\SOFTWARE\Wow6432Node\Amazon\AWSPVDriverSetup /v DisableDCCheck /t REG_SZ /d true
-    ```
+   ```
+   bcdedit /deletevalue safeboot
+   ```
 
-04. [Download](https://s3.amazonaws.com/ec2-windows-drivers-downloads/AWSPV/Latest/AWSPVDriver.zip)
+1. Reboot the instance.
 
-     the latest driver package to the instance and extract
-     the zip archive.
+1. To complete the upgrade process, verify that the new driver was installed. In Device Manager, under **Storage Controllers**, locate **AWS PV Storage Host Adapter**. Verify that the driver version is the same as the latest version listed in the Driver Version History table. For more information, see [AWS PV driver package history](xen-drivers-overview.md#pv-driver-history).
 
-05. Run `AWSPVDriverSetup.msi`.
+1. Run the following command to delete **DisableDCCheck** from the registry:
 
-    After running the MSI, the instance automatically reboots and then
-     upgrades the driver. The instance will not be available for up to 15
-     minutes.
+   ```
+   reg delete HKLM\SOFTWARE\Wow6432Node\Amazon\AWSPVDriverSetup /v DisableDCCheck
+   ```
 
-06. After the upgrade is complete and the instance passes both health checks
-     in the Amazon EC2 console, connect to the instance using Remote Desktop. Open
-     Disk Management to review any offline secondary volumes and bring them
-     online corresponding to the drive letters and folder mappings noted
-     earlier.
-
-    You must connect to the instance by specifying the username in the
-     following format _hostname_\\administrator. For example,
-     Win2k12TestBox\\administrator.
-
-07. Run the following command to remove the DSRM boot configuration:
-
-    ```nohighlight
-
-    bcdedit /deletevalue safeboot
-    ```
-
-08. Reboot the instance.
-
-09. To complete the upgrade process, verify that the new driver was installed.
-     In Device Manager, under **Storage Controllers**, locate
-     **AWS PV Storage Host Adapter**. Verify that the
-     driver version is the same as the latest version listed in the Driver
-     Version History table. For more information, see [AWS PV driver package history](xen-drivers-overview.md#pv-driver-history).
-
-10. Run the following command to delete `DisableDCCheck`
-     from the registry:
-
-    ```nohighlight
-
-    reg delete HKLM\SOFTWARE\Wow6432Node\Amazon\AWSPVDriverSetup /v DisableDCCheck
-    ```
-
-###### Note
-
-If you previously disabled [TCP offloading](pvdrivers-troubleshooting.md#citrix-tcp-offloading) using Netsh for Citrix PV drivers we
-recommend that you re-enable this feature after upgrading to AWS PV Drivers.
-TCP Offloading issues with Citrix drivers are not present in the AWS PV
-drivers. As a result, TCP Offloading provides better performance with AWS PV
-drivers.
+**Note**
+If you previously disabled [TCP offloading](pvdrivers-troubleshooting.md#citrix-tcp-offloading) using Netsh for Citrix PV drivers we recommend that you re-enable this feature after upgrading to AWS PV Drivers. TCP Offloading issues with Citrix drivers are not present in the AWS PV drivers. As a result, TCP Offloading provides better performance with AWS PV drivers.
 
 ## Upgrade Windows Server 2008 and 2008 R2 instances (Red Hat to Citrix PV upgrade)
+<a name="win2008-citrix-upgrade"></a>
 
-Before you start upgrading your Red Hat drivers to Citrix PV drivers, make sure
-you do the following:
+Before you start upgrading your Red Hat drivers to Citrix PV drivers, make sure you do the following:
++ Install the latest version of the EC2Config service. For more information, see [Install the latest version of EC2Config](UsingConfig_Install.md).
++ Verify that you have Windows PowerShell 3.0 installed. To verify the version that you have installed, run the following command in a PowerShell window:
 
-- Install the latest version of the EC2Config service. For more information,
-see [Install the latest version of EC2Config](usingconfig-install.md).
+  ```
+  PS C:\> $PSVersionTable.PSVersion
+  ```
 
-- Verify that you have Windows PowerShell 3.0 installed. To verify the
-version that you have installed, run the following command in a PowerShell
-window:
+  Windows PowerShell 3.0 is bundled in the Windows Management Framework (WMF) version 3.0 install package. If you need to install Windows PowerShell 3.0, see [Windows Management Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595) in the Microsoft Download Center.
++ Back up your important information on the instance, or create an AMI from the instance. For more information about creating an AMI, see [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md).
+**Tip**
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
-```powershell
+  If you create an AMI, make sure that you do the following:
+  + Write down your password.
+  + Do not run the Sysprep tool manually or using the EC2Config service.
+  + Set your Ethernet adapter to obtain an IP address automatically using DHCP.
 
-PS C:\> $PSVersionTable.PSVersion
-```
+**To upgrade Red Hat drivers**
 
-Windows PowerShell 3.0 is bundled in the Windows Management Framework
-(WMF) version 3.0 install package. If you need to install Windows PowerShell
-3.0, see [Windows Management Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595) in the Microsoft Download
-Center.
+1. Connect to your instance and log in as the local administrator. For more information about connecting to your instance, see [Connect to your Windows instance using RDP](connecting_to_windows_instance.md).
 
-- Back up your important information on the instance, or create an AMI from
-the instance. For more information about creating an AMI, see [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md).
+1. In your instance, [download](https://s3.amazonaws.com/ec2-downloads-windows/Drivers/Citrix-Win_PV.zip) the Citrix PV upgrade package.
 
-###### Tip
+1. Extract the contents of the upgrade package to a location of your choice.
 
-Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager
-Automation to create the AMI using the `AWS-CreateImage`
-runbook. For more information, see [AWS-CreateImage](../../../systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.md) in the
-_AWS Systems Manager Automation runbook reference User_
-_Guide_.
+1. Double-click the **Upgrade.bat** file. If you get a security warning, choose **Run**.
 
-If you create an AMI, make sure that you do the following:
+1. In the **Upgrade Drivers** dialog box, review the information and choose **Yes** if you are ready to start the upgrade.
 
-- Write down your password.
+1. In the **Red Hat Paravirtualized Xen Drivers for Windows uninstaller** dialog box, choose **Yes** to remove the Red Hat software. Your instance will be rebooted.
+**Note**
+If you do not see the uninstaller dialog box, choose **Red Hat Paravirtualize** in the Windows taskbar.
+![Red Hat Paravirtualized in taskbar.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/win2003-citrix-taskbar.png)
 
-- Do not run the Sysprep tool manually or using the EC2Config
-service.
+1. Check that the instance has rebooted and is ready to be used.
 
-- Set your Ethernet adapter to obtain an IP address automatically
-using DHCP.
+   1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-###### To upgrade Red Hat drivers
+   1. On the **Instances** page, select **Actions**, then **Monitor and troubleshoot**, and then choose **Get system log**.
 
-01. Connect to your instance and log in as the local administrator. For more
-     information about connecting to your instance, see [Connect to your Windows instance using RDP](connecting-to-windows-instance.md).
+   1. The upgrade operations should have restarted the server 3 or 4 times. You can see this in the log file by the number of times `Windows is Ready to use` is displayed.
+![Windows system log.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/win2008-sys-log.png)
 
-02. In your instance, [download](https://s3.amazonaws.com/ec2-downloads-windows/Drivers/Citrix-Win_PV.zip) the Citrix PV upgrade package.
+1. Connect to your instance and log in as the local administrator.
 
-03. Extract the contents of the upgrade package to a location of your
-     choice.
+1. Close the **Red Hat Paravirtualized Xen Drivers for Windows uninstaller** dialog box.
 
-04. Double-click the **Upgrade.bat** file. If you get a
-     security warning, choose **Run**.
-
-05. In the **Upgrade Drivers** dialog box, review the
-     information and choose **Yes** if you are ready to start
-     the upgrade.
-
-06. In the **Red Hat Paravirtualized Xen Drivers for Windows**
-    **uninstaller** dialog box, choose **Yes** to
-     remove the Red Hat software. Your instance will be rebooted.
-
-    ###### Note
-
-    If you do not see the uninstaller dialog box, choose **Red Hat**
-    **Paravirtualize** in the Windows taskbar.
-
-    ![Red Hat Paravirtualized in taskbar.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win2003-citrix-taskbar.png)
-
-07. Check that the instance has rebooted and is ready to be used.
-    1. Open the Amazon EC2 console at
-        [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
-
-    2. On the **Instances** page, select
-        **Actions**, then **Monitor and**
-       **troubleshoot**, and then choose **Get system**
-       **log**.
-
-    3. The upgrade operations should have restarted the server 3 or 4
-        times. You can see this in the log file by the number of times
-        `Windows is Ready to use` is displayed.
-
-       ![Windows system log.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win2008-sys-log.png)
-08. Connect to your instance and log in as the local administrator.
-
-09. Close the **Red Hat Paravirtualized Xen Drivers for Windows**
-    **uninstaller** dialog box.
-
-10. Confirm that the installation is complete. Navigate to the
-     `Citrix-WIN_PV` folder that you extracted earlier,
-     open the `PVUpgrade.log` file, and then check for the
-     text `INSTALLATION IS COMPLETE`.
-
-    ![PVUpgrade log file.](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/win2008-pvupgrade-log.png)
+1. Confirm that the installation is complete. Navigate to the `Citrix-WIN_PV` folder that you extracted earlier, open the `PVUpgrade.log` file, and then check for the text `INSTALLATION IS COMPLETE`.
+![PVUpgrade log file.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/win2008-pvupgrade-log.png)
 
 ## Upgrade your Citrix Xen guest agent service
+<a name="citrix-pv-guest-agent-upgrade"></a>
 
-If you are using Citrix PV drivers on Windows Server, you can upgrade the Citrix
-Xen guest agent service. This Windows service handles tasks such as shutdown and
-restart events from the API. You can run this upgrade package on any version of
-Windows Server, as long as the instance is running Citrix PV drivers.
+If you are using Citrix PV drivers on Windows Server, you can upgrade the Citrix Xen guest agent service. This Windows service handles tasks such as shutdown and restart events from the API. You can run this upgrade package on any version of Windows Server, as long as the instance is running Citrix PV drivers.
 
-###### Important
+**Important**
+For Windows Server 2008 R2 and later, we recommend you upgrade to AWS PV drivers that include the Guest Agent update.
 
-For Windows Server 2008 R2 and later, we recommend you upgrade to AWS PV
-drivers that include the Guest Agent update.
+Before you start upgrading your drivers, make sure you back up your important information on the instance, or create an AMI from the instance. For more information about creating an AMI, see [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md).
 
-Before you start upgrading your drivers, make sure you back up your important
-information on the instance, or create an AMI from the instance. For more
-information about creating an AMI, see [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md).
-
-###### Tip
-
-Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager
-Automation to create the AMI using the `AWS-CreateImage`
-runbook. For more information, see [AWS-CreateImage](../../../systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.md) in the
-_AWS Systems Manager Automation runbook reference User_
-_Guide_.
+**Tip**
+Instead of creating the AMI from the Amazon EC2 console, you can use Systems Manager Automation to create the AMI using the `AWS-CreateImage` runbook. For more information, see [https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-createimage.html) in the *AWS Systems Manager Automation runbook reference User Guide*.
 
 If you create an AMI, make sure you do the following:
++ Do not enable the Sysprep tool in the EC2Config service.
++ Write down your password.
++ Set your Ethernet adapter to DHCP.
 
-- Do not enable the Sysprep tool in the EC2Config service.
+**To upgrade your Citrix Xen guest agent service**
 
-- Write down your password.
+1. Connect to your instance and log in as the local administrator. For more information about connecting to your instance, see [Connect to your Windows instance using RDP](connecting_to_windows_instance.md).
 
-- Set your Ethernet adapter to DHCP.
+1. On your instance, [download](https://s3.amazonaws.com/ec2-downloads-windows/Drivers/Citrix-Win_PV.zip) the Citrix upgrade package.
 
-###### To upgrade your Citrix Xen guest agent service
+1. Extract the contents of the upgrade package to a location of your choice.
 
-1. Connect to your instance and log in as the local administrator. For more
-    information about connecting to your instance, see [Connect to your Windows instance using RDP](connecting-to-windows-instance.md).
+1. Double-click the **Upgrade.bat** file. If you get a security warning, choose **Run**.
 
-2. On your instance, [download](https://s3.amazonaws.com/ec2-downloads-windows/Drivers/Citrix-Win_PV.zip) the Citrix upgrade package.
+1. In the **Upgrade Drivers** dialog box, review the information and choose **Yes** if you are ready to start the upgrade.
 
-3. Extract the contents of the upgrade package to a location of your
-    choice.
+1. When the upgrade is complete, the `PVUpgrade.log` file will open and contain the text `UPGRADE IS COMPLETE`.
 
-4. Double-click the **Upgrade.bat** file. If you get a
-    security warning, choose **Run**.
-
-5. In the **Upgrade Drivers** dialog box, review the
-    information and choose **Yes** if you are ready to start
-    the upgrade.
-
-6. When the upgrade is complete, the `PVUpgrade.log` file
-    will open and contain the text `UPGRADE IS COMPLETE`.
-
-7. Reboot your instance.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Windows PV drivers
-
-Troubleshoot PV
-drivers
+1. Reboot your instance.
 
 All content copied from https://docs.aws.amazon.com/.

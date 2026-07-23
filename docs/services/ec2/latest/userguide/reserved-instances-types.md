@@ -3,28 +3,22 @@ title: "Types of Reserved Instances (offering classes)"
 ---
 
 # Types of Reserved Instances (offering classes)
+<a name="reserved-instances-types"></a>
 
-The offering class of a Reserved Instance is either Standard or Convertible. A Standard Reserved Instance
-provides a more significant discount than a Convertible Reserved Instance, but you can't exchange a
-Standard Reserved Instance. You can exchange Convertible Reserved Instances. You can modify Standard and
-Convertible Reserved Instances.
+The offering class of a Reserved Instance is either Standard or Convertible. A Standard Reserved Instance provides a more significant discount than a Convertible Reserved Instance, but you can't exchange a Standard Reserved Instance. You can exchange Convertible Reserved Instances. You can modify Standard and Convertible Reserved Instances.
 
-The configuration of a Reserved Instance comprises a single instance type, platform, scope, and
-tenancy over a term. If your computing needs change, you might be able to modify or
-exchange your Reserved Instance.
+The configuration of a Reserved Instance comprises a single instance type, platform, scope, and tenancy over a term. If your computing needs change, you might be able to modify or exchange your Reserved Instance.
 
 ## Differences between Standard and Convertible Reserved Instances
+<a name="offering-class-differences"></a>
 
 The following are the differences between Standard and Convertible Reserved Instances.
 
-Standard Reserved InstanceConvertible Reserved InstanceModify Reserved InstancesSome attributes can be modified. For more information, see [Modify Reserved Instances](ri-modifying.md).Some attributes can be modified. For more information, see [Modify Reserved Instances](ri-modifying.md).Exchange Reserved InstancesCan't be exchanged.Can be exchanged during the term for another Convertible Reserved Instance with new
-attributes, including instance family, instance type, platform,
-scope, or tenancy. For more information, see [Exchange Convertible Reserved Instances](ri-convertible-exchange.md).Sell in the Reserved Instance MarketplaceCan be sold in the Reserved Instance Marketplace.Can't be sold in the Reserved Instance Marketplace.Buy in the Reserved Instance MarketplaceCan be bought in the Reserved Instance Marketplace.Can't be bought in the Reserved Instance Marketplace.
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Regional and zonal Reserved Instances (scope)
-
-How Reserved Instance discounts are applied
+|  | Standard Reserved Instance | Convertible Reserved Instance |
+| --- | --- | --- |
+| Modify Reserved Instances | Some attributes can be modified. For more information, see [Modify Reserved Instances](ri-modifying.md). | Some attributes can be modified. For more information, see [Modify Reserved Instances](ri-modifying.md). |
+| Exchange Reserved Instances | Can't be exchanged. | Can be exchanged during the term for another Convertible Reserved Instance with new attributes, including instance family, instance type, platform, scope, or tenancy. For more information, see [Exchange Convertible Reserved Instances](ri-convertible-exchange.md). |
+| Sell in the Reserved Instance Marketplace | Can be sold in the Reserved Instance Marketplace. | Can't be sold in the Reserved Instance Marketplace. |
+| Buy in the Reserved Instance Marketplace | Can be bought in the Reserved Instance Marketplace. | Can't be bought in the Reserved Instance Marketplace. |
 
 All content copied from https://docs.aws.amazon.com/.

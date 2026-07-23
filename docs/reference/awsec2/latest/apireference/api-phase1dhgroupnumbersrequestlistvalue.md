@@ -3,34 +3,24 @@ title: "Phase1DHGroupNumbersRequestListValue"
 ---
 
 # Phase1DHGroupNumbersRequestListValue
+<a name="API_Phase1DHGroupNumbersRequestListValue"></a>
 
-Specifies a Diffie-Hellman group number for the VPN tunnel for phase 1 IKE
-negotiations.
+Specifies a Diffie-Hellman group number for the VPN tunnel for phase 1 IKE negotiations.
 
 ## Contents
+<a name="API_Phase1DHGroupNumbersRequestListValue_Contents"></a>
 
-**Value**
-
+ ** Value **
 The Diffie-Hellmann group number.
-
 Type: Integer
-
 Required: No
 
 ## See Also
+<a name="API_Phase1DHGroupNumbersRequestListValue_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/phase1dhgroupnumbersrequestlistvalue.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/phase1dhgroupnumbersrequestlistvalue.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/phase1dhgroupnumbersrequestlistvalue.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Phase1DHGroupNumbersListValue
-
-Phase1EncryptionAlgorithmsListValue
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Phase1DHGroupNumbersRequestListValue)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Phase1DHGroupNumbersRequestListValue)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Phase1DHGroupNumbersRequestListValue)
 
 All content copied from https://docs.aws.amazon.com/.

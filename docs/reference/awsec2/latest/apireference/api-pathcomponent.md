@@ -3,185 +3,119 @@ title: "PathComponent"
 ---
 
 # PathComponent
+<a name="API_PathComponent"></a>
 
 Describes a path component.
 
 ## Contents
+<a name="API_PathComponent_Contents"></a>
 
-**aclRule**
-
+ ** aclRule **
 The network ACL rule.
-
-Type: [AnalysisAclRule](api-analysisaclrule.md) object
-
+Type: [AnalysisAclRule](API_AnalysisAclRule.md) object
 Required: No
 
-**AdditionalDetailSet.N**
-
+ ** AdditionalDetailSet.N **
 The additional details.
-
-Type: Array of [AdditionalDetail](api-additionaldetail.md) objects
-
+Type: Array of [AdditionalDetail](API_AdditionalDetail.md) objects
 Required: No
 
-**attachedTo**
-
+ ** attachedTo **
 The resource to which the path component is attached.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**component**
-
+ ** component **
 The component.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**destinationVpc**
-
+ ** destinationVpc **
 The destination VPC.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**elasticLoadBalancerListener**
-
+ ** elasticLoadBalancerListener **
 The load balancer listener.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**ExplanationSet.N**
-
+ ** ExplanationSet.N **
 The explanation codes.
-
-Type: Array of [Explanation](api-explanation.md) objects
-
+Type: Array of [Explanation](API_Explanation.md) objects
 Required: No
 
-**firewallStatefulRule**
-
+ ** firewallStatefulRule **
 The Network Firewall stateful rule.
-
-Type: [FirewallStatefulRule](api-firewallstatefulrule.md) object
-
+Type: [FirewallStatefulRule](API_FirewallStatefulRule.md) object
 Required: No
 
-**firewallStatelessRule**
-
+ ** firewallStatelessRule **
 The Network Firewall stateless rule.
-
-Type: [FirewallStatelessRule](api-firewallstatelessrule.md) object
-
+Type: [FirewallStatelessRule](API_FirewallStatelessRule.md) object
 Required: No
 
-**inboundHeader**
-
+ ** inboundHeader **
 The inbound header.
-
-Type: [AnalysisPacketHeader](api-analysispacketheader.md) object
-
+Type: [AnalysisPacketHeader](API_AnalysisPacketHeader.md) object
 Required: No
 
-**outboundHeader**
-
+ ** outboundHeader **
 The outbound header.
-
-Type: [AnalysisPacketHeader](api-analysispacketheader.md) object
-
+Type: [AnalysisPacketHeader](API_AnalysisPacketHeader.md) object
 Required: No
 
-**routeTableRoute**
-
+ ** routeTableRoute **
 The route table route.
-
-Type: [AnalysisRouteTableRoute](api-analysisroutetableroute.md) object
-
+Type: [AnalysisRouteTableRoute](API_AnalysisRouteTableRoute.md) object
 Required: No
 
-**securityGroupRule**
-
+ ** securityGroupRule **
 The security group rule.
-
-Type: [AnalysisSecurityGroupRule](api-analysissecuritygrouprule.md) object
-
+Type: [AnalysisSecurityGroupRule](API_AnalysisSecurityGroupRule.md) object
 Required: No
 
-**sequenceNumber**
-
+ ** sequenceNumber **
 The sequence number.
-
 Type: Integer
-
 Required: No
 
-**serviceName**
-
+ ** serviceName **
 The name of the VPC endpoint service.
-
 Type: String
-
 Required: No
 
-**sourceVpc**
-
+ ** sourceVpc **
 The source VPC.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**subnet**
-
+ ** subnet **
 The subnet.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**transitGateway**
-
+ ** transitGateway **
 The transit gateway.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**transitGatewayRouteTableRoute**
-
+ ** transitGatewayRouteTableRoute **
 The route in a transit gateway route table.
-
-Type: [TransitGatewayRouteTableRoute](api-transitgatewayroutetableroute.md) object
-
+Type: [TransitGatewayRouteTableRoute](API_TransitGatewayRouteTableRoute.md) object
 Required: No
 
-**vpc**
-
+ ** vpc **
 The component VPC.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
 ## See Also
+<a name="API_PathComponent_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/pathcomponent.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/pathcomponent.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/pathcomponent.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PacketHeaderStatementRequest
-
-PathFilter
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/PathComponent)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/PathComponent)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/PathComponent)
 
 All content copied from https://docs.aws.amazon.com/.

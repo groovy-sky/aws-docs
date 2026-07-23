@@ -3,43 +3,30 @@ title: "LaunchTemplateInstanceMarketOptionsRequest"
 ---
 
 # LaunchTemplateInstanceMarketOptionsRequest
+<a name="API_LaunchTemplateInstanceMarketOptionsRequest"></a>
 
 The market (purchasing) option for the instances.
 
 ## Contents
+<a name="API_LaunchTemplateInstanceMarketOptionsRequest_Contents"></a>
 
-**MarketType**
-
+ ** MarketType **
 The market type.
-
 Type: String
-
 Valid Values: `spot | capacity-block | interruptible-capacity-reservation`
-
 Required: No
 
-**SpotOptions**
-
+ ** SpotOptions **
 The options for Spot Instances.
-
-Type: [LaunchTemplateSpotMarketOptionsRequest](api-launchtemplatespotmarketoptionsrequest.md) object
-
+Type: [LaunchTemplateSpotMarketOptionsRequest](API_LaunchTemplateSpotMarketOptionsRequest.md) object
 Required: No
 
 ## See Also
+<a name="API_LaunchTemplateInstanceMarketOptionsRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/launchtemplateinstancemarketoptionsrequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/launchtemplateinstancemarketoptionsrequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/launchtemplateinstancemarketoptionsrequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LaunchTemplateInstanceMarketOptions
-
-LaunchTemplateInstanceMetadataOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/LaunchTemplateInstanceMarketOptionsRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/LaunchTemplateInstanceMarketOptionsRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/LaunchTemplateInstanceMarketOptionsRequest)
 
 All content copied from https://docs.aws.amazon.com/.

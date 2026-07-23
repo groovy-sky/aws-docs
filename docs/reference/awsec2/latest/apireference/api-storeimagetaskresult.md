@@ -3,83 +3,54 @@ title: "StoreImageTaskResult"
 ---
 
 # StoreImageTaskResult
+<a name="API_StoreImageTaskResult"></a>
 
 The information about the AMI store task, including the progress of the task.
 
 ## Contents
+<a name="API_StoreImageTaskResult_Contents"></a>
 
-**amiId**
-
+ ** amiId **
 The ID of the AMI that is being stored.
-
 Type: String
-
 Required: No
 
-**bucket**
-
+ ** bucket **
 The name of the Amazon S3 bucket that contains the stored AMI object.
-
 Type: String
-
 Required: No
 
-**progressPercentage**
-
+ ** progressPercentage **
 The progress of the task as a percentage.
-
 Type: Integer
-
 Required: No
 
-**s3objectKey**
-
+ ** s3objectKey **
 The name of the stored AMI object in the bucket.
-
 Type: String
-
 Required: No
 
-**storeTaskFailureReason**
-
-If the tasks fails, the reason for the failure is returned. If the task succeeds,
-`null` is returned.
-
+ ** storeTaskFailureReason **
+If the tasks fails, the reason for the failure is returned. If the task succeeds, `null` is returned.
 Type: String
-
 Required: No
 
-**storeTaskState**
-
-The state of the store task ( `InProgress`, `Completed`, or
-`Failed`).
-
+ ** storeTaskState **
+The state of the store task (`InProgress`, `Completed`, or `Failed`).
 Type: String
-
 Required: No
 
-**taskStartTime**
-
+ ** taskStartTime **
 The time the task started.
-
 Type: Timestamp
-
 Required: No
 
 ## See Also
+<a name="API_StoreImageTaskResult_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/storeimagetaskresult.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/storeimagetaskresult.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/storeimagetaskresult.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-StorageLocation
-
-Subnet
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/StoreImageTaskResult)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/StoreImageTaskResult)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/StoreImageTaskResult)
 
 All content copied from https://docs.aws.amazon.com/.

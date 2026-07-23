@@ -3,57 +3,39 @@ title: "AddressAttribute"
 ---
 
 # AddressAttribute
+<a name="API_AddressAttribute"></a>
 
 The attributes associated with an Elastic IP address.
 
 ## Contents
+<a name="API_AddressAttribute_Contents"></a>
 
-**allocationId**
-
-\[EC2-VPC\] The allocation ID.
-
+ ** allocationId **
+[EC2-VPC] The allocation ID.
 Type: String
-
 Required: No
 
-**ptrRecord**
-
+ ** ptrRecord **
 The pointer (PTR) record for the IP address.
-
 Type: String
-
 Required: No
 
-**ptrRecordUpdate**
-
+ ** ptrRecordUpdate **
 The updated PTR record for the IP address.
-
-Type: [PtrUpdateStatus](api-ptrupdatestatus.md) object
-
+Type: [PtrUpdateStatus](API_PtrUpdateStatus.md) object
 Required: No
 
-**publicIp**
-
+ ** publicIp **
 The public IP address.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_AddressAttribute_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/addressattribute.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/addressattribute.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/addressattribute.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Address
-
-AddressTransfer
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AddressAttribute)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AddressAttribute)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AddressAttribute)
 
 All content copied from https://docs.aws.amazon.com/.

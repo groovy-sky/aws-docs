@@ -3,89 +3,59 @@ title: "ImportInstanceVolumeDetailItem"
 ---
 
 # ImportInstanceVolumeDetailItem
+<a name="API_ImportInstanceVolumeDetailItem"></a>
 
 Describes an import volume task.
 
 ## Contents
+<a name="API_ImportInstanceVolumeDetailItem_Contents"></a>
 
-**availabilityZone**
-
+ ** availabilityZone **
 The Availability Zone where the resulting instance will reside.
-
 Type: String
-
 Required: No
 
-**availabilityZoneId**
-
+ ** availabilityZoneId **
 The ID of the Availability Zone where the resulting instance will reside.
-
 Type: String
-
 Required: No
 
-**bytesConverted**
-
+ ** bytesConverted **
 The number of bytes converted so far.
-
 Type: Long
-
 Required: No
 
-**description**
-
+ ** description **
 A description of the task.
-
 Type: String
-
 Required: No
 
-**image**
-
+ ** image **
 The image.
-
-Type: [DiskImageDescription](api-diskimagedescription.md) object
-
+Type: [DiskImageDescription](API_DiskImageDescription.md) object
 Required: No
 
-**status**
-
+ ** status **
 The status of the import of this particular disk image.
-
 Type: String
-
 Required: No
 
-**statusMessage**
-
+ ** statusMessage **
 The status information or errors related to the disk image.
-
 Type: String
-
 Required: No
 
-**volume**
-
+ ** volume **
 The volume.
-
-Type: [DiskImageVolumeDescription](api-diskimagevolumedescription.md) object
-
+Type: [DiskImageVolumeDescription](API_DiskImageVolumeDescription.md) object
 Required: No
 
 ## See Also
+<a name="API_ImportInstanceVolumeDetailItem_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/importinstancevolumedetailitem.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/importinstancevolumedetailitem.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/importinstancevolumedetailitem.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImportInstanceTaskDetails
-
-ImportSnapshotTask
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ImportInstanceVolumeDetailItem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ImportInstanceVolumeDetailItem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ImportInstanceVolumeDetailItem)
 
 All content copied from https://docs.aws.amazon.com/.

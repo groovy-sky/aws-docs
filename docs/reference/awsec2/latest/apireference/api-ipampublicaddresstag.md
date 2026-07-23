@@ -3,41 +3,29 @@ title: "IpamPublicAddressTag"
 ---
 
 # IpamPublicAddressTag
+<a name="API_IpamPublicAddressTag"></a>
 
 A tag for a public IP address discovered by IPAM.
 
 ## Contents
+<a name="API_IpamPublicAddressTag_Contents"></a>
 
-**key**
-
+ ** key **
 The tag's key.
-
 Type: String
-
 Required: No
 
-**value**
-
+ ** value **
 The tag's value.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_IpamPublicAddressTag_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ipampublicaddresstag.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ipampublicaddresstag.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipampublicaddresstag.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IpamPublicAddressSecurityGroup
-
-IpamPublicAddressTags
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/IpamPublicAddressTag)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/IpamPublicAddressTag)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/IpamPublicAddressTag)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,89 +3,74 @@ title: "Release an Elastic IP address"
 ---
 
 # Release an Elastic IP address
+<a name="using-instance-addressing-eips-releasing"></a>
 
-If you no longer need an Elastic IP address, we recommend that you release it. The Elastic
-IP address to release must not be currently associated with an AWS resource.
+If you no longer need an Elastic IP address, we recommend that you release it. The Elastic IP address to release must not be currently associated with an AWS resource.
 
-Console
+------
+#### [ Console ]
 
-###### To release an Elastic IP address
+**To release an Elastic IP address**
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-2. In the navigation pane, choose **Elastic IPs**.
+1. In the navigation pane, choose **Elastic IPs**.
 
-3. Select the Elastic IP address to release and choose **Actions**,
-    **Release Elastic IP addresses**.
+1. Select the Elastic IP address to release and choose **Actions**, **Release Elastic IP addresses**.
 
-4. Choose **Release**.
+1. Choose **Release**.
 
-AWS CLI
+------
+#### [ AWS CLI ]
 
-###### To release an Elastic IP address
+**To release an Elastic IP address**
+Use the [release-address](https://docs.aws.amazon.com/cli/latest/reference/ec2/release-address.html) AWS CLI command.
 
-Use the [release-address](../../../cli/latest/reference/ec2/release-address.md) AWS CLI command.
-
-```nohighlight
-
-aws ec2 release-address --allocation-id eipalloc-64d5890a
+```
+aws ec2 release-address --allocation-id {{eipalloc-64d5890a}}
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To release an Elastic IP address
+**To release an Elastic IP address**
+Use the [Remove-EC2Address](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2Address.html) cmdlet.
 
-Use the [Remove-EC2Address](../../../powershell/latest/reference/items/remove-ec2address.md)
-cmdlet.
-
-```powershell
-
-Remove-EC2Address -AllocationId eipalloc-64d5890a
+```
+Remove-EC2Address -AllocationId {{eipalloc-64d5890a}}
 ```
 
-After you release your Elastic IP address, you might be able to recover. The following
-rules apply:
+------
 
-- You can't recover an Elastic IP address if it has been allocated to another AWS
-account, or if it will result in your exceeding your Elastic IP address
-limit.
+After you release your Elastic IP address, you might be able to recover. The following rules apply:
++ You can't recover an Elastic IP address if it has been allocated to another AWS account, or if it will result in your exceeding your Elastic IP address limit.
++ You can't recover tags associated with an Elastic IP address.
 
-- You can't recover tags associated with an Elastic IP address.
+------
+#### [ AWS CLI ]
 
-AWS CLI
+**To recover an Elastic IP address**
+Use the [allocate-address](https://docs.aws.amazon.com/cli/latest/reference/ec2/allocate-address.html) command.
 
-###### To recover an Elastic IP address
-
-Use the [allocate-address](../../../cli/latest/reference/ec2/allocate-address.md)
-command.
-
-```nohighlight
-
+```
 aws ec2 allocate-address \
     --domain vpc \
-    --address 203.0.113.3
+    --address {{203.0.113.3}}
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To recover an Elastic IP address
+**To recover an Elastic IP address**
+Use the [New-EC2Address](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Address.html) cmdlet.
 
-Use the [New-EC2Address](../../../powershell/latest/reference/items/new-ec2address.md)
-cmdlet.
-
-```powershell
-
+```
 New-EC2Address `
-    -Address 203.0.113.3 `
+    -Address {{203.0.113.3}} `
     -Domain vpc `
-    -Region us-east-1
+    -Region {{us-east-1}}
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Transfer an Elastic IP address
-
-Use reverse DNS for email applications
+------
 
 All content copied from https://docs.aws.amazon.com/.

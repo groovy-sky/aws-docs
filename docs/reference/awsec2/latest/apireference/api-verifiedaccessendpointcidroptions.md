@@ -3,59 +3,40 @@ title: "VerifiedAccessEndpointCidrOptions"
 ---
 
 # VerifiedAccessEndpointCidrOptions
+<a name="API_VerifiedAccessEndpointCidrOptions"></a>
 
 Describes the CIDR options for a Verified Access endpoint.
 
 ## Contents
+<a name="API_VerifiedAccessEndpointCidrOptions_Contents"></a>
 
-**cidr**
-
+ ** cidr **
 The CIDR.
-
 Type: String
-
 Required: No
 
-**PortRangeSet.N**
-
+ ** PortRangeSet.N **
 The port ranges.
-
-Type: Array of [VerifiedAccessEndpointPortRange](api-verifiedaccessendpointportrange.md) objects
-
+Type: Array of [VerifiedAccessEndpointPortRange](API_VerifiedAccessEndpointPortRange.md) objects
 Required: No
 
-**protocol**
-
+ ** protocol **
 The protocol.
-
 Type: String
-
 Valid Values: `http | https | tcp`
-
 Required: No
 
-**SubnetIdSet.N**
-
+ ** SubnetIdSet.N **
 The IDs of the subnets.
-
 Type: Array of strings
-
 Required: No
 
 ## See Also
+<a name="API_VerifiedAccessEndpointCidrOptions_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/verifiedaccessendpointcidroptions.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/verifiedaccessendpointcidroptions.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccessendpointcidroptions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VerifiedAccessEndpoint
-
-VerifiedAccessEndpointEniOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VerifiedAccessEndpointCidrOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VerifiedAccessEndpointCidrOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VerifiedAccessEndpointCidrOptions)
 
 All content copied from https://docs.aws.amazon.com/.

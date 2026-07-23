@@ -3,79 +3,55 @@ title: "Assign billing of a shared EC2 Capacity Reservation to another account"
 ---
 
 # Assign billing of a shared EC2 Capacity Reservation to another account
+<a name="request-billing-transfer"></a>
 
-To assign billing of the available capacity of a shared Capacity Reservation to another
-account, the Capacity Reservation owner must initiate a request to the required account. In the
-Amazon EC2 console, this request is called a _transfer_
-_request_.
+To assign billing of the available capacity of a shared Capacity Reservation to another account, the Capacity Reservation owner must initiate a request to the required account. In the Amazon EC2 console, this request is called a *transfer request*.
 
-A Capacity Reservation owner can assign billing of the available capacity of Capacity Reservation to an
-account only if:
+A Capacity Reservation owner can assign billing of the available capacity of Capacity Reservation to an account only if:
++ The Capacity Reservation is already shared with that account.
++ The account is consolidated under the same AWS Organizations payer account as the Capacity Reservation owner.
 
-- The Capacity Reservation is already shared with that account.
+Billing is assigned to the specified account only once they accept the request.
 
-- The account is consolidated under the same AWS Organizations payer account as
-the Capacity Reservation owner.
+When a Capacity Reservation owner initiates a request, an Amazon EventBridge event is sent to the requested account. For more information, see [Monitor billing assignment requests for shared Capacity Reservations](billing-ownership-events.md).
 
-Billing is assigned to the specified account only once they accept the
-request.
+------
+#### [ Console ]
 
-When a Capacity Reservation owner initiates a request, an Amazon EventBridge event is sent to the
-requested account. For more information, see [Monitor billing assignment requests for shared Capacity Reservations](billing-ownership-events.md).
+**To assign billing of a shared Capacity Reservation**
 
-Console
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-###### To assign billing of a shared Capacity Reservation
+1. In the navigation panel, select **Capacity Reservations** and then choose the shared Capacity Reservation.
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. In the **Billing of available capacity** section, choose **Assign billing**.
 
-2. In the navigation panel, select **Capacity Reservations**
-    and then choose the shared Capacity Reservation.
+1. In the **Assign billing** screen, select the consumer account to which to assign billing, and then choose **Request**.
 
-3. In the **Billing of available capacity**
-    section, choose **Assign billing**.
+------
+#### [ AWS CLI ]
 
-4. In the **Assign billing** screen, select
-    the consumer account to which to assign billing, and then
-    choose **Request**.
+**To assign billing of a shared Capacity Reservation**
+Use the [associate-capacity-reservation-billing-owner](https://docs.aws.amazon.com/cli/latest/reference/ec2/associate-capacity-reservation-billing-owner.html) command. For `--capacity-reservation-id`, specify the ID of the shared Capacity Reservation. For `--unused-reservation-billing-owner-id`, specify the ID of the AWS account to which to assign billing.
 
-AWS CLI
-
-###### To assign billing of a shared Capacity Reservation
-
-Use the [associate-capacity-reservation-billing-owner](../../../cli/latest/reference/ec2/associate-capacity-reservation-billing-owner.md) command.
-For `--capacity-reservation-id`, specify the ID of the shared Capacity Reservation.
-For `--unused-reservation-billing-owner-id`, specify
-the ID of the AWS account to which to assign billing.
-
-```nohighlight
-
+```
 aws ec2 associate-capacity-reservation-billing-owner \
-    --capacity-reservation-id cr-01234567890abcdef \
-    --unused-reservation-billing-owner-id 123456789012
+    --capacity-reservation-id {{cr-01234567890abcdef}} \
+    --unused-reservation-billing-owner-id {{123456789012}}
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To assign billing of a shared Capacity Reservation
+**To assign billing of a shared Capacity Reservation**
+Use the [Register-EC2CapacityReservationBillingOwner](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2CapacityReservationBillingOwner.html) cmdlet. For `-CapacityReservationId`, specify the ID of the shared Capacity Reservation. For `-UnusedReservationBillingOwnerId`, specify the ID of the AWS account to which to assign billing.
 
-Use the [Register-EC2CapacityReservationBillingOwner](../../../powershell/latest/reference/items/register-ec2capacityreservationbillingowner.md) cmdlet.
-For `-CapacityReservationId`, specify the
-ID of the shared Capacity Reservation. For `-UnusedReservationBillingOwnerId`,
-specify the ID of the AWS account to which to assign billing.
-
-```powershell
-
+```
 Register-EC2CapacityReservationBillingOwner `
-    -CapacityReservationId cr-01234567890abcdef `
-    -UnusedReservationBillingOwnerId 123456789012
+    -CapacityReservationId {{cr-01234567890abcdef}} `
+    -UnusedReservationBillingOwnerId {{123456789012}}
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Billing assignment
-
-View billing assignment requests
+------
 
 All content copied from https://docs.aws.amazon.com/.

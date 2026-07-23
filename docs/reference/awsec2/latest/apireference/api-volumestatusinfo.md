@@ -3,43 +3,30 @@ title: "VolumeStatusInfo"
 ---
 
 # VolumeStatusInfo
+<a name="API_VolumeStatusInfo"></a>
 
 Describes the status of a volume.
 
 ## Contents
+<a name="API_VolumeStatusInfo_Contents"></a>
 
-**Details.N**
-
+ ** Details.N **
 The details of the volume status.
-
-Type: Array of [VolumeStatusDetails](api-volumestatusdetails.md) objects
-
+Type: Array of [VolumeStatusDetails](API_VolumeStatusDetails.md) objects
 Required: No
 
-**status**
-
+ ** status **
 The status of the volume.
-
 Type: String
-
 Valid Values: `ok | impaired | insufficient-data | warning`
-
 Required: No
 
 ## See Also
+<a name="API_VolumeStatusInfo_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/volumestatusinfo.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/volumestatusinfo.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/volumestatusinfo.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VolumeStatusEvent
-
-VolumeStatusItem
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VolumeStatusInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VolumeStatusInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VolumeStatusInfo)
 
 All content copied from https://docs.aws.amazon.com/.

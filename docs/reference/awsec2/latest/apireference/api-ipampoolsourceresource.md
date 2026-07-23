@@ -3,59 +3,40 @@ title: "IpamPoolSourceResource"
 ---
 
 # IpamPoolSourceResource
+<a name="API_IpamPoolSourceResource"></a>
 
 The resource used to provision CIDRs to a resource planning pool.
 
 ## Contents
+<a name="API_IpamPoolSourceResource_Contents"></a>
 
-**resourceId**
-
+ ** resourceId **
 The source resource ID.
-
 Type: String
-
 Required: No
 
-**resourceOwner**
-
+ ** resourceOwner **
 The source resource owner.
-
 Type: String
-
 Required: No
 
-**resourceRegion**
-
+ ** resourceRegion **
 The source resource Region.
-
 Type: String
-
 Required: No
 
-**resourceType**
-
+ ** resourceType **
 The source resource type.
-
 Type: String
-
 Valid Values: `vpc`
-
 Required: No
 
 ## See Also
+<a name="API_IpamPoolSourceResource_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/ipampoolsourceresource.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/ipampoolsourceresource.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/ipampoolsourceresource.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-IpamPoolCidrFailureReason
-
-IpamPoolSourceResourceRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/IpamPoolSourceResource)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/IpamPoolSourceResource)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/IpamPoolSourceResource)
 
 All content copied from https://docs.aws.amazon.com/.

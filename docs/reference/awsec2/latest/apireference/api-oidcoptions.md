@@ -3,82 +3,54 @@ title: "OidcOptions"
 ---
 
 # OidcOptions
+<a name="API_OidcOptions"></a>
 
-Describes the options for an OpenID Connect-compatible user-identity trust
-provider.
+Describes the options for an OpenID Connect-compatible user-identity trust provider.
 
 ## Contents
+<a name="API_OidcOptions_Contents"></a>
 
-**authorizationEndpoint**
-
+ ** authorizationEndpoint **
 The OIDC authorization endpoint.
-
 Type: String
-
 Required: No
 
-**clientId**
-
+ ** clientId **
 The client identifier.
-
 Type: String
-
 Required: No
 
-**clientSecret**
-
+ ** clientSecret **
 The client secret.
-
 Type: String
-
 Required: No
 
-**issuer**
-
+ ** issuer **
 The OIDC issuer.
-
 Type: String
-
 Required: No
 
-**scope**
-
+ ** scope **
 The OpenID Connect (OIDC) scope specified.
-
 Type: String
-
 Required: No
 
-**tokenEndpoint**
-
+ ** tokenEndpoint **
 The OIDC token endpoint.
-
 Type: String
-
 Required: No
 
-**userInfoEndpoint**
-
+ ** userInfoEndpoint **
 The OIDC user info endpoint.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_OidcOptions_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/oidcoptions.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/oidcoptions.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/oidcoptions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-NitroTpmInfo
-
-OnDemandOptions
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/OidcOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/OidcOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/OidcOptions)
 
 All content copied from https://docs.aws.amazon.com/.

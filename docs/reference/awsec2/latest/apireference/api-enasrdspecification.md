@@ -3,49 +3,31 @@ title: "EnaSrdSpecification"
 ---
 
 # EnaSrdSpecification
+<a name="API_EnaSrdSpecification"></a>
 
-ENA Express uses AWS Scalable Reliable Datagram (SRD) technology to increase the
-maximum bandwidth used per stream and minimize tail latency of network traffic between EC2 instances.
-With ENA Express, you can communicate between two EC2 instances in the same subnet within the same
-account, or in different accounts. Both sending and receiving instances must have ENA Express enabled.
+ENA Express uses AWS Scalable Reliable Datagram (SRD) technology to increase the maximum bandwidth used per stream and minimize tail latency of network traffic between EC2 instances. With ENA Express, you can communicate between two EC2 instances in the same subnet within the same account, or in different accounts. Both sending and receiving instances must have ENA Express enabled.
 
-To improve the reliability of network packet delivery, ENA Express reorders network packets on the
-receiving end by default. However, some UDP-based applications are designed to handle network packets
-that are out of order to reduce the overhead for packet delivery at the network layer. When ENA Express
-is enabled, you can specify whether UDP network traffic uses it.
+To improve the reliability of network packet delivery, ENA Express reorders network packets on the receiving end by default. However, some UDP-based applications are designed to handle network packets that are out of order to reduce the overhead for packet delivery at the network layer. When ENA Express is enabled, you can specify whether UDP network traffic uses it.
 
 ## Contents
+<a name="API_EnaSrdSpecification_Contents"></a>
 
-**EnaSrdEnabled**
-
+ ** EnaSrdEnabled **
 Indicates whether ENA Express is enabled for the network interface.
-
 Type: Boolean
-
 Required: No
 
-**EnaSrdUdpSpecification**
-
+ ** EnaSrdUdpSpecification **
 Configures ENA Express for UDP network traffic.
-
-Type: [EnaSrdUdpSpecification](api-enasrdudpspecification.md) object
-
+Type: [EnaSrdUdpSpecification](API_EnaSrdUdpSpecification.md) object
 Required: No
 
 ## See Also
+<a name="API_EnaSrdSpecification_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/enasrdspecification.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/enasrdspecification.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/enasrdspecification.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EnableFastSnapshotRestoreSuccessItem
-
-EnaSrdSpecificationRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/EnaSrdSpecification)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/EnaSrdSpecification)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/EnaSrdSpecification)
 
 All content copied from https://docs.aws.amazon.com/.

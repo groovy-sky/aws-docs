@@ -3,65 +3,36 @@ title: "View AMIs with EC2 Fast Launch enabled"
 ---
 
 # View AMIs with EC2 Fast Launch enabled
+<a name="win-view-fast-launch"></a>
 
-You can use the [describe-fast-launch-images](../../../cli/latest/reference/ec2/describe-fast-launch-images.md) command in the AWS CLI, or the [Get-EC2FastLaunchImage](../../../powershell/latest/reference/items/get-ec2fastlaunchimage.md)
-Tools for PowerShell Cmdlet to get details for AMIs that have EC2 Fast Launch enabled.
+You can use the [describe-fast-launch-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-fast-launch-images.html) command in the AWS CLI, or the [Get-EC2FastLaunchImage](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2FastLaunchImage.html) Tools for PowerShell Cmdlet to get details for AMIs that have EC2 Fast Launch enabled.
 
-Amazon EC2 provides the following details for each Windows AMI that is returned in the
-results:
+Amazon EC2 provides the following details for each Windows AMI that is returned in the results:
++ The image ID for an AMI with EC2 Fast Launch enabled.
++ The resource type that is used for pre-provisioning the associated Windows AMI. Supported value: `snapshot`.
++ The snapshot configuration, which is a group of parameters that configure pre-provisioning for the associated Windows AMI using snapshots.
++ Launch template information, including the ID, name, and version of the launch template that the associated AMI uses when it launches Window instances from pre-provisioned snapshots.
++ The maximum number of instances that can be launched at the same time for creating resources.
++ The owner ID for the associated AMI. This is not populated for AMIs that are shared with you.
++ The current state of EC2 Fast Launch for the associated AMI. Supported values include: `enabling | enabling-failed | enabled | enabled-failed | disabling | disabling-failed`.
+**Note**
+You can also see the current state displayed in the **Manage image optimization** page in the EC2 console, as **Image optimization state**.
++ The reason that EC2 Fast Launch for the associated AMI changed to the current state.
++ The time that EC2 Fast Launch for the associated AMI changed to the current state.
 
-- The image ID for an AMI with EC2 Fast Launch enabled.
+------
+#### [ AWS CLI ]
 
-- The resource type that is used for pre-provisioning the associated Windows AMI. Supported
-value: `snapshot`.
+**To find AMIs configured for EC2 Fast Launch**
+Use the following [describe-fast-launch-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-fast-launch-images.html) command to describe the details for each of the AMIs in the account that are configured for EC2 Fast Launch. In this example, only one AMI in the account is configured for EC2 Fast Launch.
 
-- The snapshot configuration, which is a group of parameters that configure
-pre-provisioning for the associated Windows AMI using snapshots.
-
-- Launch template information, including the ID, name, and version of the launch
-template that the associated AMI uses when it launches Window instances from
-pre-provisioned snapshots.
-
-- The maximum number of instances that can be launched at the same time for creating
-resources.
-
-- The owner ID for the associated AMI. This is not populated for AMIs that are shared
-with you.
-
-- The current state of EC2 Fast Launch for the associated AMI. Supported
-values include: `enabling | enabling-failed | enabled | enabled-failed |
-  					disabling | disabling-failed`.
-
-###### Note
-
-You can also see the current state displayed in the **Manage**
-**image optimization** page in the EC2 console, as **Image optimization**
-**state**.
-
-- The reason that EC2 Fast Launch for the associated AMI changed to the current
-state.
-
-- The time that EC2 Fast Launch for the associated AMI changed to the current
-state.
-
-AWS CLI
-
-###### To find AMIs configured for EC2 Fast Launch
-
-Use the following [describe-fast-launch-images](../../../cli/latest/reference/ec2/describe-fast-launch-images.md) command to describe the details
-for each of the AMIs in the account that are configured for EC2 Fast Launch.
-In this example, only one AMI in the account is configured
-for EC2 Fast Launch.
-
-```nohighlight
-
+```
 aws ec2 describe-fast-launch-images
 ```
 
 The following is example output.
 
-```json
-
+```
 {
     "FastLaunchImages": [
         {
@@ -83,24 +54,19 @@ The following is example output.
 }
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To find AMIs configured for EC2 Fast Launch
+**To find AMIs configured for EC2 Fast Launch**
+Use the following [Get-EC2FastLaunchImage](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2FastLaunchImage.html) cmdlet to describe the details for each of the AMIs in the account that are configured for EC2 Fast Launch. In this example, only one AMI in the account is configured for EC2 Fast Launch.
 
-Use the following [Get-EC2FastLaunchImage](../../../powershell/latest/reference/items/get-ec2fastlaunchimage.md) cmdlet to describe the details for
-each of the AMIs in the account that are configured for EC2 Fast Launch.
-In this example, only one AMI in the account is configured
-for EC2 Fast Launch.
-
-```powershell
-
-Get-EC2FastLaunchImage -ImageId ami-0abcdef1234567890
+```
+Get-EC2FastLaunchImage -ImageId {{ami-0abcdef1234567890}}
 ```
 
 The following is example output.
 
-```nohighlight
-
+```
 ImageId               : ami-0abcdef1234567890
 LaunchTemplate        : Amazon.EC2.Model.FastLaunchLaunchTemplateSpecificationResponse
 MaxParallelLaunches   : 6
@@ -112,10 +78,6 @@ StateTransitionReason : Client.UserInitiated
 StateTransitionTime   : 2/25/2022 12:54:43 PM
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Configure EC2 Fast Launch settings
-
-Manage resource costs
+------
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,95 +3,63 @@ title: "Reschedule a scheduled event for an EC2 instance"
 ---
 
 # Reschedule a scheduled event for an EC2 instance
+<a name="reschedule-event"></a>
 
-You can reschedule an event so that it occurs at a specific date and time that
-suits you. After you reschedule an event, it might take a minute or two before the
-the updated date is displayed.
+You can reschedule an event so that it occurs at a specific date and time that suits you. After you reschedule an event, it might take a minute or two before the the updated date is displayed.
 
-###### Limitations
+**Limitations**
++ Only events with an event deadline date can be rescheduled. The event can be rescheduled up to the event deadline date. The event deadline date is indicated in the **Deadline** column (console) and the `NotBeforeDeadline` field (AWS CLI).
++ Only events that have not yet started can be rescheduled. The start time is indicated in the **Start time** column (console) and the `NotBefore` field (AWS CLI). Events that are scheduled to start in the next 5 minutes can't be rescheduled.
++ The new event start time must be at least 60 minutes from the current time.
++ If you reschedule multiple events using the console, the event deadline date is determined by the event with the earliest event deadline date.
 
-- Only events with an event deadline date can be rescheduled. The event
-can be rescheduled up to the event deadline date. The event deadline
-date is indicated in the **Deadline** column (console)
-and the `NotBeforeDeadline` field (AWS CLI).
+------
+#### [ Console ]
 
-- Only events that have not yet started can be rescheduled. The start
-time is indicated in the **Start time** column
-(console) and the `NotBefore` field (AWS CLI). Events that are
-scheduled to start in the next 5 minutes can't be rescheduled.
+**To reschedule an event**
 
-- The new event start time must be at least 60 minutes from the current
-time.
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-- If you reschedule multiple events using the console, the event
-deadline date is determined by the event with the earliest event
-deadline date.
+1. In the navigation pane, choose **Events**.
 
-Console
+1. Choose **Resource type: instance** from the filter list.
 
-###### To reschedule an event
+1. Select one or more instances, and then choose **Actions**, **Schedule event**.
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+   Only events that have an event deadline date, indicated by a value for **Deadline**, can be rescheduled. If one of the selected events does not have a deadline date, **Actions**, **Schedule event** is disabled.
 
-2. In the navigation pane, choose
-    **Events**.
+1. For **New start time**, enter a new date and time for the event. The new date and time must occur before the **Event deadline**.
 
-3. Choose **Resource type: instance** from the
-    filter list.
+1. Choose **Save**.
 
-4. Select one or more instances, and then choose
-    **Actions**, **Schedule**
-**event**.
+   It might take a minute or two for the updated event start time to be reflected in the console.
 
-Only events that have an event deadline date, indicated by a
-    value for **Deadline**, can be rescheduled. If
-    one of the selected events does not have a deadline date,
-    **Actions**, **Schedule**
-**event** is disabled.
+------
+#### [ AWS CLI ]
 
-5. For **New start time**, enter a new date and
-    time for the event. The new date and time must occur before the
-    **Event deadline**.
+**To reschedule an event**
+Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-event-start-time.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-event-start-time.html) command.
 
-6. Choose **Save**.
-
-It might take a minute or two for the updated event start time
-    to be reflected in the console.
-
-AWS CLI
-
-###### To reschedule an event
-
-Use the [modify-instance-event-start-time](../../../cli/latest/reference/ec2/modify-instance-event-start-time.md) command.
-
-```nohighlight
-
+```
 aws ec2 modify-instance-event-start-time \
-    --instance-id i-1234567890abcdef0 \
-    --instance-event-id instance-event-0d59937288b749b32 \
-    --not-before 2020-03-25T10:00:00.000
+    --instance-id {{i-1234567890abcdef0}} \
+    --instance-event-id {{instance-event-0d59937288b749b32}} \
+    --not-before {{2020-03-25T10:00:00.000}}
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To reschedule an event
+**To reschedule an event**
+Use the [Edit-EC2InstanceEventStartTime](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceEventStartTime.html) cmdlet.
 
-Use the [Edit-EC2InstanceEventStartTime](../../../powershell/latest/reference/items/edit-ec2instanceeventstarttime.md)
-cmdlet.
-
-```powershell
-
+```
 Edit-EC2InstanceEventStartTime `
-    -InstanceId i-1234567890abcdef0 `
-    -InstanceEventId instance-event-0d59937288b749b32 `
-    -NotBefore 2020-03-25T10:00:00.000
+    -InstanceId {{i-1234567890abcdef0}} `
+    -InstanceEventId {{instance-event-0d59937288b749b32}} `
+    -NotBefore {{2020-03-25T10:00:00.000}}
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Customize scheduled event notifications
-
-Create custom event windows
+------
 
 All content copied from https://docs.aws.amazon.com/.

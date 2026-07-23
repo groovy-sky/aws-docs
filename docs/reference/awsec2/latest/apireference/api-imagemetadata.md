@@ -3,112 +3,72 @@ title: "ImageMetadata"
 ---
 
 # ImageMetadata
+<a name="API_ImageMetadata"></a>
 
 Information about the AMI.
 
 ## Contents
+<a name="API_ImageMetadata_Contents"></a>
 
-**creationDate**
-
+ ** creationDate **
 The date and time the AMI was created.
-
 Type: String
-
 Required: No
 
-**deprecationTime**
-
-The deprecation date and time of the AMI, in UTC, in the following format:
-_YYYY_- _MM_- _DD_ T _HH_: _MM_: _SS_ Z.
-
+ ** deprecationTime **
+The deprecation date and time of the AMI, in UTC, in the following format: *YYYY*-*MM*-*DD*T*HH*:*MM*:*SS*Z.
 Type: String
-
 Required: No
 
-**imageAllowed**
-
-If `true`, the AMI satisfies the criteria for Allowed AMIs and can be
-discovered and used in the account. If `false`, the AMI can't be discovered or used
-in the account.
-
-For more information, see [Control the discovery and use of AMIs in\
-Amazon EC2 with Allowed AMIs](../../../../services/ec2/latest/userguide/ec2-allowed-amis.md) in
-_Amazon EC2 User Guide_.
-
+ ** imageAllowed **
+If `true`, the AMI satisfies the criteria for Allowed AMIs and can be discovered and used in the account. If `false`, the AMI can't be discovered or used in the account.
+For more information, see [Control the discovery and use of AMIs in Amazon EC2 with Allowed AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-allowed-amis.html) in *Amazon EC2 User Guide*.
 Type: Boolean
-
 Required: No
 
-**imageId**
-
+ ** imageId **
 The ID of the AMI.
-
 Type: String
-
 Required: No
 
-**imageOwnerAlias**
-
+ ** imageOwnerAlias **
 The alias of the AMI owner.
-
-Valid values: `amazon` \| `aws-backup-vault` \|
-`aws-marketplace`
-
+Valid values: `amazon` \| `aws-backup-vault` \| `aws-marketplace`
 Type: String
-
 Required: No
 
-**imageOwnerId**
-
+ ** imageOwnerId **
 The ID of the AWS account that owns the AMI.
-
 Type: String
-
 Required: No
 
-**imageState**
-
-The current state of the AMI. If the state is `available`, the AMI is
-successfully registered and can be used to launch an instance.
-
+ ** imageState **
+The current state of the AMI. If the state is `available`, the AMI is successfully registered and can be used to launch an instance.
 Type: String
-
 Valid Values: `pending | available | invalid | deregistered | transient | failed | error | disabled`
-
 Required: No
 
-**isPublic**
+ ** ImageWatermarkSet.N **
+The watermarks attached to the AMI.
+Type: Array of [ImageWatermark](API_ImageWatermark.md) objects
+Required: No
 
-Indicates whether the AMI has public launch permissions. A value of `true`
-means this AMI has public launch permissions, while `false` means it has only
-implicit (AMI owner) or explicit (shared with your account) launch permissions.
-
+ ** isPublic **
+Indicates whether the AMI has public launch permissions. A value of `true` means this AMI has public launch permissions, while `false` means it has only implicit (AMI owner) or explicit (shared with your account) launch permissions.
 Type: Boolean
-
 Required: No
 
-**name**
-
+ ** name **
 The name of the AMI.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_ImageMetadata_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/imagemetadata.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/imagemetadata.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/imagemetadata.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ImageDiskContainer
-
-ImageRecycleBinInfo
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ImageMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ImageMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ImageMetadata)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,42 +3,29 @@ title: "FleetLaunchTemplateConfig"
 ---
 
 # FleetLaunchTemplateConfig
+<a name="API_FleetLaunchTemplateConfig"></a>
 
 Describes a launch template and overrides.
 
 ## Contents
+<a name="API_FleetLaunchTemplateConfig_Contents"></a>
 
-**launchTemplateSpecification**
-
+ ** launchTemplateSpecification **
 The launch template.
-
-Type: [FleetLaunchTemplateSpecification](api-fleetlaunchtemplatespecification.md) object
-
+Type: [FleetLaunchTemplateSpecification](API_FleetLaunchTemplateSpecification.md) object
 Required: No
 
-**Overrides.N**
-
-Any parameters that you specify override the same parameters in the launch
-template.
-
-Type: Array of [FleetLaunchTemplateOverrides](api-fleetlaunchtemplateoverrides.md) objects
-
+ ** Overrides.N **
+Any parameters that you specify override the same parameters in the launch template.
+Type: Array of [FleetLaunchTemplateOverrides](API_FleetLaunchTemplateOverrides.md) objects
 Required: No
 
 ## See Also
+<a name="API_FleetLaunchTemplateConfig_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/fleetlaunchtemplateconfig.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/fleetlaunchtemplateconfig.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/fleetlaunchtemplateconfig.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-FleetEbsBlockDeviceRequest
-
-FleetLaunchTemplateConfigRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/FleetLaunchTemplateConfig)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/FleetLaunchTemplateConfig)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/FleetLaunchTemplateConfig)
 
 All content copied from https://docs.aws.amazon.com/.

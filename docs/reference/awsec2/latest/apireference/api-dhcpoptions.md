@@ -3,57 +3,39 @@ title: "DhcpOptions"
 ---
 
 # DhcpOptions
+<a name="API_DhcpOptions"></a>
 
 The set of DHCP options.
 
 ## Contents
+<a name="API_DhcpOptions_Contents"></a>
 
-**DhcpConfigurationSet.N**
-
+ ** DhcpConfigurationSet.N **
 The DHCP options in the set.
-
-Type: Array of [DhcpConfiguration](api-dhcpconfiguration.md) objects
-
+Type: Array of [DhcpConfiguration](API_DhcpConfiguration.md) objects
 Required: No
 
-**dhcpOptionsId**
-
+ ** dhcpOptionsId **
 The ID of the set of DHCP options.
-
 Type: String
-
 Required: No
 
-**ownerId**
-
+ ** ownerId **
 The ID of the AWS account that owns the DHCP options set.
-
 Type: String
-
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 Any tags assigned to the DHCP options set.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
 ## See Also
+<a name="API_DhcpOptions_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/dhcpoptions.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/dhcpoptions.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/dhcpoptions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DhcpConfiguration
-
-DimensionCondition
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DhcpOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DhcpOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DhcpOptions)
 
 All content copied from https://docs.aws.amazon.com/.

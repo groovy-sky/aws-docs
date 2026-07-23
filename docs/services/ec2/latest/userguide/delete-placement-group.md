@@ -3,56 +3,45 @@ title: "Delete a placement group"
 ---
 
 # Delete a placement group
+<a name="delete-placement-group"></a>
 
-If you need to replace a placement group or no longer need one, you can delete it.
-Before you can delete a placement group, it must contain no instances. You can
-terminate the instances, move them to another placement group, or remove them
-from the placement group.
+If you need to replace a placement group or no longer need one, you can delete it. Before you can delete a placement group, it must contain no instances. You can terminate the instances, move them to another placement group, or remove them from the placement group.
 
-Console
+You cannot delete a placement group that is a parent of a cluster placement group. Delete the cluster placement groups first.
 
-###### To delete a placement group
+------
+#### [ Console ]
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+**To delete a placement group**
 
-2. In the navigation pane, choose **Placement**
-**Groups**.
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-3. Select the placement group and choose
-    **Actions**,
-    **Delete**.
+1. In the navigation pane, choose **Placement Groups**.
 
-4. When prompted for confirmation, enter
-    `Delete` and then choose
-    **Delete**.
+1. Select the placement group and choose **Actions**, **Delete**.
 
-AWS CLI
+1. When prompted for confirmation, enter **Delete** and then choose **Delete**.
 
-###### To delete a placement group
+------
+#### [ AWS CLI ]
 
-Use the [delete-placement-group](../../../cli/latest/reference/ec2/delete-placement-group.md) command.
+**To delete a placement group**
+Use the [delete-placement-group](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-placement-group.html) command.
 
-```nohighlight
-
-aws ec2 delete-placement-group --group-name my-cluster
+```
+aws ec2 delete-placement-group --group-name {{my-cluster}}
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To delete a placement group
+**To delete a placement group**
+Use the [Remove-EC2PlacementGroup](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2PlacementGroup.html) cmdlet.
 
-Use the [Remove-EC2PlacementGroup](../../../powershell/latest/reference/items/remove-ec2placementgroup.md) cmdlet.
-
-```powershell
-
-Remove-EC2PlacementGroup -GroupName my-cluster
+```
+Remove-EC2PlacementGroup -GroupName {{my-cluster}}
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Change instance placement
-
-Shared placement groups
+------
 
 All content copied from https://docs.aws.amazon.com/.

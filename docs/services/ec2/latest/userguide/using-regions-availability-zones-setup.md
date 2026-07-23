@@ -3,60 +3,35 @@ title: "Select a Region for your Amazon EC2 resources"
 ---
 
 # Select a Region for your Amazon EC2 resources
+<a name="using-regions-availability-zones-setup"></a>
 
-Amazon EC2 resources are specific to the AWS Region or zone in which they reside. When
-you create an Amazon EC2 resource, you select the Region for the resource.
+Amazon EC2 resources are specific to the AWS Region or zone in which they reside. When you create an Amazon EC2 resource, you select the Region for the resource.
 
-###### Considerations
+**Considerations**
++ Some AWS resources might not be available in all Regions. Ensure that you can create all the AWS resources that you need in a Region before you start creating resources in a Region.
++ Some Regions are disabled by default. You must enable these Regions before you can use them. For more information , see [AWS Regions](https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html).
 
-- Some AWS resources might not be available in all Regions. Ensure that you
-can create all the AWS resources that you need in a Region before you start
-creating resources in a Region.
+**To select a Region for a resource using the console**
 
-- Some Regions are disabled by default. You must enable these Regions before you
-can use them. For more information , see [AWS\
-Regions](../../../global-infrastructure/latest/regions/aws-regions.md).
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-###### To select a Region for a resource using the console
+1. From the navigation bar, choose the **Regions** selector and then choose the Region.
+![View your Regions.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/EC2_select_region.png)
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. The Regions selector includes all resources that are available for use in your AWS account. Choose the underlined text near the bottom of the list to view the Regions that are not enabled for your account.
 
-2. From the navigation bar, choose the **Regions** selector and
-    then choose the Region.
+**To select a Region for a resource using the AWS CLI**
+You can configure the AWS CLI to use a default Region. If you don't specify a Region in the command, the default Region is used. To use a different Region for a specific command, add the following option.
 
-![View your Regions](https://docs.aws.amazon.com/images/AWSEC2/latest/UserGuide/images/EC2_select_region.png)
-
-3. The Regions selector includes all resources that are available for use in your
-    AWS account. Choose the underlined text near the bottom of the list to view
-    the Regions that are not enabled for your account.
-
-###### To select a Region for a resource using the AWS CLI
-
-You can configure the AWS CLI to use a default Region. If you don't specify a Region
-in the command, the default Region is used. To use a different Region for a specific
-command, add the following option.
-
-```nohighlight
-
---region us-east-1
+```
+--region {{us-east-1}}
 ```
 
-###### To select a Region for a resource using the Tools for PowerShell
+**To select a Region for a resource using the Tools for PowerShell**
+You can configure the Tools for Windows PowerShell to use a default Region. If you don't specify a Region in a command, the default Region is used. To use a different Region for a specific command, add the following parameter.
 
-You can configure the Tools for Windows PowerShell to use a default Region. If you don't specify a Region
-in a command, the default Region is used. To use a different Region for a specific
-command, add the following parameter.
-
-```powershell
-
--Region us-east-1
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Manage resources
-
-Find your resources
+-Region {{us-east-1}}
+```
 
 All content copied from https://docs.aws.amazon.com/.

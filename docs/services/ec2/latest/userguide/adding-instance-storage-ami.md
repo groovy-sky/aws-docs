@@ -3,79 +3,50 @@ title: "Add instance store volumes to an Amazon EC2 AMI"
 ---
 
 # Add instance store volumes to an Amazon EC2 AMI
+<a name="adding-instance-storage-ami"></a>
 
 You can create an AMI with a block device mapping that includes instance store volumes.
 
-If you launch an instance that supports **non-NVMe instance store**
-**volumes** using an AMI that specifies instance store volume block device mappings,
-the instance includes the instance store volumes. If the number of instance store volume
-block device mappings in the AMI exceeds the number of instance store volumes available to
-the instance, the additional instance store volume block device mappings are ignored.
+If you launch an instance that supports **non-NVMe instance store volumes** using an AMI that specifies instance store volume block device mappings, the instance includes the instance store volumes. If the number of instance store volume block device mappings in the AMI exceeds the number of instance store volumes available to the instance, the additional instance store volume block device mappings are ignored.
 
-If you launch an instance that supports **NVMe instance store**
-**volumes** using an AMI that specifies instance store volume block device mappings,
-the instance store volume block device mappings are ignored. Instances that support NVMe
-instance store volumes get all of their supported instance store volumes, regardless of the
-block device mappings specified in the instance launch request and the AMI. The device
-mapping of these volumes depends on the order in which the operating system enumerates the
-volumes.
+If you launch an instance that supports **NVMe instance store volumes** using an AMI that specifies instance store volume block device mappings, the instance store volume block device mappings are ignored. Instances that support NVMe instance store volumes get all of their supported instance store volumes, regardless of the block device mappings specified in the instance launch request and the AMI. The device mapping of these volumes depends on the order in which the operating system enumerates the volumes.
 
-###### Considerations
+**Considerations**
++ The number of available instance store volumes depends on the instance type. For more information, see [Available instance store volumes](instance-store-volumes.md#available-instance-store-volumes).
++ You must specify a device name for each block device. For more information, see [Device names for volumes on Amazon EC2 instances](device_naming.md).
++ When you launch an instance, you can omit non-NVMe instance store volumes specified in the AMI block device mapping or add instance store volumes.
++ For M3 instances, specify instance store volumes in the block device mapping of the instance, not the AMI. Amazon EC2 might ignore instance store volume block device mappings in the AMI.
 
-- The number of available instance store volumes depends on the instance type. For
-more information, see [Available instance store volumes](instance-store-volumes.md#available-instance-store-volumes).
+------
+#### [ Console ]
 
-- You must specify a device name for each block device. For more information, see
-[Device names for volumes on Amazon EC2 instances](device-naming.md).
+**To add instance store volumes to an Amazon EBS-backed AMI**
 
-- When you launch an instance, you can omit non-NVMe instance store volumes specified
-in the AMI block device mapping or add instance store volumes.
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-- For M3 instances, specify instance store volumes in the block device mapping of the
-instance, not the AMI. Amazon EC2 might ignore instance store volume block device mappings in
-the AMI.
+1. In the navigation pane, choose **Instances** and select the instance.
 
-Console
+1. Choose **Actions**, **Image and templates**, **Create image**.
 
-###### To add instance store volumes to an Amazon EBS-backed AMI
+1. On the **Create image** page, enter a meaningful name and description for your image.
 
-1. Open the Amazon EC2 console at
-    [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2).
+1. For each instance store volume to add, choose **Add volume**, from **Volume type** select an instance store volume, and from **Device** select a device name.
 
-2. In the navigation pane, choose **Instances** and select the
-    instance.
+1. Choose **Create image**.
 
-3. Choose **Actions**, **Image and templates**,
-    **Create image**.
+------
+#### [ AWS CLI ]
 
-4. On the **Create image** page, enter a meaningful name and
-    description for your image.
+**To add instance store volumes to an AMI**
+Use the [create-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-image.html) command with the `--block-device-mappings` option to specify a block device mapping for an EBS-backed AMI. Use the [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command with the `--block-device-mappings` option to specify a block device mapping for an iAmazon S3-backed AMI.
 
-5. For each instance store volume to add, choose **Add volume**,
-    from **Volume type** select an instance store volume, and from
-    **Device** select a device name.
-
-6. Choose **Create image**.
-
-AWS CLI
-
-###### To add instance store volumes to an AMI
-
-Use the [create-image](../../../cli/latest/reference/ec2/create-image.md) command
-with the `--block-device-mappings` option to specify a block device
-mapping for an EBS-backed AMI. Use the [register-image](../../../cli/latest/reference/ec2/register-image.md) command with the
-`--block-device-mappings` option to specify a block device mapping for
-an iAmazon S3-backed AMI.
-
-```nohighlight
-
+```
 --block-device-mappings file://mapping.json
 ```
 
 The following block device mapping adds two instance store volumes.
 
-```json
-
+```
 [
     {
         "DeviceName": "/dev/sdc",
@@ -88,25 +59,19 @@ The following block device mapping adds two instance store volumes.
 ]
 ```
 
-PowerShell
+------
+#### [ PowerShell ]
 
-###### To add instance store volumes to an AMI
+**To add instance store volumes to an AMI**
+Use the [New-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Image.html) cmdlet with the `-BlockDeviceMapping` parameter to specify a block device mapping for an EBS-backed AMI. Use the [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) cmdlet with the `-BlockDeviceMapping` parameter to specify a block device mapping for an Amazon S3-backed AMI.
 
-Use the [New-EC2Image](../../../powershell/latest/reference/items/new-ec2image.md) cmdlet
-with the `-BlockDeviceMapping` parameter to specify a block device
-mapping for an EBS-backed AMI. Use the [Register-EC2Image](../../../powershell/latest/reference/items/register-ec2image.md) cmdlet
-with the `-BlockDeviceMapping` parameter to specify a block device
-mapping for an Amazon S3-backed AMI.
-
-```powershell
-
+```
 -BlockDeviceMapping $bdm
 ```
 
 The following block device mapping adds two instance store volumes.
 
-```powershell
-
+```
 $bdm = @()
 
 $sdc = New-Object -TypeName Amazon.EC2.Model.BlockDeviceMapping
@@ -120,10 +85,6 @@ $sdd.VirtualName = "ephemeral1"
 $bdm += $sdd
 ```
 
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Add instance store volumes
-
-Add instance store volumes to an instance
+------
 
 All content copied from https://docs.aws.amazon.com/.

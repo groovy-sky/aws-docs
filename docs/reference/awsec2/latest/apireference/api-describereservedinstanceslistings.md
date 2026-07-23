@@ -3,109 +3,83 @@ title: "DescribeReservedInstancesListings"
 ---
 
 # DescribeReservedInstancesListings
+<a name="API_DescribeReservedInstancesListings"></a>
 
-Describes your account's Reserved Instance listings in the Reserved Instance
-Marketplace.
+Describes your account's Reserved Instance listings in the Reserved Instance Marketplace.
 
-The Reserved Instance Marketplace matches sellers who want to resell Reserved Instance
-capacity that they no longer need with buyers who want to purchase additional capacity.
-Reserved Instances bought and sold through the Reserved Instance Marketplace work like any
-other Reserved Instances.
+The Reserved Instance Marketplace matches sellers who want to resell Reserved Instance capacity that they no longer need with buyers who want to purchase additional capacity. Reserved Instances bought and sold through the Reserved Instance Marketplace work like any other Reserved Instances.
 
-As a seller, you choose to list some or all of your Reserved Instances, and you specify
-the upfront price to receive for them. Your Reserved Instances are then listed in the Reserved
-Instance Marketplace and are available for purchase.
+As a seller, you choose to list some or all of your Reserved Instances, and you specify the upfront price to receive for them. Your Reserved Instances are then listed in the Reserved Instance Marketplace and are available for purchase.
 
-As a buyer, you specify the configuration of the Reserved Instance to purchase, and the
-Marketplace matches what you're searching for with what's available. The Marketplace first
-sells the lowest priced Reserved Instances to you, and continues to sell available Reserved
-Instance listings to you until your demand is met. You are charged based on the total price of
-all of the listings that you purchase.
+As a buyer, you specify the configuration of the Reserved Instance to purchase, and the Marketplace matches what you're searching for with what's available. The Marketplace first sells the lowest priced Reserved Instances to you, and continues to sell available Reserved Instance listings to you until your demand is met. You are charged based on the total price of all of the listings that you purchase.
 
-For more information, see [Sell in the Reserved Instance\
-Marketplace](../../../../services/ec2/latest/userguide/ri-market-general.md) in the _Amazon EC2 User Guide_.
+For more information, see [Sell in the Reserved Instance Marketplace](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-general.html) in the *Amazon EC2 User Guide*.
 
-###### Note
-
-The order of the elements in the response, including those within nested structures,
-might vary. Applications should not assume the elements appear in a particular order.
+**Note**
+The order of the elements in the response, including those within nested structures, might vary. Applications should not assume the elements appear in a particular order.
 
 ## Request Parameters
+<a name="API_DescribeReservedInstancesListings_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**Filter.N**
-
+ **Filter.N**
 One or more filters.
-
-- `reserved-instances-id` \- The ID of the Reserved Instances.
-
-- `reserved-instances-listing-id` \- The ID of the Reserved Instances
-listing.
-
-- `status` \- The status of the Reserved Instance listing ( `pending` \|
-`active` \| `cancelled` \| `closed`).
-
-- `status-message` \- The reason for the status.
-
-Type: Array of [Filter](api-filter.md) objects
-
++  `reserved-instances-id` - The ID of the Reserved Instances.
++  `reserved-instances-listing-id` - The ID of the Reserved Instances listing.
++  `status` - The status of the Reserved Instance listing (`pending` \| `active` \| `cancelled` \| `closed`).
++  `status-message` - The reason for the status.
+Type: Array of [Filter](API_Filter.md) objects
 Required: No
 
-**ReservedInstancesId**
-
+ **ReservedInstancesId**
 One or more Reserved Instance IDs.
-
 Type: String
-
 Required: No
 
-**ReservedInstancesListingId**
-
+ **ReservedInstancesListingId**
 One or more Reserved Instance listing IDs.
-
 Type: String
-
 Required: No
 
 ## Response Elements
+<a name="API_DescribeReservedInstancesListings_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**reservedInstancesListingsSet**
-
+ **reservedInstancesListingsSet**
 Information about the Reserved Instance listing.
-
-Type: Array of [ReservedInstancesListing](api-reservedinstanceslisting.md) objects
+Type: Array of [ReservedInstancesListing](API_ReservedInstancesListing.md) objects
 
 ## Errors
+<a name="API_DescribeReservedInstancesListings_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_DescribeReservedInstancesListings_Examples"></a>
 
 ### Example
+<a name="API_DescribeReservedInstancesListings_Example_1"></a>
 
 This example shows all the listings associated with your account.
 
 #### Sample Request
+<a name="API_DescribeReservedInstancesListings_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=DescribeReservedInstancesListings
 &AUTHPARAMS
 ```
 
 #### Sample Response
+<a name="API_DescribeReservedInstancesListings_Example_1_Response"></a>
 
 ```
-
 <DescribeReservedInstancesListingsResponse>
     <requestId>cec5c904-8f3a-4de5-8f5a-ff7f9EXAMPLE</requestId>
     <reservedInstancesListingsSet>
@@ -192,33 +166,18 @@ https://ec2.amazonaws.com/?Action=DescribeReservedInstancesListings
 ```
 
 ## See Also
+<a name="API_DescribeReservedInstancesListings_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/describereservedinstanceslistings.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/describereservedinstanceslistings.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describereservedinstanceslistings.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describereservedinstanceslistings.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describereservedinstanceslistings.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describereservedinstanceslistings.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describereservedinstanceslistings.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describereservedinstanceslistings.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/describereservedinstanceslistings.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describereservedinstanceslistings.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeReservedInstances
-
-DescribeReservedInstancesModifications
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/DescribeReservedInstancesListings)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeReservedInstancesListings)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeReservedInstancesListings)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeReservedInstancesListings)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeReservedInstancesListings)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeReservedInstancesListings)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeReservedInstancesListings)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeReservedInstancesListings)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeReservedInstancesListings)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeReservedInstancesListings)
 
 All content copied from https://docs.aws.amazon.com/.

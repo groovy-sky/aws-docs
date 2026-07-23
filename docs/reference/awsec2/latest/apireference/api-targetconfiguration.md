@@ -3,42 +3,29 @@ title: "TargetConfiguration"
 ---
 
 # TargetConfiguration
+<a name="API_TargetConfiguration"></a>
 
 Information about the Convertible Reserved Instance offering.
 
 ## Contents
+<a name="API_TargetConfiguration_Contents"></a>
 
-**instanceCount**
-
-The number of instances the Convertible Reserved Instance offering can be applied to. This
-parameter is reserved and cannot be specified in a request
-
+ ** instanceCount **
+The number of instances the Convertible Reserved Instance offering can be applied to. This parameter is reserved and cannot be specified in a request
 Type: Integer
-
 Required: No
 
-**offeringId**
-
+ ** offeringId **
 The ID of the Convertible Reserved Instance offering.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_TargetConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/targetconfiguration.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/targetconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/targetconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetCapacitySpecificationRequest
-
-TargetConfigurationRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TargetConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TargetConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TargetConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

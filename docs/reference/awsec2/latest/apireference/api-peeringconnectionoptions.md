@@ -3,50 +3,34 @@ title: "PeeringConnectionOptions"
 ---
 
 # PeeringConnectionOptions
+<a name="API_PeeringConnectionOptions"></a>
 
 Describes the VPC peering connection options.
 
 ## Contents
+<a name="API_PeeringConnectionOptions_Contents"></a>
 
-**allowDnsResolutionFromRemoteVpc**
-
-If true, the public DNS hostnames of instances in the specified VPC resolve to private
-IP addresses when queried from instances in the peer VPC.
-
+ ** allowDnsResolutionFromRemoteVpc **
+If true, the public DNS hostnames of instances in the specified VPC resolve to private IP addresses when queried from instances in the peer VPC.
 Type: Boolean
-
 Required: No
 
-**allowEgressFromLocalClassicLinkToRemoteVpc**
-
+ ** allowEgressFromLocalClassicLinkToRemoteVpc **
 Deprecated.
-
 Type: Boolean
-
 Required: No
 
-**allowEgressFromLocalVpcToRemoteClassicLink**
-
+ ** allowEgressFromLocalVpcToRemoteClassicLink **
 Deprecated.
-
 Type: Boolean
-
 Required: No
 
 ## See Also
+<a name="API_PeeringConnectionOptions_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/peeringconnectionoptions.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/peeringconnectionoptions.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/peeringconnectionoptions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PeeringAttachmentStatus
-
-PeeringConnectionOptionsRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/PeeringConnectionOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/PeeringConnectionOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/PeeringConnectionOptions)
 
 All content copied from https://docs.aws.amazon.com/.

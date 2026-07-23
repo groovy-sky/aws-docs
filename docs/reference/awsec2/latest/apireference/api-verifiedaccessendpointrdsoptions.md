@@ -3,85 +3,56 @@ title: "VerifiedAccessEndpointRdsOptions"
 ---
 
 # VerifiedAccessEndpointRdsOptions
+<a name="API_VerifiedAccessEndpointRdsOptions"></a>
 
 Describes the RDS options for a Verified Access endpoint.
 
 ## Contents
+<a name="API_VerifiedAccessEndpointRdsOptions_Contents"></a>
 
-**port**
-
+ ** port **
 The port.
-
 Type: Integer
-
 Valid Range: Minimum value of 1. Maximum value of 65535.
-
 Required: No
 
-**protocol**
-
+ ** protocol **
 The protocol.
-
 Type: String
-
 Valid Values: `http | https | tcp`
-
 Required: No
 
-**rdsDbClusterArn**
-
+ ** rdsDbClusterArn **
 The ARN of the DB cluster.
-
 Type: String
-
 Required: No
 
-**rdsDbInstanceArn**
-
+ ** rdsDbInstanceArn **
 The ARN of the RDS instance.
-
 Type: String
-
 Required: No
 
-**rdsDbProxyArn**
-
+ ** rdsDbProxyArn **
 The ARN of the RDS proxy.
-
 Type: String
-
 Required: No
 
-**rdsEndpoint**
-
+ ** rdsEndpoint **
 The RDS endpoint.
-
 Type: String
-
 Required: No
 
-**SubnetIdSet.N**
-
+ ** SubnetIdSet.N **
 The IDs of the subnets.
-
 Type: Array of strings
-
 Required: No
 
 ## See Also
+<a name="API_VerifiedAccessEndpointRdsOptions_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/verifiedaccessendpointrdsoptions.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/verifiedaccessendpointrdsoptions.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/verifiedaccessendpointrdsoptions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VerifiedAccessEndpointPortRange
-
-VerifiedAccessEndpointStatus
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VerifiedAccessEndpointRdsOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VerifiedAccessEndpointRdsOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VerifiedAccessEndpointRdsOptions)
 
 All content copied from https://docs.aws.amazon.com/.

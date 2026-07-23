@@ -3,49 +3,34 @@ title: "ClientConnectResponseOptions"
 ---
 
 # ClientConnectResponseOptions
+<a name="API_ClientConnectResponseOptions"></a>
 
 The options for managing connection authorization for new client connections.
 
 ## Contents
+<a name="API_ClientConnectResponseOptions_Contents"></a>
 
-**enabled**
-
+ ** enabled **
 Indicates whether client connect options are enabled.
-
 Type: Boolean
-
 Required: No
 
-**lambdaFunctionArn**
-
+ ** lambdaFunctionArn **
 The Amazon Resource Name (ARN) of the Lambda function used for connection authorization.
-
 Type: String
-
 Required: No
 
-**status**
-
+ ** status **
 The status of any updates to the client connect options.
-
-Type: [ClientVpnEndpointAttributeStatus](api-clientvpnendpointattributestatus.md) object
-
+Type: [ClientVpnEndpointAttributeStatus](API_ClientVpnEndpointAttributeStatus.md) object
 Required: No
 
 ## See Also
+<a name="API_ClientConnectResponseOptions_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/clientconnectresponseoptions.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/clientconnectresponseoptions.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/clientconnectresponseoptions.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ClientConnectOptions
-
-ClientData
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ClientConnectResponseOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ClientConnectResponseOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ClientConnectResponseOptions)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,43 +3,30 @@ title: "DeleteFleetError"
 ---
 
 # DeleteFleetError
+<a name="API_DeleteFleetError"></a>
 
 Describes an EC2 Fleet error.
 
 ## Contents
+<a name="API_DeleteFleetError_Contents"></a>
 
-**code**
-
+ ** code **
 The error code.
-
 Type: String
-
 Valid Values: `fleetIdDoesNotExist | fleetIdMalformed | fleetNotInDeletableState | unexpectedError`
-
 Required: No
 
-**message**
-
+ ** message **
 The description for the error code.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_DeleteFleetError_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/deletefleeterror.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/deletefleeterror.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/deletefleeterror.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DefaultConnectionTrackingConfiguration
-
-DeleteFleetErrorItem
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DeleteFleetError)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DeleteFleetError)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DeleteFleetError)
 
 All content copied from https://docs.aws.amazon.com/.

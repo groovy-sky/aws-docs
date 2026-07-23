@@ -3,83 +3,55 @@ title: "InstanceEventWindow"
 ---
 
 # InstanceEventWindow
+<a name="API_InstanceEventWindow"></a>
 
 The event window.
 
 ## Contents
+<a name="API_InstanceEventWindow_Contents"></a>
 
-**associationTarget**
-
+ ** associationTarget **
 One or more targets associated with the event window.
-
-Type: [InstanceEventWindowAssociationTarget](api-instanceeventwindowassociationtarget.md) object
-
+Type: [InstanceEventWindowAssociationTarget](API_InstanceEventWindowAssociationTarget.md) object
 Required: No
 
-**cronExpression**
-
+ ** cronExpression **
 The cron expression defined for the event window.
-
 Type: String
-
 Required: No
 
-**instanceEventWindowId**
-
+ ** instanceEventWindowId **
 The ID of the event window.
-
 Type: String
-
 Required: No
 
-**name**
-
+ ** name **
 The name of the event window.
-
 Type: String
-
 Required: No
 
-**state**
-
+ ** state **
 The current state of the event window.
-
 Type: String
-
 Valid Values: `creating | deleting | active | deleted`
-
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 The instance tags associated with the event window.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
-**TimeRangeSet.N**
-
+ ** TimeRangeSet.N **
 One or more time ranges defined for the event window.
-
-Type: Array of [InstanceEventWindowTimeRange](api-instanceeventwindowtimerange.md) objects
-
+Type: Array of [InstanceEventWindowTimeRange](API_InstanceEventWindowTimeRange.md) objects
 Required: No
 
 ## See Also
+<a name="API_InstanceEventWindow_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instanceeventwindow.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instanceeventwindow.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instanceeventwindow.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstanceCreditSpecificationRequest
-
-InstanceEventWindowAssociationRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceEventWindow)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceEventWindow)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceEventWindow)
 
 All content copied from https://docs.aws.amazon.com/.

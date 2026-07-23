@@ -3,97 +3,76 @@ title: "CreateDefaultSubnet"
 ---
 
 # CreateDefaultSubnet
+<a name="API_CreateDefaultSubnet"></a>
 
-Creates a default subnet with a size `/20` IPv4 CIDR block in the
-specified Availability Zone in your default VPC. You can have only one default subnet
-per Availability Zone. For more information, see [Create a default\
-subnet](../../../../services/vpc/latest/userguide/work-with-default-vpc.md#create-default-subnet) in the _Amazon VPC User Guide_.
+Creates a default subnet with a size `/20` IPv4 CIDR block in the specified Availability Zone in your default VPC. You can have only one default subnet per Availability Zone. For more information, see [Create a default subnet](https://docs.aws.amazon.com/vpc/latest/userguide/work-with-default-vpc.html#create-default-subnet) in the *Amazon VPC User Guide*.
 
 ## Request Parameters
+<a name="API_CreateDefaultSubnet_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**AvailabilityZone**
-
+ **AvailabilityZone**
 The Availability Zone in which to create the default subnet.
-
-Either `AvailabilityZone` or `AvailabilityZoneId` must be specified,
-but not both.
-
+Either `AvailabilityZone` or `AvailabilityZoneId` must be specified, but not both.
 Type: String
-
 Required: No
 
-**AvailabilityZoneId**
-
+ **AvailabilityZoneId**
 The ID of the Availability Zone.
-
-Either `AvailabilityZone` or `AvailabilityZoneId` must be specified,
-but not both.
-
+Either `AvailabilityZone` or `AvailabilityZoneId` must be specified, but not both.
 Type: String
-
 Required: No
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
-Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**Ipv6Native**
-
-Indicates whether to create an IPv6 only subnet. If you already have a default subnet
-for this Availability Zone, you must delete it before you can create an IPv6 only subnet.
-
+ **Ipv6Native**
+Indicates whether to create an IPv6 only subnet. If you already have a default subnet for this Availability Zone, you must delete it before you can create an IPv6 only subnet.
 Type: Boolean
-
 Required: No
 
 ## Response Elements
+<a name="API_CreateDefaultSubnet_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**subnet**
-
+ **subnet**
 Information about the subnet.
-
-Type: [Subnet](api-subnet.md) object
+Type: [Subnet](API_Subnet.md) object
 
 ## Errors
+<a name="API_CreateDefaultSubnet_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_CreateDefaultSubnet_Examples"></a>
 
 ### Example
+<a name="API_CreateDefaultSubnet_Example_1"></a>
 
-This example creates a default subnet in Availability Zone
-`us-east-2a`.
+This example creates a default subnet in Availability Zone `us-east-2a`.
 
 #### Sample Request
+<a name="API_CreateDefaultSubnet_Example_1_Request"></a>
 
 ```
-
 https://ec2.us-east-2.amazonaws.com/?Action=CreateDefaultSubnet
 &AvailabilityZone=us-east-2a
 &AUTHPARAMS
 ```
 
 #### Sample Response
+<a name="API_CreateDefaultSubnet_Example_1_Response"></a>
 
 ```
-
 <CreateDefaultSubnetResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
     <requestId>12e2fb2e-e566-488a-926d-4655example</requestId>
     <subnet>
@@ -113,33 +92,18 @@ https://ec2.us-east-2.amazonaws.com/?Action=CreateDefaultSubnet
 ```
 
 ## See Also
+<a name="API_CreateDefaultSubnet_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/createdefaultsubnet.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/createdefaultsubnet.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/createdefaultsubnet.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/createdefaultsubnet.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/createdefaultsubnet.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/createdefaultsubnet.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/createdefaultsubnet.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/createdefaultsubnet.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/createdefaultsubnet.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/createdefaultsubnet.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-CreateCustomerGateway
-
-CreateDefaultVpc
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/CreateDefaultSubnet)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/CreateDefaultSubnet)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CreateDefaultSubnet)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/CreateDefaultSubnet)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CreateDefaultSubnet)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/CreateDefaultSubnet)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/CreateDefaultSubnet)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/CreateDefaultSubnet)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/CreateDefaultSubnet)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CreateDefaultSubnet)
 
 All content copied from https://docs.aws.amazon.com/.

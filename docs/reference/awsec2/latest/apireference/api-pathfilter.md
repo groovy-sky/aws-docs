@@ -3,66 +3,43 @@ title: "PathFilter"
 ---
 
 # PathFilter
+<a name="API_PathFilter"></a>
 
-Describes a set of filters for a path analysis. Use path filters to scope the analysis when
-there can be multiple resulting paths.
+Describes a set of filters for a path analysis. Use path filters to scope the analysis when there can be multiple resulting paths.
 
 ## Contents
+<a name="API_PathFilter_Contents"></a>
 
-**destinationAddress**
-
+ ** destinationAddress **
 The destination IPv4 address.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 15.
-
 Pattern: `^([0-9]{1,3}.){3}[0-9]{1,3}$`
-
 Required: No
 
-**destinationPortRange**
-
+ ** destinationPortRange **
 The destination port range.
-
-Type: [FilterPortRange](api-filterportrange.md) object
-
+Type: [FilterPortRange](API_FilterPortRange.md) object
 Required: No
 
-**sourceAddress**
-
+ ** sourceAddress **
 The source IPv4 address.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 15.
-
 Pattern: `^([0-9]{1,3}.){3}[0-9]{1,3}$`
-
 Required: No
 
-**sourcePortRange**
-
+ ** sourcePortRange **
 The source port range.
-
-Type: [FilterPortRange](api-filterportrange.md) object
-
+Type: [FilterPortRange](API_FilterPortRange.md) object
 Required: No
 
 ## See Also
+<a name="API_PathFilter_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/pathfilter.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/pathfilter.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/pathfilter.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PathComponent
-
-PathRequestFilter
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/PathFilter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/PathFilter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/PathFilter)
 
 All content copied from https://docs.aws.amazon.com/.

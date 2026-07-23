@@ -3,49 +3,34 @@ title: "TerminateConnectionStatus"
 ---
 
 # TerminateConnectionStatus
+<a name="API_TerminateConnectionStatus"></a>
 
 Information about a terminated Client VPN endpoint client connection.
 
 ## Contents
+<a name="API_TerminateConnectionStatus_Contents"></a>
 
-**connectionId**
-
+ ** connectionId **
 The ID of the client connection.
-
 Type: String
-
 Required: No
 
-**currentStatus**
-
+ ** currentStatus **
 A message about the status of the client connection, if applicable.
-
-Type: [ClientVpnConnectionStatus](api-clientvpnconnectionstatus.md) object
-
+Type: [ClientVpnConnectionStatus](API_ClientVpnConnectionStatus.md) object
 Required: No
 
-**previousStatus**
-
+ ** previousStatus **
 The state of the client connection.
-
-Type: [ClientVpnConnectionStatus](api-clientvpnconnectionstatus.md) object
-
+Type: [ClientVpnConnectionStatus](API_ClientVpnConnectionStatus.md) object
 Required: No
 
 ## See Also
+<a name="API_TerminateConnectionStatus_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/terminateconnectionstatus.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/terminateconnectionstatus.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/terminateconnectionstatus.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TargetReservationValue
-
-ThroughResourcesStatement
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TerminateConnectionStatus)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TerminateConnectionStatus)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TerminateConnectionStatus)
 
 All content copied from https://docs.aws.amazon.com/.

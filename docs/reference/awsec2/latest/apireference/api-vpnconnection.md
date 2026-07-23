@@ -3,172 +3,107 @@ title: "VpnConnection"
 ---
 
 # VpnConnection
+<a name="API_VpnConnection"></a>
 
 Describes a VPN connection.
 
 ## Contents
+<a name="API_VpnConnection_Contents"></a>
 
-**category**
-
+ ** category **
 The category of the VPN connection. A value of `VPN` indicates an AWS VPN connection. A value of `VPN-Classic` indicates an AWS Classic VPN connection.
-
 Type: String
-
 Required: No
 
-**coreNetworkArn**
-
+ ** coreNetworkArn **
 The ARN of the core network.
-
 Type: String
-
 Required: No
 
-**coreNetworkAttachmentArn**
-
+ ** coreNetworkAttachmentArn **
 The ARN of the core network attachment.
-
 Type: String
-
 Required: No
 
-**customerGatewayConfiguration**
-
-The configuration information for the VPN connection's customer gateway (in the native
-XML format). This element is always present in the [CreateVpnConnection](api-createvpnconnection.md)
-response; however, it's present in the [DescribeVpnConnections](api-describevpnconnections.md) response
-only if the VPN connection is in the `pending` or `available`
-state.
-
+ ** customerGatewayConfiguration **
+The configuration information for the VPN connection's customer gateway (in the native XML format). This element is always present in the [CreateVpnConnection](API_CreateVpnConnection.md) response; however, it's present in the [DescribeVpnConnections](API_DescribeVpnConnections.md) response only if the VPN connection is in the `pending` or `available` state.
 Type: String
-
 Required: No
 
-**customerGatewayId**
-
+ ** customerGatewayId **
 The ID of the customer gateway at your end of the VPN connection.
-
 Type: String
-
 Required: No
 
-**gatewayAssociationState**
-
+ ** gatewayAssociationState **
 The current state of the gateway association.
-
 Type: String
-
 Valid Values: `associated | not-associated | associating | disassociating`
-
 Required: No
 
-**options**
-
+ ** options **
 The VPN connection options.
-
-Type: [VpnConnectionOptions](api-vpnconnectionoptions.md) object
-
+Type: [VpnConnectionOptions](API_VpnConnectionOptions.md) object
 Required: No
 
-**preSharedKeyArn**
-
+ ** preSharedKeyArn **
 The Amazon Resource Name (ARN) of the Secrets Manager secret storing the pre-shared key(s) for the VPN connection.
-
 Type: String
-
 Required: No
 
-**Routes.N**
-
+ ** Routes.N **
 The static routes associated with the VPN connection.
-
-Type: Array of [VpnStaticRoute](api-vpnstaticroute.md) objects
-
+Type: Array of [VpnStaticRoute](API_VpnStaticRoute.md) objects
 Required: No
 
-**state**
-
+ ** state **
 The current state of the VPN connection.
-
 Type: String
-
 Valid Values: `pending | available | deleting | deleted`
-
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 Any tags assigned to the VPN connection.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
-**transitGatewayId**
-
+ ** transitGatewayId **
 The ID of the transit gateway associated with the VPN connection.
-
 Type: String
-
 Required: No
 
-**type**
-
+ ** type **
 The type of VPN connection.
-
 Type: String
-
 Valid Values: `ipsec.1`
-
 Required: No
 
-**VgwTelemetry.N**
-
+ ** VgwTelemetry.N **
 Information about the VPN tunnel.
-
-Type: Array of [VgwTelemetry](api-vgwtelemetry.md) objects
-
+Type: Array of [VgwTelemetry](API_VgwTelemetry.md) objects
 Required: No
 
-**vpnConcentratorId**
-
+ ** vpnConcentratorId **
 The ID of the VPN concentrator associated with the VPN connection.
-
 Type: String
-
 Required: No
 
-**vpnConnectionId**
-
+ ** vpnConnectionId **
 The ID of the VPN connection.
-
 Type: String
-
 Required: No
 
-**vpnGatewayId**
-
-The ID of the virtual private gateway at the AWS side of the VPN
-connection.
-
+ ** vpnGatewayId **
+The ID of the virtual private gateway at the AWS side of the VPN connection.
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_VpnConnection_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/vpnconnection.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/vpnconnection.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/vpnconnection.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpnConcentrator
-
-VpnConnectionDeviceType
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VpnConnection)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VpnConnection)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VpnConnection)
 
 All content copied from https://docs.aws.amazon.com/.

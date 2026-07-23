@@ -3,67 +3,45 @@ title: "TransitGatewayMulticastDomainAssociation"
 ---
 
 # TransitGatewayMulticastDomainAssociation
+<a name="API_TransitGatewayMulticastDomainAssociation"></a>
 
 Describes the resources associated with the transit gateway multicast domain.
 
 ## Contents
+<a name="API_TransitGatewayMulticastDomainAssociation_Contents"></a>
 
-**resourceId**
-
+ ** resourceId **
 The ID of the resource.
-
 Type: String
-
 Required: No
 
-**resourceOwnerId**
-
-The ID of the AWS account that owns the transit gateway multicast domain association resource.
-
+ ** resourceOwnerId **
+ The ID of the AWS account that owns the transit gateway multicast domain association resource.
 Type: String
-
 Required: No
 
-**resourceType**
-
+ ** resourceType **
 The type of resource, for example a VPC attachment.
-
 Type: String
-
-Valid Values: `vpc | vpn | vpn-concentrator | direct-connect-gateway | connect | peering | tgw-peering`
-
+Valid Values: `vpc | vpn | vpn-concentrator | direct-connect-gateway | connect | peering | tgw-peering | client-vpn`
 Required: No
 
-**subnet**
-
+ ** subnet **
 The subnet associated with the transit gateway multicast domain.
-
-Type: [SubnetAssociation](api-subnetassociation.md) object
-
+Type: [SubnetAssociation](API_SubnetAssociation.md) object
 Required: No
 
-**transitGatewayAttachmentId**
-
+ ** transitGatewayAttachmentId **
 The ID of the transit gateway attachment.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_TransitGatewayMulticastDomainAssociation_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/transitgatewaymulticastdomainassociation.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/transitgatewaymulticastdomainassociation.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/transitgatewaymulticastdomainassociation.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitGatewayMulticastDomain
-
-TransitGatewayMulticastDomainAssociations
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TransitGatewayMulticastDomainAssociation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TransitGatewayMulticastDomainAssociation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TransitGatewayMulticastDomainAssociation)
 
 All content copied from https://docs.aws.amazon.com/.

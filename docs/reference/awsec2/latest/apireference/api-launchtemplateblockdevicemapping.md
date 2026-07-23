@@ -3,57 +3,39 @@ title: "LaunchTemplateBlockDeviceMapping"
 ---
 
 # LaunchTemplateBlockDeviceMapping
+<a name="API_LaunchTemplateBlockDeviceMapping"></a>
 
 Describes a block device mapping.
 
 ## Contents
+<a name="API_LaunchTemplateBlockDeviceMapping_Contents"></a>
 
-**deviceName**
-
+ ** deviceName **
 The device name.
-
 Type: String
-
 Required: No
 
-**ebs**
-
+ ** ebs **
 Information about the block device for an EBS volume.
-
-Type: [LaunchTemplateEbsBlockDevice](api-launchtemplateebsblockdevice.md) object
-
+Type: [LaunchTemplateEbsBlockDevice](API_LaunchTemplateEbsBlockDevice.md) object
 Required: No
 
-**noDevice**
-
+ ** noDevice **
 To omit the device from the block device mapping, specify an empty string.
-
 Type: String
-
 Required: No
 
-**virtualName**
-
+ ** virtualName **
 The virtual device name (ephemeralN).
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_LaunchTemplateBlockDeviceMapping_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/launchtemplateblockdevicemapping.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/launchtemplateblockdevicemapping.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/launchtemplateblockdevicemapping.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-LaunchTemplateAndOverridesResponse
-
-LaunchTemplateBlockDeviceMappingRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/LaunchTemplateBlockDeviceMapping)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/LaunchTemplateBlockDeviceMapping)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/LaunchTemplateBlockDeviceMapping)
 
 All content copied from https://docs.aws.amazon.com/.

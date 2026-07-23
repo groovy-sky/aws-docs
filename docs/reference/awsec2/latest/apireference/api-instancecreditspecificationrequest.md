@@ -3,46 +3,31 @@ title: "InstanceCreditSpecificationRequest"
 ---
 
 # InstanceCreditSpecificationRequest
+<a name="API_InstanceCreditSpecificationRequest"></a>
 
 Describes the credit option for CPU usage of a burstable performance instance.
 
 ## Contents
+<a name="API_InstanceCreditSpecificationRequest_Contents"></a>
 
-**InstanceId**
-
+ ** InstanceId **
 The ID of the instance.
-
 Type: String
-
 Required: Yes
 
-**CpuCredits**
-
+ ** CpuCredits **
 The credit option for CPU usage of the instance.
-
 Valid values: `standard` \| `unlimited`
-
-T3 instances with `host` tenancy do not support the `unlimited`
-CPU credit option.
-
+T3 instances with `host` tenancy do not support the `unlimited` CPU credit option.
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_InstanceCreditSpecificationRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instancecreditspecificationrequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instancecreditspecificationrequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancecreditspecificationrequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstanceCreditSpecification
-
-InstanceEventWindow
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceCreditSpecificationRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceCreditSpecificationRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceCreditSpecificationRequest)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,105 +3,67 @@ title: "MacSystemIntegrityProtectionConfiguration"
 ---
 
 # MacSystemIntegrityProtectionConfiguration
+<a name="API_MacSystemIntegrityProtectionConfiguration"></a>
 
 Describes the configuration for a System Integrity Protection (SIP) modification task.
 
 ## Contents
+<a name="API_MacSystemIntegrityProtectionConfiguration_Contents"></a>
 
-**appleInternal**
-
+ ** appleInternal **
 Indicates whether Apple Internal was enabled or disabled by the task.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**baseSystem**
-
+ ** baseSystem **
 Indicates whether Base System was enabled or disabled by the task.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**debuggingRestrictions**
-
+ ** debuggingRestrictions **
 Indicates whether Debugging Restrictions was enabled or disabled by the task.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**dTraceRestrictions**
-
+ ** dTraceRestrictions **
 Indicates whether Dtrace Restrictions was enabled or disabled by the task.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**filesystemProtections**
-
+ ** filesystemProtections **
 Indicates whether Filesystem Protections was enabled or disabled by the task.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**kextSigning**
-
+ ** kextSigning **
 Indicates whether Kext Signing was enabled or disabled by the task.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**nvramProtections**
-
+ ** nvramProtections **
 Indicates whether NVRAM Protections was enabled or disabled by the task.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
-**status**
-
+ ** status **
 Indicates SIP was enabled or disabled by the task.
-
 Type: String
-
 Valid Values: `enabled | disabled`
-
 Required: No
 
 ## See Also
+<a name="API_MacSystemIntegrityProtectionConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/macsystemintegrityprotectionconfiguration.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/macsystemintegrityprotectionconfiguration.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/macsystemintegrityprotectionconfiguration.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-MacModificationTask
-
-MacSystemIntegrityProtectionConfigurationRequest
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/MacSystemIntegrityProtectionConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/MacSystemIntegrityProtectionConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/MacSystemIntegrityProtectionConfiguration)
 
 All content copied from https://docs.aws.amazon.com/.

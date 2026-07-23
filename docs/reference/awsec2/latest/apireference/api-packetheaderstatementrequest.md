@@ -3,83 +3,55 @@ title: "PacketHeaderStatementRequest"
 ---
 
 # PacketHeaderStatementRequest
+<a name="API_PacketHeaderStatementRequest"></a>
 
 Describes a packet header statement.
 
 ## Contents
+<a name="API_PacketHeaderStatementRequest_Contents"></a>
 
-**DestinationAddress.N**
-
+ ** DestinationAddress.N **
 The destination addresses.
-
 Type: Array of strings
-
 Required: No
 
-**DestinationPort.N**
-
+ ** DestinationPort.N **
 The destination ports.
-
 Type: Array of strings
-
 Required: No
 
-**DestinationPrefixList.N**
-
+ ** DestinationPrefixList.N **
 The destination prefix lists.
-
 Type: Array of strings
-
 Required: No
 
-**Protocol.N**
-
+ ** Protocol.N **
 The protocols.
-
 Type: Array of strings
-
 Valid Values: `tcp | udp`
-
 Required: No
 
-**SourceAddress.N**
-
+ ** SourceAddress.N **
 The source addresses.
-
 Type: Array of strings
-
 Required: No
 
-**SourcePort.N**
-
+ ** SourcePort.N **
 The source ports.
-
 Type: Array of strings
-
 Required: No
 
-**SourcePrefixList.N**
-
+ ** SourcePrefixList.N **
 The source prefix lists.
-
 Type: Array of strings
-
 Required: No
 
 ## See Also
+<a name="API_PacketHeaderStatementRequest_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/packetheaderstatementrequest.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/packetheaderstatementrequest.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/packetheaderstatementrequest.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-PacketHeaderStatement
-
-PathComponent
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/PacketHeaderStatementRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/PacketHeaderStatementRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/PacketHeaderStatementRequest)
 
 All content copied from https://docs.aws.amazon.com/.

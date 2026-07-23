@@ -3,101 +3,66 @@ title: "TransitGatewayMeteringPolicyRule"
 ---
 
 # TransitGatewayMeteringPolicyRule
+<a name="API_TransitGatewayMeteringPolicyRule"></a>
 
 Describes the traffic matching criteria for a transit gateway metering policy rule.
 
 ## Contents
+<a name="API_TransitGatewayMeteringPolicyRule_Contents"></a>
 
-**destinationCidrBlock**
-
+ ** destinationCidrBlock **
 The destination CIDR block for the rule.
-
 Type: String
-
 Required: No
 
-**destinationPortRange**
-
+ ** destinationPortRange **
 The destination port range for the rule.
-
 Type: String
-
 Required: No
 
-**destinationTransitGatewayAttachmentId**
-
+ ** destinationTransitGatewayAttachmentId **
 The ID of the destination transit gateway attachment.
-
 Type: String
-
 Required: No
 
-**destinationTransitGatewayAttachmentType**
-
+ ** destinationTransitGatewayAttachmentType **
 The type of the destination transit gateway attachment. Note that the `tgw-peering` resource type has been deprecated. To configure metering policies for Connect, use the transport attachment type.
-
 Type: String
-
-Valid Values: `vpc | vpn | vpn-concentrator | direct-connect-gateway | connect | peering | tgw-peering`
-
+Valid Values: `vpc | vpn | vpn-concentrator | direct-connect-gateway | connect | peering | tgw-peering | client-vpn`
 Required: No
 
-**protocol**
-
+ ** protocol **
 The protocol for the rule (1, 6, 17, etc.).
-
 Type: String
-
 Required: No
 
-**sourceCidrBlock**
-
+ ** sourceCidrBlock **
 The source CIDR block for the rule.
-
 Type: String
-
 Required: No
 
-**sourcePortRange**
-
+ ** sourcePortRange **
 The source port range for the rule.
-
 Type: String
-
 Required: No
 
-**sourceTransitGatewayAttachmentId**
-
+ ** sourceTransitGatewayAttachmentId **
 The ID of the source transit gateway attachment.
-
 Type: String
-
 Required: No
 
-**sourceTransitGatewayAttachmentType**
-
+ ** sourceTransitGatewayAttachmentType **
 The type of the source transit gateway attachment. Note that the `tgw-peering` resource type has been deprecated. To configure metering policies for Connect, use the transport attachment type.
-
 Type: String
-
-Valid Values: `vpc | vpn | vpn-concentrator | direct-connect-gateway | connect | peering | tgw-peering`
-
+Valid Values: `vpc | vpn | vpn-concentrator | direct-connect-gateway | connect | peering | tgw-peering | client-vpn`
 Required: No
 
 ## See Also
+<a name="API_TransitGatewayMeteringPolicyRule_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/transitgatewaymeteringpolicyrule.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/transitgatewaymeteringpolicyrule.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/transitgatewaymeteringpolicyrule.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-TransitGatewayMeteringPolicyEntry
-
-TransitGatewayMulticastDeregisteredGroupMembers
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TransitGatewayMeteringPolicyRule)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TransitGatewayMeteringPolicyRule)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TransitGatewayMeteringPolicyRule)
 
 All content copied from https://docs.aws.amazon.com/.

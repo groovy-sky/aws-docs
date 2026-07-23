@@ -3,481 +3,301 @@ title: "Explanation"
 ---
 
 # Explanation
+<a name="API_Explanation"></a>
 
-Describes an explanation code for an unreachable path. For more information, see [Reachability Analyzer explanation codes](../../../../services/vpc/latest/reachability/explanation-codes.md).
+Describes an explanation code for an unreachable path. For more information, see [Reachability Analyzer explanation codes](https://docs.aws.amazon.com/vpc/latest/reachability/explanation-codes.html).
 
 ## Contents
+<a name="API_Explanation_Contents"></a>
 
-**acl**
-
+ ** acl **
 The network ACL.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**aclRule**
-
+ ** aclRule **
 The network ACL rule.
-
-Type: [AnalysisAclRule](api-analysisaclrule.md) object
-
+Type: [AnalysisAclRule](API_AnalysisAclRule.md) object
 Required: No
 
-**address**
-
+ ** address **
 The IPv4 address, in CIDR notation.
-
 Type: String
-
 Length Constraints: Minimum length of 0. Maximum length of 15.
-
 Pattern: `^([0-9]{1,3}.){3}[0-9]{1,3}$`
-
 Required: No
 
-**AddressSet.N**
-
+ ** AddressSet.N **
 The IPv4 addresses, in CIDR notation.
-
 Type: Array of strings
-
 Length Constraints: Minimum length of 0. Maximum length of 15.
-
 Pattern: `^([0-9]{1,3}.){3}[0-9]{1,3}$`
-
 Required: No
 
-**attachedTo**
-
+ ** attachedTo **
 The resource to which the component is attached.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**AvailabilityZoneIdSet.N**
-
+ ** AvailabilityZoneIdSet.N **
 The IDs of the Availability Zones.
-
 Type: Array of strings
-
 Required: No
 
-**AvailabilityZoneSet.N**
-
+ ** AvailabilityZoneSet.N **
 The Availability Zones.
-
 Type: Array of strings
-
 Required: No
 
-**CidrSet.N**
-
+ ** CidrSet.N **
 The CIDR ranges.
-
 Type: Array of strings
-
 Required: No
 
-**classicLoadBalancerListener**
-
+ ** classicLoadBalancerListener **
 The listener for a Classic Load Balancer.
-
-Type: [AnalysisLoadBalancerListener](api-analysisloadbalancerlistener.md) object
-
+Type: [AnalysisLoadBalancerListener](API_AnalysisLoadBalancerListener.md) object
 Required: No
 
-**component**
-
+ ** component **
 The component.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**componentAccount**
-
+ ** componentAccount **
 The AWS account for the component.
-
 Type: String
-
 Pattern: `\d{12}`
-
 Required: No
 
-**componentRegion**
-
+ ** componentRegion **
 The Region for the component.
-
 Type: String
-
 Pattern: `[a-z]{2}-[a-z]+-[1-9]+`
-
 Required: No
 
-**customerGateway**
-
+ ** customerGateway **
 The customer gateway.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**destination**
-
+ ** destination **
 The destination.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**destinationVpc**
-
+ ** destinationVpc **
 The destination VPC.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**direction**
-
+ ** direction **
 The direction. The following are the possible values:
-
-- egress
-
-- ingress
-
++ egress
++ ingress
 Type: String
-
 Required: No
 
-**elasticLoadBalancerListener**
-
+ ** elasticLoadBalancerListener **
 The load balancer listener.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**explanationCode**
-
+ ** explanationCode **
 The explanation code.
-
 Type: String
-
 Required: No
 
-**firewallStatefulRule**
-
+ ** firewallStatefulRule **
 The Network Firewall stateful rule.
-
-Type: [FirewallStatefulRule](api-firewallstatefulrule.md) object
-
+Type: [FirewallStatefulRule](API_FirewallStatefulRule.md) object
 Required: No
 
-**firewallStatelessRule**
-
+ ** firewallStatelessRule **
 The Network Firewall stateless rule.
-
-Type: [FirewallStatelessRule](api-firewallstatelessrule.md) object
-
+Type: [FirewallStatelessRule](API_FirewallStatelessRule.md) object
 Required: No
 
-**ingressRouteTable**
-
+ ** ingressRouteTable **
 The route table.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**internetGateway**
-
+ ** internetGateway **
 The internet gateway.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**loadBalancerArn**
-
+ ** loadBalancerArn **
 The Amazon Resource Name (ARN) of the load balancer.
-
 Type: String
-
 Length Constraints: Minimum length of 1. Maximum length of 1283.
-
 Required: No
 
-**loadBalancerListenerPort**
-
+ ** loadBalancerListenerPort **
 The listener port of the load balancer.
-
 Type: Integer
-
 Valid Range: Minimum value of 0. Maximum value of 65535.
-
 Required: No
 
-**loadBalancerTarget**
-
+ ** loadBalancerTarget **
 The target.
-
-Type: [AnalysisLoadBalancerTarget](api-analysisloadbalancertarget.md) object
-
+Type: [AnalysisLoadBalancerTarget](API_AnalysisLoadBalancerTarget.md) object
 Required: No
 
-**loadBalancerTargetGroup**
-
+ ** loadBalancerTargetGroup **
 The target group.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**LoadBalancerTargetGroupSet.N**
-
+ ** LoadBalancerTargetGroupSet.N **
 The target groups.
-
-Type: Array of [AnalysisComponent](api-analysiscomponent.md) objects
-
+Type: Array of [AnalysisComponent](API_AnalysisComponent.md) objects
 Required: No
 
-**loadBalancerTargetPort**
-
+ ** loadBalancerTargetPort **
 The target port.
-
 Type: Integer
-
 Valid Range: Minimum value of 0. Maximum value of 65535.
-
 Required: No
 
-**missingComponent**
-
+ ** missingComponent **
 The missing component.
-
 Type: String
-
 Required: No
 
-**natGateway**
-
+ ** natGateway **
 The NAT gateway.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**networkInterface**
-
+ ** networkInterface **
 The network interface.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**packetField**
-
+ ** packetField **
 The packet field.
-
 Type: String
-
 Required: No
 
-**port**
-
+ ** port **
 The port.
-
 Type: Integer
-
 Valid Range: Minimum value of 0. Maximum value of 65535.
-
 Required: No
 
-**PortRangeSet.N**
-
+ ** PortRangeSet.N **
 The port ranges.
-
-Type: Array of [PortRange](api-portrange.md) objects
-
+Type: Array of [PortRange](API_PortRange.md) objects
 Required: No
 
-**prefixList**
-
+ ** prefixList **
 The prefix list.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**ProtocolSet.N**
-
+ ** ProtocolSet.N **
 The protocols.
-
 Type: Array of strings
-
 Required: No
 
-**routeTable**
-
+ ** routeTable **
 The route table.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**routeTableRoute**
-
+ ** routeTableRoute **
 The route table route.
-
-Type: [AnalysisRouteTableRoute](api-analysisroutetableroute.md) object
-
+Type: [AnalysisRouteTableRoute](API_AnalysisRouteTableRoute.md) object
 Required: No
 
-**securityGroup**
-
+ ** securityGroup **
 The security group.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**securityGroupRule**
-
+ ** securityGroupRule **
 The security group rule.
-
-Type: [AnalysisSecurityGroupRule](api-analysissecuritygrouprule.md) object
-
+Type: [AnalysisSecurityGroupRule](API_AnalysisSecurityGroupRule.md) object
 Required: No
 
-**SecurityGroupSet.N**
-
+ ** SecurityGroupSet.N **
 The security groups.
-
-Type: Array of [AnalysisComponent](api-analysiscomponent.md) objects
-
+Type: Array of [AnalysisComponent](API_AnalysisComponent.md) objects
 Required: No
 
-**sourceVpc**
-
+ ** sourceVpc **
 The source VPC.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**state**
-
+ ** state **
 The state.
-
 Type: String
-
 Required: No
 
-**subnet**
-
+ ** subnet **
 The subnet.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**subnetRouteTable**
-
+ ** subnetRouteTable **
 The route table for the subnet.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**transitGateway**
-
+ ** transitGateway **
 The transit gateway.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**transitGatewayAttachment**
-
+ ** transitGatewayAttachment **
 The transit gateway attachment.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**transitGatewayRouteTable**
-
+ ** transitGatewayRouteTable **
 The transit gateway route table.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**transitGatewayRouteTableRoute**
-
+ ** transitGatewayRouteTableRoute **
 The transit gateway route table route.
-
-Type: [TransitGatewayRouteTableRoute](api-transitgatewayroutetableroute.md) object
-
+Type: [TransitGatewayRouteTableRoute](API_TransitGatewayRouteTableRoute.md) object
 Required: No
 
-**vpc**
-
+ ** vpc **
 The component VPC.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**vpcEndpoint**
-
+ ** vpcEndpoint **
 The VPC endpoint.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**vpcPeeringConnection**
-
+ ** vpcPeeringConnection **
 The VPC peering connection.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**vpnConnection**
-
+ ** vpnConnection **
 The VPN connection.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**vpnGateway**
-
+ ** vpnGateway **
 The VPN gateway.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
 ## See Also
+<a name="API_Explanation_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/explanation.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/explanation.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/explanation.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-EventInformation
-
-ExportImageTask
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/Explanation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/Explanation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/Explanation)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,45 +3,30 @@ title: "InstanceFamilyCreditSpecification"
 ---
 
 # InstanceFamilyCreditSpecification
+<a name="API_InstanceFamilyCreditSpecification"></a>
 
-Describes the default credit option for CPU usage of a burstable performance instance
-family.
+Describes the default credit option for CPU usage of a burstable performance instance family.
 
 ## Contents
+<a name="API_InstanceFamilyCreditSpecification_Contents"></a>
 
-**cpuCredits**
-
-The default credit option for CPU usage of the instance family. Valid values are
-`standard` and `unlimited`.
-
+ ** cpuCredits **
+The default credit option for CPU usage of the instance family. Valid values are `standard` and `unlimited`.
 Type: String
-
 Required: No
 
-**instanceFamily**
-
+ ** instanceFamily **
 The instance family.
-
 Type: String
-
 Valid Values: `t2 | t3 | t3a | t4g`
-
 Required: No
 
 ## See Also
+<a name="API_InstanceFamilyCreditSpecification_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instancefamilycreditspecification.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instancefamilycreditspecification.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancefamilycreditspecification.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstanceExportDetails
-
-InstanceImageMetadata
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceFamilyCreditSpecification)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceFamilyCreditSpecification)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceFamilyCreditSpecification)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,232 +3,147 @@ title: "VpcEndpoint"
 ---
 
 # VpcEndpoint
+<a name="API_VpcEndpoint"></a>
 
 Describes a VPC endpoint.
 
 ## Contents
+<a name="API_VpcEndpoint_Contents"></a>
 
-**creationTimestamp**
-
+ ** creationTimestamp **
 The date and time that the endpoint was created.
-
 Type: Timestamp
-
 Required: No
 
-**DnsEntrySet.N**
-
+ ** DnsEntrySet.N **
 (Interface endpoint) The DNS entries for the endpoint.
-
-Type: Array of [DnsEntry](api-dnsentry.md) objects
-
+Type: Array of [DnsEntry](API_DnsEntry.md) objects
 Required: No
 
-**dnsOptions**
-
+ ** dnsOptions **
 The DNS options for the endpoint.
-
-Type: [DnsOptions](api-dnsoptions.md) object
-
+Type: [DnsOptions](API_DnsOptions.md) object
 Required: No
 
-**failureReason**
-
+ ** failureReason **
 Reason for the failure.
-
 Type: String
-
 Required: No
 
-**GroupSet.N**
-
-(Interface endpoint) Information about the security groups that are associated with
-the network interface.
-
-Type: Array of [SecurityGroupIdentifier](api-securitygroupidentifier.md) objects
-
+ ** GroupSet.N **
+(Interface endpoint) Information about the security groups that are associated with the network interface.
+Type: Array of [SecurityGroupIdentifier](API_SecurityGroupIdentifier.md) objects
 Required: No
 
-**ipAddressType**
-
+ ** ipAddressType **
 The IP address type for the endpoint.
-
 Type: String
-
 Valid Values: `ipv4 | dualstack | ipv6`
-
 Required: No
 
-**Ipv4PrefixSet.N**
-
+ ** Ipv4PrefixSet.N **
 Array of IPv4 prefixes.
-
-Type: Array of [SubnetIpPrefixes](api-subnetipprefixes.md) objects
-
+Type: Array of [SubnetIpPrefixes](API_SubnetIpPrefixes.md) objects
 Required: No
 
-**Ipv6PrefixSet.N**
-
+ ** Ipv6PrefixSet.N **
 Array of IPv6 prefixes.
-
-Type: Array of [SubnetIpPrefixes](api-subnetipprefixes.md) objects
-
+Type: Array of [SubnetIpPrefixes](API_SubnetIpPrefixes.md) objects
 Required: No
 
-**lastError**
-
+ ** lastError **
 The last error that occurred for endpoint.
-
-Type: [LastError](api-lasterror.md) object
-
+Type: [LastError](API_LastError.md) object
 Required: No
 
-**NetworkInterfaceIdSet.N**
-
+ ** NetworkInterfaceIdSet.N **
 (Interface endpoint) The network interfaces for the endpoint.
-
 Type: Array of strings
-
 Required: No
 
-**ownerId**
-
+ ** ownerId **
 The ID of the AWS account that owns the endpoint.
-
 Type: String
-
 Required: No
 
-**policyDocument**
-
+ ** policyDocument **
 The policy document associated with the endpoint, if applicable.
-
 Type: String
-
 Required: No
 
-**privateDnsEnabled**
-
+ ** privateDnsEnabled **
 (Interface endpoint) Indicates whether the VPC is associated with a private hosted zone.
-
 Type: Boolean
-
 Required: No
 
-**requesterManaged**
-
+ ** requesterManaged **
 Indicates whether the endpoint is being managed by its service.
-
 Type: Boolean
-
 Required: No
 
-**resourceConfigurationArn**
-
+ ** resourceConfigurationArn **
 The Amazon Resource Name (ARN) of the resource configuration.
-
 Type: String
-
 Required: No
 
-**RouteTableIdSet.N**
-
+ ** RouteTableIdSet.N **
 (Gateway endpoint) The IDs of the route tables associated with the endpoint.
-
 Type: Array of strings
-
 Required: No
 
-**serviceName**
-
+ ** serviceName **
 The name of the service to which the endpoint is associated.
-
 Type: String
-
 Required: No
 
-**serviceNetworkArn**
-
+ ** serviceNetworkArn **
 The Amazon Resource Name (ARN) of the service network.
-
 Type: String
-
 Required: No
 
-**serviceRegion**
-
+ ** serviceRegion **
 The Region where the service is hosted.
-
 Type: String
-
 Required: No
 
-**state**
-
+ ** state **
 The state of the endpoint.
-
 Type: String
-
 Valid Values: `PendingAcceptance | Pending | Available | Deleting | Deleted | Rejected | Failed | Expired | Partial`
-
 Required: No
 
-**SubnetIdSet.N**
-
+ ** SubnetIdSet.N **
 (Interface endpoint) The subnets for the endpoint.
-
 Type: Array of strings
-
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 The tags assigned to the endpoint.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
-**vpcEndpointId**
-
+ ** vpcEndpointId **
 The ID of the endpoint.
-
 Type: String
-
 Required: No
 
-**vpcEndpointType**
-
+ ** vpcEndpointType **
 The type of endpoint.
-
 Type: String
-
 Valid Values: `Interface | Gateway | GatewayLoadBalancer | Resource | ServiceNetwork`
-
 Required: No
 
-**vpcId**
-
+ ** vpcId **
 The ID of the VPC to which the endpoint is associated.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_VpcEndpoint_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/vpcendpoint.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/vpcendpoint.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/vpcendpoint.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-VpcEncryptionNonCompliantResource
-
-VpcEndpointAssociation
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VpcEndpoint)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VpcEndpoint)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VpcEndpoint)
 
 All content copied from https://docs.aws.amazon.com/.

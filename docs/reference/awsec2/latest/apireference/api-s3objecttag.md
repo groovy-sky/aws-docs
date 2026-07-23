@@ -3,49 +3,31 @@ title: "S3ObjectTag"
 ---
 
 # S3ObjectTag
+<a name="API_S3ObjectTag"></a>
 
-The tags to apply to the AMI object that will be stored in the Amazon S3 bucket. For more
-information, see [Categorizing your storage using\
-tags](../../../../services/s3/latest/userguide/object-tagging.md) in the _Amazon Simple Storage Service User Guide_.
+The tags to apply to the AMI object that will be stored in the Amazon S3 bucket. For more information, see [Categorizing your storage using tags](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html) in the *Amazon Simple Storage Service User Guide*.
 
 ## Contents
+<a name="API_S3ObjectTag_Contents"></a>
 
-**Key**
-
+ ** Key **
 The key of the tag.
-
-Constraints: Tag keys are case-sensitive and can be up to 128 Unicode characters in
-length. May not begin with `aws`:.
-
+Constraints: Tag keys are case-sensitive and can be up to 128 Unicode characters in length. May not begin with `aws`:.
 Type: String
-
 Required: No
 
-**Value**
-
+ ** Value **
 The value of the tag.
-
-Constraints: Tag values are case-sensitive and can be up to 256 Unicode characters in
-length.
-
+Constraints: Tag values are case-sensitive and can be up to 256 Unicode characters in length.
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_S3ObjectTag_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/s3objecttag.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/s3objecttag.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/s3objecttag.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-RunInstancesMonitoringEnabled
-
-S3Storage
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/S3ObjectTag)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/S3ObjectTag)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/S3ObjectTag)
 
 All content copied from https://docs.aws.amazon.com/.

@@ -3,41 +3,29 @@ title: "UnsuccessfulItemError"
 ---
 
 # UnsuccessfulItemError
+<a name="API_UnsuccessfulItemError"></a>
 
-Information about the error that occurred. For more information about errors, see [Error codes](errors-overview.md).
+Information about the error that occurred. For more information about errors, see [Error codes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/errors-overview.html).
 
 ## Contents
+<a name="API_UnsuccessfulItemError_Contents"></a>
 
-**code**
-
+ ** code **
 The error code.
-
 Type: String
-
 Required: No
 
-**message**
-
+ ** message **
 The error message accompanying the error code.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_UnsuccessfulItemError_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/unsuccessfulitemerror.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/unsuccessfulitemerror.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/unsuccessfulitemerror.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-UnsuccessfulItem
-
-UserBucket
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/UnsuccessfulItemError)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/UnsuccessfulItemError)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/UnsuccessfulItemError)
 
 All content copied from https://docs.aws.amazon.com/.

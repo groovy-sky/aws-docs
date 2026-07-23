@@ -3,49 +3,34 @@ title: "AnalysisComponent"
 ---
 
 # AnalysisComponent
+<a name="API_AnalysisComponent"></a>
 
 Describes a path component.
 
 ## Contents
+<a name="API_AnalysisComponent_Contents"></a>
 
-**arn**
-
+ ** arn **
 The Amazon Resource Name (ARN) of the component.
-
 Type: String
-
 Required: No
 
-**id**
-
+ ** id **
 The ID of the component.
-
 Type: String
-
 Required: No
 
-**name**
-
+ ** name **
 The name of the analysis component.
-
 Type: String
-
 Required: No
 
 ## See Also
+<a name="API_AnalysisComponent_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/analysiscomponent.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/analysiscomponent.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/analysiscomponent.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AnalysisAclRule
-
-AnalysisLoadBalancerListener
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AnalysisComponent)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AnalysisComponent)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AnalysisComponent)
 
 All content copied from https://docs.aws.amazon.com/.

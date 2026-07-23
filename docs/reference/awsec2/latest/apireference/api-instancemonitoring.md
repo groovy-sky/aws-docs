@@ -3,41 +3,29 @@ title: "InstanceMonitoring"
 ---
 
 # InstanceMonitoring
+<a name="API_InstanceMonitoring"></a>
 
 Describes the monitoring of an instance.
 
 ## Contents
+<a name="API_InstanceMonitoring_Contents"></a>
 
-**instanceId**
-
+ ** instanceId **
 The ID of the instance.
-
 Type: String
-
 Required: No
 
-**monitoring**
-
+ ** monitoring **
 The monitoring for the instance.
-
-Type: [Monitoring](api-monitoring.md) object
-
+Type: [Monitoring](API_Monitoring.md) object
 Required: No
 
 ## See Also
+<a name="API_InstanceMonitoring_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/instancemonitoring.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/instancemonitoring.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/instancemonitoring.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-InstanceMetadataOptionsResponse
-
-InstanceNetworkInterface
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceMonitoring)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceMonitoring)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceMonitoring)
 
 All content copied from https://docs.aws.amazon.com/.

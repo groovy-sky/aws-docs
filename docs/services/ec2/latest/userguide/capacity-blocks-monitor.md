@@ -3,21 +3,16 @@ title: "Monitor Capacity Blocks using EventBridge"
 ---
 
 # Monitor Capacity Blocks using EventBridge
+<a name="capacity-blocks-monitor"></a>
 
-When your Capacity Block reservation starts, Amazon EC2 will emit an event through EventBridge that
-indicates your capacity is ready to use. Forty minutes before your Capacity Block reservation
-ends, you receive another EventBridge event that tells you that any instances running in the
-reservation will begin to terminate in 10 minutes. For more information about EventBridge
-events, see [Amazon EventBridge Events](../../../eventbridge/latest/userguide/eb-events.md).
+When your Capacity Block reservation starts, Amazon EC2 will emit an event through EventBridge that indicates your capacity is ready to use. Forty minutes before your Capacity Block reservation ends, you receive another EventBridge event that tells you that any instances running in the reservation will begin to terminate in 10 minutes. For more information about EventBridge events, see [Amazon EventBridge Events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events.html).
 
 The following event structures for events emitted for Capacity Blocks:
 
-###### Capacity Block Delivered
-
+**Capacity Block Delivered**
 The following example shows an event for Capacity Block Delivered.
 
-```json
-
+```
 {
   "customer_event_id": "[Capacity Reservation Id]-delivered",
   "detail_type": "Capacity Block Reservation Delivered",
@@ -34,12 +29,10 @@ The following example shows an event for Capacity Block Delivered.
 }
 ```
 
-###### Capacity Block Expiration Warning
-
+**Capacity Block Expiration Warning**
 The following example shows an event for Capacity Block Expiration Warning.
 
-```json
-
+```
 {
   "customer_event_id": "[Capacity Reservation Id]-approaching-expiry",
   "detail_type": "Capacity Block Reservation Expiration Warning",
@@ -56,12 +49,10 @@ The following example shows an event for Capacity Block Expiration Warning.
 }
 ```
 
-###### Capacity Reservation Instance Interruption Warning
-
+**Capacity Reservation Instance Interruption Warning**
 The following example shows an event for EC2 Capacity Reservation Instance Interruption Warning.
 
-```json
-
+```
 {
     "version": "0",
     "id": "12345678-1234-1234-1234-123456789012",
@@ -82,12 +73,5 @@ The following example shows an event for EC2 Capacity Reservation Instance Inter
     }
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Create UltraServer group
-
-Logging API calls
-with CloudTrail
 
 All content copied from https://docs.aws.amazon.com/.

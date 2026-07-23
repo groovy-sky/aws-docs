@@ -3,193 +3,116 @@ title: "DescribeSecurityGroups"
 ---
 
 # DescribeSecurityGroups
+<a name="API_DescribeSecurityGroups"></a>
 
 Describes the specified security groups or all of your security groups.
 
 ## Request Parameters
+<a name="API_DescribeSecurityGroups_RequestParameters"></a>
 
-The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](commonparameters.md).
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
-**DryRun**
-
-Checks whether you have the required permissions for the action, without actually making the request,
-and provides an error response. If you have the required permissions, the error response is `DryRunOperation`.
-Otherwise, it is `UnauthorizedOperation`.
-
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
-
 Required: No
 
-**Filter.N**
-
+ **Filter.N**
 The filters. If using multiple filters for rules, the results include security groups for which any combination of rules - not necessarily a single rule - match all filters.
-
-- `description` \- The description of the security group.
-
-- `egress.ip-permission.cidr` \- An IPv4 CIDR block for an outbound
-security group rule.
-
-- `egress.ip-permission.from-port` \- For an outbound rule, the
-start of port range for the TCP and UDP protocols, or an ICMP type
-number.
-
-- `egress.ip-permission.group-id` \- The ID of a security group
-that has been referenced in an outbound security group rule.
-
-- `egress.ip-permission.group-name` \- The name of a security group
-that is referenced in an outbound security group rule.
-
-- `egress.ip-permission.ipv6-cidr` \- An IPv6 CIDR block for an
-outbound security group rule.
-
-- `egress.ip-permission.prefix-list-id` \- The ID of a prefix list to which a security group rule allows outbound access.
-
-- `egress.ip-permission.protocol` \- The IP protocol for an
-outbound security group rule ( `tcp` \| `udp` \|
-`icmp`, a protocol number, or -1 for all protocols).
-
-- `egress.ip-permission.to-port` \- For an outbound rule, the end
-of port range for the TCP and UDP protocols, or an ICMP code.
-
-- `egress.ip-permission.user-id` \- The ID of an AWS account that
-has been referenced in an outbound security group rule.
-
-- `group-id` \- The ID of the security group.
-
-- `group-name` \- The name of the security group.
-
-- `ip-permission.cidr` \- An IPv4 CIDR block for an inbound security
-group rule.
-
-- `ip-permission.from-port` \- For an inbound rule, the start of port
-range for the TCP and UDP protocols, or an ICMP type number.
-
-- `ip-permission.group-id` \- The ID of a security group that has been
-referenced in an inbound security group rule.
-
-- `ip-permission.group-name` \- The name of a security group that is
-referenced in an inbound security group rule.
-
-- `ip-permission.ipv6-cidr` \- An IPv6 CIDR block for an inbound security
-group rule.
-
-- `ip-permission.prefix-list-id` \- The ID of a prefix list from which a security group rule allows inbound access.
-
-- `ip-permission.protocol` \- The IP protocol for an inbound security
-group rule ( `tcp` \| `udp` \| `icmp`, a
-protocol number, or -1 for all protocols).
-
-- `ip-permission.to-port` \- For an inbound rule, the end of port range
-for the TCP and UDP protocols, or an ICMP code.
-
-- `ip-permission.user-id` \- The ID of an AWS account that has been
-referenced in an inbound security group rule.
-
-- `owner-id` \- The AWS account ID of the owner of the security group.
-
-- `tag`:<key> - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value.
-For example, to find all resources that have a tag with the key `Owner` and the value `TeamA`, specify `tag:Owner` for the filter name and `TeamA` for the filter value.
-
-- `tag-key` \- The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.
-
-- `vpc-id` \- The ID of the VPC specified when the security group was created.
-
-Type: Array of [Filter](api-filter.md) objects
-
++  `description` - The description of the security group.
++  `egress.ip-permission.cidr` - An IPv4 CIDR block for an outbound security group rule.
++  `egress.ip-permission.from-port` - For an outbound rule, the start of port range for the TCP and UDP protocols, or an ICMP type number.
++  `egress.ip-permission.group-id` - The ID of a security group that has been referenced in an outbound security group rule.
++  `egress.ip-permission.group-name` - The name of a security group that is referenced in an outbound security group rule.
++  `egress.ip-permission.ipv6-cidr` - An IPv6 CIDR block for an outbound security group rule.
++  `egress.ip-permission.prefix-list-id` - The ID of a prefix list to which a security group rule allows outbound access.
++  `egress.ip-permission.protocol` - The IP protocol for an outbound security group rule (`tcp` \| `udp` \| `icmp`, a protocol number, or -1 for all protocols).
++  `egress.ip-permission.to-port` - For an outbound rule, the end of port range for the TCP and UDP protocols, or an ICMP code.
++  `egress.ip-permission.user-id` - The ID of an AWS account that has been referenced in an outbound security group rule.
++  `group-id` - The ID of the security group.
++  `group-name` - The name of the security group.
++  `ip-permission.cidr` - An IPv4 CIDR block for an inbound security group rule.
++  `ip-permission.from-port` - For an inbound rule, the start of port range for the TCP and UDP protocols, or an ICMP type number.
++  `ip-permission.group-id` - The ID of a security group that has been referenced in an inbound security group rule.
++  `ip-permission.group-name` - The name of a security group that is referenced in an inbound security group rule.
++  `ip-permission.ipv6-cidr` - An IPv6 CIDR block for an inbound security group rule.
++  `ip-permission.prefix-list-id` - The ID of a prefix list from which a security group rule allows inbound access.
++  `ip-permission.protocol` - The IP protocol for an inbound security group rule (`tcp` \| `udp` \| `icmp`, a protocol number, or -1 for all protocols).
++  `ip-permission.to-port` - For an inbound rule, the end of port range for the TCP and UDP protocols, or an ICMP code.
++  `ip-permission.user-id` - The ID of an AWS account that has been referenced in an inbound security group rule.
++  `owner-id` - The AWS account ID of the owner of the security group.
++  `tag`:<key> - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key `Owner` and the value `TeamA`, specify `tag:Owner` for the filter name and `TeamA` for the filter value.
++  `tag-key` - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.
++  `vpc-id` - The ID of the VPC specified when the security group was created.
+Type: Array of [Filter](API_Filter.md) objects
 Required: No
 
-**GroupId.N**
-
+ **GroupId.N**
 The IDs of the security groups. Required for security groups in a nondefault VPC.
-
 Default: Describes all of your security groups.
-
 Type: Array of strings
-
 Required: No
 
-**GroupName.N**
-
-\[Default VPC\] The names of the security groups. You can specify either
-the security group name or the security group ID.
-
+ **GroupName.N**
+[Default VPC] The names of the security groups. You can specify either the security group name or the security group ID.
 Default: Describes all of your security groups.
-
 Type: Array of strings
-
 Required: No
 
-**MaxResults**
-
-The maximum number of items to return for this request. To get the next page of items,
-make another request with the token returned in the output. This value can be between 5 and 1000.
-If this parameter is not specified, then all items are returned. For more information, see
-[Pagination](query-requests.md#api-pagination).
-
+ **MaxResults**
+The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. This value can be between 5 and 1000. If this parameter is not specified, then all items are returned. For more information, see [Pagination](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Query-Requests.html#api-pagination).
 Type: Integer
-
 Valid Range: Minimum value of 5. Maximum value of 1000.
-
 Required: No
 
-**NextToken**
-
-The token returned from a previous paginated request.
-Pagination continues from the end of the items returned by the previous request.
-
+ **NextToken**
+The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
 Type: String
-
 Required: No
 
 ## Response Elements
+<a name="API_DescribeSecurityGroups_ResponseElements"></a>
 
 The following elements are returned by the service.
 
-**nextToken**
-
+ **nextToken**
 The token to include in another request to get the next page of items. This value is `null` when there are no more items to return.
-
 Type: String
 
-**requestId**
-
+ **requestId**
 The ID of the request.
-
 Type: String
 
-**securityGroupInfo**
-
+ **securityGroupInfo**
 Information about the security groups.
-
-Type: Array of [SecurityGroup](api-securitygroup.md) objects
+Type: Array of [SecurityGroup](API_SecurityGroup.md) objects
 
 ## Errors
+<a name="API_DescribeSecurityGroups_Errors"></a>
 
-For information about the errors that are common to all actions, see [Common client error codes](errors-overview.md#CommonErrors).
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
 ## Examples
+<a name="API_DescribeSecurityGroups_Examples"></a>
 
 ### Example 1
+<a name="API_DescribeSecurityGroups_Example_1"></a>
 
-This example describes the specified security group. The response
-indicates that this security group references another security group. The referenced group
-can be in a different VPC if used through a VPC peering connection. If the referenced
-security group or the VPC peering connection is deleted, the rule becomes stale but is not
-automatically removed from the security group.
+This example describes the specified security group. The response indicates that this security group references another security group. The referenced group can be in a different VPC if used through a VPC peering connection. If the referenced security group or the VPC peering connection is deleted, the rule becomes stale but is not automatically removed from the security group.
 
 #### Sample Request
+<a name="API_DescribeSecurityGroups_Example_1_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=DescribeSecurityGroups
 &GroupId.1=sg-1a2b3c4d
 &AUTHPARAMS
 ```
 
 #### Sample Response
+<a name="API_DescribeSecurityGroups_Example_1_Response"></a>
 
 ```
-
 <DescribeSecurityGroupsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
     <requestId>edb7c570-be05-4192-bd1b-example</requestId>
     <securityGroupInfo>
@@ -248,15 +171,14 @@ https://ec2.amazonaws.com/?Action=DescribeSecurityGroups
 ```
 
 ### Example 2
+<a name="API_DescribeSecurityGroups_Example_2"></a>
 
-This example describes all security groups that grant access over port 22 and
-that grant access from instances associated with `app_server_group` or
-`database_group`.
+This example describes all security groups that grant access over port 22 and that grant access from instances associated with `app_server_group` or `database_group`.
 
 #### Sample Request
+<a name="API_DescribeSecurityGroups_Example_2_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=DescribeSecurityGroups
 &Filter.1.Name=ip-permission.protocol
 &Filter.1.Value.1=tcp
@@ -271,25 +193,23 @@ https://ec2.amazonaws.com/?Action=DescribeSecurityGroups
 ```
 
 ### Example 3
+<a name="API_DescribeSecurityGroups_Example_3"></a>
 
-This example describes the specified security group. The security group
-has a rule that allows all outbound IPv6 traffic (this rule is added by default for
-security groups in an IPv6-enabled VPC) and a rule that allows inbound access over SSH for
-IPv6 traffic.
+This example describes the specified security group. The security group has a rule that allows all outbound IPv6 traffic (this rule is added by default for security groups in an IPv6-enabled VPC) and a rule that allows inbound access over SSH for IPv6 traffic.
 
 #### Sample Request
+<a name="API_DescribeSecurityGroups_Example_3_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=DescribeSecurityGroups
 &GroupId.1=sg-9bf6ceff
 &AUTHPARAMS
 ```
 
 #### Sample Response
+<a name="API_DescribeSecurityGroups_Example_3_Response"></a>
 
 ```
-
 <DescribeSecurityGroupsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
     <requestId>1d62eae0-acdd-481d-88c9-example</requestId>
     <securityGroupInfo>
@@ -341,24 +261,23 @@ https://ec2.amazonaws.com/?Action=DescribeSecurityGroups
 ```
 
 ### Example 4
+<a name="API_DescribeSecurityGroups_Example_4"></a>
 
-This example describes the specified security group. For the ingress rule
-that permits RDP traffic from IPv4 address range `203.0.113.0/24`,
-there is a rule description.
+This example describes the specified security group. For the ingress rule that permits RDP traffic from IPv4 address range `203.0.113.0/24`, there is a rule description.
 
 #### Sample Request
+<a name="API_DescribeSecurityGroups_Example_4_Request"></a>
 
 ```
-
 https://ec2.amazonaws.com/?Action=DescribeSecurityGroups
 &GroupId.1=sg-bcc24bcd
 &AUTHPARAMS
 ```
 
 #### Sample Response
+<a name="API_DescribeSecurityGroups_Example_4_Response"></a>
 
 ```
-
 <DescribeSecurityGroupsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
 <requestId>6b0c76fb-0da6-4357-bb60-1fexample</requestId>
     <securityGroupInfo>
@@ -415,33 +334,18 @@ https://ec2.amazonaws.com/?Action=DescribeSecurityGroups
 ```
 
 ## See Also
+<a name="API_DescribeSecurityGroups_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS Command Line Interface V2](../../../../services/goto/cli2/ec2-2016-11-15/describesecuritygroups.md)
-
-- [AWS SDK for .NET V4](../../../goto/dotnetsdkv4/ec2-2016-11-15/describesecuritygroups.md)
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/describesecuritygroups.md)
-
-- [AWS SDK for Go v2](../../../goto/sdkforgov2/ec2-2016-11-15/describesecuritygroups.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/describesecuritygroups.md)
-
-- [AWS SDK for JavaScript V3](../../../goto/sdkforjavascriptv3/ec2-2016-11-15/describesecuritygroups.md)
-
-- [AWS SDK for Kotlin](../../../goto/sdkforkotlin/ec2-2016-11-15/describesecuritygroups.md)
-
-- [AWS SDK for PHP V3](../../../goto/sdkforphpv3/ec2-2016-11-15/describesecuritygroups.md)
-
-- [AWS SDK for Python](../../../../services/goto/boto3/ec2-2016-11-15/describesecuritygroups.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/describesecuritygroups.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-DescribeSecurityGroupRules
-
-DescribeSecurityGroupVpcAssociations
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/DescribeSecurityGroups)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/DescribeSecurityGroups)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/DescribeSecurityGroups)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/DescribeSecurityGroups)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/DescribeSecurityGroups)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/DescribeSecurityGroups)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/DescribeSecurityGroups)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/DescribeSecurityGroups)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/DescribeSecurityGroups)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/DescribeSecurityGroups)
 
 All content copied from https://docs.aws.amazon.com/.

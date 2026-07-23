@@ -3,89 +3,59 @@ title: "AdditionalDetail"
 ---
 
 # AdditionalDetail
+<a name="API_AdditionalDetail"></a>
 
-Describes an additional detail for a path analysis. For more information, see [Reachability Analyzer additional detail codes](../../../../services/vpc/latest/reachability/additional-detail-codes.md).
+Describes an additional detail for a path analysis. For more information, see [Reachability Analyzer additional detail codes](https://docs.aws.amazon.com/vpc/latest/reachability/additional-detail-codes.html).
 
 ## Contents
+<a name="API_AdditionalDetail_Contents"></a>
 
-**additionalDetailType**
-
+ ** additionalDetailType **
 The additional detail code.
-
 Type: String
-
 Required: No
 
-**component**
-
+ ** component **
 The path component.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
-**LoadBalancerSet.N**
-
+ ** LoadBalancerSet.N **
 The load balancers.
-
-Type: Array of [AnalysisComponent](api-analysiscomponent.md) objects
-
+Type: Array of [AnalysisComponent](API_AnalysisComponent.md) objects
 Required: No
 
-**RuleGroupRuleOptionsPairSet.N**
-
+ ** RuleGroupRuleOptionsPairSet.N **
 The rule options.
-
-Type: Array of [RuleGroupRuleOptionsPair](api-rulegroupruleoptionspair.md) objects
-
+Type: Array of [RuleGroupRuleOptionsPair](API_RuleGroupRuleOptionsPair.md) objects
 Required: No
 
-**RuleGroupTypePairSet.N**
-
+ ** RuleGroupTypePairSet.N **
 The rule group type.
-
-Type: Array of [RuleGroupTypePair](api-rulegrouptypepair.md) objects
-
+Type: Array of [RuleGroupTypePair](API_RuleGroupTypePair.md) objects
 Required: No
 
-**RuleOptionSet.N**
-
+ ** RuleOptionSet.N **
 The rule options.
-
-Type: Array of [RuleOption](api-ruleoption.md) objects
-
+Type: Array of [RuleOption](API_RuleOption.md) objects
 Required: No
 
-**serviceName**
-
+ ** serviceName **
 The name of the VPC endpoint service.
-
 Type: String
-
 Required: No
 
-**vpcEndpointService**
-
+ ** vpcEndpointService **
 The VPC endpoint service.
-
-Type: [AnalysisComponent](api-analysiscomponent.md) object
-
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
 ## See Also
+<a name="API_AdditionalDetail_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/additionaldetail.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/additionaldetail.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/additionaldetail.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-AddIpamOrganizationalUnitExclusion
-
-AddPrefixListEntry
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/AdditionalDetail)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/AdditionalDetail)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/AdditionalDetail)
 
 All content copied from https://docs.aws.amazon.com/.

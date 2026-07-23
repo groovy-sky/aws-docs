@@ -3,83 +3,55 @@ title: "ExportTask"
 ---
 
 # ExportTask
+<a name="API_ExportTask"></a>
 
 Describes an export instance task.
 
 ## Contents
+<a name="API_ExportTask_Contents"></a>
 
-**description**
-
+ ** description **
 A description of the resource being exported.
-
 Type: String
-
 Required: No
 
-**exportTaskId**
-
+ ** exportTaskId **
 The ID of the export task.
-
 Type: String
-
 Required: No
 
-**exportToS3**
-
+ ** exportToS3 **
 Information about the export task.
-
-Type: [ExportToS3Task](api-exporttos3task.md) object
-
+Type: [ExportToS3Task](API_ExportToS3Task.md) object
 Required: No
 
-**instanceExport**
-
+ ** instanceExport **
 Information about the instance to export.
-
-Type: [InstanceExportDetails](api-instanceexportdetails.md) object
-
+Type: [InstanceExportDetails](API_InstanceExportDetails.md) object
 Required: No
 
-**state**
-
+ ** state **
 The state of the export task.
-
 Type: String
-
 Valid Values: `active | cancelling | cancelled | completed`
-
 Required: No
 
-**statusMessage**
-
+ ** statusMessage **
 The status message related to the export task.
-
 Type: String
-
 Required: No
 
-**TagSet.N**
-
+ ** TagSet.N **
 The tags for the export task.
-
-Type: Array of [Tag](api-tag.md) objects
-
+Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
 ## See Also
+<a name="API_ExportTask_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-
-- [AWS SDK for C++](../../../goto/sdkforcpp/ec2-2016-11-15/exporttask.md)
-
-- [AWS SDK for Java V2](../../../goto/sdkforjavav2/ec2-2016-11-15/exporttask.md)
-
-- [AWS SDK for Ruby V3](../../../goto/sdkforrubyv3/ec2-2016-11-15/exporttask.md)
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-ExportImageTask
-
-ExportTaskS3Location
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ExportTask)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ExportTask)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ExportTask)
 
 All content copied from https://docs.aws.amazon.com/.

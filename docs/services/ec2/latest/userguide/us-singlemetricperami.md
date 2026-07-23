@@ -3,53 +3,37 @@ title: "Aggregate statistics by AMI"
 ---
 
 # Aggregate statistics by AMI
+<a name="US_SingleMetricPerAMI"></a>
 
-You can aggregate statistics by AMI for your instances that have detailed monitoring enabled.
-Instances that use basic monitoring are not included in the aggregates. Before you can get
-statistics aggregated across instances, you must [enable detailed monitoring](manage-detailed-monitoring.md#enable-detailed-monitoring) (at an additional charge), which provides data in
-1-minute periods.
+You can aggregate statistics by AMI for your instances that have detailed monitoring enabled. Instances that use basic monitoring are not included in the aggregates. Before you can get statistics aggregated across instances, you must [enable detailed monitoring](manage-detailed-monitoring.md#enable-detailed-monitoring) (at an additional charge), which provides data in 1-minute periods.
 
-Note that Amazon CloudWatch cannot aggregate data across AWS Regions. Metrics are completely
-separate between Regions.
+Note that Amazon CloudWatch cannot aggregate data across AWS Regions. Metrics are completely separate between Regions.
 
-This example shows you how to determine average CPU utilization for all instances that
-use a specific Amazon Machine Image (AMI). The average is over 60-second time intervals for
-a one-day period.
+This example shows you how to determine average CPU utilization for all instances that use a specific Amazon Machine Image (AMI). The average is over 60-second time intervals for a one-day period.
 
-###### To display the average CPU utilization by AMI (console)
+**To display the average CPU utilization by AMI (console)**
 
-1. Open the CloudWatch console at
-    [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch).
+1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/).
 
-2. In the navigation pane, choose **Metrics**.
+1. In the navigation pane, choose **Metrics**.
 
-3. Choose the **EC2** namespace and then choose **By Image**
-**(AMI) Id**.
+1. Choose the **EC2** namespace and then choose **By Image (AMI) Id**.
 
-4. Choose the row for the **CPUUtilization** metric and the specific
-    AMI, which displays a graph for the metric for the specified AMI. To name the graph,
-    choose the pencil icon. To change the time range, select one of the predefined values or
-    choose **custom**.
+1. Choose the row for the **CPUUtilization** metric and the specific AMI, which displays a graph for the metric for the specified AMI. To name the graph, choose the pencil icon. To change the time range, select one of the predefined values or choose **custom**.
 
-5. To change the statistic or the period for the metric, choose the **Graphed**
-**metrics** tab. Choose the column heading or an individual value, and then
-    choose a different value.
+1. To change the statistic or the period for the metric, choose the **Graphed metrics** tab. Choose the column heading or an individual value, and then choose a different value.
 
-###### To get the average CPU utilization for an image ID (AWS CLI)
+**To get the average CPU utilization for an image ID (AWS CLI)**
+Use the [get-metric-statistics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html) command as follows.
 
-Use the [get-metric-statistics](../../../cli/latest/reference/cloudwatch/get-metric-statistics.md) command as follows.
-
-```nohighlight
-
+```
 aws cloudwatch get-metric-statistics --namespace AWS/EC2 --metric-name CPUUtilization  --period 3600 \
---statistics Average --dimensions Name=ImageId,Value=ami-3c47a355 --start-time 2022-10-10T00:00:00 --end-time 2022-10-11T00:00:00
+--statistics Average --dimensions Name=ImageId,Value=ami-{{3c47a355}} --start-time {{2022-10-10T00:00:00}} --end-time {{2022-10-11T00:00:00}}
 ```
 
-The following is example output. Each value represents an average CPU utilization
-percentage for the EC2 instances running the specified AMI.
+The following is example output. Each value represents an average CPU utilization percentage for the EC2 instances running the specified AMI.
 
-```json
-
+```
 {
     "Datapoints": [
         {
@@ -71,11 +55,5 @@ percentage for the EC2 instances running the specified AMI.
     "Label": "CPUUtilization"
 }
 ```
-
-[Document Conventions](../../../../general/latest/gr/docconventions.md)
-
-Aggregate statistics by Auto Scaling group
-
-View monitoring graphs
 
 All content copied from https://docs.aws.amazon.com/.
