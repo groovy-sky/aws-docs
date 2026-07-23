@@ -38,3 +38,18 @@ func TestSectionLabelFromRepoPath(t *testing.T) {
 		}
 	}
 }
+
+func TestExtractMarkdownTitle(t *testing.T) {
+	markdown := "Intro paragraph\n\n# What is Amazon EC2?\n\nDetails."
+	if got := extractMarkdownTitle(markdown); got != "What is Amazon EC2?" {
+		t.Fatalf("extractMarkdownTitle() = %q, want %q", got, "What is Amazon EC2?")
+	}
+}
+
+func TestExtractMarkdownLinks(t *testing.T) {
+	markdown := "- [Concepts](concepts.md)\n- [Guide](https://docs.aws.amazon.com/vpc/latest/userguide/)\n<https://docs.aws.amazon.com/ec2/latest/userguide/>"
+	got := extractMarkdownLinks(markdown)
+	if len(got) != 3 {
+		t.Fatalf("extractMarkdownLinks() length = %d, want 3", len(got))
+	}
+}

@@ -27,6 +27,8 @@ type Fetcher struct {
 	detailedLogging bool
 }
 
+const browserLikeAcceptHeader = "text/markdown, text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+
 func NewFetcher(cfg config.Config) *Fetcher {
 	jar, _ := cookiejar.New(nil)
 
@@ -57,7 +59,7 @@ func NewFetcher(cfg config.Config) *Fetcher {
 				}
 
 				request.Header.Set("User-Agent", cfg.UserAgent)
-				request.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
+				request.Header.Set("Accept", browserLikeAcceptHeader)
 				request.Header.Set("Accept-Language", "en-US,en;q=0.9")
 				request.Header.Set("Upgrade-Insecure-Requests", "1")
 				return nil
@@ -95,7 +97,7 @@ func (f *Fetcher) Fetch(ctx context.Context, rawURL string, options FetchOptions
 			return backoff.Permanent(fmt.Errorf("build request: %w", err))
 		}
 		request.Header.Set("User-Agent", f.userAgent)
-		request.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
+		request.Header.Set("Accept", browserLikeAcceptHeader)
 		request.Header.Set("Accept-Language", "en-US,en;q=0.9")
 		request.Header.Set("Upgrade-Insecure-Requests", "1")
 		if strings.TrimSpace(options.IfNoneMatch) != "" {
@@ -162,11 +164,18 @@ func (f *Fetcher) Fetch(ctx context.Context, rawURL string, options FetchOptions
 		return result, err
 	}
 
-	if !strings.Contains(strings.ToLower(result.ContentType), "html") && !result.NotModified {
+	if !isSupportedContentType(result.ContentType) && !result.NotModified {
 		return result, fmt.Errorf("unsupported content type %q", result.ContentType)
 	}
 
 	return result, nil
+}
+
+func isSupportedContentType(contentType string) bool {
+	lower := strings.ToLower(contentType)
+	return strings.Contains(lower, "html") ||
+		strings.Contains(lower, "text/markdown") ||
+		strings.Contains(lower, "text/x-markdown")
 }
 
 func (f *Fetcher) logf(format string, args ...any) {

@@ -155,3 +155,31 @@ func TestExtractorCollectsLinksOutsideMainSelection(t *testing.T) {
 		t.Fatalf("second link = %q, want %q", document.Links[1], "/vpc/latest/privatelink")
 	}
 }
+
+func TestExtractorCollectsAlternateMarkdownLink(t *testing.T) {
+	extractor := NewExtractor(config.Default())
+	body := []byte(`<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon VPC</title>
+    <link rel="alternate" type="text/markdown" href="what-is-amazon-vpc.md">
+  </head>
+  <body>
+    <main id="main-content">
+      <h1>Amazon VPC</h1>
+      <p>Overview.</p>
+    </main>
+  </body>
+</html>`)
+
+	document, err := extractor.Extract("https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html", body)
+	if err != nil {
+		t.Fatalf("Extract returned error: %v", err)
+	}
+	if len(document.Links) != 1 {
+		t.Fatalf("Links length = %d, want 1", len(document.Links))
+	}
+	if document.Links[0] != "what-is-amazon-vpc.md" {
+		t.Fatalf("first link = %q, want %q", document.Links[0], "what-is-amazon-vpc.md")
+	}
+}

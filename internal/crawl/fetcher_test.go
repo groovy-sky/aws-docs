@@ -41,3 +41,21 @@ func TestDetectBotChallengeSkipsNonHTML(t *testing.T) {
 		t.Fatal("expected non-html body to skip challenge detection")
 	}
 }
+
+func TestIsSupportedContentType(t *testing.T) {
+	cases := []struct {
+		contentType string
+		want        bool
+	}{
+		{contentType: "text/html; charset=utf-8", want: true},
+		{contentType: "text/markdown; charset=utf-8", want: true},
+		{contentType: "text/x-markdown", want: true},
+		{contentType: "application/json", want: false},
+	}
+
+	for _, tc := range cases {
+		if got := isSupportedContentType(tc.contentType); got != tc.want {
+			t.Fatalf("isSupportedContentType(%q) = %v, want %v", tc.contentType, got, tc.want)
+		}
+	}
+}

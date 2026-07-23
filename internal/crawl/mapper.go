@@ -121,6 +121,8 @@ func mapServiceCode(value string) string {
 func slugify(value string) string {
 	value = strings.ToLower(strings.TrimSpace(value))
 	value = strings.TrimSuffix(value, "/")
+	value = strings.TrimSuffix(value, ".md")
+	value = strings.TrimSuffix(value, ".markdown")
 	value = strings.ReplaceAll(value, ".html", "")
 	value = strings.ReplaceAll(value, ".htm", "")
 	value = strings.ReplaceAll(value, "_", "-")

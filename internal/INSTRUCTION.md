@@ -56,26 +56,28 @@ URL processing (`processURL`) sequence:
 4. If fetch detects a likely anti-bot challenge page, crawler logs it and skips the URL when retries are exhausted.
 5. Validate robots rule again for the resolved final URL after HTTP redirects.
 6. If the server returns `304 Not Modified`, refresh the page metadata timestamps/status and skip extraction, conversion, and file writes.
-7. Extract content via `Extractor.Extract`.
-8. If extractor returns `RedirectURL` (meta refresh wrapper pages), resolve target, persist the refreshed metadata, and enqueue the target instead of writing markdown.
-9. Normalize canonical URL.
-10. Convert cleaned HTML to markdown using `Converter.Convert`.
-11. Map canonical URL to repository path via `Mapper.RepoPath`.
-12. Compare generated markdown against the existing file and only rewrite the file when bytes changed.
-13. Upsert page metadata (repo path, HTTP validators, content hash, fetch status, last fetch time).
-14. Upsert a search index entry for the processed page (title, permalink, content snippet, section label).
-15. Resolve extracted links and return discovered allowed URLs.
+7. If fetch response content type is markdown (or URL resolves to `.md`), normalize markdown, append source attribution, persist it directly, and discover links from markdown inline/autolink targets.
+8. Otherwise extract content via `Extractor.Extract`.
+9. If extractor returns `RedirectURL` (meta refresh wrapper pages), resolve target, persist the refreshed metadata, and enqueue the target instead of writing markdown.
+10. Normalize canonical URL.
+11. Convert cleaned HTML to markdown using `Converter.Convert`.
+12. Map canonical URL to repository path via `Mapper.RepoPath`.
+13. Compare generated markdown against the existing file and only rewrite the file when bytes changed.
+14. Upsert page metadata (repo path, HTTP validators, content hash, fetch status, last fetch time).
+15. Upsert a search index entry for the processed page (title, permalink, content snippet, section label).
+16. Resolve extracted links and return discovered allowed URLs.
 
 Fetcher behavior:
 
 - Uses a persistent `http.Client` session with a cookie jar.
-- Sends browser-like request headers (`User-Agent`, `Accept`, `Accept-Language`, `Upgrade-Insecure-Requests`) on initial requests and redirect hops.
+- Sends browser-like request headers (`User-Agent`, `Accept`, `Accept-Language`, `Upgrade-Insecure-Requests`) on initial requests and redirect hops, with `Accept` preferring `text/markdown` while still accepting HTML.
 - Reuses persisted `ETag` and `Last-Modified` values by sending conditional request headers when page metadata exists.
 - Follows redirects with a max depth of 10 and records the resolved final URL.
 - Applies rate-limiter gating plus randomized per-request jitter delay (`min_request_delay_ms` to `max_request_delay_ms`).
 - Retries transient failures using exponential backoff, including statuses `403`, `429`, `503`, and all `5xx` responses.
 - Detects likely anti-bot challenge HTML responses (captcha/human-verification markers) and treats them as retryable failures.
 - Preserves `304 Not Modified` responses so callers can skip downstream work while still refreshing metadata.
+- Accepts both HTML and markdown response content types (`text/markdown`, `text/x-markdown`) as crawlable payloads.
 - When `detailed-logging` is enabled, logs request starts, responses, redirects, retries, and terminal fetch failures.
 
 Crawler logging behavior:
@@ -96,6 +98,7 @@ Link discovery behavior:
 
 - Extractor collects crawl links from the selected main-content tree before applying excluded selectors.
 - This preserves subsection URLs that may exist only in filtered TOC containers (for example `.awsdocs-toc`) while still removing those blocks from written markdown.
+- Extractor also captures `<link rel="alternate" type="text/markdown" ...>` head links so markdown variants can be discovered and queued.
 - For AWS landing-page XML payloads, extractor now harvests all `href` attributes from the decoded payload, not only legacy `simple-card` and side-nav link structures. This keeps homepage-style `list-card-item`, `footer-item`, and similar landing links crawlable.
 
 Current redirect handling:
@@ -120,6 +123,7 @@ Current redirect handling:
 - Mapping classifies URLs into `docs/services`, `docs/reference`, `docs/reference/cli`, or `docs/general`.
 - Service bucket uses first path segment with specific overrides (for example `AWSEC2 -> ec2`).
 - Output filenames are slugified and normalized to `.md`.
+- URL segments ending in `.md`/`.markdown` are normalized so markdown source URLs map to the same repository path as their HTML equivalents.
 - If URL points to a section root ending at `latest/`, mapper writes an `index.md` path under that section.
 - When the first URL segment is literally `general`, it is consumed before path building so the section prefix `docs/general/` is not doubled (bug-fix: previously produced `docs/general/general/...`).
 
