@@ -66,3 +66,13 @@ func TestRepoPathStripsFragments(t *testing.T) {
 		t.Fatalf("RepoPath = %q, want %q", got, want)
 	}
 }
+
+func TestRepoPathMarkdownURL(t *testing.T) {
+	mapper := NewMapper("docs")
+
+	got := mapper.RepoPath("https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.md")
+	want := "docs/services/ec2/latest/userguide/concepts.md"
+	if got != want {
+		t.Fatalf("RepoPath = %q, want %q", got, want)
+	}
+}

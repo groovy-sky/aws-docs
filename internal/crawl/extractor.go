@@ -46,7 +46,11 @@ func (e *Extractor) Extract(rawURL string, body []byte) (ExtractedDocument, erro
 	}
 
 	cleaned := root.Clone()
-	links := mergeUniqueLinks(extractSelectionLinks(cleaned), extractSelectionLinks(document.Selection))
+	links := mergeUniqueLinks(
+		extractSelectionLinks(cleaned),
+		extractSelectionLinks(document.Selection),
+		extractAlternateMarkdownLinks(document),
+	)
 	for _, selector := range e.config.ExcludeSelectors {
 		if selector == "" {
 			continue
@@ -113,6 +117,45 @@ func mergeUniqueLinks(linkSets ...[]string) []string {
 		}
 	}
 	return merged
+}
+
+func extractAlternateMarkdownLinks(document *goquery.Document) []string {
+	links := make([]string, 0)
+	seen := make(map[string]struct{})
+	document.Find("link[rel][href]").Each(func(_ int, selection *goquery.Selection) {
+		relValue, relExists := selection.Attr("rel")
+		href, hrefExists := selection.Attr("href")
+		if !relExists || !hrefExists {
+			return
+		}
+		relTokens := strings.Fields(strings.ToLower(strings.TrimSpace(relValue)))
+		hasAlternate := false
+		for _, token := range relTokens {
+			if token == "alternate" {
+				hasAlternate = true
+				break
+			}
+		}
+		if !hasAlternate {
+			return
+		}
+
+		typeValue, hasType := selection.Attr("type")
+		if hasType && !strings.EqualFold(strings.TrimSpace(typeValue), "text/markdown") {
+			return
+		}
+
+		trimmed := strings.TrimSpace(href)
+		if trimmed == "" {
+			return
+		}
+		if _, exists := seen[trimmed]; exists {
+			return
+		}
+		seen[trimmed] = struct{}{}
+		links = append(links, trimmed)
+	})
+	return links
 }
 
 func extractDocumentRedirectURL(document *goquery.Document) (string, bool) {

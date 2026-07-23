@@ -2,6 +2,8 @@ package crawl
 
 import (
 	"context"
+	"crypto/sha256"
+	"encoding/hex"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -9,6 +11,7 @@ import (
 	"net/http"
 	"net/url"
 	"path/filepath"
+	"regexp"
 	"sort"
 	"strings"
 	"time"
@@ -20,6 +23,11 @@ import (
 )
 
 const searchIndexPath = "static/search-index.json"
+
+var (
+	markdownInlineLinkPattern = regexp.MustCompile(`\[[^\]]+\]\(([^)]+)\)`)
+	markdownAutoLinkPattern   = regexp.MustCompile(`<((?:https?:\/\/|\/)[^>\s]+)>`)
+)
 
 type searchIndexEntry struct {
 	Title   string `json:"title"`
@@ -573,6 +581,9 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, err
 		c.logf("crawl not-modified: url=%s final-url=%s", pageURL, result.FinalURL)
 		return nil, nil
 	}
+	if isMarkdownFetchResult(result) {
+		return c.processMarkdownContent(pageURL, pageRecord, hasPageRecord, result)
+	}
 
 	extracted, err := c.extractor.Extract(result.FinalURL, result.Body)
 	if err != nil {
@@ -637,6 +648,67 @@ func (c *Crawler) processURL(ctx context.Context, pageURL string) ([]string, err
 
 	discovered := make([]string, 0, len(extracted.Links))
 	for _, link := range extracted.Links {
+		resolved, err := ResolveURL(canonicalURL, link, c.config)
+		if err != nil {
+			continue
+		}
+		if IsAllowedURL(resolved, c.config) {
+			discovered = append(discovered, resolved)
+		}
+	}
+
+	return discovered, nil
+}
+
+func isMarkdownFetchResult(result FetchResult) bool {
+	contentType := strings.ToLower(result.ContentType)
+	if strings.Contains(contentType, "text/markdown") || strings.Contains(contentType, "text/x-markdown") {
+		return true
+	}
+	parsedURL, err := url.Parse(result.FinalURL)
+	if err != nil {
+		return false
+	}
+	return strings.HasSuffix(strings.ToLower(parsedURL.Path), ".md")
+}
+
+func (c *Crawler) processMarkdownContent(pageURL string, pageRecord model.PageRecord, hasPageRecord bool, result FetchResult) ([]string, error) {
+	canonicalURL, err := NormalizeURL(result.FinalURL, c.config)
+	if err != nil {
+		canonicalURL = pageURL
+	}
+
+	markdown := appendSourceAttribution(normalizeMarkdown(string(result.Body)))
+	contentHash := sha256.Sum256([]byte(markdown))
+	title := extractMarkdownTitle(markdown)
+	repoPath := c.mapper.RepoPath(canonicalURL)
+	contentWithFrontMatter := addTitleFrontMatter(title, markdown)
+	wroteFile, err := c.writer.WriteIfChanged(repoPath, contentWithFrontMatter)
+	if err != nil {
+		_ = c.storeFetchFailure(pageURL, pageRecord, hasPageRecord, result, err)
+		return nil, fmt.Errorf("write %s: %w", repoPath, err)
+	}
+	if err := c.storePageRecordAliases(model.PageRecord{
+		URL:          pageURL,
+		RepoPath:     repoPath,
+		ETag:         result.ETag,
+		LastModified: result.LastModified,
+		ContentHash:  hex.EncodeToString(contentHash[:]),
+		LastFetched:  time.Now().UTC(),
+		StatusCode:   result.StatusCode,
+		LastError:    "",
+	}, pageURL, result.FinalURL, canonicalURL); err != nil {
+		return nil, err
+	}
+	c.recordSearchEntry(repoPath, title, markdown)
+	if wroteFile {
+		c.logf("crawl wrote-markdown: canonical-url=%s path=%s markdown-bytes=%d", canonicalURL, repoPath, len(markdown))
+	} else {
+		c.logf("crawl skip-write-unchanged-markdown: canonical-url=%s path=%s", canonicalURL, repoPath)
+	}
+
+	discovered := make([]string, 0)
+	for _, link := range extractMarkdownLinks(markdown) {
 		resolved, err := ResolveURL(canonicalURL, link, c.config)
 		if err != nil {
 			continue
@@ -1060,7 +1132,7 @@ func (c *Crawler) filterReachableSeeds(ctx context.Context, seeds []string) []st
 			continue
 		}
 		request.Header.Set("User-Agent", c.config.UserAgent)
-		request.Header.Set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
+		request.Header.Set("Accept", browserLikeAcceptHeader)
 		request.Header.Set("Accept-Language", "en-US,en;q=0.9")
 
 		response, err := c.fetcher.HTTPClient().Do(request)
@@ -1090,4 +1162,48 @@ func (c *Crawler) filterReachableSeeds(ctx context.Context, seeds []string) []st
 		filtered = append(filtered, finalURL)
 	}
 	return filtered
+}
+
+func extractMarkdownTitle(markdown string) string {
+	for _, line := range strings.Split(markdown, "\n") {
+		trimmed := strings.TrimSpace(line)
+		if strings.HasPrefix(trimmed, "# ") {
+			return strings.TrimSpace(strings.TrimPrefix(trimmed, "# "))
+		}
+	}
+	return ""
+}
+
+func extractMarkdownLinks(markdown string) []string {
+	links := make([]string, 0)
+	seen := map[string]struct{}{}
+	add := func(value string) {
+		trimmed := strings.TrimSpace(value)
+		if trimmed == "" {
+			return
+		}
+		trimmed = strings.TrimPrefix(trimmed, "<")
+		trimmed = strings.TrimSuffix(trimmed, ">")
+		trimmed = strings.Trim(strings.Split(trimmed, " ")[0], `"'`)
+		if trimmed == "" || strings.HasPrefix(trimmed, "#") {
+			return
+		}
+		if _, exists := seen[trimmed]; exists {
+			return
+		}
+		seen[trimmed] = struct{}{}
+		links = append(links, trimmed)
+	}
+
+	for _, match := range markdownInlineLinkPattern.FindAllStringSubmatch(markdown, -1) {
+		if len(match) > 1 {
+			add(match[1])
+		}
+	}
+	for _, match := range markdownAutoLinkPattern.FindAllStringSubmatch(markdown, -1) {
+		if len(match) > 1 {
+			add(match[1])
+		}
+	}
+	return links
 }
